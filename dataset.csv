@@ -1,0 +1,86 @@
+﻿17455465;    Examples of optional and dependent fields
+17455465;    Updated README
+17455465;    
+17455465;    Added documentation on base validators and combinators.
+17455465;    Adding License and Readme files
+17455465;    Add initial doc layout and doc build script.
+17455465;    Fixed nested error messages in Map
+17455465;    Based Type and Is on Predicate
+17455465;    
+17455465;    Based Type and Is validators on Predicate since they are just concrete
+17455465;    instances of a predicate.
+17455465;    
+17455465;    For checks such as `Int` where we want to avoid `True` and `False`
+17455465;    values to succeed I created `StrictType` which checks for
+17455465;    `type(data) == given_type`
+17455465;    Add logic Or validator
+17455465;    Moving base to schemas module
+17455465;    Adding extra validators and tests
+17455465;    Initial version
+17455465;    Add numeric schemas
+17455465;    Add date and datetime validators
+17455465;    Removing Schema suffix from validators
+17455465;    Adding bool schema
+17455465;    Adding extra validators and tests
+17455465;    Removing Schema suffix from validators
+17455465;    Adding ChoicesSchema
+17455465;    New Length validator checks for a given length
+17455465;    
+17455465;        assert Length(1).validate('a')
+17455465;        assert Length(2).validate('ab')
+17455465;    Removing Schema suffix from validators
+17455465;    Adding some string schema validators
+17455465;    Adding extra validators and tests
+17455465;    Add initial doc layout and doc build script.
+17455465;    Add initial doc layout and doc build script.
+17455465;    Initial version
+17455465;    Initial version
+17455465;    Adding extra validators and tests
+17455465;    Initial version
+17455465;    Initial version
+17455465;    Add numeric schemas
+17455465;    Based Type and Is on Predicate
+17455465;    
+17455465;    Based Type and Is validators on Predicate since they are just concrete
+17455465;    instances of a predicate.
+17455465;    
+17455465;    For checks such as `Int` where we want to avoid `True` and `False`
+17455465;    values to succeed I created `StrictType` which checks for
+17455465;    `type(data) == given_type`
+17455465;    Add date and datetime validators
+17455465;    Removing Schema suffix from validators
+17455465;    Removing Schema suffix from validators
+17455465;    Adding bool schema
+17455465;    Moving base to schemas module
+17455465;    Adding extra validators and tests
+17455465;    Removing Schema suffix from validators
+17455465;    Adding ChoicesSchema
+17455465;    Fixed nested error messages in Map
+17455465;    Add message to predicate
+17455465;    Remove mutable attribute at class level
+17455465;    Add posibility to give a dictionary with custom messages on maps
+17455465;    
+17455465;    This is Anler's code made on my machine. All credit to him.
+17455465;    Based Type and Is on Predicate
+17455465;    
+17455465;    Based Type and Is validators on Predicate since they are just concrete
+17455465;    instances of a predicate.
+17455465;    
+17455465;    For checks such as `Int` where we want to avoid `True` and `False`
+17455465;    values to succeed I created `StrictType` which checks for
+17455465;    `type(data) == given_type`
+17455465;    Add logic Or validator
+17455465;    Moving base to schemas module
+17455465;    Adding extra validators and tests
+17455465;    Initial version
+17455465;    Adding extra validators and tests
+17455465;    New Length validator checks for a given length
+17455465;    
+17455465;        assert Length(1).validate('a')
+17455465;        assert Length(2).validate('ab')
+17455465;    Add ISODate string validator
+17455465;    Removing Schema suffix from validators
+17455465;    Removing Schema suffix from validators
+17455465;    Adding some string schema validators
+17455465;    Moving base to schemas module
+17455465;    Adding extra validators and tests
