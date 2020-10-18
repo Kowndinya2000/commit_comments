@@ -1,0 +1,2384 @@
+﻿    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Disable legacy poor Network detection
+    Bug:18723206
+    Legacy poor network detection was removed from L settings but can still be enabled during an upgrade if it had been manually enabled by user, now really disable it.
+    
+    Change-Id: I661b326c6f5dfacfcc5582cea14dc52501740367
+    various fixes:
+    
+    - add null pointer check to wifi watchdog state machine
+    - correctly parse the REQUEST IDENTIY event sent by wpa_supplicant
+    - make autojoining wificonfiguration more aggressive based on user input
+    Bug:17469863
+    Bug:17426395
+    Bug:17475816
+    
+    Change-Id: I1785c917c0e570de0edaa02bd0ca6536be9d7c0b
+    Fixed bypass of ConnectivityInternal permission
+    
+    Removed public function 'getWifiStateMachineMessenger' of
+    WifiManager to fix bypass of ConnectivityInternal permission
+    by application, which is security concern
+    
+    Bug: 13749822
+    
+    Change-Id: I3ae73e33b77ee8ae0133ca9dc8cc03c504f09e40
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Build fixes for newly imported code from KWD
+    
+    SystemServer works a bit differently in KWD; and using
+    libnl_2 is discouraged in master.
+    
+    Change-Id: Ia929b1d500164a05101d41f6fe0ed18af3597fe9
+    Initial implementation of WifiScanner
+    
+    This change implements basic functionality of WifiScanner. Following
+    functionality is enabled
+    
+    1. Scanning - specify a list of channels to scan
+    2. Significant change detection
+    3. AP hotlist
+    
+    Change-Id: I4fbb2cccbb15df21aae7a81f5d9b17fde2bda8c0
+    Fix build (again).
+    
+    Change WifiP2pService / WifiService to reflect changes to
+    the SystemService constructors.
+    
+    Change-Id: Iad36810c1d3e08bbdca21e76113f9f9dfe79bbae
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Fix an NPE in RttService
+    
+    Bug: 18245283
+    Change-Id: Ie844353bffcf40baa4db8cad2c18dcc5ffaf5a82
+    Enable RTT End-to-end
+    
+    This change includes various fixes to first RTT implementation and
+    enables RTT APIs end-to-end. Fixes include proper marshalling of
+    objects across API and service and JNI fixes.
+    
+    This change also includes fix for another WifiNative bug that causes
+    crash on startup.
+    
+    Bug: 15841411
+    
+    
+    Change-Id: Ie4ba1ffc6c5b42593e931438b3f03e201ff6be71
+    Introduce RTT Manager
+    
+    Change-Id: Ic9a16d587897b272f85cdb2b8c52b51bca060d18
+    Initial implementation of WifiScanner
+    
+    This change implements basic functionality of WifiScanner. Following
+    functionality is enabled
+    
+    1. Scanning - specify a list of channels to scan
+    2. Significant change detection
+    3. AP hotlist
+    
+    Change-Id: I4fbb2cccbb15df21aae7a81f5d9b17fde2bda8c0
+    Fix build (again).
+    
+    Change WifiP2pService / WifiService to reflect changes to
+    the SystemService constructors.
+    
+    Change-Id: Iad36810c1d3e08bbdca21e76113f9f9dfe79bbae
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Stabilize ephemeral connections in the face of new BSSIDs.
+    
+    Currently we only check whether the most recently seen BSSID has a
+    score before deciding to disconnect an ephemeral network. This causes
+    unnecessary flapping - if multiple BSSIDs are in visible range, and
+    the scorer likes one of them but has no score for the other (or is
+    still looking up the score), we will drop the connection.
+    
+    Instead, as long as we've recently seen a scored BSSID (in the last
+    minute), we keep the connection alive.
+    
+    A scorer can still initiate an immediate disconnect from an unwanted
+    network by nulling scores for all BSSIDs.
+    
+    The timeout (and whether we use this new behavior at all) is
+    controlled by a Settings.Global flag.
+    
+    Bug: 18637384
+    Change-Id: I6bde3c9eef12caf2cc51c449abffc1c69f60c17f
+    Stabilize ephemeral connections in the face of new BSSIDs.
+    
+    Currently we only check whether the most recently seen BSSID has a
+    score before deciding to disconnect an ephemeral network. This causes
+    unnecessary flapping - if multiple BSSIDs are in visible range, and
+    the scorer likes one of them but has no score for the other (or is
+    still looking up the score), we will drop the connection.
+    
+    Instead, as long as we've recently seen a scored BSSID (in the last
+    minute), we keep the connection alive.
+    
+    A scorer can still initiate an immediate disconnect from an unwanted
+    network by nulling scores for all BSSIDs.
+    
+    The timeout (and whether we use this new behavior at all) is
+    controlled by a Settings.Global flag.
+    
+    Bug: 18637384
+    Change-Id: I6bde3c9eef12caf2cc51c449abffc1c69f60c17f
+    Make use of scorer-specified heuristics in RssiCurve.
+    
+    Treat Byte#MIN_VALUE equivalently to a null score curve. This allows a
+    scorer to define an RSSI threshold below which a network should not be
+    used. Currently, any non-null score curve will result in us connecting
+    to a given network regardless of RSSI.
+    
+    Also, instead of applying a hard-coded dBm boost to the currently
+    active network, make use of the boost specified in the RSSI curve
+    itself, allowing the scorer to fine-tune this boost.
+    
+    Bug: 15432594
+    Change-Id: I7a8f5f68ef074827d4b1cfbbed0841448498f179
+    fix getNetworkScore
+    
+    Change-Id: I60bc5c458938f662b2550e48839cb455764dc037
+    autojoin fixes:
+    
+    - make use of network scorer for autojoin
+    - Bug:16484607
+    
+    Change-Id: If658d82bb6e3f61ed0476d41b40bb274a1931b2f
+    Use a consistent network key format in wifi score cache.
+    
+    This doesn't handle SSID which can't be encoded as UTF-8, but will
+    work for most SSIDs.
+    
+    Bug: 15188549
+    Change-Id: If12e83c4d43ed1b5d686ec1dfb9c1980bb0d4697
+    fix for autojoin controller not requesting steen scores
+    
+    Change-Id: I2546241c8b1eefe963f840c4a98a3f817694039c
+    Add a basic dump() function to WifiNetworkScoreCache.
+    
+    Will get the current cached set of scan results and dump the current
+    score for each one depending on the RSSI.
+    
+    Change-Id: Ic524906aef2bdfe2fa9f9a9e5364c80d028ddfdb
+    autojoin initial implementation
+    
+    Change-Id: Iea4e5c0b8e988e410d2f9885ecaf6317d34cc1d1
+    Fix first time notification of available open Wifi
+    
+    There is no networkInfo the first time notification controller starts,
+    and as a result it is dropping check to find out if open networks are
+    available.
+    
+    Bug: 17349359
+    Change-Id: I09ca0b1cb44a849f2cdfafb1dcdcc943b2586562
+    Colored notifications
+    
+    Bug: 17128331
+    Change-Id: I30a31d5da000e021e9891c56da91b0ff9615d4d6
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Wifi: set mConnected true before start monitor thread
+    
+    When Wifi s turned on, WifiMonitor will start monitor thread,
+    then set mConnected true. In some instances, mConnected is not set
+    when monitor thread is started, so it ends up without monitoring
+    anything.
+    
+    To resolve this issue, set mConnected true before start monitor thread.
+    
+    Change-Id: Idd0e69b1856d192cadeed1dbd3be959115018afd
+    CRs-Fixed: 833955
+    Wifi: Exit the monitor thread when killSupplicant is issued.
+    
+    When Wifi is turned off, WifiStateMachine issues terminate command
+    to the supplicant and waits for the event CTRL-EVENT-TERMINATING.
+    On receiving this TERMINTING event, WifiMonitor stops further monitoring
+    of events. In some instances, WifiMonitor fails to receive the event
+    CTRL-EVENT-TERMINATING and subsequently when Wifi framework times out it
+    kills the supplicant.
+    
+    But this recovery logic has an issue where even though the supplicant is
+    killed, the monitor thread is not stopped from listening the events and
+    WifiMonitor continues looking for the events. Since at the time of killing
+    the supplicant monitor_conn is initialized to NULL, internally fabricated
+    WPA_EVENT_TERMINATING event is issued by the framework. This again leads
+    to the deinitialization of the wlan0 / p2p0 interfaces while the process
+    of initialization is in progress. This leads to concurrent actions of
+    supplicant connection closure and command execution on the control socket.
+    But wpa control interface library is not designed to concurrently handle
+    activities on the control and monitor sockets.
+    
+    To solve this issue, exit the monitor thread when Wifi framework kills
+    the supplicant explicitly (mConnected is set to FALSE).
+    
+    Change-Id: Ie130cb1b089bb39c30c088c6bee71debf7ecb08e
+    CRs-Fixed: 810355
+    WiFi: Stop monitoring on socket if interface is down
+    
+    When Wifi is turned off, WifiStateMachine issues terminate command to the
+    supplicant and waits for the event CTRL-EVENT-TERMINATING. On receiving this
+    TERMINTING event, WifiMonitor stops further monitoring of events. In some
+    instances, WifiMonitor fails to receive the event CTRL-EVENT-TERMINATING and
+    subsequently when Wifi framework times out it kills the supplicant. But this
+    recovery logic has an issue where even though the supplicant is killed, the
+    monitor thread is not stopped from listening the events and WifiMonitor
+    continues looking for the events. Since at the time of killing the supplicant
+    monitor_conn is initialized to NULL, internally fabricated
+    WPA_EVENT_TERMINATING event is issued by the framework. This again leads to
+    the deinitialization of the wlan0 / p2p0 interfaces when the STA / P2P
+    interfaces gets initialized (during Wifi turn ON). Framework is not designed
+    to concurrently handle the control and monitor sockets. To solve this issue,
+    force stop the monitor state machine when Wifi framework kills the supplicant
+    explicitly.
+    
+    Change-Id: I4045ef226dbd2e627613e0524de45bb723127038
+    CRs-Fixed: 788582
+    add debug logs to confirm network flapping issue is fixed
+    Bug:18706288
+    
+    Change-Id: I27a86aeb650a63511b667244b0138afbc1bc059e
+    Wifi:Fix issue in connection in WPS mode when STA_AUTOCONNECT is disabled
+    
+    Autojoin is enabled in framework by default and this disables
+    connection retry feature in supplicant. For WPS failure cases
+    framework needs to retry connection.
+    This change is for framework handling connection retry logic in case
+    of WPS Connection failures with reason code other than 3.
+    Reason code 3 is generated by supplicant and in that case framework ignores
+    retry.
+    
+    Change-Id: I5d59b578aac339f4018c93c5e0f11ef45203d056
+    CRs-Fixed: 759641
+    - better handling of deleted configurations, only keep a crc32 of deleted SSIDs
+    - trigger a scan when changing settings allowing use of untrusted networks
+    Bug:18221007
+    Bug:18269621
+    
+    Change-Id: I7eec8913737726a1bf468a96eae562cc567ecfd3
+    Wifi: Fix ap list issue while wifi turns on
+    
+    Decrease the sleep time to resolve the synchronization issue
+    which happens between wpa_supplicant and Wifimonitor thread
+    when wifi turns on.
+    
+    Change-Id: I4e2414301ace26a26351b6c1345e1ff6e7ab49a9
+    CRs-Fixed: 673012
+    framework/base : Fix for Wi-Fi grayed out issue
+    
+    During the initialization WiFiMonitor shall try to open the
+    control / monitor socket interface with the supplicant.On a
+    failed attempt to open the control interface WiFiMonitor
+    thread shall trigger an event SUP_DISCONNECTION_EVENT to
+    WiFiStateMachine with the expectation that the connection
+    attempt is restarted.In addition , it shall also remove the
+    interface from the mIfaceMap. During the restart , WiFiMonitor
+    shall not proceed to open the control interface with the
+    supplicant if the mIfaceMap does not point to the interface.
+      Thus , do not remove the interface from mIfaceMap on a failed
+    attempt to create a control interface with the supplicant to
+    provision a reinitialization attempt.
+    
+    CRs-Fixed: 642586
+    Change-Id: I3ac6d87d670f66a2d1eb872a3983817d2c1b620d
+    Wifi: Handle P2P-REMOVE-AND-REFORM-GROUP event
+    
+    Remove P2P group on receipt of P2P-REMOVE-AND-REFORM-GROUP event from
+    wpa supplicant and then reform new P2P group if autonomous group is
+    set to true.
+    
+    Change-Id: Id6fbf2c2ebbebc06afc70cf56a7b434eb8ab2eea
+    CRs-fixed: 696838
+    various fixes:
+    - Carry over the IP config when self adding a configuration
+    - fix null pointer exception in wificonfigstore, trying to read the IPConfig file
+    Bug:18058314
+    Bug:18057271
+    
+    Change-Id: Ia1922f0cf44aa6eaf67928ac392a6ec92431f279
+    various fixes:
+    
+    - add null pointer check to wifi watchdog state machine
+    - correctly parse the REQUEST IDENTIY event sent by wpa_supplicant
+    - make autojoining wificonfiguration more aggressive based on user input
+    Bug:17469863
+    Bug:17426395
+    Bug:17475816
+    
+    Change-Id: I1785c917c0e570de0edaa02bd0ca6536be9d7c0b
+    various fixes:
+    
+    - cleanup setWifiEnable transitions
+    - dont scan right when entering connected and Disconnected state, instead startScan() adds a 200ms delay before starting the scans, so as to let the state machiine time to process deferred message
+    - dont forget to send the NetworkStateChanged Broadcast when we set the network detailed state
+    - autojoin dont attempt to join WifiConfigurations marked as noInternetAccess, unless explicitely selected by the user
+    - keep stats of user triggered wifi state disabling requests
+    - fix bad roaming situation when BSSID is specified in network block
+    
+    Bug:17193677
+    
+    Change-Id: Ia103a93232f40519c7b4eef07254f32342ea5615
+    AutoJoin fixes:
+    
+    - Additional logs
+    - re-enable all network upon screen on and connection, even for blackliste networks due to auth failure
+    - watchdog the DisconnectingState
+    - remove mFrameworkAutoJoin which is not used anymore
+    - dont remove WPA_PSK configurations, instead mark them as AUTO_JOIN_DELETED and loose their history and keys
+    
+    Bug:17261906
+    Bug:17330171
+    Bug:17339150
+    Bug:17063789
+    
+    Change-Id: I12ea25142d0dcfc670d8970ed67624e8573d1ac2
+    add radio stats to link layer
+    
+    This CL is dependent on I3d2a230b0362520b9f1b2bc3792260116971e106
+    
+    Change-Id: If7e73ae9813ea79a98744d7f0096316d241998fd
+    
+    halutil updates for link layer statistics
+    
+    Change-Id: I00ea13b1a932f40891a0d65026a1c87f01f09587
+    Signed-off-by: Chilam Ng <chilam@broadcom.com>
+    debug messages for link loss issues
+    
+    Change-Id: Icbea4bac528eac8f25b8d1f9f1fa79d1ecadb7da
+    EAP-SIM End-To-End
+    
+    This change fixes all remaining issues with EAP-SIM. It now handles
+    multiple challenges coming from supplicant and corrects supplicant
+    command syntax.
+    
+    Change-Id: Idc47b454863aa1990d4f53138f00f312622792d2
+    EAP-SIM End-to-end
+    
+    Change-Id: I9478e6a492c469d57bb020b8f858e523ea6a92d1
+    a few additional logs and code standard rules
+    
+    Change-Id: I932e895fefd7b6c9d8ad58ef99312c980643f2d2
+    handle IDENTITY message and bssid blacklist
+    
+    Bug:15990551
+    Bug:15977507
+    
+    Change-Id: I78b03915781bd6d5f9f5881c80324a2788b9e837
+    clean up the connect/disconnect procedure
+    
+    Change-Id: Iba87591e790106b882d465dbba3ddac120f044d9
+    improve link flapping
+    
+    Change-Id: Ie378dde318dccaa566f660c9497bae31d4a9f1ab
+    logs improvements, fix reading back networkHistory file
+    
+    Change-Id: Iec4b11a3e0d8820b558abea6cc068a905199896d
+    logs improvements, fix reading back networkHistory file
+    
+    Change-Id: Iec4b11a3e0d8820b558abea6cc068a905199896d
+    make verbose logging a wifimanager hidden API
+    
+    bug: 151386707
+    
+    Change-Id: Ide885ce96621fe4bab6abf10291bc8441eecad4a
+    various autojoin fixes
+    
+    Bug:15111865
+    Bug:15080778
+    Bug:14994925
+    
+    Change-Id: I753ff62b48a87db4096fdec18b4de070656cf901
+    Make Wifi WPS API available on application layer
+    
+    Un-hide WPS methods (and required interface classes, etc.) of WifiManager.java to
+    enable Apps to start/stop the WPS procedure, add a patch for WPS method KEYPAD to
+    avoid early failure callbacks. (Methods PBC, DISPLAY, KEYPAD tested on 4.4.2_r2.)
+    
+    Change-Id: I25aafdc4b637c87d754d4fdb70e40a34a569b738
+    Signed-off-by: Olaf Stoyke <o.stoyke@avm.de>
+    Hotspot 2.0 framework support -- more functionalities
+    
+    - WifiMonitor handles more HS20 events
+    - Passpoint stack parses ANQP results
+    
+    Bug: 5485670
+    Change-Id: I5f8e7c80f8024379fe7a6c4394f1faae2040cfba
+    Hotspot 2.0 framework support -- inital implementation
+    
+    Bug: 5485670
+    Change-Id: I48a63f5a45e0c217f5b73b4b3c45ea1acee76034
+    restore correct tracking of auth failure; bring up assoc reject info to supplicant
+    
+    Change-Id: I7eeb110f1f14149f560630848f26f7cc9f5cbb67
+    autojoin is to eager to black list networks due to connection failure
+    
+    Bug: 14834820
+    
+    Change-Id: I81c05b657b3d218bb4d5f5bf82dd6a8ad3859bd1
+    fix crash on null string in AUTH_FAILURE message handling
+    
+    Change-Id: I657951f8bb37af778f8d4ab2c9b9d2ab2956220c
+    autojoin initial implementation
+    
+    Change-Id: Iea4e5c0b8e988e410d2f9885ecaf6317d34cc1d1
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Merge branch 'LA.BF64.1.2.1' of git://codeaurora.org/platform/frameworks/opt/net/wifi into cm-12.1
+    
+    Change-Id: I7e808307164c261fcbdbec7e4ec4fdb94bc1fc3c
+    wifi: do not adjust wifi score when WQE is enabled
+    
+    revert to Wifi default score on wifi connect
+    CRs-fixed: 865158
+    Change-Id: Id700cf80f599f651682fd7c71fc5e7a80c8c6fe5
+    wifi: Allow Settings to retrieve country code (1/3)
+    
+    Support for access to operational wifi country
+    
+    JIRA: CML-118
+    
+    Change-Id: I429326a77649c77ba40b00eb2236de3ca8839e57
+    Signed-off-by: Jorge Ruesga <jorge@ruesga.com>
+    Revert "aggressively blacklist WifiConfiguration for the purpose of switching network"
+    
+    This also blacklists network when dhcp acquisition fails due to
+    range-problems and then blacklists the network for 2 days, even
+    when it is the only available network (and it provides perfectly
+    good internet-access when in range).
+    
+    This reverts commit 4fa99f57077ab287d6ed1b51cf308c44ce8bbe0b.
+    
+    Change-Id: I2bb73341c64095b7bbb13887a04a44983aced0c7
+    Wifi: Do not enable saved networks in ConnectedState
+    
+    Since Wi-Fi Framework takes control over wpa_supplicant for network
+    selection, there is no point to enable all the networks in the supplicant
+    as this would end up in supplicant connect to other networks than the
+    one selected by the framework.
+    
+    Change-Id: Ie691a4aa4e446363d6e2e6482956fca83eb7b183
+    CRs-Fixed: 800685
+    Wifi: Filter the scan results based on the configured band
+    
+    Framework needs to get the scan results based on the configured band as the
+    supplicant / host driver shall maintain the cache for these scan results.
+    Without this, the UI shall display the scan results not corresponding to the
+    configured band.
+    This band capability also needs to be considered while getting the visibility
+    of the network to trigger auto join.
+    This commit ensures the same.
+    
+    Change-Id: Iccc9ab936895b3fb1028c2ad6a4fa12b7d4c7067
+    CRs-Fixed: 797374
+    wifi: Handle error cases when EAP-SIM info is NULL/Unsupported
+    
+    To get the SIM information,UI queries framework through the
+    API exposed by the Wi-Fi framework which further interacts with
+    the supplicant.If the supplicant times out or does not support
+    the EAP-SIM functionality ,it either returns null or the string
+    "unsupported".This throws an error while parsing at WifiEapSimInfo.
+    This commit handles the error cases by catching the exception.
+    
+    Change-Id: Ie7b20dc32016d0396e68971415a835c40cf37989
+    CRs-Fixed: 796265
+    wifi: Handle error cases when EAP-SIM info is NULL/Unsupported
+    
+    To get the SIM information,UI queries framework through the
+    API exposed by the Wi-Fi framework which further interacts with
+    the supplicant.If the supplicant times out or does not support
+    the EAP-SIM functionality ,it either returns null or the string
+    "unsupported".This throws an error while parsing at WifiEapSimInfo.
+    This commit handles the error cases by catching the exception.
+    
+    Change-Id: Ie7b20dc32016d0396e68971415a835c40cf37989
+    CRs-Fixed: 796265
+    export API to disable autojoin scan initial implementation
+    
+    Change-Id: I504f135ab91c5e483a92306a9b96d70b80f11362
+    WifiStateMachine: Tone down logging
+    
+    Change-Id: Iebb37cedc7ac999c7d6512681ae6c924ebd0fd2b
+    Wifi: Add IBSS supported method
+    
+      Add method isIbssSupported() to WifiManager and related classes to query wether
+      the driver supports IBSS mode. The query is answered by wpa_supplicants new
+      command "get_capability modes".
+    
+    Change-Id: Idbccdf9d3b60855a0067032a0073f5aa001be224
+    wifi: Set the mode at native layer
+    
+     * Set normal/AP mode so that the HAL can specify correct module
+       arguments when loading the driver.
+    
+    Change-Id: I6eee2cc53b5f1e70306e252e52c909833f220515
+    Compilation fix
+    
+    Change-Id: I261bb890d53e3b0712fd70a199272133d3fe0f0c
+    send network state changed broadcast when BSSID change
+    
+    Change-Id: I1920d8656a9db0aead90787b5049106a5e7ab538
+    WiFi: If auto join is disabled then issue scan with connection
+    
+    If Auto join is disabled then supplicant in disconnected state. Supplicant
+    in disconnected state shall attempt to connect to the configured profiles
+    based on the scan requests triggered by the framework. This requires the
+    framework to issue scan with connection setup. So issue the scan with
+    connection setup when station is disconnected.
+    
+    Change-Id: Id74a12b0b30baee68f99e7c25d3e435c537234c8
+    CRs-Fixed: 764614
+    Wifi: Provide fix for authentication failure during LCD off state
+    
+    Framework issues PNO SCAN in LCD off state, whenever it enters into
+    Disconnected state. If PNO is successful, it stops scanning and tries for
+    connection attempt. Supplicant does not attempt reconnection on authentication
+    failure.There is no module to issue scan again for reconnection.
+    Hence framework should issue PNO SCAN, if authentication is failed in LCD
+    off state.
+    
+    Change-Id: Ib1a5843ccac8bc1cfc1a19e2d94011c598c379bd
+    CRs-Fixed: 780883
+    WiFi: Correct CMD_PNO_PERIODIC_SCAN command value
+    
+    In WifiStateMachine CMD_PNO_PERIODIC_SCAN and CMD_ROAM_WATCHDOG_TIMER
+    constants are assigned same value, due to which one of the operation fails.
+    Assign correct command value to CMD_PNO_PERIODIC_SCAN.
+    
+    Change-Id: I478948d1a2c0308df4de9f0e15d0dd32a16e4a40
+    CRs-Fixed: 791409
+    aggressively blacklist WifiConfiguration for the purpose of switching network
+    
+    In cases where networks are not properly configured, WiFi might tries to repeatdly
+    switch from one network to a bad network, or might try to roam and renew DHCP which can fail.
+    In KK, WiFi autojoin would try other networks (by cycling to network it sees) and
+    end up associated to a "good" network. In L release even thought WiFi might pick
+    a good network it will still repeatedly try to switch to what it thinks is a better
+    network and fail, thus annoying the user whose connection becomes unstable.
+    
+    This CL tries to remember networks that have seen multiple DHCP or auth failure in
+    the past and for those networks it disable roaming temporarily.
+    That is, if wifi is not associated to any network, it will tries to join a network
+    aggressively, however if wifi is currently associated to a network, it will not try
+    to switch to a new network if that new network has seen multiple failure in the past.
+    
+    The maximum blacklist time is set to 2 days for now.
+    An example of such situation is:
+    - user has multiple SSID at home, one of which is incorrectly configured with a wrong password
+    - broken DHCP situation (potentially: multiple servers on home network, broken implementation incorrecting NAK'ing DHCP requests but properly serving DHCP offer...)
+    Bug:18792931
+    
+    Change-Id: Ib09eaaea978c772f630e86696f9a49f18ad708e2
+    wifi:Provide UI with SIM info for EAP-SIM authentication
+    
+    User Interface requires the SIM information (viz. number / type
+    of SIM's supported on the device), using which the respective
+    authentication option is provisioned to the user. This commit
+    queries the same by invoking a command exposed by the
+    wpa_supplicant. It is the wpa_supplicant that gets this
+    information.
+    
+    CRs-Fixed: 775942
+    Change-Id: I93c6a5450c806d8fade0103ef96eca986c925eba
+    prevent null BSSID being inject as scan results
+    Bug:18917134
+    
+    Change-Id: I0c4d0a2bd5383bac473a588af89589bf70f47c6c
+    Disconnect if we had IPv4 and lost it.
+    
+    More specifically, the DHCP_FAILURE case is entered when a
+    DHCPv4 RENEW fails.  Even though we would connect to a network with
+    no IPv4, when roaming to a "same network" and losing IPv4 it's
+    probably better to disconnect and start afresh.
+    
+    Bug: 18867306
+    Change-Id: Ie667b4f0481ae0510d0dc00db819f4e5d43d98a9
+    Split untrusted NetworkFactory from regular one.
+    
+    This ensures that we see all requests for untrusted networks.
+    
+    Bug: 18815795
+    Change-Id: I9aaba6095b934fee27a27b20fa3adb2a10648e80
+    Keep AutoJoin enabled when user has manually selected a network
+    Bug:18865214
+    
+    Change-Id: Iae9297cd50ebaf12217d12e4c5d55ae05316e917
+    Split untrusted NetworkFactory from regular one.
+    
+    This ensures that we see all requests for untrusted networks.
+    
+    Bug: 18815795
+    Change-Id: I9aaba6095b934fee27a27b20fa3adb2a10648e80
+    Split untrusted NetworkFactory from regular one.
+    
+    This ensures that mConnectionRequests is managed exactly the same way
+    as it is in standard builds, while still making sure that we see all
+    requests for untrusted networks.
+    
+    Bug: 18815795
+    Change-Id: I9aaba6095b934fee27a27b20fa3adb2a10648e80
+    Revert "Hack to work around NetworkFactory bug."
+    
+    This reverts commit 22fd791a340bd4b66813eefa158131bc16122580.
+    
+    Change-Id: I695c9eeea66998845f3210af7d305a469899585e
+    add debug logs to confirm network flapping issue is fixed
+    Bug:18706288
+    
+    Change-Id: I27a86aeb650a63511b667244b0138afbc1bc059e
+    Hack to work around NetworkFactory bug.
+    
+    Should be reverted before launch, when a proper fix is in.
+    
+    Bug: 18637384
+    Change-Id: Id883cbc3c9379a7bad6237e9738a7b09fc5d3503
+    autojoin scanning + P2P
+    - discard autojoin scan when both infra and P2P are connected
+    - reduce autojoin scan period when P2P is connected and infra is disconnected
+    Bug:18692653
+    
+    Change-Id: Id1891e6a9f2863d8876915cfefd158fb1712b8fe
+    autojoin scanning + P2P
+    - discard autojoin scan when both infra and P2P are connected
+    - reduce autojoin scan period when P2P is connected and infra is disconnected
+    Bug:18692653
+    
+    Change-Id: Id1891e6a9f2863d8876915cfefd158fb1712b8fe
+    - keep track of ephemeral configurations that are deleted by user
+    -  make sure we cleaned up prior ephemeral WiFiconfiguration from wpa_supplicant.conf
+    Bug:18525241
+    
+    Change-Id: I773cb9b28fe139d1cd5df622619b4a9cf866d6ce
+    rework scan logic so as to make use of delayed messages instead of scan alarm
+    
+    Bug:18594119
+    Change-Id: I0d49fa2908d824de6adb125cf862de47f8ba5e91
+    rework scan logic so as to make use of delayed messages instead of scan alarm
+    
+    Bug:18594119
+    Change-Id: I0d49fa2908d824de6adb125cf862de47f8ba5e91
+    reenable disabled config after a few minutes
+    
+    This change also loose stale user selection which prevents device to re-join potentially
+    reenabled configs
+    
+    Bug:18571727
+    Change-Id: I0acacd3fb1fbb64a48d0407d7b9e4e5403a93726
+    - keep track of ephemeral configurations that are deleted by user
+    -  make sure we cleaned up prior ephemeral WiFiconfiguration from wpa_supplicant.conf
+    Bug:18525241
+    
+    Change-Id: I773cb9b28fe139d1cd5df622619b4a9cf866d6ce
+    wifi: Reduce the frequency of scans when in disconnected state and display ON
+    
+    When STA is not connected, display is ON and there are no saved profiles then
+    reduce frequent scans due to scan alarm source by increasing scan alarm time
+    mCurrentScanAlarmMs to 5 minutes since there is already a periodic scan every
+    mSupplicantScanIntervalMs (15 seconds). If there are saved profiles then keep
+    mCurrentScanAlarmMs to 10 seconds.
+    
+    Change-Id: Icc1ec5803b2048f2d12b47092894127be6626dcd
+    CRs-Fixed: 764660
+    - dont loose explicitely selected bit when autojoining same network
+    - use scorer only for untrusted networks
+    Bug:18490330
+    Bug:18368125
+    
+    Change-Id: I13f21a2247d071d2e8edc48546c14e0a9e2bc5d6
+    Work on issue #18118255: StateMachine aggressively keeping its own logs...
+    
+    ...(512KB RAM, 10K objects)
+    
+    Pull this back to 300 entries on Svelte devices...  we also need to reduce
+    this on non-Svelte devices, but at least right now we desperately need it
+    fixed on Svelte.
+    
+    Change-Id: I301bf8a4637c066166a5a69c178d581c072b8dc5
+    register network factory before processing scan results
+    Bug:18512598
+    
+    Change-Id: I79aa972f686f2c4090012a36dcad13a9e53d5566
+    register network factory before processing scan results
+    Bug:18512598
+    
+    Change-Id: I79aa972f686f2c4090012a36dcad13a9e53d5566
+    remove dfs channel from location restricted scans
+    
+    Change-Id: I387816c8682e9f595229ecbb20c35711ea1f069b
+    Revert "wlan: Provide runtime option to enable or disable rssi threshold (opt)"
+    
+    This reverts commit 9c5eeac30a1091bd4906a341ebcb83c5c5561d96.
+    
+    RSSI threshold parameters are now user configurable.Below are the
+    parameters.
+    THRESHOLD_UNBLACKLIST_HARD_5G
+    THRESHOLD_UNBLACKLIST_SOFT_5G
+    THRESHOLD_UNBLACKLIST_HARD_24G
+    THRESHOLD_UNBLACKLIST_SOFT_24G
+    THRESHOLD_INITIAL_AUTO_JOIN_ATTEMPT_RSSI_MIN_5G
+    THRESHOLD_INITIAL_AUTO_JOIN_ATTEMPT_RSSI_MIN_24G
+    Hence reverting the gerrit
+    
+    Change-Id: I4caeedb0ac209d9f8a6934d235e2f82390989187
+    CRs-Fixed: 757958
+    - dont loose explicitely selected bit when autojoining same network
+    - use scorer only for untrusted networks
+    Bug:18490330
+    Bug:18368125
+    
+    Change-Id: I13f21a2247d071d2e8edc48546c14e0a9e2bc5d6
+    Wifi: Enable supplicant's auto reconnect ability if auto join is disabled
+    
+    Auto Join capability in the framework shall take the control of WiFi
+    network management and thus does not allow the supplicant to auto
+    reconnect to the configured profiles. However,to ensure automatic
+    connection to the networks happen when auto join functionality is
+    disabled in the framework,supplicant needs to be configured with auto
+    reconnect capability.
+    This commit ensures the same.
+    
+    Change-Id: I08119f459b9c4cc7a022f6c3e0b881b1542c671c
+    CRs-Fixed: 759411
+    wifi: Address the improper scan behavior on PNO failure
+    
+    This commit takes care of the following behavior on a PNO fail.
+    
+    Trigger a periodic scan on a PNO failure when p2p session is active
+    and there are no configured profiles.
+    
+    There is no point to continue the periodic scan triggered on a PNO fail
+    when p2p session is active.Thus, stall further attempts after a p2p
+    disconnections.
+    
+    Change-Id: I7844dca7fe9dd45b99e71ef04beb19ea2ae5343e
+    CRs-Fixed: 759618
+    Wifi: Reduce auto join scans when p2p is connected
+    
+    When p2p is connected, change alarm source originated scan interval
+    to 5 minutes. Add below configuration parameter in autojoinconfig.txt
+    file to modify this scan interval:
+    AUTO_JOIN_SCAN_INTERVAL_WHEN_P2P_CONNECTED:   <milliseconds>
+    
+    Change-Id: I8e8eb635981129d43cca88db6392c9a2b1e25a10
+    CRs-Fixed: 758935
+    Wifi:Fix issue in connection in WPS mode when STA_AUTOCONNECT is disabled
+    
+    Autojoin is enabled in framework by default and this disables
+    connection retry feature in supplicant. For WPS failure cases
+    framework needs to retry connection.
+    This change is for framework handling connection retry logic in case
+    of WPS Connection failures with reason code other than 3.
+    Reason code 3 is generated by supplicant and in that case framework ignores
+    retry.
+    
+    Change-Id: I5d59b578aac339f4018c93c5e0f11ef45203d056
+    CRs-Fixed: 759641
+    perform regular autojoin when turning wifi on
+    Bug:18451553
+    
+    Change-Id: I729ae360209e852e4e64bed0c584ed076b1281b4
+    Trigger auto-join from WifiManager.reconnect()
+    
+    Bug: 17397676
+    
+    Change-Id: I0356c363b90a40a9f9424cf9c50e0d9f1c370414
+    WiFi : Fix for  DHCP to Static IP configuration problem
+    
+    WifiStateMachine shall update the IP address configuration to
+    the kernel through NetworkManagementService.This notification
+    from the kernel is again sent to the connectivity service
+    through the NetLinkStateTracker and WiFiStateMachine.
+    Thus ,if the interface is down during this IP address
+    reconfiguration (for the case of DHCP to Static IP configuration),
+    Connectivity service shall be notified with old IP address ,NULL(0)
+    IP address(signifying interface down) and the latest IP address.
+    This notification was done by updating the IP address using a local
+    variable , and hence the second notification on the interface down
+    is overridden by the last notification , resulting in missed
+    interface down notification to the connectivity service.This
+    resulted in failed data connection when IP address is changed from
+    DHCP to IP on the fly.
+    Hence ,this gerrit enhances the design and also pass the updated
+    IP address to the connectivity service.
+    
+    Change-Id: Ib0b9fd02c488b709ca3cd9713d7a9d86243e0224
+    CRs-Fixed: 750277
+    wifi: Do a periodic scan for a PNO failure only on non zero sta profiles
+    
+    The current framework shall ensure to do a periodic scan for the case
+    where the configured profiles are 0 but does not address the case of
+    PNO trigger failure.Hence,do a periodic scan for a failure in PNO
+    trigger on non zero configured profiles.
+    
+    Change-Id: I4f5ce511baf0ae8695c52adf63bce13e7790117e
+    CRs-Fixed: 756529
+    Fix call to startScan for untrusted setting change.
+    
+    Bug: 18221007
+    Change-Id: Idb526b1f275100ab2a004e7923a032f2e98db6de
+    check for null pointers when processing CMD_START_SCAN
+    
+    Change-Id: Icc3bcb37d181e6f28673808d5c3239d18c6a482f
+    Fix call to startScan for untrusted setting change.
+    
+    Bug: 18221007
+    Change-Id: Idb526b1f275100ab2a004e7923a032f2e98db6de
+    - better handling of deleted configurations, only keep a crc32 of deleted SSIDs
+    - trigger a scan when changing settings allowing use of untrusted networks
+    Bug:18221007
+    Bug:18269621
+    
+    Change-Id: I7eec8913737726a1bf468a96eae562cc567ecfd3
+    Fix connections to unintended networks
+    
+    This change fixes a bug in Wifi state machine - it unintentionally
+    enables all the networks and results in connecting to a network that
+    may not have been chosen by AutoJoinController.
+    
+    Bug: 18266514
+    
+    Change-Id: I0d5d274819194c0eea4f3812d506a92899f3eb54
+    Don't allow SCAN_REQUEST broadcast to launch apps
+    
+    This change sets the package to Wifi package for all the timer
+    broadcasts it schedules. This way, the alarm manager won't wake
+    up any other apps.
+    
+    Bug: 17611296
+    Change-Id: I248695b2c4763c799b730a236945e91757dfde16
+    wlan: Honour regular scan in case Preferred Network Offload scan fails
+    
+    In suspend mode STA fails to connect to an AP if preferred network
+    offload configuration is failed to configure the saved profile.
+    
+    Framework sets a scan alarm if the PNO configuration fails. This
+    scan alarm apparently fails to issue a scan for mCurrentScanAlarmMs
+    set to 0 . Thus, set this parameter to mDisconnectedScanPeriodMs for
+    the cases when PNO trigger fails.
+    
+    Change-Id: Iaa793642fe3c9dd307b199438368baa26a33bd61
+    CRs-Fixed: 753999
+    dont blacklist wifi config that have had validated internet status in the past
+    
+    Change-Id: I4498888ffb1d3189204a553462ff4342239ed2af
+    wifi: update to blacklisting mechanism
+    
+    Disable or Enable Auto Join for an Access Point blacklisted or
+    unblacklisted by WQE if wqe feature is enabled.
+    
+    Change-Id: I6a655c9d0a6b21963c13f36e25ab7f74f98e97cc
+    CRs-Fixed: 728066
+    P2P: Change supplicant scan intervel during WFD session
+    
+    During WFD session supplicant scan intervel is one minute. If
+    there are some saved profiles, then supplicant will issue a scan
+    for every one minute, this is causing some ping latency in WFD.
+        Hence supplicant scan intervel should change to five minutes
+    to improve ping latency in WFD session only.
+    
+    Change-Id: If827bab6f186ebeaac90f297935bc8b987eb4d09
+    CRs-Fixed: 669404
+    Support conversion of untrusted networks to trusted.
+    
+    When the user requests to connect to a network which already has an
+    untrusted config, we update the existing config and clear the
+    ephemeral bit rather than creating a new config. We also maintain the
+    current connection if that ephemeral config matches the currently
+    connected configuration, and merely tell the system that the network
+    is now trusted.
+    
+    The above also applies for AUTO_JOIN_DELETED networks, which are
+    similarly filtered out from the list of WifiConfigurations.
+    
+    Bug: 18206275
+    Change-Id: I1dff7e3c073888c619e6a5c3a40295a44b12e403
+    wlan: Modify sequence of events sent during DHCP phase.
+    
+    Modify sequence of events sent to driver during DHCP phase, to
+    make sure WLAN can enter into power save only after DHCP is done.
+    
+    Change-Id: Idf7ed8d6e1c011bd3b7af9f5ca9d4db46de55fb0
+    CRs-Fixed: 719573
+    wlan: Provide runtime option to enable or disable rssi threshold (opt)
+    
+    RSSI threshold check in AutoJoin feature will not allow
+    to connect if AP's RSSI is low, this option will allow user
+    to configure through advance setting application.
+    
+    Conflicts:
+            service/java/com/android/server/wifi/WifiAutoJoinController.java
+    
+    Change-Id: Ifd6538b564a3485642dce1e33f70194f89cb5f61
+    CRs-Fixed: 710284
+    Conflicts:
+    service/java/com/android/server/wifi/WifiAutoJoinController.java
+    wlan: Fix for delay in PNO scan trigger after p2p disconnect
+    
+    If PNO is disabled due to concurrent active p2p session,
+    on P2P disconnect PNO scan is not triggered until the next
+    framework scan is scheduled.
+    To mitigate this issue trigger the PNO scan on receiving
+    P2P_CONNECTION_CHANGED intent in disconnect state of the
+    wlan: Fix for delay in PNO scan trigger after p2p disconnect.
+    
+    Change-Id: I9de116f4c82ce103a5787f91b7c7129748fee517
+    CRs-Fixed: 584058
+    wlan: Error handling on PNO failure due to active P2P session
+    
+    If set PNO fails due to concurrent active p2p sessions,
+    handle the error condition in framework and issue a
+    regular scan for every framework background scan interval
+    until set PNO is either success or disabled.
+    
+    Change-Id: Ia4e8d9aef9ed24e534cb57cea7c8ba7a7ffc509e
+    CRs-Fixed: 586875
+    P2P: Disable 5GHz channels in 2.4 GHz only mode
+    
+    When P2P device is configured in 2.4GHz only mode supplicant
+    should not advertize 5GHz channels in its go negotiation frames.
+      Hence disable 5GHz band channels when 2.4 GHz band only mode
+    selected in Wi-Fi advanced settings.
+    
+    Change-Id: Ice8c9de34b19587c7e8432842a79551cc0e2333a
+    CRs-Fixed: 682823
+    framework/base: Do not kill the supplicant on a request to stop it
+    
+    Supplicant is killed on obtaining the first TERMINATE event when
+    requested to stop from the framework. This shall result in improper
+    shutdown of the supplicant without proper cleanup of the resources
+    allocated for all the interfaces.
+    Moreover, there is no point in killing the supplicant when the
+    request itself is to to stop the same. Thus, do not kill the
+    supplicant on the TERMINATE event.
+    
+    CRs-Fixed: 601759
+    Change-Id: I6b96fa8665a1bfe8d8af81ce92b06f8c2457b779
+    Update the WIFI score.
+    
+    Set wifi score to minimum when the network is bad and set it to
+    a high value when the network is good.
+    
+    Change-Id: I103eea7080b91f5b9757a3932d6f6839b2909e01
+    Wifi: Add Connectivity Engine WQE support.
+    
+    Receive state change intent and update the score
+    accordingly.
+    
+    Conflicts:
+            service/java/com/android/server/wifi/WifiStateMachine.java
+    
+    Change-Id: I59f8a242b60a9f4cb221920db2b000a5e9340767
+    Wifi: provide runtime logging option in WifiP2pService
+    
+    Runtime logging option for WifiP2pService.
+    
+    Change-Id: I3e4550037654c8713fb8d9c6aa6b4351d3973033
+    CRs-fixed: 716835
+    Wi-Fi: Set BTCOEXMODE_DISABLED irrespective of BT's connection state
+    
+    BTCOEXMODE_DISABLE has to be triggered during the DHCP phase even
+    on an active BT connection to ensure that Wi-Fi is given
+    preference over the BT.
+    This commit ensures the same
+    
+    Change-Id: Id5c2bc264cd4d21be7473f003fc5fbdbf9be943e
+    CRs-Fixed: 695307
+    propagate noInternetAccess flag and network status
+    
+    Change-Id: I7a1ac684c11c3ef93462e02cfc9d6fde3c9b81d7
+    read packet counters before and after DHCP
+    
+    Change-Id: I0c1d94a6d687c2788b71523adae01cde59d34aa7
+    print both uptime and milli since boot in the wifi state machine logs
+    
+    Change-Id: I5521b59efcf1c3fb6d0e2dc62b3db92a27c49ebd
+    various fixes:
+    - Carry over the IP config when self adding a configuration
+    - fix null pointer exception in wificonfigstore, trying to read the IPConfig file
+    Bug:18058314
+    Bug:18057271
+    
+    Change-Id: Ia1922f0cf44aa6eaf67928ac392a6ec92431f279
+    Don't connect if the NetworkFactory has not requested it.
+    
+    This fixes persistent oscillations that occur if Ethernet is
+    plugged in, where wifi connects, gets torn down because its
+    score is too low, reconnects, ...
+    
+    Bug: 17632610
+    Change-Id: Icfeed9b46d97a8868b64a0be3cb83ac2884f3228
+    Make isProvisioned() use LinkProperties' concept of same.
+    
+    Change the concept of provisioned to rely on LinkProperties#isProvisioned,
+    unless a static configuration (possibly incomplete) is in effect.
+    
+    Bug: 17769720
+    Change-Id: Ie45e45016d3b33d98097727d49b9c09349fc9021
+    - detect that firmware cant stay connected to 5GHz AP and tune down 5GHz preference accordingly
+    - use a long random string so as to obfuscate PSK of WiFiConfiguration we have deleted but keep around in the autojoin database
+    - if autojoin doesn't find a known network to join, and sees a known network that ConnectivityService never marked as UNWANTED due to bad signal, then add a boost of up to +8dB to this network's autojoin threshold, also includes the boost in the network's score that is sent to connectivity service
+    
+    b/17960587
+    b/18038705
+    b/18030088
+    b/17870963
+    
+    Change-Id: I6cb2c6fdff799453b3d780c43f99d070117e0dc7
+    - detect that firmware cant stay connected to 5GHz AP and tune down 5GHz preference accordingly
+    - use a long random string so as to obfuscate PSK of WiFiConfiguration we have deleted but keep around in the autojoin database
+    - if autojoin doesn't find a known network to join, and sees a known network that ConnectivityService never marked as UNWANTED due to bad signal, then add a boost of up to +8dB to this network's autojoin threshold, also includes the boost in the network's score that is sent to connectivity service
+    
+    b/17960587
+    b/18038705
+    b/18030088
+    b/17870963
+    
+    Change-Id: I6cb2c6fdff799453b3d780c43f99d070117e0dc7
+    Taking into account user join preference more aggressively; add debug info for roaming
+    Bug:17669859
+    Big:17651877
+    
+    Change-Id: I3f763f354848d2bc3863f2887bccaf0ff9af426e
+    fix bssid blacklisting
+    Bug:17960587
+    Bug:17966377
+    
+    Change-Id: I6ead5386f961e8bd0705ceea190752dd20f7e38a
+    Allow connections to untrusted SSIDs when requested.
+    
+    When at least one NetworkRequest for an untrusted network is active,
+    autojoin will allow connections to untrusted connections. Upon
+    successful connection, we tell the framework whether Wifi is currently
+    connected to a trusted or untrusted network. If all requests for
+    untrusted networks are withdrawn, and we are currently connected to an
+    untrusted network, that connection is dropped.
+    
+    Bug: 15892711
+    Change-Id: I3f8625996013ee850927fc2290a24c591e3db691
+    In case of driver roaming and auth failure, allow for fast reconnect
+    Bug:17747008
+    
+    Change-Id: I87eefc5a0952dd5f7159385aa180c02a38d92432
+    reenable networks completely, 5 mins after DHCP failure blacklist; revert aggressive wifi to cellular handover when handing over due to link speed
+    Bug:17949093
+    Bug:17947372
+    Bug:17897698
+    
+    Change-Id: I1d398238022fd380952cb8dc28f47cc38d0b7b06
+    
+    Conflicts:
+            service/java/com/android/server/wifi/WifiStateMachine.java
+    various fixes:
+    - adding debug information to bug report for Bug:16751877
+    - reenable networks when entering DisconnectedState
+    - dont force MSG_INFO log level at supplicant
+    Bug:16751877
+    Bug:17811889
+    Bug:17881399
+    
+    Change-Id: I89b4f5c05a1f64f9d1e8c407f62036efa0265043
+    - slightly better network log
+    - add debug option to enable/disable associated full band scans
+    - networkHistory.txt and wpa_supplicant.conf file get out of sync regarding config.status variable
+    Bug:17648443
+    
+    Change-Id: Ie1c6dac9f94b7d71599734e2263b9456cf6278ee
+    Don't fire SCAN_RESULTS_AVAILABLE broadcast for partial scans
+    
+    This ensures that apps don't get partial scan results
+    
+    Bug: 17612695
+    
+    Change-Id: Id5d7b9831a54c9fc430f329b4b83b8342f5063ea
+    drop score more aggressively based on link speed, Bug:17514346
+    
+    Change-Id: Ib7a09adc961d76bc5da49cfff2edd4120175562c
+    - make rssi poll and wifi scan when associated configurable
+    - fix regression when forgeting network
+    - fix NPE in calculateWifiScore
+    Bug:17564108
+    
+    Change-Id: I47329b1fb0f23c72886bdd3de99b4f9242d59eec
+    inconditionally issue the reassociate command in the case of linkdebouncing, dont treat AUTO_SAVE commands coming from autojoincontroller as user triggered WifiManager.SAVE_NETWORK commands
+    Bug:17624613
+    
+    Change-Id: I2c586646bd967cb2d699433b0c228210647f4ee3
+    Introduce config setting for scanning mac OUI
+    
+    This setting will allow an OEMs to override the default Google OUI
+    for scanning.
+    
+    Bug: 17468465
+    Change-Id: I3d9a6cf6451bcc98d0cad158bc52c7b3a52cb0ea
+    - better sanity check on psk for linking config
+    - black list BSSID in case of repeated DHCP failures
+    - black list  network with noInternet connectivity from autojoin
+    - clean up Disconnecting state transition
+    Bug:17512891
+    Bug:17395269
+    Bug:16480230
+    Bug:17518367
+    Bug:17545859
+    
+    Change-Id: I1683a66fd58424ad2177c6508b101fd49392e22a
+    various fixes:
+    
+    - additional debug logs
+    - allow a scan result to be associated to mulitple wifi configurations
+    - additional logs to track 17516271
+    Bug:17510471
+    
+    Change-Id: I39975f17494c541989f7f0e0fd8fcf890934ee15
+    set proper link quality thresholds
+    
+    Bug:17514073
+    
+    Change-Id: Icf4dbd81e8547bb837c8346c9af5cfc98d7b00ab
+    Fix conditions that my leave ScanAlarm running in background
+    
+    This can happen because of race - you could get DISCONNECTED from
+    supplicant between CMD_SCREEN_STATE_CHANGED (for screen off) and
+    CMD_ENABLE_BACKGROUND_SCAN - which sets the background scan. This can
+    cause Disconnected state to leave a scan alarm running.
+    
+    This change removes that possibility by combining processing of
+    CMD_ENABLE_BACKGROUND_SCAN into CMD_SCREEN_STATE_CHANGED.
+    
+    RTC_WAKEUP alarm is also changed to RTC when PNO is supported; so
+    we shouldn't wake up the AP anymore.
+    
+    Bug: 17261586
+    
+    Change-Id: Ic7c3dbf6ed5e042f9ed6b96349bf5ec50e509552
+    improve debugging messages & logging
+    
+    Change-Id: I7c668c24357663fff418c62d21c1fc6cb571590a
+    make wifi cellular handover params configurable
+    
+    Change-Id: Icc1f722d3e0293ec58027770b941fc98dc24ce44
+    various fixes:
+    
+    - add null pointer check to wifi watchdog state machine
+    - correctly parse the REQUEST IDENTIY event sent by wpa_supplicant
+    - make autojoining wificonfiguration more aggressive based on user input
+    Bug:17469863
+    Bug:17426395
+    Bug:17475816
+    
+    Change-Id: I1785c917c0e570de0edaa02bd0ca6536be9d7c0b
+    dont accept CONNECTION_EVENT until roaming is complete
+    
+    Change-Id: Iedde560abc9d2f4c3a3b9b9bfc5caaaa5584472e
+    dont accept CONNECTION_EVENT until roaming is complete
+    
+    Change-Id: Iedde560abc9d2f4c3a3b9b9bfc5caaaa5584472e
+    make autojoin configurable, clean up BSSID info that may be stake in WifiConfiguration
+    
+    - allow scans in verifying poor link
+    Bug:17420929
+    
+    Change-Id: I310ad60a443d648666ebac49b3eeb56c7e9a0ecc
+    various fixes:
+    
+    - persist Wificonfiguration.ephemeral
+    - dont trigger attemptRoam on previous configuration
+    - treat ADD_OR_UPDATE_NETWORK with highest priority as a user network selection
+    - add associated scan period in framework/base/core/res/res/
+    
+    Bug:17202406
+    
+    Change-Id: Ibd92af49c6b79c6799d90d4b72b72547a4c936ca
+    Add NetworkAgent event for ExplicitlySelected
+    
+    Lets Wifi tell us when the user selected this AP vs auto-connected.
+    
+    bug:17396168
+    Change-Id: I6e067ab62ed49040629aa31fe07ff880d3d542f0
+    dont debounce on locally generated disconnect
+    
+    Change-Id: Id75a866959fc99828f6143230a9ade3e6a2b81b9
+    various fixes:
+    
+    - cleanup setWifiEnable transitions
+    - dont scan right when entering connected and Disconnected state, instead startScan() adds a 200ms delay before starting the scans, so as to let the state machiine time to process deferred message
+    - dont forget to send the NetworkStateChanged Broadcast when we set the network detailed state
+    - autojoin dont attempt to join WifiConfigurations marked as noInternetAccess, unless explicitely selected by the user
+    - keep stats of user triggered wifi state disabling requests
+    - fix bad roaming situation when BSSID is specified in network block
+    
+    Bug:17193677
+    
+    Change-Id: Ia103a93232f40519c7b4eef07254f32342ea5615
+    adding debug logs
+    
+    - add debug status to WifiStatemachine message handling
+    - tracking scan requests: add scan request counter and addl debug information
+    - clean wifi packet stats when we disable RSSI polling
+    - count home network as >=6 BSSID for the purpose of calculating wifi score
+    
+    Change-Id: Ic13ef303fdcfe60c0e27f225af4e233b9a2cffaa
+    adding debug logs
+    
+    - add debug status to WifiStatemachine message handling
+    - tracking scan requests: add scan request counter and addl debug information
+    - clean wifi packet stats when we disable RSSI polling
+    - count home network as >=6 BSSID for the purpose of calculating wifi score
+    
+    Change-Id: Ic13ef303fdcfe60c0e27f225af4e233b9a2cffaa
+    fix processing of CMD_SAVE_NETWORK
+    
+    Change-Id: Ia42e6f3e983f69b38f899c56afd07da1e78a10b3
+    help debugging scan issues:
+    - adding additional logs
+    - make handleSCreenStateChanged a message
+    - track sender of the CMD_GET_CONFIGURED_NETWORKS message
+    
+    Change-Id: I5717d07850ed563193b694a74d236bb8795fbd38
+    AutoJoin fixes:
+    
+    - Additional logs
+    - re-enable all network upon screen on and connection, even for blackliste networks due to auth failure
+    - watchdog the DisconnectingState
+    - remove mFrameworkAutoJoin which is not used anymore
+    - dont remove WPA_PSK configurations, instead mark them as AUTO_JOIN_DELETED and loose their history and keys
+    
+    Bug:17261906
+    Bug:17330171
+    Bug:17339150
+    Bug:17063789
+    
+    Change-Id: I12ea25142d0dcfc670d8970ed67624e8573d1ac2
+    Address API Council feedback for WifiAdapter/WPS APIs
+    
+    This change addresses concerns from the API review. Things that
+    are fixed are -
+    
+    1. WifiAdapter is removed, until we have 'real' support for it
+    2. All the methods from WifiAdapter are moved to WifiManager
+    3. Changed WPSListener API names to be onFailed/onSucceeded et al
+    
+    Bug: 16403303
+    Bug: 17115004
+    Change-Id: Ie886334f9381b678deb5f0248b9a5ec21f446949
+    autojoin fixes:
+    
+    - Bug:17291273
+    - add persistent Wifi verbose logging option (/data/misc/wifi/autojoinconfig.txt)
+    - add config option for the associated scans period and backoff (/data/misc/wifi/autojoinconfig.txt)
+    - dont lock BSSID when roaming to 2.4GHz config
+    - issue single reassociate on roam
+    - make extended roaming 5GHz preference consistent with roaming 5GHz preference
+    
+    Change-Id: I1525349e220cebb1b300753a707eb00fcc9d7d7b
+    add radio stats to link layer
+    
+    This CL is dependent on I3d2a230b0362520b9f1b2bc3792260116971e106
+    
+    Change-Id: If7e73ae9813ea79a98744d7f0096316d241998fd
+    
+    halutil updates for link layer statistics
+    
+    Change-Id: I00ea13b1a932f40891a0d65026a1c87f01f09587
+    Signed-off-by: Chilam Ng <chilam@broadcom.com>
+    remove passpoint - DO NOT MERGE
+    
+    Change-Id: Ia399d98fa7d1ecff5c06bf4802f70dc22c8e5713
+    Set scanning mac OUI for mac address rotation
+    
+    This change enables mac address rotation feature if it is
+    implemented. The OUI being set is Google's OUI; which should
+    prevent from scanning mac addresses colliding with infra mac
+    addresses.
+    
+    This change also stops from linking to Qualcomm's and Marvell's
+    WifiHAL implementation - since none of the new features are
+    expected to work with this HAL
+    
+    Change-Id: I50979a8b20c59f5d40007eb4e0ff945e529cbb49
+    fix spurious disconnect while associating, dont set AP configuration with NULL SSID
+    
+    Bug:14568953
+    Bug:17144830
+    
+    Note: this CL address cases where framework sends spurious disconnect to driver while associating, this issue was only one of the root cause of 17144830, the remaining issues in this bug are "missing scan results" and "wifi chipset disconnects from AP due to missing beacons or receiving deauth from AP"
+    
+    Change-Id: If888f11bb3c66b55ca8ff991651f9e4457aaea31
+    add roam state watchdog.
+    
+    Bug: 16823537
+    
+    This CL is dependent on Id9411c8097337b37ac1ce1a6ac8b28b4bda31ff3
+    
+    Change-Id: Iff32fae2cd67343e63046d58d75fa1e10d9775d0
+    Use new config resource for tcp buffersize
+    
+    bug:16549611
+    Change-Id: I01ecca0a2a7893c1911cead503594ce9e17fa69e
+    fix spurious disconnect while associating, dont set AP configuration with NULL SSID
+    
+    Bug:14568953
+    Bug:17144830
+    
+    Note: this CL address cases where framework sends spurious disconnect to driver while associating, this issue was only one of the root cause of 17144830, the remaining issues in this bug are "missing scan results" and "wifi chipset disconnects from AP due to missing beacons or receiving deauth from AP"
+    
+    Change-Id: If888f11bb3c66b55ca8ff991651f9e4457aaea31
+    add roam state watchdog.
+    
+    Bug: 16823537
+    
+    This CL is dependent on Id9411c8097337b37ac1ce1a6ac8b28b4bda31ff3
+    
+    Change-Id: Iff32fae2cd67343e63046d58d75fa1e10d9775d0
+    debug messages for link loss issues
+    
+    Change-Id: Icbea4bac528eac8f25b8d1f9f1fa79d1ecadb7da
+    Stop using LinkProperties for static configuration.
+    
+    Bug: 16114392
+    Bug: 16893413
+    Change-Id: Ib33f35c004e30b6067bb20235ffa43c247d174df
+    Clear IPv4 addresses when switching from DHCP to static.
+    
+    This prevents the previous DHCP address from remaining assigned
+    to the interface, fixing a TODO.
+    
+    
+    Bug: 16893413
+    Change-Id: I84e09b8ac0325b839059b2d38086603bd11c7948
+    Fix copy/paste error in 5GHz connection count
+    
+    Change-Id: Ic377c5b4b0ab7db060b3b6ec86a3b0a862c32b28
+    provide autojoin config threshold, fix bug16990104
+    
+    Change-Id: Iac9ec4fe0a721df5f08b90d631025df4d944d088
+    Add tcp buffer size data for wifi
+    
+    bug: 16549611
+    Change-Id: Ia3819da9d85863a273b93e30c8a9d223ddc7d667
+    EAP-SIM End-To-End
+    
+    This change fixes all remaining issues with EAP-SIM. It now handles
+    multiple challenges coming from supplicant and corrects supplicant
+    command syntax.
+    
+    Change-Id: Idc47b454863aa1990d4f53138f00f312622792d2
+    Fix getAdapters() hang
+    
+    getAdapters() hangs in certain Wifi states because there is no code
+    to generate a default reply. This change adds default reply so it
+    returns something in all states.
+    
+    Bug: 16982058
+    
+    Change-Id: I07cae455c6335e622fbd9a79f3837128e73e302c
+    Fix getAdapters() hang
+    
+    getAdapters() hangs in certain Wifi states because there is no code
+    to generate a default reply. This change adds default reply so it
+    returns something in all states.
+    
+    Bug: 16982058
+    
+    Change-Id: I07cae455c6335e622fbd9a79f3837128e73e302c
+    handle supplicant disconnected state change in roaming state + make roaming less erratic
+    
+    bug: 16753407
+    bug: 16823537
+    
+    Change-Id: I47f1073b3775880d261ec2a963732c35454173cf
+    EAP-SIM End-to-end
+    
+    Change-Id: I9478e6a492c469d57bb020b8f858e523ea6a92d1
+    handle supplicant disconnected state change in roaming state + make roaming less erratic
+    
+    bug: 16753407
+    bug: 16823537
+    
+    Change-Id: I47f1073b3775880d261ec2a963732c35454173cf
+    Revert "Broadcast wifi credential change from WifiStateMachine. [DO NOT MERGE]"
+    
+    This reverts commit a618f986e12b0f68f7b4cdfff51c6fa8baed22d5.
+    
+    Bug: 16871063
+    Change-Id: I93623be92f2de41789b16827867f3f95bf0480c5
+    check null pointer on mNetworkAgent
+    
+    Bug:16776614
+    
+    Change-Id: I6af588a0bc7f9048174d359f41f63ac9acb98147
+    add debouncing of the Layer 2 spurious disconnects
+    
+    Change-Id: I45291d0369977c7a3bdbf65ef10632c203d359b4
+    
+    Changes to be committed:
+            modified:   service/java/com/android/server/wifi/WifiAutoJoinController.java
+            modified:   service/java/com/android/server/wifi/WifiStateMachine.java
+    Unbreak WifiStateMachine IP provisioning logic.
+    
+    The change from switching to CONNECTED based on DHCP to
+    switching to CONNECTED based on link properties, necessary to
+    support IPv6-only networks, broke some of WifiStateMachine's
+    IP provisioning logic. Among other things:
+    
+    1. DHCP success when roaming would get stuck in ObtainingIpState
+       state because the updateLinkProperties would see that nothing
+       had changed and take no action.
+    2. DHCP timeout would not cause a disconnect. The code to handle
+       that was just not there. :-(
+    3. Wifi would notify ConnectivityService that it was ready as
+       soon as it had an IPv4 address, but before DHCP completed, at
+       which point the network was unusable because it had no
+       default route and no DNS server. The network was fixed
+       immediately afterwards, but it caused a 5-second switching
+       delay because NetworkMonitor immediately tried to validate,
+       failed, and waited 5 seconds.
+    3. Wifi would not reconnect to the current network after a
+       runtime restart, because the IP address was already there.
+    
+    All these problems happened because we changed the code from
+    edge-triggered to level-triggered, but that doesn't work well
+    in IPv4, because it's not possible to tell from LinkProperties
+    alone whether IPv4 configuration succeeded on the interface.
+    
+    This change switches IPv4 provisioning back to being
+    edge-triggered, which should hopefully fix all the above
+    problems in the right way. Testing so far includes:
+    
+    1. Connecting to GoogleGuest works.
+    2. Connecting to a network without a DHCP server (and without
+       IPv6) disconnects after 30 seconds, and gives up completely
+       after 9 tries.
+    3. Connecting to an IPv6-only network works.
+    4. Configuring a static IP on GoogleGuest works.
+    5. Wifi disconnects if a DHCP renewal times out.
+    
+    I'm not sure how to test roaming.
+    
+    Bug: 16269674
+    Bug: 16631731
+    Bug: 16663980
+    Bug: 16667349
+    Change-Id: I8e28c630c54a5f3f66bf0feb9fd328ab452de740
+    Clear IP addresses before starting the supplicant.
+    
+    This is necessary because if the runtime crashes when the
+    interface has an IPv4 address assigned to it, and wifi reconnects
+    and gets the same IPv4 address, NetlinkTracker won't tell us
+    about the address, because nothing has changed. This causes us to
+    think that we have no IPv4 address, when in fact we do.
+    
+    Bug: 16631731
+    Change-Id: I4878408d5fb4c0128657aabb7670e48c689021d8
+    add debug log for RSSI_PKTCNT_FETCH
+    
+    Change-Id: I54f920e7373febf3874deb194011e98c05eb1a23
+    fix handling DHCP status
+    
+    Change-Id: Ib4dfc9a1f84d6faaaf71adf63c8e2457e95646fd
+    add logs and fix compareWifiConfigurationsWithScorer
+    
+    Change-Id: I7eeb489b89519bd79d7e3df0fe3ae400debfe566
+    introduce WifiConnectionstatistics
+    
+    This CL is dependent on I51fbbf062feb22c5f16b438675519064cc43e160
+    
+    Change-Id: I10584a447fecd977df3eefd8e2cc028bd26ec0e3
+    add verboser logs for network scorer
+    
+    Change-Id: I8e461615f1ae85cd0712a627561cee329a5fb4e5
+    treat all dhcp completion without provisioning as errors
+    
+    Change-Id: I4f27e166491006a3432e73a490653c6252fbb95d
+    handle IP address loss if DHCP fails
+    
+    Bug:16525514
+    
+    Change-Id: I367a024835acf06cf4dda7f357b70494b9981e03
+    autojoin fixes:
+    
+    - make use of network scorer for autojoin
+    - Bug:16484607
+    
+    Change-Id: If658d82bb6e3f61ed0476d41b40bb274a1931b2f
+    Clean up Verifying state so we don't churn.
+    
+    If it goes to disconnected we will actually get unwanted and
+    do an L2 disconnect.  Instead, rely on down scoring.
+    
+    Change-Id: I87dc52957fd6515920482ba929331567cf7b8253
+    a few additional logs and code standard rules
+    
+    Change-Id: I932e895fefd7b6c9d8ad58ef99312c980643f2d2
+    fix connecting to OSU server
+    
+    Change-Id: I93d50dac9a052736d63300d1cdd3d72d90614e7f
+    Broadcast wifi credential change from WifiStateMachine. [DO NOT MERGE]
+    
+    Bug: 15703353
+    Change-Id: I62f582ac8cbfd8748c35d73daa2f733665cc0fa8
+    (cherry picked from commit 09295c2d809d1c7f797eafe039b6b68e7a49c82f)
+    Add a new SystemApi, getPrivilegedConfiguredNetworks(). Part 2 [DO NOT MERGE]
+    
+    Implements the getPrivilegedConfiguredNetworks() in WifiServiceImpl.
+    
+    Bug: 15703353
+    Change-Id: If3eaca3286e77b780272f42a28772d1d8d39db65
+    (cherry picked from commit 76ddde4965b1460248eb21d0ccebed687c2b3fb3)
+    Fix 2.4/5 wifi roaming.
+    
+    The redesign of wifi ip address optaining assumed we would never
+    go from have-ip -> have-ip, ie we must lose our ip config before we can
+    gain an ip config.  Unfortunately at least one condition does just this:
+      Our inter-band roaming
+    To leave OBTAINING_IP_ADDRESS we need to tweak the code to generate
+    the success signal even if the new address is the same.
+    
+    bug:16269674
+    Change-Id: I340b24839565fa62fd3c7d9d373695d1d4007412
+    Fix 2.4/5 wifi roaming.
+    
+    The redesign of wifi ip address optaining assumed we would never
+    go from have-ip -> have-ip, ie we must lose our ip config before we can
+    gain an ip config.  Unfortunately at least one condition does just this:
+      Our inter-band roaming
+    To leave OBTAINING_IP_ADDRESS we need to tweak the code to generate
+    the success signal even if the new address is the same.
+    
+    bug:16269674
+    Change-Id: I340b24839565fa62fd3c7d9d373695d1d4007412
+    Introduce Wifi Adapters
+    
+    This change extracts all the wifi interfaces on the device; and provides
+    its supported features.
+    
+    Change-Id: I7fbdbec684d653a6e4bf851797e3065ce222e873
+    Keep IPv6 enabled whenever L2 is connected.
+    
+    Currently we only enable IPv6 (which starts IPv6 configuration)
+    when DHCP succeeds. This obviously will not work on networks
+    that don't have IPv6.
+    
+    Instead, enable IPv6 when we start DHCP, so IPv4 and IPv6
+    configuration proceed in parallel. Also don't disable IPv6 when
+    verifying poor link. I believe the reason for doing so was that
+    the captive portal detection code was IPv4-only, but now with the
+    multinetwork APIs we can support captive portal detection over
+    IPv6.
+    
+    Bug: 9180552
+    Change-Id: I52c8776f1c910255784981ed77a14693ad52d674
+    handle IDENTITY message and bssid blacklist
+    
+    Bug:15990551
+    Bug:15977507
+    
+    Change-Id: I78b03915781bd6d5f9f5881c80324a2788b9e837
+    Get DNS configuration from Netlink too.
+    
+    This is required to learn IPv6 DNS servers, which come in from
+    netlink via RDNSS options in IPv6 Router Advertisements.
+    
+    Bug: 9180552
+    Change-Id: I035f4c3cac6d8edd94ff1b3d586d6bd40e0889b1
+    Decide if IP configuration is complete independently of DHCP
+    
+    Currently, WifiStateMachine assumes that IP configuration is
+    complete and transitions to VerifyingLinkState when it receives a
+    DHCP_SUCCESS message. This won't work if there no IPv4. Instead,
+    decide whether IP configuration is complete by examining the
+    actual configuration inside LinkProperties.
+    
+    Bug: 9180552
+    Change-Id: I4499b59030e8e581cce620b57bc4e58b7b7d1ab1
+    clean up the connect/disconnect procedure
+    
+    Change-Id: Iba87591e790106b882d465dbba3ddac120f044d9
+    Simplify the network transition wakelock.
+    
+    Make it all internal to ConnectivityService - we know when a network
+    is lost, so grab a wakelock then.
+    Moves the call out of WifiStateMachine which was grabbing at bad times
+    like every dhcp renewal or corp-network roam.  These would always
+    go the full 1 minute and chew up battery.
+    
+    bug:15595155
+    Change-Id: I80157a818cc149072cc7706d78c1e79c6e679ab3
+    fix a merge issue
+    
+    Change-Id: Ic1e9bab8ec6cf4b4525d2815b29db8e617960504
+    improve link flapping
+    
+    Change-Id: Ie378dde318dccaa566f660c9497bae31d4a9f1ab
+    Add tracking of some wifi stats to battery stats.
+    
+    Change-Id: I50cbd480b8c3ddc4cc8ccbe78b1fe6de98efd9e6
+    add home network boost, better hadling of 5GHz configurations
+    
+    Change-Id: I2417844b58e1839cb22649565404d76b792cdc65
+    autojoin tuning, making LTE handover less aggressive
+    
+    Bug: 15700122
+    
+    Change-Id: I2836abf791f8c71c63a901170f247c4030e8e8f9
+    Read IPv6 routes from netlink as well.
+    
+    Bug: 9180552
+    Change-Id: I926e1ea0ff59a258da2472d8a1d8b4c80727e87e
+    Move netlink updates to a new NetlinkTracker class
+    
+    This will allow us to use this logic on other link types such as
+    Ethernet, and will also avoid increasing the complexity of
+    WifiStateMachine as we get more information such as routes and
+    DNS servers from netlink.
+    
+    Bug: 9180552
+    Change-Id: I79034827cb0c5f24d783d7243e04b69e12aa3cc6
+    auto-roam fixes, disable scanning based on traffic at interface
+    
+    Bug: 15575229
+    Bug: 15577651
+    
+    Change-Id: I1157c7c9b83c1cafd67d4d4f1d4e1e6fc8d95323
+    auto-roam initial implementation
+    
+    Bug:15553951
+    
+    Change-Id: I04ebca4a4f5a9b408893ce1e9874f08aeff50ba2
+    Make NetworkCapabilities publicly immutable.
+    
+    Applying API council comments.
+    
+    bug: 15142362
+    Change-Id: Ie0bde68b72656a676d90c0343b9756fe9268d8d6
+    Apply LinkProperties API change.
+    
+    bug:15142362
+    Change-Id: I1457111da7d3bd09998f7e010febb8bb4c45c8bc
+    (cherry picked from commit 82d1c6aeadfa24797b314ae2b2a55717df064b57)
+    remember and report network score
+    
+    Change-Id: Ie54afe724a3618ec3fd557850dbbbb8bbae49ecc
+    Apply LinkProperties API change.
+    
+    bug:15142362
+    Change-Id: I1457111da7d3bd09998f7e010febb8bb4c45c8bc
+    Apply refactored NetworkFactory.
+    
+    Make NetworkFactory a concrete class and divide responsibilites between it and NetworkAgent.
+    Factory will track requests and by default give a single connect/disconnect api for ease
+    of use.  Then NetworkAgent is created and destroyed as needed with very simple logic.
+    
+    Change-Id: I401c14a6e5466f2fc63b04219b97ff85bb9af291
+    (cherry picked from commit 7d6e0b86655bf9862ae81fe37c9c8dc3f70d51f9)
+    add debug info to wifi configure, check auth method for real before self-adding
+    
+    Bug:15111865
+    
+    Change-Id: I095fff870c7871e3cb7ae4b8e99034519eb26fa1
+    WifiService and WifiPasspointService hook up
+    
+    - add a reference to passpoint service in wifi state machine
+    - break dependency loop at boot phase
+    
+    Change-Id: I0acdf02dcb4a62a4e27af8bb3640784ee2691e26
+    logs improvements, fix reading back networkHistory file
+    
+    Change-Id: Iec4b11a3e0d8820b558abea6cc068a905199896d
+    Apply refactored NetworkFactory.
+    
+    Make NetworkFactory a concrete class and divide responsibilites between it and NetworkAgent.
+    Factory will track requests and by default give a single connect/disconnect api for ease
+    of use.  Then NetworkAgent is created and destroyed as needed with very simple logic.
+    
+    Change-Id: I401c14a6e5466f2fc63b04219b97ff85bb9af291
+    Don't tear down early wifi.
+    
+    This was adding 10 or so seconds to getting on wifi at first boot.
+    Note this delay goes away with the changes to NetworkFactory later today anyway.
+    
+    bug: 15363153
+    Change-Id: Ic764db7288696d697be0db4817fb816861984ef2
+    add debug info to wifi configure, check auth method for real before self-adding
+    
+    Bug:15111865
+    
+    Change-Id: I095fff870c7871e3cb7ae4b8e99034519eb26fa1
+    DO NOT MERGE: Fix the stopping of scan after Wifi connection
+    
+    We have code that stops kitkat batch scan while we get a new IP address
+    via DHCP; this exists because ARP multicast packets may be lost if the
+    wifi radio is off channel for scanning.
+    
+    We need to do something similar for GScan as well - to avoid getting in
+    the same problem. This change accomplishes that.
+    
+    This change also makes all HAL methods static, getting WifiNative closer
+    to the 'SupplicantManager' role.
+    
+    cherry-picked from klp-wireless-dev
+    SHA1 8f343d40a55bc638872a3bb3453b95062bf838ef
+    
+    Change-Id: Id2b500e37b71ea21a6bca162011abecbd41d90ec
+    Fix the stopping of scan after Wifi connection
+    
+    We have code that stops kitkat batch scan while we get a new IP address
+    via DHCP; this exists because ARP multicast packets may be lost if the
+    wifi radio is off channel for scanning.
+    
+    We need to do something similar for GScan as well - to avoid getting in
+    the same problem. This change accomplishes that.
+    
+    This change also makes all HAL methods static, getting WifiNative closer
+    to the 'SupplicantManager' role.
+    
+    cherry-picked from klp-wireless-dev
+    SHA1 8f343d40a55bc638872a3bb3453b95062bf838ef
+    
+    Change-Id: Id2b500e37b71ea21a6bca162011abecbd41d90ec
+    DO NOT MERGE: lose the STOP_DRIVER command
+    
+    Change-Id: I8e1ff28d5b79ef53778e0b4d083156cf748a4886
+    (cherry picked from commit 4a21193ee63c72919e7ead45e1de0643c7abe554)
+    Don't reset country code once it is persisted
+    
+    This change simply ignores resetting of country code by cellular
+    networks to avoid disconnecting existing wifi connections. It also
+    defers setting newly found country code until after existing Wifi
+    connection is torn down.
+    
+    Also removes some dead code related to resetting of country codes.
+    
+    cherry-picked from klp-dev
+    SHA1 b5ee95edf97f83e31e44f72e1b0f95a0c71a97ed
+    
+    Bug: 13894807
+    Change-Id: Ie2fcfdd4b3be8ba94542772c132fb1acb6a2c683
+    (cherry picked from commit f449336da3fc8f8f9b65de3ba359129779511199)
+    logs improvements, fix reading back networkHistory file
+    
+    Change-Id: Iec4b11a3e0d8820b558abea6cc068a905199896d
+    lose the STOP_DRIVER command
+    
+    Change-Id: I8e1ff28d5b79ef53778e0b4d083156cf748a4886
+    Don't reset country code once it is persisted
+    
+    This change simply ignores resetting of country code by cellular
+    networks to avoid disconnecting existing wifi connections. It also
+    defers setting newly found country code until after existing Wifi
+    connection is torn down.
+    
+    Also removes some dead code related to resetting of country codes.
+    
+    cherry-picked from klp-dev
+    SHA1 b5ee95edf97f83e31e44f72e1b0f95a0c71a97ed
+    
+    Bug: 13894807
+    Change-Id: Ie2fcfdd4b3be8ba94542772c132fb1acb6a2c683
+    make verbose logging a wifimanager hidden API
+    
+    bug: 151386707
+    
+    Change-Id: Ide885ce96621fe4bab6abf10291bc8441eecad4a
+    various autojoin fixes
+    
+    Bug:15111865
+    Bug:15080778
+    Bug:14994925
+    
+    Change-Id: I753ff62b48a87db4096fdec18b4de070656cf901
+    Make Wifi WPS API available on application layer
+    
+    Un-hide WPS methods (and required interface classes, etc.) of WifiManager.java to
+    enable Apps to start/stop the WPS procedure, add a patch for WPS method KEYPAD to
+    avoid early failure callbacks. (Methods PBC, DISPLAY, KEYPAD tested on 4.4.2_r2.)
+    
+    Change-Id: I25aafdc4b637c87d754d4fdb70e40a34a569b738
+    Signed-off-by: Olaf Stoyke <o.stoyke@avm.de>
+    fix enableNetwork() logic:
+    
+    should not mark forgotten network as selected
+    
+    Change-Id: I0ebbc3082228feb482611e0a7b40ee8c18340dee
+    Fix a boot failure due to Wifi / Wifi Passpoint
+    
+    Bug: 15060373
+    Change-Id: I8341a39c849d4135a0549c481cb3327cfca14567
+    Add a name for the wifi NetworkFactory.
+    
+    Used only for debugging purposes.
+    bug:15003007
+    
+    Change-Id: I717d63363f25c446f8ecf38d933b1a35d744af6e
+    workaround wifi runtime crash
+    
+    This is not a long term fix, but until the wifi folks fix it this should be sufficient.
+    
+    bug:15060373
+    Change-Id: I150ba375046c48066150f3d78438efc316e4c84f
+    introducing link layer
+    cherry-picked from klp-wireless-dev-mirror
+    SHA1: eb8de645540caa6076c34854d8a4e7c22341783f
+    Change-Id: I5c736c697d38ec17dcde81bdee638048fd688073
+    Fix NullPointerException while WPS Push button/WPS Pin Entry
+    
+    Fix NullPointerException in system server while authenticating AP
+    through WPS Push button/WPS Pin Entry
+    
+    Bug: 14659351
+    
+    Change-Id: I4c0616b320c49841fbb1ef0983d170b1178bf542
+    Hotspot 2.0 framework support -- inital implementation
+    
+    Bug: 5485670
+    Change-Id: I48a63f5a45e0c217f5b73b4b3c45ea1acee76034
+    restore correct tracking of auth failure; bring up assoc reject info to supplicant
+    
+    Change-Id: I7eeb110f1f14149f560630848f26f7cc9f5cbb67
+    fix for devices using enableNetwork API
+    
+    Change-Id: Idf886dd01892d3f7ca463a44fd76030ddadcd238
+    autojoin is to eager to black list networks due to connection failure
+    
+    Bug: 14834820
+    
+    Change-Id: I81c05b657b3d218bb4d5f5bf82dd6a8ad3859bd1
+    Switching to NetworkAgent API
+    
+    Change-Id: I8c820a17a6b64b8376930ba85ab507e07ce38d36
+    fix crash on null string in AUTH_FAILURE message handling
+    
+    Change-Id: I657951f8bb37af778f8d4ab2c9b9d2ab2956220c
+    disable autojoin associated scanning on molly
+    
+    Bug: 14696701
+    
+    Autojoin associated scan can interfere with real time streaming (mpeg RTP), hence for now we want to disable those scans on a molly product.
+    
+    Change-Id: If056032cca91dd47f6fab0c56b4df4c90bc42571
+    fix for 14645794 Wifi flakiness triggering multiple crashesin volantis
+    
+    Change-Id: Id2caa10964bbc02dbeff85ac6193f4be19f7bd39
+    fix for 14645794 Wifi flakiness triggering multiple crashesin volantis
+    
+    Change-Id: Id2caa10964bbc02dbeff85ac6193f4be19f7bd39
+    work around supplicant bug
+    
+    There is a case where supplicant is in an inconsistent internal state:
+    - it will silently ignore a select/reconnect command sequence to a given network because some state thinks it is already associated to the selected network
+    - however wlan driver is not, in fact, associated, and the supplicant's own STATUS command will indeed return a non-associated status
+    
+    This situation doesn't resolve itself until supplicant is asked to join a different network, or issue a disconnect. In the AUTO_CONNECT sequence, it is safe to issue a disconnect because autojoin already has verified that the supplicant's status was not associated or associated to a different network.
+    
+    In addition, in this change list, autojoin controller should not duplicate the WifiConfiguration from WiFiConfig store if it only wants to modify then before saving back.
+    
+    Change-Id: If42fb05752fce288fb993fd7b70ef94cdb1f3d25
+    Fix un-intended exposure of P2pStateMachine messenger
+    
+    Fix un-intended exposure of P2pStateMachine messenger in
+    WifiP2pServices, added ClientHandler for request from app
+    
+    Bug: 13931972
+    
+    Change-Id: I9ebcdfd82ab66f1b843560758b3f3da8cf7c797b
+    autojoin initial implementation
+    
+    Change-Id: Iea4e5c0b8e988e410d2f9885ecaf6317d34cc1d1
+    Fix stopBatchedScan not working.
+    cherrypick ag/436843
+    
+    Change-Id: I325ea5965bc3863f1fe1179a404c2fa39b3c998e
+    Debounce wifi country code info
+    
+    We're getting signals from the radio and it sometimes drops out for a while.
+    This change will delay applying an empty country code for 15sec but apply
+    non-empty country codes immeditately.  It uses a sequence number so we only apply
+    the most recent change, even if it's delayed.
+    
+    bug:11062898
+    Change-Id: I9d3a870f3b66296d4b3cbc10c730c9a043c0da96
+    Explicitly set update_config on supplicant
+    
+    This is to ensure that supplicant always saves network information. It is
+    possible for this flag to be turned off because supplicant couldn't read
+    wpa_supplicant.conf; but we never want supplicant to not save new networks.
+    
+    Bug: 13233891
+    Change-Id: Ia7273dd65d01c9786be2e7dedfb39d3abe9b56c2
+    Implement new API to scan a given channel set
+    
+    Framework implementation for the new scan APIs. Besides implementing the API,
+    this CL does 2 additional changes:
+    
+    1. Only count battery consumption if a scan request is accepted by supplicant,
+       i.e. it won't be counted if it's rejected due to another ongoing scan.
+    
+    2. If a scan request is rejected, we may buffer the scan request and do it
+       later, to make sure the specified channels are eventually scanned. On the
+       other hand, we will try to combine scan requests to avoid repeated scans.
+       For example, a full scan serves all scan requests.
+    
+    Bug: 12610436
+    Change-Id: Ia9edc58c7ddd7a535bfaa0f906f6faaaf5f5d439
+    Fix an inadvertent change in WifiNative
+    
+    wifinative.closeSupplicantConnection() closes sockets that were opened
+    to talk to supplicant. It was accidentally removed when we moved to
+    single socket connection to supplicant.
+    
+    Bug: 12344420
+    Change-Id: I4242aff17baa91f3cdffaffb264c3bf4f93aaca3
+    Rename fetchRssiAndLinkSpeedNative() into fetchRssiLinkSpeedAndFrequencyNative() and changed it to also set the WiFi frequency.
+    Bug: 12767819
+    
+    Change-Id: Icc5b702475f9047311246da3440d220c67875a4c
+    piping supplicant commands for WPS token setup
+    
+    Supplicant exposes a command for generating
+    NFC Wifi tokens as per the Wifi Simple Configuration
+    specification. This CL export this  command to the
+    framework.
+    
+    Change-Id: If34e6a71888bfb2b420048eed4fe373566835611
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Fixed logging format
+    
+    Change-Id: I89905d56ee3933dfca32889df433d899745de847
+    Fix an unhandled exception in WifiP2pStateMachine
+    
+    An exception is thrown when group creation is deemed failed. It is
+    thrown because an empty peer address is encountered. It is not clear
+    when the address goes empty (there are no logs); but this change
+    would prevent resstarting of the framework.
+    
+    Bug: 18667239
+    
+    Change-Id: I523646eaa1ff6c8dab9ee99b893ebc4291eee2da
+    P2P: reset mIsInvite flag when p2p transitions to inactive state
+    
+    Commit Ifaeb6a8c5f9cddd7df96622056541e22aad74314 has set mIsInvite
+    to true when the invitation request is obtained from the peer to
+    ensure that the DUT does issue p2p connect with the intention to
+    join when the user accepts the invitation. However, this did  not
+    consider the case where the user has rejected the invitation request
+    which shall still set mIsInvite to true. This shall result in an issue
+    when the DUT shall initiate a GO Negotiation with a peer for the next
+    time. The DUT shall end up joining with the peer (because of the value
+    of mIsInvite being true) rather than doing a GO Negotiation. Thus reset
+    the value of mIsnivite whenever the transition happens to the InactiveState.
+    
+    Change-Id: I9ff086da41cb85385a15699b851995df41cceb21
+    CRs-Fixed: 756312
+    Regional: Customize wifi hotspot and wifi name
+    
+    -Set WLAN hotspot's default security type to none.
+    -Customize hotspot ssid and pass.
+    -Customize wifi direct name for carrier.
+    
+    Change-Id: If1613a8556908f372a70fbd859fa35e9315f9613
+    P2P: Change supplicant scan intervel during WFD session
+    
+    During WFD session supplicant scan intervel is one minute. If
+    there are some saved profiles, then supplicant will issue a scan
+    for every one minute, this is causing some ping latency in WFD.
+        Hence supplicant scan intervel should change to five minutes
+    to improve ping latency in WFD session only.
+    
+    Change-Id: If827bab6f186ebeaac90f297935bc8b987eb4d09
+    CRs-Fixed: 669404
+    P2P: Fix for GO inviting a p2p device.
+    
+    A p2p device on an invitation request from the peer invokes
+    p2p_peer command to know if the peer is a p2p device / GO.
+    Due to the cached entries there would be a possibility of
+    not getting the updated information, ending up in the wrong
+    negotiation with the invited peer. Thus do not rely on
+    p2p_peer command, rather assume that the peer is a GO on an
+    invitation request, provided there is no persistent network
+    configured.
+    
+    CRs-Fixed: 486437.
+    Change-Id: Ifaeb6a8c5f9cddd7df96622056541e22aad74314
+    P2P:initiate provisioning on persistant group removed.
+    
+    The initiator, on a response from the peer with unknown group during
+    the persistent reinvocation has to transit to the provisioning state
+    to handle all the config methods (PIN and PBC).
+    This commit ensures the same.
+    
+    CRs-fixed: 653078
+    Change-Id: I154ea647316ed0f61f1903876198d7d39cab1104
+    Sink device not displaying PIN when connect from source using WPS_KEYPAD option
+    
+    Sink device is not displaying PIN when trying to connect from source using
+    WPS_KEYPAD connection option .The code for displaying PIN was missing in
+    Process message for the event P2P_PROV_DISC_SHOW_PIN_EVENT in WifiServiceImpl
+    file.Added code for the same.
+    
+    CRs-Fixed: 713468
+    
+    Change-Id: I8f341d0d35ce304cf15e18f31f86f20bccea0e48
+    P2P: p2p flush on a group remove event.
+    
+    On a group removal, the devise shall not be able to detect
+    the peer with which the group was formed earlier, as the
+    supplicant shall not give the P2P_DEV_FOUND indication for
+    an already reported one. Hence,do a p2p_flush to have a
+    better user experience in finding the p2p devices.
+    This will  get the device list entries in the framework in
+    sync with the suplicant peer device list.
+    
+    CRs-Fixed: 732399
+    Change-Id: Ic3bc19b3591001a5237538dddb42851638e2b358
+    Wifi: Fix for connection failure between third client and GC.
+    
+    When third device sends a connection request to the group client, the
+    existing connection is terminating and also the ongoing connection not
+    successful.Currently as there is  no use case where third device is
+    connecting to GC,and the existing onnection getting terminated.This
+    is addressed by ignoring the new connection request from third client
+    to GC and the existing connection is intact.
+    
+    CRs-Fixed: 467049
+    Change-Id: I784c38b9a4ca0c60b188b9697e3b4af4d09053cc
+    p2p: Display P2P peer MAC address if device name is empty.
+    
+    Display MAC address of a P2P peer in an invitation prompt
+    message on receiving invitation request from the P2P peer
+    with empty device name.
+    
+    Change-Id: Icabeb91d666437746eb5a733ec582849eb7295a5
+    CRs-Fixed: 506109
+    P2P: Fix to add addInterfaceToLocalNetwork on DHCP renew
+    
+    Route for p2p0 interface is added to netd daemon during P2P
+    connection as part of CMD_POST_DHCP_ACTION. If route is already
+    added it will throw excpetion. This exception can be ignore as the
+    route is already added.
+    During renew case it is failing here as route is added during DHCP
+    request, hence changing the exception type
+    
+    Change-Id: If6ebb72a19c63c7eadc92b8009a510e6a6bf6725
+    CRs-Fixed: 716655
+    wifi: Fix for connection between GO and p2p device
+    
+    When GO sends an invitation request to the p2p device without
+    persistent profile, GO gets an invitation result=8 which means
+    unknown group, when GO receives invitation result 8, its tries
+    to remove persistent profile of the client but it will not be able
+    find the profile so it does continue with sending the invitation
+    so the connection fails. To address this, ignore if there are no
+    persistent profiles found for the client and continue with sending
+    the Invitation request to the client to make connection succesful
+    connection. As GO has single profile saved unlike client which
+    saves multiple profiles of GO.
+    
+    CRs-Fixed: 511282
+    Change-Id: I78f54d4bb2f0d603bc2170ec2c3ef55a91050236
+    Wifi: provide runtime logging option in WifiP2pService
+    
+    Runtime logging option for WifiP2pService.
+    
+    Change-Id: I3e4550037654c8713fb8d9c6aa6b4351d3973033
+    CRs-fixed: 716835
+    Wifi: Handle P2P-REMOVE-AND-REFORM-GROUP event in GroupNegotiationState
+    
+    Framework does not handle P2P-REMOVE-AND-REFORM-GROUP event
+    if it is in GroupNegotiationState and p2p-GO will continue to operate
+    in unsafe channel till it gets next P2P-REMOVE-AND-REFORM-GROUP event.
+    
+    This commit adds handling of above event in GroupNegotiationState.
+    
+    Change-Id: I956bbcd0200ddc3acde8b989a6e0950bdeca269e
+    CRs-fixed: 714368
+    Wifi: Handle P2P-REMOVE-AND-REFORM-GROUP event
+    
+    Remove P2P group on receipt of P2P-REMOVE-AND-REFORM-GROUP event from
+    wpa supplicant and then reform new P2P group if autonomous group is
+    set to true.
+    
+    Change-Id: Id6fbf2c2ebbebc06afc70cf56a7b434eb8ab2eea
+    CRs-fixed: 696838
+    Change access to P2pStateMachine messenger.
+    
+    Allow either LOCATION_HARDWARE (GmsCore has this) or
+    CONNECTIVITY_INTERNAL permission.
+    
+    Bug: 17814099
+    Change-Id: I73aba5361f8654305d783996093e095375087f37
+    Stop using LinkProperties for static configuration.
+    
+    Bug: 16114392
+    Bug: 16893413
+    Change-Id: Ib33f35c004e30b6067bb20235ffa43c247d174df
+    Fix WiFi-Direct.
+    
+    Send explicit commands to netd to add routes for the p2p interface. This already
+    happens via the tetherInterface() command when we are the group owner, so the
+    new command is used only when we are not a group owner.
+    
+    Bug: 15413694
+    
+    Change-Id: I36effc438d5ac193a77174493bf196cb68a5b97a
+    Fix WiFi-Direct.
+    
+    Send explicit commands to netd to add routes for the p2p interface. This already
+    happens via the tetherInterface() command when we are the group owner, so the
+    new command is used only when we are not a group owner.
+    
+    Bug: 15413694
+    
+    Change-Id: I36effc438d5ac193a77174493bf196cb68a5b97a
+    piping commands for handover from supplicant
+    
+    supplicant exposes methods to retrieve handover
+    protocol messages. need to pipe these up to NfcService.
+    
+    Change-Id: I2696ed4b0ccbaa47a75a303315f554965c5c9dd4
+    Refactor wifi p2p's startDhcpServer function
+    
+    Add getTetheredDhcpRanges() interface and call it before calling
+    mNwService.startTethering to update dhcp ranges.  This will allow
+    p2p apps to run well concurently with other tethering apps.
+    
+    Manual import of AOSP change 81546 by jianzheng.zhou@freescale.com
+    
+    Change-Id: Iebc62f95bdcedde80e2c1d3e9580d3f625c3b50b
+    Fix un-intended exposure of P2pStateMachine messenger
+    
+    Fix un-intended exposure of P2pStateMachine messenger in
+    WifiP2pServices, added ClientHandler for request from app
+    
+    Bug: 13931972
+    
+    Change-Id: I9ebcdfd82ab66f1b843560758b3f3da8cf7c797b
+    Fix incorrect DISABLE_P2P_TIMED_OUT handling
+    
+    Likely wifi p2p disable timeout doesn't work, due to the inadvertent use of
+    a wrong counter. Fixed by using the correct counter.
+    
+    bug: 13653433
+    Change-Id: I4a49c039d28c4ac742fab0fc99492f6411156b97
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    Fix incorrect tags in WifiP2pService
+    
+    Looks like a typo, fixed.
+    
+    Change-Id: Ie8c8d34688a1aa2328c115b3a37033530ff4f841
+    Fix build (again).
+    
+    Change WifiP2pService / WifiService to reflect changes to
+    the SystemService constructors.
+    
+    Change-Id: Iad36810c1d3e08bbdca21e76113f9f9dfe79bbae
+    Revert "Revert "Move Wifi services to a new git project""
+    
+    This reverts commit 862f81faba40e9af8fb80744a22e968a298e814e.
+    
+    Change-Id: I7b15e266a5948749026e01a61d8581746cfd0f5f
+    Revert "Move Wifi services to a new git project"
+    
+    This reverts commit a07c419913bfae2a896fbc29e8f269ee08c4d910.
+    
+    Change-Id: I1cd35cea1594cdbeae800b9130bc6f885f238b28
+    Move Wifi services to a new git project
+    
+    Bug: 12175455
+    Change-Id: I1fa07e29c6a9aae38d9e334d519a9f2445d15613
+    wifi: Add wifi_set_nodfs_flag() function
+    
+    Bug: 17181998
+    
+    Change-Id: Ie85cd3cae192f826d8264fc9b9cb3c51ca1d85ac
+    Signed-off-by: Dmitry Shmidt <dimitrysh@google.com>
+    PNO MAC rotation + Hotlist Lost event
+    
+            modified:   service/lib/wifi_hal.cpp
+            modified:   service/tools/halutil/halutil.cpp
+    
+    Change-Id: Ide2d4a8b03f5413e8fe07168c1970ebfd03fc232
+    fix build when LIB_WIFI_HAL := libwifi-hal
+    
+    Change-Id: I852519ac2cd6033305868478d7a10ae70cc6a9a5
+    Update halutil to get Feature list, channel list, scan complete event
+    
+    modified:   service/tools/halutil/halutil.cpp
+    
+    Change-Id: I486f6b110bfefcdd17e7f152526d849edd7101ee
+    Fixing mako and msm8226 build
+    
+    msm8226 is using stubs for HAL; updating them for GScan.
+    
+    Change-Id: Ic734a3cbf75bfa4330ac42d3a83886c7b3389445
+    More build fixes for Shamu build
+    
+    Change-Id: I863278e3933b8fa00451cc328867ffdb42098018
+    More Wifi HAL stubs to fix builds
+    
+    Change-Id: I44864106f8a02c49e794fa5cb8bf8f2864f54113
+    Moving Wifi HAL to hardware
+    
+    This change moves all Wifi HAL headers to libhardware_legacy; and moves
+    hal implementation under hardware/<vendor>/wlan. This way different
+    vendors will be able to tailor implementation to their drivers.
+    
+    Change-Id: I55789bb6788ab694f4896aa36d76f7887b32dad6
+    
+    Conflicts:
+            service/Android.mk
+            service/lib/common.cpp
+            service/lib/wifi_hal.cpp
+    More HAL fixes
+    
+    This change implements all message interaction with Broadcom's drivers; and
+    enables three basic features; scan, hotlist and significant wifi change.
+    
+    There are GSCAN API changes too -
+    1. The on_scan_results event is changed to on_scan_results_available
+    This is to make a single path for retrieving scan results - via the
+    get_cached_scan_results method.
+    2. Updated set_significant_change_handler method to include params
+    3. Updated some parameter names
+    4. Specified sizes on all arrays.
+    
+    Change-Id: I39936e1cc84c273b86b86c2e2085cb7b924cafb8
+    Fix broken build and some more functionality
+    
+    Build is broken because some changes didn't get merged correctly. New
+    changes are related to fixing gscan messages.
+    
+    Change-Id: Ib4ddd26b83a736a1106d9784c57cfbab249101dc
+    
+    Conflicts:
+            service/lib/wifi_hal.cpp
+    More changes required to make HalUtil functional
+    
+    This change fixes halutil to send commands to wlan0 interface. It also
+    assigns different types to WifiHandle and WifiInterfaceHandle to make
+    it harder to interchange usage.
+    
+    Change-Id: Iade453c4bdd60ef58fdafd2b9b94d8ad8a4ae562
+    More HAL functionality
+    
+    This change implements JNI plugs for delivering events to
+    WifiNative in framework. Also introduces a test utility.
+    
+    Also has updated Gscan.h which is made up-to-date with the
+    promised functionatliy.
+    
+    Change-Id: I12dd6d9f171e01e4b23ce4839b4022acd5e599cb
+    
+    Conflicts:
+            service/Android.mk
+    wifi hal: use libnl
+    
+    libnl_2 has been replaced by libnl
+    Remove debug lines that touch libnl internals
+    
+    Change-Id: I37a70fb4f040a7e53676fdcf8b1db8e17fbbf4b7
+    Wifi HAL initial implementation
+    
+    This change introduces Wifi HAL. It has basic structure that we can expect
+    most commands and events to follow. Only one command is implemented for
+    illustration.
+    
+    Change-Id: I16e4b50f3034214e41ab5d363e2c3f543345609b

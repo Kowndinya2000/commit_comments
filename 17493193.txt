@@ -1,0 +1,1195 @@
+﻿    Support for materialized views; meta-data enhancements
+    update documentation
+    uopdate release notes for v3.0.0
+    uopdate release notes for v3.0.0
+    documentation cleanup; dbvisQuirks property now correctly set
+    cleanup configuration / documentation; handle SSL connectivity errors as SQLException; add primitive trace() functions for debugging
+    convert from ad-hoc URL params to Driver Parameters (these appear in most JDBC UI's)
+    setup Travis CI for Twig 2.0
+    easier to see...
+    easier to see...
+    adding build for Travis CI
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    read schema information correctly for 2.1.x; minor build cleanup
+    update docs
+    Create README.md
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    Support for Collections Step #1
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Add log4j.properties to suppress warnings during test
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    update major version number in the driver; clarify name of db driver to load for tests
+    read schema information correctly for 2.1.x; minor build cleanup
+    Update the POM and Build.xml file to reference the 1.1.0 version of C*.
+    
+    In preparation for 1.1.0 release of cassandra-jdbc Driver
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Allow testing with a non-local cassandra server.
+    
+    * If you define the property cassandra.rpc.port then the profiles will switch and instead of using a locally started cassandra server, it will use the cassandra server on the specified port (cassandra.host defaults to localhost but that can be overridden too). e.g.
+    
+        mvn -Dcassandra.rpc.port=9170 -Dcassandra.host=10.0.0.5
+    
+    * If you don't define the property it will launch a cassandra server via the cassandra-maven-plugin using random unused ports (and shut it down afterwards
+    Switch to Maven as a build tool.
+    
+    * Using cassandra-maven-plugin to start a cassandra server for running the integration tests.
+    
+    * Using build-helper-maven-plugin and resource filtering to ensure that the tests run on random ports each time
+    
+    * Using maven-failsafe-plugin so that integration tests are run while the cassandra server is running.
+    
+    * No need for the lib directory any more
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    read schema information correctly for 2.1.x; minor build cleanup
+    rename groupId to com.micromux
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Switch to Maven as a build tool.
+    
+    * Using cassandra-maven-plugin to start a cassandra server for running the integration tests.
+    
+    * Using build-helper-maven-plugin and resource filtering to ensure that the tests run on random ports each time
+    
+    * Using maven-failsafe-plugin so that integration tests are run while the cassandra server is running.
+    
+    * No need for the lib directory any more
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Support for Collections Step #1
+    Tune up tests to make them 1.2 compatible.
+    
+    o delete Schema.java,JdbcDriverTest and PreparedStatement test because
+    they violated so many 1.2 rules they we not savable.
+    
+    o modify other thest to obey new create keyspace rules and syntax
+    cleanup imports
+    
+    * removed not needed imports
+    * avoided looped-catch from test
+    Add additional Metadata support and tidy up.
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Add a unit test for the code on the Splash screen of the Apache-extras
+    Cassandra-JDBC site.
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    cleanup variable / object scope; remove unused class definitions and imports
+    unit tests passing
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Tune up MetdataResultSets and PooledTest.
+    Tune up tests to make them 1.2 compatible.
+    
+    o delete Schema.java,JdbcDriverTest and PreparedStatement test because
+    they violated so many 1.2 rules they we not savable.
+    
+    o modify other thest to obey new create keyspace rules and syntax
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    pooled Connections
+    
+    * added a test to create two million connections
+    * added a managed datasource to recycle connections
+    * added the creation of pooled connection to Cassandra's DataSource
+    * added a pooled connection to manage the physical connection
+    * added a managed connection to "mock" a connection to the user
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    read schema information correctly for 2.1.x; minor build cleanup
+    rename groupId to com.micromux
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Update Utils.java to support version=M.m.p in the URL for the Driver
+    
+    o Add a Unit test
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Support for Collections Step #1
+    Tune up tests to make them 1.2 compatible.
+    
+    o delete Schema.java,JdbcDriverTest and PreparedStatement test because
+    they violated so many 1.2 rules they we not savable.
+    
+    o modify other thest to obey new create keyspace rules and syntax
+    Add additional Metadata support and tidy up.
+    Added version support to CassandraDataSource
+    
+     o added a getter for the connectionParameter property to
+    CassandraConnection
+     o support for cql version to CassandraDataSource
+     o added Apache header to CassandraDataSource (wfs)
+     o added a test case to DataSourceTest
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Update various Unit and Functional Tests
+    
+    o Update tests to make stand alone (Eclipse) testing easier by providing
+       CLI based (-D) argument overrides for host and port
+    o Provide a reasonably rigorous unit test for HandleObject helper class
+    Resolve Issue #10. Missing support for Boolean in getBoolean()
+    
+    * Silly omission in getBoolean() method.
+    * Fixed same problem in getInteger().
+    * Tidied up other methods for consistency.
+    * Added a junit test for testing regressions.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Switch to Maven as a build tool.
+    
+    * Using cassandra-maven-plugin to start a cassandra server for running the integration tests.
+    
+    * Using build-helper-maven-plugin and resource filtering to ensure that the tests run on random ports each time
+    
+    * Using maven-failsafe-plugin so that integration tests are run while the cassandra server is running.
+    
+    * No need for the lib directory any more
+    switch to standard directory layout
+    adapt tests to connect to non-embedded instance
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    Support for materialized views; meta-data enhancements
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    cleanup variable / object scope; remove unused class definitions and imports
+    unit tests passing
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Tune up some omissions from Issue#40 patch providef by Jan Blok
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Tune up tests to make them 1.2 compatible.
+    
+    o delete Schema.java,JdbcDriverTest and PreparedStatement test because
+    they violated so many 1.2 rules they we not savable.
+    
+    o modify other thest to obey new create keyspace rules and syntax
+    Add additional Metadata support and tidy up.
+    Add a simple ResultSet method (getTableTypes) to
+    CassandraDatabaseNetaData and supporting classes
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Add a unit test for the code on the Splash screen of the Apache-extras
+    Cassandra-JDBC site.
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix issue 101 : correct handling of timestamp types in collections
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    Update CollectionsTest to use reserved words true and false not quoted
+    literals
+    Completed Enhancement Issue #51, Support for Collections
+    Support for Collections Step #1
+    issue with timezones during tests; removing string comparison
+    correct LocalDate for Cassandra 3.x; improve getObject() support
+    uopdate release notes for v3.0.0
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    cleanup variable / object scope; remove unused class definitions and imports
+    unit tests passing
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    adding bundled build; improved tablename support
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    test column types with prepared statement
+    Fix for fix of JdbcRegressionTest for Issue 71
+    Fix duplicate test in Regressiontest (introduced by issue71 patch)
+    Fix for Issue #75 Fails with null pointer for empty results
+    Issue #78: Incorrect query fix
+    Made getPrimaryKeys work (issue #77)
+    also pk columns are now returned in getColumns
+    made DatabaseMetaData.getIndexInfo work
+    fix for issue 75
+    Fix for Issue #74 Fails with null pointer for empty results
+    Tune up some omissions from Issue#40 patch providef by Jan Blok
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Fix for Issue #74 - getObject() returns a java.util.Date but should
+    return a java.sql.Timestamp when fetching a CQL timestamp field.
+    Fix for Issue #65 - Allow an empty set to be passed as a bind variable.
+    
+    o Update handleObjects to support passing an empty set (or list)
+    o Add regression test for issue #65
+    Fix for Issue #59 - Support for multi-argument prepareStatement.
+    
+    o Update CassandraConnection to add new prepareStatement methods
+    o  Update CassandraPreparedStatement to support new constructors
+    o Add regression test for issue #59
+    Tune up tests to make them 1.2 compatible.
+    
+    o delete Schema.java,JdbcDriverTest and PreparedStatement test because
+    they violated so many 1.2 rules they we not savable.
+    
+    o modify other thest to obey new create keyspace rules and syntax
+    improved isValid
+    
+    * Changed the isValid method to check with a real cql-query. Even if the
+    physical Connection would be lost, the method would have returned true.
+    The Binary, Transport and Socket layer only checked for the previous
+    call of "close".
+    * for cql2 and cql3 different querys need to be used
+    Add additional Metadata support and tidy up.
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Add test for Issue #33.
+    
+     o also add a bit of tidying up.
+    Provide better support for getMetadata() method by tool clients
+    
+    * Rename the rSetIter iterator to rowIterator.
+    
+    * Rewrite next() method of CassandraResultSet to simplify and
+      abstract out the column initialization routine.
+    
+    * Initialize the metadata with values from first row to improve
+      compatibility with other Relational JDBC implementations.
+      NOTE: this approach will fail if all accessed rows are not
+            the same.
+      NOTE: the row pointer is still left pointing BEFORE the first row.
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Update various Unit and Functional Tests
+    
+    o Update tests to make stand alone (Eclipse) testing easier by providing
+       CLI based (-D) argument overrides for host and port
+    o Provide a reasonably rigorous unit test for HandleObject helper class
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Resolve Issue #10. Missing support for Boolean in getBoolean()
+    
+    * Silly omission in getBoolean() method.
+    * Fixed same problem in getInteger().
+    * Tidied up other methods for consistency.
+    * Added a junit test for testing regressions.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Add a unit test for the code on the Splash screen of the Apache-extras
+    Cassandra-JDBC site.
+    rename groupId to com.micromux
+    4.0 spec requirement to declare as a service provider
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    cleanup imports
+    
+    * removed not needed imports
+    * avoided looped-catch from test
+    Add a simple ResultSet method (getTableTypes) to
+    CassandraDatabaseNetaData and supporting classes
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Rewrite CassandraPreparedStatement to use server-side processing
+    
+    * Rewrite CassandraPreparedStatement
+    
+    * modify CassandraStatement to provide support for new design
+    
+    * modify CassandraConnection to provide support for new design
+    
+    * add unsupported methods to AbstractStatement
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup variable / object scope; remove unused class definitions and imports
+    unit tests passing
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    pooled Connections
+    
+    * added a test to create two million connections
+    * added a managed datasource to recycle connections
+    * added the creation of pooled connection to Cassandra's DataSource
+    * added a pooled connection to manage the physical connection
+    * added a managed connection to "mock" a connection to the user
+    Added version support to CassandraDataSource
+    
+     o added a getter for the connectionParameter property to
+    CassandraConnection
+     o support for cql version to CassandraDataSource
+     o added Apache header to CassandraDataSource (wfs)
+     o added a test case to DataSourceTest
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup configuration / documentation; handle SSL connectivity errors as SQLException; add primitive trace() functions for debugging
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    handle exception via logging
+    unit tests passing
+    rename groupId to com.micromux
+    remove large commented blocks
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    make the current connection node-failure resistant
+    added some default mappings when no type is specified
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Fix for Issue #59 - Support for multi-argument prepareStatement.
+    
+    o Update CassandraConnection to add new prepareStatement methods
+    o  Update CassandraPreparedStatement to support new constructors
+    o Add regression test for issue #59
+    Fix Issue #49,  Better handling of Null in PreparedStatement setters
+    o Handle nulls in value argument of setters of object types like String
+      as if it was a setNull by inserting an empty ByteBuffer
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Client-side PreparedStatement updates for binary bind values
+    
+    o CassandraConnection updated to pass a Binary as opposed to String list
+    o CassandraPreparedStetment rewrite
+    o new HandleObjects to support setObject() variations on a theme
+    o update pom.xml to use 0.7.0 of Thrift
+    Rename CResultSet to CassandraResultSet
+    
+    This will to be consistent with naming the JDBC implementations by
+    prefixing 'Cassandra' to the JDBC interface names.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Support new prepared statement features in CQL in client side
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Fixes for Review revisions for PreparedStatement
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Rewrite CassandraPreparedStatement to use server-side processing
+    
+    * Rewrite CassandraPreparedStatement
+    
+    * modify CassandraStatement to provide support for new design
+    
+    * modify CassandraConnection to provide support for new design
+    
+    * add unsupported methods to AbstractStatement
+    Fixes for Cassandra-JDBC Issue#8
+    
+    added a new method to ColumnDecoder: getDefaultValidator()
+    called the new method in the UPDATE code for client side binding.
+    Add some trace logging
+    switch to standard directory layout
+    add getRowId support to CResultSet
+    patch by Rick Shaw; reviewed by jbellis for CASSANDRA-3089
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166301 13f79535-47bb-0310-9956-ffa450edef68
+    move *Term to Jdbc*
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165661 13f79535-47bb-0310-9956-ffa450edef68
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    convert drivers (and tests) to o.a.c.cql.term
+    
+    Patch by eevans; reviewed by Rick Shaw for CASSANDRA-2936
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1164692 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1100900 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1095139 13f79535-47bb-0310-9956-ffa450edef68
+    use SQL-ish data types
+    patch by jbellis and Eric Evans for CASSANDRA-2445
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1090738 13f79535-47bb-0310-9956-ffa450edef68
+    JDBC PreparedStatements + some tests
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1086965 13f79535-47bb-0310-9956-ffa450edef68
+    Support for materialized views; meta-data enhancements
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    move SQL logic into custom CassandraValidatorType; provide add-first function for key columns; deprecate unusued functions
+    unit tests passing
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    rename groupId to com.micromux
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    pooled Connections
+    
+    * added a test to create two million connections
+    * added a managed datasource to recycle connections
+    * added the creation of pooled connection to Cassandra's DataSource
+    * added a pooled connection to manage the physical connection
+    * added a managed connection to "mock" a connection to the user
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    switch to standard directory layout
+    add CassandraRowId.java
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166303 13f79535-47bb-0310-9956-ffa450edef68
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup variable / object scope; remove unused class definitions and imports
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    adding bundled build; improved tablename support
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Show more information in error messages from Server
+    Rename CResultSet to CassandraResultSet
+    
+    This will to be consistent with naming the JDBC implementations by
+    prefixing 'Cassandra' to the JDBC interface names.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Rewrite CassandraPreparedStatement to use server-side processing
+    
+    * Rewrite CassandraPreparedStatement
+    
+    * modify CassandraStatement to provide support for new design
+    
+    * modify CassandraConnection to provide support for new design
+    
+    * add unsupported methods to AbstractStatement
+    Fixes for Cassandra-JDBC Issue#8
+    
+    added a new method to ColumnDecoder: getDefaultValidator()
+    called the new method in the UPDATE code for client side binding.
+    Add some trace logging
+    Revert "Fixes for Cassandra-JDBC Issue#8"
+    
+    This reverts commit fa62a5a3162f5e97e86d7d15d78fe19e3b6d7e05.
+    Fixes for Cassandra-JDBC Issue#8
+    
+    added a new method to ColumnDecoder: getDefaultValidator()
+    called the new method in the UPDATE code for client side binding.
+    Add back the compareTo method to Statement.java because it is required
+    to be comparable.
+    Issue #6. Re-repair CASSANDRA-3244
+    switch to standard directory layout
+    include schema with CQL resultset
+    patch by jbellis; reviewed by thobbs for CASSANDRA-2734
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165750 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1100900 13f79535-47bb-0310-9956-ffa450edef68
+    JDBC PreparedStatements + some tests
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1086965 13f79535-47bb-0310-9956-ffa450edef68
+    update JDBC driver for SchemaDisagreementException
+    
+    Patch by eevans; reviewed by brandon.williams for CASSANDRA-2334
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1081973 13f79535-47bb-0310-9956-ffa450edef68
+    RowData exposes sparse column attributes through CassandraResultSet
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1081542 13f79535-47bb-0310-9956-ffa450edef68
+    update JDBC driver and tests for BytesType columns
+    
+    Patch by eevans for CASSANDRA-2027
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1080028 13f79535-47bb-0310-9956-ffa450edef68
+    move all java cql into jdbc package and only expose a few bits. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079977 13f79535-47bb-0310-9956-ffa450edef68
+    implements getXXX methods to return values of the correct types. rearranges the JdbcDriverTest. renames SchemaDecoder. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079975 13f79535-47bb-0310-9956-ffa450edef68
+    first pass at column decoding. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079973 13f79535-47bb-0310-9956-ffa450edef68
+    basic JDBC'ish (non-compliant) driver for CQL
+    
+    Patch by Vivek Mishra; reviewed by eevans for CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1069593 13f79535-47bb-0310-9956-ffa450edef68
+    Support for materialized views; meta-data enhancements
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    cleanup variable / object scope; remove unused class definitions and imports
+    move SQL logic into custom CassandraValidatorType; provide add-first function for key columns; deprecate unusued functions
+    unit tests passing
+    read schema information correctly for 2.1.x; minor build cleanup
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix issue 101 : correct handling of timestamp types in collections
+    Issue #78: Incorrect query fix
+    Made getPrimaryKeys work (issue #77)
+    also pk columns are now returned in getColumns
+    made DatabaseMetaData.getIndexInfo work
+    Tune up some omissions from Issue#40 patch providef by Jan Blok
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Tune up MetdataResultSets and PooledTest.
+    Add additional Metadata support and tidy up.
+    Add a simple ResultSet method (getTableTypes) to
+    CassandraDatabaseNetaData and supporting classes
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    rename groupId to com.micromux
+    properly map currentKepspace as schema
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    Support for materialized views; meta-data enhancements
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup configuration / documentation; handle SSL connectivity errors as SQLException; add primitive trace() functions for debugging
+    convert from ad-hoc URL params to Driver Parameters (these appear in most JDBC UI's)
+    cleanup variable / object scope; remove unused class definitions and imports
+    update major version number in the driver; clarify name of db driver to load for tests
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    make the current connection node-failure resistant
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Made getPrimaryKeys work (issue #77)
+    also pk columns are now returned in getColumns
+    properly map currentKepspace as schema
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Fix for Issue #59 - Support for multi-argument prepareStatement.
+    
+    o Update CassandraConnection to add new prepareStatement methods
+    o  Update CassandraPreparedStatement to support new constructors
+    o Add regression test for issue #59
+    Support new CQL3 Thrift calls in CassandraConnection
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    improved isValid
+    
+    * Changed the isValid method to check with a real cql-query. Even if the
+    physical Connection would be lost, the method would have returned true.
+    The Binary, Transport and Socket layer only checked for the previous
+    call of "close".
+    * for cql2 and cql3 different querys need to be used
+    Added version support to CassandraDataSource
+    
+     o added a getter for the connectionParameter property to
+    CassandraConnection
+     o support for cql version to CassandraDataSource
+     o added Apache header to CassandraDataSource (wfs)
+     o added a test case to DataSourceTest
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Client-side PreparedStatement updates for binary bind values
+    
+    o CassandraConnection updated to pass a Binary as opposed to String list
+    o CassandraPreparedStetment rewrite
+    o new HandleObjects to support setObject() variations on a theme
+    o update pom.xml to use 0.7.0 of Thrift
+    Rename CResultSet to CassandraResultSet
+    
+    This will to be consistent with naming the JDBC implementations by
+    prefixing 'Cassandra' to the JDBC interface names.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Fixes for Review revisions for PreparedStatement
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Fix issue #9 by moving a method call involving access until AFTER
+    it has been authorized.
+    
+    modified:
+     * src/main/java/org/apache/cassandra/cql/jdbc/CassandraConnection.java
+    
+    Bug: issue #9
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Rewrite CassandraPreparedStatement to use server-side processing
+    
+    * Rewrite CassandraPreparedStatement
+    
+    * modify CassandraStatement to provide support for new design
+    
+    * modify CassandraConnection to provide support for new design
+    
+    * add unsupported methods to AbstractStatement
+    Issue #6. Re-repair CASSANDRA-3244
+    switch to standard directory layout
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    JDBC PreparedStatements + some tests
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1086965 13f79535-47bb-0310-9956-ffa450edef68
+    expose CassandraResultSetMetaData to inspect type information of column names and values
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1082525 13f79535-47bb-0310-9956-ffa450edef68
+    update JDBC driver for SchemaDisagreementException
+    
+    Patch by eevans; reviewed by brandon.williams for CASSANDRA-2334
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1081973 13f79535-47bb-0310-9956-ffa450edef68
+    move all java cql into jdbc package and only expose a few bits. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079977 13f79535-47bb-0310-9956-ffa450edef68
+    basic JDBC'ish (non-compliant) driver for CQL
+    
+    Patch by Vivek Mishra; reviewed by eevans for CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1069593 13f79535-47bb-0310-9956-ffa450edef68
+    remove SLF4J - this project is better suiteed to the native Java logger
+    rename groupId to com.micromux
+    Fixed Issue #50, JDBC Suite does not compile under JDK 7
+    synchronized
+    
+    * fix for a test with concurrent requests
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    pooled Connections
+    
+    * added a test to create two million connections
+    * added a managed datasource to recycle connections
+    * added the creation of pooled connection to Cassandra's DataSource
+    * added a pooled connection to manage the physical connection
+    * added a managed connection to "mock" a connection to the user
+    correct LocalDate for Cassandra 3.x; improve getObject() support
+    uopdate release notes for v3.0.0
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup variable / object scope; remove unused class definitions and imports
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    reading column types; refer to CassandraValidatorType
+    remove large commented blocks
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    adding bundled build; improved tablename support
+    Preliminary support for getObject() of LIST, SET or MAP; unit tests; Blob reading
+    initial revision functioning in IntelliJ
+    Fix issue 101 : correct handling of timestamp types in collections
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    properly map currentKepspace as schema
+    Fix for Issue #74 Fails with null pointer for empty results
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Fix for Issue #74 - getObject() returns a java.util.Date but should
+    return a java.sql.Timestamp when fetching a CQL timestamp field.
+    Fix for Issue #69 - Metadata not populated properly if table is empty
+    Completed Enhancement Issue #51, Support for Collections
+    Support for Collections Step #1
+    cleanup casts
+    
+    * added casts
+    * added @SuppressWarnings for unchecked internal and raw datatypes
+    Add additional Metadata support and tidy up.
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Provide better support for getMetadata() method by tool clients
+    
+    * Rename the rSetIter iterator to rowIterator.
+    
+    * Rewrite next() method of CassandraResultSet to simplify and
+      abstract out the column initialization routine.
+    
+    * Initialize the metadata with values from first row to improve
+      compatibility with other Relational JDBC implementations.
+      NOTE: this approach will fail if all accessed rows are not
+            the same.
+      NOTE: the row pointer is still left pointing BEFORE the first row.
+    Rename CResultSet to CassandraResultSet
+    
+    This will to be consistent with naming the JDBC implementations by
+    prefixing 'Cassandra' to the JDBC interface names.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Rename the interface CassandraResultSet to CassandraResultSetExtras
+    
+    This name better signifies the interfaces purpose and will allow us to
+    rename CResultSet to CassandraResultSet to be consistent with naming
+    the JDBC implementations by prefixing 'Cassandra' to the JDBC interface
+    names.
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Resolve Issue #10. Missing support for Boolean in getBoolean()
+    
+    * Silly omission in getBoolean() method.
+    * Fixed same problem in getInteger().
+    * Tidied up other methods for consistency.
+    * Added a junit test for testing regressions.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    Fix issue #4
+    
+    Delete 2 unused files: DriverRedsolverException.java,
+    InvalidUrlException.java
+    switch to standard directory layout
+    add jdbc BigDecimal support
+    patch by Rick Shaw; reviewed by jbellis for CASSANDRA-3153
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166497 13f79535-47bb-0310-9956-ffa450edef68
+    add getRowId support to CResultSet
+    patch by Rick Shaw; reviewed by jbellis for CASSANDRA-3089
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166301 13f79535-47bb-0310-9956-ffa450edef68
+    include schema with CQL resultset
+    patch by jbellis; reviewed by thobbs for CASSANDRA-2734
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165750 13f79535-47bb-0310-9956-ffa450edef68
+    move *Term to Jdbc*
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165661 13f79535-47bb-0310-9956-ffa450edef68
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    convert drivers (and tests) to o.a.c.cql.term
+    
+    Patch by eevans; reviewed by Rick Shaw for CASSANDRA-2936
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1164692 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1102059 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1100900 13f79535-47bb-0310-9956-ffa450edef68
+    uopdate release notes for v3.0.0
+    documentation cleanup; dbvisQuirks property now correctly set
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup configuration / documentation; handle SSL connectivity errors as SQLException; add primitive trace() functions for debugging
+    convert from ad-hoc URL params to Driver Parameters (these appear in most JDBC UI's)
+    cleanup variable / object scope; remove unused class definitions and imports
+    move SQL logic into custom CassandraValidatorType; provide add-first function for key columns; deprecate unusued functions
+    read schema information correctly for 2.1.x; minor build cleanup
+    rename groupId to com.micromux
+    cleanup legacy Thrify dependencies; cleanup default select * logic
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Cassandra 2.0 & 2.1 compatibility
+    Cluster topology discovery (multiple hostnames can be passed as seeds in JDBC URL)
+    Round robin connection scheme
+    Primary and Backup DC configuration through JDBC URL
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Support for Collections Step #1
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Resolve issue #28. Call the end() method of Deflator in a finally
+    clause.
+    
+    The deflator was allocating some system memory for the deflation process
+    but was never giving it back upon closing the structure. The docs say it
+    will be cleaned up by the finalizer but that did not seem to be the
+    case. It needed to be closed explicitly
+    Update Utils.java to support version=M.m.p in the URL for the Driver
+    
+    o Add a Unit test
+    switch to standard directory layout
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1100900 13f79535-47bb-0310-9956-ffa450edef68
+    compress utf8 bytes and not platform bytes.
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1086966 13f79535-47bb-0310-9956-ffa450edef68
+    JDBC PreparedStatements + some tests
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1086965 13f79535-47bb-0310-9956-ffa450edef68
+    move all java cql into jdbc package and only expose a few bits. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079977 13f79535-47bb-0310-9956-ffa450edef68
+    license headers (java driver source)
+    
+    Patch by eevans for CASSANDRA-1710
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1055591 13f79535-47bb-0310-9956-ffa450edef68
+    CASSANDRA-1710 basic connection pooling for java driver
+    
+    Patch by eevans for CASSANDRA-1710
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1055538 13f79535-47bb-0310-9956-ffa450edef68
+    remove SLF4J - this project is better suiteed to the native Java logger
+    rename groupId to com.micromux
+    synchronized
+    
+    * fix for a test with concurrent requests
+    fixed recovery
+    
+    * removing of broken prepared statements from the pool
+    cleanup names
+    
+    * removed cassandra from two filenames, to keep the nameschema
+    pooled prepared Statements
+    
+    * pooling prepared Statements (not "normal" Statement) is about 5 times faster than not pooled creation
+    * removed some not necessary exceptions
+    pooled Connections
+    
+    * added a test to create two million connections
+    * added a managed datasource to recycle connections
+    * added the creation of pooled connection to Cassandra's DataSource
+    * added a pooled connection to manage the physical connection
+    * added a managed connection to "mock" a connection to the user
+    Support for materialized views; meta-data enhancements
+    initial support for Cassandra 3; cleanup invalid override annotations and upgrade to JDK 8
+    first pass at version cleanup; bump develop version
+    cleanup variable / object scope; remove unused class definitions and imports
+    unit tests passing
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Made getPrimaryKeys work (issue #77)
+    also pk columns are now returned in getColumns
+    made DatabaseMetaData.getIndexInfo work
+    Fix for Issue #40 - Add additional support for DatabaseMetadata to
+    display data from new system table in C*
+    -CassandraDatabaseMetaData.java implemented getTables / getColumns
+    o CassandraConnection.java made field private since there is a
+    getCatalog method
+    o MetadataResultSets.java moved constants, finished makeTables, added
+    makeColumns, fixed makeSchemas
+    o ConnectionDetails.java make it work with real default port and run
+    without a property file
+    o create a regression test for issue #40
+    o update MetadataResultSets
+    Add additional Metadata support and tidy up.
+    Add a simple ResultSet method (getTableTypes) to
+    CassandraDatabaseNetaData and supporting classes
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Rename CResultSet to CassandraResultSet
+    
+    This will to be consistent with naming the JDBC implementations by
+    prefixing 'Cassandra' to the JDBC interface names.
+    
+    
+    Signed-off-by: Rick Shaw <wfshaw@gmail.com>
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    add getRowId support to CResultSet
+    patch by Rick Shaw; reviewed by jbellis for CASSANDRA-3089
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166301 13f79535-47bb-0310-9956-ffa450edef68
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    build process moved to Gradle; tests now run with integrated Cassandra instance
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    uopdate release notes for v3.0.0
+    update Twig driver version
+    first pass at version cleanup; bump develop version
+    remove SLF4J - this project is better suiteed to the native Java logger
+    cleanup configuration / documentation; handle SSL connectivity errors as SQLException; add primitive trace() functions for debugging
+    convert from ad-hoc URL params to Driver Parameters (these appear in most JDBC UI's)
+    cleanup variable / object scope; remove unused class definitions and imports
+    update driver version info
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    Fix issue 101 : correct handling of timestamp types in collections
+    Fix for Issue #71, Allows initialization and update to consistency level
+     o Initial fixes provided by Fabian Chaillou
+     o Additional cleanup an simple regression test added
+     o added initialization to DataSource and Driver
+    Update to 1.2.0 and tidy up Metadata, better errors in Statement.
+    Add ability to set the CQL version of the session using connection URL
+    
+    o support adding "?version=M.m.p" to the URL argument to set the active
+      CQL version like: "jdbc:cassandra://localhost:9160/KS1?version=3.0.0"
+    o add a toString() method to Cassandra connection to show all
+      connection properties.
+    o Update driver to define version as 1.1.0
+    o Update JdbcRegression with a simple visual test for Issue#15
+    Update patch level in the driver to 1.0.5
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    move all java cql into jdbc package and only expose a few bits. patch by gdusbabek, reviewed by eevans. CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1079977 13f79535-47bb-0310-9956-ffa450edef68
+    basic JDBC'ish (non-compliant) driver for CQL
+    
+    Patch by Vivek Mishra; reviewed by eevans for CASSANDRA-2124
+    
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1069593 13f79535-47bb-0310-9956-ffa450edef68
+    rename groupId to com.micromux
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    switch to standard directory layout
+    sync up with cassandra drivers tree
+    add getRowId support to CResultSet
+    patch by Rick Shaw; reviewed by jbellis for CASSANDRA-3089
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1166301 13f79535-47bb-0310-9956-ffa450edef68
+    clean up JDBC class declarations and accessibility modifiers
+    patch by Rick Shaw for CASSANDRA-3135
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1165388 13f79535-47bb-0310-9956-ffa450edef68
+    move drivers back in-tree until build issues can be fixed.  see CASSANDRA-2761
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1161216 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1102059 13f79535-47bb-0310-9956-ffa450edef68
+    merge from 0.8
+    
+    git-svn-id: https://svn.apache.org/repos/asf/cassandra/trunk/drivers/java@1100900 13f79535-47bb-0310-9956-ffa450edef68
+    rename groupId to com.micromux
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete
+    unit tests passing
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    cleanup variable / object scope; remove unused class definitions and imports
+    rename groupId to com.micromux
+    reading column types; refer to CassandraValidatorType
+    refactor meta-data resultset into dedicated ResultSet implementation using generics; most unit tests working
+    update to support non-Thrift driver; support Blob datatype; refactor ResultSetMetaData; tests half complete

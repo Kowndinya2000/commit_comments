@@ -1,0 +1,4592 @@
+﻿    1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    Juneteenth, 2020 -- renamed Hub mode properly
+    typo
+    1.2 description updates, prior to tagging
+    Revert "corrected my RtAudio misinformation"
+    corrected my RtAudio misinformation
+    1.2 in CHANGESLOG.txt
+    jacktrip/ folder removed and now all files in top level
+    Update CHANGESLOG.txt
+    Using shared lib for RtAudio on Linux
+    Update to RtAudio 4.1.1
+    updated changelog for 1.1 release
+    added DNS Support lookup
+    documentation update
+    ready for 1.0.5 tag release
+    ready for 1.0.5 release
+    re-added universal binary compilation
+    Port scheame working and tested with JamLinks in OS x
+    change logs files
+    version 1.0.4
+    ready for 1.0.3 realease
+    UDP redundancy working, need to clean-up code
+    Server cleaned up and working fine, need to add oncfiguration variables
+    Several documentation and small updates
+    1.0.2 realease
+    Minor commit
+    Automatically connect ports to physical capture and playbacks
+    More checks
+    changelogs
+    added changleslog text file
+    jacktrip/ folder removed and now all files in top level
+    redundancy working
+    update todo list
+    More todos
+    Install instructions
+    test sourceforge
+    rename new jacktrip folder
+    update todo
+    more
+    More
+    Improvements in DataProtocol class
+    More advances, started header structure
+    Friday afternoon commit
+    more
+    ProcessPlugins working, example in main with LoopBack
+    added TODO.txt file
+    fix #158
+    
+    this fixes #158
+    updated project readme
+    Tiny formatting fix
+    
+    Removed extra space after CCRMA link, following the formatting of the other links.
+    Updated macOS installation steps and unified README.md
+    README.md
+    raspberry pi paper link in README.md
+    mod README.md
+    mention repos README.md
+    reformat README.md
+    add README.md
+    Add the word 'audio' to the description
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Fix typo in README.md
+    Create README.md
+    win which -> where
+    
+    On windows I believe 'which' is 'where'.
+    updated Windows 10 build instructions
+    added steps
+    further updates to INSTALL.txt
+    updated install.txt
+    Revert "Set QT5 dependency in build script"
+    Added qtchooser dependecy to build instructions
+    build in a subdirectory
+    typo
+    Update INSTALL.txt
+    Update INSTALL.txt
+    
+    There seems to be a small typo in the INSTALL.txt. This should correct it.
+    Update Linux install commands
+    
+    update a few commands, tested on Ubuntu 18.04
+    Updated macOS installation steps and unified README.md
+    Fixed compilation on windows and improved windows build documentation.
+    Added building instructions for OSX using QtCreator.
+    jacktrip/ folder removed and now all files in top level
+    Update INSTALL.txt
+    
+    Change install directory to /usr/local/bin to fix issue in OS X 10.11.
+    Updated install on mac instructions.
+    Updated readme file with Fedora 22 install
+    Using shared lib for RtAudio on Linux
+    Updated deployment target for OSX
+    updated INSTALL instructions for 1.1 release
+    stable windows version: fix udp waiting interruption bug
+    documentation update
+    improved build system
+    Install instructions
+    rename old jacktrip folder
+    add and remove info files
+    jacktrip/ folder removed and now all files in top level
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Automatically connect ports to physical capture and playbacks
+    Documentation folder added
+    Documentation update
+    some improvements
+    First pass on Mac scheduling and header working
+    Install instructions
+    rename new jacktrip folder
+    A lot of new stuff
+    doygen config file added
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Remove unused test header
+    Correct MacOSX #define
+    Enable thread support for meson build
+    Make jacktrip installable with meson
+    Add meson build file
+    Revert "Set QT5 dependency in build script"
+    Added qtchooser dependecy to build instructions
+    Add meson build and installation instructions
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    jacktrip/ folder removed and now all files in top level
+    net-ks.dsp cleanup
+    several updates
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    copyright 2020
+    Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add optional IO statistics reporting
+    Add files via upload
+    
+    Add hub server and client to help message, remove other duplicates.
+    Add files via upload
+    
+    Make sure sane defaults are set for the underrun mode and queue length in the constructor. Ensure queue length is properly passed to the UdpMasterListener. (Was accidentally dependent on -z being set.)
+    Add files via upload
+    
+    Make sure -q value is honoured in hub client mode.
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    hubPatch implementations for CLIENTECHO, CLIENTFOFI and added FULLMIX, removed ifdefs
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Changed indentation as preparation for the merge.
+    connectTUB
+    WAIRTOMASTER
+    udpmaster->setHubPatch(mHubConnectionMode)
+    Settings case 'p'
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    Updated command line help.
+    Added option --nojackportsconnect to not connect default jack audio ports
+    Removed separator lines from help-output
+    
+    they only confuse help2man and serve no special purpose
+    (the separation is clear due to the headings anyhow)
+    fixed typos and spelling-errors
+    
+    and copyright dates.
+    and use "cout" rather than "printf()"
+    updated copyright year
+    command line parsing for --localaddress
+    added RT AUDIO flag to compile without it
+    update settings help text
+    updates in server and placeholder class
+    replaced start name method in jacktrip by startProcess to avoid confussion with threaded process
+    more fixes on exceptions and error handling
+    Fixed all exceptions and use error signals when appropriate
+    SERVER code cleanup
+    added new options
+    added options to chanfe sampling rate and buffer size
+    RtAudio added as an option
+    first stepts in parent AudioInterface Class
+    added option to set bind port and peer port numbers separatly
+    ready for 1.0.5 release
+    fix receive port issue, now set correctly
+    Added stopJackTrip method to Settings
+    Fix empty header bug in Settings.cpp
+    fix small detail in settings
+    fix issue with process plugins and client name
+    Port scheame working and tested with JamLinks in OS x
+    added help text
+    added option to change client name
+    fix small bug in options
+    added option and classes for packet without a header
+    ready for 1.0.3 realease
+    added documentation in command line for redundancy
+    redundancy working
+    Signals and Slots working between threads and in the threadpool
+    More on signaling between worker threads in the pool
+    Several documentation and small updates
+    JackTrip Server classes added and mode included in Settings.cpp
+    several updates
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    small update in help
+    More implementations for the PINGTOSERVER mode
+    Client to ping server almost ready
+    added ofset option in help
+    Add port offset option
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    underrun modes added (zero and wavetable)
+    rename globals.h to jacktrip_globals.h
+    Jamlink mode added, First pass on mac threads
+    Add header for gcc 4.3 in linux
+    Bug in plugins fixed, still need to cleanup the code
+    rename new jacktrip folder
+    Alpha version 1.0
+    Headers added, almost there...
+    more sed
+    sed to JackTrip from PaulTrip
+    Loopback from command line working
+    before changing stuff with sed
+    More
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    Add settings class
+    Changed indentation as preparation for the merge.
+    jacktrip/ folder removed and now all files in top level
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More tmp files
+    Improvements in DataProtocol class
+    More
+    RingBuffer working, added PaulTrip class
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Add optional IO statistics reporting
+    Remove deprecated dynamic exception specification
+    Add files via upload
+    
+    Added cchafe's fixes to hubpatch mode 2 from main branch.
+    Some minor cleanup to the UdpDataProtocol code and comments.
+    Add files via upload
+    
+    There were still some minor threading issues with the previous approach, so have gone back to sharing a full duplex socket with a QUdpSocket object created only for reading. (Writing is done directly to the socket.) Seems to work consistently on all platforms. Have also merged some platform specific code where separate branches are no longer necessary. (This requires Vista or later when running on Windows.)
+    Add files via upload
+    
+    Finally managed to test on windows, and it did not go well. It seems that either windows sockets or the way that QUdpSocket manages them is not as thread safe as POSIX sockets. It worked when running as a client, but crashed out after about a second as a server. Also, no combination of half closing sockets (the old way of doing it) seemed to work consistently across both IPv4 and IPv6 on all platforms.
+    
+    So, have moved to sharing a single QUdpSocket object between both the sender and receiver, locking when a read or write is taking place. (Am not currently locking when checking if there are available datagrams, and that doesn't seem to be causing any trouble.)
+    Add files via upload
+    
+    Revert of last changes (apart from string copy) - worked on OS X but not Linux.
+    Add files via upload
+    
+    Make sure we copy the mPeerAddress string before modifying it to set the client name.
+    Simplified IPv6 implementation. (Managed to get it working using the old model, so JackTrip.cpp doesn't need to pass a single socket between threads.)
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    Fixed compilation on macOS.
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    added signals for recieve connection from peer
+    more fixes on exceptions and error handling
+    Fixed all exceptions and use error signals when appropriate
+    first stepts in parent AudioInterface Class
+    more getters
+    new setters and getters methods
+    added new methods (setters and getters)
+    fix issue with process plugins and client name
+    Fix port binding race issue
+    added check to verify is port is not binded by a different process
+    Port scheame working and tested with JamLinks in OS x
+    Working with Jamlink, still have to add the correct port for connections using other than 4464
+    rename port variable almost ready, still need to sort input to functions and rename global port numbers
+    More on renaming port variables
+    more on renaming ports
+    added sender receiver redundancy function
+    cleanup redundancy receive before removing comments
+    updates to port numering convention and client name
+    redundancy working
+    udp waiting too long signals and slots working, and drop support for PPC
+    Signals and Slots working between threads and in the threadpool
+    fixed bug on udpdataprotocol
+    Client to ping server almost ready
+    More fixes
+    fixed threading issues in udp
+    fixed memory leak on linux
+    Port number added as an option to udpprotocol
+    Bunch of fixes, including threads, and jacktrip mediator class
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    rename new jacktrip folder
+    Client and server modes both working, need to add that to the command line input
+    more
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More
+    RingBuffer working, added PaulTrip class
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Signals and Slots working between threads and in the threadpool
+    More on signaling between worker threads in the pool
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    added, hopefully, windows support, part 1, not tested yet on windows
+    change timming of kstring
+    Server Working
+    all os x compiler warnings fixed
+    Server cleaned up and working fine, need to add oncfiguration variables
+    several updates
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    small code cleanup
+    More RtAudio Cleanup
+    more cleanup and upclassing
+    more cleanup and optimization, still comments in
+    more cleanup and methods to parent class AudioInterface
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    Start porting packet memory to parent class AudioInterface. Now working, only need to clean-up
+    more on process buffers, commets still in code
+    Process Plugins working in both Jack and RtAudio
+    ported dynamic memory allocation of processbuffers to parent class
+    more cleanup
+    some more code cleanup
+    more on sub-classing
+    RtAudio Working multichannel
+    callback process implemented on parent class, working for Jack, still to implemente in RtAudio
+    RtAudio added as an option
+    fix compilations error in linux, added rtaudio
+    more cleanpu and subclassing, fixed all warnings
+    First subclassing of RtAudio, still a buss error
+    first steps in subclassing JackAudioInterface
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    first stepts in parent AudioInterface Class
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    Add optional IO statistics reporting
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Finish adding exceptions to all classes that where exiting
+    Bunch of fixes, including threads, and jacktrip mediator class
+    underrun modes added (zero and wavetable)
+    Fixed bug in header inclussion
+    Add header for gcc 4.3 in linux
+    rename new jacktrip folder
+    More
+    more
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    Ring buffer class completed, need to verify a little more though
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    more
+    More advances
+    RingBuffer working, added PaulTrip class
+    added new classes
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    underrun modes added (zero and wavetable)
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    Add settings class
+    adding command line parser
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    rename new jacktrip folder
+    More additions
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Update src/JackTrip.cpp
+    
+    Co-authored-by: ntonnaett <nils.tonnaett@posteo.de>
+    Honour custom client names
+    
+    Reupload of a partial fix for #73 to isolate them from the more substantial changes that have since occurred in my branch.
+    removed -- jacktrip client name set to=
+    removed -- qDebug() << mPeerAddress << mPeerAddress << mPeerAddress.contains(gDOMAIN_TRIPLE);
+    removed -- fixed windows crash with this print statement!
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add optional IO statistics reporting
+    Remove deprecated dynamic exception specification
+    Add files via upload
+    
+    Remove unnecessary reverse DNS lookups when an IP address is supplied.
+    Add files via upload
+    
+    There were still some minor threading issues with the previous approach, so have gone back to sharing a full duplex socket with a QUdpSocket object created only for reading. (Writing is done directly to the socket.) Seems to work consistently on all platforms. Have also merged some platform specific code where separate branches are no longer necessary. (This requires Vista or later when running on Windows.)
+    Add files via upload
+    
+    Finally managed to test on windows, and it did not go well. It seems that either windows sockets or the way that QUdpSocket manages them is not as thread safe as POSIX sockets. It worked when running as a client, but crashed out after about a second as a server. Also, no combination of half closing sockets (the old way of doing it) seemed to work consistently across both IPv4 and IPv6 on all platforms.
+    
+    So, have moved to sharing a single QUdpSocket object between both the sender and receiver, locking when a read or write is taking place. (Am not currently locking when checking if there are available datagrams, and that doesn't seem to be causing any trouble.)
+    Add files via upload
+    
+    Revert of last changes (apart from string copy) - worked on OS X but not Linux.
+    Add files via upload
+    
+    Make sure we copy the mPeerAddress string before modifying it to set the client name.
+    Simplified IPv6 implementation. (Managed to get it working using the old model, so JackTrip.cpp doesn't need to pass a single socket between threads.)
+    Add files via upload
+    
+    When setting jack client name, replace semicolons in IPv6 literals with periods.
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    fix to set clientname when in server mode
+    Removed unused header.
+    Simplified linux implementation of the thread prioritization.
+    Changed indentation as preparation for the merge.
+    beta version of hupatch = 3 ready to test with ensemble
+    connectTUB
+    connectTUB
+    connectTUB
+    VARIABLE_AUDIO_NAME for WAIR legacy and TUB name
+    connection name related to mPeerAddress
+    connection name from WAIR to JackTrip
+    WAIRTOMASTER
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    Added option --nojackportsconnect to not connect default jack audio ports
+    Fix bug --clientname issue 12, thanks to meeshmusic
+    added RT AUDIO flag to compile without it
+    added check before deleting audiointerface
+    fix bug in closing audio
+    more updates on quiting and stopping
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    a bunch of updates on jacktrip thread and others
+    small port set updates
+    updates on stopping processes
+    updates in server and placeholder class
+    non jack version completely added and working!
+    added signals for recieve connection from peer
+    replaced start name method in jacktrip by startProcess to avoid confussion with threaded process
+    added options to read header in the server before setting worker
+    A lot of packet header updates, getters and setters
+    windows/rtaudio/asi4all: ctrl-c bug fixed
+    commit before adding jacktripworkers array to udpmasterlistener
+    more fixes for windows
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Server Working
+    port communication with TCP server working
+    Blocking TCP socket working to send port number
+    fix jackaudio bug in startup
+    more fixes and marking of todos
+    more fixes on exceptions and error handling
+    Fixed all exceptions and use error signals when appropriate
+    added options to chanfe sampling rate and buffer size
+    more cleanup and upclassing
+    RtAudio added as an option
+    more cleanpu and subclassing, fixed all warnings
+    RtAudio working as a subclass of AudioInterface. Now jsut need to clean-up and propertly implement some methods
+    First subclassing of RtAudio, still a buss error
+    first steps in subclassing JackAudioInterface
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    first stepts in parent AudioInterface Class
+    more methods and virtual keywords
+    code improvement to make it easier to subclass
+    added new methods (setters and getters)
+    ready for 1.0.5 release
+    fix receive port issue, now set correctly
+    fix issue with process plugins and client name
+    added check to verify is port is not binded by a different process
+    some code cleanup and optimization
+    fix all linux gcc warnings
+    small code cleanup
+    small fix to client mode for jamlink
+    Working with Jamlink, still have to add the correct port for connections using other than 4464
+    More on renaming port variables
+    more on renaming ports
+    Firt pass on renaming port variables
+    added option to change client name
+    added option and classes for packet without a header
+    redundancy working
+    Finish adding exceptions to all classes that where exiting
+    Thread pool realeasing inactive jacktrips from the pool working!
+    Signals and Slots working between threads and in the threadpool
+    several updates
+    More implementations for the PINGTOSERVER mode
+    More on threads for jacktrip class
+    first pass on threaded jacktrip class
+    More
+    Client to ping server almost ready
+    fixed threading issues in udp
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Automatically connect ports to physical capture and playbacks
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    More on classes structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    underrun modes added (zero and wavetable)
+    Fixed bug in header inclussion
+    rename globals.h to jacktrip_globals.h
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    Add header for gcc 4.3 in linux
+    Add linux specific priority thread functions and compilations flags
+    rename new jacktrip folder
+    Alpha version 1.0
+    Client and server modes both working, need to add that to the command line input
+    fix yielding in threads and more
+    JackTrip class improved
+    Headers added, almost there...
+    more
+    more sed
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    UDP socket using qt4 prototype WORKING
+    8, 16, and 32 bits working, still figuring out 24
+    Loopback from command line working
+    Ring buffer class completed, need to verify a little more though
+    ProcessPlugins working, example in main with LoopBack
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    working between linux and mac, one channel
+    more
+    More cleanup
+    more cleanup
+    cleanup
+    Static cast for jack callback written, still have to test
+    more
+    More advances
+    More advances
+    added new classes
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add files via upload
+    
+    Make sure -q value is honoured in hub client mode.
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    fixed a new bug in server
+    fix perversive bug when setting peer address in server
+    came back to older version of worker class
+    updates in server and placeholder class
+    added options to read header in the server before setting worker
+    more code for headers and jacktrip worker
+    A lot of packet header updates, getters and setters
+    message to debug number of threadpools
+    new jtworkers array working when client disconects and connects again
+    commit before adding jacktripworkers array to udpmasterlistener
+    cleanup on linux
+    Signals and Slots working between threads and in the threadpool
+    Several documentation and small updates
+    JackTrip Server classes added and mode included in Settings.cpp
+    Changed indentation as preparation for the merge.
+    jacktrip/ folder removed and now all files in top level
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More tmp files
+    Improvements in DataProtocol class
+    More advances
+    added new classes
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add optional IO statistics reporting
+    Remove deprecated dynamic exception specification
+    Add files via upload
+    
+    Make sure -q value is honoured in hub client mode.
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Changed indentation as preparation for the merge.
+    connectPatch
+    udpmaster->setHubPatch(mHubConnectionMode)
+    src/
+    jacktrip/ folder removed and now all files in top level
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    improved thread safety
+    fix id issue with re-connecting clients
+    A lot of packet header updates, getters and setters
+    new jtworkers array working when client disconects and connects again
+    commit before adding jacktripworkers array to udpmasterlistener
+    small types updates
+    Server Working
+    updates with tcp sockets on server
+    SERVER code cleanup
+    Signals and Slots working between threads and in the threadpool
+    Several documentation and small updates
+    JackTrip Server classes added and mode included in Settings.cpp
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    removed namespaces for linux compilation
+    added jacktrip namespaces
+    Process Plugins working in both Jack and RtAudio
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More
+    Loopback working
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Juneteenth, 2020 -- renamed Hub mode properly
+    change printout from JMess
+    add mutex to JMess class
+    add mutex to JMess::connectSpawnedPorts
+    Add files via upload
+    
+    Added cchafe's fixes to hubpatch mode 2 from main branch.
+    Some minor cleanup to the UdpDataProtocol code and comments.
+    fixed hubpatch mode 2 which is enum CLIENTFOFI, the one that listens to all other clients but not your own loopback (invoked with the argument -p 2)
+    working version of hubPatch mode = 4
+    hubPatch implementations for CLIENTECHO, CLIENTFOFI and added FULLMIX, removed ifdefs
+    patch mode 3, enabled audio connections from SC to jacktrip, with channel offset of 4
+    patch mode 3, disabled SC to jacktrip for concert preparation reason
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Added supercollider port offset for TUB setup.
+    Remove default connections for the TUB setup.
+    working verson (mono only)  for TUB ensemble
+    mono version of  patch for Riviera server
+    new patch for Riviera server
+    new patch for Riviera server
+    TUB riviera
+    testing Riviera ensemble server
+    shift client to .245 for testing, add SC audio connections
+    shift client to .245 for testing, add SC audio connections
+    shift client to .245 for testing, add SC audio connections
+    shift client to .245 for testing, add SC audio connections
+    beta version of hupatch = 3 ready to test with ensemble
+    connectTUB
+    connectTUB
+    connectTUB
+    connectTUB
+    connectTUB
+    connection name related to mPeerAddress
+    connection name from WAIR to JackTrip
+    connection name from WAIR to JackTrip
+    connection name from WAIR to JackTrip
+    WAIR_AUDIO_NAME JackTrip
+    WAIR_AUDIO_NAME JackTrip
+    WAIR_AUDIO_NAME JackTrip
+    JMess.* from wair branch to master
+    test connectSpawnedPorts
+    src/
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    more on renaming ports
+    all os x compiler warnings fixed
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    rename globals.h to jacktrip_globals.h
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Changed indentation as preparation for the merge.
+    git rm *.tmp
+    src/
+    jacktrip/ folder removed and now all files in top level
+    rename globals.h to jacktrip_globals.h
+    rename new jacktrip folder
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    tmp file before network classes modifications
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Changed indentation as preparation for the merge.
+    src/
+    Update JackAudioInterface.h
+    jacktrip/ folder removed and now all files in top level
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Cleanup and optiomization JackAudio Class
+    more cleanup and upclassing
+    more cleanup and methods to parent class AudioInterface
+    all memory ported to Audiointerface and commets removed
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    ported dynamic memory allocation of processbuffers to parent class
+    more cleanup
+    some more code cleanup
+    more on sub-classing
+    RtAudio Working multichannel
+    callback process implemented on parent class, working for Jack, still to implemente in RtAudio
+    more cleanpu and subclassing, fixed all warnings
+    First subclassing of RtAudio, still a buss error
+    first steps in subclassing JackAudioInterface
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    a lot of new stuff in audio interface and RtAudio
+    first stepts in parent AudioInterface Class
+    virtual some fucntions
+    added new methods (setters and getters)
+    fix all linux gcc warnings
+    added option to change client name
+    updates to port numering convention and client name
+    Signals and Slots working between threads and in the threadpool
+    Several documentation and small updates
+    Exceptions added, and make worker thread exception "safe"
+    several updates
+    JackAudio made thread safe
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Automatically connect ports to physical capture and playbacks
+    Added peer parameters check and other class dependency fixes
+    Bunch of fixes, including threads, and jacktrip mediator class
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    loopback propertely implemented, still need to fix for more than one plugin
+    Bug in plugins fixed, still need to cleanup the code
+    rename new jacktrip folder
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    More on Headers
+    8, 16, and 32 bits working, still figuring out 24
+    More
+    more
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    Dynamic process callback allocated, still need to test
+    working before messing up with fast processes
+    More
+    Multichannel Working
+    adding command line parser
+    more
+    More cleanup
+    cleanup
+    Static cast for jack callback written, still have to test
+    more
+    More advances
+    More advances, threads sending and receiving packets ready
+    more updates
+    more files updated
+    add doxy comments
+    A lot of new stuff
+    doygen config file added
+    rename src2
+    move src2
+    Add more files and m.osx to compile in Leopard
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    Add settings class
+    adding command line parser
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add files via upload
+    
+    There were still some minor threading issues with the previous approach, so have gone back to sharing a full duplex socket with a QUdpSocket object created only for reading. (Writing is done directly to the socket.) Seems to work consistently on all platforms. Have also merged some platform specific code where separate branches are no longer necessary. (This requires Vista or later when running on Windows.)
+    Fixed compilation on windows and improved windows build documentation.
+    Fixed compilation on macOS.
+    WAIRTOMASTER
+    ad JMess.* master
+    take out WAIR dependencies from master branch
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Fixed compilation for  MacOSX10.11.sdk
+    Using shared lib for RtAudio on Linux
+    Update to RtAudio 4.1.1
+    Updated deployment target for OSX
+    fix linker to jack in new version
+    RtAudio classes now in src/ directory, includes are buggy in qt5. Updated and texted in qt5.
+    Commented out config flag to compile 32 bits. Now compiles with avialable librarires.
+    updated to RtAudio 4.0.7
+    added RT AUDIO flag to compile without it
+    update build and remove support for universal
+    linux 64 bit patch
+    fixed extra file that was causing bug in test app
+    updates in server and placeholder class
+    non jack version completely added and working!
+    first steps to the nonjack build option, still need the sweitches in the source code
+    windows/rtaudio/asi4all: ctrl-c bug fixed
+    commit before adding jacktripworkers array to udpmasterlistener
+    windows .pro update
+    compiling on windows
+    added, hopefully, windows support, part 1, not tested yet on windows
+    small update
+    fix compilations error in linux, added rtaudio
+    first stepts in parent AudioInterface Class
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    list all avialable devices
+    more on rtaduio default device grabbing
+    added rtaudio flags
+    added rtaudio and first version of rtaudio class
+    re-added universal binary compilation
+    More on renaming port variables
+    fix pro file to work on Linux
+    modified pro file to make it crossplatfolm
+    updates to port numering convention and client name
+    added only one port to send
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Server cleaned up and working fine, need to add oncfiguration variables
+    several updates
+    More implementations for the PINGTOSERVER mode
+    More on threads for jacktrip class
+    JackAudio made thread safe
+    Updated working, still doing work on JackTripThreads
+    jacktrip threads classes
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More
+    Loopback working
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Add optional IO statistics reporting
+    Changed indentation as preparation for the merge.
+    Settings case 'p'
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    Added option --nojackportsconnect to not connect default jack audio ports
+    command line parsing for --localaddress
+    non jack version completely added and working!
+    cleanup on linux
+    Fixed all exceptions and use error signals when appropriate
+    added options to chanfe sampling rate and buffer size
+    RtAudio added as an option
+    first stepts in parent AudioInterface Class
+    added option to set bind port and peer port numbers separatly
+    Added stopJackTrip method to Settings
+    added option to change client name
+    added option and classes for packet without a header
+    redundancy working
+    JackTrip Server classes added and mode included in Settings.cpp
+    Add port offset option
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    underrun modes added (zero and wavetable)
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    Alpha version 1.0
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    Loopback from command line working
+    Ring buffer class completed, need to verify a little more though
+    some sed done
+    before changing stuff with sed
+    Friday afternoon commit
+    ProcessPlugins working, example in main with LoopBack
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    Add settings class
+    adding command line parser
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Revert "Set QT5 dependency in build script"
+    Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    build in a subdirectory
+    first pass: Travis integration (#75)
+    
+    * travis test
+    
+    * add master branch
+    
+    * travis fixes
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * add atomic header
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * remove unnecessary change
+    
+    * remove unnecessary change
+    
+    * Update .travis.yml
+    src/
+    Updated build script to work with macx-clang
+    jacktrip/ folder removed and now all files in top level
+    updated build script for fedora linux, finds qt5 if available
+    patched build script
+    update build and remove support for universal
+    first steps to the nonjack build option, still need the sweitches in the source code
+    commit before adding jacktripworkers array to udpmasterlistener
+    improved build system
+    Simplified linux implementation of the thread prioritization.
+    Fixed compilation on windows and improved windows build documentation.
+    Removed boilerplate code, by improving the platform implementation dispatching of setRealtimeProcessPriority().
+    Removed dead code.
+    Updated Mac implementation for realtime thread priority with code from chromium.
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    New header for linux compilers
+    linux fedora 17 needs <unistd.h> for getui()
+    patch for gcc 4.4
+    added, hopefully, windows support, part 1, not tested yet on windows
+    fix compilations error in linux, added rtaudio
+    first stepts in parent AudioInterface Class
+    rename global function
+    added crossplatform realtime priority function
+    Client to ping server almost ready
+    rename globals.h to jacktrip_globals.h
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    Add linux specific priority thread functions and compilations flags
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Fixed compilation on Linux without rtaudio.
+    Fixed warnings in jacktrip_main.cpp and removed using.
+    Changed indentation as preparation for the merge.
+    Experimental version -- not using set_crossplatform_realtime_priority()
+    src/
+    jacktrip/ folder removed and now all files in top level
+    windows/rtaudio/asi4all: ctrl-c bug fixed
+    commit before adding jacktripworkers array to udpmasterlistener
+    more fixes for windows
+    More RtAudio Cleanup
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    more on default devices and printing
+    list all avialable devices
+    more on rtaduio default device grabbing
+    added rtaudio flags
+    Finish adding exceptions to all classes that where exiting
+    udp waiting too long signals and slots working, and drop support for PPC
+    More on threads for jacktrip class
+    JackAudio made thread safe
+    Updated working, still doing work on JackTripThreads
+    first pass on threaded jacktrip class
+    fixed exception error in application startup
+    First pass on exceptions
+    Bunch of fixes, including threads, and jacktrip mediator class
+    rename main to jacktrip_main.cpp
+    rename globals.h to jacktrip_globals.h
+    rename new jacktrip folder
+    Alpha version 1.0
+    fix yielding in threads and more
+    JackTrip class improved
+    Headers added, almost there...
+    final sed
+    more sed
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    more on header, still scratching my head
+    More on Headers
+    UDP socket using qt4 prototype WORKING
+    All bit rates quantizations working!
+    8, 16, and 32 bits working, still figuring out 24
+    Loopback from command line working
+    Ring buffer class completed, need to verify a little more though
+    before changing stuff with sed
+    Loopback working
+    more
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    working before messing up with fast processes
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    Add settings class
+    adding command line parser
+    more
+    more cleanup
+    cleanup
+    more
+    More advances
+    More
+    More advances
+    RingBuffer working, added PaulTrip class
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    added udp working
+    more files updated
+    A lot of new stuff
+    doygen config file added
+    rename src2
+    move src2
+    Add more files and m.osx to compile in Leopard
+    Changed indentation as preparation for the merge.
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    removed namespaces for linux compilation
+    added jacktrip namespaces
+    Cleanup and optiomization JackAudio Class
+    more cleanup and upclassing
+    more cleanup and optimization, still comments in
+    more cleanup and methods to parent class AudioInterface
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    Start porting packet memory to parent class AudioInterface. Now working, only need to clean-up
+    more on process buffers, commets still in code
+    ported dynamic memory allocation of processbuffers to parent class
+    more cleanup
+    more subclassing and code cleannup
+    some more code cleanup
+    more on sub-classing
+    callback process implemented on parent class, working for Jack, still to implemente in RtAudio
+    more cleanpu and subclassing, fixed all warnings
+    RtAudio working as a subclass of AudioInterface. Now jsut need to clean-up and propertly implement some methods
+    First subclassing of RtAudio, still a buss error
+    first steps in subclassing JackAudioInterface
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    a lot of new stuff in audio interface and RtAudio
+    first stepts in parent AudioInterface Class
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    Changed indentation as preparation for the merge.
+    src/
+    Update JackAudioInterface.cpp
+    jacktrip/ folder removed and now all files in top level
+    fix bug in closing audio
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    Cleanup and optiomization JackAudio Class
+    more cleanup and upclassing
+    more cleanup and methods to parent class AudioInterface
+    all memory ported to Audiointerface and commets removed
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    Start porting packet memory to parent class AudioInterface. Now working, only need to clean-up
+    ported dynamic memory allocation of processbuffers to parent class
+    some more code cleanup
+    more on sub-classing
+    RtAudio Working multichannel
+    callback process implemented on parent class, working for Jack, still to implemente in RtAudio
+    more cleanpu and subclassing, fixed all warnings
+    RtAudio working as a subclass of AudioInterface. Now jsut need to clean-up and propertly implement some methods
+    First subclassing of RtAudio, still a buss error
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    a lot of new stuff in audio interface and RtAudio
+    first stepts in parent AudioInterface Class
+    added new methods (setters and getters)
+    fix issue with process plugins and client name
+    fix all linux gcc warnings
+    all os x compiler warnings fixed
+    added option to change client name
+    updates to port numering convention and client name
+    Fixed Buss Error Bug
+    UDP redundancy working, need to clean-up code
+    Finish adding exceptions to all classes that where exiting
+    Several documentation and small updates
+    Exceptions added, and make worker thread exception "safe"
+    several updates
+    JackAudio made thread safe
+    Updated working, still doing work on JackTripThreads
+    First pass on exceptions
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Automatically connect ports to physical capture and playbacks
+    Added peer parameters check and other class dependency fixes
+    Bunch of fixes, including threads, and jacktrip mediator class
+    rename globals.h to jacktrip_globals.h
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    loopback propertely implemented, still need to fix for more than one plugin
+    Bug in plugins fixed, still need to cleanup the code
+    rename new jacktrip folder
+    Alpha version 1.0
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    More on Headers
+    All bit rates quantizations working!
+    more
+    more
+    8, 16, and 32 bits working, still figuring out 24
+    More
+    More
+    Loopback working
+    More additions
+    Dynamic process callback allocated, still need to test
+    working before messing up with fast processes
+    More
+    Multichannel Working
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    more
+    More cleanup
+    more cleanup
+    cleanup
+    Static Cast for Callback Working!
+    Static cast for jack callback written, still have to test
+    more
+    More advances
+    More advances, threads sending and receiving packets ready
+    add doxy comments
+    A lot of new stuff
+    doygen config file added
+    rename src2
+    move src2
+    Add more files and m.osx to compile in Leopard
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add optional IO statistics reporting
+    Add files via upload
+    
+    Make sure -q value is honoured in hub client mode.
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Changed indentation as preparation for the merge.
+    WAIRTOMASTER
+    src/
+    jacktrip/ folder removed and now all files in top level
+    fix timeout time
+    more debug messages
+    fixed bug in worker class
+    more debug messages
+    debug messages for server
+    fixed a new bug in server
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    a bunch of updates on jacktrip thread and others
+    fix id issue with re-connecting clients
+    updates on stopping processes
+    fixed extra file that was causing bug in test app
+    fix perversive bug when setting peer address in server
+    came back to older version of worker class
+    updates in server and placeholder class
+    replaced start name method in jacktrip by startProcess to avoid confussion with threaded process
+    added options to read header in the server before setting worker
+    more code for headers and jacktrip worker
+    A lot of packet header updates, getters and setters
+    message to debug number of threadpools
+    new jtworkers array working when client disconects and connects again
+    commit before adding jacktripworkers array to udpmasterlistener
+    change timming of kstring
+    Server Working
+    updates with tcp sockets on server
+    cleanup on linux
+    SERVER code cleanup
+    Port scheame working and tested with JamLinks in OS x
+    Server cleaned up and working fine, need to add oncfiguration variables
+    Thread pool realeasing inactive jacktrips from the pool working!
+    Signals and Slots working between threads and in the threadpool
+    More on signaling between worker threads in the pool
+    Several documentation and small updates
+    Exceptions added, and make worker thread exception "safe"
+    JackTrip Server classes added and mode included in Settings.cpp
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    removed 2 more mPeerAddress print statements
+    Juneteenth, 2020 -- renamed Hub mode properly
+    mThreadPool.setMaxThreadCount
+    Remove deprecated dynamic exception specification
+    Add files via upload
+    
+    Make sure sane defaults are set for the underrun mode and queue length in the constructor. Ensure queue length is properly passed to the UdpMasterListener. (Was accidentally dependent on -z being set.)
+    Add files via upload
+    
+    Make sure -q value is honoured in hub client mode.
+    Add files via upload
+    
+    Fixed a typo in UdpMasterListener.cpp (Had accidentally removed a [i] when converting the mActiveAddress array type.)
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    working version of hubPatch mode = 4
+    hubPatch implementations for CLIENTECHO, CLIENTFOFI and added FULLMIX, removed ifdefs
+    Properly don't set the default audio port connections according to cli flag in server hub mode.
+    Changed indentation as preparation for the merge.
+    connectTUB
+    connectTUB
+    connection name related to mPeerAddress
+    connection name from WAIR to JackTrip
+    test connectSpawnedPorts
+    ad JMess.* master
+    connectPatch
+    udpmaster->setHubPatch(mHubConnectionMode)
+    src/
+    jacktrip/ folder removed and now all files in top level
+    debug messages for server
+    fixed a new bug in server
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    a bunch of updates on jacktrip thread and others
+    improved thread safety
+    fix id issue with re-connecting clients
+    change base port num
+    A lot of packet header updates, getters and setters
+    message to debug number of threadpools
+    new jtworkers array working when client disconects and connects again
+    commit before adding jacktripworkers array to udpmasterlistener
+    added, hopefully, windows support, part 1, not tested yet on windows
+    small types updates
+    Server Working
+    port communication with TCP server working
+    Blocking TCP socket working to send port number
+    updates with tcp sockets on server
+    cleanup on linux
+    small updates
+    SERVER code cleanup
+    all os x compiler warnings fixed
+    Finish adding exceptions to all classes that where exiting
+    Signals and Slots working between threads and in the threadpool
+    Several documentation and small updates
+    JackTrip Server classes added and mode included in Settings.cpp
+    Fixed compilation on macOS.
+    Changed indentation as preparation for the merge.
+    Minor modifications such that RtAudioInterface.h is found
+    jacktrip/ folder removed and now all files in top level
+    More RtAudio Cleanup
+    RtAudio class cleanup
+    more cleanup and upclassing
+    all memory ported to Audiointerface and commets removed
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    Process Plugins working in both Jack and RtAudio
+    ported dynamic memory allocation of processbuffers to parent class
+    more subclassing and code cleannup
+    more on sub-classing
+    RtAudio Working multichannel
+    more cleanpu and subclassing, fixed all warnings
+    RtAudio working as a subclass of AudioInterface. Now jsut need to clean-up and propertly implement some methods
+    First subclassing of RtAudio, still a buss error
+    This version working with the JAMLINK and RtAudio (doesn't need jack)
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    first stepts in parent AudioInterface Class
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    fix all rtaudio warnings
+    more on default devices and printing
+    list all avialable devices
+    added rtaudio flags
+    added rtaudio and first version of rtaudio class
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    SERVER code cleanup
+    fix all linux gcc warnings
+    Updated working, still doing work on JackTripThreads
+    jacktrip threads classes
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More
+    Loopback working
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    packet header implementations additions
+    A lot of packet header updates, getters and setters
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Fixed all exceptions and use error signals when appropriate
+    more getters
+    all os x compiler warnings fixed
+    added option and classes for packet without a header
+    UDP redundancy working, need to clean-up code
+    More checks
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    some improvements
+    rename globals.h to jacktrip_globals.h
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    rename new jacktrip folder
+    JackTrip class improved
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    more on header, still scratching my head
+    More on Headers
+    More advances, started header structure
+    Loopback working
+    ProcessPlugins working, example in main with LoopBack
+    More additions
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    removed namespaces for linux compilation
+    added jacktrip namespaces
+    first steps to the nonjack build option, still need the sweitches in the source code
+    More implementations for the PINGTOSERVER mode
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    more sed
+    more sed
+    sed to JackTrip from PaulTrip
+    more files updated
+    A lot of new stuff
+    src/
+    jacktrip/ folder removed and now all files in top level
+    rename new jacktrip folder
+    added new classes
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    fix all linux gcc warnings
+    all os x compiler warnings fixed
+    More on threads for jacktrip class
+    JackAudio made thread safe
+    Updated working, still doing work on JackTripThreads
+    jacktrip threads classes
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    rename globals.h to jacktrip_globals.h
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    updates in server and placeholder class
+    non jack version completely added and working!
+    packet header implementations additions
+    more code for headers and jacktrip worker
+    A lot of packet header updates, getters and setters
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Fixed all exceptions and use error signals when appropriate
+    More setters and getters
+    ready for 1.0.5 release
+    added option and classes for packet without a header
+    UDP redundancy working, need to clean-up code
+    Finish adding exceptions to all classes that where exiting
+    More checks
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    Jamlink Mode working
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    rename new jacktrip folder
+    Alpha version 1.0
+    Headers added, almost there...
+    sed to JackTrip from PaulTrip
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Chris plus hub servers (#116)
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * override default port nums in new jacktrip instance
+    
+    * more logging for input parsing
+    
+    * Revert "override default port nums in new jacktrip instance"
+    
+    This reverts commit a82469826a49e9c1d7671f561572156d7eda972a.
+    
+    * delete QTcpSocket if connection fails
+    
+    * gVersion = 1.2
+    
+    * mThreadPool.setMaxThreadCount
+    
+    * temp fix gMAX_WAIRS = 128
+    
+    * add mutex to JMess::connectSpawnedPorts
+    
+    * add mutex to JMess class
+    
+    * change printout from JMess
+    
+    * Juneteenth, 2020 -- renamed Hub mode properly
+    
+    * multiple hub servers on same machine; new server udp param
+    
+    * change udp base port to help AT&T users like myself
+    
+    * give port number on error
+    
+    * logging and comment changes
+    
+    * fix Underrun Mode undefined in -C
+    
+    * more logging
+    
+    * add user-friendly udpbaseport param
+    
+    * changed help documentation on -p per user request
+    
+    * copyright to 2020
+    
+    * list a few more uppercase params per user request and other help screen edits
+    
+    * scripts folder with slork, test and utility scripts
+    
+    * recording script doesn't open windows
+    
+    * TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    
+    * build in a subdirectory
+    
+    * Set QT5 dependency in build script
+    
+    Updated build script to select QT5 build tools when 4 and 5 are installed.
+    
+    * Added qtchooser dependecy to build instructions
+    
+    * Improve end-user feedback for --nojackportsconnect in hub server mode
+    
+    * help end-users to spot the option that they need to disable hub auto patch
+    * feed back better information when running with this option
+    
+    * Revert "Set QT5 dependency in build script"
+    
+    * 1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    
+    Co-authored-by: Chris Chafe <4406287+cchafe@users.noreply.github.com>
+    Co-authored-by: Mike Dickey <mdickey@splunk.com>
+    Co-authored-by: Marcin Paczkowski <dyfeer@gmail.com>
+    Co-authored-by: Daniel Riechers <driechers101@gmail.com>
+    Co-authored-by: Tom Ward <tomward@fmail.co.uk>
+    Juneteenth, 2020 -- renamed Hub mode properly
+    Add optional IO statistics reporting
+    Remove deprecated dynamic exception specification
+    hubPatch implementations for CLIENTECHO, CLIENTFOFI and added FULLMIX, removed ifdefs
+    Changed indentation as preparation for the merge.
+    connectTUB
+    WAIRTOMASTER
+    mHubConnectionModeT,getHubConnectionModeT,setHubConnectionModeT
+    SERVERTOCLIENT is Normal Mode, Sever to All Clients (but not client to any client)
+    hubConnectionModeT for Hub Server Audio Connection Mode
+    hubConnectionModeT for Hub Server Audio Connection Mode
+    -S connection watchdog set to 10 sec
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    Added option --nojackportsconnect to not connect default jack audio ports
+    grammar change of --is waited--
+    fix getter
+    fix getter methods
+    fix get audio bit resolution method
+    fix getnumchanels methods
+    added setter method
+    more updates on quiting and stopping
+    fixed a new bug in server
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    a bunch of updates on jacktrip thread and others
+    small port set updates
+    updates on stopping processes
+    updates in server and placeholder class
+    non jack version completely added and working!
+    added signals for recieve connection from peer
+    new getters methods
+    replaced start name method in jacktrip by startProcess to avoid confussion with threaded process
+    more updates and cleanup
+    re-add some methods
+    more code for headers and jacktrip worker
+    A lot of packet header updates, getters and setters
+    windows/rtaudio/asi4all: ctrl-c bug fixed
+    commit before adding jacktripworkers array to udpmasterlistener
+    more fixes for windows
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Blocking TCP socket working to send port number
+    more fixes on exceptions and error handling
+    Fixed all exceptions and use error signals when appropriate
+    added options to chanfe sampling rate and buffer size
+    RtAudio added as an option
+    first steps in subclassing JackAudioInterface
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    first stepts in parent AudioInterface Class
+    more getters
+    more methods and virtual keywords
+    small gcc4.3 update
+    virtuallze method
+    code improvement to make it easier to subclass
+    virtual keyword added to some methods
+    More setters and getters
+    more getters methods
+    new setters and getters methods
+    added new methods (setters and getters)
+    ready for 1.0.5 release
+    fix issue with process plugins and client name
+    added check to verify is port is not binded by a different process
+    fix all linux gcc warnings
+    Port scheame working and tested with JamLinks in OS x
+    Working with Jamlink, still have to add the correct port for connections using other than 4464
+    more on renaming ports
+    Firt pass on renaming port variables
+    added option to change client name
+    updates to port numering convention and client name
+    redundancy working
+    UDP redundancy working, need to clean-up code
+    Server cleaned up and working fine, need to add oncfiguration variables
+    Thread pool realeasing inactive jacktrips from the pool working!
+    udp waiting too long signals and slots working, and drop support for PPC
+    Signals and Slots working between threads and in the threadpool
+    several updates
+    minor update
+    More implementations for the PINGTOSERVER mode
+    More on threads for jacktrip class
+    first pass on threaded jacktrip class
+    More
+    Client to ping server almost ready
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    More
+    More checks
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    More on classes structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    underrun modes added (zero and wavetable)
+    Jamlink mode added, First pass on mac threads
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    rename new jacktrip folder
+    Alpha version 1.0
+    Client and server modes both working, need to add that to the command line input
+    fix yielding in threads and more
+    JackTrip class improved
+    More
+    more
+    more sed
+    more sed
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    udp cleanup
+    8, 16, and 32 bits working, still figuring out 24
+    ProcessPlugins working, example in main with LoopBack
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    more
+    more cleanup
+    Static cast for jack callback written, still have to test
+    more
+    More advances
+    More
+    More advances
+    Fix OSX defines in UdpDataProtocol
+    
+    Removed an extra _ in a couple of defines.
+        case SENDER : {
+            /*
+             * version skew? testing without this line
+            //Make sure we don't start sending packets too soon.
+            QThread::msleep(100);
+            */
+    bumped winsock to 2.2, wVersionRequested
+    reverted a change to UdpDataProtocol.cpp, jacktrip used to give a clear error message when a client connection attempt fails due to a mismatch between the client's buffer size in jack and the setting on the server side.  This message is now missing--the connection attempt fails silently.
+    added peer address to UDP waiting too long
+    Add optional IO statistics reporting
+    Remove deprecated dynamic exception specification
+    Update UdpDataProtocol.cpp
+    
+    Removed experimental version warning
+    Add files via upload
+    
+    Workaround for timing bug in windows hub client mode.
+    Add files via upload
+    
+    Remove unnecessary reverse DNS lookups when an IP address is supplied.
+    Add files via upload
+    
+    Added cchafe's fixes to hubpatch mode 2 from main branch.
+    Some minor cleanup to the UdpDataProtocol code and comments.
+    Add files via upload
+    
+    There were still some minor threading issues with the previous approach, so have gone back to sharing a full duplex socket with a QUdpSocket object created only for reading. (Writing is done directly to the socket.) Seems to work consistently on all platforms. Have also merged some platform specific code where separate branches are no longer necessary. (This requires Vista or later when running on Windows.)
+    Add files via upload
+    
+    Finally managed to test on windows, and it did not go well. It seems that either windows sockets or the way that QUdpSocket manages them is not as thread safe as POSIX sockets. It worked when running as a client, but crashed out after about a second as a server. Also, no combination of half closing sockets (the old way of doing it) seemed to work consistently across both IPv4 and IPv6 on all platforms.
+    
+    So, have moved to sharing a single QUdpSocket object between both the sender and receiver, locking when a read or write is taking place. (Am not currently locking when checking if there are available datagrams, and that doesn't seem to be causing any trouble.)
+    Add files via upload
+    
+    Revert of last changes (apart from string copy) - worked on OS X but not Linux.
+    Add files via upload
+    
+    Minor clean up
+    Add files via upload
+    
+    Make sure we copy the mPeerAddress string before modifying it to set the client name.
+    Simplified IPv6 implementation. (Managed to get it working using the old model, so JackTrip.cpp doesn't need to pass a single socket between threads.)
+    Add files via upload
+    
+    Minor fix to the UdpDataProtocol. (Make connection state independent of whether we're sending or receiving, given the socket will be used in full duplex mode.)
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    fixed QObject::connect: No such slot UdpDataProtocol::printUdpWaitedTooLong30msec(int) by calling UdpDataProtocol::printUdpWaitedTooLong
+    Simplified linux implementation of the thread prioritization.
+    Removed boilerplate code, by improving the platform implementation dispatching of setRealtimeProcessPriority().
+    Fixed compilation on macOS.
+    Changed indentation as preparation for the merge.
+    added some temporary explanation
+    Experimental version -- not using set_crossplatform_realtime_priority()
+    src/
+    jacktrip/ folder removed and now all files in top level
+    fix small gcc warning
+    grammar change of --is waited--
+    added DNS Support lookup
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of updates on jacktrip thread and others
+    added signals for recieve connection from peer
+    compiling on windows
+    added, hopefully, windows support, part 1, not tested yet on windows
+    more fixes on exceptions and error handling
+    Fixed all exceptions and use error signals when appropriate
+    fix issue with process plugins and client name
+    Fix port binding race issue
+    some code cleanup and optimization
+    Working with Jamlink, still have to add the correct port for connections using other than 4464
+    rename port variable almost ready, still need to sort input to functions and rename global port numbers
+    More on renaming port variables
+    more on renaming ports
+    all os x compiler warnings fixed
+    dummy
+    rename global function
+    remove old commented code
+    added crossplatform realtime priority function
+    remove comments from redundancy
+    added sender receiver redundancy function
+    cleanup redundancy receive before removing comments
+    fix format
+    updates to port numering convention and client name
+    added only one port to send
+    last detail on redundancy
+    Redundancy algorythm ready
+    redundancy working
+    UDP redundancy working, need to clean-up code
+    Finish adding exceptions to all classes that where exiting
+    Thread pool realeasing inactive jacktrips from the pool working!
+    udp waiting too long signals and slots working, and drop support for PPC
+    Signals and Slots working between threads and in the threadpool
+    several updates
+    JackAudio made thread safe
+    minor commit
+    Client to ping server almost ready
+    More fixes
+    fixed threading issues in udp
+    fixed memory leak on linux
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Port number added as an option to udpprotocol
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    underrun modes added (zero and wavetable)
+    Fixed bug in header inclussion
+    some improvements
+    rename globals.h to jacktrip_globals.h
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    Add linux specific priority thread functions and compilations flags
+    rename new jacktrip folder
+    Alpha version 1.0
+    Client and server modes both working, need to add that to the command line input
+    Headers added, almost there...
+    more
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances
+    added new classes
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    1.2.1 (#113)
+    
+    * increment version to 1.2.1
+    
+    * CHANGESLOG.txt updated
+    TcpServer was not checking for pending connections before waiting
+    to receive new ones. This was causing it to fail when more than 1
+    client connected to a hub server at the same time.
+    
+    Also bumping pthreads limit -- this was tested at scale of 500 with no issues
+    Honour custom client names
+    
+    Reupload of a partial fix for #73 to isolate them from the more substantial changes that have since occurred in my branch.
+    1.2chris13jul
+    version 1.2chris, gTimeOutMultiThreadedServer 10s
+    temp fix gMAX_WAIRS = 128
+    gVersion = 1.2
+    Update jacktrip_globals.h
+    
+    Version number change
+    Removed boilerplate code, by improving the platform implementation dispatching of setRealtimeProcessPriority().
+    Removed dead code.
+    Changed indentation as preparation for the merge.
+    TUB riviera
+    shift client to .245 for testing, add SC audio connections
+    beta version of hupatch = 3 ready to test with ensemble
+    connectTUB
+    connectTUB
+    VARIABLE_AUDIO_NAME for WAIR legacy and TUB name
+    connection name related to mPeerAddress
+    connection name from WAIR to JackTrip
+    WAIR_AUDIO_NAME JackTrip
+    WAIR_AUDIO_NAME JackTrip
+    src/
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    command line parsing for --localaddress
+    added counter
+    fix timeout time
+    a bunch of the server re-connecting client bugs fixed, all debug messages still there
+    more updates and cleanup
+    added, hopefully, windows support, part 1, not tested yet on windows
+    more fixes on exceptions and error handling
+    first steps in subclassing JackAudioInterface
+    first stepts in parent AudioInterface Class
+    Port scheame working and tested with JamLinks in OS x
+    Working with Jamlink, still have to add the correct port for connections using other than 4464
+    rename global function
+    added crossplatform realtime priority function
+    updates to port numering convention and client name
+    added only one port to send
+    tag 1.0.4 now ready
+    ready for 1.0.3 realease
+    Several documentation and small updates
+    JackTrip Server classes added and mode included in Settings.cpp
+    rename globals.h to jacktrip_globals.h
+    Jamlink mode added, First pass on mac threads
+    First pass on Mac scheduling and header working
+    Add linux specific priority thread functions and compilations flags
+    rename new jacktrip folder
+    JackTrip class improved
+    Headers added, almost there...
+    more sed
+    sed to JackTrip from PaulTrip
+    Loopback from command line working
+    some sed done
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    add mutex to JMess class
+    hubPatch implementations for CLIENTECHO, CLIENTFOFI and added FULLMIX, removed ifdefs
+    connectTUB
+    JMess.* from wair branch to master
+    src/
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    Signals and Slots working between threads and in the threadpool
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    rename globals.h to jacktrip_globals.h
+    Header added and need to fix threads priorities in os x (lib header added to globals.cpp)
+    More on headers
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    some sed done
+    Multichannel Working
+    More
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    more
+    More advances
+    More
+    added new classes
+    More advances, threads sending and receiving packets ready
+    more advances, hosts resolution implemented
+    add header dependencies
+    more updates
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Add optional IO statistics reporting
+    Add files via upload
+    
+    There were still some minor threading issues with the previous approach, so have gone back to sharing a full duplex socket with a QUdpSocket object created only for reading. (Writing is done directly to the socket.) Seems to work consistently on all platforms. Have also merged some platform specific code where separate branches are no longer necessary. (This requires Vista or later when running on Windows.)
+    Add files via upload
+    
+    Finally managed to test on windows, and it did not go well. It seems that either windows sockets or the way that QUdpSocket manages them is not as thread safe as POSIX sockets. It worked when running as a client, but crashed out after about a second as a server. Also, no combination of half closing sockets (the old way of doing it) seemed to work consistently across both IPv4 and IPv6 on all platforms.
+    
+    So, have moved to sharing a single QUdpSocket object between both the sender and receiver, locking when a read or write is taking place. (Am not currently locking when checking if there are available datagrams, and that doesn't seem to be causing any trouble.)
+    Add files via upload
+    
+    Revert of last changes (apart from string copy) - worked on OS X but not Linux.
+    Add files via upload
+    
+    Make sure we copy the mPeerAddress string before modifying it to set the client name.
+    Simplified IPv6 implementation. (Managed to get it working using the old model, so JackTrip.cpp doesn't need to pass a single socket between threads.)
+    Add files via upload
+    
+    Allow -z option to work in server hub mode. Enable DNS lookups when connecting as a hub client.
+    
+    Added IPv6 support. (Not tested on Win32 yet, but necessary OS specific changes have been made.) The trick of binding two sockets to the same port by shutting down write capabilities on one of them didn't work as expected on IPv6. So instead, a single full duplex socket is shared by two half duplex QUdpSocket objects.
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    all debug comments removed
+    Server working stable, all known bugs removed, all debug comments still in
+    a bunch of updates on jacktrip thread and others
+    added signals for recieve connection from peer
+    added, hopefully, windows support, part 1, not tested yet on windows
+    more fixes on exceptions and error handling
+    fix issue with process plugins and client name
+    More on renaming port variables
+    more on renaming ports
+    added option and classes for packet without a header
+    Client to ping server almost ready
+    fixed threading issues in udp
+    A bunch of fixes, but there's a weird memory error on linux, working on that...
+    Added peer parameters check and other class dependency fixes
+    more advances in class structure
+    More on classes structure
+    Bunch of fixes, including threads, and jacktrip mediator class
+    Fixed bug in header inclussion
+    First pass on Mac scheduling and header working
+    More on headers
+    rename new jacktrip folder
+    Client and server modes both working, need to add that to the command line input
+    Headers added, almost there...
+    more
+    more sed
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    more on header, still scratching my head
+    More on Headers
+    udp cleanup
+    UDP socket using qt4 prototype WORKING
+    Improvements in DataProtocol class
+    More advances, started header structure
+    Multichannel Working
+    More
+    More advances
+    More
+    More advances
+    RingBuffer working, added PaulTrip class
+    added new classes
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Changed indentation as preparation for the merge.
+    git rm *.tmp
+    src/
+    jacktrip/ folder removed and now all files in top level
+    rename new jacktrip folder
+    more sed
+    sed to JackTrip from PaulTrip
+    tmp file before network classes modifications
+    Improvements in DataProtocol class
+    More advances, started header structure
+    Multichannel Working
+    More
+    More advances
+    More
+    More advances
+    RingBuffer working, added PaulTrip class
+    added new classes
+    More advances, threads sending and receiving packets ready
+    small update
+    more advances, hosts resolution implemented
+    added udp working
+    more files updated
+    small updates
+    more comments
+    A lot of new stuff
+    Changed indentation as preparation for the merge.
+    Initial addition of deviceid for rtaudio
+    jacktrip/ folder removed and now all files in top level
+    Update to RtAudio 4.1.1
+    fix rtaudio flags that were conflicting in os x
+    More RtAudio Cleanup
+    RtAudio class cleanup
+    more cleanup and upclassing
+    all memory ported to Audiointerface and commets removed
+    Completely ported packet buffer memory to parent class AudioInterface. Comments still in
+    Start porting packet memory to parent class AudioInterface. Now working, only need to clean-up
+    Process Plugins working in both Jack and RtAudio
+    ported dynamic memory allocation of processbuffers to parent class
+    more subclassing and code cleannup
+    some more code cleanup
+    more on sub-classing
+    RtAudio Working multichannel
+    fix compilations error in linux, added rtaudio
+    more cleanpu and subclassing, fixed all warnings
+    RtAudio working as a subclass of AudioInterface. Now jsut need to clean-up and propertly implement some methods
+    First subclassing of RtAudio, still a buss error
+    This version working with the JAMLINK and RtAudio (doesn't need jack)
+    fixed error that was make it impossible access memebert of RtAudioInterface in the callback function
+    a lot of new stuff in audio interface and RtAudio
+    first stepts in parent AudioInterface Class
+    Inizialize parent class of audio classes, now starting to re-write JackAudioInteface
+    fix all rtaudio warnings
+    more on default devices and printing
+    list all avialable devices
+    more on rtaduio default device grabbing
+    added rtaudio flags
+    added rtaudio and first version of rtaudio class
+    first pass: Travis integration (#75)
+    
+    * travis test
+    
+    * add master branch
+    
+    * travis fixes
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * add atomic header
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * travis update
+    
+    * remove unnecessary change
+    
+    * remove unnecessary change
+    
+    * Update .travis.yml
+    Add optional IO statistics reporting
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    removed namespaces for linux compilation
+    added jacktrip namespaces
+    underrun modes added (zero and wavetable)
+    Fixed bug in header inclussion
+    rename types_jacktrip.h file
+    Jamlink mode added, First pass on mac threads
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    Fixed Delay issue
+    Ring buffer class completed, need to verify a little more though
+    adding command line parser
+    working between linux and mac, one channel
+    more
+    RingBuffer working, added PaulTrip class
+    added new classes
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Changed indentation as preparation for the merge.
+    src/
+    jacktrip/ folder removed and now all files in top level
+    added, hopefully, windows support, part 1, not tested yet on windows
+    Added Faust directory and fist pass on Karplus-Strong algorythm
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More additions
+    Dynamic process callback allocated, still need to test
+    working before messing up with fast processes
+    added new classes
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    Update documentation.cpp (#103)
+    
+    Update download link in docs
+    jacktrip/ folder removed and now all files in top level
+    fix source link
+    Automatically connect ports to physical capture and playbacks
+    Documentation folder added
+    Documentation update
+    rename new jacktrip folder
+    sed to JackTrip from PaulTrip
+    More additions
+    Multichannel Working
+    This version is working with one channel, 48khz, 128 packet size. Start it like this: /paultrip -c 192.168.1.4
+    More advances
+    More advances, threads sending and receiving packets ready
+    added udp working
+    more files updated
+    A lot of new stuff
+    add licence and reformat a bunch of files
+    mv files all source files to src folder
+    folder rename
+    folder rearange
+    jacktrip/ folder removed and now all files in top level
+    Don't include tracking images
+    
+    Including an online version of the sourceforge logo in the documentation
+    means that whenever someone wants to read the offline documentation,
+    a request is sent to sourceforge.
+    
+    This is a privacy breach.
+    
+    Apart from that, I dont even know why you have the sourceforge link:
+    jacktrip is maintained on github, the mailinglist is run by google groups.
+    removed $datetime info from html-documentation
+    
+    there is little use in knowing when the documentation was last generated.
+    (it's way more important to know when the files the docs are based on were
+    last edited, then when doxygen was last run.)
+    
+    apart from that: Debian has started the "reproducible builds" initiative,
+    that attempts to make sure that binaries can be reproduced exactly (given
+    that you have the same toolchain). this fails if the timestamp of the build
+    process is part of the build result.
+    
+    See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=788757
+    and https://wiki.debian.org/ReproducibleBuilds
+    Documentation folder added
+    Documentation update
+    jacktrip/ folder removed and now all files in top level
+    replace images without CC (thanks to umlaeute)
+    Added doc files
+    jacktrip/ folder removed and now all files in top level
+    Added doc files
+    jacktrip/ folder removed and now all files in top level
+    replace images without CC (thanks to umlaeute)
+    Added doc files

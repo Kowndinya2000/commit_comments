@@ -1,0 +1,46 @@
+﻿    Don't list path.py as a dependency in README
+    Cleanup: Python 3 compatible example, remove .idea folder
+    Update README.md
+    readme to markdown
+    line endings, rm obsolete comments from readme
+    first commit from 0.3 in pypi
+    Version number -> 0.7.5
+    path.py is no longer used
+    Added python2.7 back compatibility
+    replaced collections with collections.abc for inheritance
+    Version number -> 0.7.4
+    Accept any str-able object for the root path
+    Don't convert Py2 unicode path to str
+    
+    See ipython/ipython#9777
+    Version number -> 0.7.3
+    Remove unused import
+    handle exception and keep Python 2 support
+    Fix for multiple processes creating a folder
+    Require pathlib2 on Python 3.3 as well
+    Fix error when db location does not already exist
+    Version number -> 0.7
+    Switch from path.py to pathlib
+    Bump version number to 0.6
+    Fix module import to work with the latest version
+    
+    The last commit in path.py (62ccb76) removes the `path`
+    alias. Clients must now refer to the canonical name `Path`
+    as introduced in 6.2.
+    Bump version number to 0.5
+    Split out tests into separate file
+    Remove unused variable
+    fix already exists error if same code happens many times simultaneously
+    
+    fix comment
+    Use errno.ENOENT instead of hard coded value
+    
+    This was reported by lintian4py here: https://code.google.com/p/spyderlib/issues/detail?id=1715
+    use pip in install guide
+    import path globally, not from ipython
+    modernized setup.py (no path.py anymore, no console script)
+    updated to python3 compatible version from ipython
+    first commit from 0.3 in pypi
+    Include license and test files in sdists
+    
+    Closes gh-22

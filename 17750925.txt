@@ -1,0 +1,481 @@
+﻿    create new newbeans project
+    Add some more options for IRC notifications
+    Remove update step and introduce syntax error
+    Just compile instead of deploying
+    Add notification through IRC
+    Add ant variable for proper sunspot activation
+    Consolidate before_script commands into one line
+    Add script step for compilation
+    Add travis config file
+    add traditional gitignore
+    Add compressor to Acquirer
+    Reflect repo name change to desmond
+    Add travis badge to readme
+    Initial commit
+    Add compressor to Acquirer
+    create new newbeans project
+    Reflect repo name change to desmond
+    create new newbeans project
+    Revert "Switch trigger and bumper in controls"
+    Mistaken controls were better
+    
+    This reverts commit 01a160db9c83b42f2c1d8ef3d0c86458b13cf641.
+    Switch trigger and bumper in controls
+    Add delay in dumbfire autons for ball settling
+    Reflect repo name change to desmond
+    Clean up miscellaneous code
+    Remove delay between shoot and retract in automatic; add limit switch println
+    Rename auton5 to auton6 and add auton 5 (1 ball dumb firing)
+    add compressor hack to manually check state of pressure switch.
+    Testing changes
+    Add last two auton methods on SmartDashboard and correct auton3
+    Add port for captapult limit switch and fix auton methods
+    Add compressor to Acquirer
+    add methods for detection for hot goal sensor
+    Fix errors
+    Add reset methods.
+    change project name to correspond with repo name.
+    create new newbeans project
+    Reflect repo name change to desmond
+    refactor package name
+    create new newbeans project
+    Add auton 01 to smartdashboard
+    Add doublemobility auton for 2-ball donation
+    
+    Also move auton40 to the end of the autons.
+    Add ball-dragging two-ball auton
+    
+    The new auton lowers the acquirer onto the second ball and
+    drags it in this manner to the firing point.
+    Use two gamepads in shooter manualGamepadControl
+    
+    Changes method signature; allows driver to control reticle
+    Enable the reticle in shooter.reset, called in teleopInit
+    Change default auton to dumb one-ball
+    Add Blocker subsystem and controls
+    
+    Adds subsystem and initialise it in DESmond. Add controls for driver
+    gamepad (L1 = blocker down, R1 = blocker up). In DESmond, add checks so
+    methods of blocker are never called if it is null.
+    remove DV analog output from smart dashboard
+    remove DV analog code
+    remove analog DV outputs
+    Re-order autons and introduce new numbering scheme
+    
+    Ranges of tens are assigned to different auton modes.
+    
+    00s = Do nothing
+    10s = CV
+    20s = DV (analog camera)
+    30s = Dumb fires
+    40s = Misc
+    Make 2-ball auton the default choice
+    edit auton chooser for simpler descriptions
+    Update methods for Dan's camera
+    Add auton11() and make it the default auton choice
+    Add/remove/modify some printlns
+    add testig and debug changes
+    Remove ball presence switch and ball-centred switch business
+    Implement ThreeLaws in DESmond
+    Add DESmond.java
+    Add and update auton constants
+    Modify fireBallPastBackdrive() to avoid constants
+    
+    New fireBallPastBackdrive() retracts and then immediately fires,
+    hopefully minimizing backdrive by reducing idle time between
+    retracting and firing.
+    Implement shooter.fireBallPastBackdrive
+    
+    This function runs the chooChoo for a short period of time to
+    ensure the limit switch is pressed, then fires the ball using
+    standard logic.
+    Reduce AUTON_TIME_TO_LINE_UP_DRAG_SHOT to 1.00
+    Add longer drive time for two-ball drag
+    Add delay in dumbfire autons for ball settling
+    Add constant AUTON_TIME_TO_LINE_UP_SHOT for driveBackwardToLineUpShot
+    Refactor fireBall and modify duration logic
+    Add new constant for DV hot goal wait time
+    
+    Refactor old (CV) constant to say it's for CV.
+    Add Blocker subsystem and controls
+    
+    Adds subsystem and initialise it in DESmond. Add controls for driver
+    gamepad (L1 = blocker down, R1 = blocker up). In DESmond, add checks so
+    methods of blocker are never called if it is null.
+    Change Pi IP from .14 to .15 in Constants
+    remove analog DV outputs
+    make changes for CV methods that uses spike relay channel and new constants
+    Add spike control for switching between two lights
+    
+    Adds manual gamepad control for switching between camera light and operator reticle
+    Add delay for Dan's Camera during auton
+    Tune some constants
+    Update methods for Dan's camera
+    Add auton11() and make it the default auton choice
+    Get rid of SHOOTER_DELAY_FOR_RETRACT
+    Make significant 2-shot auton changes
+    
+    Combine startLoadingNextBall() and finishLoadingNextBall() into
+    loadNextBall(). Ensure minimal delay in CV/analog 2-shot autons; ensure
+    appropriate delay in dumb 2-shot for 50/50 chance of hot score.
+    add testig and debug changes
+    Remove ball presence switch and ball-centred switch business
+    Add constants for Dan camera
+    Modify shooter retract timeout
+    Make wait time factor in time needed to drive in auton
+    murj cunflact
+    Major code cleanup
+    
+    Add TODOS in comments, remove extraneous code, remove gyro business.
+    add auton 9 for low goal and reorder autons for more logical grouping
+    Fix the Pi IP
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Refactor driveForward() to driveBackward(); add delay in driveBackward in case of shot ball
+    Remove delay between shoot and retract in automatic; add limit switch println
+    Fix double mapping in Acquirer and Shooter
+    Camera light code in teleop
+    Remove winch encoder
+    Fix syntax error. Ready for merge
+    Remove update step and introduce syntax error
+    Make retract automatic after firing
+    Add port for captapult limit switch and fix auton methods
+    Add delay after firing for automatic retract
+    Refactor and rename methods/constants
+    Add retracting logic for Shooter
+    commented out cv
+    add shooter channel
+    Add compressor to Acquirer
+    Change values of Constants
+    
+    Using the latest values from Dan. Also updates the THING name to PISTON
+    names
+    Working CV
+    add less messy comments and take out some auto-generated comments
+    Add catapult limit switch
+    add methods for detection for hot goal sensor
+    add limit switch code and winch encoder channels
+    Add encoder channels for the Acquirer winch
+    Add separate encoders for left and right; Add bumper handbrake
+    Change motor channels; Simplify definition for Shooter.getAngle()
+    Rename SHOOTER_POSITION constants; Reverse gamepads
+    added left gamepad
+    Simplify a definition for a constant; Fix a typo
+    Add shooter position constants
+    Add constants, implement isGoalHot()
+    Fix errors
+    Start drivetrain code (repeat of last years)
+    Add manualGamepadControl methods.
+    Add shooter
+    Create basic Acquirer.
+    Create basic Drivetrain.
+    refactor package name
+    add blank classes for future use
+    Add auton - open acquirer
+    Small logic change
+    Add encoder autons as 50 and 51
+    Add convenience method driveBackwardToSweetSpotUsingEncoders()
+    lol whitespace
+    Ensure that the acquirer briefly closes when doing 2-ball
+    Remove moving for mobility points from most autons
+    Add convenience method close() to Auton
+    Modify auton34 to prevent backdrive on second ball
+    Add longer drive time for two-ball drag
+    Debug auton34
+    Add delay in dumbfire autons for ball settling
+    Fix tabbing in auton34()
+    Ensure CV and DV autons open before waiting
+    
+    Also modify shootIfHotCV to only shoot, not extend.
+    Add doublemobility auton for 2-ball donation
+    
+    Also move auton40 to the end of the autons.
+    Fix compiler error from previous commit.
+    Add ball-dragging two-ball auton
+    
+    The new auton lowers the acquirer onto the second ball and
+    drags it in this manner to the firing point.
+    Add additional retraction before second auton fire.
+    Refactor 2-ball dumb (auton8) to use lining up
+    Add convenience method driveForwardToUnlineUpShot
+    Use readyAndShoot in extendAndShoot for sure shots
+    Add driveBackwardToLineUpShot to 1-ball dumb
+    Add driveBackwardToLineUpShot to some shooting autons
+    
+    This method drives backward less than a ball's width to account for our
+    decreased power when shooting. It has been added to autons that don't use
+    CV/DV helper methods or have a second ball shot, as well as dumb 1-, 2-,
+    and 3-ball autons.
+    Refeactor shoot() into readyAndShoot() in all autons
+    
+    New readyAndShoot() is shoot() with a call to readyShooter() to overcome
+    backdrive when first readying shooter.
+    Refactor fireBall and modify duration logic
+    Add new constant for DV hot goal wait time
+    
+    Refactor old (CV) constant to say it's for CV.
+    add light spike code into autons that use DV
+    Re-order autons and introduce new numbering scheme
+    
+    Ranges of tens are assigned to different auton modes.
+    
+    00s = Do nothing
+    10s = CV
+    20s = DV (analog camera)
+    30s = Dumb fires
+    40s = Misc
+    Add comment for 3 ball auton
+    Add delay for Dan's Camera during auton
+    Add timeout for automatic retraction
+    Update methods for Dan's camera
+    Add auton11() and make it the default auton choice
+    Rotate acquirer up in driveBackwardForMobilityPoints()
+    
+    This allows us to travel less distance for the mobility points.
+    Add rotateDownToClearShooter() and loadBallWhileMoving() in Auton
+    Make significant 2-shot auton changes
+    
+    Combine startLoadingNextBall() and finishLoadingNextBall() into
+    loadNextBall(). Ensure minimal delay in CV/analog 2-shot autons; ensure
+    appropriate delay in dumb 2-shot for 50/50 chance of hot score.
+    Remove Shooter.reset() action; remove !retracting condition from Shooter.fireBall()
+    Add shoot() and readyShooter() to Auton
+    add testig and debug changes
+    Make wait time factor in time needed to drive in auton
+    Rename driveBackward() to driveBackwardForMobilityPoints()
+    Fix regression in low goal autons; they must wait for hot goal to drive forward
+    murj cunflact
+    Modify ramping algorithm
+    
+    And remove driveBackward from auton 10.
+    improve commenting and fix smart dashboard sendable chooser auton assignments
+    Add documentation
+    add missing auton and refactor for clarity
+    fix constant type form 10 to 2
+    add ramping with more time at max speed
+    Major code cleanup
+    
+    Add TODOS in comments, remove extraneous code, remove gyro business.
+    add auton 9 for low goal and reorder autons for more logical grouping
+    Clean up miscellaneous code
+    Comment analog-dependent method for now; fix typo
+    driveforward ramping changed to match drive backward
+    Add simple ramping to driveForward
+    Fix driveBackward regression
+    add more gradual ramping to driveForward()
+    Add low goal autons - dumb, CV, and analog
+    
+    Re-arranges SmartDashboard choices, main Autonomous switch-case, and
+    auton numbers
+    Add some auton methods for hot low goal shooting
+    add ramping to driveForward()
+    Debug auton 8 (1-point auto)
+    
+    Make auto drive in the other direction,
+    make it run (add to the switch).
+    Add ramping to auton method
+    Add auton for driving up to goal and dump low
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Refactor driveForward() to driveBackward(); add delay in driveBackward in case of shot ball
+    Do some debugging and comment out CV (no freezing)
+    
+    CV used to cause freezing. Commenting it appears
+    to fix that.
+    Rename auton5 to auton6 and add auton 5 (1 ball dumb firing)
+    Update auton comments
+    Add auton 6 for just mobility points
+    Comment out sensors that are not on robot
+    Fix auton logic based on shooter logic
+    Add port for captapult limit switch and fix auton methods
+    Put boolean for hot goal on SmartDashboard
+    add less messy comments and take out some auto-generated comments
+    add additional switches for auton cases. add comments next to switches
+    add duplicate auton set that uses analog light sensor instead of CV
+    separate isGoalHot method into one for CV and one for the light sensor
+    Remove auton4() method
+    Refactor shooter logic in auton
+    Add ramping for drive forward speed in auton
+    Refactor autononomous code
+    Add chooser for autonomous routine
+    Add semicolon
+    Add autonomous methods
+    Add reset methods.
+    Add auton framework and auton1
+    refactor package name
+    add blank classes for future use
+    Add initial File Read
+    Major code cleanup
+    
+    Add TODOS in comments, remove extraneous code, remove gyro business.
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Invert the left encoder value
+    Comment out gyro in drivetrain
+    Testing changes
+    Clean comments and code structure for all subsystem classes
+    Add encoder channels for the Acquirer winch
+    Add separate encoders for left and right; Add bumper handbrake
+    Add shooter position constants
+    Fix errors
+    Start drivetrain code (repeat of last years)
+    Add reset methods.
+    Add gyro
+    Create basic Drivetrain.
+    refactor package name
+    edit drivetrain class
+    move gyro code to drivetrain
+    add blank classes for future use
+    Add Blocker subsystem and controls
+    
+    Adds subsystem and initialise it in DESmond. Add controls for driver
+    gamepad (L1 = blocker down, R1 = blocker up). In DESmond, add checks so
+    methods of blocker are never called if it is null.
+    Revert "Switch trigger and bumper in controls"
+    Mistaken controls were better
+    
+    This reverts commit 01a160db9c83b42f2c1d8ef3d0c86458b13cf641.
+    Switch trigger and bumper in controls
+    Modify operator gamepad controls according to Joe Blay
+    Debug auton34
+    Add ball-dragging two-ball auton
+    
+    The new auton lowers the acquirer onto the second ball and
+    drags it in this manner to the firing point.
+    Remove analog stick control of the roller entirely
+    
+    Zane does not use it at all and it introduces regressions.
+    add testig and debug changes
+    Major code cleanup
+    
+    Add TODOS in comments, remove extraneous code, remove gyro business.
+    Add the result of Ctrl-Shift-F (Format) on all files
+    revert piston orientation.
+    change gamepad mapping to strategy team's preference
+    Switch back to regular Compressor
+    add compressor hack to manually check state of pressure switch.
+    Fix double mapping in Acquirer and Shooter
+    remove extraneous code and conditionals in Acquirer and Shooter.
+    Testing changes
+    Refactor and rename methods/constants
+    added roller speed to acquirer
+    Start compressor
+    Mapped Gamepad Buttons
+    Add compressor to Acquirer
+    Change values of Constants
+    
+    Using the latest values from Dan. Also updates the THING name to PISTON
+    names
+    Clean comments and code structure for all subsystem classes
+    Refactor a bad name into a good name
+    Add autonomous methods
+    Add manualGamepadControl methods.
+    Add reset methods.
+    Add auton framework and auton1
+    Create basic Acquirer.
+    refactor package name
+    add blank classes for future use
+    make changes for CV methods that uses spike relay channel and new constants
+    add testig and debug changes
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Camera light code in teleop
+    Fix nullpointer and infinite loop that the robot could get stuck in if the pi is not connected
+    Add SmartDashboard printouts for CV, isPiConnected methods
+    Remove messy stacktraces, put CV back in threads
+    Working CV
+    Clean comments and code structure for all subsystem classes
+    Add constants, implement isGoalHot()
+    Add reset methods.
+    Add CV class framework
+    Add auton framework and auton1
+    refactor package name
+    add blank classes for future use
+    Modify operator gamepad controls according to Joe Blay
+    Modify fireBallPastBackdrive() to avoid constants
+    
+    New fireBallPastBackdrive() retracts and then immediately fires,
+    hopefully minimizing backdrive by reducing idle time between
+    retracting and firing.
+    Implement shooter.fireBallPastBackdrive
+    
+    This function runs the chooChoo for a short period of time to
+    ensure the limit switch is pressed, then fires the ball using
+    standard logic.
+    Use two gamepads in shooter manualGamepadControl
+    
+    Changes method signature; allows driver to control reticle
+    Add reticle toggling
+    
+    Click button to toggle once, instead of while button pressed;
+    Enable the reticle in shooter.reset, called in teleopInit
+    Factor out logic into simpler method fireBall()
+    Refactor fireBall and modify duration logic
+    make changes for CV methods that uses spike relay channel and new constants
+    Add spike control for switching between two lights
+    
+    Adds manual gamepad control for switching between camera light and operator reticle
+    remove unnecesary print logs
+    Update methods for Dan's camera
+    Get rid of SHOOTER_DELAY_FOR_RETRACT
+    Remove Shooter.reset() action; remove !retracting condition from Shooter.fireBall()
+    add testig and debug changes
+    Remove ball presence switch and ball-centred switch business
+    Clean up miscellaneous code
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Do some debugging and comment out CV (no freezing)
+    
+    CV used to cause freezing. Commenting it appears
+    to fix that.
+    change gamepad mapping to strategy team's preference
+    Remove delay between shoot and retract in automatic; add limit switch println
+    Invert chooChoo.set signal so we never run the choo choo backwards
+    Fix bug where no retract request -> stop winch
+    
+    Separate check for retract request from running of stop winch.
+    Fix double mapping in Acquirer and Shooter
+    Comment out sensors that are not on robot
+    remove extraneous code and conditionals in Acquirer and Shooter.
+    Remove winch encoder
+    Testing changes
+    Remove test choochoo code
+    Make retract automatic after firing
+    Add delay after firing for automatic retract
+    Add option for automatic retract
+    Refactor and rename methods/constants
+    Add retracting logic for Shooter
+    added choochoo speed
+    added choochoo speed
+    added temp choochoo test
+    Map gamepad -add stopWinch
+    Mapped Gamepad Buttons
+    Clean comments and code structure for all subsystem classes
+    Add catapult limit switch
+    add methods for detection for hot goal sensor
+    add limit switch code and winch encoder channels
+    Add encoder channels for the Acquirer winch
+    Change motor channels; Simplify definition for Shooter.getAngle()
+    Rename SHOOTER_POSITION constants; Reverse gamepads
+    Simplify a definition for a constant; Fix a typo
+    Remove unnecessary else if statements for manual gamepad control
+    Add shooter position constants
+    Add autonomous methods
+    Add manualGamepadControl methods.
+    Add reset methods.
+    Add shooter
+    refactor package name
+    add blank classes for future use
+    refactored getBackButton to getSelectButton in gamepad class.
+    Add the result of Ctrl-Shift-F (Format) on all files
+    clean out comments and unnecessary disclaimers in util classes
+    Create basic Drivetrain.
+    refactor package name
+    add blank classes for future use
+    Add ThreeLaws interface
+    Add the result of Ctrl-Shift-F (Format) on all files
+    Add SmartDashboard printouts for CV, isPiConnected methods
+    Remove messy stacktraces, put CV back in threads
+    Reinitialize connection to Pi if it fails
+    Working CV
+    clean out comments and unnecessary disclaimers in util classes
+    Clean up run() in NetworkIO
+    Add constants, implement isGoalHot()
+    Fix errors
+    refactor package name
+    add blank classes for future use

@@ -1,0 +1,1969 @@
+﻿    add runtime.txt and update Procfile to start stunnel
+    update translation instructions
+    fix issue with one template blocktrans
+    remove translation for cobrand and widget
+    update translation strings doc
+    updated instructions for fixing gettext error on mac os x
+    added license and updated README
+    added a readme file
+    seprate session/file caches
+    initial import
+    fix sign
+    fixed version of DUP
+    use PyPi version of DUP
+    use recaptcha from DUP
+    use git repo for secure redis
+    update requirements to use pypi libs instead of git
+    use master branch for secure redis lib
+    use most updated version for django 1.10 support + use redis on circleci
+    upgrade to django 1.10 + configure new accountsplus
+    fix circle config to add requirement for redis
+    update django to 1.9.9 patch level
+    fix staticfiles cache config
+    fixed libraries versions
+    use previous version
+    enhancements
+    enhancing blocking and recaptcha experience
+    Initial commit for enable user blocking and captcha
+    Added CSP settings
+    Added password validator
+    use master instead of feature branch
+    configure secure redis client
+    Updated sessions and cache configs
+    change django-users-plus to load from pypi
+    Add translation for place birth error message
+    Update requirement file
+    Enabled accounts module
+    Updated raven to 5.20.0
+    Added cffi to requirements
+    Upgraded django to 1.9.6
+    Upgraded django to 1.9.7
+    Updated django to 1.9.6
+    moved fiftythree client to separate package
+    Upgrade to django 1.9
+    Upgraded django to 1.8 and DRF to 3.3.2
+    Downgraded django-pipeline to 1.5.4
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    Removed Coverage library usages
+    Added waffle library to use waffle switch track-gt-campaign
+    338 Updated widget implementation
+    use django-storages-redux instead of non-maintained django-storages
+    remove use of newrelic
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    add missing django-shortuuidfield library
+    337 Co-Branding implementation
+    Add configuration and support for postgres database
+    Change redis configuration to use Heroku-redis
+    Update a few settings to bring them in line with 53
+    updated django version
+    updated Django to v1.7.8 security release
+    updated requirements to remove versioning of Pillow and update to latest patch level of Django
+    updated django to latest patch version
+    cleaned up all translation strings and fixed some internationalization
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    updated django to latest security release
+    added automatic ssl redirect
+    added proper parsing and printing of phone numbers on confirmation page
+    added newrelic support
+    updated django to latest security release
+    removed unneeded requirements and fixed deployment commands to remove database migrations (there is no db with this app)
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    initial import
+    add runtime.txt and update Procfile to start stunnel
+    remove use of newrelic
+    added newrelic support
+    initial import
+    fix rebasing bug + add admin for accounts
+    upgrade to django 1.10 + configure new accountsplus
+    handle urls order + add tests
+    add accounts urls
+    move some urls mappings around
+    support password reset for admin and redirect any login to the admin login
+    enhancing blocking and recaptcha experience
+    Initial commit for enable user blocking and captcha
+    Enabled accounts module
+    Refactored widget submission code
+    complete implementation of cobranding
+    337 Co-Branding implementation
+    removed localeurl.urls from base urls (left in by mistake)
+    cleaned up all translation strings and fixed some internationalization
+    complete internationalization and spanish localization implementation (still need some language translation)
+    almost complete rewrite to new design and wizard workflow
+    completed a sample client implementation for Organize.org
+    initial import
+    Upgrade to django 1.9
+    added support for tos by state api and page display
+    refactored legal document to be more generic
+    lots of bug fixes
+    changed popover to appear on click
+    finished cleaning up css for radio buttons and checkboxes
+    added awesome-bootstrap-checkbox for checkbox styling and updated to properly align and show organize red
+    added support for help_text on fields
+    use recaptcha from DUP
+    update ToS - remove state registry link
+    more registry state url to 53
+    apply dla copy
+    added spaces
+    enhancements
+    enhancing blocking and recaptcha experience
+    added extra space at end of file
+    Initial commit for enable user blocking and captcha
+    Updated organ tissue validation logic
+    Don't raise an error if a state requests only one organ/tissue selection
+    Add new Spanish translation
+    Fixed translation bugs
+    Updated code for translations
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    Add mark safe for revoke page
+    refactor code
+    Handle NA license id value
+    Update hint message of license id formats
+    Update license id formats hint message
+    Update help text of license id formats
+    Fix upenn invisible error text
+    Initial Commit
+    Fix displayed Html content in confirmation page
+    Add extra spaces to license id formats placeholder
+    Update validations for license id register
+    Add validation for License Id on Register App
+    Update validation clean method for organs for checkobxes
+    change error message for organ/tissue selection
+    handle uncheckedboxes allowances on register
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    initial part of implementation of NOK done page
+    small rebase cleanups
+    Code review updates
+    Refactored widget submission code
+    Updated widget submission flow
+    338 Updated widget implementation
+    complete implementation of cobranding
+    Updated cobranding implementation
+    Added new line at the end of each new file, and updated the order of imports.
+    337 Co-Branding implementation
+    updated tos revoke language
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    cleaned up all translation strings and fixed some internationalization
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added min-value support for birthdate
+    removed use of date picker on brithdate field
+    updated not-supported and done pages
+    fixed a bunch of bugs
+    lots of bug fixes
+    fixed form clean methods to ignore cleaning when a field has no value
+    fixed a bunch of field bugs
+    fixed placeholder text
+    added awesome-bootstrap-checkbox for checkbox styling and updated to properly align and show organize red
+    cleaned up forms for checkboxes and radio buttons
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    cleaned up templates and organize logo
+    fixed 53 client to use setting to determine secure/insecure http scheme
+    added last page of wizard
+    Added initial support for internationalization and spanish translation
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    updated api to support customized fields per state
+    updated registration form to change based on state fields
+    completed a sample client implementation for Organize.org
+    completed a sample client implementation for Organize.org
+    initial import
+    use recaptcha from DUP
+    Remove unneeded logger.error
+    change error level to info for fields errors in revocation
+    add validation to error type
+    fix merge issue
+    apply dla copy
+    Added waitinglistfilm redirect view
+    added support for reading gender and age
+    get use of csrf config in django 1.10 + update accountsplus
+    upgrade to django 1.10 + configure new accountsplus
+    fix requirement version for django-users-plus
+    remove upenn start pages
+    add duke start page
+    Replace double quotes by single quotes
+    customized error message for csrf validation\
+    enhancements
+    added a space
+    Initial commit for enable user blocking and captcha
+    use form to validate url params
+    handle postalcode lookup from url params
+    move 'You can register as an organ donor at' again to register + translation
+    apply feedback for a/b testing
+    fix bug - use variant_id instead of variant
+    user variant_id instead of variant
+    fix concatenation
+    add test for NOK
+    fix line breaks
+    add next of kin 2
+    Updated organ tissue validation logic
+    added handle invalid organ/ tissue selection return by fiftythree server
+    remove padding added by mistake
+    make both of email & postal code info level logging
+    change log level for postal code failure to info
+    update next of kin prefilled email copy
+    Add support for /insta and /instagram redirects that add proper reg_source GET parameter
+    re fixed the authentication error handling to always show Service Unavailable message
+    handled submit_email AuthenticationError, and transformed it to ServiceError
+    Added a space after colon in error message
+    Fixed invalid postal code error message
+    Fixed translation bug
+    Use page name in wizard form
+    Updated code for translations
+    Fixed a bug in NOK form
+    - Fix next of kin send button
+    - Add error message in start page
+    Change progress bar style
+    - Change logo for next of kin and done page
+    - Enable FB app ID check
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    Added redirect view for FB url
+    Update email error message
+    Update error log message to include invalid postal code submitted to 53
+    Update logger errors for InvalidDataError api response
+    Fixed a bug in UPENN page when postal code is invalid
+    Added second URL for UPENN Start page
+    Added prefixes for cache keys
+    Made postal code timeout configurable
+    Added cobrand logo info and postal code response to cache
+    Update loggin level
+    Added upenn session variable to clean_session method
+    Updated GA for upenn flow
+    Initial Commit
+    Fix confirmation issue on register app
+    Fixed code to display errors on confirmation and start pages
+    Upgrade to django 1.9
+    Upgraded django to 1.8 and DRF to 3.3.2
+    update name of warning dialog content holder
+    update language on warning dialog
+    add translation string placeholders
+    Update validations for license id register
+    Add validation for License Id on Register App
+    Update content on Registration pages
+    Fixing the issue for nok-email issue
+    fix bug where form initial data was being permanently changed in class, instead of being changed per instance
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    initial part of implementation of NOK done page
+    Removed mixin and used a method instead to make sure logic is called only on get request
+    Updated per code review
+    Added support for variant id for GA and 53
+    Clean widget session when no external source params in URL
+    Avoided cleaning session on registration done
+    Updated external source data request parameter format
+    Added code to send widget/cobrand/reg_source data through 53 API calls
+    remove unused import
+    add a middleware that sets a user's language based on the specified language in a GET parameter
+    Updated session management for widget/cobrand/3rd party emails.
+    Added waffle library to use waffle switch track-gt-campaign
+    Initial GA Tracking implementation
+    Removed unneeded session variables
+    small rebase cleanups
+    Refactored widget submission code
+    renamed company_source param to widget_id
+    Made changes to done page URL. Sorround the script with a sizing div
+    Updated widget submission flow
+    Added widget CTAs support
+    338 updated how js/css urls composed.
+    Removed protocol from js / css urls
+    338 Updated widget implementation
+    complete implementation of cobranding
+    Updated cobranding implementation
+    337 Co-Branding implementation
+    Fixed a bug that was redirecting user to update done page even if it is a new registration.
+    removed TOS field usage (only agree_to_tos field is used)
+    fixed revoke code to redirect to success page with a defined postal code
+    updated revoke done to query for state registry url for display
+    updated revoke done view to take a postal code
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    fixed redirect on minor cookie presence to be a Mixin and added it to deregister view
+    fixed issue with successful deregister trying to process non-existant errors
+    support for deregister page and api
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    cleaned up all translation strings and fixed some internationalization
+    changed form completion to redirect to done page (which supports language selector)
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    added support for prefilling registration with email and postal code
+    added support for tos by state api and page display
+    refactored legal document to be more generic
+    added support for privacy-policy page and api
+    updated not-supported and done pages
+    fixed a bunch of bugs
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    added support for redirecting to a defined url for states that don't support registration
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    fixed 53 client to use setting to determine secure/insecure http scheme
+    added last page of wizard
+    updated django to latest security release
+    Added initial support for internationalization and spanish translation
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    updated api to support customized fields per state
+    updated registration form to change based on state fields
+    added support for handling when the service is unavailable
+    correctly handled errors
+    completed a sample client implementation for Organize.org
+    content updates for facebook sharing, make facebook share button conditional on FACEBOOK_APP_ID setting, add support for FACEBOOK_APP_ID setting along with context processor
+    use recaptcha from DUP
+    Added waitinglistfilm redirect view
+    upgrade to django 1.10 + configure new accountsplus
+    fix requirement version for django-users-plus
+    remove upenn start pages
+    add duke start page
+    move some urls mappings around
+    remove unnecessary import
+    support password reset for admin and redirect any login to the admin login
+    Initial commit for enable user blocking and captcha
+    apply feedback for a/b testing
+    add next of kin 2
+    Add support for /insta and /instagram redirects that add proper reg_source GET parameter
+    Added redirect view for FB url
+    Fixed a bug in UPENN page when postal code is invalid
+    Added second URL for UPENN Start page
+    Initial Commit
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    initial part of implementation of NOK done page
+    Refactored widget submission code
+    renamed company_source param to widget_id
+    Made changes to done page URL. Sorround the script with a sizing div
+    Updated widget submission flow
+    Added widget CTAs support
+    338 Updated widget implementation
+    complete implementation of cobranding
+    Updated cobranding implementation
+    337 Co-Branding implementation
+    #342 created 2 different coming-soon pages for email and campaign
+    #342 applied required changes and created the new coming soon page.
+    updated revoke done to query for state registry url for display
+    updated revoke done view to take a postal code
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    changed form completion to redirect to done page (which supports language selector)
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added support for tos by state api and page display
+    refactored legal document to be more generic
+    added support for privacy-policy page and api
+    fixed many bugs
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    added support for redirecting to a defined url for states that don't support registration
+    added last page of wizard
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    upgrade to django 1.10 + configure new accountsplus
+    add a middleware that sets a user's language based on the specified language in a GET parameter
+    add more tests for admin usage
+    add more tests for admin usage
+    add more tests for admin usage
+    Implemented test cases for session in start page
+    add missing image file for tests
+    Added waitinglistfilm redirect view
+    change url
+    added unit tests
+    apply feedback for a/b testing
+    add test for NOK
+    Add support for /insta and /instagram redirects that add proper reg_source GET parameter
+    Added unit test for FB redirect view
+    Fix all PEP8 non-compatible code for Register
+    Fix all PEP8 non-compatible code for Regsiter
+    Updated session cleaning test
+    Added new line
+    Implemented test cases for session in start page
+    handle urls order + add tests
+    Implemented test cases for session in start page
+    Code review updates
+    Refactored widget submission code
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    Fix update register form redirect
+    fixed import of settings
+    dynamically read the site id for tracking
+    dynamically read the site id for tracking
+    remove unnecessary comment
+    added support for reading gender and age
+    modifications based on feedback by dana
+    added proper parsing and printing of phone numbers on confirmation page
+    almost complete rewrite to new design and wizard workflow
+    almost complete rewrite to new design and wizard workflow
+    completed a sample client implementation for Organize.org
+    apply feedback
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    apply feedback
+    apply feedback
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    upgrade to django 1.10 + configure new accountsplus
+    Added code to redirect users when already registered
+    more refactoring
+    Refactored widget submission code
+    add some model tests to cobrand package
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    complete implementation of cobranding
+    add email notification (admin and user) for widget registration
+    Update terms of services to open in new windows
+    Fix term of service at widget page
+    remove translation for cobrand and widget
+    update translation strings doc
+    more refactoring
+    Code review updates
+    Added TOS for widget registaration page
+    Refactored widget submission code
+    Modified some names according to the model's new name
+    more refactoring
+    Removed created_on and updated_on fields from company information
+    Refactored widget submission code
+    Code review updates
+    Refactored widget submission code
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    upgrade to django 1.10 + configure new accountsplus
+    Used queryset filter instead of depending on DoesNotExist error
+    Added code to redirect users when already registered
+    update generated widget JS code to not include static version string
+    add email notification (admin and user) for widget registration
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    more refactoring
+    Code review updates
+    Added new line
+    Refactored widget submission code
+    upgrade to django 1.10 + configure new accountsplus
+    add email notification (admin and user) for widget registration
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    Added TOS for widget registaration page
+    Refactored widget submission code
+    more refactoring
+    more refactoring
+    Refactored widget submission code
+    complete implementation of cobranding
+    Refactored widget submission code
+    complete implementation of cobranding
+    Upgraded django to 1.8 and DRF to 3.3.2
+    more refactoring
+    Refactored widget submission code
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    Implemented test cases for session in start page
+    more refactoring
+    fix unittests for uuid length
+    Modified some names according to the model's new name
+    more refactoring
+    Refactored widget submission code
+    Added test cases for widget host view
+    Refactored widget submission code
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    Solve Android SSN issue by using new input mask library
+    update base to set title in template conditional
+    add terms of service
+    more refactoring
+    Added new line
+    Added TOS for widget registaration page
+    update page content and create tos page
+    Solve Android SSN issue by using new input mask library
+    update contents for brand/widget pages
+    Update Widget signup page
+    remove translation for cobrand and widget
+    update translation strings doc
+    update generated widget JS code to not include static version string
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    more refactoring
+    Refactored widget submission code
+    Added new lines at the end of each file that is missing it.
+    338 Updated widget implementation
+    updated spanish transations
+    updated tos revoke language
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    Solve Android SSN issue by using new input mask library
+    Added a JS variable to control opening register site on iframe or new window
+    update image naming to be same as previous naming
+    update widget ad images
+    update translations
+    remove translation for cobrand and widget
+    update translation strings doc
+    update generated widget JS code to not include static version string
+    Fixed widget scaling
+    update widgets to final design
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    add email notification (admin and user) for widget registration
+    update contents for brand/widget pages
+    add email notification (admin and user) for widget registration
+    Fix Html comment issue
+    Used JQuery 1.x for IE less than 8
+    updated logo.png to logo.svg
+    initial import
+    Fix Html comment issue
+    Used JQuery 1.x for IE less than 8
+    updated logo.png to logo.svg
+    initial import
+    Update done page
+    Change video extension from MKV to web
+    Update done page
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    Update Cera fonts to the new one
+    added JS library for faking placeholder text for IE < 11
+    initial import
+    disable escaping widget image HTML
+    Escape HTML of innerHTML element to prevent any DOM Based XSS
+    pdated scrollbars value to yes on opening new window for prod and local
+    Added support for cobrand registration over widget
+    fix error with widget not properly checking protocol value
+    Fixed widget window centralization
+    Open new centered window instead of tab in case of non-SSL and iframe surrounded widget
+    Open widget register site in a new window not new tab
+    Fixed an issue in widget JS
+    Added a JS variable to control opening register site on iframe or new window
+    update widget ad images
+    Initial implementation for mobile widget presentation
+    Updated css and image urls to use cloundfront
+    Created dev and local versions of widget.js
+    renamed company_source param to widget_id
+    Added widget CTAs support
+    #338 Updated modal style and added the required images for CTAs for future implementation
+    338 updated how js/css urls composed.
+    338 Updated widget implementation
+    #338 updated temp URL
+    #338 updated code to update widget button text when registration is done.
+    #338 Added code for organize widget
+    added missing map file
+    Used JQuery 1.x for IE less than 8
+    disable escaping widget image HTML
+    Escape HTML of innerHTML element to prevent any DOM Based XSS
+    pdated scrollbars value to yes on opening new window for prod and local
+    Added support for cobrand registration over widget
+    Fixed widget window centralization
+    Open new centered window instead of tab in case of non-SSL and iframe surrounded widget
+    Open widget register site in a new window not new tab
+    update widget ad images
+    Updated css and image urls to use cloundfront
+    Created dev and local versions of widget.js
+    renamed company_source param to widget_id
+    Added widget CTAs support
+    #338 Updated modal style and added the required images for CTAs for future implementation
+    338 updated how js/css urls composed.
+    338 Updated widget implementation
+    #338 updated temp URL
+    #338 updated code to update widget button text when registration is done.
+    #338 Added code for organize widget
+    Solve Android SSN issue by using new input mask library
+    Handle NA license id value
+    Added About section to upenn start page
+    Update validations for license id register
+    Add validation for License Id on Register App
+    Added widget CTAs support
+    #338 updated code to check if the widget button is defined.
+    #338 updated code to update widget button text when registration is done.
+    updated language selector display to show as clickable link
+    complete internationalization and spanish localization implementation (still need some language translation)
+    removed pickadate js lib
+    removed use of date picker on brithdate field
+    added JS library for faking placeholder text for IE < 11
+    fixed another ie bug with pseudo elements
+    changed selectors in main.js to use required property, not a pseudo element
+    fixed a bunch of bugs
+    fixed a bunch of field bugs
+    added support for help_text on fields
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    cleaned up templates and organize logo
+    fixed bug in js selector
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    almost complete rewrite to new design and wizard workflow
+    initial import
+    initial import
+    initial import
+    disable escaping widget image HTML
+    Escape HTML of innerHTML element to prevent any DOM Based XSS
+    Updated scrollbars value to yes on opening new window
+    Added support for cobrand registration over widget
+    fixed dev version of widget also
+    Fixed widget window centralization
+    Open new centered window instead of tab in case of non-SSL and iframe surrounded widget
+    Open widget register site in a new window not new tab
+    Fixed an issue in widget JS
+    Added a JS variable to control opening register site on iframe or new window
+    update widget ad images
+    Initial implementation for mobile widget presentation
+    Updated css and image urls to use cloundfront
+    Created dev and local versions of widget.js
+    renamed company_source param to widget_id
+    Added widget CTAs support
+    #338 Updated modal style and added the required images for CTAs for future implementation
+    338 updated how js/css urls composed.
+    338 Updated widget implementation
+    #338 updated temp URL
+    #338 updated code to update widget button text when registration is done.
+    #338 Added code for organize widget
+    338 Updated widget implementation
+    Solve Android SSN issue by using new input mask library
+    fixed maskedinput to be minimized
+    fixed a bunch of bugs
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    revert email icon
+    #342 applied required changes and created the new coming soon page.
+    added last page of wizard
+    update favicon
+    update opengraph tags
+    added last page of wizard
+    Add twitter summary card meta information to the site
+    cleaned up templates and organize logo
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    added last page of wizard
+    Replace register done background image
+    Update register done background image
+    image for pixel
+    Update FB and Twitter icon
+    image compression update
+    fix incorrect image naming
+    add 512px icon, change FB.ui to use standard share action (vs. opengraph)
+    updated not-supported and done pages
+    added last page of wizard
+    add smaller square logo image and update opengraph tags to use it. change opengraph url tag to use the site url.
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    update nok-page background image
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    image compression update
+    fix incorrect image naming
+    add 512px icon, change FB.ui to use standard share action (vs. opengraph)
+    content updates for facebook sharing, make facebook share button conditional on FACEBOOK_APP_ID setting, add support for FACEBOOK_APP_ID setting along with context processor
+    cleaned up templates and organize logo
+    cleaned up templates and organize logo
+    initial import
+    - Fix next of kin style on small mobile screen
+    - Update country graphic image
+    - Update home page style
+    - Add CeraCY font
+    - Update button style
+    - Update value field style
+    - Update label style
+    - Update help text style
+    Initial Commit
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    Initial Commit
+    Update FB and Twitter icon
+    Add fixed twitter_pic
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    update image naming to be same as previous naming
+    update widget ad images
+    update image naming to be same as previous naming
+    update widget ad images
+    update image naming to be same as previous naming
+    update widget ad images
+    update image naming to be same as previous naming
+    update widget ad images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    add VI state map
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    Replace states map images
+    added awesome-bootstrap-checkbox for checkbox styling and updated to properly align and show organize red
+    Updated widget style
+    Added widget CTAs support
+    #338 Updated modal style and added the required images for CTAs for future implementation
+    #338 Added code for organize widget
+    Tweaking the UI for recaptcha on register
+    enhancing blocking and recaptcha experience
+    image for pixel
+    Fix wrapping issue for Spanish language
+    Add new Spanish translation
+    Update FB and Twitter icon
+    Fix small screen footer issue
+    Update Cera fonts to the new one
+    Fixed a bug in Update Donor Wishes button size
+    Change social button font size for small screen
+    Change btn-organize style on hover and focus
+    - Fix button size issue for Spanish language
+    - Update font family for minor page
+    Fix style for buttons in Spanish
+    - Solve done page image IE issue
+    - Fix button style in Spanish for modal and register wizard
+    - Fix translate issue for TOS text in revoke page
+    - Fix postal code issue in registration wizard
+    Updated code for translations
+    Fix next of kin page style for iPhone 6
+    - Fix next of kin style on small mobile screen
+    - Update country graphic image
+    Turn of resize in next of kin text area
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    Fix button style for IE
+    - Fix next of kin send button
+    - Add error message in start page
+    Update register identity page
+    Change personal information form style
+    Change progress bar style
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    - Update home page style
+    - Add CeraCY font
+    - Update button style
+    - Update value field style
+    - Update label style
+    - Update help text style
+    remove black footer
+    remove field size limit on ssn field
+    Update upenn pages logo placement
+    update text size of about message on upenn landing pages
+    Added About section to upenn start page
+    Update license id formats hint message
+    Update help text of license id formats
+    Fix upenn invisible error text
+    Fix issue with CSS on register app for submit button
+    Updated upenn start page layout
+    Initial Commit
+    Fix Bugs for Register-warning modal
+    Update validations for license id register
+    Add validation for License Id on Register App
+    Revert register done background image
+    Update register done background image
+    update widget ad images
+    add some html format adjustments and fix a translatable string
+    Fix the issues based on waseem comments
+    add new line for django.po file
+    Update content on Registration pages
+    Revert "update content  on Registration pages"
+    
+    This reverts commit de5cac4f501acb1ea8d1fd3ed75233738f46323b.
+    update content  on Registration pages
+    add skip link for nok email page
+    update declaration url
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    update styling of done page
+    #342 applied required changes and created the new coming soon page.
+    updated spanish transations
+    complete internationalization and spanish localization implementation (still need some language translation)
+    updated text coloring
+    updated not-supported and done pages
+    lots of bug fixes
+    fixed a bunch of field bugs
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    cleaned up input outline on hover
+    attempted fix for bottom black bar and mobile scrolling
+    fixed button layout on iphone screen
+    finished cleaning up css for radio buttons and checkboxes
+    added awesome-bootstrap-checkbox for checkbox styling and updated to properly align and show organize red
+    cleaned up forms for checkboxes and radio buttons
+    added support for help_text on fields
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    more spacing fixes
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added last page of wizard
+    minor css fix
+    almost complete rewrite to new design and wizard workflow
+    completed a sample client implementation for Organize.org
+    initial import
+    added support for POST action to logout on admin
+    roll back changes on a file
+    Tweaking the UI for recaptcha on register
+    enhancements
+    initial import
+    get use of csrf config in django 1.10 + update accountsplus
+    upgrade to django 1.10 + configure new accountsplus
+    fix rebasing bug + add admin for accounts
+    upgrade to django 1.10 + configure new accountsplus
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    get use of csrf config in django 1.10 + update accountsplus
+    get use of csrf config in django 1.10 + update accountsplus
+    add migrations for accounts
+    add migrations for accounts
+    upgrade to django 1.10 + configure new accountsplus
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    Used JQuery 1.x for IE less than 8
+    more template and js fixes
+    fixed many bugs
+    fixed error page formats
+    fixed 500 template
+    initial import
+    removed piwik
+    dynamically read the site id for tracking
+    dynamically read the site id for tracking
+    dynamically read the site id for tracking
+    change IDs
+    added support for reading gender and age
+    modifications based on feedback by dana
+    added code to read the birthdate and the gender
+    add custom dims for gender and age
+    restore missing code
+    updates
+    change url of app
+    restored correct indentation
+    Remove merged code
+    fix indentation
+    remove merged changes
+    support for custom dimensions
+    change location of script
+    Change the location of the script
+    Added JS for register app to support piwik
+    fix indentation
+    update upenn analytics
+    Fix file indentation
+    Solve Android SSN issue by using new input mask library
+    Updated Raven JS version
+    remove black footer
+    Add twitter summary card meta information to the site
+    add smaller square logo image and update opengraph tags to use it. change opengraph url tag to use the site url.
+    add 512px icon, change FB.ui to use standard share action (vs. opengraph)
+    content updates for facebook sharing, make facebook share button conditional on FACEBOOK_APP_ID setting, add support for FACEBOOK_APP_ID setting along with context processor
+    fix fb:app_id opengraph tag
+    more opengraph updates
+    update favicon
+    update opengraph tags
+    add og:image width and height tags
+    Update done page to use facebook share vs. link to fb page
+    Added prefixes for cache keys
+    Fixed a bug in base template
+    Added cobrand logo info and postal code response to cache
+    Updated GA for upenn flow
+    Added GA tracking for UPENN start page
+    Updated upenn start page layout
+    Initial Commit
+    Fixing the Issue  For Missing Params GA
+    Updated GA code
+    Added age/gender to pageview send event
+    Added GA tracking JS code
+    Used JQuery 1.x for IE less than 8
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    Added support for variant id for GA and 53
+    update base to set title in template conditional
+    add terms of service
+    Updated session management for widget/cobrand/3rd party emails.
+    Added waffle library to use waffle switch track-gt-campaign
+    Initial GA Tracking implementation
+    complete implementation of cobranding
+    Updated cobranding implementation
+    337 Co-Branding implementation
+    upgraded css, js lib versions
+    support for deregister page and api
+    added heap analytics
+    update ga to allow cross domain tracking
+    updated language selector display to show as clickable link
+    updated language dropdown menu
+    complete internationalization and spanish localization implementation (still need some language translation)
+    changed logo to link to organize.org homepage
+    fixed sentry configuration and installed sentry js
+    added google analytics
+    added support for privacy-policy page and api
+    added JS library for faking placeholder text for IE < 11
+    fixed many bugs
+    attempted fix for bottom black bar and mobile scrolling
+    added awesome-bootstrap-checkbox for checkbox styling and updated to properly align and show organize red
+    added support for help_text on fields
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    fixed display of user messages
+    completed a sample client implementation for Organize.org
+    initial import
+    Used JQuery 1.x for IE less than 8
+    more template and js fixes
+    fixed many bugs
+    fixed error page formats
+    initial import
+    Used JQuery 1.x for IE less than 8
+    more template and js fixes
+    fixed many bugs
+    fixed error page formats
+    initial import
+    Used JQuery 1.x for IE less than 8
+    more template and js fixes
+    fixed many bugs
+    fixed error page formats
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    initial import
+    customized error message for csrf validation\
+    Used JQuery 1.x for IE less than 8
+    more template and js fixes
+    fixed many bugs
+    fixed error page formats
+    initial import
+    initial import
+    Solve Android SSN issue by using new input mask library
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    updated spanish transations
+    update some language on revoke process
+    updated revoke done to query for state registry url for display
+    updated revoke done view to take a postal code
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    Solve Android SSN issue by using new input mask library
+    update translations
+    center text on coming soon pages
+    #342 created 2 different coming-soon pages for email and campaign
+    #342 applied required changes and created the new coming soon page.
+    updated tweet text
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    added support for redirecting to a defined url for states that don't support registration
+    add next of kin 2
+    Solve Android SSN issue by using new input mask library
+    Add new Spanish translation
+    Updated code for translations
+    Fixed a bug in NOK form
+    - Fix next of kin send button
+    - Add error message in start page
+    Change progress bar style
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    add skip link for nok email page
+    update declaration url
+    add missing template
+    fix requirement version for django-users-plus
+    remove upenn start pages
+    add duke start page
+    Fix wrapping issue for Spanish language
+    Solve Android SSN issue by using new input mask library
+    Changes for translations
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    - Fix next of kin send button
+    - Add error message in start page
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    - Update home page style
+    - Add CeraCY font
+    - Update button style
+    - Update value field style
+    - Update label style
+    - Update help text style
+    Update terms of services to open in new windows
+    Fix the issues based on waseem comments
+    Update content on Registration pages
+    Revert "update content  on Registration pages"
+    
+    This reverts commit de5cac4f501acb1ea8d1fd3ed75233738f46323b.
+    update content  on Registration pages
+    add pvblic add tracking pixels
+    Removed widget code from start.html
+    Added widget CTAs support
+    Removed the testing script from start.html
+    Removed protocol from js / css urls
+    338 Updated widget implementation
+    #338 Building script tag asyncronously.
+    #338 Added code for organize widget
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    complete internationalization and spanish localization implementation (still need some language translation)
+    more template and js fixes
+    removed pickadate js lib
+    removed use of date picker on brithdate field
+    added support for privacy-policy page and api
+    fixed a bunch of field bugs
+    fixed error in form action url caused by template directory being moved
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added last page of wizard
+    almost complete rewrite to new design and wizard workflow
+    Fix update register form redirect
+    apply dla copy
+    modified register wizard messages
+    Fix wrapping issue for Spanish language
+    Solve Android SSN issue by using new input mask library
+    Changes for translations
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    - Fix next of kin send button
+    - Add error message in start page
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    - Update home page style
+    - Add CeraCY font
+    - Update button style
+    - Update value field style
+    - Update label style
+    - Update help text style
+    Update terms of services to open in new windows
+    Fix the issues based on waseem comments
+    Update content on Registration pages
+    Revert "update content  on Registration pages"
+    
+    This reverts commit de5cac4f501acb1ea8d1fd3ed75233738f46323b.
+    update content  on Registration pages
+    add pvblic add tracking pixels
+    Removed widget code from start.html
+    Added widget CTAs support
+    Removed the testing script from start.html
+    Removed protocol from js / css urls
+    338 Updated widget implementation
+    #338 Building script tag asyncronously.
+    #338 Added code for organize widget
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    complete internationalization and spanish localization implementation (still need some language translation)
+    more template and js fixes
+    removed pickadate js lib
+    removed use of date picker on brithdate field
+    added support for privacy-policy page and api
+    fixed a bunch of field bugs
+    fixed error in form action url caused by template directory being moved
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added last page of wizard
+    almost complete rewrite to new design and wizard workflow
+    Solve Android SSN issue by using new input mask library
+    Update twitter hashtag for all places used in
+    update twitter status test
+    updated tweet text
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    added support for redirecting to a defined url for states that don't support registration
+    add translations
+    - Change tweet text
+    - Add space below page title
+    Update done page style
+    Apply Dana's comments
+    Change video autoplay functionality
+    Update video size
+    Change video extension from MKV to web
+    Update done page
+    Solve Android SSN issue by using new input mask library
+    Add new Spanish translation
+    Update FB and Twitter icon
+    Change progress bar style
+    - Change logo for next of kin and done page
+    - Enable FB app ID check
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    add 512px icon, change FB.ui to use standard share action (vs. opengraph)
+    content updates for facebook sharing, make facebook share button conditional on FACEBOOK_APP_ID setting, add support for FACEBOOK_APP_ID setting along with context processor
+    tried to add hashtag setting for share
+    update fb app id
+    change calling mechanism for fb share
+    Update done page to use facebook share vs. link to fb page
+    Update twitter hashtag done page
+    fix FB button href
+    add skip link for nok email page
+    update declaration url
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    update translations
+    update translation instructions
+    fix issue with one template blocktrans
+    remove translation for cobrand and widget
+    update translation strings doc
+    update twitter status test
+    fix centering on done page
+    update styling of done page
+    #342 Applied changes to update done and restricted pages.
+    #342 created 2 different coming-soon pages for email and campaign
+    #342 applied required changes and created the new coming soon page.
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    updated tweet text
+    changed language for done page
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    fixed done.html template that had extra title
+    added last page of wizard
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    Solve Android SSN issue by using new input mask library
+    - Fix button size issue for Spanish language
+    - Update font family for minor page
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    updated spanish transations
+    update some language on revoke process
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    use recaptcha from DUP
+    Tweaking the UI for recaptcha on register
+    added spaces
+    enhancements
+    enhancing blocking and recaptcha experience
+    added extra space at end of file
+    Initial commit for enable user blocking and captcha
+    Solve Android SSN issue by using new input mask library
+    Update twitter hashtag for all places used in
+    update twitter status test
+    update styling of done page
+    #342 Applied changes to update done and restricted pages.
+    #342 applied required changes and created the new coming soon page.
+    updated spanish transations
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    updated tweet text
+    changed language for done page
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    fixed done.html template that had extra title
+    added last page of wizard
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    Solve Android SSN issue by using new input mask library
+    - Fix button size issue for Spanish language
+    - Update font family for minor page
+    Update twitter hashtag for all places used in
+    update twitter status test
+    #342 Applied changes to update done and restricted pages.
+    #342 applied required changes and created the new coming soon page.
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    updated tweet text
+    updated restricted minor page content and added spanish language translation for it.
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    changed language for done page
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    fixed done.html template that had extra title
+    added last page of wizard
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    Solve Android SSN issue by using new input mask library
+    Add new Spanish translation
+    Updated code for translations
+    Fixed a bug in NOK form
+    - Fix next of kin send button
+    - Add error message in start page
+    Change progress bar style
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    add skip link for nok email page
+    update declaration url
+    add missing template
+    Solve Android SSN issue by using new input mask library
+    - Fix translate issue for TOS text in revoke page
+    - Fix postal code issue in registration wizard
+    Fixed translation bugs
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    updated spanish transations
+    updated tos revoke language
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    fixed error in form action url caused by template directory being moved
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    completed a sample client implementation for Organize.org
+    Solve Android SSN issue by using new input mask library
+    update translations
+    center text on coming soon pages
+    #342 created 2 different coming-soon pages for email and campaign
+    #342 applied required changes and created the new coming soon page.
+    updated tweet text
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    added support for redirecting to a defined url for states that don't support registration
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added support for tos by state api and page display
+    refactored legal document to be more generic
+    added support for privacy-policy page and api
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    added support for POST action to logout on admin
+    cleaned up templates and organize logo
+    initial import
+    add message under the title
+    Solve Android SSN issue by using new input mask library
+    Replace states map images
+    - Solve done page image IE issue
+    - Fix button style in Spanish for modal and register wizard
+    Fixed translation bug
+    Use page name in wizard form
+    Changes for translations
+    - Fix next of kin style on small mobile screen
+    - Update country graphic image
+    - Update revoke form style
+    - Fix IE button issue
+    - Fix agreement text
+    Update register identity page
+    Change personal information form style
+    Change progress bar style
+    - Update next of kin page
+    - Update done page
+    - Fix license ID modal position
+    - Change twitter share message
+    Fix issue with CSS on register app for submit button
+    Refactor code for confirmation issue
+    Fix confirmation issue on register app
+    Fix displayed Html content in confirmation page
+    Fixed code to display errors on confirmation and start pages
+    Fix Bugs for Register-warning modal
+    Fix wizard step issue
+    update name of warning dialog content holder
+    Update validations for license id register
+    Add validation for License Id on Register App
+    add some html format adjustments and fix a translatable string
+    Fix the issues based on waseem comments
+    Update content on Registration pages
+    fix incorrect page counting
+    update confirm page to fix display of final step (confirm step)
+    Change position for Tos/Register/Email subscription checkboxes to top of page under page counter
+    change logo use to be SVG
+    add white base SVG logo
+    fix capture of registration UUID
+    fixed display of gender
+    complete internationalization and spanish localization implementation (still need some language translation)
+    more template and js fixes
+    removed pickadate js lib
+    changed name on confirmation button to "Register"
+    removed use of date picker on brithdate field
+    added support for privacy-policy page and api
+    added proper parsing and printing of phone numbers on confirmation page
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added last page of wizard
+    Added initial support for internationalization and spanish translation
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    fix settings to disable sslify in testing
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    initial import
+    fix settings to disable sslify in testing
+    initial import
+    initial import
+    update ToS - remove state registry link
+    add message under the title
+    update ToS
+    more registry state url to 53
+    apply dla copy
+    fix indentation
+    Updated message body for NOK
+    fix tos english key value
+    move 'You can register as an organ donor at' again to register + translation
+    add translations
+    Fix Po for TOS
+    Update translation for term of service
+    Add translation for place birth error message
+    Update requirement file
+    Fix translation for invalid postal code error message
+    Add new Spanish translation
+    Fixed translation bugs
+    Fixed translation bug
+    Updated translations
+    Updated translations
+    Updated code for translations
+    Changes for translations
+    - Update home page style
+    - Add CeraCY font
+    - Update button style
+    - Update value field style
+    - Update label style
+    - Update help text style
+    Update terms of services to open in new windows
+    Fix extra space from po file
+    Apply translations for License ID  warning modal
+    update language on warning dialog
+    add translation string placeholders
+    Update twitter hashtag for all places used in
+    add some html format adjustments and fix a translatable string
+    Fix the issues based on waseem comments
+    add new line for django.po file
+    Update content on Registration pages
+    update translations
+    update translations
+    update translation instructions
+    fix issue with one template blocktrans
+    remove translation for cobrand and widget
+    update translation strings doc
+    updated spanish language translation for email list subscription
+    updated spanish transations
+    updated restricted minor page content and added spanish language translation for it.
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    added additional translations for new done page
+    cleaned up all translation strings and fixed some internationalization
+    updated some translations
+    updated translations
+    complete internationalization and spanish localization implementation (still need some language translation)
+    Added initial support for internationalization and spanish translation
+    update ToS - remove state registry link
+    add message under the title
+    update ToS
+    more registry state url to 53
+    apply dla copy
+    Updated message body for NOK
+    fix tos english key value
+    Generated mo file
+    add translations
+    Update translation for term of service
+    Add translation for place birth error message
+    Update requirement file
+    Fix translation for invalid postal code error message
+    Add new Spanish translation
+    Fixed translation bugs
+    Fixed translation bug
+    Updated translations
+    Updated translations
+    Updated code for translations
+    Changes for translations
+    Update terms of services to open in new windows
+    Apply translations for License ID  warning modal
+    Update twitter hashtag for all places used in
+    add some html format adjustments and fix a translatable string
+    Fix the issues based on waseem comments
+    Update content on Registration pages
+    update translations
+    update translation instructions
+    fix issue with one template blocktrans
+    updated spanish language translation for email list subscription
+    updated spanish transations
+    updated restricted minor page content and added spanish language translation for it.
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    added additional translations for new done page
+    cleaned up all translation strings and fixed some internationalization
+    updated some translations
+    updated translations
+    complete internationalization and spanish localization implementation (still need some language translation)
+    seprate session/file caches
+    update wrong settings for secure redis
+    remove unneeded db
+    change secure db to 1
+    move secure redis to another redis db
+    return back SECRET_KEY removed by mistake
+    override cache and provide key
+    Upgraded django to 1.8 and DRF to 3.3.2
+    fix settings to disable sslify in testing
+    Add configuration and support for postgres database
+    Change redis configuration to use Heroku-redis
+    Update a few settings to bring them in line with 53
+    almost complete rewrite to new design and wizard workflow
+    initial import
+    removed piwik
+    changed location of constants
+    dynamically read the site id for tracking
+    dynamically read the site id for tracking
+    dynamically read the site id for tracking
+    modifications based on feedback by dana
+    updates
+    empty line
+    added new image source
+    added some csp resources
+    Added JS for register app to support piwik
+    added media to image sources
+    enhancements
+    new resources
+    Extra images sources
+    use the correct environement url
+    added extra sources to CSP
+    fixed convention issue
+    Add required sources to csp policies
+    Added CSP settings
+    Support max-age config in HSTS
+    Enable CSRF HTTPONLY flag
+    Upgraded django to 1.8 and DRF to 3.3.2
+    update to fix broken MEDIA_URL
+    Code review updates
+    338 Updated widget implementation
+    update settings to properly use cloudfront
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    Add configuration and support for postgres database
+    Change redis configuration to use Heroku-redis
+    Update a few settings to bring them in line with 53
+    another attempt at a proper storage system for static files
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    added automatic ssl redirect
+    almost complete rewrite to new design and wizard workflow
+    fixed production config
+    initial import
+    use recaptcha from DUP
+    changed location of constants
+    dynamically read the site id for tracking
+    return original value
+    modifications based on feedback by dana
+    get use of csrf config in django 1.10 + update accountsplus
+    upgrade to django 1.10 + configure new accountsplus
+    fix circle config to add requirement for redis
+    update django to 1.9.9 patch level
+    fix staticfiles cache config
+    support password reset for admin and redirect any login to the admin login
+    customized error message for csrf validation\
+    seprate session/file caches
+    enhancing blocking and recaptcha experience
+    Initial commit for enable user blocking and captcha
+    added unit tests
+    Added CSP settings
+    added the validators
+    Added password validator
+    remove unneeded db
+    change secure db to 1
+    move secure redis to another redis db
+    apply feedback
+    rename plain text redis to insecure
+    get key from env variable
+    configure secure redis client
+    SF cache is updated to use redis DB 1
+    Updated CACHES settings
+    Updated sessions and cache configs
+    Enabled accounts module
+    re-add django-extensions
+    content updates for facebook sharing, make facebook share button conditional on FACEBOOK_APP_ID setting, add support for FACEBOOK_APP_ID setting along with context processor
+    Fixed a bug in postal code cache timeout setting
+    Made postal code timeout configurable
+    Implemented new features came with 1.8 and 1.9
+    Upgrade to django 1.9
+    Upgraded django to 1.8 and DRF to 3.3.2
+    Downgraded django-pipeline to 1.5.4
+    CDN static files
+    Updated pipeline configs
+    Used JQuery 1.x for IE less than 8
+    Added AbuAisha to ADMINS
+    add a middleware that sets a user's language based on the specified language in a GET parameter
+    Removed Coverage library usages
+    Added waffle library to use waffle switch track-gt-campaign
+    remove use of profiling debug toolbar module
+    Refactored widget submission code
+    #338 Added code for organize widget
+    update content on cobrand
+    update settings to properly use cloudfront
+    fix settings to disable sslify in testing
+    test why unit test is failing
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    complete implementation of cobranding
+    337 Co-Branding implementation
+    Add configuration and support for postgres database
+    Change redis configuration to use Heroku-redis
+    Update a few settings to bring them in line with 53
+    added support for blocking minors with a permanent cookie and auto redirect
+    added hidden page to remove cookie for support purposes
+    changed declaration of MIDDLEWARE_CLASSES in settings to allow easy addition and removal of some classes
+    added removal of SSLify middleware for local settings template
+    cleaned up all translation strings and fixed some internationalization
+    complete internationalization and spanish localization implementation (still need some language translation)
+    removed debug toolbar and template timings from base and put them only into local settings
+    fixed sentry configuration and installed sentry js
+    added proper setting for caches
+    minor cleanup
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    made cookies secure
+    added automatic ssl redirect
+    lots of bug fixes
+    added support for help_text on fields
+    fixed birthdate and phone number fields to work properly and autoformat
+    added mask for phone number field
+    added date selector for birthdate field
+    fixed display of checkmark bar on done page
+    removed placeholder text on all fields except birthdate and phone number
+    fixed bad setting
+    fixed 53 client to use setting to determine secure/insecure http scheme
+    Added initial support for internationalization and spanish translation
+    almost complete rewrite to new design and wizard workflow
+    implemented 53 API v2
+    implemented form wizard powered by API field definitions
+    completed a sample client implementation for Organize.org
+    initial import
+    removed piwik
+    dynamically read the site id for tracking
+    modifications based on feedback by dana
+    updates
+    added new image source
+    added some csp resources
+    Added JS for register app to support piwik
+    added media to image sources
+    enhancements
+    new resources
+    Extra images sources
+    Extra images sources
+    image for pixel
+    might be fix for inline
+    added extra resources
+    added self
+    added hash of scripts
+    added extra sources to CSP
+    fixed convention issue
+    Add required sources to csp policies
+    Added CSP settings
+    Support max-age config in HSTS
+    Enable CSRF HTTPONLY flag
+    Upgraded django to 1.8 and DRF to 3.3.2
+    update to fix broken MEDIA_URL
+    Code review updates
+    338 Updated widget implementation
+    update settings to properly use cloudfront
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    Add configuration and support for postgres database
+    Change redis configuration to use Heroku-redis
+    Update a few settings to bring them in line with 53
+    another attempt at a proper storage system for static files
+    turned off template debugging
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    added automatic ssl redirect
+    almost complete rewrite to new design and wizard workflow
+    completed a sample client implementation for Organize.org
+    initial import
+    initial import
+    upgrade to django 1.10 + configure new accountsplus
+    discard csp locally!
+    Upgrade to django 1.9
+    Upgraded django to 1.8 and DRF to 3.3.2
+    Downgraded django-pipeline to 1.5.4
+    Disable PIPELINE on local settings
+    Used JQuery 1.x for IE less than 8
+    changed declaration of MIDDLEWARE_CLASSES in settings to allow easy addition and removal of some classes
+    added removal of SSLify middleware for local settings template
+    removed local.py settings and added template
+    removed debug toolbar and template timings from base and put them only into local settings
+    implemented proper s3/cloudfront for static assets
+    enabled sentry
+    made cookies secure
+    fixed 53 client to use setting to determine secure/insecure http scheme
+    almost complete rewrite to new design and wizard workflow
+    initial import
+    upgrade to django 1.10 + configure new accountsplus
+    Implemented new features came with 1.8 and 1.9
+    add some model tests to cobrand package
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    complete implementation of cobranding
+    add email notification (admin and user) for widget registration
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    upgrade to django 1.10 + configure new accountsplus
+    Fixed html escaping issue on brand registeration page
+    Fixing  the Cobrand Error 500
+    remove translation for cobrand and widget
+    update translation strings doc
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    update page content and create tos page
+    complete implementation of cobranding
+    Upgrade to django 1.9
+    update page content and create tos page
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    complete implementation of cobranding
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    upgrade to django 1.10 + configure new accountsplus
+    update contents for brand/widget pages
+    Fixing  the Cobrand Error 500
+    Used queryset filter instead of depending on DoesNotExist error
+    Added code to redirect users when already registered
+    remove translation for cobrand and widget
+    update translation strings doc
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    update page content and create tos page
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    complete implementation of cobranding
+    upgrade to django 1.10 + configure new accountsplus
+    add email notification (admin and user) for widget registration
+    update page content and create tos page
+    complete implementation of cobranding
+    add more tests for admin usage
+    add missing migrations
+    complete implementation of cobranding
+    Upgraded django to 1.8 and DRF to 3.3.2
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    initial import
+    Implemented new features came with 1.8 and 1.9
+    Upgraded django to 1.8 and DRF to 3.3.2
+    fix unittests for uuid length
+    add more tests
+    add some model tests to cobrand package
+    add missing image file for tests
+    Added test cases for widget host view
+    fix settings to disable sslify in testing
+    test why unit test is failing
+    add more tests
+    add more tests for admin usage
+    add some model tests to cobrand package
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    fix issue with email subject
+    fix issue with email subject
+    complete implementation of cobranding
+    completed a sample client implementation for Organize.org
+    Solve Android SSN issue by using new input mask library
+    remove translation for cobrand and widget
+    update translation strings doc
+    update base to set title in template conditional
+    add terms of service
+    update page content and create tos page
+    Solve Android SSN issue by using new input mask library
+    update contents for brand/widget pages
+    remove translation for cobrand and widget
+    update translation strings doc
+    update content on cobrand
+    update page content and create tos page
+    complete implementation of cobranding
+    337 Co-Branding implementation
+    refactored locations of some templates
+    added url and view for update choice -> revoke / update
+    added done page for update
+    added logic to not show update option once update is selected
+    support for deregister page and api
+    complete internationalization and spanish localization implementation (still need some language translation)
+    more template and js fixes
+    removed pickadate js lib
+    removed use of date picker on brithdate field
+    added support for privacy-policy page and api
+    fixed a bunch of field bugs
+    fixed error in form action url caused by template directory being moved
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    cleaned up templates and organize logo
+    added fonts and css for fonts
+    added js for coloring of continue buttons
+    changed implementation of status bar
+    added page counter
+    added last page of wizard
+    almost complete rewrite to new design and wizard workflow
+    Solve Android SSN issue by using new input mask library
+    update contents for brand/widget pages
+    Fixed a syntax error in brand detail.html
+    remove translation for cobrand and widget
+    update translation strings doc
+    update layout of widget selection page
+    update language on widget signup
+    fix bug with page titles
+    refactor image names
+    update content on cobrand
+    fix issue with email subject
+    update page content and create tos page
+    complete implementation of cobranding
+    Updated cobranding implementation
+    337 Co-Branding implementation
+    center text on coming soon pages
+    #342 created 2 different coming-soon pages for email and campaign
+    #342 applied required changes and created the new coming soon page.
+    updated tweet text
+    complete internationalization and spanish localization implementation (still need some language translation)
+    added conversion tracking code to registration end pages
+    updated fb links and whoops gif
+    updated not-supported and done pages
+    reorganized templates directory
+    added terms of service page that pulls latest version from API
+    added support for redirecting to a defined url for states that don't support registration
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set
+    update contents for brand/widget pages
+    fix issue with email subject
+    fix MEDIA_URL setting in development and production configs
+    implement email sending for cobrand_company registration
+    fix creation of url on detail page to not include port if its not set

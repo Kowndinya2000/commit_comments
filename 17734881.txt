@@ -1,0 +1,192 @@
+﻿    * fixed problem with cache ids (created by warning fixes in 1.3.0)
+    * fixed some more PHP warnings
+    = 1.3.0 (13.04.2020) =
+    * fixed PHP warnings that appeared when WP_DEBUG was switched on in PHP 7.4
+    * added code for catching Imagick exceptions
+    * Test for upcoming Wordpress 5.0
+    Bump version & update change log
+    * added support for localization - currently mainly the abbreviations like "p." or "eds."
+    * fixed problem in code for loading CSL template files (thanks to poundsixzeros for helping)
+    * some more adaption to the code to make it work with PHP 7 (replaced deprecated code)
+    * add support for setting refresh cycle for caches to "never" (thanks to Constantin Orasan for the patch)
+    * add User-Agent header to most CURL calls (for servers that need this stuff)
+    * handle missing tags when displaying detail pages
+    * corrected deprecated PHP constructs (thanks to Nils Wötzel for the patch)
+    * replaced clientid and client_secret params with HTTP Basic authentication (thanks to Nils Wötzel for the patch)
+    * code optimizations (thanks to Nils Wötzel for the patch)
+    * corrected problem with caching files that are larger than memory limit
+    * corrected problem with identifying Imagick extension
+    * corrected bug that prevented empty cache to function
+    * corrected bug that made automatic renewal of access tokens fail
+    * corrected problem with missing agent in curl calls (thanks to Constantin Orasan for the patch)
+    * improved error handling for curl calls
+    * correct bug in database intialization.
+    * corrected some minor bugs
+    * changed database initialization code to recreate tables when they heve been deleted
+    * added information about ids more prominently in the documentation
+    = 1.1.10 (24.11.2016)
+    * changed MySQL data type for data in mendeleycache table from text to longtext
+    * added check for imagick (to avoid the plugin to crash if imagick is not available)
+    * updated template to use the Mendeley data in Exhibit
+    * added DEFAULT CHARSET in CREATE TABLE statements
+    * added check if returned access token is nil
+    * checked with Wordpress 4.6 - added note about this
+    * replaced hard coded /wp-content/cache with WP_CONTENT_DIR/cache
+    * corrected bug for widgets - filter and csl setting were not working in widgets
+    * corrected bug for widgets - filter and csl setting were not working in widgets
+    * updated author data structures in JSON export to newest Mendeley API - nor SIMILE Exhibit display will get author information again
+    * added abstract as variable possible in CSL formatting
+    * added missing javascript for support for embedding content on YouTube and SlideShare - contributed by Matthias Budde
+    * support for adding information about awards (won by the publication) via tags - contributed by Matthias Budde
+    * support for embedding content on YouTube and SlideShare - contributed by Matthias Budde
+    = 1.1.2 (11.08.2015) =
+    * do not insert the <br clear='all'> after every reference if no cover images are used
+    * changed PHP4 style constructors to support WordPress 4.3
+    * added support for displaying thumbnail images and download links in lists (new "style" attribute)
+    * corrected problem with maxdocs attribute (lists did always display one more then requested)
+    * added support for downloading PDF files to local cache and make them available in detail view
+    * added support for automatically generating and displaying thumbnails for documents
+    * sorting by author did not sort by last name, but by first name - corrected
+    * corrected problem with CSL formatting (spaces in front of dots ...)
+    * corrected problems with filters (filter returned true when attribute was missing in Mendeley document)
+    * corrected problems with PHP exceptions when Mendeley API did not return proper results (docarr not an array)
+    = 1.0.6 (29.01.2015) - (thanks to UCFA for the bugfixes)
+    * corrected more problems with too long output lines (this time in CSL support)
+    * added PMID attribute in CSL template support
+    * corrected problems too long output lines (especially when output includes links)
+    * corrected problems with url / websites attribute (especially for CSL formatting)
+    * corrected problems with type mapping when using CSL formatting
+    * corrected bug that resulted in returning only 20 results (from more) for some
+    queries (thanks to poundsixzeros for the bugfix)
+    * corrected problem with single tag filters (thanks to invisigoth99 for the bugfix)
+    * added "own" type again (also thanks to invisigoth99)
+    = 1.0.0 (10.12.2014)
+    * major migration to new Mendeley API
+    bug-fix: sortorder was reversed
+    * removed support for OAuth1
+    * bugfix: sortorder=desc was ignored - should work now
+    = 0.9.4 (21.2.2014)
+    * additional code for displaying error messages from CURL subsystem (regarding connecting to Mendeley API server)
+    * bugfix regarding authentification of OAuth2 refresh requests
+    * bugfix concerning escape characters in OAuth2 client secrets (added stripslashes())
+    * added possibility to remove/delete OAuth2 access token
+    * bugfix regarding CSL formatting
+    * bugfix regarding csl file loading
+    * Added support for OAuth2 authentication (since the Mendeley API no longer supports OAuth1)
+    * Support for OAuth1 remains in rudimentary form (if you already have authorized the plugin, you can continue to use it)
+    = 0.8.8 (30.01.2014)
+    * do not include log output in output caching
+    * bug fix: CSL formatting now works again (problem with missing elements in output e.g. journal title)
+    = 0.8.5 (29.01.2014)
+    * using cURL to load CSL files (instead of get_file_content)
+    * added error message when loading CSL file fails
+    = 0.8.4
+    * updated CiteProc library (for formatting CSL) to version from 15.3.2013
+    * completely removed number of documents limit when reading from Mendeley
+    * bug fix: filtering by tags and keywords now works again
+    * bug fixes
+    * changed maximum number of documents to be retrieved from Mendeley to 10000
+    = 0.8.2
+    * added support for filtering for more than one attribute at once
+    * added support for displaying details pages for references directly in Wordpress
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * initializeDatabase only checks for existence of table if db_version is wrong
+    * added index in database to optimize queries
+    = 0.7.6 =
+    * corrected problem with incorrect JSON encoding (replaced calls to addslashes() with calls to json_encode())
+    corrected version conflict - new Version 0.7.5
+    = 0.6.7 =
+    * if no url is defined, but a doi is defined, a dx.doi.org/... url is set
+    * corrected bug with output caching
+    * added output caching
+    * added possibility to display own publications (type = 'own')
+    * added widget for displaying own publications
+    fixed bug in widget code
+    added support for creating JSON files with references on demand - e.g. to be used as a data source for Simile/Exhibit
+    Initial import.
+    * some more adaption to the code to make it work with PHP 7 (replaced deprecated code)
+    * add support for setting refresh cycle for caches to "never" (thanks to Constantin Orasan for the patch)
+    * add User-Agent header to most CURL calls (for servers that need this stuff)
+    * handle missing tags when displaying detail pages
+    Initial import.
+    Hyperlink DOIs against preferred resolver
+    * added support for downloading PDF files to local cache and make them available in detail view
+    * added support for automatically generating and displaying thumbnails for documents
+    * added support for displaying details pages for references directly in Wordpress
+    * added missing javascript for support for embedding content on YouTube and SlideShare - contributed by Matthias Budde
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    = 0.8.5 (29.01.2014)
+    * using cURL to load CSL files (instead of get_file_content)
+    * added error message when loading CSL file fails
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    = 1.1.10 (24.11.2016)
+    * changed MySQL data type for data in mendeleycache table from text to longtext
+    * added check for imagick (to avoid the plugin to crash if imagick is not available)
+    * updated template to use the Mendeley data in Exhibit
+    added support for creating JSON files with references on demand - e.g. to be used as a data source for Simile/Exhibit
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database
+    * added support for formatting entries via CSL (Citation Style Language)
+    * added tooltip display of full reference in widget lists
+    * do not insert error responses in cache database

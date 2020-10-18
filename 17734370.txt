@@ -1,0 +1,33 @@
+﻿    Testing X509 auth
+    New-style Write-Concern options
+    fixed string operation, added small bits of coverage
+    
+    add replication set testing
+    
+    removing unnecessary cruft
+    use sphinx for documentation
+    add ssl example and removed nose for requirements
+    update documentation, gitignore and a few other bits
+    if the type does not match during a cmp (__cmp__), a NotImplemented is returned which tells python to dig deeper into rich comparison bad of tricks. So long as we are not 0, as in comparison, then we are good.
+    assert that we are never 0, or "equal" when comparing against another type
+    fix randomly failing tests due to unclean reactor, setting to debug anyway since we are testing and want the output during tox runs
+    add an initial tox.ini
+    add tox support and travis support
+    allow pyflakes failures for now...
+    cleaning up unused imports, getting pyflakes to be happy, updated changelog in debian, a few pep8 things
+    pep8 cleanup
+    add package data to setup
+    bump version
+    update documentation, gitignore and a few other bits
+    if the type does not match during a cmp (__cmp__), a NotImplemented is returned which tells python to dig deeper into rich comparison bad of tricks. So long as we are not 0, as in comparison, then we are good.
+    assert that we are never 0, or "equal" when comparing against another type
+    fix randomly failing tests due to unclean reactor, setting to debug anyway since we are testing and want the output during tox runs
+    add an initial tox.ini
+    add tox support and travis support
+    allow pyflakes failures for now...
+    cleaning up unused imports, getting pyflakes to be happy, updated changelog in debian, a few pep8 things
+    pep8 cleanup
+    add package data to setup
+    `make env` uses requirements.txt instead of putting the packages inline
+    Added coverage, `-e .` to requirements.txt
+    Added requirements.txt, Ignore .coverage

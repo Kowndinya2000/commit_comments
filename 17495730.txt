@@ -1,0 +1,2363 @@
+﻿    Update README.md
+    Update README.md
+    Add some Carthage dependency notes.
+    No bug - Use 'carthage checkout' instead of 'carthage update --no-build'
+    Update README.md with Carthage instructions
+    Add mocks to the Readme
+    Include "Building the code" directions
+    Describe use of GitHub issues in README.md.
+    Follow-up markdown changes to README.md
+    Update README.md to include style guidelines
+    Update README.md
+    Add links to README.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Initial import
+    Initial commit.
+    Basic support using existing code
+    Bug 1110680 - Part 1: import Sync, FxA, token server tests.
+    Bug 1110680 - Part 1: import Sync, FxA, token server tests.
+    Bug 1110680 - Part 1: import Sync, FxA, token server tests.
+    swift 1.2 fix
+    Bug 1152609 - Part 1: dependency changes for Swift 1.2.
+    update Cartfile
+    Bug 1136454 - Part 1: Add Base32 dependency to Carthage and Xcode project.
+    Update SWXMLHash to newer version with signing fix
+    Bug 1133918 - Use SDWebImage for list image loading
+    Update SWXMLHash to our unofficial 0.6.3 release
+    Point to fork of SWXMLHash
+    Make SWXMLHash a Carthage dependency
+    Make KIF a Carthage dependency
+    Make GCDWebServer a Carthage dependency
+    Make Snap a Carthage dependency
+    Make Alamofire a Carthage dependency
+    Update AUTHORS
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Create AUTHORS
+    Bug 1136454 - Part 2: Add {Hash,Hex}Extensions.
+    
+    Desktop Firefox hashes the email address of the last known Firefox
+    Account email address using the SHA1 hash algorithm.  HashExtension
+    exposes this hash algorithm, and SHA256 for the future.
+    
+    The Firefox Accounts protocol exchanges hex-encoded binary data as
+    hexadecimal strings with lower case letter characters.  HexExtension
+    converts String and NSData to and from this representation, calling
+    through to Base32 for the actual work.
+    swift 1.2 fix
+    Fixes 1130095 - Let the AccountProfileManager discover the app group name dynamically
+    Fixes 1130087 - Let extensions discover the shared container identifier dynamically
+    Move bookmarks to storage
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1109772 - Part 9: abstract bookmarks and sharing.
+    Bug 1108772 - Part 5: eliminate ShareItem.icon.
+    Bug 1109772 - Part 4: lift out ShareItem to be a top-level struct type.
+    Fixed all nits.
+    Fixes bug 1104867 Hook up the Send To Extension to the Client Provider
+    Fixed all the nits.
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Add border for selected URL bar
+    Bug 1136454 - Part 2: Add {Hash,Hex}Extensions.
+    
+    Desktop Firefox hashes the email address of the last known Firefox
+    Account email address using the SHA1 hash algorithm.  HashExtension
+    exposes this hash algorithm, and SHA256 for the future.
+    
+    The Firefox Accounts protocol exchanges hex-encoded binary data as
+    hexadecimal strings with lower case letter characters.  HexExtension
+    converts String and NSData to and from this representation, calling
+    through to Base32 for the actual work.
+    swift 1.2 fix
+    Create KeyboardHelper so engine footer moves with keyboard
+    Wait for webView to stop loading before injecting KIFHelper
+    
+    Injecting the KIFHelper can fail if the webView is still loading, so
+    wait for it to stop loading.
+    No bug - Add required error for KIFHelper failure
+    
+    Without this, failures here result in an obscure localization error.
+    Implement simple navigation tests
+    Implement simple navigation tests
+    Create UITests target with KIF
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1122224 - Part 7: unrelated cleanup in Site.swift.
+    Remove magical record
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Create UITests target with KIF
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Import FxA native code.
+    Initial import
+    Implement simple navigation tests
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Implement simple navigation tests
+    swift 1.2 fix
+    Use a standalone copy of json.swift instead of an imported project.
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Import FxA native code.
+    Initial import
+    Animate showing the tabs tray
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Initial import
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Animate showing the tabs tray
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Make history implementation use new generic table protocol
+    Bug 1129158 - Part 6: Add SwiftKeychainWrapper.
+    
+    This is a lightly modified version of the wrapper.
+    Bug 1129158 - Part 6: Add SwiftKeychainWrapper.
+    
+    This is a lightly modified version of the wrapper.
+    Bug 1152609 - Part 2: import Swift 1.2-compatible version of KeychainWrapper.
+    Bug 1129158 - Part 6: Add SwiftKeychainWrapper.
+    
+    This is a lightly modified version of the wrapper.
+    swift 1.2 fix
+    Bug 1110680 - Part 0: fix licenses.
+    Source changes for current Swift.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    swift 1.2 fix
+    Bug 1129161 - Resize content in response to keyboard.
+    
+    This prevents awkward scrolling at the expense of introducing some
+    awkward zooming.  It's a net improvement.  I expect the
+    fxa-content-server team will address the zooming in the future.
+    Bug 1129161 - Re-implement connecting to Firefox Account in Settings sheet.
+    
+    This implements a simpler view controller which displays an interstitial
+    spinner while loading.  On success; the underlying webview fades in.  On
+    error, a simple error text fades in.  There's no affordance to reload;
+    UX can paint that bikeshed as they see fit.
+    
+    This patch also reflects the state of the Firefox Account in the
+    settings panel.  The state doesn't change yet, but it's there.
+    Bug 1129161 - Rename to FxAContentViewController and delete old controllers.
+    Make Snap a Carthage dependency
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Introduce Fennec Nightly entitlements.
+    Adding application-identifier to entitlements
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    change project bundle id
+    Adding application-identifier to entitlements
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    bump
+    bump
+    bump
+    bump
+    UE fix
+    bump
+    remove fonts
+    add shadowsocks logic
+    update shadowsocks
+    change project bundle id
+    Update Info.plist
+    Update Info.plist
+    Additional Fixes 1130112 - Change the bundle identifier
+    Fixes 1130146 - Introduce a unique Display Name per Build Configuration
+    Fixes 1130112 - Change the bundle identifier prefix
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Update Info.plist to enable all orientations.
+    Fixes 1110358 - Enable Location APIs
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Bug 1129306 - Passwords storage
+    fix favicons for UIWebView
+    Favicon storage
+    Remove left over favicon code.
+    Move and fixup Storage tests
+    Create flow layout for search suggestions
+    Create flow layout for search suggestions
+    Create flow layout for search suggestions
+    Bug 1133918 - Use SDWebImage for list image loading
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Create flow layout for search suggestions
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Revert " Bug 1121683 - Implement a location widget"
+    Work in progrès on 1121683 - BrowserLocationView
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Initial import
+    Bug 1109772 - Part 7: add bookmark_folder_closed image.
+    Bug 1109772 - Part 7: add bookmark_folder_closed image.
+    Initial import
+    Move toolbar to bottom of browser screen
+    Bug 1133918 - Use SDWebImage for list image loading
+    Move toolbar to bottom of browser screen
+    Initial import
+    Bug 1133918 - Use SDWebImage for list image loading
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Bug 1133918 - Use SDWebImage for list image loading
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Bug 1133918 - Use SDWebImage for list image loading
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Bug 1133918 - Use SDWebImage for list image loading
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Move toolbar to bottom of browser screen
+    Bug 1133918 - Use SDWebImage for list image loading
+    Move toolbar to bottom of browser screen
+    Initial import
+    Move toolbar to bottom of browser screen
+    Initial import
+    Bug 1133918 - Use SDWebImage for list image loading
+    Move toolbar to bottom of browser screen
+    Initial import
+    Add stop/reload button to toolbar
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Initial import
+    Add stop/reload button to toolbar
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Revert " Bug 1121683 - Implement a location widget"
+    Work in progrès on 1121683 - BrowserLocationView
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Initial import
+    update icon and LaunchImage
+    Initial import
+    Initial import
+    Add stop/reload button to toolbar
+    Add stop/reload button to toolbar
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Initial import
+    Initial import
+    Move toolbar to bottom of browser screen
+    Initial import
+    Bug 1133918 - Use SDWebImage for list image loading
+    Move toolbar to bottom of browser screen
+    Initial import
+    Initial import
+    Initial import
+    No bug - Add iPad icons and remove README.md to quiet build warnings.
+    Added asset catalog with action icons.
+    No bug - Add iPad icons and remove README.md to quiet build warnings.
+    Initial import
+    No bug - Add iPad icons and remove README.md to quiet build warnings.
+    Added asset catalog with action icons.
+    Move toolbar to bottom of browser screen
+    Bug 1133918 - Use SDWebImage for list image loading
+    Move toolbar to bottom of browser screen
+    Initial import
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Move toolbar to bottom of browser screen
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Initial import
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Initial import
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Revert " Bug 1121683 - Implement a location widget"
+    Work in progrès on 1121683 - BrowserLocationView
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Initial import
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Initial import
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    swift 1.2 fix
+    fix webview
+    resolved bug 1125258 (open originating tab when javascript alert/prompt/confirm messages appear, to mimic desktop Firefox behaviour)
+    Animate showing the tabs tray
+    Refactor delegates and file hierarchies to be more consistent
+    Bug 1123501 - Add support for new window tabs
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    Move protocol implementations to TabTrayController
+    Select new tab only if previous tab was selected
+    Implement tabbed browsing
+    swift 1.2 fix
+    UE fix
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Bug 1136900 - Part 2: Add Settings*Controller and link from TabTrayController.
+    
+    The Unicode "GEAR WITHOUT HUB" icon is too small and poorly padded, but
+    it's visible against the current like background, whereas the existing
+    icon is not.
+    Animate showing the tabs tray
+    Move toolbar to bottom of browser screen
+    Move protocol implementations to TabTrayController
+    Bug 1110219 - Toolbar textfield reflects the actual page URL
+    Implement tabbed browsing
+    swift 1.2 fix
+    fix favicons for UIWebView
+    use UIWebView
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Bug 1129306 - Passwords storage
+    Bug 1133918 - Use SDWebImage for list image loading
+    Favicon storage
+    swift 1.2 fix
+    Fix URL bar layout to size with the cancel button
+    Update tabs button style
+    Add location view container with shadow
+    Change font size to 12
+    Add border for selected URL bar
+    Fix URL text selection
+    Bug 1134464 - Show home panel controller on about:home
+    Bug 1135917 - Tapping the url is hard
+    Draw a tab curve
+    Make Snap a Carthage dependency
+    Refactor delegates and file hierarchies to be more consistent
+    Add cancel button to URL bar
+    Pull URL bar and search out of TabBarViewController
+    
+    Removes the URL bar (and search controller) from TabBarViewController.
+    The URL bar, TabBarViewController, and SearchViewController are now
+    three distinct components owned and controlled by BVC.
+    Add TabBarViewController inline when editing URL
+    
+    Injects TabBarViewController as a subview instead of a modal
+    ViewController. Since it still contains a URL bar of its own, it looks
+    terrible.
+    Allow editing directly from URL bar
+    
+    This allows the URL bar to go into separate viewing and editing modes.
+    The goal is to remove the URL bar from TabBarViewController, so
+    TabBarViewController becomes a more modular panel view.
+    Fix UI for no selected tab
+    Move toolbar to bottom of browser screen
+    swift 1.2 fix
+    use Google by default
+    Bug 1138122 - Part 4: Add suggestions and opt-in toggles.
+    Bug 1138122 - Part 1: Rename enabledEngines to quickSearchEngines.
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    Implement OpenSearch parser and tests
+    Animate showing the tabs tray
+    swift 1.2 fix
+    Bug 1138122 - Part 1: Rename enabledEngines to quickSearchEngines.
+    Use user-entered query if there are no suggestions
+    Don't show the default search engine in the bottom row
+    Shrink oversized search suggestions
+    Create flow layout for search suggestions
+    Remove query from search engine accessibility labels
+    Create KeyboardHelper so engine footer moves with keyboard
+    Create a scrollable search engine footer
+    Make SiteTableViewController extend UIViewController
+    Bug 1135981 - Search View Results Crash
+    
+    Fixes crash for when a user taps on a recommended search engine in the
+    search results. Removed offset adjustment for selecting which engine
+    since UITableView's section's indexPaths start from 0 for every section.
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Fix reverted domain suggestion handling
+    Clean up unused code in SearchViewController
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Bug 1133918 - Use SDWebImage for list image loading
+    Refactor delegates and file hierarchies to be more consistent
+    Pull URL bar and search out of TabBarViewController
+    
+    Removes the URL bar (and search controller) from TabBarViewController.
+    The URL bar, TabBarViewController, and SearchViewController are now
+    three distinct components owned and controlled by BVC.
+    load page of suggestion url, not search url.
+    make history actual work, when select history cell, Webview load the history'url.
+    fix bugs and implement it like wesj described in #127 comments on GitHub.
+    Simply, display search suggestion and search engine in different sections, not sure wether we need bookmark&history here.
+    Bug 1120827: Fix accessibility of UI elements
+    
+    Add accessibility labels to elements that use visual cues to fully or
+    partially communicate their functions:
+    - back and forward button
+    - show tabs button
+    - secure connection
+    - reader
+    - address and search text field
+    - search engine in search suggestion
+    - avatar
+    Bug 1116537 - Allow clicking on rows in the View Controller
+    Bug 1120730 - Integrate suggestions into SearchViewController
+    Bug 1120730 - Store only URLs with accepted types
+    Bug 1121228 - Show default search engine first
+    Implement SearchViewController
+    Show page URL in back/forward list if no title
+    No bug - Clean up trailing whitespace
+    
+    Removes trailing whitespace added in commit 799b2fd8.
+    Remove empty method
+    Long Press on Back and Forward
+    
+    Bug 1109653 - Long press on back or forward should present previous
+    visits - https://bugzilla.mozilla.org/show_bug.cgi?id=1109653
+    Move protocol implementations to TabTrayController
+    Bug 1110219 - Toolbar textfield reflects the actual page URL
+    Implement tabbed browsing
+    Implement URIFixup with search fallback
+    fix webview
+    Change font size to 12
+    Bug 1135917 - Tapping the url is hard
+    Allow editing directly from URL bar
+    
+    This allows the URL bar to go into separate viewing and editing modes.
+    The goal is to remove the URL bar from TabBarViewController, so
+    TabBarViewController becomes a more modular panel view.
+    Add placeholder text for about:home
+    Fix UI for no selected tab
+    Implement simple navigation tests
+    Add stop/reload button to toolbar
+    Change left/right constraints to leading/trailing
+    Added comment to explain constraint setting
+    Fudge the location bar hit area for misses
+    Fixes 1125849 - Reader Mode button is not right aligned after device orientation change
+    Bug 1120827: Fix accessibility of UI elements
+    
+    Add accessibility labels to elements that use visual cues to fully or
+    partially communicate their functions:
+    - back and forward button
+    - show tabs button
+    - secure connection
+    - reader
+    - address and search text field
+    - search engine in search suggestion
+    - avatar
+    Move ReaderModeButton into BrowserLocationView, private.
+    Fixes 1123373 - Optimize BrowserLocationView's url property
+    Fixes 1122707 - Move the BrowserLocationView to its own file
+    swift 1.2 fix
+    Make SWXMLHash a Carthage dependency
+    Use template strings to init OpenSearchEngines
+    Bug 1120730 - Add application/x-suggestions+json as an accepted search type
+    Bug 1120730 - Store only URLs with accepted types
+    Implement OpenSearch parser and tests
+    swift 1.2 fix
+    fix home panel status
+    fix load progress
+    fix favicons for UIWebView
+    fix sharing on iPad
+    some fix
+    fix webview
+    use UIWebView
+    Fix URL bar layout to size with the cancel button
+    Revert "Bug 1118378 – Use UIApplication to try to open non-http URLs."
+    
+    This reverts commit 64088a5436188767b2a40434176ad6423abab9d3.
+    Bug 1118378 – Use UIApplication to try to open non-http URLs.
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Bug 1134464 - Show home panel controller on about:home
+    resolved bug 1125258 (open originating tab when javascript alert/prompt/confirm messages appear, to mimic desktop Firefox behaviour)
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Draw a tab curve
+    No bug - Make animated a named argument in hideToolbars/showToolbars
+    Bug 1129306 - Passwords storage
+    Make Snap a Carthage dependency
+    Bug 1134275 - Web content should not scroll behind the statusbar
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserViewController.swift
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Improve urlbar scrolling
+    Animate showing the tabs tray
+    Scroll urlbar and toolbar with the page
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserToolbar.swift
+            Client/Frontend/Browser/BrowserViewController.swift
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserViewController.swift
+    Refactor delegates and file hierarchies to be more consistent
+    Pull URL bar and search out of TabBarViewController
+    
+    Removes the URL bar (and search controller) from TabBarViewController.
+    The URL bar, TabBarViewController, and SearchViewController are now
+    three distinct components owned and controlled by BVC.
+    Add TabBarViewController inline when editing URL
+    
+    Injects TabBarViewController as a subview instead of a modal
+    ViewController. Since it still contains a URL bar of its own, it looks
+    terrible.
+    Allow editing directly from URL bar
+    
+    This allows the URL bar to go into separate viewing and editing modes.
+    The goal is to remove the URL bar from TabBarViewController, so
+    TabBarViewController becomes a more modular panel view.
+    Make the share button work
+    Fix UI for no selected tab
+    Basic support using existing code
+    Favicon storage
+    Move toolbar to bottom of browser screen
+    Don't make LongPressGestureRecognizer a BrowserHelper
+    Remove left over favicon code.
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Customize behavior when long-pressing a link
+    Move the temporary reader mode gesture to didCreateTab.
+    Remove commented out line
+    Bug 1123086: Move VoiceOver cursor after loading webpage
+    
+    After loading a new page (regardless whether by entering and confirming
+    a URL, or using the back or forward button), VoiceOver user expects the
+    VoiceOver cursor to automatically move to the correct element. The
+    "correct element" is (because this way it behaves in Safari, and seems
+    reasonable as it saves the user from navigating VoiceOver cursor
+    manually):
+    
+    - the element that has focus
+    - if there is no such focused element:
+      - if the page was loaded by entering a URL / following a link, it is
+        the first element on the webpage accessible to VoiceOver
+      - if the page was loaded by using back/forward button, it is the
+        element where VoiceOver cursor was last present on the page
+    
+    The UIAccessibilityScreenChangedNotification seems to move the VoiceOver
+    cursor to the "correct element", and
+    UIAccessibilityLayoutChangedNotification then ensures we can move from
+    that element to other elements.
+    Fixes 1123387 - Reader Mode should have a UI to customize it's appearance
+    Add stop/reload button to toolbar
+    Clean up KVO in BrowserViewController
+    Revert "Bug 1109649 - Display page loading errors"
+    Bug 1123501 - Add support for JS dialogs
+    Bug 1123501 - Add support for new window tabs
+    Display all  the error message we got on screen.
+    Fixes 1123381 (Reader Mode CSS) and 1123385 (Reader Mode API)
+    Bug 1120831: Add accessibility escape ("scrub") shortcuts
+    
+    This allows for better VoiceOver user experience as the user does not
+    have to go to the cancel button in tab bar or to the back button in
+    toolbar to invoke them and instead can use the scrub gesture from
+    anywhere.
+    Fixes 1123376 - Reader Mode button flickers when enabling reader mode
+    Rm BrowserNotification.swift
+    
+    delete BrowserNotification
+    Use web view to display error, remove notification view.
+    Bug 1116537 - Make the history pane work with the history API
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Revert " Bug 1121683 - Implement a location widget"
+    Hook up the BrowserLocationView and BrowserToolbar to the ReaderMode.
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    change the bad name.
+    change the bad name.
+    change the way of notification to  Stefan Arentz suggested in comment3 on bugzillar.
+    Implement basic error display.
+    Work in progrès on 1121683 - BrowserLocationView
+    Enable/disable back button based on webView state
+    Extend the toolbar under the status bar. Use Vibrancy on the toolbar.
+    Use extensions to implement delegates in BVC
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109647 Add progress loading
+    No bug - Clean up trailing whitespace
+    
+    Removes trailing whitespace added in commit 799b2fd8.
+    Move URL text field into TabBarViewController
+    Remove TabBarViewController XIB
+    Open TabBarViewController from URL bar
+    Long Press on Back and Forward
+    
+    Bug 1109653 - Long press on back or forward should present previous
+    visits - https://bugzilla.mozilla.org/show_bug.cgi?id=1109653
+    Bug 1110219 - Toolbar textfield reflects the actual page URL
+    Implement tabbed browsing
+    Fixes 1109658 - It should be possible to cancel editing the location text field
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    swift 1.2 fix
+    Bug 1129514 - Context menu doesn't appear on some pages
+    Move LongPress.js code into LongPress namespace
+    Fix race for disabling WKWebView's context menu gesture recognizer
+    Don't make LongPressGestureRecognizer a BrowserHelper
+    Customize behavior when long-pressing a link
+    swift 1.2 fix
+    fix sharing on iPad
+    Fix URL bar layout to size with the cancel button
+    Make Snap a Carthage dependency
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Scroll urlbar and toolbar with the page
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserToolbar.swift
+            Client/Frontend/Browser/BrowserViewController.swift
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserViewController.swift
+    Refactor delegates and file hierarchies to be more consistent
+    Make the share button work
+    Basic support using existing code
+    Move toolbar to bottom of browser screen
+    Implement simple navigation tests
+    Check for UIGestureRecognizerState.Began to prevent multiple callbacks
+    Add stop/reload button to toolbar
+    Revert "Bug 1109649 - Display page loading errors"
+    Bug 1120827: Fix accessibility of UI elements
+    
+    Add accessibility labels to elements that use visual cues to fully or
+    partially communicate their functions:
+    - back and forward button
+    - show tabs button
+    - secure connection
+    - reader
+    - address and search text field
+    - search engine in search suggestion
+    - avatar
+    Fixes 1122707 - Move the BrowserLocationView to its own file
+    Fixes 1122705 - Move the ReaderModeButton to its own file
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Use web view to display error, remove notification view.
+    Revert "Revert " Bug 1121683 - Implement a location widget""
+    Revert " Bug 1121683 - Implement a location widget"
+    Hook up the BrowserLocationView and BrowserToolbar to the ReaderMode.
+    Work in progrès on 1121683 - BrowserLocationView
+    Prevent 'negative progress' animation when going back/forward
+    Enable/disable back button based on webView state
+    Extend the toolbar under the status bar. Use Vibrancy on the toolbar.
+    Bug 1109647 Add progress loading
+    No bug - Clean up trailing whitespace
+    
+    Removes trailing whitespace added in commit 799b2fd8.
+    Move URL text field into TabBarViewController
+    Open TabBarViewController from URL bar
+    Long Press on Back and Forward
+    
+    Bug 1109653 - Long press on back or forward should present previous
+    visits - https://bugzilla.mozilla.org/show_bug.cgi?id=1109653
+    Bug 1110219 - Toolbar textfield reflects the actual page URL
+    Implement tabbed browsing
+    Move BrowserToolbar fields to top of class
+    Make BrowserToolbar.arrangeToolbar private. Fix whitespace issues.
+    Fixes 1109658 - It should be possible to cancel editing the location text field
+    Fixes 1110302 - The location field should have a clear button
+    Fixes 1109652 - The location text field should accept URLs without a scheme
+    Fixes 1109670 - After opening a new location, the keyboard does not always disappear
+    Fixes 1109667 - The keyboard that pops up when editing the location text field should have a Go button
+    Fixes 1109651 - The location text field must not be set to auto capitalize
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    swift 1.2 fix
+    fix webview
+    fix title and url
+    use UIWebView
+    Fixes 1134331 - Pinch to zoom reveals tabs underneath current tab in the tab stack
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Animate showing the tabs tray
+    Scroll urlbar and toolbar with the page
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserToolbar.swift
+            Client/Frontend/Browser/BrowserViewController.swift
+    
+    Conflicts:
+            Client/Frontend/Browser/BrowserViewController.swift
+    Basic support using existing code
+    Favicon storage
+    Implement simple navigation tests
+    Remove left over favicon code.
+    Move and fixup Storage tests
+    Add stop/reload button to toolbar
+    Bug 1123501 - Add support for new window tabs
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    No bug - Clean up trailing whitespace
+    
+    Removes trailing whitespace added in commit 799b2fd8.
+    Long Press on Back and Forward
+    
+    Bug 1109653 - Long press on back or forward should present previous
+    visits - https://bugzilla.mozilla.org/show_bug.cgi?id=1109653
+    Bug 1110219 - Toolbar textfield reflects the actual page URL
+    Implement tabbed browsing
+    Fixes 1109643 - Support the WKWebview navigation gestures
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    swift 1.2 fix
+    use UIWebView
+    Bug 1129306 - Passwords storage
+    No bug - Remove search suggest cancel logging
+    Bug 1120730 - Implement SearchSuggestClient with tests
+    Create flow layout for search suggestions
+    TwoLineCell layout fixes
+    Review comments for PR #189
+    Implement TopSitesPanel
+    Bug 1133918 - Use SDWebImage for list image loading
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Refactor delegates and file hierarchies to be more consistent
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    Use recycler for cell and header views
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Initial import
+    swift 1.2 fix
+    TwoLineCell layout fixes
+    Make SiteTableViewController extend UIViewController
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1134480 - Follow up for some review nits
+    Bug 1134480 - Use section headers in history
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    swift 1.2 fix
+    fix icon for ThumbnailCell
+    Review comments for PR #189
+    swift 1.2 fix
+    Bug 1138122 - Part 4: Add suggestions and opt-in toggles.
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Bug 1138122 - Part 2: Remove default engine from quick-search engines in Settings.
+    Bug 1129161 - Move settings code into Client/Frontend/Settings.
+    Bug 1129161 - Add stub Account and Search sections.
+    
+    This lays the ground-work for a full-featured Account setting, and makes
+    the expected Settings controller delegate to the inner Search Settings
+    controller (which, for learning purposes, I implemented first).
+    Bug 1130527 - UI for disabling search engines.
+    
+    The default engine is always enabled and cannot be disabled.
+    Bug 1130527 - UI for reordering the search engines.
+    Bug 1130527 - UI for changing the default search engine.
+    UE fix
+    Bug 1129161 - Move settings code into Client/Frontend/Settings.
+    Bug 1129161 - Add stub Account and Search sections.
+    
+    This lays the ground-work for a full-featured Account setting, and makes
+    the expected Settings controller delegate to the inner Search Settings
+    controller (which, for learning purposes, I implemented first).
+    Bug 1130527 - UI for changing the default search engine.
+    Bug 1136900 - Part 2: Add Settings*Controller and link from TabTrayController.
+    
+    The Unicode "GEAR WITHOUT HUB" icon is too small and poorly padded, but
+    it's visible against the current like background, whereas the existing
+    icon is not.
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Bug 1129161 - Move settings code into Client/Frontend/Settings.
+    Bug 1130527 - UI for changing the default search engine.
+    swift 1.2 fix
+    UE fix
+    update shadowsocks
+    add ad for public server
+    add entry for shadowsocks settings
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Bug 1129161 - Allow disconnecting the Firefox Account.
+    
+    The message is from Desktop.  UX talked about a button at the bottom of
+    the settings panel, but as bnicholson is aware this is a pain with a
+    UITableViewController.  This will do for now.
+    Bug 1129161 - Re-implement connecting to Firefox Account in Settings sheet.
+    
+    This implements a simpler view controller which displays an interstitial
+    spinner while loading.  On success; the underlying webview fades in.  On
+    error, a simple error text fades in.  There's no affordance to reload;
+    UX can paint that bikeshed as they see fit.
+    
+    This patch also reflects the state of the Firefox Account in the
+    settings panel.  The state doesn't change yet, but it's there.
+    Bug 1129161 - Move settings code into Client/Frontend/Settings.
+    Bug 1129161 - Add stub Account and Search sections.
+    
+    This lays the ground-work for a full-featured Account setting, and makes
+    the expected Settings controller delegate to the inner Search Settings
+    controller (which, for learning purposes, I implemented first).
+    Bug 1136900 - Part 2: Add Settings*Controller and link from TabTrayController.
+    
+    The Unicode "GEAR WITHOUT HUB" icon is too small and poorly padded, but
+    it's visible against the current like background, whereas the existing
+    icon is not.
+    Make Snap a Carthage dependency
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1092561 - Remove ref cycle in LoginViewController
+    Bug 1101066 - Refactor LoginViewController into a controller, view, and widgets
+    Bug 1096727 - Create account/provider APIs for login
+    Bug 1094195 - Enable LoginViewController
+    Initial import
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Serialize and parse document instead of cloning the document node
+    Fixes 1127988 - Badly fixed protocol relative URLs
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1123387 - Reader Mode should have a UI to customize it's appearance
+    Fixes 1123408 - Include reader mode assets as real resources
+    Fixes 1123381 (Reader Mode CSS) and 1123385 (Reader Mode API)
+    1123391 - Reader Mode incorrectly shows the domain
+    Fixes 1123512 - Move all the moz*() functions to a unique namespace
+    Fixes 1123424 - Reader Mode option does not appear after navigating back and forward
+    Fixes 1123396 - Reader Mode incorrectly shows the title under the article content
+    Fixes 1123391 - Reader Mode incorrectly shows the domain
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    Fixes for Brian's Whitespace Nits.
+    Cleanup of row handling code. Remove magic index constants.
+    Fixes 1123387 - Reader Mode should have a UI to customize it's appearance
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    Initial import
+    swift 1.2 fix
+    use UIWebView
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1126488 - Missing byline
+    Fixes 1123387 - Reader Mode should have a UI to customize it's appearance
+    Fixes 1123408 - Include reader mode assets as real resources
+    Fixes 1123381 (Reader Mode CSS) and 1123385 (Reader Mode API)
+    Fixes 1123512 - Move all the moz*() functions to a unique namespace
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1125960 - Reader Mode webview width is not correct after device rotation
+    Fixes 1125960 - Reader Mode webview width is not correct after device rotation
+    Fixes 1125960 - Reader Mode webview width is not correct after device rotation
+    Add MPL to Reader.html
+    Fixes 1123408 - Include reader mode assets as real resources
+    Fixes 1124506 - blockquote tags are rendered incorrectly
+    Fixes 1124504 - Lists are rendered incorrectly
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Fixes 1125960 - Reader Mode webview width is not correct after device rotation
+    Fixes 1124531 - code element with long string does not flow correctly
+    Fixes 1124508 - Horizontal margins are off on iPad
+    Fixes 1123408 - Include reader mode assets as real resources
+    swift 1.2 fix
+    Remove panel persistence and reordering code
+    Review comments for PR #189
+    Implement TopSitesPanel
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Update pager toolbar UI
+    Make Snap a Carthage dependency
+    Refactor delegates and file hierarchies to be more consistent
+    Pull URL bar and search out of TabBarViewController
+    
+    Removes the URL bar (and search controller) from TabBarViewController.
+    The URL bar, TabBarViewController, and SearchViewController are now
+    three distinct components owned and controlled by BVC.
+    Add TabBarViewController inline when editing URL
+    
+    Injects TabBarViewController as a subview instead of a modal
+    ViewController. Since it still contains a URL bar of its own, it looks
+    terrible.
+    fix bugs and implement it like wesj described in #127 comments on GitHub.
+    Delay setting first responder to prevent iPhone 6 Plus crash
+    Bug 1120831: Add accessibility escape ("scrub") shortcuts
+    
+    This allows for better VoiceOver user experience as the user does not
+    have to go to the cancel button in tab bar or to the back button in
+    toolbar to invoke them and instead can use the scrub gesture from
+    anywhere.
+    Bug 1120827: Fix accessibility of UI elements
+    
+    Add accessibility labels to elements that use visual cues to fully or
+    partially communicate their functions:
+    - back and forward button
+    - show tabs button
+    - secure connection
+    - reader
+    - address and search text field
+    - search engine in search suggestion
+    - avatar
+    Bug 1116537 - Allow clicking on rows in the View Controller
+    Bug 1120730 - Store only URLs with accepted types
+    Implement URIFixup with search fallback
+    Bug 1121228 - Show default search engine first
+    Use WebSearch keyboard for URL/search entry
+    Bug 1119564 - Fix NotificationCenter leak in TabBarViewController
+    Bug 1121084 - Give the cancel button resistance to prevent it from disappearing
+    Implement SearchViewController
+    Bug 1117847 - Hide the keyboard when navigating between tab bar button items
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Move URL text field into TabBarViewController
+    Remove TabBarViewController XIB
+    TabBarViewController cleanup
+    Bug 1094317 - Make the Settings page work
+    Bug 1096727 - Create account/provider APIs for login
+    Bug 1094195 - Enable LoginViewController
+    Initial import
+    swift 1.2 fix
+    Make SiteTableViewController extend UIViewController
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1134480 - Follow up for some review nits
+    Bug 1134480 - Use section headers in history
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Refactor delegates and file hierarchies to be more consistent
+    Basic support using existing code
+    Move bookmarks to storage
+    Bug 1123055: Respect "Darken colors" accessibility setting
+    
+    This does not yet support responding to notifications of changes to the
+    setting.
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Review comment: make MemoryBookmarkFolder subscriptable.
+    Review comment: remove errant semicolons.
+    Bug 1109772 - Part 9: abstract bookmarks and sharing.
+    Bug 1109772 - Part 1: move createMockFavicon to Favicons.
+    using optional chaining instead of forced unwrapping
+    Update for Xcode 6.1.1
+    Bug 1094317 - Make the Settings page work
+    Use recycler for cell and header views
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Fix review comments
+    Create a base Favicon infrastructure
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Fix review comments
+    Create a base Favicon infrastructure
+    Bug 1096727 - Create account/provider APIs for login
+    Fix bookmark polling to return correct data
+    Add a database class for Bookmarks
+    Initial import
+    swift 1.2 fix
+    Make SiteTableViewController extend UIViewController
+    Bug 1136951 - Clean up SiteTableViewController
+    More fixup for bug 1134480
+    Bug 1134480 - Follow up for some review nits
+    Bug 1134480 - Use section headers in history
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Bug 1133918 - Use SDWebImage for list image loading
+    Refactor delegates and file hierarchies to be more consistent
+    Favicon storage
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Reload table data when history is done loading
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1123055: Respect "Darken colors" accessibility setting
+    
+    This does not yet support responding to notifications of changes to the
+    setting.
+    Bug 1116537 - Allow clicking on rows in the View Controller
+    Bug 1116537 - Make the history pane work with the history API
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1094317 - Make the Settings page work
+    Initial import
+    swift 1.2 fix
+    fix icon for ThumbnailCell
+    add ad for public server
+    Follow-up fix for PR #189
+    Review comments for PR #189
+    Implement TopSitesPanel
+    Remove TabsPanel
+    Remove panel persistence and reordering code
+    Make SiteTableViewController extend UIViewController
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1136488 - Make HomePanel delegate name verbose.
+    
+    This allows a class with a delegate member (such as
+    UINavigationController) to implement HomePanel.
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    1132014 - Implement reading list home panel
+    Refactor delegates and file hierarchies to be more consistent
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1123055: Respect "Darken colors" accessibility setting
+    
+    This does not yet support responding to notifications of changes to the
+    setting.
+    Remove magical record
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Move favicons instance to account
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Review comment: rename createMockFavicon -> createSizedFavicon.
+    using optional chaining instead of forced unwrapping
+    Update for Xcode 6.1.1
+    Bug 1094317 - Make the Settings page work
+    Create a base Favicon infrastructure
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Create a base Favicon infrastructure
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    Update pager toolbar UI
+    Refactor delegates and file hierarchies to be more consistent
+    Initial import
+    remove Aurora feedback
+    add shadowsocks logic
+    Set the ios feedback email for 'Shake to Email'
+    Create KeyboardHelper so engine footer moves with keyboard
+    Add observer to snapshot event that launches the email composer with the screen's snapshot attached.
+    Bug 1129158 - Part 5: Remove AccountProfile; rename RESTAccountProfile to BrowserProfile.
+    Fixes 1134689 - Conditionally compile the aurora update notification code
+    Fixes 1134703 - Show Aurora update notification on applicationDidBecomeActive
+    Fixes 1132456 - Provide notification to pre-release users that a new client version is available
+    Fixes 1127331 - Include a local web server to serve local assets
+    Bug 1116537 - Make the history pane work with the history API
+    Remove magical record
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    Bug 1094317 - Make the Settings page work
+    Bug 1100761 - Create a basic framework for testing account access
+    Bug 1096727 - Create account/provider APIs for login
+    Bug 1094195 - Enable LoginViewController
+    Initial import
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    Initial import
+    swift 1.2 fix
+    Fixes 1127331 - Include a local web server to serve local assets
+    Move LongPress.js code into LongPress namespace
+    Don't make LongPressGestureRecognizer a BrowserHelper
+    Customize behavior when long-pressing a link
+    swift 1.2 fix
+    fix team
+    update shadowsocks
+    remove fonts
+    update icon and LaunchImage
+    add entry for shadowsocks settings
+    add shadowsocks logic
+    add Shadowsocks project
+    change project bundle id
+    Bug 1138122 - Part 3: Update strings and accessibility labels; add UI test for setting default search engine.
+    Add border for selected URL bar
+    Fixes 1140396 Compiler error on TopSites.swift - Disabling optimized builds.
+    Create flow layout for search suggestions
+    Remove TabsPanel
+    Remove panel persistence and reordering code
+    Review comments for PR #189
+    Implement TopSitesPanel
+    Bug 1129161 - Re-implement connecting to Firefox Account in Settings sheet.
+    
+    This implements a simpler view controller which displays an interstitial
+    spinner while loading.  On success; the underlying webview fades in.  On
+    error, a simple error text fades in.  There's no affordance to reload;
+    UX can paint that bikeshed as they see fit.
+    
+    This patch also reflects the state of the Firefox Account in the
+    settings panel.  The state doesn't change yet, but it's there.
+    Bug 1129161 - Rename to FxAContentViewController and delete old controllers.
+    Bug 1129161 - Move settings code into Client/Frontend/Settings.
+    Bug 1129161 - Add FirefoxAccountConfiguration.
+    No bug - Add iPad icons and remove README.md to quiet build warnings.
+    Create KeyboardHelper so engine footer moves with keyboard
+    Bug 1130527 - UI for changing the default search engine.
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    Bug 1130527 - Add stringForKey and make stringArrayForKey return [String].
+    Bug 1136951 - Clean up SiteTableViewController
+    Bug 1136900 - Part 3: Remove old Settings home panel.
+    Bug 1136900 - Part 2: Add Settings*Controller and link from TabTrayController.
+    
+    The Unicode "GEAR WITHOUT HUB" icon is too small and poorly padded, but
+    it's visible against the current like background, whereas the existing
+    icon is not.
+    Bug 1136454 - Part 2: Add {Hash,Hex}Extensions.
+    
+    Desktop Firefox hashes the email address of the last known Firefox
+    Account email address using the SHA1 hash algorithm.  HashExtension
+    exposes this hash algorithm, and SHA256 for the future.
+    
+    The Firefox Accounts protocol exchanges hex-encoded binary data as
+    hexadecimal strings with lower case letter characters.  HexExtension
+    converts String and NSData to and from this representation, calling
+    through to Base32 for the actual work.
+    Bug 1136454 - Part 1: Add Base32 dependency to Carthage and Xcode project.
+    Bug 1136488 - Post: Remove duplicate project entries.
+    Project fixup
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Introduce Fennec Nightly entitlements.
+    Adding entitlements files back to the extensions instead of using a shared one.
+    Bug 1129158 - Part 8: Add FirefoxAccount{State} and persist state after sign in.
+    Bug 1129158 - Part 6: Add SwiftKeychainWrapper.
+    
+    This is a lightly modified version of the wrapper.
+    Bug 1129158 - Part 4: Remove AccountManager.
+    Bug 1129158 - Part 3: Change AccountTest to ProfileTest.
+    Bug 1129158 - Part 2: Remove Client/Frontend/Login/ completely.
+    No bug - Sort top-level project items
+    Update pager toolbar UI
+    Bug 1129306 - Passwords storage
+    Bug 1133918 - Use SDWebImage for list image loading
+    Add GCDWebServerDataRequest back to the Client target
+    Change CONFIGURATION_BUILD_DIR to a common directory shared by all targets, regardless of the build configuration used
+    Make SWXMLHash a Carthage dependency
+    Make KIF a Carthage dependency
+    Make GCDWebServer a Carthage dependency
+    Make Snap a Carthage dependency
+    Make Alamofire a Carthage dependency
+    Fixes 1134689 - Conditionally compile the aurora update notification code
+    1132014 - Implement reading list home panel
+    Animate showing the tabs tray
+    Remove SettingsPanel XIB
+    Work on 1131676 - Create a build profile for Nightly builds
+    Refactor delegates and file hierarchies to be more consistent
+    Basic support using existing code
+    Favicon storage
+    Move toolbar to bottom of browser screen
+    Implement simple navigation tests
+    Create UITests target with KIF
+    Import KIF
+    
+    KIF is a UI automation framework that uses accessibility labels as
+    hooks.
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Additional Fixes 1130112 - Change the bundle identifier
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Additional Fixes 1130112 - Change the bundle identifier
+    Fixes 1130146 - Introduce a unique Display Name per Build Configuration
+    Fixes 1130137 - Introduce a FennecAurora Build Configuration
+    1130135 - Remove Team Identifiers from project files
+    Fixes 1130122 - Fix code signing options for frameworks and extensions
+    Bug 1126584 - Sign in to Firefox Account via embedded accounts.firefox.com.
+    Bug 1126584 - Pre: Don't run old RecordTests.
+    
+    The old RecordTests appear to tickle a Swift compiler bug whereby
+    overloaded constructors are not properly dispatched.
+    Remove left over favicon code.
+    Fixes 1126484 - Use correct Reader Mode fonts
+    Move and fixup Storage tests
+    Bug 1127505 - Set APPLICATION_EXTENSION_API_ONLY = YES for extension targets.
+    Fixes 1127331 - Include a local web server to serve local assets
+    Customize behavior when long-pressing a link
+    Use template strings to init OpenSearchEngines
+    Fixes 1123387 - Reader Mode should have a UI to customize it's appearance
+    Fixes 1123408 - Include reader mode assets as real resources
+    No bug - Export Storage.framework to devices
+    Move ReaderModeButton into BrowserLocationView, private.
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Fixes 1122707 - Move the BrowserLocationView to its own file
+    Fixes 1122705 - Move the ReaderModeButton to its own file
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Imported GCDWebServer and added a simple test to make sure the server runs ok in a unit test.
+    Use web view to display error, remove notification view.
+    Bug 1116537 - Make the history pane work with the history API
+    Bug 1120730 - Implement SearchSuggestClient with tests
+    Implement URIFixup with search fallback
+    Bug 1122224 - Part 14: project file fixes.
+    Bug 1122224 - Part 13: implement a SQL-based version of the History protocol.
+    Bug 1122224 - Part 12: add BrowserDB.swift, which collects several tables into a single database.
+    Bug 1122224 - Part 11: define a history table.
+    Bug 1122224 - Part 10: add a customized version of SwiftData.
+    Bug 1122224 - Part 8: move and extend Cursor.
+    Bug 1122224 - Part 6: add missing references to Locking.swift.
+    Bug 1122224 - Part 5: add references to libsqlite3.0.dylib, switch from FMDB to sqlite3 in bridging header, remove fmdb.
+    Bug 1122224 - Part 3: define SQL group in project file.
+    Bug 1122224 - Part 2: add FileAccessor.
+    Bug 1122224 - Part 1: define History protocol.
+    Implement Reader Mode. This is Reader Mode minus any UI to enable it.
+    Implement basic error display.
+    Target both phone and tablet devices.
+    Implement SearchViewController
+    Implement OpenSearch parser and tests
+    Import SWXMLHash
+    Import Gecko en-US search engines
+    Remove magical record
+    Import fmdb
+    Bug 1112653 - Part 2: rework local name/prefixing in prefs.
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Remove TabBarViewController XIB
+    Long Press on Back and Forward
+    
+    Bug 1109653 - Long press on back or forward should present previous
+    visits - https://bugzilla.mozilla.org/show_bug.cgi?id=1109653
+    No bug - Order project files
+    No bug - Order project files
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Implement tabbed browsing
+    Add Magical Record
+    Bug 1110680 - Part 1: import Sync, FxA, token server tests.
+    Bug 1109772 - Part 6: expose Bytes.swift to the rest of the project.
+    Bug 1109772 - Part 3: create 'DataAccess' grouping and Bookmarks.swift.
+    Bug 1109772 - Part 2: rename existing Bookmarks class to BookmarksREST.
+    Bug 1108880 - Implement basic browser UI
+    
+    Adds a bare bones implementation for a minimal browser app. Includes a
+    WebView, back/forward buttons, and a navigation text field.
+    Link the ShareTo extension against AlamoFire.
+    Bug 1094317 - Make the Settings page work
+    Fixes bug 1104123 - Hook up the Share UI to the Bookmarks Provider
+    Bug 1100761 - Create a basic framework for testing account access
+    Quick fix to deal with build warning about Info.plist being part of the Copy Files phase. (it shouldn't)
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Fix broken merge
+    Fixup project
+    Bug 1100758 - Creating a locking class
+    Fix for Clients.swift appearing multiple times in the project
+    Fixes 1094262 - Implement the Send To Extension UI
+    First iteration of 1094262 - Implement the Send To UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Use the correct concrete json.swift.
+    Use a standalone copy of json.swift instead of an imported project.
+    Add json-swift.
+    Add Client-Bridging-Header.
+    Add new sources to project file.
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Bug 1101066 - Refactor LoginViewController into a controller, view, and widgets
+    Fix project build issues (missing Alamofire)
+    Enable the Send To extension icons.
+    Added asset catalog with action icons.
+    Create a base Favicon infrastructure
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Write a dumb bookmarks test
+    First iteration of 1094262 - Implement the Send To UI
+    Create a base Favicon infrastructure
+    Bug 1096727 - Create account/provider APIs for login
+    Write a dumb bookmarks test
+    Bug 1094195 - Login cleanup
+    Restore project settings I accidently overwrote
+    Fix share extension device list
+    Add a database class for Bookmarks
+    Initial import
+    Initial import
+    fix build
+    No bug - Enable SearchTests
+    New Scheme for Travis that currently skips the UI tests.
+    Create UITests target with KIF
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Move and fixup Storage tests
+    Use template strings to init OpenSearchEngines
+    No bug - skip testLoginSuccess, TokenServerClientTests. r=rnewman
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    fix build
+    Change Build Configuration for Client/Archive to Debug
+    No bug - Enable SearchTests
+    Create UITests target with KIF
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Move and fixup Storage tests
+    Use template strings to init OpenSearchEngines
+    No bug - skip testLoginSuccess, TokenServerClientTests. r=rnewman
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    fix build
+    Last try to fix the Xcode builds. Change ClientNoTest's Archive configuration to Debug instead of Release.
+    New scheme, same as Client but with tests disabled.
+    Create UITests target with KIF
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Move and fixup Storage tests
+    Use template strings to init OpenSearchEngines
+    No bug - skip testLoginSuccess, TokenServerClientTests. r=rnewman
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    fix build
+    No bug - Enable SearchTests
+    Fixes 1132900 - Create a build scheme for Fennec Aurora
+    Create UITests target with KIF
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Move and fixup Storage tests
+    Use template strings to init OpenSearchEngines
+    No bug - skip testLoginSuccess, TokenServerClientTests. r=rnewman
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    fix build
+     Adding carthage checkout as a build action to the Fennec Nightly scheme (for Xcode Server)
+     Adding carthage checkout as a build action to the Fennec Nightly scheme (for Xcode Server)
+    Adding carthage checkout as a build action to the Fennec Nightly scheme (for Xcode Server)
+    No bug - Enable SearchTests
+    Work on 1131676 - Scheme for Fennec Nightly
+    Last try to fix the Xcode builds. Change ClientNoTest's Archive configuration to Debug instead of Release.
+    New scheme, same as Client but with tests disabled.
+    Create UITests target with KIF
+    Two final changes that Xcode insists on making after the Dogfood build changes.
+    Move and fixup Storage tests
+    Use template strings to init OpenSearchEngines
+    No bug - skip testLoginSuccess, TokenServerClientTests. r=rnewman
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    swift 1.2 fix
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    swift 1.2 fix
+    Basic support using existing code
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1110688 - Comment that SecRandomCopyBytes (and thus Bytes.generateRandomBytes) do not need initialization.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    swift 1.2 fix
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Source changes for current Swift.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    swift 1.2 fix
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    swift 1.2 fix
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    Bug 1136454 - Part 2: Add {Hash,Hex}Extensions.
+    
+    Desktop Firefox hashes the email address of the last known Firefox
+    Account email address using the SHA1 hash algorithm.  HashExtension
+    exposes this hash algorithm, and SHA256 for the future.
+    
+    The Firefox Accounts protocol exchanges hex-encoded binary data as
+    hexadecimal strings with lower case letter characters.  HexExtension
+    converts String and NSData to and from this representation, calling
+    through to Base32 for the actual work.
+    Bug 1138122 - Pre: Add boolForKey.
+    Bug 1130527 - Add stringForKey and make stringArrayForKey return [String].
+    Bug 1129158 - Part 5: Remove AccountProfile; rename RESTAccountProfile to BrowserProfile.
+    Bug 1129158 - Part 3: Change AccountTest to ProfileTest.
+    Bug 1129158 - Part 3: Change AccountTest to ProfileTest.
+    Favicon storage
+    Bug 1129158 - Part 3: Change AccountTest to ProfileTest.
+    Basic support using existing code
+    Favicon storage
+    Move and fixup Storage tests
+    Bug 1122224 - Part 13: implement a SQL-based version of the History protocol.
+    Fixes 1130112 - Change the bundle identifier prefix
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Bug 1129158 - Part 8: Add FirefoxAccount{State} and persist state after sign in.
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1122224 - Part 4: unrelated fixes in ClientTests.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Bug 1100761 - Create a basic framework for testing account access
+    Fix review comments
+    Remove useless tests
+    Create a base Favicon infrastructure
+    
+    Conflicts:
+            Client.xcodeproj/project.pbxproj
+    Write a dumb bookmarks test
+    Fix review comments
+    Remove useless tests
+    Create a base Favicon infrastructure
+    Write a dumb bookmarks test
+    Initial import
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1100758 - Creating a locking class
+    Creating a locking class
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    Use a mock search suggest client in SearchTests
+    Bug 1120730 - Implement SearchSuggestClient with tests
+    Bug 1120730 - Add application/x-suggestions+json as an accepted search type
+    Bug 1120730 - Store only URLs with accepted types
+    Implement URIFixup with search fallback
+    Implement OpenSearch parser and tests
+    Revert "Bug 1109649 - Display page loading errors"
+    Change func name and add comments for how to add new test cases, maybe it's more clear.
+    Start web server at the end of setUp, then we can add more than one handler for webServer.
+    Bind the server to a random port.
+    Imported GCDWebServer and added a simple test to make sure the server runs ok in a unit test.
+    Bug 1129158 - Part 3: Change AccountTest to ProfileTest.
+    Basic support using existing code
+    Move bookmarks to storage
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Review comment: make MemoryBookmarkFolder subscriptable.
+    Bug 1109772 - Part 9b: update TestBookmarks.
+    Bug 1094317 - Make the Settings page work
+    Bug 1100761 - Create a basic framework for testing account access
+    Bug 1138122 - Part 4: Add suggestions and opt-in toggles.
+    Bug 1138122 - Part 1: Rename enabledEngines to quickSearchEngines.
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    swift 1.2 fix
+    Bug 1129158 - Part 1: Remove RESTClient.
+    Move bookmarks to storage
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1109772 - Part 4: lift out ShareItem to be a top-level struct type.
+    Fixed the nits.
+    Fixed all nits.
+    Fixes bug 1104867 Hook up the Send To Extension to the Client Provider
+    Fixed all the nits.
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Added a Clients provider. (And deleted old one in wrong place)
+    Fixes 1130095 - Let the AccountProfileManager discover the app group name dynamically
+    Bug 1112653 - Part 2: rework local name/prefixing in prefs.
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1104940 - Use shared logout handling for Accounts
+    Bug 1109772 - Part 8: lift out Account interface.
+    Bug 1094317 - Make the Settings page work
+    Bug 1100761 - Create a basic framework for testing account access
+    Bug 1096727 - Create account/provider APIs for login
+    Bug 1094195 - Login cleanup
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1100758 - Creating a locking class
+    Creating a locking class
+    swift 1.2 fix
+    Bug 1138122 - Pre: Add boolForKey.
+    Bug 1130527 - Add stringForKey and make stringArrayForKey return [String].
+    Fixes 1130118 - Let the ProfilePrefs discover the app group name dynamically
+    Bug 1112653 - Part 2: rework local name/prefixing in prefs.
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1109772 - Part 8: lift out Account interface.
+    Bug 1094317 - Make the Settings page work
+    swift 1.2 fix
+    Bug 1129161 - Expose any action needed to get a Firefox Account ready to Sync.
+    Bug 1129161 - Pre: Fix bug that prevented loading persisted state.
+    
+    Since the version was missing, the existing code moved the account to
+    the Separated state (which is a valid state, but not the right one).
+    Bug 1129158 - Part 8: Add FirefoxAccount{State} and persist state after sign in.
+    Bug 1129161 - Add FirefoxAccountConfiguration.
+    swift 1.2 fix
+    Bug 1129161 - Add FirefoxAccountConfiguration.
+    Bug 1130527 - Allow ordering and disabling SearchEngines, and persist to ProfilePrefs.
+    Bug 1129158 - Part 8: Add FirefoxAccount{State} and persist state after sign in.
+    Bug 1129158 - Part 5: Remove AccountProfile; rename RESTAccountProfile to BrowserProfile.
+    Bug 1129158 - Part 1: Remove RESTClient.
+    Bug 1129306 - Passwords storage
+    Merge with master
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Basic support using existing code
+    Favicon storage
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1116537 - Make the history pane work with the history API
+    Bug 1122224 - Part 9: add a files accessor to Profile.
+    Add search engines to Profile
+    Bug 1112653 - Part 2: rework local name/prefixing in prefs.
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Move favicons instance to account
+    Bug 1109772 - Part 9: abstract bookmarks and sharing.
+    Bug 1109772 - Part 8: lift out Account interface.
+    Bug 1109772 - Part 2: rename existing Bookmarks class to BookmarksREST.
+    Fixes bug 1104867 Hook up the Send To Extension to the Client Provider
+    Bug 1100761 - Create a basic framework for testing account access
+    Account now knows about Clients.
+    Bug 1096727 - Create account/provider APIs for login
+    swift 1.2 fix
+    Bug 1129161 - Expose any action needed to get a Firefox Account ready to Sync.
+    Bug 1129158 - Part 8: Add FirefoxAccount{State} and persist state after sign in.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Initial import
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Fixes 1130112 - Change the bundle identifier prefix
+    Import FxA native code.
+    Initial import
+    Import FxA native code.
+    Initial import
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Import FxA native code.
+    Initial import
+    swift 1.2 fix
+    Bug 1136488 - Pre: Inhibit warnings in the FxA project.
+    
+    Eventually, we will address these, but right now they drive legitimate
+    errors to the bottom of a long list.
+    Change CONFIGURATION_BUILD_DIR to a common directory shared by all targets, regardless of the build configuration used
+    Work on 1131676 - Create a build profile for Nightly builds
+    Fixes 1130137 - Introduce a FennecAurora Build Configuration
+    1130135 - Remove Team Identifiers from project files
+    Import FxA native code.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    fix build
+    Import FxA native code.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.
+    Made the Client build scheme Shared so that it can be run on Xcode Server.
+    Introduce Fennec Nightly entitlements.
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Adding entitlements files back to the extensions instead of using a shared one.
+    Adding application-identifier to entitlements
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    remove fonts
+    change project bundle id
+    Additional Fixes 1130112 - Change the bundle identifier
+    Fixes 1130112 - Change the bundle identifier prefix
+    Bug 1094317 - Make the Settings page work
+    Fix for merge issue where correct SendTo/Info.plist was not included.
+    Adding FiraSans-Regular to the SendTo extension.
+    First iteration of 1094262 - Implement the Send To UI
+    Enable the Send To extension icons.
+    First iteration of 1094262 - Implement the Send To UI
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Bug 1094317 - Make the Settings page work
+    First iteration of 1094262 - Implement the Send To UI
+    First iteration of 1094262 - Implement the Send To UI
+    Initial import
+    Bug 1136488 - Pre: Remove LoginViewController.
+    Bug 1129158 - Part 4: Remove AccountManager.
+    Make Snap a Carthage dependency
+    Move bookmarks to storage
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1109772 - Part 4: lift out ShareItem to be a top-level struct type.
+    using optional chaining instead of forced unwrapping
+    Update for Xcode 6.1.1
+    Fixes bug 1104867 Hook up the Send To Extension to the Client Provider
+    Fixed all the nits.
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Fixed bad merge
+    Fixes 1094262 - Implement the Send To Extension UI
+    Move sendURL to Clients
+    First iteration of 1094262 - Implement the Send To UI
+    Move sendURL to Clients
+    First iteration of 1094262 - Implement the Send To UI
+    Initial import
+    Added asset catalog with action icons.
+    Added asset catalog with action icons.
+    Added asset catalog with action icons.
+    Added asset catalog with action icons.
+    Added asset catalog with action icons.
+    Initial import
+    Move bookmarks to storage
+    Bug 1123055: Respect "Darken colors" accessibility setting
+    
+    This does not yet support responding to notifications of changes to the
+    setting.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1108772 - Part 5: eliminate ShareItem.icon.
+    Bug 1109772 - Part 4: lift out ShareItem to be a top-level struct type.
+    using optional chaining instead of forced unwrapping
+    Update for Xcode 6.1.1
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Moved ShareItem and findSharedItem to a shared module.
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    To be consistent.
+    Fixes 1097254 and also deals with nil title properly.
+    Bug 1096727 - Create account/provider APIs for login
+    Bug 1094195 - Login cleanup
+    Changed the app id for development to org.allizom.Client
+    Fix share extension device list
+    Initial import
+    Bug 1129158 - Part 4: Remove AccountManager.
+    Move bookmarks to storage
+    Bug 1112653 - Part 1: rename Account -> Profile, start to tease apart local and remote.
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Bug 1109772 - Part 4: lift out ShareItem to be a top-level struct type.
+    Quick fix for 1104118 - Opening the Share UI takes a few seconds
+    Fixes bug 1104123 - Hook up the Share UI to the Bookmarks Provider
+    Move ExtensionUtils members into a struct to namespace them. Move Swift file to top level Utils directory.
+    Moved ShareItem and findSharedItem to a shared module.
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Introduce Fennec Nightly entitlements.
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Adding entitlements files back to the extensions instead of using a shared one.
+    Adding application-identifier to entitlements
+    Fixes 1130212 - Introduce unique Entitlements for each build configuration
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    remove fonts
+    change project bundle id
+    Additional Fixes 1130112 - Change the bundle identifier
+    Fixes 1130112 - Change the bundle identifier prefix
+    Bug 1094317 - Make the Settings page work
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fix for 1097292 - Share Extension is not available in some third party apps
+    Changed the app id for development to org.allizom.Client
+    Initial import
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Initial import
+    Initial import
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Fixes bug 1094202 - Implement the Share To Extension UI
+    Initial import
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    Import Gecko en-US search engines
+    swift 1.2 fix
+    Fixes 1132500 - Database abstraction layer should support Int64 or NSNumber
+    Manage table versions individually
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1116537 - Allow clicking on rows in the View Controller
+    Bug 1116537 - Fixup array handling
+    Bug 1122224 - Review comment: typos.
+    Bug 1122224 - Part 10: add a customized version of SwiftData.
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Move and fixup Storage tests
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Favicon storage
+    Manage table versions individually
+    Favicon storage
+    Fixup tests
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Import FxA native code.
+    Initial import
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1122224 - Part 7: unrelated cleanup in Site.swift.
+    Remove magical record
+    Bug 1109641 -  Use standard format for Mozilla Public License comments
+    Use core data for favicon storage
+    
+    Conflicts:
+            Client/Frontend/Bookmarks/BookmarksViewController.swift
+            Client/Frontend/Reader/SiteTableViewController.swift
+            Client/Frontend/Tabs/TabsViewController.swift
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Move and fixup Storage tests
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Move and fixup Storage tests
+    Favicon storage
+    Fixup tests
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Move and fixup Storage tests
+    Fixes 1140556 - Adding an item crashes on 32 bit devices
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Basic support using existing code
+    Bug 1152609 - Part 4: use iPhoneOS8.3.sdk for sqlite3 in module.modulemap.
+    Fixes 1141530 - Build fails on Xcode 6.2
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    swift 1.2 fix
+    Fixes 1141530 - Build fails on Xcode 6.2
+    Bug 1129306 - Passwords storage
+    Bug 1133918 - Use SDWebImage for list image loading
+    Change CONFIGURATION_BUILD_DIR to a common directory shared by all targets, regardless of the build configuration used
+    Merge with master
+    Work on 1131676 - Create a build profile for Nightly builds
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Basic support using existing code
+    Favicon storage
+    Manage table versions individually
+    Fixes 1130137 - Introduce a FennecAurora Build Configuration
+    Fixup tests
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Create a joined history and visits table
+    Make history implementation use new generic table protocol
+    Bug 1127505 - Set APPLICATION_EXTENSION_API_ONLY = YES for extension targets.
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Make history implementation use new generic table protocol
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1122224 - Part 1: define History protocol.
+    swift 1.2 fix
+    Bug 1096965 - Default favicon image for bookmarks
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Basic support using existing code
+    Fixup errors from rebasing
+    Move bookmarks to storage
+    Review comment: make MemoryBookmarkFolder subscriptable.
+    Review comment: have MemoryBookmarkFolder implement SequenceType.
+    Review comment: rename createMockFavicon -> createSizedFavicon.
+    Review comment: use constants for bookmark root GUIDs.
+    Bug 1109772 - Part 10: transparently include in-memory saved items in Mobile Bookmarks.
+    
+    Note that this is currently difficult to manually test, because the
+    client application is distinct from the sharing application!
+    Bug 1109772 - Part 9: abstract bookmarks and sharing.
+    Bug 1109772 - Part 3: create 'DataAccess' grouping and Bookmarks.swift.
+    swift 1.2 fix
+    Bug 1133918 - Use SDWebImage for list image loading
+    Favicon storage
+    swift 1.2 fix
+    Fixes 1140556 - Adding an item crashes on 32 bit devices
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Bug 1129306 - Passwords storage
+    swift 1.2 fix
+    Basic support using existing code
+    Favicon storage
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Fixes 1130112 - Change the bundle identifier prefix
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Import fmdb
+    Initial import
+    Fixes 1140556 - Adding an item crashes on 32 bit devices
+    Fixes 1132015 - Open items from the reading list panel in a new tab in reader mode
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Bug 1134480 - Use section headers in history
+    Bug 1133918 - Use SDWebImage for list image loading
+    Favicon storage
+    Make history implementation use new generic table protocol
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    swift 1.2 fix
+    Bug 1133918 - Use SDWebImage for list image loading
+    Favicon storage
+    swift 1.2 fix
+    Manage table versions individually
+    swift 1.2 fix
+    Favicon storage
+    Bug 1133918 - Use SDWebImage for list image loading
+    Favicon storage
+    Fixup errors from rebasing
+    Move and fixup Storage tests
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    swift 1.2 fix
+    Bug 1129306 - Passwords storage
+    Add an explicit ID column to visits
+    Add a vists table
+    Bug 1135249 - Hide keyboard when scrolling the homescreen
+    Bug 1122840 - Split storage into a separate framework.
+    
+    This should improve build times and space efficiency.
+    
+    Note that we add a modulemap to Storage. This allows us to import
+    sqlite3.h without the dreaded "include of non-modular header inside
+    framework module" error.
+    
+    We set
+    
+            CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+    
+    but it doesn't do anything.
+    
+    This commit makes a few things immutable, reworks a few initializers as
+    a result, and otherwise slightly alters accessibility to make
+    cross-module usage possible.
+    Bug 1122224 - Review comment: typos.
+    Bug 1122224 - Part 8: move and extend Cursor.
+    swift 1.2 fix
+    Favicon storage
+    Manage table versions individually
+    Make history implementation use new generic table protocol
+    swift 1.2 fix
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Create a joined history and visits table
+    Bug 1129306 - Passwords storage
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Create a Generic table implementation
+    swift 1.2 fix
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Add an explicit ID column to visits
+    Add a vists table
+    swift 1.2 fix
+    Bug 1134480 - Use section headers in history
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Create a joined history and visits table
+    Fixes 1132018 Implement Storage backend for ReadingList
+    Basic support using existing code
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Create a joined history and visits table
+    swift 1.2 fix
+    Favicon storage
+    Manage table versions individually
+    Fixup tests
+    Create a joined history and visits table
+    Bug 1110680 - Part 1: import Sync, FxA, token server tests.
+    Bug 1110680 - Part 0: fix licenses.
+    Source changes for current Swift.
+    Initial landing of partial Sync, Token Server, and FxA Swift code.

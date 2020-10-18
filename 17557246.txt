@@ -1,0 +1,5363 @@
+﻿    ZQ 启动 web2py_manual_zh 工程，初始化目录
+    增补Z序
+    追加 DiP 深入Python 图书！
+    追加整体说明
+    同步ZEUUX 相关书序原稿
+    同步ZEUUX 相关书序原稿
+    同步ZEUUX 相关书序原稿
+    KDays部分截屏
+    KDay1截屏
+    调整图片文件
+    重构KDay0,1 两章，请编辑复审
+    修改KDay4
+    KDay4 图片，基础内容修订完成
+    fixed Issue 1011,KDay 3 展示函式修改 详细解说,追加新截屏
+    KDays部分截屏
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    更新 资源索引部分60% ,追加图片资源
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    重命名图片
+    增加cdays图片描述
+    统一CDays 故事图片附件命名
+    修改KDay5
+    更新 资源索引部分60% ,追加图片资源
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays-5~0新截图
+    增加cdays图片描述
+    统一CDays 故事图片附件命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    增补 行者箴言 两节
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    CDays-5~0新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    KDayN 故事章节内容整理，统一图片命名
+    修改KDays2
+    统一KDays 故事图片附件命名
+    KDays部分截屏
+    fixed KDay2 增补图片，以及修订图片引用命名...
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    KDay6图片重命名
+    KDays部分截屏
+    KDay6 故事章节内容整理，统一图片命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改KDays3
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    CDay3重新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    KDays部分截屏
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    增补箴言到60%
+    Issue 856; Issue 917
+    調整非正文内容到附件目录
+    Fixed LovelyPy Cday0,1,2;append py script
+    CDays-5~0新截图
+    Issue 825 ; 替换图片
+    增加cdays图片描述
+    统一CDays 故事图片附件命名
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    资源索引附加图片
+    修改KDay4
+    KDay4 图片，基础内容修订完成
+    修改KDay4
+    KDay4 图片，基础内容修订完成
+    CDays-5~0新截图
+    Issue 818 ; 替换图片
+    增加cdays图片描述
+    统一CDays 故事图片附件命名
+    重命名图片
+    统一CDays 故事图片附件命名
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays-5~0新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改KDays3
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    CDays-5~0新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    KDays部分截屏
+    KDay1截屏
+    调整图片文件命名  KDay1-5.png -> kday1-exp-dir.png
+    重构KDay0,1 两章，请编辑复审
+    CDays-5~0新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    重命名图片
+    统一CDays 故事图片附件命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    CDays-5~0新截图
+    issue 814; cday-4图片重命名
+    统一CDays 故事图片附件命名
+    CDay1重新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改KDay5
+    KDays部分截屏
+    KDay5 故事章节内容整理，统一图片命名
+    fixed KDay1 for atta snap pic
+    调整图片文件命名  KDay1-2.png -> kday1-leo-nosent.png
+    统一KDays 故事图片附件命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    修改KDay4
+    KDays部分截屏
+    KDay4 图片，基础内容修订完成
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改KDays3
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    CDays-5~0新截图
+    issue 814; cday-4图片重命名
+    统一CDays 故事图片附件命名
+    KDays部分截屏
+    KDay1截屏
+    调整图片文件命名  KDay1-3.png -> kday1-page-run-cil.png
+    统一KDays 故事图片附件命名
+    Issue 856; Issue 917
+    fixed Issue 809 ; 合理化注释和详细解説
+    Issue 809
+    調整非正文内容到附件目录
+    Fixed LovelyPy Cday0,1,2;append py script
+    修改KDays2
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    KDays部分截屏
+    KDay1截屏
+    fixed KDay1 追加目录索引技巧
+    增补资源索引
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    CDays 修改截图 主要是CDay2
+    CDays-5~0新截图
+    增加cdays图片描述
+    统一CDays 故事图片附件命名
+    修改KDays2
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    CDays-5~0新截图
+    Issue 826 ; 替换图片
+    重命名图片
+    统一CDays 故事图片附件命名
+    重命名图片
+    统一CDays 故事图片附件命名
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    CDay1重新截图
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改KDays3
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    修改KDays3
+    统一KDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays-5~0新截图
+    issue 811; 图片重命名; issue 812; 增加练习相关描述
+    fixed CDay-5 atta. snap
+    统一CDays 故事图片附件命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    统一CDays 故事图片附件命名
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    atta1 行者箴言 体例化
+    KDays部分截屏
+    KDay1截屏
+    再次修订KDays,追加附录图片，追加KDay6 练习
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDay5 故事章节内容整理，统一图片命名
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    重命名图片
+    统一CDays 故事图片附件命名
+    CDays-5~0新截图
+    issue 814; cday-4图片重命名
+    统一CDays 故事图片附件命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDays部分截屏
+    KDay5 故事章节内容整理，统一图片命名
+    Change dos to Dos
+    CDays 修改截图 主要是CDay2
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay3重新截图
+    CDay1重新截图
+    修改脚本头部coding 增加图片文字记录
+    KDay6截屏
+    KDay6图片重命名
+    KDay6 故事章节内容整理，统一图片命名
+    CDays-5~0新截图
+    issue 811; 图片重命名; issue 812; 增加练习相关描述
+    fixed CDay-5 atta. snap
+    统一CDays 故事图片附件命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改KDays2
+    统一KDays 故事图片附件命名
+    CDays 修改截图 主要是CDay2
+    重命名图片
+    统一CDays 故事图片附件命名
+    追加 CDays 故事章节内容图谱 FreeMind文件和.png图片
+    修改KDays3
+    KDays部分截屏
+    统一KDays 故事图片附件命名
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(,同步更新截屏图片
+    增补 KDayN 的图谱
+    完成KDsyN 故事图谱
+    KDays部分截屏
+    KDays部分截屏
+    KDay6截屏
+    KDay6截屏
+    修改Kday5；相关图片重命名
+    修改KDay5
+    KDays部分截屏
+    KDay6截屏
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    修改脚本头部coding 增加图片文字记录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDay6截屏
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    CDays 修改截图 主要是CDay2
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    KDay6截屏
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    修改Kday5；相关图片重命名
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    修改Kday5；相关图片重命名
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    CDays 修改截图 主要是CDay2
+    KDay6截屏
+    KDay6截屏
+    KDays部分截屏
+    修改Kday5；相关图片重命名
+    CDays 修改截图 主要是CDay2
+    修改Kday5；相关图片重命名
+    KDay6截屏
+    修改Kday5；相关图片重命名
+    KDays部分截屏
+    调整PCS目录，修订README
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    完成PCS400 GAE
+    完成PCS400 GAE
+    追加友邻篇目录
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    完成PCS400 GAE
+    change windows to Windows
+    change python to Python
+    Change Linux to GNU/Linux
+    PCS3修改
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    增加startInc; Issue 817
+    add pcs3 pcs101
+    add pcs3 pcs101
+    add socket module(PCS216), and need improvment.
+    for Issue 1115 修订比喻解释
+    update pcs-216 217
+    update socket module
+    add socket module(PCS216), and need improvment.
+    add socket module(PCS216), and need improvment.
+    增补了其他内置函数
+    PCS 205
+    增加了内建函数range,xrange的示例与说明 Issue 1126
+    change python to Python
+    将函数修改为函式
+    增加了dir函数
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 875
+    完善pcs115~213
+    完善了pcs205
+    进一步修改了PCS205的文档结构
+    Change PCS205
+    增补了其他内置函数
+    根据主题修改了内容的可读性
+    change file name
+    PCS note
+    change python to Python
+    fixed PCS304 部分
+    Issue 954
+    Issue 954 增加PCS300~304精巧地址
+    Issue 953 加入PCS304中缺少的##startInc
+    将函数修改为函式
+    深入探索篇 90%
+    django 100%
+    根据维基目录重构PCS304
+    change python to Python
+    Change Linux to GNU/Linux
+    fixed PCS304  Quixote for Issue 937
+    术语增补
+    Issue 954 增加PCS300~304精巧地址
+    更新 PCS304 Quixote 部分
+    更新 PCS304 Quixote 部分
+    将函数修改为函式
+    增补Quixote相关 Qiangning 信息,,
+    Quixote 完成,,,
+    根据维基目录重构PCS304
+    change windows to Windows
+    change python to Python
+    fixed PCS304 部分
+    术语增补
+    Issue 954 增加PCS300~304精巧地址
+    Issue 953 加入PCS304中缺少的##startInc
+    100%
+    高级-》深入
+    深入探索篇 90%
+    django 100%
+    根据维基目录重构PCS304
+    术语增补
+    Issue 954
+    Issue 954 增加PCS300~304精巧地址
+    增补 Zope 章节
+    Eurasia 内容增补
+    AbtEurasia调整格式
+    Issue 1014 修改Eurasia为eurasia
+    change of GNU/Linux
+    Issue 1000, 完善AboutEurasia
+    fixed PCS304 Eurasia 部分 for Issue 1000
+    fixed PCS304 Eurasia 部分 for Issue 1000
+    Issue 954 增加PCS300~304精巧地址
+    将函数修改为函式
+    根据维基目录重构PCS304
+    完成精简的文前以及正文部分修订
+    PCS304 纵论 修订模板相关叙述
+    PCS304 纵论 修订模板相关叙述
+    PCS304 纵论 修订模板相关叙述
+    PCS304 增补
+    PCS304 增补
+    PCS304 增补
+    PCS304 增补
+    PCS304 纵论 done 100%
+    PCS304 综论 增补
+    fixed PCS304  超级框架 for Issue 929
+    fixed PCS304 部分
+    Issue 954 增加PCS300~304精巧地址
+    更新 资源索引部分60% ,追加图片资源
+    PCS304 起稿，CDay2 精简
+    根据维基目录重构PCS304
+    调整PCS SVN 目录
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Django Turbogears Pylons
+    django cherrypy web.py 完工
+    小调整
+    调整了文字描述的部分,并完成了框架篇所有内容
+    PCS 304
+    Issue 954 增加PCS300~304精巧地址
+    将函数修改为函式
+    增补 UliWeb 介紹
+    截图
+    截图
+    截图
+    截图
+    截图
+    截图
+    截图
+    fixed for Issue 1028 i+1 个
+    fixed for Issue 1028
+    Issue 997
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 896
+    Issue 879
+    Issue 881
+    Issue 882
+    Issue 883
+    调整PCS101格式，函数<-函式
+    Issue 855;Issue 858;Issue 859; Issue 860; Issue 861; Issue 862; Issue 863; Issue 864; Issue 865
+    修改pcs101,110,200
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    add pcs3 pcs101
+    add pcs101 109 110
+    Issue 931
+    Issue 914
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    修改pcs-211
+    修改了base64的概述说明和,文章结构
+    根据主题修改了内容的可读性
+    PCS 211
+    修改pcs-211
+    修改pcs-211
+    修改pcs-211
+    修改pcs-211
+    修改pcs-211
+    change python to Python
+    PCS4修改
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 837
+    增加startInc; Issue 817
+    modify PCS0~105
+    增加PCS-4 PCS-5 PCS-6 PCS-7
+    fixed Issue 934 ,Tk的安装
+    术语增补
+    增补 PCS302 LEO,,,,,
+    Issue 954 增加PCS300~304精巧地址
+    增补PCS302 Leo
+    完成PCS302
+    追加相关kday2 代码文件
+    修订 PCS302 文件名
+    调整PCS SVN 目录,移动PCS310 为 PCS302
+    修订KDay5 连带增补相关故事章节
+    进度列表
+    追加PCS 115
+    增补 PCS 310 Leo
+    追加PCS 310 内容
+    完成PCS302
+    完成PCS302
+    调整PCS SVN 目录,移动PCS310 为 PCS302
+    追加PCS 310 内容
+    完成PCS302
+    完成PCS302
+    完成PCS302
+    完成PCS302
+    完成PCS302
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    PCS某些重命名，pcs114相应调整
+    change python to Python
+    PCS链接及体例调整
+    PCS某些重命名，pcs114相应调整
+    重命名PCS112～PCS114
+    pcs115变成pcs114
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    追记两曰进度,,,
+    完善pcs115~213
+    追加PCS 115
+    PCS某些重命名，pcs114相应调整
+    Issue 956
+    PCS链接及体例调整
+    完成PCS402 XML
+    完成PCS400 GAE
+    追加友邻篇目录
+    追加友邻篇目录
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    注释 syncwiki.py
+    追记两曰进度,,,
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    调整PCS目录，追加说明文件，清理图书正文无关目录
+    用来同步本地的PCS和wiki的内容
+    完善pcs115~213
+    PCS 204 Code
+    PCS 204 Code
+    Issue 923
+    增加了ConfigParse的概述
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    修改pcs204
+    完善了下pcs204
+    调整了pcs204的结构和概述
+    根据主题修改了内容的可读性
+    change file name
+    PCS note
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    PCS 200 Code
+    Issue 903
+    Issue 920
+    Issue 900; Issue 901; Issue 902; Issue 904; Issue 905
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 848
+    Issue 844 修改PCS200
+    Issue 842 修改PCS200
+    完善pcs115~213
+    修改pcs101,110,200
+    PC200 , PCS203 Change
+    change file name
+    PCS note
+    PCS 200 Code
+    Issue 842 修改PCS200
+    PCS 200 Code
+    Issue 967
+    Issue 930
+    Issue 913
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    修改pcs209
+    完善pcs-206 pcs-209
+    fnmatch的部分,完成了PCS-209
+    PCS109~112链接和结构调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    pcs110~113增加startInc标记
+    add pcs111 113
+    PCS303 MoinMoin 完成
+    change of GNU/Linux
+    Issue 954 增加PCS300~304精巧地址
+    PCS303 MoinMoin 完成
+    调整PCS SVN 目录
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    调整了文字描述的部分,并完成了框架篇所有内容
+    PCS 303
+    PCS303 MoinMoin 完成
+    change python to Python
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 876
+    完善pcs115~213
+    完善pcs-206 pcs-209
+    完成了pcs-206的内容
+    PCS调整体例
+    Issue 876
+    完善pcs-206 pcs-209
+    PCS109~112链接和结构调整
+    PCS某些重命名，pcs114相应调整
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 839
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    add pcs101 109 110
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 900; Issue 901; Issue 902; Issue 904; Issue 905
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 832
+    Issue 832 修改并完善PCS-105
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    modify PCS0~105
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 832 修改并完善PCS-105
+    PCS某些重命名，pcs114相应调整
+    修改pcs7;增加遗漏文件html2txt.py
+    修正了对齐问题 Issue 1133
+    change python to Python
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 837
+    修改pcs7;增加遗漏文件html2txt.py
+    append pcs76 Python 八荣八耻
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 910; Issue 909
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 838
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    增加pcs106 107 108
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 906 ; Issue 907; Issue 908
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 836
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    增加pcs106 107 108
+    追加友邻篇目录
+    PCS404 重构，完成
+    追加友邻篇目录
+    增加pcs202
+    增加pcs202
+    PCS链接及体例调整
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 847 修改PCS202
+    完善pcs115~213
+    增加pcs202
+    change python to Python
+    change of GNU/Linux
+    Change Linux to GNU/Linux
+    LP术语修改, PCS0修改链接
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 828  修改PCS0中的export PATH
+    增加startInc; Issue 817
+    modify PCS0~105
+    add pcs2 and modify pcs0&1
+    modify PCS0.moin
+    add PCS0
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    PCS中截图
+    增加PCS0至2的png图片
+    change python to Python
+    PCS109~112链接和结构调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 911; Issue 912
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 885
+    修改pcs101,110,200
+    pcs110~113增加startInc标记
+    add pcs101 109 110
+    增补PCS217图片及文本描述
+    add PCS217 (Tkinter)
+    update pcs-216 217
+    增补PCS217图片及文本描述
+    update pcs-217.moin
+    术语增补;
+    add PCS217 (Tkinter)
+    增补PCS217图片及文本描述
+    add PCS217 (Tkinter)
+    增补PCS217图片及文本描述
+    增补PCS217图片及文本描述
+    术语增补; PCS300/301修改精巧地址和字词格式调整
+    Issue 954 增加PCS300~304精巧地址
+    Issue 933
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    django cherrypy web.py 完工
+    cherrypy完成
+    pcs300, 301, 307
+    概述的调整和内容结构的完善
+    PCS 300
+    Issue 951
+    PCS链接及体例调整
+    PCS某些重命名，pcs114相应调整
+    pcs114变成pcs113
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    add pcs101 109 110
+    PCS某些重命名，pcs114相应调整
+    pcs114变成pcs113
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    add pcs101 109 110
+    change python to Python
+    Change Linux to GNU/Linux
+    LP术语修改, PCS2修改链接
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 837
+    Issue 830  修改PCS2的print_l
+    增加startInc; Issue 817
+    modify PCS0~105
+    add pcs2 and modify pcs0&1
+    增加startInc; Issue 817
+    增加PCS0至2的png图片
+    遗漏一图片
+    增加startInc; Issue 817
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加startInc; Issue 817
+    增加startInc; Issue 817
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    增加PCS0至2的png图片
+    完成PCS401 DHTML
+    完成PCS402 XML
+    完成PCS400 GAE
+    追加友邻篇目录
+    完成PCS401 DHTML
+    完成PCS401 DHTML
+    完成PCS401 DHTML
+    完成PCS401 DHTML
+    增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    完善pcs212
+    完善pcs212
+    完善pcs212
+    完善pcs212
+    PCS 212
+    完善pcs212
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 887;Issue 877
+    完善pcs212
+    小调整
+    概述的调整和内容结构的完善
+    PCS 212
+    完善pcs212
+    完善pcs212
+    PCS 212
+    完善pcs212
+    完善pcs212
+    增加
+    完善pcs212
+    术语增补; PCS300/301修改精巧地址和字词格式调整
+    完成PSC 301
+    增补资源索引,,,
+    PCS 301 增补
+    增补PCS301
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    pcs300, 301, 307
+    PCS 301
+    change windows to Windows
+    change python to Python
+    Change Linux to GNU/Linux
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修改pcs6
+    增加startInc; Issue 817
+    modify PCS0~105
+    增加PCS-4 PCS-5 PCS-6 PCS-7
+    PCS调整体例
+    完善pcs-207
+    PCS 207
+    PCS调整体例
+    完善pcs-207
+    change python to Python
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    完善pcs-207
+    概述文字描述的修改
+    细化了PCS207的内容,改为新的结构,并且加入了代码的注释
+    change file name
+    PCS 207
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 898
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 898; Issue 899
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    modify PCS0~105
+    PCS某些重命名，pcs114相应调整
+    pcs113变为pcs112
+    add pcs111 113
+    PCS109~112链接和结构调整
+    PCS某些重命名，pcs114相应调整
+    pcs113变为pcs112
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    pcs110~113增加startInc标记
+    add pcs111 113
+    PCS某些重命名，pcs114相应调整
+    pcs113变为pcs112
+    add pcs111 113
+    PCS某些重命名，pcs114相应调整
+    pcs113变为pcs112
+    add pcs111 113
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    modify PCS0~105
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    add pcs101 109 110
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    add pcs101 109 110
+    修改PCS103~PCS108链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    Issue 900; Issue 901; Issue 902; Issue 904; Issue 905
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    增加pcs106 107 108
+    复查完成 谢序 PCS208
+    PCS链接及体例调整
+    Issue 928
+    Issue 827
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 837
+    完善pcs115~213
+    追加 DiP 深入Python 图书！
+    根据主题修改了内容的可读性
+    add dict4ini description(pcs-208)
+    PCS调整体例
+    Issue 894; Issue 895
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    fixed for Issue 1027
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 895
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 894; Issue 895
+    Issue 884
+    Issue 884
+    fixed:Issue 820
+    fixed Issue 819 , 重构模块定义部分，强烈要求规范化 Issue 提交信息！
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    modify PCS0~105
+    add PCS100 and PCS102
+    change python to Python
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 837
+    Issue 841
+    Issue 840
+    增加startInc; Issue 817
+    modify PCS0~105
+    增加PCS-4 PCS-5 PCS-6 PCS-7
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 841
+    Issue 840
+    add pcs101 109 110
+    Issue 840
+    修改pcs7;增加遗漏文件html2txt.py
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 897
+    修改pcs100~109；并调整了pcs114和pcs109的顺序
+    modify PCS0~105
+    add PCS100 and PCS102
+    Change Linux to GNU/Linux
+    修改PCS0~PCS102链接及格局调整
+    PCS某些重命名，pcs114相应调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 886
+    Issue 829  修改PCS1的help("obj")
+    增加startInc; Issue 817
+    modify PCS0~105
+    add pcs2 and modify pcs0&1
+    add PCS1
+    PCS中截图
+    增加PCS0至2的png图片
+    add random module(PCS 215)
+    add random module(PCS 215)
+    add random module(PCS 215)
+    Issue 954
+    PCS215调整格式
+    add random module(PCS 215)
+    add random module(PCS 215)
+    add random module(PCS 215)
+    PCS链接及体例调整
+    PCS调整体例
+    增加了一个pdb的说明
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    Issue 846 修改PCS201
+    Issue 845 修改PCS201
+    完善pcs115~213
+    修改pcs201
+    完成了cmd的部分
+    PCS调整体例
+    Issue 846 修改PCS201
+    Issue 845 修改PCS201
+    修改pcs201
+    完成了cmd的部分
+    修改pcs-213
+    修改pcs-213
+    PCS 213
+    修改pcs-213
+    PCS 213
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修正提案: Issue 888
+    增加了代码示例中缺少的编码声明
+    增加
+    完善pcs115~213
+    修改pcs-213
+    概述的调整和内容结构的完善
+    根据主题修改了内容的可读性
+    PCS 213
+    修改pcs-213
+    PCS调整体例
+    修改pcs-213
+    修改pcs-213
+    Issue 968
+    PCS 210
+    修改pcs201
+    Issue 968
+    修改pcs201
+    Issue 968
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    修改pcs201
+    完善pcs-206 pcs-209
+    调整了pickle的结构和内容
+    根据主题修改了内容的可读性
+    PCS 210
+    Issue 968
+    修改pcs201
+    Issue 968
+    修改pcs201
+    Issue 968
+    修改pcs201
+    PCS203图片
+    PCS203图片
+    PCS 203 : epydoc
+    PCS调整体例
+    Issue 900; Issue 901; Issue 902; Issue 904; Issue 905
+    PCS 203 : epydoc
+    PCS链接及体例调整
+    Issue 900; Issue 901; Issue 902; Issue 904; Issue 905
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    完善pcs115~213
+    修改pcs201
+    修改了epydoc的文字描述
+    PC200 , PCS203 Change
+    PCS 203 : epydoc
+    完成PCS403 思维导图
+    重命名图片
+    统一CDays 故事图片附件命名
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    完成PCS403 思维导图
+    完成PCS403 思维导图
+    PCS链接及体例调整
+    完成PCS403 思维导图
+    追加友邻篇目录
+    PCS中截图
+    修改pcs214
+    修改pcs214
+    PCS调整体例
+    修改pcs214
+    PCS调整体例
+    修改pcs214
+    PCS链接及体例调整
+    PCS调整体例
+    Issue 837 统一PCS前3篇中的函式名称; Issue 843 统一PCS中命令行格式
+    PCS 全部快速堪对一次,修订明显的问题 缺少PCS编号,缺少##srartInc 引用标记,声明错误模板,声明错误维 基格式头,,,全部是清风和黄毅的...
+    修改pcs214
+    段落调整
+    概述的调整和内容结构的完善
+    根据主题修改了内容的可读性
+    PCS 214
+    PCS中截图
+    修改pcs214
+    追加练习的说明
+    change python to Python
+    发现练习中几个文件不在版本库中，这里补上
+    Change dos to Dos
+    change windows to Windows
+    修改练习错误的地方
+    change python to Python
+    Issue 977; Issue 978; Issue 979; Issue 987; Issue 988
+    Issue 961
+    Issue 972; Issue 973; Issue989
+    将函数修改为函式
+    Issue 925; Issue 926
+    Issue 924
+    调整CDays中练习
+    Issue 869; 练习修订
+    Issue 831 增加说明and修改练习
+    统一了之前CDays-5练习修改，并同步wiki
+    调整练习解答为不同文件
+    追加所有附录文件...期待快速填实了！
+    调整练习目录和章节相吻合
+    同步今天的练习和正文的内容
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    modify cdays-1-exercise
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+1
+    modify cdays-5-exercise
+    调整CDays中练习
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+1
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+1
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    修改练习错误的地方
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+1
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Issue 924
+    issue 811; 图片重命名; issue 812; 增加练习相关描述
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    add cdays-5~+3 exercises
+    Issue 925; Issue 926
+    调整CDays中练习
+    issue 811; 图片重命名; issue 812; 增加练习相关描述
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    Issue 925; Issue 926
+    调整CDays中练习
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    Issue 925; Issue 926
+    Issue 837
+    调整CDays中练习
+    issue 811; 图片重命名; issue 812; 增加练习相关描述
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-5-exercise-123
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    modify cdays-5-exercise
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    modify cdays-5-exercise
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+3-exercise
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    调整练习目录和章节相吻合
+    cday-4-exercise-123456
+    modify cdays-4-exercise
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cday-4-exercise-123456
+    调整CDays中练习
+    change windows to Windows
+    Issue 972; Issue 973; Issue989
+    Issue 925; Issue 926
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    modify cdays-4-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cday-4-exercise-123456
+    modify cdays-4-exercise
+    add cdays-5~+3 exercises
+    Issue 961
+    调整练习目录和章节相吻合
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-3-exercise-123
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-3-exercise-123
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-3-exercise-123
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    Issue 837
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-3-exercise-123
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    修改练习错误的地方
+    Issue 837
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-3-exercise-123
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Issue 831 增加说明and修改练习
+    调整练习目录和章节相吻合
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    modify cdays-1-exercise
+    Change dos to Dos
+    调整CDays中练习
+    Change dos to Dos
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    add cdays-5~+3 exercises
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    modify cdays-1-exercise
+    add cdays-5~+3 exercises
+    Issue 831 增加说明and修改练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    追加pyd+2 的代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays-1/-2
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    modify cdays-5-exercise
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    Issue 869; 练习修订
+    增加Cdays2的练习3
+    调整练习目录和章节相吻合
+    cdays+2
+    add cdays-5~+3 exercises
+    调整CDays中练习
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+2
+    modify cdays-5-exercise
+    调整CDays中练习
+    change python to Python
+    增加Cdays2的练习3
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+2
+    add cdays-5~+3 exercises
+    Issue 977; Issue 978; Issue 979; Issue 987; Issue 988
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+2
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    adjust cdays exercise
+    调整练习目录和章节相吻合
+    cdays+2
+    modify cdays-5-exercise
+    add cdays-5~+3 exercises
+    增加Cdays2的练习3
+    调整KDays0~2 的文字内容,修订Issue801 ,增补练习题一个
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    追加pyd+2 的代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    modify KDays exercise
+    将函数修改为函式
+    Issue 936
+    调整KDays练习
+    调整练习解答为不同文件
+    增加Kdays6练习3
+    modify KDays exercise
+    add new KDays0-N
+    modify KDays exercise
+    add new KDays0-N
+    modify KDays exercise
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    modify KDays exercise
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    add new KDays0-N
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    完成 KDay0修订，KDay1粗修
+    modify KDays exercise
+    add new KDays0-N
+    Issue 936
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    fixed KDay1 cnt and appended storymapping
+    modify KDays exercise
+    add new KDays0-N
+    modify KDays exercise
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    add new KDays0-N
+    add new KDays0-N
+    KDays3
+    KDays3
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    add new KDays0-N
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    add new KDays0-N
+    add new KDays0-N
+    发现练习中几个文件不在版本库中，这里补上
+    发现练习中几个文件不在版本库中，这里补上
+    发现练习中几个文件不在版本库中，这里补上
+    发现练习中几个文件不在版本库中，这里补上
+    add new KDays0-N
+    继续补上kdays3-exercise/mysite/js目录
+    增加Kdays6练习3
+    modify KDays exercise
+    add new KDays0-N
+    增加Kdays6练习3
+    增加Kdays6练习3
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    调整KDays练习
+    增加Kdays6练习3
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    add new KDays0-N
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    add new KDays0-N
+    add new KDays0-N
+    modify KDays exercise
+    调整KDays 故事文章集中到 pages 目录
+    add new KDays0-N
+    modify KDays exercise
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    调整KDays练习
+    调整KDays练习
+    add new KDays0-N
+    add new KDays0-N
+    add cdays-5~+3 exercises
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    add new KDays0-N
+    add new KDays0-N
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    调整练习目录,mc PyTodo 到part3-PCS
+    用Python完成常见任务 source
+    fixed Issue 833 将正式代码复制到正文中,,,
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    Change dos to Dos
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    修改脚本头部coding 增加图片文字记录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-1 code dir
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    CDay1重新截图
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    PyDays/pyd+1/try.ini append
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加pyd+2 的文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Change dos to Dos
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday1
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    先期准备多线程搜索代码
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Issue 815
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    完成pyd+3 正文和代码配合
+    ini 模式匹配调试完成,结合入多线程
+    ini 模式匹配调试,清除.pyc 文件
+    ini 模式匹配调试
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Change dos to Dos
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    先期准备多线程搜索代码
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    进行pyd+3 的代码组织
+    完成web界面化
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    追加pyd+2 的代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    Issue 857; Issue 866; Issue 867; Issue 868; Issue 905
+    try fixed Karrigell export code
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday3
+    调整目录，配合新图书章节设计
+    追加K实例
+    修改脚本头部coding 增加图片文字记录
+    clean script for new words
+    rename script for new words
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    clean script for new words
+    rename script for new words
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    clean script for new words
+    rename script for new words
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    clean script for new words
+    rename script for new words
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    clean script for new words
+    rename script for new words
+    mv code dir for new words
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy CDay-3 script
+    fixed LovelyPy CDay-3 script
+    fixed LovelyPy CDay-3 script
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy CDay-3 script
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy CDay-3 script
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy CDay-3 script
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy cday-2
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy cday-2
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    Change dos to Dos
+    修改脚本头部coding 增加图片文字记录
+    fixed LovelyPy cday-2
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-2
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    fixed LovelyPy cday-2
+    调整目录，配合新图书章节设计
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Change dos to Dos
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday0
+    调整目录，配合新图书章节设计
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    补充启章的reST 文本
+    追加pyd+2 的代码
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加pyd+2 的文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    add LovelyPy book
+    Change dos to Dos
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加pyd+2 的代码
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    预先编译api文档
+    ini 模式匹配调试完成,结合入多线程
+    先期准备多线程搜索代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    完成pyd+1 的引述
+    追加 epydoc 的生成文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加PyDay+1 的代码和文档
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    include losted
+    追加pyd+2 的代码
+    先期准备多线程搜索代码
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    调整KDays0~2 的文字内容,修订Issue801 ,增补练习题一个
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    追加pyd+2 的代码
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加PyDay+1 的代码和文档
+    追加 epydoc 的生成文档
+    add LovelyPy book
+    调整KDays0~2 的文字内容,修订Issue801 ,增补练习题一个
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    Issue 857; Issue 866; Issue 867; Issue 868; Issue 905
+    try fixed Karrigell export code
+    调整KDays0~2 的文字内容,修订Issue801 ,增补练习题一个
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    配合文字完善代码
+    完善WEB 时的搜索
+    完成web界面化
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    修改脚本头部coding 增加图片文字记录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    CDay2重新截图;发现cday2的Karrigel中缺少doc目录并增加
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    追加K实例
+    fixed KDay1 追加目录索引技巧
+    fixed KDay1 for atta snap pic
+    完善 KDays 故事实例代码
+    调整KDays 故事代码集中到 对应 目录
+    fixed for Issue 1012 , 同步新增文件到.leo
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(,同步更新截屏图片
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    fixed Issue 1011,KDay 3 展示函式修改 详细解说
+    CPUG->CPyUG
+    增补 引言，追加精巧地址
+    追加相关kday2 代码文件
+    KDay6 完成增补! 记入汇总表
+    修订KDay5 连带增补相关故事章节
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    fixed KDay1 追加目录索引技巧
+    fixed KDay1 for atta snap pic
+    跟随修订KDays 代码样例
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed for Issue 1012 , 同步新增文件到.leo
+    增加tryKQF的处理脚本
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    追加相关kday2 代码文件
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay2 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    增补 引言，追加精巧地址
+    追加相关kday2 代码文件
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay2 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    fixed KDay2 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed for Issue 1012 , 同步新增文件到.leo
+    增加tryKQF的处理脚本
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed for Issue 1012 , 同步新增文件到.leo
+    增加tryKQF的处理脚本
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1011,KDay 3 展示函式修改 详细解说
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    fixed Issue 1011,KDay 3 展示函式修改 详细解说
+    调整KDays 故事代码集中到 对应 目录
+    追加相关kday2 代码文件
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    fixed KDay3 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    fixed for Issue 1012 , 同步新增文件到.leo
+    增加tryKQF的处理脚本
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    追加 dic4ini 模块
+    追加 dic4ini 模块
+    追加 dic4ini 模块
+    追加 dic4ini 模块
+    fixed KDay2 增补图片，以及修订图片引用命名...
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事文章集中到 pages 目录
+    调整目录，配合新图书章节设计
+    根据编辑建议，編入KaDay 实例故事！
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    CPUG->CPyUG
+    追加相关kday2 代码文件
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    Fixed LovelyPy code dir foy cday2
+    调整目录，配合新图书章节设计
+    完成web界面化
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    fixed Issue 1012 ,修订qpubish( 成 qpublish(
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    CPUG->CPyUG
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录
+    调整KDays 故事代码集中到 对应 目录

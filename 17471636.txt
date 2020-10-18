@@ -1,0 +1,550 @@
+﻿    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Added dependency for libseccomp in readme. Fixes #56
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Makefile: better support for cross compiling
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    apparently it was already in the readme..
+    add getcanary to readme
+    add setcanary
+    decookie.so: Dump stack cookie on startup (#41)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    crazyrealloc.c: force realloc() to move memory around (#39)
+    
+    * Add crazyrealloc.c + test
+    
+    * Update readme
+    
+    * nail a bug
+    
+    * cleanup
+    Added desleep to README
+    Added detime
+    Move CFLAGS variables in README before the make command
+    
+    If the CFLAGS=-m32 is specified after the `make` command, the command is used exactly as specified on the command line; things like `CFLAGS+=-lpthread` will not work. By putting the variable before the `make` command, the correct extra CFLAGS options were added from the command line. This was tested on Ubuntu 14.04 64 bit while compiling 32 bit shared objects.
+    Update README.md
+    
+    fix typo
+    Fixes #20 - change delarm to dealarm in readme
+    Add Fedora libini_config_devel & some cleanup
+    pro up at make and revamp the build process
+    Link to discussion about desocketing.
+    fixed heading
+    mallocwatch added to readme
+    added ensock (opposite of desock!) and writeout (to support applications that insist on writing to fd 0, like the quals SNMP stuff)
+    added startstop.so for process startup interception
+    redid build system to support cross compilers
+    slight readme reordering
+    slight readme updates
+    Added desigact to disable sigaction()
+    added a simpler desocketer, desock_dup.so
+    Add deptrace, and instructions for building 32bit on 64bit host
+    add build instructions for archlinux
+    format
+    desrand documentation
+    desrand picks/sets seeds so that random returns what you want
+    derand
+    better example
+    Added support for patching binaries via LD_PRELOAD.
+    AFL note
+    bugfixes and readme
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Closes 52: only remove directories during cleanup
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Makefile: better support for cross compiling
+    Makefile: use $(MAKE) instead of make
+    Add .PHONY targets.
+    pro up at make and revamp the build process
+    redid build system to support cross compilers
+    initial
+    detime: remove a dummy arg
+    Added gettimeofday() to detime.so
+    Added detime
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    fix logging level setting
+    set log level via environment
+    Added support for patching binaries via LD_PRELOAD.
+    initial
+    added startstop.so for process startup interception
+    derand
+    Add deptrace, and instructions for building 32bit on 64bit host
+    Added tests to sleep, added nanosleep (#40)
+    Added usleep to desleep.so
+    changes printf to preeny_debug
+    Adding support for sleep function
+    desock: add support for getsockname
+    desock: exit on shutdown of accepted socket, not on 2nd accept
+    
+    Fuzzing a single-threaded poll/epoll-based network server using AFL++
+    did not work because the server would call accept(2) again before
+    processing the first connection and would therefore instantly exit.
+    Shutdown on EOF from stdin
+    
+    This signals the EOF to the receiving side.
+    exit on second accept
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    Closes #32 - properly use format strings
+    Address in accept() can be NULL, check first before calling memcpy()
+    Add return statement to accept4() wrapper
+    Minor fixup of accept
+    Accept minor fixup
+    minor fixup of accept
+    Minor fixup of accept
+    Bug fix: Change n to total_n post read syscall
+    close stdin on EOF
+    Change AF_UNIX protocol to 0, return orig sooner
+    
+    This reorders the check that the socket is AF_INET or AF_INET6 to be intercepted to return sooner.
+    It also creates the stdin/out socket as protocol 0 to prevent invalid protocols being sent to the new socket.
+    Add connect()
+    Added accept4()
+    be more careful -- only intercept INET and INET6 sockets
+    fix desock back-sync pthread_create bug
+    bugfixes and readme
+    initial
+    renamed RAND to WANT for desrand.so
+    read SKIP instead of SKIP_RAND
+    desrand picks/sets seeds so that random returns what you want
+    Let's make A/D CTF hard to host <3 (#55)
+    
+    * Let's make A/D CTF hard to host <3
+    
+    * it is called deexec
+    
+    * add compile flags for deexec
+    crazyrealloc.c: force realloc() to move memory around (#39)
+    
+    * Add crazyrealloc.c + test
+    
+    * Update readme
+    
+    * nail a bug
+    
+    * cleanup
+    Adding support for arm in setcanary
+    Added support for x86 in setcanary like getcanary (#53)
+    add setcanary
+    Adding support for get ganary on arm by reading from __stack_chk_guard
+    Declare preeny_logging_init before using it (#49)
+    add getcanary to readme
+    decookie.so: Dump stack cookie on startup (#41)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    added ensock (opposite of desock!) and writeout (to support applications that insist on writing to fd 0, like the quals SNMP stuff)
+    Fix indentation warnings
+    
+    This makes indentation match the actual code flow, and fixes warnings given by gcc during compilation.  (Warnings are from -Wmisleading-indentation)
+    Adding check if dlsym was called before calling malloc+free family. Fixes #59
+    Don't recurse mallocwatch on printf (#47)
+    added some malloc watcher stuff for mpizza
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    added a simpler desocketer, desock_dup.so
+    Added desigact to disable sigaction()
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    Fixes #8 - use SO_REUSEADDR for compatibility
+    added ensock (opposite of desock!) and writeout (to support applications that insist on writing to fd 0, like the quals SNMP stuff)
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    Added support for patching binaries via LD_PRELOAD.
+    initial
+    Added support for patching binaries via LD_PRELOAD.
+    initial
+    Let's make A/D CTF hard to host <3 (#55)
+    
+    * Let's make A/D CTF hard to host <3
+    
+    * it is called deexec
+    
+    * add compile flags for deexec
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    Makefile: better support for cross compiling
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    crazyrealloc.c: force realloc() to move memory around (#39)
+    
+    * Add crazyrealloc.c + test
+    
+    * Update readme
+    
+    * nail a bug
+    
+    * cleanup
+    simplifying makefile
+    Adding support for sleep function
+    Add .PHONY targets.
+    pro up at make and revamp the build process
+    added ensock (opposite of desock!) and writeout (to support applications that insist on writing to fd 0, like the quals SNMP stuff)
+    added some malloc watcher stuff for mpizza
+    added startstop.so for process startup interception
+    redid build system to support cross compilers
+    added a simpler desocketer, desock_dup.so
+    Add deptrace, and instructions for building 32bit on 64bit host
+    desrand picks/sets seeds so that random returns what you want
+    derand
+    Added support for patching binaries via LD_PRELOAD.
+    initial
+    initial
+    eofkiller.c : added ifdef.
+    eofkiller.c: build fix.
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    Fix compilation warning
+    Added gettimeofday() to detime.so
+    Added gettimeofday() to detime.so
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    gitignore: ignore test binaries (#48)
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    read SKIP instead of SKIP_RAND
+    derand
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    enable -Wall and clean up warnings
+    
+    This enables some _essential_ warnings like `Wreturn-type`.
+    crazyrealloc.c: force realloc() to move memory around (#39)
+    
+    * Add crazyrealloc.c + test
+    
+    * Update readme
+    
+    * nail a bug
+    
+    * cleanup
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    add missing header to test code
+    Added support for patching binaries via LD_PRELOAD.
+    Added gettimeofday() to detime.so
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Added UID manipulation (#43)
+    
+    * decookie.so: Dump stack cookie on startup
+    
+    * Whitespace and README
+    
+    * Added UID manipulation
+    
+    * whitespace
+    
+    * Add eofkiller
+    
+    Useful for piping to bad bins or with AFL
+    Added tests to sleep, added nanosleep (#40)
+    crazyrealloc.c: force realloc() to move memory around (#39)
+    
+    * Add crazyrealloc.c + test
+    
+    * Update readme
+    
+    * nail a bug
+    
+    * cleanup
+    Add .PHONY targets.
+    derand
+    Added support for patching binaries via LD_PRELOAD.
+    initial
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    Added tests to sleep, added nanosleep (#40)
+    Add CMake (#46)
+    
+    * Switched to CMake
+    
+    * Helper scripts and test runner
+    
+    * Updated README
+    
+    * Renamed build scripts
+    
+    * Added note on CMake to readme
+    
+    * Restored .gitignore entries
+    
+    * Conventional naming of test directory
+    
+    * Keep test gitignore
+    initial

@@ -1,0 +1,40 @@
+﻿    use CMAKE_PREFIX_PATH to find Rock CMake instead of environment variables
+    make controldev match the norm package structure and build system
+    Added simple support for the Logitech G27 racing wheel.
+    
+    Signed-off-by: mschroeer <martin.schroeer@dfki.de>
+    install joypad header
+    added new JoyPad driver and testprogramm for it
+    
+    The new JoyPad driver tries to fake the behavior
+    of a joystick, so that it can work as a drop
+    in replacement for the joystick
+    reworked Sliderbox driver
+    
+    changed interface, so that the return value of pollNonblocking
+    now indicates if there is still a valid packet. The new argument
+    updated indicates, if the values of the sliders/buttons changed.
+    
+    reformated source
+    
+    added test programm, that shows how fast updates for the sliderbox arrive
+    don't enable VERBOSE by default
+    dist: remove dead cmake code
+    Added reference to sysfs lib
+    Fixed file extensions for referenced headers
+    Initial checkin for control devices library
+    move the definition of RawCommand here
+    
+    It was defined in the orogen component, which made it impossible to
+    use in other libraries (e.g. libraries that would convert raw commands
+    to other types of commands). Move it here to make it available at
+    the library level.
+    Removed Joypad class
+    
+    Jostick should do the same...
+    Added test application for spacemouse
+    Moved the 3D Mouse plugin to the controldev
+    
+    removed it from vizkit, and cleanup the Classes
+    added Logitech G27 initalization tool
+    make controldev match the norm package structure and build system

@@ -1,0 +1,221 @@
+﻿    Implements contracts
+    new year
+    
+    update copyright year
+    Update LICENSE to use Markdown
+    Implements contracts
+    update skeleton project
+    Initial Commit
+    Update from league/skeleton
+    Implements contracts
+    Update CONTRIBUTING.md
+    Update CONTRIBUTING.md
+    Initial Commit
+    kill hhvm 🗡
+    update PHP constraints
+    PHP 7 and update composer constraints
+    Update from league/skeleton
+    remove php 5.3 requirement
+    Add Ocular as dev-dependency, fixes HHVM issues too apparently
+    update skeleton project
+    Ninja 5.6 test
+    Initial Commit
+    updated scrutinizer reference
+    Fix documentation
+    Add .gitattributes file
+    add pagerfanta
+    update PHP constraints
+    implements messaging contracts
+    PHP 7 and update composer constraints
+    improve collections in fractal transformer
+    WZRD namespace in composer
+    CS Fixer
+    Remove Framework namespace
+    update composer dependancies
+    add mockery to test
+    Implements contracts
+    Reverting
+    Updated package name to be able to submit to Packagist
+    Add Ocular as dev-dependency, fixes HHVM issues too apparently
+    Harmonize package variables
+    Fix duplicate require-dev entry
+    update skeleton project
+    Initial Commit
+    update skeleton project
+    Initial Commit
+    Implements contracts
+    Typo in README.md
+    Add a security section
+    remove duplicate field
+    
+    the `:author_website` option was listed twice
+    Readme: use relative paths to CONTRIBUTING.md and contributors
+    Harmonize package variables
+    Remove extra newline
+    Fix typo
+    Update LICENSE.md link
+    Update README.md
+    Remove version from composer require
+    
+    Composer detects the latest stable version (only 0.x should specify the version)
+    http://blog.doh.ms/2014/10/13/installing-composer-packages/
+    Switched to composer require
+    update skeleton project
+    Update README.md
+    Update README.md
+    Initial Commit
+    Update from league/skeleton
+    Rename scrutinizer.yml to .scrutinizer.yml
+    Added php_analyzer: true to scritunizer
+    update skeleton project
+    CS fix
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add push implementation with parse
+    cs fix
+    add zend gcm pusher
+    cs fix
+    CS fix
+    refactor pusher & add zend apns pusher
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    add custom data to parse push
+    Remove Framework namespace
+    add push implementation with parse
+    cs fix
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add pushers handler
+    cs fix
+    refactor pusher & add zend apns pusher
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    test JWT Encrypter
+    Implements contracts
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    Implements contracts
+    cs fix
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add swift mailer tests
+    Implements contracts
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add mailers handler
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add message implementation + tests
+    cs fix
+    add authenticator
+    CS Fix
+    improve collections in fractal transformer
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add fractal transformer test
+    Implements contracts
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add monolog logger test
+    Implements contracts
+    CS Fixer
+    Measurer -> Profiler
+    Remove Framework namespace
+    add stated measurer test
+    Implements contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add push implementation with parse
+    add zend gcm pusher
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add push implementation with parse
+    add pushers handler
+    refactor pusher & add zend apns pusher
+    cs fix
+    refactor pusher & add zend apns pusher
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    add custom data to parse push
+    Remove Framework namespace
+    add push implementation with parse
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    test JWT Encrypter
+    CS Fix
+    Wzrd -> WZRD
+    Remove Framework namespace
+    test Hasher
+    cs fix
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add message implementation + tests
+    cs fix
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add swift mailer tests
+    CS Fix
+    CS Fixer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add mailers handler
+    add swift mailer tests
+    cs fix
+    add authenticator
+    CS Fix
+    improve collections in fractal transformer
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add fractal transformer test
+    CS Fix
+    Wzrd -> WZRD
+    Remove Framework namespace
+    add monolog logger test
+    CS Fix
+    Fix StatsD Profiler test
+    CS Fixer
+    Wzrd -> WZRD
+    Measurer -> Profiler
+    Remove Framework namespace
+    add stated measurer test
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts
+    implements messaging contracts

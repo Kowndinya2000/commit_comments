@@ -1,0 +1,332 @@
+﻿    remove some potentially unneceessary text that most likely no one will read anyways. add link to cluster setup guide.
+    improved the contributing file to be consistent with the other repos
+    Delete stale section in README
+    Update README.md
+    
+    Update TS example
+    Update references to testing
+    Attempt to handle Ubuntu 16.04 not accepting ulimit change.
+    updates for Ansible 2 and Riak TS.
+    Missed a spot...
+    Update Ansible Galaxy info
+    
+    At some point recently, Ansible updated the Galaxy system to add roles based on GH organization. When they did this, my original submission for this role was dropped from the database. I resubmitted the role to Galaxy and am updating the README to reflect this change.
+    remove bit about riak module being in extras since extras are shipped with Ansible
+    missing single quote
+    remove some potentially unneceessary text that most likely no one will read anyways. add link to cluster setup guide.
+    fix error
+    improved the contributing file to be consistent with the other repos
+    almost done with examples, just need to add how to wait for ring and handoff to command module method
+    rewriting the README to reflect the improvements of the lib
+    Update README.md
+    
+    Removed the text noting the refactor since it is now released. Added myself as a maintainer. Added the command to install the role via ansible galaxy.
+    remove non-ascii apostrophes to work around ansible galaxy bug parsing readme.
+    Noting branch updates in README
+    Noting dev branch isnt actually this branch
+    
+    Which is a behavior I don't love but we'll have to fix in the future. Go forth and update all the ansibles
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    updated README with contribution information and introduction similar to others
+    Updated maintainers & links
+    
+    Added the reference to Solr as well since `riak_search` is powered by the project. Shout out to maintainers having some open slots.
+    Update README.md
+    Bump riak to 1.4.10, sync versions within repo
+    Update README and bump version to v1.0.8.
+    Add Vagrant test environment for cluster integration testing.
+    Updated readme docs.
+    Updates with new riak_net_speed variable.
+    typo.
+    Additional cleanup.
+    Updated Readme with link to documentation while waiting for Ansible Galaxy to support Markdown tables.
+    Cleared up the dependency statement.
+    Initial Commit
+    Add var to bypass init system reboot / enabling
+    Do not replace rc.local when tuning disks
+    
+    Fixes issue #20
+    
+    Note -- relies upon rc.local always having an "exit 0" line at the end of it,
+    which is true for Ubuntu systems I tested, but I'm not sure about others?
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    [fix] use custom http endpoints for riak commands
+    Remove unused tasks from handlers
+    Check for vm swappiness writeable before writing via sysctl
+    Execute sysctl dependent on /proc being writeable
+    Ignore errors if sysctl fails; needed for running in restricted env
+    Initial Commit
+    Parametrize logging in riak.conf
+    Fix execution for Riak KV - both on Travis CI and locally
+    
+    Issue appears to be subtle change in probably undefined behaviour of
+    Ansible from in 2.2.2.0 as compared to 2.2.1.0.  Last CI successful
+    build and current CI failing build have this Ansible version
+    difference.  And locally I recently upgraded Ansible and shortly
+    afterwards I noticed issue too.
+    
+    Change is based on:
+    * https://docs.ansible.com/ansible/playbooks_variables.html#magic-variables-and-how-to-access-information-about-other-hosts
+    * https://docs.ansible.com/ansible/playbooks_variables.html#jinja2-filters
+    * https://stackoverflow.com/questions/28885184/default-value-for-dictionary-in-jinja2-ansible#28885760
+    Add var to bypass init system reboot / enabling
+    Make Solr JVM options configurable
+    swap jdk -> jre. add flag for disabling packagecloud install.
+    Add option to override jdk package and disable the installation of the jdk all together.
+    create empty data structures for optional fields
+    Remove some obsolete code.
+    Add https IP:Port to variables and riak.conf template but leave it commented out if security is not enabled.
+    Change to ensure Security is not enabled by default
+    Remove obsolete code & fix packagecloud implementation
+    
+    - Fix Packagecloud script for RedHat so that alternate package versions can be called.
+    - Change the container keyword for security from container to scope to reduce confusion.
+    - Remove Ansible version specific tasks
+    - Configure riak.conf template task to use the backup feature, remove manual backup file creation.
+    Added an example of riak_groups to defaults/main.yml
+    Allow user to choose interface for riak_shell_ips
+    Add config for riak_shell
+    Make AAE configurable, needed for TS
+    dont even remember all that i did last time, but it works for me... lol
+    Template riak.conf. Only restart service if config changed
+    Use more useful defaults for nodename and listen on all IPs
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    changed riak_iface to read value from ansible hostvars instead of hardcoding to eth0
+    fix bug with ip / port config update. Added nodename to config update. added quotes to wait_for task for code highlighting / best practices when including a var.
+    working on ubuntu
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    needs to be tested, but I think this will simplify our maintenance needs for config options
+    Bump riak to 1.4.10, sync versions within repo
+    Bump default riak version to 1.4.10
+    Upgrades Riak 2.0 from Beta7 to RC1
+    
+    - Removes init script monkey patch required to start Beta7 and fixed in
+      Beta8+
+    - Fixes the proxy declaration in the Vagrantfile for HTTPS endpoints
+    - Replaces custom packages will the packagecloud.io repos for Riak 2.0
+    - Bumps the module version to 2.0.0
+    Revert "Leave default install via repository vs. custom package."
+    
+    This reverts commit 801e5ac23625e5484c7fe0ca755180652c4b121c.
+    Leave default install via repository vs. custom package.
+    Default pb_backlog in riak.conf is 128.
+    - Upgrades the playbooks to support Riak 2.0 with the following changes:
+      - Replaces the app.config and vm.args templates with a riak.conf
+        template to convert to Cuttlefisj
+      - Fixes the file limites in security_limits to be 65536 rather than
+        65336
+      - Uses a custom package for the Riak 2.0 beta.  When Riak 2.0 is
+        released, the playbooks will be modified to use apt/yum
+      - Adds a variable to enable/disable strong consistency
+    Bump default Riak version to v1.4.9.
+    Update README and bump version to v1.0.8.
+    riak_net_speed added.
+    Initial Commit
+    Update min ansible version to 2.1 due to DEB package via url support.
+    updates for Ansible 2 and Riak TS.
+    fix dependencies data structure causing ansible galaxy error
+    Add trusty to supported distros in meta
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    - Adds support for Debian 7.4 to the playbooks, as well as, the
+    Vagrantfile
+    - Patches the /etc/init.d/riak and env.sh scripts with changes from
+    https://github.com/basho/node_package/pull/145 in an attempt to resolve
+    the Ubuntu startup defect (https://github.com/basho/riak/issues/561).
+    Startup still fails.
+    Updated email address.
+    Updated dependencies
+    Initial Commit
+    Attempt to handle Ubuntu 16.04 not accepting ulimit change.
+    woops forgot I changed that.
+    Botched travis git rebase squash, just implementing travis support here.
+    prevent deb package urls from messing up the repo definition
+    Make product selection configurable
+    replace scripted repo install with template file. Add openjdk 1.7 for search support (solr).
+    Missed a conditional in the template
+    Remove obsolete code & fix packagecloud implementation
+    
+    - Fix Packagecloud script for RedHat so that alternate package versions can be called.
+    - Change the container keyword for security from container to scope to reduce confusion.
+    - Remove Ansible version specific tasks
+    - Configure riak.conf template task to use the backup feature, remove manual backup file creation.
+    update packagecloud rpm shell script. fix what was likely a copy paste error
+    Make product selection configurable
+    remove remote script dl. remove unnecessary file.
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    Added additional tunings so riak-admin diag won't complain.
+    sysctl tunings have been updated and now templatized.
+    Add config for riak_shell
+    Commented out until feature released in Riak
+    Parametrize logging in riak.conf
+    Make Solr JVM options configurable
+    forgot to update the actual value
+    revert lib directory change
+    Update riak.conf template from distributed riak.conf for v2.2
+    Remove some obsolete code.
+    Add https IP:Port to variables and riak.conf template but leave it commented out if security is not enabled.
+    Make AAE configurable, needed for TS
+    dont even remember all that i did last time, but it works for me... lol
+    Template riak.conf. Only restart service if config changed
+    Do not replace rc.local when tuning disks
+    
+    Fixes issue #20
+    
+    Note -- relies upon rc.local always having an "exit 0" line at the end of it,
+    which is true for Ubuntu systems I tested, but I'm not sure about others?
+    fix RHEL jre install
+    swap jdk -> jre. add flag for disabling packagecloud install.
+    Move RHEL specific ulimit change to RHEL tasks. Update xenial to use systemd.
+    Add option to override jdk package and disable the installation of the jdk all together.
+    Improve Debian support. Add support for debian packages via url.
+    Remove some obsolete code.
+    Adopt Ansible 2 syntax / rules
+    update packagecloud rpm shell script. fix what was likely a copy paste error
+    Make product selection configurable
+    remove remote script dl. remove unnecessary file.
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    move yum task into redhat task include. Add redhat tags to include files tasks.
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    Initial Commit
+    Use var introduced in 806bee1 for bypassing systemd reload
+    Use limits.d instead of limits.conf in debian
+    Set the riak ulimit for all OSes of the Debian family
+    add jessie to the systemd method of upping the ulimit.
+    swap jdk -> jre. add flag for disabling packagecloud install.
+    add higher ulimits
+    Move RHEL specific ulimit change to RHEL tasks. Update xenial to use systemd.
+    Add noninteractive sessions to the PAM config
+    Add option to override jdk package and disable the installation of the jdk all together.
+    Attempt to handle Ubuntu 16.04 not accepting ulimit change.
+    Improve Debian support. Add support for debian packages via url.
+    Remove some obsolete code.
+    Remove obsolete code & fix packagecloud implementation
+    
+    - Fix Packagecloud script for RedHat so that alternate package versions can be called.
+    - Change the container keyword for security from container to scope to reduce confusion.
+    - Remove Ansible version specific tasks
+    - Configure riak.conf template task to use the backup feature, remove manual backup file creation.
+    Adopt Ansible 2 syntax / rules
+    Fixed ansible version check errors when ansible is not installed on the remote.
+    
+    Fixed "msg: No package matching 'riak' is available" error by removing cache
+    duration from apt install command.
+    replace scripted repo install with template file. Add openjdk 1.7 for search support (solr).
+    Fix initial package install for Ubuntu (aka Debian)
+    
+    Tested on Ubuntu 14.04 LTS
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    working on ubuntu
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    Upgrades Riak 2.0 from Beta7 to RC1
+    
+    - Removes init script monkey patch required to start Beta7 and fixed in
+      Beta8+
+    - Fixes the proxy declaration in the Vagrantfile for HTTPS endpoints
+    - Replaces custom packages will the packagecloud.io repos for Riak 2.0
+    - Bumps the module version to 2.0.0
+    Implements Jared's patch to correct Ubuntu/Debian startup script failure
+    - Adds support for Debian 7.4 to the playbooks, as well as, the
+    Vagrantfile
+    - Patches the /etc/init.d/riak and env.sh scripts with changes from
+    https://github.com/basho/node_package/pull/145 in an attempt to resolve
+    the Ubuntu startup defect (https://github.com/basho/riak/issues/561).
+    Startup still fails.
+    Initial Commit
+    Temporarily allowing errors
+    
+    Since idempotency broke with ansible 2, temporarily allow errors.
+    Adopt Ansible 2 syntax / rules
+    Only create bucket types when the variable is defined.
+    make bucket-type creation a bit more idempotent
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    Change to ensure Security is not enabled by default
+    Remove obsolete code & fix packagecloud implementation
+    
+    - Fix Packagecloud script for RedHat so that alternate package versions can be called.
+    - Change the container keyword for security from container to scope to reduce confusion.
+    - Remove Ansible version specific tasks
+    - Configure riak.conf template task to use the backup feature, remove manual backup file creation.
+    Adding the ability to create groups
+    
+    closes #50
+    Adopt Ansible 2 syntax / rules
+    Don't run security tasks when the variables are not defined
+    simplify grants
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    Add var to bypass init system reboot / enabling
+    Add option for advanced.config
+    Update role to reboot Riak immediately after updating config.
+    Move RHEL specific ulimit change to RHEL tasks. Update xenial to use systemd.
+    Add https IP:Port to variables and riak.conf template but leave it commented out if security is not enabled.
+    Remove obsolete code & fix packagecloud implementation
+    
+    - Fix Packagecloud script for RedHat so that alternate package versions can be called.
+    - Change the container keyword for security from container to scope to reduce confusion.
+    - Remove Ansible version specific tasks
+    - Configure riak.conf template task to use the backup feature, remove manual backup file creation.
+    handle for when riak_shell_nodes var is not defined
+    Add config for riak_shell
+    Fix undefined error on play
+    Use riak_bind_ip instead of inventory_hostname to detect when the riak node is
+    online.
+    dont even remember all that i did last time, but it works for me... lol
+    Template riak.conf. Only restart service if config changed
+    Do not replace rc.local when tuning disks
+    
+    Fixes issue #20
+    
+    Note -- relies upon rc.local always having an "exit 0" line at the end of it,
+    which is true for Ubuntu systems I tested, but I'm not sure about others?
+    Ensure Riak has started before attempting operations that will fail without it running
+    Fix bug that repeatedly inserted Ansible Managed at the top of riak.conf
+    Fix initial package install for Ubuntu (aka Debian)
+    
+    Tested on Ubuntu 14.04 LTS
+    Add support to generate bucket-types, users, security sources and grants. Improve accuracy of config updating with lineinfile. Put bucket-type and security operations into their own files. Updated the default vars, removing obsolete vars and improving simplicity of install
+    fix bug with ip / port config update. Added nodename to config update. added quotes to wait_for task for code highlighting / best practices when including a var.
+    working on ubuntu
+    move yum task into redhat task include. Add redhat tags to include files tasks.
+    Simplify custom package, it isnt tested yet. Added openjava 1.7 for solr. Removed the riak.conf template. Added the packagecloud repo here instead of common. Removed dependency of riak-common. Deleted ubuntu vars, hope that doesnt break anything. Need to test on debian and ubuntu.
+    needs to be tested, but I think this will simplify our maintenance needs for config options
+    [fix] use custom http endpoints for riak commands
+    Remove unused tasks from handlers
+    Execute sysctl dependent on /proc being writeable
+    Upgrades Riak 2.0 from Beta7 to RC1
+    
+    - Removes init script monkey patch required to start Beta7 and fixed in
+      Beta8+
+    - Fixes the proxy declaration in the Vagrantfile for HTTPS endpoints
+    - Replaces custom packages will the packagecloud.io repos for Riak 2.0
+    - Bumps the module version to 2.0.0
+    - Adds support for Debian 7.4 to the playbooks, as well as, the
+    Vagrantfile
+    - Patches the /etc/init.d/riak and env.sh scripts with changes from
+    https://github.com/basho/node_package/pull/145 in an attempt to resolve
+    the Ubuntu startup defect (https://github.com/basho/riak/issues/561).
+    Startup still fails.
+    Rename template name to reflect ultimate file path.
+    - Upgrades the playbooks to support Riak 2.0 with the following changes:
+      - Replaces the app.config and vm.args templates with a riak.conf
+        template to convert to Cuttlefisj
+      - Fixes the file limites in security_limits to be 65536 rather than
+        65336
+      - Uses a custom package for the Riak 2.0 beta.  When Riak 2.0 is
+        released, the playbooks will be modified to use apt/yum
+      - Adds a variable to enable/disable strong consistency
+    enable http download for riak_custom_package
+    sysctl stuff is now using a template.
+    Initial Commit
+    Initial Commit
+    add higher ulimits
+    Initial Commit
+    add higher ulimits
+    - Upgrades the playbooks to support Riak 2.0 with the following changes:
+      - Replaces the app.config and vm.args templates with a riak.conf
+        template to convert to Cuttlefisj
+      - Fixes the file limites in security_limits to be 65536 rather than
+        65336
+      - Uses a custom package for the Riak 2.0 beta.  When Riak 2.0 is
+        released, the playbooks will be modified to use apt/yum
+      - Adds a variable to enable/disable strong consistency
+    Initial Commit

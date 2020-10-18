@@ -1,0 +1,174 @@
+﻿    Update README.md
+    Increased the ball speed
+    Updated Format Again Again
+    Updated Format Again
+    Updated Format
+    Updated to include Reach Extensions List
+    RGB Matrix Filename Corrected
+    Updated README to point to reach file
+    Update README.md
+    hi
+    Create README.md
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    Add BreakerBreaker starting files
+    Libraries Updated
+    Display libraries fixed
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    Libraries Updated
+    removed onehitpaddle
+    got rid of level in setup
+    fixed hitblock again
+    uh
+    updated initboard and hitblock for lvl 6
+    
+    guys, this is so nxt lvl ~
+    initboard level 6
+    updated loop w/ button, pause, lostball & hitblock
+    loop with button, pause, printmsg, lost ball
+    bottom blocks top hit finished
+    Bugs Fixed
+    Levels until 4 should work
+    Level Progression to Level 2 Achieved
+    hitBlock Decrements / hitWall Fixed
+    Paddle Looping Error Fixed
+    All Paddle Edits Made
+    Upper Paddle/Ball Interactions Adjusted
+    hitWall fixed!
+    hitWall fixed
+    updated loop, got paddle to move
+    update loop, moving paddle (not finished)
+    fixed setup
+    updated loop, changed something in initstrength
+    updated setup, loop, clearboard, and initboard
+    hitblock function now two block segments
+    Display libraries fixed
+    paddlePosition draft completed
+    paddlePosition Implementation started
+    hitBlock array errors fixed
+    hey guys, keeping us up to date 12/1 let's go~
+    
+    ~~~~~
+    All functions implemented
+    hitBlock implementation finished
+    All non-display fxns implemented except for hitBlock
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    Add BreakerBreaker starting files
+    Libraries Updated
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Add BreakerBreaker starting files
+    Libraries Updated via Adafruit Specifications
+    initArray and Ball Movement Implementations
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    Libraries Updated
+    final code
+    gameover and lostball music, colors for all
+    Colors Started
+    Final Version w/o Color Changes
+    Potentiometer Values Fixed
+    :DDDDDD
+    Many changes made...
+    
+    Strength array reduced
+    PrintMessage changes (made it smoother)
+    Fixed potentiometer to read across full matrix
+    16x32 Display Error Fixed
+    Pins updated for shield wiring
+    put in the code for the sound
+    Fixed Differences for Matrix Display (landscape)
+    Reach display fit to 16x32 matrix (landscape)
+    Ball Speed Implementation Complete!
+    Ball Speed implemented & Bugs fixed
+    Bugs fixed from previous
+    Code Color/Pins adapted to 16x32 matrix
+    Change-of-Pins Note Added
+    Colors updated for RGB Matrix
+    Libraries Updated

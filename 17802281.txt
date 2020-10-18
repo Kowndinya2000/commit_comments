@@ -1,0 +1,384 @@
+﻿    chore: update readme
+    feat: support laravel 8 (#316)
+    fix: readme link
+    fix: update readme
+    chore: remove sponsors section
+    fix: add method to get previous response (#311)
+    chore: update readme
+    Added note about maximum 200 getFriends() at a time (#301)
+    
+    * Added note about maximum 200 getFriends() at a time
+    
+    * Adding count details to getFriends() docblock
+    feat: laravel 7 support (#292)
+    
+    * feat: laravel 7 support
+    Account activity (#286)
+    
+    * Webhook functions
+    
+    * Subscriptions functions
+    
+    * Made app-only requests working!
+    
+    * Return http response code for the requests which returns http 204
+    
+    * Added documentation :)
+    
+    * Requested changes
+    
+    * Requested changes. StyleCI.
+    chore: fix readme badge
+    chore: update readme
+    fix: support for new dm api endpoints (#274)
+    
+    * fix: support for new dm api endpoints
+    
+    * docs: update readme dm docs
+    docs: update readme (#268)
+    Add method error() to retrieve error sent by Twitter
+    Move code to get access token inside check
+    
+    otherwise you will get an exception if the user answers the cancels the oauth flow.
+    Fix route for unsuccessful login
+    
+    If login is not successful you should be redirected to the error page, not the login route that redirects you somewhere else again.
+    Add documentation on all available functionality
+    
+    ... by copy/pasting the (excellent) inline code documentation in a proper list.
+    give examples their own routes
+    
+    ... so new users can just copy paste them to their web.php and try it without changing anything.
+    Fix reference to include_email param
+    add Get Credentials with Email to Readme.md
+    Change publish command so it only publishes the package files
+    
+    By using the --provider option on the vendor:publish command we can indicate the Service Provider for which we want configuration files to be published, avoiding publish files from other packages that the user might or might not want.
+    Fixed Typo
+    
+    Fixed a typo in the documentation that I have added.
+    .env Support
+    
+    You can now get up and going much quicker if you use Laravel 5! Just add
+    the four items to your .env file so you don't have to worry about prying
+    eyes seeing your keys!
+    Update Travis link
+    Update README (installation/configuration)
+    Forgot mentioning renamed method set_new_config()
+    Major update 2.0.0
+    Update README.md
+    
+    Point out to the 2.0 branch for L5 users
+    corrected Sign In with Twitter  undefined
+    Fix an issue on the example.
+    The call to request the token doesn't work when access_token and secret
+    have values defined on the config file. Now it makes sure to overwrite those
+    values in case they exist.
+    Update README.md file with 'Sign in with Twitter' example.
+    Update README.md
+    Update README.md
+    Update README
+    Initial commit
+    chore: add funding file
+    chore: update issue templates
+    chore: update issue templates
+    feat: support laravel 8 (#316)
+    chore: github actions ci (#271)
+    chore: style fixes
+    Update config.php
+    Update config.php
+    .env Support
+    
+    You can now get up and going much quicker if you use Laravel 5! Just add
+    the four items to your .env file so you don't have to worry about prying
+    eyes seeing your keys!
+    Major update 2.0.0
+    Add Twitter login URLs to config file.
+    Keep the access tokens in the config file and check if we have other tokens in the session
+     Retrieving the access tokens from the session in order to support user authentication
+    Now extends themattharris/tmhOAuth due to connexion problems while uploading images
+    Initial commit
+    Now extends themattharris/tmhOAuth due to connexion problems while uploading images
+    fix: tweet linkify user at start of string (#310)
+    fix: add method to get previous response (#311)
+    fix: tweet linkify user at start of string (#310)
+    In linkify() if $tweet['text'] is not found, use $tweet['full_text'] (#309)
+    
+    Co-authored-by: Tyler Clendenin <tylerc@gslsolutions.com>
+    fix: fix creating new direct messages (#284)
+    
+    * fix: creating new direct messages
+    
+    - switch `tmhOAuth` to fork (which has upstream fix merged)
+    - fix error wording on post dm endpoint
+    
+    Co-authored-by: ReliQ <reliq@reliqarts.com>
+    feat: laravel 7 support (#292)
+    
+    * feat: laravel 7 support
+    Account activity (#286)
+    
+    * Webhook functions
+    
+    * Subscriptions functions
+    
+    * Made app-only requests working!
+    
+    * Return http response code for the requests which returns http 204
+    
+    * Added documentation :)
+    
+    * Requested changes
+    
+    * Requested changes. StyleCI.
+    fix: support for new dm api endpoints (#274)
+    
+    * fix: support for new dm api endpoints
+    
+    * docs: update readme dm docs
+    ZWNJ and Underscore are valid hashtag characters (#275)
+    fix: fix regex escaping issue in php7.3 (#270)
+    
+    See https://github.com/thujohn/twitter/issues/250
+    chore: style fixes
+    Resolve conflicts
+    Add method error() to retrieve error sent by Twitter
+    Change important API updates
+    
+    Use the Twitter publish resource for oEmbed requests, because it is not rate limited and add important documentation on some parameters for Tweet-retrieval (Tweets are truncated by default now).
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    https://github.com/thujohn/twitter/pull/136/commits/24339fbedc6d98b172959c22440eb592398ffb43
+    https://github.com/thujohn/twitter/pull/132
+    https://github.com/thujohn/twitter/pull/117
+    https://github.com/thujohn/twitter/pull/116
+    https://github.com/thujohn/twitter/pull/106
+    https://github.com/thujohn/twitter/pull/122
+    https://github.com/thujohn/twitter/pull/126
+    Update linkify() mailto detection
+    fixed array key for error number
+    Add linkReply method to get reply url.
+    Fix error log
+    Major update 2.0.0
+    Fix logic check for required parameters in some of the list API methods
+    getListsStatuses bug: list_id or slug
+    
+    getListsStatuses was throwing exception when list_id parameter was missing, even if slug paramter was specified
+    update param checks for getListMembers
+    update param checks for getList
+    update param checks for getListMembers
+    Fix valid parameter checks
+    
+    lists/show and lists/subscribers can accept a list_id OR and slug. Both parameters should not exist for the method to throw an exception.
+    
+    Probably needs fixing for other methods as well.
+    Update Twitter.php
+    
+    Two new methods to compose the 'retweet' and the 'add to favorites' links.
+    Fixed regex to allow all characters
+    
+    Now works with Swedish chars and with cyrillic
+    Properly corrects regex for hastags
+    
+    Updated hash linkify function to properly linkify cyrillic and Swedish characters.
+    
+    Fixes issue #23
+    Remove references to ->http_code from the code.
+    Replace call to the parent's function to reconfigure Twitter class with Twitter's set_new_config.
+    This allows the getAccessToken function to replace the request token
+    with the user's token, which should be used from now on on all the calls.
+    Add new functions to Twitter class allowing to implement
+    'Sign in with Twitter' option. Also allow the use of
+    multiple tokens with the library.
+    Update namespaces
+    Update long_url pattern
+    Update access_token php<5.4
+    Update linkify method
+    Update Twitter.php
+    Update Twitter.php
+    
+    Corrected RegEx flag to make hashtag case insensitive.
+    Support for cyrillic hashtags
+    Keep the access tokens in the config file and check if we have other tokens in the session
+     Retrieving the access tokens from the session in order to support user authentication
+    Fixed issue making userLink if name != screen name
+    Add ability to use strings/ids in linkUser()
+    Added functions to link tweet and user
+    
+    Added functions to easily generate links to specific users and tweets. Most people probably have to do this manually anyway, why not do it for them!
+    Move tmhOauth to a Composer dependency
+    Update postDm()
+    Update Twitter.php
+    Fix bad verifications
+    
+    Thanks to @diego1araujo
+    Add time ago function : ago($timestamp)
+    Improve configuration
+    
+    Suggested by @yodaddyp
+    Returns a json object by default
+    Update tmhOAuth 0.8.3 + output
+    Override config using an array
+    
+    Allow the config to be overridden by passing a configuration array as a parameter
+    Output format selection
+    Update getUsers() and getUsersLookup()
+    Update getUsers() and getUsersLookup()
+    Added 'users/lookup' helper method and more tests.
+    
+    First, the twitter spec requires that 'users/show' have a parameter
+    named `user_id`, not just `id`.
+    
+    Second, added a new sugar method `#getUsersLookup` which maps to
+    `users/lookup`, as well as tests.
+    
+    Third, added a new testcase for both `#getUsers()` and
+    `#getUsersLookup()` that ensures that an exception is thrown when
+    required parameters are not present.
+    Fixed Twitter#getUsers() and added a test
+    
+    `Twitter#users()` previously threw an error if you passed either a
+    `screen_name` or an `id`. According to the Twitter API spec, you can
+    pass either a `screen_name` or an `id`.
+    
+    I added a test that ensures that both strategies get appropriately
+    passed to the #query method.
+    Now extends themattharris/tmhOAuth due to connexion problems while uploading images
+    Fixed POSTFIELDS
+    Added linkify method for parsing links in a tweet
+    Initial commit
+    chore: style fixes
+    feat: support laravel 6
+    
+    - Drop laravel 4 support
+    - Bump min php to 7.0
+    - Test on new PHP versions
+    - Auto load service provider
+    Fix function()
+    Application::share() removed in Laravel 5.4 - Breaks Package
+    https://github.com/thujohn/twitter/pull/136/commits/297e2cba4b4bc1f20f8e0ad3559b5d6711f50956
+    https://github.com/thujohn/twitter/pull/111
+    https://github.com/thujohn/twitter/pull/106
+    https://github.com/thujohn/twitter/pull/122
+    https://github.com/thujohn/twitter/pull/126
+    Major update 2.0.0
+    Update namespaces
+    Initial commit
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    Added note about maximum 200 getFriends() at a time (#301)
+    
+    * Added note about maximum 200 getFriends() at a time
+    
+    * Adding count details to getFriends() docblock
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Rename `getListsStatuses` to `getListStatuses`
+    
+    ... as this method only returns the Statuses of one specified List, not many Lists. Matches the naming of the other methods.
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Fixing validation error.
+    Update MediaTrait.php
+    Fixing twitter media upload API parameters validation.
+    Major update 2.0.0
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    fix: fix creating new direct messages (#284)
+    
+    * fix: creating new direct messages
+    
+    - switch `tmhOAuth` to fork (which has upstream fix merged)
+    - fix error wording on post dm endpoint
+    
+    Co-authored-by: ReliQ <reliq@reliqarts.com>
+    fix: support for new dm api endpoints (#274)
+    
+    * fix: support for new dm api endpoints
+    
+    * docs: update readme dm docs
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Change important API updates
+    
+    Use the Twitter publish resource for oEmbed requests, because it is not rate limited and add important documentation on some parameters for Tweet-retrieval (Tweets are truncated by default now).
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    fix: style + improve docblock
+    Switch getUsersLookup() to use POST method (#298)
+    
+    Switch getUsersLookup() to post method for larger requests of 10 to 100 accounts, Twitter recommends using POST instead of GET for large requests as GET returns if you query 10+ users.
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    Account activity (#286)
+    
+    * Webhook functions
+    
+    * Subscriptions functions
+    
+    * Made app-only requests working!
+    
+    * Return http response code for the requests which returns http 204
+    
+    * Added documentation :)
+    
+    * Requested changes
+    
+    * Requested changes. StyleCI.
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    Addresses issue 190
+    Changed exceptions to be more specific ones provided by PHP's SPL.
+    Major update 2.0.0
+    chore: style fixes
+    https://github.com/thujohn/twitter/pull/106
+    https://github.com/thujohn/twitter/pull/122
+    https://github.com/thujohn/twitter/pull/126
+    Major update 2.0.0
+    Update namespaces
+    Initial commit
+    Initial commit
+    test: update tests for phpunit 8
+    refactor list tests to use dataProviders
+    add test methods for lists
+    add method for testing reducing repetition in twitter test
+    Upadate tests
+    Added 'users/lookup' helper method and more tests.
+    
+    First, the twitter spec requires that 'users/show' have a parameter
+    named `user_id`, not just `id`.
+    
+    Second, added a new sugar method `#getUsersLookup` which maps to
+    `users/lookup`, as well as tests.
+    
+    Third, added a new testcase for both `#getUsers()` and
+    `#getUsersLookup()` that ensures that an exception is thrown when
+    required parameters are not present.
+    Fixed Twitter#getUsers() and added a test
+    
+    `Twitter#users()` previously threw an error if you passed either a
+    `screen_name` or an `id`. According to the Twitter API spec, you can
+    pass either a `screen_name` or an `id`.
+    
+    I added a test that ensures that both strategies get appropriately
+    passed to the #query method.
+    fix: tweet linkify user at start of string (#310)

@@ -1,0 +1,4 @@
+﻿    rename 'can' into 'canbus' to match the package name
+    add all user-visible files under git
+    rename 'can' into 'canbus' to match the package name
+    add all user-visible files under git

@@ -1,0 +1,393 @@
+﻿    Cutting 2.4.11
+    Cutting 2.2.9
+    Cutting v2.2.8
+    v2.2.7
+    v2.2.6
+    Update default version of Riak to 1.4.7.
+    Revert "Merge pull request #37 from basho/sysctl"
+    
+    This reverts commit c2c878f8e532150e2e9f2c235a83f22cec472820, reversing
+    changes made to 3dee64f768f929f45539b8e2a1def53d9ca113db.
+    Add kernel and network tuning via sysctl.
+    Update CHANGELOG.
+    v2.2.4
+    Fix invalid cs_version.
+    Add details to the correct section in the CHANGELOG.
+    Added Debian Wheezy to Test Kitchen suite.
+    Bump default Riak CS version to 1.4.1 and Riak CS Control to 1.0.2.
+    Update CHANGELOG.
+    Update attribute defaults for Riak CS 1.4.0.
+    Bump default Riak version to 1.4.2.
+    CHANGELOG entry belongs under v2.2.2.
+    Allow users to pass a checksum that used in the remote_file resource to
+    prevent unnecessary package downloads.
+    Updaing CHANGELOG.
+    v2.2.1
+    v2.2.0
+    v2.1.0
+    Cutting 2.2.9
+    Updating dependencies for riak cookboook and yum to work around CentOS5 repo issue.
+    Updating copyright and readme
+    Fixed typo in README.
+    Added support for Riak CS Enterprise.
+    Adjusting cookbook name, dates, and authors.
+    [FC011] - add a basic README
+    Cutting 2.4.11
+    Cutting 2.2.10
+    Cutting 2.2.9
+    Updating for 1.5.2
+    Cutting v2.2.8
+    Updating to latest riak cookbook release
+    Updating dependencies for riak cookboook and yum to work around CentOS5 repo issue.
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    v2.2.7
+    Add support for Ubuntu 13.04 (Raring) to Enterprise recipe.
+    Updates to support raring.
+    v2.2.6
+    Add support for yum > 3.0.
+    Make all cookbook dependency versions explicit.
+    Pin yum and apt dependencies.
+    Add apt, yum and riak to dependencies.
+    v2.2.5
+    Revert "Merge pull request #37 from basho/sysctl"
+    
+    This reverts commit c2c878f8e532150e2e9f2c235a83f22cec472820, reversing
+    changes made to 3dee64f768f929f45539b8e2a1def53d9ca113db.
+    Add kernel and network tuning via sysctl.
+    v2.2.4
+    v2.2.3
+    v2.2.2
+    v2.2.1
+    v2.2.0
+    Added support for Riak CS Enterprise.
+    v2.1.0
+    Added support for setting file descriptor limits.
+    Bumped package versions of Riak CS and Stanchion.
+    Add support for Riak CS Control.
+    Adjusting cookbook name, dates, and authors.
+    [FC045] - add name in metadata
+    [FC045] - add name in metadata
+    bump version to 1.2.2
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Updating Copyright date
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Adding necessary casing for rhel family platforms
+    Updating for 1.0.2
+    first draft moss cookbook
+    Updating for Riak CS 1.5.4
+    Updating for 1.5.2
+    Fixing ref tag in Berksfile and adding digitalocean platforms to .kitchen.cloud.yml
+    Updating to latest riak cookbook release
+    Updating dependencies for riak cookboook and yum to work around CentOS5 repo issue.
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    v2.2.7
+    Update cookbook dependencies for integration tests.
+    Make all cookbook dependency versions explicit.
+    Bump default Riak CS version to 1.4.5 and Riak version to 1.4.8.
+    Update default version of Riak to 1.4.7.
+    Add version constraint on yum cookbook so that it stays under v3.0.
+    v2.2.4
+    v2.2.3
+    Bump default Riak version to 1.4.2.
+    Removed allow_mult override from Test Kitchen.
+    Bump Riak CS version to 1.4.0.
+    Added support for Riak CS Enterprise.
+    Target version 2.2.4 and above of the yum cookbook because earlier
+    versions contain a broken broken test stub that breaks test-kitchen.
+    Added basic minitest tests for installing Riak CS, Riak CS Control, and Stanchion.
+    Updated Vagrant boxes to Chef 11.4.4 and enabled minitest-handler.
+    Add support for Opscode Test Kitchen 1.0-alpha
+    Updating copyright and readme
+    Bump default Riak CS version to 1.4.1 and Riak CS Control to 1.0.2.
+    Bump Riak CS version to 1.4.0.
+    Add support for making use of operating system package managers.
+    Add support for Riak CS Control.
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    Bump Riak CS version to 1.4.3.
+    Bump default Riak CS version to 1.4.1 and Riak CS Control to 1.0.2.
+    Update attribute defaults for Riak CS 1.4.0.
+    Bump Riak CS version to 1.4.0.
+    Add support for making use of operating system package managers.
+    Added support for setting file descriptor limits.
+    Bumped package versions of Riak CS and Stanchion.
+    Adjusting cookbook name, dates, and authors.
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    bump version to 1.2.2
+    Fixing stancjion packages to use stanchion attributes. Also applying foodcritic suggestions.
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Apparently you can't interpolate attributes inside of attributes
+    Fixing default secret_hash attribute
+    Adding stanchion as a recipe
+    Updating dependencies for riak cookboook and yum to work around CentOS5 repo issue.
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    Revert "Merge pull request #37 from basho/sysctl"
+    
+    This reverts commit c2c878f8e532150e2e9f2c235a83f22cec472820, reversing
+    changes made to 3dee64f768f929f45539b8e2a1def53d9ca113db.
+    Add kernel and network tuning via sysctl.
+    Fix invalid cs_version.
+    Update attribute defaults for Riak CS 1.4.0.
+    Added support for setting file descriptor limits.
+    Adjusting cookbook name, dates, and authors.
+    Ensuring webmachine log handler path is an Erlang string.
+    `server_name` attribute for webmachine needs to be Erlang string.
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    - Configures the maxfile ulimit for the riakcs user.  By default, the
+      value is set to 4096
+    - Adds vim swap files to the git ignores
+    Fixing stancjion packages to use stanchion attributes. Also applying foodcritic suggestions.
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    More copy/paste fixes
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Updating for 1.0.2
+    first draft moss cookbook
+    Updating for Riak CS 1.5.4
+    Fixing package version attributes -> 1.5.2 h/t @inean
+    Updates for 1.5.1
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    Bump default Riak CS version to 1.4.5 and Riak version to 1.4.8.
+    Bump default Riak CS version to 1.4.4.
+    Bump Riak CS version to 1.4.3.
+    Bump default Riak CS version to 1.4.1 and Riak CS Control to 1.0.2.
+    Bump Riak CS version to 1.4.0.
+    Added support for Riak CS Enterprise.
+    Add support for making use of operating system package managers.
+    Bumped package versions of Riak CS and Stanchion.
+    Adjusting cookbook name, dates, and authors.
+    Updates for 1.3
+    bump version to 1.2.2
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Updating Copyright date
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Updating for 1.0.2
+    moved to moss 0.1
+    first draft moss cookbook
+    Changing cookbook name for clarity
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Updating copyright and readme
+    Add support for Amazon Linux
+    
+    This commit is equivalent to https://github.com/basho/riak-chef-cookbook/commit/7eb7fc3c7cc66074855d96e157e134a205bab51f
+    Updates to support raring.
+    Add support for yum > 3.0.
+    Remove unnecessary calls to include_recipe.
+    Add package version support to Stanchion and Riak CS Control.
+    Add support for making use of operating system package managers.
+    Added support for setting file descriptor limits.
+    Remove user and group resources because they're handled by the packages.
+    Add support for Riak CS Control.
+    Adjusting cookbook name, dates, and authors.
+    [FC043] - use notifies, and updated notification
+    [FC024] - add RHEL platform equivalents
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    - Configures the maxfile ulimit for the riakcs user.  By default, the
+      value is set to 4096
+    - Adds vim swap files to the git ignores
+    Removing source checksum as it wasn't doing anything
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Adding stanchion as a recipe
+    More copy/paste fixes
+    Removing copypasta options
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Adding necessary casing for rhel family platforms
+    Updating for 1.0.2
+    fixed config for auth
+    first draft moss cookbook
+    changed packagecloud repo of stanchion from basho/riak-cs to basho/stanchion
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    Add support for Amazon Linux
+    
+    This commit is equivalent to https://github.com/basho/riak-chef-cookbook/commit/7eb7fc3c7cc66074855d96e157e134a205bab51f
+    Updates to support raring.
+    Add support for yum > 3.0.
+    Remove unnecessary calls to include_recipe.
+    Add package version support to Stanchion and Riak CS Control.
+    Add support for making use of operating system package managers.
+    Added support for setting file descriptor limits.
+    Remove user and group resources because they're handled by the packages.
+    Adjusting cookbook name, dates, and authors.
+    [FC043] - use notifies, and updated notification
+    [FC024] - add RHEL platform equivalents
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    Fixing stancjion packages to use stanchion attributes. Also applying foodcritic suggestions.
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    All stanchion package attributes should reference respective cs attributes
+    Apparently you can't interpolate attributes inside of attributes
+    Adding stanchion as a recipe
+    Updating copyright and readme
+    Ensure /etc/default/riak is regenerated on Debian/Ubuntu platform.
+    Revert "Merge pull request #37 from basho/sysctl"
+    
+    This reverts commit c2c878f8e532150e2e9f2c235a83f22cec472820, reversing
+    changes made to 3dee64f768f929f45539b8e2a1def53d9ca113db.
+    Add kernel and network tuning via sysctl.
+    Added support for Riak CS Enterprise.
+    Add support for making use of operating system package managers.
+    Added support for setting file descriptor limits.
+    Remove user and group resources because they're handled by the packages.
+    Adjusting cookbook name, dates, and authors.
+    [FC043] - use notifies, and updated notification
+    [FC024] - add RHEL platform equivalents
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    - Configures the maxfile ulimit for the riakcs user.  By default, the
+      value is set to 4096
+    - Adds vim swap files to the git ignores
+    Removing source checksum as it wasn't doing anything
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Adding stanchion as a recipe
+    More copy/paste fixes
+    Removing copypasta options
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Adding necessary casing for rhel family platforms
+    Updating for 1.0.2
+    fixed config for auth
+    first draft moss cookbook
+    Updating copyright and readme
+    Updating for Riak CS 1.5
+    
+    - Update Riak cookbook for 2.4.14 (riak 1.4.10)
+    - Replace yum/apt repos with packagecloud repos
+    - Remove Ubuntu 13.04 support (EOL)
+    - Add Ubuntu 14.04 support
+    - Update AWS AMI to 2014.03.2
+    Add support for Amazon Linux
+    
+    This commit is equivalent to https://github.com/basho/riak-chef-cookbook/commit/7eb7fc3c7cc66074855d96e157e134a205bab51f
+    Updates to support raring.
+    Add support for yum > 3.0.
+    Remove unnecessary calls to include_recipe.
+    Fix package version support for CentOS.
+    incremental evrsion is already included in version_str
+    install selected package version
+    Added support for Riak CS Enterprise.
+    Add support for making use of operating system package managers.
+    Added support for setting file descriptor limits.
+    Remove user and group resources because they're handled by the packages.
+    Adjusting cookbook name, dates, and authors.
+    [FC043] - use notifies, and updated notification
+    [FC024] - add RHEL platform equivalents
+    Updates for 1.3
+    - Adds .gitignore to ignore vim swap files
+    - Adds the file_ulimit resource to set the max files ulimit properly on
+      CentOS/RHEL,as well as, Ubuntu
+    - Modifies the stanchion and riak_cs recipes to optionally set the max
+      file ulimit using the file_ulimit resource.  By default, the max file
+    ulimit will _not_ be set.  The ['stanchion']['ulimit']['config_limits']
+    and ['riak_cs']['ulimit']['config_limits'] attributes control this
+    behavior.
+    - Configures the maxfile ulimit for the riakcs user.  By default, the
+      value is set to 4096
+    - Adds vim swap files to the git ignores
+    Removing source checksum as it wasn't doing anything
+    Updating for 1.2.1 and making stanchion version independent
+    Changing cookbook name for clarity
+    Adding stanchion as a recipe
+    More copy/paste fixes
+    Removing copypasta options
+    Updates for 1.1.0 and adoption of erlang_template_helper.
+    Adding necessary casing for rhel family platforms
+    Updating for 1.0.2
+    fixed config for auth
+    first draft moss cookbook
+    Updating copyright and readme
+    Add support for Amazon Linux
+    
+    This commit is equivalent to https://github.com/basho/riak-chef-cookbook/commit/7eb7fc3c7cc66074855d96e157e134a205bab51f
+    Add support for Ubuntu 13.04 (Raring) to Enterprise recipe.
+    Added Debian Wheezy to Test Kitchen suite.
+    Allow users to pass a checksum that used in the remote_file resource to
+    prevent unnecessary package downloads.
+    Added support for Riak CS Enterprise.
+    Added basic minitest tests for installing Riak CS, Riak CS Control, and Stanchion.
+    Added basic minitest tests for installing Riak CS, Riak CS Control, and Stanchion.
+    Added support for Riak CS Enterprise.
+    Added basic minitest tests for installing Riak CS, Riak CS Control, and Stanchion.
+    Added basic minitest tests for installing Riak CS, Riak CS Control, and Stanchion.

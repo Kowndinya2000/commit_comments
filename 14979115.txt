@@ -1,0 +1,738 @@
+﻿    Initial commit
+    created face in statsViewport
+    Map working:)))
+    Added images and updated GameMap
+    Parsing the the OneShotItem
+    created face in statsViewport
+    terraforming!
+    Added images and updated GameMap
+    Added images to each of these classes, so you can see them on the map.
+    Added images to each of these classes, so you can see them on the map.
+    Added unimplemented method from interfaces
+    Added images and updated GameMap
+    added avatar_flying.png
+    Added images to each of these classes, so you can see them on the map.
+    pics
+    AvatarCreation GameState
+    pics
+    Avatar Bitches!
+    Map importing
+    mapcreation
+    Added back the Mushroom
+    Loader working!
+    pics
+    ObstacleItem added
+    OneShotItem Musroom!
+    Map importing
+    Parsing the the OneShotItem
+    Armory to help with item types while equipping
+    Stats updating
+    Armory
+    Item Database Reading in is Working!
+    Added chainsaw
+    added interactive items, still need to figure out how to add using csv
+    loading and saving
+    
+    sorta
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    changed images in avatar_images to reflect proper direction
+    gameoverviewport. also, direction images
+    Direction images now display correctly. Image doesn't change when flying
+    implemented correctly.
+    Loader almost done!
+    fixed taking input
+    load
+    loading and saving
+    
+    sorta
+    Saves in proper format.
+    started work on game over screen
+    added interactive items, still need to figure out how to add using csv
+    SaveGame is up
+    Flying is done
+    drop inventory item
+    OneShotItem Musroom!
+    Parsing the the OneShotItem
+    Added TODO for obstacle item to compile.
+    AvatarCreation GameState
+    Fixed Derived stats.
+    Armory to help with item types while equipping
+    Able to Create Entity with or without occupation.
+    Creation of obstacle item class and entity visit method
+    ItemInteraction VisitorMethod yay
+    forgot one more thing....sorry
+    can equip from inventory
+    Not sure if my new methods work
+    Not sure if my new methods work
+    ScrollingInventory
+    Made modifications for Occupation.
+    Some GUI changes and pause menu (sorta)
+    Stats updating
+    Armory
+    removed another println
+    Item Database Reading in is Working!
+    Picking up Items!
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    danny
+    working moving lol
+    Began the Movement madness
+    Views stuffz
+    The Inventory is IN DA HAUS
+    intelliJ stuff
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    Loader working!
+    Saves in proper format.
+    added interactive items, still need to figure out how to add using csv
+    load
+    SaveGame is up
+    Added unimplemented method from interfaces
+    OneShotItem Musroom!
+    Parsing the the OneShotItem
+    SaveGame is up
+    added decals to area effects
+    <3
+    Map Subsystem
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    SaveGame is up
+    Fixed Derived stats.
+    Armory to help with item types while equipping
+    ScrollingInventory
+    Armory
+    loading and saving
+    
+    sorta
+    Saves in proper format.
+    added interactive items, still need to figure out how to add using csv
+    fixt
+    terraforming!
+    added decals to area effects
+    ObstacleItem added
+    OneShotItem Musroom!
+    AreaEffect stuff
+    Armory
+    Item Database Reading in is Working!
+    Picking up Items!
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    fixed play state input
+    Added neighbor functionality to tiles
+    Avatar Bitches!
+    Updated longer method names in Tile
+    Map Subsystem
+    test
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    fixt
+    SaveGame is up
+    avatar creation fix
+    mapcreation
+    Made modifications for Occupation.
+    Began Sneak Class
+    Added Occupation and Updated StatBlob
+    Visitor Method for inventoryViewport
+    SaveGame is up
+    drop inventory item
+    Parsing the the OneShotItem
+    mapcreation
+    Added TODO for obstacle item to compile.
+    Creation of obstacle item class and entity visit method
+    SaveGame is up
+    Added unimplemented method from interfaces
+    drop inventory item
+    OneShotItem Musroom!
+    Parsing the the OneShotItem
+    AvatarCreation GameState
+    ItemInteraction VisitorMethod yay
+    Stats updating
+    Armory
+    Item Database Reading in is Working!
+    Start work on item implementation. Switching to separate branch
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    Visitor Method for inventoryViewport
+    Saves in proper format.
+    added interactive items, still need to figure out how to add using csv
+    SaveGame is up
+    drop inventory item
+    Parsing the the OneShotItem
+    mapcreation
+    Added TODO for obstacle item to compile.
+    Creation of obstacle item class and entity visit method
+    SaveGame is up
+    terraforming!
+    drop inventory item
+    AvatarCreation GameState
+    Inventory View Yay!
+    danny
+    The Inventory is IN DA HAUS
+    SaveGame is up
+    ItemInteraction VisitorMethod yay
+    Armory
+    Item Database Reading in is Working!
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    danny
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    Saves in proper format.
+    started work on game over screen
+    SaveGame is up
+    OOPs: forgot to print experience stat!
+    cleaned up statsCollection
+    got rid of livesLeft from StatsViewPort
+    stepping on instant death
+    added decals to area effects
+    fix stat viewport error
+    Added Derived Stats + Stylized StatsViewport
+    AvatarCreation GameState
+    Fixed Derived stats.
+    created face in statsViewport
+    Not sure if my new methods work
+    Not sure if my new methods work
+    Stats updating
+    loading and saving
+    
+    sorta
+    SaveGame is up
+    terraforming!
+    Flying is done
+    Map importing
+    Began the Movement madness
+    Map working:)))
+    Updated Terrain
+    Map Subsystem
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    Loader almost done!
+    load
+    loading and saving
+    
+    sorta
+    SaveGame is up
+    stepping on instantDeath transports you to starting position
+    added decals to area effects
+    Changed GameLoop to have AreaEffects affect avatar at every update
+    AreaEffect test
+    AreaEffect stuff
+    Start work on item implementation. Switching to separate branch
+    added a comment, please ignore
+    Added AreaAffect shell
+    Map Subsystem
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    SaveGame is up
+    Made modifications for Occupation.
+    SaveGame is up
+    Armory
+    Removed Dependencies as per Dave's Request
+    Picking up Items!
+    new tile and fix in position
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    Saves in proper format.
+    started work on game over screen
+    SaveGame is up
+    stepping on instant death
+    added decals to area effects
+    Blob Stuff
+    <3
+    Added Derived Stats + Stylized StatsViewport
+    AreaEffect stuff
+    added simple statsviewport stats!
+    Not sure if my new methods work
+    added simple statsviewport stats!
+    Not sure if my new methods work
+    Made modifications for Occupation.
+    Added Occupation and Updated StatBlob
+    Stats updating
+    SaveGame is up
+    Made modifications for Occupation.
+    load
+    loading and saving
+    
+    sorta
+    Saves in proper format.
+    SaveGame is up
+    AvatarCreation GameState
+    Armory to help with item types while equipping
+    ItemInteraction VisitorMethod yay
+    can equip from inventory
+    Stats updating
+    Deleted Cape, Potion, Sword, and WearableItem
+    Picking up Items!
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    danny
+    Added Derived Stats + Stylized StatsViewport
+    AreaEffect stuff
+    ScrollingInventory
+    Stats updating
+    SaveGame is up
+    Made modifications for Occupation.
+    Began Sneak Class
+    Direction images now display correctly. Image doesn't change when flying
+    implemented correctly.
+    Saves in proper format.
+    SaveGame is up
+    direction and facing
+    Armory
+    Item Database Reading in is Working!
+    Removed Dependencies as per Dave's Request
+    Picking up Items!
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    working moving lol
+    The Inventory is IN DA HAUS
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    Flying is done
+    ObstacleItem added
+    Stats updating
+    Mario is movin!
+    fixed play state input
+    new tile and fix in position
+    fix merge errors
+    Began the Movement madness
+    Render Properly
+    Change method name to getTileAt()
+    Added images and updated GameMap
+    Change Map to GameMap
+    Updated Directory structure to match Maven Standards online.
+    Added empty classes
+    Some GUI changes and pause menu (sorta)
+    fixed merge stuff
+    new view stuff
+    Added simple things to StatsViewport
+    All the Viewports
+    game loop starts at startGameState > AvatarCreation > Play Game
+    AvatarCreation GameState
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    added simple statsviewport stats!
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    pause menu
+    Armory
+    stats viewport is right proportion
+    fixt
+    new view stuff
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    Added title, removed comments.
+    removed repaint method in show image
+    pause text works
+    pause un pause working
+    Mario is movin!
+    new tile and fix in position
+    fix for gameloop and view
+    Render Properly
+    Render Properly
+    Change method name to getTileAt()
+    Avatar Bitches!
+    Map working:)))
+    Views stuffz
+    new states and created gameloop
+    All the Viewports
+    Updated Directory structure to match Maven Standards online.
+    Added repaint() to get image to show each time.  Not sure if this is the
+    right way to fix this kind of problem but oh well...
+    Thought that View was a more fitting name, since that what this JPanel
+    is really doing.. being the View.
+    Moved into com.oopsididitagain.gui package.
+    Added a Test Image, and displayed initial GUI Elements.
+    removed unused variables
+    added decals to area effects
+    <3
+    <3
+    Some GUI changes and pause menu (sorta)
+    pause menu
+    Armory
+    stats viewport is right proportion
+    new view stuff
+    refix for areaviewport
+    danny
+    working moving lol
+    fixed
+    Fixed Position problem
+    Render Properly
+    Render Properly
+    Avatar Bitches!
+    Views stuffz
+    All the Viewports
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    Moved into com.oopsididitagain.gui package.
+    gameoverviewport. also, direction images
+    loading and saving
+    
+    sorta
+    terraforming!
+    AvatarCreation GameState
+    Some GUI changes and pause menu (sorta)
+    pause menu
+    pause text works
+    started work on game over screen
+    stylized statsViewport a little
+    stepping on instant death
+    Added Derived Stats + Stylized StatsViewport
+    deleted unnecessary import statements
+    created face in statsViewport
+    statsviewport looks DAMN good
+    added simple statsviewport stats!
+    added simple statsviewport stats!
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    pause menu
+    fixed merge stuff
+    Armory
+    stats viewport is right proportion
+    new view stuff
+    Added simple things to StatsViewport
+    All the Viewports
+    terraforming!
+    Avatarcreation and gamestate stuff
+    AvatarCreation GameState
+    Visitor Method for inventoryViewport
+    fixed the inventory lol
+    
+    it was bothering me
+    drop inventory item
+    AvatarCreation GameState
+    changed inventory text
+    ScrollingInventory
+    Inventory View Yay!
+    Avatarcreation and gamestate stuff
+    game loop starts at startGameState > AvatarCreation > Play Game
+    AvatarCreation GameState
+    rungame
+    Some GUI changes and pause menu (sorta)
+    Armory
+    fixt
+    new view stuff
+    Stats class added
+    Removed Dependencies as per Dave's Request
+    Added title, removed comments.
+    Mario is movin!
+    began keyboard listener
+    fix for gameloop and view
+    fixed
+    Fixed Position problem
+    Began the Movement madness
+    Render Properly
+    Avatar Bitches!
+    Map working:)))
+    Views stuffz
+    All the Viewports
+    Updated Directory structure to match Maven Standards online.
+    Thought that View was a more fitting name, since that what this JPanel
+    is really doing.. being the View.
+    Moved into com.oopsididitagain.gui package.
+    Added a Test Image, and displayed initial GUI Elements.
+    Saving Works!
+    loading and saving
+    
+    sorta
+    added interactive items, still need to figure out how to add using csv
+    terraforming!
+    Flying is done
+    Changed GameLoop to have AreaEffects affect avatar at every update
+    AvatarCreation GameState
+    Inventory View Yay!
+    pause un pause working
+    working moving lol
+    fix for gameloop and view
+    Began the Movement madness
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    new states and created gameloop
+    Keyboard
+    GameStateLoop
+    Avatarcreation and gamestate stuff
+    game loop starts at startGameState > AvatarCreation > Play Game
+    AvatarCreation GameState
+    ScrollingInventory
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    pause un pause working
+    Mario is movin!
+    began keyboard listener
+    new tile and fix in position
+    working moving lol
+    fix for gameloop and view
+    Began the Movement madness
+    Avatar Bitches!
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    new states and created gameloop
+    Loader working!
+    Avatarcreation and gamestate stuff
+    AvatarCreation GameState
+    drop inventory item
+    use can equip
+    can equip from inventory
+    Inventory View Yay!
+    FileChooser for LoadGame up!
+    load, start game state, start menu and controler
+    AvatarCreation GameState
+    pause un pause working
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    new states and created gameloop
+    terraforming!
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    pause un pause working
+    Began the Movement madness
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    new states and created gameloop
+    Keyboard
+    GameStateLoop
+    pause un pause working
+    Keyboard
+    GameStateLoop
+    load, start game state, start menu and controler
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    new states and created gameloop
+    Keyboard
+    GameStateLoop
+    fixed the inventory lol
+    
+    it was bothering me
+    drop inventory item
+    ItemInteraction VisitorMethod yay
+    Forgot something
+    can equip from inventory
+    Not sure if my new methods work
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    Not sure if my new methods work
+    ScrollingInventory
+    Inventory View Yay!
+    Saving Works!
+    loading and saving
+    
+    sorta
+    terraforming!
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    Some GUI changes and pause menu (sorta)
+    Keyboard
+    GameStateLoop
+    drop inventory item
+    AvatarCreation GameState
+    ItemInteraction VisitorMethod yay
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    fix for gameloop and view
+    new states and created gameloop
+    GameStateLoop
+    Loader working!
+    pics
+    loading and saving
+    
+    sorta
+    stops avatar if dead
+    started work on game over screen
+    added interactive items, still need to figure out how to add using csv
+    added image placeholders and image direction logic (thanks tyler!)
+    terraforming!
+    stepping on instantDeath transports you to starting position
+    Flying is done
+    direction and facing
+    Blob Stuff
+    Map importing
+    blah blah small change
+    Parsing the the OneShotItem
+    Changed GameLoop to have AreaEffects affect avatar at every update
+    fix stat viewport error
+    added AreaEffect import
+    Avatarcreation and gamestate stuff
+    mapcreation
+    AreaEffect test
+    AreaEffect stuff
+    AvatarCreation GameState
+    Armory to help with item types while equipping
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    Some GUI changes and pause menu (sorta)
+    Armory
+    Removed a sysout
+    Item Database Reading in is Working!
+    Deleted Cape, Potion, Sword, and WearableItem
+    Removed Dependencies as per Dave's Request
+    Made seperate classes for the items.  This way you can import their
+    classes into your other classes.
+    Mario is movin!
+    fixed play state input
+    new tile and fix in position
+    working moving lol
+    fix for gameloop and view
+    Began the Movement madness
+    Keyboard
+    GameStateLoop
+    Loader almost done!
+    fixed taking input
+    Fixed a nullptr exception that MAY happen if pressed Cancel option
+    FileChooser for LoadGame up!
+    loading and saving
+    
+    sorta
+    Avatarcreation and gamestate stuff
+    game loop starts at startGameState > AvatarCreation > Play Game
+    load, start game state, start menu and controler
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    new states and created gameloop
+    Keyboard
+    GameStateLoop
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    got rid of instanceof checks using visitor pattern
+    new states and created gameloop
+    Keyboard
+    GameStateLoop
+    Loader working!
+    pics
+    load
+    Saving Works!
+    loading and saving
+    
+    sorta
+    Saves in proper format.
+    added interactive items, still need to figure out how to add using csv
+    SaveGame is up
+    terraforming!
+    Flying is done
+    added decals to area effects
+    Blob Stuff
+    avatar creation fix
+    Map importing
+    Avatarcreation and gamestate stuff
+    mapcreation
+    game loop starts at startGameState > AvatarCreation > Play Game
+    AvatarCreation GameState
+    terraforming!
+    Flying is done
+    ScrollingInventory
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    Keyboard
+    terraforming!
+    Flying is done
+    added 's' as use keycode
+    can equip from inventory
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    Input doesn't start on -5
+    Fix this 0 pause error.
+    Removed sysout statements
+    Mario is movin!
+    began keyboard listener
+    Began the Movement madness
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    new states and created gameloop
+    Keyboard
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    Keep Keyboard, GameLoader, and GameSaver in an io package.  Personally
+    it makes sense to me, because these classes interact with UserIO and
+    FileIO, and are independent of the controller.
+    terraforming!
+    Avatarcreation and gamestate stuff
+    AvatarCreation GameState
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    Inventory View Yay!
+    Some GUI changes and pause menu (sorta)
+    gameoverviewport. also, direction images
+    added interactive items, still need to figure out how to add using csv
+    terraforming!
+    Avatarcreation and gamestate stuff
+    Avatarcreation and gamestate stuff
+    game loop starts at startGameState > AvatarCreation > Play Game
+    load, start game state, start menu and controler
+    fixed the inventory lol
+    
+    it was bothering me
+    ScrollingInventory
+    Inventory View Yay!
+    SaveGame is up
+    Armory to help with item types while equipping
+    fix
+    Working Kind Of
+    Errors with CSVtool
+    Loader working!
+    Loader almost done!
+    jk last one
+    one more fix
+    fixed taking input
+    load
+    FileChooser for LoadGame up!
+    Saving Works!
+    fixt
+    loading and saving
+    
+    sorta
+    Saves in proper format.
+    SaveGame is up
+    ObstacleItem added
+    OneShotItem Musroom!
+    Map importing
+    Parsing the the OneShotItem
+    mapcreation
+    AvatarCreation GameState
+    Armory to help with item types while equipping
+    Stats updating
+    Armory
+    Item Database Reading in is Working!
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    Loader almost done!
+    SaveGame is up
+    Updated Directory structure to match Maven Standards online.
+    Added a Position class and Direction enum.  These need to be present in
+    order to serialize the data to a file.
+    SaveGame is up
+    added decals to area effects

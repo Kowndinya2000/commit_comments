@@ -1,0 +1,127 @@
+﻿    Add Contact adapter app
+    
+    BUG:19045823
+    Change-Id: I64f5b32649fc0022114d8352230150544969d5c5
+    Remove system/etc/sap.conf and system/vendor/bin/gsiff_daemon
+    
+    BUG:18790382
+    Change-Id: If53f1f994278e56294b65e4e15bd064fb2090b37
+    Use wildcards for atmel files. Also update FIT names
+    
+    BUG:18056831
+    Change-Id: Ie01e9679cd1477f01ded522b36aac0de9abad6b3
+    updated touch firmware binary info
+    
+    Bug: 18094592
+    Change-Id: I252a8df33b990e5d91a93171fa0a92899b4c356c
+    Update binary
+    
+    BUG:16463358
+    Change-Id: I27421dc9ab9c5bf78680960a60b6f6b8bedeceb2
+    Further refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I16fabe84d7c9bacbda8f8cbb1865641258ca35e7
+    Refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I0f476cbe94f7f4d033f5dbf063526abf96305bf6
+    Remove ValidityPersistentData and fwext
+    
+    BUG: 15915296
+    Change-Id: I12195c16b426754337641fd40b2a5c01f98281bf
+    shamu: remove fingerprint support
+    
+    Bug: 15915296
+    Change-Id: I22fa803547636427e6ac2e791dec7ed670419bf0
+    Add device drivers AOSP support for shamu
+    
+    BUG: 16463358
+    Remove vendor dependency on board-info.txt
+    
+    BUG: 16485854
+    Add Contact adapter app
+    
+    BUG:19045823
+    Change-Id: I64f5b32649fc0022114d8352230150544969d5c5
+    Remove system/etc/sap.conf and system/vendor/bin/gsiff_daemon
+    
+    BUG:18790382
+    Change-Id: If53f1f994278e56294b65e4e15bd064fb2090b37
+    Use wildcards for atmel files. Also update FIT names
+    
+    BUG:18056831
+    Change-Id: Ie01e9679cd1477f01ded522b36aac0de9abad6b3
+    updated touch firmware binary info
+    
+    Bug: 18094592
+    Change-Id: I252a8df33b990e5d91a93171fa0a92899b4c356c
+    Update binary
+    
+    BUG:16463358
+    Change-Id: I27421dc9ab9c5bf78680960a60b6f6b8bedeceb2
+    Further refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I16fabe84d7c9bacbda8f8cbb1865641258ca35e7
+    Move Atmel blobs under Moto
+    
+    BUG:17508191
+    Change-Id: I3e44428cdcf4388642966154fd1f1705099ca80d
+    Refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I0f476cbe94f7f4d033f5dbf063526abf96305bf6
+    Remove ValidityPersistentData and fwext
+    
+    BUG: 15915296
+    Change-Id: I12195c16b426754337641fd40b2a5c01f98281bf
+    shamu: remove fingerprint support
+    
+    Bug: 15915296
+    Change-Id: I22fa803547636427e6ac2e791dec7ed670419bf0
+    Add device drivers AOSP support for shamu
+    
+    BUG: 16463358
+    Added vendor owner info
+    
+    Change-Id: Ic0f14f706e9500e03fc130ea5c957d4e67c779a8
+    Add Contact adapter app
+    
+    BUG:19045823
+    Change-Id: I64f5b32649fc0022114d8352230150544969d5c5
+    Remove system/etc/sap.conf and system/vendor/bin/gsiff_daemon
+    
+    BUG:18790382
+    Change-Id: If53f1f994278e56294b65e4e15bd064fb2090b37
+    Use wildcards for atmel files. Also update FIT names
+    
+    BUG:18056831
+    Change-Id: Ie01e9679cd1477f01ded522b36aac0de9abad6b3
+    updated touch firmware binary info
+    
+    Bug: 18094592
+    Change-Id: I252a8df33b990e5d91a93171fa0a92899b4c356c
+    Update binary
+    
+    BUG:16463358
+    Change-Id: I27421dc9ab9c5bf78680960a60b6f6b8bedeceb2
+    Further refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I16fabe84d7c9bacbda8f8cbb1865641258ca35e7
+    Move Atmel blobs under Moto
+    
+    BUG:17508191
+    Change-Id: I3e44428cdcf4388642966154fd1f1705099ca80d
+    Refine device drivers for shamu
+    
+    BUG: 16463358
+    Change-Id: I0f476cbe94f7f4d033f5dbf063526abf96305bf6
+    Remove ValidityPersistentData and fwext
+    
+    BUG: 15915296
+    Change-Id: I12195c16b426754337641fd40b2a5c01f98281bf
+    Add device drivers AOSP support for shamu
+    
+    BUG: 16463358

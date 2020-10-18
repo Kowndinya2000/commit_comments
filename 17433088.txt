@@ -1,0 +1,391 @@
+﻿    Update README.md
+    
+    added docuemnts' list in the middle of the readme.
+    Update README.md
+    
+    Formatting
+    Create README.md
+    
+    Written readme with project info and information of previously host-url
+    NetBeans project is created for VMS Mobile Application.
+    Test mobile application is created.
+    NetBeans project is created for VMS Mobile Application.
+    Test mobile application is created.
+    NetBeans project is created for VMS Mobile Application.
+    Test mobile application is created.
+    NetBeans project is created for VMS Mobile Application.
+    Test mobile application is created.
+    Put comment by Gilana
+    Added web interface.
+    Added some functionality and pages.
+    Added web clients, draft versions. Added some utility classes.
+    Partially implemented Volunteer's Login by use-case.
+    NetBeans project is created for VMS Mobile Application.
+    Put comment by Gilana
+    Put comment by Gilana
+    NetBeans project is created for VMS Mobile Application.
+    Test mobile application is created.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Put comment by Gilana
+    Modified according to new protocol.
+    Corrections added.
+    Changed the login screen.
+    Added some functionality.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Put comment by Gilana
+    Modified according to new protocol.
+    Corrections added.
+    Changed the login screen.
+    Added some functionality.
+    Added web interface.
+    Added some functionality and pages.
+    Added web clients, draft versions. Added some utility classes.
+    Partially implemented Volunteer's Login by use-case.
+    NetBeans project is created for VMS Mobile Application.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Added web interface.
+    Added web clients, draft versions. Added some utility classes.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Added web interface.
+    Added web clients, draft versions. Added some utility classes.
+    Added web interface.
+    Added web clients, draft versions. Added some utility classes.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Modified according to new protocol.
+    Added web interface.
+    Added web clients, draft versions. Added some utility classes.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Added web clients, draft versions. Added some utility classes.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Modified according to new protocol.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Modified according to new protocol.
+    Corrections added.
+    Changed the login screen.
+    Added some functionality.
+    Added web interface.
+    Added some functionality and pages.
+    Added web clients, draft versions. Added some utility classes.
+    Code refactored. Removed printouts.
+    Corrected connection with the web service. Implemented answerRequest, getAler.
+    Modified according to new protocol.
+    Changed the login screen.
+    Added some functionality.
+    Added web interface.
+    Added some functionality and pages.
+    Added web clients, draft versions. Added some utility classes.
+    Partially implemented Volunteer's Login by use-case.
+    .NET solution is added
+    .NET solution is added
+    Manager reg.. work
+    .NET solution is added
+    uc editcrisis completed
+    uc volunteer registeration finished
+    .NET solution is added
+    uc editcrisis completed
+    uc volunteer registeration finished
+    Manager reg.. work
+    uc editcrisis completed
+    uc volunteer registeration finished
+    Added some functions for web service.
+    uc editcrisis completed
+    uc volunteer registeration finished
+    uc editcrisis completed
+    uc volunteer registeration finished
+    uc editcrisis completed
+    uc volunteer registeration finished
+    .NET solution is added
+    .NET solution is added
+    uc editcrisis completed
+    uc volunteer registeration finished
+    uc editcrisis completed
+    uc volunteer registeration finished
+    Table format
+    tables added
+    cover page changed
+    final version 1
+    Presentations/27.04.2010.pptx first draft.
+    Created
+    Created
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    added reportdate to incident
+    manager table changed
+    volunteer updated
+    Transfered to new structure
+    Transfered to new structure
+    manager table changed
+    Transfered to new structure
+    Transfered to new structure
+    .NET solution is added
+    Cleaning up the code
+    Cleaning up the code
+    Cleaning up the code
+    Cleaning up the code
+    Cleaning up the code
+    public changed to private
+    Cleaning up the code
+    Added Gender
+    Transfered to new structure
+    Cleaning up the code
+    Cleaning up the code
+    Transfered some functionalities from old project and added new funcs
+    Transfered some functionalities from old project and added new funcs
+    Transfered some functionalities from old project and added new funcs
+    Cleaning up the code
+    Fixed edit crisis and create crisis
+    added gender and UserTypes
+    Create and implement crisis half implemented.
+    Transfered some functionalities from old project and added new funcs
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Clearing the code
+    Transfered to new structure
+    .NET solution is added
+    AdminUsername added
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Transfered some functionalities from old project and added new funcs
+    Clearing the code
+    finished createcrisis and edit createcrisis
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Transfered to new structure
+    Clearing the code
+    Clearing the code
+    Transfered to new structure
+    Clearing the code
+    Cleaning up the code
+    Fixed edit crisis and create crisis
+    finished createcrisis and edit createcrisis
+    Transfered to new structure
+    .NET solution is added
+    .NET solution is added
+    some fixes in style
+    Fixed edit crisis and create crisis
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    bug for not showing the incorrect username and password fixed
+    Fixed with the changes in profile pages
+    Create and edit crisis ready to test
+    add authentication
+    fixed page titles
+    Transfered to new structure
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    Unit testing finished and ready to be tested for functionality
+    cleaning
+    cleaning
+    Added delete profile ability
+    Fixed checking and ready for test
+    edit profile completed ready to comment and checking inputs
+    Functionality completed, enhancements remaining
+    Fixed edit crisis and create crisis
+    Created
+    fixes some parts and CrisisBoard.aspx created
+    minor fixes in UI
+    fixes some parts and CrisisBoard.aspx created
+    fixed page titles
+    fixed
+    Alert implemented
+    Transfered to new structure
+    Create and edit crisis ready to test
+    Transfered to new structure
+    fixed page titles
+    Fixes
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Create and edit crisis ready to test
+    Fixed edit crisis and create crisis
+    finished createcrisis and edit createcrisis
+    Create and implement crisis half implemented.
+    fixed spelling bug in UI
+    ajax
+    fixes some parts and CrisisBoard.aspx created
+    finished createcrisis and edit createcrisis
+    Create and implement crisis half implemented.
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    Unit testing finished and ready to be tested for functionality
+    Added delete profile ability
+    Fixed checking and ready for test
+    edit profile completed ready to comment and checking inputs
+    Functionality completed, enhancements remaining
+    messages added
+    fixed page titles
+    fixed
+    changed to use the alertsvoulunteers table
+    Alert implemented
+    Created
+    Transfered to new structure
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    some fixes in style
+    Transfered to new structure
+    Transfered to new structure
+    fixes some parts and CrisisBoard.aspx created
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Transfered to new structure
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Transfered to new structure
+    uc editcrisis completed
+    uc volunteer registeration finished
+    Created
+    Transfered to new structure
+    created
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    fixed
+    Mess of web application conversion fixed
+    created
+    Mess of web application conversion fixed
+    Mess of web application conversion fixed
+    Transfered to new structure
+    fixed MainCrisis persistent value.
+    incident creation is successful
+    Fixed edit crisis and create crisis
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    added loginpage
+    Create and implement crisis half implemented.
+    added reportdate to incident report
+    removed enum
+    login fixed
+    Added some functions for web service.
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Cleaning up the code
+    some fixes in style
+    Fixed edit crisis and create crisis
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    bug for not showing the incorrect username and password fixed
+    Fixed with the changes in profile pages
+    Create and edit crisis ready to test
+    Cleaning up the code
+    add authentication
+    fixed page titles
+    Transfered to new structure
+    Cleaning up the code
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    Unit testing finished and ready to be tested for functionality
+    cleaning
+    cleaning
+    Added delete profile ability
+    Fixed checking and ready for test
+    edit profile completed ready to comment and checking inputs
+    Functionality completed, enhancements remaining
+    Fixed edit crisis and create crisis
+    Created
+    fixes some parts and CrisisBoard.aspx created
+    minor fixes in UI
+    fixes some parts and CrisisBoard.aspx created
+    fixed page titles
+    fixed
+    Alert implemented
+    Transfered to new structure
+    Create and edit crisis ready to test
+    Transfered to new structure
+    fixed page titles
+    Cleaning up the code
+    Fixes
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Cleaning up the code
+    Create and edit crisis ready to test
+    Fixed edit crisis and create crisis
+    finished createcrisis and edit createcrisis
+    Create and implement crisis half implemented.
+    fixed spelling bug in UI
+    ajax
+    fixes some parts and CrisisBoard.aspx created
+    finished createcrisis and edit createcrisis
+    Create and implement crisis half implemented.
+    fixes some parts and CrisisBoard.aspx created
+    Transfered to new structure
+    Unit testing finished and ready to be tested for functionality
+    Added delete profile ability
+    Fixed checking and ready for test
+    edit profile completed ready to comment and checking inputs
+    Functionality completed, enhancements remaining
+    Cleaning up the code
+    fixed page titles
+    fixed
+    changed to use the alertsvoulunteers table
+    Alert implemented
+    Cleaning up the code
+    Created
+    Transfered to new structure
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Cleaning up the code
+    Transfered to new structure
+    Transfered to new structure
+    Cleaning up the code
+    some fixes in style
+    Transfered to new structure
+    Transfered to new structure
+    fixes some parts and CrisisBoard.aspx created
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Cleaning up the code
+    Cleaning up the code
+    Transfered to new structure
+    .NET solution is added
+    Transfered to new structure
+    Transfered to new structure
+    Transfered to new structure
+    Clearing the code
+    Cleaning up the code
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Transfered to new structure
+    Clearing the code
+    Cleaning up the code
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    Mess of web application conversion fixed
+    Cleaning up the code
+    Transfered to new structure
+    uc editcrisis completed
+    uc volunteer registeration finished
+    Cleaning up the code
+    Created
+    Transfered to new structure
+    Cleaning up the code
+    created
+    Create and implement crisis half implemented.
+    Transfered to new structure
+    fixed
+    Mess of web application conversion fixed
+    created
+    Mess of web application conversion fixed
+    Mess of web application conversion fixed
+    Transfered to new structure

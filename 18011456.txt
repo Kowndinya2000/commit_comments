@@ -1,0 +1,756 @@
+﻿    Initial qcom/common
+    qcom/common: add dtbtool
+    
+    This is a combination of 3 commits.
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Fri Jul 27 23:52:11 2012 +0000
+    
+        dtbtool: Initial revision of table of device tree tool
+    
+        A tool to generate an image of table of device tree.  The image
+        contains a header, table of device tree indices followed by the
+        list of device tree blobs.
+    
+        Refer to dtbtool.txt for more information.
+    
+        Change-Id: Ib0d5f974cdb8a8fc341f01b5d086a5285b1d7dc5
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Thu Aug 9 23:56:41 2012 +0000
+    
+        dtbtool: Add support for array of ID's in qcom,msm-id tag
+    
+        Allow multiple chipset/platform/soc_rev triplets in
+        qcom,msm-id tag.  This allows one DTS/DTB file to be used
+        for multiple chipset/platform/soc_rev variants.
+    
+        Preliminary version - needs error handling in triplet
+        parsing and general code cleanup.
+    
+        Change-Id: Ic3d018c0667d1ec7189d6e14b3378effda00d781
+    
+    Author: Duy Truong <dtruong@codeaurora.org>
+    Date:   Sun Feb 10 14:35:11 2013 +0000
+    
+        Update copyright to The Linux Foundation
+    
+        Change-Id: Id084b09bf3a083ea5c0389900bbeb5ef149b3108
+    
+    Change-Id: I9efb55e1fc76e2e4e850d3853ff287715c43eee1
+    dtbtool: fix for filesystems that don't return d_type from readdir
+    
+    readdir() doesn't return d_type for all filesystems, in particular XFS
+    doesn't fill in this field. fix by using stat() instead of d_type to
+    determine if a dtb is a regular file. code is also rearranged slightly
+    to avoid doing a redundant stat().
+    
+    Change-Id: I26b402f517cf8ecefa78d8ae45e51219b333b682
+    dtbtool: simplify code. reducing indenting.
+    
+    this tidy is in preparation for adding a stat call
+    instead of relying upon readdir.
+    
+    Change-Id: Ibdc28c43218e2c67434a4580c61b91162e1169a6
+    dtbtool: add new --dt_tag switch
+    
+    * Add new switch named --dt_tag (or -d)
+    * Allows a custom QCDT_DT_TAG
+    * If --dt_tag/-d is not used, it defaults to "qcom,msm-id =<" as it is today.
+    
+    This should allow more flexibility with devices requiring various DT_TAGs going forward.
+    
+    Change-Id: I6f6a9a55b3b94ce6103a4890b28792380fe1e274
+    qcom-common: Fix dtbTool code formatting
+    
+    Change-Id: I58e24893dcd0f5c27eb4f2a9e41a296d423591ba
+    qcom/common: add dtbtool
+    
+    This is a combination of 3 commits.
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Fri Jul 27 23:52:11 2012 +0000
+    
+        dtbtool: Initial revision of table of device tree tool
+    
+        A tool to generate an image of table of device tree.  The image
+        contains a header, table of device tree indices followed by the
+        list of device tree blobs.
+    
+        Refer to dtbtool.txt for more information.
+    
+        Change-Id: Ib0d5f974cdb8a8fc341f01b5d086a5285b1d7dc5
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Thu Aug 9 23:56:41 2012 +0000
+    
+        dtbtool: Add support for array of ID's in qcom,msm-id tag
+    
+        Allow multiple chipset/platform/soc_rev triplets in
+        qcom,msm-id tag.  This allows one DTS/DTB file to be used
+        for multiple chipset/platform/soc_rev variants.
+    
+        Preliminary version - needs error handling in triplet
+        parsing and general code cleanup.
+    
+        Change-Id: Ic3d018c0667d1ec7189d6e14b3378effda00d781
+    
+    Author: Duy Truong <dtruong@codeaurora.org>
+    Date:   Sun Feb 10 14:35:11 2013 +0000
+    
+        Update copyright to The Linux Foundation
+    
+        Change-Id: Id084b09bf3a083ea5c0389900bbeb5ef149b3108
+    
+    Change-Id: I9efb55e1fc76e2e4e850d3853ff287715c43eee1
+    qcom/common: add dtbtool
+    
+    This is a combination of 3 commits.
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Fri Jul 27 23:52:11 2012 +0000
+    
+        dtbtool: Initial revision of table of device tree tool
+    
+        A tool to generate an image of table of device tree.  The image
+        contains a header, table of device tree indices followed by the
+        list of device tree blobs.
+    
+        Refer to dtbtool.txt for more information.
+    
+        Change-Id: Ib0d5f974cdb8a8fc341f01b5d086a5285b1d7dc5
+    
+    Author: David Ng <dave@codeaurora.org>
+    Date:   Thu Aug 9 23:56:41 2012 +0000
+    
+        dtbtool: Add support for array of ID's in qcom,msm-id tag
+    
+        Allow multiple chipset/platform/soc_rev triplets in
+        qcom,msm-id tag.  This allows one DTS/DTB file to be used
+        for multiple chipset/platform/soc_rev variants.
+    
+        Preliminary version - needs error handling in triplet
+        parsing and general code cleanup.
+    
+        Change-Id: Ic3d018c0667d1ec7189d6e14b3378effda00d781
+    
+    Author: Duy Truong <dtruong@codeaurora.org>
+    Date:   Sun Feb 10 14:35:11 2013 +0000
+    
+        Update copyright to The Linux Foundation
+    
+        Change-Id: Id084b09bf3a083ea5c0389900bbeb5ef149b3108
+    
+    Change-Id: I9efb55e1fc76e2e4e850d3853ff287715c43eee1
+    Adding support of Inline Crypto Engine (ICE)
+    
+    ICE requires keys to be set in key LUT. Changing APIs so that it
+    return the key index in key LUT. It also needs to take care if
+    ICE is available on the chip.
+    
+    Change-Id:  I22be18738ba33e5b5c61639c24b320484d0ad7f2
+    cryptfs_hw: Add support for get_hwfde_status routine
+    
+    Add support for get_hwfde_status routine to get the fde
+    status based on the chipset.
+    
+    Change-Id: I7e0e078da6668e347a78de487da44ddc331bd478
+    cryptfs_hw: libcryptfs_hw doesn't go in vendor/lib/hw
+    
+    Change-Id: I66c09d4ea790c8f2c49f2ff1d31e2cf7300f09a9
+    Fix multiarch builds
+    
+    Change-Id: Ib8ef16d4801666da591864ca72b381df34355e95
+    qcom: Add crypto helper for ODE
+    
+    Change-Id: I85c4fe21ac11c527b02bd1f9aa75eaf29457d251
+    Adding support of Inline Crypto Engine (ICE)
+    
+    ICE requires keys to be set in key LUT. Changing APIs so that it
+    return the key index in key LUT. It also needs to take care if
+    ICE is available on the chip.
+    
+    Change-Id:  I22be18738ba33e5b5c61639c24b320484d0ad7f2
+    cryptfs_hw: Add support for get_hwfde_status routine
+    
+    Add support for get_hwfde_status routine to get the fde
+    status based on the chipset.
+    
+    Change-Id: I7e0e078da6668e347a78de487da44ddc331bd478
+    cryptfs_hw: Add support for wipe_key routine
+    
+    Add support for wipe_key routine to clean key.
+    
+    Change-Id: I9e258e1506d0634c4fc5b5142475005f6eb51c4e
+    qcom: Add crypto helper for ODE
+    
+    Change-Id: I85c4fe21ac11c527b02bd1f9aa75eaf29457d251
+    Adding support of Inline Crypto Engine (ICE)
+    
+    ICE requires keys to be set in key LUT. Changing APIs so that it
+    return the key index in key LUT. It also needs to take care if
+    ICE is available on the chip.
+    
+    Change-Id:  I22be18738ba33e5b5c61639c24b320484d0ad7f2
+    cryptfs_hw: Add support for get_hwfde_status routine
+    
+    Add support for get_hwfde_status routine to get the fde
+    status based on the chipset.
+    
+    Change-Id: I7e0e078da6668e347a78de487da44ddc331bd478
+    cryptfs_hw: Fix for aarch64
+    
+    Change-Id: Ib5a85b4e10af551c3274c3843e15673cbe3929d7
+    cryptfs_hw: Add support for wipe_key routine
+    
+    Add support for wipe_key routine to clean key.
+    
+    Change-Id: I9e258e1506d0634c4fc5b5142475005f6eb51c4e
+    qcom/common: Added O_NOFOLLOW to avoid follow the symlink
+    
+    open system call is added with NOFOLLOW flag
+    
+    Change-Id: I402643635e3ee11b3ac5df63c3b71a9fd6f0d2db
+    qcom: Add crypto helper for ODE
+    
+    Change-Id: I85c4fe21ac11c527b02bd1f9aa75eaf29457d251
+    Add hook for target specific libinit defines
+    
+    Set TARGET_LIBINIT_DEFINES_FILE := path to your file in BoardConfig
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init_msm: use qemu.hw.mainkeys instead of ro.hw.nav_keys
+    
+    Android removed support for ro.hw.nav_keys property to enable/disable
+    the virtual keys on the target, hence just use qemu.hw.mainkeys.
+    
+    Change-Id: Ieb700313ea49a32ed98f80e3e8cce9ab9e07624b
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init_msm: use qemu.hw.mainkeys instead of ro.hw.nav_keys
+    
+    Android removed support for ro.hw.nav_keys property to enable/disable
+    the virtual keys on the target, hence just use qemu.hw.mainkeys.
+    
+    Change-Id: Ieb700313ea49a32ed98f80e3e8cce9ab9e07624b
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    add soc 123 for MSM8260a for apexqtmo
+    init_msm8960: Overwrite ro.opengles.version for 8960
+    
+    Overwrite the ro.opengles.version property with 0x2000.
+    This change is specific to 8960 Classic, which can only
+    support upto Open GLES vesion 2.0
+    
+    This change fixes the CTS test failure
+    android.opengl.cts.OpenGlEsVersionTest
+    
+    CRs-Fixed: 575502
+    
+    Change-Id: I7e90ddde44fef596d1446e6f1acfe7070ef9337b
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init_msm: use qemu.hw.mainkeys instead of ro.hw.nav_keys
+    
+    Android removed support for ro.hw.nav_keys property to enable/disable
+    the virtual keys on the target, hence just use qemu.hw.mainkeys.
+    
+    Change-Id: Ieb700313ea49a32ed98f80e3e8cce9ab9e07624b
+    init: Update lcd density setting for APQ8084
+    
+    Use correct LCD density and softkey enable setting
+    for APQ8084.
+    
+    Change-Id: I0ba8bc5d69981224c2dcdb314926a11d9f6a85eb
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    init: Add ro.alarm_boot property support
+    
+    ro.alarm_boot property is used to let framwork detect if it
+    is RTC triggered boot.
+    
+    Change-Id: Id503ad39a2872fdb3acbc79233c008dc4f4e4a3c
+    init_msm: Add usergroup permission to dynamic_fps node.
+    
+    HWC will be writing to this sysfs node to set the variable
+    refresh rate, hence set proper usergroup
+    
+    Change-Id: If668003463f580050d5843af97bf8f8761eb7f88
+    init script: Add usergroup write permission to idle_time node.
+    
+    Set usergroup write permission of idle_time node to enable idle
+    timeout feature.
+    
+    Change-Id: If6b0a94e93b5117c4004726d62a346403f7a8ed3
+    CRs-Fixed: 610823
+    Coredump :Add coredump support for processes
+    
+    This change will set-up the core-dump directory and the core-file
+    pattern. The coredumps will not be generated during crashes on
+    boot-up. The core-dumps will only be generated on crashes after the
+    boot-up.
+    
+    Change-Id: Ie8c15f500aa871b7b06913e70d0076656834b319
+    init: set hdmi node permissions during initialization
+    
+    - Add functions to setPermission and setOwner for file nodes
+    - Set hdmi node permissions based on fb number.
+    
+    Change-Id: I57babd7aa8387d35860ad66892dd0c21ca35c135
+    init: Add MSM-specific init extension library
+    
+    Implement MSM-specific initialization during boot up
+    at "init" stage.  This allows variable setting based
+    on runtime query of hardware configuration.
+    
+    Change-Id: Id14293a9f030d6631c55e84498f503a5bcb818e2
+    common: update enum value for sched perflocks
+    
+    Update enum value for changing migrate cost and
+    prefer idle via perflock.
+    
+    Change-Id: I66854af0d63647619c98cad89515b503a10cd02d
+    common: update enum value for disabling PC
+    
+    Update enum value used to disable PC via PerfLock
+    
+    Change-Id: I14cb3292b94db90d592905fb344c942e7d61c4f8
+    power: add sched boost enum.
+    
+    Add enum for enabling sched boost and
+    core 4-8 in perflock
+    
+    Change-Id: I049c44d18045d9ab2dce7a96cf73207357e63a18
+    common: add CPU max cores online enums
+    
+    Previously the enums to limit the maximum number
+    of cores online were using the same resource as
+    minimum number of cores. Separate the min and max
+    to each have their own resource.
+    
+    Change-Id: I3d2e8ebe1bba61a0d63ee79972cbe78c972b2bd8
+    common: add CPU max freq enums
+    
+    Add the enums for CPU max freq limit
+    Remove unsupported enum for all cpus freq
+    
+    Change-Id: I8720c22f6aadaa8ced2a5917aa97f568d94f2f93
+    power: Add support for SET_PROFILE hints
+    
+     * Add support for system performance profiles.
+     * Uses mpctl to configure the CPUs in the appropriate modes.
+     * PERFORMANCE = all cores at max
+     * POWER_SAVE = max two cores at non-turbo voltage
+     * If a custom profile is set, don't honor any other hints
+     * Clean up the code and firm up the locking.
+    
+    Change-Id: Ie6acada805780c9ae6e6bc2002843aef638ca63b
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    Fix multiarch builds
+    
+    Change-Id: Ib8ef16d4801666da591864ca72b381df34355e95
+    power: Add apq8084 specific changes
+    
+    Added compilation flag for power-8084.c in
+    makefile and detection of apq8084 soc id in
+    power.c.
+    
+    Change-Id: I00e8e18f6de4ee7b38269e4bf565954db46148c5
+    power: Initial powerhal for 8939
+    
+    Change-Id: I46581ada5000dd20f3bed5fedf634447adce4843
+    power: Android.mk: Remove TARGET_USES_CPU_BOOST_HINT
+    
+    This is a noop.
+    
+    Change-Id: I372a67b86dd97ddbc7247c82928fb301cd247b3f
+    power: Add support for CPU boost hint
+    
+    Change-Id: I07c3e8daf8a5f3b568e27334f26d4ba8f4cf40c4
+    common-qcom: enable custom module name extension
+    
+    Change-Id: I34d141ec19c3f01e7404067db4cbd493b5865d3a
+    common-qcom: Make QC PowerHAL opt-in
+    
+     * Set TARGET_POWERHAL_VARIANT=qcom to use this version.
+    
+    Change-Id: Iedf6ab57611e90b75304a515f93678a9b85e32e1
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    8084 Power Hal: Add support for profile hints.
+    
+      -Based on msm8974 power hal changes.
+    
+    Change-Id: I6ae868a124d875c76133b5f55253497485e75eab
+    power: keep two cores online when display is on
+    
+    This change is specific to 8084 and has been
+    modeled based on 8974 pro changes. Use PerfLock
+    to keep two cores online when the display is on.
+    
+    Change-Id: Iffea0f9afbb3743cec2804da5884ec6d977b662a
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power-8226: Remove unnecessary hint
+    
+    * This has the unfortunate side effect of actually *enabling* KSM,
+      which we don't really need on this hardware.
+    
+    Change-Id: Idc3960fcb60169c2429d74309de50e52083664da
+    power-8226: Increase the boost a bit
+    
+    * eliminate a lot of jank. We're racing with input boost here.
+    
+    Change-Id: Ibce4ec734b4a9df82277b8e79425a87454b58dcd
+    power-8226: Remove the HMP boost hint
+    
+    Change-Id: I134c2656d806978ef683f70980be27d2bc60eb51
+    power-8226: Add support for POWER_HINT_LOW_POWER
+    
+    Change-Id: Id25095ed549a84c07167f87f62f4e8add9a4cfec
+    power-8226: Various updates to Power HAL
+    
+    Change-Id: If266f0a95a85bfc8dc8458ce7d71e569fa715c2f
+    power-8226: Add support for system performance profiles.
+    
+    Change-Id: I2f5002ffa0b1c63486056023a3cc6137559bcebd
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Don't change timer_rate when the screen turns off
+    
+     * This has nasty effects on audio, so the audio hint was added.
+       Unfortunately, this does not work very well on L. Kill both
+       of these things.
+    
+    Change-Id: I41386529061d556739c2eaf0e8527f9f3b5fdb21
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    power: Various updates to Power HAL
+    
+     * New target support, cleanups, new perf version
+    
+    Change-Id: I4ca66fad1421105863e98d1a9f5a5eba37aa5e0a
+    power: Add support for SET_PROFILE hints
+    
+     * Add support for system performance profiles.
+     * Uses mpctl to configure the CPUs in the appropriate modes.
+     * PERFORMANCE = all cores at max
+     * POWER_SAVE = max two cores at non-turbo voltage
+     * If a custom profile is set, don't honor any other hints
+     * Clean up the code and firm up the locking.
+    
+    Change-Id: Ie6acada805780c9ae6e6bc2002843aef638ca63b
+    power: Kill logspam
+    
+    Change-Id: Icdbc3113f034ba1845762ea964e967fa270b5a15
+    power: Add support for CPU boost hint
+    
+    Change-Id: I07c3e8daf8a5f3b568e27334f26d4ba8f4cf40c4
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    power: Add support for CPU boost hint
+    
+    Change-Id: I07c3e8daf8a5f3b568e27334f26d4ba8f4cf40c4
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Fix arm64 build
+    
+    Change-Id: Icd3708c4fb12beb5925e401fd3b4a271567e523e
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    power: Additional 8939 tunings
+    
+    Change-Id: If4372513ec6db89cfb85fa6012bbe1d82fdef4ce
+    power: Initial powerhal for 8939
+    
+    Change-Id: I46581ada5000dd20f3bed5fedf634447adce4843
+    power: Various updates to Power HAL
+    
+     * New target support, cleanups, new perf version
+    
+    Change-Id: I4ca66fad1421105863e98d1a9f5a5eba37aa5e0a
+    power: Disable the 8974pro-specific display on/off path
+    
+     * It's now handled by mpctl directly, and this code does not correctly
+       handle the interactive governor. Just disable it as the main
+       function does everything we need.
+    
+    Change-Id: I8fdf9d80bfbf940b55bbe962c1e7a0829bcec14c
+    power: Add support for SET_PROFILE hints
+    
+     * Add support for system performance profiles.
+     * Uses mpctl to configure the CPUs in the appropriate modes.
+     * PERFORMANCE = all cores at max
+     * POWER_SAVE = max two cores at non-turbo voltage
+     * If a custom profile is set, don't honor any other hints
+     * Clean up the code and firm up the locking.
+    
+    Change-Id: Ie6acada805780c9ae6e6bc2002843aef638ca63b
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power-8974: Remove unnecessary hint
+    
+     * This has the unfortunate side effect of actually *enabling* KSM,
+       which we don't really need on this hardware.
+    
+    Change-Id: I6f2f313b7565fbb42c061e5d7a3d71080f275f25
+    power-8974: Increase the boost a bit
+    
+     * Eliminate a lot of jank. We're racing with input boost here.
+    
+    Change-Id: Ic020e6ef7b947bda6a2db02304d78f9e653ec51b
+    power: Fix the PowerHAL on msm8974
+    
+     * Remove the CORE_CONTROL ifdefs, we need this code on 8974ac to
+       signal mpctl about keeping extra cores online.
+     * Remove an invalid hint- 8974 is not HMP and does not support
+       the HMP boost hint.
+    
+    Change-Id: I54036212bc240eede88a433d7cef661313fc8e5e
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    power: Various updates to Power HAL
+    
+     * New target support, cleanups, new perf version
+    
+    Change-Id: I4ca66fad1421105863e98d1a9f5a5eba37aa5e0a
+    power: Disable the 8974pro-specific display on/off path
+    
+     * It's now handled by mpctl directly, and this code does not correctly
+       handle the interactive governor. Just disable it as the main
+       function does everything we need.
+    
+    Change-Id: I8fdf9d80bfbf940b55bbe962c1e7a0829bcec14c
+    power: Add support for SET_PROFILE hints
+    
+     * Add support for system performance profiles.
+     * Uses mpctl to configure the CPUs in the appropriate modes.
+     * PERFORMANCE = all cores at max
+     * POWER_SAVE = max two cores at non-turbo voltage
+     * If a custom profile is set, don't honor any other hints
+     * Clean up the code and firm up the locking.
+    
+    Change-Id: Ie6acada805780c9ae6e6bc2002843aef638ca63b
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Add support for SET_PROFILE hints
+    
+     * Add support for system performance profiles.
+     * Uses mpctl to configure the CPUs in the appropriate modes.
+     * PERFORMANCE = all cores at max
+     * POWER_SAVE = max two cores at non-turbo voltage
+     * If a custom profile is set, don't honor any other hints
+     * Clean up the code and firm up the locking.
+    
+    Change-Id: Ie6acada805780c9ae6e6bc2002843aef638ca63b
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480
+    power: Add support for POWER_HINT_LOW_POWER
+    
+     * Just call set_power_profile
+     * Also clean up all the warnings
+    
+    Change-Id: Ia42badac37815e29411ad135716a0f791a00c510
+    common-qcom: Add PowerHAL
+    
+     * New PowerHAL for QCOM devices based on upstream.
+     * Requires libqc-opt and mpdecision
+     * Includes support for new audio hints
+     * Includes hook for external set_interactive bits
+    
+    Change-Id: Ib5c956fedd1a4aee591b409b1524e95624324480

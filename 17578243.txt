@@ -1,0 +1,1137 @@
+﻿    Added a contact form to the site
+    changed readme
+    - Updated README
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Updated README, added latest posts to footer
+    - Added README, linked Google Font
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    Create README.md
+    - Restarted using default Jekyll installation
+    Links and checks ...
+    
+    Added some details to the tables of bugs and features to show progress and provide links to issues.
+    Added #84 to list of features.
+    
+    See comments in issue #84 for proposed strategy.
+    Added the new (and only) Milestone (0.4.0)
+    Update readme to point to new separate documentation repository.
+    add draft feature
+    add mission
+    release 0.3.0
+    License should be MIT.
+    bump to 0.2.13
+    Bump to 0.2.9
+    bump to 0.2.8
+    
+    Forgot about my buddy @metalelf0 =/
+    bump to 0.2.7
+    bump version : 0.2.0
+    update contributing instructions
+    version 0.1.0
+    version 0.0.1
+    Added jekyll metadata
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Create CNAME
+    Delete CNAME
+    Update CNAME
+    Create CNAME
+    Added assets to website so can render on front end
+    Fixed grunt to copy css and js
+    Updated grunt to watch all sass directories & small styling improvements
+    Added prism js to site to style code blocks
+    Removed uglify task from grunt
+    Cleaned up grunt and package.json files
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Updated bower and gruntfile
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Added grunt to the project to watch the changes being made locally
+    Added prism js to site to style code blocks
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Updated bower and gruntfile
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    Removed uglify task from grunt
+    Cleaned up grunt and package.json files
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Added grunt to the project to watch the changes being made locally
+    Update about.md
+    Update about.md
+    Updated the about page
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added README, linked Google Font
+    - Restarted using default Jekyll installation
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Version 2.0 of my portfolio
+    - Added favicon icon to website
+    Updated includes files
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added README, linked Google Font
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Added grunt to the project to watch the changes being made locally
+    - Restarted using default Jekyll installation
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Coded footer and header, changed max width of site and styling improvements
+    Version 2.0 of my portfolio
+    Removed name in header on mobile devices
+    Fixing broken logo
+    Added logo to main nav bar
+    Updated includes files
+    - Added posts link in the header
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added Artices to main nav, set up copyright section under footer
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Latest code
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Restarted using default Jekyll installation
+    Coded footer and header, changed max width of site and styling improvements
+    Updated styles
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Fixed the sub footer so it didn't overflow
+    Version 2.0 of my portfolio
+    - Added image of myself to footer
+    Making social media links open in new tab
+    Styling the footer properly
+    Updated includes files
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added Artices to main nav, set up copyright section under footer
+    - Updated README, added latest posts to footer
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Latest code
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Restarted using default Jekyll installation
+    Finished site on desktop
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Added images to new directory
+    Added images to new directory
+    Added images to new directory
+    Added images to new directory
+    Added images to new directory
+    Added images to new directory
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Added a contact form to the site
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Version 2.0 of my portfolio
+    Added GTM
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added Artices to main nav, set up copyright section under footer
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Latest code
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Restarted using default Jekyll installation
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Coded footer and header, changed max width of site and styling improvements
+    Version 2.0 of my portfolio
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Restarted using default Jekyll installation
+    Fix for issue #113, based heavily on fujii@16e8a9d10259e4665534825422ec05b704f7114d.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Improved styling of blog post and added image to posts
+    Styling the blog post
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added comments to blog posts
+    Version 2.0 of my portfolio
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Restarted using default Jekyll installation
+    Fix for issue #113, based heavily on fujii@16e8a9d10259e4665534825422ec05b704f7114d.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    Improving responsiveness of website - ready for go live
+    Added pagination to blog posts and styled first letter better
+    Updated grunt to watch all sass directories & small styling improvements
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Styling the blog post
+    Coded footer and header, changed max width of site and styling improvements
+    Updated styles
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Improving responsiveness of website - ready for go live
+    Added pagination to blog posts and styled first letter better
+    Updated grunt to watch all sass directories & small styling improvements
+    Changed prism to highlight in blogs
+    Improving responsiveness of website - ready for go live
+    Made the font size of post title bigger
+    Added pagination to blog posts and styled first letter better
+    Updated grunt to watch all sass directories & small styling improvements
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Improved styling of blog post and added image to posts
+    Styling the blog post
+    Coded footer and header, changed max width of site and styling improvements
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Added a contact form to the site
+    Version 2.0 of my portfolio
+    Removed name in header on mobile devices
+    Fixed visited link colour
+    Styling the footer properly
+    Updated styles to make more responsive and fix bugs
+    - Updated styles and layout of website
+    - Updated font styles
+    - Restarted using default Jekyll installation
+    Set up sass folder structure and improved styled and layout of site
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Styling the blog post
+    Coded footer and header, changed max width of site and styling improvements
+    Updated styles
+    Improving responsiveness of website - ready for go live
+    Added pagination to blog posts and styled first letter better
+    Updated grunt to watch all sass directories & small styling improvements
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Improved styling of blog post and added image to posts
+    Styling the blog post
+    Updated styles
+    Improving responsiveness of website - ready for go live
+    Finished site on desktop
+    Added pagination to blog posts and styled first letter better
+    Set up sass folder structure and improved styled and layout of site
+    Set up sass folder structure and improved styled and layout of site
+    Coded footer and header, changed max width of site and styling improvements
+    Updated styles
+    Improving responsiveness of website - ready for go live
+    Added pagination to blog posts and styled first letter better
+    Set up sass folder structure and improved styled and layout of site
+    Set up sass folder structure and improved styled and layout of site
+    Coded footer and header, changed max width of site and styling improvements
+    Set up sass folder structure and improved styled and layout of site
+    Added prism js to site to style code blocks
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Fixed the sub footer so it didn't overflow
+    Version 2.0 of my portfolio
+    - Added image of myself to footer
+    Fixed visited link colour
+    Fix link colour
+    Styling the footer properly
+    Added logo to main nav bar
+    Updated styles to make more responsive and fix bugs
+    - Updated styles and layout of website
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Added Artices to main nav, set up copyright section under footer
+    - Restarted using default Jekyll installation
+    Added a contact form to the site
+    Version 2.0 of my portfolio
+    Removed name in header on mobile devices
+    Fixed visited link colour
+    Styling the footer properly
+    Updated styles to make more responsive and fix bugs
+    - Updated styles and layout of website
+    updated styles
+    - Restarted using default Jekyll installation
+    Added prism js to site to style code blocks
+    - Restarted using default Jekyll installation
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Latest code
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Changed the setup of the jekyll build, so it works with Grunt
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Added prism js to site to style code blocks
+    Added assets to website so can render on front end
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added assets to website so can render on front end
+    Deleted assets directory
+    Improved styling of blog post and added image to posts
+    Styling the blog post
+    Coded footer and header, changed max width of site and styling improvements
+    Updated styles
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    Added prism js to site to style code blocks
+    Minor changes to intro pug blog post
+    Changed blog to .markdown
+    Updated blog tags
+    Added new blog - Intorduction to Pug
+    Finished site on desktop
+    Revamping site to have a fixed sidebar and scrolling blog posts
+    Improved styling of blog post and added image to posts
+    Added new blog - 5 things I hate about modern football
+    Finished site on desktop
+    Set up sass folder structure and improved styled and layout of site
+    Made map width 100% on post
+    Create 2015-12-28-wales-euro-2016-journey-preview.markdown
+    Finished site on desktop
+    Update 2015-07-09-project-review-complete-morocco.markdown
+    Create 2015-07-09-project-review-complete-morocco.markdown
+    Update 2015-05-26-benefits-of-jekyll-compared-to-wordpress.markdown
+    Update 2015-05-26-benefits-of-jekyll-compared-to-wordpress.markdown
+    Create 2015-05-26-benefits-of-jekyll-compared-to-wordpress.markdown
+    Changed prism to highlight in blogs
+    Added pagination to blog posts and styled first letter better
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    Update 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    - Updating the posts
+    - Updated post
+    - Slight blog update
+    - Updated the code layout on the blog
+    updated blog
+    Rename 2015-05-06-installing-jekyll-with-grunt-and-bower to 2015-05-06-installing-jekyll-with-grunt-and-bower.markdown
+    
+    Update title
+    Create 2015-05-06-installing-jekyll-with-grunt-and-bower
+    Finished site on desktop
+    Update 2015-08-03-8-bit-art.markdown
+    Create 2015-08-03-8-bit-art.markdown
+    Changed prism to highlight in blogs
+    Finished site on desktop
+    Set up sass folder structure and improved styled and layout of site
+    Added blog post about responsive menu
+    Finished site on desktop
+    Create 2015-09-11-wales-away-cyprus-trip.markdown
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Started from scratch with using basic Jekyll install, no grunt or bower
+    - Added grunt to the project to watch the changes being made locally
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    - Added grunt to the project to watch the changes being made locally
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    - Changed the setup of the jekyll build, so it works with Grunt
+    - Installed bootstrap with bower
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Massive restructuring of project setup with grunt - works better when developing locally
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    - Updated the entire site to start from scratch by using jekyll, grunt and bower
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Refactoring website, clearing out livs files, updating to Foundation 6
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Starting to completely refactor the site. Added font awesome. Improved grunt file. Deleted alot of crap from the libs. Added Foundation 6 to the site instead of Bootstrap.
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks
+    Added prism js to site to style code blocks

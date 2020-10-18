@@ -1,0 +1,46 @@
+﻿    change the project name in rock init (from xsens into xsens_imu
+    reorganise the code: rename library from 'xsens' into 'xsens_imu', use the current rock library structure, move the vendor library into external folder, replace cmake command with rock macros
+    Eigen adaptations
+    update to eigen3
+    fix dependency name for Eigen
+    dist: remove dead CMake code
+    split between calibration and sample reading mode
+    
+    The calibration mode outputs a binary file that can be used
+    later on with Xsens calibration software.
+    vendor library is now static
+    
+    otherwise it is quite annoying that you have to link two different libraries
+    split types definitions from class declaration
+    
+    this is to make life easier for orogon
+    Advenced Driver in various ways
+    
+    added ability to configure mode of IMU to : only send calibrated data, only send orientation, send both
+    added getter for orientation
+    added getter for accelerometer data
+    added getter for gyroscope data
+    added getter for magnetometer data
+    added error codes
+    added documentation of functions
+    
+    moved debug output to Test
+    Implemented simple driver using vendor lib
+    
+    Simple driver was implemented, that opens the device
+    and reads out orientaten and calibrated data
+    added inital files for driver
+    Use CMake variables and methods instead of library name (pthread) directly
+    Compile fix: Adds pthread to the libraries that have to be linked.
+    include previous executable test
+    reorganise the code: rename library from 'xsens' into 'xsens_imu', use the current rock library structure, move the vendor library into external folder, replace cmake command with rock macros
+    reorganise the code: rename library from 'xsens' into 'xsens_imu', use the current rock library structure, move the vendor library into external folder, replace cmake command with rock macros
+    Updated vendor lib to latest version
+    
+    Updated vencor lib to the version from the MT SDK 3.3
+    vendor library is now static
+    
+    otherwise it is quite annoying that you have to link two different libraries
+    added Vendor lib
+    
+    added Vendor lib from xsens, and wrote an cmake file to compile it

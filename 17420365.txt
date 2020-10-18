@@ -1,0 +1,10 @@
+﻿    improved PoseWatchdog
+    adapt code to TrajectoryFollowerTypes.
+    fix CMakeList.
+    ported to oroGen v2
+    Initial commit
+    do not link debug drawings (are not used)
+    improved PoseWatchdog
+    ported to oroGen v2
+    added trajectory follower library
+    Initial commit

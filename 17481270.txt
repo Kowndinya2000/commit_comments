@@ -1,0 +1,2173 @@
+﻿    Updated License [skip ci]
+    More comprehensive gitignore
+    Git ignore and Resharper Sponsor
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Fixed tests so that they work on Mac/Linux
+    Fixed nuget nuspec file and corresponding dependencies
+    Prepared for publish to nuget.org
+    restructuring
+    Initial checkin
+    System.Text.Json workaround in .netCore 3
+    New build process (#140)
+    
+    * Experimenting with .net 3.5 framework location for DevOps build
+    
+    * Adding new build icon to ReadMe for moving build to DevOps
+    Added backers and sponsors on the README
+    Appveyor badge
+    Fixing issue 115, Feature.Equals thros excpeiton when geometry is null
+    Update README.md
+    
+    Notice regarding my situation
+    Git ignore and Resharper Sponsor
+    Readme changes
+    Updating Readme
+    Updating readme
+    Grrrrr Readme update again
+    Updating readme
+    Switched AppVeyor badge to new account
+    Code correction for readme
+    Chnges to readme for rfc
+    Removing dead project message
+    Updated Readme.md to reflect current state of Project
+    Meh. Links corrected [skip ci]
+    Updated Readme a little [skip ci]
+    Update README.md
+    Update README.md
+    
+    Added Appveyor Build Badge
+    Point and Polygon features serialization
+    
+    - small bug fixes
+    - point and polygon feature serialization
+    - reordered tests
+    - removed xUnit dependency
+    fix on code in readme
+    Another change to readme
+    Upgraded readme
+    Added note regarding NuGet package
+    Initial checkin
+    Create FUNDING.yml
+    Update main.yml
+    Create main.yml
+    Prepared for publish to nuget.org
+    Modified GeoJSON.NET project to a .NET Standard 1.1 project so it can be more easily reused in developing libraries for cross platform development.
+    Final commit for v1 Alpha
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    restructuring
+    Initial checkin
+    add strong name
+    add strong name
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Don't touch CRS on (de)serializing (#90)
+    
+    Removes code that creates a default CRS on deserializing when JSON contains None, and that removes an existing default CRS when serializing.
+    
+    According to https://tools.ietf.org/html/rfc7946#section-4, the CRS shouldn't be specified anyway, so it's not a good idea to create one whenever deserializing a CRS-less JSON object.
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Changing all links to point to latest RFC
+    Issue 44, Included GeoJSONObject Type property when DefaultValueHandling is set to Ignore
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fixed Crs deserialisation on FeatureCollection. Added test
+    Changed required attr of CRS and box
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Nuget 1.2.16
+    
+    GH-147
+    
+    Co-Authored-By: Sanjeev M <zeus82@users.noreply.github.com>
+    Added support for netstandard 2.0 and 2.1
+    New build process (#140)
+    
+    * Experimenting with .net 3.5 framework location for DevOps build
+    
+    * Adding new build icon to ReadMe for moving build to DevOps
+    Consolidate nuspec into csproj (#135)
+    
+    Most information from nuspec can be specified in the csproj.
+    This has the benefit that all information is located in a single place and that previously duplicated information can no longer be out of sync.
+    Currently release notes and package dependencies are out of sync.
+    
+    I've added the following:
+    * Xavier Fischer as Author.
+    * Referred MIT license directly instead of throught `LICENSE.MD`
+    * link to github project page
+    * link to git repository
+    
+    csproj does not support the concepts of `<owners>` and `<language>` so I've left them out.
+    
+    The following tags are automatically inferred:
+    * `<id>` from project name
+    * `requireLicenseAcceptance` defaults to `false`
+    * `AssemblyVersion` is `$(Version).0`
+    
+    Some good resources:
+    * https://github.com/NuGet/Home/wiki/Adding-nuget-pack-as-a-msbuild-target
+    * https://andrewlock.net/version-vs-versionsuffix-vs-packageversion-what-do-they-all-mean/
+    Update GeoJSON.Net.csproj
+    
+    #123
+    - coordinates are not validated against geographic coordinate bounds, can now be any numeric
+    - assembly file version matching nuget package version
+    Setting some more targets, removed GeographicPosition
+    Modified GeoJSON.NET project to a .NET Standard 1.1 project so it can be more easily reused in developing libraries for cross platform development.
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Added JsonConverter that can convert IGeoJSONObject
+    Reverted Json.Net to lowest Profile259 compatible one
+    
+    #47
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Updated to JSON.Net 6.0.8
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Add Serialization support for Multipolygon
+    Fixed Crs deserialisation on FeatureCollection. Added test
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Updated JSON .NET to version 6
+    Updated project type to be a PCL
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Merged and resolved / closed #5
+    Lowered the dependencies
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Bumped nuget dependencies
+    Fixed nuget nuspec file and corresponding dependencies
+    Prepared for publish to nuget.org
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Initial checkin
+    Setting some more targets, removed GeographicPosition
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    restructuring
+    Initial checkin
+    Setting some more targets, removed GeographicPosition
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Last bit of comment tidying
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Fix deserialization for MultiLineStrings and Polygons with holes
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Added support for negative coordinates
+    
+    On a suggestion from a user, I have added the support for negative
+    coordinates
+    Added Polygon deserialization
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Geometry converter no longer writes.  It was causing a reference loop
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Last bit of comment tidying
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Adds multi-polygon deserialization to GeometryConverter
+    Add Serialization support for Multipolygon
+    Adding FeatureCollection serialization test and fixing bugs until it works
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Updated JSON .NET to version 6
+    Updated project type to be a PCL
+    Point and Polygon features serialization
+    
+    - small bug fixes
+    - point and polygon feature serialization
+    - reordered tests
+    - removed xUnit dependency
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Added features deserialization for polygon
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Added JsonConverter that can convert IGeoJSONObject
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Last bit of comment tidying
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Fix deserialization for MultiLineStrings and Polygons with holes
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Added support for negative coordinates
+    
+    On a suggestion from a user, I have added the support for negative
+    coordinates
+    Added Polygon deserialization
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    PositionConverter no longer throws a NotImplementedException if passed an IPosition instead of Position
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Last bit of comment tidying
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    test refactoring
+    Point and Polygon features serialization
+    
+    - small bug fixes
+    - point and polygon feature serialization
+    - reordered tests
+    - removed xUnit dependency
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Added Position serializer
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Last bit of comment tidying
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Fix deserialization for MultiLineStrings and Polygons with holes
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Added support for negative coordinates
+    
+    On a suggestion from a user, I have added the support for negative
+    coordinates
+    Added Polygon deserialization
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Deserialize LinkedCRS with the href from its properties (#102)
+    
+    * Deserialize LinkedCRS with the href from its properties
+    
+    Fixes #101
+    
+    * Added regression test for deserializing LinkedCRS
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Last bit of comment tidying
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fixed Crs deserialisation on FeatureCollection. Added test
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Changing all links to point to latest RFC
+    Fix: GeographicPosition serialization
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Some more abstraction
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    - coordinates are not validated against geographic coordinate bounds, can now be any numeric
+    - assembly file version matching nuget package version
+    Removing validation that was put in for lat/long against the specs
+    Adding Lat/Lon Validation to Position Constructor (#108)
+    
+    Range validation was missing from one of the constructors for
+    Position.
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    test refactoring
+    Some more abstraction
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    change modifiers to readonly beacause the hashcode are computed from the coordinates
+    add IEqualityComparer, IEquatable for consistency
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    test refactoring
+    Fix on null comparison
+    
+    Small fix on polygon null comparison. There was an unhandled exception
+    if the polygon was null
+    Added equality comparer for polygon
+    Added Polygon deserialization
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Optimizations (#138)
+    
+    * Use TryGetValue over ContainsKey+Indexer
+    
+    * Use generic comparison to avoid boxing
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Linestring to use IPosition in Is_Closed
+    Setting some more targets, removed GeographicPosition
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    change modifiers to readonly beacause the hashcode are computed from the coordinates
+    add IEqualityComparer, IEquatable for consistency
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    test refactoring
+    Adding FeatureCollection serialization test and fixing bugs until it works
+    Fix for LineString and MultiLineString in GeometryConverter
+    
+    Some refactoring to share functionality between PolygonConverter and
+    LineStringConverter.
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Merged and resolved / closed #5
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Issue 44, Included GeoJSONObject Type property when DefaultValueHandling is set to Ignore
+    change modifiers to readonly beacause the hashcode are computed from the coordinates
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix: GeographicPosition serialization
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    add IEqualityComparer, IEquatable for consistency
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Add Serialization support for Multipolygon
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    Removed some redundant code and started to tidy comments
+    Changing all links to point to latest RFC
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix deserialization for MultiLineStrings and Polygons with holes
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Optimizations (#138)
+    
+    * Use TryGetValue over ContainsKey+Indexer
+    
+    * Use generic comparison to avoid boxing
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    Reimplement Equals and GetHashCode
+    Changed CRS Type attribute values to lowercase.
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Making big steps towards being finished
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    test refactoring
+    Fixed Crs deserialisation on FeatureCollection. Added test
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Making big steps towards being finished
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fixed Crs deserialisation on FeatureCollection. Added test
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Making big steps towards being finished
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    Changed CRS Type attribute values to lowercase.
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Making big steps towards being finished
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Implement Equals and GetHashCode on Feature and FeatureCollection
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Adding FeatureCollection serialization test and fixing bugs until it works
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    features are done
+    Making big steps towards being finished
+    Optimizations (#138)
+    
+    * Use TryGetValue over ContainsKey+Indexer
+    
+    * Use generic comparison to avoid boxing
+    Update Feature constructor definition to use interface instead of concrete class
+    
+    Feature defines a constructor with IGeometryObject, Dictionary<string, object>, string types. If an IDictionary<string, object> is provided it will use another Feature constructor defined with IGeometryObject, object, string and will use reflection to create a Dictionary implementation.
+    
+    When this constructor is used with an IDictionary<string, object> a Runtime Exception is thrown with the message: Parameter count mismatch.
+    
+    The first constructor should be updated to follow the Liskov Substitution Principle (https://en.wikipedia.org/wiki/Liskov_substitution_principle) to prevent this undesired behavior:
+    
+    > Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program (correctness, task performed, etc.).
+    
+    Unit tests were added to verify that the behavior does not change when the interface is used instead of the concrete implementation.
+    
+    Resolves: #116
+    Fixing issue 115, Feature.Equals thros excpeiton when geometry is null
+    Fixing issue 94, exception when checking for null
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Adding Feature class that has typed Geometry property
+    Setting some more targets, removed GeographicPosition
+    More comment tidying
+    Changing all links to point to latest RFC
+    remove feature.Id and Property comparison
+    Made Feature.Id non-private again
+    Implement Equals and GetHashCode on Feature and FeatureCollection
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    test refactoring
+    Adds Json.Net constructor attribute for Feature deserialization and adds tests for feature and featurecollection deserialization
+    New Feature constructor with auto class property mapping
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    features are done
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Bumped nuget dependencies
+    Update tests project to msbuild 15 and add netcoreapp1.1 target (#87)
+    
+    * remove unreferenced sources from test project
+    
+    * update test project to MsBuild15 + add netcoreapp1.1 target
+    Fixed tests so that they work on Mac/Linux
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    test refactoring
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Update tests project to msbuild 15 and add netcoreapp1.1 target (#87)
+    
+    * remove unreferenced sources from test project
+    
+    * update test project to MsBuild15 + add netcoreapp1.1 target
+    Adding Feature class that has typed Geometry property
+    Modified GeoJSON.NET project to a .NET Standard 1.1 project so it can be more easily reused in developing libraries for cross platform development.
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reverted Json.Net to lowest Profile259 compatible one
+    
+    #47
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Updated to JSON.Net 6.0.8
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    test refactoring
+    Updated JSON .NET to version 6
+    Updated project type to be a PCL
+    Point and Polygon features serialization
+    
+    - small bug fixes
+    - point and polygon feature serialization
+    - reordered tests
+    - removed xUnit dependency
+    Fix: GeographicPosition serialization
+    Added PointDeserialization, bug fixes
+    
+    - point deserialization
+    - fix: negative values for polygon coordinates
+    - fix: point can have only one coordinate
+    - fix: changed xuint to msunit tests
+    Added equality comparer for polygon
+    Merged and resolved / closed #5
+    Lowered the dependencies
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Bumped nuget dependencies
+    Fixed nuget nuspec file and corresponding dependencies
+    Prepared for publish to nuget.org
+    Some more abstraction
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Making big steps towards being finished
+    restructuring
+    major bytes pushing going on
+    Initial checkin
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Some more abstraction
+    restructuring
+    Initial checkin
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Setting some more targets, removed GeographicPosition
+    Modified GeoJSON.NET project to a .NET Standard 1.1 project so it can be more easily reused in developing libraries for cross platform development.
+    Reverted Json.Net to lowest Profile259 compatible one
+    
+    #47
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    Updated to JSON.Net 6.0.8
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Updated JSON .NET to version 6
+    Updated project type to be a PCL
+    Point and Polygon features serialization
+    
+    - small bug fixes
+    - point and polygon feature serialization
+    - reordered tests
+    - removed xUnit dependency
+    Merged and resolved / closed #5
+    Lowered the dependencies
+    Updated Json.net, made polygon serialization
+    
+    Json.NET was updated to latest version so the lib can be tested with
+    real world examples
+    Bumped nuget dependencies
+    Fixed nuget nuspec file and corresponding dependencies
+    Bumped version
+    Merged and resolved / closed #5
+    Fix for enums & allowing id to be passsed in at .ctor time
+    
+    Enums are now serialized using the StringEnumConverter (thanks @ Tina!)
+    and Feature optionally takes the id (string) as ctor parameter.
+    Some more abstraction
+    restructuring
+    Initial checkin
+    Fixing tests after merginng position constructor validtion change
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Issue 44, Included GeoJSONObject Type property when DefaultValueHandling is set to Ignore
+    Fix tests for Point, Polygon, and LineString
+    Reimplement Equals and GetHashCode
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reimplement Equals and GetHashCode
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reimplement Equals and GetHashCode
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Improve code quality (#88)
+    
+    * replace GeoJsonObject.Type by abstract read-only property
+    
+    The Type now resolves to a constant enum value for each subclass. Benefits:
+    - allows to remove setter -> objects are more immutable now
+    - reduces memory footprint of each object by one string
+    - impossible to accidentally forget to set the Type in a subclass constructor
+    
+    * make Point.Coordinates readonly & remove parameterless constructor
+    
+    * Increase immutability of Polygon and LineString & avoid explicit List types
+    
+    Both classes' coordinates field is read-only now and of IReadOnlyList<T> type instead of List<T>, which prevents manipulation after creation.
+    For this to work, additional constructors were introduced that take nested double enumerables as in the GeoJSON spec.
+    
+    * Rename Converters & extend previous work to more classes
+    
+    The previous converter names were highly misleading because e.g. PolygonConverter did NOT read/write Polygon object but instead only the Coordinates property of a Polygon.
+    
+    * Make MultiPoint & MultiPolygon immutable and improve corresponding converters
+    
+    * Make Position formally immutable (and smaller in memory)
+    
+    * Various small code style and documentation improvements
+    
+    * Let Feature<TGeometry> derive from Feature<TGeometry, TProps>
+    
+    Avoids duplication of code.
+    
+    * Streamline the style of JSON converters
+    
+    * Remove unused (and, from its XML doc, probably very old) ParsingException class
+    
+    * Position.cs: remove redundant null checks & remove misleading comment
+    
+    * Add missing and fix existing XML docs.
+    
+    * Fix for net35 target: replace IReadOnlyList by ReadOnlyCollection
+    Linestring to use IPosition in Is_Closed
+    Final commit for v1 Alpha
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Fix tests for Point, Polygon, and LineString
+    Reimplement Equals and GetHashCode
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Setting some more targets, removed GeographicPosition
+    Fixed tests so that they work on Mac/Linux
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reimplement Equals and GetHashCode
+    Updated to PCL259; Json.Net 8.0.2 & Tests correspondingly
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    fixing tests
+    Fixing test
+    Fixing tests after merginng position constructor validtion change
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reimplement Equals and GetHashCode
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Added a unit test to highlight the problem
+    Fixing tests after merginng position constructor validtion change
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Fix tests for Point, Polygon, and LineString
+    Reimplement Equals and GetHashCode
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Reimplement Equals and GetHashCode
+    Changed CRS Type attribute values to lowercase.
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Deserialize LinkedCRS with the href from its properties (#102)
+    
+    * Deserialize LinkedCRS with the href from its properties
+    
+    Fixes #101
+    
+    * Added regression test for deserializing LinkedCRS
+    Update tests project to msbuild 15 and add netcoreapp1.1 target (#87)
+    
+    * remove unreferenced sources from test project
+    
+    * update test project to MsBuild15 + add netcoreapp1.1 target
+    Fixed tests so that they work on Mac/Linux
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Reimplement Equals and GetHashCode
+    Changed CRS Type attribute values to lowercase.
+    add unit tests for MultiPoint and to ensure that serialization observes the settings of the serializer
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Adding some tests
+    Don't touch CRS on (de)serializing (#90)
+    
+    Removes code that creates a default CRS on deserializing when JSON contains None, and that removes an existing default CRS when serializing.
+    
+    According to https://tools.ietf.org/html/rfc7946#section-4, the CRS shouldn't be specified anyway, so it's not a good idea to create one whenever deserializing a CRS-less JSON object.
+    Reimplement Equals and GetHashCode
+    Optimize serialization in converters
+    
+    Introduce the concept of a Default CRS and Unspecified CRS as per the geojson spec i.e. if a null value is specified for a geojson crs property, this means that the CRS cannot be assumed. However, if no crs property is given then the default CRS should be used. The current implementation treats both a null CRS and the lack of a CRS as the same thing, which is incorrect. Since the library is compiled to work with Portable Class libraries, a TypeConverter cannot be used to handle initializing the GRS property on a GeoJSONObject type to a default CRS, so the serialization/deserialization handling is performed via private serialization/deserialization methods.
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    remove feature.Id and Property comparison
+    Implement Equals and GetHashCode on Feature and FeatureCollection
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Fixing tests after merginng position constructor validtion change
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Adding Feature class that has typed Geometry property
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Fixing tests after merginng position constructor validtion change
+    Fixing issue 94, exception when checking for null
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Adding Feature class that has typed Geometry property
+    Update Feature constructor definition to use interface instead of concrete class
+    
+    Feature defines a constructor with IGeometryObject, Dictionary<string, object>, string types. If an IDictionary<string, object> is provided it will use another Feature constructor defined with IGeometryObject, object, string and will use reflection to create a Dictionary implementation.
+    
+    When this constructor is used with an IDictionary<string, object> a Runtime Exception is thrown with the message: Parameter count mismatch.
+    
+    The first constructor should be updated to follow the Liskov Substitution Principle (https://en.wikipedia.org/wiki/Liskov_substitution_principle) to prevent this undesired behavior:
+    
+    > Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program (correctness, task performed, etc.).
+    
+    Unit tests were added to verify that the behavior does not change when the interface is used instead of the concrete implementation.
+    
+    Resolves: #116
+    Update Feature constructor definition to use interface instead of concrete class
+    
+    Feature defines a constructor with IGeometryObject, Dictionary<string, object>, string types. If an IDictionary<string, object> is provided it will use another Feature constructor defined with IGeometryObject, object, string and will use reflection to create a Dictionary implementation.
+    
+    When this constructor is used with an IDictionary<string, object> a Runtime Exception is thrown with the message: Parameter count mismatch.
+    
+    The first constructor should be updated to follow the Liskov Substitution Principle (https://en.wikipedia.org/wiki/Liskov_substitution_principle) to prevent this undesired behavior:
+    
+    > Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program (correctness, task performed, etc.).
+    
+    Unit tests were added to verify that the behavior does not change when the interface is used instead of the concrete implementation.
+    
+    Resolves: #116
+    Fixing issue 115, Feature.Equals thros excpeiton when geometry is null
+    Fixing tests after merginng position constructor validtion change
+    Fixing issue 94, exception when checking for null
+    Generic feature (#85)
+    
+    * Add generic Feature<TGeometry, TProps> class
+    
+    * add visual studio settings folder to .gitignore
+    
+    * add tests for generic Feature<,> and fix a bug found with them
+    
+    * move generic Feature tests to dedicated source file
+    
+    * add Nunit3TestAdapter package to GeoJSON.Net.Tests
+    
+    Allows to run unit tests in visual studio without installing the VSIX extension. This appears to be the recommended way of running tests within VS now. Also, in VS2017 it was the only way I managed to run the test (and only using the 3.8.0 alpha version of the package).
+    
+    * Add test for deserializing typed feature
+    
+    * update NUnit packages (stable version now supports VS 2017 and .NET core)
+    Adding Feature class that has typed Geometry property
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    remove feature.Id and Property comparison
+    Implement Equals and GetHashCode on Feature and FeatureCollection
+    Refactor unit tests into separate test classes
+    
+    Lot of tests fail. To be fixed
+    Add additional missing tests for functionality
+    Replace MSTest with NUnit to easily allow parameterized tests
+    Upgrade test project to .NET 4.5 to allow use of CallerMemberNameAttribute
+    Add additional constructor for FeatureCollection that does not require passing null
+    Removing GeographicPosition and replaced with Position. Created properties in IPosition and used.
+    Update Feature constructor definition to use interface instead of concrete class
+    
+    Feature defines a constructor with IGeometryObject, Dictionary<string, object>, string types. If an IDictionary<string, object> is provided it will use another Feature constructor defined with IGeometryObject, object, string and will use reflection to create a Dictionary implementation.
+    
+    When this constructor is used with an IDictionary<string, object> a Runtime Exception is thrown with the message: Parameter count mismatch.
+    
+    The first constructor should be updated to follow the Liskov Substitution Principle (https://en.wikipedia.org/wiki/Liskov_substitution_principle) to prevent this undesired behavior:
+    
+    > Substitutability is a principle in object-oriented programming stating that, in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of the program (correctness, task performed, etc.).
+    
+    Unit tests were added to verify that the behavior does not change when the interface is used instead of the concrete implementation.
+    
+    Resolves: #116
+    Adding Feature class that has typed Geometry property
+    GeometryObjects are done, next up Feature(Collection)s and then finally converters
+    Added .chm documentation
+    Added .chm documentation
+    Added .chm documentation

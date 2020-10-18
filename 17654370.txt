@@ -1,0 +1,1001 @@
+﻿    [cleanup] Clean up unused variables and update README
+    
+    Move processes to a configuration file parameter instead of commandline
+    [readme] Update example repo link
+    [cleanup] Update gemspec and fix typos
+    Fix bad link
+    [readme] add travis build icon
+    initial import of alerts code
+    [host_sources] Skip tables that do not exist
+    
+    The current host_source for aws_dynamo will error out if it cannot get
+    the read/write capacity for the dynamo table. This can occur if the
+    table is being restored.
+    [lint] Target Ruby 2.1
+    [lint] Final lint
+    [lint] Multiline if
+    [lint] fix here docs
+    [lint] Frozen literal magic comment
+    [lint] Make modifiers cleaner
+    [lint] Fix parens for array literals
+    [linting]
+    [lint] Target Ruby 2.1
+    [lint] Final lint
+    [lint] Multiline if
+    [lint] fix here docs
+    [lint] Frozen literal magic comment
+    [lint] Make modifiers cleaner
+    [lint] Fix parens for array literals
+    [linting]
+    [rubocop] Clean up rubocop errors
+    Enforce trailing comma
+    Add/upgrade static analysis
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [cleanup] Clean up unused variables and update README
+    
+    Move processes to a configuration file parameter instead of commandline
+    [cleanup] Tidy up some of the configuration passing
+    [rubocop] Clean up rubocop errors
+    initial import of alerts code
+    [lint] Frozen literal magic comment
+    [linting]
+    [lint] Frozen literal magic comment
+    [linting]
+    [rubocop] Clean up rubocop errors
+    initial import of alerts code
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [dsl] Add ability to specify include_tags
+    
+    Clean up repeat specs for alert options
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    initial import of alerts code
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [lint] Rubocop fixes
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] use specific host source for testing
+    
+    if we use optica, then adding optica specs will break the loading spec
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    [spec] tests for optica host sources
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [testing] Add tests for production call in addition to dry-run
+    
+    * refactor a bit for DRYness
+    enable dry run on datadog api
+    [lint] Rubocop fixes
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [spec] test get_all methods
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] test get_all methods
+    Fix custom args for is_work_hour?
+    [host_sources] Skip tables that do not exist
+    
+    The current host_source for aws_dynamo will error out if it cannot get
+    the read/write capacity for the dynamo table. This can occur if the
+    table is being restored.
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [alert-dsl] add method to allow != alert behavior during pst work hours
+    Allow tags to be added to monitors
+    
+    This commit adds the ability to add tags to monitors.
+    
+    This should make it easier to use the monitor rollup view in dashboards
+    and stuff.
+    
+    Added some new simple test cases, which I think cover everything, but
+    please let me know if I am missing anything!
+    Add support for locking monitors
+    [datadog] Stringify threhsold keys to avoid extra updates
+    
+    [rubocop] Clean up
+    [spec] Add tests for renotify_interval and  escalation_message
+    
+    Fix tests for other options
+    [dsl] Add renotify_interval and escalation_message to notify options
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    Clean up specs pertaining to custom alert key
+    Allow configuration of alert key
+    
+    Closes #37
+    Add support for new_host_delay option
+    [dsl] Add ability to specify include_tags
+    
+    Clean up repeat specs for alert options
+    [cleanup] Clean up unused variables and update README
+    
+    Move processes to a configuration file parameter instead of commandline
+    [cleanup] Clean up and fix specs
+    [dry-run] Change dry-run to use validate API
+    [dsl] Default the value of notify audit to false
+    [bugfix] Fix bug where updates would destroy alerts
+    
+    'metric alert' and 'query alert' can be used interchangably. Move
+    comparison logic to the destination and make sure that alerts are not
+    recreated when the alert is essentially the same type.
+    [rubocop] Clean up rubocop errors
+    [feature] Add evaluation_delay option to Alert DSL
+    
+    Add with_downtimes: false to monitor fetch
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [testing] Add tests for production call in addition to dry-run
+    
+    * refactor a bit for DRYness
+    [performance] Improve performance of interferon via multiprocessing
+    
+    * Use all available processors to create new alerts. This can
+      drastically speed up syncing with Datadog if there a multiple
+      processors available to use on the system.
+    * Fix silenced alert option not following the Datadog API spec
+    [interferon] Have dry-run output diff format
+    
+    * Add Diffy
+    * Dry-run will now output a diff format for alerts
+    * Moved dry-run to the destination module as it simplifies the logic
+      and the output becomes cleaner
+    * Remove dry-run alerts from known existing alerts during dry-run
+    * Bump version to 0.0.13
+    [interferon] Improve updates and dry-run mode
+    
+    * Improve dry-run mode to track updates and deletions which are part
+    of the difference with respect to Datadog. It now looks at the diff of
+    the message section and keep track of updates seperately from new
+    alerts.
+    * Track deletions separately from dry-run clean up.
+    * Added more statistics around what is successfully created
+    versus what was intended to be created.
+    refactored some common code
+    correctly diff between json returned from api and alerts created from ruby file
+    enable dry run on datadog api
+    [lint] More linting
+    [spec] Add specs for suffix.
+    
+    Fix specs for Alert
+    [alerts] Fix filename display for nested directories
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] use specific host source for testing
+    
+    if we use optica, then adding optica specs will break the loading spec
+    [spec] test get_all methods
+    [spec] fix intermittent failure
+    
+    once loaded, classes stick around; in order for this test to work, we have to
+    have the two classes redefine each other's constants
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    [spec] Add specs for suffix.
+    
+    Fix specs for Alert
+    [alerts] Fix filename display for nested directories
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    [lint] More linting
+    [alert_source] Set default parameters for filesystem alert_source
+    [rubocop] Clean up code
+    [alerts] Add tests for modularizing alerts
+    - Clean up logic in `fetch_existing_alerts` and `_fetch_existing_alerts_boundaries`.
+    - Make `_fetch_existing_alerts_boundaries` a private function.
+    - Fix rubocop formatting/linting errors.
+    - Fix test suite, and stub out a mock response with 100 alerts.
+    Allow tags to be added to monitors
+    
+    This commit adds the ability to add tags to monitors.
+    
+    This should make it easier to use the monitor rollup view in dashboards
+    and stuff.
+    
+    Added some new simple test cases, which I think cover everything, but
+    please let me know if I am missing anything!
+    Rename retry variable and add more fine-grain retry logic
+    Fix linting
+    Add retries to datadog requests
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    Clean up specs pertaining to custom alert key
+    Allow configuration of alert key
+    
+    Closes #37
+    [silenced] Allow silencing via the Datadog UI
+    
+    Expire mutes after a given threshold.
+    Update bundler in .travis.yml
+    Fix typo in `alert_errors`
+    Version bump
+    [datadog] Add notify.recovery option
+    [dry-run] Change dry-run to use validate API
+    [rubocop] Clean up rubocop errors
+    [datadog] Thread and paginate monitor fetching to improve performance
+    
+    - Threading is based on `concurrency` option for number of threads and
+    `page_size` options for number of alerts to fetch per page.
+    - Clean up output
+    - Fix missing notify_audit option
+    - Fix silenced metric
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [bump] Interferon 0.0.20
+    
+    * [bugfix] Prevent whitespace in alerts from causing flapping
+    Datadog remove trailing whitespace from the alert names when submitted
+    through the API. This leads to the recreation of alerts if the alert we
+    are trying to submit has a trailing space.
+    * [datadog] Add retry to fetching existing alerts from Datadog
+    * [datadog] Prevent dry-run alerts from triggering notifications
+    * [spec] Add specs for datadog destination
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] tests for optica host sources
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] tests for optica host sources
+    Fix linting on log line-length in #read_hosts
+    Add threading to host source reads
+    [metric] Fix metric name
+    [spec] Add specs for suffix.
+    
+    Fix specs for Alert
+    [alerts] Add tests for modularizing alerts
+    [alerts] Modularize loading of alerts
+    [lint] Target Ruby 2.1
+    [linting]
+    [typo] Fix extension typo
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    [destinations] Fix up ability to run multiple destinations
+    [lint] Target Ruby 2.1
+    [linting]
+    [typo] Fix extension typo
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    [destinations] Fix up ability to run multiple destinations
+    [silenced] Allow silencing via the Datadog UI
+    
+    Expire mutes after a given threshold.
+    Update bundler in .travis.yml
+    Fix typo in `alert_errors`
+    Version bump
+    [bugfix] Fix error message to only display files with errors instead of
+    all
+    [version] Inteferon 0.2.1
+    [stats] Add metric for total run time
+    [cleanup] Clean up unused variables and update README
+    
+    Move processes to a configuration file parameter instead of commandline
+    [dry-run] Print alerts instead of count of erroneous alerts
+    [cleanup] Clean up and fix specs
+    [refactor] Move alert generation outside of destinations
+    
+    [dry-run] Fail on applies/evaluate failing on all hosts
+    [dry-run] Change dry-run to use validate API
+    [cleanup] Tidy up some of the configuration passing
+    [bugfix] Fix bug where updates would destroy alerts
+    
+    'metric alert' and 'query alert' can be used interchangably. Move
+    comparison logic to the destination and make sure that alerts are not
+    recreated when the alert is essentially the same type.
+    [enhancement] Sort groups for stable output when using multiple group
+    sources
+    [cleanup] Add space for cleaner GroupSource output
+    [groups] Pass current groups to next GroupSource
+    [rubocop] Clean up rubocop errors
+    [feature] Add evaluation_delay option to Alert DSL
+    
+    Add with_downtimes: false to monitor fetch
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [cleanup] Update gemspec and fix typos
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    [testing] Add tests for production call in addition to dry-run
+    
+    * refactor a bit for DRYness
+    [performance] Improve performance of interferon via multiprocessing
+    
+    * Use all available processors to create new alerts. This can
+      drastically speed up syncing with Datadog if there a multiple
+      processors available to use on the system.
+    * Fix silenced alert option not following the Datadog API spec
+    [bug] Delete duplicate alerts from Datadog
+    
+    * This will now delete the duplicate copies and only retain one
+      version per unique name. This was causing issues for things like
+      muting as there would be multiple copies of the same alert in Datadog.
+    * Bump version to 0.0.14
+    [interferon] Have dry-run output diff format
+    
+    * Add Diffy
+    * Dry-run will now output a diff format for alerts
+    * Moved dry-run to the destination module as it simplifies the logic
+      and the output becomes cleaner
+    * Remove dry-run alerts from known existing alerts during dry-run
+    * Bump version to 0.0.13
+    [interferon] Improve updates and dry-run mode
+    
+    * Improve dry-run mode to track updates and deletions which are part
+    of the difference with respect to Datadog. It now looks at the diff of
+    the message section and keep track of updates seperately from new
+    alerts.
+    * Track deletions separately from dry-run clean up.
+    * Added more statistics around what is successfully created
+    versus what was intended to be created.
+    refactored some common code
+    update datadog name/tags to avoid confuse downstream consumers, now there is no change on regular runs, dry run uses a different key
+    correctly diff between json returned from api and alerts created from ruby file
+    make sure create_alerts have correct return value
+    enable dry run on datadog api
+    split a long method into multiple ones
+    rather not creating threads when requested shutdown
+    omit 2 unnecessary conditions for graceful shutdown
+    Gracefully shutdown on SIGTERM
+    
+    When SIGTERM is received, the program will catch signal
+    and wrap up what it's doing.
+    initial import of alerts code
+    [alerts] Add tests for modularizing alerts
+    [alerts] Modularize loading of alerts
+    [lint] Rubocop fixes
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [cleanup] Clean up and fix specs
+    [rubocop] Clean up rubocop errors
+    initial import of alerts code
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    initial import of alerts code
+    [suffix] Add ability to insert suffix to alert
+    [alerts] Fix filename display for nested directories
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] Frozen literal magic comment
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [lint] More linting
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [version] Interferon 0.3.0
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [version] Interferon 0.3.0
+    [version] Inteferon 0.2.5
+    [typo] Fix typo in include_tags
+    [silenced] Allow silencing via the Datadog UI
+    
+    Expire mutes after a given threshold.
+    Update bundler in .travis.yml
+    Fix typo in `alert_errors`
+    Version bump
+    [dsl] Add ability to just evaluate the alert once
+    [version] Inteferon 0.2.1
+    [interferon] Version 0.2.0
+    [interferon] Release 0.1.4
+    [interferon] Bump to 0.1.3
+    [rubocop] Clean up rubocop errors
+    [rollback] Remove with_downtimes flag to get_all_monitors
+    
+    This removes tracking of the silenced option which is not desired.
+    [feature] Add evaluation_delay option to Alert DSL
+    
+    Add with_downtimes: false to monitor fetch
+    [datadog] Thread and paginate monitor fetching to improve performance
+    
+    - Threading is based on `concurrency` option for number of threads and
+    `page_size` options for number of alerts to fetch per page.
+    - Clean up output
+    - Fix missing notify_audit option
+    - Fix silenced metric
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [bump] Interferon 0.0.20
+    
+    * [bugfix] Prevent whitespace in alerts from causing flapping
+    Datadog remove trailing whitespace from the alert names when submitted
+    through the API. This leads to the recreation of alerts if the alert we
+    are trying to submit has a trailing space.
+    * [datadog] Add retry to fetching existing alerts from Datadog
+    * [datadog] Prevent dry-run alerts from triggering notifications
+    * [spec] Add specs for datadog destination
+    [alert-dsl] add method to allow != alert behavior during pst work hours
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    [testing] Add tests for production call in addition to dry-run
+    
+    * refactor a bit for DRYness
+    [bug] Delete duplicate alerts from Datadog
+    
+    * This will now delete the duplicate copies and only retain one
+      version per unique name. This was causing issues for things like
+      muting as there would be multiple copies of the same alert in Datadog.
+    * Bump version to 0.0.14
+    [interferon] Have dry-run output diff format
+    
+    * Add Diffy
+    * Dry-run will now output a diff format for alerts
+    * Moved dry-run to the destination module as it simplifies the logic
+      and the output becomes cleaner
+    * Remove dry-run alerts from known existing alerts during dry-run
+    * Bump version to 0.0.13
+    bump version to v0.0.12
+    [dogapi] Allow configurable api timeout
+    log response body for 400 client error
+    refactored some common code
+    update version
+    Gracefully shutdown on SIGTERM
+    
+    When SIGTERM is received, the program will catch signal
+    and wrap up what it's doing.
+    bump up version to 0.0.6
+    bump version to v0.0.5
+    bump version to v0.0.4
+    bump version to v0.0.3
+    bump version to v0.0.2
+    initial import of alerts code
+    Allow tags to be added to monitors
+    
+    This commit adds the ability to add tags to monitors.
+    
+    This should make it easier to use the monitor rollup view in dashboards
+    and stuff.
+    
+    Added some new simple test cases, which I think cover everything, but
+    please let me know if I am missing anything!
+    Add support for locking monitors
+    [datadog] Stringify threhsold keys to avoid extra updates
+    
+    [rubocop] Clean up
+    [dsl] Add renotify_interval and escalation_message to notify options
+    [dsl] Allows applies :once otherwise coerce to boolean
+    [lint] Frozen literal magic comment
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    [lint] Frozen literal magic comment
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    Add support for new_host_delay option
+    [dsl] Add ability to specify include_tags
+    
+    Clean up repeat specs for alert options
+    [datadog] Add notify.recovery option
+    [dsl] Default the value of notify audit to false
+    [rubocop] Clean up rubocop errors
+    [feature] Add evaluation_delay option to Alert DSL
+    
+    Add with_downtimes: false to monitor fetch
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [alert-dsl] add method to allow != alert behavior during pst work hours
+    initial import of alerts code
+    [suffix] Add ability to insert suffix to alert
+    [alerts] Fix filename display for nested directories
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [silenced] Allow silencing via the Datadog UI
+    
+    Expire mutes after a given threshold.
+    Update bundler in .travis.yml
+    Fix typo in `alert_errors`
+    Version bump
+    [dsl] Add ability to just evaluate the alert once
+    [cleanup] Clean up and fix specs
+    [refactor] Move alert generation outside of destinations
+    
+    [dry-run] Fail on applies/evaluate failing on all hosts
+    [rubocop] Clean up rubocop errors
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [bump] Interferon 0.0.20
+    
+    * [bugfix] Prevent whitespace in alerts from causing flapping
+    Datadog remove trailing whitespace from the alert names when submitted
+    through the API. This leads to the recreation of alerts if the alert we
+    are trying to submit has a trailing space.
+    * [datadog] Add retry to fetching existing alerts from Datadog
+    * [datadog] Prevent dry-run alerts from triggering notifications
+    * [spec] Add specs for datadog destination
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    enable dry run on datadog api
+    initial import of alerts code
+    Fix custom args for is_work_hour?
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [alert-dsl] add method to allow != alert behavior during pst work hours
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [cleanup] Clean up and fix specs
+    [rubocop] Clean up rubocop errors
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    [interferon] Have dry-run output diff format
+    
+    * Add Diffy
+    * Dry-run will now output a diff format for alerts
+    * Moved dry-run to the destination module as it simplifies the logic
+      and the output becomes cleaner
+    * Remove dry-run alerts from known existing alerts during dry-run
+    * Bump version to 0.0.13
+    allow yml files for groups
+    initial import of alerts code
+    [lint] More linting
+    [alert_source] Fix alert_type_count for filesystem
+    [alert_source] Set default parameters for filesystem alert_source
+    [rubocop] Clean up code
+    [alerts] Fix filename display for nested directories
+    [alerts] Add tests for modularizing alerts
+    Change `resp[1]` to `monitors`.
+    - Clean up logic in `fetch_existing_alerts` and `_fetch_existing_alerts_boundaries`.
+    - Make `_fetch_existing_alerts_boundaries` a private function.
+    - Fix rubocop formatting/linting errors.
+    - Fix test suite, and stub out a mock response with 100 alerts.
+    fix comment
+    bring back concurrency by doing a divide and conquer between min and max monitor id
+    start with 0, and move forward
+    use id offset based method of pagination
+    Allow tags to be added to monitors
+    
+    This commit adds the ability to add tags to monitors.
+    
+    This should make it easier to use the monitor rollup view in dashboards
+    and stuff.
+    
+    Added some new simple test cases, which I think cover everything, but
+    please let me know if I am missing anything!
+    Rename retry variable and add more fine-grain retry logic
+    Fix linting
+    Add support for locking monitors
+    Add retries to datadog requests
+    [spec] Add tests for renotify_interval and  escalation_message
+    
+    Fix tests for other options
+    [dsl] Add renotify_interval and escalation_message to notify options
+    [lint] Rubocop fixes
+    [inteferon] Fix string interpolation
+    [lint] Target Ruby 2.1
+    [lint] Final lint
+    [lint] fix here docs
+    [lint] Frozen literal magic comment
+    [lint] Make modifiers cleaner
+    [lint] Fix parens for array literals
+    [linting]
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    [lint] Target Ruby 2.1
+    [lint] Final lint
+    [lint] fix here docs
+    [lint] Frozen literal magic comment
+    [lint] Make modifiers cleaner
+    [lint] Fix parens for array literals
+    [linting]
+    [dsl] Allow for new YAML definition
+    
+    Allow multiple destinations to be selected
+    [cleanup] Update return to drop IDs
+    
+    Add target to alert DSL
+    Allow configuration of alert key
+    
+    Closes #37
+    Add support for new_host_delay option
+    [typo] Fix typo in include_tags
+    [silenced] Allow silencing via the Datadog UI
+    
+    Expire mutes after a given threshold.
+    Update bundler in .travis.yml
+    Fix typo in `alert_errors`
+    Version bump
+    [dsl] Add ability to specify include_tags
+    
+    Clean up repeat specs for alert options
+    [datadog] Add notify.recovery option
+    [cleanup] Clean up and fix specs
+    [dry-run] Change dry-run to use validate API
+    [cleanup] Tidy up some of the configuration passing
+    [cleanup] Bit of syntax clean up
+    [bugfix] Fix bug where updates would destroy alerts
+    
+    'metric alert' and 'query alert' can be used interchangably. Move
+    comparison logic to the destination and make sure that alerts are not
+    recreated when the alert is essentially the same type.
+    [enhancement] Sort groups for stable output when using multiple group
+    sources
+    [rubocop] Clean up rubocop errors
+    [rollback] Remove with_downtimes flag to get_all_monitors
+    
+    This removes tracking of the silenced option which is not desired.
+    [feature] Add evaluation_delay option to Alert DSL
+    
+    Add with_downtimes: false to monitor fetch
+    [datadog] Thread and paginate monitor fetching to improve performance
+    
+    - Threading is based on `concurrency` option for number of threads and
+    `page_size` options for number of alerts to fetch per page.
+    - Clean up output
+    - Fix missing notify_audit option
+    - Fix silenced metric
+    [datadog] Update to monitor API
+    
+    - Add 'monitor_type' to Alert DSL with default value of 'metric alert'
+    - Add 'notify.audit' to Alert DSL to configure 'notify_audit' option
+    - Add 'require_full_window' to Alert DSL to configure
+    'require_full_window' option
+    - Add 'no_data_timeframe' to Alert DSL to configure 'no_data_timeframe'
+    option
+    - Add 'thresholds' to Alert DSL to configure 'thresholds' option
+    - Allow 'silenced' to accept hash values with `{ 'scope' => duration }`
+    used by the new monitor API. Backwards compatibility maintained with
+    silenced `true` putting unlimited silence on '*' and silenced 'false'
+    removing it
+    - Add options hash diff to diff output
+    [bump] Interferon 0.0.20
+    
+    * [bugfix] Prevent whitespace in alerts from causing flapping
+    Datadog remove trailing whitespace from the alert names when submitted
+    through the API. This leads to the recreation of alerts if the alert we
+    are trying to submit has a trailing space.
+    * [datadog] Add retry to fetching existing alerts from Datadog
+    * [datadog] Prevent dry-run alerts from triggering notifications
+    * [spec] Add specs for datadog destination
+    [bugfix] Silenced should be false for the alerts API
+    
+    * Force dry-run alerts to be silent to prevent false alerts
+    * Use the unmute_monitor API call to unmute silenced alerts. The
+      update_alerts API call will not unmute even when setting silenced to
+      false or null.
+    * Fix for timeout calculation
+    * Support aliases in the filesystem group_sources. This will enable
+      groups to have alises during renaming.
+    * Require nokogiri to < 1.7.0 for Ruby 1.9.3
+    * Bump to 0.0.18
+    [performance] Improve performance of interferon via multiprocessing
+    
+    * Use all available processors to create new alerts. This can
+      drastically speed up syncing with Datadog if there a multiple
+      processors available to use on the system.
+    * Fix silenced alert option not following the Datadog API spec
+    [bug] Delete duplicate alerts from Datadog
+    
+    * This will now delete the duplicate copies and only retain one
+      version per unique name. This was causing issues for things like
+      muting as there would be multiple copies of the same alert in Datadog.
+    * Bump version to 0.0.14
+    [interferon] Have dry-run output diff format
+    
+    * Add Diffy
+    * Dry-run will now output a diff format for alerts
+    * Moved dry-run to the destination module as it simplifies the logic
+      and the output becomes cleaner
+    * Remove dry-run alerts from known existing alerts during dry-run
+    * Bump version to 0.0.13
+    [interferon] Improve updates and dry-run mode
+    
+    * Improve dry-run mode to track updates and deletions which are part
+    of the difference with respect to Datadog. It now looks at the diff of
+    the message section and keep track of updates seperately from new
+    alerts.
+    * Track deletions separately from dry-run clean up.
+    * Added more statistics around what is successfully created
+    versus what was intended to be created.
+    [bug] Fix missing asterisk
+    [dogapi] Addressing PR feedback:
+    1. Adding default parameters reference for dogapi Client
+    2. Add detailed failure information from the call.
+    [dogapi] Allow configurable api timeout
+    log response body for 400 client error
+    refactored some common code
+    correctly diff between json returned from api and alerts created from ruby file
+    enable dry run on datadog api
+    [datadog] track alerts created/updated in dry_run mode
+    
+    previously, we would never update those counters if we didn't make a request
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    initial import of alerts code
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    [iam] aws host sources support IAM-role based authentication
+    initial import of alerts code
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [lint] Target Ruby 2.1
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] use specific host source for testing
+    
+    if we use optica, then adding optica specs will break the loading spec
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [spec] tests for optica host sources
+    [spec] fix intermittent failure
+    
+    once loaded, classes stick around; in order for this test to work, we have to
+    have the two classes redefine each other's constants
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    initial import of alerts code
+    [lint] Frozen literal magic comment
+    [lint] Frozen literal magic comment
+    [rubocop] Clean up rubocop errors
+    [optica_services] de-dup ownership using sets
+    [spec] tests for optica host sources
+    [spec] set of tests for dynamic loaders
+    
+    this is probably the most complicated component of interferon
+    initial import of alerts code
+    [host_sources] Replication group_id is populated per cluster not node
+    
+    Bump to 0.4.9
+    [elasticache] Add replication_group_id to hostinfo
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    [iam] aws host sources support IAM-role based authentication
+    initial import of alerts code
+    [host_sources] Skip tables that do not exist
+    
+    The current host_source for aws_dynamo will error out if it cannot get
+    the read/write capacity for the dynamo table. This can occur if the
+    table is being restored.
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [lint] Multiline if
+    [lint] Frozen literal magic comment
+    [lint] Fix parens for array literals
+    [rubocop] Clean up rubocop errors
+    [iam] aws host sources support IAM-role based authentication
+    initial import of alerts code

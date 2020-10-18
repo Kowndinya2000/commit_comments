@@ -1,0 +1,158 @@
+﻿    dos2unixed the rest
+    new version w. protocol
+    keywords.txt added
+    Update README.md
+    Update README.md
+    Update README.md
+    Updated README.md to include HT6P20X
+    Cosmetic readme updates
+    Added platformio CI
+    Update README.md
+    Added raspberry pi info to the readme
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Create README.md
+    Update library.properties (#341)
+    
+    already compatible with stm32duino
+    prepare version 2.6.3
+    
+    #317
+    Some interesting add has been done into the master since 2.6.2 in particular #139
+    so let's go out a new version to make it available on arduino library manager
+    Make the library compatible with the ESP32 architecture
+    Update library.properties
+    solve Arduino IDE library warnings
+    
+    1. get rid of unrecognized category warning in Arduino IDE. It doesn't seem to support multiple categories
+    2. add esp8266 to the list of architctures to avoid warnings about incompatible architecture. This library works on esp8266
+    adding library.properties for arduino library manager
+    prepare version 2.6.3
+    
+    #317
+    Some interesting add has been done into the master since 2.6.2 in particular #139
+    so let's go out a new version to make it available on arduino library manager
+    Update version to 2.6.2
+    update frameworks and platforms
+    Add authors name
+    @PlatformIO Library Registry manifest file
+    examples: changed outdated .pde extension to .ino
+    Change Google Code URL to github URL
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    refactoring
+    Remove unnecessary conditions from examples
+    Revert "changed function order to make travis compile, hopefully..."
+    
+    This reverts commit 067ab194ca71ef633e9bd37427e28eed640c69d4.
+    changed function order to make travis compile, hopefully...
+    Fix Travis CI build
+    cleanup advanced demo
+    fix some warnings in advanced demo
+    dos2unixed the rest
+    new version w. protocol
+    setReceiveTolerance + updated receive demos
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    arduino 1.0 compatibility
+    - receive without callback now
+    refactoring
+    new raw sending methods + example
+    Receiving implemented, some refactoring
+    examples: changed outdated .pde extension to .ino
+    Fix a typo
+    
+    Resolves #8
+    Change Google Code URL to github URL
+    dos2unixed the rest
+    new version w. protocol
+    new version w. protocol
+    setReceiveTolerance + updated receive demos
+    Change Google Code URL to github URL
+    Remove unnecessary conditions from examples
+    examples: changed outdated .pde extension to .ino
+    Fix a typo
+    
+    Resolves #8
+    Change Google Code URL to github URL
+    dos2unixed the rest
+    new version w. protocol
+    new version w. protocol
+    setReceiveTolerance + updated receive demos
+    Changed order of setProtocol and setPulseLength
+    
+    Changed the order of "mySwitch.setProtocol(2);" and "mySwitch.setPulseLength(320);", so setting the PulseLength will work when both lines are commented out. See issue #117
+    bugfix - switch off in example script
+    examples: changed outdated .pde extension to .ino
+    Change Google Code URL to github URL
+    switchOn(char, int) + switchOff(char, int) deprecated
+    Patch from Dominik: Use more than 5 devices for TypeA switches
+    Some credits, docs, examples
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    setRepeatTransmit() - example updated
+    refactoring
+    new raw sending methods + example
+    examples: changed outdated .pde extension to .ino
+    Change Google Code URL to github URL
+    dos2unixed the rest
+    example sketch updated
+    switchOn(char, int) + switchOff(char, int) deprecated
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    refactoring
+    examples: changed outdated .pde extension to .ino
+    avoid using byte and boolean
+    Change Google Code URL to github URL
+    Webserver example => arduino 1.0 compatible
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    Webserver example added.
+    examples: changed outdated .pde extension to .ino
+    Change Google Code URL to github URL
+    dos2unixed the rest
+    (undo)
+    
+    Reverse merged revision(s) 133 from trunk:
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    ........
+    arduino 1.0 compatibility
+    - renamed example files from *.pdo to *.ino
+    added support for Intertechno outlets
+    refactoring
+    Change Google Code URL to github URL
+    dos2unixed the rest
+    Lightweight sketch

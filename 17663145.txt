@@ -1,0 +1,2314 @@
+﻿    Rename LICENSE to LICENSE.md
+    Create LICENSE
+    Character images saving/loading should be w/o bugs
+    notes and manual shit update
+    NOTES!
+    NOTES!
+    notes!!!!!!
+    Die Window save and delete screens now pulled to front if button is
+    clicked again while they are open, also save button glitch fixed upon
+    save name error.
+    Notes update
+    the menubar now properly interacts with the notepad when the dungeon
+    screen is activated.
+    Update notes.txt
+    notes
+    notes
+    Changed some edge case behavior of the dungeongenerator and did some
+    subtle bugs in homewindow. Should behave more nicely over the range of
+    generation now.
+    Custom content loaded into proper HashMap on load
+    Update Note -- what is left for the remaining time
+    random generate buttons added
+    NOTES!
+    die roller should now be done based on current character
+    Notes update
+    Clear button on Die roller works
+    NOTES!!!
+    more notes
+    dammit sarah
+    more notes
+    You can now delete characters with white space/ special characters
+    added notes file for stuff we still have to do
+    Update .gitignore
+    Update .gitignore
+    Character specific Die Rolls now functional
+    Fix to issue 26.
+    https://github.com/BunkersAndBadasses/MetaDND/issues/26
+    
+    Will go through and look for more of these issues.
+    Update .gitignore
+    Update .gitignore
+    Update .gitignore
+    
+    Generated .gitignore for Eclipse, hopefully may prevent some future conflicts?
+    blah
+    Update .gitignore
+    Move again
+    Update .gitignore
+    Update .gitignore
+    Make folder structure consistent
+    Initial commit
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Create README
+    ...
+    Update README.md
+    Update README.md
+    Create README
+    Delete .project
+    Addding GUIs to a new folder and wokring on a common menubar
+    Make folder structure consistent
+    Initialized source
+    Remove unused class & import
+    I dunno added search icon and cancel button to search panel to make it
+    more obvious for non-Windows users. Icons don't show in Windows, known
+    issue in SWT.
+    Search panel now completely works
+    Player window update.
+    add character button pulls up char generator
+    player window search box update
+    player window update, search bar not filling page...
+    updates
+    badly made reference panel and playerScreen
+    playerMode window and reference panel stuff
+    fixed 'remove' for languages, now removes the selected language. also
+    commented out the startscreen in main
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    wiz7 converted to layout
+    cleaning up wiz1/wiz6, added notes to charwiz
+    converted wiz 6 to layout
+    added bnb logo to corner of char wizard shells
+    pop up windows issue fixed.
+    mostly fixed pop up window problem, will finish soon
+    finished spells, fixed bad feat saving
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    added skeleton for level up
+    fixed reverted changes
+    added callable getSpecials(FeatEntity feat) in Wiz6
+    renaming to cohesive naming scheme
+    bb
+    stuffs
+    fixed deity favored weapon
+    finished feat screen!!!
+    fixed problem in random character generation, feats fixed
+    added to feat entity
+    updated feat entity
+    fixed charfeat entry in wiz6, added todo for random character generation
+    (bonus feats)
+    finished converting feats to charfeats
+    added searching to items screen
+    fixed bug in feats xml
+    added searching to feats page
+    adequate feat prerequiste checking finished
+    almost finished feat prerequisite checking
+    feat prerequisite checking - added error messages
+    .
+    added bonus feats to class xmls, started checking prerequisites for
+    feats
+    fixed skill screen scroll
+    fixed fighter bonus feats (some were not showing up)
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    added public way to dispose char wizard
+    fixed page stepping problem
+    fixed reordered pages
+    reordered pages
+    adding bonus class feats
+    .
+    moved constants to GameState, fixed (some) errors in character save,
+    added toString method to character, added checking for character name
+    (rejected if it is empty string or just a combination of whitespace and
+    non-alphanumeric characters)
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    updating cancel
+    fixing static references
+    updating cancel reset
+    removed back buttons
+    items page
+    blah
+    wiz6
+    added to char wiz - loading from xml for skills
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    die window testeer
+    spell error checking?
+    adding spell page to level up button, changed some methods in wiz7 to
+    public static
+    clean up
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    wiz7 converted to layout
+    fixed reverted changes
+    renaming to cohesive naming scheme
+    stuffs
+    fixed lots and lots of problems in save/load character, added CharFeats
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    updated load character to match new character methods
+    added size mods, altered character gold & ac
+    saving ac etc
+    added searching to items screen
+    fixed problem on items page
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    cleaning up erroneous TODOs
+    updating cancel
+    fixing static references
+    updating cancel reset
+    removed back buttons
+    items page working now
+    items page
+    item page
+    items page
+    blah
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    Notepad done, except character directories if we choose
+    Basic notepad stuff
+    unifying fonts in charwiz
+    hopefully fixed red OS problem on ability scores page
+    .
+    add skill to random generation
+    clean up
+    Add special character check for random character, Although I see even
+    with a : it still can save...
+    fixed abilities fatal error
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    cleaning up wiz1/wiz6, added notes to charwiz
+    ...
+    added bnb logo to corner of char wizard shells
+    Add todo for diety and alignment for random gen
+    fixed multiple cancel window issue
+    notes and manual shit update
+    manual update
+    Change character wizard import & comment
+    Add weapon, shield, etc to random character.
+    Add random generated item and special ability (only race) to random
+    generated character.
+    manual character page is finally showing up!
+    i can't remember
+    pop up windows issue fixed.
+    finished spells, fixed bad feat saving
+    removed wiz9, moved spells to popup, renamed wiz10 to wiz9
+    added skeleton for level up
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    meh
+    The manualCharacter page is still not displaying.
+    manual page update again
+    I have literally no idea what's in this commit
+    manual update
+    stuffs
+    fixed deity favored weapon
+    finished feat screen!!!
+    fixed problem in random character generation, feats fixed
+    ...
+    fixed charfeat entry in wiz6, added todo for random character generation
+    (bonus feats)
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    finished converting feats to charfeats
+    fixed lots and lots of problems in save/load character, added CharFeats
+    Initial change of character name...
+    moved checkreroll method to char wizard
+    added size mods, altered character gold & ac
+    saving ac etc
+    bweoirgbk
+    added searching to items screen
+    updated todo
+    Change GameState & Ability Wizard
+    added bonus feats to class xmls, started checking prerequisites for
+    feats
+    fixed character creation home page
+    Save Random Generated Character
+    ...
+    Update button in random generation
+    Change Set Language Implementation.
+    Fix scroll bar.
+    ee
+    changed deities from hardcoded to loading from xmls
+    fixed skill screen scroll
+    got rid of print statement
+    ...
+    fixed problem on items page
+    save hitdie, size, and speed
+    TODO added.
+    @SupressWarning
+    Finish Character Wizard For Apr. 14th
+    Finish main function of random generation of characters. (need GUI)
+    Update character wizard
+    Keep working on random generation.
+    Random generate character start
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    added familiars
+    added public way to dispose char wizard
+    made shell public
+    fixed page stepping problem
+    adding bonus class feats
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    changed cancel button to grid layout
+    fixing stuffs
+    updating cancel reset
+    adding "coming soon" to random and manual
+    Update MenuBar (replace unused code
+    )
+    items page
+    blah
+    stuffs
+    added to char wiz - loading from xml for skills
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    ..
+    wiz pages
+    wiz pages
+    ...
+    update Character Wizard class to new method
+    added my progress from the weekend
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    Add logo for wizards.
+    Add listener to wizards.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    renaming to cohesive naming scheme
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    Remove warning signal.
+    Finish wizard.
+    ...
+    Change GameState & Ability Wizard
+    ...
+    Remove unused statement & variables
+    Back button Bug fixed, it is BACK.
+    Back Button Released (Bug)
+    Add back & cancel button for confirmation page of wizard
+    Finish Ability_wizard && Main test
+    Move again
+    ...
+    Create new classes abilityentity & ability_wizard
+    Create Item Wizard Stub.
+    Remove old material
+    Test merge work
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Skeleton update
+    Create classes
+    fix red????
+    fix red?
+    hopefully fixed red OS problem on ability scores page
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    removed borders from inner composites in wizard
+    wiz 2 converted to layout, secondary class removed from wiz 1
+    added bnb logo to corner of char wizard shells
+    pop up windows issue fixed.
+    mostly fixed pop up window problem, will finish soon
+    finished feat screen!!!
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    stuffs
+    added int array of base attack bonus
+    updated touch ac and flat footed ac, updated load character to match
+    edited saving throws in character
+    added size mods, altered character gold & ac
+    saving ac etc
+    changed deities from hardcoded to loading from xmls
+    fixed skill screen scroll
+    save hitdie, size, and speed
+    added to alignment checking
+    fixed typo
+    fixed up char wiz
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    finished class extras pop up
+    moar stuffs
+    stuff
+    added familiars
+    added public way to dispose char wizard
+    fixed page stepping problem
+    stuffs
+    added druid class extra - animal familiar
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    changed cancel button to grid layout
+    cleaning up erroneous TODOs
+    updating cancel
+    fixing cancel
+    fixing stuffs
+    fixing static references
+    updating cancel reset
+    fixed bug in skills
+    removed back buttons
+    items page
+    blah
+    stuffs
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    renaming to cohesive naming scheme
+    Remove unused statement & variables
+    Create Template for Monster Wizard
+    Back button Bug fixed, it is BACK.
+    Back Button Released (Bug)
+    Add back & cancel button for confirmation page of wizard
+    Finish Ability_wizard && Main test
+    Move again
+    ...
+    Create new classes abilityentity & ability_wizard
+    Create Item Wizard Stub.
+    Remove old material
+    Test merge work
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Skeleton update
+    Create classes
+    Font shit
+    Die Window save and delete screens now pulled to front if button is
+    clicked again while they are open, also save button glitch fixed upon
+    save name error.
+    Fix Die Window multiple save confirmation window.
+    Fix Die Window multi delete confirmation window problem.
+    Fix Unused import
+    bweoirgbk
+    die roller should now be done based on current character
+    saving char name
+    Clear button on Die roller works
+    fixed the favRolls not loading
+    typo update
+    here micheal, break this!
+    ekjnweg
+    jfg
+    asbdjl
+    delete update
+    Layout updated
+    Die window and menu bar update
+    Die window custom die complete
+    custom boxes inserted
+    Layout complete
+    Generated getters and setters for entities
+    main window layout now gridlayout
+    rearrange for layout
+    d100 update
+    d100 update
+    die window done, needs testing and layout fixes
+    die shit
+    die stuff
+    blah
+    load list
+    meh
+    blah
+    die window
+    Die window update again
+    die Window
+    diewindow
+    Move again
+    ...
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Timed commit 21:30
+    ...
+    Config die
+    One step
+    Create new branch
+    TestAPI
+    Create DieWindow class
+    Add scroll to manual character.
+    notes and manual shit update
+    manual update
+    manual update
+    manual character page is finally showing up!
+    meh
+    The manualCharacter page is still not displaying.
+    manual page update again
+    manual update
+    manual skeleton update
+    Made a template for the manual page
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    fixed off-center skill points label
+    fixed/didn't fix skills screen
+    mostly fixed pop up window problem, will finish soon
+    fixed problem in random character generation, feats fixed
+    description layout
+    fixed +/- buttons on skills screen
+    fixed skill screen scroll
+    added cleric domain selection (with alignment/deity checking)
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    stuff
+    fixed page stepping problem
+    stuffs
+    fixed reordered pages
+    reordered pages
+    adding bonus class feats
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    updating cancel
+    fixing static references
+    updating cancel reset
+    removed back buttons
+    items page working now
+    items page
+    finishing up feat page
+    feat screen - adding scrolling
+    moar feets
+    adding to feat page
+    wiz5
+    blah
+    scrollable = test
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    Fixed saving custom content
+    Add logo for wizards.
+    Add listener to wizards.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    renaming to cohesive naming scheme
+    Change sequence of wizard saving method.
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    Small focus change so that name box shows hint
+    Small item wizard update checking for number to prevent math error, also
+    some error text added.
+    fix item wizard display
+    Finish wizard.
+    Finish Item Wizard
+    Back button Bug fixed, it is BACK.
+    Small Change of Wizards (-0 to 0 parse)
+    Back Button Released (Bug)
+    Add back & cancel button for confirmation page of wizard
+    Finish Item Wizard, input check, catch exceptions, etc.
+    Finish Item_Wizard (wait for debug and beauty)
+    Item wizard working (a bit)
+    Update check
+    Up to date check
+    Lazy update of Item_wizard && Main test
+    Move again
+    ...
+    Create new classes abilityentity & ability_wizard
+    Idoc ommi talot
+    ...
+    Keep working on item_wizard, hit hard
+    Work on Item_Wizard
+    Open Main test
+    Create spell wizard stab
+    Create Item Wizard Stub.
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Skeleton update
+    Create classes
+    Fixed saving custom content
+    Add logo for wizards.
+    Add listener to wizards.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    renaming to cohesive naming scheme
+    Feat entity and wizard update
+    Change sequence of wizard saving method.
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    Fix feat wizard
+    Fix Feat Wizard
+    Finish wizard.
+    Fix warning.
+    Finish Item Wizard
+    Finish Feat Wizard
+    ...
+    Remove unused statement & variables
+    Back button Bug fixed, it is BACK.
+    Back Button Released (Bug)
+    Update MenuBar (Add wizards menubar)
+    Add back & cancel button for confirmation page of wizard
+    Title change for wizards(small commit)
+    Clear Unused Import
+    Finish feat wizard
+    Feat Wizard && Main test
+    keep going
+    Move again
+    ...
+    Create Item Wizard Stub.
+    Remove old material
+    Test merge work
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Skeleton update
+    Create classes
+    cleaning up charskill, added new method to character
+    getAbilityModifier(int base)
+    clean up
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    added bnb logo to corner of char wizard shells
+    Fixed some potential null pointers
+    pop up windows issue fixed.
+    pop up windows problems fixed (to my knowledge)
+    mostly fixed pop up window problem, will finish soon
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    finished primary weapon/armor/shield saving, added to character toString
+    fixed deity favored weapon
+    fixed lots and lots of problems in save/load character, added CharFeats
+    fixed languages/added deity details button
+    fixed character creation home page
+    finished layout of description page
+    stuffs
+    description layout
+    changed deities from hardcoded to loading from xmls
+    added racial ability adjustments
+    added cleric domain selection (with alignment/deity checking)
+    added to alignment checking
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    fixed page stepping problem
+    added druid class extra - animal familiar
+    fixed reordered pages
+    reordered pages
+    adding bonus class feats
+    moved constants to GameState, fixed (some) errors in character save,
+    added toString method to character, added checking for character name
+    (rejected if it is empty string or just a combination of whitespace and
+    non-alphanumeric characters)
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    updating cancel
+    fixing static references
+    updating cancel reset
+    fixed bug in skills
+    fixed error
+    added some getters to character
+    removed back buttons
+    items page
+    fixed layout of skills page
+    blah
+    added untrained skills
+    stuffs
+    added to char wiz - loading from xml for skills
+    trying to get char wizard to work with packaging
+    stuffs
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    Dungeon Viewer uses close instead of exit
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    renaming to cohesive naming scheme
+    Basic notepad stuff
+    Added exit function so custom content gets saved.
+    charList load button destroyed, double click the characters
+    added searching to the dungeon screen. Also fixed some bugs with
+    navigation within the app. (dungeon screen wasn't doing navigation with
+    the menubar properly) Added a new menubar (menubarhomescreen) because
+    this is our standard practice.
+    Refresh Menu Bar
+    Unused Import fix
+    Update MenuBar -- Back to Homescreen
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Update MenuBar (replace unused code
+    )
+    Update MenuBar (Add wizards menubar)
+    menu
+    Die window and menu bar update
+    update
+    added character wiz to menu bar
+    Close in menubar now working
+    fixed minor bugs
+    Move again
+    ...
+    Changed folders/packages to follow standard Java package naming
+    conventions.
+    Integrated Matt's MenuBar class into a test main, see comment for
+    testing. Moves his GUI classes into GUIs package, possibly follow this
+    for future GUIs.
+    Made a base for the menu bar
+    Addding GUIs to a new folder and wokring on a common menubar
+    Spell wizard adds spells to right list now
+    Add logo for wizards.
+    Add listener to wizards.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    renaming to cohesive naming scheme
+    Remove unused class & import
+    Change sequence of wizard saving method.
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    Remove warning signal.
+    Fix spell wizard
+    Finish new 4 wizards.
+    Finish wizard.
+    Fix warning.
+    Remove unused statement & variables
+    Back button Bug fixed, it is BACK.
+    Small Change of Wizards (-0 to 0 parse)
+    Back Button Released (Bug)
+    Add back & cancel button for confirmation page of wizard
+    Title change for wizards(small commit)
+    Clear Unused Import
+    Spell wizard complete (All Wizard complete for iteration 1)
+    Spell wizard start
+    Move again
+    ...
+    Create spell wizard stab
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    Skeleton update
+    Create classes
+    added level up button to character sheet
+    added fighter/monk bonus feat to level up
+    tweaking layout of wiz1
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    merged wiz1 and wiz2 into one page
+    cleaning up wiz1/wiz6, added notes to charwiz
+    removed borders from inner composites in wizard
+    wiz 2 converted to layout, secondary class removed from wiz 1
+    wiz1 now layout, commented out startscreen in main
+    added to alignment checking
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    changed cancel button to grid layout
+    updating cancel
+    fixing stuffs
+    fixing static references
+    updating cancel reset
+    blah
+    stuffs
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    stuffs
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    added bnb logo to corner of char wizard shells
+    fixed primary weapon/curr armor/curr shield when only one saving
+    fixed/didn't fix skills screen
+    pop up windows issue fixed.
+    pop up windows problems fixed (to my knowledge)
+    mostly fixed pop up window problem, will finish soon
+    finished spells, fixed bad feat saving
+    removed wiz9, moved spells to popup, renamed wiz10 to wiz9
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    saving armor/shield bonus to ac
+    finished primary weapon/armor/shield saving, added to character toString
+    changed armor/weapons/shields in character to type CharItem
+    can add/remove weapons, armor, and shields. saving to come. also fixed
+    setting of weight in armor/item/weapon entity
+    added skeleton for level up
+    fixed reverted changes
+    added to feat entity
+    edited saving throws in character
+    fixed skill screen scroll
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    updating cancel
+    fixing static references
+    updating cancel reset
+    removed back buttons
+    blah
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    added sweet ass picture to homescreen
+    refreshing character sheet on level up????????????
+    version consistency.
+    center fixed.
+    fix off-center?
+    fix Dungeon generator out of bound slider problem.
+    CharacterMain: changed uploadbutton to copy the image to the images
+    folder of the project directory
+    HomeWindow: Changed DungeonGenConfig composite to properly display the
+    selection sliders.
+    Gamestate: changed the static declaration of the images directory to be
+    correct.
+    save update dungeon list
+    change ver.
+    i can't remember
+    Fixed an array out of bounds for the loot generation button.
+    Changed dungeonconstants to work better with Gamestate.
+    changed gamestate to use a runtime defined folder for the file.
+    changed characterMain to be able to load a photo using a file chooser.
+    changed dungeonmasterscreen to fit the character load screen standard.
+    added dungeon tile size configurability to the dungeongenerator and
+    revamped the look of the dungeon generation configuration page.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    Character window sizing and position changes
+    fixed page overwrite on return to home screen, got rid of red background
+    fixed char screen switching
+    Stuff for character sheet
+    Made a template for the manual page
+    dungeon load button doesn't crash if nothing selected
+    the dungeon still doesn't generate onto the screen for macs...
+    gridmapper mac stuff
+    Fix Die Window multi delete confirmation window problem.
+    Fix problem also in trap and monster generation.
+    Fix loot generation bug.
+    Made it so that the load list of dungeons is populated at each
+    navigation.
+    Changed some edge case behavior of the dungeongenerator and did some
+    subtle bugs in homewindow. Should behave more nicely over the range of
+    generation now.
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    buttons same size
+    random generate buttons added
+    Update version in title in home window.
+    Fix unused import.
+    Delete character window is now layed out
+    Clear button on Die roller works
+    charList load button destroyed, double click the characters
+    You can now delete characters with white space/ special characters
+    added searching to the dungeon screen. Also fixed some bugs with
+    navigation within the app. (dungeon screen wasn't doing navigation with
+    the menubar properly) Added a new menubar (menubarhomescreen) because
+    this is our standard practice.
+    The delete character button now deletes the character's folder, along
+    with everything inside, and removes the character from the charList.
+    progress on the Delete character button
+    No Character charlist update error fixed.
+    Changed fonts, now can access bold version of system font
+    Biggus Dickus Loads and works from main menu
+    Added a working transition to the character main
+    Put TODOs in for the HomeWindow
+    fixed character list update
+    trying to fix the character list updating
+    ...
+    Displays made characters, ready to be linked to characterMain screen;
+    Currently does not update when new Character is made.
+    Populating the char list update (may be broken, no testing)
+    added a little to the load character
+    Search panel now completely works
+    Player window update.
+    add character button pulls up char generator
+    player window search box update
+    player window update, search bar not filling page...
+    updates
+    badly made reference panel and playerScreen
+    commented out erroneous main in homeWindow
+    playerMode window and reference panel stuff
+     .
+    created skeleton for player screen
+    preparing for CharacterMain to be opened on player mode button push
+    Dynamically sizes dungeon tiles now! Also added MenuBarDungeon which
+    supports navigation to the dungeon screen!
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Main class test change, now the Main will directly load HomeWindow.
+    Generated getters and setters for entities
+    Real basic semaphore stuff for search
+    Developed Homescreen, Dungeonscreen, DungeonViewer, and DungonGenConfig.
+    They are not at ALL tested, and lack some core functionality, but can do
+    basic generation, loading, and viewing.
+    commented out test
+    added level up button to character sheet
+    Character leveling up should be working
+    changed refresh to public
+    Added character info button
+    uncomment test in character main, clean up in spells page
+    Trying spellGUI with grid data. If you know how I can make the search
+    input faster, let me know
+    Saves damage taken now
+    Character saving should be working. Let me know if anybody has any
+    issues
+    Getting spellgui more stuff
+    Working on spellgui, still a lot to do
+    Switiching weapons and armor now updates screen
+    Changing Weapons works so far.  Still working on it and more
+    goddamn stop committing broken code
+    Commit I guess?
+    more level up stuff (skills page, hp page, ability scores page). some
+    testing features implemented (pop-up window on character load)
+    Removed unused
+    Working on everything character
+    Adding more to character main.  Also funny thing. sometimes the g's are
+    missing from the end of weapon type
+    Fixing stuff
+    LoadCharacter should be working.  Will be working on changing charMain
+    to output right format and SaveCharacter to save to files that exist
+    Character images saving/loading should be w/o bugs
+    Changed the picture save path to be within the character's folder
+    CharacterMain: changed uploadbutton to copy the image to the images
+    folder of the project directory
+    HomeWindow: Changed DungeonGenConfig composite to properly display the
+    selection sliders.
+    Gamestate: changed the static declaration of the images directory to be
+    correct.
+    Added functionality to item wizard button and feat wizard button
+    Fixing Save All
+    Fixed reading it
+    Changed dungeonconstants to work better with Gamestate.
+    changed gamestate to use a runtime defined folder for the file.
+    changed characterMain to be able to load a photo using a file chooser.
+    changed dungeonmasterscreen to fit the character load screen standard.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    fixed char screen switching
+    Stuff for character sheet
+    Made CharMain into a composite and used gridData
+    Working on a universal character loader and saver to help solve
+    inconsistancies
+    Added Scrollbar
+    Biggus Dickus Loads and works from main menu
+    Added a working transition to the character main
+    Working on integrating my classes with eacother
+    Working on sycing character xml format
+    Fixing CharacterMain
+    Added a dummy character xml called BD.xml and stared the character main
+    loading information from the xml
+    Back to working
+    fixed minor bugs
+    Move again
+    ...
+    Added functionality to spell wizard button in CharacterMain
+    Notes added to CharMain
+    Adding to the GUI for the character main, but with no functionality
+    Working on the CharacterMain page
+    Update button in random generation
+    Remove unused statement & variables
+    Updated StartScreen class, now spash fades in and out.
+    Update no trim
+    ..
+    Update startscreen
+    Change for unix
+    Start Screen setup
+    dragon pic
+    spells level up not quite as fucked up now
+    Character leveling up should be working
+    Checking for null
+    hopefully fixed null pointer when saving special abilities
+    removed error
+    refreshing character sheet on level up????????????
+    added saving to character in level up button
+    quick fix for null pointer in character.toString
+    uncomment test in character main, clean up in spells page
+    adding spell page to level up button, changed some methods in wiz7 to
+    public static
+    fixed elf racial languages
+    added fighter/monk bonus feat to level up
+    finished feat page of level up
+    cleaning up charskill, added new method to character
+    getAbilityModifier(int base)
+    done with skills page of level up button
+    more level up stuff (skills page, hp page, ability scores page). some
+    testing features implemented (pop-up window on character load)
+    fixed 'remove' for languages, now removes the selected language. also
+    commented out the startscreen in main
+    finished spells, fixed bad feat saving
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    finished primary weapon/armor/shield saving, added to character toString
+    moar skeleton
+    commiting test class for level up button
+    Remove unused class & import
+    adding to feat page
+    Update for Unix
+    Commit for now, work on scrolled composite later
+    scrollable = test
+    .
+    clean up
+    fixed 'remove' for languages, now removes the selected language. also
+    commented out the startscreen in main
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    removed borders from inner composites in wizard
+    changed wiz 3 to layout
+    save hitdie, size, and speed
+    added racial ability adjustments
+    added cleric domain selection (with alignment/deity checking)
+    added to alignment checking
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    fixed reordered pages
+    reordered pages
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    cleaning up erroneous TODOs
+    updating cancel
+    fixing static references
+    updating cancel reset
+    removed back buttons
+    items page
+    blah
+    stuffs
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    slight annoyance fixed
+    fixed adding spells
+    Gui is working better
+    Changed Naming
+    Trying spellGUI with grid data. If you know how I can make the search
+    input faster, let me know
+    Fixed the save only one character problem
+    Got SpellGui to a pretty nice stage, still stuff to add , but able to ad
+    and remove spells.  Going to work on finishing this and character save
+    tonight
+    Getting spellgui more stuff
+    Still working on spellgui.  Gettting closer
+    Working on spellgui, still a lot to do
+    Removed unused
+    Spellmanager works for biggus dickus
+    Fixing spellgui
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    Stuff for character sheet
+    Working on integrating my classes with eacother
+    Updating SpellGUI
+    Move again
+    ...
+    Added functionality to spell wizard button in CharacterMain
+    Added more to the GUI. Still need to add implementation
+    Changed folders/packages to follow standard Java package naming
+    conventions.
+    Integrated Matt's MenuBar class into a test main, see comment for
+    testing. Moves his GUI classes into GUIs package, possibly follow this
+    for future GUIs.
+    Addding GUIs to a new folder and wokring on a common menubar
+    finished converting char wizard to layout
+    removed wiz2
+    removed unnecessary parameters in constructors
+    removed borders from inner composites in wizard
+    wiz 2 converted to layout, secondary class removed from wiz 1
+    added bnb logo to corner of char wizard shells
+    pop up windows issue fixed.
+    mostly fixed pop up window problem, will finish soon
+    finished feat screen!!!
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    stuffs
+    added int array of base attack bonus
+    updated touch ac and flat footed ac, updated load character to match
+    edited saving throws in character
+    added size mods, altered character gold & ac
+    saving ac etc
+    changed deities from hardcoded to loading from xmls
+    fixed skill screen scroll
+    save hitdie, size, and speed
+    added to alignment checking
+    fixed typo
+    fixed up char wiz
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    finished class extras pop up
+    moar stuffs
+    stuff
+    added familiars
+    added public way to dispose char wizard
+    fixed page stepping problem
+    stuffs
+    added druid class extra - animal familiar
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    changed cancel button to grid layout
+    cleaning up erroneous TODOs
+    updating cancel
+    fixing cancel
+    fixing stuffs
+    fixing static references
+    updating cancel reset
+    fixed bug in skills
+    removed back buttons
+    items page
+    blah
+    stuffs
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    wiz pages
+    wiz pages
+    added, then modded the JSVGCanvas and JSVGScrollPane classes to support
+    the scrolling of the canvas in the dungeonViewer.
+    added dungeon tile size configurability to the dungeongenerator and
+    revamped the look of the dungeon generation configuration page.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    added size mods, altered character gold & ac
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    items page working now
+    added char item
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    Roll and die roller update
+    Move again
+    ...
+    Saving update to Spells.xml for now to work on GameState class
+    finished feat screen!!!
+    fixed typos
+    char feat file
+    added, then modded the JSVGCanvas and JSVGScrollPane classes to support
+    the scrolling of the canvas in the dungeonViewer.
+    Fixed Spell Loading and Saving
+    Adding some more null checkers
+    Character saving should be working. Let me know if anybody has any
+    issues
+    Fixed the save only one character problem
+    added illegal character checking when saving
+    Working on everything character
+    Changing stuff
+    Refixing a problem
+    Fixed some potential null pointers
+    Fixed one line
+    Saving a brand spankin new character works
+    Getting savecharacter done
+    stuff
+    Fixing SaveCharacter
+    finished primary weapon/armor/shield saving, added to character toString
+    fixed load/save character to match with weapons/armor/shields being
+    charItems
+    fixed typos
+    fixed lots and lots of problems in save/load character, added CharFeats
+    updated savecharacter to match new character methods
+    fixed it somewhat
+    added size mods, altered character gold & ac
+    Fixing some stuff
+    I added SaveCharacter and LoadCharacter.  I will need to add some
+    checking for null pointers, empty strings, and empty arrays.
+    Fix problem in RNG if max < min.
+    Update RNG comment
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    gridmapper mac stuff
+    Changed some edge case behavior of the dungeongenerator and did some
+    subtle bugs in homewindow. Should behave more nicely over the range of
+    generation now.
+    Remove unused import.
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Move again
+    ...
+    First working copy of gridmapper. It maps the ascii-encoded file to an
+    svg file of ~40x size (e.g. 3kB -> 121kB) and the svg is immediately
+    renderable.
+    
+    Also modified DungeonGenerator to store the size of the grid at the top
+    of the ascii file.
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    b
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    TODO added for the Die roller BUG
+    Roll and die roller update
+    Fixed armor entities being weapon entities.
+    Custom content loaded into proper HashMap on load
+    Ability entity done, small XML changes/fixes
+    Items searchable now, cleaned out debug text
+    Armor done
+    Weapons now load into the program and Entities are properly created.
+    Small tweaks to Josh's weapon stuff to get it to play nice with XML
+    loading.
+    Made languages available for characters with any, to fill based on other
+    races loaded.
+    Monsters fully loaded (- dragons), now to search
+    Cleaned up main, TrapEntity mostly done, searchable
+    Deity XML and Entity done and searchable.
+    Real basic semaphore stuff for search
+    Update for Unix
+    Entity tooltip windows now size and scroll properly!
+    Commit for now, work on scrolled composite later
+    Move again
+    ...
+    Baseline work for classEntity is done
+    Removed some test code
+    Race XML consistency cleanup, race entity mostly done, few adjustments
+    for additional data can be added.
+    Added more damage fields to spells, hopefully all the ones that need it.
+    Added entries to SpellEntity to reflect. Need to parse roll string to
+    actual values, waiting on integration between parts.
+    Some XML cleanup, item entity built
+    After much pain, suffering and confusion more XMLs, will cleanup all
+    formatting later...
+    Added basic framework for GameState, will store everything about current
+    running state of the application. All variables should be publicly
+    accessible.
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    SkillEntity built
+    FeatEntity work, needs tweaking, specifically feats with long
+    descriptions like Track. Fixed featsIn.txt for Improved Familiar, forgot
+    a few newlines in the middle of the text.
+    Move tooltip window to open on the right side of the screen.
+    Tooltip windows for entities done! Code should be generic enough for any
+    entity.
+    SpellEntity class like 90% done. Spells.xml read in, parsed into
+    appropriate entity class and added to HashMap of spells. Public access
+    to Spells HashMap for now. Still need to decide on Spell Class/Level
+    details, either string or Map<Class,Level>?
+    Not sure what happened, but it's fixed I guess
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Real basic spell entity instantiation, more to come
+    Getting somewhere with the whole loading thing... Next to actually push
+    the data into a class.
+    Small update to Spell parser python script, basic xml loading inplace.
+    Uses Java 8's new Files.walk() method
+    Die Roller is now fully compatible with the different user
+    save/load/delete, as well as Biggus Dickus
+    Character specific die roll saving/loading now works for Biggus Dickus
+    Character specific Die Rolls now functional
+    Remove unused import.
+    aekgeiuer
+    fav roll update version 9001
+    bweoirgbk
+    unmerged
+    die roller should now be done based on current character
+    Fixing some stuff
+    saving
+    saving char name
+    fixed the favRolls not loading
+    Keep edit comments and javadocs.
+    ...
+    Populating the char list update (may be broken, no testing)
+    Die roller now creates a folder inside the User Data folder
+    TODO added for the Die roller BUG
+    delete file location update
+    die stuff
+    load list
+    dieCount
+    Roll and die roller update
+    Move again
+    ...
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    ...
+    Finish today's work
+    gg
+    Random comment
+    die roller update
+    die roller update
+    Die rolling class
+    Die rolling class
+    gridmapper mac stuff
+    Dynamically sizes dungeon tiles now! Also added MenuBarDungeon which
+    supports navigation to the dungeon screen!
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Move again
+    ...
+    First working copy of gridmapper. It maps the ascii-encoded file to an
+    svg file of ~40x size (e.g. 3kB -> 121kB) and the svg is immediately
+    renderable.
+    
+    Also modified DungeonGenerator to store the size of the grid at the top
+    of the ascii file.
+    done with skills page of level up button
+    fixing skill adj node
+    Move again
+    ...
+    Package adder.
+    added my progress from the weekend
+    SkillEntity built
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    quick-fixed special abilities null
+    refreshing character sheet on level up????????????
+    added saving to character in level up button
+    added incHP method
+    quick fix for null pointer in character.toString
+    Got SpellGui to a pretty nice stage, still stuff to add , but able to ad
+    and remove spells.  Going to work on finishing this and character save
+    tonight
+    Switiching weapons and armor now updates screen
+    cleaning up charskill, added new method to character
+    getAbilityModifier(int base)
+    Working on loading character correctly
+    clean up
+    Working on everything character
+    Saving a brand spankin new character works
+    finished spells, fixed bad feat saving
+    saving armor/shield bonus to ac
+    finished primary weapon/armor/shield saving, added to character toString
+    actually fixed toString()
+    updated character toString()
+    changed armor/weapons/shields in character to type CharItem
+    fixed deity favored weapon
+    fixed problem in random character generation, feats fixed
+    fixed lots and lots of problems in save/load character, added CharFeats
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    stuffs
+    updated touch ac and flat footed ac, updated load character to match
+    added get total methods for saving throws, init mod, and grapple mod
+    changed grapple mod, initiative mod, saving throws, and ac to int[] (to
+    save each piece)
+    moved checkreroll method to char wizard
+    edited saving throws in character
+    added size mods, altered character gold & ac
+    saving ac etc
+    I added SaveCharacter and LoadCharacter.  I will need to add some
+    checking for null pointers, empty strings, and empty arrays.
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    Working on a universal character loader and saver to help solve
+    inconsistancies
+    Hum...
+    stuffs
+    Got Character Create to create a character that loads in the character
+    main.
+    Update character comment
+    fixed problem on items page
+    character saving fields updated
+    extra saving things in the character xml
+    Update character wizard
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    finished class extras pop up
+    added familiars
+    added public way to dispose char wizard
+    moved constants to GameState, fixed (some) errors in character save,
+    added toString method to character, added checking for character name
+    (rejected if it is empty string or just a combination of whitespace and
+    non-alphanumeric characters)
+    fixed ability modifier logic, added headers to wiz pages
+    working on saving the character (setting all fields)
+    added some getters to character
+    character saving
+    char saving
+    char xml saving
+    blah
+    added CharItem
+    dn
+    dn
+    items page
+    fixed layout of skills page
+    blah
+    trying to get char wizard to work with packaging
+    gui skeleton test
+    Move again
+    ...
+    Package adder.
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    added my progress from the weekend
+    SkillEntity built
+    Move and rename Feat class to FeatEntity to match new structure
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    added saving to character in level up button
+    cleaning up charskill, added new method to character
+    getAbilityModifier(int base)
+    done with skills page of level up button
+    more level up stuff (skills page, hp page, ability scores page). some
+    testing features implemented (pop-up window on character load)
+    LoadCharacter should be working.  Will be working on changing charMain
+    to output right format and SaveCharacter to save to files that exist
+    Remove unused import.
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    uncommented all error checking, fixed flow, added character summary at
+    the end
+    moved constants to GameState, fixed (some) errors in character save,
+    added toString method to character, added checking for character name
+    (rejected if it is empty string or just a combination of whitespace and
+    non-alphanumeric characters)
+    fixed bug in skills
+    items page
+    blah
+    added untrained skills
+    stuffs
+    stuffs
+    Move again
+    ...
+    Package adder.
+    added my progress from the weekend
+    SkillEntity built
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Refresh/get away with compile error
+    addin mah shit
+    CharacterMain: changed uploadbutton to copy the image to the images
+    folder of the project directory
+    HomeWindow: Changed DungeonGenConfig composite to properly display the
+    selection sliders.
+    Gamestate: changed the static declaration of the images directory to be
+    correct.
+    added skeleton for level up
+    Changed dungeonconstants to work better with Gamestate.
+    changed gamestate to use a runtime defined folder for the file.
+    changed characterMain to be able to load a photo using a file chooser.
+    changed dungeonmasterscreen to fit the character load screen standard.
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    finished feat screen!!!
+    Notepad done, except character directories if we choose
+    Changed dungeon generator to take into consideration screen size before
+    generation. Also added a semaphore-like feature to all of the wizards
+    via gamestate so that only one instance of a wizard may be active at a
+    time.
+    Custom content saving basics
+    Remove unused import.
+    fixed typo
+    added size mods, altered character gold & ac
+    Ability entity done, small XML changes/fixes
+    More commenting out debug text
+    Items searchable now, cleaned out debug text
+    Armor done
+    Change GameState & Ability Wizard
+    Weapons now load into the program and Entities are properly created.
+    Small tweaks to Josh's weapon stuff to get it to play nice with XML
+    loading.
+    Made languages available for characters with any, to fill based on other
+    races loaded.
+    Search results now sorted alphabetically
+    Monsters searchable! Can expand later for better search options if
+    wanted.
+    Monsters fully loaded (- dragons), now to search
+    Cleaned up main, TrapEntity mostly done, searchable
+    Deity XML and Entity done and searchable.
+    Search panel now completely works
+    Player window update.
+    created skeleton for player screen
+    moved constants to GameState, fixed (some) errors in character save,
+    added toString method to character, added checking for character name
+    (rejected if it is empty string or just a combination of whitespace and
+    non-alphanumeric characters)
+    Just moved saved data to "User Data" folder
+    Commit
+    Remove Unused File and Import
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Much search work, very break
+    Real basic semaphore stuff for search
+    blah
+    Move again
+    ...
+    After much pain, suffering and confusion more XMLs, will cleanup all
+    formatting later...
+    Added HashMap for custom content, make sure your wizards add a copy of
+    the Entity to here so it will get saved.
+    Added basic framework for GameState, will store everything about current
+    running state of the application. All variables should be publicly
+    accessible.
+    added, then modded the JSVGCanvas and JSVGScrollPane classes to support
+    the scrolling of the canvas in the dungeonViewer.
+    added untrained skills
+    class skill list
+    class skills list
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    Fixed Spell Loading and Saving
+    Character leveling up should be working
+    Working on loading character correctly
+    Won't crash now
+    Working on everything character
+    fixing stuff
+    Changing stuff
+    LoadCharacter should be working.  Will be working on changing charMain
+    to output right format and SaveCharacter to save to files that exist
+    Working on load character
+    finished primary weapon/armor/shield saving, added to character toString
+    fixed load/save character to match with weapons/armor/shields being
+    charItems
+    fixed typos
+    fixed lots and lots of problems in save/load character, added CharFeats
+    updated touch ac and flat footed ac, updated load character to match
+    updated load character to match new character methods
+    fixed typo
+    added size mods, altered character gold & ac
+    I added SaveCharacter and LoadCharacter.  I will need to add some
+    checking for null pointers, empty strings, and empty arrays.
+    Loading a character should be working in theory. Will chell for null
+    pointers later
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    Working on a universal character loader and saver to help solve
+    inconsistancies
+    Items searchable now, cleaned out debug text
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    More SkillEntity updates
+    Update SkillEntity for parent attribute data
+    Update for Unix
+    For realz though, make sure you refactor correctly and don't push key
+    files with references to classes that don't exist
+    more level up stuff (skills page, hp page, ability scores page). some
+    testing features implemented (pop-up window on character load)
+    All abilities "done". I'll be merging duplicates across classes and
+    cleaning up the XML soon.
+    clean up
+    fixed 'remove' for languages, now removes the selected language. also
+    commented out the startscreen in main
+    Put splash screen on for presentation
+    wiz1 now layout, commented out startscreen in main
+    added bnb logo to corner of char wizard shells
+    ChangeList -
+    
+    1 means "changed constructor of MenuBar to match new prototype"
+    2 means "changed interaction with windowsOpen to match new naming
+    scheme"
+    
+    GameState.java: Now uses an enum for keeping track of the page that we
+    are currently on
+    Main.java: removed dead code
+    AbilityWizard: 1
+    CharacterMain: 1
+    CharacterWizard: 2
+    FeatWizard: 2
+    HomeWindow: removed dungeon Viewer and put it into DungeonViewer.java
+    ItemWizard: 2
+    MenuBar: re-factored and it is now contextual
+    MenuBarDungeon: SHOULD BE REMOVED (i am dumb and dont know how)
+    SpellGUI: 2
+    SpellWizard: 2
+    DungeonViewer: new class that properly renders an svg. (IS NOT MUTUALLY
+    EXCLUSIVE TO ITSELF, I.E. MANY OF THEM CAN BE OPEN AT ONCE)
+    Character window sizing and position changes
+    Fix Die Window multi delete confirmation window problem.
+    Added exit function so custom content gets saved.
+    Small item wizard update checking for number to prevent math error, also
+    some error text added.
+    Change GameState & Ability Wizard
+    added searching to feats page
+    feat prerequisite checking - added error messages
+    Changed fonts, now can access bold version of system font
+    Created global static Fonts to use for the system
+    Displays made characters, ready to be linked to characterMain screen;
+    Currently does not update when new Character is made.
+    Comment out splash screen stuff so load up is faster
+    Cleaned up main, TrapEntity mostly done, searchable
+    Start Screen setup
+    Uncomment needed code
+    Again, remove unused test
+    Remove unused Main test code
+    Main class test change, now the Main will directly load HomeWindow.
+    added character wiz to menu bar
+    Real basic semaphore stuff for search
+    class skill list
+    Entity search work
+    More SkillEntity updates
+    Update for Unix
+    Commit for now, work on scrolled composite later
+    Spell wizard complete (All Wizard complete for iteration 1)
+    Finish Ability_wizard && Main test
+    Feat Wizard && Main test
+    Lazy update of Item_wizard && Main test
+    Move again
+    ...
+    Baseline work for classEntity is done
+    Work on Item_Wizard
+    Open Main test
+    Added basic framework for GameState, will store everything about current
+    running state of the application. All variables should be publicly
+    accessible.
+    Forgot System.exit() statement
+    Make sure program actually exits when main window is closed
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    Small update to Spell parser python script, basic xml loading inplace.
+    Uses Java 8's new Files.walk() method
+    Changed folders/packages to follow standard Java package naming
+    conventions.
+    Integrated Matt's MenuBar class into a test main, see comment for
+    testing. Moves his GUI classes into GUIs package, possibly follow this
+    for future GUIs.
+    Refresh/get away with compile error
+    Finish today's work
+    >w<
+    Revert "..."
+    
+    This reverts commit fe94bcda772a22e4ec62353286efddfc9336bec9.
+    ...
+    gg
+    die roller update
+    Create new branch
+    die roller update
+    ...
+    TestAPI
+    Make folder structure consistent
+    Some test code
+    Initialized source
+    Changed dungeonconstants to work better with Gamestate.
+    changed gamestate to use a runtime defined folder for the file.
+    changed characterMain to be able to load a photo using a file chooser.
+    changed dungeonmasterscreen to fit the character load screen standard.
+    Just moved saved data to "User Data" folder
+    1. Updated DungeonConstants to house the directory file for saved
+    dungeon locations (cwd/GeneratedDungeons).
+    2. Changed DungeonGenerator and GridMapper to handle stairs.
+    3. Changed Homewindow to accomodate new menubardungeon and features.
+    4. Gamestate now houses the current page number for all controls to use.
+    Move again
+    ...
+    Working first iteration of dungeon generation. Is configurable by map
+    size and map coverage termination condition.
+    removed 'quantity' variable from armor/weapons entities
+    can add/remove weapons, armor, and shields. saving to come. also fixed
+    setting of weight in armor/item/weapon entity
+    added skeleton for level up
+    Add getter and setter, supress warning.
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Weapons now load into the program and Entities are properly created.
+    Small tweaks to Josh's weapon stuff to get it to play nice with XML
+    loading.
+    added searching to the dungeon screen. Also fixed some bugs with
+    navigation within the app. (dungeon screen wasn't doing navigation with
+    the menubar properly) Added a new menubar (menubarhomescreen) because
+    this is our standard practice.
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Saving update to Spells.xml for now to work on GameState class
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    added my progress from the weekend
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    Custom spell save fixed
+    changed spellentity's level from string to string[]
+    Custom content formatting additons
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Much search work, very break
+    Generated getters and setters for entities
+    Real basic semaphore stuff for search
+    Entity search work
+    More SkillEntity updates
+    Update for Unix
+    Move again
+    ...
+    Added more damage fields to spells, hopefully all the ones that need it.
+    Added entries to SpellEntity to reflect. Need to parse roll string to
+    actual values, waiting on integration between parts.
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    FeatEntity work, needs tweaking, specifically feats with long
+    descriptions like Track. Fixed featsIn.txt for Improved Familiar, forgot
+    a few newlines in the middle of the text.
+    Small changes for testing/moving functions to abstract DNDEntity Class
+    Tooltip windows for entities done! Code should be generic enough for any
+    entity.
+    SpellEntity class like 90% done. Spells.xml read in, parsed into
+    appropriate entity class and added to HashMap of spells. Public access
+    to Spells HashMap for now. Still need to decide on Spell Class/Level
+    details, either string or Map<Class,Level>?
+    Not sure what happened, but it's fixed I guess
+    Real basic spell entity instantiation, more to come
+    Basic spell enity created
+    can add/remove weapons, armor, and shields. saving to come. also fixed
+    setting of weight in armor/item/weapon entity
+    Custom content formatting additons
+    Small item wizard update checking for number to prevent math error, also
+    some error text added.
+    Custom content saving basics
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Added more damage fields to spells, hopefully all the ones that need it.
+    Added entries to SpellEntity to reflect. Need to parse roll string to
+    actual values, waiting on integration between parts.
+    Some XML cleanup, item entity built
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Create Item Wizard Stub.
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    added my progress from the weekend
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    Output to xml work
+    Ability entity done, small XML changes/fixes
+    Loading a character should be working in theory. Will chell for null
+    pointers later
+    Much search work, very break
+    Update AbilityEntity Class
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Create new classes abilityentity & ability_wizard
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Cleaned up main, TrapEntity mostly done, searchable
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Remove test code to reduce console spam.
+    Monsters searchable! Can expand later for better search options if
+    wanted.
+    Monsters fully loaded (- dragons), now to search
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Output to xml work
+    Ability entity done, small XML changes/fixes
+    Items searchable now, cleaned out debug text
+    Made languages available for characters with any, to fill based on other
+    races loaded.
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Race XML consistency cleanup, race entity mostly done, few adjustments
+    for additional data can be added.
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    added my progress from the weekend
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    removed 'quantity' variable from armor/weapons entities
+    can add/remove weapons, armor, and shields. saving to come. also fixed
+    setting of weight in armor/item/weapon entity
+    added skeleton for level up
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Armor done
+    Finished up armor xml and added to Josh's python script
+    Creating a character loader and then a character saver that will load
+    and save to the current character
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    added my progress from the weekend
+    Moved classes to non-default packages, shouldn't break anything. Will
+    merge to master
+    addin mah shit
+    Output to xml work
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    Update stuff
+    Feat entity and wizard update
+    Feats update
+    finished feat screen!!!
+    added to feat entity
+    updated feat entity
+    Custom content formatting additons
+    Custom content saving basics
+    Output to xml work
+    Finish Item Wizard
+    Items searchable now, cleaned out debug text
+    feat prerequisite checking - added error messages
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    FeatEntity work, needs tweaking, specifically feats with long
+    descriptions like Track. Fixed featsIn.txt for Improved Familiar, forgot
+    a few newlines in the middle of the text.
+    Small changes for testing/moving functions to abstract DNDEntity Class
+    Move and rename Feat class to FeatEntity to match new structure
+    All abilities "done". I'll be merging duplicates across classes and
+    cleaning up the XML soon.
+    Icon shit added to tooltip window
+    Change tooltip window back to labels
+    Moved tooltip window to use text rather than labels
+    Add getter and setter, supress warning.
+    Custom content formatting additons
+    Output to xml work
+    Fix scroll bar.
+    Changed fonts, now can access bold version of system font
+    Created global static Fonts to use for the system
+    ...
+    Tooltips now tell you what type they are next to name
+    Tooltip window resize
+    ...
+    Screen size update
+    Monsters fully loaded (- dragons), now to search
+    Deity XML and Entity done and searchable.
+    Search panel now completely works
+    Player window update.
+    Much search work, very break
+    Update AbilityEntity Class
+    Generated getters and setters for entities
+    Entity search work
+    Fix stuff
+    Update for Unix
+    Entity tooltip windows now size and scroll properly!
+    Commit for now, work on scrolled composite later
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    SkillEntity built
+    FeatEntity work, needs tweaking, specifically feats with long
+    descriptions like Track. Fixed featsIn.txt for Improved Familiar, forgot
+    a few newlines in the middle of the text.
+    Small changes for testing/moving functions to abstract DNDEntity Class
+    Make sure program actually exits when main window is closed
+    Move tooltip window to open on the right side of the screen.
+    Tooltip windows for entities done! Code should be generic enough for any
+    entity.
+    SpellEntity class like 90% done. Spells.xml read in, parsed into
+    appropriate entity class and added to HashMap of spells. Public access
+    to Spells HashMap for now. Still need to decide on Spell Class/Level
+    details, either string or Map<Class,Level>?
+    Not sure what happened, but it's fixed I guess
+    Real basic spell entity instantiation, more to come
+    Basic spell enity created
+    Created abstract Entity class fo searchables
+    Changed folders/packages to follow standard Java package naming
+    conventions.
+    Add getter and setter, supress warning.
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Added favored weapon to Deities
+    Monsters fully loaded (- dragons), now to search
+    Deity XML and Entity done and searchable.
+    Deity XML
+    Abilities for classes work, up to monk for now.
+    finished spells, fixed bad feat saving
+    removed wiz9, moved spells to popup, renamed wiz10 to wiz9
+    added caster boolean to classEntity, fixed typo in classes.xml, adding
+    spells
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    Update stuff
+    bb
+    Bonus feat splitting
+    finished feat screen!!!
+    fixed problem in random character generation, feats fixed
+    added int array of base attack bonus
+    Output to xml work
+    Spells known update
+    Forgot to comment out stuff
+    Spells per day update
+    Items searchable now, cleaned out debug text
+    Update character wizard
+    Much search work, very break
+    Generated getters and setters for entities
+    Entity search work
+    Update for Unix
+    Move again
+    ...
+    Baseline work for classEntity is done
+    Moved Armor, Item, Weapon, Class, Race into entity package and renamed
+    for DNDEntity naming convention
+    Output to xml work
+    Items searchable now, cleaned out debug text
+    Much search work, very break
+    Generated getters and setters for entities
+    class skill list
+    Entity search work
+    More SkillEntity updates
+    Update SkillEntity for parent attribute data
+    Update for Unix
+    Move again
+    ...
+    Refactored Entity type enumeration as well as built skeletons for more
+    entity types
+    SkillEntity built
+    dragon pic
+    Wroking on a better character main
+    added sweet ass picture to homescreen
+    Move again
+    ...
+    Working on the CharacterMain page
+    Logo
+    ...
+    Add scroll to manual character.
+    Keep edit comments and javadocs.
+    ...
+    Change tooltip window back to labels
+    Spells XML thoroughly checked for errors. Things that should be in
+    tables made easier to read. Fixed missing material components and foci.
+    Some may still have errors.
+    Fix to issue 26.
+    https://github.com/BunkersAndBadasses/MetaDND/issues/26
+    
+    Will go through and look for more of these issues.
+    added caster boolean to classEntity, fixed typo in classes.xml, adding
+    spells
+    Fix to Issue 25
+    https://github.com/BunkersAndBadasses/MetaDND/issues/25
+    
+    Nightmare spell cleaned up and incorporated mis-labeled data.
+    changed shortened names of classes in spells.xml to full names (Sor ->
+    Sorcerer)
+    Output to xml work
+    Entity search work
+    Added more damage fields to spells, hopefully all the ones that need it.
+    Added entries to SpellEntity to reflect. Need to parse roll string to
+    actual values, waiting on integration between parts.
+    Saving update to Spells.xml for now to work on GameState class
+    Spells script finished hopefully. Full Spells XML, needs double checking
+    for errors.
+    Sample XML
+    Weapons now load into the program and Entities are properly created.
+    Small tweaks to Josh's weapon stuff to get it to play nice with XML
+    loading.
+    Added weapons and armor to the xml files. also added the scripts and
+    starter files from my work.
+    Added favored weapon to Deities
+    Deity XML and Entity done and searchable.
+    Deity XML
+    Update SkillEntity for parent attribute data
+    Skills XML, and python script done. May need more tweaking to get more
+    data?
+    Monsters searchable! Can expand later for better search options if
+    wanted.
+    Monsters fully loaded (- dragons), now to search
+    Monster XML Update
+    Traps python script and XML done
+    More cleaning
+    Feats update
+    updated feat entity
+    fixed bug in feats xml
+    added bonus feats to class xmls, started checking prerequisites for
+    feats
+    fixed fighter bonus feats (some were not showing up)
+    FeatEntity work, needs tweaking, specifically feats with long
+    descriptions like Track. Fixed featsIn.txt for Improved Familiar, forgot
+    a few newlines in the middle of the text.
+    Small update to something missed.
+    Feats.xml done! Please someone double check this for errors. I really
+    hope no errors...
+    fixed typo
+    After much pain, suffering and confusion more XMLs, will cleanup all
+    formatting later...
+    fixed elf racial languages
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    Ability entity done, small XML changes/fixes
+    Spells per day update
+    Race XML consistency cleanup, race entity mostly done, few adjustments
+    for additional data can be added.
+    Some XML cleanup, item entity built
+    After much pain, suffering and confusion more XMLs, will cleanup all
+    formatting later...
+    More XML cleanup
+    Some ability and class xml cleanup/ duplicate elimination
+    All abilities "done". I'll be merging duplicates across classes and
+    cleaning up the XML soon.
+    More ability work, will finish tomorrow
+    fixed abilities fatal error
+    Paladin class abilities done.
+    Abilities for classes work, up to monk for now.
+    fixed typos in abilities & races, finished saving needed stuff to
+    character
+    Custom content saving basics
+    fixed lay on hands ability null
+    More XML cleanup
+    Some ability and class xml cleanup/ duplicate elimination
+    All abilities "done". I'll be merging duplicates across classes and
+    cleaning up the XML soon.
+    More ability work, will finish tomorrow
+    Paladin class abilities done.
+    Abilities for classes work, up to monk for now.
+    XML fixed
+    Class xml update
+    finished feat screen!!!
+    fixed problem in random character generation, feats fixed
+    added to feat entity
+    Ability entity done, small XML changes/fixes
+    Spells known update
+    Spells per day update
+    added bonus feats to class xmls, started checking prerequisites for
+    feats
+    Commit for now, work on scrolled composite later
+    Baseline work for classEntity is done
+    Some XML cleanup, item entity built
+    After much pain, suffering and confusion more XMLs, will cleanup all
+    formatting later...
+    Abilities for classes work, up to monk for now.
+    Fix dragons.xml
+    Added dragons.xml, the generation script, and the refined input files.
+    Changed special to 0 in locked gauntlet to prevent crashing
+    Finished up armor xml and added to Josh's python script
+    Removed old Biggus Dickus xml from XMLs folder. Newest version from Matt
+    should be in User Data folder. Also forgot to actually stage Armor.xml
+    Finished cleanup of Armor XML so it reads in.
+    Weapons now load into the program and Entities are properly created.
+    Small tweaks to Josh's weapon stuff to get it to play nice with XML
+    loading.
+    Added weapons and armor to the xml files. also added the scripts and
+    starter files from my work.

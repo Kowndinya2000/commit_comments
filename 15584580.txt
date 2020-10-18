@@ -1,0 +1,13 @@
+﻿    twitter banned us lol.
+    Regenerated keys
+    Edited keys
+    Added keys
+    add license with clean readme
+    
+    Cleaned up the readme file and added a reference to the license.
+    change readme text to be more politically correct. politics grr.
+    Create README.md
+    Fixed error on reply.py
+    initial commit
+    initial commit
+    initial commit

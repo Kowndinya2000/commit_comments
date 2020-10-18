@@ -1,0 +1,34 @@
+﻿    Incorporate all the changes in external/opencore in git master branch
+    - add two patches for fixing thumbnail extraction and authoring compatibility
+    - remove 2way engine from system image
+    Not done yet (pending one fix from PV)
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution

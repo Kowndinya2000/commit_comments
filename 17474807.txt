@@ -1,0 +1,367 @@
+﻿    Get rid of KDELibs4Support
+    Port away from KIcon
+    Port to QtQuick 2.0
+    First approach to port to KF5
+    Bump version to 0.8.80
+    Set icons properly
+    
+    BUG:338605
+    
+    Reviewed-by: Diane Trout
+    Require QtGStreamer 1.0
+    Implement the main UI in QML
+    Bump the version to 0.8.0
+    Bump version to 0.8.1
+    Bump the version to 0.8.0
+    Bump version to 0.7.1
+    Bump Version to 0.6.80
+    bump version to 0.6.3
+    Bump to 0.6.2
+    Bump version to 0.6.1
+    Bump version to 0.6.0
+    update cmake policy
+    Bump version to 0.5.80
+    REVIEW: 109313
+    Use KTp::TelepathyHandlerApplication instead of KUniqueApplication.
+    Rename according to the new naming policy.
+    Initial porting to the Call1 spec - remove dependency on tp-qt4-yell
+    Fix compilation with tp-qt4 0.9
+    
+    Signed-off-by: George Kiagiadakis <george.kiagiadakis@collabora.com>
+    Remove test-contactlist (the old kcall contact list).
+    Initial porting of the GUI to Call.
+    Refactor libtelepathy-kde-call.
+    
+    The new code is meant to work with the new Call spec and telepathy-farstream.
+    I think the design is much cleaner now, since the handling has been split
+    into many different classes that do a small part each. Also, the code
+    should be much more stable now, as the sources and sinks have been refactored
+    to take care of possible race conditions with the gstreamer streaming threads.
+    Add QtGLib-based bindings for telepathy-farstream.
+    port call-ui to telepathy-qt4-0.5 and recent qt-gstreamer
+    Rebrand the project. It's now telepathy-kde-call-ui instead of kcall.
+    Move the contactlist application in a subdirectory.
+    
+    I am just going to keep this application temporarily for testing,
+    until the real contactlist is ready. It will be removed before the release.
+    Remove unused code.
+    Link explicitly with farsight2, since we use some fs_codec* methods.
+    
+    This fixes compilation errors with strict linkers, such as gold.
+    Remove QTfChannel and merge functionality in CallChannelHandler.
+    Port kcall_handler to the new libtelepathy-kde-call.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179882
+    Import the new libtelepathy-kde-call library.
+    
+    This library wraps all the gstreamer and farsight bits and hides them behind
+    a minimalistic API that is meant to be used by GUIs to implement audio/video
+    streaming. The design was chosen to allow in the future extra capabilities
+    such as stream capturing, detecting who is speaking, etc...
+    
+    It is mostly based on old code, but it has been ported to the new
+    QtGStreamer api and some things have changed. Still untested, due to the
+    lack of a GUI.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179470
+    Temporarily disable building kcall_handler, libkgstdevices and the kcm.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179469
+    Remove the kcall approver.
+    
+    In the final release, there will be a separate global approver for everything.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179468
+    Remove all the ugly build dependencies.
+    
+    This commit introduces forward declarations for what we need from
+    telepathy-qt4-farsight, telepathy-farsight and farsight, so that
+    we can use them without including their headers. Unfortunately
+    their headers are too "noisy", since they also include headers from
+    glib, gobject, gstreamer, libxml2 and dbus-glib and it is not acceptable
+    to depend on all of them just for using 3 functions!
+    
+    Hopefully, the released version of kcall will not have to use these
+    ugly forward declarations since I plan to write my own telepathy-farsight
+    library using Qt and perhaps QtGStreamer.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179467
+    Remove the embedded QtGStreamer copy.
+    
+    QtGstreamer has improved a lot lately and it will probably be ready
+    for a stable release by the time we will integrate kcall in kde, so
+    it will be shipped externally.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179465
+    KNotificationItem is no more experimental
+    
+    svn path=/trunk/playground/network/kcall/; revision=1019224
+    Move the knotify approver in a separate dbus-activatable process.
+    This is to avoid scenarios where a call comes but kcall is not running,
+    thus there is no approver and the call is auto-accepted.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1006768
+    Move AbstractClientApprover to libkcallprivate.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1006767
+    Add a kcallui.rc file to prevent showing all kinds of strange menus in the main window with the latest kdelibs.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1003716
+    Remove libkgstvideowidget, its unit test and some empty directories that were left by git-svn.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1002204
+    Allow kcall to use audiotestsrc/videotestsrc as audio/video sources for testing purposes.
+    Useful for people who don't have a web camera but want to test video support, like me ;)
+    
+    svn path=/trunk/playground/network/kcall/; revision=1001543
+    Correction on last commit by andrunko. kcall does not need to link to tpqt4-farsight
+    and it doesn't need it's includes as well. libqtpfarsight needs the includes and
+    kcall_handler needs to link to it (as libqtpfarsight is static).
+    
+    svn path=/trunk/playground/network/kcall/; revision=1000124
+    Improved cmake detection of TelepathyQt4 libraries.
+    
+    Split TelepathyQt4 cmake modules in FindTelepathyQt4 and FindTelepathyQt4Farsight.
+    Use pkg-config to find TelepathyQt4 related libraries.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1000087
+    Cleanup all CMakeLists.txt and make all dependencies required.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1000058
+    Move the call window settings dialog in a separate KCM module and use KSettings::Dialog
+    to display the two KCM modules in kcall. Also, remove access to the settings dialog
+    from kcall_handler as it doesn't make much sense to configure it from there.
+    
+    svn path=/trunk/playground/network/kcall/; revision=999996
+    Implement a KCM for configuring device preferences.
+    
+    svn path=/trunk/playground/network/kcall/; revision=999994
+    Rewrite the whole farsight/gstreamer part of kcall using:
+    - libQtGstreamer: A qt-only library that implements basic Qt Gstreamer bindings.
+    - libkgstdevices: A kde-based library that implements device detection and configuration
+    using Solid and QtGstreamer.
+    - libqtpfarsight: A wrapper around telepathy-farsight that provides a sane api for using
+    it and also hides the G* ugliness by using QtGstreamer.
+    
+    Real development of libQtGstreamer and libkgstdevices happens in separate git repos, but
+    I will maintain local copies in kcall for the moment, built as static libs.
+    
+    svn path=/trunk/playground/network/kcall/; revision=998732
+    Rename the phonon directory to libkgstvideowidget.
+    
+    svn path=/trunk/playground/network/kcall/; revision=993947
+    Add a test app for testing the video widget.
+    
+    svn path=/trunk/playground/network/kcall/; revision=993946
+    Modify the code from phonon to build standalone.
+    
+    svn path=/trunk/playground/network/kcall/; revision=993945
+    Implement a new library for handling gstreamer devices.
+    The library features a device factory, which can load the correct gstreamer
+    elements and configure them with either autodetected (using logic from phonon)
+    or user settings (using KConfig). In the future, this library will also feature
+    a widget for configuring device settings (i.e selecting between alsa, oss, jack,
+    etc... and setting the correct device, for example /dev/dsp for oss, etc...).
+    
+    This commit also introduces an "adder" element in the media handler, which allows
+    to mix the audio streams from multiple sources and play them on the same audio sink.
+    This will allow in the future to have conversation with multiple contacts.
+    
+    svn path=/trunk/playground/network/kcall/; revision=991709
+    Add a minimal configuration dialog.
+    The classes are arranged in such a way so that it is possible to use the
+    configuration dialog pages for kcall_handler inside kcall (but not vice-versa).
+    
+    svn path=/trunk/playground/network/kcall/; revision=986304
+    Move the models in a separate library, as they will be needed for kcall_handler.
+    
+    svn path=/trunk/playground/network/kcall/; revision=985252
+    Remove the callwindow kpart and merge all its functionality in kcall_handler.
+    
+    svn path=/trunk/playground/network/kcall/; revision=983413
+    Move the streamed media channel handler in a separate binary, kcall_handler.
+    
+    svn path=/trunk/playground/network/kcall/; revision=983412
+    Implement two approvers, one that is a systray icon and one that uses a knotify popup + sound.
+    The systray icon also acts as the main systray icon of kcall and uses the new knotificationitem api.
+    
+    svn path=/trunk/playground/network/kcall/; revision=982285
+    Switch to using the channel dispatcher instead of requesting channels directly from the connection manager.
+    
+    svn path=/trunk/playground/network/kcall/; revision=981959
+    Add initial implementation of the call window, using a kpart-based design.
+    
+    svn path=/trunk/playground/network/kcall/; revision=978838
+    Oops, no kcallui.rc yet.
+    
+    svn path=/trunk/playground/multimedia/kcall/; revision=975974
+    Initial commit of the new kcall, my gsoc project.
+    It's still just a contact list and nothing more, but it will evolve...
+    
+    svn path=/trunk/playground/multimedia/kcall/; revision=975938
+    Update install path for callwindowui.rc
+    Get rid of KDELibs4Support
+    Port away from kDebug / kWarning / kError
+    Port away from KIcon
+    Port to QtQuick 2.0
+    First approach to port to KF5
+    Set icons properly
+    
+    BUG:338605
+    
+    Reviewed-by: Diane Trout
+    use install(directory to install all of the qml files
+    Clean up whitespace
+    
+    Remove trailing whitespace, make sure file ends with new line, remove an
+    uneeded double newline from the start of a file
+    Remove dead code
+    Implement the main UI in QML
+    System tray Icon for KTp-call-UI
+    
+    REVIEW: 118358
+    Initial work on a new dialout application.
+    Add approver to handle incoming calls
+    Facelift the UI & add a new CallManager class that handles the state of the call.
+    Rename all files to follow the "foo-bar" scheme, according to policy, and remove unused files.
+    Use KTp::TelepathyHandlerApplication instead of KUniqueApplication.
+    Rename according to the new naming policy.
+    Initial porting to the Call1 spec - remove dependency on tp-qt4-yell
+    Initial porting of the GUI to Call.
+    Move all the statusbar-related stuff from CallWindow in a separate StatusArea class.
+    Use a better macro for '${prefix}/share' dir
+    Install DBus activated binary in libexec.
+    Rename D-Bus service from telepathy_kde_call_ui to KDE.CallUi
+    
+    The files:
+    - {prefix}/share/telepathy/clients/telepathy_kde_call_ui.client
+    - {prefix}/share/dbus-1/services/org.freedesktop.Telepathy.Client.telepathy_kde_call_ui.service.in
+    should be removed if you installed telepathy-call-ui before this commit
+    
+    Reviewed-by: George Kiagiadakis <george.kiagiadakis@collabora.co.uk>
+    REVIEW: 101298
+    Use underscores on the .client file name to match the dbus name.
+    
+    ...because if the names do not match, MC things we have no .client
+    file and it service-activates the call ui to introspect it.
+    Rename the service file also in CMakeLists.txt.
+    Rebrand the project. It's now telepathy-kde-call-ui instead of kcall.
+    Get rid of KDELibs4Support
+    Port away from kDebug / kWarning / kError
+    First approach to port to KF5
+    Port dialout widget to AccountsComboBox rather than old models
+    Initial work on a new dialout application.
+    Get rid of KDELibs4Support
+    First approach to port to KF5
+    Require farstream 0.2
+    libqtf: link against farstream
+    Rename according to the new naming policy.
+    Initial porting to the Call1 spec - remove dependency on tp-qt4-yell
+    Fix compilation with tp-qt4 0.9
+    
+    Signed-off-by: George Kiagiadakis <george.kiagiadakis@collabora.com>
+    Require pkg-config in libqtf.
+    Add a QTf::PendingChannel class that wraps Tpy::PendingTfChannel.
+    
+    This is to return the channel as a QTf::ChannelPtr instead
+    of a TfChannel* and most importantly to avoid including
+    <telepathy-farstream/channel.h> in client code.
+    Add QtGLib-based bindings for telepathy-farstream.
+    Get rid of KDELibs4Support
+    Port away from kDebug / kWarning / kError
+    Add missing TelepathyQt5 include dirs to libktpcallui
+    
+    Otherwise libktpcallui fails to find TelepathyQt5 headers included
+    from libqft.
+    First approach to port to KF5
+    Update cmake to look for farstream 0.2
+    libktpcall: Small refactoring
+    
+    - Refactor the *Private classes to be standalone classes in the KTpCallPrivate namespace.
+    - Move all classes in private/ to the KTpCallPrivate namespace.
+    - Eliminate the friend class madness.
+    - Refactor the way the input device pipeline works. This should solve the bug
+      where *sometimes* media is not sent to the other side.
+    - Remove InputControlBin as a consequence of the above.
+    - Change a bit the internal design of how sources and sinks are handled
+      so that 1) it is possible to do an echo bot later with the same code
+      and 2) it is possible to handle's the tp-fs properties and signals
+      related to the Content.I.AudioControl and Content.I.VideoControl interfaces.
+    
+    BUG: 302564
+    libktpcall: Link to phonon because phonon master now exports QDebug operator<<() for its various enums
+    libktpcall: Add support for plugging video sinks into the pipeline
+    libktpcall: Move all the private classes in the "private" subdir and the configuration test in the "tests" subdir
+    libktpcall: Simplify the controllers API
+    
+    * Consider all source & sink controllers private classes by themselves
+      and get rid of the *ControllerPrivate classes.
+    * Move the sink managers into a separate source file.
+    * Fix a few things in BaseSinkManager.
+    * Move some parts of the implementation from Audio/VideoSinkManager
+      to the Audio/VideoSinkController classes.
+    * Add subclasses of CallContentHandler that expose the various pipeline
+      controls that used to be exposed by the source/sink controllers.
+    libktpcall: Move the source bin management in a separate InputControlBin class
+    Rename all files to follow the "foo-bar" scheme, according to policy, and remove unused files.
+    Rename according to the new naming policy.
+    Refactor libtelepathy-kde-call.
+    
+    The new code is meant to work with the new Call spec and telepathy-farstream.
+    I think the design is much cleaner now, since the handling has been split
+    into many different classes that do a small part each. Also, the code
+    should be much more stable now, as the sources and sinks have been refactored
+    to take care of possible race conditions with the gstreamer streaming threads.
+    Cleanup the CMakeLists.txt of libtelepathy-kde-call.
+    
+    - Stop installing this lib.
+    - Stop linking to solid for no reason.
+    - Rename libkcall_SRCS to libtelepathy-kde-call_SRCS
+    Link explicitly with farsight2, since we use some fs_codec* methods.
+    
+    This fixes compilation errors with strict linkers, such as gold.
+    Fix linking now that QTpFarsight is gone.
+    Implement a new DeviceElementFactory class for creating the source/sink elements.
+    
+    This new factory is capable of using phonon's settings when it is running
+    under a KDE session. However, it will only report alsa/oss devices that
+    are detected by phononserver (which should be fine for use in a kde environment
+    though). Of course, it uses pulseaudio if available. Under other DEs, it will
+    use the gconf elements. This is probably a better choice for GNOME or XFCE.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1181918
+    Move codec-preferences.ini in libtelepathy-kde-call.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179881
+    Import the new libtelepathy-kde-call library.
+    
+    This library wraps all the gstreamer and farsight bits and hides them behind
+    a minimalistic API that is meant to be used by GUIs to implement audio/video
+    streaming. The design was chosen to allow in the future extra capabilities
+    such as stream capturing, detecting who is speaking, etc...
+    
+    It is mostly based on old code, but it has been ported to the new
+    QtGStreamer api and some things have changed. Still untested, due to the
+    lack of a GUI.
+    
+    svn path=/trunk/playground/network/kcall/; revision=1179470
+    Get rid of KDELibs4Support
+    Port away from kDebug / kWarning / kError
+    First approach to port to KF5
+    libktpcall: Small refactoring
+    
+    - Refactor the *Private classes to be standalone classes in the KTpCallPrivate namespace.
+    - Move all classes in private/ to the KTpCallPrivate namespace.
+    - Eliminate the friend class madness.
+    - Refactor the way the input device pipeline works. This should solve the bug
+      where *sometimes* media is not sent to the other side.
+    - Remove InputControlBin as a consequence of the above.
+    - Change a bit the internal design of how sources and sinks are handled
+      so that 1) it is possible to do an echo bot later with the same code
+      and 2) it is possible to handle's the tp-fs properties and signals
+      related to the Content.I.AudioControl and Content.I.VideoControl interfaces.
+    
+    BUG: 302564
+    libktpcall: Link to phonon because phonon master now exports QDebug operator<<() for its various enums
+    libktpcall: Move all the private classes in the "private" subdir and the configuration test in the "tests" subdir
+    Rename according to the new naming policy.

@@ -1,0 +1,241 @@
+﻿    Update blob scripts to reflect GL libraries move
+    
+    BUG: 17260357
+    Rename GL binary name
+    
+    Change-Id: I37b5b2b523e42004bdd8039f8877566661b7d562
+    mako: add libbccQTI.so to list of vendor blobs
+    
+    Change-Id: I0b04bb922de382ced8974b6210b6db5e3d279124
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Update propietary blobs for mako
+    
+    Change-Id: I860d3ab67a3ee6577658b8695755a7437c5dc43b
+    auto-generated blob list for mako
+    
+    Bug: 4295425
+    Change-Id: I63364248c8bde0a8adbc8d074bfe7834a40c7bd5
+    cherry-pick 9c96479c: Revert Remove AOSP support. Do not merge.
+    
+    Change-Id: I0d2d750b39b6966e06edc95b77aa4d07e485fa5f
+    Revert "Remove AOSP support"
+    
+    This reverts commit d607476cffaba53fd4db53cf51c397c1946dfcdf.
+    
+    Change-Id: I2a31a46b8f017adc39fc61e36fe52e399e0cc052
+    Remove AOSP support
+    
+    Change-Id: If7ef6bcfb6945e4898115f5f3750f467679aa8c9
+    auto-generated blob list for mako
+    
+    Bug: 4295425
+    Change-Id: I09263ed3184843a5d4d788949cafc3fc3f33ec1e
+    Packages for JWR66M
+    
+    Change-Id: I441dbda3de822bfa2973021e83737b992d3d0a28
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I6175497fdb4c27107529f3b820f078959bd930cf
+    auto-generated blob list for mako
+    
+    Bug: 4295425
+    Change-Id: I31c0c4caf022408732cf2447cd48719606d75561
+    auto-generated blob list for mako
+    
+    Bug: 4295425
+    Change-Id: I325406a0c17b645d03af360f89f963f03309709b
+    Self-extractors for JWR58
+    
+    Change-Id: Iad3fba71aeba65e31417f8af6a73ac6d66f897ee
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ie261c4075b933b03119a3c2de724f782ab483820
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I825ee86251ea79b5b0adb120a8eb8b3976cab8bb
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I320d5030506dd6226829f25ba94bdb78e54b69b3
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I20f031a7a12fae57703c243d0ca2969e51ea74f8
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I20f031a7a12fae57703c243d0ca2969e51ea74f8
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I08ef5744ebccbd4d0f22fe94cb295cdcb6c17b7e
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I1f3c556050313429b9105a03e049ff2cd8525aad
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ia42d880188bb8090235ee8fb44938c145e7f056d
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I973dcc6554f280c86b86117a5577cf568fbe609d
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ibdcdb3c105c63fe267b9bf44bad505613dbebacd
+    Self-extractors for mako
+    
+    Change-Id: Idf183a2499615c472231f00c8759946a8e8a01a9
+    Remove outdated and unmaintained file
+    
+    Change-Id: I8aa47c32567ef83742382d567d00004b845630ea
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I6f312e4850ebef1de9899235a255661a649b9e17
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I0e1f844c2dfa583c26248adabbe0d5b1256dcb98
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I932ccc7d10b2f781204f289e303f77f5ebaaba38
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ia131bb094cd3852e4af1a2b20146532d968cd8b6
+    auto-generated blob list
+    
+    Bug: 4295425
+    Bug: 7252206
+    Change-Id: Ibf4ba70b941ec7608ca48600e7be7d9ad9d06d57
+    Remove proprietary blob list
+    
+    Change-Id: I35e976247100e2b76a914e3b471ae276c0e9dd4a
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I0f0b794e77bad00cbe8a8e2ec832de203f783799
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I55431cc96d11e768a63253375adbd10d1226c47f
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I62654fc1d878e546c6a4d05d7d43b5e31f9f789b
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I7870f4b7b7298cc1d4529c69d722126486f3a31a
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ic2db606d00d5ab379922fa53a10b3a494b30a500
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I81aff539570749ad3136ec076b5a0ac8f9c8f9b2
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: I2c8da99f895ab6bee5a40c97079c8d152fdbfb2c
+    auto-generated blob list
+    
+    Bug: 4295425
+    Change-Id: Ib8aa30cc77409bd78003b4693a6ad3c182688897
+    Use proper copyright notices - those files were written from scratch
+    
+    Change-Id: Ie512ba5c4356a9ccb892c6de0e4cc90868cd671f
+    Placeholder for full_mako
+    
+    Change-Id: I611a4b793bfccdbc606457d963b3d852dc2536c4
+    mako: Remove J1TM from board-info.txt
+    
+    Change-Id: I4bb797c0889d9b9a5fadfffae23490a7ca51732d
+    workaround to allow 'fastboot update' to work from the current bootloader
+    
+    Change-Id: I6743ef91ccee3e0339329dafe827b6bd71a5e767
+    mako: update board-info.txt
+    
+    - fix the name
+    - add board-info.txt
+    
+    BUG Issue#: 6809106
+    
+    Change-Id: I0b65047fe29794a86cf95a430d0b8856d6fd356e
+    Update blob scripts to reflect GL libraries move
+    
+    BUG: 17260357
+    Rename GL binary name
+    
+    Change-Id: I37b5b2b523e42004bdd8039f8877566661b7d562
+    mako: add libbccQTI.so to list of vendor blobs
+    
+    Change-Id: I0b04bb922de382ced8974b6210b6db5e3d279124
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Update propietary blobs for mako
+    
+    Change-Id: I860d3ab67a3ee6577658b8695755a7437c5dc43b
+    cherry-pick 9c96479c: Revert Remove AOSP support. Do not merge.
+    
+    Change-Id: I0d2d750b39b6966e06edc95b77aa4d07e485fa5f
+    Revert "Remove AOSP support"
+    
+    This reverts commit d607476cffaba53fd4db53cf51c397c1946dfcdf.
+    
+    Change-Id: I2a31a46b8f017adc39fc61e36fe52e399e0cc052
+    Remove AOSP support
+    
+    Change-Id: If7ef6bcfb6945e4898115f5f3750f467679aa8c9
+    Packages for JWR66M
+    
+    Change-Id: I441dbda3de822bfa2973021e83737b992d3d0a28
+    Self-extractors for JWR58
+    
+    Change-Id: Iad3fba71aeba65e31417f8af6a73ac6d66f897ee
+    Mako self-extractors, updated for JB-MR2
+    
+    Change-Id: Ie224f501cccc3aa16ba1b00a67bccba42b89aef1
+    Update blob scripts to reflect GL libraries move
+    
+    BUG: 17260357
+    Rename GL binary name
+    
+    Change-Id: I37b5b2b523e42004bdd8039f8877566661b7d562
+    mako: add libbccQTI.so to list of vendor blobs
+    
+    Change-Id: I0b04bb922de382ced8974b6210b6db5e3d279124
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Update propietary blobs for mako
+    
+    Change-Id: I860d3ab67a3ee6577658b8695755a7437c5dc43b
+    cherry-pick 9c96479c: Revert Remove AOSP support. Do not merge.
+    
+    Change-Id: I0d2d750b39b6966e06edc95b77aa4d07e485fa5f
+    Revert "Remove AOSP support"
+    
+    This reverts commit d607476cffaba53fd4db53cf51c397c1946dfcdf.
+    
+    Change-Id: I2a31a46b8f017adc39fc61e36fe52e399e0cc052
+    Remove AOSP support
+    
+    Change-Id: If7ef6bcfb6945e4898115f5f3750f467679aa8c9
+    Packages for JWR66M
+    
+    Change-Id: I441dbda3de822bfa2973021e83737b992d3d0a28
+    Self-extractors for JWR58
+    
+    Change-Id: Iad3fba71aeba65e31417f8af6a73ac6d66f897ee
+    Mako self-extractors, updated for JB-MR2
+    
+    Change-Id: Ie224f501cccc3aa16ba1b00a67bccba42b89aef1
+    Self-extractors for mako
+    
+    Change-Id: Idf183a2499615c472231f00c8759946a8e8a01a9

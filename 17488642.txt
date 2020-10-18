@@ -1,0 +1,1787 @@
+﻿    Publish deprecation notice and point to Abseil.
+    Add CONTRIBUTING.md with instructions not to contribute. :)
+            Change on 2016/02/03 by vrusinov <vrusinov@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=113765748
+    Add gflags -> absl.flags migration guidelines.
+    Publish deprecation notice and point to Abseil.
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+            Ready to release python-gflags 1.8!
+    
+            * python-gflags: version 1.8
+            * Don't raise DuplicateFlag when re-importing a module
+            * (mmcdonald)
+            * Changed the 'official' python-gflags email in setup.py/etc
+            * Changed copyright text to reflect Google's relinquished
+            * ownership
+    
+            The major changes here are administrative, to reflect that
+            Google is relinquishing ownership of python-gflags.
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Remove NEWS file since it mostly duplicates Changelog.
+    
+            Change on 2016/04/18 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=120166606
+    Fix MANIFEST.in to include all relevant files.
+            Change on 2016/02/08 by vrusinov <vrusinov@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=114096292
+    Last night, setup.py was auto-including a lot of the files not
+    listed in MANIFEST.in.  This morning, it's not.  I'm sure the
+    problem is with me, but I feel more comfortable just listing
+    all files explicitly.
+    
+    R=mboerger
+    DELTA=17  (16 added, 0 deleted, 1 changed)
+    
+    
+    Revision created by MOE tool push_codebase.
+    MOE_MIGRATION=2824
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+            * Refactor the unittest
+    Wed Oct 13 17:40:12 2010  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.4
+            * Unregister per-command flags after running the command (dnr)
+            * Allow key-flags to work with special flags (salcianu)
+            * Allow printing flags of a specific module (mikecurtis)
+            * BUGFIX: Fix an error message for float flags (olexiy)
+            * BUGFIX: Can now import while defining flags (salcianu)
+            * BUGFIX: Fix flagfile parsing in python (chronos)
+            * DOC: Better explain the format of --helpxml output (salcianu)
+            * DOC: Better error message on parse failure (tstromberg)
+            * Better test coverage under python 2.2 (mshields)
+            * Added a Makefile for building the packages.
+    Prepare to rename Flag methods to PEP8 style.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137223277
+    Use xml.dom.minidom to create XML strings, instead of manual crafting.
+    
+    This also changed the xml output to be utf-8 encoded.
+    
+    Also made internal xml-related class methods private, the only public API is FlagValues.WriteHelpInXMLFormat.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136536862
+    Remove _helpers.GetMainModule.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136507437
+    Fix UnicodeFlagsTest in Python3.
+    
+            Change on 2016/09/28 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134620987
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Remove the unused tabs argument, and use expandtabs to expand the text in TextWrap.
+    
+            Change on 2016/09/19 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133654760
+    Prepare for disabling unparsed flag access in tests.
+    
+    This CL have no behaviour change, but allows further changes to be one-liners, so that most of this change will not have to be re-reviewed if rollback needed in future.
+    
+            Change on 2016/08/17 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130504142
+    Changes for Python 3 compatibility.
+    * removed need for cgi import
+    
+            Change on 2016/03/21 by jbmetz <jbmetz@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=117727852
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Prepare to rename Flag methods to PEP8 style.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137223277
+    Prepare to rename argument_parser methods to PEP8 style.
+    Also fixed ArgumentParser's instance cache in Python 3.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137054918
+    Use xml.dom.minidom to create XML strings, instead of manual crafting.
+    
+    This also changed the xml output to be utf-8 encoded.
+    
+    Also made internal xml-related class methods private, the only public API is FlagValues.WriteHelpInXMLFormat.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136536862
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Changes for Python 3 compatibility:
+    * changed except ... , ... into except ... as ...
+            Change on 2016/02/01 by jbmetz <jbmetz@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=113519751
+    Add optional comma compatibility to whitespace-separated list flags.
+    
+    This is so existing comma-separated flags can gain whitespace separation without breaking callers.  This is implemented as a default-false option to DEFINE_spaceseplist, instead of its own flag type, to discourage its use when not needed for backwards compatibility.
+            Change on 2016/01/15 by matthewb <matthewb@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=112292324
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Remove MutualExclusionValidator class, in favor of flags.MarkFlagsAsMutualExclusive.
+    
+            Change on 2016/10/11 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135861419
+    Move the validators.Error class to exceptions.ValidationError.
+    
+            Change on 2016/09/29 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134669991
+    Fix the [] build (broken by []
+    and the test itself (broken by TODO(b/*) comments which we are okay to release
+    per policy here - []
+            Change on 2016/09/28 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134589188
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+            * Add flag validators (olexiy)
+            * Check validators in registration order (olexiy)
+            * Added a shortcut for whether a flag is specified (olexiy)
+            * Cache ArgumentParser (tmarek)
+            * Report flag value with UnrecognizedFlagError (sorenj)
+    Add new API names:
+    DEFINE_multi_string
+    DEFINE_multi_integer
+    
+    The old APIs were renamed in github.com/abseil/abseil-py.
+    
+    This is to make the transition from python-gflags to absl-py easier.
+    Provide PEP8 style method/function aliases.
+    Prepare to rename Flag methods to PEP8 style.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137223277
+    Prepare to rename argument_parser methods to PEP8 style.
+    Also fixed ArgumentParser's instance cache in Python 3.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137054918
+    Prepare renaming flags.FlagsError to flags.Error.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137049564
+    Replace flags.validators.Error with flags.ValidationError
+    
+    flags.validators.Error will be removed soon: []
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137046459
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Remove the TODO to rename help to helptext.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136191362
+    Automated rollback.
+    
+    *** Original change description ***
+    
+    Automated rollback.
+    
+    ***
+    
+            Change on 2016/10/11 by tap-prod <tap-prod@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135875586
+    Automated rollback.
+    
+    *** Original change description ***
+    
+    Remove three private aliases in flags/__init__.py.
+    
+    ***
+    
+            Change on 2016/10/11 by tap-prod <tap-prod@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135872856
+    Remove three private aliases in flags/__init__.py.
+    
+            Change on 2016/10/11 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135868753
+    Remove DuplicateFlag in favor of DuplicateFlagError.
+    
+            Change on 2016/10/05 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135291603
+    Rename IllegalFlagValue to IllegalFlagValueError in flags library.
+    
+    Kept the old name as an alias, to be removed in the future.
+    
+            Change on 2016/10/04 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135181247
+    Move the validators.Error class to exceptions.ValidationError.
+    
+            Change on 2016/09/29 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134669991
+    Replace flags.DuplicateFlag with flags.DuplicateFlagError
+    
+    They are same class now, and flags.DuplicateFlag will be removed soon.
+    
+            Change on 2016/09/28 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134591021
+    Fix the [] build (broken by []
+    and the test itself (broken by TODO(b/*) comments which we are okay to release
+    per policy here - []
+            Change on 2016/09/28 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134589188
+    Remove UnrecognizedFlag, it's not used outside flags anymore.
+    
+            Change on 2016/09/22 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133965320
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Verify ADOPT_module_key_flags's module argument is actually a types.ModuleType.
+    
+            Change on 2016/09/15 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133272794
+    Change docstring to use a word that is not a built-in function.
+    
+            Change on 2016/09/08 by cgarg <cgarg@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=132571492
+    Remove _GetCallingModule function alias.
+    
+    As far as I can see no external code uses it.
+    
+            Change on 2016/08/16 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130398974
+    Implement CLIF pyglib/flags support for all C++ flags.
+    
+    Semantic changes:
+    - defining a flag in Python masks a C++ flag
+    - C++ flags processed by InitGoogle and makes visible in Python after parsing
+    - DEFINE_FLAG now supported
+    - setting Python flag changes flag value in C++
+    
+            Change on 2016/07/25 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=128376459
+    Add MarkFlagsAsRequired to flags
+    
+    This is useful for setting a couple of flags as required.
+    
+            Change on 2016/04/21 by qqy <qqy@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=120472257
+    Changes for Python 3 compatibility.
+    * removed need for cgi import
+    
+            Change on 2016/03/21 by jbmetz <jbmetz@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=117727852
+    Add optional comma compatibility to whitespace-separated list flags.
+    
+    This is so existing comma-separated flags can gain whitespace separation without breaking callers.  This is implemented as a default-false option to DEFINE_spaceseplist, instead of its own flag type, to discourage its use when not needed for backwards compatibility.
+            Change on 2016/01/15 by matthewb <matthewb@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=112292324
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Prepare renaming flags.FlagsError to flags.Error.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137049564
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Remove DuplicateFlag in favor of DuplicateFlagError.
+    
+            Change on 2016/10/05 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135291603
+    Rename IllegalFlagValue to IllegalFlagValueError in flags library.
+    
+    Kept the old name as an alias, to be removed in the future.
+    
+            Change on 2016/10/04 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135181247
+    Move the validators.Error class to exceptions.ValidationError.
+    
+            Change on 2016/09/29 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134669991
+    Fix the [] build (broken by []
+    and the test itself (broken by TODO(b/*) comments which we are okay to release
+    per policy here - []
+            Change on 2016/09/28 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134589188
+    Remove UnrecognizedFlag, it's not used outside flags anymore.
+    
+            Change on 2016/09/22 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133965320
+    Change DuplicateFlagCannotPropagateNoneToSwig's super class to FlagsError.
+    
+    Technically it's not a DuplicateFlag error, this also allows us removing the DuplicateFlag class.
+    
+            Change on 2016/09/16 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133410796
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Prepare for disabling unparsed flag access in tests.
+    
+    This CL have no behaviour change, but allows further changes to be one-liners, so that most of this change will not have to be re-reviewed if rollback needed in future.
+    
+            Change on 2016/08/17 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130504142
+    Remove _GetCallingModule function alias.
+    
+    As far as I can see no external code uses it.
+    
+            Change on 2016/08/16 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130398974
+    Changed various test asserts for Python 3 compatibility:
+    * changed assertEquals into assertEqual
+    * changed assertTrue( ... in ... ) into assertIn( ... , ... )
+    * changed asssert_ into assertTrue
+            Change on 2016/01/19 by jbmetz <jbmetz@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=112489233
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Prepare to rename Flag methods to PEP8 style.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137223277
+    Prepare to rename argument_parser methods to PEP8 style.
+    Also fixed ArgumentParser's instance cache in Python 3.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137054918
+    Prepare renaming flags.FlagsError to flags.Error.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137049564
+    Use xml.dom.minidom to create XML strings, instead of manual crafting.
+    
+    This also changed the xml output to be utf-8 encoded.
+    
+    Also made internal xml-related class methods private, the only public API is FlagValues.WriteHelpInXMLFormat.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136536862
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Remove on_value_changed, subclassing Flag and overriding the value @property is powerful enough for advanced use cases.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136165830
+    Make sure C++ flags are fresh (synchronised with C++ side changes).
+    
+            Change on 2016/10/13 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136072839
+    Add support to notify value changes on Flag object.
+    
+            Change on 2016/10/12 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135969004
+    Clean up unregistered flags in module -> [flags] dictionaries when an old flag is overridden. This stops FindModule[Id]DefiningFlag returning unregistered flags.
+    
+    Also fix another case where FindModule[Id]DefiningFlag might return an incorrect module, where a flag is only overridden for its long name or short name.
+    
+            Change on 2016/10/07 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135517936
+    Rename allow_override_cpp to allow_cpp_override. It means the cpp flag
+    will override the python flag, the former reads the other way around.
+    
+            Change on 2016/10/05 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135266098
+    Rename IllegalFlagValue to IllegalFlagValueError in flags library.
+    
+    Kept the old name as an alias, to be removed in the future.
+    
+            Change on 2016/10/04 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135181247
+    Allow to create a Python flag that will be taken over by C++ flag at InitGoogle if cpp_flags present.
+    
+    It designed for special cases like logging library that needs consistent behavior with and without C++ support.
+    
+            Change on 2016/09/30 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134844573
+    Rename allow_override_cpp to allow_hide_cpp.
+    
+    Reason:
+    In CLIF world, this parameter allows python program to define a python flag with a same name to a c++ flag. But by doing so, it will hide the c++ flag from python. (You cannot read/write the c++ flag, command line arguments won't affect it either)
+    
+    Also allow_override_cpp is too similar to allow_override. The later could be used in the SWIG world, to re-define a python flag. And that flag will override the c++ flag's default value, and command line arguments will affect its value too. This is different from CLIF's behavior.
+    
+    allow_hide_cpp communicates this better.
+    
+            Change on 2016/09/08 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=132603494
+    Remove the code trying to set some default helptext in BooleanFlag and EnumFlag, they will never be executed because the super class guarantees it won't be empty.
+    
+            Change on 2016/09/08 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=132572699
+    Automated rollback of changelist 128758960.
+    
+    *** Reason for rollback ***
+    
+    Introduce flag.allow_override_cpp. Delay app.py switch to CLIF-first flags/logging for later.
+    
+    *** Original change description ***
+    
+    Automated rollback of changelist 128744232.
+    
+    *** Reason for rollback ***
+    
+    Broke embedding project.
+    
+    *** Original change description ***
+    
+    Make CLIF flags processing attempt before SWIG.
+    
+    ***
+    
+    ***
+    
+            Change on 2016/08/03 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=129220178
+    Automated rollback of changelist 128744232.
+    
+    *** Reason for rollback ***
+    
+    Broke embedding project.
+    
+    *** Original change description ***
+    
+    Make CLIF flags processing attempt before SWIG.
+    
+    ***
+    
+            Change on 2016/07/28 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=128758960
+    Make CLIF flags processing attempt before SWIG.
+    
+            Change on 2016/07/28 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=128744232
+    Implement CLIF pyglib/flags support for all C++ flags.
+    
+    Semantic changes:
+    - defining a flag in Python masks a C++ flag
+    - C++ flags processed by InitGoogle and makes visible in Python after parsing
+    - DEFINE_FLAG now supported
+    - setting Python flag changes flag value in C++
+    
+            Change on 2016/07/25 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=128376459
+    Changes for Python 3 compatibility:
+    * changed except ... , ... into except ... as ...
+            Change on 2016/02/01 by jbmetz <jbmetz@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=113519751
+    Class Flag defines __eq__ and __lt__ but does not define other relations. Since there are no implied relationships among the comparison operators, to automatically generate ordering operations
+    from a single root operation functools.total_ordering() used.
+    
+    https://docs.python.org/2/reference/datamodel.html
+    Found by [] query IncompleteOrdering.ql
+            Change on 2016/01/22 by datacompboy <datacompboy@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=112793629
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Remove the unused tabs argument, and use expandtabs to expand the text in TextWrap.
+    
+            Change on 2016/09/19 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133654760
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Provide PEP8 style method/function aliases.
+    Prepare to rename Flag methods to PEP8 style.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137223277
+    Add a temporarily ENV variable GFLAGS_USE_GNU_GET_OPT to allow users opt-in GNU-style scanning.
+    
+            Change on 2016/10/25 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137202815
+    Prepare renaming flags.FlagsError to flags.Error.
+    
+            Change on 2016/10/24 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=137049564
+    Make FLAGS.SetDefault also accepts C++ flags before parsing in CLIF world.
+    It will raise flags.UnrecognizedFlagError instead of AttributeError when flag is not found.
+    
+            Change on 2016/10/21 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136899605
+    Use xml.dom.minidom to create XML strings, instead of manual crafting.
+    
+    This also changed the xml output to be utf-8 encoded.
+    
+    Also made internal xml-related class methods private, the only public API is FlagValues.WriteHelpInXMLFormat.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136536862
+    Remove _helpers.GetMainModule.
+    
+            Change on 2016/10/18 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136507437
+    Remove FlagValues.AddValidator method, and rename validator class names.
+    
+            Change on 2016/10/14 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=136193790
+    Add support to notify value changes on Flag object.
+    
+            Change on 2016/10/12 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135969004
+    Fork FlagValues.get as FlagValues.get_flag_value.
+    
+            Change on 2016/10/12 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135959603
+    Clean up unregistered flags in module -> [flags] dictionaries when an old flag is overridden. This stops FindModule[Id]DefiningFlag returning unregistered flags.
+    
+    Also fix another case where FindModule[Id]DefiningFlag might return an incorrect module, where a flag is only overridden for its long name or short name.
+    
+            Change on 2016/10/07 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135517936
+    Rename IllegalFlagValue to IllegalFlagValueError in flags library.
+    
+    Kept the old name as an alias, to be removed in the future.
+    
+            Change on 2016/10/04 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=135181247
+    Keep --undefok flag in args for C++ parsing.
+    
+            Change on 2016/09/29 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134733892
+    Move the validators.Error class to exceptions.ValidationError.
+    
+            Change on 2016/09/29 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134669991
+    Fix flagvalues_test on Python3.
+    
+            Change on 2016/09/28 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134620663
+    Fix the [] build (broken by []
+    and the test itself (broken by TODO(b/*) comments which we are okay to release
+    per policy here - []
+            Change on 2016/09/28 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134589188
+    Cleanup nits around UseGnuGetOpt, we won't be able to flip the default to True.
+    
+            Change on 2016/09/22 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134033389
+    Make setting an undefined flag logic more explicit when setter is not set.
+    
+            Change on 2016/09/22 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134009467
+    log the message about flags access causing errors after FLAGS.Reset() _before_
+    we mark flags as unparsed.  Otherwise this triggers an unparsed flag access
+    error from one of our internal logging libraries.
+    
+            Change on 2016/09/21 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133900117
+    Allow to customize undefined flags setting (will be used to set CLIF-wrapped C++ flag before InitGoogle).
+    
+            Change on 2016/09/21 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133883539
+    Add a special case to the flag used before parsing/init message code to
+    avoid calling logging.exception to log where it happened when the error
+    itself originated from the pyglib.logging module.  Without this, an
+    eventually terminating recursive dump of stack traces occurs when someone
+    uses a logging method before parsing/init has happened.
+    
+    While we frown on logging at import time or pre parsing/init in general, we
+    need to allow it and treat it similar to what C++ logging does: default
+    behaviors with output only to stderr.  Until we've cleaned the logging library
+    up for that, this prevents an uncomprehensible recursive exception error log.
+    
+            Change on 2016/09/21 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133873557
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Remove the unused method ShortestUniquePrefixes, the use case was deleted.
+    
+            Change on 2016/09/06 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=132331127
+    Fix tests in python 3.
+    
+            Change on 2016/08/26 by yileiyang <yileiyang@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=131416387
+    fix the < to be a <= in the checker for which flags should be allowed for unparsed access.  it was unintentionally forcing errors on 1% instead of the currently desired 0%.
+    
+            Change on 2016/08/17 by gps <gps@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130551759
+    Prepare for disabling unparsed flag access in tests.
+    
+    This CL have no behaviour change, but allows further changes to be one-liners, so that most of this change will not have to be re-reviewed if rollback needed in future.
+    
+            Change on 2016/08/17 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130504142
+    Implement CLIF pyglib/flags support for all C++ flags.
+    
+    Semantic changes:
+    - defining a flag in Python masks a C++ flag
+    - C++ flags processed by InitGoogle and makes visible in Python after parsing
+    - DEFINE_FLAG now supported
+    - setting Python flag changes flag value in C++
+    
+            Change on 2016/07/25 by mrovner <mrovner@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=128376459
+    Update documentation for FLAGS.SetDefault. If this method is called after
+    app.run(), it will overwrite the value from the command line. If we're going to
+    stick with this behavior, we should at least document it.
+    
+            Change on 2016/05/05 by ndobson <ndobson@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=121597542
+    Change warning to info for FlagValues.Reset().
+    
+    - A warning printing to the console is a bit scary for a valid use case.
+    
+            Change on 2016/04/07 by sesmith <sesmith@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=119313506
+    Disallow unparsed flag usage after FLAGS.Reset().
+    
+            Change on 2016/04/07 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=119266874
+    Fix MOE directives: they are not supposed to have a spaces.
+    
+            Change on 2016/03/01 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=116010077
+    pyglib: flags: do not allow --noflag if argument is given
+    
+    Reject arguments passed to --noflags in cases such as --nofoo=bar.
+    
+            Change on 2016/02/17 by mpn <mpn@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=114863511
+    pyglib: flags: add function for getting value of a flag
+    
+    Reduce code duplication by creating a GetValue local function which
+    returns value for given flag.
+    
+            Change on 2016/02/15 by mpn <mpn@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=114703335
+    Changes for Python 3 compatibility:
+    * changed except ... , ... into except ... as ...
+            Change on 2016/02/01 by jbmetz <jbmetz@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=113519751
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Remove _GetCallingModule function alias.
+    
+    As far as I can see no external code uses it.
+    
+            Change on 2016/08/16 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130398974
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+            * Fix bug in flag decl reporting for dup flags (craigcitro)
+            * Add multi_float, and tests for multi_float/int (simonf)
+            * Refactor the unittest
+            * Clean up a confusing error message (bohdan)
+            * Fix a bug when importing while defining flags (salcianu)
+            * Allow key-flags to work with special flags (salcianu)
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    Wed Jan 26 13:50:46 2011  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.5.1
+            * Fix manifest and setup.py to include new files
+    Mon Jan 24 16:58:10 2011  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.5
+            * Add support for flag validators (olexiy)
+            * Better reporting on UnrecognizedFlagError (sorenj)
+            * Cache ArgumentParser, to save space (tmarek)
+    Wed Oct 13 17:40:12 2010  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.4
+            * Unregister per-command flags after running the command (dnr)
+            * Allow key-flags to work with special flags (salcianu)
+            * Allow printing flags of a specific module (mikecurtis)
+            * BUGFIX: Fix an error message for float flags (olexiy)
+            * BUGFIX: Can now import while defining flags (salcianu)
+            * BUGFIX: Fix flagfile parsing in python (chronos)
+            * DOC: Better explain the format of --helpxml output (salcianu)
+            * DOC: Better error message on parse failure (tstromberg)
+            * Better test coverage under python 2.2 (mshields)
+            * Added a Makefile for building the packages.
+            * Fix flagfile parsing (chronos)
+            * Allow printing flags of a specific module (mikecurtis)
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    Improve Python3 compatibility.
+    
+            Change on 2016/09/19 by nya <nya@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=133671434
+    Remove _GetCallingModule function alias.
+    
+    As far as I can see no external code uses it.
+    
+            Change on 2016/08/16 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=130398974
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    I'm moving to a new way of maintaining the opensource tree, and this
+    is a bunch of (mostly) non-contentful changes to support that.  Some
+    of the changes are truly administrative, such as newlines added and
+    deleted in various places.  Here are the bigger ones:
+    
+    1) Several places used the older name 'flags' for this product instead
+    of gflags, especially in comments.  These have been mostly, if not
+    totally, fixed.
+    
+    2) Likewise, I no longer do 'import gflags as flags' for the tests --
+    they all just use 'gflags' now.
+    
+    3) A few files had the wrong copyright year; fix that.
+    
+    4) Some of gflags_test is a bit more awkward now (some lines with ""
+    empty strings for no apparent reason, one place where we insert
+    one string into another to created an expected-output, for no apparent
+    reason).  These are artifacts of the new maintenance system.  They're
+    a bit ugly but harmless.
+    
+    5) The directory structure has been reorganized, to put all tests into
+    their own subdirectory.  There's now a MANIFEST.in file, since the
+    automatically generated one doesn't handle the new structure quite
+    right.
+    
+    Some contentful changes:
+    
+    6) A new file, gflags_googletest.py, which subclasses the standard
+    unittest module to provide a few helper assert routines.  These used
+    to be embedded directly into the various *_test.py files, which
+    resulted in duplication.
+    
+    7) The Makefile now has 'make check' to automatically run all the
+    tests
+    
+    8) We no longer check if we're running a python version < 2.2
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Changed various test asserts for Python 3 compatibility:
+    * changed assertEquals into assertEqual
+    * changed assertTrue( ... in ... ) into assertIn( ... , ... )
+    * changed asssert_ into assertTrue
+            Change on 2016/01/19 by jbmetz <jbmetz@google.com>
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=112489233
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Wed Jan 18 13:57:39 2012  Google Inc. <google-gflags@googlegroups.com>
+    
+            * python-gflags: version 2.0
+            * No changes from version 1.8.
+            Ready to release python-gflags 1.8!
+    
+            * python-gflags: version 1.8
+            * Don't raise DuplicateFlag when re-importing a module
+            * (mmcdonald)
+            * Changed the 'official' python-gflags email in setup.py/etc
+            * Changed copyright text to reflect Google's relinquished
+            * ownership
+    
+            The major changes here are administrative, to reflect that
+            Google is relinquishing ownership of python-gflags.
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+            Ready to release python-gflags 1.8!
+    
+            * python-gflags: version 1.8
+            * Don't raise DuplicateFlag when re-importing a module
+            * (mmcdonald)
+            * Changed the 'official' python-gflags email in setup.py/etc
+            * Changed copyright text to reflect Google's relinquished
+            * ownership
+    
+            The major changes here are administrative, to reflect that
+            Google is relinquishing ownership of python-gflags.
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Release python-gflags 3.0.0.
+    
+    This version contains a lot of potentially backwards incompatible changes
+    since 2.0.
+    
+    This version is NOT recommended to use in production. Some of the files and
+    documentation has been lost during re-export; this will be fixed in next
+    versions.
+    
+    Signed-off-by: Vladimir Rusinov <vrusinov@google.com>
+    Wed Oct 13 17:40:12 2010  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.4
+            * Unregister per-command flags after running the command (dnr)
+            * Allow key-flags to work with special flags (salcianu)
+            * Allow printing flags of a specific module (mikecurtis)
+            * BUGFIX: Fix an error message for float flags (olexiy)
+            * BUGFIX: Can now import while defining flags (salcianu)
+            * BUGFIX: Fix flagfile parsing in python (chronos)
+            * DOC: Better explain the format of --helpxml output (salcianu)
+            * DOC: Better error message on parse failure (tstromberg)
+            * Better test coverage under python 2.2 (mshields)
+            * Added a Makefile for building the packages.
+            * Fix flagfile parsing (chronos)
+            * Allow printing flags of a specific module (mikecurtis)
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Wed Jan 18 13:57:39 2012  Google Inc. <google-gflags@googlegroups.com>
+    
+            * python-gflags: version 2.0
+            * No changes from version 1.8.
+            Ready to release python-gflags 1.8!
+    
+            * python-gflags: version 1.8
+            * Don't raise DuplicateFlag when re-importing a module
+            * (mmcdonald)
+            * Changed the 'official' python-gflags email in setup.py/etc
+            * Changed copyright text to reflect Google's relinquished
+            * ownership
+    
+            The major changes here are administrative, to reflect that
+            Google is relinquishing ownership of python-gflags.
+    Tue Dec 20 17:10:41 2011  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.7
+            * Prepare gflags for python 3.x, keeping 2.4 compatibility (twouters)
+            * If output is a tty, use terminal's width to wrap help-text (wiesmann)
+            * PORTING: Fix ImportError for non-Unix platforms (kdeus)
+            * PORTING: Run correctly when termios isn't available (shines)
+            * Add unicode support to flags (csilvers)
+    Ready to release python-gflags 1.6!
+    
+    * python-gflags: version 1.6
+    * Document FlagValues.UseGnuGetOpt (garymm)
+    * replace fchmod with chmod to work on python 2.4 (mshields)
+    * Fix bug in flag decl reporting for dup flags (craigcitro)
+    * Add multi_float, and tests for multi_float/int (simonf)
+    * Make flagfiles expand in place, to follow docs (dmlynch)
+    * Raise exception if --flagfile can't be read (tlim)
+    
+    R=craigcitro,tlim,simonf,garymm,salcianu
+    DELTA=32  (30 added, 0 deleted, 2 changed)
+    
+    
+    Revision created by MOE tool push_codebase.
+    MOE_MIGRATION=2825
+    Wed Jan 26 13:50:46 2011  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.5.1
+            * Fix manifest and setup.py to include new files
+    Mon Jan 24 16:58:10 2011  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.5
+            * Add support for flag validators (olexiy)
+            * Better reporting on UnrecognizedFlagError (sorenj)
+            * Cache ArgumentParser, to save space (tmarek)
+    Wed Oct 13 17:40:12 2010  Google Inc. <opensource@google.com>
+    
+            * python-gflags: version 1.4
+            * Unregister per-command flags after running the command (dnr)
+            * Allow key-flags to work with special flags (salcianu)
+            * Allow printing flags of a specific module (mikecurtis)
+            * BUGFIX: Fix an error message for float flags (olexiy)
+            * BUGFIX: Can now import while defining flags (salcianu)
+            * BUGFIX: Fix flagfile parsing in python (chronos)
+            * DOC: Better explain the format of --helpxml output (salcianu)
+            * DOC: Better error message on parse failure (tstromberg)
+            * Better test coverage under python 2.2 (mshields)
+            * Added a Makefile for building the packages.
+            * Fix flagfile parsing (chronos)
+            * Allow printing flags of a specific module (mikecurtis)
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Mon Jan  4 18:46:29 2010  Tim 'mithro' Ansell  <mithro@mithis.com>
+    
+            * python-gflags: version 1.3
+            * Fork from the C++ package (google-gflags 1.3)
+            * Add debian packaging
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add examples to opensource version.
+    
+            Change on 2016/09/30 by vrusinov <vrusinov@google.com>
+    
+    -------------
+    Created by MOE: https://github.com/google/moe
+    MOE_MIGRATED_REVID=134779382
+    Add gflags -> absl.flags migration guidelines.
+    Add gflags -> absl.flags migration guidelines.

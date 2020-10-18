@@ -1,0 +1,1302 @@
+﻿    Camera: Metadata: Fix markdown error in Readme.md
+    
+    Protect filename that contains syntax-parsed "_" character.
+    
+    Change-Id: I7688ba2e2fbf3172be46e7652fc1d228a5f474b4
+    Camera2: Update generate scripts check for dependencies and to support MacPorts: DO NOT MERGE
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Metadata XML cleanup, add README: DO NOT MERGE
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera2: Update generate scripts check for dependencies and to support MacPorts
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Metadata XML cleanup, add README
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Mark enum snprint with non-hidden visibility
+    
+    Since by default our build system assumes everything has hidden visibility,
+    the symbols for the enum snprint function were not being exported.
+    
+    Change-Id: I6c0b36067052aceca9ccd56a1b073fd96b35f6ef
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Prepare to generate tags from script: DO NOT MERGE
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Add a script to generate files from XML: DO NOT MERGE
+    
+    Change-Id: I638017934ddfcfe8ab8f9f56bebb587dae35f17f
+    Camera: Generate tag string info from XML: DO NOT MERGE
+    
+    Change-Id: I5109a3c46a065fb2dce31482d4377c33aeb84176
+    Camera: Generate camera_metadata_tags.h from XML: DO NOT MERGE
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Prepare to generate tags from script
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Add a script to generate files from XML
+    
+    Change-Id: I638017934ddfcfe8ab8f9f56bebb587dae35f17f
+    Camera: Generate tag string info from XML
+    
+    Change-Id: I5109a3c46a065fb2dce31482d4377c33aeb84176
+    Camera: Generate camera_metadata_tags.h from XML
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    camera_metadata: Add CaptureResult cts test
+    
+    Also remove the new line from CameraMetadataKeys.mako to avoid adding new line
+    to the generated file every time we run the script.
+    
+    Bug: 11082745
+    Change-Id: I6bed9a71463d866adfe4178e00c33df7b9158ab8
+    camera_metadata: Rename CameraProperties to CameraCharacteristics
+    
+    Bug: 10360518
+    Change-Id: Ib152a751fed07250c8f211b25469560ef05f1107
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    Added auto-generator for CameraProperties CTS test
+    
+    Conflicts:
+            camera/docs/metadata-generate
+    
+    Change-Id: If34887e869cea7ea2c344c000cb959fe6297e9c0
+    Camera: Rename photography -> camera2
+    
+    Change-Id: I3d7235b9a82bd5b5c32dab5c9c0bf0718ebf0447
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    Tweak the metadata-generate script to spit out git repositories that need commit
+    
+    Bug: 9529161
+    Change-Id: I739b5d5f273e8447bcb955e978c66e4d61c7ace9
+    camera_metadata: add new android.led.transmit and availableLeds fields
+    
+    Bug: 8554573
+    Change-Id: Iaa93deeab5ee228bf7e01c58d80f1cdb5b2bb79c
+    Camera: Fix metadata generation on OS X.
+    
+    - readlink has no -f option.
+    - mktemp requires a template
+    
+    Change-Id: I77e2fd6a664cda5edeeeb4d781ab5439d6c7c507
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py: DO NOT MERGE
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera: Docs XML - allow multiple kinds per section: DO NOT MERGE
+    
+    - When adding a new entry and maintaining ABI, make a new kind if can't be
+      semantically part of the last kind. Don't add to the end of an existing
+      non-last kind.
+    
+    - Print generated file names in metadata-generate
+    
+    (Aside) New sections should also be ended at the end of the root namespace to
+      maintain ABI compatibility.
+    
+    Change-Id: I5df0a701763af3cc91ee6eead4fe9fd423c9aa86
+    Camera2: Update generate scripts check for dependencies and to support MacPorts: DO NOT MERGE
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Add a script to generate files from XML: DO NOT MERGE
+    
+    Change-Id: I638017934ddfcfe8ab8f9f56bebb587dae35f17f
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera2: Update generate scripts check for dependencies and to support MacPorts
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    camera_metadata: add non-full hw level optional tag
+    
+    Bug: 10838063
+    Change-Id: If6d1ef5bd58aca3a9a722e4317f5ce6804dd6680
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Generate camera_metadata_tags.h from XML: DO NOT MERGE
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera: Metadata XML cleanup, add README: DO NOT MERGE
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Add an XML parser for the XML metadata: DO NOT MERGE
+    
+    Change-Id: Ie97893e82d6cae2cb7fa3853b326df1cf0f3ff18
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Generate camera_metadata_tags.h from XML
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera: Metadata XML cleanup, add README
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Add an XML parser for the XML metadata
+    
+    Change-Id: Ie97893e82d6cae2cb7fa3853b326df1cf0f3ff18
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    camera_metadata: Add CaptureResult cts test
+    
+    Also remove the new line from CameraMetadataKeys.mako to avoid adding new line
+    to the generated file every time we run the script.
+    
+    Bug: 11082745
+    Change-Id: I6bed9a71463d866adfe4178e00c33df7b9158ab8
+    camera_metadata: add non-full hw level optional tag
+    
+    Bug: 10838063
+    Change-Id: If6d1ef5bd58aca3a9a722e4317f5ce6804dd6680
+    camera_metadata: Rename CameraProperties to CameraCharacteristics
+    
+    Bug: 10360518
+    Change-Id: Ib152a751fed07250c8f211b25469560ef05f1107
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    Camera: Rename photography -> camera2
+    
+    Change-Id: I3d7235b9a82bd5b5c32dab5c9c0bf0718ebf0447
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    Camera: Fix metadata generation on OS X.
+    
+    - readlink has no -f option.
+    - mktemp requires a template
+    
+    Change-Id: I77e2fd6a664cda5edeeeb4d781ab5439d6c7c507
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py: DO NOT MERGE
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera2: Update generate scripts check for dependencies and to support MacPorts: DO NOT MERGE
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Generate camera_metadata_tags.h from XML: DO NOT MERGE
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera: Metadata docs HTML generated from XML: DO NOT MERGE
+    
+    Change-Id: Ic39249d7019dab0a6c5f5daf5d54074f6cc9c0d4
+    Camera: Add an XML parser for the XML metadata: DO NOT MERGE
+    
+    Change-Id: Ie97893e82d6cae2cb7fa3853b326df1cf0f3ff18
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera2: Update generate scripts check for dependencies and to support MacPorts
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    Camera: Improve HTML docs appearance
+    
+    - Sort TOC by kind
+    - Update color choices to mimic developer docs
+    - Add paragraph breaks to several notes sections
+    
+    Change-Id: Ic4cef63d45bef9edb141f2c65f2004b2b5db4c15
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: add new android.led.transmit and availableLeds fields
+    
+    Bug: 8554573
+    Change-Id: Iaa93deeab5ee228bf7e01c58d80f1cdb5b2bb79c
+    Camera2: Docs - Fix tags to be displayed in the docs HTML: DO NOT MERGE
+    
+    Change-Id: Id23043f7bb714e4b5c06f46889e1531175ed045f
+    Camera: Docs XML - allow multiple kinds per section: DO NOT MERGE
+    
+    - When adding a new entry and maintaining ABI, make a new kind if can't be
+      semantically part of the last kind. Don't add to the end of an existing
+      non-last kind.
+    
+    - Print generated file names in metadata-generate
+    
+    (Aside) New sections should also be ended at the end of the root namespace to
+      maintain ABI compatibility.
+    
+    Change-Id: I5df0a701763af3cc91ee6eead4fe9fd423c9aa86
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Metadata XML cleanup, add README: DO NOT MERGE
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Metadata docs HTML generated from XML: DO NOT MERGE
+    
+    Change-Id: Ic39249d7019dab0a6c5f5daf5d54074f6cc9c0d4
+    Camera2: Docs - Fix tags to be displayed in the docs HTML
+    
+    Change-Id: Id23043f7bb714e4b5c06f46889e1531175ed045f
+    Camera: Docs XML - allow multiple kinds per section
+    
+    - When adding a new entry and maintaining ABI, make a new kind if can't be
+      semantically part of the last kind. Don't add to the end of an existing
+      non-last kind.
+    
+    - Print generated file names in metadata-generate
+    
+    (Aside) New sections should also be ended at the end of the root namespace to
+      maintain ABI compatibility.
+    
+    Change-Id: I5df0a701763af3cc91ee6eead4fe9fd423c9aa86
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Metadata XML cleanup, add README
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Metadata docs HTML generated from XML
+    
+    Change-Id: Ic39249d7019dab0a6c5f5daf5d54074f6cc9c0d4
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera: Make partialResult quirk fields hidden, not system.
+    
+    Bug: 11115603
+    Change-Id: I39c51f0a7655736ff216143ece951102930af93c
+    Camera: Add partialResult quirk metadata fields
+    
+    To be used by HALs to split up capture results into
+    multiple batches.
+    
+    Bug: 11115603
+    
+    Change-Id: I5cfc26b2812f9bf4613944c0679e0e29cfd43616
+    camera_metadata: add non-full hw level optional tag
+    
+    Bug: 10838063
+    Change-Id: If6d1ef5bd58aca3a9a722e4317f5ce6804dd6680
+    camera_metadata: make face score range 1-100
+    
+    1-100 is what we specified in API side.
+    
+    Bug: 10406212
+    Change-Id: Id0180dc44b95c43ad820a307d9e3bd98b8fd74fb
+    camera_metadata: Fix focusRange definition
+    
+    It should be a pair of floats.
+    
+    Bug: 10360518
+    Change-Id: Ia24741ce9bcae4473eee8be0adc3a190efeab0b8
+    camera_metadata: Update android.request.frameCount docs
+    
+    Bug: 10360518
+    Change-Id: Ia8601df787d166f07264ab0c19ca78e4412574c1
+    Camera: Add PASSIVE_UNFOCUSED AF state
+    
+    Bug: 10860639
+    Change-Id: I967b207f8e0473d590fecab942b39dbbb04d0186
+    camera_metadata: doc fix for availableProcessedSizes
+    
+    Bug: 10745982
+    Change-Id: I2d5aa9a384fa3107482fcf67bef7c1afbd60c50c
+    camera_metadata: add android.lens.state MOVING enum value
+    
+    Bug: 10621609
+    Change-Id: Ie5533dfa846df3d4935dcdc58ecc0ce4bcda1914
+    camera_metadata: Correct stream id type
+    
+    It was wrongly specified as uint8_t.
+    
+    Bug: 10604704
+    Change-Id: I1cbe2862f49135ddc600e9c05c6f1dda6d28070c
+    Camera2: Minor docs fix.
+    
+    Bug: 10639270
+    Change-Id: Ic395460e5c7855df4737227c2afd96498e4e8e5d
+    Camera2: Clarified docs for 3A regions.
+    
+    Bug: 10545568
+    Change-Id: I9c74986dd5835f35d44e005bc0eba28f71024ed4
+    camera_metadata: Correct the tone curve definitions.
+    
+    android.tonemap.curveGreen and android.tonemap.curveBlue should be updated to
+    match android.tonemap.curveRed.
+    
+    Bug: 10394966
+    Change-Id: I1e9a36b2cb4a056d7b8418102c95da9411ea3e99
+    camera_metadata: Clear up gain/exposure defs and add sensor.temperature def
+    
+    - sensor.temperature is optional
+    
+    Change-Id: I6c837ecb4f1701274ed720d13d71bd7f3f112229
+    Camera2: sensor phys. size property type mismatch
+    
+    Bug: 10365758
+    Change-Id: I7b2b41dad022e8295ae70071359fdf45dcbe9562
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    Camera: Rename photography -> camera2
+    
+    Change-Id: I3d7235b9a82bd5b5c32dab5c9c0bf0718ebf0447
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Add/Update some metadata tags
+    
+    Below tags are Added/Updated:
+    
+    android.statistics.sceneFlicker
+    android.colorCorrection.gains
+    android.statistics.lensShadingMapMode
+    android.lens.info.lensShadingMapSize
+    android.statistics.lensShadingMap
+    android.statistics.predictedColorTransform
+    android.statistics.predictedColorGains
+    android.sensor.info.sensitivityRange
+    
+    Also fixed some typos in tag descrptions.
+    
+    Change-Id: Ib051bd3c97dad04062ece82e90bce8e6a2531bbd
+    Camera: Improve HTML docs appearance
+    
+    - Sort TOC by kind
+    - Update color choices to mimic developer docs
+    - Add paragraph breaks to several notes sections
+    
+    Change-Id: Ic4cef63d45bef9edb141f2c65f2004b2b5db4c15
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    Camera: Metadata: Fix color format dump issue
+    
+    There are typos and missing color formats in metadata property file, which makes
+    metadata dump produce misleading logs.
+    This is debug only change, shouldn't impact any functionality.
+    
+    Bug: 8970663
+    Change-Id: If6b9bac9c88db993be51f6eb22ad8821d70abf51
+    Camera: Metadata: Fix the activeArraySize typo.
+    
+    Bug: 8778377
+    Change-Id: I1b0724cdc5d72ca54f8b88d101ef13601a95c4fb
+    Camera: Revise crop region definition.
+    
+    The current definition is too coarse for controlling the relative
+    cropping of the output streams.
+    
+    Bug: 8484377
+    Change-Id: I5f673fa851dac4648b2b30fe9c7b518ce7689c9c
+    camera_metadata: Fix inconsistencies in digital zoom reporting
+    
+    Bug: 8840802
+    Change-Id: I195aa3b3ea8a60a7f737ec9abcae676a2d6c1e4f
+    Camera: Metadata: Fix a.ctrl.awbAvailableModes
+    
+    Bug: 8778377
+    Change-Id: I36138b903909d6cd849efc1775630fcea23dd57d
+    camera_metadata: add new android.led.transmit and availableLeds fields
+    
+    Bug: 8554573
+    Change-Id: Iaa93deeab5ee228bf7e01c58d80f1cdb5b2bb79c
+    Camera: Metadata: give explicit 3A starting states
+    
+    Change-Id: I9633393484525ee0e233be9a4835aeed4a075429
+    Camera: Add trigger metadata entries.
+    
+    Camera HAL 3.0 signals triggers through the request settings metadata,
+    instead of through a separate trigger method.
+    
+    Change-Id: I9ecfa3b300faed34af18c3e116d659f77a27da81
+    Camera: Fix ordering of boolean enums, types for curves.: DO NOT MERGE
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Prepare to generate tags from script: DO NOT MERGE
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Generate camera_metadata_tags.h from XML: DO NOT MERGE
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera: Metadata XML cleanup, add README: DO NOT MERGE
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Metadata docs HTML generated from XML: DO NOT MERGE
+    
+    Change-Id: Ic39249d7019dab0a6c5f5daf5d54074f6cc9c0d4
+    Camera: Add an XML parser for the XML metadata: DO NOT MERGE
+    
+    Change-Id: Ie97893e82d6cae2cb7fa3853b326df1cf0f3ff18
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera: Fix ordering of boolean enums, types for curves.
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Prepare to generate tags from script
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Generate camera_metadata_tags.h from XML
+    
+    Change-Id: Ie98f9dca854841ff1430c1314fbc570e26e5398b
+    Camera: Metadata XML cleanup, add README
+    
+    Change-Id: Ib53757029becbd4148867a144ba3725c4f9e5d82
+    Camera: Metadata docs HTML generated from XML
+    
+    Change-Id: Ic39249d7019dab0a6c5f5daf5d54074f6cc9c0d4
+    Camera: Add an XML parser for the XML metadata
+    
+    Change-Id: Ie97893e82d6cae2cb7fa3853b326df1cf0f3ff18
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera: Make partialResult quirk fields hidden, not system.
+    
+    Bug: 11115603
+    Change-Id: I39c51f0a7655736ff216143ece951102930af93c
+    Camera: Add partialResult quirk metadata fields
+    
+    To be used by HALs to split up capture results into
+    multiple batches.
+    
+    Bug: 11115603
+    
+    Change-Id: I5cfc26b2812f9bf4613944c0679e0e29cfd43616
+    camera_metadata: add non-full hw level optional tag
+    
+    Bug: 10838063
+    Change-Id: If6d1ef5bd58aca3a9a722e4317f5ce6804dd6680
+    camera_metadata: make face score range 1-100
+    
+    1-100 is what we specified in API side.
+    
+    Bug: 10406212
+    Change-Id: Id0180dc44b95c43ad820a307d9e3bd98b8fd74fb
+    camera_metadata: Fix focusRange definition
+    
+    It should be a pair of floats.
+    
+    Bug: 10360518
+    Change-Id: Ia24741ce9bcae4473eee8be0adc3a190efeab0b8
+    camera_metadata: Update android.request.frameCount docs
+    
+    Bug: 10360518
+    Change-Id: Ia8601df787d166f07264ab0c19ca78e4412574c1
+    Camera: Add PASSIVE_UNFOCUSED AF state
+    
+    Bug: 10860639
+    Change-Id: I967b207f8e0473d590fecab942b39dbbb04d0186
+    camera_metadata: doc fix for availableProcessedSizes
+    
+    Bug: 10745982
+    Change-Id: I2d5aa9a384fa3107482fcf67bef7c1afbd60c50c
+    camera_metadata: add android.lens.state MOVING enum value
+    
+    Bug: 10621609
+    Change-Id: Ie5533dfa846df3d4935dcdc58ecc0ce4bcda1914
+    camera_metadata: Correct stream id type
+    
+    It was wrongly specified as uint8_t.
+    
+    Bug: 10604704
+    Change-Id: I1cbe2862f49135ddc600e9c05c6f1dda6d28070c
+    Camera2: Minor docs fix.
+    
+    Bug: 10639270
+    Change-Id: Ic395460e5c7855df4737227c2afd96498e4e8e5d
+    Camera2: Clarified docs for 3A regions.
+    
+    Bug: 10545568
+    Change-Id: I9c74986dd5835f35d44e005bc0eba28f71024ed4
+    camera_metadata: Correct the tone curve definitions.
+    
+    android.tonemap.curveGreen and android.tonemap.curveBlue should be updated to
+    match android.tonemap.curveRed.
+    
+    Bug: 10394966
+    Change-Id: I1e9a36b2cb4a056d7b8418102c95da9411ea3e99
+    camera_metadata: Clear up gain/exposure defs and add sensor.temperature def
+    
+    - sensor.temperature is optional
+    
+    Change-Id: I6c837ecb4f1701274ed720d13d71bd7f3f112229
+    Camera2: sensor phys. size property type mismatch
+    
+    Bug: 10365758
+    Change-Id: I7b2b41dad022e8295ae70071359fdf45dcbe9562
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Add/Update some metadata tags
+    
+    Below tags are Added/Updated:
+    
+    android.statistics.sceneFlicker
+    android.colorCorrection.gains
+    android.statistics.lensShadingMapMode
+    android.lens.info.lensShadingMapSize
+    android.statistics.lensShadingMap
+    android.statistics.predictedColorTransform
+    android.statistics.predictedColorGains
+    android.sensor.info.sensitivityRange
+    
+    Also fixed some typos in tag descrptions.
+    
+    Change-Id: Ib051bd3c97dad04062ece82e90bce8e6a2531bbd
+    Camera: Improve HTML docs appearance
+    
+    - Sort TOC by kind
+    - Update color choices to mimic developer docs
+    - Add paragraph breaks to several notes sections
+    
+    Change-Id: Ic4cef63d45bef9edb141f2c65f2004b2b5db4c15
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    Camera: Metadata: Fix color format dump issue
+    
+    There are typos and missing color formats in metadata property file, which makes
+    metadata dump produce misleading logs.
+    This is debug only change, shouldn't impact any functionality.
+    
+    Bug: 8970663
+    Change-Id: If6b9bac9c88db993be51f6eb22ad8821d70abf51
+    Camera: Metadata: Fix the activeArraySize typo.
+    
+    Bug: 8778377
+    Change-Id: I1b0724cdc5d72ca54f8b88d101ef13601a95c4fb
+    Camera: Revise crop region definition.
+    
+    The current definition is too coarse for controlling the relative
+    cropping of the output streams.
+    
+    Bug: 8484377
+    Change-Id: I5f673fa851dac4648b2b30fe9c7b518ce7689c9c
+    camera_metadata: Fix inconsistencies in digital zoom reporting
+    
+    Bug: 8840802
+    Change-Id: I195aa3b3ea8a60a7f737ec9abcae676a2d6c1e4f
+    Camera: Metadata: Fix a.ctrl.awbAvailableModes
+    
+    Bug: 8778377
+    Change-Id: I36138b903909d6cd849efc1775630fcea23dd57d
+    camera_metadata: add new android.led.transmit and availableLeds fields
+    
+    Bug: 8554573
+    Change-Id: Iaa93deeab5ee228bf7e01c58d80f1cdb5b2bb79c
+    Camera: Metadata: give explicit 3A starting states
+    
+    Change-Id: I9633393484525ee0e233be9a4835aeed4a075429
+    Camera: Add trigger metadata entries.
+    
+    Camera HAL 3.0 signals triggers through the request settings metadata,
+    instead of through a separate trigger method.
+    
+    Change-Id: I9ecfa3b300faed34af18c3e116d659f77a27da81
+    Camera: Fix ordering of boolean enums, types for curves.: DO NOT MERGE
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py: DO NOT MERGE
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera2: Docs - Fix tags to be displayed in the docs HTML: DO NOT MERGE
+    
+    Change-Id: Id23043f7bb714e4b5c06f46889e1531175ed045f
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Generate camera_metadata_tags and HTML docs from XML: DO NOT MERGE
+    
+    Change-Id: Ib7e9bf4855adff91a317c910aaec960f1422302a
+    Camera: Fix ordering of boolean enums, types for curves.
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera2: Docs - Fix tags to be displayed in the docs HTML
+    
+    Change-Id: Id23043f7bb714e4b5c06f46889e1531175ed045f
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera: Generate camera_metadata_tags and HTML docs from XML
+    
+    Change-Id: Ib7e9bf4855adff91a317c910aaec960f1422302a
+    camera_metadata: Rename CameraProperties to CameraCharacteristics
+    
+    Bug: 10360518
+    Change-Id: Ib152a751fed07250c8f211b25469560ef05f1107
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    camera_metadata: Rename CameraProperties to CameraCharacteristics
+    
+    Bug: 10360518
+    Change-Id: Ib152a751fed07250c8f211b25469560ef05f1107
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    Camera: Fix Java metadata generation bug
+    
+    When a single section included multiple groups of metadata of the same
+    kind (control, static, or dynamic), only the first was being used
+    for generating Java-level keys and enums.
+    
+    Specifically, this affected android.statistics.lensShadingMapMode
+    
+    Bug: 10726421
+    Change-Id: Ibec159777dee4d89cf04a7e2a450d4675934636f
+    Camera: Update SDK metadata key/enum generation
+    
+    - Flatten Key hierarchy
+    - Insert Keys into their respective containers instead of separate files
+    - Use ints instead of Enum types
+    - Insert enum ints into CameraMetadata
+    - Add @see cross-references between enum Keys and values.
+    - Add Javadoc to Keys and enum values.
+    - Map SCALER_AVAILABLE_FORMATS to int
+    
+    Bug: 10345522
+    Change-Id: Ia9762b326b404c572de97c2c7814c4e2e0f3070d
+    Added auto-generator for CameraProperties CTS test
+    
+    Conflicts:
+            camera/docs/metadata-generate
+    
+    Change-Id: If34887e869cea7ea2c344c000cb959fe6297e9c0
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Generate java metadata keys source code
+    
+    Change-Id: Id1d1d4367eb51354e85c4eea38c593a498932e5b
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true': DO NOT MERGE
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Fix metadata XML to maintain ordering: DO NOT MERGE
+    
+    Change-Id: I69adfbb1010b5f624d3ee618a1a45e0be510ca31
+    Camera2: Prepare to generate tags from script: DO NOT MERGE
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Generate tag string info from XML: DO NOT MERGE
+    
+    Change-Id: I5109a3c46a065fb2dce31482d4377c33aeb84176
+    Camera2: Doc entries no longer have type='enum', instead they use enum='true'
+    
+    * This allows all entries to have any backing type
+            (usually a byte, but for availableFormats it's int32)
+    * No longer need special casing for availableFormats
+    * No longer need to coerce an enum type into a byte
+    
+    Change-Id: Ib1d4b93521e90f243b54f66c3d4c4b35032bc06a
+    Camera2: Fix metadata XML to maintain ordering
+    
+    Change-Id: I69adfbb1010b5f624d3ee618a1a45e0be510ca31
+    Camera2: Prepare to generate tags from script
+    
+    Change-Id: Ic5195830cd6ff296de793eb4fbe418dd4e3136ca
+    Camera: Generate tag string info from XML
+    
+    Change-Id: I5109a3c46a065fb2dce31482d4377c33aeb84176
+    camera_metadata: add typedefs for java generated code
+    
+    Change-Id: I619261b9645cda669a3b5ee7c79f4c56d4d4c3d4
+    Camera: Fix metadata generation on OS X.
+    
+    - readlink has no -f option.
+    - mktemp requires a template
+    
+    Change-Id: I77e2fd6a664cda5edeeeb4d781ab5439d6c7c507
+    Camera2: Update generate scripts check for dependencies and to support MacPorts: DO NOT MERGE
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Define all Properties via an XML data file: DO NOT MERGE
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera2: Update generate scripts check for dependencies and to support MacPorts
+    
+    Change-Id: Ice9b658f8e6f87a1a490c367bff2f9a685ddee44
+    Camera: Define all Properties via an XML data file
+    
+    Change-Id: I82aad9e1e8c8064373a9881f255ec2eb9d2f023e
+    Camera: Make partialResult quirk fields hidden, not system.
+    
+    Bug: 11115603
+    Change-Id: I39c51f0a7655736ff216143ece951102930af93c
+    Camera: Add partialResult quirk metadata fields
+    
+    To be used by HALs to split up capture results into
+    multiple batches.
+    
+    Bug: 11115603
+    
+    Change-Id: I5cfc26b2812f9bf4613944c0679e0e29cfd43616
+    camera_metadata: Fix focusRange definition
+    
+    It should be a pair of floats.
+    
+    Bug: 10360518
+    Change-Id: Ia24741ce9bcae4473eee8be0adc3a190efeab0b8
+    Camera: Add PASSIVE_UNFOCUSED AF state
+    
+    Bug: 10860639
+    Change-Id: I967b207f8e0473d590fecab942b39dbbb04d0186
+    camera_metadata: add android.lens.state MOVING enum value
+    
+    Bug: 10621609
+    Change-Id: Ie5533dfa846df3d4935dcdc58ecc0ce4bcda1914
+    camera_metadata: Correct stream id type
+    
+    It was wrongly specified as uint8_t.
+    
+    Bug: 10604704
+    Change-Id: I1cbe2862f49135ddc600e9c05c6f1dda6d28070c
+    camera_metadata: Correct the tone curve definitions.
+    
+    android.tonemap.curveGreen and android.tonemap.curveBlue should be updated to
+    match android.tonemap.curveRed.
+    
+    Bug: 10394966
+    Change-Id: I1e9a36b2cb4a056d7b8418102c95da9411ea3e99
+    camera_metadata: Clear up gain/exposure defs and add sensor.temperature def
+    
+    - sensor.temperature is optional
+    
+    Change-Id: I6c837ecb4f1701274ed720d13d71bd7f3f112229
+    camera_metadata: Add/Update some metadata tags
+    
+    Below tags are Added/Updated:
+    
+    android.statistics.sceneFlicker
+    android.colorCorrection.gains
+    android.statistics.lensShadingMapMode
+    android.lens.info.lensShadingMapSize
+    android.statistics.lensShadingMap
+    android.statistics.predictedColorTransform
+    android.statistics.predictedColorGains
+    android.sensor.info.sensitivityRange
+    
+    Also fixed some typos in tag descrptions.
+    
+    Change-Id: Ib051bd3c97dad04062ece82e90bce8e6a2531bbd
+    camera_metadata: Add visibility support, and a HAL2 tag
+    
+    - Add a visibility property which controls whether a tag is available
+      only to the system, hidden in managed code, or public in managed code.
+    - Add a HAL2 tag to indicate HAL2.x-only tags
+    - Fix output/inputStream tags to be arrays.
+    
+    Change-Id: I856d0b1bf413eefd58914e5b85b08331a4bf4536
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    camera_metadata: Add supportedHardwareLevel field
+    
+    Bug: 9111852
+    Change-Id: I6a01cb2678c8cd824eb2eb84d69d47a524c20750
+    Camera: Metadata: Fix color format dump issue
+    
+    There are typos and missing color formats in metadata property file, which makes
+    metadata dump produce misleading logs.
+    This is debug only change, shouldn't impact any functionality.
+    
+    Bug: 8970663
+    Change-Id: If6b9bac9c88db993be51f6eb22ad8821d70abf51
+    camera_metadata: Fix inconsistencies in digital zoom reporting
+    
+    Bug: 8840802
+    Change-Id: I195aa3b3ea8a60a7f737ec9abcae676a2d6c1e4f
+    camera_metadata: add new android.led.transmit and availableLeds fields
+    
+    Bug: 8554573
+    Change-Id: Iaa93deeab5ee228bf7e01c58d80f1cdb5b2bb79c
+    camera_metadata: Mark enum snprint with non-hidden visibility
+    
+    Since by default our build system assumes everything has hidden visibility,
+    the symbols for the enum snprint function were not being exported.
+    
+    Change-Id: I6c0b36067052aceca9ccd56a1b073fd96b35f6ef
+    Camera: Add trigger metadata entries.
+    
+    Camera HAL 3.0 signals triggers through the request settings metadata,
+    instead of through a separate trigger method.
+    
+    Change-Id: I9ecfa3b300faed34af18c3e116d659f77a27da81
+    Camera: Fix ordering of boolean enums, types for curves.: DO NOT MERGE
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py: DO NOT MERGE
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera: Generate camera_metadata_tags and HTML docs from XML: DO NOT MERGE
+    
+    Change-Id: Ib7e9bf4855adff91a317c910aaec960f1422302a
+    Camera: Fix ordering of boolean enums, types for curves.
+    
+    - Flipping boolean enumeration definition confused some HAL
+    implementations.
+    
+    - Tonemap curves should all be type float.
+    
+    Bug: 7974125
+    
+    Change-Id: I533888af5fc7f1fa709d758f1f9de1c2c3b475a3
+    Camera2: Docs - Add output_file option to metadata_parser_xml.py
+    
+    Change-Id: I5b7d991bc569c36e23a9567289e9c4dbd9759378
+    Camera: Generate camera_metadata_tags and HTML docs from XML
+    
+    Change-Id: Ib7e9bf4855adff91a317c910aaec960f1422302a
+    Camera: Add quirk for metering regions to ignore crop region
+    
+    If the HAL already takes into account the crop region when
+    consuming a{ewf}Region or producing face detection rectangles,
+    then it should set this quirk to 1.
+    
+    Bug: 7246065
+    Change-Id: Ib77788b2fced1509d60a7fd1e2a4411e9c8f19dc
+    Camera: Add scene mode override and quirks fields.
+    
+    To provide scene mode override information while preview is disabled,
+    need more static metadata from the HAL.
+    
+    In addition, add a quirks section to allow for temporary workarounds
+    for incomplete HAL behavior. Any quirks added will be deprecated as
+    soon as possible.
+    
+    Bug: 7159577
+    Bug: 7172543
+    Change-Id: Icadb6baa4132bf20ad82b2c549ac2b9a0c6618de
+    Camera: Add android.jpeg.size field.
+    
+    When the camera is producing JPEG buffers, need a field to provide the
+    final buffer size.
+    
+    Bug: 7108816
+    Change-Id: I67f27a3c1d69f32541402e516de9fb4b61ffd352
+    Camera2: Separate AE/AWB locks from AE/AWB modes.
+    
+    With AE/AWB modes including the LOCKED state, it was not possible for
+    the HAL to determine the current flash state, or to report fixed AWB
+    modes properly. Break out the locks into separate controls.
+    
+    Bug: 6243944
+    Change-Id: I1b2d844420b8c4e06be32ea644e052f222ed825b
+    Camera: Add request type and input streams metadata tags.
+    
+    Bug: 6243944
+    
+    Change-Id: I6fbf445ac8a6bb9dff916a17c051e7e911dd4a3f
+    Camera: Update autofocus- and triggering-related metadata fields
+    
+    - Add trigger IDs for precapture and autofocus to dynamic control
+      metadata
+    - Add enums for AE, AWB, AF algorithm state
+    
+    Bug: 6243944
+    Change-Id: I04ce7709a4f1bdbfa39540059dbaf11fadc68f9c
+    Camera: Add LOCKED values for AE/AWB modes.
+    
+    Bug: 6243944
+    Change-Id: I52e842d568790e8ac0d9c231507e865aad58601b
+    Camera: Add metadata field ANDROID_JPEG_MAX_SIZE
+    
+    This is used for communicating how large JPEG buffers must be to the
+    framework.
+    
+    Bug: 6243944
+    Change-Id: Ib296961c4033535cdcd9baf297d440a31cf94d84
+    Camera: Update to latest metadata definitions
+    
+    - Revamp resolution information
+    - Add sizes for shading, geometric correction map
+    - Add hyperfocal distance
+    - Add sensor physical size
+    - Remove unneeded color modes
+    - Add scene, effect modes
+    - Add some missing enums for other parameters
+      - Facing
+      - AF modes
+      - Available scene modes
+    
+    Bug: 6243944
+    Change-Id: Ia5c9448ef2857f8dd39488810030b4e548711194
+    Camera: Minor revision to metadata tags, many more enum definitions.
+    
+    - Remove some tags, adding a few others
+    - Add enums for all current tags that need them for their values.
+    
+    Bug: 6243944
+    Change-Id: I69085eaad68ef39f7047e93570b4591165cca308
+    Make camera metadata tag definitions more robust to mismatches.
+    
+    Use array assignment-by-index syntax to make sure we match the desired
+    index to the entry, so it's easier to keep the metadata header and the
+    info structures in sync.
+    
+    Change-Id: I06d1ea3d52c651b447cc167cd551e907c8e001ab
+    Improvements to the camera metadata structure
+    
+    - Add vendor_tag_query_ops_t as argument to methods inside it.
+    
+    - Add version and flags fields
+    
+    - Add sorted flag; additions and appends are not sorted, and thus
+      reset the flag.
+    
+    - Add sort method, which sets the sorted flag.
+    
+    - Add find-by-tag method, which uses a linear search on a non-sorted
+      buffer, and a binary search on a sorted buffer.
+    
+    - Change dump method to take in a fd, like the HAL-level dump methods
+      do.
+    
+    - Minor revisions to tag definitions, including a few enums for
+      enumerated-value tags.
+    
+    Change-Id: I5f37e326519bda032cb3362da4ab3bf50eb98b4e
+    Add a camera metadata structure and utility methods
+    
+    Change-Id: I320cc33f31ebd8ce183572a447df8fae691eec0d
+    Camera: Add operations to enumerate vendor tags
+    
+    Adds methods so the framework can enumerate the entire set of vendor
+    tags supported on a platform.
+    
+    Change-Id: I17f6c14afd44a1fb0d165f4a13060dd828c80d84
+    camera_metadata: add validation function to ensure structural sanity
+    
+    This is particularly useful when accepting copied metadata from another process,
+    since it could put whatever it want into the binder parcel.
+    
+    Bug: 8713951
+    Change-Id: I72b25b2bf96230eb995bb32e3bbd68de16e122cd
+    camera_metadata: Mark enum snprint with non-hidden visibility
+    
+    Since by default our build system assumes everything has hidden visibility,
+    the symbols for the enum snprint function were not being exported.
+    
+    Change-Id: I6c0b36067052aceca9ccd56a1b073fd96b35f6ef
+    Camera: Add methods for read-only access to metadata.
+    
+    - Define a read-only version of camera_metadata_entry_t
+    - Support finding with read-only output
+    - Add const to clone method input camera_metadata_t.
+    
+    Bug: 6243944
+    Change-Id: I1bf37a4c8c8935711e803d7477393fe2c01f8216
+    Revert "Camera: Add methods for read-only access to metadata."
+    
+    Needs a third change that's not yet done with review.
+    
+    This reverts commit ad0c0c836d0276079bf8fe1bfb0bef25d4bce601
+    
+    Change-Id: Id4325fe93b43a447eded5ae50e8f7faa70fd9140
+    Camera: Add methods for read-only access to metadata.
+    
+    - Define a read-only version of camera_metadata_entry_t
+    - Support finding with read-only output
+    - Add const to clone method input camera_metadata_t.
+    
+    Bug: 6243944
+    Change-Id: Icd581e48f5fafaa6da22ca25e872bf3ede192222
+    Camera: Add indented metadata dump
+    
+    Bug: 6243944
+    Change-Id: Ib769ae2d40b9c4bfa456c812fd7ee2e426fd86df
+    Camera: Add clone buffer, make type names public
+    
+    Clone metadata buffer allows for straightforward duplication of
+    existing buffers; type names are useful for debugging code.
+    
+    Bug: 6243944
+    Change-Id: Ibf70f4e3bcf49d6c772bba18a577e2673f2b9213
+    Camera: Add opaque user pointer to camera metadata buffer
+    
+    This is useful for associating a metadata buffer handed off to a third
+    party with its parent object, when the buffer is returned.
+    
+    Change-Id: I7e19708bb3adf4da26fc6101e78c276477276608
+    Improvements to camera metadata handling.
+    
+    - Cleaner interface to get/find
+    - Adds delete entry, an expensive O(n) operation
+    - Adds update entry, which is O(n) sometimes
+    - Minor bugfixes:
+      - Keep sorted state when appending empty buffers
+      - Misspelling of camera_metadata_type_size in header
+      - Missing entry in type name array
+    
+    Bug: 6243944
+    Change-Id: I316507d6adcc22aff6e7c464c6c484f31ef1510d
+    Improvements to the camera metadata structure
+    
+    - Add vendor_tag_query_ops_t as argument to methods inside it.
+    
+    - Add version and flags fields
+    
+    - Add sorted flag; additions and appends are not sorted, and thus
+      reset the flag.
+    
+    - Add sort method, which sets the sorted flag.
+    
+    - Add find-by-tag method, which uses a linear search on a non-sorted
+      buffer, and a binary search on a sorted buffer.
+    
+    - Change dump method to take in a fd, like the HAL-level dump methods
+      do.
+    
+    - Minor revisions to tag definitions, including a few enums for
+      enumerated-value tags.
+    
+    Change-Id: I5f37e326519bda032cb3362da4ab3bf50eb98b4e
+    Add a camera metadata structure and utility methods
+    
+    Change-Id: I320cc33f31ebd8ce183572a447df8fae691eec0d

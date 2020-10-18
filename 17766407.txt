@@ -1,0 +1,604 @@
+﻿    Update README.md
+    Update README.md
+    changed namespaces and service naming
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    fixed DI Bug
+    Version 0.0.1 upped
+    Update Makefile
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    fixed DI Bug
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    fixed DI Bug
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Remove unused assertUrlHttps method
+    opened API for deprecated HTTP method calls
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    Update HTTPHeadersParser.php
+    Prevent header parser from making nested arrays for multiple header occurrences
+    alignment
+    Transfered header parsing function from ResponseHeaders type to an own parser class
+    alignment
+    Transfered header parsing function from ResponseHeaders type to an own parser class
+    ResponseHeaders namespace changed. some cleaning and coverage
+    ResponseHeaders class added. httpParseHeaders moved to Response Headers and splitted for testing.
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    fixed DI Bug
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Prevent header parser from making nested arrays for multiple header occurrences
+    Transfered header parsing function from ResponseHeaders type to an own parser class
+    ResponseHeaders namespace changed. some cleaning and coverage
+    ResponseHeaders class added. httpParseHeaders moved to Response Headers and splitted for testing.
+    Fill the Symfony Response with real responded headers
+    changed namespaces and service naming
+    fixed sf 3.0 issue + testsuite fix
+    Version 0.0.1 upped
+    Transfered header parsing function from ResponseHeaders type to an own parser class
+    ResponseHeaders namespace changed. some cleaning and coverage
+    ResponseHeaders class added. httpParseHeaders moved to Response Headers and splitted for testing.
+    Fill the Symfony Response with real responded headers
+    changed namespaces and service naming
+    fixed sf 3.0 issue + testsuite fix
+    Version 0.0.1 upped
+    ResponseHeaders class added. httpParseHeaders moved to Response Headers and splitted for testing.
+    Fill the Symfony Response with real responded headers
+    changed namespaces and service naming
+    fixed sf 3.0 issue + testsuite fix
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    fixed sf 3.0 issue + testsuite fix
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    Transfered header parsing function from ResponseHeaders type to an own parser class
+    ResponseHeaders namespace changed. some cleaning and coverage
+    ResponseHeaders class added. httpParseHeaders moved to Response Headers and splitted for testing.
+    Fill the Symfony Response with real responded headers
+    changed namespaces and service naming
+    Allow CURLOPT_SSL_VERIFYPEER to be set
+    #17 fixed curl reset bug
+    #17 fixed php 5.4 reset bug
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    opened API for deprecated HTTP method calls
+    Version 0.0.1 upped
+    Version 0.0.1 upped
+    Removed CURLOPT_SSLVERSION set to SSLv3
+    changed namespaces and service naming
+    Allow CURLOPT_SSL_VERIFYPEER to be set
+    fixed DI Bug
+    Version 0.0.1 upped
+    Add quotation marks to yaml services definitions to avoid deprecation warnings
+    changed namespaces and service naming
+    fixed sf 3.0 issue + testsuite fix
+    registered the class namespace of rest client service as a parameter to make it overideable
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added missing exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    #10 added more exceptions
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    moved default constructor values from parameter into constructor body
+    added more exceptions
+    added some more exceptions
+    initial commit for improved exceptions
+    Version 0.0.1 upped
+    changed namespaces and service naming
+    initial commit for improved exceptions
+    Version 0.0.1 upped

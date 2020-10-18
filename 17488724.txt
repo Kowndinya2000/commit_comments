@@ -1,0 +1,2564 @@
+﻿    2.11.0
+    Updated to Unicode 4.1. There are five new GUnicodeBreakType types. That
+    
+    2005-10-01  Behdad Esfahbod  <behdad@gnome.org>
+    
+            * docs/reference/glib/tmpl/unicode.sgml:
+            * glib/gen-unicode-tables.pl:
+            * glib/gunibreak.h:
+            * glib/gunichartables.h:
+            * glib/gunicode.h:
+            * tests/casefold.txt:
+            * tests/casemap.txt: Updated to Unicode 4.1.  There are five new
+            GUnicodeBreakType types.  That may break some applications, like
+            Pango <= 1.10.
+    Unicode 4.0 special casing. (#114681)
+    
+    2003-09-10  Noah Levitt  <nlevitt@columbia.edu>
+    
+            * glib/gunicodeprivate.h:
+            * glib/gunicollate.c:
+            * glib/gunidecomp.c:
+            * glib/guniprop.c:
+            * tests/casemap.txt:
+            * tests/gen-casemap-txt.pl: Unicode 4.0 special casing. (#114681)
+    
+            * glib/gunicodeprivate.h: Use a private header instead of extern
+            function declarations (_g_utf8_normalize_wc,
+            _g_unichar_combining_class).
+    Add test for special case not at inital position in the string, the bug
+    
+    2003-08-06  Noah Levitt  <nlevitt@columbia.edu>
+    
+            * tests/casemap.txt:
+            * tests/gen-casemap-txt.pl: Add test for special case not at inital
+            position in the string, the bug just fixed. (#118957)
+    Update Unicode data to 4.0. (#107974)
+    
+    2003-07-30  Noah Levitt  <nlevitt@columbia.edu>
+    
+            * glib/gen-unicode-tables.pl:
+            * glib/gunibreak.c:
+            * glib/gunibreak.h:
+            * glib/gunichartables.h:
+            * glib/gunicode.h:
+            * glib/gunicomp.h:
+            * glib/gunidecomp.c:
+            * glib/gunidecomp.h:
+            * glib/guniprop.c:
+            * tests/casefold.txt:
+            * tests/casemap.txt:
+            * tests/gen-casefold-txt.pl:
+            * tests/gen-casemap-txt.pl: Update Unicode data to 4.0. (#107974)
+    Use G_N_ELEMENTS rather than a custom macro.
+    
+    Sun Jul  1 20:16:25 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/guniprop.c (g_unichar_totitle): Use G_N_ELEMENTS
+            rather than a custom macro.
+    
+            * glib/gen-unicode-tables.pl: Adapt to changes in table
+            formats for Unicode 3.1
+    
+            * glib/gunicode.h glib/guniprop.c glib/gunichartables.h
+              glib/gen-unicode-tables.pl: Add case conversion functions
+            g_utf8_casefold, g_utf8_strup, g_utf8_strdown.
+    
+            * tests/unicode-caseconv.c tests/gen-casefold-txt.pl
+              tests/gen-casemap-txt.pl tests/casefold.txt
+              tests/casemap.txt: Test cases for case conversion.
+    
+            * glib/gunicode.h glib/gunidecomp.[ch] glib/gunicomp.h
+              glib/gen-unicode-tables.pl: Add function to do Unicode
+            normalization g_utf8_normalize().
+    
+            * tests/unicode-normalize.c: Test program for case conversion.
+    
+            * glib/gunicode.h glib/gunicollate.c: Add collation functions
+            g_utf8_collate, g_utf8_collate_key.
+    
+            * test/unicode-collate.c: Test program for collation.
+    
+            * glib/gdate.c (g_date_fill_parse_tokens): Fix uninitialized
+            variable.
+    
+            * glib/gdate.c (g_date_strftime) docs/Changes-2.0.txt:
+            Make work with UTF-8 even if the locale isn't UTF-8 based.
+            Still somewhat of broken, if the format string contains
+            characters not representable in the current locale, will warn
+            and not work.
+    
+            * glib/gdate.c: Use UTF-8 normalization and casefolding.
+    2.11.0
+    Updated to Unicode 4.1. There are five new GUnicodeBreakType types. That
+    
+    2005-10-01  Behdad Esfahbod  <behdad@gnome.org>
+    
+            * docs/reference/glib/tmpl/unicode.sgml:
+            * glib/gen-unicode-tables.pl:
+            * glib/gunibreak.h:
+            * glib/gunichartables.h:
+            * glib/gunicode.h:
+            * tests/casefold.txt:
+            * tests/casemap.txt: Updated to Unicode 4.1.  There are five new
+            GUnicodeBreakType types.  That may break some applications, like
+            Pango <= 1.10.
+    Update Unicode data to 4.0. (#107974)
+    
+    2003-07-30  Noah Levitt  <nlevitt@columbia.edu>
+    
+            * glib/gen-unicode-tables.pl:
+            * glib/gunibreak.c:
+            * glib/gunibreak.h:
+            * glib/gunichartables.h:
+            * glib/gunicode.h:
+            * glib/gunicomp.h:
+            * glib/gunidecomp.c:
+            * glib/gunidecomp.h:
+            * glib/guniprop.c:
+            * tests/casefold.txt:
+            * tests/casemap.txt:
+            * tests/gen-casefold-txt.pl:
+            * tests/gen-casemap-txt.pl: Update Unicode data to 4.0. (#107974)
+    Use G_N_ELEMENTS rather than a custom macro.
+    
+    Sun Jul  1 20:16:25 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/guniprop.c (g_unichar_totitle): Use G_N_ELEMENTS
+            rather than a custom macro.
+    
+            * glib/gen-unicode-tables.pl: Adapt to changes in table
+            formats for Unicode 3.1
+    
+            * glib/gunicode.h glib/guniprop.c glib/gunichartables.h
+              glib/gen-unicode-tables.pl: Add case conversion functions
+            g_utf8_casefold, g_utf8_strup, g_utf8_strdown.
+    
+            * tests/unicode-caseconv.c tests/gen-casefold-txt.pl
+              tests/gen-casemap-txt.pl tests/casefold.txt
+              tests/casemap.txt: Test cases for case conversion.
+    
+            * glib/gunicode.h glib/gunidecomp.[ch] glib/gunicomp.h
+              glib/gen-unicode-tables.pl: Add function to do Unicode
+            normalization g_utf8_normalize().
+    
+            * tests/unicode-normalize.c: Test program for case conversion.
+    
+            * glib/gunicode.h glib/gunicollate.c: Add collation functions
+            g_utf8_collate, g_utf8_collate_key.
+    
+            * test/unicode-collate.c: Test program for collation.
+    
+            * glib/gdate.c (g_date_fill_parse_tokens): Fix uninitialized
+            variable.
+    
+            * glib/gdate.c (g_date_strftime) docs/Changes-2.0.txt:
+            Make work with UTF-8 even if the locale isn't UTF-8 based.
+            Still somewhat of broken, if the format string contains
+            characters not representable in the current locale, will warn
+            and not work.
+    
+            * glib/gdate.c: Use UTF-8 normalization and casefolding.
+    Change instances of U+10ffff to U+10fffd, since that is the last valid
+    
+    2003-07-31  Noah Levitt  <nlevitt@columbia.edu>
+    
+            * tests/utf8.txt: Change instances of U+10ffff to U+10fffd, since that
+            is the last valid unicode character. Add check that U+10ffff is
+            NOTUNICODE. (#118730)
+    move $enable_debug down below checks for GCC to avoid setting CFLAGS
+    
+    Fri Jan  5 11:25:42 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * configure.in (PACKAGE): move $enable_debug down below
+            checks for GCC to avoid setting CFLAGS prematurely,
+            change checks to avoid adding -g twice.
+    
+            * gutf8.c (g_ucs4_to_utf8): Support len < 0 to mean
+            0 termination.
+    
+            * gutf8.c (g_utf8_to_ucs4): Terminate result with 0.
+    
+            * tests/mainloop-test.c (main): Fix uses of
+            g_main_loop_destroy().
+    
+            * tests/unicode-encoding.c tests/Makefile.am tests/utf8.txt:
+            Tests for unicode-conversion code.
+    
+            * gconvert.c (g_convert, g_convert_with_fallback): work around
+            a couple of GNU libc bugs.
+    
+            * gconvert.[ch] (g_{locale,filename}_{to,from}_utf8): Standardize
+            arguments to match g_convert(). Document.
+    
+            * gunicode.[ch]:
+              - Implement conversion functions to and from UTF-16
+              - Standardize unicode conversion functions on prototype like
+                g_convert.
+              - Add a lot of error checking to unicode conversion functions.
+    
+            * gunicode.[ch] (g_utf8_to_ucs4_fast): Add fast, non-checking
+            variant of g_utf8_to_ucs4.
+    
+            * gutf8.c (g_utf8_validate):
+             - add g_return_if_fail (str != NULL).
+             - add checks for overlong strings, non-valid Unicode characters (>= 110000)
+               and single surrogates.
+    Remove references to gruntime. This includes renaming the test program
+    
+            * docs/debugging.txt, gobject/glib-genmarshal.c,
+            gobject/glib-genmarshal.1, gobject/Makefile.am, gobject/gtype.c:
+            Remove references to gruntime. This includes renaming the test
+            program testgruntime to testgobject and the debug envvar
+            GRUNTIME_DEBUG to GOBJECT_DEBUG.  (#50877)
+    s/glib_trap_/g_trap_/. add comments on g_trap_instance_signals,
+    
+    Sun Feb  4 07:38:32 2001  Tim Janik  <timj@gtk.org>
+    
+            * docs/debugging.txt: s/glib_trap_/g_trap_/. add comments on
+            g_trap_instance_signals, g_trace_instance_signals and
+            GRUNTIME_DEBUG.
+    
+            * gmem.c: s/glib_trap_/g_trap_/.
+    
+    Sun Feb  4 07:30:53 2001  Tim Janik  <timj@gtk.org>
+    
+            * gtype.[hc]: changed g_type_init() to take debugging flags
+            initially, a combination of G_TYPE_DEBUG_OBJECTS and
+            G_TYPE_DEBUG_SIGNALS. using the G_TYPE_ prefix is a bit odd
+            here, but basically g_type_int() serves as initialization
+            fucntion for all of GType, GObject, GSignal, so what the heck.
+    
+            * gobject.c: special case debugging code properly.
+            changed glib_trap_object_ref to g_trap_object_ref.
+    
+            * gsignal.c: add signal emission debugging abilities, along with
+            a new trap object g_trap_instance_signals.
+    got rid of outdated dmalloc support. provide g_try_malloc() and
+    
+    Thu Dec 28 10:21:46 2000  Tim Janik  <timj@gtk.org>
+    
+            * gmem.[hc]: got rid of outdated dmalloc support. provide g_try_malloc()
+            and g_try_realloc() which _may_ fail and return NULL.
+            nuked g_mem_check(), provided GMemVTable for memory function
+            virtualization, alterable at program startup with g_mem_set_vtable().
+            provided glib_mem_profiler_table and g_mem_profile() to support limited
+            profiling information out of the box (uses mprotect() for free()ed areas
+            on linux).
+            provide globally visible G_MEM_ALIGN.
+            buncha cleanups.
+    
+            * docs/macros.txt: file to get a clue about the various configuration
+            macros.
+    
+            * docs/debugging.txt: explain debugging traps.
+    
+            * configure.in: got rid of --enable-mem-check and --enable-mem-profile,
+            define GLIB_SIZEOF_VOID_P and GLIB_SIZEOF_LONG. check malloc prototypes
+            and define SANE_MALLOC_PROTOS is we can use them.
+            <boy, is this file a mess>
+    
+            * gutils.c, gscanner.c: fix up compatibility warnings, use g_message().
+    
+    
+    Thu Dec 28 11:36:44 2000  Tim Janik  <timj@gtk.org>
+    
+            * gbsearcharray.c (upper_power2): disable G_BSEARCH_ALIGN_POWER2
+            fucntionality if DISABLE_MEM_POOLS is defined.
+    
+            * gtype.c: honour DISABLE_MEM_POOLS.
+    
+            * gsignal.c (g_signal_init): flag signal key bsearch array with
+            G_BSEARCH_ALIGN_POWER2 to avoid excessive growth time. honour
+            DISABLE_MEM_POOLS.
+    
+            * gparam.h: added G_PARAM_READWRITE alias for (G_PARAM_READABLE |
+                                                           G_PARAM_WRITABLE).
+    honour g_mem_gc_friendly settings when freeing slices, make sure
+    
+    Wed Jan 25 16:39:18 2006  Tim Janik  <timj@imendio.com>
+    
+            * glib/gslice.c: honour g_mem_gc_friendly settings when freeing
+            slices, make sure g_mem_gc_friendly is properly initialized.
+    
+            * gmem.[hc]: ensure g_mem_gc_friendly is initialized from G_DEBUG upon
+            the first allocation. applied some branching optimizations.
+    
+            * docs/macros.txt: reflected --enable-gc-friendly change and
+            described ENABLE_GC_FRIENDLY_DEFAULT as well as G_DEBUG=gc-friendly.
+    
+            * configure.in: changed --enable-gc-friendly=yes to define
+            ENABLE_GC_FRIENDLY_DEFAULT.
+    
+            * glib/garray.c: changed ENABLE_GC_FRIENDLY macro #ifdef-s to
+            if (G_UNLIKELY (g_mem_gc_friendly)).
+    
+            * glib/gtree.c:
+            * glib/ghash.c: removed ENABLE_GC_FRIENDLY code which is now taken
+            care of by g_slice_free1().
+    
+            * tests/slice-test.c: fixed leaks, reported by Kjartan Maraas.
+    got rid of outdated dmalloc support. provide g_try_malloc() and
+    
+    Thu Dec 28 10:21:46 2000  Tim Janik  <timj@gtk.org>
+    
+            * gmem.[hc]: got rid of outdated dmalloc support. provide g_try_malloc()
+            and g_try_realloc() which _may_ fail and return NULL.
+            nuked g_mem_check(), provided GMemVTable for memory function
+            virtualization, alterable at program startup with g_mem_set_vtable().
+            provided glib_mem_profiler_table and g_mem_profile() to support limited
+            profiling information out of the box (uses mprotect() for free()ed areas
+            on linux).
+            provide globally visible G_MEM_ALIGN.
+            buncha cleanups.
+    
+            * docs/macros.txt: file to get a clue about the various configuration
+            macros.
+    
+            * docs/debugging.txt: explain debugging traps.
+    
+            * configure.in: got rid of --enable-mem-check and --enable-mem-profile,
+            define GLIB_SIZEOF_VOID_P and GLIB_SIZEOF_LONG. check malloc prototypes
+            and define SANE_MALLOC_PROTOS is we can use them.
+            <boy, is this file a mess>
+    
+            * gutils.c, gscanner.c: fix up compatibility warnings, use g_message().
+    
+    
+    Thu Dec 28 11:36:44 2000  Tim Janik  <timj@gtk.org>
+    
+            * gbsearcharray.c (upper_power2): disable G_BSEARCH_ALIGN_POWER2
+            fucntionality if DISABLE_MEM_POOLS is defined.
+    
+            * gtype.c: honour DISABLE_MEM_POOLS.
+    
+            * gsignal.c (g_signal_init): flag signal key bsearch array with
+            G_BSEARCH_ALIGN_POWER2 to avoid excessive growth time. honour
+            DISABLE_MEM_POOLS.
+    
+            * gparam.h: added G_PARAM_READWRITE alias for (G_PARAM_READABLE |
+                                                           G_PARAM_WRITABLE).
+    Improve separation of generic non-generic parts and dependencies.
+    
+    Wed Sep  6 10:59:45 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/Makefile.am glib/Makefile.am: Improve
+            separation of generic non-generic parts and dependencies.
+    Initial revision
+    2.13.0
+    
+    svn path=/trunk/; revision=5419
+    Define G_DEFINE_DYNAMIC_TYPE and and _EXTENDED variant. (#334437)
+    
+    2006-12-29 Matthias Clasen  <mclasen@redhat.com>
+    
+            * gtypemodule.h: Define G_DEFINE_DYNAMIC_TYPE and
+            and _EXTENDED variant.  (#334437)
+    Updates
+    forgotten file
+    additions
+    Document GObject api additions
+    Document g_value_set_instance(), (#319885, Milosz Derezynski)
+    
+    2005-10-26  Matthias Clasen  <mclasen@redhat.com>
+    
+            * gobject/gobject-sections.txt:
+            * gobject/tmpl/generic_values.sgml: Document g_value_set_instance(),
+            (#319885, Milosz Derezynski)
+    Add g_object_add/remove_toggle_ref() functions to get notification when a
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject.[ch] gobject.symbols: Add
+            g_object_add/remove_toggle_ref() functions to get notification
+            when a reference count is the last remaining reference; this
+            enables better memory management for language bindings.
+            (http://mail.gnome.org/archives/gtk-devel-list/2005-April/msg00095.html)
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gdataset.[ch] glib/gdatasetprivate.h: Add
+            g_datalist_set/unset_flags(), g_datalist_get_flags() functions
+            to squeeze some bits into a GDataSet... this is needed for
+            efficient implementation of toggle references in GObject.
+    
+            * tests/gobject/references.c tests/gobject/Makefile.am:
+            Add a test case for weak and toggle references.
+    
+            * glib/gfileutils.[ch]: Rename g_file_replace() back
+            to g_file_set_contents().
+    
+            * glib/glib.symbols: Update.
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/Makefile.am glib/glib-sections.txt gobject/gobject-sections.txt:
+            Update
+    
+            * gobject/tmpl/objects.sgml: Document toggle-references.
+    Additions
+    Add a boxed type for GDate. (#301787, Tim-Philipp Müller)
+    
+    2005-04-29  Matthias Clasen  <mclasen@redhat.com>
+    
+            * gobject.symbols:
+            * gboxed.h (G_TYPE_DATE):
+            * gboxed.c: Add a boxed type for GDate. (#301787, Tim-Philipp
+            Müller)
+    Documentation fixes.
+    Add g_type_module_register_enum() and g_type_module_register_flags().
+    
+    Tue Jul  6 00:54:38 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/gobject-sections.txt:
+            * gobject/tmpl/gtypemodule.sgml: Add g_type_module_register_enum()
+            and g_type_module_register_flags().
+    Improve docs for G_DEFINE_TYPE_* macros.
+    
+    Sun Jan 11 01:25:44 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/tmpl/gtype.sgml: Improve docs for G_DEFINE_TYPE_* macros.
+    
+    Sun Jan 11 01:25:29 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/gobject-sections.txt: Add G_DEFINE_TYPE_EXTENDED.
+    Document g_type_class_peek_static.
+    
+    Sat Jan 10 01:36:01 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/tmpl/gtype.sgml: Document g_type_class_peek_static.
+    
+    Sat Jan 10 01:23:58 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/gobject-sections.txt: Add g_type_class_peek_static,
+            G_DEFINE_TYPE, G_DEFINE_TYPE_WITH_CODE, G_DEFINE_ABSTRACT_TYPE,
+            G_DEFINE_ABSTRACT_TYPE_WITH_CODE, G_IMPLEMENT_INTERFACE.
+    
+    
+    Sat Jan 10 01:23:01 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/tmpl/objects.sgml: Update docs of g_object_connect.
+    
+    Fri Jan  9 23:40:23 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/tmpl/gboxed.sgml:
+            * gobject/gobject-sections.txt: Add G_TYPE_STRV and GStrv.
+    Add a boxed type for nul-terminated string arrays. (#110528)
+    
+    Fri Jan  9 23:41:00 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * gboxed.h:
+            * gboxed.c (g_strv_get_type): Add a boxed type for nul-terminated
+            string arrays.  (#110528)
+    Document interface properties and GParamSpecOverride.
+    
+    Tue Oct 14 17:45:33 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/gobject-sections.txt gobject/tmpl/objects.sgml
+            gobject/tmpl/param_value_types.sgml gobject/tmpl/gparamspec.sgml:
+            Document interface properties and GParamSpecOverride.
+    Documentation additions.
+    Additions.
+    
+    Mon Oct 20 01:12:46 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/tmpl/gtype.sgml:
+            * gobject/tmpl/param_value_types.sgml:
+            * gobject/tmpl/value_arrays.sgml: Additions.
+    
+            * gobject/tmpl/gboxed.sgml:
+            * gobject/gobject-sections.txt: Remove prematurely added
+            GStrv documentation.
+    Document closures.
+    Fix includes.
+    
+    Sun Oct  5 23:23:53 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/glib-sections.txt:
+            * gobject/gobject-sections.txt: Fix includes.
+    
+            * gobject/tmpl/value_collection.sgml: Add docs found in the
+            header.
+    Add g_type_add/remove_interface_check()
+    
+    Thu Oct  2 01:22:46 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/gobject-sections.txt gobject/tmpl/gtype.sgml:
+            Add g_type_add/remove_interface_check()
+    Docs for g_type_default_interface_ref(), etc. :
+    
+    Mon Sep 29 10:55:23 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            *  gobject/gobject-sections.txt gobject/tmpl/gtype.sgml:
+            Docs for g_type_default_interface_ref(), etc.
+    : ----------------------------------------------------------------------
+    Add docs for g_signal_accumulator_true_handled.
+    
+    Fri Sep 12 16:29:29 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/tmpl/signals.sgml: Add docs for
+            g_signal_accumulator_true_handled.
+    Make the g_value_set_x_take_ownership() functions "official" part of the
+    
+    2003-09-12  Matthias Clasen  <maclas@gmx.de>
+    
+            Make the g_value_set_x_take_ownership() functions "official"
+            part of the API (#100948):
+    
+            * gvaluetypes.[hc]: Add g_value_take_string() (synonym to the
+            now deprecated g_value_set_string_take_ownership()).
+    
+            * gparam.[hc]: Add g_value_take_param() (synonym to the
+            now deprecated g_value_set_param_take_ownership()).
+    
+            * gobject.[hc]: Add g_value_take_object() (synonym to the
+            now deprecated g_value_set_object_take_ownership()).
+    
+            * gboxed.[hc]: Add g_value_take_boxed() (synonym to the
+            now deprecated g_value_set_boxed_take_ownership()).
+    
+            * gobject/gobject-sections.txt: Add new g_value_take_x() functions.
+    
+            * gobject/tmpl/param_value_types.sgml: Document new g_value_take_x()
+            functions.  (#100948)
+    Additions.
+    Document private instance data.
+    
+    Mon Mar 10 11:33:10 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/tmpl/gtype.sgml gobject/gobject-sections.txt:
+            Document private instance data.
+    Add GTypeClass, GTypePluginClass and GTypeModuleClass.
+    
+            * gobject/tmpl/gtype.sgml:
+            * gobject/tmpl/gtypeplugin.sgml:
+            * gobject/tmpl/gtypemodule.sgml:
+            * gobject/gobject-sections.txt: Add GTypeClass, GTypePluginClass
+            and GTypeModuleClass.
+    
+            * gobject/tmpl/gboxed.sgml: Add docs.
+    More docs.
+    
+            * gsignal.c: More docs.
+    
+            * gobject/gobject-sections.txt: Mark g_signal_handlers_destroy as
+            private.
+    
+            * gobject/tmpl/signals.sgml: Move some docs inline.
+    Add g_type_interface_prerequisites.
+    Updates.
+    
+            * gobject/gobject-sections.txt:
+            * gobject/tmpl/gtype.sgml: Updates.
+    gobject/gobject-sections.txt gobject/tmpl/generic_values.sgml updated for
+    
+    2002-02-20  Sven Neumann  <sven@gimp.org>
+    
+            * gobject/gobject-sections.txt
+            * gobject/tmpl/generic_values.sgml
+            * gobject/tmpl/param_value_types.sgml: updated for GValue changes.
+    1.3.13
+    
+    Tue Jan 29 11:18:44 2002  Owen Taylor  <otaylor@redhat.com>
+    
+            * 1.3.13
+    
+            * NEWS: Updated.
+    
+            * configure.in: Micro == 13, binary age, interface age 0.
+            [ binary breakage was return type of g_signal_connect_object(),
+            probably could have used binary age == 0, but a little safer not to.]
+    
+            * configure.in: Remove configure warning.
+    SGML fixes. Small updates.
+    
+    Wed Dec 19 23:07:53 2001  Owen Taylor  <otaylor@redhat.com>
+            * glib/tmpl/messages.sgml glib/tmpl/string_utils.sgml:
+            SGML fixes.
+            * gobject/gobject-sections.txt glib/glib-sectoins.txt: Small updates.
+    Update.
+    
+    Thu Nov 22 12:56:57 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/gobject-sections.txt: Update.
+    
+            * glib/tmpl/{spawn.sgml,patterns.sgml}: SGML fixes.
+    
+            * glib/glib-sections.txt: Updated.
+    
+            * glib/Makefile.am (IGNORE_HFILES): Don't scan
+            headers in build/
+    provide G_TYPE_FUNDAMENTAL_SHIFT and g_type_fundamental_next() to return
+    
+    Thu Nov 22 00:26:26 2001  Tim Janik  <timj@gtk.org>
+    
+            * gtype.[hc]: provide G_TYPE_FUNDAMENTAL_SHIFT and
+            g_type_fundamental_next() to return next usable fundamental
+            type. use TypeNode pointers as type IDs.
+    list parameter and value types.
+    
+    Tue Nov 13 21:31:58 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmp/param_value_types.sgml: list parameter and
+            value types.
+    
+            * gobject/tmpl/gparamspec.sgml: more docs for g_param_spec*()
+            functions.
+    
+            * gobject/*: section cleanups.
+    param spec updates.
+    
+    Tue Nov 13 19:49:16 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/gparamspec.sgml: param spec updates.
+    got rid of g_set_error_handler(), g_set_warning_handler(),
+    
+    Mon Sep 10 17:13:36 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib/gmessages.h: got rid of g_set_error_handler(),
+            g_set_warning_handler(), g_set_message_handler().
+    
+    Wed Sep  5 05:24:07 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/gboxed.sgml: documented some functions.
+    
+            * gobject/tmpl/objects.sgml: some fixups.
+    
+    Mon Sep 10 19:27:47 2001  Tim Janik  <timj@gtk.org>
+    
+            * gtype.[hc]:
+            g_type_add_interface*(): implement the ability to add an interface to
+            a type whose parents already conform to this interface.
+            such "overriding" interfaces, when initialized, are not just initialized
+            with 0, but with a copy of the interface they override.
+            g_type_interface_peek_parent(): new function, return the interface
+            that this interface "overrides", if any.
+    
+            * testgruntime.c: test new interface stuff.
+    document value arrays.
+    
+    Sun Aug 12 02:24:36 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/value_arrays.sgml: document value arrays.
+    added new function g_nullify_pointer().
+    
+    2001-08-06  Sven Neumann  <sven@gimp.org>
+    
+            * glib/gutils.[ch]: added new function g_nullify_pointer().
+    
+            * gobject/gobject.[ch]:
+            added new functions g_object_[add|remove]_weak_pointer().
+    Revert Tim's last commit to get rid of 7+ unnecessary / broken changes.
+    
+    Wed Mar  7 15:02:17 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/Makefile.am: Revert Tim's last commit to
+            get rid of 7+ unnecessary / broken changes. Add
+            back the useful part. Also fix problem with grep,
+            add dependency on template files.
+    
+            * gobject/gobject-sections.txt: Remove double
+            value_types names which was screwing up builds.
+    
+            * glib/Makefile.am: Propagate changes from
+            gobject/Makefile.am
+    changed prototype of g_boxed_type_register_static() to contain an optional
+    
+    Wed Mar  7 09:36:33 2001  Tim Janik  <timj@gtk.org>
+    
+            * gboxed.[hc]: changed prototype of g_boxed_type_register_static()
+            to contain an optional init function and a hint at whether the
+            boxed structure uses ref counting internally.
+            added g_value_set_boxed_take_ownership().
+            made G_TYPE_BOXED an abstract value type.
+    
+            * genums.[hc]: made G_TYPE_ENUM and G_TYPE_FLAGS abstract value
+            types.
+    
+            * glib-genmarshal.c: argument type changes, preparation for third-party
+            arg specification.
+    
+            * gobject.[hc]: cleaned up get/set property code.
+            added g_strdup_value_contents() to improve warnings.
+    
+            * gparam.[hc]: added g_param_value_convert(), taking over responsibility
+            of the old g_value_convert(). added G_PARAM_LAX_VALIDATION flag so
+            validation alterations may be valid a part of the property setting
+            process.
+    
+            * gparamspecs.[hc]: made value comparisons stable (for sort applications).
+            added GParamSpecValueArray, a param spec for value arrays and
+            GParamSpecClosure. nuked the value exchange functions and
+            GParamSpecCCallback.
+    
+            * gtype.[hc]: catch unintialized usages of the type system with
+            g_return_val_if_uninitialized(). introduced G_TYPE_FLAG_VALUE_ABSTRACT
+            to flag types that introduce a value table, but can't be used for
+            g_value_init(). cleaned up reserved type ids.
+    
+            * gvalue.[hc]: code cleanups and saner checking.
+            nuked the value exchange API. implemented value transformations, we
+            can't really "convert" values, rather transforms are an anylogy to
+            C casts, real conversions need a param spec for validation, which is
+            why g_param_value_convert() does real conversions now.
+    
+            * gvaluearray.[hc]: new files that implement a GValueArray, a struct
+            that can hold inhomogeneous arrays of value (to that extend that it
+            also allowes undefined values, i.e. G_VALUE_TYPE(value)==0).
+            this is exposed to the type system as a boxed type.
+    
+            * gvaluetransform.c: new file implementing most of the former value
+            exchange functions as single-sided transformations.
+    
+            * gvaluetypes.[hc]: nuked G_TYPE_CCALLBACK, added
+            g_value_set_string_take_ownership().
+    
+            * *.h: s/G_IS_VALUE_/G_VALUE_HOLDS_/.
+    
+            * *.[hc]: many fixes and cleanups.
+    
+            * many warning improvements.
+    
+    Tue Feb 27 18:35:15 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject.c (g_object_get_valist): urg, pass G_VALUE_NOCOPY_CONTENTS
+            into G_VALUE_LCOPY(), this needs proper documenting.
+    
+            * gparam.c: fixed G_PARAM_USER_MASK.
+    
+            * gtype.c (type_data_make_W):
+            (type_data_last_unref_Wm): fixed invalid memory freeing.
+    
+            * gobject.c (g_object_last_unref): destroy signal handlers associated
+            with object, right before finalization.
+    
+            * gsignal.c (g_signal_parse_name): catch destroyed nodes or signals
+            that don't actually support details.
+    
+            * gobject.[hc]: got rid of property trailers. nuked GObject
+            properties "data" and the "signal" variants.
+            (g_object_connect): new convenience function to do multiple
+            signal connections at once.
+            (g_object_disconnect): likewise, for disconnections.
+    
+            * gparam.[hc] (g_param_spec_pool_lookup): took out trailer support.
+    
+            * gvalue.[hc]: marked g_value_fits_pointer() and g_value_peek_pointer()
+            as private (the latter got renamed from g_value_get_as_pointer()).
+    
+    Wed Mar  7 09:32:06 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib-object.h: add gvaluearray.h.
+    
+            * gstring.[hc]: fixup naming of g_string_sprint*.
+    
+            * gtypes.h: fixed GCompareDataFunc naming.
+    
+    Wed Mar  7 09:33:27 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/Makefile.am: shuffled rules to avoid excessive
+            rebuilds.
+    
+            * gobject/gobject-sections.txt: updates.
+    
+            * gobject/tmpl/*: bunch of updates, added another patch
+            from Eric Lemings <eric.b.lemings@lmco.com>.
+    adapt to work with new CVS gtk-doc, leaving the old rules in place caused
+    
+    Wed Jan 31 07:14:22 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/Makefile.am: adapt to work with new CVS gtk-doc, leaving the old
+            rules in place caused bogus recursions. main changes:
+            - add to conditionalized section:
+              all-local:
+                    $(MAKE) scan
+                    $(MAKE) templates
+                    $(MAKE) sgml
+                    $(MAKE) html.stamp
+              html.stamp: sgml.stamp $(EXTRA_SGML_FILES)
+                    $(MAKE) html
+              DOC_STAMPS= html.stamp sgml.stamp
+            - change:
+              maintainer-clean-local: clean
+              -     cd $(srcdir) && rm -rf sgml html $(DOC_MODULE)-decl-list.txt $(DOC_MODULE)-decl.txt
+              +     cd $(srcdir) && rm -rf sgml html $(DOC_MODULE)-decl-list.txt $(DOC_MODULE)-decl.txt $(DOC_STAMPS)
+    
+            * glib/Makefile.am (maintainer-clean-local): dito.
+    
+    Wed Jan 31 06:21:32 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/types.sgml: applied docu patch from Eric Lemings
+            <eric.b.lemings@lmco.com>, did some more editing.
+    
+    Wed Jan 31 06:19:49 2001  Tim Janik  <timj@gtk.org>
+    
+            * gparam.h: gtk-doc sucks for not dealing with #define inside enums.
+    
+            * gtype.[hc]: added G_TYPE_FLAG_RESERVED_ID_BIT, a bit in the type
+            number that's supposed to be left untouched (preserved mainly
+            for the signal code).
+    
+            * *.c: added thread safety code, based on an old patch from sebastian.
+            the remaining thread safety issues are now datalists on pspecs (to be
+            solved im gdataset.c) and gvalue.c where locking concerns value exchange
+            functionality only, and that's soon to be revised.
+    added some function documentations.
+    
+    Tue Jan  9 03:10:38 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/types.sgml: added some function documentations.
+    
+            * gobject/gobject-sections.txt: buncha fixups.
+    Updates added
+    
+    Sun Nov  5 13:24:50 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/Makefile.am gobject/gobject-sections.sgml: Updates
+            * gobject/tmpl/g{boxed,type{plugin,module}}.sgml: added
+    prefix internal functions with '_'. renamed g_signal_connect_closure() to
+    
+    Fri Nov  3 07:35:00 2000  Tim Janik  <timj@gtk.org>
+    
+            * gsignal.[hc]: prefix internal functions with '_'. renamed
+            g_signal_connect_closure() to g_signal_connect_closure_by_id().
+            added g_signal_parse_name() to retrive signal_id and detail quark
+            from a signal name (internal).
+    
+    Fri Nov  3 07:33:15 2000  Tim Janik  <timj@gtk.org>
+    
+            * gobject/gobject-docs.sgml: added &gobject-closures; section.
+    
+            * gobject/Makefile.am (tmpl_sources): add tmpl/clsoures.sgml
+    
+            * gobject/gobject-sections.txt: added Closure section.
+    
+            * gobject/tmpl/closures.sgml: new file with template description
+            for GClosure functions.
+    destroy all signals that the finalized obejct type introduced.
+    
+    Wed Nov  1 03:36:54 2000  Tim Janik  <timj@gtk.org>
+    
+            * gobject.c (g_object_base_class_finalize): destroy all signals that
+            the finalized obejct type introduced.
+    
+            * gsignal.c (g_signals_destroy): don't require itype to have
+            signals.
+    
+            * gobject.c (g_object_do_finalize): make sure all signal handlers
+            are destroyed.
+    
+            * gsignal.[hc]:
+            (g_signal_handler_find): only match on non-0 masks.
+            (g_signal_handlers_block_matched):
+            (g_signal_handlers_unblock_matched):
+            (g_signal_handlers_disconnect_matched): new functions to block/unblock
+            or disconnect handlers in groups.
+    opened up a new section on signals.
+    
+    Mon Oct 30 06:01:43 2000  Tim Janik  <timj@gtk.org>
+    
+            * gobject/gobject-sections.txt: opened up a new section on signals.
+    
+    Mon Oct 30 05:52:45 2000  Tim Janik  <timj@gtk.org>
+    
+            * gsignal.c (g_signal_list_ids): get rid of inline documentation owen
+            added, the doc system would ignore it anyways (for some reason not
+            aparent to me).
+    Split GObject docs away from the remainder of the docs.
+    
+    Wed Sep  6 00:30:09 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/* gobject/*: Split GObject docs away from
+            the remainder of the docs.
+    
+            * glib/Makefile.am gobject/Makefile.am: Rework
+            to have reasonable dependencies. (No dependencies
+            on the files actually in the source directories,
+            so to get it going, you have to do 'make scan',
+            but after that, things should work OK.)
+    some fixups, mention that changing scanner config during the parsing phase
+    
+    Fri Mar 16 16:04:42 2007  Tim Janik  <timj@gtk.org>
+    
+            * glib/tmpl/scanner.sgml: some fixups, mention that changing scanner
+            config during the parsing phase is supported behavior.
+    
+    
+    
+    svn path=/trunk/; revision=5416
+    Add GRegex for regular expression matching. (#50075)
+    
+    2007-03-15  Marco Barisione <marco@barisione.org>
+    
+            Add GRegex for regular expression matching.  (#50075)
+    
+            * configure.in: Handle GRegex compilation.
+    
+            * glib/gregex.c:
+            * glib/gregex.h: Code for GRegex.
+    
+            * glib/Makefile.am:
+            * glib/makefile.msc.in: Updated makefiles.
+    
+            * glib/pcre/*: Internal copy of PCRE.
+    
+            * glib/update-pcre/*: Stuff to automatically update the internal PCRE
+            to a newer version.
+    
+            * tests/regex-test.c:
+            * tests/Makefile.am:
+            * tests/makefile.msc.in: Add tests for GRegex.
+    
+    svn path=/trunk/; revision=5408
+    Add G_QUEUE_INIT, g_queue_init(), and g_queue_clear() to better support
+    
+    2007-03-06  Matthew Barnes  <mbarnes@redhat.com>
+    
+            * glib/gqueue.h:
+            * glib/gqueue.c: Add G_QUEUE_INIT, g_queue_init(), and
+            g_queue_clear() to better support statically allocated
+            queues.  (#413244)
+    
+    
+    svn path=/trunk/; revision=5378
+    New files implementing GSequence, a list implemented using a binary tree.
+    
+    2007-02-03  Soren Sandmann <sandmann@daimi.au.dk>
+    
+            * glib/gsequence.[ch]: New files implementing GSequence, a list
+            implemented using a binary tree.
+            * glib/glib.h, glib/glib.symbols: Update for GSequence.
+            * docs/reference: Add documentation for GSequence
+            * tests: Add sequence-test.c, a thorough test of all of
+            the GSequence API.
+    
+    
+    svn path=/trunk/; revision=5322
+    Cleanups
+    
+    svn path=/trunk/; revision=5265
+    Add g_unichar_iszerowidth(). (#347645)
+    
+    2007-01-03  Behdad Esfahbod  <behdad@gnome.org>
+    
+            * glib/glib.symbols:
+            * glib/gunicode.h:
+            * glib/guniprop.c: Add g_unichar_iszerowidth(). (#347645)
+    
+    
+    svn path=/trunk/; revision=5202
+    broken pipe
+    Add Unicode script support
+    Add functions for approximate timeouts
+    fixups
+    document new api
+    Add g_hash_table_{remove,steal}_all to remove all nodes from a hash table.
+    
+    2006-06-01  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/ghash.h:
+            * glib/ghash.c: Add g_hash_table_{remove,steal}_all to
+            remove all nodes from a hash table.  (#168538, Matt Barnes)
+    g_ascii_strtoll
+    Allow optional summary and description texts before and after the option
+    
+    2006-05-13  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/goption.h:
+            * glib/goption.c: Allow optional summary and description
+            texts before and after the option descriptions, and add
+            a way to translate them.  (#336120, Behdad Esfahbod)
+    docs/reference/glib/glib-sections.txt, Implement g_unichar_iswide_cjk().
+    
+    2006-04-27  Behdad Esfahbod  <behdad@gnome.org>
+    
+            * docs/reference/glib/glib-sections.txt,
+            * glib/gunicode.h glib/guniprop.c: Implement g_unichar_iswide_cjk().
+            (#105626)
+    Add api to get and set doubles and lists of doubles. (#164719, Maurizio
+    
+    2006-04-18  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gkeyfile.h:
+            * glib/glib.symbols:
+            * glib/gkeyfile.c: Add api to get and set doubles and
+            lists of doubles.  (#164719, Maurizio Monge, Dom Lachowicz)
+    
+            * tests/keyfile-test.c: Add tests for new api.
+    Add base64 docs
+    Add documentation for GBookmarkFile to GLib's reference guide.
+    
+    2006-03-27  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+    
+            * docs/reference/glib/glib-docs.sgml:
+            * docs/reference/glib/glib-sections.txt:
+            * docs/reference/glib/tmpl/bookmarkfile.sgml: Add documentation for
+            GBookmarkFile to GLib's reference guide.
+    Check for timegm.
+    
+    2006-03-23  Emmanuele Bassi  <ebassi@cvs.gnome.org>
+    
+            * configure.in: Check for timegm.
+    
+            * glib/gtimer.h:
+            * glib/gtimer.c:
+            * glib/glib.symbols:
+            * docs/reference/glib/glib-sections.txt: Added g_time_val_to_iso8601
+            and g_time_val_from_iso8601, to convert a GTimeVal to and from an
+            ISO 8601 encoded date.
+    
+            * tests/testglib.c: Added test cases for g_time_val_to_iso8601()
+            and g_time_val_from_iso8601() functions.
+    Document some Windows-specific issues.
+    
+    2006-02-14  Tor Lillqvist  <tml@novell.com>
+    
+            * glib/tmpl/iochannels.sgml: Document some Windows-specific issues.
+    
+            * glib/glib-sections.txt: Move three Windows-specific functions
+            that now are documented from being Private to the correct section.
+    2.9.5
+    - Added new API g_thread_pool_get_idle_time() and
+    
+    * docs/reference/glib/glib-sections.txt:
+    * glib/glib.symbols:
+    * glib/gthreadpool.[ch]:
+    - Added new API g_thread_pool_get_idle_time() and
+    g_thread_pool_set_idle_time(). (#324228).
+    
+    * tests/threadpool-test.c:
+    - Updated test case to do thread pool sorting, thread pool with
+    no sorting and a thread pool with idle thread timeouts.
+    Small fixes
+    typo
+    New function to sort tasks pushed into a threadpool. (#324479, Martyn
+    
+    2005-12-20  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/gthreadpool.h:
+            * glib/gthreadpool.c (g_thread_pool_set_sort_function): New function
+            to sort tasks pushed into a threadpool.  (#324479, Martyn Russell)
+    
+            * tests/threadpool-test.c: Test this.
+    Add g_list_free1
+    
+    
+            * glib/glib-sections.txt: Add g_list_free1
+    
+            * glib/glib-overrides.txt: Remove G_THREADS_IMPL_SOLARIS
+    Document new atomic operations.
+    
+    2005-12-14  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt:
+            * glib/tmpl/atomic_operations.sgml: Document new atomic
+            operations.
+    - Added g_list_insert_sorted_with_data () and
+    
+    * docs/reference/glib/glib-sections.txt:
+    * docs/reference/glib/tmpl/linked_lists_double.sgml:
+    * docs/reference/glib/tmpl/linked_lists_single.sgml:
+    * glib/glist.[ch]:
+    * glib/gslist.[ch]:
+    - Added g_list_insert_sorted_with_data () and
+    g_slist_insert_sorted_with_data ().
+    - Removed the extra check in g_list_sort() and g_slist_sort() for
+    GCompareDataFunc vs. GCompareFunc.
+    Updates
+    
+    2005-12-05  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt: Updates
+    
+            * glib/tmpl/memory_slices.sgml: Fix a small formatting
+            problem.
+    - Added support for sorting async queues by with _push_sorted(),
+    
+    * docs/reference/glib/glib-sections.txt:
+    * glib/gasyncqueue.[ch]:
+    - Added support for sorting async queues by with _push_sorted(),
+    _push_sorted_unlocked(), _sort() and _sort_unlocked() (#323047).
+    
+    * tests/Makefile.am:
+    * tests/asyncqueue-test.c:
+    - Added test case for gasyncqueue.c
+    Add a macro to make gcc warn if a function result is ignored. (#145466,
+    
+    2005-12-04  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gmacros.h (G_GNUC_WARN_UNUSED_RESULT): Add a macro
+            to make gcc warn if a function result is ignored.  (#145466,
+            Arjan van de Ven, Alex Larsson)
+    
+            * glib/gmem.h: Add the new attribute to g_realloc and
+            g_try_realloc.
+    Add more api
+    Document the slice allocator
+    Remove support for Solaris threads. (#136971, Sebastian Wilhelmi, patch by
+    
+    2005-12-02  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gspawn.c:
+            * configure.in: Remove support for Solaris threads.
+            (#136971, Sebastian Wilhelmi, patch by Andrew Paprocki)
+    Documentation improvements
+    Updates
+    
+    2005-11-17  Matthias Clasen  <mclasen@redhat.com>
+    
+            * NEWS: Updates
+    
+            * glib/gthread.c (g_thread_foreach): Mark as new api.
+    
+            * README.in: Updates.
+    Add functions to set a date from a time_t and from a GTimeVal.
+    
+    2005-11-17  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/gdate.h:
+            * glib/gdate.c (g_date_set_time_t):
+            (g_date_set_time_val): Add functions to set a date from
+            a time_t and from a GTimeVal.
+            (g_date_set_time): Deprecate.  (#314067, Roger Leigh)
+    Add functions to intern strings.
+    
+    2005-08-31  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/gquark.h:
+            * glib/gdataset.c: Add functions to intern strings.
+    Updates
+    Add an mmap() wrapper called GMappedFile. (#148218, David Schleef, Behdad
+    
+    2005-06-24  Matthias Clasen  <mclasen@redhat.com>
+    
+            Add an mmap() wrapper called GMappedFile. (#148218,
+            David Schleef, Behdad Esfahbod)
+    
+            * glib/gmappedfile.[hc]: New files.
+    
+            * configure.in: Check for mmap.
+    
+            * glib/Makefile.am: Add new files.
+    
+            * glib/glib.symbols: Add new functions.
+    
+            * glib/glib.h: Include gmappedfile.h
+    
+            * tests/mapping-test.c: Tests for GMappedFile.
+    
+            * tests/Makefile.am: Add new file.
+    Add new functions
+    Add g_chdir
+    
+    2005-06-09  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt: Add g_chdir
+    New function to calculate collation keys which are more suitable for
+    
+    2005-06-08  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/gunicode.h:
+            * glib/gunicollate.c (g_utf8_collate_key_for_filename):
+            New function to calculate collation keys which are more
+            suitable for sorting filenames.  (#172690, Ole Laursen)
+    Add g_object_add/remove_toggle_ref() functions to get notification when a
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject.[ch] gobject.symbols: Add
+            g_object_add/remove_toggle_ref() functions to get notification
+            when a reference count is the last remaining reference; this
+            enables better memory management for language bindings.
+            (http://mail.gnome.org/archives/gtk-devel-list/2005-April/msg00095.html)
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gdataset.[ch] glib/gdatasetprivate.h: Add
+            g_datalist_set/unset_flags(), g_datalist_get_flags() functions
+            to squeeze some bits into a GDataSet... this is needed for
+            efficient implementation of toggle references in GObject.
+    
+            * tests/gobject/references.c tests/gobject/Makefile.am:
+            Add a test case for weak and toggle references.
+    
+            * glib/gfileutils.[ch]: Rename g_file_replace() back
+            to g_file_set_contents().
+    
+            * glib/glib.symbols: Update.
+    
+    2005-05-05  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/Makefile.am glib/glib-sections.txt gobject/gobject-sections.txt:
+            Update
+    
+            * gobject/tmpl/objects.sgml: Document toggle-references.
+    More cosmetics
+    Additions
+    Additions
+    Additions
+    Add g_try_new, g_try_new0, g_try_renew and g_try_malloc0. (#169611, Stefan
+    
+    2005-03-21  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gmem.h: Add g_try_new, g_try_new0, g_try_renew and
+            g_try_malloc0.  (#169611, Stefan Kost)
+    
+            * glib/gmem.c: Implement g_try_malloc0.
+    Add g_try_new, g_try_new0 and g_try_renew. (#169611, Stefan Kost)
+    
+    2005-03-21  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gmem.h: Add g_try_new, g_try_new0 and
+            g_try_renew.  (#169611, Stefan Kost)
+    Define G_GNUC_NULL_TERMINATED. (#164706, Marc Meissner)
+    
+    2005-03-08  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gmacros.h: Define G_GNUC_NULL_TERMINATED.
+            (#164706, Marc Meissner)
+    
+            * glib/gstrfuncs.h:
+            * glib/gfileutils.h: Use G_GNUC_NULL_TERMINATED where
+            appropriate.
+    New function to list all environment variables. (#166327, Hans Petter
+    
+    2005-02-07  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib.symbols:
+            * glib/gutils.h:
+            * glib/gutils.c (g_listenv): New function to list all
+            environment variables.  (#166327, Hans Petter Jansson)
+    Add g_rmdir
+    
+    2004-12-15  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt: Add g_rmdir
+    Add g_filename_display_basename.
+    
+    2004-12-15  Alexander Larsson  <alexl@redhat.com>
+    
+            * glib/gconvert.[ch]:
+            Add g_filename_display_basename.
+    Document G_GNUC_MALLOC.
+    
+    2004-11-28  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/tmpl/macros_misc.sgml: Document G_GNUC_MALLOC.
+    
+            * glib/glib-sections.txt: Add G_GNUC_MALLOC
+    New function to convert a filename to a UTF-8 string for display purposes.
+    
+    2004-11-02  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gconvert.c (g_filename_display_name): New function to
+            convert a filename to a UTF-8 string for display purposes.
+            (g_get_filename_charsets): New function to return the
+            encodings which are tried when converting a filename to
+            UTF-8.
+    Document G_WIN32_IS_NT_BASED, G_WIN32_HAVE_WIDECHAR_API.
+    
+    2004-10-31  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/tmpl/windows.sgml: Document G_WIN32_IS_NT_BASED,
+            G_WIN32_HAVE_WIDECHAR_API.
+    
+            * glib/glib-sections.txt: Add g_lstat
+    
+            * glib/running.sgml: Document G_WIN32_PRETEND_WIN9X.
+    
+    200
+    Add G_OPTION_REMAINING
+    
+    2004-10-29  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt: Add G_OPTION_REMAINING
+    Introduce the idea of a filename encoding, which is *literally* the
+    
+    2004-10-27  Matthias Clasen  <mclasen@redhat.com>
+    
+            Introduce the idea of a filename encoding, which is
+            *literally* the filename encoding on Unix. On windows,
+            use the Unicode name converted to UTF-8. (#156325,
+            Tor Lillqvist, Owen Taylor)
+    
+            * glib/gdir.[hc]:
+            * glib/gconvert.[hc]:
+            * glib/gfileutils.[hc]:
+            * glib/gutils.[hc]:
+            * glib/giowin32.c: On Windows, keep old ABI versions
+            of GLib pathname api for DLL ABI stability. Use different
+            names for the new-style UTF-8 versions. Hide this through
+            a #define.
+    
+            * glib/gstdio.[hc]: New files containing wrappers for
+            POSIX pathname api.
+    
+            * glib/glib.symbols: Add new symbols.
+    
+            * glib/makegalias.pl: Drop Win32 specific .def syntax,
+            include gstdio.h
+    Documentation fixes.
+    Add GKeyFile section.
+    
+    2004-10-23  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-sections.txt: Add GKeyFile section.
+    Make public. (#155589, Tim-Philipp Müller)
+    
+    2004-10-17  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gutils.h (G_IS_DIR_SEPARATOR):
+            * glib/gutils.c: Make public.  (#155589, Tim-Philipp Müller)
+    Ignore galias.h
+    
+    2004-09-16  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/Makefile.am: Ignore galias.h
+    
+            * glib/glib-sections.txt: Updates.
+    Add a function to calculate the length of a NULL-terminated string array.
+    
+    Thu Sep  9 00:10:40 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gstrfuncs.h:
+            * glib/gstrfuncs.c (g_strv_length): Add a function to
+            calculate the length of a NULL-terminated string
+            array.  (#150455, Tim-Philipp Müller)
+    
+            * tests/strfunc-test.c (main): Add a test for g_strv_length().
+    Add a function to return a list of applicable locale names. (#95587,
+    
+    2004-09-07  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gutils.h:
+            * glib/gutils.c (g_get_language_names): Add a function to
+            return a list of applicable locale names.  (#95587,
+            Hidetoshi Tajima)
+            (guess_category_value, compute_locale_variants):
+            (explode_locale, unalias_lang, read_aliases): Helper
+            functions for g_get_language_names()
+    
+            * tests/testglib.c (main): Show the results of
+            g_get_language_names()
+    New function to install an alternate default log handler. (#66387, Darin
+    
+    Sun Sep  5 01:46:11 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/glib.def:
+            * glib/gmessages.h:
+            * glib/gmessages.c (g_log_set_default_handler): New
+            function to install an alternate default log
+            handler.  (#66387, Darin Adler)
+    Add g_date_get_iso8601_week_of_year.
+    
+    Wed Sep  1 20:27:59 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/glib-sections.txt: Add g_date_get_iso8601_week_of_year.
+    Add new XDG basedir API (bug 139973).
+    
+    2004-08-11  Ray Strode  <rstrode@redhat.com>
+    
+            * docs/reference/glib/glib-sections.txt:
+            * glib/gutils.[ch] (g_get_user_data_dir),
+            (g_get_user_config_dir), (g_get_user_cache_dir),
+            (g_get_system_data_dirs), (g_get_system_config_dirs):
+            Add new XDG basedir API (bug 139973).
+    Add a section for GOption. Include GOption section. New template.
+    
+    Tue Aug  3 16:43:22 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/glib-sections.txt: Add a section for GOption.
+            * glib/glib-docs.sgml: Include GOption section.
+            * glib/tmpl/option.sgml: New template.
+    New function to check the version of GLib at runtime. (#149175, Michael
+    
+    Tue Aug  3 14:58:20 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gutils.h:
+            * glib/gutils.c (glib_check_version): New function to
+            check the version of GLib at runtime.  (#149175, Michael Natterer)
+    Add a G_GNUC_INTERNAL macro to mark function declarations as internal and
+    
+    2004-08-02  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/gmacros.h: Add a G_GNUC_INTERNAL macro to mark function
+            declarations as internal and avoid PLT indirections for
+            them.  (#145465, Arjan van de Ven)
+    
+            * glib/gunicodeprivate.h:
+            * glib/gthreadinit.h:
+            * glib/gmessages.h:
+            * glib/gdebug.h:
+            * glib/gconvert.c: Use G_GNUC_INTERNAL for _g_charset_get_aliases(),
+            _g_debug_init(), _g_log_fallback_handler(), _g_mem_thread_init(),
+            _g_messages_thread_init(), _g_convert_thread_init(),
+            _g_rand_thread_init(), _g_main_thread_init(), _g_atomic_thread_init(),
+            _g_mem_thread_private_init(), _g_messages_thread_private_init(),
+            _g_utf8_normalize_wc() and _g_unichar_combining_class().
+    
+            * glib/gatomic.c: Include gthreadinit.h here to see the declaration
+            for _g_atomic_thread_init().
+    Complete the g_log() family. (#135730, Sven Herzberg)
+    
+    Mon Jul  5 18:50:27 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gmessages.h (g_debug): Complete the g_log()
+            family.  (#135730, Sven Herzberg)
+    Patch from J. Ali Harlow
+    
+    Mon Mar  1 15:39:57 2004  Owen Taylor  <otaylor@redhat.com>
+    
+           Patch from J. Ali Harlow
+    
+            * configure.in: Use void * not HANDLE for GPid on win32.
+    
+            * glib/gspawn.[ch] glib/gspawn-win32.[ch] glib/glib.def:
+            Add g_spawn_close_pid().
+    
+            * glib/gspawn.[ch]: Make g_spawn functions take
+            GPid * instead if int * (GPid == int on unix, will
+            produce compile warnings until fixed on Win32.)
+    
+            * tests/child-test.c: Make the test a little more
+            inappropriately verbose.
+    
+            * glib/gmain.c: Add some documentation warnings about
+            not closing @pid while the source is active.
+    Add g_main_depth() (Request from Tim Janik and Stefan Westerfeld)
+    
+    Sun Feb 29 21:34:34 2004  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gmain.[ch]: Add g_main_depth() (Request from
+            Tim Janik and Stefan Westerfeld)
+    Moved the assembler functions from gatomic.h to gatomic.c, which makes for
+    
+    
+    2004-02-29  Sebastian Wilhelmi  <seppi@seppi.de>
+    
+            * configure.in, glib/gatomic.c, glib/gatomic.h: Moved the
+            assembler functions from gatomic.h to gatomic.c, which makes for
+            better maintainability. Also use gint instead of gint32 to be able
+            to use reference counting for ABI-fixed structures with
+            gint/guint.
+    
+            * glib/gthread.h: Adapted accordingly.
+    
+            * tests/atomic-test.c: Updated to test for G_MAXINT and G_MININT.
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/tmpl/atomic_operations.sgml: Updated according to code changes.
+    New files to implement atomic operations for different platforms. Fixes
+    
+    
+    2004-02-26  Sebastian Wilhelmi  <seppi@seppi.de>
+    
+            * glib/gatomic.c, glib/gatomic.h: New files to implement atomic
+            operations for different platforms. Fixes bug #63621.
+    
+            * glib/glib.h: Include gatomic.h.
+    
+            * configure.in: Add test for assembler routines for atomic operations.
+    
+            * glib/Makefile.am: Add gatomic.c, gatomic.h.
+    
+            * tests/Makefile.am, tests/atomic-test.c: Unit test for atomic
+            operations.
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/glib-docs.sgml, glib/tmpl/atomic_operations.sgml: Add docs
+            for atomic operations.
+    === Released 2.3.3 ===
+    
+    Tue Feb 24 14:09:21 2004  Owen Taylor  <otaylor@redhat.com>
+    
+            * === Released 2.3.3 ===
+    
+            * configure.in: Version 2.3.3, interface age 0.
+    New function to deep-copy a GNode and its children. (#93464, James M.
+    
+    Sun Feb 22 00:47:04 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gnode.c (g_node_copy_deep): New function to deep-copy a
+            GNode and its children.  (#93464, James M. Cape)
+    Add the new g_rand_* functions
+    
+    
+    2004-02-18  Sebastian Wilhelmi  <seppi@seppi.de>
+    
+            * glib/glib-sections.txt: Add the new g_rand_* functions
+    Wrap waitpid() as a GSource. This is a partial implementation of the "Unix
+    
+    Sat Feb 14 01:21:34 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gmain.h:
+            * glib/gmain.c (g_child_watch_source_new):
+            * glib/gmain.c (g_child_watch_add):
+            * glib/gmain.c (g_child_watch_add_full): Wrap waitpid() as a
+            GSource. This is a partial implementation of the "Unix signal
+            source".  (#50296, Jonathan R. Blandford)
+    
+            * configure.in: Add the necessary configury to typedef GPid
+            appropriately.
+    
+            * tests/Makefile.am:
+            * tests/child-test.c: Test child_watch sources.
+    New function which works like g_completion_complete(), but strips a
+    
+    Thu Feb  5 00:56:28 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gcompletion.c (g_completion_complete_utf8): New function which
+            works like g_completion_complete(), but strips a trailing incomplete
+            UTF-8 character from the prefix.  (#133313, Theppitak Karoonboonyanan)
+    
+            * tests/completion-test.c (main): Some GCompletion tests.
+    
+            * tests/Makefile.am: Add completion-test.
+    New function, a cross between g_strsplit() and strtok(). (#88329, Soeren
+    
+    Wed Jan 28 01:39:21 2004  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gstrfuncs.h:
+            * glib/gstrfuncs.c (g_strsplit_set): New function, a cross
+            between g_strsplit() and strtok().  (#88329, Soeren Sandmann)
+    
+            * tests/strfunc-test.c (main): Add g_strsplit_set() tests.
+    Add g_timer_continue(). (#98536, Tim-Philipp Müller)
+    
+    Thu Jan 22 13:55:44 2004  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gtimer.c: Add g_timer_continue().
+            (#98536, Tim-Philipp Müller)
+    
+            * configure.in: Version 2.3.2, interface age 0.
+    
+            * NEWS: tweak, finish.
+    New function to call a function for each element of a GPtrArray. (#114790)
+    
+    Fri Dec 26 02:03:58 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/garray.[hc] (g_ptr_array_foreach): New function to
+            call a function for each element of a GPtrArray.  (#114790)
+    
+            * tests/array-test.c (main): Add a test for g_ptr_array_foreach().
+    Fix for #103710, Mark Jones:
+    
+    Tue Dec  2 02:29:41 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            Fix for #103710, Mark Jones:
+    
+            * glib/gtypes.h (G_MAXINT64): Define G_{MIN,MAX,MAXU}INT{8,16,32,64}.
+            * configure.in: Don't put G_{MIN,MAX,MAXU}INT64 in glibconfig.h.
+    Add an i18n section. Include the corresponding entity. Template for i18n
+    
+    Thu Nov  6 01:42:36 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/glib-sections.txt: Add an i18n section.
+            * glib/glib-docs.sgml: Include the corresponding entity.
+            * glib/tmpl/i18n.sgml: Template for i18n section.
+    
+    Thu Nov  6 00:56:04 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/running.sgml: Document G_FILENAME_ENCODING.
+    Fix includes.
+    
+    Sun Oct  5 23:23:53 2003  Matthias Clasen  <maclas@gmx.de>
+    
+            * gobject/glib-sections.txt:
+            * gobject/gobject-sections.txt: Fix includes.
+    
+            * gobject/tmpl/value_collection.sgml: Add docs found in the
+            header.
+    Add "Since: 2.4" to docs. Add g_unichar_get_mirror_char and
+    
+    2003-09-29  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/guniprop.c (g_unichar_get_mirror_char): Add "Since: 2.4"
+            to docs.
+            * glib/glib-sections.txt: Add g_unichar_get_mirror_char and
+            g_static_mutex_get_mutex_impl_shortcut.
+    Add g_markup_printf_escaped(), g_markup_vprintf_escaped().
+    
+    Thu Sep 11 20:11:05 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gmarkup.c: Add g_markup_printf_escaped(),
+            g_markup_vprintf_escaped().
+    
+            * tests/markup-escape-test.c (main): Test for
+            g_markup_escape_text(), g_markup_printf_escaped().
+    Rename g_read_link() to g_file_read_link() to better match the remaining
+    
+            * glib/gfileutils.[hc]: Rename g_read_link() to g_file_read_link() to better match the remaining file
+            utilities in the g_file_ namespace and to better separate it from readlink(). This is hopefully no problem
+            as the function is just 2 days old.
+    Integrate gnulib vasnprintf().
+    New function g_read_link(). (#72545)
+    
+            * glib/gfileutils.h:
+            * glib/gfileutils.c: New function g_read_link(). (#72545)
+    Add g_setenv() and g_unsetenv(). (#100763)
+    
+            * glib/gutils.[ch]: Add g_setenv() and g_unsetenv().  (#100763)
+    New functions to remove a range of elements from an array. (#94879, Nalin
+    
+    2003-07-26  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/garray.h:
+            * glib/garray.c (g_{,byte,pointer}_remove_range): New functions to remove a range of elements
+            from an array.  (#94879, Nalin Dahyabhai)
+    Support for one-time initialization functions. (#69668, Sebastian
+    
+    2003-07-09  Matthias Clasen  <maclas@gmx.de>
+    
+            Support for one-time initialization functions.  (#69668, Sebastian Wilhelmi)
+    
+            * configure.in: Check whether double checked locking is safe, define g_once() in
+            glibconfig.h accordingly.
+            * glib/gthread.h: Add GOnce, GOnceStatus, G_ONCE_INIT and g_once_impl.
+            * glib/gthread.c (g_once_impl): Fallback implementation using a mutex if double checked
+            locking is unsafe.
+            * tests/thread-test.c: Add tests for g_once().
+    Add g_thread_init_glib to silence gtk-doc.
+    
+            * glib/glib-sections.txt: Add g_thread_init_glib to silence gtk-doc.
+    XML fix.
+    
+    Sun Jun  8 12:28:39 2003  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/tmpl/error_reporting.sgml: XML fix.
+    
+            * glib/glib-sections.txt: Updated.
+    Add g_vasprintf().
+    
+    2003-06-06  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/glib-sections.txt: Add g_vasprintf().
+    
+            * glib/tmpl/string_utils.sgml: Add a hint about g_vasprintf() to
+            the g_strdup_printf() docs.
+    New function, to insert possible non-nul-terminated byte sequences into a
+    
+    2003-04-01  Matthias Clasen  <maclas@gmx.de>
+    
+            * glib/gstring.[hc] (g_string_chunk_insert_len): New function, to
+            insert possible non-nul-terminated byte sequences into a string
+            chunk.  (#96279)
+            (g_string_chunk_insert): Implement in terms of
+            g_string_chunk_insert_len() now.
+    Adjust to changed parameter names.
+    
+    
+            * glib/gtimer.c (g_time_val_add): Adjust to changed parameter names.
+    
+            * glib/gutils.c (g_get_application_name): Mark as 2.2. addition.
+    
+            * glib/gstrfuncs.c (g_ascii_strtoull): Mark as 2.0.7 addition.
+    
+            * glib/tmpl/main.sgml: Write something about GSourceDummyMarshal.
+    
+            * glib/tmpl/date.sgml:
+            * glib/tmpl/string_utils.sgml: Remove redundant docs.
+    
+            * glib/glib-sections.txt: Add g_ascii_strtoull and
+            g_get_application_name.
+            Include a printf implementation supporting C99 snprintf and SUS
+            positional parameters:  (#79488)
+    
+            * glib/gstrfuncs.c:
+            * glib/gspawn-win32.c:
+            * glib/gscanner.c:
+            * glib/gconvert.c:
+            * glib/gbacktrace.c: Use _g_printf wrappers.
+    
+            * glib/gutils.c (g_vsnprintf): Simplify, since we can assume C99
+            snprintf semantics now.
+    
+            * glib/gmessages.c (printf_string_upper_bound): No longer needed,
+            since we can assume C99 snprintf semantics now.
+            (g_logv): Simplify.
+    
+            * acinclude.m4 (AC_FUNC_PRINTF_UNIX98): New macro to check wether
+            printf supports SUS positional parameters.
+    
+            * configure.in: New option --enable-included-printf to force
+            compilation of trio; otherwise trio is compiled if the system
+            printf misses either C99 snprintf semantics of SUS positional
+            parameters.
+    
+            * glib/Makefile.am (SUBDIRS): Conditionally compile trio.
+            (libglib_2_0_la_SOURCES): Add gprintf.c and gprintfint.h.
+            (glibsubinclude_HEADERS): Add gprintf.h.
+    
+            * glib/gprintfint.h: New private wrapping either system printf
+            or trio printf variants in _g_printf wrappers for use inside glib.
+    
+            * glib/gprintf.h: New public header declaring g_printf variants.
+            * glib/gprintf.c: Corresponding implementations.
+    
+            * glib/trio/*: New directory, containing the trio-1.9 sources.
+    
+            * glib/tmpl/string_utils.sgml: Add note on including gprintf.h,
+            move some docs inline.
+    
+            * glib/glib-sections.txt: Add g_printf, g_vprintf, g_fprintf,
+            g_vfprintf, g_sprintf, g_vsprintf.
+    Use G_LIKELY. (#69022)
+    
+            * glib/gmessages.h (g_return_if_fail):
+            (g_return_val_if_fail): Use G_LIKELY.  (#69022)
+    
+            * glib/gmacros.h (G_LIKELY):
+            (G_UNLIKELY): New macros for hinting the compiler about the
+            expected result of expressions. For gcc 3.x, define these
+            using __builtin_expect.  (#69022)
+    
+            * glib/tmpl/macros_misc.sgml: Document G_LIKELY, G_UNLIKELY.
+    
+            * glib/glib-sections.txt: Add G_LIKELY, G_UNLIKELY.
+    Add g_markup_parse_context_get_element and g_utf8_strreverse.
+    
+            * glib/glib-sections.txt: Add g_markup_parse_context_get_element
+            and g_utf8_strreverse.
+    Remove references to nonexisting functions
+    
+            * glib/gmain.c: Remove references to nonexisting functions
+            g_source_set_callback_closure(), g_source_poll(), g_source_add()
+            from docs.
+    
+            * glib/gdir.c (g_dir_open): Typo fix in docs.
+    
+            * glib/gasyncqueue.c (g_async_queue_lock):
+            (g_async_queue_unref_and_unlock): Fix markup to avoid erroneous
+            <link>s in docs.
+    
+            * glib/gwin32.c: Escape #'s leading to erroneous <link>s in docs.
+    
+            * glib/gtree.c: Replace some occurances of Gtree by GTree in docs.
+    
+            * glib/gstring.c (g_string_insert_unichar): Typo fix in docs.
+    
+            * glib/tmpl/conversions.sgml: Add GIConv.
+    
+            * glib/tmpl/main.sgml: Fix references to nonexisting functions
+            g_main_loop_destroy(), g_source_add(), g_source_connect().
+    
+            * glib/glib-sections.txt: Add GIConv, g_str_has_prefix, g_str_has_suffix.
+    
+            * glib/tmpl/linked_lists_single.sgml:
+            * glib/tmpl/linked_lists_double.sgml: GListAllocator doesn't exist.
+    
+            * glib/glib-docs.sgml: Declare hash entity.
+    
+            * glib/tmpl/macros.sgml: Escape # in #ifdef to suppress erroneous links.
+    
+            * gobject/Makefile.am, gobject/gobject-docs.sgml, gobject/tmpl/*:
+            * glib/Makefile.am, glib/glib-docs.sgml, glib/tmpl/*: Produce XML,
+            not SGML.
+    Remove FIXME. (#67063)
+    
+            * glib/gfileutils.c (g_file_get_contents): Remove FIXME. (#67063)
+    
+            * glib/glib-sections.txt: Move g_get_charset() to the
+            Charset conversion section. (#65630)
+    SGML fixes. Small updates.
+    
+    Wed Dec 19 23:07:53 2001  Owen Taylor  <otaylor@redhat.com>
+            * glib/tmpl/messages.sgml glib/tmpl/string_utils.sgml:
+            SGML fixes.
+            * gobject/gobject-sections.txt glib/glib-sectoins.txt: Small updates.
+    Rename (private) GSource.id and id parameter to
+    
+    Wed Nov 28 18:34:22 2001  Owen Taylor  <otaylor@redhat.com>
+            * glib/gmain.[ch]: Rename (private) GSource.id and
+            id parameter to g_main_context_find_source_by_id()
+            to avoid problems with Objective C where 'id' is
+            a keyword. (#65616)
+    Update.
+    
+    Thu Nov 22 12:56:57 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/gobject-sections.txt: Update.
+    
+            * glib/tmpl/{spawn.sgml,patterns.sgml}: SGML fixes.
+    
+            * glib/glib-sections.txt: Updated.
+    
+            * glib/Makefile.am (IGNORE_HFILES): Don't scan
+            headers in build/
+    Remove g_log_domain_glib
+    
+    Sat Nov 17 17:24:19 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/glib-sections.txt: Remove g_log_domain_glib
+    provide g_newa(ctype, count) on top of g_alloca() like we provide g_new()
+    
+    Wed Nov 14 07:34:24 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib/galloca.h (g_newa): provide g_newa(ctype, count) on top of
+            g_alloca() like we provide g_new() on top of g_malloc().
+    Add g_strtod & co.
+    
+    2001-10-24  Alex Larsson  <alexl@redhat.com>
+    
+            * docs/reference/glib/glib-sections.txt:
+            Add g_strtod & co.
+    
+            * docs/reference/glib/tmpl/string_utils.sgml:
+            Add docs for G_ASCII_DTOSTR_BUF_SIZE.
+    
+            * glib/gstrfuncs.[ch]:
+            Added g_ascii_strtod, g_ascii_dtostr and g_ascii_formatd.
+    
+            * tests/Makefile.am:
+            * tests/strtod-test.c:
+            Add tests for g_ascii_strtod & co.
+    make struct _GPatternSpec and GMatchType private. (g_pattern_equal): new
+    
+    Fri Oct 12 18:24:02 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib/gpattern.[hc]: make struct _GPatternSpec and GMatchType
+            private.
+            (g_pattern_equal): new function to return equality of two patterns
+            (required because GPatternSpec is private now).
+            (g_pattern_spec_new): fix bug wrg wildcard counting which produced
+            incorrect pattern specs (discovered by Matthias Clasen).
+            optimized code so we just keep one compiled pattern string now.
+            correctly canonicalize patterns. reduce string walks, optimize
+            decision about MATCH_ALL vs. MATCH_ALL_TAIL.
+            (g_pattern_match_string): call just g_pattern_match() with NULL
+            reversed string.
+            (g_pattern_match): allow NULL reversed strings now, reverse_dup
+            strings on demand.
+    
+            * tests/patterntest.c (test_compilation): added an extended testcase
+            for pattern matching from Matthias Clasen <matthiasc@poet.de>.
+    
+    Sat Oct 13 06:58:23 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib/tmpl/patterns.sgml: amended documentation.
+    Update.
+    
+            * glib/tmpl/hooks.sgml, glib/tmpl/spawn.sgml,
+            glib/tmpl/macros_misc.sgml: Update.
+    
+            * glib/tmpl/linked_lists_double.sgml, glib/tmpl/trees-binary.sgml,
+            glib/glib-sections.txt: Document GCompareDataFunc.
+    Rename g_string_printfa(). to g_string_append_printf().
+    
+    Mon Oct  1 15:59:46 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/tmpl/strings.sgml docs/glib-sections.txt: Rename
+            g_string_printfa(). to g_string_append_printf().
+    Move all *_error_quark() unctions to the 'Private' sections. (#61472)
+    
+    * glib/glib-sections.txt: Move all *_error_quark()
+    unctions to the 'Private' sections. (#61472)
+    glib/gmem.c (g_mem_is_system_malloc): Return !vtable_set.
+    docs/reference/glib/glib-sections.txt: Add g_mem_is_system_malloc.
+    glib/glib-section.txt: Add a missing SECTION endtag. (#61126)
+    got rid of g_set_error_handler(), g_set_warning_handler(),
+    
+    Mon Sep 10 17:13:36 2001  Tim Janik  <timj@gtk.org>
+    
+            * glib/gmessages.h: got rid of g_set_error_handler(),
+            g_set_warning_handler(), g_set_message_handler().
+    
+    Wed Sep  5 05:24:07 2001  Tim Janik  <timj@gtk.org>
+    
+            * gobject/tmpl/gboxed.sgml: documented some functions.
+    
+            * gobject/tmpl/objects.sgml: some fixups.
+    
+    Mon Sep 10 19:27:47 2001  Tim Janik  <timj@gtk.org>
+    
+            * gtype.[hc]:
+            g_type_add_interface*(): implement the ability to add an interface to
+            a type whose parents already conform to this interface.
+            such "overriding" interfaces, when initialized, are not just initialized
+            with 0, but with a copy of the interface they override.
+            g_type_interface_peek_parent(): new function, return the interface
+            that this interface "overrides", if any.
+    
+            * testgruntime.c: test new interface stuff.
+    Update.
+    
+    Mon Sep 10 11:37:02 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/glib-sections.txt: Update.
+    Implement and document g_ascii_isxxx.
+    
+    2001-08-25  Alexander Larsson  <alla@lysator.liu.se>
+    
+            * glib/gstrfuncs.[ch]:
+            * docs/reference/glib/glib-overrides.txt:
+            * docs/reference/glib/glib-sections.txt:
+            * docs/reference/glib/tmpl/string_utils.sgml:
+            Implement and document g_ascii_isxxx.
+    
+            * tests/strfunc-test.c:
+            Add tests for g_ascii_isxxx
+    
+            * glib/guniprop.c (g_unichar_ispunct):
+            include symbols, not just punctuation.
+            (g_unichar_isspace): Vertical tab is not
+            considered whitespace.
+    
+            * tests/shell-test.c:
+            Output errors on stderr
+    Modified Files: glib/ChangeLog glib/glib/giochannel.c glib/glib/giounix.c
+    
+    Modified Files:
+            glib/ChangeLog glib/glib/giochannel.c glib/glib/giounix.c
+            glib/glib/giochannel.h glib/glib/glib.def
+            glib/docs/reference/ChangeLog
+            glib/docs/reference/glib/glib-sections.txt
+    
+            * glib/giochannel.c glib/glib.def glib/giochannel.h: Added
+            new functions g_io_channel_[set,get]_close_on_unref ()
+    
+            * glib/giochannel.c: glib/giochannel.h: Documentation fixes
+    
+            * glib/giochannel.c: Fixed g_io_channel_write_chars ()
+            so that bytes_written is always set to an appropriate
+            value when it returns
+    
+            * glib/giounix.c: changed g_io_channel_get_flags () to
+            set the is_readable and is_writeable flags cached
+            by the channel
+    
+            * docs/reference/glib/glib-sections.txt: Added
+            declarations for g_io_channel_[set,get]_close_on_unref
+    Modified Files: glib/ChangeLog glib/glib/giochannel.h
+    
+    Modified Files:
+            glib/ChangeLog glib/glib/giochannel.h glib/glib/giochannel.c
+            glib/glib/glib.def glib/docs/reference/glib/glib-sections.txt
+    
+            * glib/giochannel.c glib/giochannel.c glib/glib.def
+            docs/reference/glib/glib-sections.txt: Added new functions
+            g_io_channel_[read,write]_unichar ()
+    
+            * glib/giochannel.h: Finally remembered to remove the
+            old error message G_IO_CHANNEL_ERROR_PCHAR_FLUSH
+    
+            * glib/giochannel.c: Some fixes to g_io_channel_fill_buffer ()
+            and g_io_channel_write_chars ()
+    Modified Files: glib/docs/reference/glib/glib-sections.txt
+    
+    Modified Files:
+            glib/docs/reference/glib/glib-sections.txt
+            glib/tests/iochannel-test.c glib/ChangeLog
+    
+            * glib/giochannel.c docs/reference/glib/glib-sections.txt
+            tests/iochannel-test.c: removed G_IO_CHANNEL_*_LINE_TERM macros
+    
+            * glib/giochannel.c put /*<public>*/ and /*<private>*/ tags in
+            the GIOChannel structure
+    Modified Files: glib/ChangeLog glib/glib.def glib/glib/giochannel.c
+    
+         Modified Files:
+            glib/ChangeLog glib/glib.def glib/glib/giochannel.c
+            glib/glib/giochannel.h glib/glib/giounix.c
+            glib/glib/giowin32.c
+            glib/docs/reference/glib/glib-sections.txt
+            glib/tests/iochannel-test.c glib/tests/unicode-collate.c
+            glib/tests/unicode-normalize.c
+         Added Files:
+            glib/tests/iochannel-test-infile
+    
+            * glib/giochannel.c: API changes, fixes to
+            error handling, some internal restructuring
+            * glib/giochannel.h: API changes, documentation for
+            elements in GIOChannel structure
+            * glib/giounix.c: Matched API changes, implemented
+            backend to set is_readable, is_writeable, is_seekable
+            flags, added a test to catch large values of count
+            for which the behavior of write() is undefined
+            * glib/giowin32.c: Changed to match new prototypes for
+            io_close() and io_seek(), removed references to
+            G_IO_STATUS_INTR, set is_seekable flag in channel
+            creation functions
+            * glib.def: Renamed g_channel_error_quark() and
+            g_channel_error_from_errno() to g_io_channel_error_quark() and
+            g_io_channel_error_from_errno(); added new functions
+            g_io_channel_get_buffered() and g_io_channel_set_buffered()
+            * docs/reference/glib/glib-sections.txt: Modified iochannel
+            section to reflect new functions and API changes
+            * tests/iochannel-test.c: Fixed to work with API changes
+            * tests/iochannel-test-infile: New file; input file
+            for iochannel-test
+            * tests/unicode-collate.c tests/unicode-normalize.c:
+            Changed G_IO_FILE_MODE_READ to "r" to match API change
+     Jun 29 13:36:39 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/gstring.[ch] (g_string_set_size): Add function to
+            allow setting the length of a string greater than the
+            current length (for buffering usage)
+    
+            * glib/gstring.[ch]: Expose string->allocated_len, since
+            that is useful when using GString simply as a buffer.
+            (Renamed from string->alloc)
+    
+            * glib/giochannel.[ch] glib/giounix.c glib/giowin32.c:
+            Major patch from Hidetoshi Tajima and Ron Steinke
+            reworking GIOChannel to have:
+    
+             - Buffering
+             - Sane and useful error reporting
+             - Streaming encoding conversion with iconv
+             - Convenience functions to read by lines or
+               an entire file.
+    
+            Also fix remaining 64 bit cleanliness issues.
+    
+            * tests/iochannel-test.c tests/Makefile.am: Test case
+            for IO channel streaming conversion. Still needs
+            some fixing up.
+    Look for nanosleep function.
+    
+    
+    2001-06-07  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * configure.in: Look for nanosleep function.
+    
+            * gtimer.c: Use nanosleep for g_usleep, when found.
+    
+            * gtimer.c, gtimer.h: Add g_time_val_add function. Closes #54271.
+    
+            * gasyncqueue.c: Documentation updates.
+    
+            * gthreadpool.c: Use g_time_val_add now that we have it.
+    
+            * glib/glib-sections.txt, glib/tmpl/date.sgml: Add g_time_val_add.
+    
+            * glib/tmpl/threads.sgml: Updated.
+    Changed to take a const argument, and then to cast out const.
+    
+    2001-06-01  Jon Trowbridge  <trow@gnu.org>
+    
+           * gdate.c (g_date_update_julian): Changed to take a const
+           argument, and then to cast out const.
+           (g_date_update_dmy): Changed to take a const argument, and then
+           cast out const.
+           (g_date_get_weekday): Changed argument to be const.
+           (g_date_get_month): Changed argument to be const.
+           (g_date_get_year): Changed argument to be const.
+           (g_date_get_day): Changed argument to be const.
+           (g_date_get_julian): Changed argument to be const.
+           (g_date_get_day_of_year): Changed argument to be const.
+           (g_date_get_monday_week_of_year): Changed argument to be const.
+           (g_date_get_sunday_week_of_year): Changed argument to be const.
+           (g_date_compare): Changed arguments to be const.
+           (g_date_to_struct_tm): Changed GDate argument to be const.
+           (g_date_strftime): Changed GDate argument to be const.
+           (g_date_clamp): Added.  The equivalent of the CLAMP macro for
+           GDates.
+           (g_date_order): Added.  Ensure that the first GDate argument
+           preceeds the second, swapping them if necessary.
+           (g_date_days_between): Added.  Computes the (signed) number of days
+           between two dates.
+    add glibintl.h
+    
+    2001-05-19  Havoc Pennington  <hp@pobox.com>
+    
+            * glib/Makefile.am (IGNORE_HFILES): add glibintl.h
+    
+            * glib/tmpl/*.sgml: fix various missing docs
+    Updated.
+    
+    
+    2001-05-18  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/tmpl/thread_pools.sgml, glib/tmpl/threads.sgml: Updated.
+    fixed a typo in a comment.
+    
+    2001-05-04  Sven Neumann  <sven@convergence.de>
+    
+            * ghash.c: fixed a typo in a comment.
+    
+            * gtree.[ch]: added new functions g_tree_new_full(), g_tree_replace(),
+            g_tree_steal() and g_tree_foreach() to adapt GTree to the GHashTable
+            API. Moved comments into the C file.
+    
+            * docs/reference/glib/glib-sections.txt
+            * docs/reference/glib/tmpl/glib-unused.sgml
+            * docs/reference/glib/tmpl/hash_tables.sgml
+            * docs/reference/glib/tmpl/linked_lists_double.sgml
+            * docs/reference/glib/tmpl/linked_lists_single.sgml
+            * docs/reference/glib/tmpl/macros_misc.sgml
+            * docs/reference/glib/tmpl/trees-binary.sgml: updated documentation
+    docs
+    
+    2001-04-16  Havoc Pennington  <hp@redhat.com>
+    
+            * gqsort.c: docs
+    
+            * gfileutils.c: docs
+    
+            * gwin32.c: docs fixes
+    
+            * gconvert.c: docs
+    
+            * guniprop.c: docs
+    
+            * gutf8.c: docs
+    Removed g_static_private_(get|set)_for_thread.
+    
+    
+    2001-04-03  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/glib-sections.txt: Removed
+            g_static_private_(get|set)_for_thread.
+    *** empty log message ***
+    Set G_LOG_DOMAIN to \"GModule\" instead of g_log_domain_gmodule.
+    
+    
+    2001-03-07  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * Makefile.am, makefile.mingw.in, makefile.msc.in: Set
+            G_LOG_DOMAIN to \"GModule\" instead of g_log_domain_gmodule.
+    
+            * gmodule.def, gmodule.h, gmodule.c: Removed g_log_domain_gmodule.
+    
+            * docs/reference/glib/glib-sections.txt,
+            docs/reference/glib/tmpl/messages.sgml: Removed g_log_domain_gmodule.
+    Change the order to match the order in g_thread_create().
+    
+    
+    2001-02-23  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * gthread.h (struct _GThread): Change the order to match the order
+            in g_thread_create().
+    
+            * gthread.c (g_static_rec_mutex_lock_full): Also do the right
+            thing (behave like 'depth' calls to g_static_rec_mutex_lock) for a
+            mutex, that is already locked.
+    
+            * glib/tmpl/threads.sgml: Big update. Almost ready.
+    
+            * glib/tmpl/async_queues.sgml: Typo.
+    
+            * glib/glib-sections.txt: Added g_static_rec_mutex_init,
+            g_static_rec_mutex_free, g_static_rw_lock_init,
+            g_static_private_init and g_static_private_free.
+    
+            * glib/glib-overrides.txt: Added g_thread_yield and g_thread_exit.
+    Added g_static_mutex_init to allow initialization of a GStaticMutex, that
+    
+    
+    2001-02-01  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * gthread.c, gthread.h: Added g_static_mutex_init to allow
+            initialization of a GStaticMutex, that can not be initialized with
+            G_STATIC_MUTEX_INIT, for example in allocated structures.
+    
+            * glib/tmpl/threads.sgml, glib/glib-sections.txt: Added
+            documentation for g_static_mutex_init().
+    
+    WCVS: ----------------------------------------------------------------------
+    Call g_thread_impl_init(), as g_thread_init won't call it.
+    
+    
+    2001-01-30  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * gthread/gthread-impl.c (g_thread_init_with_errorcheck_mutexes): Call
+            g_thread_impl_init(), as g_thread_init won't call it.
+    
+    
+            * glib/glib-sections.txt, glib/tmpl/threads.sgml: Added
+            g_static_mutex_free
+    
+            * gthread.c, gthread.h: Added g_static_mutex_free to allow using
+            GStaticMutexes with limited lifetime without leaking.
+    
+            * configure.in: GStaticMutex doesn't have to provide extra space
+            for debugging information for G_ERRORCHECK_MUTEXES, as then the
+            non-default implementation (runtime_mutex) is used anyway.
+    Updated.
+    
+    Fri Jan  5 15:47:10 2001  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/glib-sections.txt glib/tmpl/* glib/Makefile.am: Updated.
+    New gcompat.h header file as recommended by Havoc.
+    
+    2000-12-24  Ali Abdin  <aliabdin@aucegypt.edu>
+    
+            * Makefile.am, gcompat.h, glib.h: New gcompat.h header file
+              as recommended by Havoc.
+    
+            * gdate.c, gdate.h, testgdate.c,
+              docs/reference/glib/glib-sections.txt,
+              docs/reference/glib/tmpl/date.sgml, tests/date-test.c: Rename some
+              of the gdate functions to use the '_get' in their name. Patch
+              reviewed by Havoc.
+    Determine the suffix of the shared librarries for this system. This is
+    
+    
+    2000-12-22  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * configure.in: Determine the suffix of the shared librarries for
+            this system. This is done analogous to
+            ltconfig.sh. G_MODULE_SUFFIX in glibconfig.h is set to either
+            "sl", "dll", or (most often) "so".
+    
+            * tests/Makefile.am, tests/module-test.c,
+            tests/libmoduletestplugin_a.c, tests/libmoduletestplugin_b.c:
+            Added new testcase for gmodule. This is mostly copied from
+            gmodule/testgmodule.c, but unlike that is is quiet. (Why BTW are
+            some tests that verbose, not to say loquacious...)
+    
+            * gmodule.c: Make g_module_open more tolerant wrt to the module
+            name. First it tries to open the module as named, if that fails,
+            it checks, whether it is a libtool archive and parses it, if that
+            fails it appends the systems shared library suffix
+            (i.e. ".so") (if not already found) and tries again and if that
+            fails it tries to append the ".la" libtool suffix (if not already
+            found) and parses it.
+    
+            * gmodule.c: Lock recursive mutex during most module functions for
+            safety.
+    
+            * gmodule-dl.c: Return an error from _g_module_symbol only, if
+            dlerror says so. All other functions return an error as well, if
+            dlerror returns NULL.
+    
+            * testgmodule.c: Thanks to the above change the #ifdefs have
+            vanished.
+    
+            * glib/glib-sections.txt: Added G_MODULE_SUFFIX.
+    
+            * glib/tmpl/modules.sgml: Updated.
+    Updated G_RAND_DOUBLE_TRANSFORM to be more accurate. Redid g_rand_double()
+    
+    
+    2000-12-19  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * grand.c: Updated G_RAND_DOUBLE_TRANSFORM to be more
+            accurate. Redid g_rand_double() such that it returns 52 bits after
+            the point instead of 32 as before. That OTOH requires calling
+            g_rand_int() twice. Overhauled g_rand_int_range(), which is easier
+            now thanks to the new precision of g_rand_double(). Thanks to
+            Sverre Johansen <sj@ifi.uio.no> for the hint.
+    
+            * grand.h: Added g_rand_boolean() and g_random_boolean()
+            macros. While they could be omitted due to extreme simplicity,
+            they make intention clearer in code and are therefore good to have.
+    
+            * grand.c, grand.h: Renamed all 'min' and 'max' parameters to'
+            begin' and 'end' resp. to avoid making people think, that 'max' is
+            included in the interval. 'end' now isn't, whereas 'begin'
+            is. That's similar to the use in the STL.
+    
+            * glib/glib-sections.txt: Added g_rand_boolean and
+            g_random_boolean macros.
+    
+            * glib/tmpl/random_numbers.sgml: Updated.
+    add images
+    
+    Tue Dec  5 15:41:23 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/Makefile.am glib/mainloop-states*: add images
+    
+            * glib/glib-sections.txt: Updated
+    
+            * glib/tmpl/main.sgml: More documentation, move function
+            docs to .c file.
+    Move conversion functions into GConv section.
+    
+    Mon Nov 13 00:18:55 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/glib-sections.sgml: Move conversion functions
+            into GConv section.
+    
+            * gobject/gobject-docs.sgml: Fix some malformed sgml.
+    remove parens from section name, confuses gtk-doc
+    
+    2000-11-05  Havoc Pennington  <hp@pobox.com>
+    
+    * glib/glib-sections.txt: remove parens from section name,
+    confuses gtk-doc
+    
+    * glib/glib-docs.sgml: Add the new files here, doh.
+    
+    * glib/tmpl/shell.sgml: add gshell.[hc] docs
+    Added
+    
+    2000-11-05  Havoc Pennington  <hp@pobox.com>
+    
+            * glib/tmpl/spawn.sgml, glib/tmpl/markup.sgml,
+            glib/tmpl/fileutils.sgml: Added
+    
+            * glib/Makefile.am: Add new files
+    
+            * glib/glib-sections.txt: Add stuff from -unused
+    
+    2000-11-05  Havoc Pennington  <hp@pobox.com>
+    
+    * gutils.c (g_find_program_in_path): cleanup docs, sync param
+    names to those in the header
+    
+    * gfileutils.c (g_mkstemp): clean up docs
+    
+    * gshell.h: sync param names with param names in .c file
+    
+    * gfileutils.h (enum GFileTest): remove trailing comma from last
+    member, confuses gtk-doc
+    
+    * gmarkup.h: s/GMarkupErrorType/GMarkupError/g; to follow
+    convention
+    Added documentation for asynchronous queues.
+    
+    
+    2000-11-02  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/tmpl/async_queues.sgml, glib/glib-sections.txt: Added
+            documentation for asynchronous queues.
+    
+            * gasyncqueue.c: Added inline documentation for asyncronous
+            queues.
+    Move GCompareFunc to GList and introduce and document GEqualFunc in
+    
+    
+    2000-10-30  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/glib-sections.txt, glib/tmpl/linked_lists_double.sgml,
+            glib/tmpl/caches.sgml: Move GCompareFunc to GList and introduce
+            and document GEqualFunc in GHashTable.
+    
+            * glib/tmpl/caches.sgml, glib/tmpl/hash_tables.sgml,
+            glib/tmpl/relations.sgml : Changed to reflect the changed API
+            (GCompareFunc -> GEqualFunc).
+    
+            * glib/tmpl/linked_lists_single.sgml, glib/tmpl/threads.sgml: Typo
+            fixes.
+    Document the recently deprecated functions as such.
+    
+    
+    2000-10-27  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/glib-sections.txt, glib/tmpl/hash_tables.sgml,
+            glib/tmpl/macros_misc.sgml, glib/tmpl/misc_utils.sgml,
+            glib/tmpl/scanner.sgml: Document the recently deprecated functions
+            as such.
+    Change ERROR_OTHER to ERROR_FAILED, add some dummy marking with _().
+    
+    Mon Sep 11 10:03:24 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib.h convert.c (g_convert_with_fallback): Change
+            ERROR_OTHER to ERROR_FAILED, add some dummy marking with _().
+    
+            * docs/reference/glib/glib-sections.txt
+            docs/reference/glib/glib-docs.sgml Update for g_convert,
+            g_unicode_validate.
+    Added inline documentation.
+    
+    
+    2000-10-13  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * grand.c: Added inline documentation.
+    
+            * docs/refernce/glib/glib-sections.txt: Added misc items.
+    
+            * docs/refernce/glib/tmpl/random_numbers.sgml: Documentation for
+            the random number generator.
+    Fixed #10086.
+    
+    
+    2000-10-05  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib-sections.txt, tmpl/modules.sgml: Fixed #10086.
+    Added function to keep symetry with g_node_insert_before. 2000-09-29
+    
+    2000-09-29  Jonathan Blandford  <jrb@redhat.com>
+    
+            * gnode.c (g_node_insert_after): Added function to keep symetry
+            with g_node_insert_before.
+    2000-09-29  Jonathan Blandford  <jrb@redhat.com>
+    
+            * glib/tmpl/trees-nary.sgml: Add g_node_insert_after().
+    Some further makefile improvement.
+    
+    Thu Sep  7 12:35:35 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * Some further makefile improvement.
+    
+            * Restore all the docs that mysteriously vanished earlier.
+    Improve separation of generic non-generic parts and dependencies.
+    
+    Wed Sep  6 10:59:45 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * gobject/Makefile.am glib/Makefile.am: Improve
+            separation of generic non-generic parts and dependencies.
+    Split GObject docs away from the remainder of the docs.
+    
+    Wed Sep  6 00:30:09 2000  Owen Taylor  <otaylor@redhat.com>
+    
+            * glib/* gobject/*: Split GObject docs away from
+            the remainder of the docs.
+    
+            * glib/Makefile.am gobject/Makefile.am: Rework
+            to have reasonable dependencies. (No dependencies
+            on the files actually in the source directories,
+            so to get it going, you have to do 'make scan',
+            but after that, things should work OK.)
+    head -n 4 ChangeLog
+    updated.
+    
+    2000-04-16  Damon Chaplin  <damon@helixcode.com>
+    
+            * tmpl/linked_lists_single.sgml:
+            * tmpl/linked_lists_double.sgml:
+            * tmpl/trees-nary.sgml: updated.
+    
+            * tmpl/modules.sgml: described g_module_build_path().
+    
+            * tmpl/date.sgml: made short description lower case and end in a '.'.
+    
+            * glib-sections.txt: rearranged GDate section.
+    
+            * tmpl/arrays.sgml:
+            * tmpl/arrays_byte.sgml:
+            * tmpl/arrays_pointer.sgml: updated.
+    Removed G_THREADS_IMPL_NSPR. Shouldn't be used anyway.
+    
+    1999-12-02  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib-sections.txt, tmpl/threads.sgml: Removed
+            G_THREADS_IMPL_NSPR. Shouldn't be used anyway.
+    
+            * glib-overrides.txt: New file, that makes most of the thread
+            related macros look like functions.
+    
+            * Makefile.am: Added glib-overrides.txt to EXTRA_DIST.
+    
+            * tmpl/threads.sgml: Minor updates.
+    Initial revision
+    Add g_list_free1
+    
+    
+            * glib/glib-sections.txt: Add g_list_free1
+    
+            * glib/glib-overrides.txt: Remove G_THREADS_IMPL_SOLARIS
+    Add G_VA_COPY
+    
+    2005-07-13  Matthias Clasen  <mclasen@redhat.com>
+    
+            * glib/glib-overrides.txt: Add G_VA_COPY
+    Moved the assembler functions from gatomic.h to gatomic.c, which makes for
+    
+    
+    2004-02-29  Sebastian Wilhelmi  <seppi@seppi.de>
+    
+            * configure.in, glib/gatomic.c, glib/gatomic.h: Moved the
+            assembler functions from gatomic.h to gatomic.c, which makes for
+            better maintainability. Also use gint instead of gint32 to be able
+            to use reference counting for ABI-fixed structures with
+            gint/guint.
+    
+            * glib/gthread.h: Adapted accordingly.
+    
+            * tests/atomic-test.c: Updated to test for G_MAXINT and G_MININT.
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/tmpl/atomic_operations.sgml: Updated according to code changes.
+    New files to implement atomic operations for different platforms. Fixes
+    
+    
+    2004-02-26  Sebastian Wilhelmi  <seppi@seppi.de>
+    
+            * glib/gatomic.c, glib/gatomic.h: New files to implement atomic
+            operations for different platforms. Fixes bug #63621.
+    
+            * glib/glib.h: Include gatomic.h.
+    
+            * configure.in: Add test for assembler routines for atomic operations.
+    
+            * glib/Makefile.am: Add gatomic.c, gatomic.h.
+    
+            * tests/Makefile.am, tests/atomic-test.c: Unit test for atomic
+            operations.
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/glib-docs.sgml, glib/tmpl/atomic_operations.sgml: Add docs
+            for atomic operations.
+    === Released 2.3.3 ===
+    
+    Tue Feb 24 14:09:21 2004  Owen Taylor  <otaylor@redhat.com>
+    
+            * === Released 2.3.3 ===
+    
+            * configure.in: Version 2.3.3, interface age 0.
+    Implement and document g_ascii_isxxx.
+    
+    2001-08-25  Alexander Larsson  <alla@lysator.liu.se>
+    
+            * glib/gstrfuncs.[ch]:
+            * docs/reference/glib/glib-overrides.txt:
+            * docs/reference/glib/glib-sections.txt:
+            * docs/reference/glib/tmpl/string_utils.sgml:
+            Implement and document g_ascii_isxxx.
+    
+            * tests/strfunc-test.c:
+            Add tests for g_ascii_isxxx
+    
+            * glib/guniprop.c (g_unichar_ispunct):
+            include symbols, not just punctuation.
+            (g_unichar_isspace): Vertical tab is not
+            considered whitespace.
+    
+            * tests/shell-test.c:
+            Output errors on stderr
+    Updated.
+    
+    
+    2001-05-18  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/glib-overrides.txt, glib/glib-sections.txt,
+            glib/tmpl/thread_pools.sgml, glib/tmpl/threads.sgml: Updated.
+    Updated.
+    
+    
+    2001-05-08  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib/tmpl/threads.sgml, glib/glib-overrides.txt: Updated.
+    Change the order to match the order in g_thread_create().
+    
+    
+    2001-02-23  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * gthread.h (struct _GThread): Change the order to match the order
+            in g_thread_create().
+    
+            * gthread.c (g_static_rec_mutex_lock_full): Also do the right
+            thing (behave like 'depth' calls to g_static_rec_mutex_lock) for a
+            mutex, that is already locked.
+    
+            * glib/tmpl/threads.sgml: Big update. Almost ready.
+    
+            * glib/tmpl/async_queues.sgml: Typo.
+    
+            * glib/glib-sections.txt: Added g_static_rec_mutex_init,
+            g_static_rec_mutex_free, g_static_rw_lock_init,
+            g_static_private_init and g_static_private_free.
+    
+            * glib/glib-overrides.txt: Added g_thread_yield and g_thread_exit.
+    head -n 4 ChangeLog
+    Removed G_THREADS_IMPL_NSPR. Shouldn't be used anyway.
+    
+    1999-12-02  Sebastian Wilhelmi  <wilhelmi@ira.uka.de>
+    
+            * glib-sections.txt, tmpl/threads.sgml: Removed
+            G_THREADS_IMPL_NSPR. Shouldn't be used anyway.
+    
+            * glib-overrides.txt: New file, that makes most of the thread
+            related macros look like functions.
+    
+            * Makefile.am: Added glib-overrides.txt to EXTRA_DIST.
+    
+            * tmpl/threads.sgml: Minor updates.

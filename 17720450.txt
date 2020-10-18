@@ -1,0 +1,158 @@
+﻿    Update README.md
+    Update README.md
+    Update README.md
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Updated README.md
+    Much needed migration to Android Studio.
+    Added links to vr headsets
+    Initial commit.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Manually merging @ViliusKraujutis' pull request
+    Update gradle, build tools and Android SDK versions
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Update Rajawali dependency to 1.0.282-SNAPSHOT...
+    
+    This version has the missing symbols that are causing
+    problems in issue #14, like AShader.atan.
+    
+    Seems to fix #14 and, possibly, #5.
+    Updated hotspot material
+    Updated deps.gradle to latest Rajawali version
+    Completed Cardboard SDK integration. It now uses all the SDK features instead of only head tracking.
+    Much needed migration to Android Studio.
+    Manually merging @ViliusKraujutis' pull request
+    Update gradle, build tools and Android SDK versions
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Manually merging @ViliusKraujutis' pull request
+    Update gradle, build tools and Android SDK versions
+    Bumped Android Build Tools version to 22.0.1...
+    
+    Versions 22.0.0 and 22.0.1 were both released in the March 2015, and
+    from the [release notes]
+    (https://developer.android.com/tools/revisions/build-tools.html), it
+    appears that 22.0.1 fixes a bug.  Furthermore, 22.0.0 is not readily
+    available in the Android SDK Manager tools.  22.0.1 should be more
+    robust and easier to use.
+    Fixed isLookingAt method
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Updated hotspot material
+    Completed Cardboard SDK integration. It now uses all the SDK features instead of only head tracking.
+    Cardboard SDK integration.
+    Added helper methods
+    Upgraded to the lates Cardboard SDK
+    Much needed migration to Android Studio.
+    Initial commit.
+    Updated hotspot material
+    Cardboard SDK integration.
+    Updated hotspot material
+    Updated hotspot material
+    isLookingAtObject bug fix. It was using the eye transform instead of the head transform.
+    Updated hotspot material
+    Setting the fov values from the cardboard sdk.
+    Fixed isLookingAt method
+    Completed Cardboard SDK integration. It now uses all the SDK features instead of only head tracking.
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Upgraded to the lates Cardboard SDK
+    Much needed migration to Android Studio.
+    Initial commit.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Bumped Android Build Tools version to 22.0.1...
+    
+    Versions 22.0.0 and 22.0.1 were both released in the March 2015, and
+    from the [release notes]
+    (https://developer.android.com/tools/revisions/build-tools.html), it
+    appears that 22.0.1 fixes a bug.  Furthermore, 22.0.0 is not readily
+    available in the Android SDK Manager tools.  22.0.1 should be more
+    robust and easier to use.
+    Updated hotspot material
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Updated hotspot material
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Much needed migration to Android Studio.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Completed Cardboard SDK integration. It now uses all the SDK features instead of only head tracking.
+    Cardboard SDK integration.
+    Much needed migration to Android Studio.
+    Initial commit.
+    Upgraded to the latest Cardboard SDK (v0.6.0). Which means 3D audio is now supported as well! The example has been updated to reflect this.
+    Completed Cardboard SDK integration. It now uses all the SDK features instead of only head tracking.
+    Much needed migration to Android Studio.
+    Initial commit.

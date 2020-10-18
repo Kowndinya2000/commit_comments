@@ -1,0 +1,192 @@
+﻿    Copying rogue user to other FITTST tools
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    moved rogue user to sub projects
+    committed rogue user
+    Copying rogue user to other FITTST tools
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    moved rogue user to sub projects
+    committed rogue user
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    updated licencse text for perl/sql WATT components
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    updated licencse text for perl/sql WATT components
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    updated licencse text for perl/sql WATT components
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    Add FBK's transform tools project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    Add FBK's transform tools project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    Add FBK's transform tools project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    Add FBK's transform tools project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    added the UCL WATT tool as a sub-project
+    Add FBK's transform tools project
+    reallocate WATT tool
+    Rename Components standalone repository
+    Rename the directory according to what was decided at the skype meeting (see the pirate pad bit.ly/D9.2)
+    renamed manuals to documentation
+    added a manuals directory for readmes/manuals etc
+    added readme file at the top level
+    updated licencse text for perl/sql WATT components
+    added the UCL WATT tool as a sub-project

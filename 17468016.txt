@@ -1,0 +1,4 @@
+﻿    Moved files back to normal SVN structure.
+    
+    
+    git-svn-id: https://npr-android-app.googlecode.com/svn/trunk@64 0a442a4a-40cc-11de-998b-8fedbbe774c7

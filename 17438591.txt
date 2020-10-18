@@ -1,0 +1,2771 @@
+﻿    adb: Add public key authentification
+    
+    Secure adb using a public key authentication, to allow USB debugging
+    only from authorized hosts.
+    
+    When a device is connected to an unauthorized host, the adb daemon sends
+    the user public key to the device. A popup is shown to ask the user to
+    allow debugging once or permanantly from the host. The public key is
+    installed on the device in the later case. Other keys may be installed
+    at build time.
+    
+    On the host, the user public/private key pair is automatically generated,
+    if it does not exist, when the adb daemon starts and is stored in
+    $HOME/.android/adb_key(.pub) or in $ANDROID_SDK_HOME on windows. If needed,
+    the ADB_KEYS_PATH env variable may be set to a :-separated (; under
+    Windows) list of private keys, e.g. company-wide or vendor keys.
+    
+    On the device, vendors public keys are installed at build time in
+    /adb_keys. User-installed keys are stored in /data/misc/adb/adb_keys.
+    
+    ADB Protocol change:
+    If the device needs to authenticate the host, it replies to CNXN
+    packets with an AUTH packet. The AUTH packet payload is a random token.
+    The host signs the token with one of its private keys and sends an AUTH(0)
+    packet. If the signature verification succeeds, the device replies with
+    a CNXN packet. Otherwise, it sends a new AUTH packet with a new token so
+    that the host can retry with another private key. Once the host has tried
+    all its keys, it can send an AUTH(1) packet with a public key as
+    payload. adbd then sends the public key to the framework (if it has been
+    started) for confirmation.
+    
+    Change-Id: I4e84d7621da956f66ff657245901bdaefead8395
+    Revert "adb: Add public key authentification"
+    
+    This reverts commit f4ed516643ee8ed3a59ad1a8048f7ce5f47f93fb.
+    adb: Add public key authentification
+    
+    Secure adb using a public key authentication, to allow USB debugging
+    only from authorized hosts.
+    
+    When a device is connected to an unauthorized host, the adb daemon sends
+    the user public key to the device. A popup is shown to ask the user to
+    allow debugging once or permanantly from the host. The public key is
+    installed on the device in the later case. Other keys may be installed
+    at build time.
+    
+    On the host, the user public/private key pair is automatically generated,
+    if it does not exist, when the adb daemon starts and is stored in
+    $HOME/.android/adb_key(.pub) or in $ANDROID_SDK_HOME on windows. If needed,
+    the ADB_KEYS_PATH env variable may be set to a ;-separated list of private
+    keys, e.g. company-wide or vendor keys.
+    
+    On the device, vendors public keys are installed at build time in
+    /adb_keys. User-installed keys are stored in /data/misc/adb/adb_keys.
+    
+    ADB Protocol change:
+    If the device needs to authenticate the host, it replies to CNXN
+    packets with an AUTH packet. The AUTH packet payload is a random token.
+    The host signs the token with one of its private keys and sends an AUTH(0)
+    packet. If the signature verification succeeds, the device replies with
+    a CNXN packet. Otherwise, it sends a new AUTH packet with a new token so
+    that the host can retry with another private key. Once the host has tried
+    all its keys, it can send an AUTH(1) packet with a public key as
+    payload. adbd then sends the public key to the framework (if it has been
+    started) for confirmation.
+    
+    Change-Id: Idce931a7bfe4ce878428eaa47838e5184ac6073f
+    adb: Transmit key properties in banner of connect message
+    
+    protocol.txt says that the connect message should have three
+    fields:
+    
+            <systemtype>:<serialno>:<banner>
+    
+    In reality, what is transmitted is simply:
+    
+            <systemtype>::
+    
+    The serialno is obtained via other means so doesn't really need
+    to be a part of the connect message.  This change puts the
+    ro.product.name, ro.product.model and ro.product.device
+    properties in the <banner> for devices.  Each property is
+    terminated by a semicolon (;) with the key and value separated by
+    an equals sign (=).  Example message:
+    
+    device::ro.product.name=<prd>;ro.product.model=<mdl>;ro.product.device=<dev>;
+    
+    Making this change will enable the device list to provide more
+    information to the user and to give the potential for being able
+    to select which device to talk to with the -s option.
+    
+    Change-Id: I09200decde4facb8fc9b4056fdae910155f2bcb9
+    Signed-off-by: Scott Anderson <saa@android.com>
+    Cleaning up whitespace in adb sources. Nothing more, nothing less.
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    Revert "fastboot: add preflash command to help with large downloads+flash"
+    
+    This reverts commit 6f1cd0b2ad7a16d4ec0b5324f992cae33dc34f34.
+    
+    It causes some devices to fail (b/9581613). Revert for now.
+    
+    Change-Id: I076158c704c2b4f0459322aa157c19ebd0c4615f
+    fastboot: add preflash command to help with large downloads+flash
+    
+    Without the partition name, the bootloader would have to store all
+    of the data until the next flash command, which potentially wastes
+    time.
+    To help the bootloader deal with the data more efficiently, we now
+    issue a flashing hint ("preflash:%s", partname).
+    "preflash:" is used to indicate that the following download
+    should ignore any previous "preflash:%s".
+    
+    Bug: 6045918
+    Change-Id: I4e9708f64f28a4781bde14eb3714d36b281ec5be
+    Add old fastboot_protocol.txt
+    
+    fastboot_protocol.txt used to live in bootable/bootloader/legacy
+    which was old, obsolete code.  However, fastboot_protocol.txt is
+    a useful file and belongs with the fastboot code.
+    
+    Change-Id: Iea50c3219f9ff9dd0c394fc6028c456fa948ffd9
+    Signed-off-by: Scott Anderson <saa@android.com>
+    Clarify init's write command.
+    
+    Bug: https://code.google.com/p/android/issues/detail?id=73996
+    
+    (cherry picked from commit afc08ce39235d0e3f1e63f30ee587f2a5952be44)
+    
+    Change-Id: Id2fb11d5259957ef23cc839fba14af8452fc69e4
+    init: add 'enable <service>' to negate "service <service>... disabled"
+    
+    enable <servicename>
+       Turns a disabled service into an enabled one as if the service did not
+       specify disabled in the rc file.
+       It will also start the service if needed.
+    
+    Bug: 14472973
+    Change-Id: Id0b49cc687a2bc74f6f92e066c617724cc94908d
+    Signed-off-by: JP Abgrall <jpa@google.com>
+    Add a restorecon_recursive built-in command to init.
+    
+    Functionally equivalent to the restorecon -R toolbox command.
+    A use case is given by:
+    I48eaa2b9901ac8c978192c14493ba1058a089423
+    
+    Also, fix error handling and documentation for restorecon command.
+    
+    Change-Id: Ia7fbcc82645baf52c6bff0490d3492f458881cbb
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Add support for socket security context specification.
+    
+    Add an optional argument to the socket option for specifying
+    a SELinux security context for the socket.  Normally the socket
+    security context is automatically computed from the service security
+    context or set using the seclabel option, but this facility allows
+    dealing with two scenarios that cannot be addressed using the existing
+    mechanisms:
+    1) Use of logwrapper to wrap a service.
+    In this case, init cannot determine the service security context
+    as it does not directly execute it and we do not want logwrapper
+    to run in the same domain as the service.
+    
+    2) Situations where a service has multiple sockets and we want to
+    label them distinctly.
+    
+    Change-Id: I7ae9088c326a2140e56a8044bfb21a91505aea11
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Change setsebool syntax to be consistent with other init built-ins.
+    
+    Change setsebool syntax from name=value to name value.
+    This is to make it consistent with setprop and similar commands.
+    Update both the init built-in command and the toolbox command
+    for consistency.
+    
+    Change-Id: I2c8e016ba26731c4a2ad4a49ae3b89362bf8f8a8
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Document the SELinux extensions to the Android init language.
+    
+    Change-Id: I9b066e0789c93e5147c28a60baeed91c44dd9359
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Extend and document the "wait" command
+    
+    The wait command was currently implemented but
+    undocumented and only used internally. This change
+    adds a second option toi (optionally) override the default
+    timeout of 5 seconds.
+    
+    The wait command can be used to wait for a file to appear
+    during the boot process, for example a disk or other device,
+    and is a better alternative than an unconditional sleep.
+    
+    Change-Id: Ia11d8419c0ea84deec0e1bf5adfca5bc76ff38b7
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    init: Add support for SOCK_SEQPACKET socket type
+    
+    Change-Id: Ib264ecf9beb2685b070436d2bdec9655c7a31b47
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    added chdir/chroot commands to init for mount switching/pivoting
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    Initial Contribution
+    Include reason when wiping data.
+    
+    This will help us track down who requested a data wipe.
+    
+    Bug: 17412160
+    Change-Id: I40f73d2d0f08123d2afc044a3dde485151b400d9
+    Fix charger mode on first boot of force encrypt devices
+    
+    waitpid breaks whenever child status signals. Need to loop, continuing
+    on errno EINTR
+    
+    Bug: 17515976
+    Change-Id: Ibb29056a38b3c90dc7904de8c6aedb5a362e511d
+    Enable not rebooting during default encryption
+    
+    Need to not set this property) during mount, since it can't
+    be changed later (ro property)
+    
+    Also no reason to start class main on encryption cycle - we'll
+    show surfaceflinger, which is enough UI for this short cycle.
+    
+    Bug: 17041092
+    Change-Id: Ica5339c54e45716d0fe20e23c0ab857f388d23ed
+    Fix environment variable assignment in init
+    
+    The init process allows environment variables to be specified in
+    the rc script globally, via 'export', and for a specific process,
+    via the 'setenv' option.
+    
+    However, the mechanism for assembling the environment simply
+    appended the new variable without checking whether it was already
+    defined, so it was not possible to overwrite an existing entry.
+    This patch fixes that behaviour.
+    
+    Limitations and concerns:
+    
+    The limit of a maximum number of 31 variables is unchanged.
+    
+    Currently, most callers of "add_environment" do not check the return
+    value, but the function now logs the failure rather than failing
+    silently.
+    
+    Change-Id: Ie9a68c37a0f55c5b40e904e695cd35514f67f480
+    [HACK]fs_mgr+init: Format via recovery if encryptable /data is wiped
+    
+    If the encryptable partition is wiped (4KB worth of 0 or 0xff),
+    then reboot into recovery to format /data+/cache
+    
+    This is while waiting for the Mac OS support to format f2fs.
+    The flashstation running on Mac OS will currently just erase userdata
+    and not format it with f2fs.
+    
+    Bug: 15720406
+    Bug: 15747366
+    Change-Id: Ib7cca3e1701483a09573457a835750f34da71ee0
+    fs_mrg: clean up multi-type mount_all
+    
+    Move the code that attempts to mount alternative fstab entries
+    into its own function.
+    Clarify return codes.
+    Suggest wipe via recovery in error messages.
+    
+    Bug: 15747366
+    Change-Id: I3634477cd4d1d73f974f3e906c53285f0d9e0eac
+    Signed-off-by: JP Abgrall <jpa@google.com>
+    Add ability to adjust init log level at runtime.
+    
+    + Add a new property, sys.init_log_level, which can be set after init
+      bootstrap. This will control the level at which init does prints to klog.
+    
+    Change-Id: Ia15b2110157b5e6b713785ece9b0fb94889be6c8
+    Add ability to boot from charger mode.
+    
+    Add the ability to boot up directly from charger mode, instead of forcing
+    charger mode to initiate a full restart to launch 'full' android. This
+    should shave a few seconds off of boot time on supported devices (just
+    manta for now).
+    
+    Change-Id: Ieec4494d929e92806e039f834d78b9002afd15c4
+    Clean up some unnecessary system_properties cruft.
+    
+    Bug: 14970171
+    Change-Id: I6f54c35e265b849be914120f795c9f8e0cec34bb
+    init: add 'enable <service>' to negate "service <service>... disabled"
+    
+    enable <servicename>
+       Turns a disabled service into an enabled one as if the service did not
+       specify disabled in the rc file.
+       It will also start the service if needed.
+    
+    Bug: 14472973
+    Change-Id: Id0b49cc687a2bc74f6f92e066c617724cc94908d
+    Signed-off-by: JP Abgrall <jpa@google.com>
+    Auto-encrypt drive at startup
+    
+    Modify fs_mgr to unmount encryptable drives after test mounting them and
+    then trigger an auto-encrypt via the init script
+    
+    Needs matching vold changes from
+     https://googleplex-android-review.googlesource.com/#/c/414200/
+    
+    Feature is limited to list of serial numbers with this change
+    
+    Bug: 11985952
+    Change-Id: I84f85a258b6a7e9809467c9149249302e203c41b
+    Mount default encrypted devices at boot
+    
+    If userdata is default encrypted, we should mount it at boot
+    to avoid bringing the framework up and then down unnecessarily.
+    
+    Needs matching vold changes from
+     https://googleplex-android-review.googlesource.com/#/c/412649/
+    
+    Bug: 8769627
+    Change-Id: I4b8276befd832cd788e15c36edfbf8f0e18d7e6b
+    Add a restorecon_recursive built-in command to init.
+    
+    Functionally equivalent to the restorecon -R toolbox command.
+    A use case is given by:
+    I48eaa2b9901ac8c978192c14493ba1058a089423
+    
+    Also, fix error handling and documentation for restorecon command.
+    
+    Change-Id: Ia7fbcc82645baf52c6bff0490d3492f458881cbb
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    write_file: introduce O_NOFOLLOW, use sane mask
+    
+    Don't follow symlinks when writing to a file.
+    Don't create world-writable files.
+    
+    Bug: 10802869
+    Change-Id: Ifb55600d574307a535df878acb3347e02028cd30
+    Add swapon_all to init's builtin commands
+    
+    For enabling swap devices found in the fstab file
+    
+    Change-Id: Iec4fd4d208df3d7a161a90d95f8606e8b516334a
+    Revert "Reload policy after setting up the data partition."
+    
+    This reverts commit fee250d27a9c03af1ba439047b976d89563b1887.
+    Reload policy after setting up the data partition.
+    
+    This forces a policy reload + fixcon to deal with dynamically
+    delivered policy changing labels on device nodes.
+    
+    It's implemented as a new keyword in init.
+    
+    Bug: 8702843
+    Change-Id: I803cf1ecf6ff8318ce25dcc5cda4f292adc9738c
+    Make init handle reboots
+    
+    Move the responsibility for rebooting the system from the
+    reboot command to init. Init is in a better position to take
+    actions to bring the system down cleanly, including making sure
+    filesystems are mounted read-only.
+    
+    The only UIDs which can perform an init triggered reboot are
+    root, system, and shell.
+    
+    Modify the reboot command so that it calls into init to perform
+    the reboot. The reboot command no longer requires CAP_SYS_BOOT.
+    
+    Remove the -n reboot option and code which supports it.  Anyone needing
+    to do an unclean shutdown can just do a 'echo c > /proc/sysrq-trigger'.
+    
+    Modify adb so that it calls into init to perform a shutdown.
+    
+    Bug: 8646621
+    Change-Id: I84c0513acb549720cb0e8c9fcbda0050f5c396f5
+    fs_mgr: support a unified fstab format.
+    
+    Update fs_mgr to support more flags needed to unify the 3
+    fstabs currently in android into one.
+    
+    Change-Id: Ie46cea61a5b19882c55098bdd70f39e78fb603be
+    Change setsebool syntax to be consistent with other init built-ins.
+    
+    Change setsebool syntax from name=value to name value.
+    This is to make it consistent with setprop and similar commands.
+    Update both the init built-in command and the toolbox command
+    for consistency.
+    
+    Change-Id: I2c8e016ba26731c4a2ad4a49ae3b89362bf8f8a8
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Remove HAVE_SELINUX guards
+    
+    Change-Id: I8272c573b3c5dc663203bafab68fad5e94d89364
+    init: Fix mkdir command when using ISUID or ISGID bit
+    
+    On first boot, the directory is created with root:root ownership and
+    then chowned. chown clears the ISUID and ISGID bits, so we need to chmod
+    the directory again after chown.
+    
+    Change-Id: I02dfe7a19a637678256b4e7cc09e6b5431e6f11e
+    Support shared-subtree and bind mount flags.
+    
+    Bug: 6925012
+    Change-Id: Id8d887d17c6b1b2f90cfd1a1de991ccaba730b7d
+    Set the SELinux security label on new directories.
+    
+    Automatically set the SELinux security label on directories created
+    by init.rc.  This avoids the need to separately call restorecon on
+    each such directory from the init.rc file.  Also restorecon /dev
+    and /dev/socket after initial policy load so that they are labeled
+    correctly before any other dev nodes or sockets are created.
+    
+    Change-Id: If6af6c4887cdead949737cebdd673957e9273ead
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Extend and document the "wait" command
+    
+    The wait command was currently implemented but
+    undocumented and only used internally. This change
+    adds a second option toi (optionally) override the default
+    timeout of 5 seconds.
+    
+    The wait command can be used to wait for a file to appear
+    during the boot process, for example a disk or other device,
+    and is a better alternative than an unconditional sleep.
+    
+    Change-Id: Ia11d8419c0ea84deec0e1bf5adfca5bc76ff38b7
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    init: Fix chown and chmod for write-only files
+    
+    Change-Id: I570b631ced11ab104aafe7ebfe71bae4e380d8af
+    init: make chmod/mkdir/chown not follow symlinks
+    
+    This change brings init's do_chmod, mkdir, and do_chown into line
+    with open's O_NOFOLLOW semantics, causing them to fail when the
+    last element of their target path is a symlink.
+    
+    Change-Id: If00e1a25cfe17ef6f738af4bf0541abd0c1b084b
+    Change init to use libfs_mgr to mount filesystems.
+    
+    The new fs_mgr library moves much of the knowledge of what filesystems
+    to mount into a new fstab.<device> file, and just calls one function to
+    mount all the filesystems.
+    
+    Change-Id: If3db37530a0676000cba3e679db27aca734227e5
+    Change init to use libfs_mgr to mount filesystems.
+    
+    The new fs_mgr library moves much of the knowledge of what filesystems
+    to mount into a new fstab.<device> file, and just calls one function to
+    mount all the filesystems.
+    
+    Change-Id: If3db37530a0676000cba3e679db27aca734227e5
+    init: Add noexec mount option
+    
+    Change-Id: Ic13d66797a86d38432e79af0c3387ce986d0a19f
+    init: Fix chown and chmod for write-only files
+    
+    Change-Id: I570b631ced11ab104aafe7ebfe71bae4e380d8af
+    init: Retain traditional restart behavior for critical and oneshot services.
+    
+    Adds an SVC_RESTART state that's used for an explicit "restart" of a
+    running service.  This retains the traditional restart behavior for
+    critical and oneshot services (previously altered by 7e36edd8), whereby
+    these services are "simply restarted" instead of counting as a crash (for a
+    critical serivce) or going into the disabled state (for a oneshot service).
+    init: make chmod/mkdir/chown not follow symlinks
+    
+    This change brings init's do_chmod, mkdir, and do_chown into line
+    with open's O_NOFOLLOW semantics, causing them to fail when the
+    last element of their target path is a symlink.
+    
+    Change-Id: If00e1a25cfe17ef6f738af4bf0541abd0c1b084b
+    Extend init and ueventd for SE Android.
+    
+    Add SE Android support for init and ueventd.
+    
+    init:
+    - Load policy at boot.
+    - Set the security context for service daemons and their sockets.
+    - New built-in commands: setcon, setenforce, restorecon, setsebool.
+    - New option for services: seclabel.
+    
+    ueventd:
+    - Set the security context for device directories and nodes.
+    
+    Change-Id: I98ed752cde503c94d99dfa5b5a47e3c33db16aac
+    init: use init's property expansion code for setprop/write
+    
+    Change-Id: I3c284860cc8d5106ac2b086e62baeb6263873935
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: use init's property expansion code for setprop/write
+    
+    Change-Id: I3c284860cc8d5106ac2b086e62baeb6263873935
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init/cutils: move kernel logging interface to libcutils from init
+    
+    Change-Id: Ia0f91b1fcd6cae69d76bf3dd841340958db938a8
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: make "mkdir" work even when the directory already exists.
+    
+    This allows us to change permissions and ownerships of directories
+    in init scripts without adding additional commands.
+    
+    Change-Id: I1815d6015953035251b98f28c0f3efd3c7f25f80
+    init: Add support for assigning system properties to system properties in init.rc
+    
+    For example:
+        setprop sys.usb.config $persist.sys.usb.config
+    
+    Change-Id: I7b4e1ed1335906b32621bd96a341b0f94bbee7f5
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    init: Fix the init.rc import command
+    
+    Change-Id: I8a91c3f7d1ca31e137d9043bb7f56e4a44fb63df
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    init: Add support for writing system property value to a file in init.rc
+    
+    The write command will write a property value if the value starts with a "$'
+    
+    For example:
+        write /sys/class/android_usb/iSerial $ro.serialno
+    
+    Use double leading '$' if you need to write a string that starts with '$':
+    
+        write /data/foo $$hello
+    
+    to write "$hello" to /data/foo
+    
+    Change-Id: I55431ac7715a5347bb95c3a15aee97c575444dde
+    Teach the mount command in init to not consider a wiped partition to be encrypted.
+    
+    Change-Id: I3e989f0b81ec35084baddc04e014406f4d90ce04
+    Load the persistent properties after decrypting the /data partition
+    
+    Fix for bug 3415286.  The persistent properties are normally read early
+    in the boot process after /data is mounted.  However, for an encrypted
+    system, at that point /data is a tmpfs ramdisk.  This change adds a new
+    command to init (load_persist_props) to read the persistent properties,
+    and adds an action to init.rc to load the persistent properties.  This
+    action is triggered by setting a property in vold, but that's in a
+    different CL.
+    
+    Change-Id: I74b3057974ee6029c29d956b76fef5566700d471
+    Fix for bug 3379244, non-eMMC devices don't start all services.
+    
+    Fix for non-eMMC based devices to properly start the "on nonencrypted"
+    action.
+    
+    Change-Id: I5d2966db352b02f1a1724fb105e1cefc46037e42
+    Add the commands rm and rmdir to init.
+    
+    rm only removes a single non-directory directory entry (no -r support)
+    rmdir removes a single empty directory
+    
+    Change-Id: I49702b02ba98a177027b126268c2c2846f968195
+    Set a read-only property to indicate if the device is running encrypted.
+    
+    The UI needs to know if the device is running with an encrypted
+    filesystem or now.  So set a read-only property at boot to let it know.
+    
+    Change-Id: I753de2d606c975bcbe9946d10fd47558cf357dac
+    Changes to init to support encrypted filesystems.
+    
+    These are the changes to init and init.rc necessary to
+    support booting with and encrypted /data filesystem.
+    A corresponding change to init.<device>.rc goes along
+    with this change.
+    
+    Change-Id: I0c7e2cc39568358014a82e317735c0eae14dd683
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Split parser into generic parser and init parser
+    
+    Change-Id: I451ebc4ff12f2ac660eb533fa10ad561fa25c9dd
+    init: Add wait command and mount wait flag
+    
+    Change-Id: I6b4c10f8f246095a7fb7342388ec4f6ff97d5733
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    Added a move flag for init's mount command that maps to MS_MOVE.
+    
+    Change-Id: I7bc1a8ac5f73a34c101247f984cbf9ff29e02e7f
+    init: Handle commands in event queue loop
+    
+    Change-Id: I679059dae43143f3c8f16b68de5694539b699e50
+    init: Move prototypes for util.c into util.h
+    
+    Change-Id: I46a91849ce5297eb2597dd6134412f817564ec24
+    init: Move parser prototypes to parser.h
+    
+    Change-Id: I31db51eb8e8a33a0bd06b41206bc9f9147d16d41
+    eclair snapshot
+    init: builtins: trancate target file in do_copy
+    
+    add O_TRUNC flag in open(), which will truncate the target file,
+    otherwise, copy will keep the old content of the target file.
+    
+    Signed-off-by: Tom Zhu <ling.zhu@motorola.com>
+    Signed-off-by: San Mehat <san@google.com>
+    added chdir/chroot commands to init for mount switching/pivoting
+    Trivial implementation of init's import command.
+    init: builtins: Add 'copy' command to init.rc parser
+    
+    Signed-off-by: San Mehat <san@google.com>
+    completed implementation of "trigger" for init
+    init now returns proper error codes in dmesg for write command (init.rc)
+    
+    Signed-off-by: Mike Chan <mike@android.com>
+    init: Add the ability to start services with dynamic arguments.
+    
+        To add arguments dynamically to a service, start the service like so:
+    
+        setprop ctl.start service_to_run:arg1 arg2 arg3...
+    
+        To start a service with *no* dynamic arguments, start the service normally:
+    
+        setprop ctl.start service_to_run
+    
+        Dynamic arguments are only supported on 'oneshot' services
+    
+    Signed-off-by: San Mehat <san@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    Added support for loop@/path/to/filename to init's mount.
+    
+    In keeping with the pattern of mtd@partition, I have added loop@path as a way to specify a loopback device. This way you can do things like mount directories in /system using cramfs from a file otherwise on /system (just one example oof how I'm using it). I specifically went with loop@ rather than adding this feature as a flag as the flags system is designed to set bits in the flags argument to mount: using loop@ fit the model in a much simpler manner and actually feels "correct".
+    
+    This is a better version of the previously submitted 4045 that also refactors the mtd@ case. The reason for this is that I received comments that I should check for errors and return errors rather that do work in the case of success and fall through, but the mtd@ case wasn't doing that either and it became awkward to design the function so that it was half in one style of error handling and half in another. I also made certain to use inequality comparisons for Unix's -1 error returns rather than checking for -1, refactored my large if statement so as not to have danling parentheses, and disassocited the loop device on mount failure.
+    Initial Contribution
+    Redirect libselinux logging to dmesg for ueventd.
+    
+    We already do this for init, but had failed to do it for ueventd
+    and could not capture any logging from libselinux calls made by
+    ueventd.
+    
+    Truly enabling non-error logging also requires uncommenting a line
+    in Android.mk:
+    LOCAL_CFLAGS += -DLOG_UEVENTS=1
+    which enables other logging and sets the default log level to INFO,
+    or otherwise changing the klog level in the ueventd code (is not
+    settable by init.rc loglevel).
+    
+    Change-Id: I00e6f9d6271f2a21d9078c96368816d74d6d2850
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    ueventd: easier debug logging
+    
+    Move ueventd debug flag into the Android.mk.
+    Boost klog level if event logging enabled.
+    
+    Change-Id: Iae48edbc43c487092c2424023576af29c76ff401
+    init/cutils: move kernel logging interface to libcutils from init
+    
+    Change-Id: Ia0f91b1fcd6cae69d76bf3dd841340958db938a8
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    Implementation of open_memstream().
+    
+    POSIX seems to have chosen open_memstream() over the BSD variant.  We
+    want something for Dalvik that will work on both GNU/Linux and Android,
+    so this is open_memstream() implemented in terms of BSD funopen().
+    
+    For Windows there's just a stub that calls abort().
+    
+    I'm putting this in libcutils since it seems inappropriate for bionic
+    (which provides the BSD alternatives) but isn't Dalvik-specific.
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    init: Move signal handling to signal_handler.c
+    
+    Change-Id: I3a24afa28a1cd279c749d6f384f687b8de56067e
+    init: Move keychords to keychords.c
+    
+    Change-Id: I8fba9f5f73439a451fc961f8111612dff4fb5dfd
+    eclair snapshot
+    nexus: Rollup update for nexus
+    
+    nexus: Change field separator from : to ' '
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some prototypes for stuff to come
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some TODOs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Put a proper token parser into the FrameworkListener which
+    supports minimal \ escapes and quotes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Fix a lot of bugs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Remove some debugging
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Send broadcasts for supplicant state changes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Plumb DHCP listener state changes to NetworkManager
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make the SupplicantState strings more parsable
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Broadcast a message when dhcp state changes.
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add a few new response codes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rename ErrorCode -> ResponseCode
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add DHCP event broadcasting. Also adds the framework for
+    tracking supplicant 'searching-for-AP' state
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: REmove WifiScanner
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Change the way scanning works. scanmode can now be selected
+    independantly of triggering a scan. Also adds rxfilter support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add support for configuring bluetooth coexistence scanning and modes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: use case insensitive match for property names
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rollup of a bunch of stuff:
+        - 'list' command now takes an argument to match against
+        - InterfaceConfig has been moved into the Controller base (for now)
+        - DhcpClient now has some rudimentry locking
+        - process 'ADDRINFO' messages from dhcpcd
+        - Drop tertiary dns
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up some of the supplicant variable parsing and add 'wifi.current'
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add driver-stop/start, initial suspend support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add Controller suspend/resume callbacks, as well as locking
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make ARP probing configurable for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add linkspeed / rssi retrieval
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add WifiStatusPoller to track RSSI/linkspeed when associated
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Disable some debugging and add 'wifi.netcount' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Replace the hackish property system with something more flexible with namespaces
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Fix a few bugs in SocketListener
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: PropertyManager: Add array support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up properties
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: WifiController: Change name of 'CurrentNetwork' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Add skeleton for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Refactor some of the create/remove network path and add code for
+           retrieving network lists from supplicant
+    nexus: Rework properties
+    nexus: Implement wifi network enable/disable and add some error checking
+    nexus: Add some TODOs
+    nexus: Whitespace cleanup
+    nexus: Add bindings between controllers and network interfaces
+    nexus: Add properties for InterfaceConfig
+    nexus: Fix a few conversion bugs in InterfaceConfig
+    
+    Signed-off-by: San Mehat <san@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@127101
+    Initial Contribution
+    Add watchdogd
+    
+    "/sbin/watchdogd <interval> <margin>" will open /dev/watchdog, try
+    to set the timeout to <interval>+<margin> then write to it every
+    <interval> seconds to reset the watchdog.
+    
+    Change-Id: I15571980cdb868ec19f20e80bf8274b32107d36d
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Move signal handling to signal_handler.c
+    
+    Change-Id: I3a24afa28a1cd279c749d6f384f687b8de56067e
+    init: Move keychords to keychords.c
+    
+    Change-Id: I8fba9f5f73439a451fc961f8111612dff4fb5dfd
+    eclair snapshot
+    nexus: Rollup update for nexus
+    
+    nexus: Change field separator from : to ' '
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some prototypes for stuff to come
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some TODOs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Put a proper token parser into the FrameworkListener which
+    supports minimal \ escapes and quotes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Fix a lot of bugs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Remove some debugging
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Send broadcasts for supplicant state changes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Plumb DHCP listener state changes to NetworkManager
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make the SupplicantState strings more parsable
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Broadcast a message when dhcp state changes.
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add a few new response codes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rename ErrorCode -> ResponseCode
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add DHCP event broadcasting. Also adds the framework for
+    tracking supplicant 'searching-for-AP' state
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: REmove WifiScanner
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Change the way scanning works. scanmode can now be selected
+    independantly of triggering a scan. Also adds rxfilter support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add support for configuring bluetooth coexistence scanning and modes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: use case insensitive match for property names
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rollup of a bunch of stuff:
+        - 'list' command now takes an argument to match against
+        - InterfaceConfig has been moved into the Controller base (for now)
+        - DhcpClient now has some rudimentry locking
+        - process 'ADDRINFO' messages from dhcpcd
+        - Drop tertiary dns
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up some of the supplicant variable parsing and add 'wifi.current'
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add driver-stop/start, initial suspend support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add Controller suspend/resume callbacks, as well as locking
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make ARP probing configurable for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add linkspeed / rssi retrieval
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add WifiStatusPoller to track RSSI/linkspeed when associated
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Disable some debugging and add 'wifi.netcount' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Replace the hackish property system with something more flexible with namespaces
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Fix a few bugs in SocketListener
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: PropertyManager: Add array support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up properties
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: WifiController: Change name of 'CurrentNetwork' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Add skeleton for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Refactor some of the create/remove network path and add code for
+           retrieving network lists from supplicant
+    nexus: Rework properties
+    nexus: Implement wifi network enable/disable and add some error checking
+    nexus: Add some TODOs
+    nexus: Whitespace cleanup
+    nexus: Add bindings between controllers and network interfaces
+    nexus: Add properties for InterfaceConfig
+    nexus: Fix a few conversion bugs in InterfaceConfig
+    
+    Signed-off-by: San Mehat <san@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@127101
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    Initial Contribution
+    Improve init's debug printing.
+    
+    + Make prints of rc commands significantly more verbose. All commands
+      will log all arguments, file/line number of the command, return value,
+      and parent action which triggered the command.
+    
+    init: command 'mount tmpfs tmpfs /mnt/obb mode=0755,gid=1000' action=init
+          status=0 (/init.rc:89)
+    init: command 'setprop net.tcp.default_init_rwnd 60' action=boot status=0
+          (/init.rc:403)
+    
+    Change-Id: I5498c7258e4891706be4a12546df4231d14d86c4
+    init: add 'enable <service>' to negate "service <service>... disabled"
+    
+    enable <servicename>
+       Turns a disabled service into an enabled one as if the service did not
+       specify disabled in the rc file.
+       It will also start the service if needed.
+    
+    Bug: 14472973
+    Change-Id: Id0b49cc687a2bc74f6f92e066c617724cc94908d
+    Signed-off-by: JP Abgrall <jpa@google.com>
+    init: remove obsolete rle logo
+    
+    Obsolete RLE 565 logo is used nowhere,
+    because 565 framebuffer isn't used for years.
+    
+    It's not necessary to keep this thing alive anymore.
+    
+    Change-Id: Ie61e168790f791230530cd3eb1c68b1f7344c9a7
+    Add support for socket security context specification.
+    
+    Add an optional argument to the socket option for specifying
+    a SELinux security context for the socket.  Normally the socket
+    security context is automatically computed from the service security
+    context or set using the seclabel option, but this facility allows
+    dealing with two scenarios that cannot be addressed using the existing
+    mechanisms:
+    1) Use of logwrapper to wrap a service.
+    In this case, init cannot determine the service security context
+    as it does not directly execute it and we do not want logwrapper
+    to run in the same domain as the service.
+    
+    2) Situations where a service has multiple sockets and we want to
+    label them distinctly.
+    
+    Change-Id: I7ae9088c326a2140e56a8044bfb21a91505aea11
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Remove HAVE_SELINUX guards
+    
+    Change-Id: I8272c573b3c5dc663203bafab68fad5e94d89364
+    Implement SELinux/MAC checks for property service.
+    
+    This is a set of changes to the init property service
+    implementation to apply a SELinux check over who can
+    change what properties. Also included control hooks
+    for the 'ctl' keys.
+    
+    Change-Id: I5a18809bf5536f6459a36b6bf0d622b9f5061aa0
+    Signed-off-by: rpcraig <rpcraig@tycho.ncsc.mil>
+    Add support for reloading policy from /data/system.
+    
+    To support runtime policy management, add support for reloading
+    policy from /data/system.  This can be triggered by setting the
+    selinux.loadpolicy property to 1, whether from init.rc after
+    mounting /data or from the system_server (e.g. upon invocation of
+    a new device admin API for provisioning policy). ueventd and
+    installd are restarted upon policy reloads to pick up the new
+    policy configurations relevant to their operation.
+    
+    Change-Id: I97479aecef8cec23b32f60e09cc778cc5520b691
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    init: Retain traditional restart behavior for critical and oneshot services.
+    
+    Adds an SVC_RESTART state that's used for an explicit "restart" of a
+    running service.  This retains the traditional restart behavior for
+    critical and oneshot services (previously altered by 7e36edd8), whereby
+    these services are "simply restarted" instead of counting as a crash (for a
+    critical serivce) or going into the disabled state (for a oneshot service).
+    Extend init and ueventd for SE Android.
+    
+    Add SE Android support for init and ueventd.
+    
+    init:
+    - Load policy at boot.
+    - Set the security context for service daemons and their sockets.
+    - New built-in commands: setcon, setenforce, restorecon, setsebool.
+    - New option for services: seclabel.
+    
+    ueventd:
+    - Set the security context for device directories and nodes.
+    
+    Change-Id: I98ed752cde503c94d99dfa5b5a47e3c33db16aac
+    Fix the class_reset command
+    
+    The class_reset command used to reset services that had been set to
+    "disabled" in the init.rc file to a non-disabled state.  Now, if the
+    service was originally set to "disabled", have the reset command set
+    it back to disabled.  Otherwise, set it to the "reset" state as it
+    currently does.
+    
+    Change-Id: I0c10582e46a8e443d4748d9d893ae762b19b653a
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    Changes to init to support encrypted filesystems.
+    
+    These are the changes to init and init.rc necessary to
+    support booting with and encrypted /data filesystem.
+    A corresponding change to init.<device>.rc goes along
+    with this change.
+    
+    Change-Id: I0c7e2cc39568358014a82e317735c0eae14dd683
+    Revert "Add "slow_start" keyword to init"
+    
+    This reverts commit 50b3afd9f39619f69dc6f4efc29be88933eb3614.
+    Add "slow_start" keyword to init
+    
+    This keyword will cause init to wait a few seconds before exec'ing
+    the target binary.  Maybe only useful for hacks and debugging.
+    
+    Change-Id: I85caa0bcbc0be7e48bd21eb9e31e039c0740c8d5
+    Add "slow_start" keyword to init
+    
+    This keyword will cause init to wait a few seconds before exec'ing
+    the target binary.  Maybe only useful for hacks and debugging.
+    
+    Change-Id: I85caa0bcbc0be7e48bd21eb9e31e039c0740c8d5
+    init: Split parser into generic parser and init parser
+    
+    Change-Id: I451ebc4ff12f2ac660eb533fa10ad561fa25c9dd
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    init: Handle commands in event queue loop
+    
+    Change-Id: I679059dae43143f3c8f16b68de5694539b699e50
+    init: Move prototypes for util.c into util.h
+    
+    Change-Id: I46a91849ce5297eb2597dd6134412f817564ec24
+    init: Move signal handling to signal_handler.c
+    
+    Change-Id: I3a24afa28a1cd279c749d6f384f687b8de56067e
+    init: Move gettime() to util.c
+    
+    Change-Id: I1df96964763f8baedbc1cea6875d3dfc5e48c065
+    init: Move parser prototypes to parser.h
+    
+    Change-Id: I31db51eb8e8a33a0bd06b41206bc9f9147d16d41
+    MOAR GROUPS
+    
+    We were hitting the old limit with mediaserver.
+    
+    Change-Id: Ia8217a9f2a1076fa247d7f5ed5159e3c91244d78
+    init: Add support for specifying a services i/o priority
+    
+    Signed-off-by: San Mehat <san@google.com>
+    completed implementation of "trigger" for init
+    init: Add the ability to start services with dynamic arguments.
+    
+        To add arguments dynamically to a service, start the service like so:
+    
+        setprop ctl.start service_to_run:arg1 arg2 arg3...
+    
+        To start a service with *no* dynamic arguments, start the service normally:
+    
+        setprop ctl.start service_to_run
+    
+        Dynamic arguments are only supported on 'oneshot' services
+    
+    Signed-off-by: San Mehat <san@google.com>
+    init: Fix heap corruption for services with arguments
+    
+        The 'args' array *must* be the last entry in the structure.
+    
+    This fixes a longstanding issue (apparently since tc3) where
+    a service with an argument would corrupt the heap. The more
+    arguments, the more corruption :|. This will probably also end up
+    making key-code bound services more reliable (ie: bugreports triggered
+    via the keyboard)
+    
+    Signed-off-by: San Mehat <san@google.com>
+    init: Fix segfault when log_write() was missing an arg to format.
+    
+    Also, flag log_write() as a printf-like beast to gcc.
+    
+    Signed-off-by: Dima Zavin <dima@android.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@125939
+    Initial Contribution
+    ueventd fixup_sys_perms: fixup SELinux labels unconditionally
+    
+    Currently, the fixup code in fixup_sys_perms() scans through all
+    entries in uevent*.rc. If it finds a match, then it performs a fixup.
+    If there's no match in that file, no fixup is performed.
+    
+    SELinux file labels are independently stored in /file_contexts,
+    with no relationship to the files in /ueventd.rc. Even when no
+    entries exist in ueventd.rc, we still want to fixup the SELinux
+    file label in /sys when a uevent message occurs.
+    
+    Change-Id: I0ccb5395ec0be9282095b844a5022e8c0d8903ac
+    ueventd: allow matching symlink names when setting permissions
+    
+    Change-Id: I5f6cc2a25f1236fbe2c7193b65363b7883b9ba2e
+    ueventd: UEVENT_MSG_LEN changed to 2048 from 1048 in compliance with the
+    BUFFER_LEN in the kobject_uevent in kernel.
+    
+    Change-Id: Ib98626f20a7c26e7718bbe4d5ec4513a1ae5d9b7
+    init/ueventd: adds wildcard matching for ueventd rules
+    
+    The sysfs nodes can change from devices to devices for
+    a particular class of peripheral. Some of them even change
+    after suspend/resume, e.g. rfkill for USB bluetooth adapters.
+    
+    This patch adds to the way how ueventd rules with wildcard are
+    handled. In addition to matching the prefix with a trailing
+    wildcard, now rules can have wildcard anywhere in the rule.
+    The wildcard matching is implemented using fnmatch(), where
+    its matching is simliar to shell pathname expansion. It suits
+    this particular usage model well. To avoid abuse, the number of
+    slashes has to match between path name and the rule.
+    
+    For example, instead of creating a rule to match:
+    
+      /sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.0/bluetooth/hci0/rfkill*
+    
+    , this would suffice:
+    
+      /sys/devices/pci0000:00/0000:00:1d.0/*/*/*/*/bluetooth/hci0/rfkill*
+    
+    The prefix matching behavior is retained, such that those
+    rules do not have to pay for processing penalty with fnmatch().
+    
+    Change-Id: I3ae6a39c838f6d12801cb71958e481b016f731f5
+    Signed-off-by: Daniel Leung <daniel.leung@intel.com>
+    Extend ueventd to use the label-by-symlink support in libselinux.
+    
+    When ueventd creates a device node, it may also create one or more
+    symlinks to the device node.  These symlinks may be the only stable
+    name for the device, e.g. if the partition is dynamically assigned.
+    A corresponding change with the same Change-Id to external/libselinux
+    introduces selabel_lookup_best_match() to support looking up the "best match"
+    for a device node based on its real path (key) and any links to it
+    (aliases).  This change updates ueventd to use this new interface
+    to find the best match for the device node when creating it.
+    
+    Change-Id: Id6c2597eee2b6723a5089dcf7c450f8d0a4128f4
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    ueventd: support by-name symlinks for PCI block devices
+    
+    To ensure that well-crafted removable media can't spoof the
+    internal partitions, for platform devices the controller id
+    is inside the generated path.
+    
+    We now do the same for PCI devices. The generated path has
+    two levels; the PCI domain/bus, and then the peripheral ID.
+    This lets us get by-name symlinks for PCI media, such as the
+    SATA controllers on PC-like hardware. The symlinks will be
+    created under /dev/block/pci/. For example:
+    
+    /dev/block/pci/pci0000:00/0000:00:1f.2/by-name/
+    
+    Change-Id: Icee3e86bef5569c2bbd94c26bc00d49028345e3b
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    ueventd: Ueventd changes the permission of sysfs files for max/min
+    cpufreq
+    
+    The owner and permissions for the sysfs file
+    /sys/devices/system/cpu*/cpufreq/scaling_max/min_freq is changed.
+    This would allow the PowerHAL to change the max/min cpufreq even after
+    the associated CPU's are hotplugged out and back in.
+    
+    Change-Id: Ibe0b4aaf3db555ed48e89a7fcd0c5fd3a18cf233
+    Signed-off-by: Ruchi Kandoi <kandoiruchi@google.com>
+    liblog: enable logging to logd.
+    
+    * Modify liblog to send all messages to the new syslog user
+      space daemon.
+    
+    Original-Change-Id: I0ce439738cd921efb2db4c1d6a289a96bdbc8bc2
+    Original-Change-Id: If4eb0d09409f7e9be3eb4bb7017073dc7e931ab4
+    Signed-off-by: Nick Kralevich <nnk@google.com>
+    
+    * Add a TARGET_USES_LOGD make flag for BoardConfig.mk to manage
+      whether logd is enabled for use or not.
+    * rename syslog to logd to avert confusion with bionic syslog
+    * Add fake log support back in
+    * prefilter for logging messages from logd
+    * Fill in timestamps at logging source
+    * update abstract log reader
+    * switch from using suffix for id to v3 format
+    * log a message when creating devices that a deprecated interface
+      is being utilized.
+    
+    Signed-off-by: Mark Salyzyn <salyzyn@google.com>
+    
+    (cherry pick from commit 099e2c1f6f706a8600c1cef74cce9066fc315480)
+    
+    Change-Id: I47929a5432977a1d7235267a435cec0a7d6bd440
+    liblog: enable logging to logd.
+    
+    * Modify liblog to send all messages to the new syslog user
+      space daemon.
+    
+    Original-Change-Id: I0ce439738cd921efb2db4c1d6a289a96bdbc8bc2
+    Original-Change-Id: If4eb0d09409f7e9be3eb4bb7017073dc7e931ab4
+    Signed-off-by: Nick Kralevich <nnk@google.com>
+    
+    * Add a TARGET_USES_LOGD make flag for BoardConfig.mk to manage
+      whether logd is enabled for use or not.
+    * rename syslog to logd to avert confusion with bionic syslog
+    * Add fake log support back in
+    * prefilter for logging messages from logd
+    * Fill in timestamps at logging source
+    * update abstract log reader
+    * switch from using suffix for id to v3 format
+    * log a message when creating devices that a deprecated interface
+      is being utilized.
+    
+    Signed-off-by: Mark Salyzyn <salyzyn@google.com>
+    
+    Change-Id: I47929a5432977a1d7235267a435cec0a7d6bd440
+    Remove an unused #include of <asm/page.h>.
+    
+    Change-Id: I000aead8c82ec11151f69e6ce439dd09b0f0b4f4
+    init: add subsystem rules to ueventd.rc
+    
+    By default ueventd creates device nodes under /dev based on the ueventd
+    DEVPATH.  Several subsystems have special rules which are hardcoded in
+    devices.c.  Moving forward these special rules should go in ueventd.rc.
+    
+    Special rules have the syntax:
+    
+            subsystem <s>
+                    devname (uevent_devname|uevent_devpath)
+                    [dirname <dir>]
+    
+    Devices matching SUBSYSTEM=<s> will be populated under <dir>.  dirname
+    is optional and defaults to /dev.  If dirname is provided, <dir> must
+    start with "/".
+    
+    If devname is uevent_devname, ueventd will create the device node as
+    <dir>/DEVNAME.  DEVNAME may include intermediate subdirectories, which
+    ueventd will automatically create.
+    
+    If devname is uevent_devpath, ueventd will use the legacy behavior of
+    computing DEVPATH_BASE=basepath(DEVPATH), and creating the device node
+    as <dir>/DEVPATH_BASE.
+    
+    The new parsing code is based on init_parser.c, with small tweaks to
+    handle commands which don't fall under a section header.
+    
+    Change-Id: I3bd1b59d7e62dfc9d289cf6ae889e237fb5bd7c5
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    init: handle ueventd path truncation better
+    
+    Log an error before discarding problematic events, and add a missing
+    truncation check to the usb subsystem's unique codepath
+    
+    Change-Id: I0d05aa287ffc63b46d1752d2a7409d35dc8caca7
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    Handle policy reloads within ueventd rather than restarting it.
+    
+    Restarting ueventd upon policy reloads has reportedly created
+    stability problems for some users and could cause events to be lost.
+    Stop restarting ueventd and instead handle policy reloads within ueventd.
+    
+    Also stops restarting installd upon policy reloads.
+    
+    Change-Id: Ic7f310d69a7c420e48fbc974000cf4a5b9ab4a3b
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Allow more characters in partition name links
+    
+    We have several partitions with underscores in their names
+    which would not be properly linked in:
+    /dev/block/platform/msm_sdcc.1/by-name/
+    
+    With this change more characters (_-.) are allowed in
+    partition name links. Also, any other character is
+    replaced with '_' so the resulting link names have the
+    same length as the partition name.
+    
+    Change-Id: I746566c03db98b10326c755692362d2c10e528ae
+    Free file handle for /firmware/image after use
+    
+    Change-Id: Id59e25486b45dffc87a89a961970a6e8128a5237
+    Update ueventd set the SELinux context on sysfs
+    
+    This change enables labeling of dynamically created sysfs nodes
+    with specific SELinux security contexts.
+    
+    Change-Id: If8b8d66120453123c1371ce063b6f20e8b96b6ef
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    ueventd: allow platform devices to have just a /devices/ prefix
+    
+    When using device tree, platform devices may not have a
+    /devices/platform/ path prefix, but can be rooted in
+    /devices/.
+    
+    Modify the platform device tracking code to store the device
+    path as well as the name. This way, when we create symlinks, we
+    can correctly skip the base platform device prefix and get to the
+    proper device node path.
+    
+    Change-Id: I939ef8fbcb45c5c803cd9a054e40136a912efc72
+    Signed-off-by: Dima Zavin <dima@android.com>
+    ueventd: allow platform devices to have just a /devices/ prefix - DO NOT MERGE
+    
+    When using device tree, platform devices may not have a
+    /devices/platform/ path prefix, but can be rooted in
+    /devices/.
+    
+    Modify the platform device tracking code to store the device
+    path as well as the name. This way, when we create symlinks, we
+    can correctly skip the base platform device prefix and get to the
+    proper device node path.
+    
+    Change-Id: I939ef8fbcb45c5c803cd9a054e40136a912efc72
+    Signed-off-by: Dima Zavin <dima@android.com>
+    ueventd: allow platform devices to have just a /devices/ prefix
+    
+    When using device tree, platform devices may not have a
+    /devices/platform/ path prefix, but can be rooted in
+    /devices/.
+    
+    Modify the platform device tracking code to store the device
+    path as well as the name. This way, when we create symlinks, we
+    can correctly skip the base platform device prefix and get to the
+    proper device node path.
+    
+    Change-Id: I939ef8fbcb45c5c803cd9a054e40136a912efc72
+    Signed-off-by: Dima Zavin <dima@android.com>
+    ueventd: Increase uevent buffer size
+    
+    As it turns out, no, 64K is not enough. A device provisioning
+    tool was generating many uevents as it manipulated the GPT,
+    causing events near the end of the process (including events
+    as a result of the final BLKRRPART ioctl()) to get lost.
+    
+    It's not clear what the best value for this should be, but
+    increasing to 256K fixed the problem in this case.
+    
+    Change-Id: I4883b34e96c89e8a6fa581bc9cd121bb021b5694
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    Remove HAVE_SELINUX guards
+    
+    Change-Id: I8272c573b3c5dc663203bafab68fad5e94d89364
+    Add support for reloading policy from /data/system.
+    
+    To support runtime policy management, add support for reloading
+    policy from /data/system.  This can be triggered by setting the
+    selinux.loadpolicy property to 1, whether from init.rc after
+    mounting /data or from the system_server (e.g. upon invocation of
+    a new device admin API for provisioning policy). ueventd and
+    installd are restarted upon policy reloads to pick up the new
+    policy configurations relevant to their operation.
+    
+    Change-Id: I97479aecef8cec23b32f60e09cc778cc5520b691
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Set the SELinux security label on new directories.
+    
+    Automatically set the SELinux security label on directories created
+    by init.rc.  This avoids the need to separately call restorecon on
+    each such directory from the init.rc file.  Also restorecon /dev
+    and /dev/socket after initial policy load so that they are labeled
+    correctly before any other dev nodes or sockets are created.
+    
+    Change-Id: If6af6c4887cdead949737cebdd673957e9273ead
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    ueventd: fixup /sys permissions on change uevents
+    
+    Change uevents may be triggered after new files are created on a device
+    in /sys, run the sys permissions fixup when they occur.
+    
+    Change-Id: Iec2725c9f8a032e5124190444edaf189a766b0b2
+    Char device /dev/dri/card0 was not created during startup.
+    
+    This device is required by libdrm for GPUs like IvyBridge.
+    
+    Change-Id: I0ac47056a9cec2100f3e6eaa5591571fe6bbc145
+    Signed-off-by: Lukasz Anaczkowski <lukasz.anaczkowski@intel.com>
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    HACK: use /firmware/image as a 3rd choice
+    
+    Change-Id: I74af2e2dc872f88b904ead13e300ae32547e70c8
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Add handling for DEVNAME for usb devices
+    
+    When creating device node, user-space handler should honor device
+    node provided by kernel if present.
+    
+    Bug: 6105248
+    
+    Change-Id: I9ab3810563f29f065c239e15149882db28f08893
+    Signed-off-by: Wei Zhong <wzhong@google.com>
+    Extend init and ueventd for SE Android.
+    
+    Add SE Android support for init and ueventd.
+    
+    init:
+    - Load policy at boot.
+    - Set the security context for service daemons and their sockets.
+    - New built-in commands: setcon, setenforce, restorecon, setsebool.
+    - New option for services: seclabel.
+    
+    ueventd:
+    - Set the security context for device directories and nodes.
+    
+    Change-Id: I98ed752cde503c94d99dfa5b5a47e3c33db16aac
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    libcutils/init: move uevent socket opening code to libcutils
+    
+    Change-Id: I90adf78c0eb6185505f2bf7b62e96e25ab918345
+    Signed-off-by: Dima Zavin <dima@android.com>
+    rename uevent_checked_recv to uevent_kernel_multicast_recv
+    
+    Change-Id: I1839627490080efcbb7269699709064856312f8b
+    Fold uevent message origin checking from init into libcutils.
+    
+    Change-Id: I7cbc0cb840d1b4962e6c360fdad9a9c0ce20e87b
+    Revert "Fold uevent message origin checking from init into libcutils."
+    
+    This reverts commit 8405ec0e7562a370174d9973dd94984c47e49c36.
+    
+    The original change does not compile.
+    Fold uevent message origin checking from init into libcutils.
+    
+    Change-Id: I1a38e611a7ad990f74306ce453740a1eeed2416d
+    ueventd: track platform device uevents to parse block device names
+    
+    The mmc block devices on panda boards use a platform device called
+    omap/omap_hsmmc.0.  The number of path entries in the uevent after
+    the platform device is unknown, and the number of path entries in
+    the platform device is unknown, so the only way to determine how
+    many entries make up the platform device is to compare against
+    a list of platform devices.
+    
+    Add a list of platform devices that have been registered, and
+    iterate through it to determine the platform device portion of
+    a block device uevent.
+    
+    Change-Id: I1480bc6429172ca6997d548787be3863ce062472
+    ueventd: refactor uevent handling
+    
+    Change-Id: I2002be3580ff87b0a55dc030a9099bf6d795011f
+    defer firmware load until after filesystems are mounted
+    
+    In some situations a driver could try to request firmware before
+    /system is mounted.  Previously we'd fail the request.  Now we
+    will retry the read-from-filesystem every 100ms until we find the
+    firmware or we've finished the "fs" and "post-fs" stages of init.
+    
+    Change-Id: Ie32402f7d41c818bf20f3297286ed5f99705b72c
+    Add missing headers for compilation on x86 targets
+    
+    Change-Id: I5f4dc797b353a0f01fa00d38375ec303bf863254
+    init: Abort firmware transfer if firmware is missing
+    
+    If firmware is not found, write -1 /sys/$DEVPATH/loading to cancel the
+    firmware load. Otherwise the driver has to wait for the 60s timeout.
+    
+    Change-Id: Id2787cda9b2be45b9adea41f6f161cd54cda212e
+    Signed-off-by: Benoit Goby <benoit@android.com>
+    init: support owner/permission setting for sysfs attributes of devices
+    
+    This should be much nicer than peppering init.rc with chown/chmod
+    directives.
+    
+    Also, remove some dead code and obsolete comments.
+    
+    Change-Id: I10895f10a9cf2f1226c8d12976cd3db3743da9ec
+    add /vendor support
+    
+    - look in /vendor/firmware/... in addition to /system/etc/firmware/... for firmware loading
+    - add /vendor/bin to path before /system/bin
+    - add /vendor/lib to ldpath before /system/lib
+    - configure appropriate permissions for /system/vendor/bin
+    - symlink /vendor -> /system/vendor
+    
+    Change-Id: I0c06ca1e38a44f0c7024cee6cea8907aa93a4532
+    Use makedev helper for device major and minor numbers
+    
+    Major and minor numbers can be greater than 255.  Major numbers
+    are 12 bits, and minor numbers are 20 bits.  Supporting major
+    and minor numbers > 255 allows the use of the extended block
+    device for extra mmc partitions.
+    
+    Change-Id: I4c42bfe0781069e8e4cb13ebe26e860cdc03f866
+    init: Add symlinks to USB character devices
+    
+    Since we now support USB host mode, devices might get a different device
+    file depending if other devices are connected on the host port. This
+    patch creates symlinks to USB character devices that depend on the port
+    devices are connected to, but not on the order they have been probed.
+    (e.g. /dev/usb/tty2-1:1.0 -> /dev/ttyUSB0)
+    
+    Change-Id: I285bcc2d59446fbff8a7abbe39c21781f3bb4bd3
+    validate the source of uevent messages
+    
+    Bug: 2844206
+    Change-Id: If2eee54181abfc6c7fda0232f98fa6bb5d12c60c
+    Reap firmware child processes to prevent zombies
+    
+    Change-Id: Ic6c50b929a025f05450cd309238e60a857690d9b
+    init: Add support for /dev/bus/usb/ file system and add new unix group AID_USB.
+    
+    init now creates files in /dev/bus/usb/ for user access to USB devices.
+    Files are chmod 660 with group AID_USB.
+    
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    init: Add support for /dev/bus/usb/ file system and add new unix group AID_USB.
+    
+    init now creates files in /dev/bus/usb/ for user access to USB devices.
+    Files are chmod 660 with group AID_USB.
+    
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    init: Add ueventd.rc parsing to ueventd
+    
+    Change-Id: Iea53050d6c10e8cabf563e5d80e84eaf78873695
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    init: create symlinks to block device nodes
+    
+    eMMC block device names may change based on the detection order of
+    the eMMC device and any other SD bus devices, such as a removable SD
+    card.
+    
+    This patch adds support to init for:
+      * Symlinks to block devices.  When a block device uevent is
+        processed, if it starts with "/devices/platform", the platform
+        driver name is parsed out, and symlinks to the block device are
+        created in /dev/block/platform/<platform driver>/
+      * Symlinks based on partition name and number.  If the uevent for
+        a block device contains information on the partition name or
+        number, symlinks are created under
+        /dev/block/platform/<platform driver>/by-num/p<partition>
+        and
+        /dev/block/platform/<platform driver>/by-name/<partition name>
+    
+    init.rc can then use a device path like the following to mount an
+    eMMC device:
+    /dev/block/platform/<platform>/by-name/system /system ro
+    
+    Change-Id: Id11bb7cdf1e2ada7752a5bd671cbf87237b34ae2
+    init: Move device_fd to devices.c
+    
+    Change-Id: I11ed0f3e1b95d2cff4fdbd80b915c01572f76b0e
+    system/core/init: set proper permissions for tpa2018d1 (CDMA)
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Clean fix for the chown race condition on new input devices.
+    
+    Drop init's egid to AID_INPUT while creating the device node, so that it is
+    created with the correct gid. This eliminates the
+    possibility of system_server opening the device node before its permissions
+    are set correctly.
+    
+    Using setegid() allows us to swap back to AID_ROOT immediately after mknod().
+    
+    Bug: 2375632
+    eclair snapshot
+    init: devices: Remove pmem_gpu regions as they are not needed since we have an mmu
+    
+    Change-Id: I2f8f0440d9a21230c7711cb6d9a20ec6887b7cb9
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Add qdsp6 video encoder, q6venc, device owned by system.audio
+    
+    Change-Id: I86173e07163b70ce8990b8508afba44729c0d8ca
+    Signed-off-by: Dima Zavin <dima@android.com>
+    Set permissions properly for any ALSA device under /dev/snd
+    init: Make /dev/pmem_gpu* be writable by all
+    
+    STOPSHIP: The actual device entry needs to be removed once the products
+    that use this switch on the mmu.
+    
+    Change-Id: I10afea36c8731d845382665ed3db7647f68d1276
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: add some more audio devices
+    
+    Signed-off-by: Brian Swetland <swetland@google.com>
+    init: add vdec device node
+    
+    Change-Id: I7e83b99111adfb2b10ee91b78f922864999d4b9d
+    Signed-off-by: Dima Zavin <dima@android.com>
+    Fix incorrect check for LOG_UEVENTS
+    
+    LOG_UEVENTS is a boolean value as defined in system/core/init/init.h.
+    Therefore, code should use an #if check and not an #ifdef check as the
+    macro will always be defined.
+    devices: set permissions for lightsensor
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    init: set the correct kgsl device node permissions
+    init: /dev/diag, /dev/diag_arm9 now owned by AID_RADIO
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    init: Add hw3d master/client nodes to device list.
+    
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: add permissions for /dev/diag and /dev/diag_arm9
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    init: Change owner of /dev/uinput to system
+    
+    This will allow the the uinput driver to be used by the system process
+    as well as bluetooth, which is needed for sensors.
+    
+    Signed-off-by: Ken Schultz <kschultz@motorola.com>
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    set permissions for capella cm3602 proximity sensor
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    init: set permissions for akm8973 and bma150 drivers
+    
+    akm8973 is the compass
+    bma150 is the accelerometer
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Change permissions on sound devices.
+    Add device, property, directory, and file permissions for VPN.
+    add support and proper permissions for /dev/msm_camera/
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    init: Create new 'vpn' user/group and set owner of '/dev/tun' to it.
+    
+    Signed-off-by: San Mehat <san@google.com>
+    CDMA: add cdma tsmux device permissions
+    
+    Signed-off-by: Erik Gilling <konkers@android.com>
+    Make the /dev/qemu_trace device readable and writable by all.
+    
+    This is needed so that the Dalvik interpreter can add information
+    about Java method entry/exit to the traces when running in the qemu
+    emulator.
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@132276
+    auto import from //branches/cupcake/...@127436
+    auto import from //branches/cupcake/...@125939
+    Code drop from //branches/cupcake/...@124589
+    Create sound device nodes in /dev/snd/.
+    Set permissions for /dev/msm_snd.
+    
+    Signed-off-by: Iliyan Malchev <malchev@google.com>
+    Initial Contribution
+    Add ability to boot from charger mode.
+    
+    Add the ability to boot up directly from charger mode, instead of forcing
+    charger mode to initiate a full restart to launch 'full' android. This
+    should shave a few seconds off of boot time on supported devices (just
+    manta for now).
+    
+    Change-Id: Ieec4494d929e92806e039f834d78b9002afd15c4
+    init: verify size of property buffers passed to property_get
+    
+    Verify that the buffer passed as the value parameter to property_get
+    is always big enough.
+    
+    (cherry picked from commit 88ac54a4e8d2a63e4fd9c465e115795ace316776)
+    
+    Change-Id: Iacc2b42bfe4069e0bfcbb1c48474f30126a93139
+    init: switch property_get to use __system_property_get
+    
+    (cherry picked from commit 2deedfe0b1ac86ebd62d19cf7da9e7dcb508ab09)
+    
+    Change-Id: If3fba2cc1dd5c167b0924ddfe42dbe2e6387208a
+    init: verify size of property buffers passed to property_get
+    
+    Verify that the buffer passed as the value parameter to property_get
+    is always big enough.
+    
+    Change-Id: Ie5b6fcd94bb908215cfd55d0c9b07f717ddb70b1
+    init: switch property_get to use __system_property_get
+    
+    Change-Id: I4fc0502a1a5b331087618a4d2e3d90948743d7bd
+    Revert "init: make system properties more secure."
+    
+    This reverts commit 51e06618dbd87c4374c56d9193a5e567aa3d02ac.
+    
+    Bug: 8045561
+    Revert "init: make system properties more secure."
+    
+    This reverts commit 51e06618dbd87c4374c56d9193a5e567aa3d02ac.
+    
+    Bug: 8045561
+    init: make system properties more secure.
+    
+    Currently, system properties are passed via the environment
+    variable ANDROID_PROPERTY_WORKSPACE and a file descriptor passed
+    from parent to child. This is insecure for setuid executables,
+    as the environment variable can be changed by the caller.
+    
+    Modify system property handling so that we get the properties
+    from a root owned properties file, rather than using an
+    environment variable.
+    
+    Related to bug: 8029617
+    
+    Change-Id: I18610128e11c4037ed6f4dec6eba20f69fa647eb
+    init: export all androidboot cmd line values as ro.boot.xx props
+    
+    Also, clean up how we initialize the ro.xx properties and process
+    the kernel command line.
+    
+    Change-Id: Iedda6c90e31340a189171a44b2767480403354f7
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: export all androidboot cmd line values as ro.boot.xx props
+    
+    Also, clean up how we initialize the ro.xx properties and process
+    the kernel command line.
+    
+    Change-Id: Iedda6c90e31340a189171a44b2767480403354f7
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: do not load default.prop from ramdisk in charger mode
+    
+    Change-Id: Ic471b891829d7f857674b925c9948954972d9ecb
+    Signed-off-by: Dima Zavin <dima@android.com>
+    Load the persistent properties after decrypting the /data partition
+    
+    Fix for bug 3415286.  The persistent properties are normally read early
+    in the boot process after /data is mounted.  However, for an encrypted
+    system, at that point /data is a tmpfs ramdisk.  This change adds a new
+    command to init (load_persist_props) to read the persistent properties,
+    and adds an action to init.rc to load the persistent properties.  This
+    action is triggered by setting a property in vold, but that's in a
+    different CL.
+    
+    Change-Id: I74b3057974ee6029c29d956b76fef5566700d471
+    init: Allow services to start before property triggers are up
+    
+    Change-Id: I4f87657123bea88b7b5c537781868908d8d66b01
+    init: Move property_set_fd to property_service.c
+    
+    Change-Id: Ic7a19073eae8f353d48cabee80fa9722b35a82b5
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Code drop from //branches/cupcake/...@124589
+    Initial Contribution
+    Make init distinguish between orderly exit and being killed by signals.
+    
+    Bug: 11826724
+    Change-Id: I7c11f602447dbd6862decc51cdfe883003cf7d67
+    Use sigemptyset to initialise signal mask as it is more portable.
+    Referencing sa_restorer fails on MIPS
+    
+    Change-Id: I81c9ed5ef027a9d5258942ffcecb96e3f787e93c
+    Signed-off-by: Chris Dearman <chris@mips.com>
+    init: Retain traditional restart behavior for critical and oneshot services.
+    
+    Adds an SVC_RESTART state that's used for an explicit "restart" of a
+    running service.  This retains the traditional restart behavior for
+    critical and oneshot services (previously altered by 7e36edd8), whereby
+    these services are "simply restarted" instead of counting as a crash (for a
+    critical serivce) or going into the disabled state (for a oneshot service).
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    Try to unmount writable filesystems when rebooting
+    
+    Ext4 filesystems like to be unmounted before rebooting.  The Android system
+    doesn't have a traditional Linux init setup, and shutting down the system
+    was not much more than calling sync(2) and reboot(2).  This adds a new
+    function to libcutils called android_reboot().  By default, it calls sync()
+    and then remounts all writable filesystems as read-only and marks them clean.
+    There is a flag parameter in which the caller can ask for sync() not to be
+    called, or to not remount the filesystems as read-only.  Then it will call
+    reboot(2) as directed by the other parameters.  This change also updates
+    adb, init and toolbox to call the new android_reboot() function.
+    Fixes bugs 3350709 and 3495575.
+    
+    Change-Id: I16d71ffce3134310d7a260f61ec6f4dd204124a7
+    Changes to init to support encrypted filesystems.
+    
+    These are the changes to init and init.rc necessary to
+    support booting with and encrypted /data filesystem.
+    A corresponding change to init.<device>.rc goes along
+    with this change.
+    
+    Change-Id: I0c7e2cc39568358014a82e317735c0eae14dd683
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    init: reap exited child processes on signal_init
+    
+    If any child processes exit before signal_init, they won't get reaped
+    unless another child process exits after signal_init.  Calling
+    handle_signal from signal_init forces them to be reaped immediately.
+    
+    Change-Id: I459cfbfe6cf00f29454c62a8c840baf21cb1fb03
+    init: Move prototypes for util.c into util.h
+    
+    Change-Id: I46a91849ce5297eb2597dd6134412f817564ec24
+    init: Move signal handling to signal_handler.c
+    
+    Change-Id: I3a24afa28a1cd279c749d6f384f687b8de56067e
+    init: use init's property expansion code for setprop/write
+    
+    Change-Id: I3c284860cc8d5106ac2b086e62baeb6263873935
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: use init's property expansion code for setprop/write
+    
+    Change-Id: I3c284860cc8d5106ac2b086e62baeb6263873935
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Split parser into generic parser and init parser
+    
+    Change-Id: I451ebc4ff12f2ac660eb533fa10ad561fa25c9dd
+    init: Handle commands in event queue loop
+    
+    Change-Id: I679059dae43143f3c8f16b68de5694539b699e50
+    init: Move parser prototypes to parser.h
+    
+    Change-Id: I31db51eb8e8a33a0bd06b41206bc9f9147d16d41
+    Implementation of open_memstream().
+    
+    POSIX seems to have chosen open_memstream() over the BSD variant.  We
+    want something for Dalvik that will work on both GNU/Linux and Android,
+    so this is open_memstream() implemented in terms of BSD funopen().
+    
+    For Windows there's just a stub that calls abort().
+    
+    I'm putting this in libcutils since it seems inappropriate for bionic
+    (which provides the BSD alternatives) but isn't Dalvik-specific.
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    init: call restorecon on /sys
+    
+    Not all files on /sys are not getting labeled properly. Fix them.
+    
+    Change-Id: I9dcff76354e7f50d41f1b6e702836cfbbc149278
+    Add support for socket security context specification.
+    
+    Add an optional argument to the socket option for specifying
+    a SELinux security context for the socket.  Normally the socket
+    security context is automatically computed from the service security
+    context or set using the seclabel option, but this facility allows
+    dealing with two scenarios that cannot be addressed using the existing
+    mechanisms:
+    1) Use of logwrapper to wrap a service.
+    In this case, init cannot determine the service security context
+    as it does not directly execute it and we do not want logwrapper
+    to run in the same domain as the service.
+    
+    2) Situations where a service has multiple sockets and we want to
+    label them distinctly.
+    
+    Change-Id: I7ae9088c326a2140e56a8044bfb21a91505aea11
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    init: call restorecon on /sys
+    
+    Not all files on /sys are not getting labeled properly. Fix them.
+    
+    Change-Id: I9dcff76354e7f50d41f1b6e702836cfbbc149278
+    Set the SELinux security label on new directories.
+    
+    Automatically set the SELinux security label on directories created
+    by init.rc.  This avoids the need to separately call restorecon on
+    each such directory from the init.rc file.  Also restorecon /dev
+    and /dev/socket after initial policy load so that they are labeled
+    correctly before any other dev nodes or sockets are created.
+    
+    Change-Id: If6af6c4887cdead949737cebdd673957e9273ead
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Pick up on androidboot.hardware kernel cmd option
+    
+    x86 emulator passes hardware name through the androidboot.hardware kernel cmd option, and
+    ueventd must pick up on it to locate proper ueventd.rc file for that hardware.
+    
+    Change-Id: Id61c5b67fe6275a15c7aa62556e0b89eda7968f8
+    init: Add ueventd.rc parsing to ueventd
+    
+    Change-Id: Iea53050d6c10e8cabf563e5d80e84eaf78873695
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Add wait command and mount wait flag
+    
+    Change-Id: I6b4c10f8f246095a7fb7342388ec4f6ff97d5733
+    init: create symlinks to block device nodes
+    
+    eMMC block device names may change based on the detection order of
+    the eMMC device and any other SD bus devices, such as a removable SD
+    card.
+    
+    This patch adds support to init for:
+      * Symlinks to block devices.  When a block device uevent is
+        processed, if it starts with "/devices/platform", the platform
+        driver name is parsed out, and symlinks to the block device are
+        created in /dev/block/platform/<platform driver>/
+      * Symlinks based on partition name and number.  If the uevent for
+        a block device contains information on the partition name or
+        number, symlinks are created under
+        /dev/block/platform/<platform driver>/by-num/p<partition>
+        and
+        /dev/block/platform/<platform driver>/by-name/<partition name>
+    
+    init.rc can then use a device path like the following to mount an
+    eMMC device:
+    /dev/block/platform/<platform>/by-name/system /system ro
+    
+    Change-Id: Id11bb7cdf1e2ada7752a5bd671cbf87237b34ae2
+    init: Move prototypes for util.c into util.h
+    
+    Change-Id: I46a91849ce5297eb2597dd6134412f817564ec24
+    init: Move keychords to keychords.c
+    
+    Change-Id: I8fba9f5f73439a451fc961f8111612dff4fb5dfd
+    eclair snapshot
+    nexus: Rollup update for nexus
+    
+    nexus: Change field separator from : to ' '
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some prototypes for stuff to come
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some TODOs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Put a proper token parser into the FrameworkListener which
+    supports minimal \ escapes and quotes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Fix a lot of bugs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Remove some debugging
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Send broadcasts for supplicant state changes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Plumb DHCP listener state changes to NetworkManager
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make the SupplicantState strings more parsable
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Broadcast a message when dhcp state changes.
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add a few new response codes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rename ErrorCode -> ResponseCode
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add DHCP event broadcasting. Also adds the framework for
+    tracking supplicant 'searching-for-AP' state
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: REmove WifiScanner
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Change the way scanning works. scanmode can now be selected
+    independantly of triggering a scan. Also adds rxfilter support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add support for configuring bluetooth coexistence scanning and modes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: use case insensitive match for property names
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rollup of a bunch of stuff:
+        - 'list' command now takes an argument to match against
+        - InterfaceConfig has been moved into the Controller base (for now)
+        - DhcpClient now has some rudimentry locking
+        - process 'ADDRINFO' messages from dhcpcd
+        - Drop tertiary dns
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up some of the supplicant variable parsing and add 'wifi.current'
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add driver-stop/start, initial suspend support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add Controller suspend/resume callbacks, as well as locking
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make ARP probing configurable for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add linkspeed / rssi retrieval
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add WifiStatusPoller to track RSSI/linkspeed when associated
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Disable some debugging and add 'wifi.netcount' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Replace the hackish property system with something more flexible with namespaces
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Fix a few bugs in SocketListener
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: PropertyManager: Add array support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up properties
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: WifiController: Change name of 'CurrentNetwork' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Add skeleton for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Refactor some of the create/remove network path and add code for
+           retrieving network lists from supplicant
+    nexus: Rework properties
+    nexus: Implement wifi network enable/disable and add some error checking
+    nexus: Add some TODOs
+    nexus: Whitespace cleanup
+    nexus: Add bindings between controllers and network interfaces
+    nexus: Add properties for InterfaceConfig
+    nexus: Fix a few conversion bugs in InterfaceConfig
+    
+    Signed-off-by: San Mehat <san@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@127101
+    Initial Contribution
+    init: add subsystem rules to ueventd.rc
+    
+    By default ueventd creates device nodes under /dev based on the ueventd
+    DEVPATH.  Several subsystems have special rules which are hardcoded in
+    devices.c.  Moving forward these special rules should go in ueventd.rc.
+    
+    Special rules have the syntax:
+    
+            subsystem <s>
+                    devname (uevent_devname|uevent_devpath)
+                    [dirname <dir>]
+    
+    Devices matching SUBSYSTEM=<s> will be populated under <dir>.  dirname
+    is optional and defaults to /dev.  If dirname is provided, <dir> must
+    start with "/".
+    
+    If devname is uevent_devname, ueventd will create the device node as
+    <dir>/DEVNAME.  DEVNAME may include intermediate subdirectories, which
+    ueventd will automatically create.
+    
+    If devname is uevent_devpath, ueventd will use the legacy behavior of
+    computing DEVPATH_BASE=basepath(DEVPATH), and creating the device node
+    as <dir>/DEVPATH_BASE.
+    
+    The new parsing code is based on init_parser.c, with small tweaks to
+    handle commands which don't fall under a section header.
+    
+    Change-Id: I3bd1b59d7e62dfc9d289cf6ae889e237fb5bd7c5
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Add ueventd.rc parsing to ueventd
+    
+    Change-Id: Iea53050d6c10e8cabf563e5d80e84eaf78873695
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Fix parser line numbering
+    
+    Change-Id: I1ac481a2cef749b26c73bc9e6a212e6ace7a0ae2
+    init: Fix parser line numbering
+    
+    Change-Id: I3885dd7d631e7330d92780df822b3ee1a8d0350b
+    Signed-off-by: Bruce Beare <brucex.j.beare@intel.com>
+    [PATCH] Init - make sure the last parameter to execve is NULL
+    
+    We alloc exactly the number of parameters in parse_line_action.
+    When these parameters are for execve, which request the argv
+    terminated by a NULL, it may fail randomly, depends on what
+    is there after the end of the buffer we allocated
+    
+    Extend the buffer to hold one more pointer, and make sure
+    it is NULL to fix this bug.
+    
+    Change-Id: I180df8be3502f51f81a6abb6ebf5c156eb59c9fc
+    Signed-off-by: Ethan <ethan.too@gmail.com>
+    init: Split parser into generic parser and init parser
+    
+    Change-Id: I451ebc4ff12f2ac660eb533fa10ad561fa25c9dd
+    init: Add wait command and mount wait flag
+    
+    Change-Id: I6b4c10f8f246095a7fb7342388ec4f6ff97d5733
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    init: Handle commands in event queue loop
+    
+    Change-Id: I679059dae43143f3c8f16b68de5694539b699e50
+    init: Move prototypes for util.c into util.h
+    
+    Change-Id: I46a91849ce5297eb2597dd6134412f817564ec24
+    init: Move parser prototypes to parser.h
+    
+    Change-Id: I31db51eb8e8a33a0bd06b41206bc9f9147d16d41
+    init: Add support for specifying a services i/o priority
+    
+    Signed-off-by: San Mehat <san@google.com>
+    eclair snapshot
+    added chdir/chroot commands to init for mount switching/pivoting
+    init: builtins: Add 'copy' command to init.rc parser
+    
+    Signed-off-by: San Mehat <san@google.com>
+    init: Add the ability to start services with dynamic arguments.
+    
+        To add arguments dynamically to a service, start the service like so:
+    
+        setprop ctl.start service_to_run:arg1 arg2 arg3...
+    
+        To start a service with *no* dynamic arguments, start the service normally:
+    
+        setprop ctl.start service_to_run
+    
+        Dynamic arguments are only supported on 'oneshot' services
+    
+    Signed-off-by: San Mehat <san@google.com>
+    init: Fix some broken code that did not cause problems until switching to gcc 4.4
+    
+    Signed-off-by: Mike Lockwood <lockwood@android.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@125939
+    Code drop from //branches/cupcake/...@124589
+    Initial Contribution
+    init: add subsystem rules to ueventd.rc
+    
+    By default ueventd creates device nodes under /dev based on the ueventd
+    DEVPATH.  Several subsystems have special rules which are hardcoded in
+    devices.c.  Moving forward these special rules should go in ueventd.rc.
+    
+    Special rules have the syntax:
+    
+            subsystem <s>
+                    devname (uevent_devname|uevent_devpath)
+                    [dirname <dir>]
+    
+    Devices matching SUBSYSTEM=<s> will be populated under <dir>.  dirname
+    is optional and defaults to /dev.  If dirname is provided, <dir> must
+    start with "/".
+    
+    If devname is uevent_devname, ueventd will create the device node as
+    <dir>/DEVNAME.  DEVNAME may include intermediate subdirectories, which
+    ueventd will automatically create.
+    
+    If devname is uevent_devpath, ueventd will use the legacy behavior of
+    computing DEVPATH_BASE=basepath(DEVPATH), and creating the device node
+    as <dir>/DEVPATH_BASE.
+    
+    The new parsing code is based on init_parser.c, with small tweaks to
+    handle commands which don't fall under a section header.
+    
+    Change-Id: I3bd1b59d7e62dfc9d289cf6ae889e237fb5bd7c5
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    init: limit visibility of init_parser.c helpers
+    
+    To prevent clashing with forthcoming changes to uevent_parser.c
+    
+    Change-Id: I2ee183261c7f43e0e4104a16a280c7ee73d7df96
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    init: delay importing files until after parsing the current file
+    
+    If we process the import directive inline, then the ordering of the
+    commands for the "on xxx" sections would be a little unexpected. The
+    init.rc files do not really have an implied  order as to which section
+    appears and gets processed first. The init code itself provides that
+    ordering explicitly. For the user, the expectation is that if both the
+    current file and the imported file define a section (e.g. "on init"),
+    then the commands in the current file will be executed first, and then
+    the ones from the imported file(s).
+    
+    The current implementation did not do that. It processed the import
+    directive inline, and thus the imported (i.e. dependent) files would
+    appear first in the command lists for the sections. This created
+    unintended side effects and the solution would have been to try and
+    put the import lines somewhere in the middle of the init file. This
+    would be difficult to notice and hard to extract the dependencies.
+    
+    To solve this, we add the imports to a list for each file being parsed
+    and process the list after finishing parsing the file. This provides
+    predictable order for imports and provides a logical flow from the
+    user perspective: the currently parsed file gets to run its commands
+    before the files being imported.
+    
+    Change-Id: I06dc35ff286314060e16b18923683cd2787269de
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: delay importing files until after parsing the current file
+    
+    If we process the import directive inline, then the ordering of the
+    commands for the "on xxx" sections would be a little unexpected. The
+    init.rc files do not really have an implied  order as to which section
+    appears and gets processed first. The init code itself provides that
+    ordering explicitly. For the user, the expectation is that if both the
+    current file and the imported file define a section (e.g. "on init"),
+    then the commands in the current file will be executed first, and then
+    the ones from the imported file(s).
+    
+    The current implementation did not do that. It processed the import
+    directive inline, and thus the imported (i.e. dependent) files would
+    appear first in the command lists for the sections. This created
+    unintended side effects and the solution would have been to try and
+    put the import lines somewhere in the middle of the init file. This
+    would be difficult to notice and hard to extract the dependencies.
+    
+    To solve this, we add the imports to a list for each file being parsed
+    and process the list after finishing parsing the file. This provides
+    predictable order for imports and provides a logical flow from the
+    user perspective: the currently parsed file gets to run its commands
+    before the files being imported.
+    
+    Change-Id: I06dc35ff286314060e16b18923683cd2787269de
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Split parser into generic parser and init parser
+    
+    Change-Id: I451ebc4ff12f2ac660eb533fa10ad561fa25c9dd
+    init: Handle commands in event queue loop
+    
+    Change-Id: I679059dae43143f3c8f16b68de5694539b699e50
+    init: Move parser prototypes to parser.h
+    
+    Change-Id: I31db51eb8e8a33a0bd06b41206bc9f9147d16d41
+    Implementation of open_memstream().
+    
+    POSIX seems to have chosen open_memstream() over the BSD variant.  We
+    want something for Dalvik that will work on both GNU/Linux and Android,
+    so this is open_memstream() implemented in terms of BSD funopen().
+    
+    For Windows there's just a stub that calls abort().
+    
+    I'm putting this in libcutils since it seems inappropriate for bionic
+    (which provides the BSD alternatives) but isn't Dalvik-specific.
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution
+    init: add subsystem rules to ueventd.rc
+    
+    By default ueventd creates device nodes under /dev based on the ueventd
+    DEVPATH.  Several subsystems have special rules which are hardcoded in
+    devices.c.  Moving forward these special rules should go in ueventd.rc.
+    
+    Special rules have the syntax:
+    
+            subsystem <s>
+                    devname (uevent_devname|uevent_devpath)
+                    [dirname <dir>]
+    
+    Devices matching SUBSYSTEM=<s> will be populated under <dir>.  dirname
+    is optional and defaults to /dev.  If dirname is provided, <dir> must
+    start with "/".
+    
+    If devname is uevent_devname, ueventd will create the device node as
+    <dir>/DEVNAME.  DEVNAME may include intermediate subdirectories, which
+    ueventd will automatically create.
+    
+    If devname is uevent_devpath, ueventd will use the legacy behavior of
+    computing DEVPATH_BASE=basepath(DEVPATH), and creating the device node
+    as <dir>/DEVPATH_BASE.
+    
+    The new parsing code is based on init_parser.c, with small tweaks to
+    handle commands which don't fall under a section header.
+    
+    Change-Id: I3bd1b59d7e62dfc9d289cf6ae889e237fb5bd7c5
+    Signed-off-by: Greg Hackmann <ghackmann@google.com>
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Move signal handling to signal_handler.c
+    
+    Change-Id: I3a24afa28a1cd279c749d6f384f687b8de56067e
+    init: Move keychords to keychords.c
+    
+    Change-Id: I8fba9f5f73439a451fc961f8111612dff4fb5dfd
+    eclair snapshot
+    nexus: Rollup update for nexus
+    
+    nexus: Change field separator from : to ' '
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some prototypes for stuff to come
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add some TODOs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Put a proper token parser into the FrameworkListener which
+    supports minimal \ escapes and quotes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Fix a lot of bugs
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Remove some debugging
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Send broadcasts for supplicant state changes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Plumb DHCP listener state changes to NetworkManager
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make the SupplicantState strings more parsable
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Broadcast a message when dhcp state changes.
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add a few new response codes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rename ErrorCode -> ResponseCode
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add DHCP event broadcasting. Also adds the framework for
+    tracking supplicant 'searching-for-AP' state
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: REmove WifiScanner
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Change the way scanning works. scanmode can now be selected
+    independantly of triggering a scan. Also adds rxfilter support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add support for configuring bluetooth coexistence scanning and modes
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: use case insensitive match for property names
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Rollup of a bunch of stuff:
+        - 'list' command now takes an argument to match against
+        - InterfaceConfig has been moved into the Controller base (for now)
+        - DhcpClient now has some rudimentry locking
+        - process 'ADDRINFO' messages from dhcpcd
+        - Drop tertiary dns
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up some of the supplicant variable parsing and add 'wifi.current'
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add driver-stop/start, initial suspend support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add Controller suspend/resume callbacks, as well as locking
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Make ARP probing configurable for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add linkspeed / rssi retrieval
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Add WifiStatusPoller to track RSSI/linkspeed when associated
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Disable some debugging and add 'wifi.netcount' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Replace the hackish property system with something more flexible with namespaces
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    libsysutils: Fix a few bugs in SocketListener
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: PropertyManager: Add array support
+    
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: Clean up properties
+    Signed-off-by: San Mehat <san@google.com>
+    
+    nexus: WifiController: Change name of 'CurrentNetwork' property
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Add skeleton for DhcpClient
+    
+    Signed-off-by: San Mehat <san@google.com>
+    nexus: Refactor some of the create/remove network path and add code for
+           retrieving network lists from supplicant
+    nexus: Rework properties
+    nexus: Implement wifi network enable/disable and add some error checking
+    nexus: Add some TODOs
+    nexus: Whitespace cleanup
+    nexus: Add bindings between controllers and network interfaces
+    nexus: Add properties for InterfaceConfig
+    nexus: Fix a few conversion bugs in InterfaceConfig
+    
+    Signed-off-by: San Mehat <san@google.com>
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    auto import from //branches/cupcake/...@127101
+    Initial Contribution
+    Add watchdogd
+    
+    "/sbin/watchdogd <interval> <margin>" will open /dev/watchdog, try
+    to set the timeout to <interval>+<margin> then write to it every
+    <interval> seconds to reset the watchdog.
+    
+    Change-Id: I15571980cdb868ec19f20e80bf8274b32107d36d
+    init: Fix memory corruption when sanitizing platform paths
+    
+    This commit fixes code that incorrectly increments s when it
+    hits the terminator character of the string being sanitized.
+    This means it will randomly start trashing memory beyond the
+    end of the string being sanitized until it happens to hit two
+    NULs (\0\0) which will break it out of the loop.
+    
+    (cherry picked from commit 07f3fee164bd7ba14ce9b2dd3818006f07162845)
+    
+    Bug: 18885357
+    Change-Id: If6b01fe2b9bd5985f08f1278deb03b311d0170dc
+    Convert all selinux_android_restorecon and _setfilecon calls to new API.
+    
+    libselinux selinux_android_restorecon API is changing to the more
+    general interface with flags and dropping the older variants.
+    
+    Also get rid of the old, no longer used selinux_android_setfilecon API
+    and rename selinux_android_setfilecon2 to it as it is the only API in use.
+    
+    Change-Id: I1e71ec398ccdc24cac4ec76f1b858d0f680f4925
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Move restorecon and restorecon_recursive code to libselinux.
+    
+    This requires telling libselinux to use the sehandle already
+    obtained by init rather than re-acquiring it internally.  init
+    retains ownership of the sehandle because it performs the
+    initial load, uses the sehandle for other purposes (e.g. labeling
+    of directories created via mkdir and labeling of socket files),
+    and handles the policy reload property trigger.
+    
+    Change-Id: I4a380caab7f8481c33eb64fcdb16b6cabe918ebd
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    restorecon_recursive("/sys") speed boot time
+    
+    Currently, the restorecon_recursive("/sys") call in
+    init.c takes approx 2 seconds on hammerhead. This change
+    reduces the delay to 1.2 seconds.
+    
+    1) Avoid double stat call when using nftw (time savings
+    of 0.3 seconds)
+    2) Avoid the repeated calls to is_selinux_enabled() (time
+    savings of 0.5 seconds)
+    
+    Avoid calling lsetfilecon if the file is already properly
+    labeled. This doesn't speed up the restorecon on /sys,
+    but it should help when handling files on /data.
+    
+    Bug: 11640230
+    Change-Id: Ie212ce4f4acade208c5676d60c1f03f50e2388a4
+    init: support longer command lines
+    
+    The Linux kernel supports command lines up to 2048 bytes on x86,
+    see COMMAND_LINE_SIZE in asm/setup.h.
+    
+    If any androidboot.xxxx arguments were past the 1024 byte limit
+    here, they were lost.
+    
+    Change-Id: I6247c511a7de04109490fffa0125801d274a5501
+    Signed-off-by: Andrew Boie <andrew.p.boie@intel.com>
+    init: call restorecon on /sys
+    
+    Not all files on /sys are not getting labeled properly. Fix them.
+    
+    Change-Id: I9dcff76354e7f50d41f1b6e702836cfbbc149278
+    Add support for socket security context specification.
+    
+    Add an optional argument to the socket option for specifying
+    a SELinux security context for the socket.  Normally the socket
+    security context is automatically computed from the service security
+    context or set using the seclabel option, but this facility allows
+    dealing with two scenarios that cannot be addressed using the existing
+    mechanisms:
+    1) Use of logwrapper to wrap a service.
+    In this case, init cannot determine the service security context
+    as it does not directly execute it and we do not want logwrapper
+    to run in the same domain as the service.
+    
+    2) Situations where a service has multiple sockets and we want to
+    label them distinctly.
+    
+    Change-Id: I7ae9088c326a2140e56a8044bfb21a91505aea11
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Allow more characters in partition name links
+    
+    We have several partitions with underscores in their names
+    which would not be properly linked in:
+    /dev/block/platform/msm_sdcc.1/by-name/
+    
+    With this change more characters (_-.) are allowed in
+    partition name links. Also, any other character is
+    replaced with '_' so the resulting link names have the
+    same length as the partition name.
+    
+    Change-Id: I746566c03db98b10326c755692362d2c10e528ae
+    init: call restorecon on /sys
+    
+    Not all files on /sys are not getting labeled properly. Fix them.
+    
+    Change-Id: I9dcff76354e7f50d41f1b6e702836cfbbc149278
+    init: Fix get_hardware_name() to cope with long /proc/cpuinfo output
+    
+    get_hardware_name() uses a fixed size buffer to slurp the contents of
+    /proc/cpuinfo into and with newer multicore systems this is not big
+    enough, leading to the inability to pick up the hardware name.
+    
+    Fix this by using a dynamically allocated, exponentially growing buffer.
+    
+    Change-Id: I51c6c276b6e110f462839e205a4428adc6656e75
+    Signed-off-by: Jon Medhurst <tixy@linaro.org>
+    Remove HAVE_SELINUX guards
+    
+    Change-Id: I8272c573b3c5dc663203bafab68fad5e94d89364
+    Fixed a discarded const qualifier warning
+    
+    Change-Id: I9007924d0bf49705363aa130e6e588a9e0ccdc31
+    Author: Edwin Vane <edwin.vane@intel.com>
+    Reviewed-by: Tareq A Siraj <tareq.a.siraj@intel.com>
+    Set the SELinux security label on new directories.
+    
+    Automatically set the SELinux security label on directories created
+    by init.rc.  This avoids the need to separately call restorecon on
+    each such directory from the init.rc file.  Also restorecon /dev
+    and /dev/socket after initial policy load so that they are labeled
+    correctly before any other dev nodes or sockets are created.
+    
+    Change-Id: If6af6c4887cdead949737cebdd673957e9273ead
+    Signed-off-by: Stephen Smalley <sds@tycho.nsa.gov>
+    Extend init and ueventd for SE Android.
+    
+    Add SE Android support for init and ueventd.
+    
+    init:
+    - Load policy at boot.
+    - Set the security context for service daemons and their sockets.
+    - New built-in commands: setcon, setenforce, restorecon, setsebool.
+    - New option for services: seclabel.
+    
+    ueventd:
+    - Set the security context for device directories and nodes.
+    
+    Change-Id: I98ed752cde503c94d99dfa5b5a47e3c33db16aac
+    Don't parse properties from unsafe files.
+    
+    Don't set properties from files that are unsafe (world-writable
+    or group-writable)
+    
+    Change-Id: I8da539c6446b10596be1d7c2014e4b9aea13e3fd
+    Pick up on androidboot.hardware kernel cmd option
+    
+    x86 emulator passes hardware name through the androidboot.hardware kernel cmd option, and
+    ueventd must pick up on it to locate proper ueventd.rc file for that hardware.
+    
+    Change-Id: Id61c5b67fe6275a15c7aa62556e0b89eda7968f8
+    init/cutils: move list utility code to cutils from init
+    
+    Change-Id: I357ceee813700297d8343159f22a07659e768d41
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init/cutils: move kernel logging interface to libcutils from init
+    
+    Change-Id: Ia0f91b1fcd6cae69d76bf3dd841340958db938a8
+    Signed-off-by: Dima Zavin <dima@android.com>
+    init: Move uevent handling to an external ueventd process
+    
+    Change-Id: Iea6c56013062ade633a1754f7bcf8cf09b3dedc1
+    init: Add wait command and mount wait flag
+    
+    Change-Id: I6b4c10f8f246095a7fb7342388ec4f6ff97d5733
+    init: Move list and log handling to list.h and log.h
+    
+    Change-Id: I298f575c590d0f28b7ad78747f3ebdbba56b7a27
+    init: create symlinks to block device nodes
+    
+    eMMC block device names may change based on the detection order of
+    the eMMC device and any other SD bus devices, such as a removable SD
+    card.
+    
+    This patch adds support to init for:
+      * Symlinks to block devices.  When a block device uevent is
+        processed, if it starts with "/devices/platform", the platform
+        driver name is parsed out, and symlinks to the block device are
+        created in /dev/block/platform/<platform driver>/
+      * Symlinks based on partition name and number.  If the uevent for
+        a block device contains information on the partition name or
+        number, symlinks are created under
+        /dev/block/platform/<platform driver>/by-num/p<partition>
+        and
+        /dev/block/platform/<platform driver>/by-name/<partition name>
+    
+    init.rc can then use a device path like the following to mount an
+    eMMC device:
+    /dev/block/platform/<platform>/by-name/system /system ro
+    
+    Change-Id: Id11bb7cdf1e2ada7752a5bd671cbf87237b34ae2
+    init: Move gettime() to util.c
+    
+    Change-Id: I1df96964763f8baedbc1cea6875d3dfc5e48c065
+    init: Move mtd functions from init.c to util.c
+    
+    Change-Id: I04e8f0ae6cc88af974372872e5617d16e0b1a2c8
+    auto import from //depot/cupcake/@135843
+    auto import from //depot/cupcake/@135843
+    Initial Contribution

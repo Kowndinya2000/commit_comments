@@ -1,0 +1,389 @@
+﻿    Update PCR from 32-bit to 64-bit
+    
+    Update PCR from 32-bit to 64-bit so it can retrieve counters from 64-bit
+    services that do not redundantly publish counters for access by both 32
+    and 64 bit applications
+    Update README with details on new installer capabilities
+    
+    Add details around supported command line parameters
+    
+    Add example usage information
+    Fix minor PerfCounterReporter readme issue
+    
+    Change the default value for "SourceType" in the README from "no
+    default" to "netbios" to reflect the reality that it defaults to
+    netbios.
+    Adding details to the main project README that were removed from Intgs repo.
+    Corrections and enhancements to the PerfCounterReporter Service README
+    Windows documentation cleanup of inaccuracies and placeholder text
+    Update README.md
+    
+    Fixed SignalFuse - > SignalFx
+    Initial code
+    Update PCR from 32-bit to 64-bit
+    
+    Update PCR from 32-bit to 64-bit so it can retrieve counters from 64-bit
+    services that do not redundantly publish counters for access by both 32
+    and 64 bit applications
+    More cleanups to allow building from command line
+    Switch to nugent managing packages and xunit-2.1.0
+    Initial commit of installer project + tools.
+    Build 64-bit builds
+    Initial code
+    Initial code
+    Deploy/Config Improvements for Windows Installer
+    
+    Add support for passing in command line parameters to the Windows
+    Installer for each PerfCounterReporter configuration option
+    
+    Add the ability for PerfCounterReporter to be installed/uninstalled
+    properly in a non-interactive fashion (via msiexec's '/passive' flag)
+    
+    Fix other various minor issues/bugs/shortcomings with the installer code
+    Changed API token validation behavior
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    Initial commit of installer project + tools.
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    More cleanups to allow building from command line
+    Initial commit of installer project + tools.
+    Added check for .NET version.
+    Initial commit of installer project + tools.
+    Add Service "Restart On Error" properties (#28)
+    
+    Add appropriate Windows Service "Restart On Error" properties to
+    alleviate transient resource availability issues at Windows Host Boot
+    Time
+    
+    Bump service version to 1.6.2
+    Update version property for new PCR Installer
+    
+    Update the version info for the PCR installer from 1.5.0 to 1.5.1 for
+    the upcoming rebuild
+    Deploy/Config Improvements for Windows Installer
+    
+    Add support for passing in command line parameters to the Windows
+    Installer for each PerfCounterReporter configuration option
+    
+    Add the ability for PerfCounterReporter to be installed/uninstalled
+    properly in a non-interactive fashion (via msiexec's '/passive' flag)
+    
+    Fix other various minor issues/bugs/shortcomings with the installer code
+    Added check for .NET version.
+    Changed API token validation behavior
+    Removed "launch after install" checkbox. Service starts during install.
+    License update
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    Initial commit of installer project + tools.
+    Update PCR from 32-bit to 64-bit
+    
+    Update PCR from 32-bit to 64-bit so it can retrieve counters from 64-bit
+    services that do not redundantly publish counters for access by both 32
+    and 64 bit applications
+    Deploy/Config Improvements for Windows Installer
+    
+    Add support for passing in command line parameters to the Windows
+    Installer for each PerfCounterReporter configuration option
+    
+    Add the ability for PerfCounterReporter to be installed/uninstalled
+    properly in a non-interactive fashion (via msiexec's '/passive' flag)
+    
+    Fix other various minor issues/bugs/shortcomings with the installer code
+    Added check for .NET version.
+    More cleanups to allow building from command line
+    Removed "launch after install" checkbox. Service starts during install.
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    Initial commit of installer project + tools.
+    License update
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Library update.
+    Initial code
+    Initial code
+    Update PerfCounterReporter solution so that it now uses the latest Metrics.NET.SignalFx.dll which contains an altered FromAppConfig() method signature
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Initial code
+    Deploy/Config Improvements for Windows Installer
+    
+    Add support for passing in command line parameters to the Windows
+    Installer for each PerfCounterReporter configuration option
+    
+    Add the ability for PerfCounterReporter to be installed/uninstalled
+    properly in a non-interactive fashion (via msiexec's '/passive' flag)
+    
+    Fix other various minor issues/bugs/shortcomings with the installer code
+    Update various PerfCounterReporter things to improve OOTB usability
+    
+    Update default configuration of PCR to specify a sourceDimension for PCR
+    metrics of "host" instead of utilizing the current default of
+    "sf_source" that exists within the Metrics.NET.SignalFx shared library.
+    This will make us consistent with host metrics from other platforms and
+    will enable Windows hosts to appear in the host list within SignalFx.
+    
+    Refresh package to pick up a more comprehensive set of IIS performance
+    counters and to also pick up the latest and greatest
+    Metrics.NET.SignalFx.dll.
+    Synthetic Counter Update for PerfCounterReporter
+    
+    Minor update to the "UsedMemory" synthetic counter to use the correct
+    case (per FUSE-9765)
+    Added check for .NET version.
+    Updated texts.
+    More options to configure during installation.
+    Added branding.
+    Optional service start.
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Upgrade to latest Metrics.Net.*
+    Initial code
+    Initial code
+    Fix up some warnings
+    Get rid of PerfTap references in code
+    Initial code
+    Fix "usedmemory" counter bug and add 2 new counters
+    
+    Fix a bug that can cause the "\SignalFx\UsedMemory" performance counter
+    to never be updated.
+    
+    Add 2 new OOTB system counters to provide a better indicator of overall
+    system performance and to help better detect underlying hardware failure
+    situations.
+    FUSE-7065 perfcounterreporter no longer runs on Windows 7
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Fix up some warnings
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Initial code
+    Fix up some warnings
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Update various PerfCounterReporter things to improve OOTB usability
+    
+    Update default configuration of PCR to specify a sourceDimension for PCR
+    metrics of "host" instead of utilizing the current default of
+    "sf_source" that exists within the Metrics.NET.SignalFx shared library.
+    This will make us consistent with host metrics from other platforms and
+    will enable Windows hosts to appear in the host list within SignalFx.
+    
+    Refresh package to pick up a more comprehensive set of IIS performance
+    counters and to also pick up the latest and greatest
+    Metrics.NET.SignalFx.dll.
+    Refreshed package dependencies to pull in Metrics.NET.SignalFX bug fixes
+    Updated dependecies to use the new Metrics.NET.SignalFx 2.2.1.0 which has a fix for backward compatibility when no source dimenson is specified
+    Update PerfCounterReporter solution so that it now uses the latest Metrics.NET.SignalFx.dll which contains an altered FromAppConfig() method signature
+    Cleanup signing stuff to use our real key
+    Switch to nugent managing packages and xunit-2.1.0
+    Project build fix
+    Initial commit of installer project + tools.
+    Library update.
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Build 64-bit builds
+    Upgrade to latest Metrics.Net.*
+    Initial code
+    Initial code
+    Initial code
+    Update various PerfCounterReporter things to improve OOTB usability
+    
+    Update default configuration of PCR to specify a sourceDimension for PCR
+    metrics of "host" instead of utilizing the current default of
+    "sf_source" that exists within the Metrics.NET.SignalFx shared library.
+    This will make us consistent with host metrics from other platforms and
+    will enable Windows hosts to appear in the host list within SignalFx.
+    
+    Refresh package to pick up a more comprehensive set of IIS performance
+    counters and to also pick up the latest and greatest
+    Metrics.NET.SignalFx.dll.
+    Refreshed package dependencies to pull in Metrics.NET.SignalFX bug fixes
+    Updated dependecies to use the new Metrics.NET.SignalFx 2.2.1.0 which has a fix for backward compatibility when no source dimenson is specified
+    Update PerfCounterReporter solution so that it now uses the latest Metrics.NET.SignalFx.dll which contains an altered FromAppConfig() method signature
+    More cleanups to allow building from command line
+    Switch to nugent managing packages and xunit-2.1.0
+    Initial commit of installer project + tools.
+    Library update.
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Upgrade to latest Metrics.Net.*
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Stop using Metrics.NET reporter loop
+    
+    Due to the transient nature of PerformanceCounters, Metrics.NET
+    register once, nrever unregister model is not quite an ideal fit
+    for the PerfCounterReporter.
+    
+    We now rescan the files before each report, and update the set
+    of PerfCounters we are watching. Once we have the set we are
+    reporting for this round, we report. We also clean up any
+    unused PerfCounter objects at this point.
+    Initial code
+    Initial code
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Initial code
+    Initial code
+    Initial code
+    Upgrade to 1.0.3.4
+    Bump to version 1.0.3.3
+    Update version to 1.0.3.2
+    Update version to 1.0.3.1
+    Initial commit of installer project + tools.
+    Upgrade version 1.0.3.0
+    Updated assembly version
+    Upgrade to latest Metrics.Net.*
+    Initial code
+    Initial code
+    Initial code
+    Initial code
+    Add additional useful system performance counters (#27)
+    
+    * Add additional useful system performance counters
+    
+    Add additional network and physical/logical disk counters that are
+    available as a part of PerfCounterReporter's default configuration
+    
+    * fix typo in Network Interface Error comment
+    Added network interface counters (#25)
+    
+    * Added network interface bytes received, sent, and current bandwidth
+    
+    * Added missing characters and removed ticks.
+    Fix "usedmemory" counter bug and add 2 new counters
+    
+    Fix a bug that can cause the "\SignalFx\UsedMemory" performance counter
+    to never be updated.
+    
+    Add 2 new OOTB system counters to provide a better indicator of overall
+    system performance and to help better detect underlying hardware failure
+    situations.
+    FUSE-5940 Added synthetic counter for UsedMemory.
+    Added 2 performance counters for Logical Disk Free Megabytes and % Free
+    Space
+    Initial code
+    Added Extra counters useful in monitoring IIS
+    Added Handle Count
+    
+    Added w3wp Handle Count performance counter
+    Cleaned up and added some more IIS counters
+    Modified IIS counters
+    Initial code
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Update PCR from 32-bit to 64-bit
+    
+    Update PCR from 32-bit to 64-bit so it can retrieve counters from 64-bit
+    services that do not redundantly publish counters for access by both 32
+    and 64 bit applications
+    Initial commit of installer project + tools.
+    Initial commit of installer project + tools.
+    Initial code
+    Initial code
+    Switch to nugent managing packages and xunit-2.1.0
+    Initial code
+    Switch to nugent managing packages and xunit-2.1.0
+    Build 64-bit builds
+    Initial code
+    Initial code
+    Switch to nugent managing packages and xunit-2.1.0
+    Switch to nugent managing packages and xunit-2.1.0
+    Switch to nugent managing packages and xunit-2.1.0
+    Initial code

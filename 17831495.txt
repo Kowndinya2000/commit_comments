@@ -1,0 +1,2423 @@
+﻿    Update CONTRIBUTING.md
+    Update CONTRIBUTING.md
+    Update CONTRIBUTING.md
+    Add CONTRIBUTING.md
+    
+    *Heavily* based on Octokit's text :)
+    Update README
+    
+    Also just changes the modifier of a variable...
+    Update README
+    Build badges!
+    Update README.md
+    - updated readme.md
+    Update README.md
+    removing references to our build servers
+    
+    tidying up low memory optimization section
+    Update README.md again
+    Update README.md
+    Update README.md
+    updated config and settings doco
+    Update Unity version, need 5.0.0p2
+    unity 5 read me update with universal only support
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    script detail updates
+    minor read me updates
+    Update README.md
+    Update README.md
+    Update README.md
+    Add Exception Logging feature
+    
+    Added the Exception Logging settings to the Features window.
+    
+    New Exception Logging settings API added to FeaturesManager.
+    
+    Added Exception Logging enabled for current environment status
+    to the info screen on FaceFlip.
+    
+    Resolves: #174.
+    Update README.md
+    Fix typo in readme (specify)
+    Fix typo in readme
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    
+    Adds information about the Features window.
+    
+    Resolves: #80.
+    Update README.md
+    
+    Updates the README file with the new paths.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    
+    Added information for new Init.ps1 script
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    simplifying exception logging bits
+    Testing change to git config
+    Update README.md
+    Added info about test exceptions
+    Added Raygun.io instructions
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Added NuGet link for AppResLibGenerator
+    Added note about AppResLibGenerator NuGet
+    Added AppResLibGenerator and localization instructions
+    Added Windows Phone links
+    Update README.md
+    Updated readme to reflect that there is now a small test unity project
+    Update README.md
+    Updated README.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Made AppResLib usage and documentation more clear
+    Put some live tiles code in CommonMainPage.cs.
+    Update readme with more XAML information
+    Update Readme with namespace and XAML instructions
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Added AppResLib solution, used to generate localized names on WP8.
+    First commit.
+    Added true/false to the IncludeExamples prompt
+    Fix MemoryOptimizerExcludeList path
+    - updated the path
+    - fixed logic error
+    - renamed files
+    - made sure that MemoryOptimizerExcludeList.csv is cleared only when example project is NOT included
+    - added 2 test assets to MemoryOptimizerExcludeList
+    - fixed memory optimizer.
+    - added WindowsAssetIgnoreList.csv
+    - updated Init.ps1 to clear the contents of ignore list on invocation
+    Remove non-universal support
+    Fix init script
+    
+    Init script was deleting everything in Assets folder if IncludeExamples is set to false.
+    Update init.ps1 script
+    Add support to run the script directly to rename the windows solution only
+    
+    Also fixed an encoding issue caused by renaming resources files.
+    Always copy WindowsUniversalSolution
+    Update Init.ps1 script
+    fixed typo
+    updated init script for review and fixing
+    Modify to use *.*proj
+    Fix init script
+    
+    Need to include *.shproj files when searching for files to rename.
+    Update Init.ps1 for universal support
+    Modify the init script
+    
+    Modified to only run the recursive check on the WindowsSolution folder.
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    making sure script updates values in resx files
+    ensuring Nuget folder is copied to the Unity project root
+    fixed issue with sln file not being updated
+    fixed duplicate assets folder copy and gitignore not copying to correct target directory
+    Added .gitignore copy-ing
+    Fixed pattern matching issue
+    Added new initialization Uber script
+    Fix VS project for Unity5
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add Play Video button
+    
+    Added a button to demonstrate VideoPlayer usage in WinIntegration.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update test certificate
+    Fix VS project for Unity5
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change the organization of some menu items, add an item to run memory optimization
+    - cleaned up the code
+    - Added method that removes unused assets created by Unity
+    Remove non-universal support
+    Fix more API changes for Unity5
+    Fix some of the API changes for Unity5
+    Remove all private keywords
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Modify BuildAll to call BuildFromMenu methods
+    Remove all warnings
+    Reorder MarkerMetro menu items
+    Move MarkerMetro menu to Tools
+    
+    Resolves: #111.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add namespace to scripts under Assets/Editor
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    A better error handling for building via command line.
+    Added Build player user settings
+    First commit.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Rename classes
+    Add support to build local plugins from Unity.
+    Add Configure editor window to choose local WinLegacy, WinIntegration, NuGet Scripts dir
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Fix menu item organization
+    Change the organization of some menu items, add an item to run memory optimization
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Reorder MarkerMetro menu items
+    Move MarkerMetro menu to Tools
+    
+    Resolves: #111.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add namespace to scripts under Assets/Editor
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    First commit.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    - renamed files
+    - made sure that MemoryOptimizerExcludeList.csv is cleared only when example project is NOT included
+    - added 2 test assets to MemoryOptimizerExcludeList
+    - fixed memory optimizer.
+    - added WindowsAssetIgnoreList.csv
+    - updated Init.ps1 to clear the contents of ignore list on invocation
+    Fix menu item organization
+    Change the organization of some menu items, add an item to run memory optimization
+    Change how the Memory Optimizer works, dramatically
+    
+    Now it doesn't work through asset importation, you have to call the method
+    OptimizeSettings() which will look for all texture assets in the project
+    and optimize them all except for those who are specified in a CSV file.
+    
+    Also audio optimization has been erased from this code. If you need to
+    optimize audio, that's your problem and I don't care.
+     - cleaned up memory optimizer. added appropriate comments
+    - updated comments on memory optimizer
+    - changed variable names so that they make more sense
+    -updated memoryotimizer to be universal
+    Fix more API changes for Unity5
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add namespace to scripts under Assets/Editor
+    Enhancements to the memory optimization script. Now it's safe to run the resizing tool multiple times in the same textures. Also it will never resize a texture to a size below 32 pixels.
+    Updated the memory optimizer script to include resizing, refactored the code.
+    Renamed script file.
+    Improved DTX5 asset processor implementation
+    renamed file
+    renamed file
+    update to latest from GOTG
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Created a script that tries to apply a DTX5 compression to a texture when importing it.
+    Fix conflict between 2 BuildConfigs
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    Allow user to choose directory of vsvars.bat file
+    Both nuget update and build local script file needs to be in the same folder as nuget.exe
+    Only show Nuget Dir if Nuget selected, and the Local Directories if Local selected
+    Added progress bar while updating plugins
+    Rename classes
+    Copy plugin dlls to appropriate directories for Build Local
+    Add support to build local plugins from Unity.
+    Add namespace to scripts under Assets/Editor
+    Add plugin source, build local configuration in Configure.
+    Modify plugin menus
+    Add Configure editor window to choose local WinLegacy, WinIntegration, NuGet Scripts dir
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add namespace to scripts under Assets/Editor
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    First commit.
+    Fix conflict between 2 BuildConfigs
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    Allow user to choose directory of vsvars.bat file
+    Both nuget update and build local script file needs to be in the same folder as nuget.exe
+    Only show Nuget Dir if Nuget selected, and the Local Directories if Local selected
+    Choose button now default to the existing location
+    Rename classes
+    Copy plugin dlls to appropriate directories for Build Local
+    Add support to build local plugins from Unity.
+    Add namespace to scripts under Assets/Editor
+    Add plugin source, build local configuration in Configure.
+    Modify plugin menus
+    Add Configure editor window to choose local WinLegacy, WinIntegration, NuGet Scripts dir
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add support to build local plugins from Unity.
+    Added "MarkerMetro/Plugins/Refresh from Nuget", attemp to execute the nuget bat file from Unity Editor
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    - updated the path
+    - renamed files
+    - made sure that MemoryOptimizerExcludeList.csv is cleared only when example project is NOT included
+    - added 2 test assets to MemoryOptimizerExcludeList
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Renamed script file.
+    renamed file
+    renamed file
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Added Asset Reference Finder tool.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change the organization of some menu items, add an item to run memory optimization
+    Clean up the pdbs as part of the nuget update
+    Fix conflict between 2 BuildConfigs
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Reorder MarkerMetro menu items
+    Move MarkerMetro menu to Tools
+    
+    Resolves: #111.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    #53 Show correct progress
+    resolved conflicts in the build local bat script between PRs
+    Revert "Fix local build"
+    Add update timeout to prevent it from updating forever
+    Both nuget update and build local script file needs to be in the same folder as nuget.exe
+    Attempt to restore nuget package before building WinIntegration.
+    Update nuget.exe (required for restoring some packages).
+    Add listener to process ErrorDataReceived.
+    Only show Nuget Dir if Nuget selected, and the Local Directories if Local selected
+    Add period to the end of comment.
+    #48 Prevent plugin update when unity is compiling
+    #51 Modify dialog title
+    Added progress bar while updating plugins
+    Rename classes
+    Copy plugin dlls to appropriate directories for Build Local
+    Add support to build local plugins from Unity.
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add support to build local plugins from Unity.
+    Add Configure editor window to choose local WinLegacy, WinIntegration, NuGet Scripts dir
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change scene to use new sound files
+    
+    I forgot to add this to the last commit.
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Remove ExceptionLogger monobehaviour
+    
+    Removes the ExceptionLogger class and changes IntegrationManager to be
+    a static class that should initialize all the stuff the today is using
+    the Awake method of a MonoBehaviour to make its initialization.
+    
+    IntegrationManager.Init() should be called on the Windows side as soon
+    as Unity is ready to run its things.
+    
+    Made a scene change to remove ExceptionLogger from the game object it
+    was attached to.
+    Change UI layout
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Add reminder test
+    Fixed missing script link.  Now builds with moved Unity test project
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added Raygun.io to all projects
+    Slight asset change
+    Facebook friends now gets pictures as well
+    Added GUIStore for IAP testing
+    Device Information now working correctly.  WMAppManifest.xml need ID_CAP_IDENTITY_USER capability for Helper.GetUserDeviceId() to work correctly.
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Replace audio files from Sports Jeopardy with from freesound.com
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Fix some of the API changes for Unity5
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Change UI layout
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    -updated ifdefs
+    -updated ifdefs
+    Change how reminders setting work in charm settings
+    
+    To be consistent with music and sound settings.
+    Refactor IntegrationManager To GameController
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Always send log when the Log Unity Exception button is pressed
+    Remove StackTraceUtility test
+    updated ex logging integration to require restart after setting api key
+    moved to c# config rather than menu features
+    Fix textfield UI
+    Add textfield allow input API key for ExceptionLogger
+    Remove unused using
+    Remove auto logging on throw exception button pressed
+    Update scene for exception logging and update crash testing control
+    Add Exception Logging feature
+    
+    Added the Exception Logging settings to the Features window.
+    
+    New Exception Logging settings API added to FeaturesManager.
+    
+    Added Exception Logging enabled for current environment status
+    to the info screen on FaceFlip.
+    
+    Resolves: #174.
+    Re-enable IsLowEndDevice info for WP8.1
+    Keep Game UI in center when game is in progress
+    Add dialog on retrieve product error
+    Show environment configuration in info panel
+    Stop using IsLowEndDevice on WP8.1
+    
+    It doesn't work on WP8.1, ifdef out this temporary until we fix IsLowEndDevice for WP8.1.
+    Change UI layout
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Change UI layout
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Fix iap for WP8
+    Add iap simulator
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Facebook friends now gets pictures as well
+    Added GUIStore for IAP testing
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Fix some of the API changes for Unity5
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Facebook friends now gets pictures as well
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Change UI layout
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    -updated ifdefs
+    -updated ifdefs
+    - updated ifdefs on GameMaster
+    - resets tiles on facebook logout
+    - updates tiles on facebook login
+    Remove non-universal support
+    Add WP8.1 specific plugins
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    app crash test delegate supplied within Init and not exposed
+    Fix some of the API changes for Unity5
+    Change how reminders setting work in charm settings
+    
+    To be consistent with music and sound settings.
+    refactored gamecontroller to use init method for setting config and settings
+    gamecontroller refactor
+    Remove all private keywords
+    Refactor IntegrationManager To GameController
+    Update Init.ps1 script
+    Fix faceflip game
+    
+    https://trello.com/c/MGd6Ds7I/198-game-freezes-after-guessing-wrong
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Remove all warnings
+    Fix !IsActive && !GetRunInEditMode error
+    
+    This error was caused by calling gameObject.SetActive in OnGUI, modified to call it from Update instead.
+    Fix Faceflip game
+    
+    Leaving a game half way through a face search should still reset the game.
+    Update reminder info automatically
+    
+    Also changed visual assets' (also affects notification toast) foregroundText to light, because background is black.
+    Remove StackTraceUtility test
+    fixed bug
+    updated ex logging integration to require restart after setting api key
+    moved to c# config rather than menu features
+    Add textfield allow input API key for ExceptionLogger
+    Update scene for exception logging and update crash testing control
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Add Exception Logging feature
+    
+    Added the Exception Logging settings to the Features window.
+    
+    New Exception Logging settings API added to FeaturesManager.
+    
+    Added Exception Logging enabled for current environment status
+    to the info screen on FaceFlip.
+    
+    Resolves: #174.
+    Re-enable IsLowEndDevice info for WP8.1
+    Catch exception thrown by GetUserDeviceId on some devices
+    Modify text for store product retrieve error
+    Add dialog on retrieve product error
+    Show environment configuration in info panel
+    Stop using IsLowEndDevice on WP8.1
+    
+    It doesn't work on WP8.1, ifdef out this temporary until we fix IsLowEndDevice for WP8.1.
+    Change UI layout
+    Rename PickContactsAndSendEmail to SendEmail
+    Rename a button
+    Remove email contact picker
+    
+    Email contact picker was removed from WinIntegration, so now we are
+    just sending a test email to an address as a way to desmonstrate the
+    launcher.
+    
+    Resolves: #123.
+    Fix small details
+    
+    Fixed dialog string when buying moves on FaceFlip.
+    
+    Made the tile dynamic to better test its update.
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Don't use FB and Reminder on startup in Unity Editor
+    #59 WinShared - NotSupportedException when inviting friends.
+    Fix iap for WP8
+    Add iap simulator
+    Remove reminder countdown, change reminder time to 2 mins
+    Add notification switch in GameSettingFlyout
+    Add reminder test
+    Update plugin dlls, WP8 now both pass in callback at FB Login
+    Update plugin dlls, modify Invite Friend/Post Feed to use AppRequestViaBrowser/FeedViaBrowser
+    Update plugin dlls
+    Update plugin dlls, get user details with FBNative.GetCurrentUser for WP8
+    Update plugin dlls
+    tidy up of namespaces to ensure minimal ifdeffing for fb stuff
+    Wait until end of frame before refreshing FB status after login/logout
+    debug plugins included, fixed logout and app request issues and added logincomplete handling
+    further fb native testing
+    wp8 facebook native initial support
+    fb updates to support cancellation
+    New WinIntegration dll's
+    Example of using FB.AppRequest
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added Raygun.io to all projects
+    Added some function comments
+    Facebook friends now gets pictures as well
+    Added login to FB
+    Added GUIStore for IAP testing
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added GUIStore for IAP testing
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Modify plugin settings
+    massive update
+    Modify plugin settings
+    massive update
+    Update plugin dlls
+    updated winlegacy and winintegration
+    facebook integration complete, with updated winintegration plugin
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update plugin dlls
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    updated plugins
+    Update dlls, remove FBWebView from WP8 project
+    updated winlegacy and winintegration
+    Fixing WACK DEBUG failures
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Modify plugin settings
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update more dlls
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    updated winlegacy and winintegration
+    New WinIntegration dll's
+    Example of using FB.AppRequest
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    Fixing WACK DEBUG failures
+    massive update
+    Update plugin dlls
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Add WP8.1 specific plugins
+    Update WinIntegration dlls
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    support for ex logging with api key in app settings
+    updated plugins
+    Add textfield allow input API key for ExceptionLogger
+    Update WinIntegration dlls
+    Update scene for exception logging and update crash testing control
+    Update WinIntegration dlls
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Update WinIntegration to 1.8.0.28
+    Update WinIntegration dlls
+    updated plugins
+    removed bugsense and updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update plugin dlls
+    Add dialog on success or fail log exception
+    Add FBNative universal support
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add Play Video button
+    
+    Added a button to demonstrate VideoPlayer usage in WinIntegration.
+    updated plugins
+    Update WinIntegration dlls
+    Update WinIntegration dlls
+    Update plugin dlls, WP8 now both pass in callback at FB Login
+    Update plugin dlls, modify Invite Friend/Post Feed to use AppRequestViaBrowser/FeedViaBrowser
+    Update plugin dlls
+    Update plugin dlls, get user details with FBNative.GetCurrentUser for WP8
+    Update plugin dlls
+    Update dlls, remove FBWebView from WP8 project
+    Fix back key to close facebook dialog
+    Update plugin dlls
+    Update plugin dlls
+    FBNative - Web dialog - added back button cancellation and Unity notification on dismissal/failure, update plugin dlls
+    updated plugin dlls
+    debug plugins included, fixed logout and app request issues and added logincomplete handling
+    further fb native testing
+    wp8 facebook native initial support
+    updated winlegacy and winintegration
+    New WinIntegration dll's
+    Example of using FB.AppRequest
+    Changed ExceptionLogger, added CommonApp.cs and Debug-only UI elements
+    Updated WinIntegration
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    Added Raygun.io to all projects
+    Added Raygun.io implementation
+    Fixing WACK DEBUG failures
+    Facebook friends now gets pictures as well
+    Fixes for updated WinIntegration and FB updates
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    Modify plugin settings
+    massive update
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update plugin dlls
+    updated winlegacy and winintegration
+    facebook integration complete, with updated winintegration plugin
+    Add WP8.1 specific plugins
+    Fix VS project for Unity5
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update plugin dlls
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    updated plugins
+    Update dlls, remove FBWebView from WP8 project
+    updated winlegacy and winintegration
+    Fixing WACK DEBUG failures
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update more dlls
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    updated winlegacy and winintegration
+    New WinIntegration dll's
+    Example of using FB.AppRequest
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    Fixing WACK DEBUG failures
+    massive update
+    Update plugin dlls
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Add WP8.1 specific plugins
+    Update WinIntegration dlls
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    support for ex logging with api key in app settings
+    updated plugins
+    Add textfield allow input API key for ExceptionLogger
+    Update WinIntegration dlls
+    Update scene for exception logging and update crash testing control
+    Update WinIntegration dlls
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Update WinIntegration to 1.8.0.28
+    Update WinIntegration dlls
+    updated plugins
+    removed bugsense and updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update plugin dlls
+    Add dialog on success or fail log exception
+    Add FBNative universal support
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add Play Video button
+    
+    Added a button to demonstrate VideoPlayer usage in WinIntegration.
+    updated plugins
+    Update WinIntegration dlls
+    Update WinIntegration dlls
+    Update plugin dlls, WP8 now both pass in callback at FB Login
+    Update plugin dlls, modify Invite Friend/Post Feed to use AppRequestViaBrowser/FeedViaBrowser
+    Update plugin dlls
+    Update plugin dlls, get user details with FBNative.GetCurrentUser for WP8
+    Update plugin dlls
+    Update dlls, remove FBWebView from WP8 project
+    Fix back key to close facebook dialog
+    Update plugin dlls
+    FBNative - Web dialog - added back button cancellation and Unity notification on dismissal/failure, update plugin dlls
+    updated plugin dlls
+    further fb native testing
+    wp8 facebook native initial support
+    updated winlegacy and winintegration
+    New WinIntegration dll's
+    Example of using FB.AppRequest
+    Changed ExceptionLogger, added CommonApp.cs and Debug-only UI elements
+    Updated WinIntegration
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    Added Raygun.io to all projects
+    Added Raygun.io implementation
+    Fixing WACK DEBUG failures
+    Facebook friends now gets pictures as well
+    Fixes for updated WinIntegration and FB updates
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    Fix LitJson import settings for Unity 5.0.2f1
+    
+    Still works in Unity5.0.1.
+    Modify plugin settings
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update plugin dlls
+    Add WP8.1 specific plugins
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    updated mm plugins, added wp81 winintegration
+    - updated winLegacy and WinIntegration plugins for unity
+    Modify update plugin scripts
+    
+    Need to copy WinLegacy to WindowsPhone81 folder as well.
+    Add WP8.1 specific plugins
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    updated plugins
+    updated mm plugins, added wp81 winintegration
+    Update plugin dlls
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    updated plugins
+    Update dlls, remove FBWebView from WP8 project
+    updated winlegacy and winintegration
+    Fixing WACK DEBUG failures
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    Update plugin dlls
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Add WP8.1 specific plugins
+    Update Facebook.Client dll
+    
+    Get the Facebook AppID from FacebookConfig.xml (temp)
+    Add FBNative universal support
+    Add WP8.1 specific plugins
+    Fix VS project for Unity5
+    Modify plugin settings
+    Add FBNative universal support
+    wp8 facebook native initial support
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add WP8.1 specific plugins
+    Modify plugin settings
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update plugin dlls
+    - updated winLegacy and WinIntegration plugins for unity
+    Remove non-universal support
+    Add WP8.1 specific plugins
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    support for ex logging with api key in app settings
+    updated plugins
+    Add textfield allow input API key for ExceptionLogger
+    Update WinIntegration dlls
+    Update scene for exception logging and update crash testing control
+    Update WinIntegration dlls
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Update WinIntegration to 1.8.0.28
+    Update WinIntegration dlls
+    removed bugsense and updated plugins
+    updated mm plugins, added wp81 winintegration
+    moved to c# config rather than menu features
+    app crash test delegate supplied within Init and not exposed
+    gamecontroller refactor
+    Refactor IntegrationManager To GameController
+    Remove the confirmation dialog before trying to crash app
+    updated ex logging integration to require restart after setting api key
+    moved to c# config rather than menu features
+    Add textfield allow input API key for ExceptionLogger
+    Always display dialog on throw exception button clicked
+    Delay exception logger initialization to after Unity loads
+    Update scene for exception logging and update crash testing control
+    Remove ExceptionLogger monobehaviour
+    
+    Removes the ExceptionLogger class and changes IntegrationManager to be
+    a static class that should initialize all the stuff the today is using
+    the Awake method of a MonoBehaviour to make its initialization.
+    
+    IntegrationManager.Init() should be called on the Windows side as soon
+    as Unity is ready to run its things.
+    
+    Made a scene change to remove ExceptionLogger from the game object it
+    was attached to.
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    further fb native testing
+    added integration manager
+    refactored gamecontroller to use init method for setting config and settings
+    gamecontroller refactor
+    Add private constructor to GameController
+    Fix typo
+    Refactor IntegrationManager To GameController
+    moved to c# config rather than menu features
+    gamecontroller refactor
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change how reminders setting work in charm settings
+    
+    To be consistent with music and sound settings.
+    gamecontroller refactor
+    Refactor IntegrationManager To GameController
+    Refactor IntegrationManager To GameController
+    Fix path of some files
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    moved to c# config rather than menu features
+    moved to c# config rather than menu features
+    Refactor IntegrationManager To GameController
+    added integration manager
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update Init.ps1 script
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update Init.ps1 script
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    Add Play Video button
+    
+    Added a button to demonstrate VideoPlayer usage in WinIntegration.
+    Update Init.ps1 script
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    Add Play Video button
+    
+    Added a button to demonstrate VideoPlayer usage in WinIntegration.
+    Remove non-universal support
+    Modify update plugin scripts
+    
+    Drop support for WP8 and add support for Universal WP8.
+    Clean up the pdbs as part of the nuget update
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    Allow user to choose directory of vsvars.bat file
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    resolved conflicts in the build local bat script between PRs
+    Revert "Fix local build"
+    Attempt to restore nuget package before building WinIntegration.
+    Update nuget.exe (required for restoring some packages).
+    Add listener to process ErrorDataReceived.
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add untested script to run WACK
+    
+    We were not able to run WACK in the build server, but we are transfering
+    the current script to this file anyway, so the server is free of source code.
+    Modify update plugin scripts
+    
+    Need to copy WinLegacy to WindowsPhone81 folder as well.
+    Modify update plugin scripts
+    
+    Drop support for WP8 and add support for Universal WP8.
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    updated build scripts to support wp8.1
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    resolved conflicts in the build local bat script between PRs
+    Revert "Fix local build"
+    Allow user to choose directory of vsvars.bat file
+    Attempt to restore nuget package before building WinIntegration.
+    Update nuget.exe (required for restoring some packages).
+    Add listener to process ErrorDataReceived.
+    Fix local build
+    Added progress bar while updating plugins
+    Copy plugin dlls to appropriate directories for Build Local
+    Add support to build local plugins from Unity.
+    Modify build script
+    
+    Search further for "Exiting batchmode successfully now!" in the log to prevent false build error
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Update code documentation
+    Move `param` to be the first thing on the script otherwise powershell cries
+    Use `trap` to force the freaking exit code
+    Attempt fix parameter assignment error exiting with code 0
+    Add default case in switch to throw error
+    Attempt fix to exit code always zero on TeamCity
+    Change relative paths to absolute ones
+    Lets try named parameters
+    Create script to build Windows solutions
+    
+    Based on the script we were using on TeamCity, this script creates the Windows solutions so on the server we can make a simple call to it.
+    Modify update plugin scripts
+    
+    Need to copy WinLegacy to WindowsPhone81 folder as well.
+    Remove non-universal support
+    Modify update plugin scripts
+    
+    Drop support for WP8 and add support for Universal WP8.
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    Revert "Only include the required dlls in Metro/WindowsPhone81"
+    
+    This reverts commit 478ad9890a447a69fc866dad93f2c7553c4f0439.
+    Only include the required dlls in Metro/WindowsPhone81
+    updated build scripts to support wp8.1
+    #69 Rename Nuget folder on WinShared root to BuildScripts
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add QA solution configuration
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    - moved ignored assets from one gitignore into another.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update .gitignore
+    Create .gitignore
+    Fix Resources language code for Windows Phone
+    
+    es-419, zh-hant, zh-hans aren't supported by phone store.
+    Update WinShared to support Unity 5.2
+    - added updated project file
+    Use NotificationsExtensions for tiles
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Add WP8.1 specific plugins
+    Fix VS project for Unity5
+    Modify plugin settings
+    Fix WP8.1 project PreBuildEvent
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    Update project files
+    Revert "Only include the required dlls in Metro/WindowsPhone81"
+    
+    This reverts commit 478ad9890a447a69fc866dad93f2c7553c4f0439.
+    Only include the required dlls in Metro/WindowsPhone81
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Add Raygun via Nuget
+    Set AppxBundle to Always for UnityProject.WindowsPhone
+    removed pdb file references from project
+    Fix PreBuildEvent
+    remove pdbs from source
+    fix up to project files with assembly converter issues
+    Set to never generate the bundles in the manifest
+    Fix manifest validation error
+    
+    Fixes a manifest validation error that was happening on the build server
+    because of an asset that was being referenced but was not added, despite
+    of not having any errors on VS.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add QA solution configuration
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Modify to use localized DisplayName
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Change background color of visual assets
+    Change DefaultCompany to Marker Metro
+    Change UI layout
+    Fix manifest validation error
+    
+    Fixes a manifest validation error that was happening on the build server
+    because of an asset that was being referenced but was not added, despite
+    of not having any errors on VS.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add FBNative universal support
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Use NotificationsExtensions for tiles
+    Add Raygun via Nuget
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    remove pdbs from source
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Fixed build - Adjusted icon dimensions
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Fix tile update on WP
+    
+    Prevents Unity from pausing the app before the update tile code runs.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Fix manifest validation error
+    
+    Fixes a manifest validation error that was happening on the build server
+    because of an asset that was being referenced but was not added, despite
+    of not having any errors on VS.
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Fix tile update on WP
+    
+    Prevents Unity from pausing the app before the update tile code runs.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Fix manifest validation error
+    
+    Fixes a manifest validation error that was happening on the build server
+    because of an asset that was being referenced but was not added, despite
+    of not having any errors on VS.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Update all the logos!
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Fix tile update on WP
+    
+    Prevents Unity from pausing the app before the update tile code runs.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Update test certificate
+    Fix Resources language code for Windows Phone
+    
+    es-419, zh-hant, zh-hans aren't supported by phone store.
+    Update WinShared to support Unity 5.2
+    Use NotificationsExtensions for tiles
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Add WP8.1 specific plugins
+    Fix VS project for Unity5
+    Modify plugin settings
+    Remove Windows Phone 8.1 plugins
+    
+    Can't use IsLowEndDevice for Windows Phone 8.1 now, but memory output is still possible since its done in MainPage.xaml.
+    Update project files
+    Revert "Only include the required dlls in Metro/WindowsPhone81"
+    
+    This reverts commit 478ad9890a447a69fc866dad93f2c7553c4f0439.
+    Only include the required dlls in Metro/WindowsPhone81
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Add Raygun via Nuget
+    removed pdb file references from project
+    Fix PreBuildEvent
+    remove pdbs from source
+    fix up to project files with assembly converter issues
+    Remove MediumTile and WideTile image from source
+    
+    These will be generated by Unity, don't need to be in source or be part of the project.
+    Set to never generate the bundles in the manifest
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add QA solution configuration
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    adding appxbundle never
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Unity input is now re-enabled when the settings charm flyout closes (as well as when the game settings control is unloaded), so input re-enables immediately when tapping outside of the flyout.
+    Unity input is now disabled while game settings flyout is 'loaded', which seems to prevent clickthrough iif it is visible. However, it also has a slight delay after the flyout is dismissed before input is re-enabled.
+    Change how reminders setting work in charm settings
+    
+    To be consistent with music and sound settings.
+    Refactor IntegrationManager To GameController
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    moved to c# config rather than menu features
+    Make small improvements on Features window and rename some variables
+    Add audio to FaceFlip
+    
+    The purpose is to test the audio settings charm.
+    Change names of settings and layout of Feature window
+    Add Features window to Universal apps
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add Features window
+    
+    Adds a window where the developer can choose which Windows features he/she
+    wants to integrate in the app.
+    
+    These settings are saved to a file that is versioned, so everyone gets the
+    same features.
+    
+    A build in Unity is needed in order for changes in the settings to take
+    effect in the Windows solution.
+    Add notification switch in GameSettingFlyout
+    massive update
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    massive update
+    Modify to use localized DisplayName
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Update reminder info automatically
+    
+    Also changed visual assets' (also affects notification toast) foregroundText to light, because background is black.
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Change background color of visual assets
+    Change DefaultCompany to Marker Metro
+    Change UI layout
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add FB support for universal
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Use NotificationsExtensions for tiles
+    Add Raygun via Nuget
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Update all the logos!
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    remove pdbs from source
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Fixed build - Adjusted icon dimensions
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update all the logos!
+    Update visual assets to use Marker Metro logo
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Rename assets
+    
+    Rename to what Unity is using, to prevent Unity generating unused assets on build.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    #23 - Replaced visual assets with marker branding
+    massive update
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Fix Resources language code for Windows Phone
+    
+    es-419, zh-hant, zh-hans aren't supported by phone store.
+    Remove FacebookConfig.xml, use AppConfig.cs for Facebook AppId
+    Add FacebookConfig for the new Facebook.Client
+    Remove warnings in the visual studio projects
+    moved to c# config rather than menu features
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Add iap simulator to Universal solution
+    Add FB support for universal
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Add iap simulator to Universal solution
+    Add iap simulator
+    massive update
+    Change namespace from Template to UnityProject
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update README
+    
+    Also just changes the modifier of a variable...
+    Update WinShared to support Unity 5.2
+    we don't use a frame
+    Modify plugin settings
+    update to avoid naming clashes with game script usage
+    initialization of exception logger simplified
+    moved to c# config rather than menu features
+    Delay exception logger initialization to after Unity loads
+    Update scene for exception logging and update crash testing control
+    Change namespace from Template to UnityProject
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Re-add Raygun API key and enable it for Master build only
+    Remove RayGun API key
+    Add iap simulator to Universal solution
+    Add FBNative universal support
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Changed ExceptionLogger, added CommonApp.cs and Debug-only UI elements
+    #20 Exception starting FB on Win8.1 - Moved AppCallbacks_Initialized() early in startup flow so they can be called without issues
+    #21 Not getting FB exception - Exception Logger now initialized on Awake() not Start() so it initializes first
+    updated winintegration with raygun support inside it. also ensured crash testing is only on debug builds
+    Added Raygun.io to all projects
+    Added SharedLogger calls in for unhandled exceptions
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update test certificate
+    Fix VS project for Unity5
+    Display memory output for WP8.1
+    Change namespace from Template to UnityProject
+    Add FB support for universal
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    facebook integration complete, with updated winintegration plugin
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Re-add listener to WindowVisibilityChanged
+    
+    Was removed by mistake when we updated the project to 5.2
+    Update README
+    
+    Also just changes the modifier of a variable...
+    Update WinShared to support Unity 5.2
+    Use NotificationsExtensions for tiles
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Fix ExceptionManager init
+    app crash test delegate supplied within Init and not exposed
+    Remove warnings in the visual studio projects
+    refactored gamecontroller to use init method for setting config and settings
+    gamecontroller refactor
+    Refactor IntegrationManager To GameController
+    update to avoid naming clashes with game script usage
+    Remove the confirmation dialog before trying to crash app
+    Display memory output for WP8.1
+    initialization of exception logger simplified
+    moved to c# config rather than menu features
+    Add textfield allow input API key for ExceptionLogger
+    Remove unused using
+    Delay exception logger initialization to after Unity loads
+    Update scene for exception logging and update crash testing control
+    Add Exception Logging feature
+    
+    Added the Exception Logging settings to the Features window.
+    
+    New Exception Logging settings API added to FeaturesManager.
+    
+    Added Exception Logging enabled for current environment status
+    to the info screen on FaceFlip.
+    
+    Resolves: #174.
+    Remove ExceptionLogger monobehaviour
+    
+    Removes the ExceptionLogger class and changes IntegrationManager to be
+    a static class that should initialize all the stuff the today is using
+    the Awake method of a MonoBehaviour to make its initialization.
+    
+    IntegrationManager.Init() should be called on the Windows side as soon
+    as Unity is ready to run its things.
+    
+    Made a scene change to remove ExceptionLogger from the game object it
+    was attached to.
+    Change namespace from Template to UnityProject
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Change names of settings and layout of Feature window
+    Use namespace instead of full name
+    Add Features window to Universal apps
+    Fix small details
+    
+    Fixed dialog string when buying moves on FaceFlip.
+    
+    Made the tile dynamic to better test its update.
+    Fix tile update on WP
+    
+    Prevents Unity from pausing the app before the update tile code runs.
+    Update live tile code to latest
+    
+    Updated the live tile code to the latest found on WindowsSolution\WindowsStore.
+    
+    This code from Chad adds some cycling behaviour to the tiles.
+    Add FB support for universal
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    Add initial Windows Universal files
+    
+    Built using Windows Universal in Unity and added resulting files to version control, ignoring files just like the WindowsSolution folder we have.
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Changed zh-CN/TW to Hans/Hant for Win8 project
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Changed zh-CN/TW to Hans/Hant for Win8 project
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Change urls in the resource files
+    
+    Change from Disney urls to something generic and non existent (http://useyoururl.com/)
+    [WIP] Update App.xaml/MainPage.xaml to included updates from /WindowsSolution
+    
+    Update App.xaml/MainPage.xaml in UnityProject.Shared to ensure our updates are included
+     from /WindowsSolution (plugin initialization).
+    
+    This is a WIP because I still have to check if everything was included and test.
+    
+    Included the newest versions of the libraries to get rid of some errors.
+    Add notification switch in GameSettingFlyout
+    Renamed to UnityProject and associated with markermetro@live.com
+    Updated localization of Win 8.1 names and resources
+    Added Known Translations for Win8
+    Added Windows 8 localized OFT strings
+    massive update
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Remove FacebookConfig.xml, use AppConfig.cs for Facebook AppId
+    Remove static method
+    Update Facebook.Client dll
+    
+    Get the Facebook AppID from FacebookConfig.xml (temp)
+    support for ex logging with api key in app settings
+    initialization of exception logger simplified
+    moved to c# config rather than menu features
+    Remove the outter try/catch in BuildRaygunClient
+    Update scene for exception logging and update crash testing control
+    Change namespace from Template to UnityProject
+    Add RaygunExceptionLogger
+    
+    Implement IExceptionLogger with Raygun implementation, also remove Raygun/BugSense dlls in Unity.
+    Remove warnings in the visual studio projects
+    Change namespace from Template to UnityProject
+    Add a progress bar to the webview
+    Add FB support for universal
+    wp8 facebook native initial support
+    fb updates to support cancellation
+    Fixes for updated WinIntegration and FB updates
+    facebook integration complete, with updated winintegration plugin
+    Change namespace from Template to UnityProject
+    Add a progress bar to the webview
+    Fix xaml parse error on WP8.1
+    Add FB support for universal
+    facebook integration complete, with updated winintegration plugin
+    Upgrade project to Unity5
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update WinShared to support Unity 5.2
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Upgrade project to Unity5
+    moved to c# config rather than menu features
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update WinShared to support Unity 5.2
+    Organize some file paths
+    
+    Moved around some files to have a single MarkerMetro folder in the root and another inside Plugins.
+    Fixed missing script link.  Now builds with moved Unity test project
+    moved all the faceflip stuff to WinIntegrationExample folder in Assets
+    Added login to FB
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update WinShared to support Unity 5.2
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Update WinShared to support Unity 5.2
+    - added assets created by unity to .gitignore
+    - updated unity player settings to have the right assets
+    - removed unused assets
+    - renamed assets to standards
+    - updated unity project settings
+    - renamed everything related to assets and paths in MainPage.xaml.cs
+    - updated manifests to have the correct assets
+    - refactored live tile code - tiles are flipping now
+    - added missing assets
+    - fixed the bug with unity generating files
+    - corrected manifest file to have the right image assets
+    Add WP8.1 specific plugins
+    Fix VS project for Unity5
+    Upgrade project to Unity5
+    Fix namespaces
+    
+    Also adds a few changes to names and paths.
+    
+    Resolves: #190
+    Set orientation to landscape for WP8.0
+    Change path of video file
+    
+    Moved and renamed the example video file for better organization.
+    Add visual assets
+    
+    Added tiles, icons, splash screen and all sorts of images in all
+    possible resolutions that these apps need.
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    Added basic pair matching game, ready for hooks to IAP, Facebook and Device debug information
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration
+    restructured to have the unity project on the root
+    new structure for win shared, now have a compilable windows solution, unity project code moved to UnityProject folder, NuGet folder added for easier plugin integration

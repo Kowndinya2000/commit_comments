@@ -1,0 +1,824 @@
+﻿    Resolve EE Download location with 2.0.8 versions and higher (#191)
+    
+    * Change version check logic for new Enterprise download location with version 2.0.8 forward.  Fixes #190
+    
+    * Update CHANGELOG and version information
+    
+    * Uprev Kitchen test dependencies.
+    
+    * Update travis to use ruby 2.3.1 to resolve nio4r issue
+    
+    * Resolve Debian Link changes to using code name for later package releases
+    
+    * Updated test kitchen and vagrant to latest
+    Updated image reference locations for supported platforms
+    Removed FreeBSD 9.3 platform due to FreeBSD EOL
+    minor typo fix
+    Cutting 3.1.3 release
+    Cutting 3.1.2
+    3.1.1
+    3.1.0 release
+    Cutting 3.0.2
+    Cutting 3.0.1
+    Cutting 3.0.0
+    Cutting 2.4.17
+    Cutting 2.4.16
+    Bumping to 2.4.15 for release
+    v2.4.14
+    v2.4.13
+    v2.4.12
+    v2.4.11
+    v2.4.10
+    v2.4.9
+    v2.4.8
+    Bumping to 2.4.7.
+    Bumping to 2.4.6
+    Bumping to 2.4.5
+    Update default version of Riak to 1.4.7.
+    v2.4.3
+    v2.4.2
+    Add kernel and network tuning via sysctl.
+    Update CHANGELOG.
+    v2.4.1
+    Update CHANGELOG.
+    Adds support for installing Riak through a custom package repository.
+    Update `cs_version` to `1.4.1`.
+    Update CHANGELOG.
+    Bump default Riak version to 1.4.2.
+    Allow users to pass a checksum that used in the remote_file resource to
+    prevent unnecessary package downloads.
+    v2.3.2
+    Update CHANGELOG.
+    Updated CHANGELOG.
+    Added a conditional for PB interface configuration differences in 1.3 vs. 1.4.
+    Add test-kitchen support for CentOS 5.9.
+    Fixes support for older version installs via source and package.
+    v2.2.0
+    Cutting 3.1.3 release
+    3.1.1
+    Minor typo in README
+    Updated README to include clear guidelines for contribution and updates to contact information
+    3.1.0 release
+    A big commit but mostly DRYing up and setting sane defaults
+    
+    * Removal of `enterprise_package recipe`
+    * Removal of `custom_package recipe`
+    * All logic for the removed recipes moved to `pacakge`
+    * Make Java install truely option instead of based on config
+    * Remove extraneous attributes
+    * Checksums moved to attributes
+    * Cleaned up test-kitchen configs to refelct above changes
+    Updating for 2.0.2
+    Display fix
+    Readme Fix
+    Cutting 3.0.0
+    Updating readme
+    Fixing incremental version in all the places
+    updated README with info about storage_backend overrides
+    Change README to include section on changing storage backend
+    
+    It wasn't immediately obvious to me how to change the storage backend, so I've added it to the README. Feel free to ignore if this is referenced in some other, more logical place. :-)
+    Set default Riak version to v.1.4.9.
+    Add custom package URLs for test suite.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Updated README.
+    Update default version of Riak to 1.4.8.
+    Update default version of Riak to 1.4.7.
+    Updating default version to 1.4.6
+    Removed Recipe Tester.
+    Fix README formatting.
+    Added custom repository support for different platforms. Also, created
+    an attribute for providing the Enterprise package name.
+    Adds support for installing Riak through a custom package repository.
+    Bump default Riak version to 1.4.2.
+    Adding back HTTPS for Recipe Tester badge.
+    Removed HTTPS from Recipe Tester badge URL.
+    Add recipe tester
+    Bump default Riak version to 1.4.1.
+    Bump default Riak version to 1.4.0.
+    Bump default Riak version to 1.3.2.
+    Unifying riak and riak_eds cookbooks
+    Unifying riak and riak_eds cookbooks
+    Bump for 1.3.1
+    Adding build status image
+    Some notes for the source install
+    Updates for 1.3
+    Adding attributes and changing network defaults
+    Ditching unnecessary config.rb, moved logic into recipe, and set the attribute notation consistently
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Spaces in my tabs
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    add entry about eleveldb to README
+    updated erlang version required.
+    Quick typo fix.
+    added sysmon to the helper hash to simplify naming.
+    renamed sysmon attributes to be less redundant
+    updated the readme file with relevant attributes.
+    Added merge_index config.
+    Quick Package Version Change.
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Resolve EE Download location with 2.0.8 versions and higher (#191)
+    
+    * Change version check logic for new Enterprise download location with version 2.0.8 forward.  Fixes #190
+    
+    * Update CHANGELOG and version information
+    
+    * Uprev Kitchen test dependencies.
+    
+    * Update travis to use ruby 2.3.1 to resolve nio4r issue
+    
+    * Resolve Debian Link changes to using code name for later package releases
+    
+    * Updated test kitchen and vagrant to latest
+    Updated image reference locations for supported platforms
+    Removed FreeBSD 9.3 platform due to FreeBSD EOL
+    Cutting 3.1.3 release
+    Cutting 3.1.2
+    3.1.1
+    Relaxing dependency constraints
+    3.1.0 release
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Cutting 3.0.2
+    Update build essentials dependency
+    Cutting 3.0.1
+    Update java cookbook dep and set JDK to Basho Docs recommended version
+    Cutting 3.0.0
+    Update deps
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Cutting 2.4.17
+    Cutting 2.4.16
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Bumping to 2.4.15 for release
+    Fix file names and checksums for 2.0.1 packages
+    packagecloud support
+    v2.4.14
+    v2.4.13
+    Increase pessimistic version constraint on build-essential.
+    Relax sysctl version constraint to < 0.5.0.
+    
+    v0.5.0 contains breaking changes, see:
+    https://github.com/onehealth-cookbooks/sysctl/blob/master/CHANGELOG.md
+    v2.4.12
+    Add support for Amazon Linux.
+    v2.4.11
+    v2.4.10
+    v2.4.9
+    v2.4.8
+    Add support for Ubuntu 13.04 (Raring) to Enterprise recipe.
+    Fixes to support raring.
+    Pin updated version of Java cookbook
+    
+    This version of the Java cookbook doesn't use /tmp to expand the Oracle
+    JDK archive.
+    Update Erlang cookbook dependency so that CFLAGS can be set before
+    compiling on CentOS 6.5.
+    Missed adding the Java cookbook dependency.
+    Remove yum < 3.0 constraint.
+    Bumping to 2.4.7.
+    Make all cookbook dependency versions explicit.
+    Bumping to 2.4.6
+    Converted cookbook to use the yum 3.x cookbook.
+    
+    Changed yum::epel to yum-epel in .kitchen.yml
+    Bumping to 2.4.5
+    Bumping to 2.4.4
+    v2.4.3
+    Add version constraint on yum cookbook so that it stays under v3.0.
+    v2.4.2
+    Add kernel and network tuning via sysctl.
+    v2.4.1
+    v2.4.0
+    Bumping for 2.3.4
+    Bumping version to 2.3.3
+    v2.3.2
+    Bumping version to 2.3.1
+    Bumping version to 2.3.0
+    v2.2.0
+    Unifying riak and riak_eds cookbooks
+    Unifying riak and riak_eds cookbooks
+    Fixing install for redhat because platform and platform_family should not be confused.
+    Making cookbook version independent of riak - resetting to 2.0.0
+    Git dependency was missing from metadata.
+    Added support for setting file descriptor limits.
+    Bump for 1.3.1
+    Add name to metadata and start action to service
+    
+    As discussed with Seth, to better interoperate with development tools
+    like Berkshelf and Test Kitchen, the metadata should have the name of
+    the cookbook as the "name" attribute. Also, so that this works with
+    riak-cs properly, the :start action should be specified for the riak
+    service.
+    Updates for 1.3
+    Updating for 1.2.1 release
+    Migrating changes from EDS cookbook
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    Updating for 1.2 release
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    updated riak chef cookbook to support riak 1.1
+    updated metadata
+    quick version update. mainly for opscode community.
+    This is a point release update of riaks chef cookbook. The cookbook is now compatible with Riak 1.0.3.
+    Update description version to 1.0.2
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+    Amended last commit.
+    Version Fix
+    Changed `default` where it should instead be `node.default`
+    Corrected `node.ip_address` to `node.ipaddress`
+    Removed and ignored metadata.json
+    Incremented version to 0.14.5
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    pkg_add cookbook is now in Chef supermarket
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Simplifying platform logic, adding CentOS 7 to kitchen, update source, and update build info for amazon test
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Add support for Amazon Linux.
+    Pin updated version of Java cookbook
+    
+    This version of the Java cookbook doesn't use /tmp to expand the Oracle
+    JDK archive.
+    Update reference to Java cookbook
+    
+    Now the Java cookbook uses Chef's cache directory to extract the Oracle
+    JDK archive instead of /tmp. Also, explicitly set root_path in
+    .kitchen.yml so that /tmp isn't used by Test Kitchen for its cache.
+    Set the OPENSSL_NO_EC flag on CentOS 6.5 so that Erlang compiles with
+    SSL.
+    Converted cookbook to use the yum 3.x cookbook.
+    
+    Changed yum::epel to yum-epel in .kitchen.yml
+    Add version constraint on yum cookbook so that it stays under v3.0.
+    Target version 2.2.4 and above of the yum cookbook because earlier
+    versions contain a broken broken test stub that breaks test-kitchen.
+    Enabled minitest-handler.
+    Added test-kitchen support.
+    Bump default Riak version to 2.1.1
+    Updating for 2.0.5
+    Updating for 2.0.2
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Updating source version
+    Fixing incremental version in all the places
+    Set default Riak version to v.1.4.9.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Update Riak source installation to support Riak 2.0.
+    Update default version of Riak to 1.4.8.
+    Update default version of Riak to 1.4.7.
+    Updating default version to 1.4.6
+    Bump default Riak version to 1.4.2.
+    Bump default Riak version to 1.4.1.
+    Bump default Riak version to 1.4.0.
+    Bump default Riak version to 1.3.2.
+    Bump for 1.3.1
+    Updates for 1.3
+    Updating for 1.2.1 release
+    Migrating changes from EDS cookbook
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    Updating for 1.2 release
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    updated riak chef cookbook to support riak 1.1
+    updated metadata
+    quick version update. mainly for opscode community.
+    This is a point release update of riaks chef cookbook. The cookbook is now compatible with Riak 1.0.3.
+    Update description version to 1.0.2
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+    Amended last commit.
+    Version Fix
+    Changed `default` where it should instead be `node.default`
+    Corrected `node.ip_address` to `node.ipaddress`
+    Removed and ignored metadata.json
+    Incremented version to 0.14.5
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    DRYing up kitchen configs, updating/deprecating platforms, and refactoring sysctl as it's own recipe (with tests)
+    A big commit but mostly DRYing up and setting sane defaults
+    
+    * Removal of `enterprise_package recipe`
+    * Removal of `custom_package recipe`
+    * All logic for the removed recipes moved to `pacakge`
+    * Make Java install truely option instead of based on config
+    * Remove extraneous attributes
+    * Checksums moved to attributes
+    * Cleaned up test-kitchen configs to refelct above changes
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Updating for 2.0.2
+    Shameless cargo culting of [Guard,Rake,Gem]file and Travis config. Also a rubocop edit.
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Set nodename and interface based on ohai data, add fqdn->ipaddress fallback, and fix foodcritic error
+    Update RiakCS default version to 1.5.1
+    Uncomment scheduler wake up, with correct default.
+    Revert "Comment out defaults."
+    
+    This reverts commit 1febb3f316899688b939970a5be4d15453836e6a.
+    
+    Conflicts:
+            attributes/default.rb
+    Add commented out scheduler wake up interval option.
+    Comment out defaults.
+    
+    Comment out two settings which are left to defaults in the built riak.conf file with a new install.
+    Update Riak CS default version
+    Increase filehandle limits
+    
+    Fixes #135
+    Update default riak.conf settings.
+    Multi backend definitions must be Erlang binaries, not atoms.
+    Revert errant change of Riak node name from FQDN to IP address.
+    Fixes to support raring.
+    Ensure that every setting in the default riak.conf makes it into the
+    attributes file.
+    Update default version of Riak to 1.4.7.
+    Updated sysctl settings to reflect most recent recommendations.
+    Increased net.core.somaxconn to prevent unintentional truncation of
+    syn_backlog.
+    Add kernel and network tuning via sysctl.
+    Update `cs_version` to `1.4.3`.
+    Adds support for installing Riak through a custom package repository.
+    Update `cs_version` to `1.4.1`.
+    single quotes to match all the others
+    need to set allow_mult for riak cs to work correctly
+    add cluster_mgr attribute
+    Bump default cs_version to 1.4.0.
+    Added a conditional for PB interface configuration differences in 1.3 vs. 1.4.
+    Updated app.config with new default arguments.
+    Updated vm.args with new default arguments.
+    Fixed data_dir references for riak_kv_multi_backend.
+    Unifying riak and riak_eds cookbooks
+    Unifying riak and riak_eds cookbooks
+    Add a case for riak_kv_multi_backend in the default attributes that sets up
+    a Bitcask and eLevelDB backend.
+    Added `riak_kv_stat` attribute for emitting stats.
+    Added support for setting file descriptor limits.
+    Fixed cs_version for when the riak_cs_kv_multi_backend is chosen.
+    Foodcritic and TravisCI support
+    Added `riak_cs_kv_multi_backend` support.
+    Updates for 1.3
+    Migrating changes from EDS cookbook
+    Update attributes/default.rb
+    
+    Update riak control userlist so it works properly.
+    Adding attributes and changing network defaults
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Updating for 1.2 release
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    Add basic support for riak::search
+    
+    Signed-off-by: Gregory Haskins <gregory.haskins@gmail.com>
+    preparing cookbook for 1.1 release.
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+    Added merge_index config.
+    -Updated lager config
+    -Created Array Attributes for Lager Log Files.
+    -Added an Array and an array search to the library helper. When processing config, sometimes there is a need for a keyless cofig line.  This array and array search enabled the generation.
+    -removed needless casts in config.rb. Still not totally sure what those are for.
+    Added clustername back to core. Removed lager for now.
+    Removing control config until 1.1. Starting lager config.
+    Simple changes, will rebase and write later.
+    updates
+    Several config changes for testing.
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Bump default Riak version to 2.1.1
+    Updating for 2.0.5
+    A big commit but mostly DRYing up and setting sane defaults
+    
+    * Removal of `enterprise_package recipe`
+    * Removal of `custom_package recipe`
+    * All logic for the removed recipes moved to `pacakge`
+    * Make Java install truely option instead of based on config
+    * Remove extraneous attributes
+    * Checksums moved to attributes
+    * Cleaned up test-kitchen configs to refelct above changes
+    Updating for 2.0.2
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Set nodename and interface based on ohai data, add fqdn->ipaddress fallback, and fix foodcritic error
+    Fixing incremental version in all the places
+    Set default Riak version to v.1.4.9.
+    Add support for local package with remote site.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Update Riak package installation to support Riak 2.0.
+    Update default version of Riak to 1.4.8.
+    Update default version of Riak to 1.4.7.
+    Updating default version to 1.4.6
+    Added custom repository support for different platforms. Also, created
+    an attribute for providing the Enterprise package name.
+    Bump default Riak version to 1.4.2.
+    Bump default Riak version to 1.4.1.
+    Updated app.config with new default arguments.
+    Bump default Riak version to 1.4.0.
+    Bump default Riak version to 1.3.2.
+    As per @hectcastro, changing the enterprise_key to consistently to be a string.
+    Unifying riak and riak_eds cookbooks
+    As per @hectcastro, changing the enterprise_key to consistently to be a string.
+    Unifying riak and riak_eds cookbooks
+    Bump for 1.3.1
+    Updates for 1.3
+    Updating for 1.2.1 release
+    Migrating changes from EDS cookbook
+    Ditching unnecessary config.rb, moved logic into recipe, and set the attribute notation consistently
+    Updating for 1.2 release
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    preparing cookbook for 1.1 release.
+    This is a point release update of riaks chef cookbook. The cookbook is now compatible with Riak 1.0.3.
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+    Version Fix
+    Quick Package Version Change.
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Resolve EE Download location with 2.0.8 versions and higher (#191)
+    
+    * Change version check logic for new Enterprise download location with version 2.0.8 forward.  Fixes #190
+    
+    * Update CHANGELOG and version information
+    
+    * Uprev Kitchen test dependencies.
+    
+    * Update travis to use ruby 2.3.1 to resolve nio4r issue
+    
+    * Resolve Debian Link changes to using code name for later package releases
+    
+    * Updated test kitchen and vagrant to latest
+    Updated image reference locations for supported platforms
+    Removed FreeBSD 9.3 platform due to FreeBSD EOL
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Ensure bin path is set in tests to resolve CentOS 5 failures
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    That thing where you delete the test for the platform you were adding support for
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Add /usr/sbin to PATH to appease CentOS 5
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    That thing where you delete the test for the platform you were adding support for
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Ensure bin path is set in tests to resolve CentOS 5 failures
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Updating test deps, fixing source tests, and updating kitchen cloud config.
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Updating test deps, fixing source tests, and updating kitchen cloud config.
+    Death to minitest and 13.10, all hail serverspec
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    That thing where you delete the test for the platform you were adding support for
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Ensure bin path is set in tests to resolve CentOS 5 failures
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    That thing where you delete the test for the platform you were adding support for
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Updating tests for serverspec v2
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    DRYing up kitchen configs, updating/deprecating platforms, and refactoring sysctl as it's own recipe (with tests)
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Altering tests to use busser-rspec, updating Amazon AMI, and add digitalocean platforms
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Death to minitest and 13.10, all hail serverspec
+    Add /usr/sbin to PATH to appease CentOS 5
+    Updating tests for serverspec v2
+    Add support for Amazon Linux.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Rubocop hates freedom
+    DRYing up kitchen configs, updating/deprecating platforms, and refactoring sysctl as it's own recipe (with tests)
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Ensure that every setting in the default riak.conf makes it into the
+    attributes file.
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Fix conditional check to evaluate  as a float, not a string (fixes #175)
+    Fix/update checksum for source build
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Relax constraint in source build to fix CentOS 7 error
+    Simplifying platform logic, adding CentOS 7 to kitchen, update source, and update build info for amazon test
+    Set the OPENSSL_NO_EC flag on CentOS 6.5 so that Erlang compiles with
+    SSL.
+    Use the Basho patched version of R16B02.
+    Disable HiPE, ODBC and enable SMP, 64bit.
+    Update Riak source installation to support Riak 2.0.
+    Unifying riak and riak_eds cookbooks
+    Unifying riak and riak_eds cookbooks
+    Ensure that the Riak group is created as a system group.
+    Updates for 1.3
+    Lazily evaluate config content. Fixes #183.
+    fix basho-patches directory path
+    DRYing up kitchen configs, updating/deprecating platforms, and refactoring sysctl as it's own recipe (with tests)
+    A big commit but mostly DRYing up and setting sane defaults
+    
+    * Removal of `enterprise_package recipe`
+    * Removal of `custom_package recipe`
+    * All logic for the removed recipes moved to `pacakge`
+    * Make Java install truely option instead of based on config
+    * Remove extraneous attributes
+    * Checksums moved to attributes
+    * Cleaned up test-kitchen configs to refelct above changes
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Update java cookbook dep and set JDK to Basho Docs recommended version
+    Fix merge issue
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Set nodename and interface based on ohai data, add fqdn->ipaddress fallback, and fix foodcritic error
+    Fix foodcritic error
+    Fix Fedora test failures
+    Add a test for a valid fqdn and use ipaddress for node name construction if not
+    Ensure SNMP directory is created when custom data directory is provided.
+    Ensure SNMP directory is created when custom data_dir is provided.
+    Data directory is housed in the platform_data_dir attribute.
+    Ensure that the Oracle JDK flavor is installed.
+    Update Riak custom repository installation support for Riak 2.0.
+    Update Riak package installation to support Riak 2.0.
+    Update Riak source installation to support Riak 2.0.
+    Ensure /etc/default/riak is regenerated on Debian/Ubuntu platform
+    
+    Fixes #119
+    Ensure riak data directory exists and is owned by riak:riak
+    Updated sysctl settings to reflect most recent recommendations.
+    Add kernel and network tuning via sysctl.
+    Adds support for installing Riak through a custom package repository.
+    Add alternate method of setting ulimit for Debian due to start-stop-daemon
+    bypassing PAM.
+    As per @hectcastro, changing the enterprise_key to consistently to be a string.
+    Unifying riak and riak_eds cookbooks
+    As per @hectcastro, changing the enterprise_key to consistently to be a string.
+    Unifying riak and riak_eds cookbooks
+    Fixing install for redhat because platform and platform_family should not be confused.
+    Added support for setting file descriptor limits.
+    Foodcritic and TravisCI support
+    Add name to metadata and start action to service
+    
+    As discussed with Seth, to better interoperate with development tools
+    like Berkshelf and Test Kitchen, the metadata should have the name of
+    the cookbook as the "name" attribute. Also, so that this works with
+    riak-cs properly, the :start action should be specified for the riak
+    service.
+    Updates for 1.3
+    Migrating changes from EDS cookbook
+    Ditching unnecessary config.rb, moved logic into recipe, and set the attribute notation consistently
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    Fixing CentOS/RHEL family support and corretcint the namespace for pb_ip settings
+    Updating for 1.2 release
+    Typo fix
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    Prepare VM arguments using the hash value of node.riak.erlang
+    
+    Since Chef uses "Mashes" which aren't actually Hashes, some of the Riak
+    configuration turned to strings were "<Chef::Node::Attribute>" objects.
+    By calling `to_hash` it turns it into a hash which is what the libraries
+    expect.
+    Fixes installation failure on Ubuntu 11.10 due to a missing Debian
+    package and libssl 0.9.8 dependency.
+    Added platorm platform version conditionals for ubuntu/centos
+    Updated the version of Fedora that is supported.
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+     Don't download the package file if it already exists on the server.
+    working through some text changes.
+    fixed web call to include incremental
+    minor fixes
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Resolve EE Download location with 2.0.8 versions and higher (#191)
+    
+    * Change version check logic for new Enterprise download location with version 2.0.8 forward.  Fixes #190
+    
+    * Update CHANGELOG and version information
+    
+    * Uprev Kitchen test dependencies.
+    
+    * Update travis to use ruby 2.3.1 to resolve nio4r issue
+    
+    * Resolve Debian Link changes to using code name for later package releases
+    
+    * Updated test kitchen and vagrant to latest
+    Updated image reference locations for supported platforms
+    Removed FreeBSD 9.3 platform due to FreeBSD EOL
+    Fix conditional order
+    Fix Riak EE download URL following 2.1 release
+    
+    While I'd prefer that #170 be merged, in order to speed things along in case there's concern about the version bump, here's an alternative patch with only the part that fixes the broken Riak EE download URL.
+    
+    For posterity: The difference between the URLs is that the new one omits the `major_minor` part of the path.
+    Foodcritic probably shouldn't throw FC002 for this case but I'll apease it anyway
+    A big commit but mostly DRYing up and setting sane defaults
+    
+    * Removal of `enterprise_package recipe`
+    * Removal of `custom_package recipe`
+    * All logic for the removed recipes moved to `pacakge`
+    * Make Java install truely option instead of based on config
+    * Remove extraneous attributes
+    * Checksums moved to attributes
+    * Cleaned up test-kitchen configs to refelct above changes
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Fixing all but line length rubocops (which simplifies package logic) and fixing CentOS7 enterprise
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Simplifying platform logic, adding CentOS 7 to kitchen, update source, and update build info for amazon test
+    packagecloud support
+    Updating for Riak 1.4.10, replacing Ubuntu 13.04 (EOL) with 13.10, and adding Ubuntu 14.04 support
+    Force apt-get to keep the old config file when upgrading Riak
+    Add support for local package with remote site.
+    Add support for Amazon Linux.
+    Add support for Amazon Linux.
+    Fixes to support raring.
+    Update Riak package installation to support Riak 2.0.
+    Converted cookbook to use the yum 3.x cookbook.
+    
+    Changed yum::epel to yum-epel in .kitchen.yml
+    Pulled one line conditionals out into more visible if statements.
+    
+    Also, altered the Ubuntu/Debian package version conditional so that
+    it only appends `~precise` for Riak 1.3.2 Ubuntu DEBs.
+    Add test-kitchen support for CentOS 5.9.
+    Fixes support for older version installs via source and package.
+    set package version so we can choose to install older evrsion if needed
+    Unifying riak and riak_eds cookbooks
+    As per @hectcastro, changing the enterprise_key to consistently to be a string.
+    Unifying riak and riak_eds cookbooks
+    Fixing install for redhat because platform and platform_family should not be confused.
+    Added support for setting file descriptor limits.
+    Foodcritic and TravisCI support
+    Add name to metadata and start action to service
+    
+    As discussed with Seth, to better interoperate with development tools
+    like Berkshelf and Test Kitchen, the metadata should have the name of
+    the cookbook as the "name" attribute. Also, so that this works with
+    riak-cs properly, the :start action should be specified for the riak
+    service.
+    Updates for 1.3
+    Migrating changes from EDS cookbook
+    Ditching unnecessary config.rb, moved logic into recipe, and set the attribute notation consistently
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    Fixing CentOS/RHEL family support and corretcint the namespace for pb_ip settings
+    Updating for 1.2 release
+    Typo fix
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    Prepare VM arguments using the hash value of node.riak.erlang
+    
+    Since Chef uses "Mashes" which aren't actually Hashes, some of the Riak
+    configuration turned to strings were "<Chef::Node::Attribute>" objects.
+    By calling `to_hash` it turns it into a hash which is what the libraries
+    expect.
+    Fixes installation failure on Ubuntu 11.10 due to a missing Debian
+    package and libssl 0.9.8 dependency.
+    Added platorm platform version conditionals for ubuntu/centos
+    Updated the version of Fedora that is supported.
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+     Don't download the package file if it already exists on the server.
+    working through some text changes.
+    fixed web call to include incremental
+    minor fixes
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Resolve EE Download location with 2.0.8 versions and higher (#191)
+    
+    * Change version check logic for new Enterprise download location with version 2.0.8 forward.  Fixes #190
+    
+    * Update CHANGELOG and version information
+    
+    * Uprev Kitchen test dependencies.
+    
+    * Update travis to use ruby 2.3.1 to resolve nio4r issue
+    
+    * Resolve Debian Link changes to using code name for later package releases
+    
+    * Updated test kitchen and vagrant to latest
+    Updated image reference locations for supported platforms
+    Removed FreeBSD 9.3 platform due to FreeBSD EOL
+    Rspec->serverspec, should->expect syntax, and appeasing RuboCop
+    Initial pass at adding FreeBSD support. Make java/riak search optional instead of default
+    Updating for 2.0.2
+    Used RuboCop to fix most offenses, primarily maintaining single-quote style. Also updated gem deps
+    Pinning serverspec/specinfra versions using this one weird trick. Updated yum dependency and changed the default source install prefix to /opt
+    Updating source version
+    Fixing incremental version in all the places
+    Set default Riak version to v.1.4.9.
+    Riak 2.0.0beta1, SeverSpec, clean up Test Kitchen.
+    Update Riak source installation to support Riak 2.0.
+    Update default version of Riak to 1.4.8.
+    Update default version of Riak to 1.4.7.
+    Updating default version to 1.4.6
+    Bump default Riak version to 1.4.2.
+    Bump default Riak version to 1.4.1.
+    Bump default Riak version to 1.4.0.
+    Bump default Riak version to 1.3.2.
+    Bump for 1.3.1
+    Updates for 1.3
+    Updating for 1.2.1 release
+    Migrating changes from EDS cookbook
+    Replacing riak_template_helper with @dreverri's erlang_template_helper
+    Cleaning out dets and innostore references, fixing source download URL, and a pass at updating the readme
+    Updating for 1.2 release
+    Bumping to 1.1.4 and fixing .deb upgrades
+    Updates for 1.1.2
+    
+    - add search
+    - remove luwak
+    - fix ubuntu 12.04 dep
+    updated riak chef cookbook to support riak 1.1
+    updated metadata
+    quick version update. mainly for opscode community.
+    This is a point release update of riaks chef cookbook. The cookbook is now compatible with Riak 1.0.3.
+    Update description version to 1.0.2
+    Fixed Copyright year in all files.
+    Fixed Whitespace in template helper.
+    Amended last commit.
+    Version Fix
+    Changed `default` where it should instead be `node.default`
+    Corrected `node.ip_address` to `node.ipaddress`
+    Removed and ignored metadata.json
+    Incremented version to 0.14.5
+    Import riak cookbook, currently at version 0.14.4. (riak v0.14.2)
+    Rubocop hates freedom
+    DRYing up kitchen configs, updating/deprecating platforms, and refactoring sysctl as it's own recipe (with tests)

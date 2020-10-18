@@ -1,0 +1,3879 @@
+﻿    clearing redundancy
+    MIssing point
+    Fix title heading level in readme.md
+    Update readme.md
+    
+    fix downloads svg icon path
+    fix email
+    Add security contact to readme
+    Fix readme.
+    Working on read me.
+    Updated badges
+    Improved badges
+    Update badges.
+    Minor cs fixes
+    added license badge
+    Update readme.md
+    Update readme.md
+    Tweak framework readme.
+    small typo fix in readme
+    moving laravel 4 into develop branch.
+    fixed readme.md wrong symbol
+    
+    Signed-off-by: freezestart <freezestart@gmail.com>
+    readme cleanup and overall better'ness
+    
+    Signed-off-by: syntaqx <syntaqx@gmail.com>
+    added syntax highlighting to the readme
+    
+    Signed-off-by: syntaqx <syntaqx@gmail.com>
+    Fixed typo
+    updating readme.
+    
+    Signed-off-by: Taylor Otwell <taylorotwell@gmail.com>
+    updating readme.
+    
+    Signed-off-by: Taylor Otwell <taylorotwell@gmail.com>
+    updating readme.
+    
+    Signed-off-by: Taylor Otwell <taylorotwell@gmail.com>
+    simplify readme.
+    fixing readme typos.
+    working on readme.
+    added module support!
+    syntax highlighting: take 3.
+    syntax highlighting: take 2.
+    trying to add syntax highlighting to readme.
+    converted readme to markdown.
+    modified readme and license.
+    fixed readme.
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md via GitHub
+    Edited readme.md.
+    Improved readme.md.
+    added readme
+    Oh god I’ve messed up my git history
+    Add normalize.css to bower dependencies
+    More assets moved to bower
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Start using bower for frentend libraries
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fixing a few things.
+    Add Bower
+    remove post install just in case it causes problems
+    Add npm scripts
+    Bump package versions
+    Gonna brotli and gzip compress
+    Bump Laravel Elixir version
+    
+    Laravel elixir is now at version 4
+    Add elixir tasks to gzip static assets that *I* edit
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Bump Laravel Elixir version
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    tweak package file
+    tweak default asset setup
+    Update form to work with GTK dark theme, not tested with other browsers yet, also update npm dependencies
+    Bump elixir requirement.
+    change version from ~1.0.0 to ^1.0.0
+    Change package.json so changed to elixir will be non-breaking changes in versions only.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Get rid of npm warning: "npm WARN package.json @ No repository field."
+    Fix alignment
+    Fix Indentation
+    Get latest version of Elixir for now
+    Adjust for Elixir move to npm
+    added private setting to package.json so buildservers wont fail on npm warning
+    Update package.json
+    
+    gulp-if seems to be missing when calling mix.less in the Gulpfile
+    Add missing gulp-utils package to package.json
+    Something special.
+    Streamline gulp br/gzip compress tasks, update bower compoenents
+    Add gulp tasks to make brotli compressed versions of assets
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Oh god I’ve messed up my git history
+    Add normalize.css to bower dependencies
+    More assets moved to bower
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Add fetch.js plus versioning plus gzipping
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Add elixir tasks to gzip static assets that *I* edit
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Trying to optimize site performance
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Change comment to reflect the change of the default css preprocessor.
+    tweak default asset setup
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    updated elixir description in gulpfile from sass to less
+    Try a lighter version of the auth scaffolding.
+    Work on default project structure.
+    Tweak some wording.
+    Fixed some fonts.
+    Working on default app structure. Login views.
+    Use explicit Bower publishing
+    Add starter Sass file
+    Fixing a few things.
+    Fix alignment
+    Add Bower
+    Change default Elixir file.
+    Rename Gulpfile.js to gulpfile.js
+    
+    because not Grunt.
+    Adjust for Elixir move to npm
+    Default Gulpfile example to Sass
+    Something special.
+    Try better config values, i.e. not env()
+    The config uses key testing, not travis
+    Config values for a testing database
+    Use PostgreSQL v9.4 with postgres user
+    Getting the latest postgresql working
+    Error with multiple URLs causing conflict in `routes.php`
+    App is being served, try to get PHPUnit to use the correct port
+    Start Travis CI integration
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    Create .gitignore
+    
+    Why aren't we ignoring sqlite databases at this point?
+    Create .gitignore
+    
+    Why aren't we ignoring sqlite databases at this point?
+    Client name info is retreived from the Note model now
+    Make it possible to test both for contacts with and without profile pics
+    Move note formatting into model, better seeding, and better tests
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Massive update to code, better tests (but not complete yet)
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Ensure files finish with a LB
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Rename commented default seeder call
+    
+    Rename commented default seeder call to be consistent with official docs
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Remove unguard call
+    Use the ::class notation
+    
+    Updated to use ::class notation.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Enable model guarding after doing seeds
+    
+    Leaving models unguarded can cause all kinds of havoc if someone uses seeds in their tests.
+    Best to default to reguard after doing the seeds.
+    Remove space.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Updated Eloquent to Eloquent\Model
+    Remove classes from aliases list
+    
+    Eloquent and Seeder were used to extend from which is a bad practice.
+    The SoftDeletingTrait should be imported just like the UserTrait and the RemindableTrait.
+    Str was also removed because it's just a shortcut for the namespace. People can always re-add it if they like.
+    I wasn't entirely sure what FormRequest was doing here but I have a feeling it's going to be used for the same reasons as one of the above classes. So I removed it as well.
+    Working on the default app structure.
+    Minor cs fixes
+    Unguard all Eloquent attributes in seeder.
+    setup seeder.
+    Make it possible to test both for contacts with and without profile pics
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Use safeEmail instead
+    
+    Faker’s `email` method can accidentally generate email addresses. This ensures “safe” addresses are only ever generated by the factory, to avoid spamming actual mailboxes if mail was sent in a loop etc.
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Using the bcrypt function in users generated by the model factory
+    remove leading slash
+    
+    requested by project maintainer
+    type hint faker generator
+    
+    allow IDE to help with autocompletion
+    Use the ::class notation
+    Use define syntax.
+    Stub factory.
+    Update he migrations to actually refelct my table structure
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Ensure files finish with a LB
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Update he migrations to actually refelct my table structure
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fix a few password reminder things.
+    Scaffold authentication as default example.
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    1. Add the MediaLibrary service provider
+    2. Published the media library migration
+    3. Publixhed the media library config
+    4. Add the media disk
+    5. Prepare the Note model
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Add migration stubs.
+    Remove auth scaffolding to make it opt-in.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fix a few password reminder things.
+    Scaffold authentication as default example.
+    Migrations now successfully install
+    Update he migrations to actually refelct my table structure
+    Webmentions are now displayed on notes
+    Migrations now successfully install
+    Update he migrations to actually refelct my table structure
+    Simplify articles code
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Update he migrations to actually refelct my table structure
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fix a few password reminder things.
+    Scaffold authentication as default example.
+    Allow dev sites to seed data to a database for testing
+    purposes. For example one can run `php artisan migrate:refresh --seed`.
+    Migrations now successfully install
+    Update he migrations to actually refelct my table structure
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Trying to work out queues, why does the failed_jobs use a db, whilst we can use anything for the actual queue?
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Add migration stubs.
+    Remove auth scaffolding to make it opt-in.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fix a few password reminder things.
+    Scaffold authentication as default example.
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Places should now be manage-able in the admin cp
+    Use the postgis blueprint
+    Set up Eloquent model and migration
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Add migration stubs.
+    Remove auth scaffolding to make it opt-in.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on default app structure. Login views.
+    Fix a few password reminder things.
+    Scaffold authentication as default example.
+    Fixed a typo
+    Correctly deal with the compiled file
+    Use new bootstrap/cache for cached optimizations loaded during bootstrapping.
+    Update compiled file directory.
+    PSR-2 for app.
+    Large refactor of HTTP and Console stack.
+    Fix a few things.
+    Working on the default app structure.
+    Remove class loader from aliases.
+    Working on overall app structure.
+    Fix casing.
+    Just boot MbString on Patchwork.
+    Setup Patchwork for 1.1.*.
+    Move location of LARAVEL_START.
+    Fix comment.
+    Update for optimize command.
+    Moving start.php to bootstrap/start.php to collate all bootstrapping files.
+    
+    Signed-off-by: Ben Corlett <bencorlett@me.com>
+    tweak how autoloader works.
+    tweak how autoloaders are called. adjust phpunit bootstrap.
+    Use the ::class notation
+    PSR-2 for app.
+    Work on default project structure.
+    Fix comment.
+    Fix handler.
+    Add scheduled commands.
+    Remove exception handler. Move to core.
+    Working on exception handling. WIP.
+    Bind the kernels as singletons.
+    Large refactor of HTTP and Console stack.
+    Use new bootstrap/cache for cached optimizations loaded during bootstrapping.
+    Fix directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Trying sessions as a way of storing data
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    Add indieauth error message display
+    Better error message displayed when refreshing syndication targets
+    More shuffling of asset linking in views
+    Use mapbox’s own CDN
+    More assets moved to bower
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Add fetch.js plus versioning plus gzipping
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Template the new note form
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Further clean up the Micropub Client code
+    <button> needs a closing tag
+    Use button instead of input type-submit
+    Add form autofocus
+    Gah this is getting annoying
+    Can't use isset you say
+    Maybe use session() in the view?
+    Working on displaying micropub errors
+    Make the client prefer mp-syndicate-to if they are provided by the endpoint
+    Use arrays to process syndication targets
+    Maybe try checkbox value attribute to store syndication target
+    Trying data- attributes to store the actual syndication target
+    Trying an unordered list for syndication targets
+    Improve a11y by making syndication target clickable
+    Oversight in renaming a route
+    Working on syndication targets with micropub, client and backend
+    Use micropub’s content name for main entry, it simplifies my code
+    Micropub functionality added
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Get the RSS feed plus tests working
+    Add normalize.css and the rss view
+    Webmentions are now displayed on notes
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Use https rather than // for google fonts in default views.
+    
+    Ensure the default views always use HTTPS for the loading of fonts. This is overall a good practise to follow.
+    no margin needed.
+    change welcome splash
+    use double quotes for html attributes
+    fix css
+    fix doctype declarations
+    PSR-2 for app.
+    Added <title> tag
+    Use no protocol to fetch Lato font
+    
+    When using https://example.com, the welcome page design looks off due to fetching the Lato font on http://.
+    
+    Ref: https://github.com/laravel/framework/issues/7159
+    
+    Better yet, instead of https:// or http://, //
+    Views.
+    Work on default project structure.
+    Accidentally repeated p-latitude, wanted p-lomgitude
+    Add microformats markup to places
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Fix errors/warnings from Validator Nu
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Don’t use Twitter’s Twemoji or embed widget
+    Don’t use Twitter’s widget.js to embed tweets
+    Maps now work with Mapbox hosted mapbox.js
+    Use mapbox’s own CDN
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Oh god I’ve messed up my git history
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    Move common note markup into it’s own template
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    MediaLibrary package certainly works with single images
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    More optimisations of performance
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Much better sending of WebMentions
+    
+    The `in_reply_to` field was also being nulled. And it all displays
+    correctly now. Next up, embed a full tweet if appropriate.
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Don’t use Twitter’s Twemoji or embed widget
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Fix typo: ('script') -> ('scripts')
+    More optimisations of performance
+    More articles code refactoring
+    Simplify articles code
+    Move over to using Prism.js
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Fix another typo :(
+    Fix typo
+    Don’t use Twitter’s Twemoji or embed widget
+    Maps now work with Mapbox hosted mapbox.js
+    Use mapbox’s own CDN
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Oh god I’ve messed up my git history
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    Move common note markup into it’s own template
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Put the note content in the HTML title
+    Social link icons are now self-served SVGs
+    MediaLibrary package certainly works with single images
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    More optimisations of performance
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Much better sending of WebMentions
+    
+    The `in_reply_to` field was also being nulled. And it all displays
+    correctly now. Next up, embed a full tweet if appropriate.
+    DOn't escape tweets text in single note view
+    Webmentions are now displayed on notes
+    Don’t excape contact names, trim any redundant whitespace from the rendered h-card view
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Don’t use Twitter’s Twemoji or embed widget
+    Don’t use Twitter’s widget.js to embed tweets
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Fix typo: ('script') -> ('scripts')
+    More optimisations of performance
+    More articles code refactoring
+    Better handling of single article view
+    Move over to using Prism.js
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Add pgpkey link to head
+    Fix errors/warnings from Validator Nu
+    Mismatch of trailing slashes in the piwik domain
+    Improve Piwik code
+    Use mapbox’s own CDN
+    Move prism.css to being cache-busted with elixir
+    Add normalize.css to bower dependencies
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    Trying to do piwik better
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    Add piwik code back, only in prod though
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    More optimisations of performance
+    Typekit
+    
+    Use the new typekit embed code at the end of the
+    document
+    Trying to optimize site performance
+    Drop piwik for now
+    Drop html5shiv
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Alter title if in local environment
+    Self serve mapbox assets
+    Fix prism’s script tag, i.e. close it
+    Move over to using Prism.js
+    Fix some CSS rules now the new note page has been changed
+    Silly typo :(
+    We need avsolute URLs for our endpoints, the also need to be exepmt from CSRF filters
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Ensure files finish with a LB
+    Rename package views directory.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Contacts now admin-able
+    Update included scripts
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Moved unicode/markdown conversion into the Note model
+    
+    This also required changes to note editing, as the admin
+    CP needs the original note.
+    More fixing for micropub
+    Use micropub’s content name for main entry, it simplifies my code
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Sending WebMentions:
+    
+    Should be fully asynced now. Need to test with a real site
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Can do Articles through admin panel
+    Places should now be manage-able in the admin cp
+    Webmentions are now displayed on notes
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Contacts now admin-able
+    Can do Articles through admin panel
+    Clients and Tokens useable
+    Clients and Tokens useable
+    Contacts now admin-able
+    Clients and Tokens useable
+    Clients and Tokens useable
+    Contacts now admin-able
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Final feature added, posting notes via Admin CP or API
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Contacts now admin-able
+    Clients and Tokens useable
+    Can do Articles through admin panel
+    Can do Articles through admin panel
+    Clients and Tokens useable
+    Contacts now admin-able
+    Alow places to be edited
+    Places should now be manage-able in the admin cp
+    Contacts now admin-able
+    Webmentions are now displayed on notes
+    Allow articles to be added as uploaded .md files
+    Oh god I’ve messed up my git history
+    More assets moved to bower
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Get article previews working again
+    Can do Articles through admin panel
+    Places should now be manage-able in the admin cp
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Can do Articles through admin panel
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Can do Articles through admin panel
+    Oh god I’ve messed up my git history
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Simplify articles code
+    Make the preview feature work on edit forms. Also remove the tags entry in the form
+    Can do Articles through admin panel
+    Clients and Tokens useable
+    Clients and Tokens useable
+    Places should now be manage-able in the admin cp
+    Moved unicode/markdown conversion into the Note model
+    
+    This also required changes to note editing, as the admin
+    CP needs the original note.
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Places should now be manage-able in the admin cp
+    Clients and Tokens useable
+    Webmentions are now displayed on notes
+    More shuffling of asset linking in views
+    Use mapbox’s own CDN
+    More assets moved to bower
+    Update included scripts
+    New place link on admin’s newnote page
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Requests should now be validated for photo filesize
+    Template the new note form
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Use micropub’s content name for main entry, it simplifies my code
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Contacts now admin-able
+    Use https rather than // for google fonts in default views.
+    
+    Ensure the default views always use HTTPS for the loading of fonts. This is overall a good practise to follow.
+    use double quotes for html attributes
+    fix css
+    fix doctype declarations
+    add period.
+    Added title tag
+    PSR-2 for app.
+    Use relative href on 503 font path
+    Views.
+    Work on default project structure.
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Requests should now be validated for photo filesize
+    Allow multiple photo uploads
+    Template the new note form
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Further clean up the Micropub Client code
+    <button> needs a closing tag
+    Use button instead of input type-submit
+    Add form autofocus
+    Gah this is getting annoying
+    Can't use isset you say
+    Maybe use session() in the view?
+    Working on displaying micropub errors
+    Make the client prefer mp-syndicate-to if they are provided by the endpoint
+    Use arrays to process syndication targets
+    Maybe try checkbox value attribute to store syndication target
+    Trying data- attributes to store the actual syndication target
+    Trying an unordered list for syndication targets
+    Improve a11y by making syndication target clickable
+    Oversight in renaming a route
+    Working on syndication targets with micropub, client and backend
+    Use micropub’s content name for main entry, it simplifies my code
+    Micropub functionality added
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    The SVG icons should now work in safari
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Places are now displayed with notes
+    Attempted fix at display of uPub client info
+    Move common note markup into it’s own template
+    tweak default asset setup
+    Try a lighter version of the auth scaffolding.
+    Work on default project structure.
+    Get rid of resources directory. Unnecessary.
+    Working on default layout.
+    Work on welcome page
+    Work on welcome page
+    Working on default app structure. Login views.
+    Trailing EOF break.
+    Add starter Sass file
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Hopefully the social-links don’t escape the note’s box
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Fix some CSS rules now the new note page has been changed
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Drop Inconsolata for code blocks, prism defines its own rules
+    Trying to optimize site performance
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Stop the button transition on page load
+    Stop a full form style transition occur on page load
+    Use mozilla checkbox style as well...
+    Just use webkits style
+    Was :before messing things up
+    That didn't work, this may position the tick correctly
+    Gaahhh, I hate testing on an iphone
+    Tick was added but not aligned to the box
+    Add a tick to the checkbox
+    Still struggling with iOS Safari
+    Make safair checkbox state visible
+    Style form myself to get round unreadable text issues
+    Style the new form buttons
+    Update form to work with GTK dark theme, not tested with other browsers yet, also update npm dependencies
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Drop Inconsolata for code blocks, prism defines its own rules
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Update passwords.php
+    change language files
+    fix order
+    Add ThrottleLogin localization support
+    
+    add default language
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    PSR-2 for app.
+    Try a lighter version of the auth scaffolding.
+    Work on default project structure.
+    Get rid of resources directory. Unnecessary.
+    Cleaning up a few things.
+    Working on default app structure. Login views.
+    Rename file.
+    Convert language PHP 5.4 arrays.
+    Tweak where views and lang files are located.
+    Working on the default app structure.
+    Add missing 'reminders.reset' message.
+    Tweak reminder language lines.
+    The default message was not clear
+    
+    Added clarity
+    added a reminders language file.
+    change language files
+    Add language line for the in_array validation rule
+    Add language line to the validation "distinct" rule
+         keep the lines sorted
+    Add language line for the "present" validation rule.
+    required_unless lang line fix
+    add required_unless lang line
+    Error message for JSON validation
+    Sorted by alphabetic.
+    
+    Sorted by alphabetic.
+    Maintain alphabetical order
+    Sync with 5.0
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Fix order of validation rules.
+    Update validation.php
+    PSR-2 for app.
+    Work on default project structure.
+    Get rid of resources directory. Unnecessary.
+    minor spelling/grammar corrections
+    Convert language PHP 5.4 arrays.
+    Add language line.
+    Tweak where views and lang files are located.
+    Working on the default app structure.
+    Missing validation sentence for timezone.
+    
+    When using the timezone validation, it does not have a default sentence, you are greeted with: "validation.timezone" instead.
+    Update validation.php
+    Update validation.php
+    
+    Language validation addition for https://github.com/laravel/framework/pull/4599
+    Add sample custom error message.
+    Tweak wording.
+    Added required_with_all
+    Improvement of validation traduction for "email" rule
+    shifted alignment
+    added required_without_all
+    Replace dash for 'and' in `between` validation rules. Fixes #2377
+    Fix comment.
+    Added array validation language lines.
+    Add required_if validation language line.
+    Lining up translation. Surprised it triggered my OCD before @taylorotwell's.
+    
+    Signed-off-by: Ben Corlett <bencorlett@me.com>
+    Add validation error message for the 'required_without' rule
+    Remove extra not_in.
+    Fix language lines.
+    Fix validation language line.
+    Fixes the validation error message for regex validation rule
+    Added "Not In" rule translation (fix issue #1701)
+    Add date validation messages
+    moving laravel 4 into develop branch.
+    PSR-2 for app.
+    Work on default project structure.
+    Get rid of resources directory. Unnecessary.
+    Cleaning up a few things.
+    Convert language PHP 5.4 arrays.
+    Tweak where views and lang files are located.
+    Working on the default app structure.
+    Minor cs fixes
+    added a reminders language file.
+    moving laravel 4 into develop branch.
+    Import testing bundle to laravel/tests directory.
+    merged skunkworks into develop.
+    remove unnecessary paginator language lines.
+    refactoring pagination.
+    various refactoring and tweaks.
+    refactoring various pieces of the framework.
+    refactoring
+    added comments to pagination language.
+    refactoring. adding back pagination.
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Fix namespacing issue
+    Namespace tests
+    Client name info is retreived from the Note model now
+    Better tests for contacts in notes and their displayed info
+    Make it possible to test both for contacts with and without profile pics
+    Make test reflect code, i.e. use `url.longurl`, not `app.url` on redirect, refactor namespace imports with styleci recommendations
+    Move note formatting into model, better seeding, and better tests
+    Get a testsuite working, now to refactor a little
+    Testing should now use postgresql database, and phpdbg for code coverage
+    Massive update to code, better tests (but not complete yet)
+    Add tests for places, plus some code refactor
+    Add Contacts and start Places tests
+    Namespace tests
+    Get the RSS feed plus tests working
+    Test single article page
+    Better query regarding dates, (at least works with psql)
+    Use the ::class notation
+    Update test case.
+    Fix more spacing.
+    
+    This converts AppServiceProvider to spaces since it wasn't and removes
+    a few empty lines after class declarations.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Use the console kernel.
+    Bootstrap the application when testing.
+    Large refactor of HTTP and Console stack.
+    Move PHPUnit to require-dev and fixes directory references to tests.
+    
+    Signed-off-by: crynobone <crynobone@gmail.com>
+    Working on the default app structure.
+    Remove space and add global class reference in docblock
+    
+    Removed an unnecessary space before a comments rule and added a backslash to reference the global namespace in a docblock.
+    
+    Signed-off-by: Dries Vints <dries.vints@gmail.com>
+    Update app/tests/TestCase.php
+    Remove tabs / spaces mix.
+    Moving start.php to bootstrap/start.php to collate all bootstrapping files.
+    
+    Signed-off-by: Ben Corlett <bencorlett@me.com>
+    moving laravel 4 into develop branch.
+    Massive update to code, better tests (but not complete yet)
+    Make the basic test pass
+    import trait
+    Update test case.
+    Use short-cut.
+    Fix more spacing.
+    
+    This converts AppServiceProvider to spaces since it wasn't and removes
+    a few empty lines after class declarations.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Large refactor of HTTP and Console stack.
+    Working on the default app structure.
+    Minor cs fixes
+    Fix unit test example.
+    Fix unit test example.
+    moving laravel 4 into develop branch.
+    Massive update to code, better tests (but not complete yet)
+    Don’t bother with database transactions
+    Better note text for client created note
+    Full integration test of a new note being created via the micropub client
+    Better dependency injection, abstract URL in tests
+    Massive update to code, better tests (but not complete yet)
+    Trying sessions as a way of storing data
+    Basic client test
+    Update to modified IndieAuth Client that plays nice with the tests
+    Change the order of the tests such as they pass, I think it was a variable retiining its non-false value between tests
+    Fixed a typo and made minor phpcs fixes, (lines longer than 120 chars)
+    Now the indieauth client’s https works, tests are much simpler
+    In trying to work out why Travic fails, dump some info
+    Added more tests for the IndieAuth flow, refactored the relavent code slightly
+    Starting on using a service class to isolate and better test the indieauth flow
+    Add Contacts and start Places tests
+    Make it possible to test both for contacts with and without profile pics
+    handle authorization header
+    fix wording
+    Fix redirect loop .htaccess
+    
+    Folders that exist have a redirect loop when visiting them. This is because Apache redirects to trailing slash for folders and the current rule is removing it, Apache then adds a trailing slash again.
+    tabs to spaces
+    Updating .htaccess for consistency
+    
+    Fixing indentation to be consistent
+    Wrap in IfModule.
+    Tweak front controller. Htaccess.
+    Updated line to use spaces instead of tabs.
+    Tweak .htaccess.
+    Move slash redirects to application level.
+    Update .htaccess
+    
+    Change link in comment. (2.2 -> current)
+    Converted spaces to tabs for consistency
+    Redirect trailing slashes with 301.
+    moving laravel 4 into develop branch.
+    added htaccess documentation and symlinks
+    
+    Signed-off-by: syntaqx <syntaqx@gmail.com>
+    added back .gitignores
+    added module support!
+    overall code refactoring.
+    Modified default .htaccess to be more consistent with other popular frameworks.
+    initial commit of laravel!
+    Fix tab to spaces in web.config
+    added web.config
+    added dummy favicon to prevent weird session flash data issues.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Use the ::class notation
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Fix more spacing.
+    
+    This converts AppServiceProvider to spaces since it wasn't and removes
+    a few empty lines after class declarations.
+    Updated Run The Application comment
+    Update index.php - Fix Comment Lengths
+    
+    What do you get the man who has everything?  Why _perfect_ 'less four' declining length comments,of course... Happy holidays! :-)
+    Terminate the request after sending.
+    Large refactor of HTTP and Console stack.
+    Working on the default app structure.
+    Working on new directory structure.
+    Just call app->run().
+    Tweak front controller. Htaccess.
+    Working on more Stacky setup.
+    Small grammar fix. :eyes: .
+    Fix comment. Closes #1958.
+    Incremented version from 3.2.13 to 3.2.14
+    
+    Signed-off-by: aeberhardo <aeberhard@gmx.ch>
+    Move location of LARAVEL_START.
+    Fix comment.
+    fire app shutdown event.
+    Moving start.php to bootstrap/start.php to collate all bootstrapping files.
+    
+    Signed-off-by: Ben Corlett <bencorlett@me.com>
+    tweak how autoloaders are called. adjust phpunit bootstrap.
+    Fixup typo in comment block.
+    
+    Fix a couple of typos in the comment block.
+    moving laravel 4 into develop branch.
+    increment version.
+    Work on section handling.
+    increment version. refactor eloquent eager loading matching.
+    fix bug in eloquent model and update version.
+    Increment version and change log.
+    Incrementing version and updating change log.
+    Increment version and change log.
+    Updating version.
+    increment version.
+    increment version
+    update change log
+    update change log
+    updated version.
+    increment version.
+    Increment version.
+    updated version.
+    update change log and version.
+    increment version and update change log.
+    incremented version.
+    updated change log and incremented version.
+    fix bug regarding SSL cookies.
+    incrementing version.
+    incremented version and change log.
+    fix front controller.
+    update change log.
+    update for 3.1.1
+    Incrementing version.
+    Updating version.
+    
+    Signed-off-by: Taylor Otwell <taylorotwell@gmail.com>
+    default to showing all errors.
+    
+    Signed-off-by: Taylor Otwell <taylorotwell@gmail.com>
+    incremented version.
+    set application key by default.
+    increment version.
+    cleaned up paths.
+    converted path constants to $GLOBALS.
+    incremented version.
+    merge paths into a single place.
+    added beta note.
+    incremented version
+    merged skunkworks into develop.
+    incremented version and updated changelog.
+    fixed version number.
+    fixed bug in auth cookie removal.
+    incremented version and updated changelog.
+    limited number of uri segments that a request can have.
+    incremented version and updated changelog.
+    updated changelog and incremented version.
+    fixed pagination bug affecting postgres.
+    incremented version and updated changelog.
+    incremented version and updated changelog.
+    incremented version and updated changelog.
+    change tagline in front controller.
+    fixed variable typo in routing filter class.
+    Remove beta tag from front controller.
+    incremented version.
+    remove elapsed time from front controller.
+    moved session class.
+    incremented version.
+    remove timestamp from index file.
+    various refactorings.
+    remove tests from main repository, moved storage directory to application.
+    refactoring. added default controller. added uri class.
+    removed packages directory. refactoring.
+    refactoring various pieces of the framework.
+    refactored welcome pages.
+    refactoring and bug fixes.
+    refactoring.
+    revert back to more sensible architecture.
+    refactoring route loader and router.
+    refactoring various things.
+    fixed bug in eloquent causing ids to overlap.
+    added elapsed function.
+    removed extra line from index file.
+    fixed bug in form class that prevented name attribute from being set properly on input elements.
+    more refactoring and changes.
+    removed benchmarking from front controller.
+    incremented version.
+    refactoring bootstrap process.
+    continued ioc refactoring.
+    increment version and update change log.
+    refactoring for dependency injection and testability.
+    refactoring and adding more dependency injection through ioc container.
+    incremented version.
+    refactoring.
+    more 2.0 changes
+    2.0 modular refactoring.
+    incremented version and change log.
+    fixed vie errors.
+    first commit of 2.0
+    incremented version.
+    incremented version.
+    incremented version.
+    Tweaking front controller.
+    adjusted front controller.
+    moved laravel framework request cycle into laravel.php, minimalized front controller.
+    Changed Request::uri() call to System\Request::uri().
+    removed benchmarking stuff from front controller.
+    added module support!
+    Changing back to old routing system.
+    tweaks to package handling.
+    added packages auto-load array.
+    added loader class.
+    changed application file structure and routing definitions.
+    Add the laravel start time to the benchmarker.
+    database refactoring.
+    Pass path to route loader.
+    Bypass auto-loader when loading core routing classes.
+    use response::error in front controller.
+    working on routing architecture.
+    made router routes optional and fixed front controller.
+    fixed routing bug.
+    incremented version.
+    moved all routing classes into routing namespace.
+    moved routing classes into system namespace.
+    moved exception view to application views and removed system view folder.
+    tweaked cache and session namespacing.
+    added script and style path constants. tweaked router usage in index.php.
+    remove unnecessary application variable.
+    Clean up constant handling and definition.
+    Clean up constant definitions.
+    incremented version.
+    added lang_path constant.
+    added the storage_path constant.
+    added a few more path constants.
+    Tweak framework constants.
+    Remove time echo from index.php. Whoops!
+    Added SYS_VIEW_PATH constant.
+    Moved auto-loader into public/index.php.
+    modified readme and license.
+    added support for environment configuration files.
+    incremented version.
+    incremented version and fixed typo in front controller.
+    fixed routing issue.
+    incremented version.
+    incremented version.
+    removed bloated if statement from front controller.
+    added tests to main repository.
+    Turned off display_errors runtime directive.
+    Tweaking error handlers in the front controller.
+    Pass session ID into session::load.
+    removed comment bloat from index.php.
+    Added arr.php to front controller includes.
+    incremented version to 1.1.1
+    Incremented version number.
+    moved route filter to route directory.
+    improved performance. added support for database ports.
+    removed package class, added package_path constant.
+    Lazy-load error class inside of error handlers. Speed boost!
+    added PUBLIC_PATH
+    incremented version.
+    overall code refactoring.
+    Moved error class load up in front controller to match config and str loads.
+    Preload error handler class
+    added log to aliases. fixed flash data bug.
+    initial commit of laravel!
+    Minor cs fixes
+    Changed robots.txt to use disallow instead of allow
+    Added a default robots.txt file.
+    MediaLibrary package certainly works with single images
+    Work on paths.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Update bower components and recompress them
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Streamline gulp br/gzip compress tasks, update bower compoenents
+    Update composer and bower dependencies
+    Initial workings of adding places to notes via micropub
+    Moving places to be fully micropub
+    Hopefully the social-links don’t escape the note’s box
+    Maps now work with Mapbox hosted mapbox.js
+    Move prism.css to being cache-busted with elixir
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Oh god I’ve messed up my git history
+    Add normalize.css to bower dependencies
+    More assets moved to bower
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Add fetch.js plus versioning plus gzipping
+    More new place js work
+    Trying to get new places working via micropub
+    Micropub new place javascript should be working
+    A new place form kind of exists, just to make it proper
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    New place link on admin’s newnote page
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Alter maps js code to just add maps
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    New Build Process
+    
+    Use elixir to copmile .scss files to minified css, then version
+    the css file. Have a second function run that creates a .gz file
+    of the versioned css. Everyone’s a winner (hopefully).
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Update bower components and recompress them
+    More assets moved to bower
+    Update bower components and recompress them
+    Maps now work with Mapbox hosted mapbox.js
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Update prism.css
+    Move over to using Prism.js
+    More assets moved to bower
+    Oh god I’ve messed up my git history
+    Maps now work with Mapbox hosted mapbox.js
+    Alter maps js code to just add maps
+    Update bower components and recompress them
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    Initial workings of adding places to notes via micropub
+    Moving places to be fully micropub
+    More new place js work
+    Trying to get new places working via micropub
+    Micropub new place javascript should be working
+    A new place form kind of exists, just to make it proper
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    New place link on admin’s newnote page
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Update bower components and recompress them
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Update bower components and recompress them
+    Oh god I’ve messed up my git history
+    Update bower components and recompress them
+    Update bower components and recompress them
+    Get the gzip files “build” assets
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    The brotli compressed assets themselves
+    The brotli compressed assets themselves
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    Initial workings of adding places to notes via micropub
+    The brotli compressed assets themselves
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    Update bower components and recompress them
+    GZIP’d statuc content
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Update bower components and recompress them
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Update bower components and recompress them
+    Move prism.css to being cache-busted with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    The brotli compressed assets themselves
+    Update bower components and recompress them
+    Update bower components and recompress them
+    GZIP’d statuc content
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Some missing CSS files
+    Update bower components and recompress them
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Hopefully the social-links don’t escape the note’s box
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    Update bower components and recompress them
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Hopefully the social-links don’t escape the note’s box
+    Trying to get new places working via micropub
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    New Build Process
+    
+    Use elixir to copmile .scss files to minified css, then version
+    the css file. Have a second function run that creates a .gz file
+    of the versioned css. Everyone’s a winner (hopefully).
+    Assest Versioning v2
+    
+    We are now using elixir versioning helpers to bust asset caching.
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Drop Inconsolata for code blocks, prism defines its own rules
+    Trying to optimize site performance
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Stop the button transition on page load
+    Stop a full form style transition occur on page load
+    Use mozilla checkbox style as well...
+    Just use webkits style
+    Was :before messing things up
+    That didn't work, this may position the tick correctly
+    Gaahhh, I hate testing on an iphone
+    Tick was added but not aligned to the box
+    Add a tick to the checkbox
+    Still struggling with iOS Safari
+    Make safair checkbox state visible
+    Style form myself to get round unreadable text issues
+    Style the new form buttons
+    Update form to work with GTK dark theme, not tested with other browsers yet, also update npm dependencies
+    Fix some CSS rules now the new note page has been changed
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Move prism.css to being cache-busted with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Update prism.css
+    Move over to using Prism.js
+    The brotli compressed assets themselves
+    Updated GPG key’s expiry date
+    Add my ecc public key
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Maps now work with Mapbox hosted mapbox.js
+    Alter maps js code to just add maps
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Oh god I’ve messed up my git history
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Update bower components and recompress them
+    Streamline gulp br/gzip compress tasks, update bower compoenents
+    Update composer and bower dependencies
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Add fetch.js plus versioning plus gzipping
+    Move prism.js to the JS folder and cache-bust it with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Update prism.css
+    Move over to using Prism.js
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Initial workings of adding places to notes via micropub
+    Moving places to be fully micropub
+    More new place js work
+    Trying to get new places working via micropub
+    Micropub new place javascript should be working
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    New place link on admin’s newnote page
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Oh god I’ve messed up my git history
+    More assets moved to bower
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Add normalize.css to bower dependencies
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Trying to optimize site performance
+    Add normalize.css and the rss view
+    Some missing CSS files
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Hopefully the social-links don’t escape the note’s box
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    New Build Process
+    
+    Use elixir to copmile .scss files to minified css, then version
+    the css file. Have a second function run that creates a .gz file
+    of the versioned css. Everyone’s a winner (hopefully).
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Drop Inconsolata for code blocks, prism defines its own rules
+    Trying to optimize site performance
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Stop the button transition on page load
+    Stop a full form style transition occur on page load
+    Use mozilla checkbox style as well...
+    Just use webkits style
+    Was :before messing things up
+    That didn't work, this may position the tick correctly
+    Gaahhh, I hate testing on an iphone
+    Tick was added but not aligned to the box
+    Add a tick to the checkbox
+    Still struggling with iOS Safari
+    Make safair checkbox state visible
+    Style form myself to get round unreadable text issues
+    Style the new form buttons
+    Update form to work with GTK dark theme, not tested with other browsers yet, also update npm dependencies
+    Fix some CSS rules now the new note page has been changed
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Move prism.css to being cache-busted with elixir
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Update Prism code
+    Update prism.css
+    Move over to using Prism.js
+    Style tweaks plus project copy update
+    
+    Twekaed the style to suite `sanitize-css`. The top header is now a
+    “bar”. The project page has also been updated.
+    Hopefully the social-links don’t escape the note’s box
+    Trying to get new places working via micropub
+    New note form has locate button disabld by default then enabled if geolocation and event listeners are available
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    Improve notes’ HTML
+    
+    Indentention should be slihgly better, also no more section element, it
+    was spurious.
+    SVG Social Links
+    
+    Instead of linking to svg’s, the vector image is embedded directly into
+    the HTML markup using the `<svg>` tag. This can then be manipulated
+    easily with CSS.
+    Social link icons are now self-served SVGs
+    Remove Font Awesome
+    
+    Given the litle utility I get from font awesome, it’s better to not use
+    it. Webperf is better not using the icon fonts.
+    New Build Process
+    
+    Use elixir to copmile .scss files to minified css, then version
+    the css file. Have a second function run that creates a .gz file
+    of the versioned css. Everyone’s a winner (hopefully).
+    Asset Versioning v1
+    
+    All the js and css libs have been versioned in their filenames.
+    The static .gz has been removed from the home made files for
+    now.
+    Laravel Elixir
+    
+    Moving the build process over to Laravel Elixir.
+    First step is to get the sass compilation sorted.
+    Drop Inconsolata for code blocks, prism defines its own rules
+    Trying to optimize site performance
+    Gzip static content
+    
+    Create `file.gz` with max compression of static files
+    for use with nginx’s `gzip_static` module.
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Stop the button transition on page load
+    Stop a full form style transition occur on page load
+    Use mozilla checkbox style as well...
+    Just use webkits style
+    Was :before messing things up
+    That didn't work, this may position the tick correctly
+    Gaahhh, I hate testing on an iphone
+    Tick was added but not aligned to the box
+    Add a tick to the checkbox
+    Still struggling with iOS Safari
+    Make safair checkbox state visible
+    Style form myself to get round unreadable text issues
+    Style the new form buttons
+    Update form to work with GTK dark theme, not tested with other browsers yet, also update npm dependencies
+    Fix some CSS rules now the new note page has been changed
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Update bower components and recompress them
+    Update composer and bower dependencies
+    Added alertify library via bower and updated form-save to use it in mivropubnewnote page
+    Add the mapbox icons to what I self serve
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Keep the default image in version control, nothing else
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    StyleCi refactor
+    Miscellanous Improvements
+    
+    * intl extention added to requirements
+    * severl model files updated to PSR-2
+    * StyleCI integration started
+    Update Models to Laravel code-style
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Massive update to code, better tests (but not complete yet)
+    Add tests for places, plus some code refactor
+    Style CI fixes
+    Add microformats markup to places
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Places should now be manage-able in the admin cp
+    Set up Eloquent model and migration
+    StyleCI fixes
+    Get the RSS feed plus tests working
+    Move attribute stuff into the model
+    StyleCI fix
+    Better query regarding dates, (at least works with psql)
+    Further StyleCI improvements.
+    StyleCi refactor
+    More articles code refactoring
+    Simplify articles code
+    Update Models to Laravel code-style
+    Don't use per_page, a little refactoring of Article.php
+    Can do Articles through admin panel
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Client name info is retreived from the Note model now
+    StyleCi refactor
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Update of the doc for equals to Model
+    readable name
+    Applied fixes from StyleCI
+    Just use base user by default.
+    Remove unneeded table name.
+    PSR-2 formatting of User model?
+    
+    > Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line.
+    
+    https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#41-extends-and-implements
+    Implement interface.
+    Define HasAbilities trait on default user.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Some spacing.
+    PSR-2 for app.
+    Set fillable array.
+    modify contract.
+    Rename.
+    Rename traits.
+    Fix namespace.
+    Fix some password reset stuff.
+    Extend model.
+    Fix contracts.
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Rename core directory.
+    Working on new directory structure.
+    Working on overall app structure.
+    Change namespace for RemindableTrait.
+    De-clutter default models.
+    Added remember_token to protected $hidden variable
+    Add extra functions to User.
+    Minor cs fixes
+    fix namespace.
+    implement remindable interface on default user.
+    moving laravel 4 into develop branch.
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Massive update to code, better tests (but not complete yet)
+    Client name info is retreived from the Note model now
+    More refactoring
+    Make test reflect code, i.e. use `url.longurl`, not `app.url` on redirect, refactor namespace imports with styleci recommendations
+    Move note formatting into model, better seeding, and better tests
+    Get a testsuite working, now to refactor a little
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    1. Add the MediaLibrary service provider
+    2. Published the media library migration
+    3. Publixhed the media library config
+    4. Add the media disk
+    5. Prepare the Note model
+    StyleCi refactor
+    Miscellanous Improvements
+    
+    * intl extention added to requirements
+    * severl model files updated to PSR-2
+    * StyleCI integration started
+    Much better sending of WebMentions
+    
+    The `in_reply_to` field was also being nulled. And it all displays
+    correctly now. Next up, embed a full tweet if appropriate.
+    Misread Laravel docs on eloquent mutators
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    Moved unicode/markdown conversion into the Note model
+    
+    This also required changes to note editing, as the admin
+    CP needs the original note.
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Update Models to Laravel code-style
+    Don't use per_page, a little refactoring of Article.php
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    StyleCi refactor
+    Miscellanous Improvements
+    
+    * intl extention added to requirements
+    * severl model files updated to PSR-2
+    * StyleCI integration started
+    Update Models to Laravel code-style
+    Webmentions are now displayed on notes
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    StyleCi refactor
+    Miscellanous Improvements
+    
+    * intl extention added to requirements
+    * severl model files updated to PSR-2
+    * StyleCI integration started
+    Update Models to Laravel code-style
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Get the app working with L5.2
+    StyleCi refactor
+    Sending WebMentions:
+    
+    Should be fully asynced now. Need to test with a real site
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Get the app working with L5.2
+    WebMentions work again!
+    
+    However, there is one big caveat in making sure
+    the storage directory and profile-images directory
+    are both writeable by the server. The fileForceContents()
+    method has been improved, but there’s still a
+    potential hiccup there.
+    Further StyleCI improvements.
+    StyleCi refactor
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    Get the app working with L5.2
+    Now we are using S3, we need the URL not file path
+    Style CI fixes
+    We should now be able to send multiple photos to twitter, and filesize should be enforced by validation logic in the relavent controller
+    Async syndicating to twitter works again
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    fix incorrect method name in comment.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    PSR-2
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Base job use trait.
+    Show example base variables.
+    Tweak a few things.
+    PSR-2 for app.
+    Tweak some jobs and names.
+    Massive update to code, better tests (but not complete yet)
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    Massive update to code, better tests (but not complete yet)
+    More incorrect keys of `domain`
+    Use correct array index
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    More unnecessary `return;`s removed
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    StyleCI fixes
+    This should work, realised I hadn’t updated a `` to use the Request instance
+    Added more tests for the IndieAuth flow, refactored the relavent code slightly
+    Starting on using a service class to isolate and better test the indieauth flow
+    Forgot moving the business code out of the Controller would lose defaut access to job dispatching, adding it back in
+    Massive update to code, better tests (but not complete yet)
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    PSR-2 for app.
+    Stub out some folders for jobs / commands and events.
+    Tagging now takes place within the model
+    Style CI fixes
+    Fixed the validation for when there’s no photos attached to the new note, removed some die()’s that were left in from debugging
+    Requests should now be validated for photo filesize
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Fix more spacing.
+    
+    This converts AppServiceProvider to spaces since it wasn't and removes
+    a few empty lines after class declarations.
+    Remove auth scaffolding to make it opt-in.
+    Some spacing.
+    PSR-2 for app.
+    Simplify authentication. Remove service.
+    Add a basic service provider for config overwriting.
+    Add a note to the AppServiceProvider.
+    Working on removing authentication boilerplate.
+    Stub out an app service provider.
+    Large refactor of HTTP and Console stack.
+    Add CSRF middleware to main app stack.
+    Add error binder.
+    Update middleware.
+    Fix typo.
+    Working on middle wares.
+    Write a base app service provider.
+    Working on stack.
+    Add application stack to app server provider.
+    Added missing new lines at eof
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Make a few tweaks to providers.
+    Working on new directory structure.
+    Continuing to work on structure.
+    Working on overall app structure.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Some spacing.
+    PSR-2 for app.
+    Tweak some jobs and names.
+    Call parent boot.
+    Fix app event service provider contract
+    A few tweaks.
+    Remove scan arrays.
+    Remove log service provider since it is part of Bootstrap process.
+    Working on routing and providers.
+    Remove unused Dispatcher
+    Use new providers.
+    Add an event service provider.
+    Working on a few changes.
+    Fix path.
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Make a few tweaks to providers.
+    Working on directory structure. Event provider.
+    Use $this instead of parent.
+    
+    Signed-off-by: crynobone <crynobone@gmail.com>
+    Applied fixes from StyleCI
+    Default auth service provider.
+    Applied fixes from StyleCI
+    Applied fixes from StyleCI
+    add to comment
+    just use web group by default
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Defining global patterns before parent boot function call
+    
+    Kindly check if my assumption is correct? In relation to this issue, http://stackoverflow.com/questions/28251154/laravel-5-0-dev-defining-global-patterns-is-not-working/29567578#29567578 and https://laracasts.com/discuss/channels/general-discussion/route-global-pattern-in-routeserviceprovider-not-working-in-laravel-5?page=1
+    
+    or this could be a different issue/bug
+    
+    thanks!
+    Some spacing.
+    PSR-2 for app.
+    Allow to use $router in routes file
+    Make route loading a little more explicit.
+    Fix a few comments for wording.
+    Update the app skeleton.
+    Set the root controller namespace.
+    Rename middleware to more "action" words.
+    Update middleware reference.
+    Remove scan arrays.
+    Changing default routing setup.
+    Update RouteServiceProvider.php
+    
+    Removed the CSRF provider as it is specified in the Kernel.
+    Updated CSRF middleware reference
+    Rename CSRF middleware.
+    Rename auth middlewares.
+    Update middleware.
+    Large refactor of HTTP and Console stack.
+    Fixed RouteServiceProvider docblocks
+    Demo how to include a routes file.
+    Tweak wording.
+    Working on routing and providers.
+    Use new providers.
+    Simplify things.
+    Inject router into before method.
+    Let router be inherited by route script.
+    Embrace contracts.
+    Fix typo on config namespaces.controller to namespace.controllers
+    Remove extra lines.
+    Import facade.
+    Set root controller namespace.
+    Use App facade.
+    Working on a few changes.
+    Use facades.
+    Add note.
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Pull routes after booting application.
+    Use a standard routes file by default.
+    Working on new directory structure.
+    Ensure files finish with a LB
+    acl changes
+    Tweak some jobs and names.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Ensure files finish with a LB
+    Tweak some jobs and names.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Disable demonstration command
+    If the purpose of the command is to demonstrate, does not become nescessário leave it enabled by default.
+    Remove unnecessary fully quantified name
+    
+    The class is unnessarily fully quantified and is an warning that is also flagged up in popular IDE's such as PHPStorm. It is also arguably bad practice as it can lead to problems if directories are moved in the future.
+    Use the ::class notation
+    
+    Prefix the namespace with \
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Some spacing.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Remove command suffix.
+    Unused exception reference
+    Update syntax.
+    Remove extra semicolon.
+    Use real command name.
+    Add scheduled commands.
+    Working on exception handling. WIP.
+    Tweak how console commands are registered.
+    Move bootstraps to base classes.
+    Large refactor of HTTP and Console stack.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Use signature to define name.
+    Some spacing.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    remove unused use statements
+    Remove command suffix.
+    Stub out some folders for jobs / commands and events.
+    Large refactor of HTTP and Console stack.
+    Spellcheck
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Working on new directory structure.
+    Fix a few things.
+    Work on inspiring command.
+    Working on overall app structure.
+    Update Kernel.php
+    Fixed typo
+    Add support for the authorize middleware and AuthorizesRequests trait
+    Note of explanation.
+    Applied fixes from StyleCI
+    define an api group as an example
+    Middleware groups, define web group, configure routes file.
+    Add throttle middleware.
+    StyleCi refactor
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Override cookie encrypter by default.
+    Use the ::class notation
+    
+    Prefix the namespace with \
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Revert "[5.1] Add new middleware"
+    Update Kernel.php
+    Webmentions are now displayed on notes
+    Some spacing.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Include CSRF middleware in base install for easy override / whitelist.
+    
+    This makes it easy to skip CSRF verification for things like web hooks
+    and such from GitHub / Stripe.
+    Unused exception reference
+    Update the app skeleton.
+    Add scheduled commands.
+    Rename middleware.
+    Move middleware.
+    Update middleware.
+    Update middleware list.
+    Working on exception handling. WIP.
+    Tweak how console commands are registered.
+    Rename CSRF middleware.
+    Update middleware.
+    Middleware.
+    Move bootstraps to base classes.
+    Large refactor of HTTP and Console stack.
+    Respond to a POST request instead of GET request for new token requests
+    Massive update to code, better tests (but not complete yet)
+    just use web group by default
+    update default routes file
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    Starting on using a service class to isolate and better test the indieauth flow
+    Get Middlwares working again
+    Get the app working with L5.2
+    Comment fix.
+    define an api group as an example
+    comment changes
+    Remove terminology for "web routes".
+    Middleware groups, define web group, configure routes file.
+    line length
+    Moving places to be fully micropub
+    New Places Backend
+    
+    This *should* work. The backend for creating a new place via micropub
+    when on the micropub new notes page.
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Fill out admin routes for places
+    StyleCi refactor
+    Moce the client code into its own controller
+    Move IndeiAuth code into its own controller
+    Refactor all the controllers, AdminController is no longer a monolith
+    Simplify opening routes.
+    Working on syndication targets with micropub, client and backend
+    Remove auth scaffolding to make it opt-in.
+    Move login method to the AuthController, properly comment method
+    What a stupid typo
+    Micropub functionality added
+    Indie Auth process now added
+    Basic short URL support
+    Getting receive support back in WebMentions Controller, needed some new Exceptions defined and HTML Purifier dependency added
+    Webmentions are now displayed on notes
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    Ran php artisan fresh
+    PSR-2 for app.
+    Simplify routes file.
+    Tweaking setup.
+    Change wording.
+    Rename dashboard to home.
+    Moe default requests.
+    Working on default app structure. Login views.
+    Just use one controller call.
+    Remove extra line.
+    Changing default routing setup.
+    Working on routing and providers.
+    Let router be inherited by route script.
+    Mega work on structure.
+    Working on app structure.
+    Use a standard routes file by default.
+    allow guard to be specified on middleaware
+    update middleware and config
+    Change redirect when authenticated
+    
+    The route /home doesn’t exist in a default Laravel application, whereas / does.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Some spacing.
+    Just use helper function in middleware.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Remove middleware interface.
+    Rename dashboard to home.
+    Tweak welcome view.
+    Rename middleware to more "action" words.
+    Update middleware.
+    Rename a few things.
+    Working on middle wares.
+    Working on stack.
+    Missing Authenticator import in GuestFilter
+    Simplifying some filters.
+    Use tabs, always.
+    
+    Signed-off-by: crynobone <crynobone@gmail.com>
+    More work on filters.
+    Do some more injection on filters.
+    Added missing new lines at eof
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Working on new directory structure.
+    Further StyleCI improvements.
+    StyleCi refactor
+    A little PSR2 sprinkle
+    Update code to work with Guzzle 6
+    Use session correctly in line with L5.1
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    New Places Backend
+    
+    This *should* work. The backend for creating a new place via micropub
+    when on the micropub new notes page.
+    StyleCi refactor
+    Laravel 5.1 has its own CSRF exception system :D
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Remove redundant Closure namespace import in VerifyCsrfToken
+    No need to override this by default anymore.
+    Fix typo.
+    Stub out except property.
+    Some spacing.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Include CSRF middleware in base install for easy override / whitelist.
+    
+    This makes it easy to skip CSRF verification for things like web hooks
+    and such from GitHub / Stripe.
+    Update middleware.
+    Check type of token.
+    Tweak wording.
+    Prevent TokenMismatchException for HTTP OPTIONS requests
+    
+    `OPTIONS` HTTP requests should be treated in the same way than `GET` requests by the `VerifyCsrfToken` middleware. Otherwise, an exception is thrown, thus preventing any `OPTIONS` route to work.
+    Tweak how console commands are registered.
+    Rename CSRF middleware.
+    Update middleware.
+    Update CsrfMiddleware.php
+    Update CsrfMiddleware.php
+    Fix method call.
+    Fix check.
+    tweaks CSRF filter.
+    Added @throws TokenMismatchException
+    
+    Since modern IDE's will expect you to define the @throws attribute, added this to the Docblock.
+    Working on middle wares.
+    Working on stack.
+    Override cookie encrypter by default.
+    Don't return a login page to a JSON request
+    
+    Currently, any unauthorized API requests that pass through the `auth` middleware get a redirect to the login page. Adding the `wantsJson` flag to the conditional corrects this behavior.
+    allow guard to be specified on middleaware
+    update routes and middleware
+    update middleware and config
+    Fixed typo
+    Create a new middlware instance instead of filter.
+    
+    Shouldn't this be middleware?
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Some spacing.
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Remove middleware interface.
+    Rename middleware to more "action" words.
+    Working on middleware.
+    Rename auth middlewares.
+    Update middleware.
+    Rename a few things.
+    Remove unused Route
+    Working on middle wares.
+    Working on stack.
+    Use tabs, always.
+    
+    Signed-off-by: crynobone <crynobone@gmail.com>
+    Do some more injection on filters.
+    [bug] Auth filter still redirects to /login not auth/login
+    
+     if you use make:auth it defaults to auth/login for a path. But if you look at the Auth filter it defaults to /login as a path.
+    Fix parameters for the AuthFilter.
+    
+    Signed-off-by: Jason Lewis <jason.lewis1991@gmail.com>
+    Mega work on structure.
+    Rename.
+    Renaming folders.
+    Working on app structure.
+    Working on new directory structure.
+    I need to push things less quickly
+    Massive update to code, better tests (but not complete yet)
+    StyleCi refactor
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Better dependency injection, abstract URL in tests
+    If we don’t get a content created response from the endpoint, redirect to client page with error message
+    Removed some redundant `use` statements
+    Missed a file
+    Trying sessions as a way of storing data
+    StyleCI fixes
+    Sort out dependency injection
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    Better error message displayed when refreshing syndication targets
+    Basic client test
+    StyleCI fixes
+    Initial workings of adding places to notes via micropub
+    Moving places to be fully micropub
+    Another stupid type
+    Return the Location header content instead of an array
+    Typo, missed brackets so php was looking for getStatusCode poroperty instead of getStatusCode() method
+    Bugfix: pass the correct form fields to the micropub endpoint
+    StyleCI changes
+    New Places Backend
+    
+    This *should* work. The backend for creating a new place via micropub
+    when on the micropub new notes page.
+    Micropub Work
+    
+    Make Guzzle do a multipart post where all photos are sent as an array
+    with name `photo[]`. Also tweak the cleanUpTmp() method to not fail when
+    no photos are sent.
+    Adjust for the fact micropub request send array of photos
+    Further StyleCI improvements.
+    StyleCi refactor
+    When there’s only one mp-syndicaet-to it isn’t an array, which was messing up my code
+    Let's debug this
+    Lets use the right variable name
+    The next step has to be unit/integration tests
+    Typo
+    Dependency Injection confuses me
+    Dealing with syndication targets
+    Forgot to add the relavent use statement
+    Further clean up the Micropub Client code
+    Moce the client code into its own controller
+    Fix typo, missing }
+    Get syndication working
+    Try to get syndication working
+    Some unkown array stuff going on here
+    Guzzle 6 changes interaction with headers, it seems
+    Fixed still referencing old controller
+    Fix a missed variable moving them to camelCase
+    Try showing error messages on new notes page
+    Update code to work with Guzzle 6
+    Use session correctly in line with L5.1
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    store syndication data in cookie for a month
+    Add missing checkTokenValidity method
+    Don't reuse $request for Guzzle when its already being used by Illuminate
+    Lets get variable naming consistent
+    Gah this is getting annoying
+    We should provide both syndicate-to types for backwards compatibility
+    Make my micropub endpoint use mp-syndicate-to
+    Make the client prefer mp-syndicate-to if they are provided by the endpoint
+    Allow for syndicate-to and mp-syndicate-to when setting syndication targets
+    Use arrays to process syndication targets
+    Update the note posting code to work with single syndication target
+    Use Laravel’s CookieJar and Request to set and read cookies
+    Silly typo :'(
+    Get syndication targets displayed correctly
+    Add the token in a header
+    Stupid typo, hate testing Micropub stuff
+    Working on syndication targets with micropub, client and backend
+    More fixing for micropub
+    Use micropub’s content name for main entry, it simplifies my code
+    More micropub api backend work
+    Forgot the client_id
+    Attempting to simplify creating a new note via the micropub api
+    Lot’s of comments added
+    Mix up of Illuminate  and Guzzle  in same method
+    Can post notes via API now
+    Micropub functionality added
+    More StyleCI fixes
+    StyleCi refactor
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    StyleCI fix: correct comment type
+    Further StyleCI improvements.
+    StyleCi refactor
+    Refactor all the controllers, AdminController is no longer a monolith
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Fixed a typo and made minor phpcs fixes, (lines longer than 120 chars)
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Lot’s of comments added
+    Basic short URL support
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    More StyleCI fixes
+    Client name info is retreived from the Note model now
+    Better tests for contacts in notes and their displayed info
+    More refactoring
+    Make test reflect code, i.e. use `url.longurl`, not `app.url` on redirect, refactor namespace imports with styleci recommendations
+    Move note formatting into model, better seeding, and better tests
+    Get a testsuite working, now to refactor a little
+    Don’t excape contact names, trim any redundant whitespace from the rendered h-card view
+    Places are now displayed with notes
+    tags should work again
+    MediaLibrary package certainly works with single images
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    Embed tweets that I reply to.
+    
+    The layout could do with being updated a little bit, and I needed
+    to change the gulpfile and npm pakacge file to get things working
+    again. Need to look at re-enabling/using elixer.
+    Moved unicode/markdown conversion into the Note model
+    
+    This also required changes to note editing, as the admin
+    CP needs the original note.
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Update code to work with Guzzle 6
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Lot’s of comments added
+    Added use Twitter so the facade actually works
+    Fix issue with class DB not being found
+    Update controllers to use PSR-2
+    Webmentions are now displayed on notes
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Removed some redundant `use` statements
+    Massive update to code, better tests (but not complete yet)
+    More StyleCI fixes
+    Tagging now takes place within the model
+    StyleCI fixes
+    StyleCI changes
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Media Library S3 support
+    
+    Spatie’s MediaLibrary now uses AWS S3 to save images.
+    tags should work again
+    Fixed the validation for when there’s no photos attached to the new note, removed some die()’s that were left in from debugging
+    Requests should now be validated for photo filesize
+    Can now handle multiple photo uploads
+    MediaLibrary package certainly works with single images
+    Async syndicating to twitter works again
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    Sending WebMentions:
+    
+    Should be fully asynced now. Need to test with a real site
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    Moved unicode/markdown conversion into the Note model
+    
+    This also required changes to note editing, as the admin
+    CP needs the original note.
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    When there’s only one mp-syndicaet-to it isn’t an array, which was messing up my code
+    More refactoring, trying to follow phpmd’s advice
+    Get syndication working
+    Try to get syndication working
+    Allow note creation via admin form
+    Refactor all the controllers, AdminController is no longer a monolith
+    Further StyleCI improvements.
+    StyleCi refactor
+    Move the Clients controller to use the new Client model
+    Refactor all the controllers, AdminController is no longer a monolith
+    Add Response namepsace
+    More incorrect keys/variables, this time using scopes instead of scope
+    Use the key `me` instead of `domain`
+    Fix a typo in an untested part of the code!
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    Massive update to code, better tests (but not complete yet)
+    More typo fixes that should be caught with tests
+    Match method names between indieauth controller and service, I need tests for this
+    Update to modified IndieAuth Client that plays nice with the tests
+    Fixed a typo and made minor phpcs fixes, (lines longer than 120 chars)
+    Now the indieauth client’s https works, tests are much simpler
+    This should work, realised I hadn’t updated a `` to use the Request instance
+    Added another var_dump() as the first one didn’t highlight any issues
+    Still debugging travis issues
+    Add a docblock to the contructor method
+    Added more tests for the IndieAuth flow, refactored the relavent code slightly
+    Starting on using a service class to isolate and better test the indieauth flow
+    StyleCi refactor
+    Move IndeiAuth code into its own controller
+    Use session correctly in line with L5.1
+    Whilst refactoring, I’ve updated the auth controller to do post-login redirects better
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Move over to using CookieJar as well
+    Lot’s of comments added
+    Move login method to the AuthController, properly comment method
+    Some typos I didn't catch in dev
+    Indie Auth process now added
+    Moe default requests.
+    Respect remember me setting.
+    Working on default app structure. Login views.
+    Separate namespaces for when app is named.
+    new logout-method naming
+    Working on structure.
+    Changing default routing setup.
+    Extend controller by default.
+    These annotations are no longer needed.
+    [bug] Not sure but it seems this one should be
+    
+    auth/login as noted on line 64
+    Rename a few things.
+    Shorten sentence.
+    Scaffold authentication as default example.
+    Add support for the authorize middleware and AuthorizesRequests trait
+    base controller doesn't have to be abstract.
+    acl changes
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Use DispatchesJobs.
+    PSR-2 for app.
+    Stub out some folders for jobs / commands and events.
+    Changing default routing setup.
+    Sort out dependency injection
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    StyleCi refactor
+    More refactoring, trying to follow phpmd’s advice
+    Update code to work with Guzzle 6
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Lot’s of comments added
+    The TokensController, and storage path for tokens
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    StyleCI fixes
+    WebMentions work again!
+    
+    However, there is one big caveat in making sure
+    the storage directory and profile-images directory
+    are both writeable by the server. The fileForceContents()
+    method has been improved, but there’s still a
+    potential hiccup there.
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    Sending WebMentions:
+    
+    Should be fully asynced now. Need to test with a real site
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    A lot of refactoring here:
+    
+    * Moved clients into their own model
+    * Created a PhotosController to deal with photos, currently helps
+    with DRY, should help change how I save photos in future
+    * Added a LinksHeadder middleware to add various HTTP Link headers
+    to my responses, e.g. the webmention link
+    * Various genereral refactoring...
+    Update code to work with Guzzle 6
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Little jiggery-pockery, never updated a webmention before :)
+    Moved method out of controller, forgot to change “this” reference
+    Fallback to vanilla HTML Purifier, Chromabits service providor wasn't working
+    Lot’s of comments added
+    Avoid saving twitter profile imeages
+    Worked out what those variables are for :)
+    parseHTML needs two arguments
+    Another typo
+    Hopefully the webmentions controller works now
+    The parsing exception came from Webmentions parser
+    Getting receive support back in WebMentions Controller, needed some new Exceptions defined and HTML Purifier dependency added
+    Massive update to code, better tests (but not complete yet)
+    Added the docblocks
+    Alow places to be edited
+    Applied fixes from StyleCI
+    Seriously... why am I not getting the right slug
+    Something funny is going on with Eloquent
+    The generated slug wasn’t being added to the place URL
+    Flesh out the stub for creating a new place
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    New Notes can have Places
+    
+    When adding a new note an existing place can be associated
+    Places should now be manage-able in the admin cp
+    Now able to add a new place via form with map with draggable marker for greater accuracy
+    StyleCi refactor
+    A little PSR2 sprinkle
+    Move IndeiAuth code into its own controller
+    Use session correctly in line with L5.1
+    Whilst refactoring, I’ve updated the auth controller to do post-login redirects better
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Move over to using CookieJar as well
+    Lot’s of comments added
+    Move login method to the AuthController, properly comment method
+    Some typos I didn't catch in dev
+    Indie Auth process now added
+    Moe default requests.
+    Respect remember me setting.
+    Working on default app structure. Login views.
+    Separate namespaces for when app is named.
+    new logout-method naming
+    Working on structure.
+    Changing default routing setup.
+    Extend controller by default.
+    These annotations are no longer needed.
+    [bug] Not sure but it seems this one should be
+    
+    auth/login as noted on line 64
+    Rename a few things.
+    Shorten sentence.
+    Scaffold authentication as default example.
+    StyleCI fixes
+    Get the RSS feed plus tests working
+    Move attribute stuff into the model
+    StyleCi refactor
+    Update to using my IndieWeb package
+    
+    This involves using the new namespaces, and also
+    changing the `createNote` method invocation.
+    Better code for the short URL redirect
+    More articles code refactoring
+    Simplify articles code
+    Better handling of single article view
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Add a default style for use with prism.js
+    Move over to using Prism.js
+    Lot’s of comments added
+    Update controllers to use PSR-2
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    StyleCi refactor
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Without mp-syndicate-to posting a note would fail
+    Make my micropub endpoint use mp-syndicate-to
+    Use arrays to process syndication targets
+    Update the note posting code to work with single syndication target
+    More fixing for micropub
+    Use micropub’s content name for main entry, it simplifies my code
+    More micropub api backend work
+    Fix bug with wronglly namesaoced exception
+    Forgot the client_id
+    Attempting to simplify creating a new note via the micropub api
+    Lot’s of comments added
+    Added use Twitter so the facade actually works
+    Fix issue with class DB not being found
+    Final feature added, posting notes via Admin CP or API
+    Contacts now admin-able
+    Clients and Tokens useable
+    Notes almost working, just need to post new ones. but need to work out Micropub
+    Can do Articles through admin panel
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    StyleCI fixes
+    Add tests for places, plus some code refactor
+    Style CI fixes
+    Add microformats markup to places
+    Places
+    
+    All working pretty well now :D
+    
+    The next step is integrating micropub support
+    Notes and Places
+    
+    Notes now have nearby places listed on the “locate” map. Next up is
+    sending that location along with the new note request.
+    Massive update to code, better tests (but not complete yet)
+    Sort out dependency injection
+    Massive token refactor
+    
+    The management of tokens is now in its own service.
+    Starting on using a service class to isolate and better test the indieauth flow
+    StyleCI fixes
+    Moving places to be fully micropub
+    Applied fixes from StyleCI
+    Refactor switch statement
+    Trying to get new places working via micropub
+    New Places Backend
+    
+    This *should* work. The backend for creating a new place via micropub
+    when on the micropub new notes page.
+    Requests should now be validated for photo filesize
+    We should now be able to send multiple photos to twitter, and filesize should be enforced by validation logic in the relavent controller
+    StyleCi refactor
+    Even more refactor work:
+    
+    * asynced webmention work
+    * note content is now normalized in the model itself
+    Keep purging syndicate-to in favour of mp-syndicate-to
+    Moce the client code into its own controller
+    Fix typo, missing }
+    Get syndication working
+    Try to get syndication working
+    Some unkown array stuff going on here
+    Guzzle 6 changes interaction with headers, it seems
+    Fixed still referencing old controller
+    Fix a missed variable moving them to camelCase
+    Try showing error messages on new notes page
+    Update code to work with Guzzle 6
+    Use session correctly in line with L5.1
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    store syndication data in cookie for a month
+    Add missing checkTokenValidity method
+    Don't reuse $request for Guzzle when its already being used by Illuminate
+    Lets get variable naming consistent
+    Gah this is getting annoying
+    We should provide both syndicate-to types for backwards compatibility
+    Make my micropub endpoint use mp-syndicate-to
+    Make the client prefer mp-syndicate-to if they are provided by the endpoint
+    Allow for syndicate-to and mp-syndicate-to when setting syndication targets
+    Use arrays to process syndication targets
+    Update the note posting code to work with single syndication target
+    Use Laravel’s CookieJar and Request to set and read cookies
+    Silly typo :'(
+    Get syndication targets displayed correctly
+    Add the token in a header
+    Stupid typo, hate testing Micropub stuff
+    Working on syndication targets with micropub, client and backend
+    More fixing for micropub
+    Use micropub’s content name for main entry, it simplifies my code
+    More micropub api backend work
+    Forgot the client_id
+    Attempting to simplify creating a new note via the micropub api
+    Lot’s of comments added
+    Mix up of Illuminate  and Guzzle  in same method
+    Can post notes via API now
+    Micropub functionality added
+    Allow articles to be added as uploaded .md files
+    Further StyleCI improvements.
+    StyleCi refactor
+    More articles code refactoring
+    Simplify articles code
+    Better handling of single article view
+    Refactor all the controllers, AdminController is no longer a monolith
+    StyleCi refactor
+    Refactor all the controllers, AdminController is no longer a monolith
+    A little refactoring
+    Lot’s of comments added
+    Update controllers to use PSR-2
+    Big One, notes work better, h-cards/contacts work, tags for notes work, only thing left is webmentions for notes
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Auth controller stubs.
+    Remove auth scaffolding to make it opt-in.
+    Some spacing.
+    Ran php artisan fresh
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweak doc blocks.
+    Move constructor to app.
+    Remove properties.
+    Tweak some wording.
+    Some wording.
+    Working on some customization.
+    Working on removing authentication boilerplate.
+    Cleaning up auth code.
+    Organize requests differently.
+    Rename dashboard to home.
+    Moe default requests.
+    Working on default app structure. Login views.
+    Fix redirects.
+    Changing default routing setup.
+    Fix a few password reminder things.
+    Extend controller by default.
+    These annotations are no longer needed.
+    Change some method names.
+    Fix some password reset stuff.
+    Scaffold authentication as default example.
+    Fixed order of password validation in registration
+    update method call
+    Change redirecTo in AuthController
+    update routes and middleware
+    add property by default
+    added throttles logins trait by default
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Auth controller stubs.
+    Remove auth scaffolding to make it opt-in.
+    Some spacing.
+    Ran php artisan fresh
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Tweaks.
+    Simplify authentication. Remove service.
+    Move constructor to app.
+    Moving auth constructor to app.
+    Remove properties.
+    Tweak some wording.
+    Some wording.
+    Working on some customization.
+    Working on removing authentication boilerplate.
+    Organize requests differently.
+    Rename dashboard to home.
+    Simplify validation on register stuff.
+    Moe default requests.
+    Respect remember me setting.
+    Working on default app structure. Login views.
+    Separate namespaces for when app is named.
+    new logout-method naming
+    Working on structure.
+    Changing default routing setup.
+    Extend controller by default.
+    These annotations are no longer needed.
+    [bug] Not sure but it seems this one should be
+    
+    auth/login as noted on line 64
+    Rename a few things.
+    Shorten sentence.
+    Scaffold authentication as default example.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    PSR-2 for app.
+    Tweak default request setup.
+    StyleCI fixes
+    Add graceful handling of TokenMismatchException
+    StyleCI fixes
+    Allow whoops to open files in atom
+    change exception
+    return statement not needed here
+    [5.2] Remove unused import
+    Revert bad changes to the exception handler
+    Alpha order.
+    Change exceptions to ignore.
+    Clean up exception handler. Add new ignores.
+    fix type hitns
+    fix status code
+    working on exception handling for model not found.
+    StyleCi refactor
+    Fixed the exception handler
+    Sync with 5.0
+    Use the ::class notation
+    
+    Prefix the namespace with \
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Getting receive support back in WebMentions Controller, needed some new Exceptions defined and HTML Purifier dependency added
+    Some spacing.
+    Add Whoops handler, add articles controller/model, /blog/ links now work
+    Tweak a few things.
+    Tweaking a few things.
+    PSR-2 for app.
+    Simplify exception handler.
+    Clarify the type of response we're looking for.
+    Tweak a few error handling things.
+    Change wording.
+    Add clarification to comment.
+    Add scheduled commands.
+    Quick Laravel code-style refactor
+    Getting receive support back in WebMentions Controller, needed some new Exceptions defined and HTML Purifier dependency added
+    Initial commit, setting up skeleton
+    Work on paths.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    HTMLPurifier cache
+    Fix directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    MediaLibrary package certainly works with single images
+    Work on paths.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    adding public directory to app storage
+    Work on paths.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    adding public directory to app storage
+    Use new bootstrap/cache for cached optimizations loaded during bootstrapping.
+    Fix directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Ignore schedule files
+    ignore maintenance mode `down` file
+    Setup some stuff for config caching.
+    Update gitignore file.
+    Working on a few files.
+    Tweak some paths.
+    Views.
+    Fix directory.
+    Add logs directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Add newline character.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Fix directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    The TokensController, and storage path for tokens
+    Tweak some jobs and names.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Let’s not sync tokens :)
+    Views.
+    Fix directory.
+    Add logs directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Keep the HTML folder, but keep it empty
+    Tweak some jobs and names.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Keep the HTML folder, but keep it empty
+    Let’s not sync tokens :)
+    Views.
+    Fix directory.
+    Add logs directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Add logs directory.
+    Tweak some paths.
+    Move storage out of app directory.
+    moving laravel 4 into develop branch.
+    updated routing to fix several issues.
+    improving bundle workflow.
+    merged skunkworks into develop.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    Adjust for the fact micropub request send array of photos
+    Tweak some jobs and names.
+    Stub out some folders for jobs / commands and events.
+    Tweak some paths again.
+    Work on default project structure.
+    Working on the default app structure.
+    moving laravel 4 into develop branch.
+    refactoring the autoloader.
+    major session refactoring.
+    added libraries directory.
+    refactoring for dependency injection and testability.
+    refactoring.
+    fixed vie errors.
+    add libraries directory.
+    added back .gitignores
+    added module support!
+    initial commit of laravel!
+    simplify filesystem default config
+    Media Library S3 support
+    
+    Spatie’s MediaLibrary now uses AWS S3 to save images.
+    1. Add the MediaLibrary service provider
+    2. Published the media library migration
+    3. Publixhed the media library config
+    4. Add the media disk
+    5. Prepare the Note model
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Using the path parameter in the path method.
+    update filesystem config.
+    Add FTP adapter to filesystem config
+    PSR-2 for app.
+    fixed spacing issue
+    added url_type option to cloud files config
+    
+    added default url type to Rackspace Cloud Files config to match the pr #7409 in laravel/framework
+    Tweak some paths again.
+    Work on default project structure.
+    Work on paths.
+    Add support for configuring AWS S3 region.
+    Use working directory.
+    Typo.
+    Add filesystem configuration.
+    allow for setting sqlite database via env
+    cleaning up configs
+    Replaced TAB with space
+    Added DB_PORT as a default enviroment variable
+    Added default engine in configuration
+    Try better config values, i.e. not env()
+    Config values for a testing database
+    default to null
+    fix problems
+    changed redis support to load config from env
+    Redis connection setup in .env
+    Replace storage_path with database_path helper
+    
+    According to the docs, the sqlite database should be located within the "database" folder.
+    Set default charset for sqlsrv driver to utf8
+    PSR-2
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Using the path parameter in the path method.
+    Add env variable to database default connection
+    Initial commit, setting up skeleton
+    PSR-2 for app.
+    Add "strict" setting for MySQL connection.
+    
+    Signed-off-by: Graham Campbell <graham@mineuk.com>
+    Modify the wording of env() default values
+    Use the "Env" helper which has boolean support.
+    Use environment options in database config.
+    Tweak some paths again.
+    Work on default project structure.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Tweak default SQLite database.
+    Configure default database connections for Forge and Homestead.
+    Turn Redis clustering off by default.
+    Fix typos.
+    Turn on Redis clustering by default.
+    convert spaces to tabs
+    Convert spaces to tab.
+    
+    Signed-off-by: Edwin <tkaw220@gmail.com>
+    moving laravel 4 into develop branch.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Using the path parameter in the path method.
+    PSR-2 for app.
+    Views.
+    Change compiled path.
+    Setup some stuff for config caching.
+    Tweak some paths again.
+    Work on default project structure.
+    Get rid of resources directory. Unnecessary.
+    Update view.php
+    Tweak some paths.
+    Convert configuration PHP 5.4 arrays.
+    Tweak where views and lang files are located.
+    Working on the default app structure.
+    switch to bootstrap 3 as default pagination view.
+    moving laravel 4 into develop branch.
+    Moved the assets accross, static home page and projects page added, basic auth-ing for admin page set up
+    formatting
+    Added SparkPost config
+    cleaning up configs
+    Convert some variables to env variables in services.php.
+    Sync with 5.0
+    Use PHP 5.5 ::class property in config files
+    
+    See https://github.com/laravel/laravel/pull/3402
+    Get Mailgun working
+    Key rename.
+    Update services.php
+    Update services.php
+    PSR-2 for app.
+    Tweak some paths again.
+    Work on default project structure.
+    Stub SES configuration.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Add missing mailgun.domain option.
+    
+    Signed-off-by: crynobone <crynobone@gmail.com>
+    Add comment.
+    Fix formatting of file.
+    Working on configuration files.
+    tweak options
+    Updated trailing comma on array key => value to pass StyleCI.
+    Added options to the broadcasting pusher configuration file.
+    Remove unnecessary whitespace
+    Add log driver to broadcasting connections
+    Redis configuration.
+    Tweak configuration file name.
+    Some sample configuration.
+    Tweaked config
+    cleaning up configs
+    remove iron config. moved to package
+    added queue prefix to match the framework
+    Revert "added queue prefix to match the framework"
+    added queue prefix to match the framework
+    Tweaked alignment
+    spacing
+    Change default value for queue.failed.database
+    
+    Use same DB_CONNECTION enviroment variable for queue.failed.database config
+    Sending WebMentions:
+    
+    Should be fully asynced now. Need to test with a real site
+    Trying to work out queues, why does the failed_jobs use a db, whilst we can use anything for the actual queue?
+    Connection setting in Redis queue.
+    PSR-2 for app.
+    Remove executable status from queue config.
+    Typo
+    Modify the wording of env() default values
+    Sample database config.
+    Add expire option by default.
+    Use the "Env" helper which has boolean support.
+    Tweak some paths again.
+    Work on default project structure.
+    working on some configuration changes.
+    List null driver in list of queue drivers.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Added redis to list of available queue drivers
+    Add ttr option to beanstalk config.
+    Iron.io config less error prone.
+    
+    In iron.io settings 'token' is the first field and 'Project ID' is the second. The proposed order makes it less error prone.
+    Update queue.php
+    
+    This option is already supported in 'Illuminate/Queue/Connectors/IronConnector.php'
+    Having this option hidden works well only for North America. However for EU having it set to EU servers give 5X boost in network performance with iron.io
+    Add encrypt option to iron queue config.
+    Adding failed queue job options.
+    Put a comma after option just to match the other arrays
+    Removed the host config for the redis queue
+    Added configuration for RedisQueue
+    Added a sample IronMQ configuration.
+    Add sqs to list of supported drivers
+    
+    Just forgotten I presume.
+    default queue should be synchronous.
+    update queue config with sqs example.
+    added queue config and service provider.
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Typo in docs
+    
+    Should be _separate_ not _seperate_ :)
+    Change default view.
+    use provider for consistent language
+    Uncomment example.
+    Basic token configuration.
+    adjusting comments
+    working on config
+    update defaults
+    update name to reflect purpose
+    update middleware and config
+    Tweaked alignment
+    Use PHP 5.5 ::class property in config files
+    
+    See https://github.com/laravel/laravel/pull/3402
+    PSR-2 for app.
+    Try a lighter version of the auth scaffolding.
+    Tweak some paths again.
+    Work on default project structure.
+    Fix some password reset stuff.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Working on new directory structure.
+    added note about expiry time on reminders.
+    Add expire option to reminder config.
+    Fixed very minor typo
+    adding a default password reminder e-mail.
+    added config for password reminders.
+    moving laravel 4 into develop branch.
+    fix wording
+    Set HttpOnly flag
+    Trying sessions as a way of storing data
+    Using the path parameter in the path method.
+    PSR-2 for app.
+    Modify the wording of env() default values
+    Allow session encryption.
+    Use the "Env" helper which has boolean support.
+    Tweak some paths again.
+    Work on default project structure.
+    working on some configuration changes.
+    Tweak some paths.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Mention redis connection.
+    Added secure option.
+    Switch to file as default session driver.
+    Tweak session config.
+    More clarity
+    Update comment for clarity
+    Removed the unused setting 'session.payload'.
+    
+    Signed-off-by: Isern Palaus <ipalaus@ipalaus.es>
+    Fix spelling.
+    Fix comment on default session driver.
+    Added "cookie" back in as session option.
+    Fix comments on session.
+    Tweak for session changes.
+    Use storage_path() helper in configuration files.
+    Typo: missing quotes in session.php doc block
+    Added payload configuration option.
+    Rename path to files.
+    Added new options to session config.
+    Update app/config/session.php
+    update session config.
+    moving laravel 4 into develop branch.
+    Media Library S3 support
+    
+    Spatie’s MediaLibrary now uses AWS S3 to save images.
+    1. Add the MediaLibrary service provider
+    2. Published the media library migration
+    3. Publixhed the media library config
+    4. Add the media disk
+    5. Prepare the Note model
+    Massive purge of config('url.longurl'), config('app.url') better most of the time
+    cleaning up configs
+    APP_URL added to Environment Configuration
+    remove unneeded service provider
+    adding env to app config
+    Remove default key
+    update config
+    Remove alias inspire
+    Laravel needs to know about thr postgis database service provider
+    Updating the log system with env variable
+    Swap tabs for spaces
+    Update dependnecies, make logs be daily, use env() for some config values
+    1. Add the MediaLibrary service provider
+    2. Published the media library migration
+    3. Publixhed the media library config
+    4. Add the media disk
+    5. Prepare the Note model
+    Default auth service provider.
+    acl changes
+    Reference right Twitter facade
+    Sync with 5.0
+    Change default cipher.
+    Use PHP 5.5 ::class property in config files
+    
+    See https://github.com/laravel/laravel/pull/3402
+    Added back cipher config
+    remove cipher option
+    Some sample configuration.
+    Update app.php
+    Use single logs by default.
+    Fallback to vanilla HTML Purifier, Chromabits service providor wasn't working
+    Getting receive support back in WebMentions Controller, needed some new Exceptions defined and HTML Purifier dependency added
+    We have allnotes view working now, aded twitter api dependnecy as well
+    Initial commit, setting up skeleton
+    PSR-2 for app.
+    Tweak some jobs and names.
+    Mentioning new config option as per Taylor request
+    
+    https://github.com/laravel/framework/pull/7173#issuecomment-71988006
+    Update facade.
+    Add Disk facade.
+    Add Eloquent alias.
+    Add Bus facade.
+    A few tweaks.
+    Update app.php
+    Add a basic service provider for config overwriting.
+    Modify the wording of env() default values
+    Switch the order of app providers
+    Stub out some folders for jobs / commands and events.
+    Use the "Env" helper which has boolean support.
+    Tweak some paths again.
+    Work on default project structure.
+    Tweaking setup.
+    working on some configuration changes.
+    use APP_KEY from environment if available for the secret key
+    Stub out an app service provider.
+    Working on logging.
+    Add logs directory.
+    Remove log service provider since it is part of Bootstrap process.
+    Tweak how console commands are registered.
+    Large refactor of HTTP and Console stack.
+    Extend controller by default.
+    Fix some password reset stuff.
+    Working on stack.
+    Tweak some paths.
+    Add an event service provider.
+    Remove classes from aliases list
+    
+    Eloquent and Seeder were used to extend from which is a bad practice.
+    The SoftDeletingTrait should be imported just like the UserTrait and the RemindableTrait.
+    Str was also removed because it's just a shortcut for the namespace. People can always re-add it if they like.
+    I wasn't entirely sure what FormRequest was doing here but I have a feeling it's going to be used for the same reasons as one of the above classes. So I removed it as well.
+    Remove a few providers.
+    Working on a few changes.
+    Convert configuration PHP 5.4 arrays.
+    Remove unnecessary alias.
+    Remove some service providers and aliases.
+    Remove remote provider.
+    Change how controller is aliased.
+    Mega work on structure.
+    Working on the default app structure.
+    Working on directory structure. Event provider.
+    Working on new directory structure.
+    Working on new provider and aliases.
+    Remove class loader from aliases.
+    Continuing to work on structure.
+    Working on overall app structure.
+    spacing cleanup
+    Disable debugging by default. Must opt-in for local.
+    Set default cipher.
+    Add fallback_locale to config
+    
+    This is implemented in https://github.com/laravel/framework/commit/bf062fee1e0b67b2d646f37a7ef734ea5391c34c
+    Adding soft deleting trait alias.
+    Consolidate console support tools into one service provider.
+    Remove Live service provider as it's all consolidated into new Tail command.
+    update controller alias.
+    Setup live debugger in app.
+    Tweaking configuration files.
+    Update encrypter comment.
+    Updates for the rename of the `HTML` facade.
+    
+    See laravel/framework#1231
+    Update HTML alias. Closes #1210.
+    Added proper code for new maintenance mode feature.
+    Move comment to line it up with others.
+    Add "url" option to configuration.
+    Remove locales.
+    Added locales configuration.
+    Use storage_path() helper in configuration files.
+    Update Html alias.
+    Add route list service provider.
+    Remove fallback locale.
+    Update for optimize command.
+    added form service provider and aliases.
+    added Str alias.
+    remove unneeded alias.
+    setup seeder.
+    added a new service provider.
+    update service provider class name.
+    tweak how autoloader works.
+    added reminder service provider and password alias.
+    added queue facade.
+    added queue config and service provider.
+    Adding EventSubscriber alias as per documentation.
+    added old style auto loader setup in addition to composer.
+    moving laravel 4 into develop branch.
+    Don't compile service providers by default.
+    PSR-2 for app.
+    Tweak some jobs and names.
+    Add to the compiler.
+    Setup some stuff for config caching.
+     Fixed artisan:optimize crash
+    Tweak some paths again.
+    fixed artisan optimize crash
+    Work on default project structure.
+    Add to compile.
+    Remove log service provider since it is part of Bootstrap process.
+    Tweak how console commands are registered.
+    Large refactor of HTTP and Console stack.
+    Fix a few things.
+    Remove from compile list.
+    Working on a few changes.
+    Convert configuration PHP 5.4 arrays.
+    Fix compile file.
+    Working on the default app structure.
+    Working on compile config file.
+    Minor cs fixes
+    Update for optimize command.
+    We have allnotes view working now, aded twitter api dependnecy as well
+    cleaning up configs
+    Make Memcached options configurable.
+    Additional cs fixes
+    
+    Signed-off-by: Graham Campbell <graham@cachethq.io>
+    Using the path parameter in the path method.
+    PSR-2 for app.
+    Modify the wording of env() default values
+    fixed
+    Add connection settings to cache config.
+    Update cache configuration.
+    Use the "Env" helper which has boolean support.
+    Tweak some paths again.
+    Work on default project structure.
+    working on some configuration changes.
+    Tweak some paths.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Use storage_path() helper in configuration files.
+    moving laravel 4 into develop branch.
+    formatting
+    Added SparkPost config
+    Removed config option for deleted feature
+    Set Mail pretend config from .env
+    Documented availability of SES mail driver in mail config
+    support for unencrypted mail server usage like mailcatcher.me
+    PSR-2 for app.
+    A few tweaks to mail config.
+    Made mail config values configurable by .env file.
+    Tweak some paths again.
+    Work on default project structure.
+    Convert configuration PHP 5.4 arrays.
+    Working on the default app structure.
+    Fix wording.
+    Fix grammar in config/mail.php
+    Added log to the mail config
+    Minor cs fixes
+    Working on configuration files.
+    Cleaning up comments.
+    Updated mail config comments from postmark to mailgun
+    Added "pretend" option to mail config.
+    The default sendmail path must contain '-bs' or '-t' flags.
+    
+    Signed-off-by: Isern Palaus <ipalaus@ipalaus.es>
+    Updated available drivers for mail.
+    Added sendmail path config option.
+    Switch default mail config to Mailgun.
+    Add driver to mail config.
+    moving laravel 4 into develop branch.

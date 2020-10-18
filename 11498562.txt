@@ -1,0 +1,569 @@
+﻿    Added changelog for new release
+    Issue #30: Using the official api
+    Updating license
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    update build & travis code
+    update travis configuration
+    Reconfigure CI build notifications
+    Update CI build system credentials
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Adding process resources again
+    Introducing sleep to give docker container time to start
+    Adding docker logs for more output
+    Using jq raw output
+    processing license
+    lowercase username and password
+    Adding check status
+    TRying to get more info on httpie
+    Escaping env vars
+    Adding chrome stable
+    Adding logintest
+    Correcting docker volume
+    Adding all files under build/lib
+    Adding httpie and jq
+    Adding testing framework
+    Adding testing framework
+    Adding nebula release plugin
+    Updated version number
+    Updated build version to 1.12.0
+    Add AddAndRemoveTags
+    Added tasks for Managing tags
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Issue #17: fixing delete phase and supporting set_of_string
+    Updating version number
+    v1.7.2
+    Upgraded to version 1.7.1
+    Upgraded version to 1.7.0
+    New methods add_new_task, update_task, add_link
+    Upgraded to version 1.6.4
+    Added sudo false, for faster builds
+    Added feature that non required vars will also be processed
+    Upgraded to 1.6.2
+    Added option to start a subrelease async
+    Back to older version of specifying the file
+    #7 adds tag support for subrelease
+    #7 adds tag support for subrelease
+    #7 adds tag support for subrelease
+    Update travis for renamed repo
+    Search for pending tasks
+    Added Task to get the id based on task title
+    Made the plugin compatible with XLR 4.5.x
+    Updated version to 1.4
+    Changed version to 1.3
+    Updating to include build and release data
+    Fix url with trailing forward slash
+    Added deploy option
+    Added hipchat notifications
+    Added license and gradle build
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Issue #17: fixing delete phase and supporting set_of_string
+    Updating gradle wrapper
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating gradle wrapper
+    Updating gradle wrapper
+    Added filter to find a sub release
+    update build & travis code
+    update build
+    Fixing travis build
+    Issue #30: Using the official api
+    Add xldeploy deploy task to other releases (#20)
+    
+    * Created new task type for adding XLD tasks in other releases
+    
+    * Adding label to task
+    
+    * refactoring
+    
+    * conditions for incorrect release or phase name
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Issue #17: fixing delete phase and supporting set_of_string
+    #7 adds tag support for subrelease
+    Added license and gradle build
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Adding codeclimate config
+    simpletravis config
+    update build & travis code
+    update build
+    Update build.gradle
+    Fixing travis build
+    Fixing travis build
+    Fixing travis build
+    Adding process resources again
+    Adding chrome stable
+    Enabled the tests
+    Adding logintest
+    Issue #30: Using the official api
+    Updating docker containers to 7.5
+    Updating license
+    Include requests lib
+    Adding nebula release plugin
+    Updated version number
+    Update version to 1.12.0
+    Reformat README, update license plugin, add plugin-version.properties
+    Add AddAndRemoveTags
+    Added tasks for Managing tags
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Updating XLR version in docker container
+    Issue #17: fixing delete phase and supporting set_of_string
+    Using new xl docker plugin
+    Adding docker information for compile and run
+    New Task to check for a blocking task
+    
+    Added a new task (WaitForBlockingTask).  The new tasks check for a
+    specific task in a phase of any release.
+    v1.7.2
+    Upgraded to version 1.7.1
+    Upgraded version to 1.7.0
+    New methods add_new_task, update_task, add_link
+    Upgraded to version 1.6.4
+    Added feature that non required vars will also be processed
+    #7 adds tag support for subrelease
+    Search for pending tasks
+    Added Task to get the id based on task title
+    Made the plugin compatible with XLR 4.5.x
+    Updated version to 1.4
+    Changed version to 1.3
+    Updating to include build and release data
+    Fix url with trailing forward slash
+    Added version
+    Added license and gradle build
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Implement a task which waits for a release to fail or completed
+    Adding downloads badge
+    Reformat README, update license plugin, add plugin-version.properties
+    Add AddAndRemoveTags
+    Added docs for Xl deploy task
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Adding badges
+    documentation
+    Update README.md
+    Added descriptions to synthetic.xml
+    Update README.md
+    Updated readme with asynch property
+    Added Task to get the id based on task title
+    Made the plugin compatible with XLR 4.5.x
+    Adding a DeletePhases task
+    
+    Based on the xlr-deletePhases-plugin by @brianwcook
+    README and formatting cleanup
+    Updating README
+    Added Create Template task and updated documentation accordingly
+    Updated README.md
+    First commit xlr-xlr-plugin
+    Renamed project (fixes #1)
+    Added license and gradle build
+    update build & travis code
+    update build
+    Update gradle-wrapper.properties
+    Enabled the tests
+    Updating gradle wrapper
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating gradle wrapper
+    Updating gradle wrapper
+    #7 adds tag support for subrelease
+    Added filter to find a sub release
+    update build & travis code
+    Enabled the tests
+    Updating gradle wrapper
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating gradle wrapper
+    Updating gradle wrapper
+    #7 adds tag support for subrelease
+    Added filter to find a sub release
+    Modified docker-compose.yml
+    Update docker-compose.yml
+    Update licensing implementation
+    Fixing travis build
+    Fixing travis build
+    Issue #30: Using the official api
+    Updating licenses
+    Updating docker containers to 7.5
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Added opensource license
+    Added feature that non required vars will also be processed
+    Issue #30: Using the official api
+    Issue #30: Using the official api
+    Update licensing implementation
+    Updating licenses
+    Added tasks for Managing tags
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Refactoring delete phases to include error handling
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Refactoring delete phases to include error handling
+    Update licensing implementation
+    Fixing codacy quality
+    Fixing codacy quality
+    Enabled the tests
+    Adding logintest
+    new logo
+    Update licensing implementation
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Implement a task which waits for a release to fail or completed
+    Issue #25: Adding a map to process variables
+    Updating licenses
+    Switched to python requests
+    Switched to python requests
+    Add AddAndRemoveTags
+    Add xldeploy deploy task to other releases (#20)
+    
+    * Created new task type for adding XLD tasks in other releases
+    
+    * Adding label to task
+    
+    * refactoring
+    
+    * conditions for incorrect release or phase name
+    change waitForTask back
+    Added tasks for Managing tags
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Refactoring delete phases to include error handling
+    Add ability to wait for all tasks in a phase
+    New Task to check for a blocking task
+    
+    Added a new task (WaitForBlockingTask).  The new tasks check for a
+    specific task in a phase of any release.
+    Initial working version of automatically set a dependency on a spawned subrelease. Nothing deprecated yet.
+    Added descriptions to synthetic.xml
+    Added option to start a subrelease async
+    #7 adds tag support for subrelease
+    Added Task to get the id based on task title
+    Adding a DeletePhases task
+    
+    Based on the xlr-deletePhases-plugin by @brianwcook
+    README and formatting cleanup
+    Refactoring task types
+    
+    - extracting out a virtual base type to avoid property duplication
+    - making use of the script naming convention
+    Updating README
+    Added Create Template task and updated documentation accordingly
+    Updated license
+    Moved everything into resources
+    First commit xlr-xlr-plugin
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Add the license header
+    Implement a task which waits for a release to fail or completed
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Issue #17: Adding license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Refactoring delete phases to include error handling
+    Adding a DeletePhases task
+    
+    Based on the xlr-deletePhases-plugin by @brianwcook
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Changed method as static
+    Updated Logic to make a separate method to deduce release URL based on releaseID
+    Issue #30: Using the official api
+    Issue #25: Adding a map to process variables
+    Issue #10: Adding links in comments
+    Updating licenses
+    Fixed template ID after folder feature in XLR was introduced. With folders the templateID looks like Applications/folder1/../folderN/ReleaseM. Only Application/ must be removed, while keeping the folder structure
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Refactoring delete phases to include error handling
+    Added check if a task is a GateTask
+    unneeded import
+    Initial working version of automatically set a dependency on a spawned subrelease. Nothing deprecated yet.
+    Fix for passing variables using new api
+    Added feature that non required vars will also be processed
+    Added option to start a subrelease async
+    #7 adds tag support for subrelease
+    Cleaned up some python warnings
+    Made the plugin compatible with XLR 4.5.x
+    Added url encoding for templateName
+    Added filter to find a sub release
+    Fix url with trailing forward slash
+    Updated license
+    Moved everything into resources
+    First commit xlr-xlr-plugin
+    Update licensing implementation
+    Updating licenses
+    Optimized imports
+    remove wildcard on if block
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Add ability to wait for all tasks in a phase
+    New Task to check for a blocking task
+    
+    Added a new task (WaitForBlockingTask).  The new tasks check for a
+    specific task in a phase of any release.
+    Update licensing implementation
+    Updating licenses
+    Add AddAndRemoveTags
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Add tasks to manage release tags
+    Updating license
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Add the license header
+    Implement a task which waits for a release to fail or completed
+    Update licensing implementation
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Search for pending tasks
+    Added community license
+    Added Task to get the id based on task title
+    Update licensing implementation
+    Simplified requests error handling
+    Updating licenses
+    Improving code quality
+    Switched to python requests
+    Update licensing implementation
+    Updating licenses
+    Switched to python requests
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Updating licenses
+    Optimized imports
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Update CreateTemplate.py
+    
+    Line 49:  for template in data does not work in XLR v4.7.1.
+    Cleaned up some python warnings
+    Minor formatting cleanup
+    Added a new task - Create Template to allow users to create a template with tags in XL Release
+    Update licensing implementation
+    Updating licenses
+    Add xldeploy deploy task to other releases (#20)
+    
+    * Created new task type for adding XLD tasks in other releases
+    
+    * Adding label to task
+    
+    * refactoring
+    
+    * conditions for incorrect release or phase name
+    Update licensing implementation
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Added the init.py file contents to load the certificates
+    Updating licenses
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Fixing license
+    Updating license
+    Added opensource license
+    Added feature that non required vars will also be processed
+    Fixing add_dependency by switching to the public API
+    Update licensing implementation
+    Changed method as static
+    small typo for self.method_name
+    Updated Logic to make a separate method to deduce release URL based on releaseID
+    Fix for Created Release Hyperlink
+    Simplified requests error handling
+    Issue #30: Using the official api
+    Issue #10: Adding links in comments
+    Updating licenses
+    Improving code quality
+    Switched to python requests
+    Optimized imports
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Issue #17: fixing delete phase and supporting set_of_string
+    Refactoring delete phases to include error handling
+    CamelCase -> snake_case
+    renamed variable to snake_case
+    Initial working version of automatically set a dependency on a spawned subrelease. Nothing deprecated yet.
+    Fix for passing variables using new api
+    New methods add_new_task, update_task, add_link
+    Fix for sub releases with spaces in title
+    Added feature that non required vars will also be processed
+    Update licensing implementation
+    Updating licenses
+    Switched to python requests
+    Merge remote-tracking branch 'xebialabs-community/master'
+    
+    # Conflicts:
+    #       .gitignore
+    #       build.gradle
+    #       src/main/resources/synthetic.xml
+    Updating license
+    Refactoring delete phases to include error handling
+    Added feature that non required vars will also be processed
+    Add tasks to manage release tags
+    Add tasks to manage release tags
+    Add AddAndRemoveTags
+    Add tasks to manage release tags
+    Create a more generic task to let wait for any status of a target release. Keep the old one for occasional backwards compatibility.
+    Improved image for docs
+    Added docs for Xl deploy task

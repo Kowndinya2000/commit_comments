@@ -1,0 +1,681 @@
+﻿    spelling: bugfixes
+    Fix changelog formatting
+    Bump version to 0.7.3
+    Update links for new org
+    
+    Closes #120
+    Update links for new org
+    
+    Closes #120
+    Bump version to 0.7.2
+    Bump version to 0.7.1
+    Bump to version 0.7.0
+    Adding configurable open/read timeouts to POP3 receiver
+    Fix link in changelog
+    Bump gem version to 0.6.0
+    Bump gem version to 0.5.4
+    Update changelog and contributors
+    Bump to version 0.5.2
+    Bump to version 0.5.1
+    Add date to changelog
+    Bump version to 0.5.0
+    Update changelog with master changelog
+    Version bump to 0.4.0
+    Add CHANGELOG
+    spelling: receiver
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Header matchers with user guide
+    Improve passing options to pop3 and imap backends
+    add starttls option to imap
+    Fix users guide - revert whitespace changes
+    Add note to users guide about standard input not supported on windows
+    Add IMAP/Gmail documentation
+    
+    Add docs for imap/gmail (Had to google around for a bit to find them, would be nice to have an authoritative source)
+    Document the middleware feature
+    Add syntax highlighting to docs
+    documented graceful_death flag
+    update documentation to avoid say using ActionMailer Object Close #32
+    Update docs with ignore_stdin option
+    Add SSL support to POP3. Closes #2
+    Update docs with CC condition
+    Clarify example
+    Class instance method routing
+    Support a default `run' method which automatically runs after instance_eval
+    Expand the example in the User Guide
+    Default route and installation
+    First draft of User Guide conplete
+    Route docs
+    Fix typos in docs
+    Receiver documentation
+    Start on docs (config section draft complete)
+    Note that the project is not maintained
+    Update links for new org
+    
+    Closes #120
+    Update links for new org
+    
+    Closes #120
+    README.md: add note about ruby 1.9.3 compatibility
+    travis.yml: test on ruby 2.1 instead of 2.2
+    add support for ruby 2.2.1
+    Add note about maintenance
+    Update README
+    Add Ryan Stawarz to the contributors list
+    Remove broken mailman guide link
+    Add John Cant to contributors list
+    Update changelog and contributors
+    Update contributors
+    Fix typo
+    Use github for user guide
+    Add syntax highlighting to docs
+    Bump to version 0.5.1
+    Update README
+    Add link to getting started guide
+    Fix typo in README.md
+    avoid test on ruby 1.8.6 and mark it in README
+    add CI status on README page
+    add Cyril Mougel like contributor
+    Update README with contributor links
+    Fix capitalization in README
+    Link to a nicely formatted version of the User Guide
+    Update docs with CC condition
+    Add Contributors section to README
+    Support a default `run' method which automatically runs after instance_eval
+    Expand the example in the User Guide
+    Setup YARD properly
+    First draft of User Guide conplete
+    Use RSoC description in README
+    Basic README
+    Initial commit to mailman.
+    Added timeout (ineffective), pending descriptions
+    Add CLI support
+    Header matchers with user guide
+    Added timeout (ineffective), pending descriptions
+    Added HeaderCondition
+    Non-match on multipart mail body should return nil
+    
+    This fixes a bug with matching the body of a multipart mail message.
+    When the body of a multipart mail message was not matched, it defaulted to
+    the result of the 'message.parts.each' iteration which is the
+    array of parts - now it will return nil as expected.
+    Add config option to disable listen in maildirs
+    
+    Setting Mailman.config.maildir_listen = false disables listening
+    for new files in the configured maildir. This is particularly
+    useful for test environments.
+    Update test timing for rbx
+    Fix RUBY_ENGINE reference on 1.8.7
+    Fix up thread timing for jruby
+    Moved STDIN mock to support/stdin_mock
+    Require all files in spec/support
+    Moved pop3_mock.rb into spec/support
+    Don't blow up if we can't delete the log
+    avoid stdout log during test spec
+    migrate to rspec 2
+    improve test about message_processor with a 100% code coverage
+    fix spec failure after using mocha instead of rspec-expectations
+    Only load fssm and maildir if we're actually using a Maildir.
+    Added graceful handling of POP3 connection errors.
+    CC condition and nil header check added. Closes #4
+    Maildir monitoring support
+    Change Configuration system to be cleaner for testing
+    Refactor how the POP3 receiver works
+    Basic reading from STDIN
+    All the side-effects in the specs should be gone
+    Start Application class and functional tests
+    Conditions
+    StringMatcher
+    Use helpers in specs
+    Initial commit to mailman.
+    Basic reading from STDIN
+    Start Application class and functional tests
+    Check multipart bodies properly. Closes #16
+    spelling: messages
+    spelling: encoded
+    Test the threaded maildir watching spec on Rubinius
+    Added timeout (ineffective), pending descriptions
+    Move to RSpec 3 and expect syntax
+    Added retry logic to polling loop for common nondeterministic responses from generic servers. Ref #74.
+    Fixing warning from rspec
+    Bump listen to 2.2.0 and fix subsequent bugs
+    make test pass
+    Call run as process_maildir doesn't exist anymore
+    process_maildir now works outside of #run
+    Rename maildir_listen to watch_maildir
+    Add config option to disable listen in maildirs
+    
+    Setting Mailman.config.maildir_listen = false disables listening
+    for new files in the configured maildir. This is particularly
+    useful for test environments.
+    kill listener thread after each integration test
+    
+    so that they don't bleed over into the unit test and keep processing the maildir
+    process new messages in the maildir upon launch
+    Update README
+    Fix up thread timing for jruby
+    Add mock, specs and functional test for IMAP
+    avoid failure in JRuby because error message is Unknow instead of unknow
+    rescue inline doesnt works with 1.8.x
+    Fix stupid rescue
+    Check all new file when file change instead of only file create
+    
+    You can check all new file even if not detected by ffsm
+    fix spec failure after using mocha instead of rspec-expectations
+    Added graceful handling of POP3 connection errors.
+    Check multipart bodies properly. Closes #16
+    adds configuration option to ignore stdin processing.  This solves problems when trying to daemonize mailman
+    Class instance method routing
+    Fix timing issue in maildir test
+    Maildir monitoring support
+    POP3 polling
+    Basic reading from STDIN
+    Add docs to Application and default route
+    Start Application class and functional tests
+    spelling: instantiate
+    Move to RSpec 3 and expect syntax
+    Including changes from #103 with tests
+    Added tests for initializing Application with config
+    Fix graceful_death test timing for JRuby
+    Moved graceful_death flag to Mailman.config
+    POP3 processing can die gracefully on SIGINT
+    
+    Application.new now has a graceful_death option. If used, POP3
+    processing will not die during the connect/get messages/disconnect loop,
+    but will wait until after the current iteration finishes.
+    Spec router storage in app and add message processor
+    Refactor config out of Application
+    
+    - Use the Configuration singleton to store config values
+    - First config option is a application-wide logger
+    Add enable and disable methods to config system
+    Add config hash to Application
+    spelling: default
+    Move to RSpec 3 and expect syntax
+    Rename maildir_listen to watch_maildir
+    Add config option to disable listen in maildirs
+    
+    Setting Mailman.config.maildir_listen = false disables listening
+    for new files in the configured maildir. This is particularly
+    useful for test environments.
+    Moved graceful_death flag to Mailman.config
+    adds configuration option to ignore stdin processing.  This solves problems when trying to daemonize mailman
+    Rails environment loading
+    Maildir monitoring support
+    Change Configuration system to be cleaner for testing
+    POP3 config and poll interval
+    Fix logger config spec properly
+    All the side-effects in the specs should be gone
+    Ouch, side effects; Don't play with singletons, kids.
+    Refactor config out of Application
+    
+    - Use the Configuration singleton to store config values
+    - First config option is a application-wide logger
+    spelling: further
+    Move to RSpec 3 and expect syntax
+    Fixing warning from rspec
+    Replace "mock" with "double" in specs to remove deprecation warnings
+    Add support for mailman middleware
+    Log errors but but don't raise them when processing message so other messages can be processed
+    add test
+    Move from New directory to current directory with mark Seen maild from
+    maildir only when process doesn't failed
+    improve test about message_processor with a 100% code coverage
+    Constants in specs
+    More minor naming changes
+    Rename MailProcessor to MessageProcessor
+    Message processing
+    Move to RSpec 3 and expect syntax
+    Class instance method routing
+    Use #inherited instead of custom register method
+    use hash for route result
+    Refactored routes
+    Start refactoring Route
+    Constants in specs
+    Route matching regex capture support
+    Refactor route condition storage
+    Minor fixes for 1.8 compatibility
+    Route matching - more specs
+    Route matching - to/from
+    Route stores order that conditions are called
+    Route conditions support regex
+    Route named parameter compilation cleanup
+    Route condition regex compilation
+    Start on routes
+    Move to RSpec 3 and expect syntax
+    Fixing warning from rspec
+    Replace "mock" with "double" in specs to remove deprecation warnings
+    Class instance method routing
+    Add indifferent access to params hash
+    Use RSpec matchers in route blocks
+    Add message helper to router
+    Add bounce and default blocks
+    more router specs
+    start on router
+    Move to RSpec 3 and expect syntax
+    Add tests for middleware
+    Move to RSpec 3 and expect syntax
+    Including changes from #103 with tests
+    Fixing warning from rspec
+    Replace "mock" with "double" in specs to remove deprecation warnings
+    Adding configurable open/read timeouts to POP3 receiver
+    fix spec failure after using mocha instead of rspec-expectations
+    Added graceful handling of POP3 connection errors.
+    Refactor how the POP3 receiver works
+    Constants in specs
+    Move specs to subfolder
+    POP3 delete messages after processing
+    POP3 message processing
+    POP3 disconnection
+    Change how POP3 spec mocks
+    POP3 connection
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Move to RSpec 3 and expect syntax
+    Added retry logic to IMAP receiver connection for common nondeterministic responses from the IMAP server.
+    
+    Conflicts:
+            spec/mailman/receiver/imap_spec.rb
+    Including changes from #103 with tests
+    Fixing warning from rspec
+    Replace "mock" with "double" in specs to remove deprecation warnings
+    Add mock, specs and functional test for IMAP
+    fix spec failure after using mocha instead of rspec-expectations
+    Added graceful handling of POP3 connection errors.
+    Refactor how the POP3 receiver works
+    Constants in specs
+    Move specs to subfolder
+    POP3 delete messages after processing
+    POP3 message processing
+    POP3 disconnection
+    Change how POP3 spec mocks
+    POP3 connection
+    Header matchers with user guide
+    Move to RSpec 3 and expect syntax
+    Added HeaderCondition
+    Non-match on multipart mail body should return nil
+    
+    This fixes a bug with matching the body of a multipart mail message.
+    When the body of a multipart mail message was not matched, it defaulted to
+    the result of the 'message.parts.each' iteration which is the
+    array of parts - now it will return nil as expected.
+    CC condition and nil header check added. Closes #4
+    Add missing non-matching specs for conditions
+    Conditions
+    Move to RSpec 3 and expect syntax
+    Matcher registration and creation
+    Use symbols as keys and allow underscores in StringMatcher params
+    StringMatcher
+    Header matchers with user guide
+    Move to RSpec 3 and expect syntax
+    Fixing warning from rspec
+    Use #inherited instead of custom register method
+    Conditions
+    Move to RSpec 3 and expect syntax
+    Fixing warning from rspec
+    Matcher registration and creation
+    Use helpers in specs
+    RegexpMatcher
+    Move to RSpec 3 and expect syntax
+    Fixing warning from rspec
+    Use #inherited instead of custom register method
+    Fix bug in Matcher spec
+    Matcher registration and creation
+    Adding configurable open/read timeouts to POP3 receiver
+    Updated POP3 mock
+    spec_helper in mikel/mail repo has been updated.
+    Moved pop3_mock.rb into spec/support
+    Use real email messages in the POP3 mock
+    Refactor how the POP3 receiver works
+    Moved STDIN mock to support/stdin_mock
+    Added retry logic to IMAP receiver connection for common nondeterministic responses from the IMAP server.
+    
+    Conflicts:
+            spec/mailman/receiver/imap_spec.rb
+    imap: Search for unseen messages, mark processed messages as seen
+    
+    Previously the IMAP receiver deleted messages that were processed. This is drastic in some situations, so we default to marking the messages as seen.
+    
+    To restore the previous deletion behavior, set the done_flags option:
+    
+        Mailman.config.imap = {
+          # ...
+          done_flags: [Net::IMAP::DELETED]
+        }
+    
+    Closes #64
+    Add mock, specs and functional test for IMAP
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Update example to use new API
+    Add spacing to example
+    Add basic example
+    Add support for mailman middleware
+    Only load fssm and maildir if we're actually using a Maildir.
+    Logging and initial version number
+    Maildir monitoring support
+    Change Configuration system to be cleaner for testing
+    Forgot to require Logger
+    Fix require/autoload
+    Basic reading from STDIN
+    Refactor config out of Application
+    
+    - Use the Configuration singleton to store config values
+    - First config option is a application-wide logger
+    Use ActiveSupport's HashWithIndifferentAccess (already loaded by Mail)
+    Use autoload
+    Start Application class and functional tests
+    start on router
+    Conditions
+    StringMatcher
+    RegexpMatcher
+    Start on routes
+    Rename MailProcessor to MessageProcessor
+    Message processing
+    POP3 connection
+    Initial commit to mailman.
+    refer to Rails as a root level class instead of a module within mailman
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    recover from exceptions in the crash handler
+    
+    this should fix a number of dying daemons in production, if the remote host is
+    down.
+    Added retry logic to polling loop for common nondeterministic responses from generic servers. Ref #74.
+    Including changes from #103 with tests
+    Make is_windows a constant
+    Try to add check for windows
+    Bump listen to 2.2.0 and fix subsequent bugs
+    update Listen message send to use new Listen 2.2.0 API
+    Fixes Issue #72
+    Always disconnect in polling loop (even if exception was raised) in order to prevent crashes in underlying POP3 receiver which does not handle multiple connections well
+    Add support for mailman middleware
+    fix: call config on self
+    move config selector to application
+    fix the default config
+    per run optional configuration. Aka multiple configurations
+    Speed up maildir processing
+    
+    1. Only process messages when emails are added (not when they are
+    changed or removed).
+    2. Only process the messages that were added, not the entire maildir
+    Fixed Rails env require bug
+    process_maildir now works outside of #run
+    Rename maildir_listen to watch_maildir
+    Add config option to disable listen in maildirs
+    
+    Setting Mailman.config.maildir_listen = false disables listening
+    for new files in the configured maildir. This is particularly
+    useful for test environments.
+    kill listener thread after each integration test
+    
+    so that they don't bleed over into the unit test and keep processing the maildir
+    process new messages in the maildir upon launch
+    Switch from fssm to listen. Closes #47.
+    Refactored IMAP and POP3 code to use shared 'polling_loop' method
+    Don't lose your shit if the environment is already loaded
+    Moved graceful_death flag to Mailman.config
+    POP3 processing can die gracefully on SIGINT
+    
+    Application.new now has a graceful_death option. If used, POP3
+    processing will not die during the connect/get messages/disconnect loop,
+    but will wait until after the current iteration finishes.
+    Check all new file when file change instead of only file create
+    
+    You can check all new file even if not detected by ffsm
+    Only load fssm and maildir if we're actually using a Maildir.
+    Added graceful handling of POP3 connection errors.
+    Added IMAP support.
+    adds configuration option to ignore stdin processing.  This solves problems when trying to daemonize mailman
+    Close the POP3 connection after each retrieval. Closes #6
+    Support a default `run' method which automatically runs after instance_eval
+    Logging and initial version number
+    Rails environment loading
+    Maildir monitoring support
+    Change Configuration system to be cleaner for testing
+    POP3 polling
+    Spec router storage in app and add message processor
+    Basic reading from STDIN
+    Refactor config out of Application
+    
+    - Use the Configuration singleton to store config values
+    - First config option is a application-wide logger
+    Add enable and disable methods to config system
+    Add config hash to Application
+    Add docs to Application and default route
+    Start Application class and functional tests
+    Class instance method routing
+    Use #inherited instead of custom register method
+    Fix require/autoload
+    Use autoload
+    use hash for route result
+    Docs, baby!
+    Refactored routes
+    Start refactoring Route
+    Route matching regex capture support
+    Refactor route condition storage
+    Minor fixes for 1.8 compatibility
+    Route matching - more specs
+    Route matching - to/from
+    Route stores order that conditions are called
+    Route conditions support regex
+    Route named parameter compilation cleanup
+    Route condition regex compilation
+    Start on routes
+    Version bump
+    Bump gem version to 0.7.3
+    Bump version to 0.7.2
+    Bump version to 0.7.1
+    Bump to version 0.7.0
+    Bump gem version to 0.6.0
+    Bump gem version to 0.5.4
+    Bump gem version to 0.5.3
+    Bump to version 0.5.2
+    Bump to version 0.5.1
+    Bump version to 0.5.0
+    Version bump to 0.4.0
+    Bump to version 0.3.0
+    Bump version to 0.2.0 due to API changes
+    Logging and initial version number
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Add support for mailman middleware
+    Log errors but but don't raise them when processing message so other messages can be processed
+    do not crash on email without from field
+    Move from New directory to current directory with mark Seen maild from
+    maildir only when process doesn't failed
+    improve test about message_processor with a 100% code coverage
+    Added IMAP support.
+    Logging and initial version number
+    Maildir monitoring support
+    Docs, baby!
+    Rename MailProcessor to MessageProcessor
+    Message processing
+    Clear params before each run. Fixes #33.
+    Class instance method routing
+    Use ActiveSupport's HashWithIndifferentAccess (already loaded by Mail)
+    Add indifferent access to params hash
+    Start Application class and functional tests
+    Add message helper to router
+    Add bounce and default blocks
+    that shouldn't be there...
+    start on router
+    Add CLI support
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Fix documentation in configuration
+    Add support for mailman middleware
+    per run optional configuration. Aka multiple configurations
+    Rename maildir_listen to watch_maildir
+    Add config option to disable listen in maildirs
+    
+    Setting Mailman.config.maildir_listen = false disables listening
+    for new files in the configured maildir. This is particularly
+    useful for test environments.
+    Allow disabling of config.rails_root. Fixes #37.
+    Moved graceful_death flag to Mailman.config
+    Added IMAP support.
+    adds configuration option to ignore stdin processing.  This solves problems when trying to daemonize mailman
+    Rails environment loading
+    Maildir monitoring support
+    Change Configuration system to be cleaner for testing
+    POP3 config and poll interval
+    Ouch, side effects; Don't play with singletons, kids.
+    Refactor config out of Application
+    
+    - Use the Configuration singleton to store config values
+    - First config option is a application-wide logger
+    Remove brackets for consistent style
+    Preserve return value through middleware stack
+    Add support for mailman middleware
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Added IMAP support.
+    Make Receiver a module instead of a class
+    Use autoload
+    POP3 connection
+    Improve passing options to pop3 and imap backends
+    add starttls option to imap
+    imap: nil checks if connection was not created
+    Wrapped mail processing in a rescue block to ensure messages are not marked as done (or deleted) if an error occurs while processing.
+    Added retry logic to IMAP receiver connection for common nondeterministic responses from the IMAP server.
+    
+    Conflicts:
+            spec/mailman/receiver/imap_spec.rb
+    Including changes from #103 with tests
+    Fix wrong arguments given to Net::IMAP constructor, it should take 2 arguments host and options.
+    
+    ssl option can be hash now, in this case Net::IMAP pass it to OpenSSL::SSL::SSLContext#set_params, so we can pass SSL tuning options.
+    imap: Search for unseen messages, mark processed messages as seen
+    
+    Previously the IMAP receiver deleted messages that were processed. This is drastic in some situations, so we default to marking the messages as seen.
+    
+    To restore the previous deletion behavior, set the done_flags option:
+    
+        Mailman.config.imap = {
+          # ...
+          done_flags: [Net::IMAP::DELETED]
+        }
+    
+    Closes #64
+    fix ruby 1.8.7 compat with imap receiver
+    
+    the hash-as-second-arg only works in 1.9.x, passing port and ssl as the
+    2nd and 3rd params works in both versions of ruby.
+    Cleanup of imap port/ssl options. Add imap folder option.
+    Fix variable reference
+    IMAP crash fixes
+    
+    Don't try to relogin to IMAP when already connected.
+    Don't connect to IMAP during initialize
+    Prevent error when attempting to delete messages with IMAP
+    Removed 'puts' notification (POP3 receiver doesn't log anything at this point.)
+    Refactored IMAP#initialize
+    Fixed IMAP receiver - Set DELETED flag and 'expunge' messages after #get_messages
+    Fixed Mailman::Receiver::IMAP (Receiver is a module, tidied whitespace)
+    Added IMAP support.
+    spelling: multipart
+    Receive emails over HTTP!
+    
+    * Parsers for Cloudmailin, Sendgrid (and possibly others)
+    * Lots of tests
+    * Documentation!
+    
+    Added example for sendgrid
+    Improve passing options to pop3 and imap backends
+    Wrapped mail processing in a rescue block to ensure messages are not marked as done (or deleted) if an error occurs while processing.
+    pop3.rb: enable ssl certificate validation by default
+    
+    Ignoring certificates is dangerous by default is a security hole!
+    Including changes from #103 with tests
+    Adding configurable open/read timeouts to POP3 receiver
+    Make Receiver a module instead of a class
+    Add SSL support to POP3. Closes #2
+    Missed the :port option for POP3
+    Refactor how the POP3 receiver works
+    Docs, baby!
+    POP3 delete messages after processing
+    POP3 message processing
+    POP3 disconnection
+    POP3 connection
+    Use #inherited instead of custom register method
+    Docs, baby!
+    Matcher registration and creation
+    RegexpMatcher
+    Header matchers with user guide
+    Header matchers with user guide
+    Fix typo in Matcher docs
+    Use #inherited instead of custom register method
+    Use autoload
+    Minor matcher doc changes
+    Docs, baby!
+    Matcher registration and creation
+    Move compile! to Matcher
+    RegexpMatcher
+    Matcher base class
+    Header matchers with user guide
+    message.to can be a String sometimes
+    Added HeaderCondition
+    Non-match on multipart mail body should return nil
+    
+    This fixes a bug with matching the body of a multipart mail message.
+    When the body of a multipart mail message was not matched, it defaulted to
+    the result of the 'message.parts.each' iteration which is the
+    array of parts - now it will return nil as expected.
+    Check multipart bodies properly. Closes #16
+    CC condition and nil header check added. Closes #4
+    Use #inherited instead of custom register method
+    Docs, baby!
+    Conditions
+    Use #inherited instead of custom register method
+    Docs, baby!
+    Matcher registration and creation
+    Move compile! to Matcher
+    StringMatcher make compile! private
+    Use symbols as keys and allow underscores in StringMatcher params
+    StringMatcher
+    Class instance method routing
+    Use #inherited instead of custom register method
+    Use autoload
+    Add docs to Application and default route
+    Start Application class and functional tests
+    Docs, baby!
+    Smarter route constructor method naming
+    Refactored routes
+    Conditions

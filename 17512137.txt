@@ -1,0 +1,1876 @@
+﻿    Move to JackSneed file and rename.
+    update direcotry order
+    add fibonacci, lucas, and sum_series functions
+    Replacing deleted README
+    Jeremy bio fix hitory header and link
+    Jeremy bio fix hitory header
+    Jeremy bio fixing History header
+    Jeremy bio fixing headings
+    Jeremy bio
+    Readding the README.md to the class level directory
+    removing from wrong location
+    Adding README about myself
+    Add README.md to squelch fatal error.
+    Initial commit
+    Add beginning unit test for Task 11: Mailroom Madness.
+    Add a file that won't make it into a new branch or pull request.
+    clean up task4 branch #2
+    Clean up workspace.
+    update direcotry order
+    did nothing
+    Add Vietnamese greeting.
+    clean up git prompt
+    Add fixed version of hello.py with Vietnamese greeting.
+    Add hello example for Session 1.
+    Add a file with deliberate bad style to test linter. Add mystery.py from Session 2.
+    Add example files for Session 3. Fix and complete cipher.py
+    adding m.dickson session3 working files
+    Recommit of cipher.py
+    Verify Correct cipher.py
+    Remove corrupted cipher.py file
+    Added new line
+    Tried to revert changes
+    updating PEP8 standers on series.py and string.py
+    cleaning up folders on master branch
+    catchup with pushed project
+    Add example files for Session 3. Fix and complete cipher.py
+    cipher from class
+    first commit
+    create cipher.py and add decryption
+    change for session03 first part of class
+    Reversed the cipher
+    Add cipher.py for Session 3.
+    Add example files for Session 3. Fix and complete cipher.py
+    Add example files for Session 3. Fix and complete cipher.py
+    Add example files for Session 3. Fix and complete cipher.py
+    created task09 and listlab files
+    Updating examples from second class
+    Removing mystery.py and stackoverflow.py from branch task4
+    delete files from old folder
+    Commiting changes to inclass projects for session02
+    add fibonacci, lucas, and sum_series functions
+    Add a file with deliberate bad style to test linter. Add mystery.py from Session 2.
+    adding breakme assignment
+    clean up workspace.
+    Clean up workspace.
+    Updating examples from second class
+    clean up task4 branch #2
+    Updating examples from second class
+    Removing mystery.py and stackoverflow.py from branch task4
+    Commiting changes to inclass projects for session02
+    Add a file with deliberate bad style to test linter. Add mystery.py from Session 2.
+    Clean up workspace.
+    clean up task4 branch #2
+    Clean up workspace.
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 example code.
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 files for Task 17: HTML Render
+    Add Session 06 example code.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add forcefully Session 07 example files.
+    Add Session 08 examples.
+    Add Session 08 examples.
+    Add Session 08 examples.
+    Add Session 08 examples.
+    Add Session 08 examples.
+    Add Session 08 examples.
+    Add solutions for homeworks from Sessions 1-4.
+    Fix TypeError in line 47.
+    
+    Key is now declared before the value.
+    Add solutions for homeworks from Sessions 1-4.
+    Add solutions for homeworks from Sessions 1-4.
+    Add solutions for homeworks from Sessions 1-4.
+    Add solutions for homeworks from Sessions 1-4.
+    Add solutions for Session 06.
+    Add solutions for Session 06.
+    Add solutions for homeworks from Sessions 1-4.
+    Add solutions for Session 06.
+    Add solutions for Session 06.
+    Add solution for Task 11: Mailroom Madness.
+    file with 4 functions that create different error messages
+    push all branches to remote
+    series upate with proper syntax
+    Create JeremySchneider
+    Add Jeff's README/About Me
+    generate NameError function call
+    move break_me.py to session01
+    add breakme.py
+    Add last series of steps to list_lab.py
+    Add prompt "Do you like?" and remove feature
+    Add next four steps to list_lab.py
+    Add first four series of actions to list_lab.py
+    add #!/usr/bin/env python to make list_lab.py an executable python script
+    Add session03 directory and executable python script list_lab.py
+    change error checking to allow numeric characters for name input
+    add error checking for user input
+    removed check for digits
+    add task 10 exceptions feature and make logic/debug changes
+    Completed mailroom_madness.py
+    add new_report()
+    Add list of donors, main menu prompt, and thank_you()
+    Create mailroom_madness.py
+    add 4 questions regarding dictionaries and sets into dictionaries.py
+    create dictionaries.py
+    Add step 5 to dict_lab.py
+    Add step 4 to dict_lab.py
+    Add step 3 to dict_lab.py
+    Add completed steps 1 and 2 to dict_lab.py
+    create new file called dict_lab.py
+    add two questions on exceptions to exceptions.py
+    create exceptions.py
+    create dictionaries.py
+    Add one question and function regarding Paths into paths.py
+    create paths.py
+    create dictionaries.py
+    make edits to wrapper function and add docstring
+    add wrapper function safe_input() that returns 'None'
+    create safe_input.py
+    Add 2 questions and functions regarding File Reading and Writing to files.py
+    create files.py
+    create dictionaries.py
+    Add 3 functions to string.py
+    initialize task 5 and add sequences.py, iteration.py, string.py to session02
+    test for series.py
+    edit test_iteration.py  description
+    test for iteration.py
+    Add three functions to sequences.py
+    initialize task 5 and add sequences.py, iteration.py, string.py to session02
+    test for iteration.py
+    Add 3 functions to iteration.py
+    initialize task 5 and add sequences.py, iteration.py, string.py to session02
+    Add if __name__ == "__main__": block to series.py
+    Add sum series function to series.py
+    Add lucas number function to series.py
+    Add session02 directory with series.py file
+    test for iteration.py
+    test for series.py
+    test for iteration.py
+    test for iteration.py
+    test for series.py
+    Testing (1 question)
+    test for html_render.py
+    complete step 7
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    mkdir session06
+    Add Session 06 example code.
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    Multiple Inheritance (1 question)
+    complete step 8
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    complete task 3
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    Class and Static Methods (1 question)
+    Properties (1 question)
+    complete step 5
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    complete step 6
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    Special (Magic) Methods (1 question)
+    complete task 2
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    Properties (1 question)
+    complete step 8
+    complete step 7
+    complete step 6
+    complete step 5
+    complete task 4
+    complete task 3
+    complete task 2
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    test for html_render.py
+    complete step 8
+    complete step 7
+    complete step 6
+    complete step 5
+    debug task 4
+    complete task 4
+    complete task 3
+    complete task 2
+    complete step 1
+    mkdir session06
+    complete step 1
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    debug task 4
+    complete task 4
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    clean up and add docstrings & description
+    complete step 8
+    complete step 7
+    complete step 6
+    complete step 5
+    debug task 4
+    complete task 4
+    complete task 3
+    complete task 2
+    complete step 1
+    mkdir session06
+    Add Session 06 files for Task 17: HTML Render
+    mkdir session06
+    Add Session 06 example code.
+    test for html_render.py
+    complete circle tests
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    complete circle tests
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    Add Task 19 initial files.
+    Add forcefully Session 07 example files.
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    finish diameter & area tests
+    class work
+    Add Task 19 initial files.
+    add 3 questions to arguments.py
+    create arguments.py
+    count_evens function uses list comprehension and returns the number of even ints
+    create new file called list_comp.py
+    added actual assignments to task8 branch
+    create task8 files
+    test for list_comp.py
+    edit test_iteration.py  description
+    test for iteration.py
+    test for list_comp.py
+    Add 3 questions to comprehensions.py
+    create comprehensions.py
+    create arguments.py
+    complete dict_comp.py
+    complete items 1-4
+    create dict_comp.py
+    added actual assignments to task8 branch
+    create task8 files
+    complete lambda.py
+    create lambda.py
+    added actual assignments to task8 branch
+    create task8 files
+    Add 3 questions to functional.py
+    create functional.py
+    create arguments.py
+    test for list_comp.py
+    Adds some formatting changes and small edits.
+    Initial commit of my readme.
+    Add test for break_me.
+    Adds attribute error.
+    Adds name error, syntax error, and type error
+    Add test for break_me.
+    Add test for dictionaries.py
+    Add test for list_lab.
+    Fix while loop not re-stating question.
+    Cleanup.
+    Add string reversal.
+    Attempts scramble.
+    Scramble not working.
+    Attempting copy and scramble of letters.
+    Add second series.
+    First series.
+    Initial commit.
+    Add test for dictionaries.py
+    4 dictionary functions.
+    Causing exception.
+    Cleanup.
+    Add cleanup.
+    Attempts exceptions and adds file.py with working scripts.
+    More exception code.
+    Add file creation with path.
+    Add test for list_lab.
+    Add cleanup.
+    Attempts exceptions and adds file.py with working scripts.
+    Add arguments file.
+    Add comprehensions file.
+    Add functional file.
+    Add 3 functions.
+    Add 3 working functions.
+    Add functions checking for odd numbers and counting letters.
+    Add text blocks explaining assert statements.
+    Add assert statements.
+    Add series.py to task5 branch.
+    Add 3 working functions.
+    Add working sum_series function.
+    Add sum_series that calls fib or lucas
+    Add fibonacci iteration and attempt and lucas.
+    Fix form for asserts.
+    Add test for series.py.
+    Add static question.
+    Initial commit.
+    added actual assignments to task8 branch
+    create task8 files
+    Finish Step 8.
+    Finish Step 7.
+    Initial commit.
+    Initial commit.
+    Finish Step 8.
+    Initial commit.
+    Finish Step 3.
+    Initial commit.
+    Add class method question and initial commit of special.
+    Move properties function to properties.py
+    Update static.py.
+    Add static question.
+    Finish Step 5.
+    Initial commit.
+    Finish Step 6.
+    Initial commit.
+    Initial commit.
+    Add special.py.
+    Add class method question and initial commit of special.
+    Move properties function to properties.py
+    Update static.py.
+    Add static question.
+    finish step 2.
+    Initial commit.
+    Move properties function to properties.py
+    Finish Step 8.
+    Finish Step 7.
+    Finish Step 6.
+    Finish Step 5.
+    Finish Step 4.
+    Finish Step 3.
+    finish step 2.
+    Initial commit.
+    Initial commit.
+    finish step 2.
+    Finish step 1.
+    Initial commit.
+    Finish Step 4.
+    Initial commit.
+    Improve docstring comments.
+    Finish Step 8.
+    Finish Step 7.
+    Finish Step 6.
+    Finish Step 5.
+    Finish Step 4.
+    Finish Step 3.
+    finish step 2.
+    Finish step 1.
+    Update.
+    Beginning work.
+    Initial commit.
+    Add extra credit alternate constructor.
+    Finish second set of tests.
+    Finish first set of tests.
+    Attempt fix to change diamter.
+    Begin work.
+    Initial commit.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Add extra credit alternate constructor.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Add extra credit alternate constructor.
+    Begin work.
+    Initial commit.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Add extra credit alternate constructor.
+    Finish second set of tests.
+    Finish first set of tests.
+    Attempt fix to change diamter.
+    Begin work.
+    Initial change. Need completion.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Initial commit.
+    Add forcefully Session 07 example files.
+    Add extra credit alternate constructor.
+    Finish first set of tests.
+    Begin work.
+    Initial commit.
+    Add extra credit alternate constructor.
+    Finish second set of tests.
+    Begin work.
+    Initial commit.
+    Add extra credit alternate constructor.
+    Begin work.
+    Initial commit.
+    Add last question function.
+    Add subclass function.
+    Add 2 sublcass functions.
+    Add 1 class question.
+    Add 1 class question.
+    Add 2 OOP functions.
+    Initial commit.
+    readd Mary folder
+    fixing folder error
+    first commit
+    checked out session01 and session02 folders from master and added to task 6 branch
+    cleaning up folders on master branch
+    moving breakme assignment to session01 folder
+    adding breakme assignment
+    adding breakme assignment
+    checked out session01 and session02 folders from master and added to task 6 branch
+    cleaning up folders on master branch
+    cleaning up folders on master branch
+    adding m.dickson session3 working files
+    updates to list_lab per TA feedback
+    take 2: adding finished list_lab.py to task 6 session 3
+    adding task8 files
+    add list_lab.py
+    updating mailroom.py file in task12 branch
+    update task8.py a placeholder for dict_lab.py
+    cleaning up folders on mary student branch
+    cleaning up folders on mary student branch
+    cleaning up folders on master branch
+    cleaning up folders on master branch
+    cleaning up folders on master branch
+    finished dictionaries file
+    updating dictionaries file
+    adding dict_lab.py
+    checked out session01 and session02 folders from master and added to task 6 branch
+    checked out session01 and session02 folders from master and added to task 6 branch
+    updating exceptions file
+    cleaning up folders on master branch
+    adding paths.py
+    cleaning up folders on master branch
+    adding files.py and text file to go with it
+    adding files.py and text file to go with it
+    checked out session01 and session02 folders from master and added to task 6 branch
+    cleaning up folders on master branch
+    hw submission task 5 session 3 problems, still in progress
+    adding task5 files
+    hw submission task 5 session 3 problems, still in progress
+    adding task5 files
+    checked out session01 and session02 folders from master and added to task 6 branch
+    cleaning up folders on master branch
+    hw submission task 5 session 3 problems, still in progress
+    adding task5 files
+    checked out session01 and session02 folders from master and added to task 6 branch
+    Rename YIGU to YiGu
+    hw submission task 4 series problems
+    updating series assignment
+    adding series assignment
+    adding session05 prep files hw
+    adding session05 prep files hw
+    adding session05 prep files hw
+    Adding Sherry's file to the repository
+    Added the four exceptions
+    adding a markdown file describing myself for the Gitting To Know You assignment
+    move module to session01 dir
+    SyntaxError and AttributeError now occur
+    TypeError now occurs
+    NameError now occurs
+    put in input checking and changed input() to raw_input()
+    added simple testing framework for errors
+    follow pep8 line length conventions
+    complete series3 and series4 functions
+    complete series2 function. add docstrings to all functions
+    complete series1 function. add helper printing functions
+    form basic program function structure
+    add session03 dir and task6 file
+    follow pep8 line length conventions
+    complete dictionaries.py
+    add basic question function structure
+    add files for task8
+    follow pep8 line length conventions
+    complete exceptions.py
+    add basic question function structure
+    add files for task8
+    complete paths.py
+    add basic question function structure
+    add files for task8
+    follow pep8 line length conventions
+    complete paths.py
+    complete files.py
+    add basic question function structure
+    add files for task8
+    fix for 80+ length line
+    add docstrings to class methods
+    use dict in print_email()
+    better report formatting
+    store donations as two point decimal
+    fix for no name returned after list command
+    sort report by donation total
+    add basic report printing
+    add print email function
+    add list donor functionality
+    add validators to prompts dict
+    add prompts dict and deeper flow
+    create basic user loop
+    include safe_input from task 10
+    store donation as float
+    add prompt and validation system
+    add basic DonorList class
+    add file for task 11
+    newline at eof
+    complete series5 function
+    complete series4 function
+    complete series3 function
+    rename dictlab to dict_lab. complete series2
+    complete series 1 function
+    put in initial function structure
+    add file for task 9
+    add tests for DonorList get methods
+    add modify tests for DonorList
+    add test file for mailroom.py
+    added actual assignments to task8 branch
+    create task8 files
+    finish string module. improve presentation of sequences module
+    put same framework in other two modules
+    add task5 modules
+    finish string module. improve presentation of sequences module
+    put same framework in other two modules
+    finish question03 function. improve readability of other functions and docstrings
+    finish question02 function. requires sys import
+    finish question01 function
+    add framework for question functions to sequences module
+    add task5 modules
+    remember to compare to expected output in question 2
+    finish iteration module
+    put same framework in other two modules
+    add task5 modules
+    follow pep8 line length conventions
+    change asserts from keyword to function
+    make series start counting at 0
+    remove some extra whitespace from the test block
+    add comments to the test block
+    add main test block. add detail to function docstrings
+    add sum_series function
+    add lucas function
+    add fibonacci function
+    create session02 folder and series.py
+    add tests for series.py
+    add test file to series.py
+    added actual assignments to task8 branch
+    create task8 files
+    complete testing.py
+    add question framework
+    add files for task 18
+    added actual assignments to task8 branch
+    create task8 files
+    add tests for OneLineTag, SelfClosingTag, A, H
+    complete tests of Element class
+    progress tests of Element class
+    add file to test html_render.py
+    added actual assignments to task8 branch
+    create task8 files
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    complete multiple.py
+    add question framework
+    add files for task 18
+    added actual assignments to task8 branch
+    create task8 files
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    complete static.py
+    add question framework
+    add files for task 18
+    added actual assignments to task8 branch
+    create task8 files
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    complete special.py
+    add question framework
+    add files for task 18
+    added actual assignments to task8 branch
+    create task8 files
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    complete properties.py
+    add question framework
+    add files for task 18
+    added actual assignments to task8 branch
+    create task8 files
+    uncomment all run functions
+    progress on passing element to append. Html, Body, and P classes
+    complete step 1. exec permission on run_html_render.py
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    clean code and add docstrings
+    complete step 8
+    complete step 7
+    complete step 6
+    complete step 5
+    complete step 4
+    complete step 3. split output into 3 functions
+    clean Element.output, add comments
+    working step 2 with content as list
+    progress on step 2, going to try content as list refactor
+    progress on passing element to append. Html, Body, and P classes
+    complete step 1. exec permission on run_html_render.py
+    add starting files for task 17
+    Add Session 06 files for Task 17: HTML Render
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add tests for rot13. currently fail
+    add rot13.py already in progress plus test file
+    added actual assignments to task8 branch
+    create task8 files
+    remove unnecessary type conversion
+    remove unnecessary type conversion
+    complete circle class
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    add files for task 19
+    Add forcefully Session 07 example files.
+    convert string addition to join
+    add input validation. tests pass
+    add tests for rot13. currently fail
+    add rot13.py already in progress plus test file
+    complete arguments.py
+    add basic question framework
+    add files for task 12
+    complete functional.py
+    complete comprehensions.py
+    add basic question framework
+    add files for task 12
+    complete functional.py
+    add basic question framework
+    add files for task 12
+    Move to JackSneed file and rename.
+    Gitting to know you
+    Git to know you
+    Move break_me.py to session01 directory.
+     move break_me.py to seesion directory
+    Add break_me.py with actual code.
+    Add break_me.py
+    Add unicode to List_lab.py
+    Add List_lab.py
+    Fix dictionaries.py
+    Add dictionaries.py
+    Fix function calls
+    Add series/ problem5
+    Update docstring for problem1
+    Add series04
+    Fix bracket in series02
+    Remove mistake
+    Fix series02 for loop and add series03
+    Fix series01 and add series02
+    Series01 of task9
+    Fix exceptions.py
+    Add exceptions.py
+    Fix paths.py
+    Add paths.py
+    Fix safe_input.py
+    Complete safe_input.py file
+    Initial safe_input.py file
+    Fix files.py
+    Add files.py
+    Add completed Task5
+    Add completed Task5
+    Add sequences.py module
+    Add completed Task5
+    Add iteration.py
+    Fix sum_series
+    Add sum_series function and put assert statements at end of module.
+    Add lucas function with assert test.
+    Add fabonacci function with assert test.
+    Add testing.py
+    Fix style errors
+    Add mutliple.py
+    Add static.py
+    Add special.py
+    Fix style errors
+    Add properties.py
+    Fix style errors
+    Fix style errors
+    Save changes
+    Fix Style and logic errors
+    Add arguments.py
+    Add forgotten update
+    Revise and finish questions
+    Add question 2
+    Add subclasses.py
+     Fix docstring typo
+    Add classes.py
+    Fix style errors
+    Fix style errors
+    Save changes
+    Fix Style and logic errors
+    Add comprehensions.py
+    Add for loop with additonal test
+    Add lambda.py
+    Fix style errors
+    Save changes
+    Fix Style and logic errors
+    Add finctional.py
+     Fix docstring typo
+    Add opp.py
+    Submission for Gitting to know me
+    Submit break_me homework
+    Submission for break_me homework
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Added READ.md for Gitting to know you assignment
+    updated testing special properties and static py files
+    updated testing special properties and static py files
+    updated testing special properties and static py files
+    updated testing special properties and static py files
+    updated testing special properties and static py files
+    updated html_render
+    updated with test files and source files
+    updated with circle.py and test circle files
+    updated with test files and source files
+    updated with test files and source files
+    updated with test files and source files
+    updated with circle.py and test circle files
+    updated with test files and source files
+    updated with test files and source files
+    updated with circle.py and test circle files
+    updated with test files and source files
+    updated with test files and source files
+    updated with test files and source files
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    added the updated pep8 complient list_lab.py file
+    Corrected stash with exam directory
+    added dictionaries.py  exceptions.py files.py paths.py
+    added dictionaries.py  exceptions.py files.py paths.py
+    added dictionaries.py  exceptions.py files.py paths.py
+    Corrected stash with exam directory
+    added dictionaries.py  exceptions.py files.py paths.py
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    added updated sequence.py iteration.py and string.py
+    Corrected stash with exam directory
+    added updated sequence.py iteration.py and string.py
+    added updated series.py and ack.py
+    Corrected stash with exam directory
+    added updated sequence.py iteration.py and string.py
+    added updated series.py and ack.py
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    updated iteration.py with versions to the doct string
+    updated iteration.py with correct version
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    Corrected stash with exam directory
+    added arguments.py comprehensions.py functional.py
+    Corrected stash with exam directory
+    updated dict lab with minor revisions
+    added arguments.py comprehensions.py functional.py
+    Corrected stash with exam directory
+    added arguments.py comprehensions.py functional.py
+    Corrected stash with exam directory
+    applied attribute error and fixed indentation
+    added updated pep8 complient
+    updated breakme.py fix syntax errors
+    Added breakme.py to Break these functions assignment
+    Corrected stash with exam directory
+    Revert "Break these functions assignment"
+    Updated break_me.py with better examples
+    Break these functions assignment
+    Initial file creation
+    Update list_lab.py
+    Initial file creation list_lab.py
+    Update series.py with Fibonacci lucas and sum_series functions
+    Initial file creation series.py
+    Add task15 completed lambda.py file
+    finish step 1, update .gitignore for .pyc files
+    add a .gitignore file
+    add readme
+    move break_me to the right beanch
+    Update break_me.py
+    update syntax function
+    added session 1 folder
+    added four error exceptions
+    added break_me.py
+    create list_lab file
+    add 3 functions
+    add arguments.py
+    correct typo
+    add four functions
+    create empty dictionaries.py
+    update with four functions
+    add dict_lab.py
+    add exceptions.py
+    add path.py
+    add a function call
+    add a wrapper function
+    create task10 file
+    added actual assignments to task8 branch
+    create task8 files
+    correct typo
+    add files.py
+    add string_split function and update greetings function
+    add new file string.py
+    edit the answers so they are functions now
+    add three questions for sequences
+    add empty sequences.py
+    add three functions for the assignment
+    add new file iteration.py
+    add series.py
+    add testing.py
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add one function
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add one function
+    add special.py
+    update task8.py a placeholder for dict_lab.py
+    cleaning up folders on mary student branch
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    update docstring
+    add properties file
+    update run_html_render
+    copied over run_html_render.py
+    Add Session 06 files for Task 17: HTML Render
+    update test
+    add test output1
+    Add Session 06 files for Task 17: HTML Render
+    add all the outputs
+    Add Session 06 files for Task 17: HTML Render
+    add step 6, step 7 and step8
+    add step 4 and step 5
+    add step 3
+    update step 1 to fix tag for Element
+    finish step 1, update .gitignore for .pyc files
+    add html_render.py
+    added actual assignments to task8 branch
+    create task8 files
+    Add circle tests.
+    Add forcefully Session 07 example files.
+    add test_special.py
+    add lambda.py
+    add function
+    add lambda.py
+    added actual assignments to task8 branch
+    create task8 files
+    add break_me.py
+    update the function
+    add test_break_me.py
+    add special.py
+    add test_lambda.py
+    Add circle tests.
+    Add forcefully Session 07 example files.
+    add series.py
+    add series.py
+    add test.series.py
+    add task12 files
+    add calling of the functions
+    add three functions in comprehensions.py
+    add task12 files
+    fix doc strings
+    add four functions
+    fix doc strings
+    add one function
+    add function
+    add lambda.py
+    added actual assignments to task8 branch
+    create task8 files
+    add docstrings
+    add three functions
+    add task12 files
+    fix doc strings
+    add two function
+    create oop file
+    Add a README file introducing myself.
+    Add break_me.py for Task 3
+    Add incomplete trigram code.
+    Add initial software design for trigram homework.
+    add some code to break_me.py
+    created first broken function
+    created break_me.py
+    created readme file about myself
+    fix code in break_me.py, now contains four functions
+    resolve syntax error
+    resolve attribute error, create syntax error
+    create attribute error in break_me.py
+    move break_me.py to session01, create name error
+    add some code to break_me.py
+    created first broken function
+    created break_me.py
+    remove unnecessary virtualenv directory
+    remove unnecessary virtualenv directory
+    series.py assertions test as true
+    create directory session02, create mystery.py
+    Add a file with deliberate bad style to test linter. Add mystery.py from Session 2.
+    Clean up workspace.
+    series.py assertions test as true
+    create first pass at series.py
+    Add method calls to Jon Woodard's oop.py
+    complete subclasses.py
+    create classes.py and subclasses.py
+    Add method calls to Jon Woodard's oop.py
+    complete classes.py
+    add some code to classes.py
+    add som comments to classes.py
+    create classes.py and subclasses.py
+    Add method calls to Jon Woodard's oop.py
+    complete oop.py
+    add a question/comment
+    create oop.py
+    Fixing lame joke
+    savng with correct file extension
+    fixing headings
+    added my information
+    initial commit
+    Adding README about myself
+    Add README.md to squelch fatal error.
+    Initial commit
+    fixing loop in goodfruits
+    fixing loop
+    Comments added
+    Debugging completed
+    all sections completed
+    Complete series 1
+    added extra line at end
+    added comprehensions where appropriate and simplified
+    delete from wrong branch
+    removed extra variable
+    fixing visual indents
+    fixed line continuation in email
+    fixed line continuation problem
+    reinsert missing plus sign
+    added ability to quit out of whatever the user is doing
+    debugged create a report
+    changed function to while loop
+    debugged send a thank you
+    saving psudocode and error
+    moving to proper location
+    moving break_me.py to the proper location
+    removing from wrong location
+    Changing print statements to functions
+    removing from wrong location
+    Initial Commit
+    fixed line length
+    turning everythign into a function
+    debugged
+    Updat with three questions
+    fixed variable names and hex values
+    fixed line length
+    add comments
+    finished part 5
+    Finish part 4
+    part 3 done
+    part 2 done
+    part one done
+    made new file
+    made everything into a function
+    debugged
+    add two questions
+    made everything into a function
+    saving
+    debugged
+    add one question
+    exception handler added and debugged
+    create file
+    made everything into a function
+    debugged
+    add two questions
+    add comments
+    Adding three new functions
+    Creating new files for task 5
+    cleanup
+    add comments and remove print statements
+    Ask and answer three questions
+    Creating new files for task 5
+    Add comments for final
+    Initial commit with three questions
+    Creating new files for task 5
+    add docstring
+    asked question
+    add one question
+    add one question
+    add one question
+    test question
+    added comment
+    added three questions
+    update with docstrings
+    four questions added
+    cleanup
+    initial commit
+    finish docstrings
+    add class inherit from object class
+    one question asked
+    cleanup
+    initial commit
+    Added three questions
+    Add three questions
+    finish docstrings
+    add two questions
+    add question one
+    cleanup
+    initial commit
+    Commiting Broken Functions HW
+    adding link to README.md
+    Adding README about myself
+    Add in safe_input.py to repo master branch
+    Add additional test code to safe_input.py
+    Add in safe_input.py to repo
+    adding in actions three and four to list_lab.py
+    Moving list_lab to the session3 folder
+    Moving list_lab to the session3 folder
+    Adding Second Action for list_lab.py
+    saving list_lab.py before changing branches
+    adding first action block to list_lab.py
+    Add directory for mailroom madness and mailroom.py
+    adding in test file for files.py test.txt
+    adding question 3 and completing test code for dictionaries.py
+    adding questions 1,2 and 4 to dictionaries.py
+    updating exceptions.py
+    Commiting exceptions.py with both questions
+    creating question one paths.py
+    files.py
+    commiting question one for files.py
+    updating PEP8 standers on series.py and string.py
+    adding clarification to Question 3 test case
+    adding in question Three and docstrings
+    adding in Question Two and Test Code into string.py
+    adding in Question One and TestCode
+    adding docString for function 3 and adding string.py to repo
+    Improving Test Readout
+    Adding Questions 2 and 3 to Sequences.py
+    Adding Question 1 for sequences.py and general format
+    adding docString for function 3 and adding string.py to repo
+    adding question 3 and test
+    adding question 2 and improving test code in iteration.py
+    Adding question 1 and test code for it to iteration.py
+    updating PEP8 standers on series.py and string.py
+    Fixed Formatting in DocStrings
+    Added Comments
+    Fixed Series Function so that it correctly represents the Lucas Series
+    added in Series Function and Tests
+    Added in Lucas Function Case
+    Added in Test Code and Fibonacci Documentation
+    Commiting initial version of Series.py
+    Add testing.py and Code
+    Add static.py and code
+    Add special.py and question
+    Add properties.py and code
+    add session05 folder to master branch as it was incorretly created on task13 branch
+    Add question 4 and fix other questions
+    Add question 2 and 3 to subclasses.py
+    Add question 1 to subclasses.py
+    Add needed .py files to session05 for task 16
+    added actual assignments to task8 branch
+    create task8 files
+    Add better docstring to classes.py
+    add question to classes.py
+    Add needed .py files to session05 for task 16
+    added actual assignments to task8 branch
+    create task8 files
+    Add question 2 to oop.py
+    add question one to oop.py
+    Add needed .py files to session05 for task 16
+    added actual assignments to task8 branch
+    create task8 files
+    Rename YIGU to YiGu
+    Update README.
+    Add personal folder and README.
+    Move break_me.py to proper folder.
+    Update break_me.py with functions.
+    Add break_me.py
+    Complete 4 of 4 tests -- test_break_me.py
+    Move break_me.py to proper folder.
+    Complete mail_room.py psuedocode.
+    Add return value to encrypt and decrypt.
+    Add my version of cipher.py.
+    Add python env statement.
+    Complete list lab with bonus.
+    Complete basic list_lab.
+    Begin work on list_lab.
+    Add list_lab.py
+    Add examples.
+    Add examples.
+    Complete 2 of 4 tests -- test_cipher.py
+    Complete files.py and add test.txt.
+    Complete exception.py.
+    Added goals for assignment.
+    Add files for task 8.
+    Complete 3 of 4 tests -- test_dict_lab.py
+    Complete dictionaries.py.
+    Added goals for assignment.
+    Add files for task 8.
+    Add newline at EOF. Need to fix Sublime bug.
+    Complete dict_lab.py
+    Improve docstring for section 4 function.
+    Refactor use of dict constructor in Section 2.
+    Complete dict_lab.py through Section 4.
+    Complete dict_lab through Section 3.
+    Add session04 folder and dict_lab.py.
+    Complete paths.py
+    Added goals for assignment.
+    Add files for task 8.
+    Complete files.py and add test.txt.
+    Added goals for assignment.
+    Add files for task 8.
+    Rename YIGU to YiGu
+    Use traceback for practice.
+    Update string.py docstrings with questions for assignment.
+    Complete string.py.
+    Add iteration.py, sequences.py, and string.py.
+    Rename YIGU to YiGu
+    Clean up formatting.
+    Complete sequences.py
+    Convert to snake case.
+    Fix typo.
+    Update sequences.py with result of learning.
+    Update sequences.py with first test function.
+    Add iteration.py, sequences.py, and string.py.
+    Rename YIGU to YiGu
+    Clean up formatting.
+    Complete iteration.py
+    Add iteration.py, sequences.py, and string.py.
+    Improve docstring as per session02.thml example.
+    Add main module block and assert statements to check code.
+    Complete sum_series function.
+    Complete lucas function.
+    Complete fibonacci function.
+    Add session02 folder and series.py
+    Complete 1 of 4 tests -- test_series.py
+    Complete testing.py
+    Add files for task18.
+    added actual assignments to task8 branch
+    create task8 files
+    Fix comments in multiple.py
+    Complete multiple.py
+    Add files for task18.
+    added actual assignments to task8 branch
+    create task8 files
+    Complete static.py.
+    Add files for task18.
+    added actual assignments to task8 branch
+    create task8 files
+    Fix EOF new line.
+    Complete special.py
+    Add files for task18.
+    added actual assignments to task8 branch
+    create task8 files
+    Update properties.py
+    Complete properties.py
+    Add files for task18.
+    added actual assignments to task8 branch
+    create task8 files
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Refactored to remove redundancy.
+    Complete extra credit--alt constructor.
+    Complete standard tests for circle.py
+    Complete first part of circle tests.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Add files for circle.py
+    Add forcefully Session 07 example files.
+    Complete functional.py with included test.txt for file reading/writing.
+    Complete arguments.py
+    Add arguments.py, comprehension.py, and functional.py.
+    Fix new line at EOF.
+    Complete comprehension.py
+    Add arguments.py, comprehension.py, and functional.py.
+    Fix EOF new line.
+    Update files with __main__ section.
+    Complete subclasses.py
+    Add files for task16.
+    added actual assignments to task8 branch
+    create task8 files
+    Update files with __main__ section.
+    Complete classes.py
+    Add files for task16.
+    added actual assignments to task8 branch
+    create task8 files
+    Complete functional.py with included test.txt for file reading/writing.
+    Add arguments.py, comprehension.py, and functional.py.
+    Fix EOF new line.
+    Complete oop.py with appropriate questions this time.
+    Complete oop.py
+    Add files for task16.
+    added actual assignments to task8 branch
+    create task8 files
+    fixed typo
+    created brief bio
+    first commit
+    move break_me.py into session01 folder
+    created file with four broken functions
+    first commit
+    first commit
+    first commit
+    first commit
+    first commit
+    first commit
+    first commit
+    add docstrings and comments
+    first commit
+    add docstrings and comments
+    first commit
+    add docstrings and comments
+    first commit
+    add docstrings and comments
+    First commit. I only did one commit because I needed help from a classmate.
+    First commit. Wrote several paragraphs about myself
+    Fix order of reversed fruits.
+    Add hashbang.
+    All tasks work.
+    Finished all but last task.
+    First commit
+    Add working assertions checks to functions.
+    Change optional parameter to required parameter.
+    Add working sum_series function.
+    Add working lucas function.
+    Abandon list form and fix fibonacci function.
+    First commit
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    adding completed break_me.py to file directory and removing puzzle.py (this is in another working branch).
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Create new branch for Task4 assignment, and add assignment.
+    Add series_sum function and assert tests to confirm functionality
+    Correct minor discrepency in Fib Sequence function to mirror functionality with Lucas Sequence.
+    Add Lucas series function to series.py.
+    Add series.py to repository, with first task complete (Fib Sequence).
+    Add minor change to list_lab assignment for new branch submission.
+    Add working list_lab script to repo.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Finish task5 assignment.
+    Add string.py to branch.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Add sequences.py to branch.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Finish task5 assignment.
+    Add iteration.py to branch.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Add docstring to ack.py function.
+    Add testing to verify ack function works correctly.
+    add validation testing to ack function.
+    Add functional ackermann's function. Need testing and code review/clean-up.
+    Add session folders and reorganize files. Add new assignment: list_lab.py.
+    Add docstring to rot13 function.
+    Add rot13.py to repo with functional code. Assert test not functional.
+    Rename YIGU to YiGu
+    fix url
+    update about me
+    update about me
+    aboutme
+    Rename YIGU to YiGu
+    did nothing
+    Create BreakTheseFunctions.py
+    Rename YIGU to YiGu
+    worked on session03 task 6 list_lab.py
+    add list_lab.py
+    Updated series.py; tested function sum_series & fibonacci_sum_series
+    Updated series.py; fixed format & indentation error
+    Updated series.py.1.updated comment;2.updated sum_series;3.made correction to format
+    Rename YIGU to YiGu
+    Add x<0 return None
+    Add comments on Main
+    did nothing
+    Rename YIGU to YiGu
+    fix url
+    update about me
+    update about me
+    aboutme
+    Rename YIGU to YiGu
+    did nothing
+    Create BreakTheseFunctions.py
+    Fixed task8, added functions and fixed docstring.
+    Added task8, session03 and dictionaries.py
+    Fixed task8, added functions and fixed docstring.
+    Added exceptions.py
+    Fixed task8, added functions and fixed docstring.
+    Added paths.py
+    Fixed task8, added functions and fixed docstring.
+    Added files.py
+    Move arguments.py to the right folder
+    Added task12,session04 & arguments.py
+    Added Comprehensions.py
+    Modified mailroom.py. Done
+    Modified mailroom.py. Done
+    Modified mailroom.py. Almost. Need to fix create_report()
+    Modified mailroom.py. Test 2 functinos. Need more to fix print_thank_you_letter.
+    Modified mailroom.py and go to sleep
+    Added session04,task11 & mailroom.py
+    Add utf-8 encoding for Yi Gu's task 9.
+    Added task9,session04 & dict_lab.py
+    Update safe_input.py
+    Test and updated safe_input.py
+    Remove safe_input.py
+    Update safe_input.py
+    Added task11, session04 and mailroom.py
+    Added task10, session04 and safe_input.py
+    Added functional.py
+    Rename YIGU to YiGu
+    #session02 Task5 sequences.py
+    Rename YIGU to YiGu
+    #session02 Task5 sequences.py
+    Rename YIGU to YiGu
+    #session02 Task5 sequences.py
+    Rename YIGU to YiGu
+    Add x<0 return None
+    Add comments on Main
+    did nothing
+    Add function to testing.py
+    Add function to testing.py
+    Add task18,session06 & testing.py
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add files to session06
+    Add Session 06 example code.
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add function to multiple.py
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add static.py
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add special.py
+    Modified html_render.py. Finish task17
+    Add Function body and p
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add properties.py
+    Modified html_render.py. Finish task17
+    Add Function body and p
+    Add Function render & run run_html_render.py step 1
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Modified html_render.py. Finish task17
+    Add Function body and p
+    Add Function render & run run_html_render.py step 1
+    Add Function body and p
+    Add Function render & run run_html_render.py step 1
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Modified html_render.py. Finish task17
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Modified html_render.py. Finish task17
+    Add Function body and p
+    Add Function render & run run_html_render.py step 1
+    Add Element class
+    Add files to session06
+    Add Session 06 files for Task 17: HTML Render
+    Add files to session06
+    Add Session 06 example code.
+    Finish circle.py
+    Add files
+    Add files
+    Add forcefully Session 07 example files.
+    Add files
+    Add forcefully Session 07 example files.
+    Add files
+    Add forcefully Session 07 example files.
+    Add lambdahw.py, test_lambda.py
+    Add files
+    Add forcefully Session 07 example files.
+    Add files
+    Add files
+    Add forcefully Session 07 example files.
+    Add mailroom.py
+    Modified list_comp.py, remove old tests
+    Add list_comp.py and test_list_comp.py
+    Add files
+    Add forcefully Session 07 example files.
+    Add lambdahw.py, test_series.py
+    Finish circle.py
+    Add files
+    Add files
+    Add forcefully Session 07 example files.
+    Add list_comp.py and test_list_comp.py
+    Add list_comp.py and test_list_comp.py
+    Add files
+    Add forcefully Session 07 example files.
+    Add files
+    Add forcefully Session 07 example files.
+    Add lambdahw.py, test_lambda.py
+    Add test_mailroom.py
+    Add lambdahw.py, test_lambda.py
+    Add files
+    Add forcefully Session 07 example files.
+    Add files
+    Add forcefully Session 07 example files.
+    Add lambdahw.py, test_series.py
+    Updated series.py; tested function sum_series & fibonacci_sum_series
+    Updated series.py; fixed format & indentation error
+    Updated series.py.1.updated comment;2.updated sum_series;3.made correction to format
+    Rename YIGU to YiGu
+    Add x<0 return None
+    Add comments on Main
+    did nothing
+    Add test_mailroom.py
+    Add lambdahw.py, test_series.py
+    Add files
+    Finish circle.py
+    Add files
+    Add files
+    Move classes and subclasses to session05
+    Add function to classes.py
+    Move classes and subclasses to session05
+    Move classes and subclasses to session05
+    Add task15, session05 & oop.py
+    added actual assignments to task8 branch
+    fix links
+    Final edit
+    Minor editing fix
+    Add michaelhazani directory and readme
+    add answer to Task 3
+    add test file for session 3 dictionaries
+    cleanup
+    added actual assignments to task8 branch
+    create task8 files
+    add test file for session 3 dictionaries
+    added actual assignments to task8 branch
+    create task8 files
+    added actual assignments to task8 branch
+    added actual assignments to task8 branch
+    create task8 files
+    added actual assignments to task8 branch
+    create task8 files
+    added actual assignments to task8 branch
+    cleanup
+    created task11 branch and mailroom.py
+    added actual assignments to task8 branch
+    create task8 files
+    add test file for session 4 dict_lab
+    finished list_lab.py
+    created task09 and listlab files
+    added actual assignments to task8 branch
+    create task8 files
+    cleanup
+    finished safe_input.py
+    created task10 branch and safe_input.py
+    added actual assignments to task8 branch
+    create task8 files
+    cleanup
+    clean up task4 branch
+    delete files from old folder
+    Commiting changes to inclass projects for session02
+    add fibonacci, lucas, and sum_series functions
+    Add a file with deliberate bad style to test linter. Add mystery.py from Session 2.
+    adding breakme assignment
+    clean up workspace.
+    Clean up workspace.
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    recreate session06
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    task17 add test_html_output files
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    task17 add test_html_output files
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    task17 add latest run_html
+    add HTML files again
+    recopy session06 files
+    recreate session06
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    task17 finishing touches to html_render
+    task17 finish part 8 and all!
+    task17 finish part 7
+    task17 finish part 6
+    task17 all the way to part 5
+    start task17 part 3
+    finish task17 part 2
+    finish task17 part 2
+    finish task17 part 2
+    finish task 1
+    recreate session06
+    Add Session 06 files for Task 17: HTML Render
+    task17 add test_html_output files
+    Add Session 06 files for Task 17: HTML Render
+    Merging Michael Hazani task 17.
+    task19 cleanup
+    task19 add files to sesh9 folder
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    task19 cleanup
+    task19 add files to sesh9 folder
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    Merging Michael Hazani task 17.
+    Add forcefully Session 07 example files.
+    task19 cleanup
+    add task19 files to student session07 folder
+    task19 cleanup
+    add task19 files to student session07 folder
+    task19 cleanup
+    add task19 files to student session07 folder
+    cleanup
+    update test file for session 5 arguments.py
+    update test file for session 5 functional.py
+    add test file for session 5 functional.py
+    update test file for session 5 arguments.py
+    finish arguments.py
+    moved task12 files to right folder
+    created task12 branch with 3 files per task12
+    added actual assignments to task8 branch
+    create task8 files
+    finish task12
+    finish comprehensions.py
+    moved task12 files to right folder
+    created task12 branch with 3 files per task12
+    added actual assignments to task8 branch
+    create task8 files
+    Merging Michael Hazani task 17.
+    recopy session06 files
+    recreate session06
+    finish task12
+    moved task12 files to right folder
+    created task12 branch with 3 files per task12
+    added actual assignments to task8 branch
+    create task8 files
+    cleanup
+    cleanup
+    change video image layout
+    Correct image url ID
+    change the youtube hmtl link to markdown
+    Fixes header typo and youtube link from hmtl to markdown.
+    Add Ulises' directory and README.
+    Add completed Task3 and revelant files
+    Add completed Task3 and revelant files
+    Add completed Task3 and revelant files
+    Complete Session01, Task3
+    Add completed Task3 and revelant files
+    Add the session02 directory
+    Add the session02 directory
+    Add the session02 directory
+    Add the session02 directory
+    I wrote the about me
+    First edit
+    Task Complete
+    Wrote the name error example
+    Wrote the type error example
+    Wrote the attribute error example
+    Wrote the syntax error example
+    Wrote the functions for each error
+    Started Break Me
+    Wrote every other line for files
+    Task6 Complete
+    Added all the print statements
+    Completed subtask4- add descriptive print statements
+    Completed up to the beginning of subtask4
+    Completed up to removing the user input
+    Wrote the questions for files.py, committed input/output files
+    Added a line to dictionaries.py
+    Finalized dictionaries.py
+    Wrote questions for dictionaries
+    Decided what questions to ask for each
+    Finalized exceptions.py
+    Wrote some questions for exceptions.py
+    Decided what questions to ask for each
+    Finalized paths.py, assignment complete
+    Made paths.py have a function
+    Wrote paths.py question
+    Decided what questions to ask for each
+    Finalized paths.py, assignment complete
+    Finalized files.py
+    Wrote questions for dictionaries
+    Wrote every other line for files
+    Decided what questions to ask for each
+    Removed Flake8 issues
+    Fixed style violations
+    Wrote arguments.py Q3
+    Wrote arguments.py Q2
+    Wrote arguments.py Q1
+    Initialized files
+    Removed Flake8 issues
+    Fixed style violations
+    Wrote question 3 for comprehensions
+    Wrote questions 1 and 2 for comprehensions
+    Initialized files
+    Removed Flake8 issues
+    Wrote question 3 for functional
+    Wrote question 2 for functional
+    Wrote question 1 for functional
+    began functional.py
+    Initialized files
+    Wrote doc strings for strings.py
+    Wrote all 9 functions- write docs strings next
+    Wrote what I want to code in each file
+    Task5 complete
+    Update sequence docstrings
+    Wrote doc strings for sequences
+    Wrote all 9 functions- write docs strings next
+    Did some squences- need to fix neg1
+    Wrote what I want to code in each file
+    Task5 complete
+    Wrote doc strings for iterations
+    Wrote all 9 functions- write docs strings next
+    Wrote some defs for iteration
+    Wrote what I want to code in each file
+    Series Task Complete
+    Second if in function block is now elif
+    Add checked sum_series==lucas output
+    Add checked sum_series==fib output
+    Add Lucas asserts to test Lucas def
+    Add Fib asserts to test Fib def
+    Made the docstrings
+    Renamed series def per HW instructions
+    Wrote some of series def- may have wrong variables
+    Wrote the beginnings of Lucas
+    Wrote the beginnings of Fib
+    Reparing a badly formatted docstring
+    Added some docstrings
+    Wrote testing.py
+    Wrote special.py
+    added actual assignments to task8 branch
+    create task8 files
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Wrote testing.py
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Wrote static
+    Wrote special.py
+    added actual assignments to task8 branch
+    create task8 files
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Wrote special.py
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Wrote properties.py
+    Wrote special.py
+    added actual assignments to task8 branch
+    create task8 files
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Committed test_html_ouputX.html and run_...py- Task complete
+    Add Session 06 files for Task 17: HTML Render
+    Fixed minor error in html class (\n)
+    Added necessary docstring
+    Completed Task 8
+    Completed Task 6
+    Completed Task5
+    Completed step 4
+    Completed Step 3
+    created p, body, html subclass
+    Wrote render and append methods
+    Wrote html render tests
+    Fixed flake8 issues, assignment complete
+    Added test_circleX.py files
+    Wrote list_comp test
+    Wrote breakme tests and added some docstrings to series
+    Fixed flake8 issues, assignment complete
+    Passed both test_circleX.py tests
+    Passes all test_circle1.py tests
+    Wrote list_comp test
+    Wrote breakme tests and added some docstrings to series
+    Fixed flake8 issues, assignment complete
+    Added test_circleX.py files
+    Wrote breakme tests and added some docstrings to series
+    Fixed tons of style issues
+    Added tests to series.py
+    Series Task Complete
+    Second if in function block is now elif
+    Add checked sum_series==lucas output
+    Add checked sum_series==fib output
+    Add Lucas asserts to test Lucas def
+    Add Fib asserts to test Fib def
+    Made the docstrings
+    Renamed series def per HW instructions
+    Wrote some of series def- may have wrong variables
+    Wrote the beginnings of Lucas
+    Wrote the beginnings of Fib
+    Wrote html render tests
+    Fixed tons of style issues
+    Added tests to series.py
+    Minor tweak to classes.py- File complete
+    Minor tweak to subclasses.py- File complete
+    Finished subclasses
+    Initialized files
+    Minor tweak to classes.py- File complete
+    Wrote questions for classes and oop
+    Initialized files
+    oop file complete
+    Wrote questions for classes and oop
+    Initialized files
+    moved breakme.py
+    break_me.py
+    cleaning up directories
+    cleaning up directories
+    moved Readme.md
+    readme
+    Move to JackSneed file and rename.
+    update direcotry order
+    add fibonacci, lucas, and sum_series functions
+    Replacing deleted README
+    Jeremy bio fix hitory header and link
+    Jeremy bio fix hitory header
+    Jeremy bio fixing History header
+    Jeremy bio fixing headings
+    Jeremy bio
+    Readding the README.md to the class level directory
+    removing from wrong location
+    Adding README about myself
+    Add README.md to squelch fatal error.
+    Initial commit
+    add lambdas.py
+    start lambdas.py
+    cleaned up directories
+    comprehensions.py complete
+    cleaned up directories

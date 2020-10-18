@@ -1,0 +1,691 @@
+﻿    Add readme and license
+    bump version
+    bump version
+    bump version
+    bump version
+    bump version
+    bump version
+    bump version
+    Deprecate updater file
+    Bump v1.9.1
+    NCC-112 change version
+    Bump version
+    Apply PHP CS fixer
+    Fixed PDFs not ever working. CompilationDataService utilitized
+    Bump version
+    update dependency and version bump
+    version bump
+    version bump
+    TAO-6542_bump_version
+    bump version
+    Bump version 1.7.2
+    rollback licence.
+    License change & version bump;
+    bump version
+    fix pdf generated layout
+    increase version
+    bump version
+    Bump version
+    refactoring/TAO-5102/remove_globals_from_core_extension
+    - use constants defined in the taoQtiTest
+    bump version
+    Update the dependency version to taoQtiTest
+    Bump version and install service DeliveryExecutionPacker
+    Bump patch version (again)
+    
+    tao-4692
+    Bump patch version
+    
+    Include phpcs code fixes
+    
+    tao-4692
+    bump version
+    Bump version
+    update dependency
+    Bump version
+    Bump version
+    removed referring to a variable BASE_WWW
+    Bump version
+    Register the updater in the manifest
+    Add update script and increase the version
+    create a packer for printed tests
+    rename extension
+    initial import
+    Apply PHP CS fixer
+    Restore the use of the regular ItemPacker
+    Override the QtiItemPacker to counter asset access issue
+    Apply service locator interface
+    Fix the QTI test packer
+    TAO-838 get item assets to allow renderer to display base64 encoded images
+    do not send item path
+    fix packer routing
+    integrate test data in the runner
+    create a packer for printed tests
+    Use RuntimeService instead of assignment
+    NCC-112 Mixed Paper tests are showing the max amount of sample questions, not the set amount
+    Apply PHP CS fixer
+    Fixed PDFs not ever working. CompilationDataService utilitized
+    TAO-5104
+    - use class constants from generis
+    refactoring/TAO-5102/remove_globals_from_core_extension
+    - use constants defined in the taoQtiTest
+    Add a service to extract the test definition from a Delivery
+    Add a service that extracts the test data from a delivery execution
+    Apply PHP CS fixer
+    TAO-5104
+    - use class constants from generis
+    signature compilance.
+    Add a service to extract the test definition from a Delivery
+    Add a service that extracts the test data from a delivery execution
+    Deprecate updater file
+    Bump v1.9.1
+    NCC-112 change version
+    Bump version
+    Apply PHP CS fixer
+    Fixed PDFs not ever working. CompilationDataService utilitized
+    Bump version
+    update dependency and version bump
+    version bump
+    version bump
+    TAO-6542_bump_version
+    bump version
+    Bump version 1.7.2
+    License change & version bump;
+    bump version
+    fix pdf generated layout
+    increase version
+    bump version
+    Bump version
+    refactoring/TAO-5102/remove_globals_from_core_extension
+    - use constants defined in the taoQtiTest
+    bump version
+    Add a service to extract the test definition from a Delivery
+    Bump version and install service DeliveryExecutionPacker
+    Bump patch version (again)
+    
+    tao-4692
+    Bump patch version
+    
+    Include phpcs code fixes
+    
+    tao-4692
+    bump version
+    Bump version
+    Bump version
+    Bump version
+    removed referring to a variable BASE_WWW
+    Bump version
+    Add update script and increase the version
+    rename the extension
+    set up a basic print renderer
+    initial import
+    set up test runner
+    rename the extension
+    set up tests for print runner
+    set up a basic print renderer
+    initial import
+    configure show-response-id
+    Handle a list of testDefinition to print
+    configure new theme
+    Improve the print runner
+    Fix CSS layout
+    Refactor the runner to take care of responses
+    Refactor the test runner to provide state and renderer name to the item runner
+    Fix the assets strategies
+    Manage cover page options
+    Use template to render test parts, use eventifier
+    reformat and give (better) name to handler and function
+    get the base64 encoded file with a new strategy
+    TAO-838 get item assets to allow renderer to display base64 encoded images
+    configure the asset manager
+    support rtl option in runner
+    add baseUrl options for items
+    update layout
+    integrate test data in the runner
+    basic test runner
+    set up test runner
+    rename the extension
+    testRunner
+    cleanup
+    configure show-response-id
+    Use the URI provided in the config to build the booklet URL encoded in the QR code
+    Allow to specify the content of the QR code displayed on the cover page
+    Add the unique identifier option on the cover page
+    Improve the print runner
+    Refactor the runner to take care of responses
+    configure show-response-id
+    configure new theme
+    Improve the print runner
+    Refactor the runner to take care of responses
+    Display an error block instead of the item when an interaction is not supported
+    get the base64 encoded file with a new strategy
+    TAO-838 get item assets to allow renderer to display base64 encoded images
+    configure the asset manager
+    Error when unsupported item types
+    add baseUrl options for items
+    rename the extension
+    set up basic runner
+    fix pdf generated layout
+    removed unused class grid-row
+    Fix CSS layout
+    Refactor the runner to take care of responses
+    Refactor the runner to take care of responses
+    Fix rubrics blocks rendering
+    Use template to render test parts, use eventifier
+    Add the unique identifier option on the cover page
+    Refactor the runner to take care of responses
+    Manage cover page options
+    Use template to render test parts, use eventifier
+    add test samples
+    add test samples
+    fix unit tests
+    basic test runner
+    set up test runner
+    fix test runner module ids
+    add test samples
+    add test samples
+    rename the extension
+    set up tests for print runner
+    TAO-7629 eslint fix
+    TAO-7629 qunit 2
+    rename the extension
+    set up tests for print runner
+    TAO-7629 qunit 2
+    rename the extension
+    set up tests for print runner
+    fix unit tests
+    TAO-7629 eslint fix
+    TAO-7629 qunit 2
+    basic test runner
+    set up test runner
+    rename the extension
+    fix test runner module ids
+    testRunner
+    TAO-7629 qunit 2
+    rename the extension
+    fix test runner module ids
+    testRunner
+    set up tests for print runner
+    TAO-7629 eslint fix
+    TAO-7629 qunit 2
+    set up test runner
+    TAO-7629 qunit 2
+    set up test runner
+    rename the extension
+    set up tests for print runner
+    initial import
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    Add bundle task
+    bundle assets
+    bundle assets
+    Add bundle task
+    Allow graphic interactions to be printed, discard custom interactions
+    Improve handling of discarded interactions
+    Discard all graphic interactions from printing, use raw response mode instead
+    Hook not fully supported interactions and displays only the responses
+    Hook and discard not supported interactions
+    Improve the print runner
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Do not render rubric block if none
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Update views/js/qtiPrintRenderer/renderers/Table.js
+    
+    Co-authored-by: Andrii Ponamarov <andrii.ponamarov@taotesting.com>
+    add renderer for table
+    Update views/js/qtiPrintRenderer/renderers/Include.js
+    
+    Co-authored-by: Andrii Ponamarov <andrii.ponamarov@taotesting.com>
+    add include render
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    add support for custom styles
+    ignore item's stylesheets
+    rename the extension
+    set up a basic print renderer
+    initial import
+    add renderer for table
+    add include render
+    Fix the config for hotspot interation
+    Add the Match interaction
+    Add the inlineChoice interaction
+    add math renderer in config
+    configure the asset manager
+    rename the extension
+    set up a basic print renderer
+    rename the extension
+    set up a basic print renderer
+    initial import
+    TAO-948 display math formulas in all browser (chrome)
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Update views/js/qtiPrintRenderer/renderers/Include.js
+    
+    Co-authored-by: Andrii Ponamarov <andrii.ponamarov@taotesting.com>
+    add include render
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Hook not fully supported interactions and displays only the responses
+    rename the extension
+    set up a basic print renderer
+    Hook and discard not supported interactions
+    Add the inlineChoice interaction
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    Add the Match interaction
+    Add the inlineChoice interaction
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Add the Match interaction
+    Add the inlineChoice interaction
+    rename the extension
+    set up a basic print renderer
+    initial import
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Add the inlineChoice interaction
+    rename the extension
+    set up a basic print renderer
+    initial import
+    add include render
+    Use template to render test parts, use eventifier
+    Display an error block instead of the item when an interaction is not supported
+    add support for custom styles
+    integrate test data in the runner
+    set up a basic print renderer
+    added response identifier data to tpl
+    integrate test data in the runner
+    integrate base print style
+    set up a basic print renderer
+    set up a basic print renderer
+    add renderer for table
+    set up a basic print renderer
+    integrate base print style
+    set up a basic print renderer
+    set up a basic print renderer
+    Do not render rubric block if none
+    set up a basic print renderer
+    set up a basic print renderer
+    added response identifier data to tpl
+    Add the Match interaction
+    Hook not fully supported interactions and displays only the responses
+    Hook and discard not supported interactions
+    Use template to render test parts, use eventifier
+    Display an error block instead of the item when an interaction is not supported
+    Hook not fully supported interactions and displays only the responses
+    added response identifier data to tpl
+    set up a basic print renderer
+    added style for inline choice
+    Add the inlineChoice interaction
+    added response identifier data to tpl
+    integrate base print style
+    set up a basic print renderer
+    Hook not fully supported interactions and displays only the responses
+    change prompt template
+    integrate base print style
+    set up a basic print renderer
+    added response identifier data to tpl
+    integrate base print style
+    set up a basic print renderer
+    integrate test data in the runner
+    integrate base print style
+    set up a basic print renderer
+    Add the Match interaction
+    set up a basic print renderer
+    Add the inlineChoice interaction
+    rename the extension
+    set up a basic print renderer
+    integrate test data in the runner
+    update styles for .include
+    fix width of grid-row
+    add styles for horizontal position
+    add style for table
+    css bundles
+    remove second checkbox
+    add section.include styles
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    set width of the item container to prevent overflow
+    rectify css for print
+    added style for inline choice
+    response id styling
+    Recompile sass
+    
+    tao-4692
+    Fix CSS layout
+    Add layout style
+    Add CSS rule to print one item per page
+    Add the Match interaction
+    Add the inlineChoice interaction
+    Display an error block instead of the item when an interaction is not supported
+    Error when unsupported item types
+    integrate styling
+    print css
+    udpated css
+    update layout
+    fix page break
+    update style
+    integrate base print style
+    set up build tools
+    print css
+    update styles for .include
+    fix width of grid-row
+    add styles for horizontal position
+    add style for table
+    css bundles
+    remove second checkbox
+    add section.include styles
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    bundle assets
+    set width of the item container to prevent overflow
+    cleanup
+    rectify css for print
+    added style for inline choice
+    response id styling
+    Recompile sass
+    
+    tao-4692
+    Fix CSS layout
+    Add layout style
+    Add CSS rule to print one item per page
+    Add the Match interaction
+    Add the inlineChoice interaction
+    Display an error block instead of the item when an interaction is not supported
+    Error when unsupported item types
+    integrate styling
+    print css
+    udpated css
+    update layout
+    fix page break
+    update style
+    integrate base print style
+    set up build tools
+    print css
+    add section.include styles
+    Fix CSS layout
+    Add regular items print css
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    removes unwanted white-space from checkboxes
+    add theme
+    Fix checkboxes checked state inversion
+    Counter CSS anti-print hack
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    removes unwanted white-space from checkboxes
+    add theme
+    Fix checkboxes checked state inversion
+    Counter CSS anti-print hack
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Counter CSS anti-print hack
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Counter CSS anti-print hack
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Fix CSS layout
+    Add regular items print css
+    update styles for .include
+    add style for table
+    add section.include styles
+    make invisible RESPONSE id for themes
+    Fix checkboxes checked state inversion
+    Fix CSS layout
+    Add regular items print css
+    set up test runner
+    rename the extension
+    set up build tools
+    Fix header
+    Add bundle task
+    Do not render rubric block if none
+    rename the extension
+    set up a basic print renderer
+    initial import
+    Remove unused loadPath/includeFiles sass options
+    
+    tao-4692
+    integrate base print style
+    rename the extension
+    set up build tools
+    add style for table
+    Fix CSS layout
+    Error when unsupported item types
+    integrate styling
+    print css
+    update layout
+    update style
+    integrate base print style
+    set up build tools
+    add styles for horizontal position
+    remove second checkbox
+    cleanup
+    rectify css for print
+    added style for inline choice
+    response id styling
+    Add the Match interaction
+    Add the inlineChoice interaction
+    Display an error block instead of the item when an interaction is not supported
+    print css
+    udpated css
+    update style
+    integrate base print style
+    update styles for .include
+    fix width of grid-row
+    add section.include styles
+    set width of the item container to prevent overflow
+    Fix CSS layout
+    Add layout style
+    Add CSS rule to print one item per page
+    integrate styling
+    print css
+    update layout
+    fix page break
+    update style
+    integrate base print style
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    removes unwanted white-space from checkboxes
+    add theme
+    add theme
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    add theme
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    add style for table
+    Counter CSS anti-print hack
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    print css
+    update styles for .include
+    add section.include styles
+    Fix CSS layout
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    add style for table
+    add style for table
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Fix checkboxes checked state inversion
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Counter CSS anti-print hack
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    make invisible RESPONSE id for themes
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    add style for table
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Add regular items print css
+    Apply PHP CS fixer
+    Add a service that extracts the test data from a delivery execution
+    rename extension
+    initial import
+    Apply PHP CS fixer
+    Add a service to extract the test definition from a Delivery
+    Add a service that extracts the test data from a delivery execution
+    rename extension
+    initial import

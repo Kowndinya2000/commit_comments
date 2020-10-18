@@ -1,0 +1,35 @@
+﻿    docs: Update plugin cache with the new format
+    
+    And fix the default URL which should not be inside quotes.
+    build: Add meson's option package-origin.
+    
+    This options is added to synchronize with other gstreamer packages
+    build configuration.
+    
+    Though, to avoid breaking distro configuration it is set, as default,
+    the issues gitlab's url, instead of the used string
+    "Unkown package origin".
+    
+    Also, set_quoted is used for string based cdata.
+    tests: check: initial unit test support
+    
+    Add minimal unit test toolchain files and a simple
+    vaapipostproc unit test.
+    docs: Port to hotdoc
+    build: meson: build examples
+    Revert "build: check for libva-2.0"
+    
+    This reverts commit 8f2eb70803099d4b533ecc10fc259041d8714210.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=784398
+    build: check for libva-2.0
+    
+    Check for libva-2.0 since libva's developers decided to increase the
+    library's version number.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=784398
+    vaapi: add meson build
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=778250
+    docs: Port to hotdoc
+    docs: Port to hotdoc

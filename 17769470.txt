@@ -1,0 +1,2924 @@
+﻿    release: Make 0.14.0 release
+    flatten: Fix use of titles for sheet names, to avoid KeyError
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306#issuecomment-694407764
+    input: Include sheet names in warnings about duplicate column headings
+    release: Make 0.13.0 release
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    release: Make 0.12.0 release
+    schema: Handle `"format": "date"` correctly
+    
+    https://github.com/openownership/cove-bods/issues/35
+    changelog: Add entry for windows newline bugfix
+    black-isort: Apply
+    Release 0.11.0
+    .ods support: Add CHANGELOG entry
+    Release 0.10.0
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    CHANGELOG Add entry for new BadZip File exception type
+    Docs - update to match our current practice
+    Prepare version 0.9.0
+    Update to version 0.8.0 for release
+    Make sourcemap correct with hashcomments, towards https://github.com/OpenDataServices/cove/issues/1186
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Prepare 0.7.0 release
+    Add test check that whitespace doesn't give an error + changelog
+    Prepare 0.6.0 release
+    [#177] Add unit tests of list_dict_consistency etc.
+    [#177] Add CHANGELOG entry
+    [#287] Update CHANGELOG
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Lock openpyxl to 2.5 only - not 2.6
+    https://github.com/OpenDataServices/flatten-tool/issues/287
+    Add change log entry for --truncation-length
+    Fix tests for new warning format
+    Change in less verbose error handling and add changlog entry.
+    Release 0.5.0
+    While trying to decode JSON, if there is a UTF8 error raise the new exception class BadlyFormedJSONErrorUTF8.
+    
+      (This extends the old BadlyFormedJSONError exception, so existing code that checks sensibly should be fine.)
+    
+    This will be used in https://github.com/OpenDataServices/cove/issues/887
+    Release V0.4.0!
+    In setup.py, set author and author_email to general values.
+    Overwrite commands from default configuration individually.
+    
+    Currently if you add one command in the metatab it removes all the
+    defaults supplied by the command line/library.
+    Add change in changelog
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Correct typos in changelog
+    Set an appropriate output_name if --output-format is xlsx
+    Add mode disable_local_refs
+    Create a 0.3.0 release of flatten-tool
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Edit CHANGELOG.md
+    
+    I originally put these entries together as they came in as the same commit, but I realise that is wrong - different points should be on different lines
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Clarified meaning of headerrows in docs.
+    https://github.com/OpenDataServices/flatten-tool/issues/230
+    Fix: unflatten would crash if given a csv with an empty first row
+    [OpenDataServices/cove#959] Add a config var for id_name
+    Ignore elements that don't exist in the schema, whilst sorting xml
+    Add changelog entry for stdlib pretty print bug
+    Set up changelog for 0.2.0
+    
+    Add entries for sorting XML and removing Python 3.3 support.
+    Add changelog entry for PR #211
+    First go at a change log
+    Move documentation out of the README and into sphinx docs
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    Update python version support section in README
+    Changed the installation instructions to also work on Mac OS X
+    [#96][#34] Update the README in light of changes to the cli
+    
+    main-sheet-name isn't needed for unflattening, root-list-path is,
+    and defaults have changed.
+    Add example of arrays within arrays
+    [#64] Start marking some major changes to the README and add examples
+    [#64] Update python version and virtualenv info
+    Update links in the README
+    [#74] Add section about tests to README
+    [#63] Fix broken link in README
+    Update README.md
+    Update README.md
+    Update README.md
+    Markdown fix
+    Adding explanation of how Flat Stan works.
+    
+    Lots more to do on this still, but provides a quick introduction. Worked examples to be added.
+    Update README.md
+    Update README to use new repository URL
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Add root-id to create-template example for 360 giving
+    List help command explicitly in README until we fix #52
+    Updates the URL for 360 schema
+    Adds 360 giving schema download instructions
+    [#45] Add option to use titles when creating a template
+    Add 360 Giving unflatten command to README
+    [#40] Use main-sheet-name as the top level JSON key
+    Add 360 Giving template generation to README
+    Add license shield
+    [#41] Add coveralls.io badge
+    Add section about flattening to the README
+    [#31] Add note about encodings
+    README formatting
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    Drop support for python 3.2 (since openpyxl doesn't support it)
+    [#3] Update README with basic commandline options
+    Updates README to tell installer to change into the git repository
+    [#4] Structure the code as a python package
+    Add travis and landscape badges to README
+    Add README
+    Add example base.json
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Add prospector and landscape configs
+    [#4] Structure the code as a python package
+    [#6] Add requirements.txt
+    black-isort: Apply
+    Update urllib version for security reasons
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    setup.py & requirements_dev.txt
+    
+    Fix extra requirements in setup.py
+    In requirements_dev.txt, make sure you install the lib with all extras.
+    Also in requirements_dev.txt, lock to a version of urllib3 that we know works with requests.
+    Changed theme and added more examples as includes
+    Added docs directory and sphinx requirement
+    Optionally fetch the schema from a http url
+    [#41] Add missing coveralls dependency
+    Add coveralls to travis tests
+    [#4] Structure the code as a python package
+    black-isort: Apply
+    Add some docstrings and improve some others
+    Add identifier suffixes to spreadsheet output
+    
+    This ensures that two keys pointing to the same schema definition are
+    handled correctly.
+    
+    Adds a json_key paramater to JSONParser.parse_json_dict so that we know
+    what the key used to refer to this json_dict was.
+    
+    Also adds the .name property to a Sheet object, so that we can later use
+    this information to omit the suffix if it is the same as the sheet name.
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    input: Include sheet names in warnings about duplicate column headings
+    flake8: Remove useless .format to satisfy latest flake8
+    black-isort: Apply
+    Fix longest_horizontal_row calculation in vertical orientation
+    Fix source maps
+    Edit ODSReader.py to use str on the cell, fixes URL links
+    
+    (Previously the text of links wasn't returned).
+    Fix sheet configuration and vertical orientation for .ods
+    .ods support: Implement vertical orientation support
+    
+    (required for Meta tab)
+    ODS support: Don't try to skip a sheet configuration line if it's not there
+    
+    (because sheet_configuration may also come from the base configuration)
+    input Add ODSInput type to flattentool
+    
+    This is the initial work to add Open document spreadsheet parsing to
+    flatten tool.
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    input Use custom exception type to identify broken XLSX zip files
+    Make bad xlsx error better
+    Make sourcemap correct with hashcomments, towards https://github.com/OpenDataServices/cove/issues/1186
+    Add preserve-fields functionality, fixes #302
+    Apply root-is-list option to cell_source_map and heading_source_map
+    Fix: unflatten would crash if given a csv with an empty first row
+    Avoid some openpyxl warnings by not using deprecated method
+    [OpenDataServices/cove#1030] Don't split text value of xml array
+    [OpenDataServices/cove#940] Remove duplicate None warnings
+    Add missing spaces for consistency
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/184#discussion_r166605906
+    Change interaction with openpyxl now that everything is generators
+    
+    https://github.com/OpenDataServices/cove/issues/954
+    Update openpyxl, get _get_column_letter from new location
+    
+    https://github.com/OpenDataServices/cove/issues/954
+    [#174] Add hashcomments command to xlsx
+    
+    If the hashcomments command is used each sheet starting with # and each
+    column starting with # is ignored.
+    [OpenDataServices/cove#611] Update merging conflict message
+    [#171] Fix for python 2.7
+    [#171] Add basic commands for csv files.
+    [OpenDataServices/cove#838] Convert integer float to int
+    Test for mismatched types between multiple lines
+    Make sure flatten with titles works correctly
+    [#130] Add ignore command
+    [#130] skipLines and headerRows commands added.
+    [OpenDataServices/cove#777] Allow duplicate XML elements with text
+    
+    (this is needed to have multiple narrative elements)
+    [#125]  Put whole path into warning message
+    [#125] Warn when a basic value is ignored, due to array/object
+    [#154][#155] Warn if a heading is ignored because it is a number
+    [#154] Handle numbers in headings of XLSX files
+    spreadsheet xml conversion: avoid casting dates into datetimes
+    Add issue link to comment
+    [meta-tab] Change metadata_only to store true.
+    
+    Fix some naming and add comment from review. Also remove an not needed
+    list.
+    Pick up metatab and add options for it.
+    Add vertical xlsx reading
+    Add explanation of adding text() dict
+    Use xml and id_name flags to make sure JSON tests still pass
+    [OpenDataServices/cove#544] Actually output numbers for number array
+    [OpenDataServices/cove#544] Fix schema.py to work for OCDS PPP schema
+    Python 2.7 doesn't like us to call a file warnings.py
+    
+    How relative imports works has changes between Python 2 and 3.
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    Allow textcontent and attributes on the same XMl element
+    
+    Requires more XML specific hardcoding.
+    Hardcode iati-identifier instead of id
+    [#125] Also handle when there is a mismatch between str and object
+    [#125] Add warnings when a column is skipped due to mismatched types
+    [#125] Skip columns that have a mismatched type with other columns
+    Remove no longer used error classes
+    [#137] Fix KeyError ocid
+    Don't generate the cell or heading source maps if they aren't requested
+    Removed WITH_CELLS option and deleted unused functions
+    Warn if there are duplicate headings
+    [#96] Make order of sheets deterministic
+    
+    For CSVs we process them in alphabetical order.
+    
+    For XLSX we use the order they appear in the spreadsheet.
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    Ensure cells and rows appear correct number of times in the source maps
+    Cell source map test with headings from the source
+    Cell source map, no test failures
+    [#81] Update warning to suggest that duplicate IDs may be the problem
+    [#90] Improve warning message for merge conflict
+    [#90] Use the same block for main sheet and sub sheets
+    
+    Eventually we want to eliminate the idea of a main sheet entirely
+    https://github.com/OpenDataServices/flatten-tool/issues/96
+    [#90] When ids are missing or don't match, simply append to JSON output
+    
+    There may be valid reasons people want to do this with flatten-tool. For
+    the standards we support errors will be flagged by validation.
+    [#90] Match identifiers correctly when their type has changed
+    
+    e.g. schema says string, input is integer, output is string. Previously
+    merging would break in this case.
+    [#90] Merge subsheets even when we don't have an id for the sub object
+    [#90] Update so we pass the unflatten test in test_init
+    [#90] Initial work on implementing JSON pointer multi sheet unflattening
+    [#90] Remove current multi-sheet unflattening and xfail relevant tests
+    [#94] Convert zeros
+    
+    Change from not convert all falsy values to just not converting empty
+    strings and nulls.
+    [#85] Main sheet use schema and allow json pointer
+    
+    Adds the following
+    
+    * A new method to unflatten the main page.
+    * Adds flattened property to Schema parser that more reflects json
+     pointer removes
+    * Use schema to convert types
+    
+    The new unflatten should produce output the same as before meaning that
+    multiple sheets will still work.
+    If no schema is supplied then fallback to old behaviour with types.
+    
+    Various tests had to be fixed as if the schema says the field is a
+    string then it converts it.
+    
+    Breaking change: If schema is supplied and the main table uses ":type"
+    notation then it will mistake this is a subobject not a types.
+    [#50] Re-add titles support for multi-sheet spreadsheets
+    Fix Python 2 compatibility
+    [#50] Lookup titles individually, instead of the whole header
+    
+    This commit fixes the tests in test_input_SpreadsheetInput_unflatten.py
+    but breaks the tests in test_unflatten.py and test_roundtrip.py (the
+    TODOs in input.py explain how).
+    Add some docstrings and improve some others
+    [#75] Case and space insensitivity
+    
+    All titles made space and case insensitive.
+    
+    Only main sheet names made case insensitive as sheet names have
+    relevence when unflattening as to how objects are nested.
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#56] Don't replace : with / if header already contains /s
+    fix variable name typo
+    Adding data_only=True flag to close issue #49
+    [#45] Convert titles to fields when unflattening
+    [#40] Add root-id flag
+    [#43] Subsheet values take precedence to master sheet values
+    
+    A warning is also thrown if they do not match.
+    Ensure that 1n override does work without id
+    
+    This is not particularly useful per se, but I think it may make future
+    debugging a bit easier.
+    Add basic test for 1..n override
+    [#38] Add commandline flag to control spreadsheet timezone
+    [#38] Output datetimes in rfc3339 format
+    
+    Currently assumes UTC
+    [#35] Add an exception to roundtrip test for None
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Tidy up some stylistic errors
+    Fix custom error handling so that it exits
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    [#23] More friendly warning for missing parent ID values
+    Add test to replace commented out regression note in code
+    [#23] Don't fatally error when we have conflicting IDs
+    [#23] Turn some errors into more descriptive warnings, and improve tests
+    Support subsheets that belong at a lower level than the id
+    [#25] Don't fail on empty number fields
+    
+    If all fields are empty, ignore that line
+    Improve unflatten test
+    Assume the top most object is always in an array
+    [#13] Ensure we actually match against release[]/id
+    Ensure ordering is maintained during CSV->JSON conversion
+    [#8] Improve non-ascii support
+    
+    Most of these changes are for python2 compatability.
+    [#17] Handle non-string values from XLSXInput
+    [#17] Add XLSX input option to commandline
+    [#17] Add basic XLSXInput class
+    [#17] Add test for XLSX
+    [#22] Add type information to column headers
+    [#1][#22] Handle extra types using annotated header information
+    
+    array, number and boolean
+    Integrate some base json to create a relase package
+    [#18] Read the actual JSON key name from extra data in the spreadsheet
+    [#18] More improvements to sub sheet input handling
+    [#18] Handle basic subsheets better
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    [#19] Also switch JSON seperator to / in input.py
+    Add prospector and landscape configs
+    Restructure input code to seperate out CSV specific code
+    Begin work on basic CSV input
+    lint: Run isort
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Remove --truncation-length from unflatten command
+    Add --truncation-length option
+    Change in less verbose error handling and add changlog entry.
+    Add return to reduce indentation
+    Add scaffolding for less verbose error reporting, closes #54
+    Add -v --verbose option and truncate warnings by default, closes #42
+    Add xml comment option to expected.txt
+    Update docs and help text for remove-empty-schema-columns version
+    https://github.com/OpenDataServices/flatten-tool/issues/271
+    Add xml comment in cli
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Remove "Requires a schema to be specified." as create-template requires a schema in all cases
+    Add mode disable_local_refs
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    XML root node is specified in metatab instead
+    Support user-defined XML root node
+    Add xml-schema arg; get tests passing
+    Stipulate possible formats in CLI parser
+    Remove default unflatten output-name
+    [#151] Update docs example with new flatten helptext
+    [#151] Basic XML to spreadsheet conversion
+    [#130] Add command line option to default configuration options.
+    [meta-tab] Change metadata_only to store true.
+    
+    Fix some naming and add comment from review. Also remove an not needed
+    list.
+    Pick up metatab and add options for it.
+    Add vertical xlsx reading
+    Use xml and id_name flags to make sure JSON tests still pass
+    Add a very basic xml output
+    Move documentation out of the README and into sphinx docs
+    [#40] Remove some out of date root-id documentation
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#34] Remove OCDS specific defaults for filenames
+    [#34] flatten function argument root_list_path default to main
+    Cell source map, no test failures
+    Add some docstrings and improve some others
+    Add use-titles argument for flatten
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#45] Add option to use titles when creating a template
+    [#45] Convert titles to fields when unflattening
+    [#40] Add root-id flag
+    [#40] Use main-sheet-name as the top level JSON key
+    [#43] Add rollup support to flattening
+    [#43] Add rollUp support to schema generation
+    [#38] Add commandline flag to control spreadsheet timezone
+    Fix conversion for sample data
+    
+    Add support for nulls
+    Don't require schema in CLI flattening interface
+    Don't add duplicate columns for arrays
+    Add the cli interface for flattening (json->spreadsheet)
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    [#8] Tests to check that unicode survives the full unflattening process
+    [#8] Improve non-ascii support
+    
+    Most of these changes are for python2 compatability.
+    [#17] Add XLSX input option to commandline
+    [#16] Reduce hardcoding in unflatten subcommand
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    Rewrites the cli argument parser as a function and adds tests
+    
+    I can't quite get the test right tho...
+    Clean up code formatting
+    [#3] Output help text if no sub-command is given
+    [#3] Ensure commandline output with no arguments does not error
+    [#3] Adds initial commandline support
+    
+    Needs tests writing tho, and perhaps an update to the README on
+    how it works
+    [#4] Structure the code as a python package
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    schema: Handle `"format": "date"` correctly
+    
+    https://github.com/openownership/cove-bods/issues/35
+    lint: Run isort
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Add --truncation-length option
+    Add mode disable_local_refs
+    Making unflatten work with Open Ownership whilst passing schema option - extra check
+    
+    Suggested by @kindly on https://github.com/OpenDataServices/flatten-tool/pull/237
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Make sure flatten with titles works correctly
+    [#132] Use correct sheet names when flattening
+    
+    (ie. the same as used for template generation from the schema)
+    [#154][#155] Don't error for numbers as strings
+    [#154] Handle numbers in headings of XLSX files
+    Fix unflattening of string arrays inside an object array
+    
+    OpenDataServices/cove#544
+    [OpenDataServices/cove#544] Add tests of schema.py changes
+    [OpenDataServices/cove#544] Fix schema.py to work for OCDS PPP schema
+    Fixing the problem with Location
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    Start of end to end tests
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#100] Use parent_title for constructing identifier fields
+    [#100] Construct org location titles properly in 360Giving template
+    [#100] Count levels of testing correctly
+    
+    This commit breaks 360Giving template generation, but points out the
+    underlying problem that nedes fixing.
+    [#90] Fix unflattening tests using the schema
+    [#90] Fix tests of flattening using the schema
+    [#90] Update the tests of the schema parser to match our new code
+    [#90] Implement new style template generation for titles
+    [#56] We no longer need to ignore titles with a / in
+    [#90] Start rewriting template generation from the schema
+    
+    The fields template is mostly there, but titles still needs more work.
+    
+    Deliberately breaks a lot the tests.
+    [#90] Remove all type annotations from the generated template
+    [#91] Strip types from main sheet
+    
+    Just strip type stuff in schema to make flattening and template
+    generation.
+    
+    Change unflatten behaviour to generate schema when titles are not being
+    used.
+    [#85] Add some more tests, fix header lookup.
+    
+    Some tests to show json pointer numbering.
+    Fixes to title lookup with multiple arrays.
+    [#85] Main sheet use schema and allow json pointer
+    
+    Adds the following
+    
+    * A new method to unflatten the main page.
+    * Adds flattened property to Schema parser that more reflects json
+     pointer removes
+    * Use schema to convert types
+    
+    The new unflatten should produce output the same as before meaning that
+    multiple sheets will still work.
+    If no schema is supplied then fallback to old behaviour with types.
+    
+    Various tests had to be fixed as if the schema says the field is a
+    string then it converts it.
+    
+    Breaking change: If schema is supplied and the main table uses ":type"
+    notation then it will mistake this is a subobject not a types.
+    [#50] Re-add titles support for multi-sheet spreadsheets
+    Fix Python 2 compatibility
+    [#50][#75] Re-add case and space insensitivity of titles
+    [#50] Lookup titles individually, instead of the whole header
+    
+    This commit fixes the tests in test_input_SpreadsheetInput_unflatten.py
+    but breaks the tests in test_unflatten.py and test_roundtrip.py (the
+    TODOs in input.py explain how).
+    [#76] Emit warning if field in rollUp doesn't exist in the schema
+    Add identifier suffixes to spreadsheet output
+    
+    This ensures that two keys pointing to the same schema definition are
+    handled correctly.
+    
+    Adds a json_key paramater to JSONParser.parse_json_dict so that we know
+    what the key used to refer to this json_dict was.
+    
+    Also adds the .name property to a Sheet object, so that we can later use
+    this information to omit the suffix if it is the same as the sheet name.
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Add an append method to SubSheet
+    
+    This is required by json_input.py at
+    https://github.com/OpenDataServices/flatten-tool/blob/master/flattentool/json_input.py#L33
+    Optionally fetch the schema from a http url
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#51] Ensure titles display on subsheets of generated template
+    [#45] Add option to use titles when creating a template
+    [#45] Convert titles to fields when unflattening
+    [#40] Add root-id flag
+    [#43] Add rollUp support to schema generation
+    Use the schema for sub sheet names during json input
+    Add basic nested support for json input
+    Clean up syntax
+    [#1] Output correct annotated header for nested simple arrays
+    [#1] Only create a new subsheet for objects
+    [#1] Generate simple array columns in spreadsheet
+    [#22] Add type information to column headers
+    [#18] Read the actual JSON key name from extra data in the spreadsheet
+    [#18] Handle basic subsheets better
+    [#19] Switch JSON path separator from . to /
+    [#13] Add main sheet's id to sub tables
+    [#11] Use new ID format
+    Ensure we're using new style classes
+    [#12] Ensure IDs are always at the start of a subsheet
+    [#4] Structure the code as a python package
+    Fix bugs spotted by landscape.io's prospector
+    [#10] Sheet names should be based on reference names
+    Array fields should not appear in parent sheets
+    [#2] Add columns for parent IDs to subtables
+    [#5] Begin adding unit tests
+    Create a basic flattener of the schema to CSV and Excel templates
+    
+    (does absolutely no handling of IDS etc.)
+    black-isort: Apply
+    Ignore elements that don't exist in the schema, whilst sorting xml
+    Rename sort_iati.py to sort_xml.py
+    Rename classes / fns to remove mention of IATI
+    Update / generalise some docstrings
+    Add missing apostrophe in docstring
+    Fix tense in docstring
+    Typo
+    Linting
+    Remove unused import
+    Update sort_iati.py docstring now that its no longer a standalone command
+    Remove cruft
+    Fall back to stdlib etree in sort_iati.py
+    [OpenDataServices/cove#708] Don't 500 error for fields not in the shcema
+    
+    (In sorting, append them at the end instead, this will then be picked up
+    as wrong in schema validaiton).
+    
+    This is a copy of
+    https://github.com/OpenDataServices/cove/commit/57bbfc937f0bdcbaaf2047d84d9ffd8c8e27d806#diff-7698abd96129b324de44d434c901356e
+    Oops – no need to unpack args
+    Add xml-schema arg; get tests passing
+    Sort XML according to the schema
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Add --truncation-length option
+    Overwrite commands from default configuration individually.
+    
+    Currently if you add one command in the metatab it removes all the
+    defaults supplied by the command line/library.
+    Add xml comment
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Set an appropriate output_name if --output-format is xlsx
+    Add mode disable_local_refs
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Apply root-is-list option to cell_source_map and heading_source_map
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    [OpenDataServices/cove#959] Add a config var for id_name
+    Don't hardcode iati-activity in xml sorting
+    Allow RootListPath to be specified in metatab
+    
+    I *guess* this is right? Order of precedence is:
+    
+    --root-list-path > metatab RootListPath > --default-configuration
+    Rename xml_root_path to xml_root_tag
+    XML root node is specified in metatab instead
+    Support user-defined XML root node
+    Refactor for clarity
+    Add xml-schema arg; get tests passing
+    Remove extraneous param from create_template
+    [#151] Basic XML to spreadsheet conversion
+    [#130] Add command line option to default configuration options.
+    [#130] skipLines and headerRows commands added.
+    Add new metatab test make coverage better.
+    Pick up metatab and add options for it.
+    Add vertical xlsx reading
+    Make sure XML stdout output supports python 2.7
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Use xml and id_name flags to make sure JSON tests still pass
+    Add a very basic xml output
+    Don't generate the cell or heading source maps if they aren't requested
+    Removed WITH_CELLS option and deleted unused functions
+    Fixing whitespace issue
+    Putting NumberStr back
+    Support for decimal in Python 3.5.2
+    Support for decimal in Python 3.5.2
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    Support output to stdout for unflatten, and reflect that in the docs
+    [#34] Remove OCDS specific defaults for filenames
+    [#34] flatten function argument root_list_path default to main
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    Cell source map, no test failures
+    [#91] Strip types from main sheet
+    
+    Just strip type stuff in schema to make flattening and template
+    generation.
+    
+    Change unflatten behaviour to generate schema when titles are not being
+    used.
+    Add some docstrings and improve some others
+    [#71] Output UTF-8 encoded JSON
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Add use-titles argument for flatten
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#45] Add option to use titles when creating a template
+    Remove broken print statement
+    [#45] Convert titles to fields when unflattening
+    [#40] Add root-id flag
+    [#40] Use main-sheet-name as the top level JSON key
+    [#43] Add rollup support to flattening
+    [#43] Add rollUp support to schema generation
+    [#38] Add commandline flag to control spreadsheet timezone
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Fix incorrectly nested id output
+    Add the cli interface for flattening (json->spreadsheet)
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    Fix object_pairs_hook typo
+    [#8] Tests to check that unicode survives the full unflattening process
+    Ensure ordering is maintained during CSV->JSON conversion
+    [#17] Add XLSX input option to commandline
+    [#16] Reduce hardcoding in unflatten subcommand
+    [#22] Add type information to column headers
+    [#1][#22] Handle extra types using annotated header information
+    
+    array, number and boolean
+    Integrate some base json to create a relase package
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    [#13] Add main sheet's id to sub tables
+    Clean up code formatting
+    [#3] Adds initial commandline support
+    
+    Needs tests writing tho, and perhaps an update to the README on
+    how it works
+    [#4] Structure the code as a python package
+    black-isort: Apply
+    Python 2.7 doesn't like us to call a file warnings.py
+    
+    How relative imports works has changes between Python 2 and 3.
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    flatten: Fix use of titles for sheet names, to avoid KeyError
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306#issuecomment-694407764
+    flatten: Fix combination of --use-titles and --rolup with a value on CLI
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/359
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Add blank line
+    Stripe whitespaces and ignore if there is a None in json_dict
+    Add strip_whitespace=False in xmltodict parse
+    [#177] Ensure that the same path is not split across multiple sheets
+    
+    To do this we process the data from xmltodict to make lists of dicts
+    consistent for a given path.
+    Add --truncation-length option
+    While trying to decode JSON, if there is a UTF8 error raise the new exception class BadlyFormedJSONErrorUTF8.
+    
+      (This extends the old BadlyFormedJSONError exception, so existing code that checks sensibly should be fine.)
+    
+    This will be used in https://github.com/OpenDataServices/cove/issues/887
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    [#151] Don't hardcode root element for XML->spreadsheet
+    [#151] Use force_cdata to ensure all text is wrapped in a dict
+    [#151] Successfully convert if file contains an empty activity
+    [#151] Correctly convert with only one iati-activity
+    [#151] Add XML roundtrip test
+    [#151] Basic XML to spreadsheet conversion
+    [#67] Fix rollup with titles
+    Make sure flatten with titles works correctly
+    [#132] Use correct sheet names when flattening
+    
+    (ie. the same as used for template generation from the schema)
+    [OpenDataServices/cove#572] Flatten an array of numbers
+    
+    This should fix flattening for OCDS data using the location schema.
+    [#34] Remove remaining instances of OCDS specific 'release'
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#90] Fix tests of flattening using the schema
+    [#90] Begin implementing JSON pointer multisheet when flattening
+    
+    This makes some of the roundtrip tests pass, but I still need to go
+    through all the flattening tests and update those.
+    Add some docstrings and improve some others
+    [#65] Add utf-8 support to JSON input and CSV output
+    Fix 360 w/ titles roundtrip
+    Add identifier suffixes to spreadsheet output
+    
+    This ensures that two keys pointing to the same schema definition are
+    handled correctly.
+    
+    Adds a json_key paramater to JSONParser.parse_json_dict so that we know
+    what the key used to refer to this json_dict was.
+    
+    Also adds the .name property to a Sheet object, so that we can later use
+    this information to omit the suffix if it is the same as the sheet name.
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Add use-titles argument for flatten
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Add an append method to SubSheet
+    
+    This is required by json_input.py at
+    https://github.com/OpenDataServices/flatten-tool/blob/master/flattentool/json_input.py#L33
+    Throw a custom error for badly formed JSON
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#40] Add root-id flag
+    [#43] Add warning when flattening if multiple values are supplied
+    
+    (in rollup mode)
+    [#43] Add rollup support to flattening
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Fix incorrectly nested id output
+    Ensure id fields are not outputted on main sheet when flattening
+    Fix conversion for sample data
+    
+    Add support for nulls
+    Don't require schema in CLI flattening interface
+    Don't add duplicate columns for arrays
+    Output extra columns from the schema upon flattening
+    Fix flattening bug
+    Add the cli interface for flattening (json->spreadsheet)
+    Add support for id fields in JSON input
+    Use the schema for sub sheet names during json input
+    Add basic nested support for json input
+    Start adding json input
+    black-isort: Apply
+    .ods support: Assume UTC for naive dates as we do for xlsx
+    .ods support: handle numbers and dates better
+    
+    * Numbers should be returned as int or float
+    * Dates can be returned as an iso formatted string
+    Edit ODSReader.py to use str on the cell, fixes URL links
+    
+    (Previously the text of links wasn't returned).
+    Fix sheet configuration and vertical orientation for .ods
+    ODSReader: use OrderedDict over dict
+    fix: ODS unicode support and test
+    Add ODSReader util class for reading Open Document Spreadsheets
+    
+    This class smooths over some of the idiosyncrasies of the odf format and
+    makes it easier to parse the spreadsheet with pyodf.
+    https://github.com/marcoconti83/read-ods-with-odfpy
+    Resolves issue where CSVs saved in Windows have blank lines
+    black-isort: Apply
+    output Update 56ae33f38b59b726b22a6b9878df4d24567370b4 for python3
+    
+    We dropped python2 support in the middle of this work so updating
+    56ae33f38b59b726b22a6b9878df4d24567370b4 to reflect this. Also remove
+    duplicate csv import.
+    refactor (output): ensure that Nonetype is output correctly
+    output Add ODSOutput type to flattentool
+    
+    This is the initial work to add Open document spreadsheet writing to
+    flatten tool.
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Fix remove_sheet deprecation, closes #205
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Python 2.7 doesn't like us to call a file warnings.py
+    
+    How relative imports works has changes between Python 2 and 3.
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    [#34] Remove remaining instances of OCDS specific 'release'
+    [#421] remove control char
+    Add some docstrings and improve some others
+    [#65] Add utf-8 support to JSON input and CSV output
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Fix flattening bug
+    Implement lines output (ie. output spreadsheet content rows)
+    Add tests for lines output (ie. content from flattened JSON)
+    Add the cli interface for flattening (json->spreadsheet)
+    Tidy up some stylistic errors
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    [#29] Use openpyxl for output as well as input to reduce dependencies
+    [#27] Name Input/Output classes more consistently
+    [#3] Adds initial commandline support
+    
+    Needs tests writing tho, and perhaps an update to the README on
+    how it works
+    [#12] Ensure IDs are always at the start of a subsheet
+    [#4] Structure the code as a python package
+    Fix bugs spotted by landscape.io's prospector
+    [#5] Increase output.py test coverage
+    [#9] Fix output.py to work with python2
+    Create a basic flattener of the schema to CSV and Excel templates
+    
+    (does absolutely no handling of IDS etc.)
+    black-isort: Apply
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    Fix tests
+    Add xml comment
+    If using stdlib etree, don’t try to pretty print
+    Rename sort_iati.py to sort_xml.py
+    Rename classes / fns to remove mention of IATI
+    Don't hardcode iati-activity in xml sorting
+    Fall back to stdlib etree in sort_iati.py
+    [#149][#189] Pretty print output XML
+    
+    Based on
+    https://github.com/OpenDataServices/flatten-tool/commit/50399b57afd93b80132ce24007db1a3303c4fb02
+    [#198][#200] Require lxml
+    
+    Note that lxml is now "required" - it's listed as a requirement in
+    setup.py and is needed for the tests to pass.
+    However, stdlib etree still exists as an unsupported feature.
+    Rename xml_root_path to xml_root_tag
+    Support user-defined XML root node
+    Prevent self-closing tags in output XML
+    Sort attributes if using lxml
+    
+    This makes output a bit more consistent if lxml is used.
+    Add xml-schema arg; get tests passing
+    Add a comment to flattentool XML output
+    Add a comment about USING_LXML
+    Remove print statement
+    [#148] Add xml namespace to default nsmap
+    [#148] Don't fatal error if namespace if missing from nsmap
+    
+    (Instead create an element without namespace).
+    [#148] Support namespaces when using lxml
+    [OpenDataServices/cove#705] If possible use lxml and catch errors
+    Sort XML according to the schema
+    ElementTree expects attributes and text elements to be strings
+    Allow textcontent and attributes on the same XMl element
+    
+    Requires more XML specific hardcoding.
+    Add a very basic xml output
+    black-isort: Apply
+    [OpenDataServices/cove#959] Add a config var for id_name
+    Allow RootListPath to be specified in metatab
+    
+    I *guess* this is right? Order of precedence is:
+    
+    --root-list-path > metatab RootListPath > --default-configuration
+    Rename xml_root_path to xml_root_tag
+    XML root node is specified in metatab instead
+    [#174] Add hashcomments command to xlsx
+    
+    If the hashcomments command is used each sheet starting with # and each
+    column starting with # is ignored.
+    [#130] Add ignore command
+    [#130] skipLines and headerRows commands added.
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Removed WITH_CELLS option and deleted unused functions
+    Split tests of input.py into multiple files
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#49] Add test for reading values of formulas
+    Move xlsx fixtures to the fixtures directory
+    [#40] Add root-id flag
+    [#43] Subsheet values take precedence to master sheet values
+    
+    A warning is also thrown if they do not match.
+    Ensure that 1n override does work without id
+    
+    This is not particularly useful per se, but I think it may make future
+    debugging a bit easier.
+    Every main sheet should have an id field
+    
+    (this fixes the 1n override test)
+    Update 1n override test to use unflatten method
+    Add basic test for 1..n override
+    [#38] Add commandline flag to control spreadsheet timezone
+    [#38] Output datetimes in rfc3339 format
+    
+    Currently assumes UTC
+    [#35] Add an exception to roundtrip test for None
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Tidy up tests slightly
+    Fix test class name to be discovered by py.test
+    Clean up syntax
+    [#23] More friendly warning for missing parent ID values
+    Add test to replace commented out regression note in code
+    Check for python2 os errors properly
+    [#23] Don't fatally error when we have conflicting IDs
+    [#23] Turn some errors into more descriptive warnings, and improve tests
+    Support subsheets that belong at a lower level than the id
+    [#25] Don't fail on empty number fields
+    
+    If all fields are empty, ignore that line
+    [#8] Tests to check that unicode survives the full unflattening process
+    Assume the top most object is always in an array
+    [#13] Ensure we actually match against release[]/id
+    Ensure ordering is maintained during CSV->JSON conversion
+    [#8] Improve non-ascii support
+    
+    Most of these changes are for python2 compatability.
+    [#17] Handle non-string values from XLSXInput
+    [#17] Add basic XLSXInput class
+    [#17] Add test for XLSX
+    Add basic tests of CSVInput class
+    [#1][#22] Handle extra types using annotated header information
+    
+    array, number and boolean
+    [#18] Read the actual JSON key name from extra data in the spreadsheet
+    [#18] More improvements to sub sheet input handling
+    [#18] Handle basic subsheets better
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    Add some unit tests of the unflatten function
+    [#19] Also switch JSON seperator to / in input.py
+    Clean up code formatting
+    Restructure input code to seperate out CSV specific code
+    Begin work on basic CSV input
+    black-isort: Apply
+    Fix sheet configuration and vertical orientation for .ods
+    Add test xml comment
+    [OpenDataServices/cove#1030] Add a test
+    Reuse schemas in tests; remove duplicates
+    Add a test for specifying RootListPath via metatab
+    XML root node is specified in metatab instead
+    Support user-defined XML root node
+    Add a test for user-defined XML root node
+    Rename fixture file to fix case sensitivity issue
+    Add xml-schema arg; get tests passing
+    Replace personal and org data in test files
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    [#75] Case and space insensitivity
+    
+    All titles made space and case insensitive.
+    
+    Only main sheet names made case insensitive as sheet names have
+    relevence when unflattening as to how objects are nested.
+    test_docs: Bump the number of examples to match
+    black-isort: Apply
+    tests: Seperate a big test out to individual tests
+    
+    This means if one part only fails, you can rerun just that part - much faster!
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Update number of tests passed
+    Fix test_docs
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Add mode disable_local_refs
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Bump test_docs tests_passed
+    [OpenDataServices/cove#1030] Add a test
+    [#152] Document Metatab
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Ignore whitespace differences for help example tests
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    Improved rollup and create-template examples
+    Added source map examples
+    Added flatten and create-template examples to the docs
+    Removed WITH_CELLS option and deleted unused functions
+    Fixing the problem with Location
+    Added receipt examples and help text
+    An example of merge behaviour with missing IDs
+    Allowing for text differences in JSON output of older Python versions
+    Refactored docs so they can be tested with coverage
+    black-isort: Apply
+    Fix sheet configuration and vertical orientation for .ods
+    refactor (test_output.py): ensure unique varialbe names
+    add the other tests - currently ODS output does not include None values
+    tests: add blank sheet test for ODS files
+    [#287] Upgrade to openpyxl 2.6.x
+    Avoid some openpyxl warnings by not using deprecated method
+    Change interaction with openpyxl now that everything is generators
+    
+    https://github.com/OpenDataServices/cove/issues/954
+    Openpyxl empty sheets now have 1 cell with value None
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    [#65] Add utf-8 support to JSON input and CSV output
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#40] Add root-id flag
+    Fix Python 2 support
+    Implement lines output (ie. output spreadsheet content rows)
+    Add tests for lines output (ie. content from flattened JSON)
+    Add tests for existing xlsx and csv output (ie. from scheam)
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    [#29] Use openpyxl for output as well as input to reduce dependencies
+    [#24] Ensure tests always write into tmpdir
+    Add prospector and landscape configs
+    [#12] Ensure IDs are always at the start of a subsheet
+    [#5] Move unit tests into a tests directory
+    [#4] Fix test imports for new package structure
+    [#4] Structure the code as a python package
+    [#5] Increase output.py test coverage
+    [#9] Fix output.py to work with python2
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    While trying to decode JSON, if there is a UTF8 error raise the new exception class BadlyFormedJSONErrorUTF8.
+    
+      (This extends the old BadlyFormedJSONError exception, so existing code that checks sensibly should be fine.)
+    
+    This will be used in https://github.com/OpenDataServices/cove/issues/887
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    [#132] Use correct sheet names when flattening
+    
+    (ie. the same as used for template generation from the schema)
+    [#132] Add a test that flattening sheet names match template generation
+    
+    (deliberately fails due to bug #132)
+    [OpenDataServices/cove#572] Flatten an array of numbers
+    
+    This should fix flattening for OCDS data using the location schema.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#90] Fix tests of flattening using the schema
+    [#90] Update all of the flattening without schema tests
+    [#90] Begin implementing JSON pointer multisheet when flattening
+    
+    This makes some of the roundtrip tests pass, but I still need to go
+    through all the flattening tests and update those.
+    [#91] Strip types from main sheet
+    
+    Just strip type stuff in schema to make flattening and template
+    generation.
+    
+    Change unflatten behaviour to generate schema when titles are not being
+    used.
+    [#65] Add utf-8 support to JSON input and CSV output
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Throw a custom error for badly formed JSON
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#40] Add root-id flag
+    [#43] Add warning when flattening if multiple values are supplied
+    
+    (in rollup mode)
+    [#43] Add rollup support to flattening
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Fix incorrectly nested id output
+    Ensure id fields are not outputted on main sheet when flattening
+    Fix conversion for sample data
+    
+    Add support for nulls
+    Don't require schema in CLI flattening interface
+    Don't add duplicate columns for arrays
+    Output extra columns from the schema upon flattening
+    Add the cli interface for flattening (json->spreadsheet)
+    Add support for id fields in JSON input
+    Use the schema for sub sheet names during json input
+    Add basic nested support for json input
+    Start adding json input
+    input: Include sheet names in warnings about duplicate column headings
+    black-isort: Apply
+    Python 2.7 doesn't like us to call a file warnings.py
+    
+    How relative imports works has changes between Python 2 and 3.
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    Don't generate the cell or heading source maps if they aren't requested
+    Removed WITH_CELLS option and deleted unused functions
+    Warn if there are duplicate headings
+    black-isort: Apply
+    Use unicode literals in python 2.7
+    Call fancy_unflatten with required arguments
+    Update end to end tests to work for current master
+    Remove main_sheet_name from test_end_to_end
+    
+    Required due to
+    https://github.com/OpenDataServices/flatten-tool/issues/96
+    Start of end to end tests
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Add mode disable_local_refs
+    [OpenDataServices/cove#544] Add tests of schema.py changes
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#40] Make root_id default to None
+    
+    This removes the OCDS specific default of 'ocid'.
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#90] Update the tests of the schema parser to match our new code
+    [#91] Strip types from main sheet
+    
+    Just strip type stuff in schema to make flattening and template
+    generation.
+    
+    Change unflatten behaviour to generate schema when titles are not being
+    used.
+    [#77] Add a test of titles and rollUp
+    [#76] Emit warning if field in rollUp doesn't exist in the schema
+    Move titles and lines into a new improved sheet object
+    
+    This should avoid us having to pass around sheet headers, titles and
+    lines seperately, and therefore simplify method/function calls.
+    Add an append method to SubSheet
+    
+    This is required by json_input.py at
+    https://github.com/OpenDataServices/flatten-tool/blob/master/flattentool/json_input.py#L33
+    Optionally fetch the schema from a http url
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#51] Ensure titles display on subsheets of generated template
+    [#40] Add root-id flag
+    [#43] Add rollUp support to schema generation
+    Add basic nested support for json input
+    Clean up syntax
+    [#1] Output correct annotated header for nested simple arrays
+    Rename confusingly named helper function
+    [#1] Add simple array test
+    Enable accidentally missed test
+    [#22] Update tests to check column headers for extra annotated information
+    [#1] Generate simple array columns in spreadsheet
+    [#22] Add type information to column headers
+    [#18] Handle basic subsheets better
+    [#19] Switch JSON path separator from . to /
+    [#13] Add main sheet's id to sub tables
+    Add prospector and landscape configs
+    [#11] Use new ID format
+    [#12] Ensure IDs are always at the start of a subsheet
+    [#5] Move unit tests into a tests directory
+    [#4] Fix test imports for new package structure
+    [#4] Structure the code as a python package
+    [#10] Sheet names should be based on reference names
+    Array fields should not appear in parent sheets
+    [#2] Add columns for parent IDs to subtables
+    [#5] Begin adding unit tests
+    schema: Handle `"format": "date"` correctly
+    
+    https://github.com/openownership/cove-bods/issues/35
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    [OpenDataServices/cove#838] Convert integer float to int
+    [#67] Fix rollup with titles
+    [#77] Multiplesheets titles tests, unflatten and flatten
+    Move multiplesheets unflatten tests over to a parametrized list
+    Test for mismatched types between multiple lines
+    [#77] Test that json_input (flattening) is the reverse of unflattening
+    
+    This includes the first "titles" tests of flattening.
+    [#125]  Put whole path into warning message
+    [#125] Warn when a basic value is ignored, due to array/object
+    [#154][#155] Warn if a heading is ignored because it is a number
+    [#154][#155] Don't error for numbers as strings
+    [#154] Handle numbers in headings of XLSX files
+    Fix unflattening of string arrays inside an object array
+    
+    OpenDataServices/cove#544
+    [#125] Fix tests for Python 2.7 and 3.3
+    [#125] Also handle when there is a mismatch between str and object
+    [#125] Add warnings when a column is skipped due to mismatched types
+    [#125] Skip columns that have a mismatched type with other columns
+    [#137] Fix KeyError ocid
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#90] Fix unflattening tests using the schema
+    Pass comment strings to the parameterized unflatten tests
+    
+    This means that pytest will show the comment string when a test fails,
+    which makes it easier to find what failed in the test file.
+    [#90] Update the tests of the schema parser to match our new code
+    [#94] Convert zeros
+    
+    Change from not convert all falsy values to just not converting empty
+    strings and nulls.
+    [#85] Test that array of strings are unflattened correctly
+    [#85] Add some more tests, fix header lookup.
+    
+    Some tests to show json pointer numbering.
+    Fixes to title lookup with multiple arrays.
+    [#85] Main sheet use schema and allow json pointer
+    
+    Adds the following
+    
+    * A new method to unflatten the main page.
+    * Adds flattened property to Schema parser that more reflects json
+     pointer removes
+    * Use schema to convert types
+    
+    The new unflatten should produce output the same as before meaning that
+    multiple sheets will still work.
+    If no schema is supplied then fallback to old behaviour with types.
+    
+    Various tests had to be fixed as if the schema says the field is a
+    string then it converts it.
+    
+    Breaking change: If schema is supplied and the main table uses ":type"
+    notation then it will mistake this is a subobject not a types.
+    [#50][#75] Re-add case and space insensitivity of titles
+    [#50] Lookup titles individually, instead of the whole header
+    
+    This commit fixes the tests in test_input_SpreadsheetInput_unflatten.py
+    but breaks the tests in test_unflatten.py and test_roundtrip.py (the
+    TODOs in input.py explain how).
+    [#50] Add xfail tests for preferred title behaviour
+    [#77] Complete title equivalents of current unflatten tests
+    
+    (for current behaviour)
+    [#77] Start writing a schema for titles tests
+    Split out titles test cases from the others
+    Create some xfailing titles tests to implement
+    
+    The schema nedes writing, and the tests can be improved to have more
+    titles.
+    Add tests of convert_titles with an empty schema
+    Refactor single sheet unflatten unit tests into one parameterized test
+    Split out root_id_kwargs into it's own parameter
+    
+    This allows us to test "ocid" with and without the root_id kwarg
+    specified.
+    Refactor parameterization of root id to be easier to follow
+    Parameterize root id in main unflatten tests
+    Add tests for rollup without root ID
+    Tidy up tests, 1n_override == rollup
+    Split off multiple sheet unflattening tests into their own file
+    Split tests of input.py into multiple files
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#49] Add test for reading values of formulas
+    Move xlsx fixtures to the fixtures directory
+    [#40] Add root-id flag
+    [#43] Subsheet values take precedence to master sheet values
+    
+    A warning is also thrown if they do not match.
+    Ensure that 1n override does work without id
+    
+    This is not particularly useful per se, but I think it may make future
+    debugging a bit easier.
+    Every main sheet should have an id field
+    
+    (this fixes the 1n override test)
+    Update 1n override test to use unflatten method
+    Add basic test for 1..n override
+    [#38] Add commandline flag to control spreadsheet timezone
+    [#38] Output datetimes in rfc3339 format
+    
+    Currently assumes UTC
+    [#35] Add an exception to roundtrip test for None
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Tidy up tests slightly
+    Fix test class name to be discovered by py.test
+    Clean up syntax
+    [#23] More friendly warning for missing parent ID values
+    Add test to replace commented out regression note in code
+    Check for python2 os errors properly
+    [#23] Don't fatally error when we have conflicting IDs
+    [#23] Turn some errors into more descriptive warnings, and improve tests
+    Support subsheets that belong at a lower level than the id
+    [#25] Don't fail on empty number fields
+    
+    If all fields are empty, ignore that line
+    [#8] Tests to check that unicode survives the full unflattening process
+    Assume the top most object is always in an array
+    [#13] Ensure we actually match against release[]/id
+    Ensure ordering is maintained during CSV->JSON conversion
+    [#8] Improve non-ascii support
+    
+    Most of these changes are for python2 compatability.
+    [#17] Handle non-string values from XLSXInput
+    [#17] Add basic XLSXInput class
+    [#17] Add test for XLSX
+    Add basic tests of CSVInput class
+    [#1][#22] Handle extra types using annotated header information
+    
+    array, number and boolean
+    [#18] Read the actual JSON key name from extra data in the spreadsheet
+    [#18] More improvements to sub sheet input handling
+    [#18] Handle basic subsheets better
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    Add some unit tests of the unflatten function
+    [#19] Also switch JSON seperator to / in input.py
+    Clean up code formatting
+    Restructure input code to seperate out CSV specific code
+    Begin work on basic CSV input
+    schema: Handle `"format": "date"` correctly
+    
+    https://github.com/openownership/cove-bods/issues/35
+    black-isort: Apply
+    [#77] Multiplesheets titles tests, unflatten and flatten
+    Only use skip for tests that should eventually pass
+    Multiplesheets flatten tests
+    [#77] Test that json_input (flattening) is the reverse of unflattening
+    
+    This includes the first "titles" tests of flattening.
+    flatten: Fix use of titles for sheet names, to avoid KeyError
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306#issuecomment-694407764
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    black-isort: Apply
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    [#67] Fix rollup with titles
+    [#77] Multiplesheets titles tests, unflatten and flatten
+    More schema aware multiplesheets unflatten tests over to a parametrized list
+    Move multiplesheets unflatten tests over to a parametrized list
+    [#96] Make order of sheets deterministic
+    
+    For CSVs we process them in alphabetical order.
+    
+    For XLSX we use the order they appear in the spreadsheet.
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#81] Update warning to suggest that duplicate IDs may be the problem
+    [#90] Improve warning message for merge conflict
+    [#90] Replace remaining FIXMEs in the tests with links to issues
+    [#90] Tests of outputted JSON ordering now pass
+    [#90] When ids are missing or don't match, simply append to JSON output
+    
+    There may be valid reasons people want to do this with flatten-tool. For
+    the standards we support errors will be flagged by validation.
+    [#90] Match identifiers correctly when their type has changed
+    
+    e.g. schema says string, input is integer, output is string. Previously
+    merging would break in this case.
+    [#90] Merge subsheets even when we don't have an id for the sub object
+    [#90] Fix unflattening tests using the schema
+    [#90] Update so we pass the unflatten test in test_init
+    Remove type annotations from test
+    [#90] Initial work on implementing JSON pointer multi sheet unflattening
+    [#90] Remove current multi-sheet unflattening and xfail relevant tests
+    Split off multiple sheet unflattening tests into their own file
+    Split tests of input.py into multiple files
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#49] Add test for reading values of formulas
+    Move xlsx fixtures to the fixtures directory
+    [#40] Add root-id flag
+    [#43] Subsheet values take precedence to master sheet values
+    
+    A warning is also thrown if they do not match.
+    Ensure that 1n override does work without id
+    
+    This is not particularly useful per se, but I think it may make future
+    debugging a bit easier.
+    Every main sheet should have an id field
+    
+    (this fixes the 1n override test)
+    Update 1n override test to use unflatten method
+    Add basic test for 1..n override
+    [#38] Add commandline flag to control spreadsheet timezone
+    [#38] Output datetimes in rfc3339 format
+    
+    Currently assumes UTC
+    [#35] Add an exception to roundtrip test for None
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Tidy up tests slightly
+    Fix test class name to be discovered by py.test
+    Clean up syntax
+    [#23] More friendly warning for missing parent ID values
+    Add test to replace commented out regression note in code
+    Check for python2 os errors properly
+    [#23] Don't fatally error when we have conflicting IDs
+    [#23] Turn some errors into more descriptive warnings, and improve tests
+    Support subsheets that belong at a lower level than the id
+    [#25] Don't fail on empty number fields
+    
+    If all fields are empty, ignore that line
+    [#8] Tests to check that unicode survives the full unflattening process
+    Assume the top most object is always in an array
+    [#13] Ensure we actually match against release[]/id
+    Ensure ordering is maintained during CSV->JSON conversion
+    [#8] Improve non-ascii support
+    
+    Most of these changes are for python2 compatability.
+    [#17] Handle non-string values from XLSXInput
+    [#17] Add basic XLSXInput class
+    [#17] Add test for XLSX
+    Add basic tests of CSVInput class
+    [#1][#22] Handle extra types using annotated header information
+    
+    array, number and boolean
+    [#18] Read the actual JSON key name from extra data in the spreadsheet
+    [#18] More improvements to sub sheet input handling
+    [#18] Handle basic subsheets better
+    [#16] Add unflatten subcommand to flatten-ocds cli
+    
+    Input filename and main sheet name are currently hardcoded.
+    Add some unit tests of the unflatten function
+    [#19] Also switch JSON seperator to / in input.py
+    Clean up code formatting
+    Restructure input code to seperate out CSV specific code
+    Begin work on basic CSV input
+    black-isort: Apply
+    .ods support: Assume UTC for naive dates as we do for xlsx
+    .ods support: handle numbers and dates better
+    
+    * Numbers should be returned as int or float
+    * Dates can be returned as an iso formatted string
+    Fix sheet configuration and vertical orientation for .ods
+    fix: ODS unicode support and test
+    tests: add additional tests for ODS support
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Make bad xlsx error better
+    [#287] Fix incorrectly joined path
+    [#287] Upgrade to openpyxl 2.6.x
+    Fix tests for Python 2.7
+    [OpenDataServices/cove#838] Convert integer float to int
+    Pick up metatab and add options for it.
+    Add vertical xlsx reading
+    [OpenDataServices/cove#544] Actually output numbers for number array
+    [#96] Make order of sheets deterministic
+    
+    For CSVs we process them in alphabetical order.
+    
+    For XLSX we use the order they appear in the spreadsheet.
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#85] Main sheet use schema and allow json pointer
+    
+    Adds the following
+    
+    * A new method to unflatten the main page.
+    * Adds flattened property to Schema parser that more reflects json
+     pointer removes
+    * Use schema to convert types
+    
+    The new unflatten should produce output the same as before meaning that
+    multiple sheets will still work.
+    If no schema is supplied then fallback to old behaviour with types.
+    
+    Various tests had to be fixed as if the schema says the field is a
+    string then it converts it.
+    
+    Breaking change: If schema is supplied and the main table uses ":type"
+    notation then it will mistake this is a subobject not a types.
+    Split tests of input.py into multiple files
+    black-isort: Apply
+    Fix longest_horizontal_row calculation in vertical orientation
+    .ods support: handle numbers and dates better
+    
+    * Numbers should be returned as int or float
+    * Dates can be returned as an iso formatted string
+    Fix sheet configuration and vertical orientation for .ods
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    Make sourcemap correct with hashcomments, towards https://github.com/OpenDataServices/cove/issues/1186
+    Overwrite commands from default configuration individually.
+    
+    Currently if you add one command in the metatab it removes all the
+    defaults supplied by the command line/library.
+    [OpenDataServices/cove#959] Add test of IDName configuration command
+    [#174] Add hashcomments command to xlsx
+    
+    If the hashcomments command is used each sheet starting with # and each
+    column starting with # is ignored.
+    [#171] Add basic commands for csv files.
+    [#130] Add ignore command
+    [#130] Add command line option to default configuration options.
+    [#130] skipLines and headerRows commands added.
+    Add new metatab test make coverage better.
+    Removed WITH_CELLS option and deleted unused functions
+    Start of end to end tests
+    Ensure cells and rows appear correct number of times in the source maps
+    Cell source map test with headings from the source
+    [#90] Update so we pass the unflatten test in test_init
+    [#90] Remove current multi-sheet unflattening and xfail relevant tests
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    [#71] Output UTF-8 encoded JSON
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Move xlsx fixtures to the fixtures directory
+    [#40] Use main-sheet-name as the top level JSON key
+    Update commaline interface
+    
+    Unless the format is all, the filenames should be specified in full.
+    The output option has been moved into the subcommands, so that the
+    subcommands are always second.
+    During conversion, all exceptions are caught, and a traceback printed
+    with the sheet name and line number provided.
+    Clean up syntax
+    [#25] Don't fail on empty number fields
+    
+    If all fields are empty, ignore that line
+    [#8] Tests to check that unicode survives the full unflattening process
+    Improve unflatten test
+    Assume the top most object is always in an array
+    [#13] Ensure we actually match against release[]/id
+    Ensure ordering is maintained during CSV->JSON conversion
+    Add test of decimal_default
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Add prospector and landscape configs
+    black-isort: Apply
+    Fix sheet configuration and vertical orientation for .ods
+    test_cli Add hint about package for test_argparse
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#3] Move cli tests into tests directory
+    [#3] Fix failing argument parsing tests
+    Rewrites the cli argument parser as a function and adds tests
+    
+    I can't quite get the test right tho...
+    black-isort: Apply
+    Add test check that whitespace doesn't give an error + changelog
+    [#177] Test that conversion of IATI XML file doesn't split transactions
+    
+    ... across multiple sheets.
+    [#177] Add unit tests of list_dict_consistency etc.
+    [#151] Add tests of XML->Spreadsheets (flattening)
+    black-isort: Apply
+    Replace personal and org data in test files
+    [#151] Replace to_dict function with xmltodict's dict_constructor
+    [#151] Add XML roundtrip test
+    [#67] Add rollup roundtrip test
+    [#68] Update 360Giving schema fixture so that amountAwarded roundtrips
+    [#96] Remove main_sheet_name except for spreadsheet output
+    
+    As part of this I added root_list_path to unflatten which fixes
+    https://github.com/OpenDataServices/flatten-tool/issues/69
+    [#90] Fix XLSX roundtrip test
+    
+    Behaviour of the new code is correct, as 'duration' in 360Giving should
+    always be a string. I've updated the fixture to match this.
+    [#90] Begin implementing JSON pointer multisheet when flattening
+    
+    This makes some of the roundtrip tests pass, but I still need to go
+    through all the flattening tests and update those.
+    [#90] Remove current multi-sheet unflattening and xfail relevant tests
+    [#57] Update the tests to work with newest openpyxl
+    
+    There's a couple of oddities here, but I think it's important to be
+    using this latest version to fix
+    https://github.com/OpenDataServices/cove/issues/176
+    
+    I've flagged the potential problems as new GitHub issues:
+    * Python 2 ints not roundtripping properly
+      https://github.com/OpenDataServices/flatten-tool/issues/79
+    * Sheets with just one cell are not handled properly
+      https://github.com/OpenDataServices/flatten-tool/issues/78
+    Add 360giving csv roundtrip test
+    Fix 360 w/ titles roundtrip
+    Add identifier suffixes to spreadsheet output
+    
+    This ensures that two keys pointing to the same schema definition are
+    handled correctly.
+    
+    Adds a json_key paramater to JSONParser.parse_json_dict so that we know
+    what the key used to refer to this json_dict was.
+    
+    Also adds the .name property to a Sheet object, so that we can later use
+    this information to omit the suffix if it is the same as the sheet name.
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#40] Use main-sheet-name as the top level JSON key
+    [#35] Add an exception to roundtrip test for None
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Add json roundtrip test (currently xfail)
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    [#149][#189] Pretty print output XML
+    
+    Based on
+    https://github.com/OpenDataServices/flatten-tool/commit/50399b57afd93b80132ce24007db1a3303c4fb02
+    [#198][#200] Require lxml
+    
+    Note that lxml is now "required" - it's listed as a requirement in
+    setup.py and is needed for the tests to pass.
+    However, stdlib etree still exists as an unsupported feature.
+    Fix org file fixture from merging in master
+    Support user-defined XML root node
+    Add a test for user-defined XML root node
+    While trying to decode JSON, if there is a UTF8 error raise the new exception class BadlyFormedJSONErrorUTF8.
+    
+      (This extends the old BadlyFormedJSONError exception, so existing code that checks sensibly should be fine.)
+    
+    This will be used in https://github.com/OpenDataServices/cove/issues/887
+    Replace personal and org data in test files
+    [#73] Update OCDS schema used as fixture to 1.0.0
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Add json roundtrip test (currently xfail)
+    Replace personal and org data in test files
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#33] Match JSON parsing columns to the schema annotated ones
+    Add json roundtrip test (currently xfail)
+    Add test check that whitespace doesn't give an error + changelog
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    [#151] Add tests of XML->Spreadsheets (flattening)
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    [#177] Test that conversion of IATI XML file doesn't split transactions
+    
+    ... across multiple sheets.
+    [#68] Update 360Giving schema fixture so that amountAwarded roundtrips
+    Update copy of the 360Giving schema that we're using as a fixture
+    Start adding a roundtrip test for 360 data
+    
+    (+ fix some of the bugs introduced by recent commits that these tests
+    flag up)
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Add json roundtrip test (currently xfail)
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    Add some formatting to fixture in the middle of a cell
+    
+    This is in order to test this change for .ods:
+    https://github.com/OpenDataServices/flatten-tool/commit/3c37290fa077cdea39c3a7d09689fe7118b7a056
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    .ods support: Assume UTC for naive dates as we do for xlsx
+    .ods support: handle numbers and dates better
+    
+    * Numbers should be returned as int or float
+    * Dates can be returned as an iso formatted string
+    Fix longest_horizontal_row calculation in vertical orientation
+    add ODS files to fixtures
+    add ODS files to fixtures
+    add ODS files to fixtures
+    [#171] Add basic commands for csv files.
+    Add missing comma to CSV fixture
+    [#171] Add basic commands for csv files.
+    [OpenDataServices/cove#959] Add test of IDName configuration command
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    [#49] Add test for reading values of formulas
+    Overwrite commands from default configuration individually.
+    
+    Currently if you add one command in the metatab it removes all the
+    defaults supplied by the command line/library.
+    Rename fixture file to fix case sensitivity issue
+    Replace personal and org data in test files
+    Fix longest_horizontal_row calculation in vertical orientation
+    [#130] skipLines and headerRows commands added.
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Move xlsx fixtures to the fixtures directory
+    [#8] Tests to check that unicode survives the full unflattening process
+    Make bad xlsx error better
+    .ods support: Assume UTC for naive dates as we do for xlsx
+    .ods support: handle numbers and dates better
+    
+    * Numbers should be returned as int or float
+    * Dates can be returned as an iso formatted string
+    Make sourcemap correct with hashcomments, towards https://github.com/OpenDataServices/cove/issues/1186
+    [#130] skipLines and headerRows commands added.
+    [OpenDataServices/cove#838] Convert integer float to int
+    Replace personal and org data in test files
+    Replace personal and org data in test files
+    Pick up metatab and add options for it.
+    [#174] Add hashcomments command to xlsx
+    
+    If the hashcomments command is used each sheet starting with # and each
+    column starting with # is ignored.
+    Add a test for specifying RootListPath via metatab
+    Update XLSX fixture to use XMLRootTag
+    XML root node is specified in metatab instead
+    Add a test for user-defined XML root node
+    Add some formatting to fixture in the middle of a cell
+    
+    This is in order to test this change for .ods:
+    https://github.com/OpenDataServices/flatten-tool/commit/3c37290fa077cdea39c3a7d09689fe7118b7a056
+    Rename flattening-ocds to flatten-tool
+    
+    The Python module name must not have a dash in it, so I've used
+    flattentool.
+    Move xlsx fixtures to the fixtures directory
+    [#17] Add test for XLSX
+    [#130] Add command line option to default configuration options.
+    [#130] Add ignore command
+    Pick up metatab and add options for it.
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Move documentation out of the README and into sphinx docs
+    Correct all typos in docs
+    Improve OCDS page
+    Move documentation out of the README and into sphinx docs
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Correct description of what happens with --rollup
+    Add links to user guide
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Add mode disable_local_refs
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Added receipt examples and help text
+    Drop Python 2 support
+    https://github.com/OpenDataServices/flatten-tool/issues/299
+    [#217] Add prerequisites section to getting started docs
+    [#287] Openpyxl 2.6 drops support for Python 3.4
+    Correct all typos in docs
+    Add flatten to example in Getting Started
+    Move documentation out of the README and into sphinx docs
+    Capitalize CSV when referring to the file format, as with other file formats
+    Correct all typos in docs
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Correct all typos in docs
+    Move documentation out of the README and into sphinx docs
+    Docs - update to match our current practice
+    [#287] Openpyxl 2.6 drops support for Python 3.4
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Correct all typos in docs
+    Move documentation out of the README and into sphinx docs
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Removed WITH_CELLS option and deleted unused functions
+    Added receipt examples and help text
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    Capitalize CSV when referring to the file format, as with other file formats
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Correct all typos in docs
+    Docs Page - combine 2 sections into one with sub-headings
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Docs - BODS page
+    
+    Produced from:
+      *  https://github.com/OpenDataServices/flatten-tool/issues/226
+      *  https://github.com/OpenDataServices/flatten-tool/issues/223
+      *  https://github.com/OpenDataServices/flatten-tool/issues/228
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Adding array-handinling info
+    fix broken link
+    Update docs with xml comment option
+    Fix typos in unflatten.rst up to "Multiple rows"
+    Fix to docs: root-is-list section in unflatten had a broken file name
+    Explain stdout and expand short option in --output-name docs, remove ambiguous reference to "same example"
+    Avoid use of 'now' to refer to change in behavior in docs
+    Simplify --root-is-list example, correct lettercase in --root-is-list heading
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Correct all typos in docs
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Clarified meaning of headerrows in docs.
+    https://github.com/OpenDataServices/flatten-tool/issues/230
+    Adding draft content on header and skiprows configuration
+    [#152] Document Metatab
+    Move documentation out of the README and into sphinx docs
+    Improved rollup and create-template examples
+    Added source map examples
+    Added flatten and create-template examples to the docs
+    Added relationship-grandchild example
+    Fixing the problem with Location
+    Using array rather than list and clarifying index behaviour
+    Added receipt examples and help text
+    An example of merge behaviour with missing IDs
+    Allowing for text differences in JSON output of older Python versions
+    Refactored docs so they can be tested with coverage
+    Spelling fixes
+    Remove --root-id='' argument from the docs
+    Support output to stdout for unflatten, and reflect that in the docs
+    Changed theme and added more examples as includes
+    Work in progress on the user guide
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Update docs and help text for remove-empty-schema-columns version
+    https://github.com/OpenDataServices/flatten-tool/issues/271
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Add links, fix grammar, and specify options in flatten.rst
+    A user might flatten a JSON document, edit it as a spreadsheet, then unflatten it back
+    Correct introduction to flatten.rst, given that examples in create-template are about JSON-to-CSV
+    Add link to Spreadsheet Designer's Guide
+    Add links to user guide
+    Delete incorrect warning that "You can't use ``--use-titles`` with flatten", #253
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Set an appropriate output_name if --output-format is xlsx
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    [#132] Fix examples to have correct sheet names when flattening
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Added receipt examples and help text
+    Fix grammar in usage-ocds.rst
+    Remove default options from commands in usage-ocds.rst, to draw attention to the relevant content
+    Capitalize CSV when referring to the file format, as with other file formats
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Correct all typos in docs
+    Improve OCDS page
+    Move documentation out of the README and into sphinx docs
+    black-isort: Apply
+    Update year of the copyright
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Added docs directory and sphinx requirement
+    Fix backticks, e.g. so that double-dash command-line options aren't styled as n-dash
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Move documentation out of the README and into sphinx docs
+    Added flatten and create-template examples to the docs
+    Added receipt examples and help text
+    Work in progress on the user guide
+    Added docs directory and sphinx requirement
+    Added docs directory and sphinx requirement
+    [#64] Start marking some major changes to the README and add examples
+    Add example of arrays within arrays
+    [#64] Start marking some major changes to the README and add examples
+    [#64] Start marking some major changes to the README and add examples
+    [#64] Start marking some major changes to the README and add examples
+    [#64] Start marking some major changes to the README and add examples
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    Add xml-schema arg; get tests passing
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    [#149][#189] Pretty print output XML
+    
+    Based on
+    https://github.com/OpenDataServices/flatten-tool/commit/50399b57afd93b80132ce24007db1a3303c4fb02
+    [#198][#200] Require lxml
+    
+    Note that lxml is now "required" - it's listed as a requirement in
+    setup.py and is needed for the tests to pass.
+    However, stdlib etree still exists as an unsupported feature.
+    Prevent self-closing tags in output XML
+    Add a comment to flattentool XML output
+    Sort XML according to the schema
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add xml-schema arg; get tests passing
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add xml-schema arg; get tests passing
+    Adding array-handinling info
+    Adding array-handinling info
+    Adding array-handinling info
+    Adding array-handinling info
+    Fix tests for new warning format
+    Fix docs tests of merging conflict message
+    
+    OpenDataServices/cove#611
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    Removed WITH_CELLS option and deleted unused functions
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Work in progress on the user guide
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    [#152] Document Metatab
+    [#152] Document Metatab
+    [#152] Document Metatab
+    [#152] Document Metatab
+    Changed theme and added more examples as includes
+    [#152] Document Metatab
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Add missing tables example
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Add missing tables example
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Adding draft content on header and skiprows configuration
+    Refactored docs so they can be tested with coverage
+    Remove empty column in example CSV
+    Adding draft content on header and skiprows configuration
+    Adding draft content on header and skiprows configuration
+    Refactored docs so they can be tested with coverage
+    [#152] Document Metatab
+    [#152] Document Metatab
+    [#152] Document Metatab
+    Refactored docs so they can be tested with coverage
+    [#152] Document Metatab
+    Changed theme and added more examples as includes
+    [#152] Document Metatab
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Simplify basic unflatten example
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Use consistent argument order in --root-list-path example
+    Refactored docs so they can be tested with coverage
+    Fix tests for new warning format
+    Fix docs tests of merging conflict message
+    
+    OpenDataServices/cove#611
+    [OpenDataServices/cove#511] Warn about data errors with a custom class
+    
+    Warnings that relate to errors with the data are made with a custom
+    flattentool.warnings.DataErrorWarning class. This allows applications
+    that use flatten-tool, like cove can chose to show specifically these
+    kind of warnings to the end user, whereas other warnings might be
+    reported to the developers.
+    Removed WITH_CELLS option and deleted unused functions
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Added relationship-grandchild example
+    Added relationship-grandchild example
+    Refactored docs so they can be tested with coverage
+    Added relationship-grandchild example
+    An example of merge behaviour with missing IDs
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Refactored docs so they can be tested with coverage
+    An example of merge behaviour with missing IDs
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Add missing tables example
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Simplify simple-file example
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Simplify simple-file example
+    Refactored docs so they can be tested with coverage
+    Simplify --root-is-list example, correct lettercase in --root-is-list heading
+    Apply root-is-list option to cell_source_map and heading_source_map
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Simplify --root-is-list example, correct lettercase in --root-is-list heading
+    Apply root-is-list option to cell_source_map and heading_source_map
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Refactored docs so they can be tested with coverage
+    Changed theme and added more examples as includes
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    Work in progress on the user guide
+    Refactored docs so they can be tested with coverage
+    Refactored docs so they can be tested with coverage
+    Work in progress on the user guide
+    [#64] Start marking some major changes to the README and add examples
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Making unflatten work with Open Ownership whilst passing schema option
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Add BODS Schema to examples folder - we shall use this in next commit
+    Add BODS Schema to examples folder - we shall use this in next commit
+    Add BODS Schema to examples folder - we shall use this in next commit
+    Add BODS Schema to examples folder - we shall use this in next commit
+    Add BODS Schema to examples folder - we shall use this in next commit
+    [OpenDataServices/cove#1030] Add a test
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    [OpenDataServices/cove#1030] Add a test
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    [OpenDataServices/cove#1030] Add a test
+    [#149][#189] Pretty print output XML
+    
+    Based on
+    https://github.com/OpenDataServices/flatten-tool/commit/50399b57afd93b80132ce24007db1a3303c4fb02
+    [#198][#200] Require lxml
+    
+    Note that lxml is now "required" - it's listed as a requirement in
+    setup.py and is needed for the tests to pass.
+    However, stdlib etree still exists as an unsupported feature.
+    Prevent self-closing tags in output XML
+    Add a comment to flattentool XML output
+    Sort XML according to the schema
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    [OpenDataServices/cove#1030] Add a test
+    Add xml-schema arg; get tests passing
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    flatten: Fix combination of --use-titles and --rolup with a value on CLI
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/359
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Add preserve-fields functionality, fixes #302
+    Add preserve-fields functionality, fixes #302
+    Add preserve-fields functionality, fixes #302
+    Add preserve-fields functionality, fixes #302
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add preserve-fields functionality, fixes #302
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    [#132] Fix examples to have correct sheet names when flattening
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Refactored docs so they can be tested with coverage
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Work in progress on the user guide
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    [#132] Fix examples to have correct sheet names when flattening
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add --truncation-length option
+    Add --truncation-length option
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    [#132] Fix examples to have correct sheet names when flattening
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add --truncation-length option
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add --truncation-length option
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    [#64] Start marking some major changes to the README and add examples
+    [#64] Start marking some major changes to the README and add examples
+    Improved rollup and create-template examples
+    Fixing the problem with Location
+    Added receipt examples and help text
+    Fixing the problem with Location
+    Added receipt examples and help text
+    Added source map examples
+    Added receipt examples and help text
+    Added source map examples
+    Added source map examples
+    Work in progress on the user guide
+    Added source map examples
+    Added receipt examples and help text
+    Work in progress on the user guide
+    Added source map examples
+    Added receipt examples and help text
+    Added source map examples
+    Added source map examples
+    Added source map examples
+    Work in progress on the user guide
+    Added source map examples
+    Added receipt examples and help text
+    Work in progress on the user guide
+    Added receipt examples and help text
+    Added source map examples
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Added receipt examples and help text
+    help Updated command expected outputs to include ods format in/output
+    Remove --truncation-length from unflatten command
+    Add --truncation-length option
+    Add xml comment option to expected.txt
+    Add mode disable_local_refs
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    XML root node is specified in metatab instead
+    Support user-defined XML root node
+    Add xml-schema arg; get tests passing
+    Stipulate possible formats in CLI parser
+    Remove default unflatten output-name
+    [#130] Add command line option to default configuration options.
+    [meta-tab] Change metadata_only to store true.
+    
+    Fix some naming and add comment from review. Also remove an not needed
+    list.
+    Pick up metatab and add options for it.
+    Add vertical xlsx reading
+    Use xml and id_name flags to make sure JSON tests still pass
+    Add a very basic xml output
+    Move documentation out of the README and into sphinx docs
+    Update the expected help text in light of the root ID change
+    Added receipt examples and help text
+    Added receipt examples and help text
+    help Updated command expected outputs to include ods format in/output
+    Extend flatten rollup (#301)
+    
+    Adds ability to pass fields to rollup with a file or directly rather than just with schema
+    Add preserve-fields functionality, fixes #302
+    Add --truncation-length option
+    Update docs and help text for remove-empty-schema-columns version
+    https://github.com/OpenDataServices/flatten-tool/issues/271
+    New --remove-empty-schema-columns flag to flatten
+    
+    Original work done by @Bjwebb
+    
+    https://github.com/OpenDataServices/flatten-tool/pull/241
+    https://github.com/OpenDataServices/cove/issues/1019
+    Add mode disable_local_refs
+    Add --filter-field and --filter-value to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add new option --sheet-prefix to flatten
+    https://github.com/OpenDataServices/flatten-tool/issues/223
+    Add --root-is-list to flatten and unflatten. Added new BODS page to docs.
+    Stipulate possible formats in CLI parser
+    [#151] Update docs example with new flatten helptext
+    Added receipt examples and help text
+    Added receipt examples and help text
+    help Updated command expected outputs to include ods format in/output
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Add --truncation-length option
+    Remove "Requires a schema to be specified." as create-template requires a schema in all cases
+    Add mode disable_local_refs
+    Stipulate possible formats in CLI parser
+    Update the expected help text in light of the root ID change
+    Added receipt examples and help text
+    Added receipt examples and help text
+    Add example of arrays within arrays
+    [#64] Start marking some major changes to the README and add examples
+    Add example of arrays within arrays
+    Add example of arrays within arrays
+    Add test xml comment
+    [OpenDataServices/cove#1030] Add a test
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    Add test xml comment
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Add a test of the unflatten function for IATI XML
+    [OpenDataServices/cove#1206] Add XML declaration to outputted XML files
+    Add test xml comment
+    [OpenDataServices/cove#1030] Add a test
+    [#149][#189] Pretty print output XML
+    
+    Based on
+    https://github.com/OpenDataServices/flatten-tool/commit/50399b57afd93b80132ce24007db1a3303c4fb02
+    [#198][#200] Require lxml
+    
+    Note that lxml is now "required" - it's listed as a requirement in
+    setup.py and is needed for the tests to pass.
+    However, stdlib etree still exists as an unsupported feature.
+    Prevent self-closing tags in output XML
+    Add a comment to flattentool XML output
+    Sort XML according to the schema
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Fix test_docs
+    Add test xml comment
+    Add xml-schema arg; get tests passing
+    Add a "Flatten-tool for IATI" page to the docs
+    
+    Includes a tested example.
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Fixing the problem with Location
+    Added receipt examples and help text
+    Improved rollup and create-template examples
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Improved rollup and create-template examples
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add mode disable_local_refs
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Add mode disable_local_refs
+    Add mode disable_local_refs
+    Add mode disable_local_refs
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Tool can work with schema's that have refs to local files
+    https://github.com/OpenDataServices/flatten-tool/issues/225
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Added flatten and create-template examples to the docs
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Added flatten and create-template examples to the docs
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Added flatten and create-template examples to the docs
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Add --truncation-length option
+    Add --truncation-length option
+    Add --truncation-length option
+    Add --truncation-length option
+     Handle deprecation - only one option. Default is unchanged.
+    After feedback from @kindly
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    https://github.com/OpenDataServices/flatten-tool/pull/285
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    flatten: Use titles for sheet names
+    
+    https://github.com/OpenDataServices/flatten-tool/issues/306
+    Handle deprecation
+    https://github.com/OpenDataServices/flatten-tool/issues/185
+    Improved rollup and create-template examples
+    Added flatten and create-template examples to the docs

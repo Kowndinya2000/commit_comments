@@ -1,0 +1,6613 @@
+﻿    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Benchmark folders refactor
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Automatic code formatting.
+    fixed .gitignore for netbeans projects
+    removed .class files
+    commented out MVTO to avoid error
+    added the configuration file for the hostnames: untested at the moment
+    added classes to lib
+    client communication classes
+    working application master
+    Remove some garbage from the templates.
+    Initial commit
+    Update README.md
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Update README.md
+    Algorithm selection by configuration file is now working.
+    README instructions fix.
+    Updated README
+    Update README.md
+    Updated README
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Better Scripts
+    Deliverable 1 - Final
+    Update README.md
+    Initial commit
+    start.sh modif
+    Correctng scrimpts
+    Benchmark folders refactor
+    Benchmarking: starting generation of graphs
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Added colors and error checks to start.sh to make it look cool :D.
+    rebase with RemoteHandlerClean branch
+    Benchmark Generation
+    Removing the fetching of the benchmark results in the start script
+    Fix in benchmark and print stats into a file
+    Make sure the AppMaster is ready before displaying the REPL.
+    Fixing AM and YC
+    Removing the == of start.sh to work on linux
+    Create config directory if not there
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Removed the zombie killing code.
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Deliverable 1
+    progress
+    Removed lib. Using hadoop's libs.
+    Not needed mkdir
+    fix start.sh
+    added the configuration file for the hostnames: untested at the moment
+    Fixed errors, mergeable to master
+    client communication classes
+    Better compilation for subdirectories
+    Double bracket is not portable in sh
+    
+    We can change to #!/bin/bash too
+    Changed jar path to fit course dirs.
+    Log output after execution.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Implemented Client. Need to make containers accept the poor jar...
+    trial to make the containers work
+    link jar to the containers
+    add deamon and container creation
+    Container allocation works! Need to specify location, 1 per node.
+    working application master
+    still not working
+    Correctng scrimpts
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Added colors and error checks to start.sh to make it look cool :D.
+    rebase with RemoteHandlerClean branch
+    Benchmark Generation
+    Removing the fetching of the benchmark results in the start script
+    Fix in benchmark and print stats into a file
+    Make sure the AppMaster is ready before displaying the REPL.
+    Fixing AM and YC
+    Removing the == of start.sh to work on linux
+    Create config directory if not there
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Removed the zombie killing code.
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Deliverable 1
+    progress
+    Removed lib. Using hadoop's libs.
+    Not needed mkdir
+    fix start.sh
+    added the configuration file for the hostnames: untested at the moment
+    Fixed errors, mergeable to master
+    client communication classes
+    Better compilation for subdirectories
+    Double bracket is not portable in sh
+    
+    We can change to #!/bin/bash too
+    Changed jar path to fit course dirs.
+    Log output after execution.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Implemented Client. Need to make containers accept the poor jar...
+    trial to make the containers work
+    link jar to the containers
+    add deamon and container creation
+    Container allocation works! Need to specify location, 1 per node.
+    working application master
+    still not working
+    fix conflicts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Fixing if condition
+    Fixing typo
+    Fixing script
+    Better scripts
+    blabla
+    Small fix
+    Fixing 2pl ranaming issue
+    Fixing script
+    Modig script
+    Correctng scrimpts
+    Fixing configure script + adding node number
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Better scripts
+    Deliverable 1 with utils scripts
+    Fixed permission issue. Use ./printlogs.sh to print TM logs.
+    kv store is now working
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Better scripts
+    Deliverable 1 with utils scripts
+    Deliverable 1
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Added report and benchmark scripts
+    Added report and benchmark scripts
+    Added report and benchmark scripts
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    HFDS Logger.
+    Added documentation to yarn package. Code formatting.
+    No more deadlock due to threads problem.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Ready to deal with checkpoint
+    added message processing at TMWorker for TryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Works on the cluster and with several slaves!
+    Auto format + organize imports.
+    Automatic code formatting.
+    New formatting for Eclipse. USE IT!! :)
+    KeyValueStore with ConcurrentHashMap and Serializable Key/Value
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    not working yet but on the way
+    Server-side refactoring
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    Deliverable 1
+    progress
+    More formatting
+    KV Store + Code Formatting
+    removed unused imports
+    Added communication classes, not linked with rest of project
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    System test for MV-2PL
+    put simple 2pl back in place for testing
+    Autoformat.
+    less message needed
+    comments + log
+    centralized GC for MVTO
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    getLocalityHash
+    host -> ip
+    getOtherTMs
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Save logfiles with the name of the container.
+    HFDS Logger.
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Added documentation to yarn package. Code formatting.
+    log enable/disable capabilities
+    getNumTM
+    rebase with RemoteHandlerClean branch
+    No more deadlock due to threads problem.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    fixed here as in the other branch
+    Fix a bug
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    cleaning up
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    TM2TM communication ready
+    added remote handler to TM
+    Added interruptWaitingLocks() stub to Locking Unit
+    added shouldWaitforResponse in sendMessageToTM()
+    sendMessageToTM() throws IOException
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    Works on the cluster and with several slaves!
+    Fixing AM and YC
+    Integration test seems happy with MVTO
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Automatic code formatting.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    Remove all and add a cluster-ready mechanism for hostname resolution.
+    Completed Locking and initialization of VU and LU
+    New formatting for Eclipse. USE IT!! :)
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Unit tests
+    Versioning unit first iteration
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    Server-side refactoring
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    removed unused imports
+    werks
+    Fixed errors, mergeable to master
+    client communication classes
+    VersioningUnit fixes
+    Locking unit package organization
+    LockingUnit stub
+    Fixed typo.
+    Log output after execution.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Works!!
+    See $HADOOP/logs/userlogs/<appname>/<containers>/stdout and stderr.
+    CD into userlogs and run: cat application_1234_5678/*/*
+    Implemented Client. Need to make containers accept the poor jar...
+    javadoc
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    javadoc
+    correct the primary TM bug
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    Fixed bug for garbage collecting versions when some unknown earlier transaction did not terminate
+    Added primary attribute to begin to distinguish messages
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    TM2TM communication ready
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    debug NullPointerException
+    Autoformat.
+    forgot to use base64
+    replace array by a list for serializable
+    send terminate message at GC time
+    centralized GC for MVTO
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    fixed JSONConstructor in DeadlockInfoMessage
+    Centralized Deadlock Detection
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Handle multiple constructor in JSON message
+    Ready to deal with deadlock graphs
+    Ready to deal with checkpoint
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    TM2TM communication ready
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    TM2TM communication ready
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Code Formatting
+    not working yet but on the way
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Handle multiple constructor in JSON message
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Remove a forgotten debug print
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Format + imports
+    Auto format + organize imports.
+    Automatic code formatting.
+    New formatting for Eclipse. USE IT!! :)
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Auto format + organize imports.
+    Automatic code formatting.
+    Code Formatting
+    not working yet but on the way
+    Format + imports
+    Auto format + organize imports.
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Automatic code formatting.
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    more logging
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Auto format + organize imports.
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Fixed bug for garbage collecting versions when some unknown earlier transaction did not terminate
+    Added primary attribute to begin to distinguish messages
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    more logging
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Auto format + organize imports.
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    TM2TM communication ready
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    Auto format + organize imports.
+    Automatic code formatting.
+    added some tests.
+    using lock promotion for commit
+    refactored isSuccess of GenericSuccessRespose to getSuccess
+    modified ReadResponse.getValue to return null when value is null
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Automatic code formatting.
+    added some tests.
+    using lock promotion for commit
+    refactored isSuccess of GenericSuccessRespose to getSuccess
+    modified ReadResponse.getValue to return null when value is null
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Code Formatting
+    not working yet but on the way
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Auto format + organize imports.
+    Automatic code formatting.
+    Code Formatting
+    not working yet but on the way
+    Autoformat.
+    centralized GC for MVTO
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Renames VU to VersioningUnitMVCC2PL
+    Removing useless logs
+    Modification of the singleton creation for the VUs. Make the backgroundthread waits instead of infinite loop
+    commit() split into prepareCommit() and commit()
+    Automatic code formatting.
+    Begins mvto
+    Adds comments to public methods of VU
+    Fix BackCommitgroundThread bug in tests
+    Adding tests with threads
+    Some logic about the KV store
+    Queuing commits
+    New formatting for Eclipse. USE IT!! :)
+    VersioningUnit with Serializable Key/Value
+    Unit tests
+    Versioning unit first iteration
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    removed unused imports
+    VersioningUnit fixes
+    VersioningUnit
+    Formating code
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Autoformat.
+    Remove log pollution due to my debug
+    less message needed
+    trial to correct a bug that create duplicated message
+    correct logging error
+    comments + log
+    comments + log
+    centralized GC for MVTO
+    Fixed bug for garbage collecting versions when some unknown earlier transaction did not terminate
+    Added primary attribute to begin to distinguish messages
+    more logging
+    MVTO safe commit-abort and abort-commit
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Format + imports
+    Auto format + organize imports.
+    Renames VU to VersioningUnitMVCC2PL
+    Garbage collector
+    
+    Must think when to call it
+    Safe commit and writtenKeys cleaned when xact finishes
+    Modification of the singleton creation for the VUs. Make the backgroundthread waits instead of infinite loop
+    Bug fixes + new test
+    
+    Wanted: garbage collector
+    Safe abort
+    Comments and cleaning
+    Safe commit if has aborted + test
+    commit() split into prepareCommit() and commit()
+    mvto fix xact waiting on itself to commit
+    Automatic code formatting.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    Adding TODOs
+    MVTO abort + refactoring
+    MVTO commit and abort
+    mvto get() and put()
+    
+    Still needed:
+    - abort()
+    - commit()
+    - garbage collect old versions
+    PrefixedKey class for MVTO
+    
+    Should consider, in case we have time, why PrefixedKey from
+    MVCC2PL can't be extracted
+    Extract PrefixedKey class
+    Formatting
+    Adds test framework for MVTO
+    Begins mvto
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Auto format + organize imports.
+    Automatic code formatting.
+    Revert extracting PrefixedKey
+    
+    It causes a bug in MVCC2PLTest: testRead
+    Extract PrefixedKey class
+    Correct formatting for VU
+    Adding tests with threads
+    Some logic about the KV store
+    Queuing commits
+    VersioningUnit with Serializable Key/Value
+    Unit tests
+    Versioning unit first iteration
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    PrefixedKey class for MVTO
+    
+    Should consider, in case we have time, why PrefixedKey from
+    MVCC2PL can't be extracted
+    Revert extracting PrefixedKey
+    
+    It causes a bug in MVCC2PLTest: testRead
+    Extract PrefixedKey class
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Fixed bug for garbage collecting versions when some unknown earlier transaction did not terminate
+    Added primary attribute to begin to distinguish messages
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    HFDS Logger.
+    Better exception passing
+    fixed calling terminate twice in MVTO
+    Added documentation to yarn package. Code formatting.
+    modulo fix
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    cleaning up
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    added remote handler to TM
+    Added interruptWaitingLocks() stub to Locking Unit
+    added shouldWaitforResponse in sendMessageToTM()
+    sendMessageToTM() throws IOException
+    Removed old interface
+    Ready to deal with deadlock graphs
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    restore mvto GC
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    debug NullPointerException
+    check size of tid to send in MVTO to avoid NullPointerException
+    Autoformat.
+    exception handling
+    replace array by a list for serializable
+    less message needed
+    send terminate message at GC time
+    change concurrent set type for performance issue
+    remove wrong condition
+    fix a little bug
+    correct the primary TM bug
+    trial to correct a bug that create duplicated message
+    centralized GC for MVTO
+    Fixed bug for garbage collecting versions when some unknown earlier transaction did not terminate
+    Added primary attribute to begin to distinguish messages
+    more logging
+    HFDS Logger.
+    fixed calling terminate twice in MVTO
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    fixed .gitignore for netbeans projects
+    removed .class files
+    commented out MVTO to avoid error
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    added simple 2PL algorithm (with incomplete test cases)
+    modified locking unit promote
+    Auto format + organize imports.
+    Renames VU to VersioningUnitMVCC2PL
+    added check for locks already held.
+    Added testcase for the above
+    Added finally clause for all internal locks
+    Rename singleton instance
+    Automatic code formatting.
+    added call to abort() of VU in case of abort
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    added complex case test
+    added output printing for all requests to visualize schedule
+    fixed bug for not adding COMMIT_LOCK in compatibility table
+    fixed bug for not releasing locks at abort
+    Minor bug fix on MVCC2PL
+    calling deadlock handler at abort
+    fixed merge bugs
+    Minor bug fix in MVCC2PL
+    DeadlockPreventionUnit
+    added some tests.
+    using lock promotion for commit
+    added some tests.
+    using lock promotion for commit
+    refactored isSuccess of GenericSuccessRespose to getSuccess
+    modified ReadResponse.getValue to return null when value is null
+    Changed Key/value to Serializable in AlgoUnit
+    Completed Locking and initialization of VU and LU
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    javadoc
+    centralized GC for MVTO
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    Centralized Deadlock Detection
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    added remote handler to TM
+    Added interruptWaitingLocks() stub to Locking Unit
+    added shouldWaitforResponse in sendMessageToTM()
+    sendMessageToTM() throws IOException
+    Ready to deal with deadlock graphs
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    HFDS Logger.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Format + imports
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Auto format + organize imports.
+    Renames VU to VersioningUnitMVCC2PL
+    added check for locks already held.
+    Added testcase for the above
+    Added finally clause for all internal locks
+    Rename singleton instance
+    Automatic code formatting.
+    added call to abort() of VU in case of abort
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    added complex case test
+    added output printing for all requests to visualize schedule
+    fixed bug for not adding COMMIT_LOCK in compatibility table
+    fixed bug for not releasing locks at abort
+    Minor bug fix on MVCC2PL
+    calling deadlock handler at abort
+    fixed merge bugs
+    Minor bug fix in MVCC2PL
+    DeadlockPreventionUnit
+    added some tests.
+    using lock promotion for commit
+    added some tests.
+    using lock promotion for commit
+    refactored isSuccess of GenericSuccessRespose to getSuccess
+    modified ReadResponse.getValue to return null when value is null
+    Changed Key/value to Serializable in AlgoUnit
+    Completed Locking and initialization of VU and LU
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    javadoc
+    centralized GC for MVTO
+    more logging
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Fix a bug
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Complete stub in CCAlgorithm
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    added remote handler to TM
+    Added interruptWaitingLocks() stub to Locking Unit
+    added shouldWaitforResponse in sendMessageToTM()
+    sendMessageToTM() throws IOException
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    LockingUnit v2
+    Interface proposal
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    More formatting
+    KV Store + Code Formatting
+    Locking unit package organization
+    LockingUnit stub
+    Bug fix on DeadlockGraph
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Bug fix on Centralized Deadlock Detection
+    Autoformat.
+    javadoc for DeadlockGraph.java
+    Centralized Deadlock Detection Test
+    Centralized Deadlock Detection
+    LockingUnit and deadlockGraph supports distribution
+    Ready to deal with checkpoint
+    Auto format + organize imports.
+    Improvement in deadlock graph
+    Improvement in deadlock graph
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Format + imports
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    updated some files
+    Fix an error-prone configuration of the Locking Unit
+    Java 1.7 compatibility change
+    Fixes on the locking unit
+    LockingUnit seems to be working. More tests might be needed.
+    Key fix + formatting.
+    untested refactor
+    Refactoring and formatting, added 2 more constructors, moved test.
+    add unit test for TDD
+    Interface proposal
+    Formating code
+    centralized Deadlock bug fix
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Merge remote-tracking branch 'origin/benchmarking' into RemoteHandlerClean
+    
+    Conflicts:
+            src/ch/epfl/tkvs/transactionmanager/lockingunit/LockingUnit.java
+    LockingUnit and deadlockGraph supports distribution
+    HFDS Logger.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    added remote handler to TM
+    Added interruptWaitingLocks() stub to Locking Unit
+    added shouldWaitforResponse in sendMessageToTM()
+    sendMessageToTM() throws IOException
+    Ready to deal with checkpoint
+    Format + imports
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    added simple 2PL algorithm (with incomplete test cases)
+    modified locking unit promote
+    Auto format + organize imports.
+    added check for locks already held.
+    Added testcase for the above
+    Added finally clause for all internal locks
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    first set of interface changes.
+    updated some files
+    Fix an error-prone configuration of the Locking Unit
+    Fixes on the locking unit
+    Report Georges refactor
+    Fix minor bug on the locking unit
+    fixed mistakes in LockingUnit
+    LockingUnit update for Sachin
+    Update the LockingUnit
+    New formatting for Eclipse. USE IT!! :)
+    LockingUnit seems to be working. More tests might be needed.
+    Key fix + formatting.
+    changed Serializable to Key
+    untested refactor
+    LockingUnit v2
+    Refactoring and formatting, added 2 more constructors, moved test.
+    invert to function call to avoid probable bug
+    Implemented the locking unit base --- some bugs still exist, :test to see.
+    Runs the unit test in :test
+    More tests to ease the dev.
+    add unit test for TDD
+    Interface proposal
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    Locking unit package organization
+    LockingUnit stub
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Added documentation to yarn package. Code formatting.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    TM2TM communication ready
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    TM2TM communication ready
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    HFDS Logger.
+    Added :hist command. Added back the Thread.sleep to REPL.
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    log level
+    log enable/disable capabilities
+    Reduce the load on HDFS
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Format + imports
+    Works on the cluster and with several slaves!
+    Auto format + organize imports.
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Automatic code formatting.
+    New formatting for Eclipse. USE IT!! :)
+    Fixed your probs!
+    More formatting
+    KV Store + Code Formatting
+    werks
+    added the configuration file for the hostnames: untested at the moment
+    Changed jar path to fit course dirs.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Works!!
+    See $HADOOP/logs/userlogs/<appname>/<containers>/stdout and stderr.
+    CD into userlogs and run: cat application_1234_5678/*/*
+    Implemented Client. Need to make containers accept the poor jar...
+    plot fix
+    format
+    fix misplaced input indication
+    REPL >
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Fixing configure script + adding node number
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark: Implementation of localityPercentage for the keys
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    System test for MV-2PL
+    put simple 2pl back in place for testing
+    comments + log
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Merge remote-tracking branch 'origin/benchmarking' into RemoteHandlerClean
+    
+    Conflicts:
+            src/ch/epfl/tkvs/transactionmanager/lockingunit/LockingUnit.java
+    HFDS Logger.
+    Added comments to ambiguous code in repl.
+    Default REPL command is exit
+    Added :hist command. Added back the Thread.sleep to REPL.
+    non ASCII characters removed.
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    REPL fix.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    log enable/disable capabilities
+    Benchmark Generation
+    Modification of the Client parsing regex and add repetition mode for the benchmarking class
+    Removing default bm (useless)
+    Adding default benchmark
+    REPL benchmark
+    Fixing typo in Client
+    Begin benchmarking with multiple users
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    enhance container logging
+    Format + imports
+    Increase stability.
+    Make sure the AppMaster is ready before displaying the REPL.
+    Works on the cluster and with several slaves!
+    Fixing AM and YC
+    Auto format + organize imports.
+    Renaming and adds MVTO Tests to REPL
+    
+    Adding these tests seems to cause the REPL to hang after
+    :exit. Might be some thread from the Test framework.
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Fixed zombie bug.
+    Automatic code formatting.
+    Some stability updates.
+    Some stability updates.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    Remove all and add a cluster-ready mechanism for hostname resolution.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Minor change of display
+    New formatting for Eclipse. USE IT!! :)
+    compilable now
+    untested refactor
+    LockingUnit v2
+    Refactoring and formatting, added 2 more constructors, moved test.
+    Implemented the locking unit base --- some bugs still exist, :test to see.
+    cleaned a bit
+    Runs the unit test in :test
+    Formatting
+    Fixed your probs!
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    kv store is now working
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    More formatting
+    KV Store + Code Formatting
+    Changed jar path to fit course dirs.
+    Fixed typo.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Works!!
+    See $HADOOP/logs/userlogs/<appname>/<containers>/stdout and stderr.
+    CD into userlogs and run: cat application_1234_5678/*/*
+    Implemented Client. Need to make containers accept the poor jar...
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Save logfiles with the name of the container.
+    Fixed permission issue. Use ./printlogs.sh to print TM logs.
+    HFDS Logger.
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Save logfiles with the name of the container.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    enhance container logging
+    Format + imports
+    Make :exit work on the cluster
+    Works on the cluster and with several slaves!
+    Fixing AM and YC
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    Fixing AM and YC
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    log for debug
+    configuration file for algorithm ./config/algorithm. mvto by default.
+    centralized GC for MVTO
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    Centralized Deadlock Detection
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    log enable/disable capabilities
+    No more deadlock due to threads problem.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    enhance container logging
+    fix a little bug + tweak the userclient test a bit
+    fixed here as in the other branch
+    Handle multiple constructor in JSON message
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    TM2TM communication ready
+    centralized decider can now get to now the number of TMs
+    Ready to deal with checkpoint
+    Format + imports
+    Make :exit work on the cluster
+    Increase stability.
+    Make sure the AppMaster is ready before displaying the REPL.
+    Works on the cluster and with several slaves!
+    Fixing AM and YC
+    Auto format + organize imports.
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Fixed zombie bug.
+    Automatic code formatting.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    Remove all and add a cluster-ready mechanism for hostname resolution.
+    New formatting for Eclipse. USE IT!! :)
+    Fixed your probs!
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    Add AppMaster thread pool
+    kv store is now working
+    not working yet but on the way
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    removed unused imports
+    werks
+    added the configuration file for the hostnames: untested at the moment
+    Fixed errors, mergeable to master
+    client communication classes
+    Changed jar path to fit course dirs.
+    Fixed typo.
+    Log output after execution.
+    Organized stuff into sub-packages so that Phil does not complain.
+    Works!!
+    See $HADOOP/logs/userlogs/<appname>/<containers>/stdout and stderr.
+    CD into userlogs and run: cat application_1234_5678/*/*
+    Implemented Client. Need to make containers accept the poor jar...
+    link jar to the containers
+    Container allocation works! Need to specify location, 1 per node.
+    Autoformat.
+    Now AMWorker only create on instance per ICentralizedDecider.
+    centralized GC for MVTO
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Cleaner code and comments.
+    Added documentation to yarn package. Code formatting.
+    No more deadlock due to threads problem.
+    Update Transaction IDs
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    enhance container logging
+    TM2TM communication ready
+    Ready to deal with deadlock graphs
+    Ready to deal with checkpoint
+    Works on the cluster and with several slaves!
+    Auto format + organize imports.
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Automatic code formatting.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    New formatting for Eclipse. USE IT!! :)
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    removed unused imports
+    Fixed errors, mergeable to master
+    Added communication classes, not linked with rest of project
+    centralized GC for MVTO
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Ready to deal with checkpoint
+    Autoformat.
+    Remove log pollution due to my debug
+    logs for minAlive
+    replace array by a list for serializable
+    less message needed
+    send terminate message at GC time
+    centralized unit with improved performance
+    minAlive logic bug fix
+    trial to correct a bug that create duplicated message
+    correct logging error
+    comments + log
+    centralized GC for MVTO
+    Formating code
+    centralized Deadlock bug fix
+    Change CentralizedDecider logger.
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Bug fix on Centralized Deadlock Detection
+    improved logging
+    improved logging
+    improved logging
+    Autoformat.
+    Remove log pollution due to my debug
+    centralized GC for MVTO
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    Centralized Deadlock Detection
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Removed old interface
+    centralized decider can now get to now the number of TMs
+    Ready to deal with deadlock graphs
+    Ready to deal with checkpoint
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Automatic code formatting.
+    Remove all and add a cluster-ready mechanism for hostname resolution.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    not working yet but on the way
+    not working yet but on the way
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    More formatting
+    KV Store + Code Formatting
+    client communication classes
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better exception passing
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Automatic code formatting.
+    Some logic about the KV store
+    KeyValueStore with ConcurrentHashMap and Serializable Key/Value
+    Server-side refactoring
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    KeyValueStore Interface
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Merge remote-tracking branch 'origin/benchmarking' into RemoteHandlerClean
+    
+    Conflicts:
+            src/ch/epfl/tkvs/transactionmanager/lockingunit/LockingUnit.java
+    Decoupled transaction object creation and begin of transaction
+    Only usage of IPs throughout the project. No hosts, except for the slaves file. Also added TODOs here and there.
+    Added documentation to yarn package. Code formatting.
+    log info
+    Benchmark logs
+    Reduce the load on HDFS
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    Auto format + organize imports.
+    RoutingTable contains all info required for everyone. TM to TM and AM. No NetUtils needed anymore.
+    Simpler and better networking, automatic free port assignment.
+    No need for localinit.sh. Run ./start.sh local if slaves does not exist.
+    Automatic code formatting.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    added "commit" in userclient tests
+    Remove all and add a cluster-ready mechanism for hostname resolution.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    New formatting for Eclipse. USE IT!! :)
+    Implemented MVCC with incomplete locking.  Removed IOException thrown by ReadResponse Constructor.
+    Created interface Algorithm
+    
+    Added Requests for Begin and Commit
+    
+    Restricted Transaction class methods to throw only AbortException. All other exceptions are caught
+    
+    Modified GenericSuccessResponse to indicate success or failure
+    
+    
+    Replaced kvstore with concurrencyController of type Algorithm in TransactionManager and TMWorker
+    Implemented graceful stop. Use ":exit"
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    not working yet but on the way
+    The Walking Dead .sh
+    Package arranging
+    TODO: From Client -> Stop AppMaster gracefully -> Stop all containers gracefully!
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    progress
+    More formatting
+    Added source formatter config for eclipse. PLEASE USE IT!
+    KV Store + Code Formatting
+    removed unused imports
+    client communication classes
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    Code Formatting
+    not working yet but on the way
+    not working yet but on the way
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Auto format + organize imports.
+    Fix test framework that made REPL hang on :exit
+    Test framework include implictely tid and step
+    removes apple import
+    Trial to make it work
+    Some stability updates.
+    start threads :)
+    Try testing framework with mvto
+    Disable some tests
+    Renames wait assertion
+    Fix small bugs in test framework
+    basics files
+    Test framework include implictely tid and step
+    removes apple import
+    Trial to make it work
+    Some stability updates.
+    start threads :)
+    Try testing framework with mvto
+    Renames wait assertion
+    Fix small bugs in test framework
+    basics files
+    Renaming and adds MVTO Tests to REPL
+    
+    Adding these tests seems to cause the REPL to hang after
+    :exit. Might be some thread from the Test framework.
+    Renames VU to VersioningUnitMVCC2PL
+    Fix test for the VersioningUnit
+    Removing useless logs
+    Modification of the VU tests
+    Automatic code formatting.
+    Add test for versionning unit
+    Fix BackCommitgroundThread bug in tests
+    Adding tests with threads
+    Some logic about the KV store
+    Queuing commits
+    Unit tests
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Garbage collector
+    
+    Must think when to call it
+    Modification of the VU tests
+    Bug fixes + new test
+    
+    Wanted: garbage collector
+    Safe commit if has aborted + test
+    Test framework include implictely tid and step
+    commit() split into prepareCommit() and commit()
+    Assert reads are correct
+    fix error in one test
+    Some stability updates.
+    Fixed bug with hostnames, AbortException imports, :exit, SlavesConfig renamed to NetConfig etc..
+    Try testing framework with mvto
+    Disable some tests
+    Adds new tests
+    
+    Test4 is failing as commit() is not implemented and thus
+    a xact that aborts does not force other xacts that have read from it to abort
+    PrefixedKey class for MVTO
+    
+    Should consider, in case we have time, why PrefixedKey from
+    MVCC2PL can't be extracted
+    Adds a test for MVTO
+    Formatting
+    Adds test framework for MVTO
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    Auto format + organize imports.
+    added check for locks already held.
+    Added testcase for the above
+    Added finally clause for all internal locks
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    added complex case test
+    added output printing for all requests to visualize schedule
+    fixed bug for not adding COMMIT_LOCK in compatibility table
+    Test Case for Deadlock -> Problem with Aborts
+    added some tests.
+    using lock promotion for commit
+    HFDS Logger.
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    replaced Logger class
+    catching some  exceptions internally than throwing
+    Ready to deal with checkpoint
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    added simple 2PL algorithm (with incomplete test cases)
+    modified locking unit promote
+    HFDS Logger.
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    changed archicture to have remote handler inside algorithm
+    remote handler completed except few methods
+    complete simple2PL
+    refactored code to have higher inheritance
+    removed "primary message" key for Message
+    added TryCommitRequest, modified userTransaction to call tryCommit
+    added new Messages and class for remote handler
+    added AlgorithmScheduledTest class containing tests for all algorithms
+    added simple 2PL algorithm (with incomplete test cases)
+    modified locking unit promote
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Auto format + organize imports.
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    updated some files
+    Fix an error-prone configuration of the Locking Unit
+    Make test work
+    New formatting for Eclipse. USE IT!! :)
+    LockingUnit seems to be working. More tests might be needed.
+    Key fix + formatting.
+    compilable now
+    Refactoring and formatting, added 2 more constructors, moved test.
+    invert to function call to avoid probable bug
+    Implemented the locking unit base --- some bugs still exist, :test to see.
+    Runs the unit test in :test
+    More tests to ease the dev.
+    add unit test for TDD
+    Autoformat.
+    Centralized Deadlock Detection Test
+    Auto format + organize imports.
+    Automatic code formatting.
+    Lock compatibility table now should contain entry for EVERY locktype. Removed "exclusive" data member
+    fixed bugs for deadlock integration into locking unit
+    fixed testcases for deadlock integration into locking unit
+    Added wrapper for MVTO algorithm (non-compilable)
+    Moved AbortException to different package
+    Deadlock Prevention integrated into LockingUnit - untested. Requires a new type of exceptions to be created, replaced with thrown Exceptions in Locking Unit, and caught in MVCC2PL
+    Test Case for Deadlock -> Problem with Aborts
+    Minor bug fix and Test cases for DeadlockGraph
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    corrected S2PLSystemTest.java
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    Code Formatting
+    not working yet but on the way
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Removed ByteArray, using org.apache.hadoop.hdfs.util.ByteArray.
+    progress
+    More formatting
+    KV Store + Code Formatting
+    client communication classes
+    System test for MV-2PL
+    Formating code
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    abort rate was not computed correctly
+    Remove useless prints
+    Fix count bug #aborts
+    Reformating benchmarking
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark: Implementation of localityPercentage for the keys
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Abort rate
+    Decoupled transaction object creation and begin of transaction
+    HFDS Logger.
+    Added documentation to yarn package. Code formatting.
+    status update
+    Change logs benchmark to warn
+    Benchmark logs
+    1st Transaction failure makes benchmmark stop
+    Exception if 1st transaction cannot write all keys
+    rebase with RemoteHandlerClean branch
+    Benchmark Generation
+    Fix throughput & #aborts computations
+    Refactor
+    Add throughput parameter for the stats
+    Modification of the Client parsing regex and add repetition mode for the benchmarking class
+    Fix in benchmark and print stats into a file
+    Adds new statistics
+    Benchmarking with generation of the actions before execution
+    Update Transaction IDs
+    Fix small problems in benchmark
+    
+    TM seems to always assign 0 as transaction ID. MVTO therefore deadlocks
+    when there is an abort as transactions are not restarted with higher
+    timestamp.
+    Small fix!
+    REPL benchmark
+    Benchmarking
+    Removing useless getters
+    Refactor
+    Adding the number of aborts, commits,...
+    Refactor
+    Begin benchmarking with multiple users
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    Decoupled transaction object creation and begin of transaction
+    Added documentation to yarn package. Code formatting.
+    Begin benchmarking with multiple users
+    Formatting
+    Revert "Logging for TMs change + autoformat."
+    
+    This reverts commit f8fa823ace92b0f48e5f12d81aa8e9d5514d7165.
+    Logging for TMs change + autoformat.
+    fix a little bug + tweak the userclient test a bit
+    Better logging information
+    Added exception classes
+    Added toString() method for all Message class
+    Made nextTransactionID of AM synchronized
+    Tested on the cluster + getLocalityHash method in TransactionManager
+    added more things to remote handler.
+    added message processing at TMworker for new messages
+    added new key "primary message" for some messages
+    added base class transaction and modified Algorithm interface to give access to transaction
+    added "commit" in userclient tests
+    Code Formatting
+    kv store is now working
+    not working yet but on the way
+    Implemented YARN Client REPL (Commands for now: :test, :kill)
+    Refactored lots of stuff
+    Changed logging from Sys.out to Log4J (WIP)
+    Moved userclient package under test source directory.
+    Documentation & Warnings
+    
+    Update TransactionManager.java
+    
+    Update JSONAnnotation.java
+    
+    Update ExitMessage.java
+    
+    Update JSON2MessageConverter.java
+    
+    Update Message2JSONConverter.java
+    
+    Update TMInitMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    Update TransactionTerminateMessage.java
+    
+    More comments in versioningunit package
+    
+    Update Message.java
+    
+    Solve some warnings about serial ids
+    
+    Update RemoteHandler.java
+    
+    more javadoc
+    
+    more warnings
+    
+    Update TransactionManager.java
+    
+    Closing socket
+    
+    Update README.md
+    
+    Update README.md
+    
+    Refact and comment
+    
+    Solve remaining warnings
+    
+    LockingUnit Javadoc revision
+    
+    LockingUnit Javadoc revision
+    
+    Formatting
+    
+    Organize Imports
+    
+    Formatting
+    
+    Improve the REPL with :help command and proper system tests selection.
+    
+    remove an error
+    
+    Change benchmark message
+    
+    Add unit testing
+    
+    Fix log was null
+    logging for centralized decision
+    changed testing framework to have timeout
+    serialized deadlock info
+    replaced transaction id for test failure message from i to (i+1)
+    Documentation for  test framework
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    changed the parameters passed to TMs for name of container
+    moved deleting log directory from HDFSLogger class to start.sh
+    changed framework
+    Merge remote-tracking branch 'origin/benchmarking' into RemoteHandlerClean
+    
+    Conflicts:
+            src/ch/epfl/tkvs/transactionmanager/lockingunit/LockingUnit.java
+    added (untested) framework for doing system tests
+    added t6 to testComplex()
+    split start.sh into configure, compile and run
+    moved deleting Log directory from script to AppMaster (permission issues)
+    Added tests
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Fixing configure script + adding node number
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmark Generation
+    Merge plots
+    Fixing graphs
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    graphs2
+    Newscripts
+    Beautiful graphs
+    Fixing graphs display
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Fixing graphs
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    graphs2
+    Newscripts
+    Beautiful graphs
+    Fixing graphs display
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Merge plots
+    Fixing graphs
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    Newscripts
+    Beautiful graphs
+    Fixing graphs display
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Fixing graphs
+    plot fix
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes
+    Fixing script
+    Better scripts
+    blabla
+    Merge plots
+    Small fix
+    Fixing script
+    Fixing 2pl ranaming issue
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    graphs2
+    Fixing graphs
+    Correctng scrimpts
+    Benchmark folders refactor
+    Renamed results -> benchmarks
+    graphs2
+    Newscripts
+    Beautiful graphs
+    Fixing graphs display
+    Better way to generate graphs with multiple data
+    Adding repetitive benchmark, removing sysout, better parsing
+    Benchmarking: starting generation of graphs
+    Benchmarking framework enhanced
+    
+    draft for writing keys first
+    
+    Manual config for #nodes, #keys and locality
+    
+    Fixing scripts for new benchmarks
+    
+    regex fix
+    
+    Reverting a bad change
+    
+    nbKeys per benchmark
+    
+    Disable mvto gc
+    
+    Latency 95, refactoring, property file in config for benchmark
+    
+    Fixing script
+    
+    Refactoring
+    
+    more refactoring
+    
+    Fix index bug
+    
+    Fix bugs
+    
+    More fixes
+    
+    Fix division by repetitions
+    
+    Adding missing output parameters
+    
+    Fix formatting
+    
+    configuring benchmarks
+    
+    Logging useful status
+    
+    Even better logging !
+    
+    Wrong troughput and latency computation
+    
+    Another wrong computation
+    
+    Updates readme and latency
+    
+    Small fixes

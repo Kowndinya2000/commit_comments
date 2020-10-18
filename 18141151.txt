@@ -1,0 +1,2189 @@
+﻿    Add deprecation notice to README
+    
+    When merged I will prefix the name of this repo with `paas-alpha-` and
+    transfer ownership to https://github.com/gds-attic
+    
+    GitHub will redirect requests for the old name(s) to the new location.
+    Update README.md on how to enable vulcand support
+    README: update vault descr. with pg_admin_user
+    
+    Add pg_admin_user variable into vault description.
+    README: describe pg_replicationuser_pass variable
+    
+    Add pg_replicationuser_pass variable into examples to indicate that this needs to be configured in valut and that it is a password for replication.
+    admin_user must be a valid email address
+    
+    It was not clear when using this repo that the admin_user for tsuru must be a valid email address.
+    
+    If a bare username (e.g. `tsuru_admin`) is used, the following error occurs:
+    
+    ```
+    TASK: [add admin user] ********************************************************
+    failed: [10.128.13.146] => {"content": "invalid email\n", "content_type": "text/plain; charset=utf-8", "date": "Fri, 03 Jul 2015 08:34:17 GMT", "failed": true, "redirected": false, "status": 400, "supported_crane": "0.7.0", "supported_tsuru": "0.16.0", "supported_tsuru_admin": "0.10.0", "transfer_encoding": "chunked"}
+    msg: Status code was not [201, 409]
+    ```
+    
+    Changing this to a valid email address clears the error and this update to the documentation makes it clear that the username needs to be also in the format of a valid email address.
+    Fix minor issues in README related to smoketest
+    Updated README with make commands
+    aws: Use IAM role/profile for registry on S3
+    
+    The docker registry supports using IAM instance roles/profiles automagically
+    if you omit the access/secret key in the configuration. This was supported
+    by the upstream playbook in version 1.0.6:
+    
+    - codingbunch/ansible-docker-registry/compare/v1.0.5...v1.0.6
+    
+    This change to Terraform must be merged first:
+    
+    - alphagov/tsuru-terraform#74
+    Moving smoke test files to the root directory
+    Update README to include integration tests
+    Updated README with basic run instructions
+    Working tests for tsuru login
+    
+    Uses environment variables for TSURU_USER and TSURU_PASS
+    Placeholder readme - testing access
+    Update README.md
+    
+    Update README.md with information on how we configured service account
+    authorisation.
+    Update README on how to configure gcs for registry
+    
+    Update README.md file on how to configure docker registry to use `gcs`
+    based storage using your personal [Interoperable storage access keys](https://developers.google.com/storage/docs/reference/v1/getting-startedv1#keys).
+    Use the correct SSL cert for different providers
+    
+    We now have seperate SSL certificates for differnet cloud providers, so we no longer want to deploy the same certificate on both platforms.
+    The vault has been updated with the additional certificate (gce_ssl_key/cert) and the original ssl_key/cert files have been renamed to aws_ssl_key/cert accordingly.
+    We are now defining the relevant certifcate to use inside platform-aws or platform-gce respectively.
+    Updated readme prerequisites section
+    
+    Having gpg-agent up and running is now a pre-requisite.
+    Without gpg-agent ansible will be unable to decrypt the vault password file.
+    Remove legacy dependency handling from README.md
+    
+    We no longer need to use ruby bundler or `librarian-ansible`.
+    Move `secrets.py` to root of repo
+    
+    This `gce.ini` which specified `libcloud_secrets = ~/.secrets.py` wasn't
+    having any effect because the file has to be called `secrets.py` due to the
+    `import` statement in the inventory script.
+    
+    It just happened to be working for me because I had once placed it in my
+    current working directory and it compiled to `secrets.pyc` which superseded
+    any other file. The same may have been true of Jim.
+    
+    In addition to renaming it, I'm also moving it to the root of the repo and
+    adding it to `.gitignore`, to make it specific to this project (in case
+    anyone uses `libcloud` for anything else) and to make it more obvious what
+    the interactions are. For this reason we no longer need `gce.ini`.
+    Use GCE account JSON instead of PEM
+    
+    Support for reading the JSON (as downloaded from Google) directly instead of
+    the extracted PEM was added in libcloud 0.17.0 (which is listed in our
+    `requirements.txt`:
+    
+    - apache/libcloud@ab7d07bd4e7197c275a926de8d9639de9bc234a6
+    Move ansible-playbook commands to Makefile
+    
+    These are getting quite complex, so we should move them to something more
+    automated to reduce the chance of human error.
+    
+    By doing so we can also check that the environment name is set.
+    
+    I realise that this disadvantages people using Linux instead of Mac because
+    they are forced to use `vault_password.sh` instead of their own solutions
+    like reading from a file. It seems like a reasonable compromise though.
+    Use certifi for verifying GCE SSL certs
+    
+    Because of epic yak shaving.
+    
+    If you've installed Python from Homebrew, it compiles against a version of
+    OpenSSL that doesn't appear to validate `accounts.google.com`. We can't
+    reference Mac's list of CAs because they no longer use OpenSSL and are now
+    in Keychain. `curl-ca-bundle` did work in the past but was removed in
+    Homebrew/homebrew@ab926db. Everyone else appears to download or vendor their
+    own.
+    
+    certifi seems like a reasonable compromise. It's maintained by the venerable
+    Kenneth Reitz and used by Requests. I did think about putting this in
+    `gce.py` itself, but I think it's better to not modify that file any further
+    and to make it obvious what we're doing.
+    README.md updated with GCE/AWS reqs and commands
+    
+    Added GCE/AWS specific variables/files to the requirements section
+    Updated commands in the Deploying section
+    Removed references to static inventory updating
+    Updated command lines for different platforms
+    fixup: FIXME document AWS environment variables.
+    globals.yml broken out into platform specifics
+    
+    Unfortunatly it seems that we have not choice but to use two different 'global' variable files due to the difference in naming conventions when using dynamic inventory scripts.
+    fixup: FIXME about CA files on OSX
+    fixup: Add FIXME for documenting secrets.py
+    Lazy update of readme
+    
+    Just capturing the command to run... will update docs soon.
+    Added s3 key and secret fields to description
+    
+    Added extra fields to the text description for the contents of the vault.
+    Wrapper script for vault password
+    
+    On Mac OS X this will attempt to fetch the password from the keychain. This
+    is more secure than storing the password in a plaintext file on the
+    filesystem.
+    
+    On Linux it will fallback to an interactive prompt which is effectively the
+    same as `--ask-vault-pass` but allows us to simplify our run instructions by
+    using the same argument regardless.
+    
+    When the argument to `--vault-password-file` is an executable then Ansible
+    will run it an obtain the password from STDOUT.
+    Condense deploy instructions in README
+    
+    In order to reduce duplication of commands and the risk that they might be
+    inconsistent with each other.
+    Split site.yml into platform-specific and common
+    
+    As we are using the same ansible scripts to configure hosts on two different cloud providers, we are starting to need some platform-specific options passed to ansible roles. Specifically, we need the storage_type parameter for docker-registry to be set to 's3', 'gcs' or 'local' for AWS, GCE and Vagrant respectively.
+    
+    - Renamed site.yml to common.yml
+    - Created site-aws.yml and site-gce.yml which include common.yml as their last step.
+    - Moved docker-registry host definitiion from common.yml into site-aws.yml and site-gce.yml
+    - Added storage configuration options to site-aws and site-gce
+    - Removed group_vars/docker-registry/storage_backend
+    - Added S3 access key and secret key to ansible vault
+    - Updated README.md to reflect changes.
+    
+    Added gcs storage options to site-gce.yml
+    
+    These variables are not yet in use, but adding them here for future reference.
+    
+    Added s3_storage_path to site-aws for clarity
+    
+    Just using the default path of "/".
+    Added purely for clarity in the S3 options
+    Moved globals.yml into group_vars/all
+    
+    The group_vars tree is automatically included by ansible - placing the file in here means that we don't need to specify it on the command line with every ansible-playbook run
+    
+    - Updated README.md to reflect change
+    Updating readme to show what needs to be added
+    
+    Adding variable usage information to show how you can use your own
+    certificates since ours are encrypted in the `ansible vault`.
+    Tell pip to upgrade if requirements.txt changes
+    
+    Rather than pinning at the version that was first installed.
+    Capture dependencies with pip and bundler
+    
+    For Python and Ruby respectively. This allows people to install the
+    dependencies programmatically and reduces the risk that our documentation is
+    out of step with the code (although pip doesn't enforce this as well as
+    bundler).
+    Add postgresql server configuration
+    
+      * Adding `postgresql` configuration separate file and including it,
+      * Configuring `postgres` secrets in `group_vars/all/secure`,
+      * Updating `README.md` with details on how to update `postgresql`
+        credentials.
+    Add ansible-vault support to encrypt secret data
+    
+    We need to put the `login` and `password` data for `postgresql` into
+    this repository but I don't want to put it in clear text so we are
+    going to use
+    [ansible-vault](http://docs.ansible.com/playbooks_vault.html) to
+    encrypt the data. Our use of `ansible-vault` has a dependency on
+    version `1.9 or higher` of `ansible`
+    
+    Taking this opportunity to encrypt the current tsuru credentials in
+    preparation for configuring credentials for postgresql.
+    
+    Updated the documentation to show how to use `ansible-vault`.
+    
+    Updated `Vagrantfile` so it uses `ansible.ask_vault_pass` to
+    unlock the password stored in your `ansible vault`
+    password.
+    Add whitespace change to demo web hook
+    
+    This is a no-op change; just to raise a PR to demonstrate how the GitHub webhook updates Pivotal.
+    Add librarian-ansible as a dependency
+    
+    Ensure that people know that librarian-ansible is a dependency and the minimum version required to work with our ansible file.
+    Add instructions to README for librarian-ansible
+    Create README.md
+    Update ssh template to use ubuntu NAT user on AWS
+    
+    AWS NAT is no longer custom AWS linux box, but runs instead on ubuntu like all other hosts and GCE NAT. Update ssh template to reflect these changes.
+    Use ssh.config when connecting to the nat host
+    
+    We use a custom `ssh.config` file to connect to our VM instances via
+    a bastion ssh host (nat). Ansible refers to this ssh.config file for
+    all instances.
+    
+    But the private instances use the `ProxyCommand` and spawn a separated
+    ssh command, but in this case we don't pass the option `-F ssh.config`.
+    
+    For consistency and to ensure that the config can run in any system,
+    we should add this option.
+    Render ssh.config based on environment name
+    
+    `ssh_config(5)` doesn't support interpolation of environment variables, so
+    we have been updating this by hand for each independent environment. This is
+    a pain and will become worse when we need to do the same in Jenkins. So
+    render it based on a crude template and `gitignore` the resulting file.
+    Add GCE entries to ssh.config
+    
+    Makes use of the renumbering in:
+    alphagov/tsuru-terraform@69efb08a232e24d33d8867dcf949867e337708db
+    Add ssh config file.
+    Upload Tsuru dashboard automatically
+    
+    Copy the dashboard, dashboard upload scripts and execute upload
+    automatically as a post-install task on the grafana-influxdb server.
+    Workaround issue with output of regex in ansible
+    
+    We found a weird behaviour in ansible. If one passes the output of the
+    `replace_regex` directly as variables of the role, it might get expanded
+    as a weird character in ansible (Ctrl+A).
+    
+    The solution was create a temporary `fact` and pass that one in the
+    variables of the role.
+    Rename match for <env>-tsuru-influx-grafana
+    
+    As we renamed the influx-grafana server to `<env>-tsuru-influx-grafana`
+    we must rename the host match expresion in the related playbook.
+    Use tag `instance_name` for telegraf
+    
+    We use the tag `instance_name` to send to send form telegraf and
+    identify the instance. We also send the machine type, which we
+    extract from the instance name.
+    Populate tags with ip and jobname for telegraf
+    
+    Add the `host_ip` and `job` based on the private IP of the machine and
+    the vm tag name provided by terraform.
+    
+    Depending of the platform, we get the vm name from different variables
+    provided by the Dynamic Inventory Script.
+    
+    For AWS `ec2_tag_Name` is used, for GCE, `gce_name`
+    Update influxdb, telegraf and grafana versions
+    Exclude coreOS nodes from Telegraf install
+    
+    Ansible uses the local python interpreter to install Telegraf on nodes.
+    
+    CoreOS does not inlcude Python in the base image and this can not
+    run this command or indeed be monitored in this way. To enable this story to
+    progress we've dropped support for Telegraf collection agent on CoreOS nodes.
+    Fix/remove 2nd telegraf install
+    
+    I forgot to provide a version to the 2nd call to the telegraf playbook which
+    caused it to fail with:
+    
+        failed: [10.128.10.125] => {"failed": true}
+        msg: A later version is already installed
+    
+    Fix this by
+    
+    - removing the first call to the playbook, which is no longer needed now
+      that we've fixed the incompatibility between Telegraf/InfluxDB - we can
+      rely on the entry that matches all hosts
+    - passing a version to the Telegraf playbook that gets installed to all
+      hosts
+    Upgrade to Telegraf 0.1.4 and InfluxDB 0.9.1
+    
+    The package for Telegraf 0.1.2 (which our playbook defaults to) installs to
+    the same locations as InfluxDB and prevents one of them from starting
+    depending on which order they have been installed:
+    
+    - https://github.com/influxdb/influxdb/blob/56d3addf563ec354d4220ef10c4733071781ede9/package.sh#L210
+    - https://github.com/influxdb/telegraf/blob/c4e5e743c43909ded0ca263a2c496c1996ed773b/package.sh#L182
+    
+    This has been fixed in Telegraf >= 0.1.3 by installing to a separate directory:
+    
+    - https://github.com/influxdb/telegraf/commit/120218f9c6b45bc909c5b9eaa6825d5ace6713be
+    
+    We have to upgrade InfluxDB at the same time in order for it to rewrite its
+    own init script, because it's a post-install action. Both are patch upgrades
+    and don't look like they'll cause any problems:
+    
+    - https://github.com/influxdb/telegraf/blob/v0.1.4/CHANGELOG.md
+    - https://github.com/influxdb/influxdb/blob/v0.9.1/CHANGELOG.md
+    
+    Closely related to this, we can also remove our customisations that made
+    Telegraf run as the InfluxDB user, because they now have separate PID files.
+    This also has to be done at the same time as the upgrades because there
+    doesn't seem to be a nice abstraction to notify the service controlled by
+    the Ansible playbook.
+    
+    Changing the version in the playbook's default variable didn't seem right
+    when we have a lot of other changes to make at the same time and we're
+    working towards pinning the versions that we use in our own repo. I may do
+    it independently.
+    
+    Before:
+    
+        ubuntu@ip-10-128-10-88:~$ ps ax | egrep 'influx|telegraf'
+         1475 ?        Sl     0:01 /opt/influxdb/influxd -pidfile /var/run/influxdb/influxd.pid -config /etc/opt/influxdb/influxdb.conf
+         2949 pts/0    S+     0:00 egrep --color=auto influx|telegraf
+        ubuntu@ip-10-128-10-88:~$ ls -al /etc/init.d/{influxdb,telegraf}
+        lrwxrwxrwx 1 root root 21 Jul 15 11:39 /etc/init.d/influxdb -> /opt/influxdb/init.sh
+        lrwxrwxrwx 1 root root 21 Jul 15 11:40 /etc/init.d/telegraf -> /opt/influxdb/init.sh
+        ubuntu@ip-10-128-10-88:~$ sudo service influxdb status
+        telegraf Process is not running [ FAILED ]
+        ubuntu@ip-10-128-10-88:~$ sudo service telegraf status
+        telegraf Process is not running [ FAILED ]
+        ubuntu@ip-10-128-10-88:~$ ls -al /var/run/{influxdb,telegraf}
+        ls: cannot access /var/run/telegraf: No such file or directory
+        /var/run/influxdb:
+        total 4
+        drwxr-xr-x  2 influxdb influxdb  60 Jul 15 11:39 .
+        drwxr-xr-x 19 root     root     680 Jul 15 12:10 ..
+        -rw-r--r--  1 influxdb influxdb   4 Jul 15 11:39 influxd.pid
+    
+    After:
+    
+        ubuntu@ip-10-128-10-88:~$ ps ax | egrep 'influx|telegraf'
+         1475 ?        Sl     0:01 /opt/influxdb/influxd -pidfile /var/run/influxdb/influxd.pid -config /etc/opt/influxdb/influxdb.conf
+         3334 ?        Sl     0:00 /opt/telegraf/telegraf -pidfile /var/run/telegraf/telegraf.pid -config /etc/opt/telegraf/telegraf.conf
+         3508 pts/0    S+     0:00 egrep --color=auto influx|telegraf
+        ubuntu@ip-10-128-10-88:~$ ls -al /etc/init.d/{influxdb,telegraf}
+        lrwxrwxrwx 1 root root 21 Jul 15 12:13 /etc/init.d/influxdb -> /opt/influxdb/init.sh
+        lrwxrwxrwx 1 root root 21 Jul 15 12:13 /etc/init.d/telegraf -> /opt/telegraf/init.sh
+        ubuntu@ip-10-128-10-88:~$ sudo service influxdb status
+        influxd Process is running [ OK ]
+        ubuntu@ip-10-128-10-88:~$ sudo service telegraf status
+        telegraf Process is running [ OK ]
+        ubuntu@ip-10-128-10-88:~$ ls -al /var/run/{influxdb,telegraf}
+        /var/run/influxdb:
+        total 4
+        drwxr-xr-x  2 influxdb influxdb  60 Jul 15 11:39 .
+        drwxr-xr-x 20 root     root     700 Jul 15 12:13 ..
+        -rw-r--r--  1 influxdb influxdb   4 Jul 15 11:39 influxd.pid
+    
+        /var/run/telegraf:
+        total 4
+        drwxr-xr-x  2 telegraf telegraf  60 Jul 15 12:13 .
+        drwxr-xr-x 20 root     root     700 Jul 15 12:13 ..
+        -rw-r--r--  1 telegraf telegraf   5 Jul 15 12:13 telegraf.pid
+    Revert "Revert "[#98091344] add grafana metrics collection""
+    Revert "[#98091344] add grafana metrics collection"
+    Fix incorrect path name to datasource.sh template
+    Copy script for adding datasources to Grafana
+    
+    Access to Grafana API for adding a datasource usually requires
+    that you have an API key for your requests - However, in order
+    to get an API key, you need to log into the web interface.
+    
+    The datasource.sh script works without using an API key by
+    navigating the login screen to retrieve a session cookie which
+    is then used in the subsequent request to add a datasource.
+    
+    The script is a variation on the script produced by
+    @leehambley on a [github gist](https://gist.github.com/leehambley/9741431695da3787f6b3)
+    Add influxdb and grafana specific yaml file
+    
+    Add influxdb and grafana specific yaml file to install and configure the
+    services on a metrics collection machine.
+    Setup vulcand to serve HTTPS traffic
+    
+    In order to serve HTTPS traffic with vulcand, we need to setup a host with
+    an associated certificate and create a new https listener in the port 443.
+    
+    We use `vctl` to setup these elements.
+    Do not enable nginx HTTPS proxy when using vulcand
+    
+    In order to use vulcand as a SSL termination, we need to stop using
+    nginx as HTTPS/SSL proxy. We want to keep nginx listening on port 80 to
+    do a redirect from HTTP to HTTPS.
+    Generate and set vulcand seal key
+    
+    We need to [setup a `sealkey` in vulcand](https://vulcand.io/proxy.html#secret-storage)
+    to store certificate in the etcd engine.
+    
+    In order to ensure that we generate a unique seal per environment, we
+    generate and store a new seal if the file `/etc/vulcand.sealkey`.
+    
+    The seal [is a hexadecimal representation of 32 random bytes]
+    (https://github.com/mailgun/vulcand/blob/e6f9b2037c582009c999ed3129cbdc94f36da545/vctl/command/secret.go#L17-L24),
+    and we use bash dark magic to generate it without having to use the
+    `vctl` command, which is installed by the role and not available before
+    executing the role.
+    Optionally configure Tsuru API for vulcand
+    
+    When the `vulcand` feature flag is enabled. The playbook version is being
+    bumped at the same time (with backwards incompat changes) so that we can
+    configure the router. I've arbitrarily chosen/set the API port, because we
+    need to pass the same value to both vulcand and Tsuru API.
+    
+    I'm going to create tech debt stories for the following:
+    
+    - the Tsuru API is only using the first router host for Vulcand's API. If we
+      use vulcand beyond testing then we should fix this single point of
+      failure
+    - the variable `hipache_host_external_lb` and the DNS hostname that is
+      reference should be renamed from "hipache" to "router", so that it's
+      agnostic of the actual router we use
+    Optionally install vulcand on the router nodes
+    
+    Instead of Hipache, when the `vulcand` feature flag is enabled. Version is
+    the latest stable. Port is the same as Hipache. It's using the single etcd
+    endpoint which is running on the DB host.
+    
+    Per the comment in `requirements.yml`, I haven't pinned the version of the
+    playbook because it may be under active development while we're testing and
+    it'll be easier to not make two stage releases. We should version it if we
+    continue to use it in the future.
+    
+    NB: This isn't intended to convert an existing environment from Hipache to
+    Vulcand. The ports will clash. We only intend to create new environments,
+    for testing, with this feature flag.
+    Rename var hipache_port to router_port
+    
+    To reflect the fact that it will be used for both Hipache and Vulcand. We
+    can move it to `group_vars` at the same time, to match `docker_port` and
+    `redis_port`, which makes it slightly clearer that the variable name is
+    different from the one being passed to the actual role.
+    Move tsuru_repo variables to tighter scope
+    
+    Apply them to the role that's using them rather than leaking them
+    everywhere. I should have done this in the first place. The `vars` in these
+    files are abstractions that are used further down.
+    Install all Tsuru packages from our PPA mirror
+    
+    Install the Tsuru packages for the core components Hipache, Gandalf, and
+    API, from our own PPA which is a mirror of the upstream PPA. This allows us
+    to pin the version that we use for stability.
+    
+    A limitation of PPAs whereby they only present the latest version meant that
+    if we have pinned the version number in our code then we would have been
+    unable to install when Tsuru release a new version.
+    
+    We have to use `pre_tasks` to remove the upstream PPA which is no longer
+    installed by the playbooks when the `tsuru_repo` var is passed. This can be
+    removed once it has been deployed to all existing machines, so long as we
+    continue to pass `tsuru_repo`.
+    
+    The next time we upgrade the packages in our PPA we'll need to think about
+    how we roll it out to existing environments. Whether we change all of the
+    playbooks to `state=latest` (which is a pain to variabilise because it's a
+    separate attribute from the version which we currently expose) or pin the
+    specific version (which is also a pain because we'd have to time the changes
+    perfectly). It feels like it's out of scope for now though.
+    Move SSL proxy tasks and vars to separate files
+    
+    So that they can be re-used by another host which needs to do the same
+    thing. I've renamed the one variable that we'll need to modify for each use
+    case from `hipache_port` to `upstream_port`.
+    
+    I did try to include both the `pre_tasks` and the `role` within a single
+    file but I can't see any way to do this. The `vars_files` thing feels quite
+    hacky but is slightly better than duplicating code.
+    Combine sslproxy and router roles
+    
+    Combine the Nginx which does TLS termination and reverse-proxying for the
+    routers onto the same machines as the routers. This means that:
+    
+    - the address of the upstream doesn't change like DNS records for ELBs do
+    - we're not subject to extra network latency/partitions for reverse proxying
+    - we have a simpler architecture
+    
+    Hipache has been moved from `0.0.0.0:80` to `127.0.0.1:8080` so that it's
+    not accessible without going through Nginx and it doesn't clash with the
+    Nginx vhost that does HTTP->HTTPS redirection.
+    
+    I've changed the format for passing `vars` to `roles` to make it clearer
+    which role is using which variables. The new `hipache_port` var is
+    referenced by vars passed to both of the roles.
+    
+    This depends on alphagov/tsuru-terraform#57 being merged at the same time.
+    Rename ssl-proxy.yml to router.yml
+    
+    I'm going to re-purpose this in a later commit. Move this in a separate
+    commit will make it easier to see the subsequent changes I'm making.
+    Abstract difference in AWS/GCE tags
+    
+    By using an intermediate variable. This doesn't allow us to de-dupe any
+    variables, but it does make the `hosts` entries much easier to read and mean
+    that we don't need to use regexps (which are error prone).
+    
+    I've tested this with the following commands and verified that the lists of
+    hosts under each "play" remain the same:
+    
+        time make aws DEPLOY_ENV=dcarley ARGS=--list-hosts
+        time make gce DEPLOY_ENV=dcarley ARGS=--list-hosts
+    Regex hostname format to work with GCE & AWS
+    
+    Host names are wildly different between the two different cloud platforms, so we're having to use regex to choose the appropriate host name format.
+    Use dynamic host names for GCE
+    
+    We were formerly using host groups defined in the static inventory file, but we do not have the same groupings available from our dynamic inventory. Hostnames are now prefixed with the deploy_env name in the playbooks, and variables defined in group_vars/all/global.yml now reference these dynamic host names instead of the static inventory groups.
+    Update APT cache on ssl-proxy machines
+    
+    For AWS, our `cloud-config` scripts do a mixture of things, but almost
+    always run `apt-get update` when the machine first comes up.
+    
+    We're not currently using `cloud-config` on GCE instances. Which means that
+    the install of Nginx by the `jdauphant.nginx` role fails because it doesn't
+    have up-to-date repo information.
+    
+    We can't change the third-party role to do `update_cache=true` and it seems
+    that we can't change Ansible's default behaviour to always do this. I'm not
+    keen on the coupling between `cloud-config` so I don't think implementing
+    that for GCE is the right solution now. This seems to do the job.
+    Configure nginx as a ssl terminating reverse proxy
+    
+    Adding configuration to make nginx:
+      * Act as a SSL terminating proxy on port 443,
+      * Proxy SSL requests to hipache router layer,
+      * Redirect any requests to port 80 to 443.
+    Added new gpg recipients
+    Removed old gpg recipients
+    Added Piotr as recipient
+    Add gpg recipient for Russ Garret and reencrypt
+    
+    Add the GPG key for Russ: D906FEB1: "Russell Garrett <russ@garrett.co.uk>"
+    Add new starter Richard Knop to vault
+    
+    Added to recipients and re-encrypted.
+    
+    (incidentally `make diff-vault` doesn't work in this scenario because
+    `vault_passphrase.gpg` is different between the two branches - oh well)
+    Add gpg keys for new team members
+    
+    Add gpg public keys for:
+    
+    * Colin Saliceti
+    * Dan Hilton
+    * Hector Rivas
+    Adding Carl Massa to gpg keys file
+    Add Michal Tekel's gpg key id and recrypting vault
+    Vault recrypted for use by Jenkins user
+    Use GPG to encrypt the vault password
+    
+    Distributing the ansible vault password throughout the team is a needless challenge which we can avoid by using multi-key encryption via GPG. The ansible-vault is still encrypted using a single pass-phrase as before, but we encrypt the `vault_passphrase` using GPG so that multiple recipients can decrypt it. Decryption of the `vault_passphrase` is handled automatically in ansible through the use of an `open_the_vault` script which decrypts the `vault_passphrase` and feeds it to `ansible`
+    
+    **Makefile**
+    
+    * Addition of a import-gpg-keys stanza to the Makefile which will import keys listed in gpg.recipients into the GPG keyring
+    * Addition of a recrypt stanza to the Makefile which will decrypt the vault, generate a new pass-phrase, PGP-encrypt the pass-phrase and then re-encrypt the vault
+    
+    **Ansible.cfg**
+    
+    * A change to the ansible.cfg to tell ansible to use the open_the_vault.sh script to get the vault decryption password
+    
+    **gpg.recipients**
+    
+    * Addition of a gpg.recipients file which lists KEY-ID and email address for each approved recipient
+    
+    **open_the_vault.sh**
+    
+    * Addition of an open_the_vault.sh script which uses GPG to decrypt the vault pass-phrase and outpus it on stdout
+    makefile: use empty inventory for aws start/stop
+    
+    When running ansible with -i "localhost," and -c localhost, we get "failed=True msg='boto required for this module'" error from ansible ec2 module. Using empty inventory instead, changes behavior of ansible a bit. Ec2 module is now able to find the boto library, which it requires to run. Previously only ec2.py would find this library, but the ec2 module ran in some different environment (presumably default /usr/bin/python) where boto was not present.
+    RVM gemset config files
+    parametrize start-stop-gce
+    
+    Parametrize start-stop-gce so that it can be told what `action` to do and a `state` of the instance group to apply to.
+    rename wake-<aws|gce> to start-stop-<aws|gce>
+    
+    Beause the playbooks are about to be extended with new functionality, change name to be more appropriate to what the playbook does.
+    wakeup playbooks: rename <xxx>-wake -> wake-<xxx>
+    
+    Make playbook name more clear starting with action, then following with action specifics (platform name). Reflect this change in makefile.
+    Wake/suspend: stricter env. name matching
+    
+    Because we don't tag our hosts in any special way, we are using the name to match the VMs to the environments. Change the name matching to `^{DEPLOY_ENV}-`. This way we can also use names like {DEPLOY_ENV}-influxdb.
+    add gce-wake playbook which starts VMs in GCE
+    
+    gce-wake.yml playbook starts all the VMs in the specified (deploy_env) deployment.
+    Reencrypted vault
+    Re-encrypted passphrase and vault for Piotr
+    Add gpg recipient for Russ Garret and reencrypt
+    
+    Add the GPG key for Russ: D906FEB1: "Russell Garrett <russ@garrett.co.uk>"
+    Add new starter Richard Knop to vault
+    
+    Added to recipients and re-encrypted.
+    
+    (incidentally `make diff-vault` doesn't work in this scenario because
+    `vault_passphrase.gpg` is different between the two branches - oh well)
+    Add gpg keys for new team members
+    
+    Add gpg public keys for:
+    
+    * Colin Saliceti
+    * Dan Hilton
+    * Hector Rivas
+    Adding Carl Massa to gpg keys file
+    Add Michal Tekel's gpg key id and recrypting vault
+    Vault recrypted for use by Jenkins user
+    Vault file has now been reencrypted with new pass
+    Use GPG to encrypt the vault password
+    
+    Distributing the ansible vault password throughout the team is a needless challenge which we can avoid by using multi-key encryption via GPG. The ansible-vault is still encrypted using a single pass-phrase as before, but we encrypt the `vault_passphrase` using GPG so that multiple recipients can decrypt it. Decryption of the `vault_passphrase` is handled automatically in ansible through the use of an `open_the_vault` script which decrypts the `vault_passphrase` and feeds it to `ansible`
+    
+    **Makefile**
+    
+    * Addition of a import-gpg-keys stanza to the Makefile which will import keys listed in gpg.recipients into the GPG keyring
+    * Addition of a recrypt stanza to the Makefile which will decrypt the vault, generate a new pass-phrase, PGP-encrypt the pass-phrase and then re-encrypt the vault
+    
+    **Ansible.cfg**
+    
+    * A change to the ansible.cfg to tell ansible to use the open_the_vault.sh script to get the vault decryption password
+    
+    **gpg.recipients**
+    
+    * Addition of a gpg.recipients file which lists KEY-ID and email address for each approved recipient
+    
+    **open_the_vault.sh**
+    
+    * Addition of an open_the_vault.sh script which uses GPG to decrypt the vault pass-phrase and outpus it on stdout
+    Add 'rake' as a dependency in Gemfile
+    
+    The developer running the tests might not have rake installed in the
+    environment. We ensure that is including as a explicit dependency.
+    Revert "Added logic to retry the HTTPS connection test"
+    
+    This reverts commit d1b2f792b80cebe8a4cced3bee8bd439d6bcccf9.
+    
+    No longer seems to be necessary. I suspect that this was fixed by adding a
+    health check to the demo app, which prevents a route from being added until
+    the app/container has been confirmed started/working:
+    
+    - alphagov/flask-sqlalchemy-postgres-heroku-example#4
+    Moving smoke test files to the root directory
+    Added logic to retry the HTTPS connection test
+    
+    At times after deploying the application it is still not ready to accept connections failing with error "502: Bad gateway". Now using rspec-retry to retry the failed test automatically.
+    The root cause will be investigated separately in ticket #97503258.
+    Use certifi for verifying GCE SSL certs
+    
+    Because of epic yak shaving.
+    
+    If you've installed Python from Homebrew, it compiles against a version of
+    OpenSSL that doesn't appear to validate `accounts.google.com`. We can't
+    reference Mac's list of CAs because they no longer use OpenSSL and are now
+    in Keychain. `curl-ca-bundle` did work in the past but was removed in
+    Homebrew/homebrew@ab926db. Everyone else appears to download or vendor their
+    own.
+    
+    certifi seems like a reasonable compromise. It's maintained by the venerable
+    Kenneth Reitz and used by Requests. I did think about putting this in
+    `gce.py` itself, but I think it's better to not modify that file any further
+    and to make it obvious what we're doing.
+    EC2 inventory plugin pulled from ansible source.
+    
+    Add `boto` to requirements because it's required by this script:
+    
+        (ansible)➜  tsuru-ansible git:(dynamic_inventory) ✗ ansible-playbook -i ec2.py --vault-password-file vault_password.sh site-aws.yml -e "deploy_env=dcarley" -e "domain_name=tsuru.paas.alphagov.co.uk" -e "ip_field=ec2_private_ip_address"
+        Fetching vault password from account 'tsuru-ansible-vault' in keychain..
+        ERROR: Inventory script (ec2.py) had an execution error: Traceback (most recent call last):
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 121, in <module>
+            import boto
+        ImportError: No module named boto
+    Vendor GCE dynamic inventory script
+    
+    Taken from upstream until we can find a way to reference it directly:
+    
+    - https://github.com/ansible/ansible/blob/v1.9.1-1/plugins/inventory/gce.py
+    
+    Adding `libcloud` to the requirements because it's required by this script:
+    
+        (ansible)➜  tsuru-ansible git:(dynamic_inventory) ✗ ./gce.py
+        GCE inventory script requires libcloud >= 0.13
+    Capture dependencies with pip and bundler
+    
+    For Python and Ruby respectively. This allows people to install the
+    dependencies programmatically and reduces the risk that our documentation is
+    out of step with the code (although pip doesn't enforce this as well as
+    bundler).
+    postgres: tag action names by server role
+    
+    Add PostgreSQL Standby | and PostgreSQL Master | prefix to actions being done by standby and master.
+    postgres: fix postgres backup condition
+    
+    Use jinja2 int filter in `when backups.stdout < 2` condition to cast the
+    type to an integer.
+    postgres: rename yml files
+    
+    postgres_common -> postgres_common_vars
+    postgres_master -> postgres_master_vars
+    postgres_standby -> postgres_standby_post
+    and adjusted postgres.yml to use these renamed files
+    postgres_standby: add loop to wait for 1st backup
+    
+    Wait at most up to 2 minutes for the 1st backup from the master to appear. Poll every 5 seconds. 2 mins shoudl be enough as master starts currently with no data.
+    Define postgres standby tasks
+    
+    Put all tasks that need to be done on the postgres standby to postgres_standby.yml. This file is dynamically included in the postgres.yml play based on if the server i
+    s standby or not.
+    Workaround issue with output of regex in ansible
+    
+    We found a weird behaviour in ansible. If one passes the output of the
+    `replace_regex` directly as variables of the role, it might get expanded
+    as a weird character in ansible (Ctrl+A).
+    
+    The solution was create a temporary `fact` and pass that one in the
+    variables of the role.
+    Tsuru daemon name change from tsr to tsurud
+    remove legacy ubuntu docker node configuration
+    
+    Ubuntu docker nodes are being replaced with coreOS. We don't need to configure these hosts anymore. Part of this config was legacy already: The 2 actions checking if node was already a part of pool and registering it aftewards were needed long time ago for upgrade of existing clusters which were running on older tsuru version which didn't require explicit node allocation to a pool to a newer version which did require explicit allocation. All newly built clusters have nodes explicitly allocated to a pool on 1st registration.
+    Rename tsr to tsurud when using snapshots
+    
+    The `tsr` binary has been renamed to `tsurud` (tsuru/tsuru#1192) in the
+    snapshot releases which prevents this command from running when we're using
+    our `vulcand` feature flag. We'll need to update this again when the stable
+    release is out.
+    
+    The service is unaffected because the package ships the binary and init
+    script at the same time.
+    Move tsuru_repo variables to tighter scope
+    
+    Apply them to the role that's using them rather than leaking them
+    everywhere. I should have done this in the first place. The `vars` in these
+    files are abstractions that are used further down.
+    Install all Tsuru packages from our PPA mirror
+    
+    Install the Tsuru packages for the core components Hipache, Gandalf, and
+    API, from our own PPA which is a mirror of the upstream PPA. This allows us
+    to pin the version that we use for stability.
+    
+    A limitation of PPAs whereby they only present the latest version meant that
+    if we have pinned the version number in our code then we would have been
+    unable to install when Tsuru release a new version.
+    
+    We have to use `pre_tasks` to remove the upstream PPA which is no longer
+    installed by the playbooks when the `tsuru_repo` var is passed. This can be
+    removed once it has been deployed to all existing machines, so long as we
+    continue to pass `tsuru_repo`.
+    
+    The next time we upgrade the packages in our PPA we'll need to think about
+    how we roll it out to existing environments. Whether we change all of the
+    playbooks to `state=latest` (which is a pain to variabilise because it's a
+    separate attribute from the version which we currently expose) or pin the
+    specific version (which is also a pain because we'd have to time the changes
+    perfectly). It feels like it's out of scope for now though.
+    tsuru_db: move into own file
+    
+    Tsuru_db play definition is growing and we are about to add more tasks to it (etcd related). Put tsuru_db into it's own file and include that in site.yml.
+    mongo migration: Update comment
+    
+    Change comment to FIXME so that it's easier to search & add information that migration code can be removed once deployed to all environments.
+    mongodb: Add migration from old to new data dir
+    
+    In case old data directory is present, stop mongo, remove new datadir (just initialized and thus containing no data) and move old dir to new location. Start mongo afterwards.
+    mongoDB: use default location for data storage
+    
+    Use default mondoDB storage directory (/var/lib/mondgodb) instead of /data/db. This way mongo doesn't need to initialize new data sotrage directory, for which it needs about 3GB of free space by default. This fixes out of disk space deployment issues, where mongo still consumes full initialization space for the old data directory and tries to allocate the same for the new dir.
+    Add elasticsearch into site.yml
+    
+    Make elasticsearch installation part of default deployment configuration.
+    Close STDIN on some tsuru-admin commands
+    
+    So that these tasks fail early with an error instead of waiting forever on
+    an interactive login when `~/.tsuru_token` is absent or invalid.
+    
+    I did try changing these to use the `command` module in the hope that it
+    closed STDIN automatically, but it doesn't:
+    
+    - http://docs.ansible.com/ansible/command_module.html
+    
+    I also looked at a way to specify a timeout of how long to wait for a
+    command but it seems you need to use the `async` module to do this which
+    seems like too greater change:
+    
+    - http://docs.ansible.com/ansible/playbooks_async.html
+    
+    There are other `tsuru` and `tsuru-admin` commands in our codebase that I
+    haven't touched. It seems more important to fix these ones first because
+    they hang early in the deployment and prevent the core components from being
+    setup, whereas if the post-install hangs then you already have a partially
+    working environment and it should take less time to fix.
+    do most of docker config in parallel
+    
+    Do the main and slow docker server installation in parallel on all servers. Then run the concurrent-ssh-bug affected actions in serial, node-by-node. This speeds up deployment of the platform considerably.
+    cleanup: tsuru_db in common.yml
+    
+    Due to some legacy leftovers, tsuru_db roles are not specified in one host statement, but in the two subsequent ones. There's no need to do that, as the functionality is the same as when the roles are both specified in the single host statement.
+    rename common.yml -> site.yml
+    
+    We no longer need separate sites for AWS ang GCE. One common site.yml playbook configures resgistry in the start. The registry playbook can handle both platforms now.
+    Revert "Revert "[#98091344] add grafana metrics collection""
+    Revert "[#98091344] add grafana metrics collection"
+    Add configuration for influxdb and grafana host
+    
+    Include yaml file for influxdb and grafana host.
+    Workaround for multichannel ssh issue
+    
+    Workaround for multichannel ssh terminating abruptly during the ansible
+    run on the docker server nodes. The issue manifests on `AWS` and there
+    is an open issue on [launchpad](https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/1334916) for it.
+    
+    The workaround is to run ansible serially (i.e. one node after another)
+    rather than in parallel.
+    Update playbooks to use api over HTTPS
+    
+    In order to decommission the insecure plain `HTTP/8080` `tsuru_api`,
+    we need to update the playbooks:
+     * `gandalf`, which communicates with `tsuru_api`
+     *  `tsuru_api`, which must listen on 127.0.0.1:8080 and report
+        the right public url
+    De-dupe docker-node-* tasks for AWS and GCE
+    
+    By getting the hosts private IP address from Ansible's default variables
+    (facts?) instead of the dynamic inventory. This has the same effect, but is
+    much simpler and means that we don't have to maintain the same commands in
+    two places.
+    Move tsuru_api entries to separate file
+    
+    In preparation for adding more tasks/roles to this host. The extra length
+    will make it hard to read `common.yml`, so break it out to a separate file
+    like `router.yml`
+    Post install tasks - pools and apps
+    
+    * configure default pools
+    * generate and add tsuru_deployer key for git
+    * install python platform
+    * deploy dashboard
+    * deploy postgresapi
+    * configure postgresapi
+    * display app info in the end of run
+    Add docker node metadata for Tsuru 0.11.1
+    
+    Tsuru 0.11.1 adds the requirement that we set pools using the node metadata.
+    
+    This commit sets the pool=default for any new deployments and also checks and
+    updates the metadata for any existing deployments.
+    Combine sslproxy and router roles
+    
+    Combine the Nginx which does TLS termination and reverse-proxying for the
+    routers onto the same machines as the routers. This means that:
+    
+    - the address of the upstream doesn't change like DNS records for ELBs do
+    - we're not subject to extra network latency/partitions for reverse proxying
+    - we have a simpler architecture
+    
+    Hipache has been moved from `0.0.0.0:80` to `127.0.0.1:8080` so that it's
+    not accessible without going through Nginx and it doesn't clash with the
+    Nginx vhost that does HTTP->HTTPS redirection.
+    
+    I've changed the format for passing `vars` to `roles` to make it clearer
+    which role is using which variables. The new `hipache_port` var is
+    referenced by vars passed to both of the roles.
+    
+    This depends on alphagov/tsuru-terraform#57 being merged at the same time.
+    Rename ssl-proxy.yml to router.yml
+    
+    I'm going to re-purpose this in a later commit. Move this in a separate
+    commit will make it easier to see the subsequent changes I'm making.
+    Revert "[#94300924] Add post install deploy tasks"
+    Add post install deploy tasks
+    
+    * configure default pools
+    * add insecure_deployer key for git
+    * install python platform
+    * deploy dashboard
+    * deploy postgresapi
+    * configure postgresapi
+    * display app info in the end of run
+    Specify pool name when registering docker node
+    
+    Ever since tsuru 0.11.1 you need to specify pool name metadata when adding nodes, otherwise the node doesn't belong to any pools and you can't deploy to it.
+    Don't error if admin user already exists
+    
+    The API will return `409 Conflict` if the user already exists. Allow this to
+    happen and for the subsequent tasks to continue.
+    Replace curl commands with Ansible uri module
+    
+    These shell-outs and curl commands weren't registering an error when the
+    admin user wasn't created and/or it was unable to login. It would write an
+    empty `~/.tsuru_token` file and a later task which adds a docker node would
+    hang indefinitely because it triggered an interactive login.
+    
+    Fix this by using Ansible's uri module which checks status codes and allows
+    us to parse the JSON response without piping it through another command.
+    Install python-httplib2 on API nodes
+    
+    I'm planning to use Ansible's uri module which depends on this. If we make
+    more extensive use of this in the future then we should consider installing
+    it on all nodes.
+    Abstract difference in AWS/GCE tags
+    
+    By using an intermediate variable. This doesn't allow us to de-dupe any
+    variables, but it does make the `hosts` entries much easier to read and mean
+    that we don't need to use regexps (which are error prone).
+    
+    I've tested this with the following commands and verified that the lists of
+    hosts under each "play" remain the same:
+    
+        time make aws DEPLOY_ENV=dcarley ARGS=--list-hosts
+        time make gce DEPLOY_ENV=dcarley ARGS=--list-hosts
+    Use LB for internal access to API
+    
+    A regression was introduced in the dynamic inventory work (not a surprise
+    because it was very complex - alphagov/tsuru-ansible#41) which meant that we
+    stopped using the load balancer for internal access to the API and only used
+    the first instance.
+    
+    For example on the Gandalf host:
+    
+        ubuntu@ip-10-128-10-180:~$ grep TSURU_HOST /home/git/.bash_profile
+        export TSURU_HOST=http://10.128.13.209:8080
+    
+    Re-purpose the values with new key names to use as a variable for delegating
+    to the first API node and re-purpose the key name to be the DNS name of the
+    load balancer. This has a different hostname on AWS which is dependent on
+    the renaming in alphagov/tsuru-terraform#52
+    Regex hostname format to work with GCE & AWS
+    
+    Host names are wildly different between the two different cloud platforms, so we're having to use regex to choose the appropriate host name format.
+    First bash at being able to parse for ip_field
+    
+    Adding an extra -e 'ip_field=gce_ip_address' to the playbook command allows us to use that variable within both globals.yml and common.yml to conditionally select which address format to use.
+    Use dynamic host names for GCE
+    
+    We were formerly using host groups defined in the static inventory file, but we do not have the same groupings available from our dynamic inventory. Hostnames are now prefixed with the deploy_env name in the playbooks, and variables defined in group_vars/all/global.yml now reference these dynamic host names instead of the static inventory groups.
+    Split site.yml into platform-specific and common
+    
+    As we are using the same ansible scripts to configure hosts on two different cloud providers, we are starting to need some platform-specific options passed to ansible roles. Specifically, we need the storage_type parameter for docker-registry to be set to 's3', 'gcs' or 'local' for AWS, GCE and Vagrant respectively.
+    
+    - Renamed site.yml to common.yml
+    - Created site-aws.yml and site-gce.yml which include common.yml as their last step.
+    - Moved docker-registry host definitiion from common.yml into site-aws.yml and site-gce.yml
+    - Added storage configuration options to site-aws and site-gce
+    - Removed group_vars/docker-registry/storage_backend
+    - Added S3 access key and secret key to ansible vault
+    - Updated README.md to reflect changes.
+    
+    Added gcs storage options to site-gce.yml
+    
+    These variables are not yet in use, but adding them here for future reference.
+    
+    Added s3_storage_path to site-aws for clarity
+    
+    Just using the default path of "/".
+    Added purely for clarity in the S3 options
+    Moved admin user creation and login from tsuru_api to site.yaml.
+    
+    Not my favorite approach since site.yaml looks slightly cluttered, but
+    implemented as suggested.
+    
+    Here a summary:
+    - moved user group creation and assignment of admin user to site.yml
+    - split user group creation and assignment of admin user into two tasks
+    - delegated the above two actions to mongo server, now api are separate
+    - cleared api globals within the api role and moved to globals.yml for
+      consistence
+    Configure nginx as a ssl terminating reverse proxy
+    
+    Adding configuration to make nginx:
+      * Act as a SSL terminating proxy on port 443,
+      * Proxy SSL requests to hipache router layer,
+      * Redirect any requests to port 80 to 443.
+    Add ansible-vault support to encrypt secret data
+    
+    We need to put the `login` and `password` data for `postgresql` into
+    this repository but I don't want to put it in clear text so we are
+    going to use
+    [ansible-vault](http://docs.ansible.com/playbooks_vault.html) to
+    encrypt the data. Our use of `ansible-vault` has a dependency on
+    version `1.9 or higher` of `ansible`
+    
+    Taking this opportunity to encrypt the current tsuru credentials in
+    preparation for configuring credentials for postgresql.
+    
+    Updated the documentation to show how to use `ansible-vault`.
+    
+    Updated `Vagrantfile` so it uses `ansible.ask_vault_pass` to
+    unlock the password stored in your `ansible vault`
+    password.
+    Small refactoring of the docker-registry configuration.
+    Mainly miving role parameter to a separate file in group_vars.
+    
+    This makes the docker-regitry playbook cleaner and allows to
+    gather all the docker-registry options in one place.
+    This patch make the docker registry role use nginx as a front end server.
+    The reason is that in the original regiistry role, the registry server is
+    bind to localhost (and this is hard coded), so to be able to make the registry server
+    accessible form outside the instance we need to use the nginx front end server provided
+    with the role.
+    remove unused variables -- code refactoring --
+    fix hostname in delegate_to param
+    Refactor playbooks.
+      - Put all data related components on the top.
+      - Separate groups per roles.
+    Use internal ip address with docker nodes.
+    Refactor playbooks, needed to handle the case of tsuru token generation.
+    First version
+    initial commit ansible config code for tsuru
+    ec2.py: add option to invalidate cache
+    
+    When you specify --invalidate-cache option and the cache is not yet outdated, then the modified timestamp of the cache will be set to make the cache outated.
+    ec2.py: add --stopped to get only stopped VMs
+    
+    Add --stopped commandline option to ec2.py script to make it return only instances in stopped state. Other outputs (LBs, RDS, ...) are unaffected when using this option.
+    EC2 inventory plugin pulled from ansible source.
+    
+    Add `boto` to requirements because it's required by this script:
+    
+        (ansible)➜  tsuru-ansible git:(dynamic_inventory) ✗ ansible-playbook -i ec2.py --vault-password-file vault_password.sh site-aws.yml -e "deploy_env=dcarley" -e "domain_name=tsuru.paas.alphagov.co.uk" -e "ip_field=ec2_private_ip_address"
+        Fetching vault password from account 'tsuru-ansible-vault' in keychain..
+        ERROR: Inventory script (ec2.py) had an execution error: Traceback (most recent call last):
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 121, in <module>
+            import boto
+        ImportError: No module named boto
+    rename registry vars files
+    
+    Also modify registry.yml to reference new names.
+    renamed:    aws_registry_vars.yml -> registry_aws_vars.yml
+    renamed:    gce_registry_vars.yml -> registry_gce_vars.yml
+    registry: put common variables into playbook
+    
+    No need to duplicate common variables in the provider specific vars files. Put the common variables into the playbook directly.
+    registry: Put AWS ang GCE variables into files
+    
+    Put AWS and GCE variables into two different _vars.yml files.
+    Migrating to service account authorisation
+    
+    Migrating docker registry `gcs` bucket authorisation from
+    interoperability to service account support.
+    Configure docker registry to use gcs bucket
+    
+    Configure docker regisry to use `gcs` bucket using Interoperable storage
+    access keys when running in the `gce` environment.
+    Remove unnecessary comments
+    
+    This is a good example of why comments should be used sparingly, if
+    at all; the comment in `site-gce.yml` was incorrect and has been for
+    as long as this file has existed. However, neither comment is
+    required, as the file names alone are clear enough indicators of
+    what the files are for.
+    Abstract difference in AWS/GCE tags
+    
+    By using an intermediate variable. This doesn't allow us to de-dupe any
+    variables, but it does make the `hosts` entries much easier to read and mean
+    that we don't need to use regexps (which are error prone).
+    
+    I've tested this with the following commands and verified that the lists of
+    hosts under each "play" remain the same:
+    
+        time make aws DEPLOY_ENV=dcarley ARGS=--list-hosts
+        time make gce DEPLOY_ENV=dcarley ARGS=--list-hosts
+    Global includes now passed on command line
+    
+    The hosts: all approach didn't work.
+    globals.yml broken out into platform specifics
+    
+    Unfortunatly it seems that we have not choice but to use two different 'global' variable files due to the difference in naming conventions when using dynamic inventory scripts.
+    Moved docker-registry settings from group_vars
+    
+    With our dynamic host names and dynamic inventory, we no longer have a group of servers called 'docker-registry' so the file inside group_vars was never being read. The settings have been moved into site-gce and site-aws instead.
+    Changes to use dynamic inventory instead of static
+    Split site.yml into platform-specific and common
+    
+    As we are using the same ansible scripts to configure hosts on two different cloud providers, we are starting to need some platform-specific options passed to ansible roles. Specifically, we need the storage_type parameter for docker-registry to be set to 's3', 'gcs' or 'local' for AWS, GCE and Vagrant respectively.
+    
+    - Renamed site.yml to common.yml
+    - Created site-aws.yml and site-gce.yml which include common.yml as their last step.
+    - Moved docker-registry host definitiion from common.yml into site-aws.yml and site-gce.yml
+    - Added storage configuration options to site-aws and site-gce
+    - Removed group_vars/docker-registry/storage_backend
+    - Added S3 access key and secret key to ansible vault
+    - Updated README.md to reflect changes.
+    
+    Added gcs storage options to site-gce.yml
+    
+    These variables are not yet in use, but adding them here for future reference.
+    
+    Added s3_storage_path to site-aws for clarity
+    
+    Just using the default path of "/".
+    Added purely for clarity in the S3 options
+    makefile: use empty inventory for aws start/stop
+    
+    When running ansible with -i "localhost," and -c localhost, we get "failed=True msg='boto required for this module'" error from ansible ec2 module. Using empty inventory instead, changes behavior of ansible a bit. Ec2 module is now able to find the boto library, which it requires to run. Previously only ec2.py would find this library, but the ec2 module ran in some different environment (presumably default /usr/bin/python) where boto was not present.
+    Makefile: update start and suspend actions for AWS
+    
+    AWS now uses unified playbook to start and stop instances. Update makefile to use this playbook.
+    Makefile: update start and suspend actions for GCE
+    
+    GCE now uses unified playbook to start and stop instances. Update makefile to use this playbook.
+    Makefile: tighter tsuru admin vars definition
+    
+    Make tsuru admin user and password variable name defitions more tight. The old definitions match both tsuru and postgres admin user names and won't run tests.
+    wakeup playbooks: rename <xxx>-wake -> wake-<xxx>
+    
+    Make playbook name more clear starting with action, then following with action specifics (platform name). Reflect this change in makefile.
+    ec2-wake: update Makefile
+    
+    There's no need to run ec2.py for inventory for ec2-wake, as it obtains the inventory of hosts to shut down itself. Changing inventory to "localhost," so that the operation executes faster.
+    Set SSL_CERT_FILE for ansible-galaxy command
+    
+    This now fails when running on my Mac (Yosemite):
+    ```
+    (ansible)➜  tsuru-ansible git:(99420212-custom_ppa) ✗ make aws DEPLOY_ENV=dcarley
+    sed "s/DEPLOY_ENV/dcarley/g" ssh.config.template > ssh.config
+    rm -rf -- roles/*
+    ansible-galaxy install -r requirements.yml --force
+    - the API server (galaxy.ansible.com) is not responding, please try again later.
+    make: *** [.ansible-galaxy.check] Error 1
+    ```
+    
+    It works when specifying an alternative certificate bundle, like we do for
+    the GCE inventory script. This suggests that `galaxy.ansible.com` changed
+    their SSL certificate recently.
+    Makefile: update site.yml naming
+    
+    We only have one site.yml now, update makefile to reflect this.
+    Add tasks to run integration tests in {R,M}akefile
+    
+    Refer to the integration tests in the Makefile and Rakefile.
+    Currently we add new tasks called integration-test-{gce,aws}
+    Wake/suspend: stricter env. name matching
+    
+    Because we don't tag our hosts in any special way, we are using the name to match the VMs to the environments. Change the name matching to `^{DEPLOY_ENV}-`. This way we can also use names like {DEPLOY_ENV}-influxdb.
+    Makefile: add python certifi to gce suspend & wake
+    
+    Add `SSL_CERT_FILE=$(shell python -m certifi)` to the GCE suspend and wake targets, just before the ansible call. This is required on Mac computers to load certificate for GCE.
+    Make: add environment suspend and resume actions
+    
+    Add suspend and resume actions for GCE and AWS environments. Env. name is specified using standard DEPLOY_ENV variable.
+    Use certifi CA bundle for end-to-end tests
+    
+    Otherwise `open-uri` raises a certificate verify exception for the GlobalSign
+    certificate that we have on the API when running the tests from Mac OS X:
+    
+        Failures:
+    
+          1) TsuruEndToEnd tsuru API should pass healthchecks for all components
+             Failure/Error: response = URI.parse("#{@tsuru_api_url}/healthcheck/?check=all").open()
+             OpenSSL::SSL::SSLError:
+               SSL_connect returned=1 errno=0 state=unknown state: certificate verify failed
+             # ./spec/endtoend/endtoend_spec.rb:15:in `block (3 levels) in <top (required)>'
+             # ./vendor/bundle/ruby/2.2.0/gems/rspec-retry-0.4.0/lib/rspec/retry.rb:43:in `block (3 levels) in apply'
+             # ./vendor/bundle/ruby/2.2.0/gems/rspec-retry-0.4.0/lib/rspec/retry.rb:34:in `times'
+             # ./vendor/bundle/ruby/2.2.0/gems/rspec-retry-0.4.0/lib/rspec/retry.rb:34:in `block (2 levels) in apply'
+    
+    We could install the Ruby version of `certifi` certificate path, however it
+    seems to require monkey-patching to tell `open-uri` to always use that CA path.
+    Using the environment variable is easier and at least consistent with how we
+    run Ansible.
+    Makefile does noise if it fails opening the vault
+    
+    We retrieve the Tsuru credentials from the ansible vault, but if it
+    fails getting it, it will not display the error because we capture the
+    stderr from the `ansible-vault` command.
+    
+    In this commit we make the `open_the_vault.sh` less verbose to keep
+    output clean, and we stop capturing the stderr when calling
+    `ansible-vault`. This way, if it fails, we can troubleshoot quickly.
+    Add --path vendor/bundle to install gem files
+    
+    We want the tests to run in a local environment, not install the
+    packages globally.
+    Do not hardcode the platform domain name in tests
+    
+    The suffix for the platform domain name was currently hardcoded in the
+    smoke test helpers. Now we parse the ansible configuration to extract
+    the right domain in the Makefile, avoiding redudant configuration.
+    
+    For this, the tests now require a environment variable `TSURU_API_HOST`
+    Cleanup of code and output
+    Add Makefile tasks to execute the tests from make
+    
+    We use `make` to execute ansible, it makes sense to also use `make` to
+    run all the tests, although in that case it would be `make` calling `rake`.
+    
+    As the credentials for tsuru are stored in the ansible vault, this
+    commit uses `ansible-vault` command to automatically pick the
+    credentials.
+    
+    In order to run the tests, you only need to do:
+    
+    ```
+    make test-aws DEPLOY_ENV=<env>
+    make test-gce DEPLOY_ENV=<env>
+    ```
+    
+    Additional options can be added as arguments, like VERBOSE:
+    
+    ```
+    make test-aws DEPLOY_ENV=<env> VERBOSE=true
+    ```
+    Make target to diff vault contents
+    
+    Add a new make target to diff the contents of the vault against the master
+    branch. This is useful when reviewing pull requests, because the vault
+    contents are binary/encrypted.
+    
+    Some notes about the implementation:
+    
+    - this should be run from the branch you're reviewing
+    - `git show` is used to fetch the contents of the vault from the `master`
+      branch
+    - the contents are redirected to a FIFO so that `ansible-vault` has
+      something that looks like a file (it doesn't take STDIN)
+    - the contents are encrypted and don't actually touch the disk, so it's
+      pretty safe
+    - the redirect blocks until the FIFO has been read by `ansible-vault` and
+      then the `rm` deletes the FIFO, which is why the subshell is backgrounded
+    - bash is required to to do the `<(command)` process substitution because
+      the default of `/bin/sh` doesn't support it
+    - we ignore an exit code of `1` because that indicates that there are
+      differences rather than an error
+    Merge clean-roles and ansible-galaxy targets
+    
+    So that we don't delete the roles on every run now that we only run
+    `ansible-galaxy` when the `requirements.yml` changes. Somehow this worked
+    fine when I tested #79 and then stopped working shortly after.
+    Run ansible-galaxy only when necessary
+    
+    Currently we run the ansible-galaxy every time we run make,
+    even when it is not required if `requirements.yml` did not
+    change.
+    
+    In this commit using a file as a flag to keep track of the
+    last run of `ansible-galaxy` task. `ansible-galaxy` will only
+    run if the task never run or `requirements.yml` is newer.
+    Add re-fetching ansible galaxy roles to default
+    
+    It is easy to forget to do this and then get unexplained errors. Adding this to the default target only takes a few extra seconds.
+    Makefile: move ansible-playbook command to macro
+    
+    So that we don't duplicate the argument structure between aws/gce.
+    Makefile: break AWS check to separate target
+    
+    To match `check-env-var` and make the gce/aws targets look similar.
+    Makefile: Move common deps to "preflight" target
+    
+    So that it's easy to see what dependencies are common between aws/gce.
+    Makefile: Hard wrap long lines
+    
+    So that they're easier to read. The groupings in `.PHONY` are logical.
+    Ensure import-gpg-keys does not prompt
+    
+    Modifying Makefile to ensure that import-gpg-keys:
+      * Does not prompt
+      * Runs faster and more reliably by choosing a newer keyserver
+    Always import keys before recrypting
+    Use GPG to encrypt the vault password
+    
+    Distributing the ansible vault password throughout the team is a needless challenge which we can avoid by using multi-key encryption via GPG. The ansible-vault is still encrypted using a single pass-phrase as before, but we encrypt the `vault_passphrase` using GPG so that multiple recipients can decrypt it. Decryption of the `vault_passphrase` is handled automatically in ansible through the use of an `open_the_vault` script which decrypts the `vault_passphrase` and feeds it to `ansible`
+    
+    **Makefile**
+    
+    * Addition of a import-gpg-keys stanza to the Makefile which will import keys listed in gpg.recipients into the GPG keyring
+    * Addition of a recrypt stanza to the Makefile which will decrypt the vault, generate a new pass-phrase, PGP-encrypt the pass-phrase and then re-encrypt the vault
+    
+    **Ansible.cfg**
+    
+    * A change to the ansible.cfg to tell ansible to use the open_the_vault.sh script to get the vault decryption password
+    
+    **gpg.recipients**
+    
+    * Addition of a gpg.recipients file which lists KEY-ID and email address for each approved recipient
+    
+    **open_the_vault.sh**
+    
+    * Addition of an open_the_vault.sh script which uses GPG to decrypt the vault pass-phrase and outpus it on stdout
+    Check for AWS environment variables in Makefile
+    
+    To compliment the README and give a more helpful error message than the
+    following when you haven't set the environment variables for your AWS access
+    keys:
+    
+        (ansible)➜  tsuru-ansible git:(makefile_aws_env_vars) ✗ make aws DEPLOY_ENV=foo
+        sed "s/DEPLOY_ENV/foo/g" ssh.config.template > ssh.config
+        ansible-playbook -i ec2.py --vault-password-file vault_password.sh site-aws.yml -e "deploy_env=foo" -e "@platform-aws.yml"
+        Fetching vault password from account 'tsuru-ansible-vault' in keychain..
+        ERROR: Inventory script (ec2.py) had an execution error: Traceback (most recent call last):
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 722, in <module>
+            Ec2Inventory()
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 156, in __init__
+            self.do_api_calls_update_cache()
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 303, in do_api_calls_update_cache
+            self.get_instances_by_region(region)
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 320, in get_instances_by_region
+            conn = ec2.connect_to_region(region)
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/ec2/__init__.py", line 66, in connect_to_region
+            return region.connect(**kw_params)
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/regioninfo.py", line 187, in connect
+            return self.connection_cls(region=self, **kw_params)
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/ec2/connection.py", line 103, in __init__
+            profile_name=profile_name)
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/connection.py", line 1100, in __init__
+            provider=provider)
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/connection.py", line 569, in __init__
+            host, config, self.provider, self._required_auth_capability())
+          File "/Users/dcarley/.virtualenvs/ansible/lib/python2.7/site-packages/boto/auth.py", line 987, in get_auth_handler
+            'Check your credentials' % (len(names), str(names)))
+        boto.exception.NoAuthHandlerFound: No handler was ready to authenticate. 1 handlers were checked. ['HmacAuthV4Handler'] Check your credentials
+    
+        make: *** [aws] Error 1
+    Adding ansible-galaxy helper support to Makefile
+    Allow additional args to be passed to Makefile
+    
+    So that you can, for example, see verbose output from Ansible:
+    
+        make aws DEPLOY_ENV=dcarley ARGS=-vvvv
+    Call out to a shell for python command
+    
+    I'm not quite sure why this would have worked for Dan, but it didn't work for me; without the `shell` the python command wasn't being executed so Ansible could not find the certificate.
+    Render ssh.config based on environment name
+    
+    `ssh_config(5)` doesn't support interpolation of environment variables, so
+    we have been updating this by hand for each independent environment. This is
+    a pain and will become worse when we need to do the same in Jenkins. So
+    render it based on a crude template and `gitignore` the resulting file.
+    Move ansible-playbook commands to Makefile
+    
+    These are getting quite complex, so we should move them to something more
+    automated to reduce the chance of human error.
+    
+    By doing so we can also check that the environment name is set.
+    
+    I realise that this disadvantages people using Linux instead of Mac because
+    they are forced to use `vault_password.sh` instead of their own solutions
+    like reading from a file. It seems like a reasonable compromise though.
+    Moving smoke test files to the root directory
+    ec2.ini: Use current dir for cache
+    
+    Use current directory for cache. This way wake scripts have their own cache (because they run inside temporary directory) and don't modify the local cache anyhow.
+    Restrict AWS inventory to European regions
+    
+    Per the configs in alphagov/tsuru-terraform we're only using `eu-west-1` at
+    the moment and the only region that we're likely to extend into is
+    `eu-central-1` because we need data to be located within Europe.
+    
+    Restricting the regions we search brings the uncached time down from 15~30
+    seconds:
+    
+        (ansible)➜  tsuru-ansible git:(master) time ./ec2.py --refresh-cache >/dev/null
+        ./ec2.py --refresh-cache > /dev/null  0.52s user 0.07s system 1% cpu 29.801 total
+        (ansible)➜  tsuru-ansible git:(master) time ./ec2.py --refresh-cache >/dev/null
+        ./ec2.py --refresh-cache > /dev/null  0.51s user 0.07s system 3% cpu 14.910 total
+    
+    To ~1 second:
+    
+        (ansible)➜  tsuru-ansible git:(ec2_restrict_regions) time ./ec2.py --refresh-cache >/dev/null
+        ./ec2.py --refresh-cache > /dev/null  0.22s user 0.05s system 26% cpu 1.020 total
+        (ansible)➜  tsuru-ansible git:(ec2_restrict_regions) time ./ec2.py --refresh-cache >/dev/null
+        ./ec2.py --refresh-cache > /dev/null  0.22s user 0.05s system 32% cpu 0.854 total
+    Settings require for compatibility with our EC2
+    
+    We need to use private_ip addresses for provisioning
+    EC2 inventory plugin pulled from ansible source.
+    
+    Add `boto` to requirements because it's required by this script:
+    
+        (ansible)➜  tsuru-ansible git:(dynamic_inventory) ✗ ansible-playbook -i ec2.py --vault-password-file vault_password.sh site-aws.yml -e "deploy_env=dcarley" -e "domain_name=tsuru.paas.alphagov.co.uk" -e "ip_field=ec2_private_ip_address"
+        Fetching vault password from account 'tsuru-ansible-vault' in keychain..
+        ERROR: Inventory script (ec2.py) had an execution error: Traceback (most recent call last):
+          File "/Users/dcarley/projects/paas/tsuru-ansible/ec2.py", line 121, in <module>
+            import boto
+        ImportError: No module named boto
+    Use wal-e playbook with deletion of old backups
+    
+    We want to delete older backups from WAL-E, for which we need to setup
+    a cronjob which will delete the old backups. The [ansible role for
+    wal-e](https://github.com/alphagov/ansible-playbook-wal-e/pull/5)
+    implements this feature.
+    
+    Default values are OK for the time being.
+    
+    As [commented in the wal-e role
+    PR](https://github.com/alphagov/ansible-playbook-wal-e/pull/5#issuecomment-126633032) we will
+    disable the job on GCE until [the bug in WAL-E deleting
+    keys](https://github.com/wal-e/wal-e/issues/192) is fixed.
+    De-duplicate vars in platform-{aws,gce}.yml
+    
+    The preceding commit allows us to refer to `hostvars` in the same way on AWS
+    and GCE. So we can move all of these variables to `group_vars` and not
+    duplicate them. Except for `tsuru_api_internal_lb` which is different.
+    Use deploy_env instead of hosts_prefix for API LB
+    
+    It just so happens that these two variables are the same for GCE. But for
+    simplicity and consistency with AWS, we should use `deploy_env`, which only
+    ever contains the name of the environment.
+    Add platform specific elasticsearch variables
+    
+    Define elasticsearch_host in the platform-<aws|gce>.yml. Define elasticsearch_host_name and elasticserach_url in globals.
+    Use DNS based filter for Postgres hosts
+    
+    Allows to reconfigure Postgres master/standby setup automatically by running ansible based on the Postgres master DNS record
+    Change postgres_host variable to use the DNS name
+    Add platform identification into platform-xxx.yml
+    
+    Add variable called 'platform' set either to 'aws' on 'gce' in the respective platform file. Based on this variable we can differ inside playbooks if to take different actions based on which the platform environment is deployed on is.
+    Postgres: define master node
+    
+    Define which node is the postgres master in platform-<platform>.yml.
+    Postgres: put common config into globals
+    
+    Pull common AWS and GCE config from platform-aws.yml and platform-gce.yml into group_vars/all/globals.yml. This removes unnecessary duplication and makes it very clear what's different between AWS and GCE (when you compare platform files for each platform). The bucket name was also unified (in terraform), making it not a platform specific variable anymore.
+    platform-gce.yml: fix postgres name
+    
+    After adding server indexes to the name, fix "{{ hosts_prefix }}-tsuru-postgres" -> "{{ hosts_prefix }}-tsuru-postgres-0".
+    Added wal_e_aws_access_key, wal_e_aws_secret_key and wal_e_s3_endpoint vars to GCE platform wal-e config.
+    Adding WAL-E configuration for GCE platform
+    Revert "Revert "[#98091344] add grafana metrics collection""
+    Revert "[#98091344] add grafana metrics collection"
+    Add platform specific variables to extract host
+    
+    Add `AWS EC2` and `GCE` specific variables to extract influxdb host urls
+    Add variables to refer `tsuru_api` endpoints
+    
+    for consistency and inorder to use it to parametrise other roles
+    we create variables to refer the LB and the url of the API, both
+    internal and external.
+    
+    We already got a variable `tsuru_api_internal_lb`,
+    Use the correct SSL cert for different providers
+    
+    We now have seperate SSL certificates for differnet cloud providers, so we no longer want to deploy the same certificate on both platforms.
+    The vault has been updated with the additional certificate (gce_ssl_key/cert) and the original ssl_key/cert files have been renamed to aws_ssl_key/cert accordingly.
+    We are now defining the relevant certifcate to use inside platform-aws or platform-gce respectively.
+    Add platform specific gobal variables for postgresapi
+    Combine sslproxy and router roles
+    
+    Combine the Nginx which does TLS termination and reverse-proxying for the
+    routers onto the same machines as the routers. This means that:
+    
+    - the address of the upstream doesn't change like DNS records for ELBs do
+    - we're not subject to extra network latency/partitions for reverse proxying
+    - we have a simpler architecture
+    
+    Hipache has been moved from `0.0.0.0:80` to `127.0.0.1:8080` so that it's
+    not accessible without going through Nginx and it doesn't clash with the
+    Nginx vhost that does HTTP->HTTPS redirection.
+    
+    I've changed the format for passing `vars` to `roles` to make it clearer
+    which role is using which variables. The new `hipache_port` var is
+    referenced by vars passed to both of the roles.
+    
+    This depends on alphagov/tsuru-terraform#57 being merged at the same time.
+    Revert "[#94300924] Add post install deploy tasks"
+    Add post install deploy tasks
+    
+    * configure default pools
+    * add insecure_deployer key for git
+    * install python platform
+    * deploy dashboard
+    * deploy postgresapi
+    * configure postgresapi
+    * display app info in the end of run
+    Abstract difference in AWS/GCE tags
+    
+    By using an intermediate variable. This doesn't allow us to de-dupe any
+    variables, but it does make the `hosts` entries much easier to read and mean
+    that we don't need to use regexps (which are error prone).
+    
+    I've tested this with the following commands and verified that the lists of
+    hosts under each "play" remain the same:
+    
+        time make aws DEPLOY_ENV=dcarley ARGS=--list-hosts
+        time make gce DEPLOY_ENV=dcarley ARGS=--list-hosts
+    Remove dupe gandalf_host_external vars
+    
+    The value is the same for both providers and is also defined in
+    `group_vars/all/globals.yml`, so we don't need to specify it in the provider
+    specific var files.
+    Address registry using DNS again
+    
+    A regression was introduced in the dynamic inventory work (not a surprise
+    because it was very complex - alphagov/tsuru-ansible#41) which meant that we
+    went back to address the Docker registry by IP instead of hostname. This
+    causes problems when the IP of the registry machine is changed because
+    images are namespaced by the registry that they come from.
+    
+    Go back to using DNS like we did in 42e3bfb1dc0bf1a7935917ff0d4e574ab29fe332
+    for the (then) static inventory.
+    
+    I'm also removing the duplicate entry for `docker_registry_port`. We only
+    need the entry in globals, for both platforms.
+    Use LB for internal access to API
+    
+    A regression was introduced in the dynamic inventory work (not a surprise
+    because it was very complex - alphagov/tsuru-ansible#41) which meant that we
+    stopped using the load balancer for internal access to the API and only used
+    the first instance.
+    
+    For example on the Gandalf host:
+    
+        ubuntu@ip-10-128-10-180:~$ grep TSURU_HOST /home/git/.bash_profile
+        export TSURU_HOST=http://10.128.13.209:8080
+    
+    Re-purpose the values with new key names to use as a variable for delegating
+    to the first API node and re-purpose the key name to be the DNS name of the
+    load balancer. This has a different hostname on AWS which is dependent on
+    the renaming in alphagov/tsuru-terraform#52
+    Domain name setting moved into platform-specifics
+    
+    We don't need to pass the domain_name on the command line anymore
+    Moved global settings back into globals.yml
+    
+    The settings in globals.yml are now truly global between both platforms.
+    Fixed host name format for gandalf_host
+    New platform-specific 'globals'
+    Add elasticsearch playbook
+    
+    Adding playbook to configure elasticsearch server.
+    Makefile does noise if it fails opening the vault
+    
+    We retrieve the Tsuru credentials from the ansible vault, but if it
+    fails getting it, it will not display the error because we capture the
+    stderr from the `ansible-vault` command.
+    
+    In this commit we make the `open_the_vault.sh` less verbose to keep
+    output clean, and we stop capturing the stderr when calling
+    `ansible-vault`. This way, if it fails, we can troubleshoot quickly.
+    Use GPG to encrypt the vault password
+    
+    Distributing the ansible vault password throughout the team is a needless challenge which we can avoid by using multi-key encryption via GPG. The ansible-vault is still encrypted using a single pass-phrase as before, but we encrypt the `vault_passphrase` using GPG so that multiple recipients can decrypt it. Decryption of the `vault_passphrase` is handled automatically in ansible through the use of an `open_the_vault` script which decrypts the `vault_passphrase` and feeds it to `ansible`
+    
+    **Makefile**
+    
+    * Addition of a import-gpg-keys stanza to the Makefile which will import keys listed in gpg.recipients into the GPG keyring
+    * Addition of a recrypt stanza to the Makefile which will decrypt the vault, generate a new pass-phrase, PGP-encrypt the pass-phrase and then re-encrypt the vault
+    
+    **Ansible.cfg**
+    
+    * A change to the ansible.cfg to tell ansible to use the open_the_vault.sh script to get the vault decryption password
+    
+    **gpg.recipients**
+    
+    * Addition of a gpg.recipients file which lists KEY-ID and email address for each approved recipient
+    
+    **open_the_vault.sh**
+    
+    * Addition of an open_the_vault.sh script which uses GPG to decrypt the vault pass-phrase and outpus it on stdout
+    parametrize start-stop-ec2
+    
+    Specify what state the instance should be put into via `state` variable. This way we can have unified script for starting and stopping.
+    rename wake-<aws|gce> to start-stop-<aws|gce>
+    
+    Beause the playbooks are about to be extended with new functionality, change name to be more appropriate to what the playbook does.
+    wake-ec2: invalidate cache when finished
+    
+    When instances have been waken up, do invalidate ec2 cache. This way when the user tries to do ansible run afterwards, their cache will be refreshed, containing newly started instances. There is a short delay between waking the instance up (setting state to running) and instance going through pending state to running. Therefore it is advised users don't immediately do ansible runs after waking instances up, but wait a few seconds.
+    wake-ec2: run locally
+    
+    Don't run from /tmp anymore.
+    wakeup playbooks: rename <xxx>-wake -> wake-<xxx>
+    
+    Make playbook name more clear starting with action, then following with action specifics (platform name). Reflect this change in makefile.
+    ec2-wake: enforce running from /tmp
+    
+    Previously ansible would run the script in the current directory, which would result in cache being populated by stopped hosts. Enforce that the ec2.py script is run specifically in the /tmp directory, where it would keep its local cache copy.
+    Revert "ec2-wake: enforce running from /tmp"
+    
+    This reverts commit 8d6390e3ff8f42456defbbcf38cf50294df28525.
+    ec2-wake: enforce running from /tmp
+    
+    Previously ansible would run the script in the current directory, which would result in cache being populated by stopped hosts. Enforce that the ec2.py script is run specifically in the /tmp directory, where it would keep its local cache copy.
+    Wake/suspend: stricter env. name matching
+    
+    Because we don't tag our hosts in any special way, we are using the name to match the VMs to the environments. Change the name matching to `^{DEPLOY_ENV}-`. This way we can also use names like {DEPLOY_ENV}-influxdb.
+    Add ec2-wake playbook to wake up AWS VMs
+    
+    Add ec2-wake.yml playbook that takes deploy_env parameter and starts all the VMs in that environment.
+    rename registry vars files
+    
+    Also modify registry.yml to reference new names.
+    renamed:    aws_registry_vars.yml -> registry_aws_vars.yml
+    renamed:    gce_registry_vars.yml -> registry_gce_vars.yml
+    registry: put common variables into playbook
+    
+    No need to duplicate common variables in the provider specific vars files. Put the common variables into the playbook directly.
+    registry: new playbook
+    
+    New registry playbook is very simple: based on the `platform` variable it includes variables for correct platform. This way we no longer need to have site-aws.yml and site-gce.yml, but can instead use same registry playbook for both.
+    Add some actions in the tsuru helper
+    
+    We need actions to be able to unlock the application,
+    and add/emove platforms.
+    Add support for multiple teams to service-add
+    
+    Our smoke tests were failing on the demo environment
+    because the admin user is a member of more than one team.
+    This commit adds `-t admin` at the end of the service-add
+    command line to ensure that the admin team is used for
+    app deployment
+    Add supoort for admin user being in multiple teams
+    
+    Our smoke tests were failing on the demo environment
+    because the admin user is a member of more than one team.
+    This commit adds `-t admin` at the end of the app-create
+    command line to ensure that the admin team is used for
+    app deployment.
+    Revert "Added logic to retry the HTTPS connection test"
+    
+    This reverts commit d1b2f792b80cebe8a4cced3bee8bd439d6bcccf9.
+    
+    No longer seems to be necessary. I suspect that this was fixed by adding a
+    health check to the demo app, which prevents a route from being added until
+    the app/container has been confirmed started/working:
+    
+    - alphagov/flask-sqlalchemy-postgres-heroku-example#4
+    Add tail_app_logs helper
+    
+    Add a helper that tails application logs (tsuru app-log -a myapp -f)
+    Do not hardcode the platform domain name in tests
+    
+    The suffix for the platform domain name was currently hardcoded in the
+    smoke test helpers. Now we parse the ansible configuration to extract
+    the right domain in the Makefile, avoiding redudant configuration.
+    
+    For this, the tests now require a environment variable `TSURU_API_HOST`
+    Cleanup of code and output
+    Moving smoke test files to the root directory
+    Added logic to retry the HTTPS connection test
+    
+    At times after deploying the application it is still not ready to accept connections failing with error "502: Bad gateway". Now using rspec-retry to retry the failed test automatically.
+    The root cause will be investigated separately in ticket #97503258.
+    Add an action to configure name and email in git
+    
+    Git requires you to define name and email to do commits. We configure
+    that with a fake one for the tests.
+    Add additional actions to the git_helper
+    
+    We need more actions to initialise a new local git repo for pushing
+    some dummy code for testing the deploy timeout.
+    Moving smoke test files to the root directory
+    Moving smoke test files to the root directory
+    Moving smoke test files to the root directory
+    Test the deploy timeout when deploy is slow
+    
+    This test uses the [fake platform which sleeps for >30s](https://github.com/alphagov/tsuru-ansible/pull/121)
+    while deploying, to confirm that the nginx in front of tsuru API
+    does not timeout.
+    
+    The test will login in the API, deploy the fake platform and try to deploy some
+    dummy code using git.
+    
+    Note: This test points to this [Dockerfile](https://raw.githubusercontent.com/alphagov/tsuru-ansible/98450546_timeout_test_platform/spec/test_platforms/delay_unit_platform/Dockerfile), in the branch tsuru_ansible/98450546_timeout_test_platform. It should be changed to master once #121 is merged.
+    Move common code to create workspace to helper
+    
+    For the integration tests we can reuse a lot of logic to initialise
+    the environment and create the temporary home directory, so
+    we move it to a helper.
+    Set exit_status to != 0 if child process is killed
+    
+    Solves the case of getting a `exit_status` == 0 if the child process
+    exits due an unhanded signal.
+    
+    When calling a process with Popen3 the resulting value attribute
+    (`Process::Status`) converted to int with `to_i` can return the
+    exit code shifted 8 bit or the signal if it has been signalled.
+    
+    Now the exit_status will be set to the signal number + 128 as most
+    of the shells return.
+    Command line helper: make wait and ctrl_c public
+    
+    Make wait() and ctrl_c() methods public so that they can be called from outside of the class. This is used in the log latency test.
+    Split the command_line_helper to allow bg process
+    
+    We will need comamnds to run in background. For that, we will split the
+    logic of the command_line_helper, and provide a function to run the
+    process in background.
+    Moving smoke test files to the root directory
+    Add a fake platform to do 31s delay while deploy
+    
+    In order to implement a test on the timeout while deploying
+    applications, we need to simulate a delay > 30s while deploying, which
+    will trigger the heartbeat of the tsuru API.
+    The `tsuru_unit_agent` implements other heartbeat of 5s, so we need to
+    catch the calls to `tsuru_unit_agent`.
+    
+    This is a non functional platform, it just does sleep 30 for every
+    `tsuru_unit_agent` execution.
+    Add a fake platform to do 31s delay while deploy
+    
+    In order to implement a test on the timeout while deploying
+    applications, we need to simulate a delay > 30s while deploying, which
+    will trigger the heartbeat of the tsuru API.
+    The `tsuru_unit_agent` implements other heartbeat of 5s, so we need to
+    catch the calls to `tsuru_unit_agent`.
+    
+    This is a non functional platform, it just does sleep 30 for every
+    `tsuru_unit_agent` execution.
+    Smoke test to unbind and bind service enabled.
+    
+    I have enabled the smoke test that tests unbinding
+    and binding of a service. It works now since the issue
+    in Postgres API has been fixed.
+    
+    See https://github.com/tsuru/postgres-api/pull/14 for details.
+    
+    To test, please make sure you run Ansible to have your environment
+    up to date (newest version of Postgres API) and run smoke tests:
+    
+    ```
+    make test-gce DEPLOY_ENV=yourenvironment
+    ```
+    Revert "Enable test of rebind of service"
+    
+    This reverts commit 303eb25e5d30af73632fd9f2a3ba9788d22bfb83.
+    
+    The [related bug](https://github.com/tsuru/postgres-api/issues/1) is not
+    really fixed [as explained in the coments of the
+    PR](https://github.com/alphagov/tsuru-ansible/pull/139), so we
+    need to keep the test in `pending`
+    Enable test of rebind of service
+    
+    The enable the test that verifies [if a service can be rebind to the same
+    application](https://github.com/tsuru/postgres-api/issues/1) passes as
+    [the bug has been fixed
+    upstream](https://github.com/tsuru/postgres-api/pull/12).
+    
+    Move other pending test as last ones.
+    Add logic to retry to bind service after unbind
+    
+    Tsuru executes the unbind operation asynchronously, so if one unbinds
+    and binds a service immediately we might hit a race condition. This
+    code retries to bind if the service reports being already bound.
+    Fix wrong service name in rebind test
+    Sleep 1s before service-remove after app-remove
+    
+    Move the sleep 1 to run always before `tsuru service-remove` after the
+    `tsuru app-remove`. This increases the chances of a successful service
+    removal the first time.
+    Lowercase the 'should' in all tests
+    Retry deletion of the service if it is still bound
+    
+    Tsuru application removal code happens asynchronously in the API server,
+    so the call to `tsuru app-remove` will return immediately despite it has
+    not been deleted and the services are bound.
+    
+    Because that, if we try to delete the services immediately after the
+    app, it might result in a error: `Error: This service instance is bound to at least one app. Unbind them
+    before removing it`
+    
+    To workaround this issue we add logic to retry after sleeping 1 second.
+    I assume that 25 retries with 1 second delay is enough.
+    Remove app before service in smoke tests
+    
+    Tsuru will unbind all the services automatically when removing an app.
+    We don't need to do it explicitly. Then, we can remove the service.
+    
+    This way we don't need to handle logic of checking if the app is locked
+    when removing the service.
+    Retry to delete test apps up to 25 times
+    
+    The tsuru healthcheck has a default timeout of 120s. Given this,
+    we can consider that 25 retries with 5 second delay (total 125s) will
+    give more confidence in the cleanup process.
+    Add logic to handle locked app in test after hook
+    
+    Sometimes the smoke tests don't clean properly the apps, leaving them
+    running in the platform.
+    
+    After investigating, we found that when running the test the application
+    can be potentially locked in the tsuru API server. For instance,because the
+    git push timeout or was disconnected. When this happens, the `after` hook
+    will fail cleaning up the application.
+    
+    This code adds logic which will wait 5 seconds and retry if it fails
+    deleting it because it is locked, giving a change to finish the running
+    task. After 5 retries, it will force an unlock to delete it.
+    Keep syntax consistency in the endtoend test
+    Move common code to create workspace to helper
+    
+    For the integration tests we can reuse a lot of logic to initialise
+    the environment and create the temporary home directory, so
+    we move it to a helper.
+    Split healthcheck assertions into separate tests
+    
+    So that we can see which individual components have failed before gauging
+    the overall health from the response status code. We may want to disable
+    rspec `fail_fast` option in the future so that we can see all test failures.
+    
+    I thought about enumerating a new `it` block for each components but we'd
+    have to do too much parsing of the output to produce reliable descriptions.
+    Use net/http for Tsuru healthcheck tests
+    
+    Because `open-uri` will raise an `OpenURI::HTTPError` exception if the
+    status code is not 200, which prevents the assertions from more accurately
+    describing what has gone wrong.
+    Add tests for Tsuru API healthchecks
+    
+    To test that all of the components (MongoDB, Router, Registry, etc) are
+    passing health checks by using this endpoint:
+    
+    - http://docs.tsuru.io/en/master/reference/api.html#full-healthcheck-of-all-tsuru-components
+    
+    Technically we don't need to check the output because the endpoint should
+    return a non-200 response if any of the components are not `WORKING`.
+    However for completeness I am checking that that we have at least three
+    lines of output so that the `each` loop gets called and that each line
+    contains `WORKING` in roughly the right place.
+    
+    I've pulled some variables that I need into the outer `describe` block so
+    that I can use them across both contexts. I've also referenced
+    `@tsuru_api_host`, since we're setting it, rather than going back to
+    `RSpec.configuration.target_api_host` each time.
+    Revert "Added logic to retry the HTTPS connection test"
+    
+    This reverts commit d1b2f792b80cebe8a4cced3bee8bd439d6bcccf9.
+    
+    No longer seems to be necessary. I suspect that this was fixed by adding a
+    health check to the demo app, which prevents a route from being added until
+    the app/container has been confirmed started/working:
+    
+    - alphagov/flask-sqlalchemy-postgres-heroku-example#4
+    Add log latency test
+    
+    Add a test which verifies that the user can see logs (when tailing them) within 3 seconds from sending a request that generates log line. This also verifies that other command output (like platform addd) will likely experience no delays.
+    Do not hardcode the platform domain name in tests
+    
+    The suffix for the platform domain name was currently hardcoded in the
+    smoke test helpers. Now we parse the ansible configuration to extract
+    the right domain in the Makefile, avoiding redudant configuration.
+    
+    For this, the tests now require a environment variable `TSURU_API_HOST`
+    Use random names for db instance on smoke tests
+    
+    We generate a random name for the created db instance in the smoke
+    tests. This will allow us to run several smoke tests in parallel and
+    avoid any conflict.
+    
+    Note: postgresql api does truncate the name of the db instance to
+    generate the assests in the postgresql db (db name, permissions, etc).
+    Because that, this code ensures that the first charaters are the most
+    variant.
+    Moving smoke test files to the root directory
+    Added logic to retry the HTTPS connection test
+    
+    At times after deploying the application it is still not ready to accept connections failing with error "502: Bad gateway". Now using rspec-retry to retry the failed test automatically.
+    The root cause will be investigated separately in ticket #97503258.
+    Retry to delete test apps up to 25 times
+    
+    The tsuru healthcheck has a default timeout of 120s. Given this,
+    we can consider that 25 retries with 5 second delay (total 125s) will
+    give more confidence in the cleanup process.
+    Update reference to Dockerfile to master branch
+    Add an action to configure name and email in git
+    
+    Git requires you to define name and email to do commits. We configure
+    that with a fake one for the tests.
+    Test the deploy timeout when deploy is slow
+    
+    This test uses the [fake platform which sleeps for >30s](https://github.com/alphagov/tsuru-ansible/pull/121)
+    while deploying, to confirm that the nginx in front of tsuru API
+    does not timeout.
+    
+    The test will login in the API, deploy the fake platform and try to deploy some
+    dummy code using git.
+    
+    Note: This test points to this [Dockerfile](https://raw.githubusercontent.com/alphagov/tsuru-ansible/98450546_timeout_test_platform/spec/test_platforms/delay_unit_platform/Dockerfile), in the branch tsuru_ansible/98450546_timeout_test_platform. It should be changed to master once #121 is merged.
+    Rename postgres variables to avoid confusion
+    postgres: add recovery config template
+    
+    This configuration template is used on standby to setup replication from master.
+    Reencrypted vault
+    WAL-E GCS access keys
+    
+    WAL-E was using old, non working access keys to store postgres backups. We have replaced them with working ones
+    Re-encrypted passphrase and vault for Piotr
+    vault: add pg_admin_user
+    
+    Define pg_admin_user in vault.
+    valut: add pg_replicationuser_pass
+    
+    Define pg_replicationuser_pass in the vault.
+    Added Google Storage access key and secret to the vault file
+    Add gpg recipient for Russ Garret and reencrypt
+    
+    Add the GPG key for Russ: D906FEB1: "Russell Garrett <russ@garrett.co.uk>"
+    aws: Use IAM role/profile for registry on S3
+    
+    The docker registry supports using IAM instance roles/profiles automagically
+    if you omit the access/secret key in the configuration. This was supported
+    by the upstream playbook in version 1.0.6:
+    
+    - codingbunch/ansible-docker-registry/compare/v1.0.5...v1.0.6
+    
+    This change to Terraform must be merged first:
+    
+    - alphagov/tsuru-terraform#74
+    Add new starter Richard Knop to vault
+    
+    Added to recipients and re-encrypted.
+    
+    (incidentally `make diff-vault` doesn't work in this scenario because
+    `vault_passphrase.gpg` is different between the two branches - oh well)
+    Fix intermediate SSL certificate for wildcard
+    
+    Replacing the intermediate certificate for
+    `*.tsuru2.paas.alphagov.co.uk` on gce. The current intermediate give
+    the following error:
+    
+    ```
+    $ curl https://tsuru-api.tsuru2.paas.alphagov.co.uk
+    curl: (60) SSL certificate problem: unable to get local issuer
+    certificate
+    More details here: http://curl.haxx.se/docs/sslcerts.html
+    
+    curl performs SSL certificate verification by default, using a "bundle"
+     of Certificate Authority (CA) public keys (CA certs). If the default
+     bundle file isn't adequate, you can specify an alternate file
+     using the --cacert option.
+    If this HTTPS server uses a certificate signed by a CA represented in
+     the bundle, the certificate verification probably failed due to a
+     problem with the certificate (it might be expired, or the name might
+     not match the domain name in the URL).
+    If you'd like to turn off curl's verification of the certificate, use
+     the -k (or --insecure) option.
+    ```
+    Use the correct SSL cert for different providers
+    
+    We now have seperate SSL certificates for differnet cloud providers, so we no longer want to deploy the same certificate on both platforms.
+    The vault has been updated with the additional certificate (gce_ssl_key/cert) and the original ssl_key/cert files have been renamed to aws_ssl_key/cert accordingly.
+    We are now defining the relevant certifcate to use inside platform-aws or platform-gce respectively.
+    add private key and cert for tsuru2.paas.alphagov.co.uk
+    Add gpg keys for new team members
+    
+    Add gpg public keys for:
+    
+    * Colin Saliceti
+    * Dan Hilton
+    * Hector Rivas
+    Adding Carl Massa to gpg keys file
+    Add Michal Tekel's gpg key id and recrypting vault
+    Vault recrypted for use by Jenkins user
+    Vault file has now been reencrypted with new pass
+    Split site.yml into platform-specific and common
+    
+    As we are using the same ansible scripts to configure hosts on two different cloud providers, we are starting to need some platform-specific options passed to ansible roles. Specifically, we need the storage_type parameter for docker-registry to be set to 's3', 'gcs' or 'local' for AWS, GCE and Vagrant respectively.
+    
+    - Renamed site.yml to common.yml
+    - Created site-aws.yml and site-gce.yml which include common.yml as their last step.
+    - Moved docker-registry host definitiion from common.yml into site-aws.yml and site-gce.yml
+    - Added storage configuration options to site-aws and site-gce
+    - Removed group_vars/docker-registry/storage_backend
+    - Added S3 access key and secret key to ansible vault
+    - Updated README.md to reflect changes.
+    
+    Added gcs storage options to site-gce.yml
+    
+    These variables are not yet in use, but adding them here for future reference.
+    
+    Added s3_storage_path to site-aws for clarity
+    
+    Just using the default path of "/".
+    Added purely for clarity in the S3 options
+    Add ssl certificate and key to ansible vault
+    
+    Use `ansible-vault` to encrypt SSL certificate and key file and persist
+    it to the `ansible vault`.
+    Add postgresql server configuration
+    
+      * Adding `postgresql` configuration separate file and including it,
+      * Configuring `postgres` secrets in `group_vars/all/secure`,
+      * Updating `README.md` with details on how to update `postgresql`
+        credentials.
+    Influx name change to be consistent with terraform
+    Update influxdb, telegraf and grafana versions
+    Fix influxdb password variable
+    Optionally configure Tsuru API for vulcand
+    
+    When the `vulcand` feature flag is enabled. The playbook version is being
+    bumped at the same time (with backwards incompat changes) so that we can
+    configure the router. I've arbitrarily chosen/set the API port, because we
+    need to pass the same value to both vulcand and Tsuru API.
+    
+    I'm going to create tech debt stories for the following:
+    
+    - the Tsuru API is only using the first router host for Vulcand's API. If we
+      use vulcand beyond testing then we should fix this single point of
+      failure
+    - the variable `hipache_host_external_lb` and the DNS hostname that is
+      reference should be renamed from "hipache" to "router", so that it's
+      agnostic of the actual router we use
+    Optionally install vulcand on the router nodes
+    
+    Instead of Hipache, when the `vulcand` feature flag is enabled. Version is
+    the latest stable. Port is the same as Hipache. It's using the single etcd
+    endpoint which is running on the DB host.
+    
+    Per the comment in `requirements.yml`, I haven't pinned the version of the
+    playbook because it may be under active development while we're testing and
+    it'll be easier to not make two stage releases. We should version it if we
+    continue to use it in the future.
+    
+    NB: This isn't intended to convert an existing environment from Hipache to
+    Vulcand. The ports will clash. We only intend to create new environments,
+    for testing, with this feature flag.
+    Rename var hipache_port to router_port
+    
+    To reflect the fact that it will be used for both Hipache and Vulcand. We
+    can move it to `group_vars` at the same time, to match `docker_port` and
+    `redis_port`, which makes it slightly clearer that the variable name is
+    different from the one being passed to the actual role.
+    Set influxdb retention policy to 2 weeks
+    
+    Pull in updated `ansible` role that will allow us to set the retention
+    policy to two weeks.
+    De-duplicate vars in platform-{aws,gce}.yml
+    
+    The preceding commit allows us to refer to `hostvars` in the same way on AWS
+    and GCE. So we can move all of these variables to `group_vars` and not
+    duplicate them. Except for `tsuru_api_internal_lb` which is different.
+    rename elasticsearch_url to elasticsearch_api
+    
+    This better reflects what the variable is really pointing to.
+    Add platform specific elasticsearch variables
+    
+    Define elasticsearch_host in the platform-<aws|gce>.yml. Define elasticsearch_host_name and elasticserach_url in globals.
+    Rename postgres variables to avoid confusion
+    Use DNS based filter for Postgres hosts
+    
+    Allows to reconfigure Postgres master/standby setup automatically by running ansible based on the Postgres master DNS record
+    Postgres: put common config into globals
+    
+    Pull common AWS and GCE config from platform-aws.yml and platform-gce.yml into group_vars/all/globals.yml. This removes unnecessary duplication and makes it very clear what's different between AWS and GCE (when you compare platform files for each platform). The bucket name was also unified (in terraform), making it not a platform specific variable anymore.
+    Pin docker server to 1.7.0
+    
+    To prevent unintended and breaking upgrades whenever `get.docker.com` make a
+    new package available.
+    Revert "Revert "[#98091344] add grafana metrics collection""
+    Revert "[#98091344] add grafana metrics collection"
+    Add influxdb specific variables
+    
+    Add influx specific variables
+    Add variables to refer `tsuru_api` endpoints
+    
+    for consistency and inorder to use it to parametrise other roles
+    we create variables to refer the LB and the url of the API, both
+    internal and external.
+    
+    We already got a variable `tsuru_api_internal_lb`,
+    Migrating to service account authorisation
+    
+    Migrating docker registry `gcs` bucket authorisation from
+    interoperability to service account support.
+    Configure docker registry to use gcs bucket
+    
+    Configure docker regisry to use `gcs` bucket using Interoperable storage
+    access keys when running in the `gce` environment.
+    Address registry using DNS again
+    
+    A regression was introduced in the dynamic inventory work (not a surprise
+    because it was very complex - alphagov/tsuru-ansible#41) which meant that we
+    went back to address the Docker registry by IP instead of hostname. This
+    causes problems when the IP of the registry machine is changed because
+    images are namespaced by the registry that they come from.
+    
+    Go back to using DNS like we did in 42e3bfb1dc0bf1a7935917ff0d4e574ab29fe332
+    for the (then) static inventory.
+    
+    I'm also removing the duplicate entry for `docker_registry_port`. We only
+    need the entry in globals, for both platforms.
+    Moved global settings back into globals.yml
+    
+    The settings in globals.yml are now truly global between both platforms.
+    globals.yml broken out into platform specifics
+    
+    Unfortunatly it seems that we have not choice but to use two different 'global' variable files due to the difference in naming conventions when using dynamic inventory scripts.
+    First bash at being able to parse for ip_field
+    
+    Adding an extra -e 'ip_field=gce_ip_address' to the playbook command allows us to use that variable within both globals.yml and common.yml to conditionally select which address format to use.
+    Changes to use dynamic inventory instead of static
+    Moved globals.yml into group_vars/all
+    
+    The group_vars tree is automatically included by ansible - placing the file in here means that we don't need to specify it on the command line with every ansible-playbook run
+    
+    - Updated README.md to reflect change
+    Moved globals.yml into group_vars/all
+    
+    The group_vars tree is automatically included by ansible - placing the file in here means that we don't need to specify it on the command line with every ansible-playbook run
+    Moved admin user creation and login from tsuru_api to site.yaml.
+    
+    Not my favorite approach since site.yaml looks slightly cluttered, but
+    implemented as suggested.
+    
+    Here a summary:
+    - moved user group creation and assignment of admin user to site.yml
+    - split user group creation and assignment of admin user into two tasks
+    - delegated the above two actions to mongo server, now api are separate
+    - cleared api globals within the api role and moved to globals.yml for
+      consistence
+    Add ansible-vault support to encrypt secret data
+    
+    We need to put the `login` and `password` data for `postgresql` into
+    this repository but I don't want to put it in clear text so we are
+    going to use
+    [ansible-vault](http://docs.ansible.com/playbooks_vault.html) to
+    encrypt the data. Our use of `ansible-vault` has a dependency on
+    version `1.9 or higher` of `ansible`
+    
+    Taking this opportunity to encrypt the current tsuru credentials in
+    preparation for configuring credentials for postgresql.
+    
+    Updated the documentation to show how to use `ansible-vault`.
+    
+    Updated `Vagrantfile` so it uses `ansible.ask_vault_pass` to
+    unlock the password stored in your `ansible vault`
+    password.
+    Small refactoring of the docker-registry configuration.
+    Mainly miving role parameter to a separate file in group_vars.
+    
+    This makes the docker-regitry playbook cleaner and allows to
+    gather all the docker-registry options in one place.
+    This patch make the docker registry role use nginx as a front end server.
+    The reason is that in the original regiistry role, the registry server is
+    bind to localhost (and this is hard coded), so to be able to make the registry server
+    accessible form outside the instance we need to use the nginx front end server provided
+    with the role.
+    Mongodb binds to the wrong IP for us
+    
+    We are now pulling in the mongodb playbook from galaxy, but we need it to bind to `0.0.0.0` not `127.0.0.1`. Before using librarian-ansible, we just made a change in the module; now we are using librarian-ansible we handle these config changes in the `globals.yml`.
+    Refactoring globals.yml variables
+    expose some additional parameters in globals.yml
+    First version
+    Add dashboard upload tools
+    
+    Add Keymon's dashboard upload tools to playbook files. We have modified
+    lib to substitute only the 1st "id" in the dashboard json file. Original
+    source of the tools:
+    
+    https://gist.github.com/keymon/64f196f031c2853a06dd
+    Grafana source script fix
+    
+    There was a API change in grafana 2.1 that is breaking backwards
+    compatilbility. We had to update the script that is adding influxdb
+    source to graf,ana to reflect 2.1 changes.
+    Revert "Revert "[#98091344] add grafana metrics collection""
+    Revert "[#98091344] add grafana metrics collection"
+    Copy script for adding datasources to Grafana
+    
+    Access to Grafana API for adding a datasource usually requires
+    that you have an API key for your requests - However, in order
+    to get an API key, you need to log into the web interface.
+    
+    The datasource.sh script works without using an API key by
+    navigating the login screen to retrieve a session cookie which
+    is then used in the subsequent request to add a datasource.
+    
+    The script is a variation on the script produced by
+    @leehambley on a [github gist](https://gist.github.com/leehambley/9741431695da3787f6b3)
+    Add tsuru dashboard
+    
+    This is the initial Tsuru dashboard, currently containing stats of
+    * CPU (user, system, load1)
+    * memory (used, cached, buffered, free)
+    * disk (IO and space usage)
+    * swap
+    
+    The values are aggregated over all hosts.
+    Add dashboard upload tools
+    
+    Add Keymon's dashboard upload tools to playbook files. We have modified
+    lib to substitute only the 1st "id" in the dashboard json file. Original
+    source of the tools:
+    
+    https://gist.github.com/keymon/64f196f031c2853a06dd

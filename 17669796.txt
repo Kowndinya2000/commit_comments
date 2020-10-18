@@ -1,0 +1,3262 @@
+﻿    change some file path
+    add comments readme
+    modify readme contents
+    Fix url in readme
+    Add README
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Update look and feel of the style guides
+    Initial public release of the Google C++ Style Guide
+    change some file path
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Update C++ style guide to 3.199:
+     - Update an example to omit the blank line between C and C++ #includes.
+     - Rewrite the paragraph about #include ordering.
+     - Clarify namespace closing comments.
+     - Discourage const references for input arguments which are aliased beyond
+       the scope of the function call.
+     - Replace all '&' with '&amp;'.
+     - Clarify that interfaces must have virtual destructors.
+     - Add an explicit example for |else if|.
+     - C++11 updates.
+    
+    Update Objective-C style guide to 2.36:
+     - Remove requirement to list @dynamic implementations.
+     - Remove requirement to never synthesize CFType properties, since they may
+       be retained on 10.6.
+     - Use __weak and __strong type declaration modifiers rather than comments.
+     - Make the copyright/license information consistent.
+     - An example initializer comment revealed too much about the implementation.
+     - Correct spelling mistakes.
+     - Fix names that didn't follow Cocoa conventions.
+     - Fix examples to conform to style.
+     - Add a section about no braces for empty interfaces.
+     - Add a section about automatically synthesized instance variables.
+     - Codify avoidance of accessors in -init and -dealloc methods.
+     - Changes for the 80-column rule.
+     - Weaken the language around object ownership type qualifiers.
+     - Document the rules for formatting blocks.
+    
+    Update JavaScript style guide to 2.27:
+     - Introduce EcmaScript 5 Strict verbiage.
+     - Add a note about private constructors.
+     - Simplify explanations about JSDoc comments.
+     - Sort the JSDoc tags.
+     - Remove the sections about type-checking now that the JSDoc tags and JS
+       types are no longer one table.
+     - Convert <tt> to <code>, because the XSL processor eats <tt>.
+     - Add @suppress.
+     - Mark @inheritDoc deprecated in favor of @override.
+     - Add a section about inner classes and enums being defined in the same file
+       as the top-level class they are defined on.
+    
+    Update Python style guide to 2.28:
+     - Change "Naming" summary to match body.
+     - Make the prohibition against backslash line continuation explicit.
+     - Update the TODO section to match the C++ style guide.
+     - Declare Python code without a shebang line to be stylish.
+     - Clarify rules on function docstrings.
+     - Fix spelling errors.
+     - Update with styleguide.xsl 1.33.
+    
+    Update styleguide.xsl to 1.33:
+     - Clean up style guide JS.
+     - Links to anchor tags auto-expand.
+    Update C++ style guide to 3.180:
+     - Remove comment about naming macros like enums.
+     - Move a bad code snippet from a CODE_SNIPPET to a BAD_CODE_SNIPPET element.
+    
+    Update Python style guide to 2.18:
+     - Clarify the syntax for import statements.
+    
+    Update styleguide.xsl to 1.31:
+     - Substitute underscore for apostrophe in anchor names.
+    Update look and feel of the style guides
+    Adding first iteration of the JSON-C Style Guide for JSON APIs
+    Update C++ style guide to 3.154:
+     - Add call_traits to the set of allowed boost libraries.
+     - Add an exception to the rule against default arguments to cover the useful
+       case of simulating variadic functions.
+     - Discourage the usage of ## in macros.
+     - Clarify example: it's acceptable to declare two parameters on one line even
+       if they don't all fit on that one line.
+     - Fix a typo ("make use symmetric spacing").
+     - Change bitwise AND to logical AND in a condition.
+    
+    Update styleguide.xsl to 1.27:
+     - Change a bunch of SPANs into DIVs.
+    
+    Update Python style guide to 2.15:
+     - Apply styleguide.xsl 1.27, changing a bunch of SPANs into DIVs.
+    Update Objective-C style guide to 2.12:
+     - Refer to the correct section on avoiding exceptions
+    Update C++ style guide to 3.133:
+     - Clarify that a "very strong convention" is, in fact, only very strong
+       within Google code
+     - Update the style guide with an additional naming possibility for enums:
+       kEnumName
+     - Reword the summary for the section on header file dependencies
+     - Simplify wording regarding static variables
+    
+    Update Objective-C style guide to 2.11:
+     - Provide guidance on when to use #import and #include
+     - Display revision in style guide
+    
+    Update styleguide.xsl with a hint of things to come
+    
+    Set svn:eol-style on xmlstyle.html
+    Update C++ style guide to 3.124:
+     - Include revision number
+     - Link to google-c-style.el
+    Initial public release of the Google C++ Style Guide
+    change some file path
+    move other guides into directory
+    Restore redirect to Rguide.xml from r105.
+    Roll back r105.
+    
+    https://google-styleguide.googlecode.com/svn-history/r105/trunk/Rguide.xml
+    does not render as HTML.
+    Update R style guide to current version.
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Updating python style guide
+    Update JavaScript style guide to 2.28:
+     - Fix typo.
+    
+    Update Python style guide to 2.29:
+     - Fix indirect setter.
+    Update C++ style guide to 3.199:
+     - Update an example to omit the blank line between C and C++ #includes.
+     - Rewrite the paragraph about #include ordering.
+     - Clarify namespace closing comments.
+     - Discourage const references for input arguments which are aliased beyond
+       the scope of the function call.
+     - Replace all '&' with '&amp;'.
+     - Clarify that interfaces must have virtual destructors.
+     - Add an explicit example for |else if|.
+     - C++11 updates.
+    
+    Update Objective-C style guide to 2.36:
+     - Remove requirement to list @dynamic implementations.
+     - Remove requirement to never synthesize CFType properties, since they may
+       be retained on 10.6.
+     - Use __weak and __strong type declaration modifiers rather than comments.
+     - Make the copyright/license information consistent.
+     - An example initializer comment revealed too much about the implementation.
+     - Correct spelling mistakes.
+     - Fix names that didn't follow Cocoa conventions.
+     - Fix examples to conform to style.
+     - Add a section about no braces for empty interfaces.
+     - Add a section about automatically synthesized instance variables.
+     - Codify avoidance of accessors in -init and -dealloc methods.
+     - Changes for the 80-column rule.
+     - Weaken the language around object ownership type qualifiers.
+     - Document the rules for formatting blocks.
+    
+    Update JavaScript style guide to 2.27:
+     - Introduce EcmaScript 5 Strict verbiage.
+     - Add a note about private constructors.
+     - Simplify explanations about JSDoc comments.
+     - Sort the JSDoc tags.
+     - Remove the sections about type-checking now that the JSDoc tags and JS
+       types are no longer one table.
+     - Convert <tt> to <code>, because the XSL processor eats <tt>.
+     - Add @suppress.
+     - Mark @inheritDoc deprecated in favor of @override.
+     - Add a section about inner classes and enums being defined in the same file
+       as the top-level class they are defined on.
+    
+    Update Python style guide to 2.28:
+     - Change "Naming" summary to match body.
+     - Make the prohibition against backslash line continuation explicit.
+     - Update the TODO section to match the C++ style guide.
+     - Declare Python code without a shebang line to be stylish.
+     - Clarify rules on function docstrings.
+     - Fix spelling errors.
+     - Update with styleguide.xsl 1.33.
+    
+    Update styleguide.xsl to 1.33:
+     - Clean up style guide JS.
+     - Links to anchor tags auto-expand.
+    Update C++ style guide to 3.188:
+     - Revise "Smart Pointers" section.
+     - Clarify that it's OK to have spaces after '#' in a preprocessor directive,
+       even though '#' itself must not be indented.
+     - Revise "TODO Comments" section.
+     - Fix wording.
+     - Explicitly recommend foo.h be the first file #included by foo_test.cc.
+    
+    Update Objective-C style guide to 2.24:
+     - Clarify the spacing of @property declarations.
+     - Add "Overridden NSObject Method Placement" section.
+     - Explicitly permit blank lines around @interface, @implementation, and @end.
+    
+    Update JavaScript style guide to 2.20:
+     - Provide additional guidance with respect to the compiler.
+     - Add {function(new:Type)} as a type syntax for constructors of Type.
+     - Revise "Method and Function Comments" section.
+     - Harmonize text and example in the "Passing Anonymous Functions" section.
+     - Explicitly state that @param and @return types must be enclosed in braces.
+     - Add documentation on the UNKNOWN type.
+     - Replace a CODE_SNIPPET with BAD_CODE_SNIPPET in the "Internet Explorer's
+       Conditional Comments" section.
+     - Remove a redundant "Expand for more information" in the "Naming" section
+       and fully spell out "information" in the "Code Formatting" section.
+     - Provide a positive example in the "Multiline string literals" section.
+     - Provide guidance for indentation within nested functions.
+    
+    Update Python style guide to 2.20:
+     - Clarify shebang rule.
+    New file google_python_style.vim.
+    Update C++ style guide to 3.180:
+     - Remove comment about naming macros like enums.
+     - Move a bad code snippet from a CODE_SNIPPET to a BAD_CODE_SNIPPET element.
+    
+    Update Python style guide to 2.18:
+     - Clarify the syntax for import statements.
+    
+    Update styleguide.xsl to 1.31:
+     - Substitute underscore for apostrophe in anchor names.
+    Update C++ style guide to 3.171:
+     - Add a section to specify deprecation comments.
+    Update Python style guide with styleguide.xsl r51.
+    Update C++ style guide to 3.154:
+     - Add call_traits to the set of allowed boost libraries.
+     - Add an exception to the rule against default arguments to cover the useful
+       case of simulating variadic functions.
+     - Discourage the usage of ## in macros.
+     - Clarify example: it's acceptable to declare two parameters on one line even
+       if they don't all fit on that one line.
+     - Fix a typo ("make use symmetric spacing").
+     - Change bitwise AND to logical AND in a condition.
+    
+    Update styleguide.xsl to 1.27:
+     - Change a bunch of SPANs into DIVs.
+    
+    Update Python style guide to 2.15:
+     - Apply styleguide.xsl 1.27, changing a bunch of SPANs into DIVs.
+    Update C++ style guide to 3.146:
+     - Make the messaging on DISALLOW_EVIL_CONSTRUCTORS more clear that we should
+       not be rewriting old code but should simply prefer DISALLOW_COPY_AND_ASSIGN
+       on new code.
+     - s/Initializer Lists/Constructor Initializer Lists/ since people search for
+       this based on knowing it's part of the constructor, but forget the precise
+       name.
+     - Allow data members in a test fixture to be private.
+     - Loosen restrictions on globals.
+     - Add explicit guideline for nested namespace formatting.
+     - Strengthen the prohibition against operator overloading for operator&.
+     - Add recommendation for "_" over "-" in file names.
+     - Revise the "Copy Constructors" section for brevity and clarity.  Emphasize
+       preference for standard over nonstandard copy operations.
+     - Weaken the wording at the top of the "Doing Work in Constructors" section,
+       making it clear that Init() methods are not absolutely required for
+       non-trivial initialization.
+     - Fix minor typos and grammatical errors.
+    
+    Update Objective-C style guide to 2.14:
+     - Add the Rule of Four for indenting parameters.  Allow either of two forms
+       for formatting methods with short first keywords.
+     - Update the guidance on BOOL vs. bool.
+     - Whitespace cleanup.
+    
+    Update Python style guide to 2.14:
+     - Consolidate discussion of the string module, apply, map, filter, and reduce
+       into a single section.
+     - Make it explicit that functions and classes can be nested inside methods.
+    M    pyguide.html
+    M    pyguide.html
+    A    pyguide.html
+    change some file path
+    move other guides into directory
+    Add vimscript style guide and "heavy" style guide.
+    change some file path
+    move other guides into directory
+    Add Google C++ Eclipse style config.
+    
+    Patch by Alexei Svitkine <asvitkine@chromium.org>
+    
+    Review URL: https://codereview.appspot.com/6353053/
+    change some file path
+    move other guides into directory
+    Checked in scrubbed version of Google XML Document Format Style Guide
+    (Internal version at go/xmlstyle)
+    change some file path
+    move other guides into directory
+    Adding first iteration of the JSON-C Style Guide for JSON APIs
+    change some file path
+    move other guides into directory
+    Adding licensing footer
+    Grammatical updates to JSON-C Style Guide. New CSS for HTML version of JSON-C Style Guide.
+    Adding first iteration of the JSON-C Style Guide for JSON APIs
+    change some file path
+    move other guides into directory
+    New file google_python_style.vim.
+    change some file path
+    move other guides into directory
+    Adding first iteration of the JSON-C Style Guide for JSON APIs
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 4.45.
+    
+    Much of the guide has been refactored, rewritten, and revised.
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Update C++ style guide to 3.199:
+     - Update an example to omit the blank line between C and C++ #includes.
+     - Rewrite the paragraph about #include ordering.
+     - Clarify namespace closing comments.
+     - Discourage const references for input arguments which are aliased beyond
+       the scope of the function call.
+     - Replace all '&' with '&amp;'.
+     - Clarify that interfaces must have virtual destructors.
+     - Add an explicit example for |else if|.
+     - C++11 updates.
+    
+    Update Objective-C style guide to 2.36:
+     - Remove requirement to list @dynamic implementations.
+     - Remove requirement to never synthesize CFType properties, since they may
+       be retained on 10.6.
+     - Use __weak and __strong type declaration modifiers rather than comments.
+     - Make the copyright/license information consistent.
+     - An example initializer comment revealed too much about the implementation.
+     - Correct spelling mistakes.
+     - Fix names that didn't follow Cocoa conventions.
+     - Fix examples to conform to style.
+     - Add a section about no braces for empty interfaces.
+     - Add a section about automatically synthesized instance variables.
+     - Codify avoidance of accessors in -init and -dealloc methods.
+     - Changes for the 80-column rule.
+     - Weaken the language around object ownership type qualifiers.
+     - Document the rules for formatting blocks.
+    
+    Update JavaScript style guide to 2.27:
+     - Introduce EcmaScript 5 Strict verbiage.
+     - Add a note about private constructors.
+     - Simplify explanations about JSDoc comments.
+     - Sort the JSDoc tags.
+     - Remove the sections about type-checking now that the JSDoc tags and JS
+       types are no longer one table.
+     - Convert <tt> to <code>, because the XSL processor eats <tt>.
+     - Add @suppress.
+     - Mark @inheritDoc deprecated in favor of @override.
+     - Add a section about inner classes and enums being defined in the same file
+       as the top-level class they are defined on.
+    
+    Update Python style guide to 2.28:
+     - Change "Naming" summary to match body.
+     - Make the prohibition against backslash line continuation explicit.
+     - Update the TODO section to match the C++ style guide.
+     - Declare Python code without a shebang line to be stylish.
+     - Clarify rules on function docstrings.
+     - Fix spelling errors.
+     - Update with styleguide.xsl 1.33.
+    
+    Update styleguide.xsl to 1.33:
+     - Clean up style guide JS.
+     - Links to anchor tags auto-expand.
+    Update C++ style guide to 3.188:
+     - Revise "Smart Pointers" section.
+     - Clarify that it's OK to have spaces after '#' in a preprocessor directive,
+       even though '#' itself must not be indented.
+     - Revise "TODO Comments" section.
+     - Fix wording.
+     - Explicitly recommend foo.h be the first file #included by foo_test.cc.
+    
+    Update Objective-C style guide to 2.24:
+     - Clarify the spacing of @property declarations.
+     - Add "Overridden NSObject Method Placement" section.
+     - Explicitly permit blank lines around @interface, @implementation, and @end.
+    
+    Update JavaScript style guide to 2.20:
+     - Provide additional guidance with respect to the compiler.
+     - Add {function(new:Type)} as a type syntax for constructors of Type.
+     - Revise "Method and Function Comments" section.
+     - Harmonize text and example in the "Passing Anonymous Functions" section.
+     - Explicitly state that @param and @return types must be enclosed in braces.
+     - Add documentation on the UNKNOWN type.
+     - Replace a CODE_SNIPPET with BAD_CODE_SNIPPET in the "Internet Explorer's
+       Conditional Comments" section.
+     - Remove a redundant "Expand for more information" in the "Naming" section
+       and fully spell out "information" in the "Code Formatting" section.
+     - Provide a positive example in the "Multiline string literals" section.
+     - Provide guidance for indentation within nested functions.
+    
+    Update Python style guide to 2.20:
+     - Clarify shebang rule.
+    Update C++ style guide to 3.180:
+     - Remove comment about naming macros like enums.
+     - Move a bad code snippet from a CODE_SNIPPET to a BAD_CODE_SNIPPET element.
+    
+    Update Python style guide to 2.18:
+     - Clarify the syntax for import statements.
+    
+    Update styleguide.xsl to 1.31:
+     - Substitute underscore for apostrophe in anchor names.
+    Update C++ style guide to 3.178:
+     - Fix grammatical and spelling errors, and revise awkward phrasing.
+    Update C++ style guide to 3.175:
+     - Fix typo.
+    Update C++ style guide to 3.174:
+     - Add leading blank line exception.
+     - Improve guidance for function definition comments.
+     - Tweak class comment example to not violate type naming guidelines.
+    
+    Update Objective-C style guide to 2.21:
+     - Prohibit +new.
+    
+    Update JavaScript style guide to 2.9:
+     - Add new "Function Declarations Within Blocks" section.
+     - Add new "Internet Explorer's Conditional Comments" section.
+     - Add new "Alias long type names to improve readability" section.
+     - Add @lends.
+    Update C++ style guide to 3.171:
+     - Add a section to specify deprecation comments.
+    Update C++ style guide to 3.170:
+     - Allow overloading a function judiciously.
+     - _unittest and _regtest are deprecated.
+     - Document C++0x policy.
+     - Allow namespace aliases in .h files when inside namespaces.
+     - Give examples for and against parentheses with return.
+     - Update set of allowed Boost headers.
+     - Add a caveat to the forward-declaration section, mentioning impicit
+       constructors.
+    Update C++ style guide to 3.161:
+     - Forbid the use of operator synonyms such as "and."
+     - Specify the naming convention (OrDie) to use when a function has
+       crash-on-failure semantics.
+     - Allow static const data members to be non-private.
+     - Specify placement of friend declarations.
+     - Require each file to include headers that they use.
+    
+    Update Objective-C style guide to 2.18:
+     - Prefer @optional to informal protocols when possible.
+     - Specify formatting for invoking methods.
+     - Require that -dealloc be easy to review.
+    Update C++ style guide to 3.154:
+     - Add call_traits to the set of allowed boost libraries.
+     - Add an exception to the rule against default arguments to cover the useful
+       case of simulating variadic functions.
+     - Discourage the usage of ## in macros.
+     - Clarify example: it's acceptable to declare two parameters on one line even
+       if they don't all fit on that one line.
+     - Fix a typo ("make use symmetric spacing").
+     - Change bitwise AND to logical AND in a condition.
+    
+    Update styleguide.xsl to 1.27:
+     - Change a bunch of SPANs into DIVs.
+    
+    Update Python style guide to 2.15:
+     - Apply styleguide.xsl 1.27, changing a bunch of SPANs into DIVs.
+    Update C++ style guide to 3.146:
+     - Make the messaging on DISALLOW_EVIL_CONSTRUCTORS more clear that we should
+       not be rewriting old code but should simply prefer DISALLOW_COPY_AND_ASSIGN
+       on new code.
+     - s/Initializer Lists/Constructor Initializer Lists/ since people search for
+       this based on knowing it's part of the constructor, but forget the precise
+       name.
+     - Allow data members in a test fixture to be private.
+     - Loosen restrictions on globals.
+     - Add explicit guideline for nested namespace formatting.
+     - Strengthen the prohibition against operator overloading for operator&.
+     - Add recommendation for "_" over "-" in file names.
+     - Revise the "Copy Constructors" section for brevity and clarity.  Emphasize
+       preference for standard over nonstandard copy operations.
+     - Weaken the wording at the top of the "Doing Work in Constructors" section,
+       making it clear that Init() methods are not absolutely required for
+       non-trivial initialization.
+     - Fix minor typos and grammatical errors.
+    
+    Update Objective-C style guide to 2.14:
+     - Add the Rule of Four for indenting parameters.  Allow either of two forms
+       for formatting methods with short first keywords.
+     - Update the guidance on BOOL vs. bool.
+     - Whitespace cleanup.
+    
+    Update Python style guide to 2.14:
+     - Consolidate discussion of the string module, apply, map, filter, and reduce
+       into a single section.
+     - Make it explicit that functions and classes can be nested inside methods.
+    Update C++ style guide to 3.133:
+     - Clarify that a "very strong convention" is, in fact, only very strong
+       within Google code
+     - Update the style guide with an additional naming possibility for enums:
+       kEnumName
+     - Reword the summary for the section on header file dependencies
+     - Simplify wording regarding static variables
+    
+    Update Objective-C style guide to 2.11:
+     - Provide guidance on when to use #import and #include
+     - Display revision in style guide
+    
+    Update styleguide.xsl with a hint of things to come
+    
+    Set svn:eol-style on xmlstyle.html
+    Update C++ style guide to 3.127:
+    - Clarification on curly braces
+    - Link to cpplint.py
+    Update C++ style guide to 3.124:
+     - Include revision number
+     - Link to google-c-style.el
+    Update C++ style guide:
+     - Allow unsigned types where defined overflow behavior is desired
+     - Clarify that a function-closing } is permitted on the same line as an
+       opening { for one-line functions
+    
+    Set svn:eol-style = native on google-c-style.el
+    Update C++ style guide:
+     - Change list of permitted Boost libraries
+     - Permit one space before // in a new {scope}
+     - Grammar fix!
+    
+    Update Objective-C style guide:
+     - Link spacing changes only
+    Update title and list of approved Boost libraries.
+    Initial public release of the Google C++ Style Guide
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Adding back style sheet link (dropped after file re-generation).
+    Sync.
+    Updated validator reference.
+    Initial release
+    change some file path
+    move other guides into directory
+    initial commit for java style guide
+    change some file path
+    move other guides into directory
+    Update look and feel of the style guides
+    Adding licensing footer
+    Grammatical updates to JSON-C Style Guide. New CSS for HTML version of JSON-C Style Guide.
+    Adding an HTML version of the JSON-C Style Guide
+    change some file path
+    move other guides into directory
+    fixing a broken character
+    fixing links
+    fixing a link to the (internal only) externs
+    fixing a link to the style doc
+    small css fix
+    First add of the Google AngularJS Style Guide
+    change some file path
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Update JavaScript style guide to 2.28:
+     - Fix typo.
+    
+    Update Python style guide to 2.29:
+     - Fix indirect setter.
+    Update C++ style guide to 3.199:
+     - Update an example to omit the blank line between C and C++ #includes.
+     - Rewrite the paragraph about #include ordering.
+     - Clarify namespace closing comments.
+     - Discourage const references for input arguments which are aliased beyond
+       the scope of the function call.
+     - Replace all '&' with '&amp;'.
+     - Clarify that interfaces must have virtual destructors.
+     - Add an explicit example for |else if|.
+     - C++11 updates.
+    
+    Update Objective-C style guide to 2.36:
+     - Remove requirement to list @dynamic implementations.
+     - Remove requirement to never synthesize CFType properties, since they may
+       be retained on 10.6.
+     - Use __weak and __strong type declaration modifiers rather than comments.
+     - Make the copyright/license information consistent.
+     - An example initializer comment revealed too much about the implementation.
+     - Correct spelling mistakes.
+     - Fix names that didn't follow Cocoa conventions.
+     - Fix examples to conform to style.
+     - Add a section about no braces for empty interfaces.
+     - Add a section about automatically synthesized instance variables.
+     - Codify avoidance of accessors in -init and -dealloc methods.
+     - Changes for the 80-column rule.
+     - Weaken the language around object ownership type qualifiers.
+     - Document the rules for formatting blocks.
+    
+    Update JavaScript style guide to 2.27:
+     - Introduce EcmaScript 5 Strict verbiage.
+     - Add a note about private constructors.
+     - Simplify explanations about JSDoc comments.
+     - Sort the JSDoc tags.
+     - Remove the sections about type-checking now that the JSDoc tags and JS
+       types are no longer one table.
+     - Convert <tt> to <code>, because the XSL processor eats <tt>.
+     - Add @suppress.
+     - Mark @inheritDoc deprecated in favor of @override.
+     - Add a section about inner classes and enums being defined in the same file
+       as the top-level class they are defined on.
+    
+    Update Python style guide to 2.28:
+     - Change "Naming" summary to match body.
+     - Make the prohibition against backslash line continuation explicit.
+     - Update the TODO section to match the C++ style guide.
+     - Declare Python code without a shebang line to be stylish.
+     - Clarify rules on function docstrings.
+     - Fix spelling errors.
+     - Update with styleguide.xsl 1.33.
+    
+    Update styleguide.xsl to 1.33:
+     - Clean up style guide JS.
+     - Links to anchor tags auto-expand.
+    Update C++ style guide to 3.188:
+     - Revise "Smart Pointers" section.
+     - Clarify that it's OK to have spaces after '#' in a preprocessor directive,
+       even though '#' itself must not be indented.
+     - Revise "TODO Comments" section.
+     - Fix wording.
+     - Explicitly recommend foo.h be the first file #included by foo_test.cc.
+    
+    Update Objective-C style guide to 2.24:
+     - Clarify the spacing of @property declarations.
+     - Add "Overridden NSObject Method Placement" section.
+     - Explicitly permit blank lines around @interface, @implementation, and @end.
+    
+    Update JavaScript style guide to 2.20:
+     - Provide additional guidance with respect to the compiler.
+     - Add {function(new:Type)} as a type syntax for constructors of Type.
+     - Revise "Method and Function Comments" section.
+     - Harmonize text and example in the "Passing Anonymous Functions" section.
+     - Explicitly state that @param and @return types must be enclosed in braces.
+     - Add documentation on the UNKNOWN type.
+     - Replace a CODE_SNIPPET with BAD_CODE_SNIPPET in the "Internet Explorer's
+       Conditional Comments" section.
+     - Remove a redundant "Expand for more information" in the "Naming" section
+       and fully spell out "information" in the "Code Formatting" section.
+     - Provide a positive example in the "Multiline string literals" section.
+     - Provide guidance for indentation within nested functions.
+    
+    Update Python style guide to 2.20:
+     - Clarify shebang rule.
+    Update JavaScript style guide to 2.11:
+     - Fix r62, which was applied incorrectly.
+    Fix wrong number of braces.
+    
+    Thanks to wdscxsj@gmail.com for pointing this out.
+    Update C++ style guide to 3.174:
+     - Add leading blank line exception.
+     - Improve guidance for function definition comments.
+     - Tweak class comment example to not violate type naming guidelines.
+    
+    Update Objective-C style guide to 2.21:
+     - Prohibit +new.
+    
+    Update JavaScript style guide to 2.9:
+     - Add new "Function Declarations Within Blocks" section.
+     - Add new "Internet Explorer's Conditional Comments" section.
+     - Add new "Alias long type names to improve readability" section.
+     - Add @lends.
+    Update JavaScript style guide to 2.3:
+     - Clarify the semantics of @private and @protected, in particular how they
+       differ from the expectations of users of C++ and Java.
+    Added JavaScript style guide
+    change some file path
+    move other guides into directory
+    java style guide and eclipse configuration update
+    Adding config files for formatting for IntelliJ and Eclipse
+    change some file path
+    move other guides into directory
+    Add autoload magic comments for the functions exposed by google-c-style.
+    
+    This should make packaged versions of google-c-style (like from MELPA)
+    provide the symbols without doing explicit 'require.
+    
+    Patch by Kimmo Kinnunen <kkinnunen@nvidia.com>.
+    Update google-c-style.el to #33.
+    Review URL: https://codereview.appspot.com/8717044
+    Update google-c-style.el to #6:
+    - Deal with if/for/while better in multi-line expressions.
+    Update google-c-style.el to #4:
+    - Deal with case where the previous line ends with an open parenthesis.
+    Update C++ style guide:
+     - Allow unsigned types where defined overflow behavior is desired
+     - Clarify that a function-closing } is permitted on the same line as an
+       opening { for one-line functions
+    
+    Set svn:eol-style = native on google-c-style.el
+    Open-sourcing our emacs c-mode style rules.
+    change some file path
+    move other guides into directory
+    Adding config files for formatting for IntelliJ and Eclipse
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 4.45.
+    
+    Much of the guide has been refactored, rewritten, and revised.
+    change some file path
+    move other guides into directory
+    java style guide update: presentation
+    java style guide and eclipse configuration update
+    java style guide expand TOC
+    initial commit for java style guide
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Update C++ style guide to 3.231:
+     - Clarify that sentence-like non-sentence comments are permitted.
+     - Note that older code with incorrect #include ordering should be fixed.
+     - Revamp the section on default function arguments.
+     - Avoid explicitly recommending Init() methods.
+     - C++11: permit "auto".
+     - C++11: permit ">>" in place of "> >".
+     - C++11: permit range-based "for".
+     - C++11: permit variadic macros (already permitted as a C++03 extension).
+     - C++11: permit "LL" and "ULL" literal suffixes (already permitted as a C++03
+       extension).
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - C++11: permit new features in <algorithm> and the portion of <numeric> that
+       does not require initializer lists.
+     - Revise rules on forward declarations: explicitly forbid forward-declared
+       functions, do not mandate forward declarations, discourage forward-declared
+       templates.
+     - Remove the rule requiring "const" qualifiers for member functions to be
+       on the same line as the closing parenthesis of the parameter list.
+     - Fix typo: "unnamed namespaces."
+     - C++11: permit local types as template parameters.
+     - Fix typo: "unfamiliar."
+     - Relax RTTI rules to permit its use, but warn about its abuse.
+     - C++11: permit nullptr and nullptr_t. Revise text referring to NULL to refer
+       more generically to null pointers.
+     - Remove the "don't go crazy with const" rule.
+     - Fix typo: "dir/foo2" should bee "dir2/foo2."
+     - Remove reference to a specific GCC version.
+    
+    Update Objective-C style guide to 2.48:
+     - Revise method declaration and invocation formatting rules for long names.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required. Top-of-file
+       comments are not required.
+     - Fix dead link in the "nil Checks" section.
+     - Cover ARC.
+     - Specify that @private is only required for instance variables in header
+       files.
+     - Permit NSNumber literals.
+     - Change the naming convention for instance variables from trailing underscore
+       to leading underscore, allowing a wide exception for existing code and
+       projects.
+     - Fix description of BOOL with respect to its signedness.
+    
+    Update Python style guide to 2.45:
+     - Recommend "pylint: disable" over "pylint: disable-msg."
+     - Fix case-sensitive anchor.
+     - Provide a better explanation of the problems with catch-all "except:."
+     - Permit "map" and "filter" in absence of inlined lambdas.
+    
+    Update JavaScript style guide to 2.64:
+     - Clarify rules for requiring and providing inner dependencies on classes.
+     - Clarify semicolons for functions.
+     - Note proper namespace and filename casing.
+     - Fix typos: "@extends."
+     - Permit parentheses to be omitted on unions.
+     - Don't require method descriptions when obvious.
+     - "in" is a keyword, put it in <code>.
+     - New "Aliasing with goog.scope" section.
+     - Rewrite the "Constants" section.
+     - Remove the recommendation to use join() to build strings.
+     - Add the "@expose" annotation.
+     - Fix the "@suppress" example.
+     - Remove reference alternate cast syntax.
+     - Reflect the revised copyright and author line policy: copyright notices are
+       not required, but license boilerplate may still be used (and generally
+       contains a copyright notice). Author lines are not required.
+     - Say that "use strict" is not required.
+     - Fix links to "optional" section.
+     - Rewrite "JavaScript Types" section.
+     - Fix typos: "parameterizes," "converted."
+     - Prefer in-constructor field initialization.
+     - Add a section on "delete" and null-assignment.
+     - Add a note about optional JSDoc comments on enum values.
+     - State explicitly that dot operators belong at the ends of lines.
+     - Add "@dict" and "@struct" annotations.
+     - Add links to the JavaScript Types section.
+     - Require (rather than encourage) compiling.
+    
+    Update HTML/CSS style guide to 2.19:
+     - Rephrased quotation guidelines.
+     - Updated W3C I18N article reference.
+     - Fixed revision number.
+    
+    Update styleguide.xsl to 1.34:
+     - Fix error in RefreshVisibilityFromHashParam when a URL fragment points to a
+       named anchor within a section, as used by the JavaScript style guide.
+    Update C++ style guide to 3.199:
+     - Update an example to omit the blank line between C and C++ #includes.
+     - Rewrite the paragraph about #include ordering.
+     - Clarify namespace closing comments.
+     - Discourage const references for input arguments which are aliased beyond
+       the scope of the function call.
+     - Replace all '&' with '&amp;'.
+     - Clarify that interfaces must have virtual destructors.
+     - Add an explicit example for |else if|.
+     - C++11 updates.
+    
+    Update Objective-C style guide to 2.36:
+     - Remove requirement to list @dynamic implementations.
+     - Remove requirement to never synthesize CFType properties, since they may
+       be retained on 10.6.
+     - Use __weak and __strong type declaration modifiers rather than comments.
+     - Make the copyright/license information consistent.
+     - An example initializer comment revealed too much about the implementation.
+     - Correct spelling mistakes.
+     - Fix names that didn't follow Cocoa conventions.
+     - Fix examples to conform to style.
+     - Add a section about no braces for empty interfaces.
+     - Add a section about automatically synthesized instance variables.
+     - Codify avoidance of accessors in -init and -dealloc methods.
+     - Changes for the 80-column rule.
+     - Weaken the language around object ownership type qualifiers.
+     - Document the rules for formatting blocks.
+    
+    Update JavaScript style guide to 2.27:
+     - Introduce EcmaScript 5 Strict verbiage.
+     - Add a note about private constructors.
+     - Simplify explanations about JSDoc comments.
+     - Sort the JSDoc tags.
+     - Remove the sections about type-checking now that the JSDoc tags and JS
+       types are no longer one table.
+     - Convert <tt> to <code>, because the XSL processor eats <tt>.
+     - Add @suppress.
+     - Mark @inheritDoc deprecated in favor of @override.
+     - Add a section about inner classes and enums being defined in the same file
+       as the top-level class they are defined on.
+    
+    Update Python style guide to 2.28:
+     - Change "Naming" summary to match body.
+     - Make the prohibition against backslash line continuation explicit.
+     - Update the TODO section to match the C++ style guide.
+     - Declare Python code without a shebang line to be stylish.
+     - Clarify rules on function docstrings.
+     - Fix spelling errors.
+     - Update with styleguide.xsl 1.33.
+    
+    Update styleguide.xsl to 1.33:
+     - Clean up style guide JS.
+     - Links to anchor tags auto-expand.
+    Update C++ style guide to 3.188:
+     - Revise "Smart Pointers" section.
+     - Clarify that it's OK to have spaces after '#' in a preprocessor directive,
+       even though '#' itself must not be indented.
+     - Revise "TODO Comments" section.
+     - Fix wording.
+     - Explicitly recommend foo.h be the first file #included by foo_test.cc.
+    
+    Update Objective-C style guide to 2.24:
+     - Clarify the spacing of @property declarations.
+     - Add "Overridden NSObject Method Placement" section.
+     - Explicitly permit blank lines around @interface, @implementation, and @end.
+    
+    Update JavaScript style guide to 2.20:
+     - Provide additional guidance with respect to the compiler.
+     - Add {function(new:Type)} as a type syntax for constructors of Type.
+     - Revise "Method and Function Comments" section.
+     - Harmonize text and example in the "Passing Anonymous Functions" section.
+     - Explicitly state that @param and @return types must be enclosed in braces.
+     - Add documentation on the UNKNOWN type.
+     - Replace a CODE_SNIPPET with BAD_CODE_SNIPPET in the "Internet Explorer's
+       Conditional Comments" section.
+     - Remove a redundant "Expand for more information" in the "Naming" section
+       and fully spell out "information" in the "Code Formatting" section.
+     - Provide a positive example in the "Multiline string literals" section.
+     - Provide guidance for indentation within nested functions.
+    
+    Update Python style guide to 2.20:
+     - Clarify shebang rule.
+    Update C++ style guide to 3.174:
+     - Add leading blank line exception.
+     - Improve guidance for function definition comments.
+     - Tweak class comment example to not violate type naming guidelines.
+    
+    Update Objective-C style guide to 2.21:
+     - Prohibit +new.
+    
+    Update JavaScript style guide to 2.9:
+     - Add new "Function Declarations Within Blocks" section.
+     - Add new "Internet Explorer's Conditional Comments" section.
+     - Add new "Alias long type names to improve readability" section.
+     - Add @lends.
+    Update Objective-C style guide to 2.20:
+     - Allow dot notation for simple property access.
+     - Clarify spacing around category definitions and parameters that take
+       protocols.
+    Update C++ style guide to 3.161:
+     - Forbid the use of operator synonyms such as "and."
+     - Specify the naming convention (OrDie) to use when a function has
+       crash-on-failure semantics.
+     - Allow static const data members to be non-private.
+     - Specify placement of friend declarations.
+     - Require each file to include headers that they use.
+    
+    Update Objective-C style guide to 2.18:
+     - Prefer @optional to informal protocols when possible.
+     - Specify formatting for invoking methods.
+     - Require that -dealloc be easy to review.
+    Update C++ style guide to 3.146:
+     - Make the messaging on DISALLOW_EVIL_CONSTRUCTORS more clear that we should
+       not be rewriting old code but should simply prefer DISALLOW_COPY_AND_ASSIGN
+       on new code.
+     - s/Initializer Lists/Constructor Initializer Lists/ since people search for
+       this based on knowing it's part of the constructor, but forget the precise
+       name.
+     - Allow data members in a test fixture to be private.
+     - Loosen restrictions on globals.
+     - Add explicit guideline for nested namespace formatting.
+     - Strengthen the prohibition against operator overloading for operator&.
+     - Add recommendation for "_" over "-" in file names.
+     - Revise the "Copy Constructors" section for brevity and clarity.  Emphasize
+       preference for standard over nonstandard copy operations.
+     - Weaken the wording at the top of the "Doing Work in Constructors" section,
+       making it clear that Init() methods are not absolutely required for
+       non-trivial initialization.
+     - Fix minor typos and grammatical errors.
+    
+    Update Objective-C style guide to 2.14:
+     - Add the Rule of Four for indenting parameters.  Allow either of two forms
+       for formatting methods with short first keywords.
+     - Update the guidance on BOOL vs. bool.
+     - Whitespace cleanup.
+    
+    Update Python style guide to 2.14:
+     - Consolidate discussion of the string module, apply, map, filter, and reduce
+       into a single section.
+     - Make it explicit that functions and classes can be nested inside methods.
+    Update Objective-C style guide to 2.12:
+     - Refer to the correct section on avoiding exceptions
+    Update C++ style guide to 3.133:
+     - Clarify that a "very strong convention" is, in fact, only very strong
+       within Google code
+     - Update the style guide with an additional naming possibility for enums:
+       kEnumName
+     - Reword the summary for the section on header file dependencies
+     - Simplify wording regarding static variables
+    
+    Update Objective-C style guide to 2.11:
+     - Provide guidance on when to use #import and #include
+     - Display revision in style guide
+    
+    Update styleguide.xsl with a hint of things to come
+    
+    Set svn:eol-style on xmlstyle.html
+    space comments correctly on code example
+    Add section on properties from dmaclach, remove some tabs.
+    Update C++ style guide:
+     - Change list of permitted Boost libraries
+     - Permit one space before // in a new {scope}
+     - Grammar fix!
+    
+    Update Objective-C style guide:
+     - Link spacing changes only
+    fix typo
+    open-sourcing Google's objective-C/C++ style guide.
+    change some file path
+    translation is complete until Semicolon
+    Update look and feel of the style guides
+    Initial public release of the Google C++ Style Guide
+    change some file path
+    move other guides into directory
+    java style guide update: presentation
+    java style guide expand TOC
+    initial commit for java style guide
+    change some file path
+    move other guides into directory
+    Fix typo in vimscriptfull guide: addmatch->matchadd
+    Add vimscript style guide and "heavy" style guide.
+    change some file path
+    move other guides into directory
+    Update the Common Lisp Style Guide to 1.28.
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Update Common Lisp Style Guide to 1.22:
+    * tweak some typos and bad formatting
+    * refer to ASDF3's UIOP rather than its predecessors.
+    Update C++ style guide to 3.260:
+     - Add boost::bimap to the list of allowed Boost libraries.
+     - C++11: remove mention of constexpr.
+     - Remove noun/verb naming rules, and consolidate "General Naming Rules".
+     - C++11: allow variadic templates.
+     - Revise guidance on function definition comments.
+     - Clarify that one space is sufficient before trailing /* */ comments.
+     - C++11: allow alias templates.
+     - C++11: allow <array>, deprecate Boost array.
+     - C++11: allow unique_ptr, deprecate Boost pointer container.
+     - C++11: allow braced initializer lists.
+    
+    Update Objective-C style guide to 2.56:
+     - Add details on constant declarations to clarify naming and scope issues.
+     - Update link to Apple's Objective-C guide.
+     - Allow left-aligning multi-block method invocation segments.
+     - Add section on container literals.
+    
+    Update Python style guide to 2.54:
+     - Allow str.format in addition to the % operator.
+     - Allow #!/usr/bin/python2 and #!/usr/bin/python3.
+     - Move the closing brace example from column 4 to 0.
+     - Remove the requirement to use named parameters for arguments with defaults.
+    
+    Update HTML/CSS style guide to 2.23:
+     - No changes.
+    
+    Update JavaScript style guide to 2.82:
+     - Fix typos, whitespace, and character entities.
+     - Include property descriptions in the clause about omitting obvious comments.
+     - Make file overviews optional.
+     - Fix example in "HTML in JSDoc" section.
+     - Remove the semicolon-insertion language from the operators section.
+     - State that complete sentences are recommended but not required.
+     - Document usage of goog.scope to declare new classes.
+    
+    Update Common Lisp style guide to 1.20:
+     - Indicate both variable and function predicates require a "p".
+     - Make the abbreviations rules consistent and in one location.
+     - Don't allow for the use of &AUX.
+     - Allow for "body" and "end" as exceptions to the suffix rule.
+     - Use the TODO convention to mark code that needs to be addressed.
+     - Remove file maintainership requirements, require a description.
+     - Change top-level form requirements to the length of a page.
+     - Remove "don't be clever".
+    Update C++ style guide to 3.245:
+     - Relax the rule for sizeof(varname) vs. sizeof(type).
+     - Allow an exception for nonconst reference parameters where
+       convention dictates their use, such as for swap.
+     - C++11: allow static_assert.
+     - Require non-trivial fall-through between cases in switch
+       statements to be annotated. Trivial fall-through includes
+       consecutive case labels with no intervening code, and no comment
+       is required in these cases.
+     - C++11: allow constexpr.
+     - Revise the "Integer Types" section to note type-width problems.
+     - Clarify that the "arguments on subsequent lines" function call
+       style is acceptable even when the 80-column limit doesn't require
+       it.
+     - Boost: allow part of Polygon.
+     - C++11: allow <tuple>.
+    
+    Update Objective-C style guide to 2.52:
+     - Fix ARC example to not imply the use of @private in .m files.
+     - Add an example to the "Category Names" section.
+     - Require that ARC-using files insert preprocessor directives that
+       generate an error when compiling without ARC.
+     - Fix spacing around the *s in the ARC example per the C++ style
+       guide.
+    
+    Update Python style guide to 2.48:
+     - Allow comments with URLs to exceed 80 characters per line.
+     - Update outdated implicit-line-joining URLs.
+    
+    Update HTML/CSS style guide to 2.21:
+     - Consistent use of title case.
+     - Add new "Declaration Block Separation" section.
+     - Add a CSS example to the "Capitalization" section.
+     - Minor fixes to whitespace.
+    
+    Update JavaScript style to guide to 2.72:
+     - Make it clear that the injunction against aliasing namespaces only
+       applies to local aliases, not goog.scope.
+     - Clarify the style guide's recommendation on array/object literals.
+     - Add documentation on @private {type}, @protected {type}, and
+       @const {type}.
+     - Make JSDoc descriptions required only if not obvious.
+     - Clarify that only private properties and methods need a trailing
+       underscore.
+     - Fix spelling of arv's name.
+    
+    Update Common Lisp style guide to 1.18:
+     - Macro-defining macros are harder to understand for everyone, not
+       just for the "uninitiated." There's no need to condescend.
+    
+    In all of the above style guides:
+     - The guide source is now encoded as UTF-8. The numeric character
+       references have been replaced with raw UTF-8-encoded characters.
+    Google Common Lisp Style Guide, revision 1.17
+    Google Common Lisp Style Guide, revision 1.16
+    Google Common Lisp Style Guide, revision 1.15
+    Google Common Lisp Style Guide updated to 1.13.
+    Google Common Lisp Style Guide, revision 1.12
+    Google Common Lisp Style Guide updated to 1.11.
+    Google Common Lisp Style Guide updated to 1.10,
+    integrating more feedback from inside and outside Google.
+    Manually add stylesheet information (for now) to lispguide.xml.
+    Publish the Google Common Lisp Style Guide, revision 1.8, for public review.
+    change some file path
+    move other guides into directory
+    Update C++ style guide to 3.274:
+     - Change formatting rules of braced initializers.
+     - Permit use of constexpr and allow constexpr global variables.
+     - Allow all C++11 features except for those that are specifically banned.
+     - Fix/add C99 format specifiers for ptrdiff_t and ssize_t.
+     - Add lambda expressions to the list of explicitly banned C++11 features.
+     - Relax "return type is always on the same line as the function name" rule.
+     - Allow unique_ptr, discourage ownership transfer. Allow noncopyable std::move.
+     - Allow system-specific includes after other includes.
+     - Add boost/math/distributions to the set of permitted Boost libraries.
+    
+    Update Objective-C style guide to 2.59:
+     - Use instancetype as return type for example init methods.
+     - Remove invalid +stringWithInt: call.
+     - Remove reference to pre-Objective-C 2.0 declaration requirements.
+     - Remove reference to Objective-C exception macros.
+     - Remove reference to informal protocols as an alternative to optional methods.
+     - Class headers should include comments documenting non-trivial interfaces.
+     - Don't specify that blocks are preferable to methods as callbacks.
+     - Specify "strong" and "weak" as comments for non-Objective-C pointers.
+     - Replace improper reference to ownership of a retained object.
+     - Clarify some aspects of method ordering rules.
+     - Prefixes are required for shared code and optional for applications.
+     - Clarify that nil pointers are safe as receivers, not necessarily parameters.
+     - Clarify that delegate pointers should typically be zeroing weak pointers.
+     - Allow a 100-column limit, except for projects that choose to use 80.
+    
+    Update Python style guide to 2.59:
+     - Add more examples of bad code to the default arguments section.
+     - Allow ''' when ' is used as the single quote within a file.
+     - Remove references to pychecker. Recommend pylint.
+     - Add more examples to the indentation section.
+    
+    Update JavaScript style guide to 2.93:
+     - Add @nocompile.
+     - Fix a few typos.
+     - When wrapping lines, indent more deeply for child expressions.
+     - Document that @const can be used on a constructor.
+     - Update eval section to discourage using eval for RPC.
+     - Update an example to avoid encouraging using numbers as booleans.
+     - Allow for no indentation of @desc jsdoc tags.
+     - Add @public discussion.
+    
+    Update shell style guide to 1.26:
+     - Add a section on style for case statements.
+    
+    Update Common Lisp style guide to 1.23:
+     - fare-matcher was superseded by optima.
+     - Clarify wording regarding DYNAMIC-EXTENT.
+    Initial public release of Shell Style Guide (1.25).
+    change some file path
+    move other guides into directory
+    Restore r105 of Rguide.xml, now with the svn:mime-type property set.
+    Roll back r105.
+    
+    https://google-styleguide.googlecode.com/svn-history/r105/trunk/Rguide.xml
+    does not render as HTML.
+    Update R style guide to current version.
+    change some file path
+    move other guides into directory
+    Add --root flag used for deriving header guard CPP variable.
+    
+    By default, the header guard CPP variable is calculated as the relative
+    path to the directory that contains .git, .hg, or .svn. When this flag
+    is specified, the relative path is calculated from the specified
+    directory.
+    
+    Patch by mazda@chromium.org
+    CR: https://codereview.appspot.com/8630045/
+    change some file path
+    move other guides into directory
+    Update cpplint.py to #409
+    
+    409 - Fixed false positive for access-specifier used with virtual in inheritance.
+    408 - Fixed false positive in determining rvalue parameter types for functions
+          whose return type is on the previous line.
+    407 - Allow different include sections to be separated by anything other than
+          #include.
+    406 - Disable readability/streams warnings in cpplint, to reflect style guide
+          changes.
+    405 - Fixed false positive for whitespace checks with CUDA code.
+    404 - Do not issue cpplint warnings for use of Doxygen-style comments.
+    403 - Allow RValue types that were listed in template-argument-list.
+          Fixed handling of RValue types after pointer parameters.
+    402 - Change the style guide to allow std::forward and associated use of rvalue
+          references.
+    401 - Fixed cpplint crash when checking header guards for filenames containing
+          meta characters.
+    400 - Fixed false positive for alignas() used with anonymous struct or union.
+    399 - Fixed false positive for template function calls with braced constructor.
+    398 - Allow #endif header guard comments to use "/**/" style if there are no
+          "//" comments in the same file.
+    397 - Fixed false positives for DISALLOW macro check position check.
+    396 - Don't treat lambda functions with return value syntax as casts.
+    395 - <skipped>
+    394 - Fixed RValue references for out-of-line inner class constructor
+          declarations.
+    393 - Fixed false positive for redundant override/final by ignoring declarators.
+    392 - Fixed false positive for taking address of a function pointer return value
+          being recognized as taking address of a cast.
+    391 - Version of cpplint that fixes the spacing around the '=' operator.
+    390 - <skipped>
+    389 - Don't warn on non-const reference arguments of out-of-line method
+          definitions.
+    388 - Fixed false positive for "virtual" from virtual base class be interpreted
+          as virtual member function.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/184990043
+    Update cpplint.py to #387:
+    
+    387 - Allow lint warnings on the next line to be suppressed with NOLINTNEXTLINE.
+    386 - Fixed false positive for strcat and strcpy.
+    385 - Fixed false positive for bitwise and on last line of a multi-line
+    384 - Remove unused deprecated testing/base/googletest.h header.
+    383 - Fixed false positive for bitwise and on last line of a multi-line
+          initializer list that ends with closing brace on the same line.
+    382 - Allow header guard warning to be silenced with
+          "// NOLINT(build/header_guard)" comment.
+    381 - Removed check for spaces between "//" and "TODO".
+    380 - Fix typo: Redudnant -> Redundant
+    379 - Added check for redundant "virtual" and "override" function-specifier.
+    378 - Updated missing "explicit" message to match style guide wording
+    377 - Add cpplint check to prevent .cc file inclusions from other packages.
+          These are generally bad and we should prevent regressions like this until
+          proper BUILD layering checks are in place.
+    376 - Silence missing braces warning for conditional statements inside lambdas.
+    375 - Warn about multi-arg constructors being explicit only at highest severity
+          level.
+    374 - Warn about non-single-argument constructors marked explicit.
+    373 - Exclude 'case' from function spacing check.
+    372 - Exclude third party headers such as Python.h from these checks:
+    371 - Fixed false positive for function pointer parameters followed by other
+          parameters.
+    370 - Allow RValue reference for default inline constructor.
+    369 - Fixed false positive for array of references and operator,().
+    368 - Silence named parameter warning for macros.
+    367 - Fixed false positive for duplicate header warning across preprocessor
+          boundaries.
+    366 - Allow rvalue references for constructors and assignment operator.
+    365 - Stop handling DISALLOW_EVIL_CONSTRUCTORS in cpplint.py,
+          since it's going away.
+    364 - Fixed false positive for member function in nested classes.
+    363 - Namespace indentation for cpplint. The C++ style guide enforced that items
+          within a namespace do not receive an extra level of indentation.
+    362 - Fixed false positive for multi-line member functions returning strings.
+    361 - Do not suggest replacement CHECK macros if custom error messages are used.
+    360 - Silence nonconst reference warning for multiline derived functions.
+    359 - Silence non-const reference warnings for derived functions.
+    358 - Added link to developer guide.
+    357 - Remove the partial ban on std::move and related features. More general
+    356 - Fixed false positive for << inside macros.
+    355 - Make _NestingState class public.
+    354 - Fixed false positive for multiline function templates.
+    353 - Fixed false positive for lambda capture.
+    352 - Silence RValue reference warnings that are enclosed in a
+    351 - Do not warn on CR-LF lines if all input lines are uniformly CR-LF.
+    350 - Tweaked the error messages for static mutex with default constructors.
+    349 - Fixed false positive for unnamed parameters in macros.
+    348 - Recognize &&... as RValue references.
+    347 - Use alternative error message for including <ostream>.
+    346 - Fixed false positive for function style template argument.
+    345 - Fixed false positive for braced constructor call inside brackets.
+    344 - Minor spelling and grammar fix.
+    343 - Fixed false positive for non-const reference check inside constructor
+    342 - Fixed cases where rvalue references are not identified correctly:
+    341 - Check that third party header files have some header guard, but do not
+    340 - Don't check header guards in third party files.
+    339 - Instead of treating thread annotations as macro function calls, skip over
+          them in parsing function signatures.  This silences false positives for
+          lambdas with thread annotations.
+    338 - Fixed false positive for deprecated cast where return type of function
+    337 - Fixed false positive for alias-declarations of function pointers.
+    336 - Improved error message for taking address of something dereferenced
+    335 - Added support for C++14 digit separators.
+    334 - Silence long line warnings for JNI.
+    333 - Fixed false positive for constructor calls for rand{} being
+    332 - Elide C++11 raw strings as an empty quoted string instead of
+    331 - Split up long functions in cpplint.py and cpplint_unittest.py
+    330 - Fixed false positive for missing space check around "using operator;"
+    329 - Fixed false positive for indent check around multi-line raw strings.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/125980043
+    Update cpplint.py to #359:
+    
+    359 - Silence non-const reference warnings for derived functions.
+    357 - Remove the partial ban on std::move and related features.
+          More general use of rvalue references is still banned for now.
+    356 - Fixed false positive for << inside macros. Also recognize implicit
+          constructors of the form "Type(Type&& param)".
+    355 - Make _NestingState class public. Also adds a new method
+          NestingState.InAsmBlock, which returns true if the top of the stack
+          is a block containing inline ASM.
+    354 - Fixed false positive for multiline function templates.
+    353 - Fixed false positive for lambda capture.
+    352 - Silence RValue reference warnings that are enclosed in a
+          GOOGLE_ALLOW_RVALUE_REFERENCES_(PUSH|POP) range.
+    351 - Do not warn on CR-LF lines if all input lines are uniformly CR-LF.
+    349 - Fixed false positive for unnamed parameters in macros.
+    348 - Recognize &&... as RValue references.
+    347 - Use alternative error message for including <ostream>.
+    346 - Fixed false positive for function style template argument.
+    345 - Fixed false positive for braced constructor call inside brackets.
+    344 - Minor spelling and grammar fix.
+    343 - Fixed false positive for non-const reference check inside constructor
+          initializer lists.
+    342 - Fixed cases where rvalue references are not identified correctly:
+          - Parameter in a templated function.
+          - Parameter for a single-arg constructor.
+          - Return type in a templated function.
+    338 - Fixed false positive for deprecated cast where return type of
+          function template is const.
+    337 - Fixed false positive for alias-declarations of function pointers.
+    336 - Improved error message for taking address of something dereferenced
+          from a cast.
+    335 - Added support for C++14 digit separators
+          (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3781.pdf).
+          Not sure if the style guide would allow this feature or not, but
+          cpplint must recognize these one way or another to provide accurate
+          error messages.
+    333 - Fixed false positive for constructor calls for rand{} being
+          identified as calls to rand().
+    332 - Elide C++11 raw strings as an empty quoted string instead of an empty
+          string.  This allows us to differentiate blank lines inside raw
+          strings from regular blank lines.
+    331 - Split up long functions in cpplint.py and cpplint_unittest.py.
+          This is a refactoring change with zero change in functionality,
+          the goal is to clean up new warnings.
+    330 - Fixed false positive for missing space check around "using operator;"
+    329 - Fixed false positive for indent check around multi-line raw strings.
+    328 - Added check missing spaces around ||.  This check should have been
+          included in the original CheckSpaces. Added check for &&, and output
+          message for missing space or rvalue reference according to context.
+    327 - Fixed false positive for alias-declaration.
+    326 - Improved accuracy of matching parentheses and angle brackets.
+          Previously, if cpplint was trying to match () pairs, those two
+          characters are the only things that it looked for. This worked
+          reasonably well for everything except <>, which is easily confused
+          with operators.  This change takes all other parentheses into account,
+          and do not count <> characters as angle brackets if they are inside
+          other parenthesized expressions.
+    325 - Fixed handling of multiple raw strings on the same line.
+    324 - Better enforcement that braces are used either around all branches of
+          the condition, or none. Checks for what seem to be multiple statements
+          in an single-line if/else body. Checks for ambigous if/if/else nesting
+          without braces.
+    323 - Fixed false positive for extra space in returning lambdas.
+    322 - Fixed false positive for tokens with "else" prefix being treated as
+          else keyword following a conditional block.
+    321 - Fixed false positive for placement new being treated as deprecated cast.
+    320 - Change lint so it no longer warns about use of std::function and related
+          features (bind, placeholders) now that function/bind is no longer banned.
+    319 - Fixed false positive for alignof and alignas being recognized as casts.
+    318 - Permit std::shared_ptr, std::weak_ptr and std::enable_shared_from_this.
+    317 - Silence deprecated cast warning for templates using function types as
+          the first argument
+    316 - Remove aligned_storage from the list of blacklisted C++11 features.
+    315 - Fixed false positive for casting to pointer types.
+    314 - Do not warn about single-arg constructors with std::initializer_list<>
+          not marked as explicit.
+    313 - Remove lint errors when including <atomic>.
+    312 - Fixed incorrect parsing of multiple block comments on the same line.
+    311 - Fixed nesting state parser for classes in template argument list.
+    310 - Fixed false positive for semicolon after brace for lambdas where there
+          is a newline between lambda-introducer and lambda-declarator.
+    308 - Fixed false positive for global string pointers being treated as string
+          values.
+    307 - Modify cpplint to follow updated style guide on comments in braced
+          initializer lists. In particular, don't warn about missing spaces
+          if the comment is aligned with the next line.
+    306 - Fixed false positive for brace initializer list in ternary expression.
+    305 - Fixed false positive for blank line at start of code block due to elided
+          raw string contents.
+    304 - Add a cpplint.py warning for default captures in lambda expressions.
+    303 - Recognize unordered_map and unordered_set.
+    302 - Fixed false positive for trailing semicolons when lambda-capture spans
+          multiple lines.
+    301 - Fixed false positive for trailing semicolon following lambdas.
+    300 - Fix raw string handling when the next raw string begins on the same line
+          that the previous raw string ends.
+    299 - Fix false C-style cast detection due to trailing "override".
+    298 - Fix false positive for requiring an argument name in a GMock declaration.
+    297 - Fixed false positives for blank line warnings near 'extern "C"' blocks.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/108730043
+    Add an --extensions flag to change valid file extensions.
+    
+    The valid cpplint extensions are .h, .cpp, .cc, .cuh and .cu. It is
+    common for .hpp to be a valid extension to check, the --extensions flag
+    allows the user to specify which extensions they think are valid.
+    
+    Patch by Matt Clarkson <mattyclarkson@gmail.com>
+    A false positive occurs when a user specifies a using declaration for a stream operator:
+    
+        10: using ns::operator<<;
+        file.cpp:10: Missing spaces around << [whitespace/operators] [3]
+    
+    The regular expression has been updated to find this valid use case of the <<
+    text string.
+    
+    Review URL: https://codereview.appspot.com/22190043
+    
+    Patch from Matt Clarkson <mattyclarkson@gmail.com>.
+    Added a --linelength flag so that the default of 80 can be changed.
+    
+    Review URL: https://codereview.appspot.com/22180043
+    
+    Patch from Matt Clarkson <mattyclarkson@gmail.com>.
+    In cpplint, permit Dodxygen C++ annotations, which come after members, e.g.
+      int var; //!< Brief description after the member
+    or
+      int var; ///< Brief description after the member
+    
+    Cf. http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#memberdoc
+    
+    Currently, cpplint accepts comments after members, cf.
+    http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml?showone=Implementation_Comments#Implementation_Comments
+    and it accepts also the doxygen comments of the type "///" (followed by a new line) and
+    "/// " (followed by a comment). Only the Doxygen annotations, which come
+    after members are rejected, which is fixed by this patch.
+    
+    Review URL: https://codereview.appspot.com/14607044
+    
+    Patch from Tobias Burnus <burnus@net-b.de>.
+    Update cpplint.py to #296:
+    
+    - Check for NUL bytes in the file.
+    - Fixed many false positives related to brace initialization.
+    - Improved accuracy of parsing reference template parameters.
+    - Added support for C++11 raw strings.
+    - Added CUDA extensions to those allowed by cpplint.
+    - Added check for incomplete namespaces.
+    - Silence warnings for missing spaces after comma due to elided
+      comments.
+    - Rephrased some messages so that they're actionable.
+    - Fix false positive on namespace qualified function pointer arguments.
+    - Fix false positive for operators which return strings.
+    - Revive the VLOG check.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/17450043
+    Update cpplint.py to #267:
+    
+    - Handle parentheses in CHECK() calls properly.
+    - Fixed multiple false positives where various things like
+      std::fucntion<> or function pointers were being mistaken for casts.
+    - Fixed whitespace warning on placement new.
+    - Fixed multiple false positives related to const references.
+    - Added warning for empty conditional bodies.
+    - Stop advising the use of readdir_r instead of readdir.
+    - Fixed false positive for empty macro arguments.
+    - Fixed false positvie for braced initializer lists.
+    - Don't warn about unnamed parameters in function pointers.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/17400043
+    Update cpplint.py to #242:
+    
+    - Check indentation of public/protected/private keywords.
+    - Remove RTTI warning.
+    - Silence warning about multiple inheritance from global namespace.
+    - Copy ctors don't need "explicit".
+    - Understand "const char* const&" as a const reference.
+    - Remove runtime/sizeof.
+    - Recognize the "catch" keyword.
+    - List C++11 headers
+    - Allow sscanf()
+    - Allow for one extra level of nesting in template class decls.
+    - False positive for semicolons after single-line nameless unions.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/15740044
+    Add --root flag used for deriving header guard CPP variable.
+    
+    By default, the header guard CPP variable is calculated as the relative
+    path to the directory that contains .git, .hg, or .svn. When this flag
+    is specified, the relative path is calculated from the specified
+    directory.
+    
+    Patch by mazda@chromium.org
+    CR: https://codereview.appspot.com/8630045/
+    Updated cpplint.py to #224:
+    
+    - Better emacs-flymake integration
+    - Fix false  positives in macros and template parameters
+    - Improve the wording on the make_pair warning
+    - Remove virtual keyword checks (now a warning in clang)
+    - Add checks for namespaces
+    - Check that DISALLOW_* macros are always in the "private:" section
+    - Fix false positives for gMock
+    - Check for alternative boolean operator tokens
+    - Fix false positives for space on parens
+    - Fix false positives about placement of "{" near preprocessor macros
+    - Don't lint inside inlined assembler
+    - Don't warn on "auto"; it is now a type shortcut, not a storage class
+    - Don't warn on c++11 for loops
+    - Warn on empty loop bodies
+    - Don't warn on unnamed args for the postincrement operator
+    - Fixes for "<" placement now allowed in c++11
+    Review URL: https://codereview.appspot.com/7039047
+    Improve the error message for when #ifndef guards don't match the #define.
+    
+    Patch from <csharp@google.com>
+    Update to #179:
+    
+    - Suggest "const_cast" when encountering "(char*)".
+    - Warn on template arguments to make_pair().
+    - Require <utility> if pair<> is seen now that <map> doesn't include it.
+    - Warn on lack of "explicit" keyword on single argument inline constructors.
+    - Better check for hanging ')' when closing function calls.
+    - Don't warn on: 'int v[1][3] = {{1, 2, 3}};'
+    - Allow function calls as the first argument to printf().
+    Review URL: http://codereview.appspot.com/4974066
+    Update cpplint.py to #161:
+    - ostream should be treated as a system header
+    - Expand the MockCallback whitelist entry for gMock.
+    - Virtual destructor check shouldn't get confused with
+      "class EXPORT ClassName {" constructs.
+    - Don't warn about the length of "$ Id: ... $" lines.
+    - Better semicolon checks in for() loops.
+    - Better whitespace comment checks.
+    Review URL: http://codereview.appspot.com/4964064
+    Reverted r70, at asvitkine's request
+    Upstream useful lint check from WebKit's fork of cpplint.py.
+    
+    Checks against "Foo *bar" and "Foo &bar" declarations.
+    
+    WebKit patch was: http://trac.webkit.org/changeset/46856
+    
+    Credit Torch Mobile, Inc. who have contributed the WebKit patch in question.
+    
+    Patch committed for asvitkine@chromium.org.
+    Allow blank Doxygen-style comments. Patch by mball@google.com.
+    Update cpplint.py to #150:
+    - Be explicit about "class Foo :\n public Bar" being wrong.
+    - Allow snprintf(NULL, 0, ...) pattern.
+    - Extend NOLINT syntax.
+    - Remove NOLINT hint.
+    - <new> is an STL header.
+    - Use original filename for header guard when invoked by flymake.
+    - Avoid false-positive build/include_what_you_use errors for use
+      of classes called "string" other than STL ones.
+    
+    Review URL: http://codereview.chromium.org/1697023
+    Update cpplint.py to #131:
+    - Optional check to make sure #includes are in alphabetical order.
+    - Optional "--counting=" option for statistics on what errors were found.
+    - Fix typos.
+    - Warn on overloading the unary operator&(). (Binary operator&() is fine).
+    - Fix false positives on "new int(x)"; it is not a cast.
+    - Allow "NOLINT" on header guards.
+    - Prevent members of a class from being "const string&".
+    Relicense cpplint under 3 clause BSD for webkit folks.
+    Review URL: http://codereview.chromium.org/147238
+    Update cpplint.py to #122:
+    - Don't check quoted filenames with irrelevant tests.
+    - Make cpplint accept 'for (foo; bar; ) {}'.
+    - Work with temporary files generated by Emacs flymake-mode.
+    - Don't warn on "/// Doxygen comments."
+    - Check the use of DCHECK in the same way we check the use of CHECK.
+    - Properly handle relative file paths with IncludeWhatYouUse checking.
+    - Start checking for IncludeWhatYouUse in a limited way in .cc files.
+    Update cpplint.py to #114:
+    - Prevent invalid increment constructs
+    - Allow long URLs in lines without hitting the 80 char limit
+    - Prevent false positives of "Extra space after ( in function call" in macro definitions.
+    Update cpplint.py to #110.
+    - Allow comments with URLs to exceed the 80 column limit.
+    - Avoid false positives for "Lint failed to find start of function body"
+      test.
+    - Add checks for transform and min_element.
+    - Style fixes
+    
+    Review URL: http://codereview.chromium.org/28056
+    Set svn properties for cpplint
+    Open-sourcing cpplint.py.
+    change some file path
+    move other guides into directory
+    Relicense cpplint under 3 clause BSD for webkit folks.
+    Review URL: http://codereview.chromium.org/147238
+    Set svn properties for cpplint
+    Open-sourcing cpplint.py.
+    change some file path
+    move other guides into directory
+    Update cpplint.py to #409
+    
+    409 - Fixed false positive for access-specifier used with virtual in inheritance.
+    408 - Fixed false positive in determining rvalue parameter types for functions
+          whose return type is on the previous line.
+    407 - Allow different include sections to be separated by anything other than
+          #include.
+    406 - Disable readability/streams warnings in cpplint, to reflect style guide
+          changes.
+    405 - Fixed false positive for whitespace checks with CUDA code.
+    404 - Do not issue cpplint warnings for use of Doxygen-style comments.
+    403 - Allow RValue types that were listed in template-argument-list.
+          Fixed handling of RValue types after pointer parameters.
+    402 - Change the style guide to allow std::forward and associated use of rvalue
+          references.
+    401 - Fixed cpplint crash when checking header guards for filenames containing
+          meta characters.
+    400 - Fixed false positive for alignas() used with anonymous struct or union.
+    399 - Fixed false positive for template function calls with braced constructor.
+    398 - Allow #endif header guard comments to use "/**/" style if there are no
+          "//" comments in the same file.
+    397 - Fixed false positives for DISALLOW macro check position check.
+    396 - Don't treat lambda functions with return value syntax as casts.
+    395 - <skipped>
+    394 - Fixed RValue references for out-of-line inner class constructor
+          declarations.
+    393 - Fixed false positive for redundant override/final by ignoring declarators.
+    392 - Fixed false positive for taking address of a function pointer return value
+          being recognized as taking address of a cast.
+    391 - Version of cpplint that fixes the spacing around the '=' operator.
+    390 - <skipped>
+    389 - Don't warn on non-const reference arguments of out-of-line method
+          definitions.
+    388 - Fixed false positive for "virtual" from virtual base class be interpreted
+          as virtual member function.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/184990043
+    Added support for 'linelength' setting in CPPLINT.cfg
+    
+    It is now possible to override the line length per project
+    by usign 'linelength' setting in CPPLINT.cfg.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/132050043
+    Update cpplint.py to #387:
+    
+    387 - Allow lint warnings on the next line to be suppressed with NOLINTNEXTLINE.
+    386 - Fixed false positive for strcat and strcpy.
+    385 - Fixed false positive for bitwise and on last line of a multi-line
+    384 - Remove unused deprecated testing/base/googletest.h header.
+    383 - Fixed false positive for bitwise and on last line of a multi-line
+          initializer list that ends with closing brace on the same line.
+    382 - Allow header guard warning to be silenced with
+          "// NOLINT(build/header_guard)" comment.
+    381 - Removed check for spaces between "//" and "TODO".
+    380 - Fix typo: Redudnant -> Redundant
+    379 - Added check for redundant "virtual" and "override" function-specifier.
+    378 - Updated missing "explicit" message to match style guide wording
+    377 - Add cpplint check to prevent .cc file inclusions from other packages.
+          These are generally bad and we should prevent regressions like this until
+          proper BUILD layering checks are in place.
+    376 - Silence missing braces warning for conditional statements inside lambdas.
+    375 - Warn about multi-arg constructors being explicit only at highest severity
+          level.
+    374 - Warn about non-single-argument constructors marked explicit.
+    373 - Exclude 'case' from function spacing check.
+    372 - Exclude third party headers such as Python.h from these checks:
+    371 - Fixed false positive for function pointer parameters followed by other
+          parameters.
+    370 - Allow RValue reference for default inline constructor.
+    369 - Fixed false positive for array of references and operator,().
+    368 - Silence named parameter warning for macros.
+    367 - Fixed false positive for duplicate header warning across preprocessor
+          boundaries.
+    366 - Allow rvalue references for constructors and assignment operator.
+    365 - Stop handling DISALLOW_EVIL_CONSTRUCTORS in cpplint.py,
+          since it's going away.
+    364 - Fixed false positive for member function in nested classes.
+    363 - Namespace indentation for cpplint. The C++ style guide enforced that items
+          within a namespace do not receive an extra level of indentation.
+    362 - Fixed false positive for multi-line member functions returning strings.
+    361 - Do not suggest replacement CHECK macros if custom error messages are used.
+    360 - Silence nonconst reference warning for multiline derived functions.
+    359 - Silence non-const reference warnings for derived functions.
+    358 - Added link to developer guide.
+    357 - Remove the partial ban on std::move and related features. More general
+    356 - Fixed false positive for << inside macros.
+    355 - Make _NestingState class public.
+    354 - Fixed false positive for multiline function templates.
+    353 - Fixed false positive for lambda capture.
+    352 - Silence RValue reference warnings that are enclosed in a
+    351 - Do not warn on CR-LF lines if all input lines are uniformly CR-LF.
+    350 - Tweaked the error messages for static mutex with default constructors.
+    349 - Fixed false positive for unnamed parameters in macros.
+    348 - Recognize &&... as RValue references.
+    347 - Use alternative error message for including <ostream>.
+    346 - Fixed false positive for function style template argument.
+    345 - Fixed false positive for braced constructor call inside brackets.
+    344 - Minor spelling and grammar fix.
+    343 - Fixed false positive for non-const reference check inside constructor
+    342 - Fixed cases where rvalue references are not identified correctly:
+    341 - Check that third party header files have some header guard, but do not
+    340 - Don't check header guards in third party files.
+    339 - Instead of treating thread annotations as macro function calls, skip over
+          them in parsing function signatures.  This silences false positives for
+          lambdas with thread annotations.
+    338 - Fixed false positive for deprecated cast where return type of function
+    337 - Fixed false positive for alias-declarations of function pointers.
+    336 - Improved error message for taking address of something dereferenced
+    335 - Added support for C++14 digit separators.
+    334 - Silence long line warnings for JNI.
+    333 - Fixed false positive for constructor calls for rand{} being
+    332 - Elide C++11 raw strings as an empty quoted string instead of
+    331 - Split up long functions in cpplint.py and cpplint_unittest.py
+    330 - Fixed false positive for missing space check around "using operator;"
+    329 - Fixed false positive for indent check around multi-line raw strings.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/125980043
+    Modify cpplint.py to allow CPPLINT.cfg overrides
+    
+    Added the ability to provide CPPLINT.cfg files to provide
+    linter message filters per sub-directory and special exclusion
+    rules. Each file can have instructions like:
+    
+    filter=-build/include_order,+build/include_alpha
+    exclude_files=.*\.cc
+    
+    The above disables build/include_order warning and enables
+    build/include_alpha as well as excludes all .cc from being
+    processed by linter, in the current directory (where the .cfg
+    file is located) and all sub-directories.
+    
+    Patch by avakulenko@google.com.
+    Related CL: https://codereview.chromium.org/406373002/
+    
+    Review URL: https://codereview.appspot.com/115340043
+    Restore the accidentally deleted extra_check_functions in cpplint.py
+    
+    This extra parameter was used when calling cpplint.ProcessFile
+    directly from depot_tools/gcl.py and depot_tools/git_cl.py.
+    
+    Restoring it...
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/105820044
+    Update cpplint.py to #359:
+    
+    359 - Silence non-const reference warnings for derived functions.
+    357 - Remove the partial ban on std::move and related features.
+          More general use of rvalue references is still banned for now.
+    356 - Fixed false positive for << inside macros. Also recognize implicit
+          constructors of the form "Type(Type&& param)".
+    355 - Make _NestingState class public. Also adds a new method
+          NestingState.InAsmBlock, which returns true if the top of the stack
+          is a block containing inline ASM.
+    354 - Fixed false positive for multiline function templates.
+    353 - Fixed false positive for lambda capture.
+    352 - Silence RValue reference warnings that are enclosed in a
+          GOOGLE_ALLOW_RVALUE_REFERENCES_(PUSH|POP) range.
+    351 - Do not warn on CR-LF lines if all input lines are uniformly CR-LF.
+    349 - Fixed false positive for unnamed parameters in macros.
+    348 - Recognize &&... as RValue references.
+    347 - Use alternative error message for including <ostream>.
+    346 - Fixed false positive for function style template argument.
+    345 - Fixed false positive for braced constructor call inside brackets.
+    344 - Minor spelling and grammar fix.
+    343 - Fixed false positive for non-const reference check inside constructor
+          initializer lists.
+    342 - Fixed cases where rvalue references are not identified correctly:
+          - Parameter in a templated function.
+          - Parameter for a single-arg constructor.
+          - Return type in a templated function.
+    338 - Fixed false positive for deprecated cast where return type of
+          function template is const.
+    337 - Fixed false positive for alias-declarations of function pointers.
+    336 - Improved error message for taking address of something dereferenced
+          from a cast.
+    335 - Added support for C++14 digit separators
+          (http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3781.pdf).
+          Not sure if the style guide would allow this feature or not, but
+          cpplint must recognize these one way or another to provide accurate
+          error messages.
+    333 - Fixed false positive for constructor calls for rand{} being
+          identified as calls to rand().
+    332 - Elide C++11 raw strings as an empty quoted string instead of an empty
+          string.  This allows us to differentiate blank lines inside raw
+          strings from regular blank lines.
+    331 - Split up long functions in cpplint.py and cpplint_unittest.py.
+          This is a refactoring change with zero change in functionality,
+          the goal is to clean up new warnings.
+    330 - Fixed false positive for missing space check around "using operator;"
+    329 - Fixed false positive for indent check around multi-line raw strings.
+    328 - Added check missing spaces around ||.  This check should have been
+          included in the original CheckSpaces. Added check for &&, and output
+          message for missing space or rvalue reference according to context.
+    327 - Fixed false positive for alias-declaration.
+    326 - Improved accuracy of matching parentheses and angle brackets.
+          Previously, if cpplint was trying to match () pairs, those two
+          characters are the only things that it looked for. This worked
+          reasonably well for everything except <>, which is easily confused
+          with operators.  This change takes all other parentheses into account,
+          and do not count <> characters as angle brackets if they are inside
+          other parenthesized expressions.
+    325 - Fixed handling of multiple raw strings on the same line.
+    324 - Better enforcement that braces are used either around all branches of
+          the condition, or none. Checks for what seem to be multiple statements
+          in an single-line if/else body. Checks for ambigous if/if/else nesting
+          without braces.
+    323 - Fixed false positive for extra space in returning lambdas.
+    322 - Fixed false positive for tokens with "else" prefix being treated as
+          else keyword following a conditional block.
+    321 - Fixed false positive for placement new being treated as deprecated cast.
+    320 - Change lint so it no longer warns about use of std::function and related
+          features (bind, placeholders) now that function/bind is no longer banned.
+    319 - Fixed false positive for alignof and alignas being recognized as casts.
+    318 - Permit std::shared_ptr, std::weak_ptr and std::enable_shared_from_this.
+    317 - Silence deprecated cast warning for templates using function types as
+          the first argument
+    316 - Remove aligned_storage from the list of blacklisted C++11 features.
+    315 - Fixed false positive for casting to pointer types.
+    314 - Do not warn about single-arg constructors with std::initializer_list<>
+          not marked as explicit.
+    313 - Remove lint errors when including <atomic>.
+    312 - Fixed incorrect parsing of multiple block comments on the same line.
+    311 - Fixed nesting state parser for classes in template argument list.
+    310 - Fixed false positive for semicolon after brace for lambdas where there
+          is a newline between lambda-introducer and lambda-declarator.
+    308 - Fixed false positive for global string pointers being treated as string
+          values.
+    307 - Modify cpplint to follow updated style guide on comments in braced
+          initializer lists. In particular, don't warn about missing spaces
+          if the comment is aligned with the next line.
+    306 - Fixed false positive for brace initializer list in ternary expression.
+    305 - Fixed false positive for blank line at start of code block due to elided
+          raw string contents.
+    304 - Add a cpplint.py warning for default captures in lambda expressions.
+    303 - Recognize unordered_map and unordered_set.
+    302 - Fixed false positive for trailing semicolons when lambda-capture spans
+          multiple lines.
+    301 - Fixed false positive for trailing semicolon following lambdas.
+    300 - Fix raw string handling when the next raw string begins on the same line
+          that the previous raw string ends.
+    299 - Fix false C-style cast detection due to trailing "override".
+    298 - Fix false positive for requiring an argument name in a GMock declaration.
+    297 - Fixed false positives for blank line warnings near 'extern "C"' blocks.
+    
+    R=erg@google.com
+    
+    Review URL: https://codereview.appspot.com/108730043
+    Add an --extensions flag to change valid file extensions.
+    
+    The valid cpplint extensions are .h, .cpp, .cc, .cuh and .cu. It is
+    common for .hpp to be a valid extension to check, the --extensions flag
+    allows the user to specify which extensions they think are valid.
+    
+    Patch by Matt Clarkson <mattyclarkson@gmail.com>
+    A false positive occurs when a user specifies a using declaration for a stream operator:
+    
+        10: using ns::operator<<;
+        file.cpp:10: Missing spaces around << [whitespace/operators] [3]
+    
+    The regular expression has been updated to find this valid use case of the <<
+    text string.
+    
+    Review URL: https://codereview.appspot.com/22190043
+    
+    Patch from Matt Clarkson <mattyclarkson@gmail.com>.
+    Added a --linelength flag so that the default of 80 can be changed.
+    
+    Review URL: https://codereview.appspot.com/22180043
+    
+    Patch from Matt Clarkson <mattyclarkson@gmail.com>.
+    In cpplint, permit Dodxygen C++ annotations, which come after members, e.g.
+      int var; //!< Brief description after the member
+    or
+      int var; ///< Brief description after the member
+    
+    Cf. http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#memberdoc
+    
+    Currently, cpplint accepts comments after members, cf.
+    http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml?showone=Implementation_Comments#Implementation_Comments
+    and it accepts also the doxygen comments of the type "///" (followed by a new line) and
+    "/// " (followed by a comment). Only the Doxygen annotations, which come
+    after members are rejected, which is fixed by this patch.
+    
+    Review URL: https://codereview.appspot.com/14607044
+    
+    Patch from Tobias Burnus <burnus@net-b.de>.
+    Update cpplint.py to #296:
+    
+    - Check for NUL bytes in the file.
+    - Fixed many false positives related to brace initialization.
+    - Improved accuracy of parsing reference template parameters.
+    - Added support for C++11 raw strings.
+    - Added CUDA extensions to those allowed by cpplint.
+    - Added check for incomplete namespaces.
+    - Silence warnings for missing spaces after comma due to elided
+      comments.
+    - Rephrased some messages so that they're actionable.
+    - Fix false positive on namespace qualified function pointer arguments.
+    - Fix false positive for operators which return strings.
+    - Revive the VLOG check.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/17450043
+    Update cpplint.py to #267:
+    
+    - Handle parentheses in CHECK() calls properly.
+    - Fixed multiple false positives where various things like
+      std::fucntion<> or function pointers were being mistaken for casts.
+    - Fixed whitespace warning on placement new.
+    - Fixed multiple false positives related to const references.
+    - Added warning for empty conditional bodies.
+    - Stop advising the use of readdir_r instead of readdir.
+    - Fixed false positive for empty macro arguments.
+    - Fixed false positvie for braced initializer lists.
+    - Don't warn about unnamed parameters in function pointers.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/17400043
+    Update cpplint.py to #242:
+    
+    - Check indentation of public/protected/private keywords.
+    - Remove RTTI warning.
+    - Silence warning about multiple inheritance from global namespace.
+    - Copy ctors don't need "explicit".
+    - Understand "const char* const&" as a const reference.
+    - Remove runtime/sizeof.
+    - Recognize the "catch" keyword.
+    - List C++11 headers
+    - Allow sscanf()
+    - Allow for one extra level of nesting in template class decls.
+    - False positive for semicolons after single-line nameless unions.
+    
+    R=mark@chromium.org
+    
+    Review URL: https://codereview.appspot.com/15740044
+    Adding streambuf as a valid CPP header.
+    
+    Patch from chris.dale.dis.
+    Added cpplint.py output format for eclipse
+    
+    Patch by mcasas@chromium.org
+    CR: https://codereview.chromium.org/16140002/
+    Add --root flag used for deriving header guard CPP variable.
+    
+    By default, the header guard CPP variable is calculated as the relative
+    path to the directory that contains .git, .hg, or .svn. When this flag
+    is specified, the relative path is calculated from the specified
+    directory.
+    
+    Patch by mazda@chromium.org
+    CR: https://codereview.appspot.com/8630045/
+    Updated cpplint.py to #224:
+    
+    - Better emacs-flymake integration
+    - Fix false  positives in macros and template parameters
+    - Improve the wording on the make_pair warning
+    - Remove virtual keyword checks (now a warning in clang)
+    - Add checks for namespaces
+    - Check that DISALLOW_* macros are always in the "private:" section
+    - Fix false positives for gMock
+    - Check for alternative boolean operator tokens
+    - Fix false positives for space on parens
+    - Fix false positives about placement of "{" near preprocessor macros
+    - Don't lint inside inlined assembler
+    - Don't warn on "auto"; it is now a type shortcut, not a storage class
+    - Don't warn on c++11 for loops
+    - Warn on empty loop bodies
+    - Don't warn on unnamed args for the postincrement operator
+    - Fixes for "<" placement now allowed in c++11
+    Review URL: https://codereview.appspot.com/7039047
+    Changed the hashband on cpplint.py
+    Convert windows path seperators to unix like while doing IncludeWhatYouUse.
+    Review URL: https://codereview.appspot.com/5601049
+    Improve the error message for when #ifndef guards don't match the #define.
+    
+    Patch from <csharp@google.com>
+    Support svn 1.7 directory structure.
+    
+    Committing on behalf of Reid Kleckner <rnk@google.com>.
+    BUG=chromium:102890
+    Update to #179:
+    
+    - Suggest "const_cast" when encountering "(char*)".
+    - Warn on template arguments to make_pair().
+    - Require <utility> if pair<> is seen now that <map> doesn't include it.
+    - Warn on lack of "explicit" keyword on single argument inline constructors.
+    - Better check for hanging ')' when closing function calls.
+    - Don't warn on: 'int v[1][3] = {{1, 2, 3}};'
+    - Allow function calls as the first argument to printf().
+    Review URL: http://codereview.appspot.com/4974066
+    Add extension mechanisms for custom checks to cpplint.py.
+    
+    This allows users of cpplint.py to specify additional check functions.
+    
+    Will be used by: http://codereview.chromium.org/7834045/
+    
+    Review URL: http://codereview.appspot.com/4950069
+    Patch from Alexei Svitkine <asvitkine@chromium.org>.
+    Update cpplint.py to #161:
+    - ostream should be treated as a system header
+    - Expand the MockCallback whitelist entry for gMock.
+    - Virtual destructor check shouldn't get confused with
+      "class EXPORT ClassName {" constructs.
+    - Don't warn about the length of "$ Id: ... $" lines.
+    - Better semicolon checks in for() loops.
+    - Better whitespace comment checks.
+    Review URL: http://codereview.appspot.com/4964064
+    Reverted r70, at asvitkine's request
+    Upstream useful lint check from WebKit's fork of cpplint.py.
+    
+    Checks against "Foo *bar" and "Foo &bar" declarations.
+    
+    WebKit patch was: http://trac.webkit.org/changeset/46856
+    
+    Credit Torch Mobile, Inc. who have contributed the WebKit patch in question.
+    
+    Patch committed for asvitkine@chromium.org.
+    Allow blank Doxygen-style comments. Patch by mball@google.com.
+    Project prefix directory should work with Hg.
+    
+    Patch based on one by tomic80.
+    Update cpplint.py to #150:
+    - Be explicit about "class Foo :\n public Bar" being wrong.
+    - Allow snprintf(NULL, 0, ...) pattern.
+    - Extend NOLINT syntax.
+    - Remove NOLINT hint.
+    - <new> is an STL header.
+    - Use original filename for header guard when invoked by flymake.
+    - Avoid false-positive build/include_what_you_use errors for use
+      of classes called "string" other than STL ones.
+    
+    Review URL: http://codereview.chromium.org/1697023
+    Check for mercurial checkouts in addition to svn and git.
+    
+    Patch by Florian Loitsch <floitsch@google.com>
+    Update cpplint.py to #131:
+    - Optional check to make sure #includes are in alphabetical order.
+    - Optional "--counting=" option for statistics on what errors were found.
+    - Fix typos.
+    - Warn on overloading the unary operator&(). (Binary operator&() is fine).
+    - Fix false positives on "new int(x)"; it is not a cast.
+    - Allow "NOLINT" on header guards.
+    - Prevent members of a class from being "const string&".
+    Relicense cpplint under 3 clause BSD for webkit folks.
+    Review URL: http://codereview.chromium.org/147238
+    Update cpplint.py to #122:
+    - Don't check quoted filenames with irrelevant tests.
+    - Make cpplint accept 'for (foo; bar; ) {}'.
+    - Work with temporary files generated by Emacs flymake-mode.
+    - Don't warn on "/// Doxygen comments."
+    - Check the use of DCHECK in the same way we check the use of CHECK.
+    - Properly handle relative file paths with IncludeWhatYouUse checking.
+    - Start checking for IncludeWhatYouUse in a limited way in .cc files.
+    Update cpplint.py to #114:
+    - Prevent invalid increment constructs
+    - Allow long URLs in lines without hitting the 80 char limit
+    - Prevent false positives of "Extra space after ( in function call" in macro definitions.
+    Update cpplint.py to #110.
+    - Allow comments with URLs to exceed the 80 column limit.
+    - Avoid false positives for "Lint failed to find start of function body"
+      test.
+    - Add checks for transform and min_element.
+    - Style fixes
+    
+    Review URL: http://codereview.chromium.org/28056
+    Set svn properties for cpplint
+    Open-sourcing cpplint.py.
+    change some file path
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    change some file path
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    change some file path
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub
+    Update C++ style guide to 4.45.
+    
+    Much of the guide has been refactored, rewritten, and revised.
+    Update C++ style guide to 4.45.
+    
+    Much of the guide has been refactored, rewritten, and revised.
+    initial commit for java style guide
+    Update C++ style guide to 4.45.
+    
+    Much of the guide has been refactored, rewritten, and revised.
+    Create gh-pages branch via GitHub
+    Create gh-pages branch via GitHub

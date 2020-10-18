@@ -1,0 +1,42 @@
+﻿    New commit
+    New commit
+    New commit
+    docs(README): fix "Testing with Docker" URL
+    docs(README): fix URLs
+    
+    Removed trailing `>`s, and corrected coverage.py address.
+    docs(README): fix indentation
+    docs(README): fix Markdown
+    
+    Fixed many broken links.
+    Add license scan report and status
+    
+    Signed off by: fossabot <badges@fossa.com>
+    [README] Fix typo
+    Update README
+    Convert README.md to RST
+    
+    * Update formatting fixes #3
+    * Add example badge (and how to use)
+    * Make it cleared that bash uploader should be used
+    Fixed minor typo
+    Update README.md
+    Update README.md
+    Add further instructions for using env vars
+    Update README.md
+    Update README.md
+    
+    typo: priveta --> private
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Add more docs close #12
+    Update README.md
+    Fix typo in README
+    Update README.md
+    Fix typos in README
+    initial commit
+    initial commit

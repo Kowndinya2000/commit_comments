@@ -1,0 +1,172 @@
+﻿    Update README for demise of runtime dependencies
+    Remove modules formerly used by eos-license-service
+    Remove eos-newspaper modules
+    
+    eos-newspaper-server and eos-newspaper-updater are no more.
+    
+    [endlessm/eos-sdk#3766]
+    Remove eos-knowledge-engine modules
+    
+    eos-knowledge-engine is no more.
+    
+    [endlessm/eos-sdk#3766]
+    Add eos-license-service to list of packages
+    
+    This is actually the only node.js module on the client side that still
+    depends on this package.
+    
+    [endlessm/eos-sdk#3766]
+    Cleaned up 'Adding a module' in README.
+    
+    Some instructions were a bit less clear before, they have been fixed.
+    Also, there is no contributors section, so the reference to it has
+    been removed.
+    
+    [endlessm/eos-sdk#2575]
+    Added JSCS and JSHint packages.
+    
+    JSCS and JSHint are to be used by developers to automatically
+    (or maually) lint their Javascript code.
+    
+    [endlessm/eos-sdk#2575]
+    Add lcov-result-merger to eos-node-modules
+    Add istanbul module to node modules getting code coverage support.
+    
+    [endlessm/eos-shell#2264]
+    Remove eos-wikipedia-offline as its deprecated.
+    
+    [endlessm/eos-sdk#2622]
+    Update README to reflect new module addition flow
+    
+    [endlessm/eos-sdk#2398]
+    Added feedparser to dev modules
+    Knowledge Engine now uses systemd, autoquit
+    
+    [endlessm/eos-sdk#1079]
+    Replaced i18n with i18n-moustache
+    
+    Also updated version to 0.1.0
+    
+    [endlessm/eos-sdk#1140]
+    New dependencies for newspaper
+    
+    See eos-shell-explore.
+    
+    [endlessm/eos-sdk#788]
+    Add systemd module
+    
+    This was also required by eos-wikipedia-offline.
+    
+    [endlessm/eos-shell#2435]
+    Add 'autoquit' module
+    
+    Required by eos-wikipedia-offline, but not mentioned in its
+    package.json.
+    
+    [endlessm/eos-shell#2435]
+    Initial commit
+    
+    Build system that consolidates node.js modules into two Debian
+    packages, one for runtime dependencies and one for build-time.
+    
+    [endlessm/eos-shell#2435]
+    Initial commit
+    Remove modules formerly used by eos-license-service
+    Remove eos-newspaper modules
+    
+    eos-newspaper-server and eos-newspaper-updater are no more.
+    
+    [endlessm/eos-sdk#3766]
+    Remove eos-knowledge-engine modules
+    
+    eos-knowledge-engine is no more.
+    
+    [endlessm/eos-sdk#3766]
+    Added JSCS and JSHint packages.
+    
+    JSCS and JSHint are to be used by developers to automatically
+    (or maually) lint their Javascript code.
+    
+    [endlessm/eos-sdk#2575]
+    Add lcov-result-merger to eos-node-modules
+    Add istanbul module to node modules getting code coverage support.
+    
+    [endlessm/eos-shell#2264]
+    Remove "require" module
+    
+    It was only... required... by eos-wikipedia-offline, which is deprecated
+    and only available on eos1.
+    
+    [endlessm/eos-sdk#2622]
+    Added feedparser to dev modules
+    Replaced i18n with i18n-moustache
+    
+    Also updated version to 0.1.0
+    
+    [endlessm/eos-sdk#1140]
+    New dependencies for newspaper
+    
+    See eos-shell-explore.
+    
+    [endlessm/eos-sdk#788]
+    Add systemd module
+    
+    This was also required by eos-wikipedia-offline.
+    
+    [endlessm/eos-shell#2435]
+    Add 'autoquit' module
+    
+    Required by eos-wikipedia-offline, but not mentioned in its
+    package.json.
+    
+    [endlessm/eos-shell#2435]
+    Initial commit
+    
+    Build system that consolidates node.js modules into two Debian
+    packages, one for runtime dependencies and one for build-time.
+    
+    [endlessm/eos-shell#2435]
+    Bump version
+    
+    Since we removed a bunch of modules
+    
+    [endlessm/eos-sdk#3766]
+    Added JSCS and JSHint packages.
+    
+    JSCS and JSHint are to be used by developers to automatically
+    (or maually) lint their Javascript code.
+    
+    [endlessm/eos-sdk#2575]
+    Remove "require" module
+    
+    It was only... required... by eos-wikipedia-offline, which is deprecated
+    and only available on eos1.
+    
+    [endlessm/eos-sdk#2622]
+    Altered sysmodules script to support more features
+    
+    Added the diff option, which allows printing all node modules which aren't
+    sysmodules (i.e. list all modules which will be installed)
+    
+    [endlessm/eos-sdk#2398]
+    Added feedparser to dev modules
+    Replaced i18n with i18n-moustache
+    
+    Also updated version to 0.1.0
+    
+    [endlessm/eos-sdk#1140]
+    Added intersect opt to sysmodules
+    
+    sysmodules.py now takes an optional --intersect parameter that denotes a
+    package.json file with which the list of system modules should be intersected.
+    Also added a switch that controls the format of output node modules, where
+    --format=deb results in a comma separated list of "node-{MODULENAME}" while
+    --format=node results in a space separated list of just "{MODULENAME}"
+    
+    [endlessm/eos-sdk#1123]
+    Initial commit
+    
+    Build system that consolidates node.js modules into two Debian
+    packages, one for runtime dependencies and one for build-time.
+    
+    [endlessm/eos-shell#2435]

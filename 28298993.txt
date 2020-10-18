@@ -1,0 +1,921 @@
+﻿    Add Ruby 2.1.2 to the README
+    Clarifies where to find the releases
+    
+    Resolves issue #644
+    Update README.md
+    
+    Other boxem fixed.
+    Moved Upgrading instructions to FAQ
+    Added boxen upgrade instructions
+    Fix to support LLVM/ruby that ships with Xcode 5.1
+    Suggest some example hierarchies
+    Mention the default hiera configuration in README
+    fixed the rubies list
+    added note about clang error and workaround
+    Update README.md
+    
+    I found a superfluous space, and also because you are _in_ the directories you need to `./script/boxen` each time.
+    OSX -> OS X
+    update XCode instructions re: boxen-web
+    add xcode instructions for mavericks
+    Clarify the installation steps after bootstrapping
+    
+    Make it clearer on how to install a boxen from the command line after the
+    bootstrapping steps are done.
+    Clarify where to create the new git repo.
+    
+    Be more explicit about where the new repo should be located. It's much
+    easier to set up a repo on the internet. This was implied before and now
+    it's explicit.
+    
+    The first time I helped a colleague set this up, we used a local repo.
+    Since we didn't know what we were doing, we screwed it up pretty badly.
+    This bit of text might allow others not to make the same mistake we did.
+    Add Node 0.10
+    Node.js v0.4 no longer provided by default
+    
+    as of 2fc3983825
+    Add Ruby 2.0.0 to README
+    
+    It's provided now.
+    Formatting
+    Update puppet-inifile location in readme
+    Fix typo: 1.0.5 -> 1.1.0
+    
+    Code says `github "java",     "1.1.0"`, but documentation says "1.0.5", so I fixed it.
+    Put a space in this
+    adding docs for Github Enterprise users
+    Some readme consistency
+    Update to chown staff to be consistent with script.sh. Fixes #152.
+    Update nodejs version in readme
+    update puppetfile and readme to latest versions
+    Minor grammatical edit
+    
+    I think in this case "bootstrap" is already a verb.
+    No hard drive encryption
+    
+    Some users may not want to encrypt their hard drive, so make
+    sure they know the option exists to not have to encrypt their
+    hard drive.
+    Updates README
+    
+    Noticed that Boxen won't run people/manifests/user-name.pp if it
+    includes dash
+    Update README
+    initial faq
+    Correct typo in README
+    
+    s/bothers/others
+    README overhaul
+    Update README for Puppet Module sharing docs
+    change $USER to ${USER} to avoid history expansion
+    
+    see [here](http://stackoverflow.com/questions/15140221/weired-zsh-behavior-how-to-debug/)
+    halp!
+    Update README.md including module documentation
+    
+    The README.md has more detailed instructions on how to include modules from Github by editing your Puppetfile and site.pp files.
+    Add opt dir instructions
+    
+    Add missing instructions that will affect the shell config.
+    XCode → Xcode
+    
+    We of all people should care about how to capitalize something properly.
+    relativize documentation links
+    minor cleanup
+    
+    Fix typos.
+    Clarify module includes in the Puppetfile.
+    README for boxen-web
+    add docs about how to have members of your org set things up
+    README tweaks
+    Update README.md for @wfarr's changes
+    
+    Based on the feedback in the Pull request <https://github.com/boxen/our-boxen/pull/12>,
+    this commit implements changes to clarify how someone would customize
+    their Boxen setup.
+    Add note about agreeing to XCode license.
+    Update git command in README
+    
+    Even though a lot of people setup `git co`, it's not available on a fresh install. Makes copy-pasta for creating my-boxen easier.
+    Update README.md according to style
+    
+    Previously, the README.md file was updated but didn't match existing
+    Github style. This commit wraps near 80 columns (markdown links make
+    that a bit harder) and eliminate unnecessary steps (linking to
+    existing documentation and removing redundant declarations).
+    Update README
+    
+    Previously, documentation around creating modules and using site.pp
+    was pretty slim. This commit adds more documentation and links to
+    Puppet's documentation site.
+    Update for script/sync
+    more readme love
+    README tweaks
+    README updates
+    README tweaks
+    Update README
+    Add customization docs to README
+    update README
+    Update README with some getting started docs
+    Initial commit
+    python3 and postgres
+    added missing coreutils
+    mosh
+    haskell platform, and removing pyenv
+    seil
+    chicken, finder, git
+    hgrc
+    pip config for nbbdev cert
+    finder settings
+    spotify
+    rdesktop working
+    sublime and ukelele
+    imported from 10.9 and working on frictionless
+    update Puppetfile with latest package releases
+    Bump to puppet-gcc 2.2.1 and puppet-git 2.4.0
+    
+    Fixes for the following problems:
+    * The latest Xcode installs git 2.4.0 and brew fails when trying to
+      downgrade.
+    * The latest Xcode breaks bootstrap by not stripping binaries. A
+      workaround is implemented in the latest puppet-gcc release.
+    Bump to puppet-hub 1.4.1
+    
+    Release note: https://github.com/github/hub/releases/tag/v2.2.1
+    puppet-brewcask bumped to 0.0.6
+    puppet-boxen bumped to 3.10.2
+    puppet-git bumped to 2.7.5
+    Bump puppet-hub to 1.4.0
+    
+    https://github.com/boxen/puppet-hub/releases/tag/1.4.0
+    Upgrade to puppet-boxen 3.10.1 to fix brewcask issue
+    Add puppet-brewcask for boxen::personal::osx_apps
+    Update puppet-boxen and puppet-homebrew
+    
+    For usability and configuration improvements
+    Update puppet-git for security release of git
+    
+    See https://github.com/blog/1938-vulnerability-announced-update-your-git-clients
+    just keeping it fresh
+    Upgrade puppet modules for Yosemite support
+    bump boxen-xquartz to 1.2.1
+    Upgrade puppetlabs-inifile to Release 1.1.1
+    
+    This supported bugfix release corrects the inifile section header detection regex (so you can use more characters in your section titles).
+    
+    More details: https://github.com/puppetlabs/puppetlabs-inifile/pull/115
+    Rename `module-data` to `module_data`
+    
+    This came up in rodjek/librarian-puppet#242. A `-` is not a valid
+    character in module names according to
+    http://docs.puppetlabs.com/puppet/latest/reference/modules_fundamentals.html#allowed-module-names
+    In the Modulefile for ripienaar/puppet-module-data, the name actually
+    contains an underscore.
+    
+    Thanks @hanjianwei for noticing this and tracking down the naming rules
+    update Puppet dependencies
+    Upgrade gcc package to 2.1.1
+    
+    Fixes #637
+    updated to latest dependencies
+    update puppet-ruby
+    update Ruby and Puppet Deps
+    Upgrade puppet-git to 2.3.1
+    
+    Closes #598
+    bump version on modules (includes ruby heartbleed fix)
+    updated boxen-git to 2.3.0
+    Update to puppet-nodejs 3.7.0
+    bump git package
+    
+    bugfix release
+    re revert puppet-go to 1.1.0
+    
+    This was fixed in #523 but undone again in #542, but should not be
+    moved into our-boxen until the ZSH bug is fixed.
+    updated puppet deps
+    Revert to puppet-go 1.1.0
+    
+    This upgrade to 2.0.1 was overlooked when I merged #519, and breaks
+    things for people who use zsh (see boxen/puppet-go#8).
+    Bumps Boxen module back down to 3.3.8
+    … for now!
+    Bumping all modules and including module-data
+    Update Puppetfile.lock
+    
+    $  bundle exec librarian-puppet install
+    This also removed the older cache version, so replacing it with the new
+    tar.gz file
+    Update some modules
+    Update a bunch of modules
+    Version bump to Puppetfile modules
+    Updating nodejs and ruby modules
+    Missed Homebrew module update to 1.4.1
+    Update Puppet modules with the latest available
+    Clean up inifile stuff from #362
+    Updating Puppet modules
+    Updating Ruby module and including the required dependencies
+    Adding Xquartz missing dependency for Ruby module
+    Quick update to std lib
+    Updating Puppetfile module versions with latest
+    Update puppet-inifile repo location
+    update puppetfile and readme to latest versions
+    Bump homebrew to fix incompatibilities
+    Bump modules
+    bump deps
+    one dot oh
+    Update our boxen template with the latest and greatest
+    Upgrade modules to latest action
+    Update ruby module
+    Bump to latest gems and modules
+    Update template with latest starter kit
+    bump rbenv
+    upgrade rbenv and ruby for smarter rbenv binary downloads
+    version bumps
+    backport a ton from github
+    bump module versions
+    version bumps for homebrew, nodejs, ruby to fix binary pkg fetches
+    bump puppet-boxen to fix compressed_apps with spaces in their names
+    bump puppet-boxen for sudoers entry for launchctl services management
+    update puppet-boxen for projects::all action :boom:
+    backport library bumps from our fork
+    bump puppet-boxen to got boxen::repo to handle the repo clone
+    upgrade puppet-boxen to eliminate compile time puppet warnings for boxen::janitor
+    upgrade puppet-boxen to get global boxen bin, fixes #6
+    update puppet-git to fix credential helper, fixes #5
+    update puppet-boxen and puppet-git for credential helper
+    bump ruby module to 0.0.8, fixes rbenv gem provider
+    bump puppet-boxen to 0.0.12 for security settings
+    enable dnsmasq by default
+    fix nginx with a version bump on the module
+    update tons of modules, nginx is behaving very weirdly
+    bump ruby to 0.0.5
+    update nvm and include by default
+    bump ruby module to 0.0.4
+    module bumps for various fixes
+    bump puppet-boxen version
+    boxen bump. this officially runs clean on a machine with CLT installed
+    Update puppet-homebrew to 0.0.3
+    Update module and remove xcode
+    Update puppet-boxen
+    bump puppet-boxen to 0.0.2 and vendor
+    Update for Boxen 0.1.0 development
+    Things managed by librarian-puppet go in shared/
+    Update modulefile
+    ZOMG GUISE FUCKIN MODULES AND SHIT
+    How did I miss this
+    fixes #750 - update to use boxen version 2.7.2
+    Update puppet-boxen and puppet-homebrew
+    
+    For usability and configuration improvements
+    just keeping it fresh
+    Update sync script to the latest from @dgoodlad
+    
+    As gisted at https://gist.github.com/dgoodlad/34f429d1b84a471933d3, and
+    linked from https://github.com/boxen/puppet-homebrew/issues/60, this is
+    the latest sync script used by Github's our-boxen. It uses the newer
+    aws-sdk-core gem, and apparently actually works.
+    Upgrade boxen gem to 2.7.0 with Yosemite support
+    
+    ... including dependency on Puppet 3.7
+    update librarian-puppet
+    update ruby stuff
+    update Ruby and Puppet Deps
+    Upgrade boxen version to 2.5.0
+    
+    Closes #554
+    Add deep_merge to the Gemfile(.lock) and vendor it
+    updated ruby deps
+    Update some modules
+    Update a bunch of gems
+    Upgrade boxen to 2.0.4
+    Upgrade boxen gem to 2.0.3 to fix the public email issue
+    
+    Fixes boxen/boxen#111
+    bump boxen and change credential script to support 2fa.
+    Bump Boxen Gem dependencies
+    Boxen gem now v1.5
+    Update Boxen Gem version to latest
+    update gemfile to use current boxen gem
+    bump deps
+    one dot oh
+    Bump gem deps
+    
+    /cc @mastahyeti
+    Fixes #28
+    Update our boxen template with the latest and greatest
+    Bump to latest gems and modules
+    Update template with latest starter kit
+    Bump to boxen 0.5.2
+    bump puppet to 3.0.1
+    backport a ton from github
+    Update for script/sync
+    bump to boxen 0.4.0 for service flags
+    bump boxen version for fixes
+    bump boxen for boxen_reponame fact and issue reporting support
+    bump boxen to 0.2.3
+    bump boxen version to 0.2.1
+    Update hiera and boxen deps to kill json gem dependency
+    Bump to 0.9.6
+    Use the released 0.1.0 gem
+    Update for Boxen 0.1.0 development
+    Depend on a real gem
+    add librarian-puppet with 100% more amazing
+    "Fix" location
+    Bump deps
+    Update deps
+    Initial commit
+    Add an example facts.d yaml file
+    Update our boxen template with the latest and greatest
+    adds source folder for librarian-puppet git source cache
+    Preserve lib/ or Puppet will create it as root
+    Document modules/people
+    bump to latest releases of default puppet libs
+    Bump to puppet-gcc 2.2.1 and puppet-git 2.4.0
+    
+    Fixes for the following problems:
+    * The latest Xcode installs git 2.4.0 and brew fails when trying to
+      downgrade.
+    * The latest Xcode breaks bootstrap by not stripping binaries. A
+      workaround is implemented in the latest puppet-gcc release.
+    just keeping it fresh
+    update Ruby and Puppet Deps
+    Updating Ruby module and including the required dependencies
+    bump to latest releases of default puppet libs
+    Bring back dat cache
+    Document modules/people
+    bump to latest releases of default puppet libs
+    bump boxen-xquartz to 1.2.1
+    Bump to puppet-hub 1.4.1
+    
+    Release note: https://github.com/github/hub/releases/tag/v2.2.1
+    bump to latest releases of default puppet libs
+    bump to latest releases of default puppet libs
+    bump puppet-boxen to 0.0.2 and vendor
+    Don't ignore modules, don't commit cache
+    ZOMG GUISE FUCKIN MODULES AND SHIT
+    Update a bunch of modules
+    Bump to puppet-gcc 2.2.1 and puppet-git 2.4.0
+    
+    Fixes for the following problems:
+    * The latest Xcode installs git 2.4.0 and brew fails when trying to
+      downgrade.
+    * The latest Xcode breaks bootstrap by not stripping binaries. A
+      workaround is implemented in the latest puppet-gcc release.
+    one dot oh
+    bump rbenv
+    Upgrade puppetlabs-inifile to Release 1.1.1
+    
+    This supported bugfix release corrects the inifile section header detection regex (so you can use more characters in your section titles).
+    
+    More details: https://github.com/puppetlabs/puppetlabs-inifile/pull/115
+    just keeping it fresh
+    updated puppet deps
+    puppet-brewcask bumped to 0.0.6
+    updated puppet deps
+    bump to latest releases of default puppet libs
+    one dot oh
+    Updating Ruby module and including the required dependencies
+    bump to latest releases of default puppet libs
+    Upgrade boxen gem to 2.7.0 with Yosemite support
+    
+    ... including dependency on Puppet 3.7
+    fixes #750 - update to use boxen version 2.7.2
+    update Ruby and Puppet Deps
+    fixes #750 - update to use boxen version 2.7.2
+    update Ruby and Puppet Deps
+    fixes #750 - update to use boxen version 2.7.2
+    Add deep_merge to the Gemfile(.lock) and vendor it
+    updated ruby deps
+    updated ruby deps
+    Update a bunch of gems
+    fixes #750 - update to use boxen version 2.7.2
+    Upgrade boxen version to 2.5.0
+    
+    Closes #554
+    update Ruby and Puppet Deps
+    fixes #750 - update to use boxen version 2.7.2
+    Upgrade boxen version to 2.5.0
+    
+    Closes #554
+    fixes #750 - update to use boxen version 2.7.2
+    fixes #750 - update to use boxen version 2.7.2
+    Upgrade boxen gem to 2.7.0 with Yosemite support
+    
+    ... including dependency on Puppet 3.7
+    update ruby stuff
+    just keeping it fresh
+    updated ruby deps
+    fixes #750 - update to use boxen version 2.7.2
+    fixes #750 - update to use boxen version 2.7.2
+    updated ruby deps
+    updated ruby deps
+    updated ruby deps
+    fixes #750 - update to use boxen version 2.7.2
+    updated ruby deps
+    fixes #750 - update to use boxen version 2.7.2
+    update Ruby and Puppet Deps
+    fixes #750 - update to use boxen version 2.7.2
+    Update a bunch of gems
+    nix and emacs
+    blog
+    removed excessive ruby and node versions
+    Default exec path should reflect homebrew_root
+    Dots, not underscores!
+    
+    Addresses #689
+    Install NodeJS using `nodejs::version`
+    
+    The latest major release of puppet-nodejs, removed the versions classes:
+    
+        https://github.com/boxen/puppet-nodejs/releases
+    
+    Cc: @tarebyte, @rafaelfranca
+    update Ruby and Puppet Deps
+    added ruby 2.1.1
+    Use Ruby version aliases
+    Updates Ruby version definitions
+    Remove node v0.4 because it fails on 10.9
+    Updating to ::boxen_user variable in anticipation of ::luser deprecation
+    Fix typo in Repository default require path
+    Fix up cycle due to git class and updated home-brew module, fixes #354
+    Revert "Merge pull request #311 from smcnabb/master"
+    
+    This reverts commit 40de1e40f3e3c5d47d157c1f996a2a21f033a113, reversing
+    changes made to 206dee9965730738b0c6011e271950ebfa329d75.
+    
+    Reason: This make harder to override the global version if it is
+    required for someone.
+    
+    See https://github.com/boxen/our-boxen/pull/311#issuecomment-19719152
+    Set the global node version in the site manifest
+    Use the boxen-git-credential for all repositories clones.
+    
+    This is required since puppet run all the comands as root and the
+    credential config is only present on the user land.
+    
+    The lack of this configuration is making clones using https to not
+    work since the credential is not present for the root.
+    
+    Closes #286
+    update puppetfile and readme to latest versions
+    new class names
+    Fix typo
+    fix
+    Update our boxen template with the latest and greatest
+    Update template with latest starter kit
+    site.pp - Added missing comma.
+    
+    Missing comma caused failures when running boxen
+    backport a ton from github
+    bump puppet-boxen to got boxen::repo to handle the repo clone
+    fuck a color symlink
+    ensure clone of boxen repo into the srcdir, and a symlink in the BOXEN_HOME to the repo
+    ensure we clone our boxen repo into BOXEN_HOME/repo
+    fail if no FDE, this should be parity once rubygems provider is fixed
+    add some common packages to default node config
+    enable dnsmasq by default
+    enable all the rubies and nodes for now, basically
+    update tons of modules, nginx is behaving very weirdly
+    include ruby 1.9.3-p194 by default
+    include node 0.6 and 0.8 by default
+    update nvm and include by default
+    add hub and rbenv
+    turn puppet fu back on
+    Broken
+    some small site tweaks
+    update default node def
+    Stub manifests/site.pp
+    Support OS X 10.11 El Capitan.
+    
+    The system Ruby installs bundler into `/Library/Ruby/bin`.
+    Fix script/sync gem setup on default install.
+    
+    Was having issues with multiple versions of JSON gem and the development
+    gems not being installed.
+    Speed up bootstrap by using checksums
+    
+    We've been using this modified bootstrap here at GitHub for months. I've
+    neglected to extract it to the public repo, until now.
+    
+    This uses a quick checksum of `Gemfile`, `Gemfile.lock`, binstubs, the
+    ruby version and bundler version to determine if bundling is
+    necessary. This is much, much faster than running bundler every time.
+    
+    I've also included some of our other misc. changes, mainly to logging
+    output and some minor structural pieces.
+    Changed to an ask for adding to /etc/groups
+    
+    Bash y/n code adapted from http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script
+    Improving echo messages
+    
+    Also changed to boxen standard of "No message if nothing changes"
+    Revert "Merge pull request #607 from walling/master"
+    
+    This reverts commit 1aea2e02c1a8d641bc7f7c6e58d7faaf13cb1696, reversing
+    changes made to db3d1de5f8ab587fcbad6813edfb7ce52d21ad96.
+    Suppressing error message when CLTools not installed
+    
+    On Mavericks you can install full Xcode and Boxen, but then you get this line every time you run `boxen` on the command-line:
+    
+        No receipt for 'com.apple.pkg.CLTools_Executables' found at '/'.
+    
+    This minor bugfix suppresses the message.
+    Add a script to create a fake group
+    
+    This fixes https://github.com/boxen/our-boxen/issues/235 in a more permanent way
+    Fix to support LLVM/ruby that ships with Xcode 5.1
+    Fix for when is GNU sed installed in homebrew with --default-names
+    Don't let .DS_Store files break script/bootstrap
+    
+    Fixes boxen/our-boxen#512
+    
+    In particular, I have seen problems with the following hidden files that Mac creates:
+    - `.DS_Store`
+    - `.!59508!.DS_Store`
+    - `.!59554!.DS_Store`
+    Revert "Merge pull request #531 from stepanstipl/fix-gnu_sed"
+    
+    This reverts commit 4de4bf9a0ac5a65ffc107102e7df5e124558955f, reversing
+    changes made to 9adae9897db20f0770e57cf3ba3f69c56662664d.
+    
+    This broke Mac OS X sed
+    updated ruby deps
+    Fix for GNU sed
+    Update script/bootstrap sudo to pass environment variables.
+    
+    When executing a boxen run from inside the corporate firewall we need to pass
+    proxies through to sudo so that bundler will be installed properly as root.
+    set shebang in gem bins to system ruby
+    Don't put our xcrun shim on path for 10.9
+    use gem list -i
+    Bundler ~> 1.3.0 check
+    
+    Fixes #79
+    Use full paths to bins in script/bootstrap
+    Further clarification about Bundler installation.
+    Use "sudo -p" with informative prompt instead of echo.
+    
+    Won't show the prompt if sudo hasn't timed out since
+    previous authorized sudo activity.
+    Be informative about impending "sudo" activity.
+    Revert "allow bundler 1.x releases" from #126
+    
+    This reverts commit 8153b926de73b4846338c9de00e90d6e5346be3a.
+    allow bundler 1.x releases
+    install the version you're checking for
+    Update our boxen template with the latest and greatest
+    Update for Boxen 0.1.0 development
+    Fail fast
+    Remove librarian-puppet config like bundler
+    Things managed by librarian-puppet go in shared/
+    Initial commit
+    Replace dashes by underscores in GitHub usernames
+    work with EDITOR like 'mate -w'
+    Update boxen-my-config for the proper login env
+    Update our boxen template with the latest and greatest
+    Update template with latest starter kit
+    nix and emacs
+    Remove commit from other virtual branch. Revert "add core.excludesfiles to configs deleted."
+    This reverts commit 0637cb7608fbb8e5776c624f5d39203599cadcd2.
+    add core.excludesfiles to configs deleted.
+    Updated scripts to allow for the use of the --receipts and --gitconfig flags
+    script/nuke failed to delete receipts
+    
+    Can't use a bare system call because we need globbing
+    Update our boxen template with the latest and greatest
+    Update template with latest starter kit
+    Update template with latest starter kit
+    Revert "updated git credential to use git subcommand"
+    updated git credential to use git command
+    
+      * on a new os x install git-credential-osxkeychain is not a valid command
+        so we should rely on the git subcommand instead which is just git credential-osxkeychain
+      * this was an oversight because once boxen runs it installs this command as /usr/local/bin/git-credential-osxkeychain.
+    boxen-git-credential: handle /usr/local Homebrew.
+    
+    Don't assume the Git credential location as Homebrew might be in
+    /usr/local and due to Boxen being Boxen we can't get the location in
+    this script itself (as far as I can tell).
+    
+    Closes #727.
+    Fix for git credentials containing an '=' sign
+    
+    Thanks @dbussink
+    Short term hack to unbreak boxen-git-credential on 10.8 systems
+    force UTF-8 encoding
+    bump boxen and change credential script to support 2fa.
+    fixing git credential helper for GitHub Enterprise
+    one dot oh
+    Kill external BUNDLE_ env vars
+    Add script/boxen-git-credential
+    
+    boxen/puppet-git will need to be taught about this file.
+    tutorials started
+    nix and emacs
+    squid and geektools
+    clamav and stuff
+    haskell platform, and removing pyenv
+    script/sync:add support to sync nodes
+    script/sync: don't print skip message if object exists.
+    
+    This avoids wasting time trying to fix up Homebrew formulae that are
+    already uploaded.
+    script/sync: handle custom homebrew roots.
+    
+    Upload binaries to a sensible location depending on the Homebrew root.
+    
+    Also, ensure that all old binaries are still used correctly and don't
+    try to reupload binaries for stuff already bottled by Homebrew.
+    script/sync: set boxen bucket by default.
+    
+    We do this elsewhere so let's be consistent.
+    Fix script/sync gem setup on default install.
+    
+    Was having issues with multiple versions of JSON gem and the development
+    gems not being installed.
+    Update sync script to the latest from @dgoodlad
+    
+    As gisted at https://gist.github.com/dgoodlad/34f429d1b84a471933d3, and
+    linked from https://github.com/boxen/puppet-homebrew/issues/60, this is
+    the latest sync script used by Github's our-boxen. It uses the newer
+    aws-sdk-core gem, and apparently actually works.
+    Use the nodenv layout instead of the old nvm one
+    Update for script/sync
+    Fix :heart: to terminal readable
+    
+    \xE2\x9D\xA4 = :heart: = U+2764
+    Port over github's newer boxen auto-update code
+    remove unused variable
+    also turn off pulling for service manipulation
+    switch around the no-pull arg check
+    add more args to turn off pulling
+    undo accidental changes to master
+    
+    This reverts commits 5b4b7223c2a5ff0863b42b8eae5de1c937d77659,
+    fe2933519cb621acaa0bdc8815850a3362b63392, and
+    9f2cfbaed041e6f62741c7de3deafb9852a42591.
+    
+    This gets us back to 11ea991577f3785ddb6067dca68c11240be3db08.
+    also turn off pulling for service manipulation
+    switch around the no-pull arg check
+    add more args to turn off pulling
+    It's cleaner to have another case: "not on any branch".
+    Don't die if HEAD ref is not symbolic.
+    
+    Examples of situations when HEAD is not symbolic:
+    
+     * You're doing interactive rebase
+     * You're using git bisect
+     * ... and so on.
+    speed up all invocations of boxen
+    
+    when running Bundler, it just so happens that --local should (but does not)
+    skip updating the gems in vendor/cache. explicitly skipping that update drops
+    most of a second off of every run of boxen.
+    Refactor git handling
+    better error messages about auto updating
+    Update template with latest starter kit
+    Update for Boxen 0.1.0 development
+    Boxen.run -> Boxen::CLI.run
+    Temporarily pin BOXEN_HOME to tmp/home
+    Call Boxen.run
+    Spike config/basic
+    Stub auto-updating script/boxen
+    Things managed by librarian-puppet go in shared/
+    Keychain issue added to FAQ
+    Update FAQ to ensure proper bundle --path
+    Typo
+    fixed spelling error
+    Added more detailed update process
+    Add note about the module cache
+    Update faq.md
+    Added 'nuke' instructions.
+    initial faq
+    Update our boxen template with the latest and greatest
+    more doc
+    get doc-wild
+    Small fix on Redis section on rails.md
+    
+    Actually Redis needs to specify the url: parameter when using the URL, otherwise
+    needs to specify host:, port: so I kept the original example using the URL, but
+    now with the :url option
+    Remove unneeded code from the MySQL example
+    
+    The `boxen?` method isn't used anywhere in the file. Remove it so that there's less code for people to copy and paste and to generate less confusion as to why there's a method there that doesn't need to be there.
+    Updates rails docs for consistency
+    Typo
+    dangling GH_
+    Update our boxen template with the latest and greatest
+    get doc-wild
+    Fix the line numbers for the variable highlighting.
+    Small typo and grammar correction in modules doc
+    first spike at docs on puppet modules
+    Add linked docs about how automatic updates work
+    Change acronym to the nicer What.
+    Update our boxen template with the latest and greatest
+    Fixes #379, adding directory type reference
+    Updating to ::boxen_user variable in anticipation of ::luser deprecation
+    Add note about GitHub usernames with dashes in README
+    people module doc update
+    Update docs a bit for people example
+    Document modules/projects
+    Document modules/people
+    Document modules/people
+    include course in projects
+    graph project started
+    added missing coreutils
+    blog
+    haskell platform, and removing pyenv
+    removed teamviewer
+    fuse started
+    sublime symlink to config instead of storing puppet files
+    boxen repos fixes
+    moving boxen scripts around
+    chicken, finder, git
+    limechat and zsh https
+    dock settings
+    frictionless bundle placed
+    imported from 10.9 and working on frictionless
+    nix and emacs
+    fuse started
+    changes
+    gitattributes and limechat config
+    seil
+    chicken, finder, git
+    agda renamed to emacs
+    viscosity
+    squid and geektools
+    clamav and stuff
+    mosh
+    haskell platform, and removing pyenv
+    removed teamviewer
+    fuse not working properly
+    fuse started
+    mucking around with sublime and haskell
+    sublime symlink to config instead of storing puppet files
+    chicken, finder, git
+    limechat and zsh https
+    hgrc
+    pip config for nbbdev cert
+    finder settings
+    spotify
+    rdesktop working
+    sublime and ukelele
+    imported from 10.9 and working on frictionless
+    added missing puppet files
+    rdesktop working
+    sublime and ukelele
+    imported from 10.9 and working on frictionless
+    error free boxen
+    imported from 10.9 and working on frictionless
+    mosh
+    zsh oh my path changed
+    moving boxen scripts around
+    limechat and zsh https
+    imported from 10.9 and working on frictionless
+    seil
+    sublime and ukelele
+    frictionless bundle placed
+    squid and geektools
+    moving boxen scripts around
+    tutorials started
+    agda renamed to emacs
+    graph project started
+    build7 added
+    mosh
+    fuse started
+    sublime symlink to config instead of storing puppet files
+    python!
+    rdesktop working
+    imported from 10.9 and working on frictionless
+    disabling haskell-stack
+    fixed typo
+    spacemacs and sanity
+    squid and geektools
+    haskell platform, and removing pyenv
+    mucking around with sublime and haskell
+    tweaking sublime
+    ansible hosts
+    squid and geektools
+    clamav and stuff
+    build7 added
+    gitattributes and limechat config
+    neater construction of paths
+    boxen repos fixes
+    moving boxen scripts around
+    fuse started
+    gitattributes and limechat config
+    moving boxen scripts around
+    dock settings
+    react added
+    graph project started
+    dock settings
+    seil
+    chicken, finder, git
+    finder settings
+    sublime key repeat
+    squid and geektools
+    changes
+    mucking around with sublime and haskell
+    tweaking sublime
+    sublime symlink to config instead of storing puppet files
+    sublime keymap and preferences
+    sublime and ukelele
+    clamav and stuff
+    moving boxen scripts around
+    imported from 10.9 and working on frictionless
+    imported from 10.9 and working on frictionless
+    clamav and stuff
+    imported from 10.9 and working on frictionless
+    python3 and postgres
+    squid and geektools
+    tweaking sublime
+    clamav and stuff
+    viscosity
+    squid and geektools
+    spacemacs and sanity
+    python3 and postgres
+    agda renamed to emacs
+    nix and emacs
+    imported from 10.9 and working on frictionless
+    fuse started
+    fuse started
+    fuse not working properly
+    fuse started
+    imported from 10.9 and working on frictionless
+    fuse started
+    pycharm version bumped
+    finder settings
+    imported from 10.9 and working on frictionless
+    gitattributes and limechat config
+    limechat and zsh https
+    moving boxen scripts around
+    added missing puppet files
+    imported from 10.9 and working on frictionless
+    ssh config updated
+    python3 and postgres
+    ssh configs for test VMs
+    build7 added
+    imported from 10.9 and working on frictionless
+    imported from 10.9 and working on frictionless
+    Update line highlighting
+    adding docs for Github Enterprise users
+    Ohai, some boxen::project love
+    Update docs a bit for projects example
+    Document modules/projects
+    Document modules/projects
+    Document modules/people
+    update puppet-boxen for projects::all action :boom:
+    spacemacs and sanity
+    script examples added
+    renaming
+    tutorial added
+    bug fix
+    tutorials started
+    amazon cmdline
+    spacemacs and sanity
+    python3 and postgres
+    squid and geektools
+    haskell platform, and removing pyenv
+    hgrc
+    python!
+    pip config for nbbdev cert
+    imported from 10.9 and working on frictionless
+    blog
+    blog
+    haskell platform, and removing pyenv
+    mercurial configuration from config.git
+    mercurial
+    Should user repo_dir variable here incase of over-ride in project definition
+    Removing redirect for www. subdomain, seems unnecessary
+    Listen on wildcard (*) subdomain
+    :scissors:
+    Heavy handed removal of if block, this is not related to try_files addition
+    Changing nginx template to use try_files
+    Change nginx.conf.erb to silence warnings
+    
+    server_name without '@' was causing deprecation warnings.
+    Bump modules
+    Ohai, some boxen::project love
+    python!
+    spacemacs and sanity
+    Add sample hiera configuration
+    Amend placeholder file extension
+    
+    Fixes #534
+    Placeholder hiera file
+    adding GitHub Enterprise variables to Boxen config
+    doc more env vars
+    Update for script/sync
+    add some docs about overrides
+    Make config extensible
+    Nah, don't require plain boxen
+    Make config extensible
+    Always require Boxen in config/basic
+    Spike config/basic
+    Add sample hiera configuration
+    Add a README describing user-specific hiera config
+    Preserve lib/ or Puppet will create it as root
+    Document modules/people

@@ -1,0 +1,855 @@
+﻿    Update README.md
+    Update README.md
+    Adds Hipchat link to README
+    Seeds a default user in dev
+    Adds "Stories in Ready"
+    dat comma
+    Adds build icon
+    Gives some background on Pathway Homes and the app
+    
+    Closes #8
+    Adds script/server
+    Adds script/deploy for deployment to Heroku
+    Development setup
+    alphabetize gemfile
+    Bump rails to 4.1.10
+    Adds slim and better_errors
+    Adds simple_form
+    sends email to the requestor when a request is maked as closed
+    Install pagination.  Paginate ServiceRequests#index.  Move User service to MainCtlr.
+    weird combo of chosen-rails and chosen-angular
+    Install underscore.  Fill in existing data on edit page.
+    Remove turbolinks.
+    Users track when the password was last updated
+    Adds pry for debugging
+    Added role based permissions to Ability model and validation for role, with test
+    Added role based permissions to Ability model
+    Add org specific styling
+    Ran bundle install
+    Fixes merge conflict
+    Fixes merge conflict
+    Adds shoulda-matcher gem
+    Added Devise, CanCan and generated user model
+    Adds Travis CI configuration
+    Push more bootstrap stuff
+    switches db to postgres
+    Adds unicorn to the Gemfile
+    Installs rails_12factor for Heroku deployment
+    Adds postgres gem for Heroku deployment
+    
+    We should eventually use postgres in development and test too
+    Add ruby-version file.  Install angular.
+    Adds rspec-rails
+    Rails 4.1.4
+    Runs unicorn in production (Heroku)
+    
+    Closes #2
+    Silences warnings; rails generates way too many of them to be useful
+    Adds rspec-rails
+    Rails 4.1.4
+    Rails 4.1.4
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    weird combo of chosen-rails and chosen-angular
+    Rails 4.1.4
+    Adds rspec binstub
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Only the date is important
+    adds maintenance_provider enum to service request
+    Removes the assigned_at column too
+    Removes the assignee_id column
+    Adds EmailDigest.deliver_latest
+    Adds EmailDigest.deliver_latest
+    adds user disable capability
+    removed registerable
+    Adds custom route for user creation
+    Edit button for Service request.
+    Adds name field to user editor
+    renames funtion to follow assignee convention
+    Request show page modified... Rails ids added..
+    Renames column
+    Fixes `default` on `password_updated_at`
+    Updated schema with latest migrations
+    Uses default value for password_updated_at in the far past
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Users track when the password was last updated
+    Updated schema to reflect newly added associations
+    Rails enum columns should be integer-backed
+    status defaults to "open"
+    Added role based permissions to Ability model and validation for role, with test
+    Added field authorized_to_enter column to service_requests table
+    Added role based permissions to Ability model
+    Touches schema version
+    Fixes merge conflict
+    Changed pat datatype from string to boolean in service_requests table
+    Fixes merge conflict
+    Add autoprefixer gem
+    Fixed misnamed types in create_service_requests
+    Adds note model
+    Adds request_type model
+    Removes seeds that are covered by dev:seed
+    Update seeds
+    Removes assignee as a concept
+    Removes the maintenance role
+    move db seed dev only into new rake task
+    Avoids creating service requests with hardcoded IDs
+    adds date range to csv export
+    Update so that seeded request is assigned to maintenance user
+    Update seeds to have 3 types of users and some more active service requests
+    Add name to default user in seed file
+    generates csv's
+    Seed is idempotent
+    Adds a development service request seed
+    Seeds a default user in dev
+    Adds seed data for request_types
+    Rails 4.1.4
+    Uses default value for password_updated_at in the far past
+    Users track when the password was last updated
+    Fixed misnamed types in create_service_requests
+    Updated create_service_requests migration to add in the assigned_at and closet_at timestamps. Also added comments for the future relationships for ServiceRequests
+    Generated ServiceRequest model.
+    Changed pat datatype from string to boolean in service_requests table
+    adds maintenance_provider enum to service request
+    adds user disable capability
+    Removes the assigned_at column too
+    Added field authorized_to_enter column to service_requests table
+    Renames column
+    Adds note model
+    Added migration to add associations between ServiceRequest and User and RequestType
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Added role to users
+    Fixes `default` on `password_updated_at`
+    Adds EmailDigest.deliver_latest
+    Adds EmailDigest.deliver_latest
+    Rails enum columns should be integer-backed
+    Only the date is important
+    Adds request_type model
+    Removes the assignee_id column
+    status defaults to "open"
+    Rails 4.1.4
+    Removes detection of psql, which may not work in all cases (e.g., Postgres.app)
+    Reworks dev:seed a bit
+    Seeds a default user in dev
+    Installs databases via script/bootstrap
+    Development setup
+    Adds script/server
+    Additional arguments are passed
+    Adds script/deploy for deployment to Heroku
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Email recipient is constant
+    
+    Closes #68
+    Creates email digest mailer
+    Creates email digest mailer
+    Rails 4.1.4
+    sends email to the requestor when a request is maked as closed
+    Sends an email to the creator
+    Was receiving errors when trying to export a file. This appears to be caused when the creator doesnt have a name. Changed it to a try method.
+    Uses simple_form for service request form
+    Enables mailers
+    changes creaed_on field in form to use html input type=date
+    allows the date closed to be set as a date other than today
+    comments out sending the email till email is working on heroku
+    sends email to the requestor when a request is maked as closed
+    accidental git conflict string in form
+    Uses dates instead of times
+    Only the date is important
+    adds maintenance_provider enum to service request
+    Adds assigned as a status
+    Removes assignee as a concept
+    concatinates then exports notes
+    Final styles on the show page
+    Creates email digest mailer
+    bad valdiation on authorized to enter prevents saving with false cause not truthy
+    Creates email digest mailer
+    renames funtion to follow assignee convention
+    My bad
+    Resets assigned_at if assignee changes
+    Updates closed_at as appropriate
+    Uses callbacks to move status along the state machine
+    Renames column
+    generates csv's
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Sets creator in the controller
+    Fixed a bug with setting assigned_at and closed_at
+    Added functionality to update assigned_at attribute in ServiceRequest when the assignee is assigned or changed
+    Fixes tests for service requests controller
+    Added functionality to record when a request is closed
+    Added functionality to record when a request is closed
+    adds basics for request type csv export
+    Removed improper validation
+    Added validation for association to creator
+    Added associations between ServiceRequest and User
+    Implementing associations for service request
+    Rails enum columns should be integer-backed
+    Use `inclusion` for boolean field
+    Adds API for creating service requests
+    Added field authorized_to_enter column to service_requests table
+    Updated create_service_requests migration to add in the assigned_at and closet_at timestamps. Also added comments for the future relationships for ServiceRequests
+    Generated ServiceRequest model.
+    Email recipient is constant
+    
+    Closes #68
+    Modifies delivery logic for #67
+    
+    Closes #67
+    Order these by created_at too
+    Adds EmailDigest.deliver_latest
+    Modifies delivery logic for #67
+    
+    Closes #67
+    Order these by created_at too
+    Adds EmailDigest.deliver_latest
+    concatinates then exports notes
+    Adds note validations
+    Adds shoulda-matcher gem
+    Adds note model
+    generates csv's
+    Added association between ServiceRequest and RequestType
+    Adds validations for request_type
+    Adds request_type model
+    Fixes password reset flow
+    Removes the maintenance role
+    made ability.rb work correctly
+    Added ability for maintenance to create and read notes
+    Fixes constant name
+    Added role based permissions to Ability model and validation for role, with test
+    Added role based permissions to Ability model
+    ROLES defines valid roles
+    Role may only be admin or staff
+    Removes the maintenance role
+    Adds EmailDigest.deliver_latest
+    Adds EmailDigest.deliver_latest
+    Actually add user disable capability
+    adds user disable capability
+    removed registerable
+    Renames column
+    Fixes tests for service requests controller
+    Users track when the password was last updated
+    Added associations between ServiceRequest and User
+    Allow users to be registered via devise. Update signup form with new title
+    Added role based permissions to Ability model and validation for role, with test
+    Users should not be able to register
+    Rails 4.1.4
+    Rails 4.1.4
+    sends email to the requestor when a request is maked as closed
+    Sends an email to the creator
+    Download and use free icons. Make Admin landing page look nice
+    tweaked styling
+    Add additional materials callout to homepage. Closes Issue #72
+    Adds functionality to the view requests button
+    Make some minor changes to language based on stakeholder feedback. Remove Sign Up button
+    Go with a more subdued jumbotron style.
+    Improve language on page. Add new icon
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Small typo fix deactive/deactivate.
+    adds export front end
+    Make the icon size smaller on the admin page because they are a little overwhelming
+    Update links for export until Ryan puts the official real version in place
+    Clean up Admin Page.
+    Add links to create and index request types
+    Make the user links/buttons link to the proper paths
+    Download and use free icons. Make Admin landing page look nice
+    Start tweaking admin landing page
+    Add static admin page so adminstrators can get to the links they care about. Only allow admins to access it
+    Creates email digest mailer
+    Creates email digest mailer
+    Switches users/form to simple_form
+    Getting edit user to work wth angular
+    Fixes password reset flow
+    removed registerable
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Service request form and accompanying angular controller initialization.
+    Add ServiceRequests controller for backend and frontend.
+    Getting edit user to work wth angular
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Updated the user index to have a link to create a new users.
+    Switches users/form to simple_form
+    DRYing up the request index.
+    Fix pagination of user requests.
+    Really rough pagination.
+    tweaked styling
+    style service requests index
+    style service requests index
+    reformatted service requests index
+    created two separate request areas on service requests index
+    Updated the index table display
+    changed service requests index
+    added service request index search
+    update service request index
+    adding service request filters
+    formatting service requests index
+    updated service requests index view, json and js
+    format service requests index
+    update service requests index detail links
+    change links on service requests index and in header
+    index data and layout
+    add index
+    Rails 4.1.4
+    DRYing up the request index.
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Service request form and accompanying angular controller initialization.
+    Add ServiceRequests controller for backend and frontend.
+    front end to show and update maintenance provider
+    Only the date is important
+    Removes the assignee_id column
+    Removes assignee as a concept
+    Final styles on the show page
+    More changes to beautify the show page
+    Update partial to pull back assignee name
+    Fixes tests
+    Request show page modified... Rails ids added..
+    Renames field in view
+    formatting service requests index
+    Wraps at 80 chars
+    updated service requests index view, json and js
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Adds #index route for service requests
+    Adds API for creating service requests
+    Adds #index route for service requests
+    Returns to using a partial
+    Make show page use angular to populate.
+    Wire up jbuilder to send us the stuff we need to use angular to populate the show page
+    Adds #index route for service requests
+    Adds API for creating service requests
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Added functionality to add notes to service tickets
+    front end to show and update maintenance provider
+    Added views for adding notes to a service request
+    Final styles on the show page
+    More changes to beautify the show page
+    Cleaning up show page
+    Update partial to pull back assignee name
+    Make show page use angular to populate.
+    Wire up jbuilder to send us the stuff we need to use angular to populate the show page
+    Date formatted. Special instructions added. IDs are in rails...
+    Edit button for Service request.
+    Request show page modified... Rails ids added..
+    IDs added to show page.
+    IDs added to show page.
+    Show Js quick test.
+    Service Request Edit/updatet button
+    Rearranged headings.
+    Service Request SHOW page created.
+    Label
+    Only show "Closed On" when status is "Closed"
+    Uses simple_form for service request form
+    changes creaed_on field in form to use html input type=date
+    allows the date closed to be set as a date other than today
+    correct validation using ng-required
+    Only show close date if status == closed
+    this got killed by someone’s bad conflict resolution
+    accidental git conflict string in form
+    Fixes styling
+    front end to show and update maintenance provider
+    Fixes typo in model path
+    Fixes typo
+    In the interest of time, avoids parsing to a `Date` in angular
+    Adds `closed_on` field
+    Adds status update pulldown for admin
+    changes required fields on service request form
+    changes required fields on service request form
+    Add status update dropdown in form
+    weird combo of chosen-rails and chosen-angular
+    Fix n+1 error in request type in form submissions.
+    Install underscore.  Fill in existing data on edit page.
+    Wire up ServiceRequestController#edit
+    Revert "Removes unneeded fields"
+    
+    This reverts commit 52c31639011f5fd9b5f91f8bfba4276ab2dfcbb1.
+    
+    I might have been too forward on this.
+    Removes unneeded fields
+    Add form validation for radios.  Clean up old partials.
+    Even better validation.
+    Better form validity styling.
+    WIP Form validation.
+    Use request_type_id instead of type param
+    Use request types API and set from ID in ctrlr
+    Move the community name field below primary phone.
+    Basic alerting behavior.  Add authorized form field back.
+    Save request zip code.  Log some console messages for now.
+    Tie ServiceRequests form into backend api.
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Service request form and accompanying angular controller initialization.
+    Add ServiceRequests controller for backend and frontend.
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Make devise allow name and role to be set via the create form
+    Allow users to be registered via devise. Update signup form with new title
+    Generate devise views so we can customize them
+    Moves autofocus to first field
+    Adds name field to user editor
+    User must reset their password if it is expired
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Generate devise views so we can customize them
+    Make the login page look nice
+    Generate devise views so we can customize them
+    Updated the request types index to link to he edit action of the item since it was not working.
+    Remove commented out code
+    Make request types page look right
+    Create request types working, need links to edit etc
+    Request types.
+    Create request types working, need links to edit etc
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Service request form and accompanying angular controller initialization.
+    Add ServiceRequests controller for backend and frontend.
+    Create request types working, need links to edit etc
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Update the request types form to just make it a rails form.
+    Create request types working, need links to edit etc
+    Changed button styling for note modal
+    Added functionality to add notes to service tickets
+    Added controller to create new note
+    Added views for adding notes to a service request
+    Listing notes API
+    Users are embedded within notes
+    Notes may be created
+    Notes may be created
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    DRYing up the request index.
+    Add meta tag to header so that the site scales correctly when viewed on a phone
+    Fixed users homepage
+    Really rough pagination.
+    Create request types working, need links to edit etc
+    tweaked index style
+    Check is user is logged in at all
+    Show link to Admin page only if current_user is an admin
+    tweaked styling
+    Api endpoint for getting the current user.
+    Make show page use angular to populate.
+    Added reference to users controller to application layout
+    WIP Form validation.
+    Make some minor changes to language based on stakeholder feedback. Remove Sign Up button
+    Changed edit profile path in home page--correct now
+    Changed edit profile path in home page
+    update service request index
+    adding service request filters
+    Handle possible flash notices in a single alert element.
+    Remove turbolinks.
+    Make dynamic alert fixed.
+    Basic alerting behavior.  Add authorized form field back.
+    Update header to have proper login/logout messages in banner. Fix bootstrap styles for it
+    User must reset their password if it is expired
+    Tie ServiceRequests form into backend api.
+    change links on service requests index and in header
+    index data and layout
+    Missing comma problem
+    Improve header links to be useful. Remove duplicate requiring of bootstrap-sprockets
+    Spellun is harde.
+    Push more bootstrap stuff
+    Add ServiceRequests controller for backend and frontend.
+    Add ruby-version file.  Install angular.
+    Rails 4.1.4
+    Fixes password reset flow
+    Add route to pages/admin. Fix it so that CanCan authorization errors are handled gracefully versus throwing exceptions
+    The entire application is behind a login area
+    
+    Closes #22
+    Fix csrf token problems.
+    Fixes tests for service requests controller
+    User must reset their password if it is expired
+    Make devise allow name and role to be set via the create form
+    Adds API for creating service requests
+    Rails 4.1.4
+    Switches users/form to simple_form
+    Added front end for admin to disable users
+    For now use flash[:alert] only because it is hooked up to angular
+    Removes small unnecessary things
+    Got edit profiile to save, and also corrected telephone editing bug I noticed
+    Getting edit user to work wth angular
+    Fixes name, primary email, phone population for creators
+    Only admins may set role
+    Fixes password reset flow
+    Can save users successfully without error message
+    added password to users angular api
+    Latest work on password encryption
+    Api endpoint for getting the current user.
+    Working on saving new user--encrypting password
+    removed registerable
+    Enables mailers
+    Disable mailer to stop heroku errors.
+    Fixes formatting
+    In the interest of time, avoids parsing to a `Date` in angular
+    Adds status update pulldown for admin
+    Only admins may set role
+    Added views for adding notes to a service request
+    Removes test whose production code has been removed
+    Install pagination.  Paginate ServiceRequests#index.  Move User service to MainCtlr.
+    white lists adding maintenance provider on service request controller
+    Fix flash notice.
+    Fix n+1 error in request type in form submissions.
+    concatinates then exports notes
+    Sends an email to the creator
+    Wire up ServiceRequestController#edit
+    refactoring dates for export
+    The entire application is behind a login area
+    
+    Closes #22
+    Alert is for errors
+    Fixes tests that no longer apply
+    adds date range to csv export
+    WIP Form validation.
+    Wire up jbuilder to send us the stuff we need to use angular to populate the show page
+    Use request_type_id instead of type param
+    Use request types API and set from ID in ctrlr
+    Fixes tests
+    generates csv's
+    Required authentication for service requests
+    Adds service request update route
+    Added set_creator back into controller
+    Removed setting ServiceRequest.creator from the controller to avoid redundancy/confusion. I have it set to set the creator on a before_save callback in the model to add some restriction.
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Sets creator in the controller
+    Basic alerting behavior.  Add authorized form field back.
+    Adds #index route for service requests
+    Fixes tests for service requests controller
+    adds basics for request type csv export
+    Restore ServiceRequestsController.
+    update service_request controller
+    index data and layout
+    Handles error cases
+    Adds API for creating service requests
+    Render a form partial from ServiceRequestsController for #new and #edit.
+    Service Request SHOW page created.
+    Add ServiceRequests controller for backend and frontend.
+    Updated the request type controller to have an edit method since the angular way did not seem to be working.
+    For now use flash[:alert] only because it is hooked up to angular
+    Create request types working, need links to edit etc
+    The entire application is behind a login area
+    
+    Closes #22
+    Request types.
+    v1 request types API, unused
+    For now use flash[:alert] only because it is hooked up to angular
+    Added functionality to add notes to service tickets
+    Added controller to create new note
+    Added views for adding notes to a service request
+    Listing notes API
+    Notes may be created
+    Don't skip authentication for the admin page
+    Add static admin page so adminstrators can get to the links they care about. Only allow admins to access it
+    Skips auth for pages controller
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Rails 4.1.4
+    Added user angular controller, and show and index
+    tweaked index style
+    tweaked styling
+    style service requests index
+    Add additional materials callout to homepage. Closes Issue #72
+    changed service requests index
+    Make dynamic alert fixed.
+    Update header to have proper login/logout messages in banner. Fix bootstrap styles for it
+    Make the login page look nice
+    Add org specific styling
+    Add bootstrap styles
+    Go with a more subdued jumbotron style.
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    weird combo of chosen-rails and chosen-angular
+    Rails 4.1.4
+    Download and use free icons. Make Admin landing page look nice
+    Improve language on page. Add new icon
+    Spellun is harde.
+    Go with a more subdued jumbotron style.
+    Clean up Admin Page.
+    Rails 4.1.4
+    Add additional materials callout to homepage. Closes Issue #72
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Go with a more subdued jumbotron style.
+    Download and use free icons. Make Admin landing page look nice
+    Download and use free icons. Make Admin landing page look nice
+    Download and use free icons. Make Admin landing page look nice
+    Download and use free icons. Make Admin landing page look nice
+    Download and use free icons. Make Admin landing page look nice
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    Only show "Closed On" when status is "Closed"
+    Uses simple_form for service request form
+    weird combo of chosen-rails and chosen-angular
+    Install underscore.  Fill in existing data on edit page.
+    Add angular router just in case.
+    Remove turbolinks.
+    Improve header links to be useful. Remove duplicate requiring of bootstrap-sprockets
+    Service request form and accompanying angular controller initialization.
+    Push more bootstrap stuff
+    Add ServiceRequests controller for backend and frontend.
+    Add ruby-version file.  Install angular.
+    Rails 4.1.4
+    Only show "Closed On" when status is "Closed"
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    adds export front end
+    In the interest of time, avoids parsing to a `Date` in angular
+    Adds `closed_on` field
+    weird combo of chosen-rails and chosen-angular
+    Add angular router just in case.
+    Add ServiceRequests controller for backend and frontend.
+    Add some basic angular scaffolding.
+    DRYing up the request index.
+    DRYing up the request index.
+    Fix filtering user requests.
+    Really rough pagination.
+    Removes debugging statements
+    Make show page use angular to populate.
+    added service request index search
+    Clean up commented out code
+    adding service request filters
+    formatting service requests index
+    updated service requests index view, json and js
+    format service requests index
+    index data and layout
+    add index
+    Rails 4.1.4
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    Fixes request to undefined.json
+    Really rough pagination.
+    Install pagination.  Paginate ServiceRequests#index.  Move User service to MainCtlr.
+    Fix n+1 error in request type in form submissions.
+    WIP Form validation.
+    Comment out angular routing stuff for now.
+    Add angular router just in case.
+    Manage competing alerts in a promise.
+    Handle possible flash notices in a single alert element.
+    Basic alerting behavior.  Add authorized form field back.
+    New ServiceRequest service and main controller.
+    Removes debugging statements
+    Missing a ;
+    Make show page use angular to populate.
+    Request show page modified... Rails ids added..
+    Show Js quick test.
+    SHOW js controller created
+    Rails 4.1.4
+    Revert "disable submitting form with closed status but no closed_on date"
+    
+    This reverts commit 10fe359efaed2134659070fd1f85472f8261fd25.
+    disable submitting form with closed status but no closed_on date
+    Fixes name, primary email, phone population for creators
+    Install pagination.  Paginate ServiceRequests#index.  Move User service to MainCtlr.
+    Fix n+1 error in request type in form submissions.
+    Install underscore.  Fill in existing data on edit page.
+    Wire up ServiceRequestController#edit
+    Api endpoint for getting the current user.
+    Add form validation for radios.  Clean up old partials.
+    Even better validation.
+    Better form validity styling.
+    WIP Form validation.
+    Use request types API and set from ID in ctrlr
+    Comment out angular routing stuff for now.
+    Add angular router just in case.
+    Basic alerting behavior.  Add authorized form field back.
+    Save request zip code.  Log some console messages for now.
+    Tie ServiceRequests form into backend api.
+    Service request form and accompanying angular controller initialization.
+    Add ServiceRequests controller for backend and frontend.
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    DRYing up the request index.
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    Create request types working, need links to edit etc
+    Really rough pagination.
+    Create request types working, need links to edit etc
+    Request types.
+    Cleans up angular.js files
+    
+    * Removes files no longer required with simple_form refactorings
+    * Uses Rails asset pipeline to create a single JS file
+    Really rough pagination.
+    Wire up ServiceRequestController#edit
+    New ServiceRequest service and main controller.
+    Fixed users homepage
+    Getting edit user to work wth angular
+    Fixes password reset flow
+    Api endpoint for getting the current user.
+    Added user angular controller, and show and index
+    Rails 4.1.4
+    Adds rspec-rails
+    Fixes tests for service requests controller
+    Users track when the password was last updated
+    Adds rspec-rails
+    Email recipient is constant
+    
+    Closes #68
+    Creates email digest mailer
+    Creates email digest mailer
+    Sends an email to the creator
+    Removes the maintenance role
+    Uses callbacks to move status along the state machine
+    Fixes tests for service requests controller
+    Users track when the password was last updated
+    Fixes tests
+    Updates closed_at as appropriate
+    Uses callbacks to move status along the state machine
+    Adds service request update route
+    Creates email digest mailer
+    Creates email digest mailer
+    Fixes tests
+    updates tests to account for ability to set a non-today close on date
+    Uses dates instead of times
+    Removes the maintenance role
+    Updates closed_at as appropriate
+    Uses callbacks to move status along the state machine
+    Nukes pending specs
+    Generated ServiceRequest model.
+    Adds note validations
+    Nukes pending specs
+    Adds note model
+    Adds request_type model
+    generates csv's
+    Adds validations for request_type
+    Nukes pending specs
+    Adds request_type model
+    Hackily (for now) fix this test
+    Users track when the password was last updated
+    Added role based permissions to Ability model and validation for role, with test
+    Nukes the pending spec
+    Skips auth for pages controller
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Removes test that does not make sense anymore
+    Users are embedded within notes
+    Notes may be created
+    Removes test whose production code has been removed
+    Fixes tests that no longer apply
+    Fixes tests
+    Adds service request update route
+    Removes client fields
+    
+    We were asked not to track these as they are considered sensitive
+    private data
+    Fixes tests for service requests controller
+    Handles error cases
+    Adds API for creating service requests
+    Rails 4.1.4
+    Sets a global default "From" address for mailers
+    adds basics for request type csv export
+    Rails 4.1.4
+    Rails 4.1.4
+    Uses separate development and test databases
+    switches db to postgres
+    Rails 4.1.4
+    Runs unicorn in production (Heroku)
+    
+    Closes #2
+    Rails 4.1.4
+    Getting edit user to work wth angular
+    Added functionality to add notes to service tickets
+    Create request types working, need links to edit etc
+    Only admins may set role
+    Add route to pages/admin. Fix it so that CanCan authorization errors are handled gracefully versus throwing exceptions
+    Api endpoint for getting the current user.
+    WIP Form validation.
+    removed registerable
+    Adds custom route for user creation
+    v1 request types API, unused
+    bug with redirects
+    generates csv's
+    Create some static pages. Update routes file to point to them. Put some initial fancy styles in to see what people think.
+    Notes may be created
+    changed registration route to user/add_user
+    Cleans up routes
+    update service_request controller
+    index data and layout
+    Cleans up routes.rb
+    add index
+    Added Devise, CanCan and generated user model
+    Add ServiceRequests controller for backend and frontend.
+    Add some basic angular scaffolding.
+    Rails 4.1.4
+    sends email to the requestor when a request is maked as closed
+    Added Devise, CanCan and generated user model
+    Rails 4.1.4
+    Creates email digest mailer
+    Creates email digest mailer
+    Rails 4.1.4
+    Uses sendgrid for emails in production
+    Creates email digest mailer
+    Creates email digest mailer
+    Forces SSL in production
+    
+    Closes #21
+    Rails 4.1.4
+    Adds simple_form
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Adds simple_form
+    Creates email digest mailer
+    Creates email digest mailer
+    Rails 4.1.4
+    Rails 4.1.4
+    Rails 4.1.4
+    Add ServiceRequests controller for backend and frontend.
+    Rails 4.1.4
+    Adds simple_form
+    Rails 4.1.4
+    Rails 4.1.4
+    Changes reply email
+    Rails 4.1.4
+    Adds simple_form
+    Adds email_digest:deliver rake task
+    Rails 4.1.4
+    Only the date is important
+    Reworks dev:seed a bit

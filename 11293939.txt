@@ -1,0 +1,2870 @@
+﻿    Version 1.0.5
+    Version 1.0.4
+    Version 1.0.3
+    Version 1.0.2
+    Version 1.0.1
+    Fix overriding default endpoint docs
+    Version 1.0.0
+    Drop support for Java 6 and 7
+    
+     - Also upgrade Jetty now that we are on 8+
+    Version 0.2.1
+    Fix code example in README.md
+    Version 0.2.0
+    Cleaning indentation of dependency block in readme
+    Version 0.1.0
+    Formatting fixes in README.md
+    Version 0.0.49
+    Update readme - typo in example
+    Fix typos in README.md (fixes #64)
+    fix broken developers.signalfx.com links
+    update docs for multi-realm and tokens for consistency
+    Version 0.0.48
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Version 0.0.45
+    Version 0.0.44
+    Version 0.0.43
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Version 0.0.42
+    signalflow: add support for immediate computations
+    
+    When immediate is set to true, the stop time will be automatically
+    adjusted to allow for the immediate delivery of the computation output.
+    
+    This diff deprecates the current execute() method in favor of another
+    method that takes Long/Boolean objects instead of their primitive
+    equivalents.
+    
+    Test Plan: compiles. wrote a small java program using the library and
+    verified the new flag is properly taken into account.
+    Version 0.0.41
+    Version 0.0.40
+    Update README.md with 0.0.39 version info
+    Version 0.0.38
+    Version 0.0.35
+    Update README with latest version information
+    README updates
+    
+    Set latest version in dependency examples. Minor formatting fixes.
+    Add license statement.
+    Fix README
+    
+    INFO_MESSAGE isn't bubbled up; update example of access to datapoints of
+    DataMessage.
+    Update version in README.md examples. Fixes #31
+    
+    Update library version to latest release 0.0.28 in README.
+    Improve documentation on reading SignalFlow info messages
+    Add signalflow support
+    add documentation on sending metrics through http proxy
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Clarify dependency setup instructions (fixes #7)
+    Add helper to get AWSUniqueId for AWS integration with SignalFx
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Update README.md
+    
+    Fix code indentation and typos in code.
+    Indenting code blocks.
+    Max's feedback and fixing MD
+    One more try
+    Updated based on mdl
+    A few more wording edits
+    Rearranged readme for readability
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    Update README.md
+    
+    fix typo in yammer example
+    Readme fixed, Javadocs added, SendYammerMetrics deleted
+    changed dev to 'SignalFx'
+    Update readme with next version
+    Update README.md
+    
+    Example docs prints out POST errors
+    Document changing default source
+    Version 20 of library
+    Rename SIGNALFUSE to SIGNALFX
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Update version to 0.0.18
+    Use next version
+    Update version
+    Clarify where metadata comes from
+    Spellcheck
+    Document on the fly builders with dimensions
+    use snapshot 14
+    Add command example output
+    More documentation
+    Back to snapshot version
+    Documentation fixes and updates
+    Update README.md
+    
+    Fix readme
+    Update readme
+    Update README.md
+    
+    Typo in readme
+    More documentation
+    Build status badge
+    Initial Commit
+    Using next snapshot version
+    update_version: don't update README for snapshot versions
+    Improve update_version.py script to update the README as well
+    fix the version update to work correctly with child projects
+    Update .travis.yml to work around NPE in travis
+    rename signalfuse to signalfx
+    Use version 0.0.14
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Use version 13
+    Allow version numbers to load correctly
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Ensure that snapshot artifacts don't get accidentally released
+    Using next snapshot version
+    Fix parameters for release
+    Update pom for jenkins
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Upgrade to Jetty 9.x
+    
+    Upgrade various dependencies of signalfx-java, most notably switching to
+    Jetty 9.x for important security fixes. This involved dealing with some
+    important jetty-websocket framework changes for the WebSocketTransport.
+    Verified the changes with a local test program streaming a SignalFlow
+    computation.
+    
+    Note that we have to stick to Jetty 9.2.x as long as we intend to
+    support Java 7 for the signalfx-java library.
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Make SLF4J a transitive, but excluded, dependency
+    More fixes around SLF4J
+    
+    * Exclude SLF4J from the dependencies of `io.dropwizard.metrics`
+    * Mark `slf4j-api` as `provided`
+    * Remove shading of `org.slf4j`, since that's no longer in the generated
+      JAR anyway.
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Using next snapshot version
+    Version 0.0.40
+    Using next snapshot version
+    Version 0.0.39
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Add signalflow support
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    use snapshot 14
+    Use version 13
+    Back to snapshot version
+    Fix unit tests bump version
+    Version 0.0.11
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Allow version numbers to load correctly
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Move all java to -java library, remove core
+    Initial Commit
+    Fix up addDatapoints call to match API
+    Upgrade to Jetty 9.x
+    
+    Upgrade various dependencies of signalfx-java, most notably switching to
+    Jetty 9.x for important security fixes. This involved dealing with some
+    important jetty-websocket framework changes for the WebSocketTransport.
+    Verified the changes with a local test program streaming a SignalFlow
+    computation.
+    
+    Note that we have to stick to Jetty 9.2.x as long as we intend to
+    support Java 7 for the signalfx-java library.
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Whitespace cleanup
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Use new ingest endpoint
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Fix unit test
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Update jetty test version so tests pass in 1.6
+    Allow version numbers to load correctly
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    More documentation
+    Maintain metric type
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Move all java to -java library, remove core
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Rename SIGNALFUSE to SIGNALFX
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename files
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Support events-only mode in AggregateMetricSender
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    More documentation
+    Maintain metric type
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Support 1.6
+    Move all java to -java library, remove core
+    Add comments to AWSInstanceInfo
+    More fixups
+    Add helper to get AWSUniqueId for AWS integration with SignalFx
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Tweak the way connection manager is created
+    Add timeout before SSL handshake
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Use connection manager for HTTP
+    Version 0.0.11
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Move all java to -java library, remove core
+    Initial Commit
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Fix up addDatapoints call to match API
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Move all java to -java library, remove core
+    Initial Commit
+    Fix up addDatapoints call to match API
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix unit tests
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Tweak the way connection manager is created
+    Add timeout before SSL handshake
+    Use the STRICT_HOSTNAME_VERIFIER to validate SSL certificates' hostnames
+    
+    The default hostname verifier isn't strict about subdomains, which we
+    should be for improved security.
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Use connection manager for HTTP
+    Version 0.0.11
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Move all java to -java library, remove core
+    Initial Commit
+    Support (and request) compressed WebSocket messages
+    Rename directories
+    rename signalfuse to signalfx
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Move all java to -java library, remove core
+    Initial Commit
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Use connection manager for HTTP
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Allow version numbers to load correctly
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Use scheme
+    Move all java to -java library, remove core
+    Initial Commit
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Support (and request) compressed WebSocket messages
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Add timeout before SSL handshake
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Bug fix for the casee when using connection pool
+    Fix up addDatapoints call to match API
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    use snapshot 14
+    Use version 13
+    Use connection manager for HTTP
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Use connection manager for HTTP
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    More documentation
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    More documentation
+    Move all java to -java library, remove core
+    Initial Commit
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Send compressed datapoints payload by default
+    
+    Unless the com.signalfx.public.java.disableHttpCompression property is
+    set to true, the signalfx-java library will now send GZip-compressed
+    datapoint payloads to the SignalFx ingest endpoint.
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Using next snapshot version
+    Version 0.0.40
+    Using next snapshot version
+    Version 0.0.39
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    fix indentation
+    this change adds support for http proxy configuration via the java system properties
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Whitespace cleanup
+    Add signalflow support
+    Whitespace cleanup
+    Add signalflow support
+    Whitespace cleanup
+    Add signalflow support
+    Whitespace cleanup
+    Support expired-tsid stream message
+    Add signalflow support
+    Handle EXPIRED_TSID_MESSAGE in ComputationHandler
+    Use primitives instead of objects when it makes sense
+    Whitespace cleanup
+    Add signalflow support
+    Deserialize program errors correctly
+    Fix data batch accumulation of the first series of batches received
+    Use primitives instead of objects when it makes sense
+    Whitespace cleanup
+    Support expired-tsid stream message
+    Add signalflow support
+    Correctly close the underlying websocket client
+    
+    When closing the WebSocketTransport, we also need to stop the underlying
+    WebSocket client since it holds non-daemon threads and prevents the
+    application using this library from exiting correctly.
+    Fix connection to SSL WebSockets
+    Fix awaitConnected() to correctly timeout
+    Upgrade to Jetty 9.x
+    
+    Upgrade various dependencies of signalfx-java, most notably switching to
+    Jetty 9.x for important security fixes. This involved dealing with some
+    important jetty-websocket framework changes for the WebSocketTransport.
+    Verified the changes with a local test program streaming a SignalFlow
+    computation.
+    
+    Note that we have to stick to Jetty 9.2.x as long as we intend to
+    support Java 7 for the signalfx-java library.
+    Adding option to increase max binary message size (#51)
+    
+    
+    
+    * Parameterizing  maxBinaryMessageSize value
+    
+    * squashing commits
+    Correctly encode TSIDs as Base64Url strings when decoding binary data messages
+    
+    Otherwise the TSID of datapoints doesn't matchup with metadata TSIDs.
+    Support (and request) compressed WebSocket messages
+    Add support for SignalFlow preflight API
+    Use primitives instead of objects when it makes sense
+    Whitespace cleanup
+    Add signalflow support
+    Deserialize program errors correctly
+    Add support for reading metadata from events
+    Use primitives instead of objects when it makes sense
+    Whitespace cleanup
+    Support expired-tsid stream message
+    Add signalflow support
+    Deserialize program errors correctly
+    Add support for SignalFlow preflight API
+    Whitespace cleanup
+    Add signalflow support
+    Upgrade to Jetty 9.x
+    
+    Upgrade various dependencies of signalfx-java, most notably switching to
+    Jetty 9.x for important security fixes. This involved dealing with some
+    important jetty-websocket framework changes for the WebSocketTransport.
+    Verified the changes with a local test program streaming a SignalFlow
+    computation.
+    
+    Note that we have to stick to Jetty 9.2.x as long as we intend to
+    support Java 7 for the signalfx-java library.
+    signalflow: add support for immediate computations
+    
+    When immediate is set to true, the stop time will be automatically
+    adjusted to allow for the immediate delivery of the computation output.
+    
+    This diff deprecates the current execute() method in favor of another
+    method that takes Long/Boolean objects instead of their primitive
+    equivalents.
+    
+    Test Plan: compiles. wrote a small java program using the library and
+    verified the new flag is properly taken into account.
+    Use primitives instead of objects when it makes sense
+    Whitespace cleanup
+    Add signalflow support
+    Upgrade to Jetty 9.x
+    
+    Upgrade various dependencies of signalfx-java, most notably switching to
+    Jetty 9.x for important security fixes. This involved dealing with some
+    important jetty-websocket framework changes for the WebSocketTransport.
+    Verified the changes with a local test program streaming a SignalFlow
+    computation.
+    
+    Note that we have to stick to Jetty 9.2.x as long as we intend to
+    support Java 7 for the signalfx-java library.
+    Whitespace cleanup
+    Add signalflow support
+    Fix Javadoc errors in SignalFlowTransport
+    Support (and request) compressed WebSocket messages
+    Add support for SignalFlow preflight API
+    Whitespace cleanup
+    Add signalflow support
+    Rename files
+    Rename SIGNALFUSE to SIGNALFX
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Use new ingest endpoint
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Move all java to -java library, remove core
+    Initial Commit
+    Rename files
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Move all java to -java library, remove core
+    Initial Commit
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Using next snapshot version
+    Version 0.0.40
+    Using next snapshot version
+    Version 0.0.39
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Update examples with current version
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    Support events using protocol buffers
+    Add example on how to use protobuf to send datapoints and events
+    Updated readme
+    reformat the sample application a bit
+    Added Timer example to the signalfx-yammer-example project
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Make SLF4J a transitive, but excluded, dependency
+    More fixes around SLF4J
+    
+    * Exclude SLF4J from the dependencies of `io.dropwizard.metrics`
+    * Mark `slf4j-api` as `provided`
+    * Remove shading of `org.slf4j`, since that's no longer in the generated
+      JAR anyway.
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Using next snapshot version
+    Version 0.0.40
+    POM file fixes, and remove dependency analysis that doesn't work correctly
+    Using next snapshot version
+    Version 0.0.39
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Updated maven dependencies to replace codahale with dropwizard
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    use snapshot 14
+    Use version 13
+    Back to snapshot version
+    Fix unit tests bump version
+    Version 0.0.11
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Update pom
+    Move all java to -java library, remove core
+    Initial Commit
+    Bug fix around ResettingHistogram/ResettingTimer registration
+    
+    When a ResettingHistogram or ResettingTimer is registered more than once
+    with same metric name, an exception was getting thrown. This change fixes
+    that.
+    be able to add Resetting Timer from SfxMetrics
+    be able to build Resetting Histogram using SfxMetrics
+    
+    This allows easy replacement of sfxMetrics.histogram(..) calls.
+    cleanup SignalFxReporterTest
+    Remove deprecated SfUtil class
+    Rename files
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix unit tests
+    Document on the fly builders with dimensions
+    Fix build error that snuck in
+    More documentation
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Fix bug not allowing missing metric type
+    
+    Summary: Was assigning optional that was null
+    
+    Test Plan: extended unit tests
+    
+    Reviewed By: max
+    Change callback cumulativeCounter suggested use
+    
+    Summary:
+    I did not like the old way of doing things.  I think this is
+    a better way to have people interact with a cumulative counter that
+    uses a callback.
+    
+    Also updated docs
+    
+    Test Plan: extended the unit tests
+    
+    Reviewers: rajiv, kris
+    
+    Reviewed By: kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2653
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Move all java to -java library, remove core
+    Initial Commit
+    signalfx-codahale/yammer: allow metrics to be removed from metadata/registry
+    
+    Add a method that takes care of properly removing a metric from the
+    metric metadata and registry.
+    
+    Test Plan: unit test
+    Various POM file fixes and cleanups
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Add unit test for BasicJvmMetrics
+    
+    Summary: Added basic unit test
+    
+    Test Plan: Yo dawg I heard you like UnitTests in your commits
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3085
+    Take write lock instead of read lock when resetting after snapshot
+    Changed read to write lock for resetting the counter and the values to avoid ThreadExceptions
+    Add resetting histogram using a reservoir that resets on snapshot
+    
+    Upgrade to Guava 20 (last version with Java 7 support) and Dropwizard
+    3.2.2 in the process (needed for ThreadLocalRandomProxy).
+    Bug fix around ResettingHistogram/ResettingTimer registration
+    
+    When a ResettingHistogram or ResettingTimer is registered more than once
+    with same metric name, an exception was getting thrown. This change fixes
+    that.
+    be able to add Resetting Timer from SfxMetrics
+    be able to build Resetting Histogram using SfxMetrics
+    
+    This allows easy replacement of sfxMetrics.histogram(..) calls.
+    add public meter() method to SfxMetrics
+    Fix Javadoc tags in SfxMetrics
+    Add Javadoc to public methods of SfxMetrics
+    Add SfxMetrics to signalfx-codahale
+    
+    SignalFx has had a version of this internally for a long time now, but
+    there is nothing in it that prevents it from wider distribution. It
+    makes declaring metrics with additional dimensions considerably easier
+    than the "raw" MetricMetadata interface.
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    signalfx-codahale/yammer: allow metrics to be removed from metadata/registry
+    
+    Add a method that takes care of properly removing a metric from the
+    metric metadata and registry.
+    
+    Test Plan: unit test
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Fix thread race in BuilderTaggerImpl.getOrCreate
+    Don't synchronize if metric already exists
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Fix bug not allowing missing metric type
+    
+    Summary: Was assigning optional that was null
+    
+    Test Plan: extended unit tests
+    
+    Reviewed By: max
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Fixups based on feedback
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix handling when source explictly changed
+    Allow setting localtime
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    IncrementalCounter - expose getCountChange()
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Fixups based on feedback
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Rename files
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Default to 4 metrics
+    Pass in local time parameter
+    Allow setting localtime
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Fix javadoc
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Support 1.6
+    Move all java to -java library, remove core
+    Initial Commit
+    signalfx-codahale/yammer: allow metrics to be removed from metadata/registry
+    
+    Add a method that takes care of properly removing a metric from the
+    metric metadata and registry.
+    
+    Test Plan: unit test
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix javadoc issues
+    More documentation
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Rename directories
+    rename signalfuse to signalfx
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Change callback cumulativeCounter suggested use
+    
+    Summary:
+    I did not like the old way of doing things.  I think this is
+    a better way to have people interact with a cumulative counter that
+    uses a callback.
+    
+    Also updated docs
+    
+    Test Plan: extended the unit tests
+    
+    Reviewers: rajiv, kris
+    
+    Reviewed By: kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2653
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    be able to add Resetting Timer from SfxMetrics
+    be able to add Resetting Timer from SfxMetrics
+    be able to build Resetting Histogram using SfxMetrics
+    
+    This allows easy replacement of sfxMetrics.histogram(..) calls.
+    Rename directories
+    rename signalfuse to signalfx
+    Expose builders for basic metric types
+    
+    Summary: builders for when metrics already exist
+    
+    Reviewers: max
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    be able to add Resetting Timer from SfxMetrics
+    Add resetting histogram using a reservoir that resets on snapshot
+    
+    Upgrade to Guava 20 (last version with Java 7 support) and Dropwizard
+    3.2.2 in the process (needed for ThreadLocalRandomProxy).
+    Rename directories
+    rename signalfuse to signalfx
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Change callback cumulativeCounter suggested use
+    
+    Summary:
+    I did not like the old way of doing things.  I think this is
+    a better way to have people interact with a cumulative counter that
+    uses a callback.
+    
+    Also updated docs
+    
+    Test Plan: extended the unit tests
+    
+    Reviewers: rajiv, kris
+    
+    Reviewed By: kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2653
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Pass in local time parameter
+    Fix javadoc issues
+    Add BasicJvmMetrics based on codehale MetricRegistry
+    
+    Summary: Port BasicJvmMetrics to codahale
+    
+    Test Plan: Signalbox
+    
+    Reviewers: kris, jack, psi
+    
+    Reviewed By: psi
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3073
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Use shaded protobuf 3.5.1 library from com.github.os72
+    Using next snapshot version
+    Version 0.0.40
+    Using next snapshot version
+    Version 0.0.39
+    Upgrading protobuf to 3.4.0 to match sf-base
+    
+    Protobuf schemas will still be compiled as v2 and will be compatible with v2 parsers
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    use snapshot 14
+    Use version 13
+    Back to snapshot version
+    Fix unit tests bump version
+    Version 0.0.11
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Use bundled protoc
+    Initial Commit
+    Removing unused/experimental datapoint attribute 'Property'
+    Upgrading protobuf to 3.4.0 to match sf-base
+    
+    Protobuf schemas will still be compiled as v2 and will be compatible with v2 parsers
+    Add Agent enumeration to the protocol buffers
+    Redocument protocol buffer
+    Support properties on protocol buffers
+    add events to protobuf
+    Rename files
+    Rename directories
+    rename signalfuse to signalfx
+    Add dimensions to protocol buffer
+    
+    Summary: Dimensions in protocol buffer
+    
+    Test Plan: compile
+    
+    Reviewers: kris, arijit, psi, tedo
+    
+    Reviewed By: psi, tedo
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3201
+    Add metrictype to datapoint
+    
+    Summary:
+    It's optional, so doesn't use any more space unless
+    set.  This is part of my goal of removing preregistration
+    Use bundled protoc
+    Initial Commit
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Using next snapshot version
+    Version 0.0.40
+    Using next snapshot version
+    Version 0.0.39
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    changed dev to 'SignalFx'
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    use snapshot 14
+    Use version 13
+    Back to snapshot version
+    Fix unit tests bump version
+    Version 0.0.11
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Update pom
+    Move all java to -java library, remove core
+    Initial Commit
+    Sending yammer metric type as dimension if feature is enabled
+    
+    Renaming `sendGroupNameAsDimension` to the more generic
+    `sendExtraMetricDimensions` since it now triggers the sending of two
+    dimensions.
+    Adding metric group name as dimension to yammer reporter
+    
+    This is enabled by a feature flag on the SignalFxReporter
+    Full-Stack example, Testing, and Extended README
+    
+    Version fixed in ReadMe
+    
+    README Fixed again
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    
+    Update README.md
+    changed dev to 'SignalFx'
+    signalfx-codahale/yammer: allow metrics to be removed from metadata/registry
+    
+    Add a method that takes care of properly removing a metric from the
+    metric metadata and registry.
+    
+    Test Plan: unit test
+    Don't synchronize if metric already exists
+    Readme fixed, Javadocs added, SendYammerMetrics deleted
+    changed dev to 'SignalFx'
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Fix bug not allowing missing metric type
+    
+    Summary: Was assigning optional that was null
+    
+    Test Plan: extended unit tests
+    
+    Reviewed By: max
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Readme fixed, Javadocs added, SendYammerMetrics deleted
+    changed dev to 'SignalFx'
+    Sending yammer metric type as dimension if feature is enabled
+    
+    Renaming `sendGroupNameAsDimension` to the more generic
+    `sendExtraMetricDimensions` since it now triggers the sending of two
+    dimensions.
+    Adding metric group name as dimension to yammer reporter
+    
+    This is enabled by a feature flag on the SignalFxReporter
+    removed system out print when sending metrics
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Readme fixed, Javadocs added, SendYammerMetrics deleted
+    changed dev to 'SignalFx'
+    Rename directories
+    Rename Signalfuse to SignalFx
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix handling when source explictly changed
+    Allow setting localtime
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Sending yammer metric type as dimension if feature is enabled
+    
+    Renaming `sendGroupNameAsDimension` to the more generic
+    `sendExtraMetricDimensions` since it now triggers the sending of two
+    dimensions.
+    Adding metric group name as dimension to yammer reporter
+    
+    This is enabled by a feature flag on the SignalFxReporter
+    signalfx-yammer doesn't support incremental counters. So don't try to support it
+    Redesign of default dimensions
+    
+    - Separate out default dimensions into two types:
+       unique - unique to a metric source (hostname, AWSUniqueId, etc). These are suitable
+                for all metric types except IncrementalCounters
+       shared - dimensions that are applicable to all metrics coming from this host
+    
+    - Fixed doco
+    - Deprecated SourceNameHelper.getAwsInstanceId
+    Fixups based on feedback
+    Add support for default dimensions
+    
+    SignalFxReporter now has a map of default dimensions to be
+    sent with every data point.
+    
+    The map is configured by calling addDimension or addDimenions
+    on a SignalFxReport.Builder object
+    Readme fixed, Javadocs added, SendYammerMetrics deleted
+    changed dev to 'SignalFx'
+    Rename files
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Default to 4 metrics
+    Pass in local time parameter
+    Allow setting localtime
+    Refactor to allow more than just sending datapoints.
+    
+    Test Plan: unit tests
+    
+    Reviewers: jack
+    
+    Reviewed By: jack
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3855
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Fix javadoc
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Add dropwizard
+    Support 1.6
+    Move all java to -java library, remove core
+    Initial Commit
+    changed dev to 'SignalFx'
+    signalfx-codahale/yammer: allow metrics to be removed from metadata/registry
+    
+    Add a method that takes care of properly removing a metric from the
+    metric metadata and registry.
+    
+    Test Plan: unit test
+    changed dev to 'SignalFx'
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Fix javadoc issues
+    More documentation
+    Support V2 protocol
+    
+    Summary:
+    V2 protocol with dimensions supported.  It's mostly
+    refactoring the old protocol to keep the common parts.
+    
+    Test Plan: Use library to send to lab
+    
+    Reviewers: tedo, kris
+    
+    Subscribers: Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D3426
+    Helper for reregistering metrics
+    
+    Summary:
+    Helpers for if you're registering a metric
+    that may already exist.
+    
+    Gogo magic templates!
+    
+    Test Plan: Expanded unit tests.
+    
+    Reviewers: psi, arijit, kris, tedo
+    
+    Reviewed By: tedo
+    
+    Subscribers: kris, Diffs_emails
+    
+    Differential Revision: http://phabricator.signalfuse.com/D2877
+    Explicit Incremental Counter
+    
+    Summary:
+    I didn't like how we forced anything registered with type
+    COUNTER to always report the difference between the last and current
+    value.  What if users want a COUNTER and know what they're doing.
+    
+    To make this explicit, I've created IncrementalCounter that does
+    this, but otherwise behaves like a Counter to users.  I've also
+    invented the term IncrementalCounter to distinguish between
+    CumulativeCounter and Counter.
+    
+    Test Plan: mvn test
+    
+    Reviewers: kris
+    
+    Reviewed By: kris
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Using next snapshot version
+    Version 1.0.5
+    Using next snapshot version 1.0.5-SNAPSHOT
+    Version 1.0.4
+    Using next snapshot version 1.0.4-SNAPSHOT
+    Version 1.0.3
+    Using next snapshot version 1.0.3-SNAPSHOT
+    Version 1.0.2
+    Using next snapshot version 1.0.2-SNAPSHOT
+    Version 1.0.1
+    Using next snapshot version 1.0.1-SNAPSHOT
+    Version 1.0.0
+    Updating to snapshot for 1.0.0
+    Using next snapshot version
+    Version 0.2.1
+    Using next snapshot version
+    Version 0.2.0
+    Up-ing to 0.2.0-SNAPSHOT to prepare for next release
+    Using next snapshot version
+    Version 0.1.0
+    Using next snapshot version with minor version change
+    Version 0.0.49
+    Using next snapshot version
+    Version 0.0.48
+    Using next snapshot version
+    Version 0.0.47
+    
+    Skipping 0.0.46 which was released by mistake with an incorrect build.
+    Using next snapshot version
+    Version 0.0.45
+    Using next snapshot version
+    Version 0.0.44
+    Using next snapshot version
+    Version 0.0.43
+    Using next snapshot version
+    Version 0.0.42
+    Using next snapshot version
+    Version 0.0.41
+    Use shaded protobuf 3.5.1 library from com.github.os72
+    Using next snapshot version
+    Version 0.0.40
+    POM file fixes, and remove dependency analysis that doesn't work correctly
+    Using next snapshot version
+    Version 0.0.39
+    Upgrading protobuf to 3.4.0 to match sf-base
+    
+    Protobuf schemas will still be compiled as v2 and will be compatible with v2 parsers
+    Using next snapshot version and upgrade to Dropwizard 3.2.3 for bugfixes
+    Version 0.0.38
+    Using next snapshot version
+    Version 0.0.37
+    Starting next snapshot version
+    Version 0.0.36
+    Using next snapshot version
+    Version 0.0.35
+    Using next snapshot version
+    Version 0.0.34
+    Update to next snapshot version
+    Version 0.0.33
+    Using next snapshot version
+    Version 0.0.31
+    Using next snapshot version
+    Version 0.0.30
+    Using next snapshot version
+    Version 0.0.29
+    Using next snapshot version
+    Various POM file fixes and cleanups
+    Using next snapshot version
+    Version 0.0.27
+    Use snapshot version
+    Version 0.0.26
+    Updating to 0.0.26-SNAPSHot
+    Version 0.0.25
+    Update to 0.0.25-SNAPSHOT
+    Version 0.0.24
+    Revert "Version 0.0.25"
+    
+    This reverts commit 33ba3bbd4cf466e756a01674214ecf560a042bd0.
+    Version 0.0.25
+    update to 0.0.24-SNAPSHOT
+    Version 0.0.23
+    update to version 0.0.23-SNAPSHOT for the yammer metrics 2.0 library support
+    Next snapshot
+    Update to version 0.0.21
+    Use next snapshot
+    Version 20 of library
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Using next snapshot version
+    Version 0.0.19
+    Update to 0.0.19-SNAPSHOT
+    Update version to 0.0.18
+    Next snapshot version
+    Use next version
+    Version 0.0.17-SNAPSHOT
+    Update version
+    0.0.16 snapshot
+    Version 0.0.15
+    Use snapshot 15
+    Use version 0.0.14
+    use snapshot 14
+    Use version 13
+    Back to snapshot version
+    Fix unit tests bump version
+    Version 0.0.11
+    Next snapshot
+    Version 0.0.10
+    Using next snapshot version
+    Version 0.0.9
+    Version 0.0.8
+    Start with snapshot 0.0.8-SNAPSHOT
+    Update version to 0.0.7
+    Use 0.0.7-SNAPSHOT version
+    Use version 0.0.6
+    Client library changes for codahale/signalfx integration
+    
+    Summary:
+    A few extra libraries and helper function to join source/metric
+    pairs
+    
+    Test Plan: Used internally
+    
+    Reviewed By: kris
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    Initial Commit
+    Use shaded protobuf 3.5.1 library from com.github.os72
+    Rename directories
+    rename signalfuse to signalfx
+    Rename Signalfuse to SignalFx
+    Initial Commit
+    Rename directories
+    rename signalfuse to signalfx
+    More javadoc fixes
+    Javadoc fixes
+    Initial Commit
+    Use shaded protobuf 3.5.1 library from com.github.os72
+    Rename directories
+    rename signalfuse to signalfx
+    Initial Commit

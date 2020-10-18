@@ -1,0 +1,5 @@
+﻿    use CMAKE_PREFIX_PATH to find Rock CMake instead of environment variables
+    Fixed some namings
+    Initial checkin
+    update to vizkit3d
+    Initial checkin

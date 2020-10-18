@@ -1,0 +1,162 @@
+﻿    Update README.md
+    Update README.md
+    Refactor and drop php5 support
+    Update README.md: realm override
+    Error in translation
+    #90 - add hint how to convert steamIDs to readme
+    And another...
+    Remove unnecessary dollar sign
+    Update to new code format
+    Remove idents
+    Utilise php code-type in docs
+    more cleaner usage example
+    Some small changes
+    change package version
+    add env support
+    
+    This way someone's API key isn't submitted to version control.
+    Update badges
+    Fix minor README inaccuracy
+    Update README to include changes
+    Update README.md
+    Update route names
+    Add note on readme for logout
+    Fix readme
+    Use Guzzle to make request and clean up Auth, use Fluent for SteamInfo
+    Update badges
+    Update README.md
+    
+    make the login method shorter and prevent unneeded else cases with early returns. Possibly also interesting for Issue #19.
+    Updated readme
+    A little README.md makeover
+    Update documentation 2
+    Update documentation
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Release v1.0.0
+    Create README.md
+    remove deprecated linting
+    
+    https://styleci.readme.io/docs/change-log#section-14042018-april-fixer-updates
+    > Finally, the long deprecated "linting" config option has now been removed.
+    #93 - add basic styleci config
+    Apply fixes from StyleCI
+    Version 2.0
+    Release v1.1.0
+    Release v1.0.0
+    Refactor and drop php5 support
+    Apply fixes from StyleCI
+    #90 - drop steamID conversion
+    Added empty line
+    We should make it clear that this is an inherited method that has PHP docblock annotations in the superclass
+    
+    {@inheritdoc} vs @inheritdoc:
+    I use {@inheritdoc} here, because Laravel uses {@inheritdoc} as well: https://github.com/laravel/framework/blob/5.3/src/Illuminate/Session/Store.php#L89
+    Use Guzzle to make request and clean up Auth, use Fluent for SteamInfo
+    add even more info
+    add the ability to retrieve more fields from the info
+    
+    - profileState
+    - personaState
+    - communityVisibilityState
+    Version 2.0
+    Apply fixes from StyleCI
+    Apply fixes from StyleCI
+    Update SteamAuth.php
+    Update SteamAuth.php
+    
+    fix get_magic_quotes_gpc for php7.4
+    Update SteamAuth.php
+    Refactor and drop php5 support
+    style refactor
+    Realm override. Bypass domain ban by Valve. Use alternative domain with redirection to main for authentication (banned by valve).
+    Fixed code style.
+    Custom request options for Guzzle.
+    Apply fixes from StyleCI
+    Make the `s` in https optional in case Valve changes their mind
+    Fix parseSteamID() failing due to https change
+    Refactor how we override the default redirect url
+    make guzzleClient protected (#65)
+    Formatting etc.
+    fix slight typo
+    add env support
+    
+    This way someone's API key isn't submitted to version control.
+    Do not depend on the whole Laravel framework
+    Allow pass through of redirect url
+    Remove unused class
+    Use Guzzle to make request and clean up Auth, use Fluent for SteamInfo
+    add the ability to retrieve more fields from the info
+    
+    - profileState
+    - personaState
+    - communityVisibilityState
+    Refactor laravel-steam-auth
+    
+    - Encapsulate validation into a method
+    - If statement returns early
+    Fix issue #20
+    Update SteamAuth.php
+    
+    remove a bit of complexity and don't throw an exception if all exceptions are catched and returned as false
+    return just booleans, don'T throw exceptions - just log them
+    Update SteamAuth.php
+    
+    remove unneeded else and return false in every non success case
+    Update SteamAuth.php
+    
+    remove unneeded else and also validate the config url
+    Issue #22
+    
+    fix the https problem
+    Make use of config settings
+    Fixed login issues with https certs by redirecting them through http
+    modified some text for git.
+    add config whether https port.
+    Update SteamAuth.php
+    Version 2.0
+    Fix from Appletinee
+    Important fixes
+    Some fixes
+    Release v1.1.0
+    Fixed return_url
+    Some fixes
+    Added docs
+    Added the config file
+    Release v1.0.0
+    First commit
+    Refactor and drop php5 support
+    Apply fixes from StyleCI
+    Added App Request when creating new SteamAuth object.
+    using singleton for loading the library
+    moved the config file
+    Some fixes
+    Added the config file
+    Release v1.0.0
+    First commit
+    Refactor and drop php5 support
+    Apply fixes from StyleCI
+    #91 - add steaminfo phpunit test
+    Refactor and drop php5 support
+    #91 - add steaminfo phpunit test
+    #91 - add steaminfo phpunit test
+    Rename config file
+    Refactor and drop php5 support
+    Realm override. Bypass domain ban by Valve. Use alternative domain with redirection to main for authentication (banned by valve).
+    Apply fixes from StyleCI
+    add env support
+    
+    This way someone's API key isn't submitted to version control.
+    moved the config file
+    modified some text for git.
+    add config whether https port.
+    Minor changes
+    Update config.php
+    Version 2.0
+    Important fixes
+    Fixed return_url
+    Added the config file

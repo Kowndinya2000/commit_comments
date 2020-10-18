@@ -1,0 +1,3354 @@
+﻿    Fixed link to eventgen
+    Updated README instructions with proper links
+    Update README and build script to include submodules
+    
+    Added `--recursive` to the clone in the build script.
+    Added directions to initialize submodules in README.
+    Update README.md
+    Update README.md
+    Update README.md
+    
+    Corrected the link to the dev guide.
+    Updated Configure user access step in the installation instructions
+    Bumping version number
+    Updated installation instruction with an extra step to configure user access.
+    linking some files
+    adding specific commands to link repo into Splunk apps directory
+    adding specific commands to link repo into Splunk apps directory
+    Code update after the edit pass; Bumped the version
+    Update README.md
+    
+    Fixed link to simulated identity provider
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Minor update to README.md
+    Minor markdown formatting
+    Updated README.md after edit
+    Updated readmes, polished About page
+    App/repo renaming; removing project codename everwhere
+    readme
+    Initial commit
+    Fixed directory structure for standalone
+    Format of CIM reference, missed version in package
+    
+    Also corrected dependency for validate
+    Updated version to 1.5.2
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    update package build scripts
+    Added build scripts. Run package-pas-app.sh first.
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    New version of the build script that supports cloud
+    
+    When calling the build script with a `-c` argument, we
+    
+    * disable the eventgen app (and remove the copy of app.conf in /eventgen/local)
+    * add `index=pas` everywhere that we have `tag=pas`
+    * Change the time span on the summary trend chart to be ytd instead of last 24h
+    * Add the pas_sample_data app from the test repository
+    * Update the timestamps on the sample data in pas_sample_data
+    Update README and build script to include submodules
+    
+    Added `--recursive` to the clone in the build script.
+    Added directions to initialize submodules in README.
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    update package build scripts
+    Added build scripts. Run package-pas-app.sh first.
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    update package-googledrive-addon build script
+    update package build scripts
+    Added build scripts. Run package-pas-app.sh first.
+    Created a place for our spikes
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Document logging and input for custom alert template
+    
+    Added simple map to the JSON structure that the script is called
+    with, and a description for how logging should work when the script
+    is called.
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Included eventgen into add-ons
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Language Clarification
+    
+    Clarified scope of changes made to alert_actions.conf.spec and
+    savedsearches.conf.spec
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Language Clarification
+    
+    Noted that alert_actions.conf.spec and setup.xml are optional.
+    Language Clarification
+    
+    Clarified scope of changes made to alert_actions.conf.spec and
+    savedsearches.conf.spec
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Overhaul of alert template
+    
+    The two ideas are that it should almost work out of the box and that it should
+    be really easy to drop something cool in. I also wanted to demonstrate both
+    app-level attributes and alert-level attributes, so I put the title at the app
+    level and the message at the action level.  In the action I built a template
+    to safe_substitute in any alert properties, so a message can be written with
+    variable like $source and they will get substituted in the message.
+    
+    For demo purposes, replacing the two writes to stderr with something
+    substantive will allow a real action to take place.  I've been using this to
+    pop up an alert on OSX.  Seems to work well.
+    
+    applescript = 'display notification "{}" with title "{}"'.format(message_text, title);
+    call(["osascript", "-e", applescript])
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Removed stubs for simulated account disable feature
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Included eventgen into add-ons
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    Adding Alert Action Template
+    
+    ...now with a better naming convention!
+    Alert Actions/Modular Alert Splunk App Template
+    
+    This app template is intended to be a learning tool for a developer new
+    to Alert Actions/Modular alerts.
+    Removed stubs for simulated account disable feature
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    JIRA Alert Action App
+    
+    Initial commit of the JIRA Alert Action app.
+    Updated version of the Google Drive Add-on
+    Code update after the edit pass; Bumped the version
+    modify README
+    Fix Oauth python program to remove OS dependent path; add readme
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Add license info for Google API
+    Updated version of the Google Drive Add-on
+    Updates to the PAS app & Google Drive Add-on
+    
+    PAS App updates:
+    * New UI elements in setup.xml for Google Drive OAuth2
+    * New logic in setup.js to handle Google Drive OAuth2 3LO authorization
+    flow
+    
+    Google Drive Add-on:
+    * Modified configure_oauth.py to handle execution path via POST
+    interaction
+    * Modified googledrive.py to handle new streamlined OAuth2 path.
+    Updated message upon successfull authentication
+    Fix Oauth python program to remove OS dependent path; add readme
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Created setup file
+    Updated version of the Google Drive Add-on
+    Changed Client ID argument to Description
+    Updates to the PAS app & Google Drive Add-on
+    
+    PAS App updates:
+    * New UI elements in setup.xml for Google Drive OAuth2
+    * New logic in setup.js to handle Google Drive OAuth2 3LO authorization
+    flow
+    
+    Google Drive Add-on:
+    * Modified configure_oauth.py to handle execution path via POST
+    interaction
+    * Modified googledrive.py to handle new streamlined OAuth2 path.
+    Code update after the edit pass; Bumped the version
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Google Drive: Rename mod input to googledrive and reference appropriately.
+    Rename script to match folder name change.
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    remove some comments
+    Modifications to Google API Client
+    removed creds hardcoding
+    Updated Modular Input
+    First version of input
+    Updated version of the Google Drive Add-on
+    Updated version of the Google Drive Add-on
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    Code update after the edit pass; Bumped the version
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    Code update after the edit pass; Bumped the version
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Modifications to Google API Client
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Library Files
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Added metadata back to addon
+    Fix props in data providers to have global access.
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    TA files
+    Updated version of the Google Drive Add-on
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Updated version of the Google Drive Add-on
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Updated version of the Google Drive Add-on
+    Bumped the version; minor revisions to descriptions in app.conf's
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Updated labels and visibility flags on main app and addons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Change version number
+    First version of input
+    Updated version of the Google Drive Add-on
+    Updated version of the Google Drive Add-on
+    Fixed some issues with appinspect
+    Updated author and version in manifest
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Added app icons and READMEs to dependencies
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Normalized database and application add-ons
+    Fix props in data providers to have global access.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updates for eventgen and props
+    Updated props.conf to match new understanding of CIM
+    Refactor TA
+    
+    change props stanzas to point to ri:pas:* sourcetypes
+    change metadata to export all props to system
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Normalized database and application add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Normalized database and application add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Updated version to 1.5.2
+    Initial slimify
+    Update app.conf
+    Bumped the app version
+    Bumping version number
+    Code update after the edit pass; Bumped the version
+    Bumped the version; minor revisions to descriptions in app.conf's
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Updated labels and visibility flags on main app and addons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Format of CIM reference, missed version in package
+    
+    Also corrected dependency for validate
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Add excessive hourly access as violation type to donut.
+    DVPL-5723
+    
+    Updated Data Model and lookups
+    Lookup update for Employee Details
+    DVPL-5604
+    
+    Implement Use Case 3 - Suspicious Activity - Document access when user
+    not working
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Fix employee_details lookup to be exported globally.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    DVPL-5604
+    
+    Implement Use Case 3 - Suspicious Activity - Document access when user
+    not working
+    Updated version to 1.5.2
+    Initial slimify
+    Bumped the version for the public release
+    Bumping the version
+    Bumping version number
+    Code update after the edit pass; Bumped the version
+    Bumped the version; minor revisions to descriptions in app.conf's
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Updated labels and visibility flags on main app and addons
+    Fixed some issues with appinspect
+    Updated author and version in manifest
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Added app icons and READMEs to dependencies
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Normalized database and application add-ons
+    Fix props in data providers to have global access.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Refactor TA
+    
+    change props stanzas to point to ri:pas:* sourcetypes
+    change metadata to export all props to system
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Normalized database and application add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Normalized database and application add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Updated version to 1.5.2
+    Initial slimify
+    Bumped the version for the public release
+    Bumped the app version
+    Bumping version number
+    Code update after the edit pass; Bumped the version
+    Bumped the version; minor revisions to descriptions in app.conf's
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Updated labels and visibility flags on main app and addons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Fixed some issues with appinspect
+    Updated author and version in manifest
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Added app icons and READMEs to dependencies
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Normalized database and application add-ons
+    Fix props in data providers to have global access.
+    Initial slimify
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    Initial slimify
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    Initial slimify
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    Updated version to 1.5.2
+    Initial slimify
+    Moving from rc2 to a full release
+    Update app.conf
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    Fixed some issues with appinspect
+    Updated author and version in manifest
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Added app icons and READMEs to dependencies
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Added app icons and READMEs to dependencies
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Added app icons and READMEs to dependencies
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Normalized file add-on and broughtit  to CIM compliance
+    Fix props in data providers to have global access.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updates for eventgen and props
+    Refactor TA
+    
+    change props stanzas to point to ri:pas:* sourcetypes
+    change metadata to export all props to system
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    initial spike tagging the file addon
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Normalized database and application add-ons
+    initial spike tagging the file addon
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Updated version to 1.5.2
+    Initial slimify
+    Moving from rc2 to a full release
+    Bumped the app version
+    Bumping version number
+    Code update after the edit pass; Bumped the version
+    Bumped the version; minor revisions to descriptions in app.conf's
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Updated labels and visibility flags on main app and addons
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Check In of RI CIM
+    Format of CIM reference, missed version in package
+    
+    Also corrected dependency for validate
+    Fixed some issues with appinspect
+    Updated author and version in manifest
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Feature complete on the unix side
+    Initial slimify
+    Initial slimify
+    Cleanup
+    Bumping version number
+    Updated installation instruction with an extra step to configure user access.
+    Code update after the edit pass; Bumped the version
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Minor polishes: multiplier in the anomaly detector; fixed typos; highlighting unauthorized setup changes in red
+    Updated Release Notes packaged with the app
+    Updated readmes, polished About page
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updated readme for prereqs
+    
+    More work needed on this
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Ant Build System
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updates for eventgen and props
+    First attempt at Datagen
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updates for eventgen and props
+    First attempt at Datagen
+    Initial slimify
+    Salting documents.sample with more realistic file names
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    First attempt at Datagen
+    Initial slimify
+    Removed extra quotation marks from sample file
+    Removed empty lines
+    
+    Empty lines were being included when replacing values, leading to
+    empty values.
+    Put quotes around multi-word values in eventgen data
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Added new fields to existing eventgen
+    
+    Added new fields department, department_group and customer_name
+    eventgen app for dendogram viz
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Put quotes around multi-word values in eventgen data
+    Fixed eventgen timezone disrepency
+    App/repo renaming; removing project codename everwhere
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Put quotes around multi-word values in eventgen data
+    Fixed eventgen timezone disrepency
+    App/repo renaming; removing project codename everwhere
+    Initial slimify
+    HTTP Input Keycard Showcase Bits
+    
+    Added:
+    * Keycard Activity Dashboard
+    * Separate PAS Keycard event index
+    * Keyhole Mapping file with building locations
+    * Geo Lookup reference for KMZ file
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Included signed powershell install script
+    App/repo renaming; removing project codename everwhere
+    Added Windows Powershell script; still need to sign it
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Eventgen updates, small bugfixes
+    App/repo renaming; removing project codename everwhere
+    Refactored code repo structure to place all add-ons under appserver/addons inside the main app and providing an install script to create symlinks inside $SPLUNK_HOME/etc/apps to those add-ons
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style changes
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Provided additional images and logos for packaging
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Defined user roles specific to Warum app; modified Warum app permissions to only allow warumarmins and admins to write knowledge objects and warumusers to read
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Explain why default.meta preserved. Restore ignore of local.meta.
+    Update default.meta for eventgen
+    
+    Had to change gitignore
+    Initial slimify
+    Included a user-prefs.conf file to set default app for pasuser and pasadmin user roles; note: if needed this is where TZ can also be set
+    Initial slimify
+    Learning tips toggler.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Setup: Remove unused Locations checkbox. Remove unused setup model items.
+    Setup: Save violation types to separate KV store collection.
+    Setup: Substantial rewrite.
+    Rename 'divisions' -> 'departments' in setup config collection.
+    Updated Setup Form Fields
+    
+    1. Grouped Policy Fields Together
+    2. Added jquery-serialize-object
+    3. Updated collection definition.
+    Key Store Setup
+    Initial slimify
+    HTTP Input Keycard Showcase Bits
+    
+    Added:
+    * Keycard Activity Dashboard
+    * Separate PAS Keycard event index
+    * Keyhole Mapping file with building locations
+    * Geo Lookup reference for KMZ file
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Setup: Remove unused Locations checkbox. Remove unused setup model items.
+    Setup: Donut honors saved violation weights. Delete old lookup file.
+    Setup: Save violation types to separate KV store collection.
+    Setup: Substantial rewrite.
+    Rename 'divisions' -> 'departments' in setup config collection.
+    Summary: Filter departments in Policy Violations panel based on setup screen config.
+    Summary: Display policy violation donut series based on real search.
+    Key Store Setup
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Put quotes around multi-word values in eventgen data
+    Eventgen Department List Change
+    
+    Added duplicates of existing Department items in order to show more
+    varied numbers in the Summary Dashboard.
+    App/repo renaming; removing project codename everwhere
+    Fix some broken references related to renaming the apps.
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Added new fields to existing eventgen
+    
+    Added new fields department, department_group and customer_name
+    Updated EventGen
+    First attempt at Datagen
+    Removed BOM from pas_ref_app inputs.conf
+    Initial slimify
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    Added disabled default/example Google Drive input.
+    Initial slimify
+    HTTP Input Keycard Showcase Bits
+    
+    Added:
+    * Keycard Activity Dashboard
+    * Separate PAS Keycard event index
+    * Keyhole Mapping file with building locations
+    * Geo Lookup reference for KMZ file
+    App/repo renaming; removing project codename everwhere
+    Initial slimify
+    Added disabled default Webhook Alert Action for Terminated User Access
+    Updated version to 1.5.2
+    Fixed some issues with appinspect
+    Initial slimify
+    Removed RC from the app version number
+    Bumped the app version
+    Bumping version number
+    Code update after the edit pass; Bumped the version
+    Bumped the app version for the main app; keeping the version numbers for the add-ons intact - want to experiment with the splunkbase update story
+    Bumped the version; minor revisions to descriptions in app.conf's
+    Added the About page with an app overview, links and acknowledgements
+    Reference implementation -> Reference app
+    App/repo renaming; removing project codename everwhere
+    Reconciled Add-on spelling with a hyphen as per Splexicon; updated README with basic installation instructions
+    Updated labels and visibility flags on main app and addons
+    Preparing splunkbase app package; adding version to the main app
+    Fix some broken references related to renaming the apps.
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Ant Build System
+    Created User Investigation Dashboard
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updated Data Model for Policy Violations
+    DVPL-5723
+    
+    Updated Data Model and lookups
+    DVPL-5389
+    
+    Data Model creation
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Refactored CIM tagging; Added eventtypes and tags for Google Drive Plug-in; revised the PAS data model to use the tags as opposed to referring directly to the index=warum via a macro
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Data model adjustments for donut chart. (Forgot to checkin.)
+    Don't filter on fixed set of data provider sourcetypes. Allows autodetect of new providers.
+    Updated Data Model for Policy Violations
+    DVPL-5723
+    
+    Updated Data Model and lookups
+    Fix root search for datamodel
+    Update data model to use macros
+    DVPL-5389
+    
+    Data Model creation
+    Initial slimify
+    HTTP Input Keycard Showcase Bits
+    
+    Added:
+    * Keycard Activity Dashboard
+    * Separate PAS Keycard event index
+    * Keyhole Mapping file with building locations
+    * Geo Lookup reference for KMZ file
+    Updates to the PAS app & Google Drive Add-on
+    
+    PAS App updates:
+    * New UI elements in setup.xml for Google Drive OAuth2
+    * New logic in setup.js to handle Google Drive OAuth2 3LO authorization
+    flow
+    
+    Google Drive Add-on:
+    * Modified configure_oauth.py to handle execution path via POST
+    interaction
+    * Modified googledrive.py to handle new streamlined OAuth2 path.
+    Added the About page with an app overview, links and acknowledgements
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Fix formatting and spelling issues.
+    Added Customer Monitor dashboard with a wrapped d3 dendrogram control
+    Altered navigation to use consistent terminology.
+    Working setup page with multiple inputs
+    nav: Switch Simple XML versions of Summary and User Activity to be default.
+    Reorder nav. Correct typo.
+    Rename User Details -> User Activity. Remove HTML dashboard version of User Activity.
+    Delete the Document Details view.
+    Revert views to use Django versions until the Simple XML versions are fixed.
+    Converted Summary and User_Details to XML and HTML
+    Moved dashboards to Simple XML
+    Update Navigation
+    Style changes
+    Add User Details to Nav
+    Add Anomalous to Nav
+    DVPL-5727
+    
+    Added Setup form for index and source types. Fixed app navigation
+    Navigation Change for Suspicious Document Access
+    1. Rename User Investigation to Summary
+    2. Fix urls.py
+    3. Change Navigation
+    Created User Investigation Dashboard
+    Initial Creation of Web Application
+    
+    DVPL-5387
+    Fixed some issues with appinspect
+    Initial slimify
+    New Single Value Feature Showcase
+    
+    Updated Customer Monitor Dashboard to showcase trending percentage and
+    spark line features.
+    Migrated LEARN MORE annotations to the new styling in all remaining dashboards; Added Testdata/event gen annotation to the Setup page
+    Move the user name filter and time range picker next to the dashboard label to maximize usage of the screen real estate - via css tweaks
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    App/repo renaming; removing project codename everwhere
+    replaced all uses of warum_index macro and index=warum references from the queries with tags in all remaining dashboards
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Instantiate custom view directly instead of relying on shim.
+    Customer Monitor: Eliminate duplicate copy of d3. Move dendrogram to components.
+    Customer Monitor: Convert indentation from 2 to 4 spaces.
+    Customer Monitor: Fix formatting and spelling issues.
+    Added Customer Monitor dashboard with a wrapped d3 dendrogram control
+    Initial slimify
+    Updated after the edit pass
+    Fixed broken link
+    Updated credits
+    Interim update to Acks, main team
+    Updated with info about new dashboards
+    Minor syntax update to About
+    Updating credits in the About page.
+    Code update after the edit pass; Bumped the version
+    Moving eventgen check to the top of the Setup page; updating the credits (About)
+    Migrated LEARN MORE annotations to the new styling in all remaining dashboards; Added Testdata/event gen annotation to the Setup page
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Updated readmes, polished About page
+    Added the About page with an app overview, links and acknowledgements
+    Initial slimify
+    Change success message location to match error msg
+    
+    Also added an 'authorizing' message.
+    Added lightbulb for OAuth modular input
+    Adding lightbulb help messages
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    Added the following for Google Drive configuration check:
+    * UI elements
+    * REST endpoint that returns status
+    * JavaScript additions to call new REST endpoint
+    * New Python class that returns add-on configuration status
+    Google Drive UI Error Display
+    
+    Added an error message (and associated control logic) in the UI for the
+    case when the Python script is unable to exchange OAuth2 tokens for the
+    user.
+    UI Clarification
+    
+    Added "Optional" to the Google Drive Add-on UI section to indicate that
+    configuration of this section is optional, even if the Add-on is
+    installed.
+    Updates to the PAS app & Google Drive Add-on
+    
+    PAS App updates:
+    * New UI elements in setup.xml for Google Drive OAuth2
+    * New logic in setup.js to handle Google Drive OAuth2 3LO authorization
+    flow
+    
+    Google Drive Add-on:
+    * Modified configure_oauth.py to handle execution path via POST
+    interaction
+    * Modified googledrive.py to handle new streamlined OAuth2 path.
+    Updated the toggler title in Setup
+    Learning tips toggler.
+    Moving eventgen check to the top of the Setup page; updating the credits (About)
+    Migrated LEARN MORE annotations to the new styling in all remaining dashboards; Added Testdata/event gen annotation to the Setup page
+    Updated messaging for the EventGen check
+    Implement eventgen installation check and provide corresponding messages to the user.
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Minor polishes: multiplier in the anomaly detector; fixed typos; highlighting unauthorized setup changes in red
+    App/repo renaming; removing project codename everwhere
+    Setup: Displays error message if unable to save configuration.
+    replaced all uses of warum_index macro and index=warum references from the queries with tags in all remaining dashboards
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Setup: Remove unused Locations checkbox. Remove unused setup model items.
+    Setup: Save violation types to separate KV store collection.
+    Setup: Substantial rewrite.
+    Setup: Fix Add Policy button. Fix form load on Windows.
+    Rename 'divisions' -> 'departments' in UI.
+    Setup: Suggest choices for departments to enable based on departments in the real data.
+    Normalize all Simple XML views to use 4-column indentation with spaces.
+    Usability Updates
+    
+    * Moved Add button to bottom of section
+    * Default to no elements
+    * Validation on blank elements and numeric validation for weight
+    Updated Setup Form Fields
+    
+    1. Grouped Policy Fields Together
+    2. Added jquery-serialize-object
+    3. Updated collection definition.
+    Working setup page with multiple inputs
+    Initial slimify
+    Migrated LEARN MORE annotations to the new styling in all remaining dashboards; Added Testdata/event gen annotation to the Setup page
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Minor polishes: multiplier in the anomaly detector; fixed typos; highlighting unauthorized setup changes in red
+    App/repo renaming; removing project codename everwhere
+    replaced all uses of warum_index macro and index=warum references from the queries with tags in all remaining dashboards
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Altered navigation to use consistent terminology.
+    More search simplification.
+    Anomalous Activity: Filter out ops=0 values. Reformat search to be readable.
+    Normalize all Simple XML views to use 4-column indentation with spaces.
+    Setup Check: Migrate to global dashboard.js
+    Add setup check before all pages.
+    Moved dashboards to Simple XML
+    Initial slimify
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Altered navigation to use consistent terminology.
+    Normalize all Simple XML views to use 4-column indentation with spaces.
+    Setup Check: Migrate to global dashboard.js
+    Add setup check before all pages.
+    Moved dashboards to Simple XML
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Updated summary view to use refresh on form
+    Initial slimify
+    Fixed minor href bug in Summary; Migrated Learn More annotations to new style in User Activity
+    Migrated all LEARN MORE annotations on the Summary page to the new style
+    Replaced Learn-more question marks with more descriptive Learn more links using in-product styling (light-bulb and external)
+    Conditionally adding the "No violations detected" message in the donut container of the Summary dashboard
+    Went back to using classes & id's to make sure learning annotations icons work as intended on IE as well
+    More LEARN MORE annotations injected into Summary dashboard; tiny css refactoring
+    Injecting LEARN MORE annotations on the Summary dashboard; removing resize handle; making standard chart/table links (search, inspect, etc) on the individual panels invisible
+    App/repo renaming; removing project codename everwhere
+    replaced all uses of warum_index macro and index=warum references from the queries with tags in all remaining dashboards
+    More styling & polishing
+    Modified color scheme; removed axis title on the trend chart; repositioned filter row below the trend chart
+    tweaked color scheme
+    Help hover: updated unicode
+    Added help diamond with lorem impsum
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Update Suspicious Activity to display color blobs using same colors as donut.
+    Summary: Add (Since Midnight) qualifiers to panels that ignore global time range.
+    Summary: Replace color column in Suspicious Activity panel with color blobs.
+    Replace direct references to index=warum to use `warum_index` macro.
+    Setup: Donut honors saved violation weights. Delete old lookup file.
+    Summary: Extract donut viz and Policy Violations panel to separate JS and CSS.
+    Finish incomplete rename of tagmanager -> bootstrap-tagsinput.
+    Summary: Remove broken logic related to clicking chart legend.
+    Rename 'divisions' -> 'departments' in setup config collection.
+    Summary: Filter departments in Policy Violations panel based on setup screen config.
+    Summary: Add excessive hourly access as violation type to donut.
+    Summary: Add human-readable violation types to Suspicious Activity panel.
+    Summary: Create Suspicious Activity panel.
+    Summary: Donut series search reformatted, extracted to XML, and fixed.
+    
+    Specifically:
+    * Fix NumYellows and NumReds to show *unweighted* violation counts rather
+      than weighted counts.
+    Setup Check: Migrate to global dashboard.js
+    Add setup check before all pages.
+    Summary: Add custom donut series chart. Hurray!
+    Summary: Replace evil tabs with spaces.
+    Summary: Migrate Filter Criteria panel.
+    Summary: Migrate logic related to clicking legend of Trend chart. Was broken. Now less broken.
+    Extract common search prefixes to postprocess searches in Summary and User Activity views.
+    Summary: Fix drilldown to individual users.
+    Fix JavaScript on the summary dashboard. Now renders.
+    Converted Summary and User_Details to XML and HTML
+    Fixed some issues with appinspect
+    Initial slimify
+    Add user image, fix username select textbox
+    
+    Label for username selector was blocking selection of input element.
+    Fixed fields for user display (it's based on order and a field had been
+                 added)
+    Added demo user avatar (requires a change to the test service in the
+               test app as well)
+    Fixed bug DVPL-6014: User Activity dashboard: Activity Heatmap default time range is misleading - now shows the entire last month regardless of the time-range selection.
+    Fixing minor typo
+    Fixed minor href bug in Summary; Migrated Learn More annotations to new style in User Activity
+    Move the user name filter and time range picker next to the dashboard label to maximize usage of the screen real estate - via css tweaks
+    Added a couple more LEARN MORE annotations to the User Activity dashboard
+    Added LEARN MORE  to Calendar heat map; can use more css polishing to leave less vertical space between the month label and the LEARN MORE question mark icon
+    Added LEARN MORE annotations to the top provider bar of the User Activity dashboard; corresponding css tweaks
+    App/repo renaming; removing project codename everwhere
+    Removed direct reference of index in the user activity dashboard; prety-printed sourcetype names
+    Modified color scheme; removed axis title on the trend chart; repositioned filter row below the trend chart
+    User Activity: fixed the bug of not showing all commands
+    tweaked color scheme
+    User Activity: fixed the Activity Log panel
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Rename extensions related to Activity Log panel to be consistent.
+    User Activity: Cleanup Activity Log panel.
+    
+    Specifically:
+    * Decontabinate. (Convert tabs to spaces.)
+    * Split search to multiple lines to be readable.
+    * Improve IDs.
+    Added Activity Log Table to "User Activity" dashboard
+    
+    Activity Log Table uses Table Icon Set (Rangemap)
+    User Info: Convert tabs to spaces.
+    Integrate User Information to user_activity dashboard
+    
+    Added user_info.js, user_info.css scripts and updated user_activity.xml
+    dashboard to use custom warumgetuserinfo search command to get user
+    information from REST service
+    Replace direct references to index=warum to use `warum_index` macro.
+    User Activity: Don't limit charts to just the Application data provider.
+    User Activity: Migrate activity levels search manager from JS to Simple XML.
+    Style tweaks: Remove edit buttons. Alter calendar heatmap width.
+    User Activity: Detect and display data providers.
+    Normalize all Simple XML views to use 4-column indentation with spaces.
+    Setup Check: Migrate to global dashboard.js
+    Add setup check before all pages.
+    Extract common search prefixes to postprocess searches in Summary and User Activity views.
+    User Activity: For trend zoom chart, disable drilldown and connect nulls.
+    User Activity: Cleanup: Reduce tokens from 3 to 2.
+    User Activity: Make Activity Levels panel narrower.
+    User Activity: Migrate the calendar heat map. Workaround css! issue.
+    User Activity: Migrated trend zoom logic to Simple XML. Still some issues.
+    User Activity: Converted to Simple XML. Still need JS extensions.
+    Fixed some issues with appinspect
+    Initial slimify
+    Adding lightbulb help messages
+    Changed sourcetype reference to tag
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    HTTP Input Keycard Showcase Bits
+    
+    Added:
+    * Keycard Activity Dashboard
+    * Separate PAS Keycard event index
+    * Keyhole Mapping file with building locations
+    * Geo Lookup reference for KMZ file
+    Initial slimify
+    Migrated LEARN MORE annotations to the new styling in all remaining dashboards; Added Testdata/event gen annotation to the Setup page
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Injected LEARN MORE annotations into Offhours_Document_Access dashboard; reusing css from summary - may want to refactor & extract into this dashboard-specific css
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Altered navigation to use consistent terminology.
+    Normalize all Simple XML views to use 4-column indentation with spaces.
+    Setup Check: Migrate to global dashboard.js
+    Add setup check before all pages.
+    Moved dashboards to Simple XML
+    Initial slimify
+    Fixed minor href bug in Summary; Migrated Learn More annotations to new style in User Activity
+    Added LEARN MORE annotations to the top provider bar of the User Activity dashboard; corresponding css tweaks
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Make provider boxes 2 digits wider.
+    User Activity: Detect and display data providers.
+    Initial slimify
+    Learning tips toggler.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Inline kvstore_backbone library.
+    Setup: Allow setup page itself to be accessed before app is setup.
+    Setup Check: Migrate to global dashboard.js
+    Setup Check: Flatten require() usage.
+    Add setup check before all pages.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Add user image, fix username select textbox
+    
+    Label for username selector was blocking selection of input element.
+    Fixed fields for user display (it's based on order and a field had been
+                 added)
+    Added demo user avatar (requires a change to the test service in the
+               test app as well)
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Workaround to handle user not found or providers not found.
+    User Info: Convert tabs to spaces.
+    Integrate User Information to user_activity dashboard
+    
+    Added user_info.js, user_info.css scripts and updated user_activity.xml
+    dashboard to use custom warumgetuserinfo search command to get user
+    information from REST service
+    Initial slimify
+    Learning tips toggler.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style tweaks: Remove edit buttons. Alter calendar heatmap width.
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Updated summary view to use refresh on form
+    Initial slimify
+    Summary: Refresh entire page every 5 min.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Better encapsulate and document how popups and drilldown works.
+    Summary: Disable drilldowns on Trend and Top Documents panels.
+    Summary: Extract donut viz and Policy Violations panel to separate JS and CSS.
+    Summary: Make 'context' dependency require-compatible. Mark modified. Eliminate race condition.
+    Finish incomplete rename of tagmanager -> bootstrap-tagsinput.
+    Summary: Remove broken logic related to clicking chart legend.
+    Summary: Create Suspicious Activity panel.
+    Summary: Donut series search reformatted, extracted to XML, and fixed.
+    
+    Specifically:
+    * Fix NumYellows and NumReds to show *unweighted* violation counts rather
+      than weighted counts.
+    Summary: Donut series now displays results from real data.
+    Summary: Package donut series viz as class. Rerender every 5 min.
+    Summary: Display policy violation donut series based on real search.
+    Summary: Add custom donut series chart. Hurray!
+    Fix race condition: Declare that bootstrap-tagsinput depends on JQuery.
+    Summary: Migrate logic related to clicking legend of Trend chart. Was broken. Now less broken.
+    Summary: Remove top-level path definition of 'warum_conducive_web' for simplicity.
+    Summary: Fix broken require of filter_component.
+    Summary: Reduce usage of require shims.
+    filter_component: Rewrite as require'able module.
+    Summary: Cleanup: Delete lots of dead code.
+    Extract common search prefixes to postprocess searches in Summary and User Activity views.
+    Summary: Refactor: Fix naming conventions.
+    Summary: Fix drilldown to individual users.
+    Summary: Cleanup indentation, dead code, and order.
+    Fix JavaScript on the summary dashboard. Now renders.
+    Converted Summary and User_Details to XML and HTML
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    More styling & polishing
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Replace color column in Suspicious Activity panel with color blobs.
+    Summary: Extract donut viz and Policy Violations panel to separate JS and CSS.
+    Summary: Remove broken logic related to clicking chart legend.
+    Summary: Add custom donut series chart. Hurray!
+    Summary: Migrate Filter Criteria panel.
+    Summary: Migrate logic related to clicking legend of Trend chart. Was broken. Now less broken.
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Change success message location to match error msg
+    
+    Also added an 'authorizing' message.
+    New version of the build script that supports cloud
+    
+    When calling the build script with a `-c` argument, we
+    
+    * disable the eventgen app (and remove the copy of app.conf in /eventgen/local)
+    * add `index=pas` everywhere that we have `tag=pas`
+    * Change the time span on the summary trend chart to be ytd instead of last 24h
+    * Add the pas_sample_data app from the test repository
+    * Update the timestamps on the sample data in pas_sample_data
+    Cleaned up google drive app for packaging as a TA
+    
+    * Allowed for multiple credentials for multiple inputs
+    * Changed logging to use stdout
+    * Reenabled the ability to create credentials from the command line
+    * Moved pas input from the googledrive app and into the pas app
+    * Added some descriptive commenting
+    Corrected reference to UX HTTP Input key.  Thanks, Matt!
+    Added the following for Google Drive configuration check:
+    * UI elements
+    * REST endpoint that returns status
+    * JavaScript additions to call new REST endpoint
+    * New Python class that returns add-on configuration status
+    Added HTTP Input key checks to setup.ja
+    Added tags and query refinements to the Keycard Activity dashboard
+    Added the pas_simulated_keycard_addon
+    Added global vars for HTTP Input logging keys
+    HTTP Input Refactor
+    
+    Added call to XMLHttpRequest() and removed REST endpoint proxies for
+    HTTP Input data.
+    Separate UX & Debug Logging
+    
+    Separated UX & debug logging and created a new REST endpoint for UX
+    logging.
+    Google Drive UI Error Display
+    
+    Added an error message (and associated control logic) in the UI for the
+    case when the Python script is unable to exchange OAuth2 tokens for the
+    user.
+    User Interface Logging
+    
+    Adding bits that allow for client-side user interactions to be logged to
+    a Splunk instance via HTTP Inputs
+    Big fix for DVPL-6514
+    
+    Fixed issue with popup window not instantiating in Firefox.
+    Updates to the PAS app & Google Drive Add-on
+    
+    PAS App updates:
+    * New UI elements in setup.xml for Google Drive OAuth2
+    * New logic in setup.js to handle Google Drive OAuth2 3LO authorization
+    flow
+    
+    Google Drive Add-on:
+    * Modified configure_oauth.py to handle execution path via POST
+    interaction
+    * Modified googledrive.py to handle new streamlined OAuth2 path.
+    Learning tips toggler.
+    Implement eventgen installation check and provide corresponding messages to the user.
+    App/repo renaming; removing project codename everwhere
+    Setup: Displays error message if unable to save configuration.
+    Setup: Fix first-time run to populate violation types correctly.
+    Setup: Fix initial run of setup screen to display violation types correctly.
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Inline kvstore_backbone library.
+    Setup: Remove unused Locations checkbox. Remove unused setup model items.
+    Altered navigation to use consistent terminology.
+    Setup: Save violation types to separate KV store collection.
+    Setup: Substantial rewrite.
+    Setup: Fix Add Policy button. Fix form load on Windows.
+    Setup: Fix race condition because splunk/ready! wasn't imported.
+    Rename 'divisions' -> 'departments' in setup config collection.
+    Rename 'divisions' -> 'departments' in UI.
+    Setup: Suggest choices for departments to enable based on departments in the real data.
+    Setup: Refactoring style.
+    Setup: Fix comparison of bool with int.
+    Setup: Fix policy remove button to remove whole row.
+    Setup: Improve validation error messages.
+    Redirect to summary on save
+    Usability Updates
+    
+    * Moved Add button to bottom of section
+    * Default to no elements
+    * Validation on blank elements and numeric validation for weight
+    Setup: Flatten require() usage.
+    Fixed loading of values from setup screen.
+    Updated Setup Form Fields
+    
+    1. Grouped Policy Fields Together
+    2. Added jquery-serialize-object
+    3. Updated collection definition.
+    Working setup page with multiple inputs
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Rename extensions related to Activity Log panel to be consistent.
+    Added Activity Log Table to "User Activity" dashboard
+    
+    Activity Log Table uses Table Icon Set (Rangemap)
+    Remove lots of dead code.
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Initial slimify
+    Add user image, fix username select textbox
+    
+    Label for username selector was blocking selection of input element.
+    Fixed fields for user display (it's based on order and a field had been
+                 added)
+    Added demo user avatar (requires a change to the test service in the
+               test app as well)
+    Fixed minor href bug in Summary; Migrated Learn More annotations to new style in User Activity
+    Added LEARN MORE annotations to the top provider bar of the User Activity dashboard; corresponding css tweaks
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Info: Convert tabs to spaces.
+    Integrate User Information to user_activity dashboard
+    
+    Added user_info.js, user_info.css scripts and updated user_activity.xml
+    dashboard to use custom warumgetuserinfo search command to get user
+    information from REST service
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    More styling & polishing
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Replace color column in Suspicious Activity panel with color blobs.
+    Initial slimify
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Summary: Fix search error when filtering by user and document simultaneously. (DVPL-5946)
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Make 'context' dependency require-compatible. Mark modified. Eliminate race condition.
+    Summary: Remove broken logic related to clicking chart legend.
+    Fix race condition: Declare that bootstrap-tagsinput depends on JQuery.
+    Updated tag manager and references.
+    Summary: Remove top-level path definition of 'warum_conducive_web' for simplicity.
+    Summary: Reduce usage of require shims.
+    filter_component: Rewrite as require'able module.
+    filter_component: Reformat indentation.
+    Summary: Fix drilldown to individual users.
+    Summary: Fix drilldown to individual users.
+    Fix JavaScript on the summary dashboard. Now renders.
+    Converted Summary and User_Details to XML and HTML
+    Fix document drilldown
+    Edit Drilldown Functionality
+    Updated searches
+    Add Filter Component
+    Initial slimify
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Better encapsulate and document how popups and drilldown works.
+    Summary: Make 'context' dependency require-compatible. Mark modified. Eliminate race condition.
+    Converted Summary and User_Details to XML and HTML
+    Add Filter Component
+    Initial slimify
+    Conditionally adding the "No violations detected" message in the donut container of the Summary dashboard
+    Summary: Refresh entire page every 5 min.
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Setup: Donut honors saved violation weights. Delete old lookup file.
+    Summary: Extract donut viz and Policy Violations panel to separate JS and CSS.
+    Summary: Make 'context' dependency require-compatible. Mark modified. Eliminate race condition.
+    Finish incomplete rename of tagmanager -> bootstrap-tagsinput.
+    Summary: Remove broken logic related to clicking chart legend.
+    Summary: Create Suspicious Activity panel.
+    Summary: Donut series search reformatted, extracted to XML, and fixed.
+    
+    Specifically:
+    * Fix NumYellows and NumReds to show *unweighted* violation counts rather
+      than weighted counts.
+    Summary: Donut series now displays results from real data.
+    Summary: Package donut series viz as class. Rerender every 5 min.
+    Summary: Display policy violation donut series based on real search.
+    Summary: Add custom donut series chart. Hurray!
+    Fix race condition: Declare that bootstrap-tagsinput depends on JQuery.
+    Summary: Migrate logic related to clicking legend of Trend chart. Was broken. Now less broken.
+    Summary: Remove top-level path definition of 'warum_conducive_web' for simplicity.
+    Summary: Fix broken require of filter_component.
+    Summary: Reduce usage of require shims.
+    filter_component: Rewrite as require'able module.
+    Summary: Cleanup: Delete lots of dead code.
+    Extract common search prefixes to postprocess searches in Summary and User Activity views.
+    Summary: Refactor: Fix naming conventions.
+    Summary: Fix drilldown to individual users.
+    Summary: Cleanup indentation, dead code, and order.
+    Fix JavaScript on the summary dashboard. Now renders.
+    Converted Summary and User_Details to XML and HTML
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Organize view JS into functions.
+    User Activity: Migrate activity levels search manager from JS to Simple XML.
+    User Activity: Remove dead assignments.
+    User Activity: Bind heatmap to global time range. More cleanup.
+    User Activity: Cleanup: Simplying token propagation.
+    User Activity: Cleanup: Reduce tokens from 3 to 2.
+    User Activity: Fix trend chart to zoom when time range below it is changed.
+    User Activity: Migrate the calendar heat map. Workaround css! issue.
+    User Activity: Migrated trend zoom logic to Simple XML. Still some issues.
+    Initial slimify
+    Moving Filter input field next to the label to maximize the screen real estate
+    Injecting LEARN MORE annotations on the Summary dashboard; removing resize handle; making standard chart/table links (search, inspect, etc) on the individual panels invisible
+    App/repo renaming; removing project codename everwhere
+    More styling & polishing
+    Additional css polish, maixmizing dashboard real estate usage, driving consistency
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Summary: Make dropdown appear with sane location and size.
+    Summary: Extract donut viz and Policy Violations panel to separate JS and CSS.
+    Summary: Remove broken logic related to clicking chart legend.
+    Summary: Add custom donut series chart. Hurray!
+    Summary: Migrate Filter Criteria panel.
+    Summary: Migrate logic related to clicking legend of Trend chart. Was broken. Now less broken.
+    Initial slimify
+    Add user image, fix username select textbox
+    
+    Label for username selector was blocking selection of input element.
+    Fixed fields for user display (it's based on order and a field had been
+                 added)
+    Added demo user avatar (requires a change to the test service in the
+               test app as well)
+    Move the user name filter and time range picker next to the dashboard label to maximize usage of the screen real estate - via css tweaks
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Added a couple more LEARN MORE annotations to the User Activity dashboard
+    Disable resizable handle to improve UX of the trend chart with the zoom&pan control below;
+    Remove refresh time indicator on the zoom&pan control - it's redundant on the composite chart
+    Added LEARN MORE  to Calendar heat map; can use more css polishing to leave less vertical space between the month label and the LEARN MORE question mark icon
+    App/repo renaming; removing project codename everwhere
+    Additional css polish, maixmizing dashboard real estate usage, driving consistency
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Style tweaks: Remove edit buttons. Alter calendar heatmap width.
+    User Activity: Force calendar heatmap to only show one month.
+    User Activity: Make Activity Levels panel narrower.
+    Initial slimify
+    Move the user name filter and time range picker next to the dashboard label to maximize usage of the screen real estate - via css tweaks
+    Initial slimify
+    Eventgen updates, small bugfixes
+    Updating message when no data can be shown
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Remove WARUM-specific provider detection logic. Only use sourcetype from data API.
+    User Activity: Workaround to handle user not found or providers not found.
+    User Activity: Fix regression related to ignoring disabled apps.
+    User Activity: Fix (harmless) JS errors related to disabled apps.
+    User Activity: Detect and display data providers.
+    Initial slimify
+    Updating learn more icon to light up on hover as per Brian's feedback
+    Migrated all LEARN MORE annotations on the Summary page to the new style
+    Replaced Learn-more question marks with more descriptive Learn more links using in-product styling (light-bulb and external)
+    Went back to using classes & id's to make sure learning annotations icons work as intended on IE as well
+    More LEARN MORE annotations injected into Summary dashboard; tiny css refactoring
+    Injecting LEARN MORE annotations on the Summary dashboard; removing resize handle; making standard chart/table links (search, inspect, etc) on the individual panels invisible
+    App/repo renaming; removing project codename everwhere
+    Help hover: updated unicode
+    Added help diamond with lorem impsum
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    User Activity: Rename extensions related to Activity Log panel to be consistent.
+    User Activity: Cleanup Activity Log panel.
+    
+    Specifically:
+    * Decontabinate. (Convert tabs to spaces.)
+    * Split search to multiple lines to be readable.
+    * Improve IDs.
+    Added Activity Log Table to "User Activity" dashboard
+    
+    Activity Log Table uses Table Icon Set (Rangemap)
+    Remove lots of dead code.
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Finish incomplete rename of tagmanager -> bootstrap-tagsinput.
+    Converted Summary and User_Details to XML and HTML
+    Add Filter Component
+    Initial slimify
+    Injected LEARN MORE into Setup, Offhours Access, Terminated Employee Access, Anomalous Activity and Customer Monitor dashboards; bumped build no.
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Preparing splunkbase app package; adding version to the main app
+    Initial slimify
+    Minor polishes: multiplier in the anomaly detector; fixed typos; highlighting unauthorized setup changes in red
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Setup: Substantial rewrite.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Customer monitor: refactored requirejs dependencies
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Instantiate custom view directly instead of relying on shim.
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Updated tag manager and references.
+    Converted Summary and User_Details to XML and HTML
+    Add Filter Component
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Eliminate duplicate copy of d3. Move dendrogram to components.
+    Added Customer Monitor dashboard with a wrapped d3 dendrogram control
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Initial slimify
+    Changed labels on dendogram
+    
+    Label was being set by innerHtml (via d3's .html) which Safari doesn't support in SVG.  I couldn't make sense of the numbers, so I reduced the label to be name (document accesses) and moved an explanation (and the number of subgroups) to a tooltip.  Also renamed 'sum' to 'total_accesses' in the data structure, as it took me a while to answer 'sum of what?'
+    App/repo renaming; removing project codename everwhere
+    Modified dendrogram.js sums to be displayed in parenthesis
+    Updated dendrogram component to calculate sums
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Eliminate duplicate copy of d3. Move dendrogram to components.
+    Added Customer Monitor dashboard with a wrapped d3 dendrogram control
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Customer Monitor: Eliminate duplicate copy of d3. Move dendrogram to components.
+    Added Customer Monitor dashboard with a wrapped d3 dendrogram control
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    Eventgen updates, small bugfixes
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Fixed some issues with appinspect
+    Tweaks to the windows build, don't package .git
+    Windows powershell has parity with Makefile
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Converted Summary and User_Details to XML and HTML
+    Integrate Calendar Heatmap into User Details
+    Initial slimify
+    App/repo renaming; removing project codename everwhere
+    Rename apps to final names.
+    
+    Specifically:
+    * warum-code-conducive/warum_conducive_web -> warum_pas_ri
+    * warum-code-conducive/warum_hr_info       -> warum_pas_hr_info
+    * warum-code-conducive/TA-database         -> warum_simulated_database_addon
+    * warum-code-conducive/TA-document         -> warum_simulated_documents_addon
+    * warum-code-conducive/TA-file             -> warum_simulated_files_addon
+    * warum-code-conducive/TA-googledrive      -> googledrive_addon
+    Inline kvstore_backbone library.
+    Updated lib to only include the app
+    Added the latest kvstore_backbone lib

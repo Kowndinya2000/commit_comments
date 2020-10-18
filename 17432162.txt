@@ -1,0 +1,283 @@
+﻿    compat-wireless: Update to github
+    
+    This update has below bug fixes,
+    
+      * Fix incorrect cleanup sequence in ath6kl_core_init
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has below bug fixes,
+    
+      * Consider destroy state before processing any RX packets
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has below bug fix,
+    
+          * Fix race in rx worker thread
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has below bug fixes,
+    
+    * Ignore signals while waiting for ISR completion
+    * Fix build errors when CONFIG_ATH6KL_DEBUG disabled
+    * Check wmi ready event status before validating abi version
+    * Cleanup platform driver when registration with SDIO stack fails
+    * Add missed driver capabilities in wiphy->flags
+    * Add rx workqueue for SDIO
+    * Enable FW recovery for ctrl ep full and tx overflow case
+    * Fix dbglog event drop issue
+    * Fix alignment issue
+    * support large IE in connect event
+    * Support fw reporting phy capabilities
+    * Defer wiphy and netdev registration till the end of ath6kl_core_init()
+    * Refactor ath6kl_wmi_control_rx()
+    * Initialize netdev hw_features for every interface
+    * Group wiphy initialization into ath6kl_cfg80211_init()
+    * Inform dhcp pkt flow direction to the target
+    * Handle platform driver registration failure case
+    * Handle signal interruption properly in module_init
+    * Sync the driver and fw wmi event id table content
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has the below bug fixes,
+    
+    * Handle platform driver registration failure case.
+    * Handle signal interruption properly in module_init.
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Olca3.4.0.130 updates to github
+    
+    Changes included in this patch,
+    
+    * Fix incorrect cleanup in ath6kl_close()
+    * increase pkt filter from 8 to 12
+    * Add support to read hw info via debugfs
+    * Fix downlink low throughput issue
+    * Return error from module_init when card init operation fails
+    * host can config the pspoll count
+    * use the ioctl for pkt filter in debugfs
+    * implement ioctl for pkt filter setting
+    * min changes for pkt filter
+    * Add packet filter wmi command on host side
+    * drop int debug cmd if driver is not ready
+    * drop debug cmd if driver is not ready
+    * full protect scan_req for vif
+    * minor changes processing last_mgmt_tx_frame
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Olca3.4.0.108 updates to github
+    
+    This update has the following changes
+    * protect accessing last_mgmt_tx_frame
+    * revert process accessing last_mgmt_tx_frame
+    * minor changes for load balance
+    * using matched alloc and free in diff mode
+    
+    Signed-off-by: Prabagaran Nagamoorthy <pnagamoo@qca.qualcomm.com>
+    compat-wireless: update to github
+    
+    Signed-off-by: Prabagaran Nagamoorthy <pnagamoo@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update contains changes to make fw error recovery
+    configurable through modparam and fix for hang which
+    happens due to race in accessing last_mgmt_tx_frame.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has,
+    
+      * Create debugfs entry to configure max num station.
+      * Fix firmware recovery for AP/P2P mode.
+      * Add support of enable/disable HT40 for 11n.
+      * Prevent suspend during p2p find.
+      * Advertise ACL new client notification.
+      * New reason code is added to the list of reasons in
+        nl80211 for which an AP can reject connection request
+        from the remote station.
+      * fix link speed when using sgi and compilcation fixes.
+    
+    Signed-off-by: Raja Mani <rmani@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has a patch to limit the psq depth
+    to avoid exhausting memory.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has the following fix
+    
+         mac80211: off by one in mcs mask handling
+    
+        "ridx" is used as an index into the mcs_mask[] array which has
+        IEEE80211_HT_MCS_MASK_LEN elements.
+    
+        Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com>
+        Signed-off-by: John W. Linville <linville@tuxdriver.com>
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Removed dos2unix crap and also updated the commit sha of ath6kl-rel.git
+    for msm-3.2.2 release.
+    
+    Signed-off-by: Senthil Balasubramanian <senthilb@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+     * Disable firmware recovery in case of ctrl ep full.
+     * Fix bug in scheduling hb_timer.
+     * Fix dead lock cases in wow suspend and resume context.
+     * Fix data sync failures during VO traffic by reserving
+       10 cookies for  Data Sync operation.
+    
+    Signed-off-by: Raja Mani <rmani@qualcomm.com>
+    compat-wireless: Update to github
+    
+    * Dump firmware traces by default when firmware crashes
+    * Fix PNO issue in JB.
+    
+    Signed-off-by: Senthil Balasubramanian <senthilb@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has support for wlan stats through
+    iw priv ioctl.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update contains few kclocwork fixes
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    Few klocwork fixes.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This fixes a sscan issue.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has support for max/blocked client notification
+    and a rx data corruption fix.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update fixes a corner race in heart beat
+    timer.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: compat-wireless update to github
+    
+    This update has a potential fix for NULL pointer
+    dereference which happens during heart beat
+    polling.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: compat wireless release to github
+    
+    This is same as 3.4.0.11 and has fw recovery fix, fix
+    for WLAN on issue and support to dump more stack
+    upon fw assert.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Compat-wireless update to github
+    
+    This update has potential fix for CR 395909 and an
+    ACS fix.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has fw recovery support, acs fix, regulatory
+    fix, schedule scan and potential memory leak.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Fix for kernel panic
+    
+    CR 385901
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: 3.2.2 release to github
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: Update to github
+    
+    This update has a p2p fix for invalid mac address. And a fix
+    in wow pattern.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless release to github
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless release to github from msm branch
+    
+    This release is tagged msm-2012-06-21.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless patch-7 release to github from msm branch
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless release to github from msm branch tag msm-2012-05-22
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless release to github from msm branch tag msm-2012-05-17
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Compat-wireless release to github from msm branch tag msm-2012-05-07
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    compat-wireless: patch-5 release to github
+    
+    This package is prepared from ath6kl-rel tag msm-2012-04-23.
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Revert "Revert "Merge remote-tracking branch 'quic/github-compat-wireless/master'""
+    
+    This reverts commit f75b8e80b1acaa403dba5b6555b614d9d5ad03b7.
+    Revert "Merge remote-tracking branch 'quic/github-compat-wireless/master'"
+    
+    This reverts commit 4b52ab9511380e6d720d14096e3f4956e48ae943
+    compat-wireless: Update to msm-2012-04-06 tag
+    
+    Signed-off-by: Vivek Natarajan <nataraja@qca.qualcomm.com>
+    compat-wireless: Update to msm-2012-04-02 tag
+    
+    Signed-off-by: Vivek Natarajan <nataraja@qca.qualcomm.com>
+    compat-wireless: Update to cs_patch2_msm tag in ath6kl git tree
+    
+    Signed-off-by: Vivek Natarajan <nataraja@qca.qualcomm.com>
+    compat-wireless: Add pending patches for ath6kl olca3.2 release.
+    
+    Add the linux pending patches for olca 3.2 ath6kl release and also
+    update the Makefile to copy/remove firmware on install/uninstall.
+    
+    Signed-off-by: Senthil Balasubramanian <senthilb@qca.qualcomm.com>
+    Compat-wireless release to github
+    
+    Signed-off-by: Vasanthakumar Thiagarajan <vthiagar@qca.qualcomm.com>
+    Revert "Revert "Merge remote-tracking branch 'quic/github-compat-wireless/master'""
+    
+    This reverts commit f75b8e80b1acaa403dba5b6555b614d9d5ad03b7.
+    Revert "Merge remote-tracking branch 'quic/github-compat-wireless/master'"
+    
+    This reverts commit 4b52ab9511380e6d720d14096e3f4956e48ae943
+    compat-wireless: Update to msm-2012-04-06 tag
+    
+    Signed-off-by: Vivek Natarajan <nataraja@qca.qualcomm.com>
+    compat-wireless: Add pending patches for ath6kl olca3.2 release.
+    
+    Add the linux pending patches for olca 3.2 ath6kl release and also
+    update the Makefile to copy/remove firmware on install/uninstall.
+    
+    Signed-off-by: Senthil Balasubramanian <senthilb@qca.qualcomm.com>

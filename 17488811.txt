@@ -1,0 +1,192 @@
+﻿    Moved twolame from Bad to Ugly
+    0.10.8.2 pre-release.
+    
+    Original commit message from CVS:
+    * configure.ac:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * docs/plugins/gst-plugins-ugly-plugins.args:
+    * docs/plugins/gst-plugins-ugly-plugins.hierarchy:
+    * docs/plugins/gst-plugins-ugly-plugins.interfaces:
+    * docs/plugins/inspect/plugin-a52dec.xml:
+    * docs/plugins/inspect/plugin-asf.xml:
+    * docs/plugins/inspect/plugin-cdio.xml:
+    * docs/plugins/inspect/plugin-dvdlpcmdec.xml:
+    * docs/plugins/inspect/plugin-dvdread.xml:
+    * docs/plugins/inspect/plugin-dvdsub.xml:
+    * docs/plugins/inspect/plugin-iec958.xml:
+    * docs/plugins/inspect/plugin-lame.xml:
+    * docs/plugins/inspect/plugin-mad.xml:
+    * docs/plugins/inspect/plugin-mpeg2dec.xml:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * docs/plugins/inspect/plugin-mpegstream.xml:
+    * docs/plugins/inspect/plugin-realmedia.xml:
+    * docs/plugins/inspect/plugin-siddec.xml:
+    * ext/Makefile.am:
+    0.10.8.2 pre-release.
+    * po/LINGUAS:
+    * po/POTFILES.in:
+    * po/id.po:
+    Add new translation.
+    Add missing elements to docs. Restore alphabetical order in section file. Document mad (it was included in docs alrea...
+    
+    Original commit message from CVS:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * ext/a52dec/gsta52dec.c:
+    * ext/amrnb/amrnbdec.c:
+    * ext/amrnb/amrnbenc.c:
+    * ext/amrnb/amrnbparse.c:
+    * ext/lame/gstlame.c:
+    * ext/mad/gstmad.c:
+    * ext/sidplay/gstsiddec.cc:
+    * gst/asfdemux/gstrtspwms.c:
+    * gst/mpegaudioparse/gstxingmux.c:
+    * gst/realmedia/rademux.c:
+    * gst/realmedia/rdtmanager.c:
+    * gst/realmedia/rtspreal.c:
+    * gst/synaesthesia/gstsynaesthesia.c:
+    Add missing elements to docs. Restore alphabetical order in section
+    file. Document mad (it was included in docs already).
+    Fix doc-markup: use convinience syntax for examples
+    (produces valid docbook), add several refsec2 when we have several
+    titles. Fix some types.
+    Random doc of the day. Also print human readable format of newsegment in log message if we complain about it.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * docs/plugins/gst-plugins-ugly-plugins.args:
+    * docs/plugins/gst-plugins-ugly-plugins.hierarchy:
+    * docs/plugins/gst-plugins-ugly-plugins.interfaces:
+    * docs/plugins/inspect/plugin-a52dec.xml:
+    * docs/plugins/inspect/plugin-amrnb.xml:
+    * docs/plugins/inspect/plugin-asf.xml:
+    * docs/plugins/inspect/plugin-dvdlpcmdec.xml:
+    * docs/plugins/inspect/plugin-dvdread.xml:
+    * docs/plugins/inspect/plugin-dvdsub.xml:
+    * docs/plugins/inspect/plugin-iec958.xml:
+    * docs/plugins/inspect/plugin-lame.xml:
+    * docs/plugins/inspect/plugin-mad.xml:
+    * docs/plugins/inspect/plugin-mpeg2dec.xml:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * docs/plugins/inspect/plugin-mpegstream.xml:
+    * docs/plugins/inspect/plugin-realmedia.xml:
+    * docs/plugins/inspect/plugin-siddec.xml:
+    * docs/plugins/inspect/plugin-synaesthesia.xml:
+    * ext/a52dec/gsta52dec.c:
+    Random doc of the day. Also print human readable format of newsegment
+    in log message if we complain about it.
+    Move xingmux from -bad.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * gst/mpegaudioparse/Makefile.am:
+    * gst/mpegaudioparse/gstmpegaudioparse.c:
+    * gst/mpegaudioparse/gstxingmux.c:
+    * tests/check/Makefile.am:
+    * tests/check/elements/.cvsignore:
+    Move xingmux from -bad.
+    docs/plugins/: Add the real and rtsp elements and update the lists.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    Add the real and rtsp elements and update the lists.
+    * docs/plugins/inspect/plugin-amrnb.xml:
+    * docs/plugins/inspect/plugin-asf.xml:
+    * docs/plugins/inspect/plugin-dvdlpcmdec.xml:
+    * docs/plugins/inspect/plugin-dvdsub.xml:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * docs/plugins/inspect/plugin-mpegstream.xml:
+    * docs/plugins/inspect/plugin-realmedia.xml:
+    * docs/plugins/inspect/plugin-siddec.xml:
+    * docs/plugins/inspect/plugin-synaesthesia.xml:
+    Regenerate docs.
+    * gst/iec958/ac3_padder.c:
+    * gst/iec958/ac3_padder.h:
+    Do not use gtk-doc style comments for non gtk-doc comments. Note -
+    there are functions defined using extern in the .c file - does that
+    make sense?
+    And yet more docs enabled.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * gst/synaesthesia/Makefile.am:
+    * gst/synaesthesia/gstsynaesthesia.c:
+    * gst/synaesthesia/gstsynaesthesia.h:
+    And yet more docs enabled.
+    docs/plugins/: Add new docs. Scan c++ files too.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * docs/plugins/inspect/plugin-a52dec.xml:
+    * docs/plugins/inspect/plugin-amrnb.xml:
+    * docs/plugins/inspect/plugin-asf.xml:
+    * docs/plugins/inspect/plugin-dvdlpcmdec.xml:
+    * docs/plugins/inspect/plugin-dvdsub.xml:
+    * docs/plugins/inspect/plugin-iec958.xml:
+    * docs/plugins/inspect/plugin-lame.xml:
+    * docs/plugins/inspect/plugin-mad.xml:
+    * docs/plugins/inspect/plugin-mpeg2dec.xml:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * docs/plugins/inspect/plugin-mpegstream.xml:
+    Add new docs. Scan c++ files too.
+    * ext/amrnb/amrnbdec.c: (gst_amrnbdec_base_init),
+    (gst_amrnbdec_event):
+    * ext/amrnb/amrnbenc.c: (gst_amrnbenc_base_init):
+    * ext/amrnb/amrnbparse.c: (gst_amrnbparse_base_init),
+    (gst_amrnbparse_loop):
+    Add documentation headers.
+    * ext/mad/gstmad.c:
+    * ext/mad/gstmad.h:
+    Refactor for docs.
+    Document siddec.
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * docs/plugins/inspect/plugin-siddec.xml:
+    * ext/sidplay/gstsiddec.cc:
+    * ext/sidplay/gstsiddec.h:
+    Document siddec.
+    Add docs for lame and lame to docs. Specify allowed bitrates in the properties description (#361140). Canonicalise ob...
+    
+    Original commit message from CVS:
+    * docs/plugins/Makefile.am:
+    * docs/plugins/gst-plugins-ugly-plugins-docs.sgml:
+    * docs/plugins/gst-plugins-ugly-plugins-sections.txt:
+    * ext/lame/gstlame.c: (gst_lame_class_init):
+    * ext/lame/gstlame.h:
+    Add docs for lame and lame to docs. Specify allowed bitrates
+    in the properties description (#361140). Canonicalise object
+    property names (ie. use hyphen instead of underscore).
+    * docs/plugins/inspect/plugin-a52dec.xml:
+    * docs/plugins/inspect/plugin-amrnb.xml:
+    * docs/plugins/inspect/plugin-asf.xml:
+    * docs/plugins/inspect/plugin-dvdlpcmdec.xml:
+    * docs/plugins/inspect/plugin-dvdread.xml:
+    * docs/plugins/inspect/plugin-dvdsub.xml:
+    * docs/plugins/inspect/plugin-iec958.xml:
+    * docs/plugins/inspect/plugin-lame.xml:
+    * docs/plugins/inspect/plugin-mad.xml:
+    * docs/plugins/inspect/plugin-mpeg2dec.xml:
+    * docs/plugins/inspect/plugin-mpegaudioparse.xml:
+    * docs/plugins/inspect/plugin-mpegstream.xml:
+    * docs/plugins/inspect/plugin-siddec.xml:
+    Update version to CVS.
+    add plugin documentation
+    
+    Original commit message from CVS:
+    add plugin documentation

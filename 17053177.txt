@@ -1,0 +1,612 @@
+﻿    Release 1.0.1
+    Release 1.0.0
+    Release 0.7.3
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Update Changelog
+    Add Changelog
+    Update RELEASE.md
+    Apply suggestions from code review
+    
+    Co-authored-by: Carlos Cordoba <ccordoba12@gmail.com>
+    Update RELEASE.md
+    Update release instructions for the 0.x branch
+    Update Release instructions
+    Improve release instructions
+    Release: Switch to use twine to upload release files
+    
+    [cki skip]
+    
+    Fixes #103
+    
+    This is needed to have a markdown long description in PyPi
+    Add missing release instructions
+    Release: Add an instruction to update our Changelog
+    Back to work
+    Release.md: Add each instruction to a list element
+    Adding release instruction and setting current version to dev
+    update mdi to 5.4.55
+    sync
+    update MDI to 4.9.95
+    Add icon browser and entry point to setup.py
+    Ignore icon_browser for code coverage ci check.
+    Add context menu, add keyboard shortcuts, sort model and make it case insensitive.
+    Add screenshot and updated README.txt
+    Add icon browser tests
+    Update README
+    Update to MDI 4.8.95
+    Update MDI to 4.7.95
+    update readme
+    Improve Sponsors section in Readme
+    
+    And also other minor improvements
+    Update README.md
+    
+    Co-Authored-By: Gonzalo Peña-Castellanos <goanpeca@gmail.com>
+    update usage
+    Replace QtGui by QtWidgets
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    Add IconWidget
+    Display icon as widget
+    Update MDI to 4.5.95
+    Update MDI to 4.4.95
+    change number of icons in material design icons in readme
+    update material design version in readme
+    update FA to 5.9.0 and some minor changes for support with python 3
+    Fix README.md and usage.rst FA version and totals.
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    Update README.md
+    Update MDI ref
+    Fix bad count of MDI icons in the README and usage.rst docs.
+    README: MDI is also licensed under the SIL Open Font License, so adding it to the licensing footnote.
+    README: Add missing mention of MDI icons under "Other features" paragraph.
+    README: Fix repeating grammar in 'ei' prefix explanation.
+    README: Detail every prefix and version, with links!
+    README: Lengthen FA examples with the different styles.
+    Update mentions of "fa." to "fa5."
+    Minor textual and layout cleanup
+    Add, update and reorder Readme badges
+    Remove outdated funding annoucement from Readme
+    Add MDI example
+    Add codecov badge to Readme and remove old badges
+    Update README.md
+    Readme: Update AppVeyor badge because of move to org account
+    Add gitter badge
+    Add appveyor badge
+    Add badges
+    Add conda installation instructions
+    Improve documentation
+    Adding minimal sphinx documentation
+    Animated screenshot
+    Update readme with QtPy defails
+    Adding README.md
+    Add travis-ci support, fix readme
+    update readme and setup.py
+    update readme and setup.py
+    update readme
+    Renaming, and setup.py update
+    Update readme
+    Not using QFile, populate __init__.py, use Vbox in example, ignore egginfo
+    Initial commit, basic QtAwesome port, pip installable and example
+    Update documentation and images
+    update gif
+    Animated screenshot
+    sync
+    update MDI to 4.9.95
+    fix MD
+    Update to MDI 4.8.95
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    Update MDI to 4.5.95
+    Update MDI "how to update"
+    UPDATE.md: Improve clarity of instructions.
+    UPDATE.md: Simplify FontAwesome update steps and add some headers.
+    UPDATE.md: Fixes suggested by markdownlint.
+    Update UPDATE.md
+    add instruction to update MDI
+    Update font-awesome to 4.5
+    Update documentation and images
+    Not using QFile, populate __init__.py, use Vbox in example, ignore egginfo
+    Initial commit, basic QtAwesome port, pip installable and example
+    sync
+    Update documentation and images
+    Add icon browser and entry point to setup.py
+    Ignore icon_browser for code coverage ci check.
+    Add context menu, add keyboard shortcuts, sort model and make it case insensitive.
+    Add screenshot and updated README.txt
+    Add icon browser tests
+    sync
+    Add icon browser and entry point to setup.py
+    Ignore icon_browser for code coverage ci check.
+    Add context menu, add keyboard shortcuts, sort model and make it case insensitive.
+    Add screenshot and updated README.txt
+    Add icon browser tests
+    Add codecov config file
+    Update documentation and images
+    Add setupbase.py to our tarballs
+    Adds configs for tests. Fixes in the test.
+    Include missing example script to PyPI tarball
+    
+    The script is needed for testing purposes on the packaging side.
+    Update manifest template
+    
+    Future tarballs would now include the Sphinx documentation and makefiles and the project's LICENSE file. I have added the CHANGELOG.md and README.md, which are desirable for packaging in Linux distributions.
+    
+    Closes #51
+    Manifest and setup.py
+    Create FUNDING.yml
+    Remove py2 from CI and code
+    Update README
+    Move ci to github actions
+    Back to work
+    Release 1.0.1
+    Back to work
+    Release 1.0.0
+    Back to work
+    Release 0.7.3
+    Back to work
+    Release 0.7.2
+    Back to work
+    Release 0.7.1
+    Increase major number
+    Back to work
+    Release 0.7.0
+    Back to work
+    Release 0.6.1
+    Back to work
+    Release 0.6.0
+    Back to work
+    Release 0.5.8
+    Back to work
+    Release 0.5.7
+    Back to work
+    Release 0.5.6
+    Back to work
+    Release 0.5.5
+    Back to work
+    Release 0.5.4
+    Back to work
+    Release 0.5.3
+    Back to work
+    Release 0.5.2
+    Back to work
+    Release 0.5.1
+    Back to work
+    Release 0.5.0
+    Back to work
+    
+    [ci skip]
+    Release 0.4.4
+    Back to work
+    
+    [ci skip]
+    Release 0.4.3
+    Back to work
+    Release 0.4.2
+    Back to work
+    Release 0.4.1
+    Back to work
+    Release 0.4.0
+    Back to work
+    Release 0.3.3
+    Back to work
+    Release 0.3.2
+    Back to work
+    Release 0.3.1
+    Back to dev
+    Release 0.3.0
+    back to dev
+    Release 0.2
+    Adding release instruction and setting current version to dev
+    Read version with exec
+    update mdi to 5.4.55
+    Remove warning for Python 2.7 on Windows
+    Remove py2 from CI and code
+    sync
+    Fix file lock
+    update MDI to 4.9.95
+    Update to MDI 4.8.95
+    Update MDI to 4.7.95
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    Update MDI to 4.5.95
+    reduce lines length
+    add warning
+    add warning
+    Ignore unsupported character code on Python 2.7 32bit
+    Update MDI to 4.4.95
+    change permissions and add md5 hashes
+    Removed Python 3.8 deprecation warnings
+    Changed application order to vflip, hflip, rotated. Set vflip and hflip to not be mutually exclusive.
+    added rotated, hflip, and vflip as options
+    Keep icons alive in cache
+    
+    Fixes #113
+    
+    Looks like icons are stored by reference in qt 5.12, so we need to keep
+    them alive somewhere.
+    iconic_font: Update hashes of FA5 regular and solid.
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    iconic_font.py: Make MD5_HASHES constant.
+    Update FontAwesome 5.3.1 -> 5.4.2
+    MDI 3.0.39 md5
+    Rename FontAwesome5 TTF's font families to "FontAwesome 5 Free Regular" and "FontAwesome 5 Free Solid". (Fixes #97.)
+    Update MDI to 2.7.94
+    FontAwesome 5.1.0 -> 5.3.1
+    Update iconic_font.py to distinguish FA5's "solid style" as a separate font despite having the same font name as the "regular" style.
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    Rename legacy FontAwesome font and charmap to indicate its version.
+    add md5 checksum
+    replace qRound (missing in PySide2) with round
+    Updating digest for fontawesome-webfont.ttf
+    Adds a warning to the icon method and a test.
+    Fix code style issue.
+    Adds validation to check the existence of a QApplication instance.
+    Add a way to not verify hash of vendorized fonts
+    
+    This is needed for Linux packagers that want to use system fonts
+    Fix style error
+    Improve verification that our fonts are not empty and/or missing
+    Identation improvements.
+    Changes in the error message for empty fonts.
+    Fix code style issues.
+    Fix code style issues.
+    Dictionary to improve readability.
+    Added md5 validation to raise exception when the fonts are corrupt.
+    Simplify creation of color options using setdefault
+    Simplify assignment of color and character by using a dict of dicts
+    Fix typo in a comment
+    Add icon state (on, off) handling
+    Adding minimal sphinx documentation
+    Fix osx ttf font loading
+    icon stack names as positional arguments
+    Font bearing
+    Add function to set global defaults
+    Refactor icon and icon_stack into a single codebase
+    Python 3 compatibility fix, pep8
+    fix for python 2.6, dictionary comprehensions are only available in >2.7
+    Python 3 compat and keywords
+    Renaming, and setup.py update
+    Use qtpy
+    Support offset and opacity
+    Animation objects
+    Move animation logic to a separate object
+    Add support for pulse and spin rotation of icons
+    allowing color names
+    scale-factor -> scale_factor
+    Allow changing stack on modal change
+    simplify icon stack
+    Allow setting active disabled icons
+    More kwargs, less options
+    Agressive pep8
+    Simplify default options and make internal functions private
+    Adding documentation and remove icon_by_char from public API
+    cleanup options
+    Allow stacking icons
+    Cleanup the case of a custom painter
+    Refactoring
+    Move charmap to json files
+    Support elusive icons
+    Renaming, cleanup
+    generic FontIconSet
+    moving fa-specifics to fa
+    None default value
+    Not using QFile, populate __init__.py, use Vbox in example, ignore egginfo
+    Initial commit, basic QtAwesome port, pip installable and example
+    Remove py2 from CI and code
+    Update animation.py
+    
+    fix https://github.com/spyder-ide/qtawesome/issues/76
+    Renaming, and setup.py update
+    Use qtpy
+    Animation objects
+    Fix deprecation warnings due to invalid escape sequences.
+    Remove py2 from CI and code
+    sync
+    Add icon browser and entry point to setup.py
+    Ignore icon_browser for code coverage ci check.
+    Add context menu, add keyboard shortcuts, sort model and make it case insensitive.
+    Add screenshot and updated README.txt
+    Add icon browser tests
+    Remove py2 from CI and code
+    Change single to double quotes
+    improve doc string
+    improve doc string
+    add doc string
+    Add parent keyword
+    Update qtawesome/__init__.py
+    
+    Co-Authored-By: Gonzalo Peña-Castellanos <goanpeca@gmail.com>
+    Update qtawesome/__init__.py
+    
+    Co-Authored-By: Gonzalo Peña-Castellanos <goanpeca@gmail.com>
+    remove QWidget and improve
+    Add IconWidget
+    Display icon as widget
+    __init__.py: Add mention of 'mdi' in icon() docstring.
+    Update mentions of "fa." to "fa5."
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    Rename legacy FontAwesome font and charmap to indicate its version.
+    Add MDI font support
+    Release 0.3.1
+    Adding minimal sphinx documentation
+    Update font-awesome to 4.5
+    Read version with exec
+    Update long description and fix badges
+    correct readme
+    bump version
+    version 0.1.8
+    Font bearing
+    update version
+    Release 0.1.6
+    Add function to set global defaults
+    Remove custom painter
+    Release 0.1.5 / rst syntax fixes
+    Add travis-ci support, fix readme
+    Renaming, and setup.py update
+    Animation objects
+    wrong call to load_font
+    Agressive pep8
+    Adding documentation and remove icon_by_char from public API
+    Allow stacking icons
+    Cleanup the case of a custom painter
+    Refactoring
+    Support elusive icons
+    Renaming, cleanup
+    generic FontIconSet
+    moving fa-specifics to fa
+    Not using QFile, populate __init__.py, use Vbox in example, ignore egginfo
+    Initial commit, basic QtAwesome port, pip installable and example
+    Renaming, and setup.py update
+    Support elusive icons
+    Rename legacy FontAwesome font and charmap to indicate its version.
+    Updating FontAwesome to 4.7.
+    Update font-awesome to 4.5
+    update mdi to 5.4.55
+    sync
+    update MDI to 4.9.95
+    Update to MDI 4.8.95
+    Update MDI to 4.7.95
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    Update MDI to 4.5.95
+    Update MDI to 4.4.95
+    change permissions and add md5 hashes
+    update material design icons
+    Update MDI to 3.0.39
+    
+    script used to create charmap
+    import re
+    import json
+    from collections import OrderedDict
+    
+    with open('css/materialdesignicons.css', 'r') as fp:
+        rawcss = fp.read()
+    
+    charmap = OrderedDict()
+    pattern = '^\.mdi-(.+):before {\s*content: "(.+)";\s*}$'
+    data = re.findall(pattern, rawcss, re.MULTILINE)
+    for name, key in data:
+        key = key.replace('\\F', '0xf').lower()
+        key = key.replace('\\', '0x')
+        name = name.lower()
+        charmap[name] = key
+    
+    print(len(charmap))
+    
+    with open('materialdesignicons-webfont-charmap.json', 'w') as fp:
+        json.dump(charmap, fp, indent=4)
+    Update MDI to 2.7.94
+    add MDI ttf
+    Rename legacy FontAwesome font and charmap to indicate its version.
+    Updating FontAwesome to 4.7.
+    Update font-awesome to 4.5
+    Renaming, and setup.py update
+    Initial commit, basic QtAwesome port, pip installable and example
+    Renaming, and setup.py update
+    Move charmap to json files
+    Add entries to the mdi charmap to be supported by Spyder <=4.1.5
+    update mdi to 5.4.55
+    sync
+    sync
+    update MDI to 4.9.95
+    Update to MDI 4.8.95
+    Update MDI to 4.7.95
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    Update MDI to 4.5.95
+    Fix MDI charmap
+    Update MDI to 4.4.95
+    update material design icons
+    Update MDI to 3.0.39
+    
+    script used to create charmap
+    import re
+    import json
+    from collections import OrderedDict
+    
+    with open('css/materialdesignicons.css', 'r') as fp:
+        rawcss = fp.read()
+    
+    charmap = OrderedDict()
+    pattern = '^\.mdi-(.+):before {\s*content: "(.+)";\s*}$'
+    data = re.findall(pattern, rawcss, re.MULTILINE)
+    for name, key in data:
+        key = key.replace('\\F', '0xf').lower()
+        key = key.replace('\\', '0x')
+        name = name.lower()
+        charmap[name] = key
+    
+    print(len(charmap))
+    
+    with open('materialdesignicons-webfont-charmap.json', 'w') as fp:
+        json.dump(charmap, fp, indent=4)
+    Update MDI to 2.7.94
+    add MDI ttf
+    Rename fontawesome5-regular-webfont.ttf's internal name to "Font Awesome 5 Free Regular".
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    Rename FontAwesome5 TTF's font families to "FontAwesome 5 Free Regular" and "FontAwesome 5 Free Solid". (Fixes #97.)
+    FontAwesome 5.1.0 -> 5.3.1
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    update FA to 5.9.0 and some minor changes for support with python 3
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    FontAwesome 5.1.0 -> 5.3.1
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    update FA to 5.9.0 and some minor changes for support with python 3
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    FontAwesome 5.1.0 -> 5.3.1
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    update FA to 5.9.0 and some minor changes for support with python 3
+    Rename fontawesome5-solid-webfont.ttf's internal name to "Font Awesome 5 Free Solid".
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    Rename FontAwesome5 TTF's font families to "FontAwesome 5 Free Regular" and "FontAwesome 5 Free Solid". (Fixes #97.)
+    FontAwesome 5.1.0 -> 5.3.1
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    rebuild fontawesome
+    update FA to 5.9.0 and some minor changes for support with python 3
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    FontAwesome 5.1.0 -> 5.3.1
+    Add FontAwesome 5.1.0
+    
+    - Keep "fa" prefix for FontAwesome4 to avoid breaking backwards
+    compatibility.
+    
+    - Add new "fa5" (regular), "fa5s" (solid) and "fa5b" (brands) prefixes,
+    each corresponding to a different FontAwesome webfont "style".
+    Do not call python directly in tests
+    
+    At least on openSUSE it requires python2 interpreter, but like this it calls the interpreter we are working with.
+    Remove py2 from CI and code
+    Make the test more comprehensive.
+    Try to use pytest-qt
+    Add more details in the test docstring.
+    Do not depend on pytest-qt
+    Add test_unique_font_family_name
+    
+    Test that each font used by qtawesome has a unique name.
+    Regression test for Issue #107
+    Fixes in the test.
+    Adds configs for tests. Fixes in the test.
+    Adds a warning to the icon method and a test.
+    Remove py2 from CI and code
+    sync
+    Add icon browser and entry point to setup.py
+    Ignore icon_browser for code coverage ci check.
+    Add context menu, add keyboard shortcuts, sort model and make it case insensitive.
+    Add screenshot and updated README.txt
+    Add icon browser tests
+    Adding minimal sphinx documentation
+    docs/environment.yml: Fix bad (non-existent) "pyqt5" conda package dependency.
+    Use conda on readthedocs to avoid qt shimming
+    Adding minimal sphinx documentation
+    Improve documentation
+    Improve documentation
+    update mdi to 5.4.55
+    sync
+    Update documentation and images
+    update MDI to 4.9.95
+    Update to MDI 4.8.95
+    Update MDI to 4.7.95
+    update readme
+    update usage
+    Replace QtGui by QtWidgets
+    Revert "Update MDI to 4.5.95"
+    
+    This reverts commit ae2356f535bd2daa24a8f5f55eca827fcf4de3c5.
+    update usage
+    Update MDI to 4.5.95
+    Update usage.rst
+    change number of icons in material design icons in readme
+    update FA to 5.9.0 and some minor changes for support with python 3
+    Fix README.md and usage.rst FA version and totals.
+    FontAwesome 5.5.0 -> 5.6.3 update (done with "update_fa5" command.)
+    FontAwesome 5.5.0 update (first one using the new setup.py command!)
+    Update FontAwesome 5.3.1 -> 5.4.2
+    Update usage.rst
+    Fix bad count of MDI icons in the README and usage.rst docs.
+    usage.rst: Update to match README.md improvements.
+    Update mentions of "fa." to "fa5."
+    Improve documentation
+    Adding minimal sphinx documentation
+    Fix docs
+    Update documentation and images
+    Improve documentation
+    Adding minimal sphinx documentation
+    Update documentation and images

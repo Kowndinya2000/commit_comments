@@ -1,0 +1,84 @@
+﻿    Update readme
+    add instructions to configure the plugin in liferay 7
+    Upgrade to liferay 7
+    Correct download link
+    Update README.md
+    
+    Correct typo.
+    Use email header for login by email address
+    
+    Use the attribute SHIBBOLETH_HEADER_EMAIL when users authenticate by
+    email address. Existing SHIBBOLETH_LOGIN, if transformed by
+    shibboleth.screenname.transform.enabled, does not match stored email
+    address.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Initial commit
+    add Dynamic include for login portlet
+    Upgrade to liferay 7
+    add Dynamic include for login portlet
+    add Dynamic include for login portlet
+    Upgrade to liferay 7
+    Prefix support for multi valued affiliations.
+    -configurable attribute source
+    -configurable affiliation truncate
+    -configurable screen name transformations
+    options to auto-assign user roles based on a Shibboleth attribute
+    import users directly from shibboleth session
+    initial
+    Upgrade to liferay 7
+    Prefix support for multi valued affiliations.
+    -configurable attribute source
+    -configurable affiliation truncate
+    -configurable screen name transformations
+    -removed spec. character hack
+    -removed spec. character hack
+    -minor logging improvements
+    -special character hack for Hungarian characters
+    -transform eduPersonPrincipalName (email-like) format to something that Liferay can accept. E.g. heder@sztaki.hu -> heder.at.sztaki.hu
+    -if email is multi-valued then using the first
+    -if surname or first name is missing using default values
+    -if affiliation is multi-valued, using the first
+    -if affiliation is eduPersonEntitlement, using the last segment
+    -slightly better logging
+    Upgrade to LR 6.2
+    Refactor classes to be easily extensible
+    options to auto-assign user roles based on a Shibboleth attribute
+    import users directly from shibboleth session
+    initial
+    Upgrade to liferay 7
+    Add configurable link to sign-in portlet's nav bar
+    Create role, if not exists.
+    Prefix support for multi valued affiliations.
+    -configurable attribute source
+    -configurable affiliation truncate
+    -configurable screen name transformations
+    options to auto-assign user roles based on a Shibboleth attribute
+    import users directly from shibboleth session
+    initial
+    Upgrade to liferay 7
+    Upgrade to liferay 7
+    add Dynamic include for login portlet
+    Upgrade to liferay 7
+    Upgrade to liferay 7
+    add Dynamic include for login portlet
+    Upgrade to liferay 7
+    Use email header for login by email address
+    
+    Use the attribute SHIBBOLETH_HEADER_EMAIL when users authenticate by
+    email address. Existing SHIBBOLETH_LOGIN, if transformed by
+    shibboleth.screenname.transform.enabled, does not match stored email
+    address.
+    Create role, if not exists.
+    -removed spec. character hack
+    -minor logging improvements
+    -special character hack for Hungarian characters
+    Upgrade to LR 6.2
+    Refactor classes to be easily extensible
+    options to auto-assign user roles based on a Shibboleth attribute
+    removed commented text, updated pom.xml
+    import users directly from shibboleth session
+    initial

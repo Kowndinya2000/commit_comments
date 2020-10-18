@@ -1,0 +1,793 @@
+﻿    Make client runnable using dotnet run
+    Update README.md
+    
+    Fixed ident on code
+    Update README.md
+    
+    Added nuget badge and link to appveyor build
+    Update README.md
+    Update readme
+    Updating readme
+    Update README.md
+    Updated README
+    Added Gitter badge
+    Added AppVeyor build badge
+    Update README.md
+    Update README.md
+    Updated service bus creation examples
+    Formatting
+    Formatting
+    Fixed request/response example
+    Amending title in readme
+    Fixing custom endpoint example in readme
+    Add timeout to request/response example in readme
+    Fix spelling mistakes in README
+    First commit
+    Bumping build version to 5.0.1
+    Specify soluton file for build now that Examples has its own solution file
+    Upgrade to RX 4.1 (#33)
+    
+    * update to net 4.6 / net standard 2.0 and update rx from 3 -> 4
+    
+    * bump version to 4.2
+    
+    * push major version to 5
+    Rename appveyor.yml
+    Version bump 4.1
+    Trigger build?
+    Working .net standard build (tests pass at least)
+    Adding license
+    Fix licence file
+    Adding license
+    Remove implementation projects from solution
+    Fix spelling mistakes in README
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    First commit
+    Working .net standard build (tests pass at least)
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Updating ServiceEndpointClient to utilize IRequestCorrelationProvider as well.
+    
+    * The `ServiceEndpointClient` was also setting the `RequesterId/RequestId` properties on its own in the in the `GetResponses`, so I've updated it to take an `IRequestCorrelationProvider` in the ctor and then replaced the inline setting of the properties with a call to `SetRequestCorrelationIds` instead
+     * Updated `ServiceEndpointProviderBase` to pass the `DefaultRequestCorrelationProvider` to the new constructor param when instantiating the `ServiceEndpointClient` in `CreateEndpointClient`
+    Remove IHandle and move endpoint classes into same files as interfaces
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    First commit
+    Minor tweak on exception message
+    Trying to send a Command or publish an Event with no Endpoint or Localbus configured will result in an exception, alerting the user to possible incorrect configuration. Fixes #24
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Added convenience overload GetResponse that does a Take(1) to complete the observable after a single response is received, as this is a common usage, and prevents the client side deserialization work that happens if the caller forgets to dispose the subscription, or use Take(1).
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Test two subscribers and some code cleanup
+    Fixed bug where requests were subscribed to twice
+    Subscriber request handler methods will now be subscribed to
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    SubjectMessageBus is now threadsafe
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Merges ScheduledSubjectMessageBus to SubjectMessageBus.
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Working .net standard build (tests pass at least)
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Remove IHandle and move endpoint classes into same files as interfaces
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Working .net standard build (tests pass at least)
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Add some tests for ServiceBusClient.
+    Handle the possible non AggregateException when reaggregating exceptions.
+    Handle an empty collection of commands instead of throwing an error.
+    Working .net standard build (tests pass at least)
+    Trying to send a Command or publish an Event with no Endpoint or Localbus configured will result in an exception, alerting the user to possible incorrect configuration. Fixes #24
+    SubjectMessageBus is now threadsafe
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Added convenience overload GetResponse that does a Take(1) to complete the observable after a single response is received, as this is a common usage, and prevents the client side deserialization work that happens if the caller forgets to dispose the subscription, or use Take(1).
+    Test underlying MessageSource observables are only created and disposed once
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Test two subscribers and some code cleanup
+    Fixed bug where requests were subscribed to twice
+    Subscriber request handler methods will now be subscribed to
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Applying feedback from @inter8ection on PR
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Applying feedback from @inter8ection on PR
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Test two subscribers and some code cleanup
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    Don't use v3 compat packages - use System.Reactive instead.
+    
+    Patch upgrade from 4.1.0 -> 4.1.2
+    Update Obvs.csproj
+    Upgrade to RX 4.1 (#33)
+    
+    * update to net 4.6 / net standard 2.0 and update rx from 3 -> 4
+    
+    * bump version to 4.2
+    
+    * push major version to 5
+    Depend on System.Reactive.PlatformServices instead of System.Reactive to avoid adding System.Reactive.Windows.Threading when targeting .net Framework 4.5. In particular avoid adding a reference to WindowsBase. (#30)
+    Targetting net45 too
+    Working .net standard build (tests pass at least)
+    Updated package project URL
+    Further fixes
+    New csproj format
+    New Rx dependancies
+    Merges ScheduledSubjectMessageBus to SubjectMessageBus.
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    Added the ability to add multiple monitors
+    Added new monitoring functionality for Obvs 2.2
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    Renaming file to reflect actual latest type name
+    
+    ServiceBusProviderMessagePropertyProviderManager renamed to just MessagePropertyProviderManager.
+    Property Provider configuration extension method work
+    
+    Unfortunately the extension methods over the configuration interface would now be more verbose than instantiating the types directly due to all the generic parameters and [lack of partial eval of generic type parameters in C#](http://stackoverflow.com/questions/2345140/extra-generic-parameter-in-generic-extension-methods), so I have removed those.
+    
+    I have instead added extension methods for the `List<IMessagePropertyProvider<T>>` which enable simpler configuration for the `CompositeMessagePropertyProvider` class which was the majority of the functionality we needed anyway.
+    
+    The only thing lost here is if you only want a single `FuncMessagePropertyProvider<> ` you'll have to instantiate that class yourself instead of having a nice configuration method overload.
+    Adding ServiceBusProviderMessagePropertyProviderManager.
+    
+    * This adds a reusable class that providers can all use to manage property providers for them.
+    * Reverting accidental change to nuspec that hardcoded version # in that was being used for testing
+    Test two subscribers and some code cleanup
+    Initial pass on property provider config
+     * Added ICanSpecifyPropertyProviders interface
+     * Added a few core implementations of IMessagePropertyProvider as well as some configuration extension methods that help configure those types more cleanly.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Remove IHandle and move endpoint classes into same files as interfaces
+    Move property providers into own subfolder
+    Moved serializer interfaces into subfolder
+    Change publish and send contracts to return Task, and implemented logging contracts
+    Added factory interface for creating deserializers
+    First commit
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Upgrade to RX 4.1 (#33)
+    
+    * update to net 4.6 / net standard 2.0 and update rx from 3 -> 4
+    
+    * bump version to 4.2
+    
+    * push major version to 5
+    Targetting net45 too
+    Test fix
+    Working .net standard build (tests pass at least)
+    Removed the check for default ctor when scanning for messages.
+    
+    This is a function of the serialization approach used. Given that this
+    is a pluggable option, it makes sense for Obvs to be agnostic of these
+    concerns and rely on the serializer implementation itself to bail if it
+    does not like the type.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Catch and rethrow exception with more useful message when attempting to load types from assemblies
+    First commit
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    Targetting net45 too
+    Working .net standard build (tests pass at least)
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Updating ServiceEndpointClient to utilize IRequestCorrelationProvider as well.
+    
+    * The `ServiceEndpointClient` was also setting the `RequesterId/RequestId` properties on its own in the in the `GetResponses`, so I've updated it to take an `IRequestCorrelationProvider` in the ctor and then replaced the inline setting of the properties with a call to `SetRequestCorrelationIds` instead
+     * Updated `ServiceEndpointProviderBase` to pass the `DefaultRequestCorrelationProvider` to the new constructor param when instantiating the `ServiceEndpointClient` in `CreateEndpointClient`
+    First commit
+    Added new monitoring functionality for Obvs 2.2
+    Fixed fluent config bug where you could specify local bus options before saying you want to use a local bus
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Changing property provider configuration interface
+    
+    Changing `ICanSpecifyPropertyProviders::UsingMessagePropertyProviderFor` to return itself because we need to allow for configuring property providers for multiple types.
+    Fixing ICanSpecifyPropertyProviders for 2.0
+    
+     * Needed to fix generic signature of the method ICanSpecifyPropertyProviders::UsingMessagePropertyProviderFor
+     * Updated all MessagePropertyProviderConfigurationExtensions to follow
+    Initial pass on property provider config
+     * Added ICanSpecifyPropertyProviders interface
+     * Added a few core implementations of IMessagePropertyProvider as well as some configuration extension methods that help configure those types more cleanly.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Applying feedback from @inter8ection on PR
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Enable filtering by endpoint for debuglogging
+    Added optional parameter for logging  config which allows the user to specify which endpoints they'd like to log for, default is all.
+    Moved serializer interfaces into subfolder
+    Change publish and send contracts to return Task, and implemented logging contracts
+    Added new monitoring functionality for Obvs 2.2
+    Fixed fluent config bug where you could specify local bus options before saying you want to use a local bus
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Applying feedback from @inter8ection on PR
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Enable filtering by endpoint for debuglogging
+    Added optional parameter for logging  config which allows the user to specify which endpoints they'd like to log for, default is all.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Move property providers into own subfolder
+    First commit
+    Property Provider configuration extension method work
+    
+    Unfortunately the extension methods over the configuration interface would now be more verbose than instantiating the types directly due to all the generic parameters and [lack of partial eval of generic type parameters in C#](http://stackoverflow.com/questions/2345140/extra-generic-parameter-in-generic-extension-methods), so I have removed those.
+    
+    I have instead added extension methods for the `List<IMessagePropertyProvider<T>>` which enable simpler configuration for the `CompositeMessagePropertyProvider` class which was the majority of the functionality we needed anyway.
+    
+    The only thing lost here is if you only want a single `FuncMessagePropertyProvider<> ` you'll have to instantiate that class yourself instead of having a nice configuration method overload.
+    Initial pass on property provider config
+     * Added ICanSpecifyPropertyProviders interface
+     * Added a few core implementations of IMessagePropertyProvider as well as some configuration extension methods that help configure those types more cleanly.
+    Initial pass on property provider config
+     * Added ICanSpecifyPropertyProviders interface
+     * Added a few core implementations of IMessagePropertyProvider as well as some configuration extension methods that help configure those types more cleanly.
+    Move property providers into own subfolder
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Move property providers into own subfolder
+    First commit
+    Working .net standard build (tests pass at least)
+    MessagePropertyProviderManager fixes for 2.0
+    
+    I was originally writing MessagePropertyProviderManager during the 1.x timeframe and, while I did upgrade it to work with 2.0, I didn't necessarily optimize it around all the 2.0 changes. All the work was in  FindAllApplicableTypesForMessage method
+    
+     * Noticed method signature had a generic TMessage parameter of its own, but that's not necessary because the class has a generic TMessage parameter
+     * Had logic to test if TMessage was a class, but now with 2.0 it's always going to be a class due to the generic constraint, so that was removed.
+     * Logic always assumed IMessage for interface hierarchy, but now needs to check if TMessage is an interface and, only if it is, look for any subtypes. Otherwise, if TMessage is a class, the interface scanning can now totally skipped because walking the class hierarchy is all that's needed.
+    Needed to include the DefaultPropertyProvider by default:
+    
+     * See comments on PR #16, but since serializer implementations rely on the property that is being created by `DefaultPropertyProvider`
+     * Modified `MessagePropertyProviderManager` to be generic so that the types being added can be constrained to the base message type provided by Obvs 2.0
+    Renaming file to reflect actual latest type name
+    
+    ServiceBusProviderMessagePropertyProviderManager renamed to just MessagePropertyProviderManager.
+    Adding ServiceBusProviderMessagePropertyProviderManager.
+    
+    * This adds a reusable class that providers can all use to manage property providers for them.
+    * Reverting accidental change to nuspec that hardcoded version # in that was being used for testing
+    Move property providers into own subfolder
+    First commit
+    First commit
+    First commit
+    First commit
+    First commit
+    First commit
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Added optional parameter for logging  config which allows the user to specify which endpoints they'd like to log for, default is all.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Added optional parameter for logging  config which allows the user to specify which endpoints they'd like to log for, default is all.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Change publish and send contracts to return Task, and implemented logging contracts
+    SubjectMessageBus is now threadsafe
+    Use endpoint Name in OnError message rather than endpoint Type name
+    Test two subscribers and some code cleanup
+    Working .net standard build (tests pass at least)
+    Test two subscribers and some code cleanup
+    Subscriber request handler methods will now be subscribed to
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    SubjectMessageBus is now threadsafe
+    Added comments to extension method
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    RetryWithBackoffStrategy extension added
+    First commit
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Added new monitoring functionality for Obvs 2.2
+    Added new monitoring functionality for Obvs 2.2
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Ensure continuation task for monitoring is run on same thread as previous task, to avoid the need to switch to a new thread, and ensure the ordering of the monitoring calls is deterministic
+    Reverting to .Net 4.5 syntax until build issue can be sorted.
+    Added new monitoring functionality for Obvs 2.2
+    Reverting to .Net 4.5 syntax until build issue can be sorted.
+    Added new monitoring functionality for Obvs 2.2
+    Removed needless Publish().RefCount()s and swapped in more robust retriable RefCounting at top ServiceBus level
+    Ensure continuation task for monitoring is run on same thread as previous task, to avoid the need to switch to a new thread, and ensure the ordering of the monitoring calls is deterministic
+    Reverting to .Net 4.5 syntax until build issue can be sorted.
+    Added new monitoring functionality for Obvs 2.2
+    Added new monitoring functionality for Obvs 2.2
+    Added the ability to add multiple monitors
+    Added new monitoring functionality for Obvs 2.2
+    Fixed copy/paste bug in MultiMonitor
+    Added the ability to add multiple monitors
+    Changed Serializer/Deserializer interface to aid future usages
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Added overloads to serialization to use streams
+    Moved serializer interfaces into subfolder
+    Added factory interface for creating deserializers
+    First commit
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Moved serializer interfaces into subfolder
+    Added factory interface for creating deserializers
+    Changed Serializer/Deserializer interface to aid future usages
+    Added overloads to serialization to use streams
+    Moved serializer interfaces into subfolder
+    First commit
+    Add .vscode dir
+    Add .vscode dir
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    First commit
+    New csproj format
+    New Rx dependancies
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    New csproj format
+    New Rx dependancies
+    Fix
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    Don't use v3 compat packages - use System.Reactive instead.
+    
+    Patch upgrade from 4.1.0 -> 4.1.2
+    Upgrade to RX 4.1 (#33)
+    
+    * update to net 4.6 / net standard 2.0 and update rx from 3 -> 4
+    
+    * bump version to 4.2
+    
+    * push major version to 5
+    Working .net standard build (tests pass at least)
+    net452 for test project to solve xunit issue: https://github.com/xunit/xunit/issues/241#issuecomment-328849682
+    New csproj format
+    New Rx dependancies
+    Updated test libraries
+    Updated to latest nuget packages
+    Updated to NUnit 3.x
+    Fix
+    Added ScheduledSubjectMessageBus incase people want to use asynchronous in-process service bus
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Updating to NUnit 2.6.4 and FakeItEasy 1.25.2
+    Added NUnit test adapter package to Obvs.Tests to enable people to run NUnit tests more easily
+    Added NUnit test adapter package to Obvs.Tests to enable people to run NUnit tests more easily
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    First commit
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    First commit
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    New csproj format
+    New Rx dependancies
+    Reverting unintentional change.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    First commit
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    Trying to send a Command or publish an Event with no Endpoint or Localbus configured will result in an exception, alerting the user to possible incorrect configuration. Fixes #24
+    Updated to NUnit 3.x
+    Added convenience overload GetResponse that does a Take(1) to complete the observable after a single response is received, as this is a common usage, and prevents the client side deserialization work that happens if the caller forgets to dispose the subscription, or use Take(1).
+    Test underlying MessageSource observables are only created and disposed once
+    Added new monitoring functionality for Obvs 2.2
+    ServiceBus can now be optionally configured to publish and receive messages locally.
+    Fixed bug where endpoints without logging enabled would be discarded. Wrapped calls to loggers with a try/catch so exceptions thrown by the loggers do not cause messages to be dropped.
+    Test two subscribers and some code cleanup
+    Subscriber request handler methods will now be subscribed to
+    Added Subscribe feature to ServiceBus that allows user to pass in any subscriber, message handler methods on the subscriber are discovered using reflection, and the correct subscriptions set up. Support polymoric methods and uses the ObserveOn contract to ensure only one message is delivered at a time.
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Removed usage of RequestCorrelationProvider from ServiceEndpointClient as correlation ID's should be set in ServiceBus prior to GetResponses. Introduced new ConsoleLogger.
+    Introducing IRequestCorrelationProvider abstraction (addresses #11)
+    
+        * Added IRequestCorrelationProvider interface
+        * Added fluent configuration support for configuring IRequestCorrelationProvider
+        * Implemented DefaultRequestCorrelationProvider that takes the previously implemented rules from RequestExtensions::SetCorrelationIds *except* that I now only set RequesterId if it's null/empty (that way application logic has opportunity to override provider logic at all times)
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    First changes for Obvs version 2.0
+    
+    - Added generic ServiceBus so user can specify own message interface
+    types
+    - Expanded on logging configuration
+    - Expanded on assembly scanning configuration
+    - Added exceptions when message types are found to be internal or have
+    no default constructor
+    Implemented IDisposable for the bus and endpoints, and added some tests. Updated nuspec file.
+    Add some tests for ServiceBusClient.
+    Handle the possible non AggregateException when reaggregating exceptions.
+    Upgraded System.Reactive from 4.1.2 to 4.3.2
+    
+    Also updated other packages at same time.
+    New csproj format
+    New Rx dependancies
+    Change publish and send contracts to return Task, and implemented logging contracts
+    First commit
+    Fixing examples build
+    Docker compose examples
+    Fixing examples build
+    Docker compose examples
+    Fixing examples build
+    Docker compose examples
+    Make client runnable using dotnet run
+    Fixing examples build
+    Docker compose examples
+    Docker compose examples
+    Fixing examples build
+    Docker compose examples
+    Remove unused references from example client
+    Fix example client
+    Docker compose examples
+    Make client runnable using dotnet run
+    Fixing examples build
+    Docker compose examples
+    Make client runnable using dotnet run
+    Fixing examples build
+    Docker compose examples
+    Make client runnable using dotnet run
+    Docker compose examples
+    Docker compose examples

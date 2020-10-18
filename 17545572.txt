@@ -1,0 +1,81 @@
+﻿    Initial commit
+    First commit
+    Updated README
+    Create README.md
+    sprint1_Council_a -- refactored code from Python3 to Python2. Most work performed cleaned code of errors and syntactical mistakes.
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Fixed player to be a class and updated methods
+    Player class feature
+    Changes were made to the directory previously and these changes caused an error when testing. This has been fixed by applying proper OO principles. There is still a bug in the Tournament.py class that has been noted in the class itself. It deals with a function that should return a value but when you return this value from the proper function, the match ends early while testing. PyCharm notes this line as being in error.
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Fixed bugs. First working version
+    Tournament received several fixes. RPSPlayerExample had a faulty comment
+    that was fixed. AllPlayAll had a minor fix
+    Updates signatures of methods from game to round
+    added in set_game method
+    updated tournament structure. removed match class
+    Second Commit
+    
+    -Added some supporting methods begin_tournament/end_tournament()
+    -Added observable to tournament
+    -Added match class which I believe is responsible for looping the games
+    to be played? Need some clarification for the main playing method in
+    match
+    Renamed feature_Tournament.py to Tournament.py
+    first commit of tournament
+    first commit of tournament
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Updated Game class interface
+    Simplified Game Class extremely
+    trying to update with remote branch
+    detele test
+    removed a comment
+    commits
+    commit
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Added authors
+    added python specific syntax
+    updated commments
+    updated comment
+    Created registration class and added register method to add a player to the tournament
+    sprint1_Council_a -- refactored code from Python3 to Python2. Most work performed cleaned code of errors and syntactical mistakes.
+    First commit
+    Added comments and reformated some methods
+    Added Scorekeepr Classes and implemented them
+    sprint1_Council_a -- refactored code from Python3 to Python2. Most work performed cleaned code of errors and syntactical mistakes.
+    Changes were made to the directory previously and these changes caused an error when testing. This has been fixed by applying proper OO principles. There is still a bug in the Tournament.py class that has been noted in the class itself. It deals with a function that should return a value but when you return this value from the proper function, the match ends early while testing. PyCharm notes this line as being in error.
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Tournament received several fixes. RPSPlayerExample had a faulty comment
+    that was fixed. AllPlayAll had a minor fix
+    Fixed errors in classes Message and Observable.
+    Included a test driver for RPSPlayerExample (written as a
+    main within RPSPlayerExample.py)
+    Ignores messages that do not involve the player. Minor style fixes.
+    Further modified Message module to use static methods within class Message
+    instead of global functions.
+    Created a simple RPS player
+    Changes were made to the directory previously and these changes caused an error when testing. This has been fixed by applying proper OO principles. There is still a bug in the Tournament.py class that has been noted in the class itself. It deals with a function that should return a value but when you return this value from the proper function, the match ends early while testing. PyCharm notes this line as being in error.
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Minor changes to Display
+    Fixed bugs. First working version
+    Add Display.py
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Fixed some syntax errors in Scorekeeper
+    Added comments and reformated some methods
+    Added Scorekeepr Classes and implemented them
+    Changes were made to the directory previously and these changes caused an error when testing. This has been fixed by applying proper OO principles. There is still a bug in the Tournament.py class that has been noted in the class itself. It deals with a function that should return a value but when you return this value from the proper function, the match ends early while testing. PyCharm notes this line as being in error.
+    First commit
+    Added BEPCPlayer as well as going over existing code. There were several cases where syntax wasn't satisfactory for pycharm and a couple of cases where a return statement was expected but not created in a function. The syntax should be (mostly) satisfactory and a couple of logic mistakes were corrected.
+    Fixed bugs. First working version
+    Tournament received several fixes. RPSPlayerExample had a faulty comment
+    that was fixed. AllPlayAll had a minor fix
+    Fixed AllPlayAll.py problems, deleted AllPlayAll.py~
+    Updated All Play All
+    AllPlayAll v1.0

@@ -1,0 +1,1251 @@
+﻿    Update README.md
+    update link to 2020 release
+    Update README.md
+    Update release and readme
+    update of readme to include link to RPS 2019 installer
+    updated credits in README.md
+    mention DanRumery's Pullrequest in the credits...
+    adding installer for Revit 2018 / 2018.1
+    Update README.md
+    Update README.md
+    Update README.md
+    mention pyRevit
+    updated RPS 2017 installer
+    Update README.md
+    Added installer for Revit 2017
+    added a link to Eric Raymonds smart questions document
+    Update README.md
+    Update README.md
+    Update README.md
+    added links to the landing page for the installers
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Create README.md
+    rebuild iss files
+    rebuild iss files
+    release all inno setup files
+    Project directory cleanups for clarity
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    first step towards an installer for RPS 2018
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    first port to Revit 2017
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    fixed a reference in the setup script
+    ported to Revit 2015 and added an MIT license file
+    ported to Revit 2014
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed bug in installer for vasari tp2.5 (RevitPythonShell.xml was being placed in the wrong folder)
+    added installer for TP2.5, but it is not functional yet.
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    added setup script for vasari tp2.1 as solution item
+    InnoSetup script for creating the Vasari TP2.1 installer
+    ported to Revit 2015 and added an MIT license file
+    Project directory cleanups for clarity
+    Project directory cleanups for clarity
+    fixed problems with Vasari Beta3
+    updated to work with Vasari Beta3 and build on VS2012
+    ported to Revit 2014
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed bug in installer for vasari tp2.5 (RevitPythonShell.xml was being placed in the wrong folder)
+    added installer for TP2.5, but it is not functional yet.
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    added setup script for vasari tp2.1 as solution item
+    InnoSetup script for creating the Vasari TP2.1 installer
+    rebuild iss files
+    rebuild iss files
+    release all inno setup files
+    Project directory cleanups for clarity
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    fixed a reference in the setup script
+    ported to Revit 2015 and added an MIT license file
+    ported to Revit 2014
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed bug in installer for vasari tp2.5 (RevitPythonShell.xml was being placed in the wrong folder)
+    added installer for TP2.5, but it is not functional yet.
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    added setup script for vasari tp2.1 as solution item
+    InnoSetup script for creating the Vasari TP2.1 installer
+    rebuild iss files
+    rebuild iss files
+    release all inno setup files
+    updated PythonConsoleControl to sdk csproj format
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    Project directory cleanups for clarity
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    first step towards an installer for RPS 2018
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    first port to Revit 2017
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    fixed a reference in the setup script
+    ported to Revit 2015 and added an MIT license file
+    ported to Revit 2014
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed bug in installer for vasari tp2.5 (RevitPythonShell.xml was being placed in the wrong folder)
+    added installer for TP2.5, but it is not functional yet.
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    added setup script for vasari tp2.1 as solution item
+    InnoSetup script for creating the Vasari TP2.1 installer
+    added functionality for creating RibbonPanels in the startup script
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    created setup for PR #42
+    Adding script address to sys search path
+    added rudimentary syntax checking to make life easier for users
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    added the settings file folder to the search paths (allows `import init` and `import startup`)
+    added functionality for creating RibbonPanels in the startup script
+    found a neater way to add stuff to the builtin module.
+    RevitAPI.dll and RevitAPIUI.dll are now referenced implicitly and need not be referenced with `clr.AddReference` anymore.
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    experimental addition of a new shell based on IronLabs (but I'm having some troubles with transactions)
+    port to 2012
+    changed __revit__ and __vars__ to be part of the __builtins__ dictionary: thus, they are now available in modules too!
+    'import __main__' now works (current scope is published as module '__main__')
+    added RevitPythonShell/InitScript functionality to RevitPythonShell.xml.
+    moved `__revit__` and other predefined variables to __builtins__, so they can be used throughout.
+    Ported to Autodesk Revit 2011
+    implemented showing canned scripts in the revit ribbon panel
+    using original required libraries, seems to break otherwise and don't really want to debug too much :sweat_smile:
+    reset loading assemblies from folder
+    small updates
+    updating generation of addin and iss file through msbuild target tasks
+    removing fody and updating include assets from packages
+    upgrade rps runtime to sdk csproj
+    updated PythonConsoleControl to sdk csproj format
+    some minor changes to the project files
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    first step towards an installer for RPS 2018
+    working on configurations
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    first port to Revit 2017
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    fixed processor architecture missmatch warning based on http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html
+    added functionality for creating RibbonPanels in the startup script
+    ported to Revit 2015 and added an MIT license file
+    updated to work with Vasari Beta3 and build on VS2012
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    added functionality for creating RibbonPanels in the startup script
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    updated PythonConsoleControl to sdk csproj format
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    updating avalon
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added support for interactive sessions (implemented an inputstream)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    fixed a race condition bug when multiple threads try to print to STDOUT at the same time.
+    fixed a multithreading bug in ScriptOutputStream (writing was not always being done on the gui thread)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    finally fixed the problem with closing the ScriptOutput window while in the code.interact() loop.
+    fixed blunder in last commit.
+    modified some stuff, trying to get interactive console to hide. It won't :(
+    fixed some warts with interactive
+    some smaller fixes to handling of STDIN and STDOUT in the script execution dialog
+    added support for interactive sessions (implemented an inputstream)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    Fixes issue with Settings path added to search paths multiple times
+    added the settings file folder to the search paths (allows `import init` and `import startup`)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixes #110
+    fixes #56 (NullReferenceException on loading)
+    Bugfix for RpsAddins without startup scripts
+    bugfix for deploying startupscripts in 2017
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    harmonized the attribute name for script and file paths: they are now all called "src"
+    added functionality for creating RibbonPanels in the startup script
+    fixed a bug for icons if multiple rpsaddins are deployed at the same time
+    fixed issues with icons for RpsAddins
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    Updated standard library zip file correcting ssl.py encoding
+    
+    originally UTF-8 BOM
+    now UTF-8
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    created separate installers for 32bit and 64 bit versions.
+    added register/unregister of plugin on install/uninstall
+    created separate installers for 32bit and 64 bit versions.
+    added register/unregister of plugin on install/uninstall
+    split up code into library to allow for multiple frontends with baked in guids.
+    split up code into library to allow for multiple frontends with baked in guids.
+    split up code into library to allow for multiple frontends with baked in guids.
+    added an AutoIt script for managing the [ExternalApplications] section of the Revit.ini
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    experimental new shell (hosted, but without access to api atm)
+    experimental new shell (hosted, but without access to api atm)
+    experimental new shell (hosted, but without access to api atm)
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    experimental new shell (hosted, but without access to api atm)
+    experimental new shell (hosted, but without access to api atm)
+    updated PythonConsoleControl to sdk csproj format
+    experimental new shell (hosted, but without access to api atm)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    experimental new shell (hosted, but without access to api atm)
+    Auto-complete now works under more circumstances (e.g. can complete on partial name (not just after a dot), while typing an argument to a function call, mid-expression or statement, etc.) There some edge cases where it will still fail (e.g. strings with escaped quotes, multi-line, extension methods, triple-quoted strings, etc) but much improved nonetheless!
+    Better code completion list
+    
+    Works correctly on python classes derivded from "object"
+    mixes lower and upper attributes together sorted by name
+    pushes all reserved names to the end of the list
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    experimental new shell (hosted, but without access to api atm)
+    experimental new shell (hosted, but without access to api atm)
+    fixed #24 (__revit__.Application.Documents)
+    
+    fixed a crashing bug due to threading issues (Revit API context) in the
+    code completion functionality.
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    experimental new shell (hosted, but without access to api atm)
+    updated PythonConsoleControl to sdk csproj format
+    cleaning up for release of 2012 port
+    using original required libraries, seems to break otherwise and don't really want to debug too much :sweat_smile:
+    reset loading assemblies from folder
+    small updates
+    updating generation of addin and iss file through msbuild target tasks
+    update external app startup
+    removing fody and updating include assets from packages
+    adding addin manifest and create at compile time
+    upgrade rps runtime to sdk csproj
+    updated PythonConsoleControl to sdk csproj format
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    first step towards an installer for RPS 2018
+    working on configurations
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    created new installer for RPS 2015
+    first port to Revit 2017
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    updated to work with Vasari Beta3 and build on VS2012
+    experimental new shell (hosted, but without access to api atm)
+    port to 2012
+    hello world now prints :)
+    Ported to Autodesk Revit 2011
+    added IronTextBox2 as a replacement for the interactive shell.
+    Auto-complete now works under more circumstances (e.g. can complete on partial name (not just after a dot), while typing an argument to a function call, mid-expression or statement, etc.) There some edge cases where it will still fail (e.g. strings with escaped quotes, multi-line, extension methods, triple-quoted strings, etc) but much improved nonetheless!
+    Make "move to end" optional when writing text (this fixes a paste bug where pasting at the cursor without a selection pastes to the end of the line)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    Update PythonTextEditor.cs
+    fix callable completion error
+    fixed #24 (__revit__.Application.Documents)
+    
+    fixed a crashing bug due to threading issues (Revit API context) in the
+    code completion functionality.
+    experimental new shell (hosted, but without access to api atm)
+    updated PythonConsoleControl to sdk csproj format
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    updating avalon
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    Enable ctrl+space auto-completion (more useful now that auto-complete can complete partial names, globals, etc.)
+    Allow typing an underscore during auto-completion (underscores are quite common in Revit API enums)
+    Make "move to end" optional when writing text (this fixes a paste bug where pasting at the cursor without a selection pastes to the end of the line)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    add ExecuteAndWrap
+    added rudimentary syntax checking to make life easier for users
+    fixed bug - dispatcher in modal shell is now in the main thread...
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    experimental addition of a new shell based on IronLabs (but I'm having some troubles with transactions)
+    experimental new shell (hosted, but without access to api atm)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    experimental new shell (hosted, but without access to api atm)
+    experimental new shell (hosted, but without access to api atm)
+    cleaning up for release of 2012 port
+    added configuration editing.
+    cleaning up for release of 2012 port
+    experimental new shell (hosted, but without access to api atm)
+    moving from local svn to google code.
+    cleaning up for release of 2012 port
+    port to 2012
+    added configuration editing.
+    cleaning up for release of 2012 port
+    cleaning up for release of 2012 port
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    fixed CustomAction code for installing addin manifest.
+    Ported to Autodesk Revit 2011
+    hello world now prints :)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    port to 2012
+    hello world now prints :)
+    fixed setup to work on both x64 and x86
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    Ported to Autodesk Revit 2011
+    Ported to Autodesk Revit 2011
+    moving from local svn to google code.
+    experimental autocompletion
+    started implementing tooltip for autocompletion. this is not functional atm, so don't hit TAB!
+    added configuration editing.
+    added IronTextBox2 as a replacement for the interactive shell.
+    port to 2012
+    hello world now prints :)
+    Ported to Autodesk Revit 2011
+    added IronTextBox2 as a replacement for the interactive shell.
+    minor corrections (mainly housekeeping)
+    added IronTextBox2 as a replacement for the interactive shell.
+    Ported to Autodesk Revit 2011
+    added IronTextBox2 as a replacement for the interactive shell.
+    added IronTextBox2 as a replacement for the interactive shell.
+    added IronTextBox2 as a replacement for the interactive shell.
+    moving from local svn to google code.
+    merging @eirannejad 's facelift for the interface (now with installer)
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    new installer for RPS 2017
+    added installer for RPS 2016
+    created setup for PR #42
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    recreated some binaries
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    adding newest installer (from pr #74)
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    recreated some binaries
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    added installer for RPS 2016
+    created setup for PR #42
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    renamed installer for RPS 2018 to include date
+    created an installer for the newst version (but only for RPS 2018)
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    recreated some binaries
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    created new installer for RPS 2015
+    Added lookup() to init.py (RevitLookup integration)
+    added links to the landing page for the installers
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    replacing with binary from my machine
+    some minor changes to the project files
+    adding newest installer (from pr #74)
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    build executable for r2020
+    updating generation of addin and iss file through msbuild target tasks
+    replacing with binary from my machine
+    some minor changes to the project files
+    adding newest installer (from pr #74)
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    added new installer binary
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    rename exe to reflect build date
+    fixes #62
+    renamed installer for RPS 2018 to include date
+    created an installer for the newst version (but only for RPS 2018)
+    fixes #56 (NullReferenceException on loading)
+    first step towards an installer for RPS 2018
+    renaming setup file
+    updating setup for @eirannejad 's port to modern IronPython
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Bugfix for RpsAddins without startup scripts
+    added new installer binary
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    created setup for PR #42
+    merged pr37
+    adding new installer
+    renamed installer
+    update of the installer to include bugfixes for startupscript
+    first port to Revit 2017
+    recreated some binaries
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    added the standard python library (copied from IronPython 2.7.3 distribution) to RpsRuntime.dll as a zip file - batteries included!!
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    fixed CustomAction code for installing addin manifest.
+    Ported to Autodesk Revit 2011
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    port to 2012
+    hello world now prints :)
+    fixed setup to work on both x64 and x86
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    Ported to Autodesk Revit 2011
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    Ported to Autodesk Revit 2011
+    moving from local svn to google code.
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    switched to debug version of IronPython (but couldn't really get debugging working yet...)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    rebuild iss files
+    using original required libraries, seems to break otherwise and don't really want to debug too much :sweat_smile:
+    reset loading assemblies from folder
+    update iss template
+    release all inno setup files
+    small updates
+    updating generation of addin and iss file through msbuild target tasks
+    removing fody and updating include assets from packages
+    adding addin manifest and create at compile time
+    updated PythonConsoleControl to sdk csproj format
+    some minor changes to the project files
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    Project directory cleanups for clarity
+    Updated AvalonEdit to 5.0.4
+    
+    Cloned the repo and used nuget to reintall packages and it installed 5.0.4
+    first step towards an installer for RPS 2018
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    first port to Revit 2017
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    fixed processor architecture missmatch warning based on http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    ported to Revit 2015 and added an MIT license file
+    fixed issues with icons for RpsAddins
+    updated to work with Vasari Beta3 and build on VS2012
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    configure groups in the Configuration Dialog
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    added grouping of canned commands (experimental), but icons are still aweful.
+    experimental new shell (hosted, but without access to api atm)
+    port to 2012
+    hello world now prints :)
+    started implementing tooltip for autocompletion. this is not functional atm, so don't hit TAB!
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    added configuration editing.
+    Ported to Autodesk Revit 2011
+    implemented showing canned scripts in the revit ribbon panel
+    added IronTextBox2 as a replacement for the interactive shell.
+    added a setup project :)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    removed hardwired search paths and placed them in RevitPythonShell.XML
+    moving from local svn to google code.
+    removing fody and updating include assets from packages
+    adding addin manifest and create at compile time
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    added functionality for creating RibbonPanels in the startup script
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    Ported to Autodesk Revit 2011
+    deleted unused class "TestInheritor" (was only created to see what IL looks like for subclasses of CommandLoaderBase)
+    implemented showing canned scripts in the revit ribbon panel
+    reset loading assemblies from folder
+    update external app startup
+    removing fody and updating include assets from packages
+    Fixes issue with Settings path added to search paths multiple times
+    Revised commands to be available in zero document mode
+    fixes #56 (NullReferenceException on loading)
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    first port to Revit 2017
+    added `__file__` builtin for external scripts
+    
+    external scripts and those published with RpsAddin now support the
+    `__file__` builtin - the variable contains the full path to the source
+    file being executed. for scripts that are read from a dll (command
+    loader assembly / rpsaddin) the absolute path to the dll is used as the
+    base directory of the script path (e.g.
+    'C:\myfolder\myaddin.dll\myscript.py')
+    fixed problems with Vasari Beta3
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    removed "repository" functionality.
+    added functionality for creating RibbonPanels in the startup script
+    fixed issues with icons for RpsAddins
+    made lookup code for the settings folder backward compatible...
+    ported to Revit 2014
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added repositories feature!
+    fixed a small issue with icons
+    configure groups in the Configuration Dialog
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    added grouping of canned commands (experimental), but icons are still aweful.
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    experimental new shell (hosted, but without access to api atm)
+    added editing interface for InitScript functionality.
+    added RevitPythonShell/InitScript functionality to RevitPythonShell.xml.
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    added configuration editing.
+    Ported to Autodesk Revit 2011
+    implemented showing canned scripts in the revit ribbon panel
+    added IronTextBox2 as a replacement for the interactive shell.
+    added support for interactive sessions (implemented an inputstream)
+    moving from local svn to google code.
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    added grouping of canned commands (experimental), but icons are still aweful.
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    configure groups in the Configuration Dialog
+    added configuration editing.
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    removing fody and updating include assets from packages
+    Project directory cleanups for clarity
+    fixes #62
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    IronPython and AvalonEdit Engine update
+    
+    Added IronPython 2.7.7 DLLs and Engine
+    Added standard library from python 2.7.7 installation
+    Revised to use most recetn version of AvalonEdit from NuGet
+    Adjusted code to conform to new AvalonEdit
+    added grouping of canned commands (experimental), but icons are still aweful.
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    experimental addition of a new shell based on IronLabs (but I'm having some troubles with transactions)
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    port to 2012
+    ready to ship tab completion.
+    experimental autocompletion
+    started implementing tooltip for autocompletion. this is not functional atm, so don't hit TAB!
+    Project directory cleanups for clarity
+    minor fix
+    
+    issue : cancel button delete the current path (replaced by the first "Search Path")
+    fixed the ConfigureCommandsForm - the "Browse..." buttons now work for InitScript and StartupScript.
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    removed "repository" functionality.
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added repositories feature!
+    configure groups in the Configuration Dialog
+    added editing interface for InitScript functionality.
+    added configuration editing.
+    Project directory cleanups for clarity
+    Resolved Issue #21
+    
+    Updated tab order on config window
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    renamed canned commands to "external scripts" in gui
+    fixed the ConfigureCommandsForm - the "Browse..." buttons now work for InitScript and StartupScript.
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    removed "repository" functionality.
+    added repositories feature!
+    configure groups in the Configuration Dialog
+    added editing interface for InitScript functionality.
+    added configuration editing.
+    added configuration editing.
+    Added Revit 2019 Installer & Recompiled for 2019 API.
+    first port to Revit 2017
+    port to 2012
+    added configuration editing.
+    adding addin manifest and create at compile time
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    added grouping of canned commands (experimental), but icons are still aweful.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    Facelift of the Main Addon icons
+    
+    Added icons for settings and deployment actions
+    Changed config window style to Fixed size since the window components do not conform if window is resized.
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    experimental new shell (hosted, but without access to api atm)
+    Project directory cleanups for clarity
+    Facelift
+    
+    Added nicer icons
+    Modified the editor to remove the preview text on first focus
+    Adjusted size
+    Project directory cleanups for clarity
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    RevitAPI.dll and RevitAPIUI.dll are now referenced implicitly and need not be referenced with `clr.AddReference` anymore.
+    ported to Revit 2014
+    port to 2012
+    experimental autocompletion
+    added editing interface for InitScript functionality.
+    added default InitScript to make using RPS a little easier...
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    added configuration editing.
+    added support for the __vars__ variable.
+    some cleaning up, that's all.
+    fixed blunder in last commit.
+    Converted default script to CDATA
+    removed commands not intended for public...
+    added support for interactive sessions (implemented an inputstream)
+    added toolbar for configurable tools.
+    Script output now goes to a separate window.
+    removed hardwired search paths and placed them in RevitPythonShell.XML
+    add set_font_sizes , some IDE PEP8 fixes
+    Project directory cleanups for clarity
+    first element convenience variable added
+    fixed a small typo in a comment in init.py
+    Added lookup() to init.py (RevitLookup integration)
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    typo in last commit...
+    proposed fix for __window__.Close() not working in the non-modal interactive shell
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    Project directory cleanups for clarity
+    fixed a typo in a comment in startup.py
+    changed the way the InitScript tag works to be the same as the StartupScript: it now uses a src attribute to specify a file with the script code as opposed to using the code inside a CDATA in the InitScript tag. The files init.py and startup.py are added and installed to the APPDATA folder next to the settings xml file and are the defaults used until you change them.
+    reset loading assemblies from folder
+    update iss template
+    updating generation of addin and iss file through msbuild target tasks
+    adding addin manifest and create at compile time
+    adding addin manifest and create at compile time
+    Project directory cleanups for clarity
+    fixed #24 (__revit__.Application.Documents) for non-modal-shell
+    fixed processor architecture missmatch warning based on http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html
+    addressed some issues with errors in the main thread crashing revit for the non-modal window
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    Project directory cleanups for clarity
+    fixed #24 (__revit__.Application.Documents)
+    
+    fixed a crashing bug due to threading issues (Revit API context) in the
+    code completion functionality.
+    fixed bug - dispatcher in modal shell is now in the main thread...
+    added feature "non-modal Shell". This is still experimental, but waaayyyy cool!
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    configure groups in the Configuration Dialog
+    fixed some issues with the new shell and threading (set the command dispatcher)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    experimental addition of a new shell based on IronLabs (but I'm having some troubles with transactions)
+    experimental new shell (hosted, but without access to api atm)
+    Ported to Autodesk Revit 2011
+    added IronTextBox2 as a replacement for the interactive shell.
+    some smaller fixes to handling of STDIN and STDOUT in the script execution dialog
+    removed hardwired search paths and placed them in RevitPythonShell.XML
+    moving from local svn to google code.
+    Project directory cleanups for clarity
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    Project directory cleanups for clarity
+    Ported to Revit 2016
+    
+    also, added backward compatibility for the "script" attribute in the
+    "PushButton" tag for AddIn manifest files. But seriously, use "src"
+    instead!
+    harmonized the attribute name for script and file paths: they are now all called "src"
+    fixed issues with icons for RpsAddins
+    fixed a race condition bug when multiple threads try to print to STDOUT at the same time.
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    cleaned up example file to correspond to the new attribute convention for script source paths.
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed a reference in the setup script
+    added functionality for creating RibbonPanels in the startup script
+    added functionality for creating RibbonPanels in the startup script
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    added functionality for creating RibbonPanels in the startup script
+    figured out how to get the images right. hint: documentation is wrong. it should be 96 pixels per inch and not 72!
+    Update HelloWorld.iss
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed a small bug in the setup - now creates a RevitPythonShell.xml file in the %APPDATA%\RevitPythonShell2012 folder on installation
+    assigned new codes to setup, so that RPS 2012 can be installed side-by-side with RPS 2011
+    added repositories feature!
+    added grouping of canned commands (experimental), but icons are still aweful.
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    port to 2012
+    setup is actually for AnyCPU (changed description to reflect that)
+    fixed setup to work on both x64 and x86
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    Ported to Autodesk Revit 2011
+    fixed stupid bug: forgot to add RevitPythonShell.xml to installers...
+    created separate installers for 32bit and 64 bit versions.
+    renaming setup project to reflect target RAC32
+    added register/unregister of plugin on install/uninstall
+    some smaller fixes to handling of STDIN and STDOUT in the script execution dialog
+    added a setup project :)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    port to 2012
+    hello world now prints :)
+    fixed setup to work on both x64 and x86
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    Ported to Autodesk Revit 2011
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    fixed a bug in the uninstaller (was not deleting RevitPythonShell2012.addin)
+    fixed installer to install for Revit 2012. Port to 2012 by Akimitsu Hogge and Zachary Kron ready to be released to the masses!
+    fixed a stupid bug see http://stackoverflow.com/questions/3716629
+    getting ready for first x64 Revit2011 release - fixing installer, testing, pulling my hair out.
+    fixed CustomAction code for installing addin manifest.
+    Ported to Autodesk Revit 2011
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    merging 2013 branch back into trunk (getting ready for 2014 branch)
+    added repositories feature!
+    moving from local svn to google code.

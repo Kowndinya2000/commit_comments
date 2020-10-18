@@ -1,0 +1,2702 @@
+﻿    Initial commit
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    add tilapia that acts as a wrapper over grouper
+    intial upload of 5.1 grouper binaries
+    Grouper: Binaries for Android 4.2.2 (JDQ39)
+    
+    Change-Id: Ibacf02b1ee6b1f776fa76fc2eb24628f1cb9d381
+    Nexus 7 binaries for Android 4.1.1 (JRO03C)
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Grouper: Binaries for Android 4.2.2 (JDQ39)
+    
+    Change-Id: Ibacf02b1ee6b1f776fa76fc2eb24628f1cb9d381
+    Add tilapia (Nexus 7 GSM) blobs.
+    
+    Change-Id: Ibb5f9a85ada9f8a8d5f34f0dc8b1b12ad22b8ed6
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    Update to proper locations
+    
+    Thanks davet321 for pointing these out.
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    Nexus 7 binaries for Android 4.1.1 (JRO03C)
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Grouper: Binaries for Android 4.2.2 (JDQ39)
+    
+    Change-Id: Ibacf02b1ee6b1f776fa76fc2eb24628f1cb9d381
+    Nexus 7 binaries for Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    intial upload of 5.1 grouper binaries
+    grouper: Touch panel binaries moved to elan vendor for Android 4.1.1 (JRO03R)
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    add tilapia that acts as a wrapper over grouper
+    intial upload of 5.1 grouper binaries
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Grouper: Binaries for Android 4.2.2 (JDQ39)
+    
+    Change-Id: Ibacf02b1ee6b1f776fa76fc2eb24628f1cb9d381
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    grouper: removal of nfc related file
+    
+    - file is now provided via nxp vendor
+    
+    Change-Id: I2322e57e604ce9ab83db8f34eb59ffc640fc7036
+    grouper: Remove specialized keystore to restore compatability with certain certificates
+    
+    Change-Id: I2789dfdae4fa2f7da18871cc7936dab5e3f7416e
+    grouper: Touch panel binaries moved to elan vendor for Android 4.1.1 (JRO03R)
+    grouper: GPS binaries moved to broadcom vendor for Android 4.1.1 (JRO03R)
+    Flip locations for out and vendor
+    
+    Because I'm stupid.
+    Update to proper locations
+    
+    Thanks davet321 for pointing these out.
+    Fix missing endif
+    
+    Skipped over this somehow, getting my grouper today to test.
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.1.0 (LMY47D)
+    
+    Change-Id: I481a3933e2fdd2de900f274b0ce4d19a97b2a5fc
+    Nexus 7 (Wi-Fi) binaries for Android 5.0.2 (LRX22G)
+    
+    Change-Id: I54c7fb7806335b7e5275e9c34f9e480154158ec5
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Nexus 7 (Wi-Fi) binaries for Android 4.4.3 (KTU84L)
+    
+    Change-Id: I1e0bd7255b98fdd1ec51c8e8e982ae8a696a77f6
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.4.2 (KOT49H)
+    
+    Change-Id: Ief10f1085baf1ec87845a547a56d837d37f56ebb
+    Nexus 7 (Wi-Fi) binaries for Android 4.4 (KRT16O)
+    
+    Change-Id: Ib4ede0d0322674bc8a6ef4aa331e31aab46f8147
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.1.0 (LMY47D)
+    
+    Change-Id: I481a3933e2fdd2de900f274b0ce4d19a97b2a5fc
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Nexus 7 (Wi-Fi) binaries for Android 4.4 (KRT16O)
+    
+    Change-Id: Ib4ede0d0322674bc8a6ef4aa331e31aab46f8147
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    grouper: GPS binaries moved to broadcom vendor for Android 4.1.1 (JRO03R)
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    grouper: GPS binaries moved to broadcom vendor for Android 4.1.1 (JRO03R)
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    grouper: removal of nfc related file
+    
+    - file is now provided via nxp vendor
+    
+    Change-Id: I2322e57e604ce9ab83db8f34eb59ffc640fc7036
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Grouper: Binaries for Android 4.2.2 (JDQ39)
+    
+    Change-Id: Ibacf02b1ee6b1f776fa76fc2eb24628f1cb9d381
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.1.0 (LMY47D)
+    
+    Change-Id: I481a3933e2fdd2de900f274b0ce4d19a97b2a5fc
+    Nexus 7 (Wi-Fi) binaries for Android 5.0.2 (LRX22G)
+    
+    Change-Id: I54c7fb7806335b7e5275e9c34f9e480154158ec5
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Nexus 7 (Wi-Fi) binaries for Android 4.4.3 (KTU84L)
+    
+    Change-Id: I1e0bd7255b98fdd1ec51c8e8e982ae8a696a77f6
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.4.2 (KOT49H)
+    
+    Change-Id: Ief10f1085baf1ec87845a547a56d837d37f56ebb
+    Nexus 7 (Wi-Fi) binaries for Android 4.4 (KRT16O)
+    
+    Change-Id: Ib4ede0d0322674bc8a6ef4aa331e31aab46f8147
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.1.0 (LMY47D)
+    
+    Change-Id: I481a3933e2fdd2de900f274b0ce4d19a97b2a5fc
+    Nexus 7 (Wi-Fi) binaries for Android 5.0.2 (LRX22G)
+    
+    Change-Id: I54c7fb7806335b7e5275e9c34f9e480154158ec5
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Nexus 7 (Wi-Fi) binaries for Android 4.4.3 (KTU84L)
+    
+    Change-Id: I1e0bd7255b98fdd1ec51c8e8e982ae8a696a77f6
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.4.2 (KOT49H)
+    
+    Change-Id: Ief10f1085baf1ec87845a547a56d837d37f56ebb
+    Nexus 7 (Wi-Fi) binaries for Android 4.4 (KRT16O)
+    
+    Change-Id: Ib4ede0d0322674bc8a6ef4aa331e31aab46f8147
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.1.0 (LMY47D)
+    
+    Change-Id: I481a3933e2fdd2de900f274b0ce4d19a97b2a5fc
+    Nexus 7 (Wi-Fi) binaries for Android 5.0.2 (LRX22G)
+    
+    Change-Id: I54c7fb7806335b7e5275e9c34f9e480154158ec5
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Nexus 7 (Wi-Fi) binaries for Android 4.4.3 (KTU84L)
+    
+    Change-Id: I1e0bd7255b98fdd1ec51c8e8e982ae8a696a77f6
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.4.2 (KOT49H)
+    
+    Change-Id: Ief10f1085baf1ec87845a547a56d837d37f56ebb
+    Nexus 7 (Wi-Fi) binaries for Android 4.4 (KRT16O)
+    
+    Change-Id: Ib4ede0d0322674bc8a6ef4aa331e31aab46f8147
+    grouper: Nexus 7 (Wi-Fi) binaries for Android 4.3 (JWR66V)
+    
+    Change-Id: I57fd86681a040618e46e80a8cefcf6f787567daf
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    intial upload of 5.1 grouper binaries
+    Nexus 7 (Wi-Fi) binaries for Android 5.0.2 (LRX22G)
+    
+    Change-Id: I54c7fb7806335b7e5275e9c34f9e480154158ec5
+    Nexus 7 (Wi-Fi) binaries for Android 5.0 (LRX21P)
+    
+    Change-Id: Idae9cdc975613f0eb9a354e4574758fe2a047105
+    Updated to 4.2.2 binaries
+    Also removed traces of asound and keystore.grouper from makefiles
+    
+    Change-Id: I10bb4fb5cc41c755cb2ce8cd006cf78890a3c6fa
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    intial upload of 5.1 grouper binaries
+    grouper: GPS binaries moved to broadcom vendor for Android 4.1.1 (JRO03R)
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    add missing files, move tilapia out to it's own, add missing build.prop lines
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    intial upload of 5.1 grouper binaries
+    Remove all asus devices except flo and deb + adapt to AOSP nomenclature
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    Add blobs for Flo (Nexus 7 v2)
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    Update to proper locations
+    
+    Thanks davet321 for pointing these out.
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    Nexus 7 binaries for Android 4.1.1 (JRO03C)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    Add blobs for Flo (Nexus 7 v2)
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    Update to proper locations
+    
+    Thanks davet321 for pointing these out.
+    Non-shared blobs for Nexus 7 on Android 4.1.1 (JRO03C)
+    Nexus 7 binaries for Android 4.1.1 (JRO03C)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Updated proprietaries
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    tf701t: add widevine phoneAPI and tester
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    tf701t: update from V11.4.1.17
+    
+    https://github.com/pershoot/android_vendor_asus_tf701t
+    tf701t: add Asus Transformer Pad (TF701T)
+    
+    github.com/pershoot/android_vendor_asus_tf701t
+    
+    tf701t: add props from V10.26.1.18
+    tf701t: archive python2.6 libs
+    tf701t: remove python and related
+    tf701t: nvoice/powerservice: update with nvidia's tegranote KK
+    tf701t: wifi: build-in
+    update blobs and kernel to 10.6.1.15.3
+    Update tf300tt to Asus JellyBean Blobs (finally!)
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs
+    
+    Change-Id: Ie216368e59cd7bcc088cd4d175dd78ffaef8368b
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    Revert "flo: Update blobs"
+    
+      * No longer needed and now causes breakage.
+    
+    This reverts commit d4f8f42d0a4af2dd53ea23e242696f347a9bda26.
+    
+    Change-Id: I86583b353dab734cd0ac7d9abe4d6940a3a487f8
+    flo: Update blobs
+    
+     * Unbreak Widevine
+    
+    Change-Id: Ic0faea5b39d3768d784bab9ff96878ffc31dbfae
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    flo: Update blobs from latest drop
+    
+    Change-Id: Id26703cdb067a8ec817c999ca485f936fcc6b6c7
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: JSS15R and hardware keystore firmware blobs
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    tf700t: update to 10.6.1.14.4 props
+    add updated blobs
+    add tf700t
+    Add jellybean props from AndroidRoot repo.
+    Intial props for Jellybean on TF300T
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update proprietary libs
+    
+    * Package version: razor-lrx22c
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)
+    flo: Update blobs to LMY47O release
+    
+    Change-Id: Ia379e69a927f8eb36174b09a96e353191f28a838
+    flo: Update blobs to L preview release
+    
+    Change-Id: I76eeb6221a1254404ae3ad908b05b7e65f84e7e9
+    flo: Update proprietary libs
+    
+    * Google package version: razor-ktu84l
+    flo: Updated proprietaries
+    flo: Kitkat release
+    
+    Change-Id: If11d1c59309aacdc049c0d9cc880f9fcf1436655
+    Add blobs for Flo (Nexus 7 v2)

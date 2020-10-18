@@ -1,0 +1,1019 @@
+﻿    Update README.md
+    Update README.md
+    add a testing part to README
+    add a Dockerfile and docker-compose file and update the README
+    Add connection to other repo
+    Initial commit
+    fix seeding API keys
+    rewrite how container is started
+    
+    the container now properly waits for the DB to start
+    Corrected docker start script
+    add a Dockerfile and docker-compose file and update the README
+    Update dependencies
+    Correct ruby version
+    Update ruby version to 2.2.1
+    ruby version lock
+    Bump puma from 3.12.0 to 3.12.6
+    
+    Bumps [puma](https://github.com/puma/puma) from 3.12.0 to 3.12.6.
+    - [Release notes](https://github.com/puma/puma/releases)
+    - [Changelog](https://github.com/puma/puma/blob/master/History.md)
+    - [Commits](https://github.com/puma/puma/commits)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump nokogiri from 1.10.5 to 1.10.10
+    
+    Bumps [nokogiri](https://github.com/sparklemotion/nokogiri) from 1.10.5 to 1.10.10.
+    - [Release notes](https://github.com/sparklemotion/nokogiri/releases)
+    - [Changelog](https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/sparklemotion/nokogiri/compare/v1.10.5...v1.10.10)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump activeresource from 5.0.0 to 5.1.1
+    
+    Bumps [activeresource](http://www.rubyonrails.org) from 5.0.0 to 5.1.1.
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump rack from 2.0.5 to 2.2.3
+    
+    Bumps [rack](https://github.com/rack/rack) from 2.0.5 to 2.2.3.
+    - [Release notes](https://github.com/rack/rack/releases)
+    - [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/rack/rack/compare/2.0.5...2.2.3)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump websocket-extensions from 0.1.3 to 0.1.5
+    
+    Bumps [websocket-extensions](https://github.com/faye/websocket-extensions-ruby) from 0.1.3 to 0.1.5.
+    - [Release notes](https://github.com/faye/websocket-extensions-ruby/releases)
+    - [Changelog](https://github.com/faye/websocket-extensions-ruby/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/faye/websocket-extensions-ruby/compare/0.1.3...0.1.5)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump rake from 12.3.1 to 12.3.3
+    
+    Bumps [rake](https://github.com/ruby/rake) from 12.3.1 to 12.3.3.
+    - [Release notes](https://github.com/ruby/rake/releases)
+    - [Changelog](https://github.com/ruby/rake/blob/master/History.rdoc)
+    - [Commits](https://github.com/ruby/rake/compare/v12.3.1...v12.3.3)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Bump loofah from 2.2.2 to 2.3.1
+    
+    Bumps [loofah](https://github.com/flavorjones/loofah) from 2.2.2 to 2.3.1.
+    - [Release notes](https://github.com/flavorjones/loofah/releases)
+    - [Changelog](https://github.com/flavorjones/loofah/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/flavorjones/loofah/compare/v2.2.2...v2.3.1)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Task for generating access token
+    OAuth2 for signing in
+    Configuration update
+    Update dependencies
+    Tests that will mess with time
+    Test for creating sessions using the sniffer
+    Factory bot
+    update turbolinks gem
+    animate user row when session is submitted
+    update timer inline
+    update dependencies
+    Update gemfile
+    Revert lock file
+    Updated styling to make it more modern and clean
+    Initial implementation of a few achievements
+    Removed debug print and readded Gemfile.lock
+    Now able to remove macs. Fixes #52
+    Total time today and humanised time format
+    
+    Moved the score since it is not that relevant and therefore does not
+    need to be in focus
+    Updates spring
+    redis caching
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    import material lite
+    Removed Guard from Gemfile
+    stats controller and chart
+    user created from LDAP
+    Timezone
+    annotate models
+    rspec tests in gemfile
+    initial rails config
+    rewrite how container is started
+    
+    the container now properly waits for the DB to start
+    change oauth2 details to default values of gamma oauth2
+    fix docker container not being able to connect to gamma inside network
+    Add ability to set the address to the account service dynamically
+    Enable Oauth2 authentication with Gamma,
+    speed up docker build process
+    Devices
+    rewrite how container is started
+    
+    the container now properly waits for the DB to start
+    Update dependencies
+    minor change
+    Address some improvements suggested in PR-review
+    logging when running docker
+    add a Dockerfile and docker-compose file and update the README
+    Test for api keys
+    Factory bot
+    primitive user controllers and views
+    initial rails config
+    initial rails config
+    Updated styling to make it more modern and clean
+    initial rails config
+    Configuration update
+    update config to rails 5 defaults
+    update config to rails 5 defaults
+    initial rails config
+    Configuration update
+    update config to rails 5 defaults
+    update config to rails 5 defaults
+    initial rails config
+    Configuration update
+    Configuration update
+    initial rails config
+    rewrite how container is started
+    
+    the container now properly waits for the DB to start
+    Visual improvements to user view
+    move total time to db view
+    Added stats controller and began example implementation
+    Comments for ApiKey
+    Api key for the sniffer
+    Hour Entry and multiple mac fix
+    User sessions and display time
+    Unborked user_id
+    session model
+    MACAddresses basic implementation
+    User implementation
+    fix seeding API keys
+    rewrite how seed works
+    
+     API keys are now added on seeding
+    Create seed users and devices
+    initial rails config
+    add version to migration
+    Hour Entry and multiple mac fix
+    add version to migration
+    Styling of Me page
+    Visual improvements to user view
+    add version to migration
+    session model
+    add version to migration
+    Unborked user_id
+    add version to migration
+    Api key for the sniffer
+    add version to migration
+    move total time to db view
+    add version to migration
+    move total time to db view
+    add version to migration
+    readded migration
+    Unborked user_id
+    MACAddresses basic implementation
+    add version to migration
+    Comments for ApiKey
+    add version to migration
+    Unborked user_id
+    add version to migration
+    User implementation
+    add version to migration
+    User sessions and display time
+    rewrite how seed works
+    
+     API keys are now added on seeding
+    rewrite how seed works
+    
+     API keys are now added on seeding
+    initial rails config
+    initial rails config
+    initial rails config
+    initial rails config
+    initial rails config
+    initial rails config
+    first achievements - bug fix, 0->1
+    first achievement - day, week, month, all
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    top x achievements weekly, monthly, all-time
+    Updated achievements and logos
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    first achievements - bug fix, 0->1
+    first achievement - day, week, month, all
+    first achievements - bug fix, 0->1
+    first achievement - day, week, month, all
+    top x achievements weekly, monthly, all-time
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    more fun achievements
+    more fun achievements
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    Updated achievements and logos
+    top x achievements weekly, monthly, all-time
+    top x achievements
+    first achievements - bug fix, 0->1
+    first achievement - day, week, month, all
+    initial rails config
+    animate user row when session is submitted
+    animate user row when session is submitted
+    animate user row when session is submitted
+    update names id -> cid and display_name -> nick
+    User data from account domain
+    fixed a years old bug on total time
+    Specify returned data from UserSession scope
+    Correctly calculate longest session. Fixes #68
+    Support variable timeframes in /stats
+    move total time to db view
+    Cache timediff
+    Hour Entry and multiple mac fix
+    User sessions and display time
+    update names id -> cid and display_name -> nick
+    User data from account domain
+    strip whitespace in mac_address, closes #141
+    animate user row when session is submitted
+    Reset ORM relation change
+    Active devices, closes #123
+    Error if mac address is empty
+    Ignore empty MAC address fields
+    whitespace fix
+    Timezone
+    unique mac address validation
+    support for adding, validating & normalizing mac_addresses
+    merged show
+    Nonworking code. Ndushi will fix
+    primitive user controllers and views
+    MACAddresses basic implementation
+    User data from account domain
+    Hour Entry and multiple mac fix
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    User data from account domain
+    Correction of session model
+    animate user row when session is submitted
+    Fix for sniffer update
+    Reset ORM relation change
+    Active devices, closes #123
+    User sessions and display time
+    Create and update sessions
+    merged show
+    session model
+    ranking in profile view, fixes #25
+    move total time to db view
+    fix a bunch of minor things
+    Add redis cache configuration and manual Rails.cache call
+    update user.rb to correct path and authorization for gamma
+    Adds DPO and Kandidatmiddagsgruppen to user.rb
+    Devices
+    Destroy all user data
+    Make signin great again
+    User data from account domain
+    OAuth2 for signing in
+    Update dependencies
+    Added DPO, and revisorerna -> Revisorerna
+    Cascade deletion
+    add FikIT to hubbIT
+    add itize for laggit
+    add laggit to allowed groups
+    Adds Valberedningen to groups
+    Create user if it doesn't exist in the database
+    Matches api data with local user. Closes #47 for real this time
+    if fix for cookie error
+    move methods to class methods
+    ranking in profile view, fixes #25
+    move total time to db view
+    redis caching
+    Fixes group displaying bug.
+    
+    The group variable in user.rb was an instance variable. This gave the
+    effect that everyone was placed in the same group.
+    clean up user http request code
+    Showing groups in the hub
+    Cache timediff
+    add caching block
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Updated base uri for authentication
+    user created from LDAP
+    Hour Entry and multiple mac fix
+    User sessions and display time
+    support for adding, validating & normalizing mac_addresses
+    merged show
+    primitive user controllers and views
+    session model
+    MACAddresses basic implementation
+    User implementation
+    rewrite how seed works
+    
+     API keys are now added on seeding
+    Comments for ApiKey
+    Api key for the sniffer
+    initial rails config
+    initial rails config
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    fix all
+    import material lite
+    css and UX fixes
+    User sessions and display time
+    support for adding, validating & normalizing mac_addresses
+    Create and update sessions
+    better naming
+    New style and markup
+    primitive user controllers and views
+    Devices
+    Visual improvements to user view
+    edit users
+    Swe to eng and allow new parameter
+    edit users
+    update names id -> cid and display_name -> nick
+    User data from account domain
+    Reset ORM relation change
+    Active devices, closes #123
+    Styling of Me page
+    Visual improvements to user view
+    styling styling styling
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    import material lite
+    css and UX fixes
+    support for adding, validating & normalizing mac_addresses
+    merged show
+    Some css for the user page
+    Implementing mac_address_controller
+    primitive user controllers and views
+    Devices
+    Link to help about how to determine MAC address
+    Styling of Me page
+    Visual improvements to user view
+    Better error message for new device address
+    support for adding, validating & normalizing mac_addresses
+    edit users
+    update names id -> cid and display_name -> nick
+    User data from account domain
+    Add all_time to dynamic list. Default to study_year
+    revert 0-indexed
+    Added arrows to indicate position change from last timeframe
+    Made stats paginateable
+    0 indexed top list. closes #81
+    Find me button for intervals
+    Remove unnecessary link title
+    Distinguish "me" and refactoring
+    Link to unless current
+    Show timeframe links
+    
+    Also removes groups stats since people seems to be annoyed by it.
+    Add scoreboard for groups in stats view
+    move total time to db view
+    CID as id in stats list
+    Better table semantics
+    define jbuilder
+    general styling
+    refactor active class helper
+    remove caching
+    Marks users currently in the Hubb on the stats list
+    fixed caching bug
+    caching all the things
+    Cache timediff
+    Add score info, improved styling in 'My Stats'
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    fix all
+    stats controller and chart
+    Added stats controller and began example implementation
+    Refactor info_box into reusable component
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    Now correctly outputs json. Fixes #74
+    move total time to db view
+    define jbuilder
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    Accurate stats in json
+    Maybe test stuff before... Really fixes #80
+    ranking in profile view, fixes #25
+    define jbuilder
+    update names id -> cid and display_name -> nick
+    fix ranking error
+    Fix Kaffes merge :)
+    merge changes
+    Update show.html.erb
+    corrected a bug that broke rankings
+    Fixed the Position button to display proper score
+    Fixed bug with first session.
+    Average time feature
+    Average time feature
+    User data from account domain
+    More accurate time
+    Start time in last session. Fixes #72
+    Fix for #80
+    Start time instead of end time in 10 last sessions
+    Special case when user haven't been seen "today"
+    Total time today and humanised time format
+    
+    Moved the score since it is not that relevant and therefore does not
+    need to be in focus
+    ranking in profile view, fixes #25
+    define jbuilder
+    caching all the things
+    styling styling styling
+    Refactor info_box into reusable component
+    Only show 10 latests sessions in My stats view
+    Refactor info_box into reusable component
+    Add score info, improved styling in 'My Stats'
+    Bugfix for time calculation for user stats
+    Bugfix to prevent crash on navigation to user without stats
+    Fixed some minor styling and added longest session
+    Fixed styling for 'my-previous-sessions'
+    Added previous session to users own stats
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    fix all
+    stats controller and chart
+    Added stats controller and began example implementation
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    some flexbox magic
+    update timer inline
+    Highlight "me"
+    count of users
+    restructure table html
+    Margin for sessions and group container
+    Show a message when no one is here, solves #35
+    Better table semantics
+    redis caching
+    Improve styling for groups in the hub
+    Showing groups in the hub
+    Fixed some minor styling and added longest session
+    Fixed styling and alignment for active sessions
+    Updated active sessions view
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    user created from LDAP
+    User sessions and display time
+    Create and update sessions
+    View all the sessions
+    JSON for sessions
+    View all the sessions
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    generate an id for every association
+    Update _group_box.html.erb
+    Fix WANTED-feature syntax
+    HookIT WANTED
+    Better group table markup
+    redis caching
+    Showing groups in the hub
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    animate user row when session is submitted
+    define jbuilder
+    fix a bunch of minor things
+    User data from account domain
+    Navigation link unless active page
+    Active tab on root path, closes #128
+    Style fixes
+    Updated styling to make it more modern and clean
+    Fix links to be 'link_to_unless_current'
+    Remove link to yusers
+    Changed wording. Switched default route
+    Fixed linking to users and added some intial styling
+    fix all
+    stats controller and chart
+    css and UX fixes
+    css and UX fixes
+    HookIT WANTED
+    Fix links to be 'link_to_unless_current'
+    Better mobile support
+    updated to use google webfonts properly :)
+    Fixed linking to users and added some intial styling
+    import material lite
+    css and UX fixes
+    support for adding, validating & normalizing mac_addresses
+    New style and markup
+    initial rails config
+    User data from account domain
+    OAuth2 for signing in
+    Catch SecurityError model, not string
+    Refactor cookie variable
+    Add method for checking presence of current_user without throwing
+    Return different error depending on format
+    redirect back to hubbIT after logging in
+    Returns caching of current user
+    Returns current_user after first visit instead of storing it in a worthless variable. Closes #47
+    Made user lookup more stable
+    Redirect fix if no auth-cookie
+    unborked user
+    user created from LDAP
+    Create and update sessions
+    initial rails config
+    update names id -> cid and display_name -> nick
+    Devices
+    Maybe do not put debug prints in production
+    Now able to update devices without removing the empty line
+    Removed debug print and readded Gemfile.lock
+    Swe to eng and allow new parameter
+    Sort by nick in users view
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    unborked user
+    user created from LDAP
+    support for adding, validating & normalizing mac_addresses
+    merged show
+    primitive user controllers and views
+    OAuth2 for signing in
+    update names id -> cid and display_name -> nick
+    Make signin great again
+    Authenticate access_token and handle redirect correctly
+    Move all update/create queries to bottom, into transactions
+    Set user_id for session
+    Greatly improve performance of adding sessions, code style improvements
+    Add method for checking presence of current_user without throwing
+    skip authenticate_with_token if current_user is set
+    remove unused list action
+    Add authentication to /sessions.json route, fixes #147
+    animate user row when session is submitted
+    Fix for sniffer update
+    Removed unecessary loggin'
+    Cleanup after group stats fix
+    Add scoreboard for groups in stats view
+    Controller action now return error
+    
+    Actually returning a proper error message instead of nothing
+    Add nil check
+    
+    Sometimes data can be sent from sniffer which is nil or empty, add check for this case
+    support for multi mac-addresses
+    remove sort error
+    spell correctly please
+    semaphore
+    count of users
+    update logging
+    redis caching
+    define jbuilder
+    Showing groups in the hub
+    Changed threshold to 10 minutes to hopefully stop losing sessions so often
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    remove logs
+    stats controller and chart
+    Api key for the sniffer
+    Hour Entry and multiple mac fix
+    User sessions and display time
+    Timezone
+    Create and update sessions
+    JSON for sessions
+    View all the sessions
+    removes 3 space indentation
+    
+    :(
+    fix ranking error
+    Avoid asking the database for the user table, closes #193
+    removed unused junk
+    corrected a bug that broke rankings
+    Fixed bug with first session.
+    Average time feature
+    Average time feature
+    Make signin great again
+    User data from account domain
+    fixed a years old bug on total time
+    Avoid crashing when the Hubb has not been visited within the current time period, closes #167
+    Specify returned data from UserSession scope
+    Use study period to display rank and score in me-page
+    Use helper functions to get current study period and current study year
+    Add all_time to dynamic list. Default to study_year
+    Add support for study period and study year. Currently static dates. will need to be updated in the future or find other solution to extract dates
+    users can now get stats using API keys.
+    Added arrows to indicate position change from last timeframe
+    Removed old change_page
+    Made change_page private method
+    Made stats paginateable
+    Correctly calculate longest session. Fixes #68
+    Maybe test stuff before... Really fixes #80
+    Fix for #80
+    Now correctly outputs json. Fixes #74
+    re-add @user variable
+    Distinguish "me" and refactoring
+    Show timeframe links
+    
+    Also removes groups stats since people seems to be annoyed by it.
+    Support variable timeframes in /stats
+    Add scoreboard for groups in stats view
+    move total time to db view
+    define jbuilder
+    Marks users currently in the Hubb on the stats list
+    caching all the things
+    Cache timediff
+    Add score info, improved styling in 'My Stats'
+    Bugfix for time calculation for user stats
+    Bugfix for incorrect time calculation, giving negative time
+    Fixed some minor styling and added longest session
+    Added previous session to users own stats
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    fix all
+    fix time diff calculation
+    stats controller and chart
+    Added stats controller and began example implementation
+    initial rails config
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Mobile optimization for the menu
+    Updated styling to make it more modern and clean
+    Fix links to be 'link_to_unless_current'
+    Fixed linking to users and added some intial styling
+    Devices
+    Style fixes
+    Styling of Me page
+    Visual improvements to user view
+    Fixed linking to users and added some intial styling
+    import material lite
+    Some css for the user page
+    primitive user controllers and views
+    adds laggit banner to css
+    Adds fritid banner
+    removes spaces
+    
+    also makes it link to valleb.png correctly
+    Conform to uniformity
+    
+    also removes trailing spaces
+    fixes the valleB bug
+    adds valleB css
+    Normalize file names
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    deleted last tab in accordance to mr.ore's suggestions
+    Realized that 4 space indentation was the problem
+    fixed final malmers indentation issue
+    Fixed some more css, unclear if i did it in accordance to standards.
+    Fixed indentation
+    Renamed the scss FikIT->fikIT moved tr#fikIT out of tr#HookIT
+    Updated it to affect fikIT
+    Added border, darkened shade on background
+    FikIT banner and font
+    flex-basis to handle scaling-problems in Safari
+    max-width of sessions-container
+    flexbox fix: align-content in active-groups-container
+    some flexbox magic
+    asset path -> image-url
+    Use the rails assets pipeline for wanted-poster assets
+    Add self-hosted wanted-poster assets
+    generate an id for every association
+    HookIT WANTED
+    animate user row when session is submitted
+    Style fixes
+    Updated styling to make it more modern and clean
+    Margin for sessions and group container
+    Fix links to be 'link_to_unless_current'
+    Improve styling for groups in the hub
+    Showing groups in the hub
+    View all the sessions
+    Some css for the user page
+    primitive user controllers and views
+    More style fixes
+    Style fixes
+    Updated styling to make it more modern and clean
+    updated to use google webfonts properly :)
+    css and UX fixes
+    support for adding, validating & normalizing mac_addresses
+    Some css for the user page
+    better naming
+    New style and markup
+    responsively resize canvas
+    Another CSS fix
+    Mobile optimization fix on the stats page
+    Style fixes
+    Updated styling to make it more modern and clean
+    Added arrows to indicate position change from last timeframe
+    Made stats paginateable
+    Distinguish "me" and refactoring
+    Show timeframe links
+    
+    Also removes groups stats since people seems to be annoyed by it.
+    Add scoreboard for groups in stats view
+    general styling
+    Better css for active users
+    Marks users currently in the Hubb on the stats list
+    styling styling styling
+    Add score info, improved styling in 'My Stats'
+    Fixed linking to users and added some intial styling
+    Added stats controller and began example implementation
+    View all the sessions
+    Some css for the user page
+    primitive user controllers and views
+    Mobile optimization for the menu
+    More style fixes
+    Style fixes
+    Fixed SCSS in CSS file
+    Updated styling to make it more modern and clean
+    Center group table header cell element
+    Better table semantics
+    Remove with constrain on wrapper
+    Remove with constrain on wrapper
+    Add score info, improved styling in 'My Stats'
+    updated to use google webfonts properly :)
+    Fixed some minor styling and added longest session
+    Fixed styling and alignment for active sessions
+    Preventing users from viewing other users editing-view. Added roboto-font. Updated stats to be more human friendly. Added json-path for actve sessions. Changed CID to Nicks in views.
+    Fixed linking to users and added some intial styling
+    import material lite
+    initial rails config
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    Add self-hosted wanted-poster assets
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    update NollKIT logo to NollKIT'20
+    Updated NollKIT Banner
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    Normalize file names
+    Added border, darkened shade on background
+    FikIT banner and font
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    Added arrows to indicate position change from last timeframe
+    Added arrows to indicate position change from last timeframe
+    Normalize file names
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    initial rails config
+    fritid & Laggit banners
+    adds valleB css
+    added some other banners, and normalized the scss to use the ldap names instead of the visual names.
+    fritid & Laggit banners
+    Update dependencies
+    Add turbolinks shim
+    update timer inline
+    import material lite
+    stats controller and chart
+    support for adding, validating & normalizing mac_addresses
+    initial rails config
+    Add turbolinks shim
+    responsively resize canvas
+    caching all the things
+    format percentage
+    Fixed linking to users and added some intial styling
+    fix all
+    protect from undefined canvas element
+    restructing
+    chart now shows percentages
+    stats controller and chart
+    Added stats controller and began example implementation
+    View all the sessions
+    support for adding, validating & normalizing mac_addresses
+    merged show
+    primitive user controllers and views
+    repeat updateTimestamps with setInterval
+    update timer inline
+    View all the sessions
+    Added study periods for 20/21
+    Add redis cache configuration and manual Rails.cache call
+    add time periods of 2019-20 study year
+    Fix fetching groups the user is a member of
+    update names id -> cid and display_name -> nick
+    User data from account domain
+    Update stats_helper.rb
+    No daily time if there are no sessions
+    Update for reception 2017
+    change index to find_index
+    Use beginning and end of day when finding study period and study year
+    Remove trailing spaces
+    Add all_time to dynamic list. Default to study_year
+    Set order for time views
+    Add support for study period and study year. Currently static dates. will need to be updated in the future or find other solution to extract dates
+    Better up/down from message when previous session missing
+    Extract magic constant
+    [Fix #122]: See what a user is up or down from last periods stats
+    Added top achievements
+    More accurate time
+    Hotfix for arrow-helper method
+    Added arrows to indicate position change from last timeframe
+    Made stats paginateable
+    Distinguish "me" and refactoring
+    Support variable timeframes in /stats
+    Special case when user haven't been seen "today"
+    Total time today and humanised time format
+    
+    Moved the score since it is not that relevant and therefore does not
+    need to be in focus
+    Add scoreboard for groups in stats view
+    move total time to db view
+    define jbuilder
+    refactor active class helper
+    Marks users currently in the Hubb on the stats list
+    Replace constant with variable.
+    Refactor info_box into reusable component
+    Refactor info_box into reusable component
+    Add score info, improved styling in 'My Stats'
+    updated time formatter
+    stats controller and chart
+    Added stats controller and began example implementation
+    Devices
+    Print unknown device if device is unknown
+    Visual improvements to user view
+    merged show
+    primitive user controllers and views
+    Cleanup after group stats fix
+    Add scoreboard for groups in stats view
+    initial rails config
+    fix a bunch of minor things
+    Fix fetching groups the user is a member of
+    Bug where it seemed like no committees were in the Hubb, closes #194
+    Make signin great again
+    redis caching
+    Showing groups in the hub
+    View all the sessions
+    Changed indentation to spaces
+    Updated achievements and logos
+    Updated service to get token from secrets
+    Initial implementation of a few achievements
+    update names id -> cid and display_name -> nick
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Over nine thousand video
+    Updated acheivements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Resolved conflict
+    Updated first name
+    Made stats paginateable
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated acheivements
+    Updated spelling
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated acheivements
+    Removed auto deny on around the clock
+    Updated achievements and logos
+    Removed debug output
+    Initial implementation of a few achievements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated acheivements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Updated achievements and logos
+    Initial implementation of a few achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Added top achievements
+    Factory bot
+    primitive user controllers and views
+    Factory bot
+    Test for user model
+    Improved factory associations
+    Test for creating sessions using the sniffer
+    Test for user model
+    FactoryBot dynamic attribute
+    Test for user model
+    Improved factory associations
+    Test for creating sessions using the sniffer
+    Test for api keys
+    Test for creating sessions using the sniffer
+    Test for api keys
+    Test for user model
+    Remove empty tests
+    merged show
+    User implementation
+    Test for api keys
+    Comments for ApiKey
+    Api key for the sniffer
+    Time for user session tests
+    Tests for user sessions
+    Tests that will mess with time
+    Test for creating sessions using the sniffer
+    Factory bot
+    Configuration update
+    update config to rails 5 defaults
+    fix Redis dependencies
+    Configuration update
+    update config to rails 5 defaults
+    update config to rails 5 defaults
+    initial rails config
+    Fixed schedule file
+    Initial implementation of a few achievements
+    fix Redis dependencies
+    Configuration update
+    animate user row when session is submitted
+    update config to rails 5 defaults
+    First draft of acheivement post service
+    redis caching
+    Timezone
+    initial rails config
+    Make signin great again
+    remove database and secrets from .gitignore
+    remove secrets file
+    Updated secret template
+    initial rails config
+    remove database and secrets from .gitignore
+    Address some improvements suggested in PR-review
+    add a Dockerfile and docker-compose file and update the README
+    added database example file
+    Added stats controller and began example implementation
+    initial rails config
+    update config to rails 5 defaults
+    Configuration update
+    Configuration update
+    update config to rails 5 defaults
+    initial rails config
+    OAuth2 for signing in
+    users can now get stats using API keys.
+    redis caching
+    Fixed route
+    Changed wording. Switched default route
+    fix all
+    stats controller and chart
+    Added stats controller and began example implementation
+    Create and update sessions
+    merged show
+    Nonworking code. Ndushi will fix
+    Implementing mac_address_controller
+    primitive user controllers and views
+    initial rails config
+    Add ability to set the address to the account service dynamically
+    Enable Oauth2 authentication with Gamma,
+    change oauth2 urls to work with gamma
+    OAuth2 for signing in
+    Configuration update
+    Address some improvements suggested in PR-review
+    add comments
+    display more information in logs
+    logging when running docker
+    update config to rails 5 defaults
+    initial rails config
+    Add ability to set the address to the account service dynamically
+    Task for generating access token
+    Configuration update
+    update config to rails 5 defaults
+    initial rails config
+    Mailer does not need cache
+    Add redis cache configuration and manual Rails.cache call
+    Add "end" to production environment file
+    Add ability to set the address to the account service dynamically
+    OAuth2 for signing in
+    fix Redis dependencies
+    Configuration update
+    add hubbit.chalmers.it to allowed websocket urls
+    update config to rails 5 defaults
+    initial rails config
+    Configuration update
+    initial rails config
+    update config to rails 5 defaults
+    initial rails config
+    initial rails config
+    Configuration update
+    update config to rails 5 defaults
+    update config to rails 5 defaults
+    initial rails config
+    initial rails config
+    Configuration update
+    initial rails config
+    Configuration update
+    update config to rails 5 defaults
+    Update dependencies
+    update config to rails 5 defaults
+    Configuration update
+    initial rails config
+    Remove developer strategy
+    OAuth2 for signing in
+    update config to rails 5 defaults
+    initial rails config
+    fix docker container not being able to connect to gamma inside network
+    update names id -> cid and display_name -> nick
+    Enable Oauth2 authentication with Gamma,
+    change oauth2 urls to work with gamma
+    OAuth2 for signing in
+    initial rails config
+    Initial implementation of a few achievements
+    initial rails config
+    change oauth2 urls to work with gamma
+    Task for generating access token

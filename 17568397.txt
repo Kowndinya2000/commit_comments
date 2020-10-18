@@ -1,0 +1,878 @@
+﻿    Add --ignore-* options to the log command
+    
+    Add two options (--ignore-project and --ignore-tag) to ignore a project or a tag when requesting a log, in the same way you can do it with report (see #288).
+    
+    Reference PR: #395
+    Bump release to 1.10.0 (#386)
+    
+    Added:
+    
+    - Log output order can now be controlled via the `--reverse/--no-reverse` flag
+      and the `reverse_log` configuration option (#369)
+    - Add `--at` flag to the `start` and `restart` commands (#364).
+    - Add `--color` and `--no-color` flags to force output to be colored or not
+      respectively (#350).
+    
+    Changed:
+    
+    - Require latest Arrow version 0.15.6 to support ISO week dates (#380)
+    
+    Fixed:
+    
+    - Make after-edit-check ensure that edited time stamps are not in the future
+      (#381)
+    Allow to force enable/disable colored output (#350)
+    
+    In most cases click library figures out correctly if colored output should be
+    used, but sometimes it's wrong. For example when `watch` command
+    is used click is unable to determine this and chooses uncolored output:
+      `watch --color 'watson aggregate'`
+    
+    This change allows user to explicitly enable/disable coloring with --color and
+    --no-color options:
+      `watch --color 'watson --color aggregate'`
+    Add after edit check that start is in the past (#382)
+    
+    * Add after edit check that start is in the past
+    * Add after edit check stop time stamp not in future and update Changelog
+    
+    Fix #381
+    Allow specification of start time via `start_at` (#364)
+    
+    * Allow specification of start time via `start_at`
+    * Rename previous occurrences of "start_at" to "begin_at". Just to avoid confusion down the road.
+    * Indicate that "at" option also works with `restart`
+    Add option to control the order of the days in the `log` output (#369)
+    
+    * Add option to control the order of the days in the `log` output
+    * Add `--reverse/--no-reverse` flag to log
+    * Test sorted_groupby for reverse log flag
+    * Move reverse-log changelog entry to unreleased
+    * Also fix previous changelog typo
+    Require arrow>=0.15.6 (#380)
+    
+    Since its last release[0], the heavily used arrow library supports ISO
+    week dates[1]. The CLI tests assumed that arrow does not support this.
+    However, the new version nullified this assumption.
+    
+    As a provisional measure, the version of arrow was limited upwards in
+    PR #372[2]. An obsolete version was thereby requested.
+    
+    A current version, or at least support for one, is important for
+    third-party package managers. Especially GNU/Linux distributions prefer
+    to use their own package manager to install software over pip.
+    
+    Thus, this commit removes both the restriction to an outdated arrow
+    version in the requirements.txt and validates previously invalid marked
+    week dates.
+    
+    [0]:https://github.com/crsmithdev/arrow/releases/tag/0.15.6
+    [1]:https://en.wikipedia.org/wiki/ISO_week_date
+    [2]:https://github.com/TailorDev/Watson/pull/372
+    Bump release to 1.9.0
+    Avoid dubble newlines in csv output (#366)
+    
+    Use OS-specific newlines when writing CSV:
+    
+    \n on Unix, \r\n on Windows
+    Always show total time at bottom of report (#357)
+    
+    * Always show total time at bottom of report
+    * Update Changelog
+    
+    Co-authored-by: Philipp Metzner <philipp.metzner@reactive-robotics.com>
+    Include frames that crosses day boundaries per default
+    Add support for returning frames partially within span in filter and wire it up for aggregate
+    Use Arrows for_json for JSON output
+    
+    Arrow provides a `for_json()` function encoding Arrow objects for JSON
+    output. Using the default-parameter of `json.dumps()`, this function is
+    invoked on Arrow objects which can then be encoded for JSON output.
+    
+    Reference PR: #330
+    
+    Fix #329
+    Enable git-like did-you-mean feature (#318)
+    
+    Implement did-you mean feature thanks to https://github.com/click-contrib/click-didyoumean
+    Ensure project is not empty when starting a new frame
+    
+    Fix #321
+    Review usage of arrow.get() for Arrow 0.15.0
+    
+    - Reduce the number of uses of arrow.get() related to spans in reports.
+    - Unify catched exceptions when calling arrow.get().
+    - Include 'Frame.updated_at' parsing inside try/catch just like
+    start/stop.
+    Fix multiple inclusions of the current frame in aggregate commands
+    
+    - Inclusion of the current frame in report() does not persistently add
+    it to the Frames container.
+    - Added test
+    
+    Fix #293
+    Stylize prompt for new project and tags (#310)
+    
+    * Stylize prompt for new project and tags
+    * Add confirming new projects and tags to release notes.
+    * Consistent typographical styling on warning
+    Bump release to 1.8.0 (#303)
+    Fix fatal AttributeError using Arrow 0.14.5 (#300)
+    
+    Since Arrow 0.14.5, Arrow.replace() has dropped shift functionality
+    in favor of Arrow.shift(). This causes an AttributeError exception
+    every time watson is run.
+    
+    The error message is: 'AttributeError: unknown attribute: "days"'
+    Support CSV output in report/log/aggregate (#281)
+    
+    - New option --csv/-s in report, log and aggregate commands, mutually
+    exclusive with --json/-j.
+    - New hidden option --plain to handle the default output format in
+    report, aggregate and log commands (i.e. plain text). This option is
+    not intended to be used by the final user.
+    - Add support in MutuallyExclusiveOption for options with an internal
+    name different from the ones permitted in the command line.
+    Drop Python 3.4 support (#286)
+    
+    Remove references to Python 3.4 in Travis and Tox config. Also in
+    Python doc links in Watson documentation.
+    
+    Tox was failing in Travis due to a critical error installing arrow. This
+    was due to Python 3.4 support being deprecated since March 2019.
+    Warn user about new project or tag creation
+    
+    Add `--confirm-new-project` and `--confirm-new-tag` options to `start`, `add` and `edit` commands (#275)
+    Fix zsh completion file
+    
+    Some commands were missing or broken. This is now fixed. See #264.
+    Bump release to 1.7.0
+    
+    Added:
+    
+    - New `add` command (#202)
+    - Add lunar start time options to the `report` and `log` commands (#215)
+    - Aggregate reports by day (#231)
+    - Fish shell completion (#239)
+    - Add support for first day of the week configuration in reports and logs (#240)
+    - Python 3.7 support (#241)
+    - Add `start --no-gap` and `stop --at` options (#254)
+    
+    Changed:
+    
+    - The `edit` command now checks data consistency (#203)
+    - Current state saving is now improve when using Watson as a library (#214)
+    - Prevent calling `get_start_time_for_period` multiple times (#219)
+    
+    Fixed:
+    
+    - Improved support for UTF-8 with Python 2 (#211)
+    - Zsh completion for tags and projects with spaces in their names (#227)
+    - Typos in commands output (#230, #235)
+    - Project URL of the project in PyPI (#260)
+    
+    Removed:
+    
+    - Python 3.3 support (#210).
+    Move CHANGELOG to keepachangelog format
+    
+    https://keepachangelog.com/en/1.0.0/
+    support py37 (#241)
+    
+    * py37: add a tox env, update pypi metadata
+    
+    * py37: support py37 testing on travis-ci (xenial)
+    
+    also: do not run flake8 tests N times, just once.
+    
+    * Update Changelog
+    Update Changelog
+    Remove support for Python 3.3
+    Bump release to 1.6.0
+    Update Changelog, tab completions
+    Updated changelog
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Add option for log and report command to (not) output via pager
+    
+    * 'report' command now outputs via pager by default too.
+    * Add `pager` config option.
+    * Add command line options to enable/disable pager to 'log' and 'report' command.
+    Bump release to 1.5.2
+    Bump release to 1.5.1
+    Bump release to 1.5.0
+    Prepare changelog for next release and reword and re-order some entries
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Updated changelog
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Handle errors when saving files gracefully
+    
+    Fixes #118.
+    
+    * Prevent existing files from being wiped when writing fails
+    * Backup previous file if it exists when writing succeeds
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Add command line and config file options to log and report commands to (don't) include currently running frame (fixes #31)
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Updated changelog
+    Updated changelog
+    Bump release to 1.3.2
+    Bump release to 1.3.1
+    Update release notes
+    Bump release to 1.2.0
+    Prepare 1.1.0 release
+    Update the CHANGELOG for 1.0.2 release
+    Add Changelog
+    Fix typos
+    Refactor contributing docs
+    Fix documentation generation with Python 3.7 (#304)
+    
+    Fixes #280
+    Recommend to use twine
+    Add wheel to dev requirements
+    Pin mkdocs version to one that still provides the 'flatly' theme we use
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Refactor tests for different modules, fixtures and test utils into separate modules (#139)
+    
+    * Refactor tests for different modules, fixtures and test utils into separate modules
+    * Make use of pytest-mock to make tests easier to read and safeguard against patching side-effects
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Require "pytest-runner" as development dependency
+    
+    Requiring "pytest-runner" as an install dependency adds unnecessary
+    bloat to the end user package. Instead, only development build should
+    require "pytest-runner" as a dependency.
+    Add mkdocs dev dependency
+    Fix development requirements file name
+    Add comment on mock release constraint
+    Flatten requirements tree
+    
+    as requested by @k4nar and @willdurand ...
+    Integrate pytest with setuptools
+    Restrict mock release instead of pinning it
+    Pin mock release
+    
+    `mock>1.0.1` needs setuptools > 17.1, I think it's easier and safer to restrict mock release instead of forcing setuptools upgrade (given our needs).
+    Update requirements layout
+    Separate production and test requirements and parse the former in setup.py
+    Require arrow>=0.15.6 (#380)
+    
+    Since its last release[0], the heavily used arrow library supports ISO
+    week dates[1]. The CLI tests assumed that arrow does not support this.
+    However, the new version nullified this assumption.
+    
+    As a provisional measure, the version of arrow was limited upwards in
+    PR #372[2]. An obsolete version was thereby requested.
+    
+    A current version, or at least support for one, is important for
+    third-party package managers. Especially GNU/Linux distributions prefer
+    to use their own package manager to install software over pip.
+    
+    Thus, this commit removes both the restriction to an outdated arrow
+    version in the requirements.txt and validates previously invalid marked
+    week dates.
+    
+    [0]:https://github.com/crsmithdev/arrow/releases/tag/0.15.6
+    [1]:https://en.wikipedia.org/wiki/ISO_week_date
+    [2]:https://github.com/TailorDev/Watson/pull/372
+    Require Click>=7.0
+    
+    Watson needs support for hidden options introduced in Click 7.0.
+    
+    Reference PR: #339
+    Fix #338
+    Add colorama dependency for Windows
+    
+    Click seems to have built-in color support, but this only kicks on Windows if colorama is also installed.
+    
+    PR: #376
+    Limit arrow version to under 0.15.6 (#372)
+    
+    Looks like the latest arrow release is breaking our tests.
+    
+    Changes: https://github.com/crsmithdev/arrow/releases/tag/0.15.6
+    Enable git-like did-you-mean feature (#318)
+    
+    Implement did-you mean feature thanks to https://github.com/click-contrib/click-didyoumean
+    Allow arrow v0.12.1
+    arrow versions 0.11.0 and 0.12.0 are both broken.
+    add conditional dependicies for older versions of Python on tox
+    Set max versions for pytest and arrow for keeping support for Python 2.7 and 3.3
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Require "pytest-runner" as development dependency
+    
+    Requiring "pytest-runner" as an install dependency adds unnecessary
+    bloat to the end user package. Instead, only development build should
+    require "pytest-runner" as a dependency.
+    Flatten requirements tree
+    
+    as requested by @k4nar and @willdurand ...
+    Update requirements layout
+    Separate production and test requirements and parse the former in setup.py
+    Added unit test for merge report
+    Move the requirements to a single file
+    Add requirements
+    First pass on documentation refactoring
+    Remove mention of crick.io in docs (#371)
+    Recommend to use pip for dev setup (#367)
+    
+    This makes it editable and easier to remove.
+    Update documentation of how to generate completion scripts
+    
+    Now that completion scripts are distributed by the repository directly,
+    there is no need for the end-user documentation to cover how to generate
+    them.
+    
+    However, in case newer click versions generate differing completion
+    scripts, when bumping a version the maintainer should be aware to
+    regenerate the completion scripts. Thus, a brief reminder to run
+    `make completion-scripts` is added there.
+    Provide tab completion using Click
+    
+    * Add script to generate and deploy click-based completions
+    
+    The herewith added script creates a tab-completion script for the Bash
+    and Zsh shells and puts it in the system folder. The created completion
+    script relies on the used click framework for command line parsing.
+    
+    * Remove completion files for Bash and Zsh
+    
+    When switching to the tab-completion capabilities provided by the click
+    command line parsing framework, the manually created and maintained
+    completion files are not necessary anymore.
+    
+    * Add tab completion for projects
+    
+    The subcommands 'aggregate', 'log', and 'report' now have tab completion
+    support for projects.
+    
+    * Add tab completion for tags
+    
+    The subcommands 'aggregate', 'log', and 'report' now have tab completion
+    support for tags.
+    
+    * Factor out initialisation of watson
+    
+    The line initialising watson read some environment variables and thus
+    was not trivial. Therefore its duplications are against the DRY
+    principle. In order to fix this, the line was moved to a helper
+    function.
+    
+    * Add autocompletion for frame ids
+    
+    For the commands 'edit', 'remove' and 'restart' now the frame id is
+    completed on tab.
+    
+    * StyleFix Do not return generator; yield instead
+    
+    * Add tab-completion for type in `watson rename`
+    
+    * Add tab completion for projects/tags in 'rename'
+    
+    With this commit, Click is able to generate completions for projects and
+    tags in `watson rename`.
+    
+    * Provide completion for projects and tasks in `start` and `add`
+    
+    This commit adds Bash completion capabilities for projects and tasks in
+    the subcommands `watson start` and `watson add`. For this, it imitates
+    parsing of the complete command line, just as the aforementioned
+    subcommands do.
+    
+    * Move autocompletion helper to separate module
+    
+    * Add dummy test for autocompletion module
+    
+    * Add watson fixture using custom frames list
+    
+    A fixture is added which simply loads a custom frames list. This can be
+    used as a starting point for more useful tests.
+    
+    * Factor out TEST_FIXTURE_DIR
+    
+    This object was used twice, so it can live in the test utility module.
+    
+    * Improve docstring of get_frames()
+    
+    * Add and use frames file for autocompletion tests
+    
+    * Add basic test for get_frames()
+    
+    This very basic test to get_frames sets up all the logic that is
+    required to run the autocompletion helpers in test mode. The main
+    problem was that the helpers need to start their own instance of
+    Watson. Therefore, the existing fixtures could not be used.
+    
+    * CleanUp Get rid of old watson fixture
+    
+    The old watson fixture was deleted. The tested functions start their own
+    Watson instance, relying on the environment variable WATSON_DIR.
+    Therefore, the fixture is not needed anymore.
+    
+    * Switch to new test frames file
+    
+    A new frames file for autocompletion tests is deployed. The most
+    prominent benefit is that it is much longer now, giving room for better
+    tests.
+    
+    The one existing user was adapted slightly, albeit the test certainly
+    needs some extra robustness.
+    
+    * Add serious tests for get_frames()
+    
+    Tests for get_frames() are added. Different to the previous ones, the
+    actually test the behaviour of get_frames for three plausible use cases.
+    
+    * Add tests for get_projects()
+    
+    The tests are copies of the tests for get_frames() and adapted to fit
+    the projects.
+    
+    * Add tests for get_rename_type()
+    
+    The tests are copies of the tests for get_projects() and adapted to fit
+    the rename types.
+    
+    * CleanUp Merge tests for distinct returns
+    
+    * CleanUp Merge tests for completion of empty prefix
+    
+    * CleanUp Merge tests for completion of nonexisting prefix
+    
+    * CleanUp Merge tests for completion of existing prefix
+    
+    * Add test for known completion values
+    
+    * Add get_tags() to test suite
+    
+    * Add get_rename_name() to test suite
+    
+    * Add context argument to parameterize
+    
+    This prepares the addition of get_rename_name().
+    
+    * Add args argument to pytest.parameterize
+    
+    This prepares the addition of another test case for
+    get_project_or_task().
+    
+    * Change args parameter from None to []
+    
+    The parameter args is a list of strings, so it is plausible to create it
+    as such. Furthermore, this allows the addition of a test case for
+    get_project_or_task_completion().
+    
+    * Test project completion in get_project_or_task()
+    
+    * Test tag completion in get_project_or_task()
+    
+    * StyleFix Adapt code formatting using black
+    
+    The format of the code was a bit messed up. It was once reformatted
+    using black in order to improve the readability a bit.
+    
+    * Minor improvements on docstrings
+    
+    * StyleFix Apply black autoformator on autocompletion module
+    
+    * CleanUp Move magic numbers to constants
+    
+    A lot of magic numbers were used to specify how many results were
+    expected. This violates established practice. Therefore, almost all of
+    them were replaced by constants.
+    
+    * CleanUp Turn prepare_sysenv_for_testing() to fixture
+    
+    The aforementioned function is turned to be a fixture and attached to
+    the tests depending on it. This simplifies the tests a bit, as the test
+    function signature and the test body become more lightweight.
+    
+    * Simplify autocompletion tests
+    
+    Previously, when Watson was called for autocompleting, two Watson
+    objects were created: first in "cli.py:cli()" and again in the
+    corresponding "autocomplete.py" method.
+    
+    Changes:
+    - Move TEST_FIXTURE_DIR to "tests/__init.py__" as conftest is more
+    suitable for fixtures (which are automatically available).
+    - Add new watson_df fixture which easily allows to override the
+    configuration path using pytest-datafiles.
+    - Move frame test file into its own folder, avoiding manual renames.
+    - Avoid needing CTXDummy object using SimpleNamespace and watson_df.
+    - Rename get_watson_instance() to create_watson() to avoid implying that
+    it's a singleton.
+    
+    Signed-off-by: Max Görner <max@familie-goerner.eu>
+    
+    * Move script for completion deployment to scripts/
+    
+    Besides just moving it, it is renamed to reflect what will be the
+    intended purpose after a pending refactoring.
+    
+    * Stop deploying completion receipts.
+    
+    In an effort to adapt the code to the existing documentation, the script
+    is rewritten such that it does not deploy the generated receipts.
+    Instead, it will write them to a file.
+    
+    * Remove redundant check for -h|--help
+    
+    * Integrate create-completion-script.sh in Makefile
+    
+    Unfortunately, generating the completion receipts has exit code 1 for
+    unknown reasons. Thus, a '|| true' is required.
+    
+    * Explain completion receipt generation in documentation
+    
+    * Tighten silencing an expected error
+    
+    Instead of suppressing an expected error in the Makefile, it now is
+    suppressed exactly where it is caused in the
+    create-completion-script.sh.
+    
+    * BugFix Work around Click bug in all functions
+    
+    The commit by David Alfonso improved the code style considerably.
+    Unfortunately it also triggered a bug in Click that does not pass the
+    context object properly.
+    
+    While a workaround was added in some functions, some others have been
+    forgotten. This caused some attempts on autocompletion to fail.
+    
+    The commit at hand applies the workaround everywhere where it is needed.
+    
+    * StyleFix Apply Black auto formatter for proper formatting
+    
+    Reference PR (#276)
+    Fix typos in the documentation
+    
+    PR reference: https://github.com/TailorDev/Watson/pull/298
+    adds completion script for the fish shell
+    
+    initial development work performed in https://github.com/andrewmeyer/fish-completions
+    
+    expand documentation
+    
+    expands documentation to include instructions on installing and
+    activating the fish completion script for watson.
+    
+    provide lists of projects and tags for report/log
+    
+    Extends the autocomplete functionality for log and report.
+    If -T/-p are provided, autocomplete a list of tags and projects
+    Update doc to mention available installation via brew
+    Fix doc typo
+    Add compinit to the documentation
+    
+    As suggested by @jmaupetit
+    Add instruction to install zsh completion
+    Hello crick.io :)
+    Improve documentation wording and formatting
+    
+    Follow up to commit a73dca7
+    Document how to obtain available distribution packages
+    Add watson logo to docs & README
+    Add attr_list markdown ext & fix cat gif width
+    Add a getting started to the index
+    First pass on documentation refactoring
+    Add mkdocs starter
+    Refactor contributing docs
+    Update documentation of how to generate completion scripts
+    
+    Now that completion scripts are distributed by the repository directly,
+    there is no need for the end-user documentation to cover how to generate
+    them.
+    
+    However, in case newer click versions generate differing completion
+    scripts, when bumping a version the maintainer should be aware to
+    regenerate the completion scripts. Thus, a brief reminder to run
+    `make completion-scripts` is added there.
+    Use wharehouse sha256 sum directly
+    Recommend to use twine
+    Improve documentation semantic
+    Add changes requested by @willdurand
+    Add draft documentation about new release process
+    Set WATSON_DIR on virtualenv activation in fish script and mention `activate.fish` in docs (#307)
+    Fix typo in hack.md (#287)
+    Extend hack doc favoring existing Makefile usage (#279)
+    
+    - Add more info for newcomers and beginners extracted from #243
+    
+    - Avoid using a higher-level virtualenv manager (like virtualenvwrapper
+    or pipenv) to simplify the doc and to benefit from the existing Makefile
+    
+    - Explain why and where watson searches for config/data after #273
+    
+    - Add a Python requirements section
+    
+    - Unify maximum line length to 80 characters
+    Update hacking-docs
+    Suggest to use tox by default, describe how to run tests (#133)
+    
+    * Set skip_missing_interpreters in tox.ini
+    * Describe how to run the tests and suggest to run tox by default
+    * Add note about WIP PRs
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Update contributing docs
+    Refactor contributing docs
+    Refactor contributing docs
+    Suggest to use tox by default, describe how to run tests (#133)
+    
+    * Set skip_missing_interpreters in tox.ini
+    * Describe how to run the tests and suggest to run tox by default
+    * Add note about WIP PRs
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Refactor contributing docs
+    Add --ignore-* options to the log command
+    
+    Add two options (--ignore-project and --ignore-tag) to ignore a project or a tag when requesting a log, in the same way you can do it with report (see #288).
+    
+    Reference PR: #395
+    Add --ignore-project and --ignore-tag to report (#288)
+    
+    * Add --ignore-project and --ignore-tag to report
+    * Update fish completions
+    Support CSV output in report/log/aggregate (#281)
+    
+    - New option --csv/-s in report, log and aggregate commands, mutually
+    exclusive with --json/-j.
+    - New hidden option --plain to handle the default output format in
+    report, aggregate and log commands (i.e. plain text). This option is
+    not intended to be used by the final user.
+    - Add support in MutuallyExclusiveOption for options with an internal
+    name different from the ones permitted in the command line.
+    Warn user about new project or tag creation
+    
+    Add `--confirm-new-project` and `--confirm-new-tag` options to `start`, `add` and `edit` commands (#275)
+    Add `start --no-gap` and `stop --at`
+    
+    This commit adds the functionality needed to catch up on time tracking.
+    
+    Take the scenario where you are engaged in several ad hoc discussions at
+    the desks of your colleagues, seamlessly transitioning into each other.
+    While you manage to remember when each discussion start, you still need
+    to enter those into Watson.
+    
+    This commit gives you the tools to do so conveniently. You can use
+    
+        watson stop --at
+    
+    to specify when a event stopped and
+    
+        watson start --no-gap
+    
+    to instruct Watson to start the new event seamlessly to the one most
+    recently stopped. By this to catch up on your time tracking all you need
+    to do is to cycle through these two commands.
+    Aggregate reports by day (#231)
+    
+    * Created an optional `--daily` flag for the CLI `report` function. This flag, mutually exclusive to the `--json` flag, aggregates reporting by day.
+    
+    * fixed whitespace/char count issues to pass flake8
+    
+    * Created `aggregate` CLI function which aggregates `reports` by day. It can be invoked with `watson aggregate`
+    
+    * fixed erroneously added CLI arg for `watson log`
+    docs: add documentation and completion for --luna
+    For report and log, allow specifying a timeperiod of "all"
+    Add option for log and report command to (not) output via pager
+    
+    * 'report' command now outputs via pager by default too.
+    * Add `pager` config option.
+    * Add command line options to enable/disable pager to 'log' and 'report' command.
+    Update docs with new command line options to `status` command added in #166
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Clarify documentation on setting the editor for the 'edit' command
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Add --json option to log command
+    Use -j/--json cli flag instead of --format
+    Support JSON formatted output in report command
+    Add command line and config file options to log and report commands to (don't) include currently running frame (fixes #31)
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Add helper options for the `report` and `log` commands:
+    
+    - Shortcut options (`--year`, `--month`, `--week`, `--day`) were added
+      to the 'report' and 'log' command. They are intended for an easier
+      timespan selection for common use cases (e.g., how much time did
+      I spent on my project during the current year, month, week or day?)
+      without needing to use the appropriate `--from` and `--to` options.
+    
+    - Shortcut options are mutually exclusive with each other and with the
+      `--from` and `--to` options.
+    
+    - A new `watson.utils.get_start_time_for_period()` function helps to
+      determine the datetime (Arrow object) for the start of the current
+      year, month, week or day.
+    implements rename command
+    Update docs
+    Cosmetic fixes in docstrings
+    Fix command heading style
+    Fix usage
+    Fix heading indentation
+    Refactor commands doc generation
+    First pass on documentation refactoring
+    Add option to control the order of the days in the `log` output (#369)
+    
+    * Add option to control the order of the days in the `log` output
+    * Add `--reverse/--no-reverse` flag to log
+    * Test sorted_groupby for reverse log flag
+    * Move reverse-log changelog entry to unreleased
+    * Also fix previous changelog typo
+    Add doc for options confirm_new_{project,tag} (#306)
+    
+    - Add two new options: confirm_new_project and confirm_new_tag
+    - List options alphabetically
+    - Add default value to all options
+    Drop Python 3.4 support (#286)
+    
+    Remove references to Python 3.4 in Travis and Tox config. Also in
+    Python doc links in Watson documentation.
+    
+    Tox was failing in Travis due to a critical error installing arrow. This
+    was due to Python 3.4 support being deprecated since March 2019.
+    Add option to specify start of the week (#240)
+    
+    * Add function that offsets week start
+    
+    * Apply offset when week option is used
+    
+    * Add tests
+    
+    * Update configuration docs
+    
+    * Add default fallback value
+    Windows config is stored in Roaming
+    Update frame modification time when renaming projects and tags (#181)
+    
+    * Refactor `rename` from cli to Watson class
+    * Add tests for renaming projects and tags
+    * Timestamps in tests must be greater than 3600
+    
+    On Windows, (local) timestamps must (typically) be greater than 3600, otherwise they throw an `OSError`
+    See https://github.com/dateutil/dateutil/issues/197 (*arrow* depends on *dateutil*).
+    Add option for log and report command to (not) output via pager
+    
+    * 'report' command now outputs via pager by default too.
+    * Add `pager` config option.
+    * Add command line options to enable/disable pager to 'log' and 'report' command.
+    Remove superfluous quotes in config file example in docs
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Minor user guide fixes: rename subsection; fix wrong option name
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Add defaults tags for projects (#113)
+    
+    This commit adds a way to declare default tags in the configuration file and have them applied on `watson start`. Default tags are declared in the `[default_tags]` section of the configuration:
+    
+        [default_tags]
+        python101 = teaching
+        watson = contrib python
+    
+    With the sample configuration above, the "teaching" tag will always be attached to the "python101" project, and the tags "contrib" and "python" will always be attached to the project "watson". Tags in the configuration can also have spaces in them by enclosing them in single or double quotes.
+    
+        [default_tags]
+        super project = fun 'random tag with spaces'
+    
+    Or by using a multi-line option value (by indenting all but the first line) and listing each tag on its own line:
+    
+        [default_tags]
+        python101 = teaching
+            python book
+            writing
+        watson = contrib python
+    
+    Projects that do not appear in the `[default_tags]` section of the configuration will not be affected by the change.
+    Add command line and config file options to log and report commands to (don't) include currently running frame (fixes #31)
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Fix docs
+    Add docs for the WATSON_DIR environment variable
+    First draft docs for configuration
+    First pass on documentation refactoring
+    Fix release notes link
+    Bump release to 1.10.0 (#386)
+    
+    Added:
+    
+    - Log output order can now be controlled via the `--reverse/--no-reverse` flag
+      and the `reverse_log` configuration option (#369)
+    - Add `--at` flag to the `start` and `restart` commands (#364).
+    - Add `--color` and `--no-color` flags to force output to be colored or not
+      respectively (#350).
+    
+    Changed:
+    
+    - Require latest Arrow version 0.15.6 to support ISO week dates (#380)
+    
+    Fixed:
+    
+    - Make after-edit-check ensure that edited time stamps are not in the future
+      (#381)
+    Bump release to 1.9.0
+    Stylize prompt for new project and tags (#310)
+    
+    * Stylize prompt for new project and tags
+    * Add confirming new projects and tags to release notes.
+    * Consistent typographical styling on warning
+    Bump release to 1.8.0 (#303)
+    Fix missing link for the latest release
+    Bump release to 1.7.0
+    
+    Added:
+    
+    - New `add` command (#202)
+    - Add lunar start time options to the `report` and `log` commands (#215)
+    - Aggregate reports by day (#231)
+    - Fish shell completion (#239)
+    - Add support for first day of the week configuration in reports and logs (#240)
+    - Python 3.7 support (#241)
+    - Add `start --no-gap` and `stop --at` options (#254)
+    
+    Changed:
+    
+    - The `edit` command now checks data consistency (#203)
+    - Current state saving is now improve when using Watson as a library (#214)
+    - Prevent calling `get_start_time_for_period` multiple times (#219)
+    
+    Fixed:
+    
+    - Improved support for UTF-8 with Python 2 (#211)
+    - Zsh completion for tags and projects with spaces in their names (#227)
+    - Typos in commands output (#230, #235)
+    - Project URL of the project in PyPI (#260)
+    
+    Removed:
+    
+    - Python 3.3 support (#210).
+    Move release notes to keepachangelog format
+    Bump release to 1.6.0
+    Bump release to 1.5.2
+    Bump release to 1.5.1
+    Bump release to 1.5.0
+    Update release notes in the documentation too
+    
+    Signed-off-by: Christopher Arndt <chris@chrisarndt.de>
+    Bump release to 1.3.2
+    Bump release to 1.3.1
+    Update release notes
+    First pass on documentation refactoring
+    Bump release to 1.2.0
+    Prepare 1.1.0 release
+    Update the CHANGELOG for 1.0.2 release
+    Add Changelog
+    First pass on documentation refactoring
+    Add MIT license

@@ -1,0 +1,304 @@
+﻿    Work on Python 3 support
+    Update doc
+    updating readme
+    coverage badge
+    Updated Readme with get_candidate_config and changes to show_* funcions
+    updating readme badges
+    updating readme
+    readme updates
+    updating readme with optional lock arg
+    Updated example of commit confirmed to follow the syntax of all other examples
+    found a merge issue in commit_replace_config and README.md
+    updating readme
+    Added code to use the commit confirmed feature on the device.
+    
+    specifying confirmed=30 in commit_config() will automatically revert
+    your changes if you loose connection with the device or not do a clean commit_config() within 30sec.
+    the commit needs to be done in the same vty session as the confirmed commit.
+    updated README.md text
+    Added REDME.md info about Commit Comments and logging
+    version bump and readme update
+    updating readme
+    adding expect timeout and prepping for v 0.8
+    updating readme
+    updating readme
+    updating readme
+    added ansible plugin and test configs
+    updating readme
+    added __getattr__, updated help and readme
+    updating readme. added replace-diff
+    updating readme
+    updating readme
+    updating readme
+    updating readme
+    updating readme
+    adding commit replace
+    updating readme
+    updating readme
+    updating readme
+    something like that maybe...
+    Initial commit
+    Require netmiko 1.4.3 for is_alive method
+    Require netmiko 1.4.1 for opt args
+    Include lxml in requirements
+    Switch to netmiko
+    something like that maybe...
+    renamed manifest
+    adding Manifest.in
+    adding timeout and port to ansible lib
+    no default
+    ocd
+    ansible plugin fixes
+    ansible plugin fixes
+    added ansible plugin and test configs
+    Work on Python 3 support
+    Mock is_alive
+    Some more tests
+    Changed parallel test commit result & mock
+    Adjust tests for the new behavior
+    Remove deprecated private functions
+    Mock for compare-replace
+    All tests fixed
+    Tests and mock data
+    adding IteratorIDError test
+    more pylama error fixes
+    add invalid input response test
+    adding more _execute_rpc_ tests
+    adding some _execute_rpc_ tests
+    adding some _execute_rpc_ tests
+    adding some _execute_rpc_ tests
+    show return value return matching string got getattr
+    adding tests for __getattr__
+    test __execute_show__, __execute_config_show__
+    adding test_compare_config() and test_compare_replace_config()
+    adding test_commit_replace_config_InvalidInputError()
+    adding test_commit_config_InvalidInputError()
+    adding commit_replace_config() tests
+    adding commit_config() tests
+    adding get_candidate_config() tests
+    adding load_candidate_config() tests
+    load_candidate_config() test
+    fixing typos in test for make_rpc_call()
+    make_rpc_call() test
+    fixing unlock() unit test
+    more close() tests
+    more open() tests
+    more open() tests
+    notes on missing unit tests
+    automated travis deploy tp pypi upon tag
+    adding test for: close, lock, unlock, discard_config and rollback
+    testing open()
+    testing __init__()
+    adding initial test files
+    Some more tests
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Changed parallel test commit result & mock
+    All tests fixed
+    Tests and mock data
+    Mock for compare-replace
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Revert "use cli xml instead of xml tags"
+    fixed testing
+    Tests and mock data
+    Revert "use cli xml instead of xml tags"
+    fixed testing
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    All tests fixed
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Revert "use cli xml instead of xml tags"
+    fixed testing
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Tests and mock data
+    Truncate comment length to maximum of 60
+    
+    Instead of raising an exception, just truncate the comment length to the maximum of 60
+    Update error message for commit comment length error
+    
+    Rephrase the commit comment error to better reflect the limits.
+    Fixes #55: Check commit comment length
+    
+    Raise an InvalidInputError when the commit message is longer than 60 characters, as this breaks IOS-XR.
+    Revert "Fixed the syntax error from my pull request earlier"
+    Create iosxr.py
+    
+    revert second commit, because it doesn't work
+    use Exec instead of Configuration - Configuration will break xml agent
+    fixed issue with netmiko_kwargs
+    fixed syntax error
+    fixed syntax error
+    Revert "use cli xml instead of xml tags"
+    Forward rest of kwargs to netmiko
+    use cli xml instead of xml tags
+    Exception handling for Python 3
+    Work on Python 3 support
+    Reopen when not alive
+    New error: 0xa367da00
+    is_alive() method
+    Some more tests
+    Separate check when entering in XML mode
+    Adjust tests for the new behavior
+    Enhanced lockers & more control when reading the output
+    Rollback compare_config_show
+    Release the XML agent when closing
+    More context lines for config diff
+    All tests fixed
+    Tests and mock data
+    Use send_command_expect
+    Release when raising error
+    Workaround error 0xa3679e00
+    Switch to netmiko
+    more pylama error fixes
+    pylama error fixes
+    adding get_candidate_config() tests
+    Changed get_candidate_config to remove everything before 'git add pyIOSXR/iosxr.py  IOS XR Configuration', same as in show commands
+    Added posibillity to give arguments on show command, also allowing show commands in config mode!
+    Changed layout of command generation and added formal config layout
+    Added function to get candidate config loaded into the device
+    added comments, check for str and int in object init
+    Lock/Unlock on demand
+    Added an expect match for Key auth.
+    
+    It's not perfect, since it only matches on '#', instead of matching on something like 'RP/0/RSP0/CPU0:hostname#', but it's probably good enough, since line 149 already uses this behavior.
+    found a merge issue in commit_replace_config and README.md
+    updated commit_replace_config to match fooelisa/master
+    adding label and comment to commit_replace_config()
+    Raise an exception if IteratorID is found in Response object. Iteration is not currently supported by pyIOSXR.
+    added function help information about new parameters.
+    Fixed inexistent ResultSummary node issue on IOS-XR 5.3.1
+    minor edit to use string formatting
+    Added a catch for 'The XML document is not well-formed' messages.
+    Without this pyIOSXR goes to a timeout if you try to commit a config
+     that includes a <, > or & character.
+    With this code the __execute_rpc__ function returns a XMLCLIError exception when this occures
+    Added code to use the commit confirmed feature on the device.
+    
+    specifying confirmed=30 in commit_config() will automatically revert
+    your changes if you loose connection with the device or not do a clean commit_config() within 30sec.
+    the commit needs to be done in the same vty session as the confirmed commit.
+    add label and comment to commit
+    Added support for adding comments to commits
+    
+    usage:
+        >>> device.commit_config(comment='comment saved on device', label='label')
+        >>> device.commit_replace_config(comment='comment saved to device', label='label')
+    
+    comment and label is optional parameters.
+    Code is not hevily tested and does not du any internal validation of user input
+    Added posibillity to create a logfile of the communication between pyIOSXR and the router.
+    
+    Usage:
+      1) STDOUT
+      from pyIOSXR import IOSXR
+      import sys
+      device=IOSXR(hostname="router", username="cisco", password="cisco", port=22, timeout=120, logfile=sys.stdout)
+    
+      2) FILE
+      from pyIOSXR import IOSXR
+      import sys
+      log = open("logfile.log")
+      device=IOSXR(hostname="router", username="cisco", password="cisco", port=22, timeout=120, logfile=log)
+    
+      if logfile is not specified it will default to a None object and disable logging
+    add function commit_config_with_label
+    raise XMLCLIError if XML agent is not enabled, ERROR: 0x24319600
+    Fix to get valid compares when merging
+    dump() -> tostring()
+    make_rpc_call() should return XML, not an object
+    added comments to the proposed method
+    replaced expect-method to a static string match to improve performance
+    added make_rpc_call()-method to allow napalm to query devices directly using XML
+    added TimeoutError and EOFError
+    timeout also on ssh connection
+    updating comments
+    adding expect timeout and prepping for v 0.8
+    Improve error catching when executing RPC calls
+    Added ability to choose which port to connect to
+    Some bugfixes and some error handling added
+    that timeout change wasnt a idea
+    wrapping up new show command in config context and using it
+    dont exec show commands in config context
+    updating readme
+    added __getattr__, updated help and readme
+    updating readme. added replace-diff
+    making that config diff a little nicer
+    better config diff, show command exec function
+    improving the expect a little
+    pretty diff
+    pretty diff
+    turns out I can bulk send this...
+    fixed broken rollback
+    adding commit replace
+    updating readme
+    config load, compare, discard and rollback
+    ok, half way there: lock, unlock, commit and rollback work
+    lets be consistent here
+    tested init and connection, looking good so far. pexpect actually has a close and i renamed user
+    shamelessly stole davids structure on licencing and doc/commentary and prepped a few things
+    something like that maybe...
+    Work on Python 3 support
+    more pylama error fixes
+    shamelessly stole davids structure on licencing and doc/commentary and prepped a few things
+    something like that maybe...
+    Mark XML agent dead on TimeoutException
+    is_alive() method
+    Enhanced lockers & more control when reading the output
+    Use send_command_expect
+    Release when raising error
+    Workaround error 0xa3679e00
+    Switch to netmiko
+    more pylama error fixes
+    Raise an exception if IteratorID is found in Response object. Iteration is not currently supported by pyIOSXR.
+    added TimeoutError and EOFError
+    More useful exceptions
+    shamelessly stole davids structure on licencing and doc/commentary and prepped a few things
+    something like that maybe...

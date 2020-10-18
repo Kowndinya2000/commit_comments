@@ -1,0 +1,606 @@
+﻿    docs: add copyfile and linkfile elements description
+    
+    The "copyfile" element is available since 2009 and
+    have been used in every Android manifest; the "linkfile"
+    element is available since 2014.
+    Now it's a good time to add both to the documentation
+    
+    Change-Id: Ia987edf5f69a006235fbd3f33b744e9794a6d964
+    Signed-off-by: Ruslan Bilovol <ruslan.bilovol@gmail.com>
+    Revert "Implementation of manifest defined githooks"
+    
+    This reverts commit 38e4387f8eb8cffd6359d726c38a7c524fef07e3.
+    
+    A "repo init" followed by "repo sync" is meant to be as safe as
+    "git clone".  In particular it should not run arbitrary code provided
+    by the manifest owner.
+    
+    It would still be nice to have support for manifest-defined git hooks
+    --- they'd just need a prompt like the upload RepoHook has.  Hopefully
+    a later change can bring them back.
+    
+    Change-Id: I5ecd90fb5c2ed64f103d856d1ffcba38a47b062d
+    Signed-off-by: Jonathan Nieder <jrn@google.com>
+    Implementation of manifest defined githooks
+    
+    When working within a team or corporation it is often
+    useful/required to use predefined git templates. This
+    change teaches repo to use a per-remote git hook template
+    structure.
+    
+    The implementation is done as a continuation of the
+    existing projecthook functionality. The terminology is
+    therefore defined as projecthooks.
+    
+    The downloaded projecthooks are stored in the .repo
+    directory as a metaproject separating them from the users
+    project forest.
+    
+    The projecthooks are downloaded and set up when doing a
+    repo init and updated for each new repo init.
+    
+    When downloading a mirror the projecthooks gits are
+    not added to the bare forest since the intention is to
+    ensure that the latest are used (allows for company policy
+    enforcement).
+    
+    The projecthooks are defined in the manifest file in the
+    remote element as a subnode, the name refers to the
+    project name on the server referred to in the remote.
+    <remote name="myremote ..>
+       <projecthook name="myprojecthookgit" revision="myrevision"/>
+    </remote>
+    
+    The hooks found in the projecthook revision supersede
+    the stock hooks found in repo. This removes the need for
+    updating the projecthook gits for repo stock hook changes.
+    
+    Change-Id: I6796b7b0342c1f83c35f4b3e46782581b069a561
+    Signed-off-by: Patrik Ryd <patrik.ryd@stericsson.com>
+    Signed-off-by: Ian Kumlien <ian.kumlien@gmail.com>
+    Support specifying non-HEADS refs as upstream
+    
+    While not typical, some users might have an upstream that isn't in
+    the usual refs/heads/* namespace. There's no reason not to use
+    those refs as the value for the upstream attribute, so support
+    doing so.
+    
+    Change-Id: I5b119f1135c3268c20e7c4084682e860d3ee1fb1
+    Enable transferring of attribute using command 'repo manifest -o -'
+    
+    'upstream' attribute is now transferred to the new manifest xml
+    that is created when using command 'repo manifest -o -'.
+    
+    Manifest help is updated for the attributes 'sync-c','sync-s' and
+    'sync-j'.
+    
+    Bug: Issue 164
+    Change-Id: If63f781e91d25c5b5b5ea0696b0c04337b0a686a
+    Add extend-project tag to support adding groups to an existing project
+    
+    Currently, if a local manifest wants to add groups to an existing
+    project, it must use remove-project and then re-add the project with
+    the new groups.  This makes the local manifest more fragile, requiring
+    updates to the local manifest if the original manifest changes.
+    
+    Add a new extend-project tag, which supports adding groups to an
+    existing project.
+    
+    Change-Id: Ib4d1352efd722a65dd263d02644b9ea5ab6ed400
+    Enable remotes to define their own revision
+    
+    Some projects use multiple remotes.
+    In some cases these remotes have different naming conventions.
+    Add an option to define a revision in the remote configuration.
+    
+    The `project` revision takes precedence over `remote` and `default`.
+    The `remote` revision takes precedence over `default`.
+    The `default` revision acts as a fall back as it originally did.
+    
+    Change-Id: I2b376160d45d48b0bab840c02a3eef1a1e32cf6d
+    Fix error in xml manifest doc.
+    
+    The docs on the annotations say that zero or more may exist as a child
+    of a project, so that means that a "*" instead of a "?" should be used.
+    
+    Change-Id: Iff855d003dfb05cd980f285a237332914e1dad70
+    Remove trailing whitespace
+    
+    Change-Id: I56bcb559431277d40070fa33c580c6c3525ff9bc
+    Send reviews to a different branch from fetch
+    
+    This adds the ability to have reviews pushed to a different branch
+    from the one on which changes are based. This is useful for "gateway"
+    systems without smartsync.
+    
+    Change-Id: I3a8a0fabcaf6055e62d3fb55f89c944e2f81569f
+    Allow mirror to be created in directories specified by 'path' attribute
+    
+    In some cases, especially when local manifest files exist, users may want
+    to force the mirrored repositories to be created in folders according to
+    their 'path' attribute in the manifest, rather than according to the name
+    of the repositories.
+    
+    To enable this functionality for specified mirror, add a new attribute
+    'force-path' for that project in the manifest, set its value to 'true'.
+    
+    Change-Id: I61df8c987a23d84309b113e7d886ec90c838a6cc
+    Signed-off-by: Scott Fan <fancp2007@gmail.com>
+    Allow clone depth to be specified per project
+    
+    If the clone-depth attribute is set on a project, its value will
+    be used to set the depth when fetching the git.  The value, if
+    given, must be a positive integer.
+    
+    The value in the clone-depth attribute overrides any value given to
+    repo init via the --depth command line option.
+    
+    Change-Id: I273015b3724213600b63e40cca4cafaa9f782ddf
+    Add missing manifest format documentation
+    
+    Documentation of the "sync-j", "sync-c", "sync-s" and "upstream"
+    attributes is missing/incomplete.  Add it.
+    
+    Change-Id: I74977f819f603c520ef3818f85c3b51399cd2b94
+    Represent git-submodule as nested projects, take 2
+    
+    (Previous submission of this change broke Android buildbot due to
+     incorrect regular expression for parsing git-config output.  During
+     investigation, we also found that Android, which pulls Chromium, has a
+     workaround for Chromium's submodules; its manifest includes Chromium's
+     submodules.  This new change, in addition to fixing the regex, also
+     take this type of workarounds into consideration; it adds a new
+     attribute that makes repo not fetch submodules unless submodules have a
+     project element defined in the manifest, or this attribute is
+     overridden by a parent project element or by the default element.)
+    
+    We need a representation of git-submodule in repo; otherwise repo will
+    not sync submodules, and leave workspace in a broken state.  Of course
+    this will not be a problem if all projects are owned by the owner of the
+    manifest file, who may simply choose not to use git-submodule in all
+    projects.  However, this is not possible in practice because manifest
+    file owner is unlikely to own all upstream projects.
+    
+    As git submodules are simply git repositories, it is natural to treat
+    them as plain repo projects that live inside a repo project.  That is,
+    we could use recursively declared projects to denote the is-submodule
+    relation of git repositories.
+    
+    The behavior of repo remains the same to projects that do not have a
+    sub-project within.  As for parent projects, repo fetches them and their
+    sub-projects as normal projects, and then checks out subprojects at the
+    commit specified in parent's commit object.  The sub-project is fetched
+    at a path relative to parent project's working directory; so the path
+    specified in manifest file should match that of .gitmodules file.
+    
+    If a submodule is not registered in repo manifest, repo will derive its
+    properties from itself and its parent project, which might not always be
+    correct.  In such cases, the subproject is called a derived subproject.
+    
+    To a user, a sub-project is merely a git-submodule; so all tips of
+    working with a git-submodule apply here, too.  For example, you should
+    not run `repo sync` in a parent repository if its submodule is dirty.
+    
+    Change-Id: I4b8344c1b9ccad2f58ad304573133e5d52e1faef
+    Minor documentation formatting and grammatical fixes
+    
+    Change-Id: Iaac6377c787b3bb42242780e9d1116e718e0188d
+    Fix documentation reference to local_manifest.xml
+    
+    Documentation of the remove-project element still refers explicitly
+    to local_manifest.xml.
+    
+    Change it to the more generic "a local manifest".
+    
+    Change-Id: I6278beab99a582fae26a4e053adc110362c714c2
+    Make load order of local manifests deterministic
+    
+    Local manifest files stored in the local_manifests folder are loaded
+    in alphabetical order, so it's easier to know in which order project
+    removals/additions/modifications will be applied.
+    
+    If local_manifests.xml exists, it will be loaded before the files in
+    local_manifests.
+    
+    Change-Id: Ia5c0349608f1823b4662cd6b340b99915bd973d5
+    Print deprecation warning when local_manifest.xml is used
+    
+    The preferred way to specify local manifests is to drop the file(s)
+    in the local_manifests folder.  Print a deprecation warning when
+    the legacy local_manifest.xml file is used.
+    
+    Change-Id: Ice85bd06fb612d6fcceeaa0755efd130556c4464
+    Add support for multiple local manifests
+    
+    Add support for multiple local manifests stored in the local_manifests
+    folder under the .repo home directory.
+    
+    Local manifests will be processed in addition to local_manifest.xml.
+    
+    Change-Id: Ia0569cea7e9ae0fe3208a8ffef5d9679e14db03b
+    Revert "Represent git-submodule as nested projects"
+    
+    This reverts commit 69998b0c6ff724bf620480140ccce648fec7d6a9.
+    Broke Android's non-gitmodule use case.
+    
+    Conflicts:
+            project.py
+            subcmds/sync.py
+    
+    Change-Id: I68ceeb63d8ee3b939f85a64736bdc81dfa352aed
+    Represent git-submodule as nested projects
+    
+    We need a representation of git-submodule in repo; otherwise repo will
+    not sync submodules, and leave workspace in a broken state.  Of course
+    this will not be a problem if all projects are owned by the owner of the
+    manifest file, who may simply choose not to use git-submodule in all
+    projects.  However, this is not possible in practice because manifest
+    file owner is unlikely to own all upstream projects.
+    
+    As git submodules are simply git repositories, it is natural to treat
+    them as plain repo projects that live inside a repo project.  That is,
+    we could use recursively declared projects to denote the is-submodule
+    relation of git repositories.
+    
+    The behavior of repo remains the same to projects that do not have a
+    sub-project within.  As for parent projects, repo fetches them and their
+    sub-projects as normal projects, and then checks out subprojects at the
+    commit specified in parent's commit object.  The sub-project is fetched
+    at a path relative to parent project's working directory; so the path
+    specified in manifest file should match that of .gitmodules file.
+    
+    If a submodule is not registered in repo manifest, repo will derive its
+    properties from itself and its parent project, which might not always be
+    correct.  In such cases, the subproject is called a derived subproject.
+    
+    To a user, a sub-project is merely a git-submodule; so all tips of
+    working with a git-submodule apply here, too.  For example, you should
+    not run `repo sync` in a parent repository if its submodule is dirty.
+    
+    Change-Id: I541e9e2ac1a70304272dbe09724572aa1004eb5c
+    Allow projects to be specified as notdefault
+    
+    Instead of every group being in the group "default", every project
+    is now in the group "all".   A group that should not be downloaded
+    by default may be added to the group "notdefault".
+    
+    This allows all group names to be positive (instead of removing groups
+    directly in the manifest with -default) and offers a clear way of
+    selecting every project (--groups all).
+    
+    Change-Id: I99cd70309adb1f8460db3bbc6eff46bdcd22256f
+    manifest-format.txt: Add documentation for GetManifest RPC method
+    
+    Add documentation of the GetManifest RPC method in the
+    manifest-server section.
+    
+    Change-Id: I5cda5929bc8a0ca9d3f2b9da63216427041d2823
+    manifest-format.txt: Fix a couple of minor spelling mistakes
+    
+    Change-Id: Ic2d266c8cf08827a71846db9d3711feb02885f01
+    Add remote alias support in manifest
+    
+    The `alias` is an optional attribute in element `remote`. It can be
+    used to override attibute `name` to be set as the remote name in each
+    project's .git/config. Its value can be duplicated while attribute
+    `name` has to be unique across the manifest file. This helps each
+    project to be able to have same remote name which actually points
+    to different remote url.
+    
+    It eases some automation scripts to be able to checkout/push to same
+    remote name but actually different remote url, like:
+    
+    repo forall -c "git checkout -b work same_remote/work"
+    repo forall -c "git push same_remote work:work"
+    
+    for example:
+    The manifest with 'alias' will look like:
+    
+    <?xml version='1.0' encoding='UTF-8'?>
+    <manifest>
+      <remote alias="same_alias" fetch="git://git.external1.org/" name="ext1"
+          review="http://review.external1.org"/>
+      <remote alias="same_alias" fetch="git://git.external2.org/" name="ext2"
+          review="http://review.external2.org"/>
+      <remote alias="same_alias" fetch="ssh://git.internal.com:29418" name="int"
+          review="http://review.internal.com"/>
+      <default remote="int" revision="int-branch" sync-j="2"/>
+      <project name="path/to/project1" path="project1" remote="ext1"/>
+      <project name="path/to/project2" path="project2" remote="ext2"/>
+      <project name="path/to/project3" path="project3"/>
+      ...
+    </manifest>
+    
+    In each project, use command "git remote -v"
+    
+    project1:
+    same_alias  git://git.external1.org/project1 (fetch)
+    same_alias  git://git.external1.org/project1 (push)
+    
+    project2:
+    same_alias  git://git.external2.org/project2 (fetch)
+    same_alias  git://git.external2.org/project2 (push)
+    
+    project3:
+    same_alias  ssh://git.internal.com:29418/project3 (fetch)
+    same_alias  ssh://git.internal.com:29418/project3 (push)
+    
+    Change-Id: I2c48263097ff107f0c978f3e83966ae71d06cb90
+    Inject the project name into each projects groups.
+    
+    For CrOS, we have scenarios were people checkout a smaller version
+    of our manifest via groups, and enable individual repositories as
+    needed for their work.  Previously this was via local_manifest
+    manipulation, which breaks via manifest-groups would require a
+    remove-project tag.
+    
+    Via injecting the projects name into the projects groups, this
+    allows us to instead manipulate the configured groups allowing
+    the user to turn on/off projects as necessary.
+    
+    Change-Id: I07b7918e16cc9dc28eb47e19a46a04dc4fd0be74
+    ManifestXml: add include support
+    
+    Having the ability to include other manifests is a very practical feature
+    to ease the managment of manifest. It allows to divide a manifest into separate
+    files, and create different environment depending  on what we want to release
+    
+    You can have unlimited recursion of include, the manifest configs will simply be concatenated
+    as if it was in a single file.
+    
+    command "repo manifest" will create a single manifest, and not recreate the manifest hierarchy
+    
+    for example:
+    Our developement manifest will look like:
+    
+    <?xml version='1.0' encoding='UTF-8'?>
+    <manifest>
+      <default revision="platform/android/main" remote="intel"/>
+      <include name="server.xml"/> <!-- The Server configuration -->
+      <include name="aosp.xml" />  <!-- All the AOSP projects -->
+      <include name="bsp.xml" />   <!-- The BSP projects that we release in source form -->
+      <include name="bsp-priv.xml" /> <!-- The source of the BSP projects we release in binary form -->
+    </manifest>
+    
+    Our release manifest will look like:
+    
+    <?xml version='1.0' encoding='UTF-8'?>
+    <manifest>
+      <default revision="platform/android/release-ext" remote="intel"/>
+      <include name="server.xml"/> <!-- The Server configuration -->
+      <include name="aosp.xml" />  <!-- All the AOSP projects -->
+      <include name="bsp.xml" />   <!-- The BSP projects that we release in source form -->
+      <include name="bsp-ext.xml" /> <!-- The PREBUILT version of the BSP projects we release in binary form -->
+    </manifest>
+    
+    And it is also easy to create and maintain feature branch with a manifest that looks like:
+    
+    <?xml version='1.0' encoding='UTF-8'?>
+    <manifest>
+      <default revision="feature_branch_foobar" remote="intel"/>
+      <include name="server.xml"/> <!-- The Server configuration -->
+      <include name="aosp.xml" />  <!-- All the AOSP projects -->
+      <include name="bsp.xml" />   <!-- The BSP projects that we release in source form -->
+      <include name="bsp-priv.xml" /> <!-- The source of the BSP projects we release in binary form -->
+    </manifest>
+    
+    Signed-off-by: Brian Harring <brian.harring@intel.com>
+    Signed-off-by: Pierre Tardy <pierre.tardy@intel.com>
+    Change-Id: I833a30d303039e485888768e6b81561b7665e89d
+    Add sync-c option to manifest
+    
+    There are use-cases when fetching all branch is impractical and
+    we really need to fetch only one branch/tag.
+    e.g. there is a large project with binaries and every update of a
+    binary file is put to a separate branch.
+    The whole project history might be too large to allow users fetch it.
+    
+    Add 'sync-c' option to 'project' and 'default' tags to make it possible
+    to configure 'sync-c' behavior at per-project and per-manifest level.
+    
+    Note that currently there is no possibility to revert boolean flag from
+    command line. If 'sync-c' is set in manifest then you cannot make
+    full fetch by providing a repo tool argument.
+    
+    Change-Id: Ie36fe5737304930493740370239403986590f593
+    Refine groups functionality
+    
+    Every project is in group "default".  "-default" does not remove
+    it from this project.  All group names specified in the manifest
+    are positive names as opposed to a mix of negative and positive.
+    
+    Specified groups are resolved in order.  If init is supplied with
+    --groups="group1,-group2", the following describes the project
+    selection when syncing:
+    
+      * all projects in "group1" will be added, and
+      * all projects in "group2" will be removed.
+    
+    Change-Id: I1df3dcdb64bbd4cd80d675f9b2d3becbf721f661
+    Add project annotation handling to repo
+    
+    Allow the optional addition of "annotation" nodes nested under
+    projects.  Each annotation node must have "name" and "value"
+    attributes.  These name/value pairs will be exported into the
+    environment during any forall command, prefixed with "REPO__"
+    
+    In addition, an optional "keep" attribute with case insensitive "true"
+    or "false" values can be included to determine whether the annotation
+    will be exported with 'repo manifest'
+    
+    Change-Id: Icd7540afaae02c958f769ce3d25661aa721a9de8
+    Signed-off-by: James W. Mills <jameswmills@gmail.com>
+    Add manifest groups
+    
+    Allows specifying a list of groups with a -g argument to repo init.
+    The groups act on a group= attribute specified on projects in the
+    manifest.
+    All projects are implicitly labelled with "default" unless they are
+    explicitly labelled "-default".
+    Prefixing a group with "-" removes matching projects from the list
+    of projects to sync.
+    If any non-inverted manifest groups are specified, the default label
+    is ignored.
+    
+    Change-Id: I3a0dd7a93a8a1756205de1d03eee8c00906af0e5
+    Reviewed-on: https://gerrit-review.googlesource.com/34570
+    Reviewed-by: Shawn Pearce <sop@google.com>
+    Tested-by: Shawn Pearce <sop@google.com>
+    sync: Allow -j to have a default in manifest
+    
+    This permits manifest authors to suggest a number of parallel
+    fetch operations against a remote server. For example, Gerrit
+    Code Review servers support queuing of requests and processes
+    them in first-in, first-out order. Running concurrent fetches
+    can utilize multiple CPUs on the Gerrit server, but will also
+    decrease overall operation latency by having the request put
+    into the queue ready to execute as soon as a CPU is free.
+    
+    Change-Id: I3d3904acb6f63516bae4b071c510ad57a2afab18
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Support repo-level pre-upload hook and prep for future hooks.
+    
+    All repo-level hooks are expected to live in a single project at the
+    top level of that project.  The name of the hooks project is provided
+    in the manifest.xml.  The manifest also lists which hooks are enabled
+    to make it obvious if a file somehow failed to sync down (or got
+    deleted).
+    
+    Before running any hook, we will prompt the user to make sure that it
+    is OK.  A user can deny running the hook, allow once, or allow
+    "forever" (until hooks change).  This tries to keep with the git
+    spirit of not automatically running anything on the user's computer
+    that got synced down.  Note that individual repo commands can add
+    always options to avoid these prompts as they see fit (see below for
+    the 'upload' options).
+    
+    When hooks are run, they are loaded into the current interpreter (the
+    one running repo) and their main() function is run.  This mechanism is
+    used (instead of using subprocess) to make it easier to expand to a
+    richer hook interface in the future.  During loading, the
+    interpreter's sys.path is updated to contain the directory containing
+    the hooks so that hooks can be split into multiple files.
+    
+    The upload command has two options that control hook behavior:
+      - no-verify=False, verify=False (DEFAULT):
+        If stdout is a tty, can prompt about running upload hooks if needed.
+        If user denies running hooks, the upload is cancelled.  If stdout is
+        not a tty and we would need to prompt about upload hooks, upload is
+        cancelled.
+      - no-verify=False, verify=True:
+        Always run upload hooks with no prompt.
+      - no-verify=True, verify=False:
+        Never run upload hooks, but upload anyway (AKA bypass hooks).
+      - no-verify=True, verify=True:
+        Invalid
+    
+    Sample bit of manifest.xml code for enabling hooks (assumes you have a
+    project named 'hooks' where hooks are stored):
+      <repo-hooks in-project="hooks" enabled-list="pre-upload" />
+    
+    Sample main() function in pre-upload.py in hooks directory:
+      def main(project_list, **kwargs):
+        print ('These projects will be uploaded: %s' %
+               ', '.join(project_list))
+        print ('I am being a good boy and ignoring anything in kwargs\n'
+               'that I don\'t understand.')
+        print 'I fail 50% of the time.  How flaky.'
+        if random.random() <= .5:
+          raise Exception('Pre-upload hook failed.  Have a nice day.')
+    
+    Change-Id: I5cefa2cd5865c72589263cf8e2f152a43c122f70
+    Added feature to print a <notice> from manifest at the end of a sync.
+    
+    This feature is used to convey information on a when a branch has
+    ceased development or if it is an experimental branch with a few
+    gotchas, etc.
+    
+    You add it to your manifest XML by doing something like this:
+    <manifest>
+      <notice>
+        NOTE TO DEVELOPERS:
+          If you checkin code, you have to pinky-swear that it contains no bugs.
+          Anyone who breaks their promise will have tomatoes thrown at them in the
+          team meeting.  Be sure to bring an extra set of clothes.
+      </notice>
+    
+      <remote ... />
+      ...
+    </manifest>
+    
+    Carriage returns and indentation are relevant for the text in this tag.
+    
+    This feature was requested by Anush Elangovan on the ChromiumOS team.
+    Add a 'smart sync' option to repo sync
+    
+    This option allows the user to specify a manifest server to use when
+    syncing. This manifest server will provide a manifest pegging each
+    project to a known green build. This allows developers to work on a
+    known good tree that is known to build and pass tests, preventing
+    failed builds to hamper productivity.
+    
+    The manifest used is not "sticky" so as to allow subsequent
+    'repo sync' calls to sync to the tip of the tree.
+    
+    Change-Id: Id0a24ece20f5a88034ad364b416a1dd2e394226d
+    manifest: Only display XML help on XML manifest
+    
+    Some of the help text is only related to the XML formatted manifest,
+    so only display that text if that is the current format.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Remove support for the extra <remote> definitions in manifests
+    
+    These aren't that widely used, and actually make it difficult for
+    users to fully mirror a forest of repositories, and then permit
+    someone else to clone off that forest, rather then the original
+    upstream servers.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Correct note about local_manifest.xml capabilities
+    
+    With the <remove-project> element we can remove projects, and
+    fully replace them with a different definition.  So this note
+    is out of date.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Add a 'repo manifest' command whose help is the manifest file format
+    
+    This should make it easier for users to discover the file format
+    on their own, and read about it.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Support <remove-project name="X"> in manifest to remove/replace X
+    
+    The manifest files now permit removing a project so the user can
+    either keep it out of their client, or replace it with a different
+    project using an entirely different configuration.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Add <add-remote to-project="..."> to inject additional remotes
+    
+    This way users can add forks they know about to an existing project
+    that was already declared in the primary manifest.  This is mostly
+    useful with the Linux kernel project, where multiple forks is quite
+    common for the main upstream tree (e.g. Linus' tree), a platform
+    architecture tree (e.g. ARM) and a device specific tree (e.g. the
+    msm7k tree used by Android).
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Add <remote project-name="..."> attribute within projects
+    
+    By setting a project-name on a remote nested within a project forks
+    of a project like the Linux kernel can be easily handled by fetching
+    all relevant forks into the same client side project under different
+    remote names.  Developers can create branches off different remotes
+    using `git checkout --track -b $myname $remote/$branch` and later
+    `repo upload` automatically redirects to the proper fork project
+    in the code review server.
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Add some short documentation about the local manifest
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>
+    Add a basic outline of the repo manifest file format
+    
+    Signed-off-by: Shawn O. Pearce <sop@google.com>

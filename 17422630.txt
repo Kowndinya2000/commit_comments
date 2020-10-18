@@ -1,0 +1,24 @@
+﻿    Initial commit
+    Remove glog dependency
+    Change the aravis dependency name
+    
+    Change to the version 0.6
+    Do not build test cases depending on motor_controller
+    Added dependence of glog library and removed opencv and control/motor_controller
+    Moved the code for auto-exposure to camera-base
+    Added missing thread library for linking!
+    Removed deprecated test programm
+    Some stuff developed
+    First hacked version with auto exposure
+    
+    This version contains hacks to bring auto exposure to the Imaging Source
+    cameras
+    Added ExposureController to recording programm
+    Improved Camera Aravis Test tools
+    
+    - Introduced minimal logging lib
+    - Player is now using new logging lib
+    - Added converter to avi for logfiles
+    First try of a driver implementing the camera_interface
+    Added Testrecorder and Testplayer for Aravis Cams
+    Initial commit

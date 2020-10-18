@@ -1,0 +1,994 @@
+﻿    Update changelog.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    deprecation iteration related content in Archive
+    documentation for version 1.31
+    added changelog file
+    Document lack of support for unusual DWCAs.
+    
+    Closes https://github.com/gbif/gbif-data-validator/issues/56
+    Lock files between processes when extracting.
+    
+    Avoids problem where parallel processes start to sort a file together, and
+    the later process sees a -sorted file and sees an empty archive.
+    delimitedBy and dateFormat are not supported.
+    
+    https://github.com/gbif/dwca-io/issues/42
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Update README.md
+    updated README
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    changed example in the readme for dwca with ext
+    adapt first section of the readme
+    first typo in internal code
+    documentation for version 1.31
+    updated README
+    Update README.md
+    added maven instruction
+    added dwca reading examples
+    Update for sample terms and change artifactId to new dwca-io repository
+    Initial commit
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Use commons-io BOMInputStream instead of our custom one
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    Change allows rowType to be interpreted from colomn header ids. Change reviewd in http://dev.gbif.org/code/cru/CR-GBIFCOM-87
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Keep archive directory structure but flatten single root folder if present
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    Parse delimitedBy attribute in meta.xml
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Change allows rowType to be interpreted from colomn header ids. Change reviewd in http://dev.gbif.org/code/cru/CR-GBIFCOM-87
+    Update to Freemarker 2.3.26, fail with an exception on template errors.
+    
+    Underlying issue for https://github.com/gbif/portal-feedback/issues/1464 —
+    the Term interface in dwc-api has changed to include a Java 8 default
+    implementation, and the DwcTerm no longer overrides this method. Freemarker
+    wasn't picking up the default implementation, see the [Changelog](https://freemarker.apache.org/docs/versions_2_3_26.html).
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    New version of gbif-common resolves problem with missing extension records.
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Supporting functionality to skip extensions that have no core id.
+    Discussed on https://code.google.com/p/darwincore/issues/detail?id=232
+    Committed to SVN as well (with better unit testing here): https://code.google.com/p/darwincore/source/detail?r=1659
+    
+    Reviewed by Markus Döring via Skype, and post svn commit
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    File missing from previous commit (default encodings).
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    fixed Issue #23
+    fixed Issue #23
+    fixed Issue #23
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    File missing from previous commit (default encodings).
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    MetaXMLSaxHandler shall handle blank string as null
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    Use commons-io BOMInputStream instead of our custom one
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    fixed Issue #16 for extensions
+    removed classes available in gbif-common
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Parse delimitedBy attribute in meta.xml
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Parse delimitedBy attribute in meta.xml
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Missing files for testcase.
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Missing files for testcase.
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    Update deprecated term name
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Adding a plazi archive test
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    fixed getDefaultValues on ArchiveFile
+    fix issue in getDefaultValues()
+    related to dwca fields with no index AND no default
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    fixed getDefaultValues on ArchiveFile
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Additional test for backslash escapes.
+    
+    Test for https://github.com/gbif/portal-feedback/issues/1358
+    Additional test for backslash escapes.
+    
+    Test for https://github.com/gbif/portal-feedback/issues/1358
+    Additional test for backslash escapes.
+    
+    Test for https://github.com/gbif/portal-feedback/issues/1358
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Move iterator static methods to ArchiveFile.
+    
+    This seems more in line with OO patters.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    File missing from previous commit (default encodings).
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    split ArchiveFactory to prepare for Issue #35
+    MetaXMLSaxHandler shall handle blank string as null
+    fixed Issue #16 for extensions
+    removed classes available in gbif-common
+    Add method to add constituent data to dwca writer
+    new MetaDescriptor test class
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    Fix https://github.com/gbif/dwca-io/issues/15 and add an xml validator utility class
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    packages refactoring
+    Change test to allow different sort orders
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Parse delimitedBy attribute in meta.xml
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Rewrite getHeader with a suitable data structure.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/41
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    fixed getDefaultValues on ArchiveFile
+    added getDefaultValues() to ArchiveFile
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    Change allows rowType to be interpreted from colomn header ids. Change reviewd in http://dev.gbif.org/code/cru/CR-GBIFCOM-87
+    packages refactoring
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Refactor static iterators.
+    
+    Remove from DwcFiles, and move them to the classes they create iterators for.
+    
+    Also move the preparation methods to those classes.
+    
+    Remove NormalizedDwcArchive, as this is an implementation detail that needn't
+    be exposed to users.
+    Move iterator static methods to ArchiveFile.
+    
+    This seems more in line with OO patters.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Archive class to do validation.
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    adapt first section of the readme
+    first typo in internal code
+    move BOMInputStream inside try-with-resource
+    fixed issue with normalization check
+    allow DwcFiles class to reuse sorted files
+    Dwc reader with multiline support (see DwcFiles)
+    to compile: requires gbif-common jackson-csv branch
+    linked to Issue #26
+    Close lock file after lock is no longer needed.
+    
+    Fix test to work for multiple processes.
+    Lock files between processes when extracting.
+    
+    Avoids problem where parallel processes start to sort a file together, and
+    the later process sees a -sorted file and sees an empty archive.
+    Allow setting of metadata as an inputstream and keep metadata location in archive meta.xml
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Spelling and whitespace.
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    MetaXMLSaxHandler shall handle blank string as null
+    Allow to map core id in stream writer
+    Adding a new DwcaStreamWriter to write data files ones by one, not records
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use StarRecord interface in favor over impl
+    Use the term class throughout
+    Adding a plazi archive test
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use StarRecord interface in favor over impl
+    Use the term class throughout
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use StarRecord interface in favor over impl
+    Use the term class throughout
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    use the CSVReader from gbif-common
+    The CSVReader is now located at
+    org.gbif.utils.file.csv.CSVReader;
+    packages refactoring
+    Fix DC term nullproblem https://github.com/gbif/dwca-reader/issues/1
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Allow setting of metadata as an inputstream and keep metadata location in archive meta.xml
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    MetaXMLSaxHandler shall handle blank string as null
+    Add method to add null values easily
+    packages refactoring
+    Use StarRecord interface in favor over impl
+    Use the term class throughout
+    allow add default value even if column idx exists
+    fixed multiple default values issue
+    fixed variables name and comments
+    misc
+    allow default value definition
+    add possibility to set Term on coreId
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Fix for moved unitQualifier term
+    Add the 2 new dwc terms to DarwinCore/TaxonRecord
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Use the term class throughout
+    Update to latest dwc api snapshot with new terms, remove clear() methods in favor of creating new record instances. Fix bug that did not honor the replaceNull flag in the record impl and adjust test case
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    added fromLocation to DwcFiles
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    packages refactoring
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    packages refactoring
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    fixed Issue #23
+    fixed Issue #23
+    fixed Issue #23
+    Additional test for backslash escapes.
+    
+    Test for https://github.com/gbif/portal-feedback/issues/1358
+    Removing CSVReaderHelper.
+    Remove last bits of CSVReader.
+    
+    Removed tests that have already been moved to gbif-common.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/31 (though it was 99% done).
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Rewrite getHeader with a suitable data structure.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/41
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    DWCA schema says the default is UTF-8, if the encoding isn't provided.
+    New version of gbif-common resolves problem with missing extension records.
+    Tests for existing basic validation done when using ArchiveFactory.
+    
+    Then (regarding https://github.com/gbif/dwca-io/issues/43) we can move this
+    out of ArchiveFactory.
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    added test to cover Issue #35
+    fixed Issue #37
+    It also includes code for Issue #35
+    work-in-progress but allows to close Issue #31
+    split ArchiveFactory to prepare for Issue #35
+    issue #27 : Build using Java-9
+    
+    Signed-off-by: Peter Ansell <p_ansell@yahoo.com>
+    renamed CSVReaderFactory to helper
+    related to issue #24
+    Fixed issue #25
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    use the CSVReader from gbif-common
+    The CSVReader is now located at
+    org.gbif.utils.file.csv.CSVReader;
+    Use commons-io BOMInputStream instead of our custom one
+    Use empty tmp dirs for tests
+    Keep archive directory structure but flatten single root folder if present
+    Allow single data files with .tab suffix (example is GNUB) and cleanup of open archive method in factory
+    Change allows rowType to be interpreted from colomn header ids. Change reviewd in http://dev.gbif.org/code/cru/CR-GBIFCOM-87
+    packages refactoring
+    Update for sample terms and change artifactId to new dwca-io repository
+    Use StarRecord interface in favor over impl
+    Use the term class throughout
+    Check if dwca file actually exists. Fixes POR-106
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Fix mapping of core id term in archives without meta.xml
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Parse delimitedBy attribute in meta.xml
+    Supporting functionality to skip extensions that have no core id.
+    Discussed on https://code.google.com/p/darwincore/issues/detail?id=232
+    Committed to SVN as well (with better unit testing here): https://code.google.com/p/darwincore/source/detail?r=1659
+    
+    Reviewed by Markus Döring via Skype, and post svn commit
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    fixed Issue #16 for extensions
+    removed classes available in gbif-common
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    Fix https://github.com/gbif/dwca-io/issues/15 and add an xml validator utility class
+    delimitedBy added to support arrays/lists as values
+    http://dev.gbif.org/issues/browse/POR-2262
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Close lock file after lock is no longer needed.
+    
+    Fix test to work for multiple processes.
+    Lock files between processes when extracting.
+    
+    Avoids problem where parallel processes start to sort a file together, and
+    the later process sees a -sorted file and sees an empty archive.
+    Case-insensitive sort so it won't depend on locale.
+    Remove last bits of CSVReader.
+    
+    Removed tests that have already been moved to gbif-common.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/31 (though it was 99% done).
+    Refactor static iterators.
+    
+    Remove from DwcFiles, and move them to the classes they create iterators for.
+    
+    Also move the preparation methods to those classes.
+    
+    Remove NormalizedDwcArchive, as this is an implementation detail that needn't
+    be exposed to users.
+    Move iterator static methods to ArchiveFile.
+    
+    This seems more in line with OO patters.
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Rewrite getHeader with a suitable data structure.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/41
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Archive class to do validation.
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    related to Issue #41
+    keep and expose raw ArchiveField
+    will be used by the validator to detect term used more than once
+    fixed Issue #37
+    It also includes code for Issue #35
+    MetaXMLSaxHandler shall handle blank string as null
+    issue #29 : Add default values from Darwin Core Text to ArchiveFile
+    
+    Signed-off-by: Peter Ansell <p_ansell@yahoo.com>
+    fixed getDefaultValues on ArchiveFile
+    fix issue in getDefaultValues()
+    related to dwca fields with no index AND no default
+    renamed CSVReaderFactory to helper
+    related to issue #24
+    added getDefaultValues() to ArchiveFile
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    avoid NoSuchElementException if no location exists
+    completed refactoring
+    CSVReaderFactory moved to org.gbif.utils.file.csv.CSVReaderFactory (gbif-common)
+    kept 2 methods backward compatibility
+    use the CSVReader from gbif-common
+    The CSVReader is now located at
+    org.gbif.utils.file.csv.CSVReader;
+    packages refactoring
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Use the term class throughout
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Add note about using 𐃍 and so on in core ids.
+    
+    This is unlikely to happen, so I won't fix it or even detect it; just
+    document it.
+    
+    Relevant to https://github.com/gbif/dwca-io/issues/42
+    Refactor static iterators.
+    
+    Remove from DwcFiles, and move them to the classes they create iterators for.
+    
+    Also move the preparation methods to those classes.
+    
+    Remove NormalizedDwcArchive, as this is an implementation detail that needn't
+    be exposed to users.
+    Spelling.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Archive class to do validation.
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    Remove DarwinCoreRecord and DarwinCoreTaxon.
+    
+    These have not been kept up to date with changes in the standard.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/44.
+    fixed Issue #37
+    It also includes code for Issue #35
+    deprecation iteration related content in Archive
+    move BOMInputStream inside try-with-resource
+    added getHeader():Term[] to ArchiveFile
+    some cleanup
+    Add method to add constituent data to dwca writer
+    use the CSVReader from gbif-common
+    The CSVReader is now located at
+    org.gbif.utils.file.csv.CSVReader;
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    packages refactoring
+    Use StarRecord interface in favor over impl
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Use the term class throughout
+    Use GBIF API Dataset instead of metadata profile library
+    Fix DC term nullproblem https://github.com/gbif/dwca-reader/issues/1
+    Update to latest dwc api snapshot with new terms, remove clear() methods in favor of creating new record instances. Fix bug that did not honor the replaceNull flag in the record impl and adjust test case
+    Fix extension id NPE discovered in pensoft archives. Adds a new but ignored test to show issue POR-2464
+    Update DarwinCoreTaxon and DarwinCoreRecord properties to latest dwc as described in http://dev.gbif.org/issues/browse/POR-2395
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Spelling.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use GBIF API Dataset instead of metadata profile library
+    Dwc reader with multiline support (see DwcFiles)
+    to compile: requires gbif-common jackson-csv branch
+    linked to Issue #26
+    Lock files between processes when extracting.
+    
+    Avoids problem where parallel processes start to sort a file together, and
+    the later process sees a -sorted file and sees an empty archive.
+    Spelling.
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    New version of gbif-common resolves problem with missing extension records.
+    Dwc reader with multiline support (see DwcFiles)
+    to compile: requires gbif-common jackson-csv branch
+    linked to Issue #26
+    Add method to skip validation, for use by the validator.
+    Refactor static iterators.
+    
+    Remove from DwcFiles, and move them to the classes they create iterators for.
+    
+    Also move the preparation methods to those classes.
+    
+    Remove NormalizedDwcArchive, as this is an implementation detail that needn't
+    be exposed to users.
+    Move iterator static methods to ArchiveFile.
+    
+    This seems more in line with OO patters.
+    Remove old RecordIterator, replace with DwcRecordIterator.
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    added fromLocation to DwcFiles
+    ensure we can not prepare a Archive with no core
+    provides default prepareArchive + comments
+    adapt first section of the readme
+    first typo in internal code
+    fixed issue with normalization check
+    MetaXMLSaxHandler shall handle blank string as null
+    allow DwcFiles class to reuse sorted files
+    make use of lineToSkipBeforeHeaderLine
+    Dwc reader with multiline support (see DwcFiles)
+    to compile: requires gbif-common jackson-csv branch
+    linked to Issue #26
+    Allow setting of metadata as an inputstream and keep metadata location in archive meta.xml
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    Fix DwcaWriter multi value delimiters method
+    Add DwcaWriter methods to deal with multi value delimiters
+    Adding a new DwcaStreamWriter to write data files ones by one, not records
+    Add method to add constituent data to dwca writer
+    Add method to add null values easily
+    Add convenience methods to write other values than strings
+    Add methods to DwcaWriter to retrieve the row type column mappings
+    simple reorganize imports
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    packages refactoring
+    Use the term class throughout
+    Use GBIF API Dataset instead of metadata profile library
+    allow add default value even if column idx exists
+    fixed multiple default values issue
+    fixed variables name and comments
+    misc
+    allow default value definition
+    add possibility to set Term on coreId
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    fixed Issue #37
+    It also includes code for Issue #35
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Allow setting of metadata as an inputstream and keep metadata location in archive meta.xml
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Spelling and whitespace.
+    Remove GBIF Registry Metadata dependency; give metadata as a string rather than EML.
+    
+    Many fewer dependencies now: https://github.com/gbif/dwca-io/issues/39
+    Add coreid term to header row if requested
+    Allow to map core id in stream writer
+    Expose write callbackhandler for DwcaStreamWriter
+    Adding a new DwcaStreamWriter to write data files ones by one, not records
+    Update to Freemarker 2.3.26, fail with an exception on template errors.
+    
+    Underlying issue for https://github.com/gbif/portal-feedback/issues/1464 —
+    the Term interface in dwc-api has changed to include a Java 8 default
+    implementation, and the DwcTerm no longer overrides this method. Freemarker
+    wasn't picking up the default implementation, see the [Changelog](https://freemarker.apache.org/docs/versions_2_3_26.html).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    fixed Issue #38
+    Adding a new DwcaStreamWriter to write data files ones by one, not records
+    packages refactoring
+    Use GBIF API Dataset instead of metadata profile library
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Spelling.
+    Rewrite getHeader with a suitable data structure.
+    
+    Resolves https://github.com/gbif/dwca-io/issues/41
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    fixed Issue #16
+    Vocabulary property missing on ArchiveField +
+    some housekeeping
+    added 'vocabulary' to  ArchiveField
+    packages refactoring
+    delimitedBy added to support arrays/lists as values
+    http://dev.gbif.org/issues/browse/POR-2262
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Add note about using 𐃍 and so on in core ids.
+    
+    This is unlikely to happen, so I won't fix it or even detect it; just
+    document it.
+    
+    Relevant to https://github.com/gbif/dwca-io/issues/42
+    Add structural validation to DwcFiles, so ArchiveFactory can be removed.
+    
+    Remove support for EML-only files (they don't pass structural validation).
+    
+    Keep Archive iterable (WIP).
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    adapt first section of the readme
+    first typo in internal code
+    Dwc reader with multiline support (see DwcFiles)
+    to compile: requires gbif-common jackson-csv branch
+    linked to Issue #26
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use GBIF API Dataset instead of metadata profile library
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    Adding a new DwcaStreamWriter to write data files ones by one, not records
+    Adds a constructor for existing writers
+    packages refactoring
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Spelling.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    added DwcFiles.from functions
+    moved related tests from ArchiveFactoryTest to InternalDwcFileFactoryTest
+    added fromLocation to DwcFiles
+    ensure we can not prepare a Archive with no core
+    added test to cover Issue #35
+    fixed Issue #37
+    It also includes code for Issue #35
+    work-in-progress but allows to close Issue #31
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use the term class throughout
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    MetaXMLSaxHandler shall handle blank string as null
+    packages refactoring
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    packages refactoring
+    Use the term class throughout
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Lock files between processes when extracting.
+    
+    Avoids problem where parallel processes start to sort a file together, and
+    the later process sees a -sorted file and sees an empty archive.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Fixes #20 : Return false for hasExtension if no records attached
+    
+    Previous behaviour made it possible for the key to exist without records attached, and hasExtension to return true, which has made iteration and control flow debugging confusing compared to typical "hasXYZ" methods.
+    
+    Signed-off-by: Peter Ansell <p_ansell@yahoo.com>
+    packages refactoring
+    Use the term class throughout
+    Add convenience hasExtension methods
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Spelling.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    packages refactoring
+    Extract value cleaning methods into a new utils class and implement the html entity replacement as per POR-155
+    Use the term class throughout
+    Update to latest dwc api snapshot with new terms, remove clear() methods in favor of creating new record instances. Fix bug that did not honor the replaceNull flag in the record impl and adjust test case
+    Moved code from google code darwincore site and updated source and tests to work with the latest dwc-api and github
+    Spelling.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    added test to cover Issue #35
+    fixed Issue #37
+    It also includes code for Issue #35
+    split ArchiveFactory to prepare for Issue #35
+    Spelling.
+    Change packages (just moving, no code changes.)
+    
+    Almost resolves https://github.com/gbif/dwca-io/issues/45
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    split ArchiveFactory to prepare for Issue #35
+    MetaXMLSaxHandler shall handle blank string as null
+    Fixed issue #25
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    fixed Issue #23
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    Spelling.
+    fixed Issue #23
+    fixed Issue #23
+    Implement new Term methods
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    fixed Issue #23
+    Adapt dwca-io to latest dwc-api with a term factory that differs between property and class terms
+    fixed Issue #23
+    fixed Issue #23
+    fixed Issue #23
+    fixed Issue #23
+    fixed Issue #23
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    fixed Issue #23
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    fixed Issue #23
+    Refactoring; just moving everything into org.gbif.dwc and removing unused…
+    
+    classes.
+    fixed Issue #23

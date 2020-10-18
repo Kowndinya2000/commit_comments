@@ -1,0 +1,25 @@
+﻿    ROCK_USE_CXX11 instead of adding obsolete -std=c++0x
+    update error computation.
+    moving the code the default rock library structure
+    Added class for Target point calculation
+    moved trajectory follower from orogen module into own class
+    Add TrajectoryControllerConfig and adapt to copy header into
+    include/trajectory_follower
+    prints if controller fails instantaneous stability
+    renaming files according to project guidelines
+    link against base libraries
+    Do not try to install header that was moved to base
+    remove obsolete file that was moved to base
+    name change
+    removed renamed .hpp to .h
+    initial commit
+    moved controller code into own files
+    Adapt to use base-logging
+    add contoller superclass. detect invalid slam pose.
+    prepare holonomic trajectory following.
+    add samson controller.
+    use current curve parameter for distance error computation in CONTROLLER_NO_ORIENTATION case.
+    first draft of rework
+    moving the code the default rock library structure
+    add very simple vis for SubTrajectory
+    initial vizkit3d plugin code

@@ -1,0 +1,2271 @@
+﻿    lava-v2-submit-jobs.py: remove --server option and use labs.ini
+    
+    Remove the --server option and add the LAVA API URLs to labs.ini
+    instead.  The --lab option is already telling the script which lab to
+    use, it now looks up the API URL from the file.
+    
+    Note: This is especially useful for bisection jobs as the URL is not
+          available of the boot data, only the lab name is.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    README: add section on testing a board
+    
+    This adds a section on testing a board before opening a Pull Request and the
+    reasons behind these requirements.
+    
+    Signed-off-by: Quentin Schulz <quentin.schulz@free-electrons.com>
+    README: update device dictionary presentation
+    
+    This updates the device dictionary presentation because of the moving of device
+    dictionaries to lib/device_map.py and the adding of kernel_defconfig_blacklist
+    array.
+    
+    Signed-off-by: Quentin Schulz <quentin.schulz@free-electrons.com>
+    README: more thorough explanation of templates
+    
+    This explains more thoroughly where are the templates and when they are filled.
+    
+    Signed-off-by: Quentin Schulz <quentin.schulz@free-electrons.com>
+    README: add jobs parameter
+    
+    This adds --jobs parameter to lava-job-runner.py and
+    lava-kernel-ci-job-creator.py helpers and explains its role.
+    
+    Signed-off-by: Quentin Schulz <quentin.schulz@free-electrons.com>
+    README: add chapters on how to add boards
+    
+    This adds chapters on how to configure LAVA so KernelCI can interact
+    with it, how you should name your device types in LAVA, how to add a
+    board to KernelCI and what is the process to integrate your lab into
+    KernelCI.
+    
+    Signed-off-by: Quentin Schulz <quentin.schulz@free-electrons.com>
+    README: add examples for invocation
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    Initial copy from lava-hacks
+    
+    lava-hacks contained an implementation of following the output from a
+    specific lava job, both with a curses interface, and through ordinary
+    stdout output.
+    This has been imported into this repository to minimize code
+    duplication, and reuse common elements.
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    lava-v2-jobs-from-api.py: use lib.test_configs
+    
+    Update lava-v2-jobs-from-api.py to use lib.test_configs and load the
+    test configuration from YAML instead of importing lib.device_map.
+    This includes removing any reference to any test plan, rootfs, kernel
+    version, defconfig etc... to only keep the logic in this script.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: use the Debian images for the usb and sleep test plans
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    lava-v2-jobs-from-api.py: fix buildroot URL for boot tests
+    
+    Fix logic in determining the initrd to only use the Debian Stretch
+    Tests rootfs for v4l2 and igt test plans.  The bug caused all test
+    plans to use it except kselftest.
+    
+    Also remove superfluous '/' in the Debian rootfs URLs.
+    
+    Fixes: e221ae4b5958 ("Add IGT test plan")
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add cros-ec test plan
+    
+    Initial test plan that checks for /dev/cros_ec
+    This allows to know if the driver probe has run successfully and the
+    kernel has been able to establish communication with the embedded controller.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add IGT test plan
+    
+    Initial test plan running some of the binaries from the test suite.
+    This test aims to cover the DRM kernel-user interface and is not specific
+    to Intel graphics.
+    This test plan uses /dev/kmsg for LAVA test signals, this feature requires
+    a LAVA instance with this patch https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    lava-v2-jobs-from-api: use newer buildroot images
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    lava-v2-jobs-from-api.py: use debian rootfs for v4l2 tests
+    
+    Add both debian rootfs to be used: stretch and stretchtests
+    the v4l2 test plan needs the test suite included in the stretchtests
+    rootfs images.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Pass the image shell prompt to the templates
+    Add socionext synquacer devbox devices
+    
+    For ARM64, add a platform to device_map for devices that do not
+    use a DTB.
+    lava-v2-jobs-from-api.py: add --builds to read local JSON file
+    
+    Add the --builds option to read a local JSON file containing the
+    builds meta-data rather than polling the KernelCI API.  This is
+    especially useful for builds and boots that are not being stored in
+    the backend, such as bisection iterations which use many unique builds
+    that get booted only once.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: add callback command line options
+    
+    Add some command line options that are needed to generate LAVA jobs
+    with alternative callbacks.
+    
+    * add --callback-url to override the default callback base URL with an
+      arbitrary one, the KernelCI backend API URL is used by default
+    
+    * add --callback-dataset to choose the dataset sent in the callback
+      payload, the default being 'all'
+    
+    * add --calback-type to choose whether to use the bare 'custom' URL or
+      append the extra 'kernelci' path and query needed by the KernelCI
+      (defaults to the latter so this remains backwards compatible)
+    
+    * move code that deals with the callback template variables into a
+      separate function
+    
+    * update kernel-ci-base.jinja2 to set the url and dataset accordingly
+      when these options are used
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: fix all pep8 errors
+    
+    Wrap or shorten long lines, add missing blank lines, fix deprecated
+    syntax to make pep8 pass.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: split function to generate jobs
+    
+    Move the logic to generate the LAVA jobs based on the builds found
+    outside of the main function to improve readability.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: consolidate code to write out jobs
+    
+    Move all the logic to write the job files into a separate function to
+    improve readability and maintenance.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: consolidate iteration over all the devices
+    
+    Move the loop over all the device map devices outside of the main
+    fuction to improve readability.  Avoid passing the `dtb' variable
+    around by putting it in opts instead.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: split function to validate a job
+    
+    Move the logic to validate a job combination outside of the main
+    function to improve readability.  Also wrap long lines and use the
+    print function.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: split function to get job params
+    
+    Move the logic to get all the template parameters for a single job
+    outside of the main function to improve readability.  Pass several
+    parameters in an opts dictionary to reduce the number of variables
+    involved.  Also wrap long lines and use the print and join functions.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: reduce indentation
+    
+    Reduce indentation of the block generating the job template paramters
+    to improve readability by checking for missing kernel_image first.
+    The code within the block is unchanged in this patch.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: split function to get builds
+    
+    Move the logic to get the list of builds outside of the main function
+    to make the code more readable.  Also get all the parameters from the
+    config object rather than mixing config and args.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add LKFT lab, remove boot-be plan
+    
+    - Support tree#branch boot whitelisting for LKFT lab
+    lava-v2-jobs-from-api.py: drop _rootfs:nfs suffix
+    
+    Drop the "_rootfs:nfs" suffix from the device types when running
+    boot-nfs test plan.  This was a hack to tell NFS boots from ramdisk
+    ones and it causes issues since they're not real device type names.
+    
+    Note: Now that only "boot" test plan results are being pushed to the
+    test callback, the boot-nfs results are not treated as regular boots
+    but tests.  So the ramdisk and NFS boot results won't be mixed up any
+    more, the test plan name can be used to differentiate them.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: print exception error from test config
+    
+    If an exception is raised while loading the test plan config, print
+    the actual error message so the issue in the file can be fixed.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: add --defconfig_full option for single defconfig
+    
+    Add a --defconfig_full option to further filter the builds.  This is
+    especially useful for bisection jobs which are targeting a single
+    build and boot combination.  This should be a full defconfig string
+    such as "defconfig+CONFIG_KASAN=y".
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: remove noisy log messages
+    
+    Remove noisy log messages about existing device types in the
+    device_map that don't match the --targets argument.  This is not
+    useful and fills up the log when generating boot jobs for only one
+    device type.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add simple plan to atom330
+    Make all plans != boot use the test callback
+    Fix rpi3, blacklists on v2, and dont boot test kselftest configs
+    
+    The rpi3 has been blacklisted to as many old kernels as I could
+    find, and the console setting is now overriden using context.
+    V2 blacklisting was not working, it was being checked against the
+    tree name not git describe.
+    And do not boot test kselftest config.
+    Support blacklisting labs per device-type
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    lava-v2-jobs-from-api: add arch_blacklist
+    
+    Some ARM boards may boot both ARM32 and ARM64 kernels, so a given board
+    may have a DTB build for both ARM32 and ARM64.
+    
+    However, these platforms but they require very recent u-boot, and some
+    tender care.  For cases where that care has not been given, the board
+    will only boot one or the other, depending on the u-boot support.
+    
+    Therefore, we need a way to blacklist by arch so only known working
+    configurations can be generated.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Move callback boot results to lava/boot
+    Make test result callbacks different from boot reports
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    lava-v2-jobs-from-api: Check storage parameter (#10)
+    
+    Check if storage parameter is provided or raise an exception
+    
+    Fixes: 599462f9b14f lava-v2-jobs-from-api: Require storage parameter (#9)
+    Signed-off-by: Loys Ollivier <lollivier@baylibre.com>
+    Add platform.mach to the LAVA v2 jobs definition (#11)
+    
+    Add the SoC type as platform.mach taken from the device_map to the
+    LAVA v2 jobs definition.  This can then be used in the KernelCI
+    backend as the SoC name.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api: Require storage parameter (#9)
+    
+    Storage parameter is required using lava-v2-jobs-from-api.py
+    to generate proper yaml job files, require it in the command
+    line parser
+    
+    Fixes: a9dc7f3012a5 KernelCI staging 20170621 (#91)
+    Signed-off-by: Loys Ollivier <lollivier@baylibre.com>
+    v2: pass a defconfig count to the jobs script, and use that count
+    to retry up to 10 times until the API returns enough builds
+    add defconfig_whitelist, use for QEMU jobs
+    
+    We only need one(ish) QEMU per arch, so add a whitelist
+    and boot only the base defconfigs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Stop booting 64 bit x86 on 32bit devices
+    
+    Fixup some code flow that was making the dtb list bigger with every
+    plan on the command line. Makes the job create script run faster.
+    Remove v2 template for "kvm" device types, replaced by qemu
+    
+    Add a platform.name to the metadata
+    Enable more platforms for kselftest
+    lava-v2-jobs-from-api.py: add qemu type and do not use legacy aarch64
+    
+    With LAVA v2 jobs, the qemu device type can be used with any supported
+    architecture.  So there is no need for arch-specific qemu_* device
+    types.
+    
+    * add a generic qemu device type to the device_map which can only be
+      used to generate LAVA v2 jobs
+    
+    * remove the LAVA v2 template from the legacy qemu_aarch64 device type
+      as this is now covered by qemu instead
+    
+    * always include the qemu device type for arm, arm64 and x86 platforms
+      and when using a standard defconfig
+    
+    * add missing context in qemu-generic-boot-template.jinja2 to enable
+      the 3 architectures to run with qemu
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    simplify import statements with device_map
+    
+    Import device_map directly as it is now available in lib.  Also
+    consolidate other lib imports.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: simplify device_type in templates
+    
+    Instead of passing the device dictionary from the device_map to the
+    template, create a device_type variable and pass it directly.
+    
+    This also avoids making run-time changes to the global device_map
+    dictionary while setting kvm device type to qemu, which could cause
+    some obscure bugs.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: use response.raise_for_status
+    
+    Use the standard response.raise_for_status method to raise an
+    exception if there is an HTTP error in the response.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: use urllib.urlencode to encode URL params
+    
+    Use the urllib.urlencode method to "percent-encode" the API URL and
+    avoid potential issues with special characters in particular.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: refactor INITRD_URL and NFSROOTFS_URL
+    
+    Instead of duplicating all the URLs, define a list of ARCHS and
+    strings where the arch gets replaced.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: add git_url to the meta-data
+    
+    Add the git_url to the jobs meta-data so that the KernelCI front-end
+    can provide links to the kernel binaries.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: reformat job dict with one item per line
+    
+    Reformat the 'job' dictionary with only one item per line for
+    readability, with no functional change.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add LGPL v2.1+ headers in Python scripts and full license in COPYING
+    
+    Update all the Python scripts with a header listing the shared
+    copyrights, authors and a notice to distribute the code under LGPL
+    v2.1 or later.  Also add the full license text in COPYING.
+    
+    Note: Some scripts were already in GPLv2 so they remain untouched.
+    Also, log2html.py is a temporary local copy - see lava-report.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Support changing the callback token name
+    KernelCI staging 20170621 (#91)
+    
+    * lava-v2-jobs-from-api.py: enable 'api' and 'storage' in the config file
+    
+    * allow the "api" and "storage" configs to be read from the config
+      file, the command line options still have the priority
+    
+    * remove the defaults for "api" and "storage" as it's better to have
+      them defined explicitly by the caller
+    
+    * fix help message for the --config and --section options
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * Add jenkins scripts for lava boots
+    
+    * Use STORAGE and API from environment for lava-boot-v1
+    
+    * Add --callback and --lab options to v2 job creator to add the notify block
+    
+    In lava-v2-jobs-from-api.py:
+    
+      * add --callback option to enable a callback in the LAVA job
+      * add --lab option to provide the lab name
+      * use the lab name as a default value for --jobs when not provided
+      * check that required options are provided
+    
+    In lava-v2-submit.py:
+    
+      * remove --timeout when submitting jobs
+      * make --jobs a required option
+    
+    In lava-boot-v2.sh:
+    
+      * add --lab options in lava-boot-v2.sh when calling
+        lava-v2-jobs-from-api.py
+    
+    * lib: import device_map directly into lib
+    
+    This is to make importing the device map less confusing.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-submit-jobs: minor code clean-up
+    
+    * add --section option, used when reading the LAVA config file
+    
+    * rename job_map as JOBS to make it clear it's a module-wide object
+    
+    * wrap long lines and clean up command line help messages
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-jobs-from-api.py: improve print message with number of builds
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Fix the lava job name
+    Fix the storage url for v2 jobs
+    Update lava-ci scripts and templates to include branch support
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    Improve reactobus job parser to submit results to KCI API (#66)
+    
+    - add more devices
+    - add sample lab config file
+    - tweak templates to use initrd url from script
+    
+    W.I.P.
+    LAVA V2 Initial Job Support
+    
+    Job creation and submission is now working. There will need to be *lots* of templates added in future but this gets us started. Results are not being recorded yet but there is an example config/script to show how this can be done.
+    
+    lava-v2-jobs-from-api.py:
+    generates LAVA v2 jobs by making requests to the KCI API.
+    
+    lava-v2-submit-jobs.py:
+    Submits LAVA v2 jobs to a lab if a pipeline device exists that matches the requested device_type.
+    
+    reactobus-kernel-ci-config.yaml:
+    Configuration for reactobus (https://github.com/ivoire/ReactOBus) which will be the daemon waiting for ZMQ notifications that the job has completed
+    
+    reactobus-job-parser.py:
+    Basic beginnings of a script which is executed by reactobus, to parse the ZMQ response and eventually update the KCI API with the result.
+    
+    Add some initial templates for qemu/apq8016-sbc devices.
+    Add gitreview support
+    
+    Change-Id: Ie36ccebf59ad7f9833e85ff315082cda98628f75
+    push-bisection-results.py: remove broken import of lib.device_map
+    
+    Remove import of lib.device_map in push-bisection-results.py which
+    wasn't actually used anywhere in the code.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    push-bisection-results.py: fix send_to parameter
+    
+    Fix the send_to parameter sent to the backed in JSON by splitting the
+    whitespace-separated list with the recipients' addresses.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Fixes: 970690d95e56 ("Add push-bisection-results.py")
+    Add push-bisection-results.py
+    
+    Add push-bisection-results.py to call at the end of a bisection and
+    push the bisection log and meta-data to the KernelCI backend API.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: return error if no jobs to submit
+    
+    Having no job to submit should be treated as an error and reported to
+    the caller which can then decide how to handle the situation.  The
+    expectation is that this script will be called when some jobs are
+    supposed to be run.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add LKFT lab, remove boot-be plan
+    
+    - Support tree#branch boot whitelisting for LKFT lab
+    lava-v2-submit-jobs.py: remove default value for --submitted
+    
+    In the general case when jobs are submitted and do not need to be
+    tracked with a JSON file, the --submitted option is not used.  So
+    remove the default value as otherwise it is always defined.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: fix error handling
+    
+    Fix propagation of errors and set the exit code accordingly.  If any
+    job failed to be submitted then an error is reported (return code 1).
+    If no jobs were found to be submitted, no error is reported.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: remove --server option and use labs.ini
+    
+    Remove the --server option and add the LAVA API URLs to labs.ini
+    instead.  The --lab option is already telling the script which lab to
+    use, it now looks up the API URL from the file.
+    
+    Note: This is especially useful for bisection jobs as the URL is not
+          available of the boot data, only the lab name is.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: add --submitted and --lab to save submitted jobs
+    
+    This is to let another script know about the LAVA v2 jobs in progress.
+    
+    * add --submitted option to provide a path where to save a JSON file
+      with the LAVA job numbers and KernelCI job names
+    
+    * keep LAVA job number (job_id) in SUBMITTED to then save them in the
+      output JSON file
+    
+    * add --lab option to provide the name of the LAVA lab where the jobs
+      were submitted and store it as well in the output JSON file, along
+      with the start time
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: use yaml.safe_load instead of yaml.load
+    
+    Use yaml.safe_load to avoid potential security issues, as documented:
+    
+      http://pyyaml.org/wiki/PyYAMLDocumentation#LoadingYAML
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add LGPL v2.1+ headers in Python scripts and full license in COPYING
+    
+    Update all the Python scripts with a header listing the shared
+    copyrights, authors and a notice to distribute the code under LGPL
+    v2.1 or later.  Also add the full license text in COPYING.
+    
+    Note: Some scripts were already in GPLv2 so they remain untouched.
+    Also, log2html.py is a temporary local copy - see lava-report.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    KernelCI staging 20170621 (#91)
+    
+    * lava-v2-jobs-from-api.py: enable 'api' and 'storage' in the config file
+    
+    * allow the "api" and "storage" configs to be read from the config
+      file, the command line options still have the priority
+    
+    * remove the defaults for "api" and "storage" as it's better to have
+      them defined explicitly by the caller
+    
+    * fix help message for the --config and --section options
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * Add jenkins scripts for lava boots
+    
+    * Use STORAGE and API from environment for lava-boot-v1
+    
+    * Add --callback and --lab options to v2 job creator to add the notify block
+    
+    In lava-v2-jobs-from-api.py:
+    
+      * add --callback option to enable a callback in the LAVA job
+      * add --lab option to provide the lab name
+      * use the lab name as a default value for --jobs when not provided
+      * check that required options are provided
+    
+    In lava-v2-submit.py:
+    
+      * remove --timeout when submitting jobs
+      * make --jobs a required option
+    
+    In lava-boot-v2.sh:
+    
+      * add --lab options in lava-boot-v2.sh when calling
+        lava-v2-jobs-from-api.py
+    
+    * lib: import device_map directly into lib
+    
+    This is to make importing the device map less confusing.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-submit-jobs: minor code clean-up
+    
+    * add --section option, used when reading the LAVA config file
+    
+    * rename job_map as JOBS to make it clear it's a module-wide object
+    
+    * wrap long lines and clean up command line help messages
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-jobs-from-api.py: improve print message with number of builds
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Only connect to LAVA if there are jobs to submit
+    Fix the v2 submit script from submitting pipeline jobs to labs
+    that had matching device-types but no pipeline devices
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    LAVA V2 Initial Job Support
+    
+    Job creation and submission is now working. There will need to be *lots* of templates added in future but this gets us started. Results are not being recorded yet but there is an example config/script to show how this can be done.
+    
+    lava-v2-jobs-from-api.py:
+    generates LAVA v2 jobs by making requests to the KCI API.
+    
+    lava-v2-submit-jobs.py:
+    Submits LAVA v2 jobs to a lab if a pipeline device exists that matches the requested device_type.
+    
+    reactobus-kernel-ci-config.yaml:
+    Configuration for reactobus (https://github.com/ivoire/ReactOBus) which will be the daemon waiting for ZMQ notifications that the job has completed
+    
+    reactobus-job-parser.py:
+    Basic beginnings of a script which is executed by reactobus, to parse the ZMQ response and eventually update the KCI API with the result.
+    
+    Add some initial templates for qemu/apq8016-sbc devices.
+    bisect.jpl: remove Jenkins job number from email subject
+    
+    The Jenkins job number is not useful for recipients of the email
+    reports, only when debugging issues with access to Jenkins.  It can
+    now be removed as bisections are enabled in production.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: call build.py -J to dump meta-data to JSON
+    
+    Use the new `build.py -J` option to dump the builds meta-data to JSON
+    rather than `-j` which is now being used for the number of parallel
+    builds.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: use quotes when passing recipients list with --to
+    
+    The recipients list is whitespace-separated, so pass it within quotes
+    to the push-bisection-results.py --to option.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Fixes: 62fe4c872ce2 ("bisect.jpl: call push-bisection-results.py to push log and results")
+    bisect.jpl: call push-bisection-results.py to push log and results
+    
+    Call publish-bisection-results.py in a Report stage at the end of a
+    successful bisection to push the report log as well as the associated
+    results meta-data.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add TEST_RUNS parameter to require several LAVA jobs
+    
+    Add a new TEST_RUNS parameter to require a given number of LAVA jobs
+    to return the same status before considering that a revision is
+    passing or failing.  This is to avoid intermittent failures.
+    
+    The default is set to 1 so regular bisections will still be doing only
+    one boot test per revision, except for the final checks which are now
+    run 3 times to further reduce the chances of false positives.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: no need for SECRET when reading builds from local JSON file
+    
+    Now that the build meta-data is saved locally to a JSON file, there's
+    no need to query the kernelci API when generating the LAVA jobs.  So
+    the secret token is not needed any more when calling
+    lava-v2-jobs-from-api.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add white list parameters for labs and trees
+    
+    Add LABS_WHITELIST and TREES_WHITELIST job parameters to only run
+    bisections if the lab name or kernel tree are on those whitelists.  If
+    the filter fails, the job is aborted.  When these parameters are not
+    defined, no filtering is applied and all jobs are run.  Labs and trees
+    filters are independent with labs being filtered first.
+    
+    This is useful for bisections automatically triggered on all
+    regressions, which is the usual case in kernelci-backend.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: use lab-<something>-lava-api token names
+    
+    Use the new token naming convention to consolidate how tokens are
+    called on every Jenkins instance.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add verify and revert checks
+    
+    Add checks at the end of a bisection job to verify that the found
+    "bad" commit is actually bad (i.e. fails to boot) and that reverting
+    it makes the kernel boot again.  If the revert check fails, this
+    should only be treated as a warning as there may be several issues
+    within a given range of commits.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: use local JSON file to keep build meta-data
+    
+    Rather than pushing the builds meta-data to the backend API, store it
+    in a JSON file and use this directly to submit the boot jobs.  This
+    removes noise in the backend database with all the builds from
+    bisection iterations that only get booted once.  It also removes the
+    need to poll the backend to get the build data back when we already
+    have it from the build script.
+    
+    This uses the new `-j' option in build.py to generate the JSON file.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: use webhook and lava-v2-callback.py
+    
+    Use the Jenkins webhook plugin to directly receive LAVA v2 callback
+    data and parse it with lava-v2-callback.py to determine whether the
+    job passed or failed.  Stop using lava-v2-get-boot-results.py as a
+    result.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: adjust and document parameter names
+    
+    Adjust all the Jenkins parameter names used in bisect.jpl to make them
+    more consistent and add some documentation to make it easier to set up
+    new Jenkins jobs using this script.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.py: fix TREE environment variable when calling build.py
+    
+    The build.py script expects the Git URL to be passed in the TREE
+    environment variable, or read from the kernel Git repository.  If the
+    repository doesn't have a remote called "origin", or if this remore
+    does not correspond to the one the current branch is coming from, then
+    the git_url is set wrongly in the build meta-data.
+    
+    Fix this by setting the tree URL with the TREE environment variable
+    when calling the build.py script.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: send email when bisection fails
+    
+    In order to keep track of issues with the bisection jobs, send an
+    email whenever a job fails to run.  This is not the same as aborting
+    on purpose due to an invalid bisection parameter or some other error
+    coming from the bisection itself.
+    
+    Use the same EMAIL_RECIPIENTS parameter to define the recipients.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add git user.{name,email}
+    
+    Set up default git user.name and user.email as these are needed in
+    order to create the temporary tags.  Use the same email address as the
+    one used to send email reports, which could be turned into a parameter
+    to be more portable.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: echo kernel repository URL
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: silence some benign git errors
+    
+    Silence errors when calling git on things that don't necessarily
+    exist during initial kernel check-out.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: move bisectStart check outside of stage block
+    
+    To be consistent with the good/back checks, move the git rebase start
+    test check outside of the Start stage block.  The main pipeline block
+    needs to return in order to abort the job, not the stage block.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: refactor with runCheck()
+    
+    Add runCheck() function to factor out the code for both the good and
+    bad revision tests.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: move timeout inside stages
+    
+    Move the timeout definitions inside stages blocks to be consistent.
+    Also there might be several different timeouts within each stage such
+    as in the good/bad check stages.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: minor clean-up
+    
+    * add separators between groups of functions
+    * make the difference between null and 0 when testing status value
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: refactor with buildRevision()
+    
+    Add buildRevision() function and use it to build a given git revision
+    of the kernel in the good/bad check stages.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: refactor with runTest()
+    
+    Add runTest() function with common code factored out from good/bad
+    checks and bisection iterations to generate a LAVA job, run it and
+    return the result.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add stage to check failing boot
+    
+    Add "Check fail" stage to build and test the git revision given as
+    "bad".  This is to reduce the chances of false positive.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: add stage to check passing boot
+    
+    Add "Check pass" stage to build and boot test the git revision given
+    as "good".  This is to reduce the chances of false positives.
+    
+    Also move the git bisection start command to a separate "Start" stage.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: catch exceptions outside of buildKernel()
+    
+    To improve error handling logic, do not return a status from
+    buildKernel() but let it throw an exception if it fails and catch it
+    to set the status in the stage function.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: create a temporary unique tag for each build
+    
+    As configuration options and patches may be used in specific bisection
+    jobs, and to find boot jobs in LAVA for a given bisection, create a
+    temporary tag which will result in a unique git describe string.  This
+    way, each build and boot from bisection jobs is unique and not
+    confused with previous runs on the same bisection range.
+    
+    Also remove any tag left behind by previously aborted jobs before
+    starting the bisection.  They can be found by searching for the
+    Jenkins job name.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: abort when failure to start bisection
+    
+    In some cases, the bisection range may not be available any more by
+    the time the bisection has started.  This typically happens with
+    linux-next or stable-rc trees where work-in-progress branches are
+    being force-pushed frequently.
+    
+    As this is not a failure to run the bisection job itself, detect when
+    starting the git bisection fails and abort with an message.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    bisect.jpl: use params.PLAN and only bisect boot and simple plans
+    
+    Use the new parameter PLAN which contains the test plan.  If it is not
+    'boot' or 'simple' then abort the bisection for now.  Bisecting
+    anything else (kselftest...) will require more logic.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    add jenkins/bisect.jpl
+    
+    Add jenkins/bisect.jpl to run an automated bisection in Jenkins using
+    a Pipeline job.  This uses kernelci-build/build.py to build and post
+    the builds, as well as the LAVA v2 scripts from lava-ci to run the
+    tests.  It runs for a single boot failure, so essentially only one
+    combination of lab / board / build.
+    
+    It is designed to be run with many other bisection jobs on many
+    executors in parallel on a same node, using a lock to only build one
+    kernel at any point in time with all the available CPU resources.
+    Most of the time is expected to be spent waiting for tests results to
+    come back from LAVA.
+    
+    Note: This is currently polling the KernelCI back-end to wait for boot
+          results to become available until a better callback mechanism
+          can be implemented.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Generate cros-ec job for the Collabora lab
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Generate IGT job for the Collabora lab
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Generate v4l2 job for the Collabora lab
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    lava-boot-v2: run staging LAVA jobs twice for kci and BayLibre backends
+    
+    When the lab is lab-baylibre-dev, schedule all the LAVA jobs twice to
+    get callbacks sent both to staging kernelci.org and BayLibre.  This
+    does not affect production, only staging runs.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-boot-v2: also run on lab-pengutronix-dev
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-boot-v2: only use BayLibre backend for dev lab
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    lava-boot-v2: submit test jobs to BayLibre dev backend
+    
+    Create "simple" and "usb" plans and submit to the BayLibre dev
+    kernelCI backend.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Add USB test plan to veyron-jaq
+    
+    Also generate USB test jobs for the collabora lab.
+    Generate sleep jobs for the Collabora lab
+    Add lab-theobroma-systems-dev to lava-boot-v2.sh
+    Add rk3399-puma-haikou device and theobroma-systems lab
+    
+    The RK3399 is an ARM64 6-core SoC made by Rockchip,
+    the Puma board (official name RK3399-Q7) is a compute
+    module made by Theobroma Systems.
+    
+    The new lab has two Puma boards plugged into "Haikou" baseboards
+    that provide a USB-UART converter and power switching.
+    
+    The LAVA instance is reachable at https://lava.theobroma-systems.com/ .
+    
+    Linux mainline support was merged in v4.14-rc1
+    (commit 2c66fc34e9457ed10b56265e1dcf55c86d524e9e).
+    Earlier kernel versions have been blacklisted.
+    Set LKFT jobs to low priority
+    Add LKFT lab, remove boot-be plan
+    
+    - Support tree#branch boot whitelisting for LKFT lab
+    jenkins/lava-boot-v2.sh: pass --lab option to lava_v2_submit.py
+    
+    Now that the LAVA labs API URLs are stored in labs.ini, it's necessary
+    to pass the --lab option to lava_v2_submit.py in order to get it from
+    there.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-submit-jobs.py: remove --server option and use labs.ini
+    
+    Remove the --server option and add the LAVA API URLs to labs.ini
+    instead.  The --lab option is already telling the script which lab to
+    use, it now looks up the API URL from the file.
+    
+    Note: This is especially useful for bisection jobs as the URL is not
+          available of the boot data, only the lab name is.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Run simple test plan in lab-mhart instead of kselftest
+    lava-boot-v2: lab-baylibre: set priority to medium
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Stop booting nfs plans to labs running the docker (no NFS server)
+    Update lab blacklists and fix indenting in scripts
+    Add all labs to lava-v2 jenkins script
+    Add kselftest plan to lab-baylibre-dev
+    jenkins: add the should-I-boot-this.py solution
+    
+    Signed-off-by: Florent Jacquet <florent.jacquet@free-electrons.com>
+    v2: pass a defconfig count to the jobs script, and use that count
+    to retry up to 10 times until the API returns enough builds
+    lava-boot-v2: add lab-baylibre-dev
+    lava-v2: try and fetch a defconfig count
+    Enable v2 kselftest plan for lab-mhart
+    Support changing the callback token name
+    Handle staging lab names (like lab-mhart-dev)
+    Make free-electrons v2 jobs be medium priority
+    Make all LAVA_LABNAME_TOKEN variables common
+    
+    - enable --callback for all labs
+    KernelCI staging 20170621 (#91)
+    
+    * lava-v2-jobs-from-api.py: enable 'api' and 'storage' in the config file
+    
+    * allow the "api" and "storage" configs to be read from the config
+      file, the command line options still have the priority
+    
+    * remove the defaults for "api" and "storage" as it's better to have
+      them defined explicitly by the caller
+    
+    * fix help message for the --config and --section options
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * Add jenkins scripts for lava boots
+    
+    * Use STORAGE and API from environment for lava-boot-v1
+    
+    * Add --callback and --lab options to v2 job creator to add the notify block
+    
+    In lava-v2-jobs-from-api.py:
+    
+      * add --callback option to enable a callback in the LAVA job
+      * add --lab option to provide the lab name
+      * use the lab name as a default value for --jobs when not provided
+      * check that required options are provided
+    
+    In lava-v2-submit.py:
+    
+      * remove --timeout when submitting jobs
+      * make --jobs a required option
+    
+    In lava-boot-v2.sh:
+    
+      * add --lab options in lava-boot-v2.sh when calling
+        lava-v2-jobs-from-api.py
+    
+    * lib: import device_map directly into lib
+    
+    This is to make importing the device map less confusing.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-submit-jobs: minor code clean-up
+    
+    * add --section option, used when reading the LAVA config file
+    
+    * rename job_map as JOBS to make it clear it's a module-wide object
+    
+    * wrap long lines and clean up command line help messages
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-jobs-from-api.py: improve print message with number of builds
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    templates: add Depthcharge jobs for boot and boot-nfs
+    
+    Add generic templates for plain boot and boot-nfs jobs for devices
+    using Coreboot/Depthcharge (typically Chrome OS devices).  This
+    involves removing the kernel image type attribute for Depthcharge as
+    it needs a FIT image rather than the legacy U-Boot image conversion to
+    uImage.
+    
+    Please note that these devices need to be manually updated with a
+    Depthcharge custom build with the debug CLI config enabled and the
+    tftpboot command available.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    templatest/boot: standardize indent/formatting
+    
+    QEMU templates don't have indentation for deploy or boot action, so
+    remove extra indentation from deploy and boot actions for grub/pxe/uboot
+    also.
+    
+    This allows any additional actions which might be appended (e.g test
+    actions) to have the same indent level for QEMU and grub/ipxe/uboot
+    jobs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    Improve reactobus job parser to submit results to KCI API (#66)
+    
+    - add more devices
+    - add sample lab config file
+    - tweak templates to use initrd url from script
+    
+    W.I.P.
+    Add the first LAVA v2 templates
+    
+    and make the old lava-kernel-ci-job-creator.py script only recognise
+    files with ".json" suffix.
+    lava-v2-jobs-from-api.py: add callback command line options
+    
+    Add some command line options that are needed to generate LAVA jobs
+    with alternative callbacks.
+    
+    * add --callback-url to override the default callback base URL with an
+      arbitrary one, the KernelCI backend API URL is used by default
+    
+    * add --callback-dataset to choose the dataset sent in the callback
+      payload, the default being 'all'
+    
+    * add --calback-type to choose whether to use the bare 'custom' URL or
+      append the extra 'kernelci' path and query needed by the KernelCI
+      (defaults to the latter so this remains backwards compatible)
+    
+    * move code that deals with the callback template variables into a
+      separate function
+    
+    * update kernel-ci-base.jinja2 to set the url and dataset accordingly
+      when these options are used
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Support multiple context overrides
+    Fix rpi3, blacklists on v2, and dont boot test kselftest configs
+    
+    The rpi3 has been blacklisted to as many old kernels as I could
+    find, and the console setting is now overriden using context.
+    V2 blacklisting was not working, it was being checked against the
+    tree name not git describe.
+    And do not boot test kselftest config.
+    Blacklist a pile of known failing defconfigs, and extend power-off timeout to try and help baylibre lab
+    Make test result callbacks different from boot reports
+    Add platform.mach to the LAVA v2 jobs definition (#11)
+    
+    Add the SoC type as platform.mach taken from the device_map to the
+    LAVA v2 jobs definition.  This can then be used in the KernelCI
+    backend as the SoC name.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Enable more platforms for kselftest
+    lava-v2-jobs-from-api.py: simplify device_type in templates
+    
+    Instead of passing the device dictionary from the device_map to the
+    template, create a device_type variable and pass it directly.
+    
+    This also avoids making run-time changes to the global device_map
+    dictionary while setting kvm device type to qemu, which could cause
+    some obscure bugs.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-v2-jobs-from-api.py: add git_url to the meta-data
+    
+    Add the git_url to the jobs meta-data so that the KernelCI front-end
+    can provide links to the kernel binaries.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Support changing the callback token name
+    KernelCI staging 20170621 (#91)
+    
+    * lava-v2-jobs-from-api.py: enable 'api' and 'storage' in the config file
+    
+    * allow the "api" and "storage" configs to be read from the config
+      file, the command line options still have the priority
+    
+    * remove the defaults for "api" and "storage" as it's better to have
+      them defined explicitly by the caller
+    
+    * fix help message for the --config and --section options
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * Add jenkins scripts for lava boots
+    
+    * Use STORAGE and API from environment for lava-boot-v1
+    
+    * Add --callback and --lab options to v2 job creator to add the notify block
+    
+    In lava-v2-jobs-from-api.py:
+    
+      * add --callback option to enable a callback in the LAVA job
+      * add --lab option to provide the lab name
+      * use the lab name as a default value for --jobs when not provided
+      * check that required options are provided
+    
+    In lava-v2-submit.py:
+    
+      * remove --timeout when submitting jobs
+      * make --jobs a required option
+    
+    In lava-boot-v2.sh:
+    
+      * add --lab options in lava-boot-v2.sh when calling
+        lava-v2-jobs-from-api.py
+    
+    * lib: import device_map directly into lib
+    
+    This is to make importing the device map less confusing.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-submit-jobs: minor code clean-up
+    
+    * add --section option, used when reading the LAVA config file
+    
+    * rename job_map as JOBS to make it clear it's a module-wide object
+    
+    * wrap long lines and clean up command line help messages
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-jobs-from-api.py: improve print message with number of builds
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Improve reactobus job parser to submit results to KCI API (#66)
+    
+    - add more devices
+    - add sample lab config file
+    - tweak templates to use initrd url from script
+    
+    W.I.P.
+    LAVA V2 Initial Job Support
+    
+    Job creation and submission is now working. There will need to be *lots* of templates added in future but this gets us started. Results are not being recorded yet but there is an example config/script to show how this can be done.
+    
+    lava-v2-jobs-from-api.py:
+    generates LAVA v2 jobs by making requests to the KCI API.
+    
+    lava-v2-submit-jobs.py:
+    Submits LAVA v2 jobs to a lab if a pipeline device exists that matches the requested device_type.
+    
+    reactobus-kernel-ci-config.yaml:
+    Configuration for reactobus (https://github.com/ivoire/ReactOBus) which will be the daemon waiting for ZMQ notifications that the job has completed
+    
+    reactobus-job-parser.py:
+    Basic beginnings of a script which is executed by reactobus, to parse the ZMQ response and eventually update the KCI API with the result.
+    
+    Add some initial templates for qemu/apq8016-sbc devices.
+    Add the first LAVA v2 templates
+    
+    and make the old lava-kernel-ci-job-creator.py script only recognise
+    files with ".json" suffix.
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates/sleep: use /dev/kmsg for LAVA test signals
+    
+    Remove workaround with dmesg and use new feature from lava
+    to use /dev/kmsg for LAVA test signals.
+    This change requires a LAVA instance with this patch
+    https://review.linaro.org/#/c/25377/
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    Pass the image shell prompt to the templates
+    templates: add Depthcharge jobs for boot and boot-nfs
+    
+    Add generic templates for plain boot and boot-nfs jobs for devices
+    using Coreboot/Depthcharge (typically Chrome OS devices).  This
+    involves removing the kernel image type attribute for Depthcharge as
+    it needs a FIT image rather than the legacy U-Boot image conversion to
+    uImage.
+    
+    Please note that these devices need to be manually updated with a
+    Depthcharge custom build with the debug CLI config enabled and the
+    tftpboot command available.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Enable more platforms for kselftest
+    templates/kselftest: add generic v2 version
+    
+    Add kselftest template for v2 jobs.  Extends generic boot job.
+    
+    FIXME: how to use {{ arch }} in the initrd_url string?  Current
+           version has hard-coded arch.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Enable more platforms for kselftest
+    templates/kselftest: add generic v2 version
+    
+    Add kselftest template for v2 jobs.  Extends generic boot job.
+    
+    FIXME: how to use {{ arch }} in the initrd_url string?  Current
+           version has hard-coded arch.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Enable more platforms for kselftest
+    templates/kselftest: add generic v2 version
+    
+    Add kselftest template for v2 jobs.  Extends generic boot job.
+    
+    FIXME: how to use {{ arch }} in the initrd_url string?  Current
+           version has hard-coded arch.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add IGT test plan
+    
+    Initial test plan running some of the binaries from the test suite.
+    This test aims to cover the DRM kernel-user interface and is not specific
+    to Intel graphics.
+    This test plan uses /dev/kmsg for LAVA test signals, this feature requires
+    a LAVA instance with this patch https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Add IGT test plan
+    
+    Initial test plan running some of the binaries from the test suite.
+    This test aims to cover the DRM kernel-user interface and is not specific
+    to Intel graphics.
+    This test plan uses /dev/kmsg for LAVA test signals, this feature requires
+    a LAVA instance with this patch https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add IGT test plan
+    
+    Initial test plan running some of the binaries from the test suite.
+    This test aims to cover the DRM kernel-user interface and is not specific
+    to Intel graphics.
+    This test plan uses /dev/kmsg for LAVA test signals, this feature requires
+    a LAVA instance with this patch https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates: usb: update test plan to check usb devices after suspend
+    
+    Add two more tests to check the presence of all the usb devices
+    after suspending the system using rtcwake with the modes 'mem' and
+    'freeze'.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    templates/usb: use /dev/kmsg for LAVA test signals
+    
+    Use a feature from lava to use /dev/kmsg for LAVA test signals.
+    This change requires a LAVA instance with this patch included
+    in LAVA releases after 2018.5
+    https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add v4l2 test plan
+    
+    Initial test plan that runs v4l2-compliance in the system and parses
+    the output.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Add v4l2 test plan
+    
+    Initial test plan that runs v4l2-compliance in the system and parses
+    the output.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add v4l2 test plan
+    
+    Initial test plan that runs v4l2-compliance in the system and parses
+    the output.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Make all simple test templates run the same tests
+    Add a 'simple' test plan that replicate the v1 boot checks
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Make all simple test templates run the same tests
+    Add a 'simple' test plan that replicate the v1 boot checks
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add a 'simple' test plan that replicate the v1 boot checks
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    Remove v1 boots for v2 supported devices to avoid conflicts
+    Add NFS boot types
+    Add boot-be templates for BIG_ENDIAN defconfigs
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Pass the image shell prompt to the templates
+    templates/boot: add (initramfs) boot prompt
+    
+    When using a debian initramfs, if the boot falls through to the
+    ramdisk, the shell prompt is "(initramfs)".  Add that to the list
+    of expected prompts.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    templatest/boot: standardize indent/formatting
+    
+    QEMU templates don't have indentation for deploy or boot action, so
+    remove extra indentation from deploy and boot actions for grub/pxe/uboot
+    also.
+    
+    This allows any additional actions which might be appended (e.g test
+    actions) to have the same indent level for QEMU and grub/ipxe/uboot
+    jobs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Pass the image shell prompt to the templates
+    templates: add Depthcharge jobs for boot and boot-nfs
+    
+    Add generic templates for plain boot and boot-nfs jobs for devices
+    using Coreboot/Depthcharge (typically Chrome OS devices).  This
+    involves removing the kernel image type attribute for Depthcharge as
+    it needs a FIT image rather than the legacy U-Boot image conversion to
+    uImage.
+    
+    Please note that these devices need to be manually updated with a
+    Depthcharge custom build with the debug CLI config enabled and the
+    tftpboot command available.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    templatest/boot: standardize indent/formatting
+    
+    QEMU templates don't have indentation for deploy or boot action, so
+    remove extra indentation from deploy and boot actions for grub/pxe/uboot
+    also.
+    
+    This allows any additional actions which might be appended (e.g test
+    actions) to have the same indent level for QEMU and grub/ipxe/uboot
+    jobs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    templatest/boot: standardize indent/formatting
+    
+    QEMU templates don't have indentation for deploy or boot action, so
+    remove extra indentation from deploy and boot actions for grub/pxe/uboot
+    also.
+    
+    This allows any additional actions which might be appended (e.g test
+    actions) to have the same indent level for QEMU and grub/ipxe/uboot
+    jobs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Pass the image shell prompt to the templates
+    qemu: use virtio in order to be able to run actual tests
+    
+    In order to be able to run any test beyond plain boot to a prompt on
+    QEMU, i.e. with some LAVA "test" steps, the guestfs interface needs to
+    be set to virtio.  Set this for all QEMU boot jobs so that test
+    templates can also inherit from it.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    lava-v2-jobs-from-api.py: add qemu type and do not use legacy aarch64
+    
+    With LAVA v2 jobs, the qemu device type can be used with any supported
+    architecture.  So there is no need for arch-specific qemu_* device
+    types.
+    
+    * add a generic qemu device type to the device_map which can only be
+      used to generate LAVA v2 jobs
+    
+    * remove the LAVA v2 template from the legacy qemu_aarch64 device type
+      as this is now covered by qemu instead
+    
+    * always include the qemu device type for arm, arm64 and x86 platforms
+      and when using a standard defconfig
+    
+    * add missing context in qemu-generic-boot-template.jinja2 to enable
+      the 3 architectures to run with qemu
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Update QEMU arm64 template to console=ttyAMA0
+    Improve reactobus job parser to submit results to KCI API (#66)
+    
+    - add more devices
+    - add sample lab config file
+    - tweak templates to use initrd url from script
+    
+    W.I.P.
+    LAVA V2 Initial Job Support
+    
+    Job creation and submission is now working. There will need to be *lots* of templates added in future but this gets us started. Results are not being recorded yet but there is an example config/script to show how this can be done.
+    
+    lava-v2-jobs-from-api.py:
+    generates LAVA v2 jobs by making requests to the KCI API.
+    
+    lava-v2-submit-jobs.py:
+    Submits LAVA v2 jobs to a lab if a pipeline device exists that matches the requested device_type.
+    
+    reactobus-kernel-ci-config.yaml:
+    Configuration for reactobus (https://github.com/ivoire/ReactOBus) which will be the daemon waiting for ZMQ notifications that the job has completed
+    
+    reactobus-job-parser.py:
+    Basic beginnings of a script which is executed by reactobus, to parse the ZMQ response and eventually update the KCI API with the result.
+    
+    Add some initial templates for qemu/apq8016-sbc devices.
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Pass the image shell prompt to the templates
+    job builder skips failed builds and templates cleanup
+    
+    jobs-from-api.py:
+    For the expected defconfig counts to work, we need to fetch all results
+    including the fails and then filter them out before building jobs
+    
+    device-map:
+    Remove NFS boots from apq8016-sbc as they just don't work
+    
+    templates:
+    Cleanup indentation for future includes/extends
+    templatest/boot: standardize indent/formatting
+    
+    QEMU templates don't have indentation for deploy or boot action, so
+    remove extra indentation from deploy and boot actions for grub/pxe/uboot
+    also.
+    
+    This allows any additional actions which might be appended (e.g test
+    actions) to have the same indent level for QEMU and grub/ipxe/uboot
+    jobs.
+    
+    Signed-off-by: Kevin Hilman <khilman@baylibre.com>
+    Update v2 templates and other fixes (#84)
+    
+    V1: fix plan ini file defconfigs to arch_defconfig
+    V2:
+    - start dealing with NFS jobs
+    - simplify the template inheritance
+    - update templates for latest LAVA
+    Add first grub device to lava v2 (#69)
+    
+    d03....
+    Fixup some template inheritance and add yet more uboot devices (#67)
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add cros-ec test plan
+    
+    Initial test plan that checks for /dev/cros_ec
+    This allows to know if the driver probe has run successfully and the
+    kernel has been able to establish communication with the embedded controller.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add IGT test plan
+    
+    Initial test plan running some of the binaries from the test suite.
+    This test aims to cover the DRM kernel-user interface and is not specific
+    to Intel graphics.
+    This test plan uses /dev/kmsg for LAVA test signals, this feature requires
+    a LAVA instance with this patch https://review.linaro.org/#/c/25377/
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Add cros-ec test plan
+    
+    Initial test plan that checks for /dev/cros_ec
+    This allows to know if the driver probe has run successfully and the
+    kernel has been able to establish communication with the embedded controller.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    templates: rename ramdisk-template to ramdisk-boot-template
+    
+    In order to be consistent with other test plans, rename boot templates
+    with ramdisk-boot-template and fix templates that extend it
+    accordingly.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add cros-ec test plan
+    
+    Initial test plan that checks for /dev/cros_ec
+    This allows to know if the driver probe has run successfully and the
+    kernel has been able to establish communication with the embedded controller.
+    
+    Signed-off-by: Ana Guerrero Lopez <ana.guerrero@collabora.com>
+    Add test plan for testing the USB subsystem
+    
+    For now, it just checks that lsusb's output is non-empty.
+    
+    Most devices will have at least one USB device, and those that don't can
+    have any kind of non-intrusive USB device plugged in.
+    
+    This will test for now that the driver for the host USB controller
+    probed correctly and the very basics are working.
+    Add sleep test plan
+    
+    Add a start for a test plan that checks that system power states work,
+    along with RTC wake ups.
+    
+    v2: add test plan name to file name of templates
+    v3: extract common fragment of test definition to its own file
+        reduce test timeout from 10 to 5 minutes
+        repeat 10 times each suspend/resume cycle
+        silence KERN_INFO as it confuses LAVA on wakeup
+    v4: extend boot/generic-depthcharge-tftp-ramdisk-template.jinja2
+    Add LGPL v2.1+ headers in Python scripts and full license in COPYING
+    
+    Update all the Python scripts with a header listing the shared
+    copyrights, authors and a notice to distribute the code under LGPL
+    v2.1 or later.  Also add the full license text in COPYING.
+    
+    Note: Some scripts were already in GPLv2 so they remain untouched.
+    Also, log2html.py is a temporary local copy - see lava-report.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    kernel-ci: config: add --jobs/LAVA_JOBS options
+    
+    Allows runner and creator to use an absolute path when
+    specified in lavarc or with --jobs.
+    
+    Behave as default when not specified.
+    
+    Signed-off-by: Marc Titinger <mtitinger@baylibre.com>
+    lib/configuration: simplify config classes
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    lava-stream-job: move get_config into lib/configuration
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    lava-stream-job: move config classes into lib/configuration.py
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    Add lib/test_configs.py
+    
+    Add lib/test_configs.py as a replacement for lib/device_map.py to
+    solve several issues:
+    
+    * scale better as new devices and new test plans keep being added
+    
+    * better separate the test config data from the logic to generate the
+      LAVA jobs
+    
+    * load all the test configuration from YAML rather than Python
+      initialisers
+    
+    * make it possible to replace the YAML with a database alternative if
+      needed without altering the data model
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add lib/test_configs.py
+    
+    Add lib/test_configs.py as a replacement for lib/device_map.py to
+    solve several issues:
+    
+    * scale better as new devices and new test plans keep being added
+    
+    * better separate the test config data from the logic to generate the
+      LAVA jobs
+    
+    * load all the test configuration from YAML rather than Python
+      initialisers
+    
+    * make it possible to replace the YAML with a database alternative if
+      needed without altering the data model
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Add LGPL v2.1+ headers in Python scripts and full license in COPYING
+    
+    Update all the Python scripts with a header listing the shared
+    copyrights, authors and a notice to distribute the code under LGPL
+    v2.1 or later.  Also add the full license text in COPYING.
+    
+    Note: Some scripts were already in GPLv2 so they remain untouched.
+    Also, log2html.py is a temporary local copy - see lava-report.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    KernelCI staging 20170621 (#91)
+    
+    * lava-v2-jobs-from-api.py: enable 'api' and 'storage' in the config file
+    
+    * allow the "api" and "storage" configs to be read from the config
+      file, the command line options still have the priority
+    
+    * remove the defaults for "api" and "storage" as it's better to have
+      them defined explicitly by the caller
+    
+    * fix help message for the --config and --section options
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * Add jenkins scripts for lava boots
+    
+    * Use STORAGE and API from environment for lava-boot-v1
+    
+    * Add --callback and --lab options to v2 job creator to add the notify block
+    
+    In lava-v2-jobs-from-api.py:
+    
+      * add --callback option to enable a callback in the LAVA job
+      * add --lab option to provide the lab name
+      * use the lab name as a default value for --jobs when not provided
+      * check that required options are provided
+    
+    In lava-v2-submit.py:
+    
+      * remove --timeout when submitting jobs
+      * make --jobs a required option
+    
+    In lava-boot-v2.sh:
+    
+      * add --lab options in lava-boot-v2.sh when calling
+        lava-v2-jobs-from-api.py
+    
+    * lib: import device_map directly into lib
+    
+    This is to make importing the device map less confusing.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-submit-jobs: minor code clean-up
+    
+    * add --section option, used when reading the LAVA config file
+    
+    * rename job_map as JOBS to make it clear it's a module-wide object
+    
+    * wrap long lines and clean up command line help messages
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    
+    * lava-v2-jobs-from-api.py: improve print message with number of builds
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    lava-stream-job: move config classes into lib/configuration.py
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    Add LGPL v2.1+ headers in Python scripts and full license in COPYING
+    
+    Update all the Python scripts with a header listing the shared
+    copyrights, authors and a notice to distribute the code under LGPL
+    v2.1 or later.  Also add the full license text in COPYING.
+    
+    Note: Some scripts were already in GPLv2 so they remain untouched.
+    Also, log2html.py is a temporary local copy - see lava-report.py.
+    
+    Signed-off-by: Guillaume Tucker <guillaume.tucker@collabora.com>
+    Test XMLRPC connection to make sure it works
+    Move setup_job_dir to utils library (#46)
+    kernel-ci: use proper connections for http/https
+    kernel-ci: allow self signed ssl
+    move utils and change imports
+    
+    Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
+    kernel-ci: fix bug in lava-report causing files to get overridden
+    kernel-ci: create utils modules and move reporting features to new script

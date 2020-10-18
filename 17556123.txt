@@ -1,0 +1,299 @@
+﻿    copy README.md from objc-zen-book to README-En.md
+    进一步修订翻译
+    加入中文翻译说明和译文目录
+    Update the section regarding NSNotification (close #10)
+    Fix #23
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Remove extra word
+    
+    Both 'we' and 'you' was used in a statement. Removed 'we' to be consistent with the other related paragraphs.
+    Added missing strongSelf check in 'Retain cycles on self' paragraph.
+    Spelling and grammar improvements.
+    Added paragraph about creation of mutable NSArray.
+    Add recommendation for mutable objects syntax
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix wrong naming for a private method (Close #18)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix typos.
+    Fix typos
+    Fix the broken link of the Aspect lib and its author
+    Fix issue in "Class Name" (Close #7)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Add link to raywenderlich.com coding style
+    Add link to explanation of "Egyptian brackets"
+    Properties - Remove duplicated paragraph + grammar
+    Initializer and dealloc - Grammar & minor typos
+    Improved 'Protocols' section.
+    Update README.md
+    Couple of changes
+    
+    * Fix minor typo
+    * Better Objective-C syntax hightlight
+    Fixed code convention in code snippets.
+    Added link to 'Liskov Substitution Principle' on Wikipedia.
+    Rephrased some sentences in the 'Protocols' section.
+    Fixed minor formatting issues.
+    Modified properties section to remove typo "much descriptively"
+    Cleaned up "Properties" naming conventions
+    
+    There was a formatting bug, and the sentence structure needed a bit of cleanup.
+    Fix typo
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Better formatting
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix typos
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Update the "Initializer and dealloc" section (Fix #1)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    First release
+    F: fix issue #47, override -> 重写
+    spaces
+    spaces
+    缩进使用 4 个空格。
+    Update README URLs based on HTTP redirects
+    Fix translation issue
+    Fix typo.
+    Fix typo.
+    修正错误
+    Update README.md
+    
+    修改了[Init 和 Dealloc ](https://github.com/ChenYilong/objc-zen-book-cn#init-和-dealloc) 的描述部分，翻译的明显错误，估计译者并没有理解原文的真实意思。这个部分我在我的一篇博客里进行过详细的描述 [《招聘一个靠谱的iOS》面试题参考答案（上）----21题](https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01《招聘一个靠谱的iOS》面试题参考答案/《招聘一个靠谱的iOS》面试题参考答案（上）.md#21-下面的代码输出什么) ，并且我也给出了一个简单明了说明该问题的 Demo。
+    修饰语句以增强可读性，修正翻译错误
+    Fix typo in "Designated Initializer"
+    错别字修改
+    
+    “新年”修改为“性能”
+    相等性小节追加译者注：解释例程的由来
+    相等性小节追加译者注：解释例程的由来
+    相等性小节追加译者注：解释例程的由来
+    更新ADBFeedReader源链接：因为原文链接失效
+    update format
+    update format
+    update delegate & datasource
+    update delegate & datasouce pattern
+    调整排版，增加可读性
+    修正一个大小写问题
+    self 循环引用的一点修改
+    self 循环引用的一点修改
+    self 循环引用的一点修改
+    update indent
+    self引用循环的一点修正
+    深入block部分的一点修正
+    深入block部分的一点修正
+    深入block部分的一点修正
+    深入block部分的一点修正
+    整理Pragma相关内容：捋顺一些句子
+    捋顺几个句子:protocols
+    捋顺几个句子:protocols
+    捋顺几个句子:protocols
+    Fixbug: 修改了Protocols中一些与原意有出入的翻译
+     修正排版
+    Categories中的一点修改，同名category导致不可预知的结果的原因解释
+    修改
+    Categories中的一点修改，同名category导致不可预知的结果的原因解释
+    Update Translators
+    Update designated initializer
+    统一 不要这样做 为 不要这样 的描述
+    修正部分修正结果
+    Modified About Equality
+    修改延迟加载的部分内容
+    Modified content
+    Modified some contents about Property Declaration
+    重新翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修正翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修正翻译，deal with 取操作的含义。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    重新翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    优化翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    失败代替不成功。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修正翻译错误。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    allocated instance 创建实例。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    重新翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    调整语序。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    将第一个 object allocation 翻译成创建对象。将 allocation of memory 翻译成分配内存。
+    
+    allocation 本意为分配内存，但是如果两个地方都翻译成分配内存读者不易于读者理解，创建+初始化 的翻译应该优于分配 内存+初始化。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    调整语序。
+    
+    `by convention` 被翻译成按照惯例。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修正关于 self 指针的错误翻译；
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修改 that means 的翻译；
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    重新翻译 Initializer and dealloc 前半段。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    优化 Class name 这段翻译；
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    重新翻译字面值小节例子的问题部分。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    优化字面值部分的翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    优化翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    调整语序。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    优化翻译。
+    
+    双重否定改为肯定。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    修正错误的翻译；优化翻译；
+    
+    `be preferred over` 是优于的意思。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    FIXED:单例的结尾翻译出现错误，有些凌乱，有的地方意思正好相反
+    Fixed Logic: Class Cluster 的例程的解释
+    Class Cluster 这个概念的逻辑表述问题
+    Class Cluster 这个概念的逻辑表述问题
+    Fixed translation errors in Secondary initializer
+    优化翻译。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    语句通顺。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    语句通顺。
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    Update README.md
+    
+    1.优化翻译
+    2.螺距->逻辑
+    Update README.md
+    
+    修正格式
+    fix 一个翻译错误，导致意思完全相反
+    Update README.md
+    加入 Gitbook 链接
+    加入Cyclomatic 复杂性的维基百科链接
+    修正部分翻译错误和不妥的地方
+    
+    根据 V2EX 上的建议
+    https://v2ex.com/t/204812#reply11
+    修正部分翻译并且加上提示
+    fix typo
+    fix typo
+    update title
+    fix typo
+    修订文件名和说明
+    修订目录
+    进一步修订翻译
+    合并为单一文件并进一步更正
+    合并到单独文件
+    修正部分翻译并且加上提示
+    修订文件名和说明
+    合并为单一文件并进一步更正
+    修订部分内容以及更新README
+    Fix README
+    Update README
+    Update README & 改善部分译文
+    Update README
+    Update README
+    Use blockquotes for quotes. Use Emoji for work list.
+    
+    Signed-off-by: 庞博 <bopang@sohu-inc.com>
+    update README
+    update README
+    Update README
+    加入中文翻译说明和译文目录
+    Update the section regarding NSNotification (close #10)
+    Fix #23
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Remove extra word
+    
+    Both 'we' and 'you' was used in a statement. Removed 'we' to be consistent with the other related paragraphs.
+    Added missing strongSelf check in 'Retain cycles on self' paragraph.
+    Spelling and grammar improvements.
+    Added paragraph about creation of mutable NSArray.
+    Add recommendation for mutable objects syntax
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix wrong naming for a private method (Close #18)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix typos.
+    Fix typos
+    Fix the broken link of the Aspect lib and its author
+    Fix issue in "Class Name" (Close #7)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Add link to raywenderlich.com coding style
+    Add link to explanation of "Egyptian brackets"
+    Properties - Remove duplicated paragraph + grammar
+    Initializer and dealloc - Grammar & minor typos
+    Improved 'Protocols' section.
+    Update README.md
+    Couple of changes
+    
+    * Fix minor typo
+    * Better Objective-C syntax hightlight
+    Fixed code convention in code snippets.
+    Added link to 'Liskov Substitution Principle' on Wikipedia.
+    Rephrased some sentences in the 'Protocols' section.
+    Fixed minor formatting issues.
+    Modified properties section to remove typo "much descriptively"
+    Cleaned up "Properties" naming conventions
+    
+    There was a formatting bug, and the sentence structure needed a bit of cleanup.
+    Fix typo
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Better formatting
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Fix typos
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    Update the "Initializer and dealloc" section (Fix #1)
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    First release
+    Fix TOC script
+    
+    Signed-off-by: Luca Bernardi <luka.bernardi@gmail.com>
+    First release
+    First release
+    First release
+    First release
+    First release

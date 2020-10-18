@@ -1,0 +1,473 @@
+﻿    excellent first pass at a description; now it's time for the Ministry of
+    English Composition to tear it apart and rebuild it, stronger than before
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@17801 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    A quick description of Rate distortion theory.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@17774 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Quick desription of the viterbi algorithm so i dont have to repeat it
+    over and over again on the ML.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@17772 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    MONster is no longuer shipped with CHUD, as it's been superseeded by Shark
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@6174 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    oprofile reference for Linux/PPC
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5470 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    CVS --> Subversion
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5458 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    COSMETICS: Remove all trailing whitespace.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4749 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling/wording/grammar
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4367 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Cosmetics: Break overly long lines.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4365 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    better hadamard8_diff16 in AltiVec, and more patch by (Romain Dolbeau <dolbeau at irisa dot fr>)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@3038 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    powerpc PMC doc fix by (Romain Dolbeau <dolbeau at irisa dot fr>)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@2914 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    FFmpeg & evaluating performance on the PowerPC Architecture HOWTO by (Romain Dolbeau <dolbeau at irisa dot fr>)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@2023 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    misc spelling fixes
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9289 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    cosmetics: Fix another common typo, dependAnt --> dependEnt.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@8114 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling/wording
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@7859 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    a few words about libavutil
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@7851 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    small wording fixes
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15358 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    wording/spelling
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15333 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Spelling...
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15327 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Add , to clarify sentence.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15323 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Fix typos found by ispell.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15320 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Reword a few sentances to make them clearer.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15319 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    The official guide to swscale for confused developers.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15316 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Roundup now works from a ffmpeg.org domain as well, so prefer that.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@16177 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    wording improvement by the Wanderer
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12427 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Ministry of English Composition edits, courtesy of the Wanderer
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12424 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Ministry of English Composition edits
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12420 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Clarify the intended meaning of wont_fix.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12396 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    closed/needs_more_info state
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11297 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10550 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    duplicate note
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10546 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling/wording/grammar
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10489 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    revert r10403
+    there was no discussion about it nor did anyone provide any justification for it
+    not before it was applied nor within 48h after i explicitly asked
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10425 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Add description for feature_request/open/approved.
+    patch by Mark Cox, melbournemark+ffmpeg gmail com
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10403 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    elaboarte on needs_more_info
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10196 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    obfuscate urls and fix note about them
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10124 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    fix url typo pointed out by Guillaume LECERF
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10123 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    document the email interface
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10120 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    make it a little harder to find the tracker, this should hopefully
+    reduce the number of completly meaningless "bugreports"
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9956 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    topic explanations
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9915 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    URL of the webinterface
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9879 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    remove the mailinglist still preferred note, roundup is much nicer even though
+    it still has some issues which lu_zero needs to deal with :)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9877 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    note about removing needs_more_info
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9810 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Introducing Topics
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9431 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    ffmpeg-issues subscription URL
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9426 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Some more minor spelling improvements, some grammar improvement might be
+    good in some places as well.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9424 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Typos removed
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9423 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    wish priority description and ffmpeg-issues vs ffmpeg_issues
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9422 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    ffmpegs bug/patch/feature request tracker manual
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9415 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    editorial changes
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5942 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    things to take care of for the next soc
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5941 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Use a consistent capitalization for 'Snow' as discussed on the list
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11880 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Nitpicks patch by Lars Täuber.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11508 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Ministry of English Composition edits for SNOW spec-- introduction (many more to come)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11503 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Fix random typos.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11477 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Split range coding chapter in binary and integers
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11467 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    argh s/ffmpeg/snow/
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11466 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Range coder state transition table, based on a  patch by lars punkt taeuber ät web punkt de.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11465 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Remove extra word.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11464 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    A few lines of text about the range coder, part of a patch by Lars Täuber taeuber ät bbaw punkt de.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11397 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    a little bit more bitstream syntax for the residual
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10483 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    make intra dc prediction less contradictionary
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10482 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    high level bitsteram and decoding process in ascii art
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10470 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    move 8tap filter to not important as thats purely encoder side
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10467 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    update todo
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10466 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    dont force the halfpel filter coeffs to be retransmitted on every frame
+    if always_reset is set
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10460 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    update spec to reflect changes to implementation about per frame
+    qlog/decomp_count
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10459 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    clarify
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10449 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    document MC
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10438 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    16bit IDWT implementation note
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10396 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    more todo
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10395 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    optimization tips for the wavelet
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10178 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    more complete dc prediction description
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10177 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    LL band prediction
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10176 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    typo
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10175 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    describe IDWT
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10174 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    intro
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10168 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    few words about the wavelets
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10167 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    misc typo fixes
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@9291 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    typo fixed
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@8130 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    snow specification
+    (this is just quickly written and probably isnt error free, its also incomplete)
+    all types of help are very welcome (fixing FIXMEs, fixing errors adding missing stuff,
+    correcting spelling grammmer, ...)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@7406 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Change mplayerhq.hu references to ffmpeg.org where appropriate.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@16310 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Rename libavcodec/i386/ --> libavcodec/x86/.
+    It contains optimizations that are not specific to i386 and
+    libavutil uses this naming scheme already.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@16270 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Convert asm keyword into __asm__.
+    
+    Neither the asm() nor the __asm__() keyword is not part of the C99
+    standard, but while GCC accepts the former in C89 syntax, it is not
+    accepted in C99 unless GNU extensions are turned on (with -fasm). The
+    latter form is accepted in any syntax as an extension (without
+    requiring further command-line options).
+    
+    Sun Studio C99 compiler also does not accept asm() while accepting
+    __asm__(), albeit reporting warnings that it's not valid C99 synta.
+    
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@15627 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Add Intel IWMMXT2 link, patch by Dmitry Antipov, dmantipov yandex ru.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@13467 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    minor English corrections
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12171 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    typos
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12170 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    "General Tips" section
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@12168 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    clarify previous revision on optimization justification
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11598 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Ministry of English Composition edits
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11597 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Cosmetics to speed up finding sections of interrest.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11596 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    "What speedup justifies an optimizetion" section
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@11595 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    cosmetics: Fix AltiVec spelling.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10639 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Fix links to ARM documentation
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10399 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    add a link to VIS instructions whitepaper
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10235 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    more sparc asm docs
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10215 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    PowerPC/CELL/Altivec pointers
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10197 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    sparc asm docs
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10194 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    simd gmc wasn't impossible.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@10191 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    links to ARM optimization manuals
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@7425 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    www1.mplayerhq.hu --> lists.mplayerhq.hu
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5459 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    CVS --> Subversion
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@5458 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Rephrase a paragraph for ease of understanding, suggested by Mans.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4379 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling/phrasing fixes, mostly by Mans
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4378 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    spelling/grammar/wording/phrasing
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4376 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    Cosmetics: Removed trailing whitespace, converted tabs to spaces.
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4375 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    changed the mailinglist pointers to the new place (mplayerhq)
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4122 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    testing cvslog
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4118 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    testing cvslog
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@4117 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    info about h and tpel
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@2639 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    add/put_pixels_clamped update
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@1475 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    gmc1
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@1446 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    more links
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@1445 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b
+    optimization tips
+    can allso be used as a torture test for ur spelling checker
+    
+    
+    git-svn-id: file:///var/local/repositories/ffmpeg/trunk@1444 9553f0bf-9b14-0410-a0b8-cfaf0461ba5b

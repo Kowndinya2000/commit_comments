@@ -1,0 +1,1441 @@
+﻿    Update README.md
+    Update README.md
+    Intial structure
+    Updated license headers, POM
+    Organized repo according to main epics
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Organized repo according to main epics
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Organized repo according to main epics
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Organized repo according to main epics
+    Slightly curated version version of Arjan Tijms' HttpServerAuthModule
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Updated license headers, POM
+    Added interface based authentication mechanism proposal
+    
+    and example RI implementation
+    Organized repo according to main epics
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Add jaspic-http-sam
+    Updated license headers, POM
+    Organized repo according to main epics
+    Slightly curated version version of Arjan Tijms' HttpServerAuthModule
+    Updated license headers, POM
+    Organized repo according to main epics
+    Slightly curated version version of Arjan Tijms' HttpServerAuthModule
+    Updated license headers, POM
+    Organized repo according to main epics
+    Slightly curated version version of Arjan Tijms' HttpServerAuthModule
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers and readme
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Adjusted terminology: login module to identity store
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Add simple-annotated-login-module
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Adjusted terminology: login module to identity store
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed UserSource/Service to identity store
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers and readme
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Slightly varied naming on authentication-cdi-events-style-a
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Slightly varied naming on authentication-cdi-events-style-a
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Slightly varied naming on authentication-cdi-events-style-a
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Slightly varied naming on authentication-cdi-events-style-a
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Java doc on authentication events
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Java doc on authentication events
+    Slightly varied naming on authentication-cdi-events-style-a
+    Events from Jean-Louis Monteiro
+    Updated license headers and readme
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Initial commit
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Apply License plugin
+    Updated headers and License plugin usage
+    Organized repo according to main epics
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Added simplified identity store proposal
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Initial commit
+    Initial commit
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Added simplified identity store proposal
+    Organized repo according to main epics
+    Initial commit for read-only IdentityStore
+    Updated license headers, POM
+    Updated license headers and readme
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Events from Jean-Louis Monteiro
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Add more to the CDI event based example
+    Add a small description
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Fix the wrong package
+    Add more to the CDI event based example
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Fix the wrong package
+    Add more to the CDI event based example
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Yank the event suffix at the end of the class
+    Fix the wrong package
+    Add more to the CDI event based example
+    JAVAEE_SECURITY_SPEC-16 - @RolesAllowed and @RunAs combinations
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Renamed "authentication" in project to "call identity store via"
+    Fix the wrong package
+    Add more to the CDI event based example
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Add simple-annotated-security-provider
+    Tweaking script
+    Add simple-annotated-security-provider
+    Updated license headers, POM
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Organized repo according to main epics
+    Renamed security provider to identity store
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Organized repo according to main epics
+    Organized repo according to main epics
+    Permissions concept code example
+    Add named-permissions
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Doc layout
+    Permissions concept code example
+    Add named-permissions
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Permissions concept code example
+    Organized repo according to main epics
+    Organized repo according to main epics
+    Add voter
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Add voter
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Permissions concept code example
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Formatting license headers
+    Organized repo according to main epics
+    Example of AccessDecisionVoter, see  https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-25
+    Organized repo according to main epics
+    Add jaxrs-http-constraints
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Add jaxrs-http-constraints
+    Formatting license headers
+    Organized repo according to main epics
+    Make it simpler
+    Add resource
+    Organized repo according to main epics
+    Add securitybindingtypeinterceptor
+    Add jaspic-http-sam
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    Add securitybindingtypeinterceptor
+    Formatting license headers
+    Organized repo according to main epics
+    add a SecurityBindingType proposal
+    Formatting license headers
+    Organized repo according to main epics
+    add a SecurityBindingType proposal
+    Formatting license headers
+    Organized repo according to main epics
+    fix SecurityBindingType sample
+    add a SecurityBindingType proposal
+    Yank the event suffix at the end of the class
+    Events from Jean-Louis Monteiro
+    Formatting license headers
+    Organized repo according to main epics
+    add a SecurityBindingType proposal
+    Formatting license headers
+    Organized repo according to main epics
+    add a SecurityBindingType proposal
+    Organized repo according to main epics
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Fix headers
+    Add el-authorization
+    Formatting license headers
+    Organized repo according to main epics
+    Update EvaluateSecured.java
+    
+    Fixed license header
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Organized repo according to main epics
+    Fix headers
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Organized repo according to main epics
+    Add sudo-like-runas
+    Add el-authorization
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    JAVAEE_SECURITY_SPEC-16 - @RolesAllowed and @RunAs combinations
+    Add sudo-like-runas
+    Formatting license headers
+    Organized repo according to main epics
+    JAVAEE_SECURITY_SPEC-16 - @RolesAllowed and @RunAs combinations
+    Formatting license headers
+    Organized repo according to main epics
+    JAVAEE_SECURITY_SPEC-16 - @RolesAllowed and @RunAs combinations
+    Stubs described by Alex Kosowski in JAVAEE_SECURITY_SPEC-10
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Formatting license headers
+    Organized repo according to main epics
+    JAVAEE_SECURITY_SPEC-16 - @RolesAllowed and @RunAs combinations
+    Fix headers
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated readme
+    Updating license headers and plugin config
+    Updated license headers and readme
+    Update License plugin and readme for it
+    Update License plugin and readme for it
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Create headers.xml
+    
+    A Maven license plugin style variation to use "Java" not "JavaDoc" type headers.
+    Formatting license headers
+    Update License plugin and readme for it
+    Updated headers and License plugin usage
+    Updated POM, applied License header plugin
+    Organized repo according to main epics
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Add standard-caller-and-group-principals
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    From: arjan tijms - Standardise user/caller and group/role principals in Subject
+    Add standard-caller-and-group-principals
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    From: arjan tijms - Standardise user/caller and group/role principals in Subject
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    From: arjan tijms - Standardise user/caller and group/role principals in Subject
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Add standard-security-context
+    Add user-and-role-service
+    Add simple-annotated-login-module
+    Add simple-annotated-security-provider
+    Fixed script
+    little script to more quickly add submodules
+    Organized repo according to main epics
+    arjan tijms https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-12
+    Add standard-security-context
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    arjan tijms https://java.net/jira/browse/JAVAEE_SECURITY_SPEC-12
+    Simplified Application-packaged LoginModule by Arjan Tijms
+    Annotation-based Security Provider from @m-reza-rahman
+    Signature and OAuth2 token authentication
+    Add HTTP Signature and OAuth2 token
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Fix headers
+    Examples for need for standard SecurityContext
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Fix headers
+    Examples for need for standard SecurityContext
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Fix headers
+    Examples for need for standard SecurityContext
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Fix headers
+    Examples for need for standard SecurityContext
+    Updated license headers, POM
+    Updating license headers and plugin config
+    Organized repo according to main epics
+    Fix headers
+    Examples for need for standard SecurityContext

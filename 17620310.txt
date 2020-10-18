@@ -1,0 +1,3090 @@
+﻿    Idem
+    Idem as previous
+    Update README to fix format errors
+    Update README to GitHub format
+    Fixed the README message
+    Removed the useless copyOnMIC.sh shell script, and fixed the
+    READMEs :)
+    Edited README to add the git submodule command
+    Modified the README to fit the new Makefile
+    Fixed important bug in computeMaxIPC that can cause crashes
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added new licence headers
+    README completed
+    Added release info files
+    Added archTester
+    Makefile build to run check and offline script
+    set all the permissions to 755 on all the files... keep it this way!
+    Added empty file
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    set all the permissions to 755 on all the files... keep it this way!
+    Added empty file
+    Fixed a compilation issue with glog
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Bug update:
+    - Removed PythonForMIC as a subproject
+    - Rewritten Offline phase in C++
+    - Fixed a bug that caused crashed at exit
+    Removed the distclean PythonForMIC rule
+    Now cleans python build after make (mic)
+    and improved copyOnMic.sh script
+    Modified the README to fit the new Makefile
+    Added a copyOnMIC.sh script to automate transfer on the card
+    Added a rule to compute mic-libs in lPowerProbe when using MIC
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    adding logo
+    Update README to GitHub format
+    Removed the useless copyOnMIC.sh shell script, and fixed the
+    READMEs :)
+    Now cleans python build after make (mic)
+    and improved copyOnMic.sh script
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    adding logo
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Added header messages in offline code
+    Added the needed utils.h file for the offline phase
+    Removing todo comments in code
+    - Deleted debug output in offline
+    - Fixed a no active core case for stability process (x86)
+    Updated the module to a specific lPowerProbe project branch
+    Fixed XeonPhi-only code in offline
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Added header messages in offline code
+    Removed useless messages in offline
+    Removed stupid exit call in offline phase... :-/
+    Added newly-rewritten Offline phase documentation
+    Replaced the system system-call by popen to avoid I/O stream redirection
+    Bug update:
+    - Removed PythonForMIC as a subproject
+    - Rewritten Offline phase in C++
+    - Fixed a bug that caused crashed at exit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added release info files
+    Added archTester
+    Makefile build to run check and offline script
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Fixed the Makefile rules to build and clean-up properly
+    Fixed the offline Makefile (CC instead of CXX for offline program)
+    Fixed the offline Makefile to be able to compile lPowerProbe
+    Bug update:
+    - Removed PythonForMIC as a subproject
+    - Rewritten Offline phase in C++
+    - Fixed a bug that caused crashed at exit
+    Fixed the Makefile for x86 offline profiling
+    Deleted useless prints in x86
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fixed offline makefile for the new usefulFreqs.py usage
+    Added release info files
+    Added archTester
+    Makefile build to run check and offline script
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now officially supporting IvyBridge
+    Improved error message in archTester
+    Added release info files
+    Added archTester
+    Makefile build to run check and offline script
+    Move lPowerProbe
+    Added archTester
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Move lPowerProbe
+    Added archTester
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added release info files
+    Added archTester
+    Makefile build to run check and offline script
+    Move lPowerProbe
+    Added archTester
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Cleanup/Documentation commit !
+    - Added Doxyfile for documentation generation
+    - Tuned/Added a little bit of documentation
+    - Removed useless classes (PathCache and TimeProfiler)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Code cleaning
+    L3missRatio fixed (lots of bugs in previous commits)
+    Version with L3MissRatio phase change detection
+    Version with IPS phase change detection
+    Experimental stuff for GreenCOM paper
+    Experimental stuff for GreenCOM paper
+    Modified the behavior of frequency going up:
+    
+    Before:
+       - Freqs were instantaneously going up to freq max
+    Now:
+       - Freqs are going up as fast as going down
+    
+    This implies some overhead when sudden cpu-bound phases, but saves
+    energy (by a lot) for volatile cpu phases.
+    
+    Future work:
+    Introduce an hybrid solution that consists in evaluating a "consensus"
+    decision between low and high freqs in order to keep energy savings
+    without compromising execution time
+    Fixed several bugs and implemented the 100ms waiting time
+    Fixed the cpu activity bug
+    - Still have to fix the stability bug
+    DecisionMaker in DVFSUnit is now dynamically allocated to have the
+    threads vector as a constructor parameter
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Cleanup/Documentation commit !
+    - Added Doxyfile for documentation generation
+    - Tuned/Added a little bit of documentation
+    - Removed useless classes (PathCache and TimeProfiler)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed useless methods in FreqSelector (getBestFrequency,
+      getFrequencyMark)
+    - Fixed the stability bug (because we did not take the good hwc_
+      structure in
+      Thread.h)
+    Forgot to add the Src folder... won't work without this commit
+    - Deleted debug output in offline
+    - Fixed a no active core case for stability process (x86)
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Cleanup/Documentation commit !
+    - Added Doxyfile for documentation generation
+    - Tuned/Added a little bit of documentation
+    - Removed useless classes (PathCache and TimeProfiler)
+    Deleted the log comments (MIC)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Code cleaning
+    L3missRatio fixed (lots of bugs in previous commits)
+    Deleted the useless (and provocative) comments :)
+    test (not working)
+    Replaced l3MissRatio WRT time by l3MissRatio WRT l3reference
+    Version with L3MissRatio phase change detection
+    Version with IPS phase change detection
+    No sequence execution if timeRatio == 0
+    Version Lente pushed
+    Experimental stuff for GreenCOM paper
+    Experimental stuff for GreenCOM paper
+    Added the "consensus" decision
+    Modified the behavior of frequency going up:
+    
+    Before:
+       - Freqs were instantaneously going up to freq max
+    Now:
+       - Freqs are going up as fast as going down
+    
+    This implies some overhead when sudden cpu-bound phases, but saves
+    energy (by a lot) for volatile cpu phases.
+    
+    Future work:
+    Introduce an hybrid solution that consists in evaluating a "consensus"
+    decision between low and high freqs in order to keep energy savings
+    without compromising execution time
+    - Fixed energy performance to achieve the same as IGCC tag commit
+    - added a smoothIPC method to prevent measurement noise
+    - Commented, cleared the refactored code
+    Fixed the max ipc computation by reseting values
+    fixing debug log
+    fixing debug log
+    Fixed several bugs and implemented the 100ms waiting time
+    Refixed the getBestCouple method
+    Fixed another error...
+    Fixed compilation issue
+    Somewhat (really) fixed it
+    - Fixed the wrong Pref
+    - Fixed the freqsToEvaluate set iterators
+    - Removed useless methods in FreqSelector (getBestFrequency,
+      getFrequencyMark)
+    - Fixed the stability bug (because we did not take the good hwc_
+      structure in
+      Thread.h)
+    Fixed the cpu activity bug
+    - Still have to fix the stability bug
+    Fixed the atexit call and signal handling bug
+    Fixed the nbFreqs bug in DecisionMaker
+    Fixed the hwcPanic bug in evaluateFrequency
+    - Add of a function to reset HW counters in Thread.h
+    - Explitited the dependencies between function members in Thread.h
+    Renamed sleepForAWhile --> nsleep and moved it in Common.h
+    DecisionMaker in DVFSUnit is now dynamically allocated to have the
+    threads vector as a constructor parameter
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Somewhat fixed the freqsToEvaluate iterators again
+    Renamed sleepForAWhile --> nsleep and moved it in Common.h
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Cleanup/Documentation commit !
+    - Added Doxyfile for documentation generation
+    - Tuned/Added a little bit of documentation
+    - Removed useless classes (PathCache and TimeProfiler)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Forgot to add the Src folder... won't work without this commit
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Cleanup/Documentation commit !
+    - Added Doxyfile for documentation generation
+    - Tuned/Added a little bit of documentation
+    - Removed useless classes (PathCache and TimeProfiler)
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fixed several bugs and implemented the 100ms waiting time
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Fixed energy performance to achieve the same as IGCC tag commit
+    - added a smoothIPC method to prevent measurement noise
+    - Commented, cleared the refactored code
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fixed several bugs and implemented the 100ms waiting time
+    Forgot to add the Src folder... won't work without this commit
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Deleted the useless (and provocative) comments :)
+    test (not working)
+    fixing debug log
+    fixing debug log
+    Fixed several bugs and implemented the 100ms waiting time
+    - Fixed the wrong Pref
+    - Fixed the freqsToEvaluate set iterators
+    Forgot to add the Src folder... won't work without this commit
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    - Fixed the restablishment of the governors on Xeon Phi
+    - Removed useless file openings on Xeon Phi
+    This is because there is a software correlation in cpufreq's sysfs
+    involving all the cards' threads
+    Fixed a compilation error with g++ (x86)
+    Bug update:
+    - Removed PythonForMIC as a subproject
+    - Rewritten Offline phase in C++
+    - Fixed a bug that caused crashed at exit
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Code cleaning
+    L3missRatio fixed (lots of bugs in previous commits)
+    Version with L3MissRatio phase change detection
+    Version with IPS phase change detection
+    Experimental stuff for GreenCOM paper
+    Experimental stuff for GreenCOM paper
+    Added the "consensus" decision
+    Modified the behavior of frequency going up:
+    
+    Before:
+       - Freqs were instantaneously going up to freq max
+    Now:
+       - Freqs are going up as fast as going down
+    
+    This implies some overhead when sudden cpu-bound phases, but saves
+    energy (by a lot) for volatile cpu phases.
+    
+    Future work:
+    Introduce an hybrid solution that consists in evaluating a "consensus"
+    decision between low and high freqs in order to keep energy savings
+    without compromising execution time
+    - Fixed energy performance to achieve the same as IGCC tag commit
+    - added a smoothIPC method to prevent measurement noise
+    - Commented, cleared the refactored code
+    fixing debug log
+    fixing debug log
+    Fixed several bugs and implemented the 100ms waiting time
+    - Removed useless methods in FreqSelector (getBestFrequency,
+      getFrequencyMark)
+    - Fixed the stability bug (because we did not take the good hwc_
+      structure in
+      Thread.h)
+    Fixed the atexit call and signal handling bug
+    Fixed the nbFreqs bug in DecisionMaker
+    Fixed the hwcPanic bug in evaluateFrequency
+    Fixed Thread.h's reset method (compilation error)
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Forgot to add the Src folder... won't work without this commit
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fixed several bugs and implemented the 100ms waiting time
+    Forgot to add the Src folder... won't work without this commit
+    Removing todo comments in code
+    First release with Xeon Phi support (beta)
+    Removing todo comments in code
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Fixed the Makefile for x86 offline profiling
+    Deleted useless prints in x86
+    First release with Xeon Phi support (beta)
+    Fixed a compilation issue with x86
+    Fixed a method in DVFSUnit that's supposed to be XeonPhi-only
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    First release with Xeon Phi support (beta)
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    DecisionMaker in DVFSUnit is now dynamically allocated to have the
+    threads vector as a constructor parameter
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    First release with Xeon Phi support (beta)
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    First release with Xeon Phi support (beta)
+    Removing todo comments in code
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    First release with Xeon Phi support (beta)
+    Fixed important bug in computeMaxIPC that can cause crashes
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    L3missRatio fixed (lots of bugs in previous commits)
+    Deleted the useless (and provocative) comments :)
+    test (not working)
+    Replaced l3MissRatio WRT time by l3MissRatio WRT l3reference
+    Version with L3MissRatio phase change detection
+    Version with IPS phase change detection
+    Experimental stuff for GreenCOM paper
+    Modified the behavior of frequency going up:
+    
+    Before:
+       - Freqs were instantaneously going up to freq max
+    Now:
+       - Freqs are going up as fast as going down
+    
+    This implies some overhead when sudden cpu-bound phases, but saves
+    energy (by a lot) for volatile cpu phases.
+    
+    Future work:
+    Introduce an hybrid solution that consists in evaluating a "consensus"
+    decision between low and high freqs in order to keep energy savings
+    without compromising execution time
+    - Fixed energy performance to achieve the same as IGCC tag commit
+    - added a smoothIPC method to prevent measurement noise
+    - Commented, cleared the refactored code
+    Fixed the max ipc computation by reseting values
+    fixing debug log
+    fixing debug log
+    Fixed several bugs and implemented the 100ms waiting time
+    - Fixed the wrong Pref
+    - Fixed the freqsToEvaluate set iterators
+    - Removed useless methods in FreqSelector (getBestFrequency,
+      getFrequencyMark)
+    - Fixed the stability bug (because we did not take the good hwc_
+      structure in
+      Thread.h)
+    Fixed the cpu activity bug
+    - Still have to fix the stability bug
+    Fixed the atexit call and signal handling bug
+    Fixed the nbFreqs bug in DecisionMaker
+    Fixed the hwcPanic bug in evaluateFrequency
+    Fixed Thread.h's reset method (compilation error)
+    - Add of a function to reset HW counters in Thread.h
+    - Explitited the dependencies between function members in Thread.h
+    Forgot to add the Src folder... won't work without this commit
+    Fixed a compilation issue: Forgot to push a source file... *sigh*
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    - Fixed the restablishment of the governors on Xeon Phi
+    - Removed useless file openings on Xeon Phi
+    This is because there is a software correlation in cpufreq's sysfs
+    involving all the cards' threads
+    Deleted Hand-over message when FoREST quits
+    Fixed the Makefile rules to build and clean-up properly
+    Bug update:
+    - Removed PythonForMIC as a subproject
+    - Rewritten Offline phase in C++
+    - Fixed a bug that caused crashed at exit
+    First release with Xeon Phi support (beta)
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fixed several bugs and implemented the 100ms waiting time
+    DecisionMaker in DVFSUnit is now dynamically allocated to have the
+    threads vector as a constructor parameter
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    - Added a XeonPhi-specific configuration file
+    - Active core checking is now done before the evaluation
+    - XeonPhi TSC clock variance now handled in offline
+    - Thread class now is aware of its corresponding DVFSUnit
+    - Code cleaning
+    Added compatibility with future Linux kernel versions
+    (see https://bugzilla.kernel.org/show_bug.cgi?id=58761)
+    Deleted PathBuilder and PathCache classes, added a FileUtils static
+    class instead.
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    - Removed the Config object from topology (now created in main)
+    - Config passed throuh Topology --> DVFSUnit --> DecisionMaker
+    - Renamed LocalRest.[cpp/h] --> FoREST.[cpp/h]
+    - Removed the useless ThreadArgs structure
+    - Context now only consists of : ThreadContext vector, config and
+      topology objects)
+    - ThreadContext only consists of : DVFSUnit pointer and pthread_t variable
+    - Added FoREST namespace in the Logger class
+    - Added using namespace FoREST in the main (FoREST.cpp) file
+    - Removed ThreadContexts from Topology and DVFSUnit classes
+    Forgot to add the Src folder... won't work without this commit
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Cleaning up the repo
+    First working release of REST 2.1
+    Initial commit for REST v2.1
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    My first (big) commit : linked frequency bugfix
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added benchmarks in repository (temporary)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Several major fixes related to the major changes performed in last
+    commit
+    cleaning Makefile
+    New simpler benchmark launcher
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Forgot to put plot file in last commit...
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added benchmarks in repository (temporary)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added benchmarks in repository (temporary)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Added benchmarks in repository (temporary)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Fix small issues + formatting
+    Added benchmarks in repository (temporary)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    set all the permissions to 755 on all the files... keep it this way!
+    Added empty file
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    First release with Xeon Phi support (beta)
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Now using google-glog for logging
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility
+    Putain de revert Revert "Test empty git repo"
+    
+    This reverts commit 9d62da9498d47ac5cb4038b8965ec232e4661c29.
+    Test empty git repo
+    Adding Google logging facility

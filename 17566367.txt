@@ -1,0 +1,756 @@
+﻿    Add README.md
+    Fixed formatting errors in documentation.
+    Issue #2054927 by generalredneck: Fixed Using the 'Flag Fetch  By User' rule returns the wrong result when grabbing for Anonymous users.
+    Issue #1315850 by mh86, joachim, madmatter23: Added support for Entity API metadata properties.
+    Convert drupal_* functions to backdrop_*
+    Issue #2027091 by hefox, jhedstrom: Added hook_flag_default_flags_alter to allow altering of default flag definitions.
+    Fixed stray spaces.
+    Fixed formatting of documentation @see tags.
+    Issue #2177859 by Mark Carver: Added $flag parameter to hook_flag_javascript_info_alter().
+    Issue #1448530 by berliner, sunnyuff: Fixed missing sample code in hook_flag_default_flags().
+    Issue #1965040 by shawn_smiley: Changed handling of return values from hook_flag_user_access() to allow all implementing modules to be considered.
+    Issue #1912208 by steveoliver: Fixed hook_flag_access() missing a mention of hook_flag_access_multiple().
+    Issue #1905750 by alexweber: Added module property to hook_flag_type_info(), and explicitly defined taxonomy term flag type, so that non-required core modules correctly declare dependencies.
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    by joachim: Added API docs for hook_flag_export_alter().
+    Issue #1524816 by joachim: Added hook_hook_info() and moved hook implementations to new flag.flag.inc file.
+    by joachim: Added documentation for hook_flag_delete() and hook_flag_reset().
+    Issue #1736352 by joachim: Changed hook_flag_flag() and hook_flag_unflag() to receive the flagging entity instead of the flagging id.
+    Issue #1720180 by joachim: Changed hook_flag_unflag() and Rules event to be invoked before the flagging entity is deleted.
+    Issue #1720402 by joachim: Split hook_flag() into hook_flag_flag() and hook_flag_unflag().
+    Issue #1734494 by joachim: Added property to hook_flag_link_type_info() to let link types declare they provide a flagging entity form.
+    Issue #1699756 by joachim: Renamed info hooks: hook_flag_definitions() to hook_flag_type_info() and hook_flag_link_types() to hook_flag_link_type_info().
+    Changed database column 'fcid' to 'flagging_id' on {flagging} table.
+    
+    Replaced s/fcid/flagging_id/ throughout.
+    Changed 'content' to 'entity' or 'object'.
+    Changed all $content_ids variables to $entity_ids.
+    
+    Replace s/\$content_ids\b/$entity_ids/ throughout.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #926252 by mooffie, snufkin: Added hook_flag_javascript_info_alter() to alter JavaScript info building and helper function to invoke it.
+    by joachim: Added API documentation to hook_flag_link().
+    by joachim: Added further detail to API docs for hook_flag_options_alter().
+    by joachim: Added further details to documentation; cleaned up for comment style.
+    by joachim: Added API docs for hook_flag_access().
+    by joachim: Added @see to API docs.
+    Issue #970052, part 2 by joachim: Added further documentation to api.php file.
+    Issue #970052, part 1 by joachim: Added api documentation file, not all flags fully documented yet.
+    Issue #7: Language becomes Langcode in Backdrop.
+    Add flag helper functions for entity type/token type mapping.
+    Added blank line after each switch() case.
+    Issue #1965760 by joachim: Fixed flags using the wrong token type for entity types whose token type different from the entity type name. Adds soft dependency on Token module for flag-related tokens on other entities.
+    Issue #1800676 by thsutton: Fixed typos in comments.
+    Changed token names.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed method flag_get_content_id() to flag_get_entity_id().
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Issue #871064 by mooffie, q0rban, ericduran, goron, wroxbox, joachim: Added flaggings as a fieldable entity.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1252788 by Dave Reid: Token hook should be moved from /includes/flag.token.inc to /flag.tokens.inc.
+    Issue #1202648 by Dave Reid: Correction to the flag link token.
+    Issue #1202648 by cyborg_572 and quicksketch: Add a token for Flag link.
+    Stripping CVS keywords
+    #891726: [flag:flag-name] should be [flag:name]
+    #878680: Fix the tokens browser.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Convert drupal_* functions to backdrop_*
+    by joachim: Fixed missing documentation.
+    Issue #2255199 by jhedstrom, joachim: Fixed button in flagging confirm form showing raw HTML tags if the flag link text contains HTML.
+    Issue #2254417 by joachim: Fixed Flagging fields in flag confirm form not getting validated by Field API.
+    Issue #2177859 by Mark Carver: Added $flag parameter to hook_flag_javascript_info_alter().
+    Issue #1991336 by joachim: Removed optional parameters from $flag->theme(), as these can be passed into the $variables array.
+    Issue #1921106 by donatasp: Fixed use of drupal_access_denied() causing 'cannot modify header information' errors.
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    Issue #887360 by joachim: Changed forms to standardize the way $flag is passed to submit handlers.
+    Issue #1698994 by Scyther: Moved menu callbacks to a flag.pages.inc file.
+    Issue #1888068 by chrisjlee: Remove empty hook_install() implementations.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1270708: Flag Actions .install file does not upgrade from D6 1.x to D7 2.x.
+    Stripping CVS keywords
+    #940182: by asimmonds: db_column_exists() renamed to db_field_exists() in D7.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Work-around for uninstall bug (Issue #810)
+    Convert hook_update_n functions. Add flag.settings.json config file.
+    Cleanup config on upgrade from Drupal.
+    Convert drupal_* functions to backdrop_*
+    Fixed array formatting: split over multiple lines, terminal commas.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #2091483 by Shabana Blackborder: Database table schema description is incorrect for flagging.sid.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1862404 by alexweber: Fixed mention of node_type in flag_schema() field comments.
+    Issue #1888058 by vomiand: Removed check for flag_content module hook_requirements().
+    Issue #1888068 by chrisjlee: Remove empty hook_install() implementations.
+    by joachim: Moved hook_schema() to be at the top of the .install file.
+    Issue #1804228 by Jorrit: Fixed robots.txt recommendation wrong when language negotiation is domain based.
+    Issue #1795120 by thsutton: Fixed incorrect table names in hook_schema() descriptions.
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Added workaround for http://drupal.org/node/190027: Dropping a primary key requires a temporary index to be created first.
+    Added handling of rename of fcid to update hook.
+    Changed database column 'fcid' to 'flagging_id' on {flagging} table.
+    
+    Replaced s/fcid/flagging_id/ throughout.
+    Fixed error messages on column change updates caused by schema being stale due to table name changes.
+    Added update 7304 to change column names on the {flag_counts} table.
+    Added update 7303 to change column names on the {flagging} table.
+    Added update 7302 to change column names on the {flag} table.
+    Changed hook_schema() descriptions.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Added rename of {flags} to flag_update_7301().
+    Changed name of 'flags' table to 'flag'.
+    Added flag_update_7301() to rename {flag_content} table to {flagging}.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1709498 by joachim: Changed lengths of db columns for entity and bundle names to 128.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Issue #1650512, follow-up, by joachim: Added check for existence prior to adding new index to {flag_content}.
+    Issue #1699328 by socketwench: Moved the bookmark flag to its own sub-module.
+    Issue #1650512 by dsnopek, snufkin: Added index to {flag_content} to improve Views performance.
+    Issue #1596492 by andypost, rafamatito: Fixed flag database data not cleaned up on comment & node delete.
+    by joachim: Fixed typo in UI text.
+     Issue #1293132: Fixed setting Rules conditions on user flags.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1217314: Fix flag_count indexes to add fid to "count" and "last_updated".
+    Issue #652558 by jaydub: Add last_updated timestamp when updating count in flag_counts_table.
+    Issue #1105490: Correction update to add uid to content_type, content_id index for is_flagged().
+    Issue #1105490 by catch and quicksketch: Add uid to content_type, content_id index for is_flagged().
+    Issue #1095348 by jzacsh: Add column and table descriptions to hook_schema().
+    Stripping CVS keywords
+    #878450: Pick existing node-types for the 'bookmarks' demonstrative flag.
+    #940182: by asimmonds: db_column_exists() renamed to db_field_exists() in D7.
+    #795168 by SteveK: Update Drupal paths in strings.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    #293088, Removed files from HEAD and left a RAEDME.txt explaining it. We don't want to confuse people.
+    #197772. Port to Drupal 6. Fully working interface and bookmarking in place. Views support not yet in place.
+    Initial port of Views Bookmark to Flag module For Drupal 5
+    Issue #1965760 by joachim: Fixed flags using the wrong token type for entity types whose token type different from the entity type name. Adds soft dependency on Token module for flag-related tokens on other entities.
+    by joachim: Fixed README to mention entities; fixed whitespace.
+    Stripping CVS keywords
+    #795168 by SteveK: Update Drupal paths in strings.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    #293088, Removed files from HEAD and left a RAEDME.txt explaining it. We don't want to confuse people.
+    Initial port of Views Bookmark to Flag module For Drupal 5
+    Convert drupal_* functions to backdrop_*
+    Fixed formatting errors in documentation.
+    Fixed spacing around operators.
+    Issue #2074505 by joachim: Fixed use of obsolete hook_flag() in Flag Actions module.
+    Issue #1766242 by Scyther: Added support for Admin Menu's hook_admin_menu_map().
+    Issue #1113904 by katbailey, jaydub, joachim: Changed use of static to drupal_static().
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Changed name of 'flags' table to 'flag'.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Stripping CVS keywords
+    #947392: Fixed a minor constant bug.
+    #878680: Fix the tokens browser.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert Drupal.* Javascript functions to Backdrop.*
+    Reorganize files into standard Backdrop structure
+    Issue #843308 by mooffie, walker2238, joachim: Added support for multiple instances of the same flag on the same page.
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    Issue #1864246 by alexweber: Removed old Views Bookmark logic in updateLink().
+    Issue #1373550 by timdorr: Fixed Javascript on flag links preventing event bubbling.
+    Stripping CVS keywords
+    #904144: Drupal.flagAnonymousLinkTemplates can't find template if flag's name contains underscore.
+    #996700: Anon flagging: Views may make some flag links "disappear"
+    #994574: Ease JavaScript anonymous debugging
+    #986840: "Unflag this!" link for anonymous users returns error: "You must have JavaScript and cookies enabled"
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert Drupal.* Javascript functions to Backdrop.*
+    Reorganize files into standard Backdrop structure
+    Issue #1730164 by joachim: Changed flag admin form link options to use Form API states rather than JavaScript.
+    Stripping CVS keywords
+    #891708: Fix the vertical tab's summary
+    #873716: Fix JavaScript link-options dependency mechanism.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert .info files: add backdrop = 1.x, drop core = 7.x
+    Issue #1699328 by socketwench: Moved the bookmark flag to its own sub-module.
+    Convert DRUPAL_ role constants to BACKDROP_ constants
+    Convert drupal_* functions to backdrop_*
+    Fixed surplus whitespace at end of files.
+    Fixed antique PHP code style and semi-deprecated functions.
+    Fixed indentation errors.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1888068 by chrisjlee: Remove empty hook_install() implementations.
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Changed method factory_by_content_type() to factory_by_entity_type().
+    Issue #1699328 by socketwench: Moved the bookmark flag to its own sub-module.
+    Convert drupal_* functions to backdrop_*
+    Issue #1699328 by socketwench: Moved the bookmark flag to its own sub-module.
+    by joachim: Fixed typo and changed single quotes to double.
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1699328 by socketwench: Moved the bookmark flag to its own sub-module.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1284556 by hefox: flag_views_default_views returns wrong value when bookmark flag doesn't exist.
+    Issue #1047954: User warning: Column 'uid' in on clause is ambiguous query on Flag default views.
+    Stripping CVS keywords
+    #878430: by webchick: Use filter_fallback_format() instead of  FILTER_FORMAT_DEFAULT.
+    #950934: user_scope should by 'any', not 'all'.
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Fix flag import failure (include path for flag.admin)
+    Convert drupal_* functions to backdrop_*
+    Fixed missing object instantiation parentheses.
+    Fixed formatting of single-line comments.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #2056271 by joachim: Fixed Flag pseudofields don't show in display options without a manual cache clear.
+    Issue #2059967 by joachim: Fixed exported flags containing internal / automatically generated flag properties.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1877448 by joachim: Changed update system to have clearer class names and allow API point versions.
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Issue #1778628 by joachim: Fixed uses of variable classname, unsupported on PHP 5.2.
+    Issue #1777518 by ACF: Fixed flag export code missing a final newline.
+    Issue #1777498 by ACF: Fixed missing placeholder in message on flag update page.
+    Changed update system to use a class for each API version change; added class for API 2 flags.
+    Issue #1740068 by kid_icarus: Fixed missing 'not' in error message.
+    Issue #1035410 by mh86, univate, joachim, zkday, alexweber: Added ability to flag any entity type.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Stripping CVS keywords
+    #1045152: Fix the Import: Added backward compatibility.
+    #1045152: Fix the Import.
+    #970470: Exports produce inconsistent ordering causing issues with Features.
+    #875276: by drewish, hefox, mooffie: Cannot export disabled flags to features.
+    #1008000: Have $flag->is_compatible()
+    #968376: by mgriego: Fix export formatting when using Features integration.
+    #887324: Modernize the menu items.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Issue #5: HTTP error 500 when flagging content
+    Begin converting tests for Backdrop
+    Changed name of 'flags' table to 'flag'.
+    Issue #871064 by mooffie, q0rban, ericduran, goron, wroxbox, joachim: Added flaggings as a fieldable entity.
+    Convert variables to use config
+    Fixed formatting errors in documentation.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Fix flag import failure (include path for flag.admin)
+    Convert drupal_* functions to backdrop_*
+    Issue #1971980 by Volx: Fixed Features export not taking into account provision of flag types by flag_definition_alter().
+    Issue #2056271 by joachim: Fixed Flag pseudofields don't show in display options without a manual cache clear.
+    Issue #2025321 by hefox: Fixed incorrect key in Features export dependency array.
+    Issue #1905004 by alexweber: Fixed flag export to Features not finding module that provides the entity as a dependency.
+    Issue #1905750 by alexweber: Added module property to hook_flag_type_info(), and explicitly defined taxonomy term flag type, so that non-required core modules correctly declare dependencies.
+    Issue #1699756 by joachim: Renamed info hooks: hook_flag_definitions() to hook_flag_type_info() and hook_flag_link_types() to hook_flag_link_type_info().
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Issue #1683204 by bberl: Fixed hook_features_revert() returning useless value.
+    Remove 'Could not load default flag' error
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Stripping CVS keywords
+    #970470: Exports produce inconsistent ordering causing issues with Features.
+    #875276: by drewish, hefox, mooffie: Cannot export disabled flags to features.
+    #968450: by hefox, mgriego, mooffie: Allow non-destructive reverting of Flags in Features.
+    #968376: by mgriego: Fix export formatting when using Features integration.
+    #846826 by univate: Warning message when viewing a flag-using feature.
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert drupal_* functions to backdrop_*
+    Fixed array formatting: split over multiple lines, terminal commas.
+    Changed comment.
+    Changed UI strings for actions.
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Changed all $content_type variables to $entity_type.
+    
+    Replace s/\$content_type\b/$entity_type/ throughout.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Stripping CVS keywords
+    #947392: Make Actions/Trigger work (D7)
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Fixed formatting errors in documentation.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1887738 by alexweber: Changed _flag_url() to a class method.
+    Issue #1722936 by joachim: Fixed flag locked property system so it doesn't get broken by flag classes' options_form().
+    Issue #1743240 by joachim: Fixed type_access_multiple() for node and comment not working with an empty array of types.
+    Changed remember_content() method to remember_entity().
+    Changed fetch_content() method to fetch_entity().
+    Changed method applies_to_content_id() to applies_to_entity_id().
+    Changed method flag_get_content_id() to flag_get_entity_id().
+    Changed all $content_ids variables to $entity_ids.
+    
+    Replace s/\$content_ids\b/$entity_ids/ throughout.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Fixed formatting errors in documentation.
+    Issue #2165363 by joachim, Shabana Blackborder: Fixed new flag form having no default values for link display properties (regression from 2.x).
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #891722 by mooffie, joachim: Removed [node:type] hack for token replacement where there is no real node available.
+    Issue #1475040 by socketwench: Fixed inconsistent declaration of flag_node()::type_access_multiple().
+    Issue #1722936 by joachim: Fixed flag locked property system so it doesn't get broken by flag classes' options_form().
+    Issue #1722928 by joachim: Added support for contextual links to generic entities.
+    Issue #1743240 by joachim: Fixed type_access_multiple() for node and comment not working with an empty array of types.
+    Changed fetch_content() method to fetch_entity().
+    Changed method applies_to_content_id() to applies_to_entity_id().
+    Changed all $content_ids variables to $entity_ids.
+    
+    Replace s/\$content_ids\b/$entity_ids/ throughout.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Issue #5: HTTP error 500 when flagging content
+    Fix for D7 cache bug https://www.drupal.org/node/1925922
+    Convert variables to use config
+    Convert drupal_* functions to backdrop_*
+    by joachim: Fixed parameter docs in invoke_rules_event().
+    by joachim: Moved Rules helper method to better location in the class code.
+    by joachim: Fixed errors in parameter documentation for Flagging CRUD private methods.
+    Issue #2257603 by joachim: Moved code for populating or creating a Flagging entity to be together.
+    Issue #2196085 by cs_shadow: Fixed hook_entity_delete() getting invoked only after field data is deleted.
+    Issue #2254415 by joachim: Removed todo regarding field_attach_validate(), added documentation stating the caller's responsibility to perform Field API validation.
+    Issue #2254399 by joachim: Removed pointless checking of $account: it is always at least set to the $user global.
+    Issue #2121053 by joachim: Fixed field_attach_presave() getting called too late on when inserting or updating a Flagging.
+    Issue #2254171 by joachim: Moved Rules event invocation to a helper method.
+    Issue #2250543 by joachim: Removed pointless call to get_flagging().
+    Removed obsolete comments about low-level methods.
+    Merged _delete_flagging() into flagging_delete().
+    Merged _update_flagging() into flagging_update().
+    Merged _insert_flagging() into flagging_insert().
+    Merged _unflag() into flagging_delete().
+    Merged _flag() into flagging_insert().
+    Moved comment.
+    Moved re-flagging low-level code to new flagging_update() method.
+    Moved flagging low-level code to new flagging_insert() method.
+    Moved anonymous cookie handling and hook_entity_presave() to run separately for each sub-case of flagging.
+    Moved unflagging low-level code to new flagging_delete() method.
+    Moved creation of new Flagging entity to be handled in one place for both cases.
+    Fixed antique PHP code style and semi-deprecated functions.
+    Fixed formatting errors in documentation.
+    Fixed indentation errors.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #2208847 by joachim: Fixed static caches of Flag API not getting reset when flagging and unflagging.
+    Issue #2154251 by Shabana Blackborder, joachim: Fixed flags that react to other flags getting an incorrectly formed link when unflagging with the Javascript link; moved cache clears to be beside the database changes.
+    Issue #2202971 by joachim: Changed flag_flag::_flag() to take a $flagging record rather than separate values.
+    Issue #2202959 by joachim: Added documentation to clarify logic of hook invocation when updating a flagging.
+    by joachim: Fixed typo in docs.
+    Issue #2162925 by claudiu.cristea, joachim: Fixed hook_entity_presave() getting invoked with a NULL for the Flagging entity.
+    Issue #2119467 by foopang: Fixed entity CRUD hooks not invoked.
+    Issue #2059959 by joachim: Fixed 'global' property can't be defined as FALSE in hook_flag_default_flags().
+    by joachim: Fixed errors and omissions in documentation.
+    by joachim: Fixed mentions of 'node' in generic contexts.
+    Issue #1965040 by shawn_smiley: Changed handling of return values from hook_flag_user_access() to allow all implementing modules to be considered.
+    Issue #1992814 by joachim: Renamed uses_hook_link() to shows_in_entity_links().
+    Issue #1991336 by joachim: Removed optional parameters from $flag->theme(), as these can be passed into the $variables array.
+    Issue #1892930 by joachim, chrisjlee: Added placement of flag links as pseudofields.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    Issue #1894030 by alexweber: Removed reset parameter in flag_get_counts() in favour of drupal_static_reset().
+    Issue #1886560 by alexweber: Removed reset parameter in flag_get_user_flags() in favour of drupal_static_reset().
+    Issue #1887738 by alexweber: Changed _flag_url() to a class method.
+    Issue #1886244 by joachim: Changed parameters of _insert_flagging() to match other private CRUD methods.
+    by joachim: Removed obsolete comment.
+    by joachim: Changed layout of big theme arrays to be more readable.
+    Issue #1881964 by joachim: Fixed missing documentation for type_access() and type_access_multiple() return value.
+    Issue #1877378 by joachim: Fixed incorrect documentation in flag_flag()::theme().
+    by joachim: Changed query to be more legible.
+    Issue #1860578 by laughnan: Changed complex expression in flag_flag::access_entity_enabled() to be more readable.
+    Revert "Issue #1304790 by fago, drewish: Fixed flagging-user sub-tokens not replaced."
+    
+    This reverts commit 6223d41653788acee0ad69679dfb191e8b79fe49.
+    Revert "by joachim: Added mising comment from previous patch."
+    
+    This reverts commit 4a0bae5ae49c3afd00ff4b37a68eff3463a8a034.
+    by joachim: Added mising comment from previous patch.
+    Issue #1304790 by fago, drewish: Fixed flagging-user sub-tokens not replaced.
+    Issue #1817644 by barraponto: Added flag template suggestion for link type.
+    Issue #1784112 by laughnan: Moved _flag_entity_enabled() to a method of flag base class.
+    Issue #1780520 by socketwench: Removed flag_get_flags()  parameter, changed reset calls to use drupal_static_reset().
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Issue #1724282 by joachim: Added documentation on the various ways to get a $flag object.
+    Added setting of default entity_type in factory_by_array().
+    Issue #1735760 by bartmcpherson: Fixed use of entity_load() to clear entity cache.
+    Issue #1736352 by joachim: Changed hook_flag_flag() and hook_flag_unflag() to receive the flagging entity instead of the flagging id.
+    Issue #1736310 by joachim: Moved loading of flagging entity during unflagging to flag() method.
+    Issue #1720180 by joachim: Changed hook_flag_unflag() and Rules event to be invoked before the flagging entity is deleted.
+    Issue #1736280 by joachim: Changed call to _increase_count()/_decrease_count() to not be nested in _flag()/_flag().
+    Issue #1735714 by joachim: Removed needless query and return in _unflag().
+    Issue #1720402 by joachim: Split hook_flag() into hook_flag_flag() and hook_flag_unflag().
+    Issue #1726724 by kid_icarus: Fixed documentation of flag_flag class variables.
+    Issue #471212 by joachim: Changed flag types property to allow an empty array to mean all object subtypes/bundles apply.
+    Issue #1719942 by joachim: Fixed RulesEvaluationException when unflagging Rules event is invoked.
+    Issue #1720196 by joachim: Changed Rules event to be invoked after hook_flag() rather than within it.
+    Issue #1699756 by joachim: Renamed info hooks: hook_flag_definitions() to hook_flag_type_info() and hook_flag_link_types() to hook_flag_link_type_info().
+    Issue #1718678 by Scyther: Fixed incorrectly formatted error message on flag form for broken flags.
+    Changed database column 'fcid' to 'flagging_id' on {flagging} table.
+    
+    Replaced s/fcid/flagging_id/ throughout.
+    Changed flag_get_content_flags() to flag_get_entity_flags().
+    Changed use of variable $content_access to $entity_access.
+    Changed use of variable $content to $entity.
+    Changed remember_content() method to remember_entity().
+    Changed method _load_content() to _load_entity().
+    Changed applies_to_content_object() method to applies_to_entity().
+    Changed fetch_content() method to fetch_entity().
+    Changed 'content' to 'entity' or 'object'.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed method applies_to_content_id() to applies_to_entity_id().
+    Changed method flag_get_content_id() to flag_get_entity_id().
+    Changed all $content_ids variables to $entity_ids.
+    
+    Replace s/\$content_ids\b/$entity_ids/ throughout.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Changed method factory_by_content_type() to factory_by_entity_type().
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Changed all $content_type variables to $entity_type.
+    
+    Replace s/\$content_type\b/$entity_type/ throughout.
+    Changed name of 'flags' table to 'flag'.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Issue #1395034 by Amitaibu: Fixed flag_get_content_flags() static cache not cleared on flag.
+    Issue #871064 by mooffie, q0rban, ericduran, goron, wroxbox, joachim: Added flaggings as a fieldable entity.
+    by joachim: Added further details to documentation; cleaned up for comment style.
+    Issue #1689704 by joachim: Changed flag object to retrieve entity info rather than store it.
+    Issue #1035410 by mh86, univate, joachim, zkday, alexweber: Added ability to flag any entity type.
+    by joachim: Fixed parameters in docblock on access().
+    Issue #1352274 by graker: ->get_user_count()
+    by joachim: Changed docblock for flag_flag_definitions() to match hook docblock.
+    by joachim: Added documentation to flag default options.
+    Issue #1198530 by semiaddict and quicksketch: Use Contextual Links for add/remove commands on teasers.
+    Issue #1290890: Add hook_flag_definitions_alter() hook.
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #719616: Include last_updated count when incrementing or decrementing counts.
+    #719616 by ralf.strobel: Code cleanup and additional docs to the _decrement_count() method.
+    Issue #719616 by ralf.strobel: Fix to keep flag_counts current by manual in/decreasing of count.
+    Issue #719616 by andrewlevine, dereine, ralf.strobel, and quicksketch: Keep flag_counts current by manual in/decreasing of count.
+    Issue #1258764 by trrroy, gagarine, and quicksketch: Flag starts a session on anonymous user loads which is bad for pressflow/varnish.
+    Issue #652558 by jaydub: Add last_updated timestamp when updating count in flag_counts_table.
+    Issue #1088672 by jodarove: Occasional duplicate fid-node key error when flagging content.
+    Issue #1258282: Logging in after anonymous flagging may cause duplicate entry SQL errors.
+    Issue #1134516: Fixing minor notice in comment multiple access checks (seen when using flags in comment views).
+    Issue #1159470 by lyricnz and quicksketch: Add ability to adjust flag order on node/add/* & /admin/structure/flags pages.
+    Issue #720672: Make $flag->access (and _multiple) act in a consistent manner.
+    Issue #1196266 by bartl: Database error in flag_flag_access_multiple when trying to view bookmarks.
+     #875366 Port the Rules integration to D7.
+    Stripping CVS keywords
+    #945880: by manarth: Functions called as static but declared as non-static (E_STRICT compliance).
+    #1022800: D7: Table {comments} renamed to {comment}.
+    #1011048: $flag->get_user_count(): make "sid" optional.
+    #968450: by hefox, mgriego, mooffie: Allow non-destructive reverting of Flags in Features.
+    #1008000: Have $flag->is_compatible()
+    #1005040: Fix parameters to drupal_add_js()
+    #904144: Drupal.flagAnonymousLinkTemplates can't find template if flag's name contains underscore.
+    #1001076: Anon flagging: Don't use the constant CACHE_DISABLED.
+    #1000110: Anon flagging: "Abstract out" the cookies handling code.
+    #1000128: Anon flagging: delete dead code.
+    #996710: Anon flagging: Output of "flag this!" links only isn't enforced.
+    #999018: Anon flagging: setcookie() gets bad lifetime
+    #750578: by awolfey: have hook_flag_delete()
+    #951164: Fix flag-content-url.
+    #946958: use #markup, not #value, for D7.
+    #891752: $flag->get_labels_token_types() should call parent.
+    #887324: Modernize the menu items.
+    #885106: Introduce $flag->get_flagging_record().
+    #885106: Make _is_flagged() return the 'fcid'
+    #878680: Fix the tokens browser.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    by joachim: Fixed parameter docs in invoke_rules_event().
+    Issue #2254171 by joachim: Moved Rules event invocation to a helper method.
+    Fixed formatting errors in documentation.
+    Issue #2207543 by cs_shadow: Fixed strict warning with array_keys().
+    Issue #2165363 by joachim, Shabana Blackborder: Fixed new flag form having no default values for link display properties (regression from 2.x).
+    Issue #2093285 by Dane Powell: Fixed token replacements missing when token name doesn't match entity type.
+    Issue #1992814 by joachim: Renamed uses_hook_link() to shows_in_entity_links().
+    Issue #1892930 by joachim, chrisjlee: Added placement of flag links as pseudofields.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1862710 by alexweber: Fixed PHP notice for entities without a base table.
+    Issue #1887738 by alexweber: Changed _flag_url() to a class method.
+    Issue #1792584 by joachim: Fixed flag links displayed twice on user profile.
+    Issue #1784382 by joachim: Fixed entities unable to show edit form checkbox showing the option in flag admin form.
+    Issue #1722936 by joachim: Fixed flag locked property system so it doesn't get broken by flag classes' options_form().
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Issue #1722928 by joachim: Added support for contextual links to generic entities.
+    Issue #471212 by joachim: Changed flag types property to allow an empty array to mean all object subtypes/bundles apply.
+    Changed method _load_content() to _load_entity().
+    Changed applies_to_content_object() method to applies_to_entity().
+    Changed fetch_content() method to fetch_entity().
+    Changed method flag_get_content_id() to flag_get_entity_id().
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Fixed formatting errors in documentation.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1887738 by alexweber: Changed _flag_url() to a class method.
+    Issue #1792584 by joachim: Fixed flag links displayed twice on user profile.
+    Issue #1722936 by joachim: Fixed flag locked property system so it doesn't get broken by flag classes' options_form().
+    Changed fetch_content() method to fetch_entity().
+    Changed all $content_ids variables to $entity_ids.
+    
+    Replace s/\$content_ids\b/$entity_ids/ throughout.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Issue #1699752 by joachim, socketwench: split flag.inc into different classes
+    Continue updating tests
+    
+    FlagHookInvocationsTestCase depends on Rules module (port in progress).
+    Begin converting tests for Backdrop
+    Continue updating tests
+    
+    FlagHookInvocationsTestCase depends on Rules module (port in progress).
+    Fix integer test assertions in FlagFlaggingFieldTestCase
+    Remove tests getInfo() functions
+    Begin converting tests for Backdrop
+    Convert drupal_* functions to backdrop_*
+    Issue #2196055 by joachim: Added testing of Flagging properties, restoring commented-out assertions.
+    Issue #2255199 by jhedstrom, joachim: Fixed button in flagging confirm form showing raw HTML tags if the flag link text contains HTML.
+    Issue #2254417 by joachim: Fixed Flagging fields in flag confirm form not getting validated by Field API.
+    Fixed antique PHP code style and semi-deprecated functions.
+    Fixed typos in comments.
+    Fixed indentation errors.
+    Fixed spacing around operators.
+    Fixed array formatting: split over multiple lines, terminal commas.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #2210061 by cs_shadow: Changed UI labels of test cases to remove 'Flag' prefix.
+    Issue #2208847 by joachim: Fixed static caches of Flag API not getting reset when flagging and unflagging.
+    Issue #2208671 by joachim: Added testing of data from Flag API functions to hook invocation test.
+    Issue #2209409 by joachim: Changed test case to query the database directly to get a Flagging ID rather than use the Flag API.
+    Issue #2165363 by joachim, Shabana Blackborder: Fixed new flag form having no default values for link display properties (regression from 2.x).
+    Issue #2203047 by joachim: Fixed FlagLinkTypeConfirmTestCase not checking the flagging record.
+    Issue #2196097 by joachim: Added testing of re-flagging case to FlagHookInvocationsTestCase.
+    Issue #2162925 by claudiu.cristea, joachim: Fixed hook_entity_presave() getting invoked with a NULL for the Flagging entity.
+    Issue #2193421 by joachim: Add tests for hook invocation and Rules event triggering during flag/unflag.
+    Issue #1965760 by joachim: Fixed flags using the wrong token type for entity types whose token type different from the entity type name. Adds soft dependency on Token module for flag-related tokens on other entities.
+    Issue #2017557 by Shabana Blackborder: Fixed getInfo in .test should return untranslated strings.
+    by joachim: Fixed missing class docblocks.
+    Issue #2021191 by bulat: Added support for LIKE and IN operators on flagging entity bundle condition in EntityFieldQuery.
+    Issue #1965040 by shawn_smiley: Changed handling of return values from hook_flag_user_access() to allow all implementing modules to be considered.
+    Issue #1871426 by alexweber, chrisjlee: Added ability to set display of flag links on specific view modes.
+    Issue #1776238 by jyee, joachim: Added a flagging_save() API function, and ability to save flaggings with EntityMetadataWrapper.
+    by joachim: Removed unneeded cache clearings from tests.
+    by joachim: Changed flag test base class to be parent of all our test classes.
+    Issue #1882006 by joachim: Fixed flag defaults not respected on node add form if creating user doesn't have access.
+    Issue #1878296 by joachim: Added tests for the confirm form link type.
+    Issue #1717672 by joachim: Added tests for basic access to flagging and unflagging.
+    Issue #1780520 by socketwench: Removed flag_get_flags()  parameter, changed reset calls to use drupal_static_reset().
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    by Scyther: Fixed use of strtolower().
+    Issue #1689400 by Scyther: Changed flag form to use machine name form element.
+    Revert "Issue #1689400 by Scyther: make use of machine name field in admin UI"
+    
+    This reverts commit 2127cdda334fbcce413600ce24b9258a40fa3b73.
+    
+    Allow patch at http://drupal.org/node/1689400 to be committed first.
+    Issue #1689400 by Scyther: make use of machine name field in admin UI
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1296364 by twistor and quicksketch: Tests broken and setUp should be declared static.
+    Issue #901136: Fix the existing tests so they pass.
+    Stripping CVS keywords
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Begin converting tests for Backdrop
+    Convert drupal_* functions to backdrop_*
+    Issue #1965040 by shawn_smiley: Changed handling of return values from hook_flag_user_access() to allow all implementing modules to be considered.
+    Convert .info files: add backdrop = 1.x, drop core = 7.x
+    Issue #1965040 by shawn_smiley: Changed handling of return values from hook_flag_user_access() to allow all implementing modules to be considered.
+    Begin converting tests for Backdrop
+    Fixed stray spaces.
+    Issue #2208671 by joachim: Added testing of data from Flag API functions to hook invocation test.
+    Issue #2162925 by claudiu.cristea, joachim: Fixed hook_entity_presave() getting invoked with a NULL for the Flagging entity.
+    Issue #2193421 by joachim: Add tests for hook invocation and Rules event triggering during flag/unflag.
+    Convert .info files: add backdrop = 1.x, drop core = 7.x
+    Issue #2193421 by joachim: Add tests for hook invocation and Rules event triggering during flag/unflag.
+    Issue #2254417 by joachim: Fixed Flagging fields in flag confirm form not getting validated by Field API.
+    Convert .info files: add backdrop = 1.x, drop core = 7.x
+    Issue #2254417 by joachim: Fixed Flagging fields in flag confirm form not getting validated by Field API.
+    Issue #2254417 by joachim: Fixed Flagging fields in flag confirm form not getting validated by Field API.
+    Reorganize files into standard Backdrop structure
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    Issue #1198530 by semiaddict and quicksketch: Use Contextual Links for add/remove commands on teasers.
+    Issue #1298274: Flag's default CSS under Bartik doesn't align flagged messages correctly.
+    Stripping CVS keywords
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Stripping CVS keywords
+    #878680: Fix the tokens browser.
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Fixed formatting errors in documentation.
+    Issue #1355864 by joachim: Added a Views sort handler for flagged / unflagged.
+    Reorganize files into standard Backdrop structure
+    Convert drupal_* functions to backdrop_*
+    by joachim: Fixed Views argument title still referring to 'Content' when it can be any type of entity.
+    Issue #1312760 by imclean, jaydub: Added flagging.sid to hook_views_data().
+    Issue #2286959 by dreamlabs: Fixed warning in flag_views_flag_default.
+    Issue #1862710 by alexweber: Fixed PHP notice for entities without a base table.
+    Issue #1736450 by bartmcpherson: Fixed label for Views relationship from users to flaggings.
+    Issue #364236 by joachim: Added views field for flagged status.
+    Issue #1355864 by joachim: Added a Views sort handler for flagged / unflagged.
+    Issue #1113904 by katbailey, jaydub, joachim: Changed use of static to drupal_static().
+    Renamed views handler class flag_handler_argument_content_id to flag_handler_argument_entity_id.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed method factory_by_content_type() to factory_by_entity_type().
+    Changed all $content_type variables to $entity_type.
+    
+    Replace s/\$content_type\b/$entity_type/ throughout.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1331614 by q0rban, fangel: Added uid on flag_content table as argument, field, and filter in Views.
+    Issue #1362704 by loganfsmyth: Removed obsolete hook_views_handlers().
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #652558 by jaydub: Add last_updated timestamp when updating count in flag_counts_table.
+    Issue #1160738 by geerlingguy: Getting 'Undefined index: join field in flag_views_data_alter()' when clearing caches.
+    Stripping CVS keywords
+    #1003232: Use query substitution for the SID
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Convert drupal_* functions to backdrop_*
+    Added blank line after each switch() case.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Stripping CVS keywords
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Fixed surplus whitespace at end of files.
+    Fixed formatting errors in documentation.
+    Fixed typos in comments.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #1890856 by joachim: Fixed calls to Views 2 compatibility methods (removed by 93cf7f9) in Views flaggability plugin.
+    by joachim: Removed obsolete Views 2 compability methods.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed method applies_to_content_id() to applies_to_entity_id().
+    Changed database column 'content_type' to 'entity_type' on all tables.
+    
+    Replaced s/'content_type'/'entity_type'/, except in update functions.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1462000 by joachim, joelstein: Fixed incorrect value returned by argument flaggability check.
+    Issue #1484352 by Itangalo: Illegal choice *relationship* in Flag element causes Views contextual filters to fail.
+    Stripping CVS keywords
+    #977856: Port the validator to Views 3.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Fixed antique PHP code style and semi-deprecated functions.
+    Fixed formatting of single-line comments.
+    Renamed views handler class flag_handler_argument_content_id to flag_handler_argument_entity_id.
+    Issue #1703468 by joachim: move views files to includes/views
+    Stripping CVS keywords
+    #901116: Views validation: guard against non-existent flags.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Fixed array formatting: split over multiple lines, terminal commas.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1483854 by osopolar: Fixed views flagged filter options form not showing default value for 'Not flagged' option.
+    Issue #658400 by dragonwise: Rollback patch that caused a bug in the Is Flagged exposed filter when using the "Any" filter.
+    Stripping CVS keywords
+    #982138: by tcmug: Views filter query is broken (D7 only)
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert DRUPAL_ role constants to BACKDROP_ constants
+    Reorganize files into standard Backdrop structure
+    Convert drupal_* functions to backdrop_*
+    by joachim: Added detail to the class documentation for Views relationship handlers.
+    by joachim: Fixed missing docs for get_flag_type() method.
+    Fixed surplus whitespace at end of files.
+    Issue #1525242 by joachim: Changed flags access system to use user permissions rather than roles in the flag configuration.
+    Changed all $content_type variables to $entity_type.
+    
+    Replace s/\$content_type\b/$entity_type/ throughout.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1343838 by gcassie: Take advantage of drupal_page_is_cacheable()
+    Issue #1300676: Update Flag to be Coder compliant and follow code standards throughout.
+    Issue #1173124 by Amitaibu: Fix strict notice in flag handler.
+    Stripping CVS keywords
+    #969102: Views: Don't specify a default flag.
+    Fix typo.
+    #1006526: Anon flagging: clarify Views warning.
+    #901116: Views validation: guard against non-existent flags.
+    #1003232: Use query substitution for the SID
+    #1001076: Anon flagging: Don't use the constant CACHE_DISABLED.
+    #946958: use #markup, not #value, for D7. Part two of fix.
+    #684428 by coltrane and quicksketch: Initial port of Flag for Drupal 7. w00t!
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Fixed formatting of single-line comments.
+    Issue #404150 by q0rban: Fixed unnecessary re-adding of table to views showing the 'ops' field with the 'current user' limit on the flag relationship.
+    Changed database column 'content_id' to 'entity_id' on all tables.
+    
+    Replaced s/'content_id'/'entity_id'/, except in update functions and Views handler flag_handler_argument_content_id.
+    Changed all $content_id variables to $entity_id.
+    
+    Replace s/\$content_id\b/$entity_id/ throughout.
+    Changed name of 'flag_content' table to 'flagging'.
+    Issue #1703468 by joachim: move views files to includes/views
+    Issue #1119842 by duellj: Strict warnings with Views 3.x.
+    Stripping CVS keywords
+    #1008472: Guard against deleted relationship.
+    #901116: Views validation: guard against non-existent flags.
+    #1003232: Use query substitution for the SID
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    Issue #364236 by joachim: Added views field for flagged status.
+    Reorganize files into standard Backdrop structure
+    Remove template_process_flag(); pass template variables as arrays
+    Issue #2222373 by pebosi: Fixed missing variables in flag.tpl.php documentation.
+    Fixed wrapping of comment lines to 80 characters.
+    Issue #1892930 by joachim, chrisjlee: Added placement of flag links as pseudofields.
+    Issue #952114 by mooffie, acrollet, snufkin: Added hook_flag_validate().
+    Issue #1817644 by barraponto: Added flag template suggestion for link type.
+    Stripping CVS keywords
+    #1045848: Rename $last_action to $status.
+    #956800: Cleanup the CSS / JS inclusion.
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Reorganize files into standard Backdrop structure
+    by joachim: Fixed missing detail about link type template suggestion in README.
+    by joachim: Removed obsolete details in README.
+    Stripping CVS keywords
+    Re-adding 6--2 branch to head for Drupal 7 branch.
+    Convert hook_update_n functions. Add flag.settings.json config file.
+    Cleanup config on upgrade from Drupal.
+    Convert drupal_* functions to backdrop_*
+    Issue #1882258 by dsdeiz: Removed use of Entity API function in CTools content types declaration.
+    Issue #2118483 by maximpodorov: Added static caching for CTools content type plugin.
+    Issue #332956 by Amitaibu, mooffie, jherencia, avr, jastraat: Added Ctools plugins for content type and access.
+    Fixed typos in comments.
+    Fixed stray spaces.
+    Issue #2151157 by ergophobe: Added ability to check for flagging by any user as well as current user to the CTools access plugin.
+    Issue #332956 by Amitaibu, mooffie, jherencia, avr, jastraat: Added Ctools plugins for content type and access.

@@ -1,0 +1,2699 @@
+﻿    Updated link to ova
+    Update README.md
+    
+    Replaced utbox link with a permanent, cleaner link
+    Update README.md
+    
+    Didn't need the iso for the premade vm.
+    added USB port forwarding notes to README.
+    Updated and cleaned README.md
+    A minor thing
+    Add to the docs
+    Replaced gdb-arm-none-eabi with just gdb for compatibility with updated gdb
+    Updated Ubuntu image download location.
+    Added changes to readme
+    Clarified stuff in readme and added extra git info
+    Misc README changes (clarity // formatting)
+    Update README.md
+    Update README.md
+    typos
+    Update README.md
+    Apparently VMWare requires VT-x on Windows 10.
+    Update README.md
+    Update README.md
+    Directly linked .iso images from ftp.utexas.edu
+    Update README.md
+    Update READEME
+    
+    added a few commands to make things clearer so you can install by exactly following directions.
+    One last README.md change for macOS users (wheel)
+    Update/clean up README.md to match the modified install process for macOS (should be simpler now)
+    One more readme update
+    Fixed minor typos in readme
+    Updated README.
+    
+    Accounted for hosting Stellarisware on Github, as well as added specific VMWare Ubuntu installation instructions.
+    Update README.md
+    Update README.md
+    Added documentation for kilogram's PR#58
+    Added workaround for flashing in linux after keil breaks board
+    Further improved Mac instructions
+    Improved Mac instructions
+    Clarified cloning instructions
+    Updated toast's IP address in readme
+    Added explicit index flag to ar and reverted simpler usb instructions
+    
+    - Seems that for some versions on Mac, the ar command doesn't
+      implicitly index the archive, leading to a "run ranlib" error.
+    
+    - The simpler usb instructions cause some weird issues with UART.
+      Probably a synchronization/timing/initialization error, setting
+      it up to auto-forward avoids the issue.
+    Added instructions for VMware
+    
+    This should be helpful for Windows 10 users since
+    Windows 10 isn't supported by Virtual Box yet.
+    Added newlib dependencies to readme
+    
+    arch: arm-none-eabi-newlib
+    ubuntu: libnewlib-arm-none-eabi
+    Fixed confusing link in README
+    
+    The "jump to linux" links had conflicting section names and would unintentionally lead Windows users into the middle of the Mac section. A very confusing situation indeed.
+    added rasbox login info to readme
+    Added step for changing host IP in Windows instructions
+    Update README.md
+    
+    made the nano example more clear.
+    Updated README with RASBox instructions
+    Changed "Rasware2013" to "Rasware" in README file
+    removed (WIP)'s
+    newlines matter!?
+    indentation changes in readme
+    possibly fixed code blocks
+    fixed numbered lists + code blocks maybe
+    corrected a section; fixed code blocks
+    removed old/crap sections from readme
+    change the name of Ras Ware from 2013 eddition
+    fixed another toast link
+    changed toast's ip
+    Update README.md
+    edited readme for mac
+    added mac instructions
+    
+    courtesy of Soup
+    Tiny little miniscule change to readme that now one should notice...
+    Made small changes to readme
+    Added changes to readme like I said I would
+    
+    Now downloads the correct cortex libraries to CortexM4Libs
+    
+    Also uses different location for StellarisWare that doesn't have the
+    weird unzip unzip exe thing.
+    Fixed Typo
+    Added seperate rule `make run` for doing everything.
+    
+    This way `make uart` will not flash the board. I've found this useful
+    since flashing and communicating are not really related.
+    
+    Updated README as well, also changed gcc to build-essentials in the
+    dependencies to keep from having to worry about make or any other
+    required build program. Arch already has these installed by default
+    through the base-devel package.
+    Update README.md
+    
+    - fixed description of `C-a k y` to mention y.
+    - removed a would where it was implying something silly
+    - added gcc to the dependency lists
+    - promoted the install dependencies subsection to a section to match others.
+    - added hint/instruction about `make uart`
+    - updated `git commit` with a description of how `git add` affects the commit.
+    Added Jimmy's changes to the repo.
+    
+    Modified README with additional instructions. Also added Debian
+    dependencies to Makefile and changed how the Makefile looks for
+    libraries again.
+    Made readme prettier
+    
+    At least I hope so, third times the charm?
+    Made small changes to Makefile and added to README.
+    
+    Finally fixed code blocks in README;
+    Moved libraries up in Makefiles;
+    Changed optimizations to 0 to match Keil;
+    Got raslib compiling again.
+    Added linux instructions to the repo.
+    Added instructions for setting up basic skeleton of the Linux setup
+    fixed links and reworded a couple of things in the readme
+    Update README.md
+    
+    Added installation instructions for Keil and Stellarisware.
+    added blurb about win8 in readme
+    
+    Instructions from josh eversmann.
+    updated readme.md
+    
+    fixed a few broken links, rearranged the sections and added a few steps, added link to wiki
+    COM Port will almost always differ
+    Added instructions for Keil
+    Starting putting instructions in readme
+    Update README.md
+    Update README.md
+    Create README.md
+    IR sensor clarification
+    Clarification
+    Updated battery connections
+    Update RASwareCrashCourse.md
+    Update RASwareCrashCourse.md
+    Update RASwareCrashCourse.md
+    Update RASwareCrashCourse.md
+    Formatting oopsies
+    Added RASwareCrashCourse (Programming 2 tech talk notes)
+    made the stack bigger
+    
+    * no longer overflows into the encoder demo memory
+    brought motors up to date; removed static warnings in startup
+    Added flashy LEDs
+    Moved InitializeMCU into Startup.c
+    
+    This removes the need to call it upon entering main.
+    Advanced usage can modify Startup.c itself.
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Made small changes to scheduler.
+    
+    - Made the unused queue a bit simpler
+    - Made NMI handler pass through to prevent race conditions
+    - Added infinite loop after main exits
+    Fixed interesting bug with zeroing bss segment
+    
+    was overwriting the variables used to do the initializations. Moved
+    those into registers. Was interesting because this only happened with
+    the optimization level was dropped.
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Modified StellarisWare provided C-based Startup file to work in Keil
+    collapsed Printf calls into one call
+    removed not needed uart echos
+    Revert "working code"
+    
+    This reverts commit 762522c014bcb0c381801b114f9beac9870b2ae2.
+    working code
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    changed Servodemo to fix tabs and other nitpicks
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Updated servodemo comments
+    Added switch statements, added/removed comments. Removed stellarisware calls from IRsensorDemo
+    changed more pins and formatting
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Response to pull feedback
+    Added I2C files and line sensor code, all of which are working
+    Removed old UART usage from Demo
+    Added testing code to RASDemo
+    Named Time functions with units
+    
+    Added more time functions specific to seconds and microseconds. Any second functions simply call their us counterpars with the correct
+    conversion. Seconds is marked with an S and microseconds with US.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    added spacing to take care of inf and negatives; encountered an odd lock-up problem with the gpio demo
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    fixed nitpicks with line sensor demos
+    renamed LineSensorDemo, fixed inaccurate comment in linesensor.h
+    Changed RASDemo to reflect new RASLib
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Corrected line sensor ADC command
+    
+    Basic functionality of i2c module and line sensor module has been tested.
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Response to pull feedback
+    Implemented line sensor in RASDemo and fixed Startup.s
+    Added I2C files and line sensor code, all of which are working
+    Removed old UART usage from Demo
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    Removed second stack
+    
+    Keil requires the stack being explicitely created in the Startup file.
+    This is fine, except we were creating a second one for the linux port.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    added spacing to take care of inf and negatives; encountered an odd lock-up problem with the gpio demo
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    added usage of printf float support in sonar demo
+    Update SonarDemo.c
+    Update SonarDemo.c
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Demo Cleaned Up
+    
+    Pending testing
+    GPIO Demo does something reasonable now
+    
+    * reads from the whole port
+    * skips the parts reserved for the debug uart A[01]
+    added spacing to take care of inf and negatives; encountered an odd lock-up problem with the gpio demo
+    added some comments to the code
+    formatting nitpicks on GPIODemo, clarified key press print statement, added newline characters to the end of files
+    replaced tabs with spaces
+    Added GPIO demo and blinky code
+    GPIO test added, resolved issues with declarations
+    Demo Cleaned Up
+    
+    Pending testing
+    added spacing to take care of inf and negatives; encountered an odd lock-up problem with the gpio demo
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    fixed nitpicks with line sensor demos
+    Changed RASDemo to reflect new RASLib
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Corrected line sensor ADC command
+    
+    Basic functionality of i2c module and line sensor module has been tested.
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Response to pull feedback
+    Implemented line sensor in RASDemo and fixed Startup.s
+    Added I2C files and line sensor code, all of which are working
+    Removed old UART usage from Demo
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    added initialization guards
+    Changed RASDemo to reflect new RASLib
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Demo Cleaned Up
+    
+    Pending testing
+    Standardized Headers and Includes
+    Final formatting cleanup
+    Removed old UART usage from Demo
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    formatting nitpicks on GPIODemo, clarified key press print statement, added newline characters to the end of files
+    formating nitpicks on the IR demo, comformed EncoderDemo to have similar code to the IR demo
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Changed demo pins to match booster pack
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Response to pull feedback
+    Removed old UART usage from Demo
+    Fixed Continuous spelling error
+    Made minor changes nescessary for ADC to function
+    
+    Has been thoroughly tested and is functional.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    Revert "working code"
+    
+    This reverts commit 762522c014bcb0c381801b114f9beac9870b2ae2.
+    working code
+    renamed LineSensorDemo, fixed inaccurate comment in linesensor.h
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Updated Keil settings
+    
+    Keil doesn't save its settings until exited...
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Cleaned up rasware.
+    
+    Removed some unused files, added a few include paths
+    Added GPIO demo and blinky code
+    GPIO test added, resolved issues with declarations
+    Standardized Headers and Includes
+    Restructured the default projects.
+    
+    Added RASTemplate and removed RASLibTest. Also modified RASDemo to use a
+    copy of the Startup.s file, so now it is nescessary to update that every
+    time RASLib is updated.
+    %F working
+    Removed old UART usage from Demo
+    Made file path for uartstdio.c absolute
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Cleaned up RASDemo
+    Added RASDemo Project
+    added spaces to deal with negative signs, initializing charArray with all zeros, found a Printf %s bug
+    added some comments to the code
+    fixed nitpicks in UARTDemo
+    replaced tabs with spaces
+    Updated UARTDemo.c file, loops better and removed brackets
+    Added switch statements, added/removed comments. Removed stellarisware calls from IRsensorDemo
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Response to pull feedback
+    Final formatting cleanup
+    Removed old UART usage from Demo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    added spaces to deal with negative signs, initializing charArray with all zeros, found a Printf %s bug
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added small comment in encoder demo
+    added some comments to the code
+    added initialization guards
+    formatting nitpicks on GPIODemo, clarified key press print statement, added newline characters to the end of files
+    formating nitpicks on the IR demo, comformed EncoderDemo to have similar code to the IR demo
+    corrected print statement, changed other spacing nitpicks, renamed to left and right encoders
+    Formatting in EncoderDemo.c
+    Formatting in EncoderDemo.c
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Changed demo pins to match booster pack
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    Response to pull feedback
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    Removed old UART usage from Demo
+    Completed implementation of the encoders
+    
+    Added reset function and added testable example code to RASDemo.
+    Actual Testing is required
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    made it Xmas
+    collapsed Printf calls into one call
+    the uart echos now by default; removed forced echoing
+    Moved InitializeMCU into Startup.c
+    
+    This removes the need to call it upon entering main.
+    Advanced usage can modify Startup.c itself.
+    Revert "working code"
+    
+    This reverts commit 762522c014bcb0c381801b114f9beac9870b2ae2.
+    Revert "updated speeds"
+    
+    This reverts commit 2528dcd7350d278ffd7ee7c03ebdf6d5e199e23b.
+    Revert "Initial commit"
+    
+    This reverts commit 0ce60d5203da44e80a2838f6ad3b49e5cb1004bf.
+    Initial commit
+    updated speeds
+    working code
+    added spacing to take care of inf and negatives; encountered an odd lock-up problem with the gpio demo
+    added sonar demo option to main menu, cleaned up nitpicks in Main.c
+    uncommented blink
+    Made small changes to scheduler.
+    
+    - Made the unused queue a bit simpler
+    - Made NMI handler pass through to prevent race conditions
+    - Added infinite loop after main exits
+    commented out F1 blinking LED, changed E pins to C pins in the motor demo, added an incremental change option to the motor demo
+    Changed RASDemo to reflect new RASLib
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Removed led pin definitions
+    
+    Additional pin definitions hide cases where an onboard pin and externally
+    used pin conflict.
+    
+    Having the motors defined with the same pins as the built in leds adds to
+    this issue.
+    
+    The LED pin definitions have been removed to avoid confusion.
+    replaced tabs with spaces
+    Added GPIO demo and blinky code
+    GPIO test added, resolved issues with declarations
+    updated Main bracket placement, added switch statement
+    Added switch statements, added/removed comments. Removed stellarisware calls from IRsensorDemo
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Moved InitializeUART into InitializeMCU because of its common use
+    Response to pull feedback
+    Final formatting cleanup
+    Removed old UART usage from Demo
+    Finished Testing new pwm generation and modified timing module.
+    
+    Completely funcitoning, and allows for more pwm signals then we have pins
+    at little loss of processing capabilities.
+    Made ordered cyclic pwm functional
+    
+    Fixed minor issues and tested code. Generates correct signals for motor
+    and pwm.
+    Implemented structs for ordered cyclic pwm and designed basic idea
+    
+    Still needs phase/duty cycle implementation
+    Improved timer module
+    
+    1. Added the ability to use ints as identifiers for functions, allowing
+    you to stop currently registered functions.
+    
+    2. Fixed a lot of bugs that I didn't notice. Should have tested better.
+    Mostly related to not getting accurate time. One was a missing volatile
+    adjective. Underflow issue. Race conditions.
+    Named Time functions with units
+    
+    Added more time functions specific to seconds and microseconds. Any second functions simply call their us counterpars with the correct
+    conversion. Seconds is marked with an S and microseconds with US.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    Add to the docs
+    Housekeeping/get the Makefiles back in sync
+    fix the flash issues
+    Propagate makefile changes
+    Move detect-board script // Use the script in the makefile
+    
+    RASLib is probably a better place for it rather than copying it into every project folder
+    (this is the same way the gdb-script is set up)
+    
+    The makefile is set to invoke the script for the uart/run recipes rather than just set a
+    variable with the device path outside the recipes because the script is kind of slow on
+    macOS because of all the sed/awk/find/system_profiler calls (mainly system_profiler I think).
+    
+    Rather than make every make invocation slower, we can just call the script when needed.
+    
+    The script is a lil janky but it works and it's plenty fast on things that aren't macOS.
+    Update openocd script search path/query to support macOS and linux
+    
+    openocd on macOS (when installed with brew) stores its board scripts in /usr/local/Cellar/open-ocd/...
+    openocd on Linux uses /usr/share/openocd/...
+    
+    Searching /usr for */scripts/board/*tm4c123* should work for both OSes and is pretty safe (very unlikely to find and use something that isn't really the TM4C board script).
+    
+    The 2>/dev/null at the end of the find command is there to suppress permissions errors.
+    Update Makefile flash target to use openocd
+    
+    Keil evidently sets a bit when flashing that makes openocd commands
+    fail.  Using the openocd "shutdown" command appears to reset the board
+    to where it can be reset/flashed by openocd.  The openocd gdbserver
+    "monitor shutdown" command seems not to work (ut-ras/Rasware#56 and
+    reverted in ut-ras/Rasware#57).
+    Revert "Added kilogram's fix from pull request #56"
+    
+    This reverts commit 3b8d9bcbd85fb510c8349292aee9ee58599197f7.
+    Added kilogram's fix from pull request #56
+    Corrected the ar command to use the arm-none-eabi version
+    
+    This fixed the actual issue with indexing symbols in Mac.
+    Added explicit index flag to ar and reverted simpler usb instructions
+    
+    - Seems that for some versions on Mac, the ar command doesn't
+      implicitly index the archive, leading to a "run ranlib" error.
+    
+    - The simpler usb instructions cause some weird issues with UART.
+      Probably a synchronization/timing/initialization error, setting
+      it up to auto-forward avoids the issue.
+    Changed makefile to use openocd and /usr/local/lib for default paths
+    the ldflags should now automaticly be correct
+    
+    well that might be an overstatement, but it should match gcc's expected
+    search dirs for the cortex-m4.
+    this should be the correct directory to link against, but I'm not
+    certain that this will work for anyone but me.
+    made *nix autodetect the libdirs
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Modified Makefile to NOT use the default thumb directory
+    
+    Apparently for the Ubuntu/Debian versions of the arm library these just
+    switch to arm mode and bx to the arm versions of the float functions.
+    
+    This is kiiiiiiiinda bad since the launchpad has no support for arm at
+    all and faults on the bx.
+    
+    The best fix I can think of is to simply take to versions of the library
+    that work from arch and add another directory to check for those.
+    Currently I've put these on [toast](toast.projectgeky.com/rasware) as
+    CortexM4Libs so people can download them and use rasware on linux.
+    
+    Will modify the readme later and may just add a bash script to do
+    everything for linux users.
+    Added seperate rule `make run` for doing everything.
+    
+    This way `make uart` will not flash the board. I've found this useful
+    since flashing and communicating are not really related.
+    
+    Updated README as well, also changed gcc to build-essentials in the
+    dependencies to keep from having to worry about make or any other
+    required build program. Arch already has these installed by default
+    through the base-devel package.
+    Added Jimmy's changes to the repo.
+    
+    Modified README with additional instructions. Also added Debian
+    dependencies to Makefile and changed how the Makefile looks for
+    libraries again.
+    Changed linking directories to use the thumb libs
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Made small changes to Makefile and added to README.
+    
+    Finally fixed code blocks in README;
+    Moved libraries up in Makefiles;
+    Changed optimizations to 0 to match Keil;
+    Got raslib compiling again.
+    updated makefiles to use dependency info generated by gcc
+    Modified included library to be compatible with previous versions.
+    
+    4.7.9 is hosted on the website. Does not have cortex-m4 directory. Seems
+    to work without this specific location.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    oops forgot makefile
+    made make uart reset run the device before running screen
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    made the motor demo use servomotors
+    made the motor print before a button is pressed
+    collapsed Printf calls into one call
+    removed not needed uart echos
+    brought motors up to date; removed static warnings in startup
+    Revert "working code"
+    
+    This reverts commit 762522c014bcb0c381801b114f9beac9870b2ae2.
+    working code
+    added spaces to deal with negative signs, initializing charArray with all zeros, found a Printf %s bug
+    fixed linesensor init function variable declaration and made file-scoped variables static
+    added some comments to the code
+    added initialization guards
+    moving point star to be consistent
+    formated motor demo to remove extra closing brackets and do other nitpicks
+    Added TLEMotors to RASDemo
+    
+    Tested with both types of motors
+    commented out F1 blinking LED, changed E pins to C pins in the motor demo, added an incremental change option to the motor demo
+    Changed tMotor* array to contain 2 pointers instead of 12
+    Changed tMotor* array to contain 2 pointers instead of 12
+    replaced tabs with spaces
+    GPIO test added, resolved issues with declarations
+    Fixed merge error in MotorDemo
+    Added switch statements, added/removed comments. Removed stellarisware calls from IRsensorDemo
+    Demo Cleaned Up
+    
+    Pending testing
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Response to pull feedback
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Added I2C files and line sensor code, all of which are working
+    Removed old UART usage from Demo
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Added testing code to RASDemo
+    Implemented Motor Demo
+    
+    Just calls RASLib motor code with a speed of 0.75 in different directions.
+    Cleaned up RASDemo
+    Added RASDemo Project
+    fixed linking errors so project can build.
+    Putting all of Jimmy's stuff in its own folder... (RASDemo)
+    Inital working makefile and project structure.
+    
+    makefile targets added:
+            .all
+            gdb
+            flash
+            uart
+    Added Stellarisware tarball to remove dependency on toast.
+    made the stack bigger in template
+    Startup.c no longer complains about mismatched static stuff
+    Added flashy LEDs
+    Moved InitializeMCU into Startup.c
+    
+    This removes the need to call it upon entering main.
+    Advanced usage can modify Startup.c itself.
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Made small changes to scheduler.
+    
+    - Made the unused queue a bit simpler
+    - Made NMI handler pass through to prevent race conditions
+    - Added infinite loop after main exits
+    Fixed interesting bug with zeroing bss segment
+    
+    was overwriting the variables used to do the initializations. Moved
+    those into registers. Was interesting because this only happened with
+    the optimization level was dropped.
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Modified StellarisWare provided C-based Startup file to work in Keil
+    Removed second stack
+    
+    Keil requires the stack being explicitely created in the Startup file.
+    This is fine, except we were creating a second one for the linux port.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Revert "working code"
+    
+    This reverts commit 762522c014bcb0c381801b114f9beac9870b2ae2.
+    working code
+    Updated Keil settings
+    
+    Keil doesn't save its settings until exited...
+    Cleaned up rasware.
+    
+    Removed some unused files, added a few include paths
+    Standardized Headers and Includes
+    Restructured the default projects.
+    
+    Added RASTemplate and removed RASLibTest. Also modified RASDemo to use a
+    copy of the Startup.s file, so now it is nescessary to update that every
+    time RASLib is updated.
+    %F working
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Seemingly working motor drivers
+    Cleaned up RASDemo
+    My test project. Remove from the repo later.
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    Fixed init for UART to work
+    Compiles to .axf
+    fixed linking errors so project can build.
+    Fixing the uvproj
+    added stellarisware/utils, added driverlib/uartstdio.c to RASLib, added all other RASLib things to RASLib, created a new keil project called RASDemo2 (not sure what to do with RASDemo)
+    Added nescessary files for compiling (Chris)
+    updated motor.c
+    Forgot the uvproj on the last commit
+    Adding ADC drivers
+    Cleaning, minor change to linking, correction to comment header
+    Added ToDo file.
+    
+    Signed-off-by: Cruz Monrreal II <Cruz.Monrreal@gmail.com>
+    Started RASLib project. Added init.c
+    Added flashy LEDs
+    Created a functional printf
+    
+    Includes support for characters, strings, integers, and floats.
+    
+    No support for long types, and there are some little bits of
+    rarely used functionality that is missing.
+    
+    The issues with previous printfs turns out to be related to how
+    varargs casts floats. It manages to cast 32-bit floats all the way
+    to 64-bit floats despite the lack of 64-bit floats on the processor.
+    
+    Hacky bittwiddling was necessary to extract the actual 32-bit float
+    value from varargs.
+    Moved InitializeMCU into Startup.c
+    
+    This removes the need to call it upon entering main.
+    Advanced usage can modify Startup.c itself.
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Moved InitializeUART into InitializeMCU because of its common use
+    Restructured the default projects.
+    
+    Added RASTemplate and removed RASLibTest. Also modified RASDemo to use a
+    copy of the Startup.s file, so now it is nescessary to update that every
+    time RASLib is updated.
+    Add to the docs
+    Housekeeping/get the Makefiles back in sync
+    Add rules for RASLib
+    Add the openocd change to the other makefiles
+    Propagate makefile changes
+    Update Makefile flash target to use openocd
+    
+    Keil evidently sets a bit when flashing that makes openocd commands
+    fail.  Using the openocd "shutdown" command appears to reset the board
+    to where it can be reset/flashed by openocd.  The openocd gdbserver
+    "monitor shutdown" command seems not to work (ut-ras/Rasware#56 and
+    reverted in ut-ras/Rasware#57).
+    Revert "Added kilogram's fix from pull request #56"
+    
+    This reverts commit d150574eb5a093feee7e60b8ed32a5f8c570af3d.
+    Added kilogram's fix from pull request #56
+    Corrected the ar command to use the arm-none-eabi version
+    
+    This fixed the actual issue with indexing symbols in Mac.
+    Added explicit index flag to ar and reverted simpler usb instructions
+    
+    - Seems that for some versions on Mac, the ar command doesn't
+      implicitly index the archive, leading to a "run ranlib" error.
+    
+    - The simpler usb instructions cause some weird issues with UART.
+      Probably a synchronization/timing/initialization error, setting
+      it up to auto-forward avoids the issue.
+    Changed makefile to use openocd and /usr/local/lib for default paths
+    added windows/mingw support
+    second verse same as the first
+    proper quoting added to library auto-detection
+    the ldflags should now automaticly be correct
+    
+    well that might be an overstatement, but it should match gcc's expected
+    search dirs for the cortex-m4.
+    this should be the correct directory to link against, but I'm not
+    certain that this will work for anyone but me.
+    made *nix autodetect the libdirs
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Modified Makefile to NOT use the default thumb directory
+    
+    Apparently for the Ubuntu/Debian versions of the arm library these just
+    switch to arm mode and bx to the arm versions of the float functions.
+    
+    This is kiiiiiiiinda bad since the launchpad has no support for arm at
+    all and faults on the bx.
+    
+    The best fix I can think of is to simply take to versions of the library
+    that work from arch and add another directory to check for those.
+    Currently I've put these on [toast](toast.projectgeky.com/rasware) as
+    CortexM4Libs so people can download them and use rasware on linux.
+    
+    Will modify the readme later and may just add a bash script to do
+    everything for linux users.
+    Added seperate rule `make run` for doing everything.
+    
+    This way `make uart` will not flash the board. I've found this useful
+    since flashing and communicating are not really related.
+    
+    Updated README as well, also changed gcc to build-essentials in the
+    dependencies to keep from having to worry about make or any other
+    required build program. Arch already has these installed by default
+    through the base-devel package.
+    Added Jimmy's changes to the repo.
+    
+    Modified README with additional instructions. Also added Debian
+    dependencies to Makefile and changed how the Makefile looks for
+    libraries again.
+    Changed linking directories to use the thumb libs
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Made small changes to Makefile and added to README.
+    
+    Finally fixed code blocks in README;
+    Moved libraries up in Makefiles;
+    Changed optimizations to 0 to match Keil;
+    Got raslib compiling again.
+    updated makefiles to use dependency info generated by gcc
+    Modified included library to be compatible with previous versions.
+    
+    4.7.9 is hosted on the website. Does not have cortex-m4 directory. Seems
+    to work without this specific location.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Removed second stack
+    
+    Keil requires the stack being explicitely created in the Startup file.
+    This is fine, except we were creating a second one for the linux port.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Added hack to garuntee correct alignment of doubles passed to printf
+    
+    Simply tests for alignment in InitializeMCU and keeps a flag indicating
+    which alignment varargs is using.
+    added the servo and tle motor c files to RASLib so that RASDemo will compile without warnings
+    Recompiled RASLib on Windows to insure a working copy
+    hidden to _, and created binary
+    Made linesensor.h polymorphic
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Updated Keil settings
+    
+    Keil doesn't save its settings until exited...
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Cleaned up rasware.
+    
+    Removed some unused files, added a few include paths
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    inversion works for encoders
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Added I2C files and line sensor code, all of which are working
+    %F working
+    Hijacked uartstdio.h to change printf
+    Fixed Continuous spelling error
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Created new version of gpio.h
+    
+    This branch is to showcase several ideas that I think would be useful in
+    RASWare and may not nescessarily need to be included.
+    
+    1. I've added definitions for a tPin type that represents all possible
+    pins. This allows for passing pins as arguments into functions as single
+    arguments as shown in the new gpio.h file. This is how I think the pins
+    should be handled as opposed to the complex macros we currently have.
+    
+    2. I've added GetPin and SetPin functions for setting and retrieving
+    individual pins without prior setup. This has been avoided in previous
+    RASWare versions due to the existance of GPIORead and GPIOWrite but I
+    think having versions that use the new pin arguments and save two lines
+    can be useful and the fact that if works on indivisual pins welcoming to
+    unfamiliar raslets.
+    
+    3. I've also modified the interrupt handlers to use individual pins. This
+    means you can only register a single interrupt per pin, however the
+    ability to register on the specific pin is worth the trade off in my
+    opinion.
+    
+    I have not tested the new implementations and it does not yet compile due
+    to changed file names. However it should be functional as is.
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Seemingly working motor drivers
+    Encoder bugfix (Still not proven working)
+    Cleaned up RASDemo
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    Fixed init for UART to work
+    Compiles to .axf
+    fixed linking errors so project can build.
+    Fixing the uvproj
+    added stellarisware/utils, added driverlib/uartstdio.c to RASLib, added all other RASLib things to RASLib, created a new keil project called RASDemo2 (not sure what to do with RASDemo)
+    Added nescessary files for compiling (Chris)
+    updated motor.c
+    Forgot the uvproj on the last commit
+    Adding ADC drivers
+    Cleaning, minor change to linking, correction to comment header
+    Added ToDo file.
+    
+    Signed-off-by: Cruz Monrreal II <Cruz.Monrreal@gmail.com>
+    Started RASLib project. Added init.c
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    Speed detect-board up a little bit (caching)
+    Fix permissions on detect-board script. (my bad)
+    Move detect-board script // Use the script in the makefile
+    
+    RASLib is probably a better place for it rather than copying it into every project folder
+    (this is the same way the gdb-script is set up)
+    
+    The makefile is set to invoke the script for the uart/run recipes rather than just set a
+    variable with the device path outside the recipes because the script is kind of slow on
+    macOS because of all the sed/awk/find/system_profiler calls (mainly system_profiler I think).
+    
+    Rather than make every make invocation slower, we can just call the script when needed.
+    
+    The script is a lil janky but it works and it's plenty fast on things that aren't macOS.
+    Added script to find the board path across OSes.
+    Tested on macOS/Linux and seems to work.
+    
+    (contains magic)
+    Changed makefile to use openocd and /usr/local/lib for default paths
+    added gdb script for openocd over |
+    Housekeeping/get the Makefiles back in sync
+    actually have `make run` run
+    Add the openocd change to the other makefiles
+    Propagate makefile changes
+    Update Makefile flash target to use openocd
+    
+    Keil evidently sets a bit when flashing that makes openocd commands
+    fail.  Using the openocd "shutdown" command appears to reset the board
+    to where it can be reset/flashed by openocd.  The openocd gdbserver
+    "monitor shutdown" command seems not to work (ut-ras/Rasware#56 and
+    reverted in ut-ras/Rasware#57).
+    Revert "Add shutdown to sequence of flash commands"
+    Add shutdown to sequence of flash commands
+    
+    This allows the board to recover from having been flashed by Keil, which presumably sets a bit that causes erase commands to fail.
+    Corrected the ar command to use the arm-none-eabi version
+    
+    This fixed the actual issue with indexing symbols in Mac.
+    Added explicit index flag to ar and reverted simpler usb instructions
+    
+    - Seems that for some versions on Mac, the ar command doesn't
+      implicitly index the archive, leading to a "run ranlib" error.
+    
+    - The simpler usb instructions cause some weird issues with UART.
+      Probably a synchronization/timing/initialization error, setting
+      it up to auto-forward avoids the issue.
+    Changed makefile to use openocd and /usr/local/lib for default paths
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Defined ar prefix in RASLib Makfile
+    Modified Makefile to NOT use the default thumb directory
+    
+    Apparently for the Ubuntu/Debian versions of the arm library these just
+    switch to arm mode and bx to the arm versions of the float functions.
+    
+    This is kiiiiiiiinda bad since the launchpad has no support for arm at
+    all and faults on the bx.
+    
+    The best fix I can think of is to simply take to versions of the library
+    that work from arch and add another directory to check for those.
+    Currently I've put these on [toast](toast.projectgeky.com/rasware) as
+    CortexM4Libs so people can download them and use rasware on linux.
+    
+    Will modify the readme later and may just add a bash script to do
+    everything for linux users.
+    Added seperate rule `make run` for doing everything.
+    
+    This way `make uart` will not flash the board. I've found this useful
+    since flashing and communicating are not really related.
+    
+    Updated README as well, also changed gcc to build-essentials in the
+    dependencies to keep from having to worry about make or any other
+    required build program. Arch already has these installed by default
+    through the base-devel package.
+    Added Jimmy's changes to the repo.
+    
+    Modified README with additional instructions. Also added Debian
+    dependencies to Makefile and changed how the Makefile looks for
+    libraries again.
+    Changed linking directories to use the thumb libs
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Made small changes to Makefile and added to README.
+    
+    Finally fixed code blocks in README;
+    Moved libraries up in Makefiles;
+    Changed optimizations to 0 to match Keil;
+    Got raslib compiling again.
+    updated makefiles to use dependency info generated by gcc
+    Modified included library to be compatible with previous versions.
+    
+    4.7.9 is hosted on the website. Does not have cortex-m4 directory. Seems
+    to work without this specific location.
+    Created simple Makefile for cross-compiling with the nescessary libraries.
+    refactored UART's to use all available hardware
+    Fixed bit logic error in double print hack
+    Added hack to garuntee correct alignment of doubles passed to printf
+    
+    Simply tests for alignment in InitializeMCU and keeps a flag indicating
+    which alignment varargs is using.
+    removed unused stuff from scanf and printf
+    removed the word-endianess difference;
+    
+    * motor demo was printing 2/nan/-0.0
+    added length specifiers to scanf
+    made length specifiers work;
+    added floats to scanf; fixed floats in printf
+    implemented some of scanf and all of ungetc
+    Created a functional printf
+    
+    Includes support for characters, strings, integers, and floats.
+    
+    No support for long types, and there are some little bits of
+    rarely used functionality that is missing.
+    
+    The issues with previous printfs turns out to be related to how
+    varargs casts floats. It manages to cast 32-bit floats all the way
+    to 64-bit floats despite the lack of 64-bit floats on the processor.
+    
+    Hacky bittwiddling was necessary to extract the actual 32-bit float
+    value from varargs.
+    Made functional (Get|Put)[cs] functions for RASLib
+    
+    They are now the functions which directly call UART code
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    removed dependnce on UARTstdio
+    
+    We used 3 functions from UARTstdio were : UARTgets, UARTputs, and Stdio init.
+    all three functions are simple, so I rewrote them.
+    I would like to point out that this is primarily to make linking of RASLib easier and to avoid '#include'ing a C source file.
+    Got uart.c compiling again
+    removed dependnce on UARTstdio
+    
+    We used 3 functions from UARTstdio were : UARTgets, UARTputs, and Stdio init.
+    all three functions are simple, so I rewrote them.
+    I would like to point out that this is primarily to make linking of RASLib easier and to avoid '#include'ing a C source file.
+    Standardized Headers and Includes
+    Response to pull feedback
+    Final formatting cleanup
+    Scientific notation support
+    Support for INF and NaN
+    Repaired formatting with some sed
+    Switched to doubles internally, added %f formatting
+    %F working
+    Moved convert to a function and made X different from x
+    Hijacked uartstdio.h to change printf
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Adding USBUART (Untested, could use additional functionality also)
+    Adding ADC drivers
+    Added time functions (untested)
+    Cleaning, minor change to linking, correction to comment header
+    Added ToDo file.
+    
+    Signed-off-by: Cruz Monrreal II <Cruz.Monrreal@gmail.com>
+    Started RASLib project. Added init.c
+    Added hack to garuntee correct alignment of doubles passed to printf
+    
+    Simply tests for alignment in InitializeMCU and keeps a flag indicating
+    which alignment varargs is using.
+    Added flashy LEDs
+    Made functional (Get|Put)[cs] functions for RASLib
+    
+    They are now the functions which directly call UART code
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Moved InitializeUART into InitializeMCU because of its common use
+    Finished Testing new pwm generation and modified timing module.
+    
+    Completely funcitoning, and allows for more pwm signals then we have pins
+    at little loss of processing capabilities.
+    Made ordered cyclic pwm functional
+    
+    Fixed minor issues and tested code. Generates correct signals for motor
+    and pwm.
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Created new version of gpio.h
+    
+    This branch is to showcase several ideas that I think would be useful in
+    RASWare and may not nescessarily need to be included.
+    
+    1. I've added definitions for a tPin type that represents all possible
+    pins. This allows for passing pins as arguments into functions as single
+    arguments as shown in the new gpio.h file. This is how I think the pins
+    should be handled as opposed to the complex macros we currently have.
+    
+    2. I've added GetPin and SetPin functions for setting and retrieving
+    individual pins without prior setup. This has been avoided in previous
+    RASWare versions due to the existance of GPIORead and GPIOWrite but I
+    think having versions that use the new pin arguments and save two lines
+    can be useful and the fact that if works on indivisual pins welcoming to
+    unfamiliar raslets.
+    
+    3. I've also modified the interrupt handlers to use individual pins. This
+    means you can only register a single interrupt per pin, however the
+    ability to register on the specific pin is worth the trade off in my
+    opinion.
+    
+    I have not tested the new implementations and it does not yet compile due
+    to changed file names. However it should be functional as is.
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    Fixed init for UART to work
+    fixed linking errors so project can build.
+    Initial servo code (untested)
+    Adding ADC drivers
+    Added time functions (untested)
+    Cleaning, minor change to linking, correction to comment header
+    Added ToDo file.
+    
+    Signed-off-by: Cruz Monrreal II <Cruz.Monrreal@gmail.com>
+    Started RASLib project. Added init.c
+    Renamed PWMMotors to ServoMotors
+    
+    ServoMotors as a name helps differentiate between RC PWM based motors
+    and TLE motors which also use a sort of PWM to drive.
+    Added RC-PWM based motor module with polymorphic motors
+    
+    Was unsure about what to name the different motor types, went for
+    PWMMotor and TLEMotor although this is flexible.
+    Tested motors. Found optimal frequency to be roughly 1600hz.
+    
+    Also hit 200MHz before induction of motors prevent further testing.
+    Standardized Headers and Includes
+    Fixed motor logic
+    
+    Was written for high-on logic not low-on logic. Fixed. Also the frequency
+    has been moved out of the audible range.
+    forgot to set motor struct invert in initializer
+    using tBoolean, did motor invert (ALL UNTESTED)
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Modified motor and servo code to use the new pwm functions
+    Modified motors to use pwm module
+    
+    Has not been tested, but is now capable of being tested.
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Seemingly working motor drivers
+    Encoder bugfix (Still not proven working)
+    Added RASDemo Project
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Added nescessary files for compiling (Chris)
+    merge pull
+    Added driverlib for stellaris headers under StellarisWare directory. Motor.c now compiles (requires testing, should be able to get to that tomorrow)
+    Removed ghost variable
+    motor.c default functions written, require review and testing
+    added TimerB enables, updated comments
+    tentative update of period and dutycycle in motor.c
+    Updated motor.c
+    updated motor.c
+    Added TLEMotors to RASDemo
+    
+    Tested with both types of motors
+    Added RC-PWM based motor module with polymorphic motors
+    
+    Was unsure about what to name the different motor types, went for
+    PWMMotor and TLEMotor although this is flexible.
+    Tested motors. Found optimal frequency to be roughly 1600hz.
+    
+    Also hit 200MHz before induction of motors prevent further testing.
+    Standardized Headers and Includes
+    Fixed motor logic
+    
+    Was written for high-on logic not low-on logic. Fixed. Also the frequency
+    has been moved out of the audible range.
+    forgot to set motor struct invert in initializer
+    using tBoolean, did motor invert (ALL UNTESTED)
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Modified motor and servo code to use the new pwm functions
+    Modified motors to use pwm module
+    
+    Has not been tested, but is now capable of being tested.
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Seemingly working motor drivers
+    Encoder bugfix (Still not proven working)
+    Added RASDemo Project
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Added nescessary files for compiling (Chris)
+    merge pull
+    Added driverlib for stellaris headers under StellarisWare directory. Motor.c now compiles (requires testing, should be able to get to that tomorrow)
+    Removed ghost variable
+    motor.c default functions written, require review and testing
+    added TimerB enables, updated comments
+    tentative update of period and dutycycle in motor.c
+    Updated motor.c
+    updated motor.c
+    Fixed issue with Time handling unused tasks
+    
+    UnusedEnd was set to point to the first pointer instead of the end,
+    meaning that as soon as a task is returned to the unused pile, all of the
+    following tasks are lost.
+    Standardized Headers and Includes
+    Fixed Continuous spelling error
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    Added missing dereference in GetPin
+    switched to more portable gpio stuff
+    changed the GPIO code to use bit-banding
+    Fixed pins F7 and F0 not working correctly as gpio.
+    Added rising and lowering pin interrupts.
+    
+    Two additional functions with little overhead. Added functionality for no
+    cost.
+    Added pull up/down functions to use the internal resistors
+    
+    Uses resistors internal to the MCU.
+    Added definitions of useful Launchpad pins and Cruz'z workaround.
+    Standardized Headers and Includes
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    Improved timer module
+    
+    1. Added the ability to use ints as identifiers for functions, allowing
+    you to stop currently registered functions.
+    
+    2. Fixed a lot of bugs that I didn't notice. Should have tested better.
+    Mostly related to not getting accurate time. One was a missing volatile
+    adjective. Underflow issue. Race conditions.
+    Made several small changes
+    
+    Standardized the use of tCallback where applicable, and sanitized the
+    return value of GetPin
+    Tested and applied encoders.
+    
+    Encoders have shown to be working indicating that gpio is functional.
+    Added a SetPinZ function
+    
+    Will place the given pin into high impedance state.
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Created new version of gpio.h
+    
+    This branch is to showcase several ideas that I think would be useful in
+    RASWare and may not nescessarily need to be included.
+    
+    1. I've added definitions for a tPin type that represents all possible
+    pins. This allows for passing pins as arguments into functions as single
+    arguments as shown in the new gpio.h file. This is how I think the pins
+    should be handled as opposed to the complex macros we currently have.
+    
+    2. I've added GetPin and SetPin functions for setting and retrieving
+    individual pins without prior setup. This has been avoided in previous
+    RASWare versions due to the existance of GPIORead and GPIOWrite but I
+    think having versions that use the new pin arguments and save two lines
+    can be useful and the fact that if works on indivisual pins welcoming to
+    unfamiliar raslets.
+    
+    3. I've also modified the interrupt handlers to use individual pins. This
+    means you can only register a single interrupt per pin, however the
+    ability to register on the specific pin is worth the trade off in my
+    opinion.
+    
+    I have not tested the new implementations and it does not yet compile due
+    to changed file names. However it should be functional as is.
+    Fixed something in the scheduler
+    
+    Something was going on with the multiple calls to GetTimeUS inside the
+    interrupt handler for the scheduler. Not really sure why, but reducing
+    this to one calls seems to have solved the issue.
+    Fixed race condition in GetTimeUS
+    
+    SystemTiming and SysTickValueGet can be interrupted between. Fixed with a
+    simple loops that loops until SystemTiming doesn't change.
+    Realized cost of 64bit division (implemented in software)
+    
+    After much brainstorming between Chris/Jimmy, came up with a different,
+    cross-platform method of checking for 64x32bit multiplication overflow
+    without division or inline assembly by only checking the top 32bits of
+    the 64bit value.
+    
+    Realized the overflow only becomes an issue if tasks are created that
+    will last for more than 36 thousand years. So decided to not waste
+    cycles in the task interrupt doing 64bit multiplication. We left our
+    fix commented in the task scheduling code in case anyone needs this
+    feature.
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Made small changes to scheduler.
+    
+    - Made the unused queue a bit simpler
+    - Made NMI handler pass through to prevent race conditions
+    - Added infinite loop after main exits
+    Fixed issue with Time handling unused tasks
+    
+    UnusedEnd was set to point to the first pointer instead of the end,
+    meaning that as soon as a task is returned to the unused pile, all of the
+    following tasks are lost.
+    Standardized Headers and Includes
+    Reassigned timers used by pwm
+    
+    Because pwm is now setup to use all the wide timers, the timers used in time.c were remapped. It now uses Timer 5 as a full 32 bit one shot and the SysTick for clock updates. Unfortunately the SysTick on the LM4F is only 24bits, and with a speed of 50MHz means that it can't last for a full second. SysTick now should just interrupt as slow as possible and adjust the clock accordingly (which occurs about 3 times a second). None of these changes should be noticable outside of the time module.
+    Made ordered cyclic pwm functional
+    
+    Fixed minor issues and tested code. Generates correct signals for motor
+    and pwm.
+    Made minor changes to get the new time module working
+    
+    Fully tested and functional. Didn't show the improvement I was hoping for,
+    although it was a very lightweight test and wasn't very thorough. It
+    should be more efficient and safer, so I will keep it.
+    Fixed issue where the end pointer was not updated
+    
+    If the end of the linked list is reached, the end pointer must be updated to no longer point at what was the last element in the list.
+    Modified time module to used linked list
+    
+    Overhead of linked list is minimal and should remove overhead of copying entire structs in memory. Also removes undefined behaviour in the case of running out of tasks.
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    Removed unescessary TimeS functions and added US macro
+    
+    TimeS functions are pretty useless as the float accepting functions are in
+    seconds. TimeUS functions should still be kept as they allow for no
+    overhead when dealing with the internal representation of time.
+    
+    The macro US can be used by other functions for easy casting to US
+    allowing SensorUS to be written trivially.
+    Improved timer module
+    
+    1. Added the ability to use ints as identifiers for functions, allowing
+    you to stop currently registered functions.
+    
+    2. Fixed a lot of bugs that I didn't notice. Should have tested better.
+    Mostly related to not getting accurate time. One was a missing volatile
+    adjective. Underflow issue. Race conditions.
+    Made several small changes
+    
+    Standardized the use of tCallback where applicable, and sanitized the
+    return value of GetPin
+    Modified GetTime in time.c to use full resolution of timer
+    
+    Because its a float, returning sub-microsecond precision is trivial.
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Fixed Robbies Nitpicks
+    
+    Standardized typedefinitions to match current standard, added comments
+    about the time buffer size and fixed small whitespace.
+    Added floating point time functions per Frank's request
+    Fixed Tabs in time.c
+    
+    Really, when would you ever need tabs TWO SPACES LONG
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Named Time functions with units
+    
+    Added more time functions specific to seconds and microseconds. Any second functions simply call their us counterpars with the correct
+    conversion. Seconds is marked with an S and microseconds with US.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Initial servo code (untested)
+    GitIgnore update and time bugfix
+    Adding ADC drivers
+    Changed Wait to floating point. (untested)
+    Aesthetic fixes to time
+    Added time functions (untested)
+    Added a timeout API based on the Watchdog timer
+    hidden to _, and created binary
+    completed function pointer idea
+    Made linesensor.h polymorphic
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Standardized Headers and Includes
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Corrected line sensor ADC command
+    
+    Basic functionality of i2c module and line sensor module has been tested.
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Added timeout interrupt and fixed small issues
+    
+    This allows the i2c module to return quickly even under erronous
+    conditions.
+    Added 2-bit address as i2c initialization parameter
+    
+    Up to 4 line sensors can be used on the same bus. This is done by solder
+    jumpers which specify the lowest 2 bits of the i2c address.
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Added wrappers for i2c error handling
+    
+    This way error handlind does not require StellarisWare calls unless the
+    specific error is needed. The busy wait functions also return if an error
+    occurs.
+    Removed memory allocation issue.
+    
+    In I2C, whatever is using the module will have a much better knowledge of
+    its space requirements. By using pointers instead of varadic functions, we
+    can move memory allocation to there, where it will me much easier and may
+    not need memory allocation at all.
+    Made the i2c module modularized to support multiple i2c buses.
+    Renamed files and fixed warnings
+    
+    linesensorI2C renamed to linesensor since it is the only linesensor
+    module.
+    fixed linking errors so project can build.
+    Standardized pwm response to invalid data.
+    
+    Made it so all of the pwm based functions (motor/servo/pwm) respond to
+    invalid data safetly and consistently by not changing their current state.
+    Fixed range of servos
+    
+    Is now in the range of 600us to 2400us like RASWare2012 and checked with a
+    servo's datasheet
+    Standardized Headers and Includes
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Modified motor and servo code to use the new pwm functions
+    Modified servo code to use pwm module
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Encoder bugfix (Still not proven working)
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Initial servo code (untested)
+    updated motor.c
+    hidden to _, and created binary
+    completed function pointer idea
+    Made linesensor.h polymorphic
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Recompiled in windows and fixed small issue with using wtimer5 in pwm
+    module
+    Moved scheduler interrupt to WTimer5 to lower the priority and increase
+    timer length.
+    Added fix for reseting timers when modifying configuration registers
+    Standardized pwm response to invalid data.
+    
+    Made it so all of the pwm based functions (motor/servo/pwm) respond to
+    invalid data safetly and consistently by not changing their current state.
+    Standardized Headers and Includes
+    Made ordered cyclic pwm functional
+    
+    Fixed minor issues and tested code. Generates correct signals for motor
+    and pwm.
+    Fixed small errors and spelling mistakes to enable compilation of modified
+    pwm module
+    Simplified tracking of target time values
+    
+    Reduced what was previously kept as an absolute phase/duty in the pwm signal to simple target values for the pwmevent struct simplifying the structures and a bit of code.
+    Fixed issue where pwm module's event was never updated
+    Completed implementation of the ordered cyclic pwm
+    
+    Requires much testing
+    Implemented structs for ordered cyclic pwm and designed basic idea
+    
+    Still needs phase/duty cycle implementation
+    Increased possible servo count
+    
+    A small optimization shaved off a few cycles in the pwm handler.
+    
+    Also, most libraries I could find online has a resolution of 60 for servo
+    signals. I've reduced the resolution to 128 allowing us to now have up to
+    31 pwm signals simultaneously.
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Added pwm phase and frequency manipulation per Frank's request.
+    
+    He pointed out that it was nescessary for the motor code to modify pwm's
+    phase and period. So as a solution they are now variables in pwm and can
+    be changed with SetPWMFrequency and SetPWMPhase. If the added runtime
+    usage proves problematic, seperating pwm into both motor and servo modules
+    will be nescessary as Frank originally suggested.
+    Added testing code to RASDemo
+    Created pwm.c and pwm.h for a centralized pwm generating module
+    
+    Has not been tested, must be implemented in motor and servo
+    made gcc stop complaining about struct initalizers
+    Standardized Headers and Includes
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    Completed implementation of the encoders
+    
+    Added reset function and added testable example code to RASDemo.
+    Actual Testing is required
+    Modified encoder to use the new gpio functions
+    
+    Requires implementation in RASDemo
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Encoder bugfix (Still not proven working)
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    fixed stupid bug
+    added a wait in US
+    removed reverse bits as that is not spi spec
+    added a SPI module
+    Renamed PWMMotors to ServoMotors
+    
+    ServoMotors as a name helps differentiate between RC PWM based motors
+    and TLE motors which also use a sort of PWM to drive.
+    Added RC-PWM based motor module with polymorphic motors
+    
+    Was unsure about what to name the different motor types, went for
+    PWMMotor and TLEMotor although this is flexible.
+    Standardized Headers and Includes
+    Fixed Continuous spelling error
+    Made minor changes nescessary for ADC to function
+    
+    Has been thoroughly tested and is functional.
+    Changed mostly syntatic issues with adc module
+    
+    Added appropriate static modifiers, changed how the end of the linked list was handled for efficiency, and fixed small bug with setting the appropriate period for the adc sequence.
+    Fixed small issue with the pending queue in adc
+    
+    On removal an element of the pending queue was not having its chain
+    broken, which is not checked in later parts of the program.
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Changed GetADC index to be an unsigned char, added UNTESTED macro to gpioints to generate port handlers
+    ADC tested working
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Int for Timer5b enabled
+    Initial servo code (untested)
+    Adding ADC drivers
+    hidden to _, and created binary
+    completed function pointer idea
+    Changed RASDemo to reflect new RASLib
+    Made linesensor.h polymorphic
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Standardized Headers and Includes
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Corrected line sensor ADC command
+    
+    Basic functionality of i2c module and line sensor module has been tested.
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Added timeout interrupt and fixed small issues
+    
+    This allows the i2c module to return quickly even under erronous
+    conditions.
+    Added 2-bit address as i2c initialization parameter
+    
+    Up to 4 line sensors can be used on the same bus. This is done by solder
+    jumpers which specify the lowest 2 bits of the i2c address.
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Added wrappers for i2c error handling
+    
+    This way error handlind does not require StellarisWare calls unless the
+    specific error is needed. The busy wait functions also return if an error
+    occurs.
+    Removed memory allocation issue.
+    
+    In I2C, whatever is using the module will have a much better knowledge of
+    its space requirements. By using pointers instead of varadic functions, we
+    can move memory allocation to there, where it will me much easier and may
+    not need memory allocation at all.
+    Made the i2c module modularized to support multiple i2c buses.
+    Renamed files and fixed warnings
+    
+    linesensorI2C renamed to linesensor since it is the only linesensor
+    module.
+    fixed linking errors so project can build.
+    added an include needed to compile i2c module on my system
+    
+    this should not cause any issues on anyone else's systems.
+    I run Archlinux for reference.
+    Standardized Headers and Includes
+    Made syntactic changes as suggested in the pull request
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Added timeout interrupt and fixed small issues
+    
+    This allows the i2c module to return quickly even under erronous
+    conditions.
+    Implemented line sensor in RASDemo and fixed Startup.s
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Implemented a request function for i2c
+    
+    The most common use case for i2c is requesting data through a send
+    followed by a sequntial recieve. By added a request function this can be
+    implemented in the background.
+    Added wrappers for i2c error handling
+    
+    This way error handlind does not require StellarisWare calls unless the
+    specific error is needed. The busy wait functions also return if an error
+    occurs.
+    Modified i2c module to support background reading
+    
+    It now uses a simple state machine in the i2c interrupt handler to do
+    background readding. This can done with the added functions
+    I2CBackgroundSend and I2CBackgroundReceive.
+    Removed memory allocation issue.
+    
+    In I2C, whatever is using the module will have a much better knowledge of
+    its space requirements. By using pointers instead of varadic functions, we
+    can move memory allocation to there, where it will me much easier and may
+    not need memory allocation at all.
+    Made the i2c module modularized to support multiple i2c buses.
+    Renamed files and fixed warnings
+    
+    linesensorI2C renamed to linesensor since it is the only linesensor
+    module.
+    Added I2C files and line sensor code, all of which are working
+    Added flashy LEDs
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Moved InitializeUART into InitializeMCU because of its common use
+    Cleaning, minor change to linking, correction to comment header
+    Started RASLib project. Added init.c
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Fixed issue with Time handling unused tasks
+    
+    UnusedEnd was set to point to the first pointer instead of the end,
+    meaning that as soon as a task is returned to the unused pile, all of the
+    following tasks are lost.
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Reassigned timers used by pwm
+    
+    Because pwm is now setup to use all the wide timers, the timers used in time.c were remapped. It now uses Timer 5 as a full 32 bit one shot and the SysTick for clock updates. Unfortunately the SysTick on the LM4F is only 24bits, and with a speed of 50MHz means that it can't last for a full second. SysTick now should just interrupt as slow as possible and adjust the clock accordingly (which occurs about 3 times a second). None of these changes should be noticable outside of the time module.
+    Added definition for TASK_COUNT
+    
+    Represents the number of tasks to allocate internally.
+    Removed unescessary TimeS functions and added US macro
+    
+    TimeS functions are pretty useless as the float accepting functions are in
+    seconds. TimeUS functions should still be kept as they allow for no
+    overhead when dealing with the internal representation of time.
+    
+    The macro US can be used by other functions for easy casting to US
+    allowing SensorUS to be written trivially.
+    Improved timer module
+    
+    1. Added the ability to use ints as identifiers for functions, allowing
+    you to stop currently registered functions.
+    
+    2. Fixed a lot of bugs that I didn't notice. Should have tested better.
+    Mostly related to not getting accurate time. One was a missing volatile
+    adjective. Underflow issue. Race conditions.
+    Made several small changes
+    
+    Standardized the use of tCallback where applicable, and sanitized the
+    return value of GetPin
+    Fixed Robbies Nitpicks
+    
+    Standardized typedefinitions to match current standard, added comments
+    about the time buffer size and fixed small whitespace.
+    Added floating point time functions per Frank's request
+    Added #ifndef block for time.h
+    Named Time functions with units
+    
+    Added more time functions specific to seconds and microseconds. Any second functions simply call their us counterpars with the correct
+    conversion. Seconds is marked with an S and microseconds with US.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    Updating gitignore
+    Changed Wait to floating point. (untested)
+    Aesthetic fixes to time
+    Added time functions (untested)
+    Cleaning, minor change to linking, correction to comment header
+    Started RASLib project. Added init.c
+    renamed LineSensorDemo, fixed inaccurate comment in linesensor.h
+    completed function pointer idea
+    Changed RASDemo to reflect new RASLib
+    Made linesensor.h polymorphic
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Standardized Headers and Includes
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Added 2-bit address as i2c initialization parameter
+    
+    Up to 4 line sensors can be used on the same bus. This is done by solder
+    jumpers which specify the lowest 2 bits of the i2c address.
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Made the i2c module modularized to support multiple i2c buses.
+    Renamed files and fixed warnings
+    
+    linesensorI2C renamed to linesensor since it is the only linesensor
+    module.
+    fixed linking errors so project can build.
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    added doxygen-style documentation to encoder.h and gpio.h
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    added doxygen-style documentation to encoder.h and gpio.h
+    Standardized Headers and Includes
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    using tBoolean, did motor invert (ALL UNTESTED)
+    added invert to encoders
+    Completed implementation of the encoders
+    
+    Added reset function and added testable example code to RASDemo.
+    Actual Testing is required
+    Modified encoder to use the new gpio functions
+    
+    Requires implementation in RASDemo
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    moved AddEncoder and SetServo functions into internal.h; added ifndef __GPIOINTS_H__ to gpioints.h
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    ADC tested working
+    Encoder bugfix (Still not proven working)
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    Standardized Headers and Includes
+    Modified servo code to use pwm module
+    moved AddEncoder and SetServo functions into internal.h; added ifndef __GPIOINTS_H__ to gpioints.h
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Initial servo code (untested)
+    updated motor.c
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Made syntactic changes as suggested in the pull request
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Implemented a request function for i2c
+    
+    The most common use case for i2c is requesting data through a send
+    followed by a sequntial recieve. By added a request function this can be
+    implemented in the background.
+    Added wrappers for i2c error handling
+    
+    This way error handlind does not require StellarisWare calls unless the
+    specific error is needed. The busy wait functions also return if an error
+    occurs.
+    Modified i2c module to support background reading
+    
+    It now uses a simple state machine in the i2c interrupt handler to do
+    background readding. This can done with the added functions
+    I2CBackgroundSend and I2CBackgroundReceive.
+    Removed memory allocation issue.
+    
+    In I2C, whatever is using the module will have a much better knowledge of
+    its space requirements. By using pointers instead of varadic functions, we
+    can move memory allocation to there, where it will me much easier and may
+    not need memory allocation at all.
+    Made the i2c module modularized to support multiple i2c buses.
+    Added I2C files and line sensor code, all of which are working
+    Fixed commented out Getc in uart.h
+    
+    Was causing some warnings when compiling RASDemo.
+    refactored UART's to use all available hardware
+    Added hack to garuntee correct alignment of doubles passed to printf
+    
+    Simply tests for alignment in InitializeMCU and keeps a flag indicating
+    which alignment varargs is using.
+    made length specifiers work;
+    implemented some of scanf and all of ungetc
+    Made functional (Get|Put)[cs] functions for RASLib
+    
+    They are now the functions which directly call UART code
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Standardized Headers and Includes
+    Response to pull feedback
+    Moved convert to a function and made X different from x
+    Hijacked uartstdio.h to change printf
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Adding USBUART (Untested, could use additional functionality also)
+    Cleaning, minor change to linking, correction to comment header
+    Started RASLib project. Added init.c
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    Standardized Headers and Includes
+    Completed implementation of the ordered cyclic pwm
+    
+    Requires much testing
+    Increased possible servo count
+    
+    A small optimization shaved off a few cycles in the pwm handler.
+    
+    Also, most libraries I could find online has a resolution of 60 for servo
+    signals. I've reduced the resolution to 128 allowing us to now have up to
+    31 pwm signals simultaneously.
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Added pwm phase and frequency manipulation per Frank's request.
+    
+    He pointed out that it was nescessary for the motor code to modify pwm's
+    phase and period. So as a solution they are now variables in pwm and can
+    be changed with SetPWMFrequency and SetPWMPhase. If the added runtime
+    usage proves problematic, seperating pwm into both motor and servo modules
+    will be nescessary as Frank originally suggested.
+    Created pwm.c and pwm.h for a centralized pwm generating module
+    
+    Has not been tested, must be implemented in motor and servo
+    Completed implementation of the encoders
+    
+    Added reset function and added testable example code to RASDemo.
+    Actual Testing is required
+    Modified encoder to use the new gpio functions
+    
+    Requires implementation in RASDemo
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    moved AddEncoder and SetServo functions into internal.h; added ifndef __GPIOINTS_H__ to gpioints.h
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    ADC tested working
+    Encoder bugfix (Still not proven working)
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Fixed small typo left behind from ServoMotor naming
+    Added RC-PWM based motor module with polymorphic motors
+    
+    Was unsure about what to name the different motor types, went for
+    PWMMotor and TLEMotor although this is flexible.
+    removed unnecessary line in motor.h
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    Standardized Headers and Includes
+    using tBoolean, did motor invert (ALL UNTESTED)
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Modified motors to use pwm module
+    
+    Has not been tested, but is now capable of being tested.
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Seemingly working motor drivers
+    Encoder bugfix (Still not proven working)
+    added Stellarisware files
+    motor.c default functions written, require review and testing
+    updated motor.c
+    added a wait in US
+    added a SPI module
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Standardized Headers and Includes
+    Fixed Continuous spelling error
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    the comment describing ADCRead is more precise
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    finished the rest of preliminary documentation, left TODOs in i2c and uart
+    Standardized Headers and Includes
+    Fixed Continuous spelling error
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Changed GetADC index to be an unsigned char, added UNTESTED macro to gpioints to generate port handlers
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    fixed linking errors so project can build.
+    Adding ADC drivers
+    Cleaning, minor change to linking, correction to comment header
+    Started RASLib project. Added init.c
+    Removed led pin definitions
+    
+    Additional pin definitions hide cases where an onboard pin and externally
+    used pin conflict.
+    
+    Having the motors defined with the same pins as the built in leds adds to
+    this issue.
+    
+    The LED pin definitions have been removed to avoid confusion.
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    added doxygen-style documentation to encoder.h and gpio.h
+    Added rising and lowering pin interrupts.
+    
+    Two additional functions with little overhead. Added functionality for no
+    cost.
+    switched tenses, began documentation on pwm, motor, servo, and i2c
+    added doxygen-style documentation to encoder.h and gpio.h
+    Added pull up/down functions to use the internal resistors
+    
+    Uses resistors internal to the MCU.
+    Added definitions of useful Launchpad pins and Cruz'z workaround.
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Modified motors to use pwm module
+    
+    Has not been tested, but is now capable of being tested.
+    Tested and applied encoders.
+    
+    Encoders have shown to be working indicating that gpio is functional.
+    Added a SetPinZ function
+    
+    Will place the given pin into high impedance state.
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Created new version of gpio.h
+    
+    This branch is to showcase several ideas that I think would be useful in
+    RASWare and may not nescessarily need to be included.
+    
+    1. I've added definitions for a tPin type that represents all possible
+    pins. This allows for passing pins as arguments into functions as single
+    arguments as shown in the new gpio.h file. This is how I think the pins
+    should be handled as opposed to the complex macros we currently have.
+    
+    2. I've added GetPin and SetPin functions for setting and retrieving
+    individual pins without prior setup. This has been avoided in previous
+    RASWare versions due to the existance of GPIORead and GPIOWrite but I
+    think having versions that use the new pin arguments and save two lines
+    can be useful and the fact that if works on indivisual pins welcoming to
+    unfamiliar raslets.
+    
+    3. I've also modified the interrupt handlers to use individual pins. This
+    means you can only register a single interrupt per pin, however the
+    ability to register on the specific pin is worth the trade off in my
+    opinion.
+    
+    I have not tested the new implementations and it does not yet compile due
+    to changed file names. However it should be functional as is.
+    Added a timeout API based on the Watchdog timer
+    Compiled RASLib with bit-banding changes.
+    Fixed bit logic error in double print hack
+    Added hack to garuntee correct alignment of doubles passed to printf
+    
+    Simply tests for alignment in InitializeMCU and keeps a flag indicating
+    which alignment varargs is using.
+    Fixed something in the scheduler
+    
+    Something was going on with the multiple calls to GetTimeUS inside the
+    interrupt handler for the scheduler. Not really sure why, but reducing
+    this to one calls seems to have solved the issue.
+    Added flashy LEDs
+    Created a functional printf
+    
+    Includes support for characters, strings, integers, and floats.
+    
+    No support for long types, and there are some little bits of
+    rarely used functionality that is missing.
+    
+    The issues with previous printfs turns out to be related to how
+    varargs casts floats. It manages to cast 32-bit floats all the way
+    to 64-bit floats despite the lack of 64-bit floats on the processor.
+    
+    Hacky bittwiddling was necessary to extract the actual 32-bit float
+    value from varargs.
+    Made functional (Get|Put)[cs] functions for RASLib
+    
+    They are now the functions which directly call UART code
+    Moved InitializeMCU into Startup.c
+    
+    This removes the need to call it upon entering main.
+    Advanced usage can modify Startup.c itself.
+    Fixed race condition in GetTimeUS
+    
+    SystemTiming and SysTickValueGet can be interrupted between. Fixed with a
+    simple loops that loops until SystemTiming doesn't change.
+    added the servo and tle motor c files to RASLib so that RASDemo will compile without warnings
+    Recompiled in windows and fixed small issue with using wtimer5 in pwm
+    module
+    Recompiled RASLib on Windows to insure a working copy
+    hidden to _, and created binary
+    completed function pointer idea
+    Created module for Pololu gpio based line sensors
+    
+    - For Pololu QTR-8RC
+    - Integrated with RASLib
+    - Fully tested and working
+    - Timing values somewhat arbitrary, gives about 1.5 inches of range
+    Updated Startup.c to work in Keil again.
+    
+    Added some other things, made Makefiles use src and inc folders if
+    available.
+    Fixed issues with startup file in Keil
+    
+    Simple linker issues
+    Also had strange issue with INFINITY equality that wasn't revealed until
+    now
+    Cleaned up rasware.
+    
+    Removed some unused files, added a few include paths
+    Got uart.c compiling again
+    Removed led pin definitions
+    
+    Additional pin definitions hide cases where an onboard pin and externally
+    used pin conflict.
+    
+    Having the motors defined with the same pins as the built in leds adds to
+    this issue.
+    
+    The LED pin definitions have been removed to avoid confusion.
+    Standardized pwm response to invalid data.
+    
+    Made it so all of the pwm based functions (motor/servo/pwm) respond to
+    invalid data safetly and consistently by not changing their current state.
+    Fixed issue with Time handling unused tasks
+    
+    UnusedEnd was set to point to the first pointer instead of the end,
+    meaning that as soon as a task is returned to the unused pile, all of the
+    following tasks are lost.
+    Added rising and lowering pin interrupts.
+    
+    Two additional functions with little overhead. Added functionality for no
+    cost.
+    Added pull up/down functions to use the internal resistors
+    
+    Uses resistors internal to the MCU.
+    Fixed range of servos
+    
+    Is now in the range of 600us to 2400us like RASWare2012 and checked with a
+    servo's datasheet
+    Added definitions of useful Launchpad pins and Cruz'z workaround.
+    Tested motors. Found optimal frequency to be roughly 1600hz.
+    
+    Also hit 200MHz before induction of motors prevent further testing.
+    Created common file for shared functionality
+    
+    * Contains declarations of tBoolean, tCallback
+    * Moved init.c into common due to use case
+    * Moved internal declarations into common for simplicity
+    Standardized Headers and Includes
+    Fixed motor logic
+    
+    Was written for high-on logic not low-on logic. Fixed. Also the frequency
+    has been moved out of the audible range.
+    Moved InitializeUART into InitializeMCU because of its common use
+    inversion works for encoders
+    Modified line sensor to take an I2C module and return errors
+    
+    By taking an I2C module instead of pins, I2C buses can be properly shared.
+    Errors are also returned by the LineSensorReadArray function, for errors
+    with the basic LineSensorRead function, I2CSuccess can be called.
+    Made syntactic changes as suggested in the pull request
+    Corrected line sensor ADC command
+    
+    Basic functionality of i2c module and line sensor module has been tested.
+    Added timeout recovery code
+    
+    The module now recovers from a timeout condition correctly. It can now be
+    used without the any connection and properly return an error after every
+    call. This has been tested with no attached sensors.
+    Added timeout interrupt and fixed small issues
+    
+    This allows the i2c module to return quickly even under erronous
+    conditions.
+    Response to pull feedback
+    Implemented line sensor in RASDemo and fixed Startup.s
+    Reimplemented LineSensor module to match RASLib
+    
+    Added background functions and a special function for bit-packed results
+    Now matches standardization of RASLib as it stands so far.
+    Currently untested.
+    Implemented a request function for i2c
+    
+    The most common use case for i2c is requesting data through a send
+    followed by a sequntial recieve. By added a request function this can be
+    implemented in the background.
+    Added wrappers for i2c error handling
+    
+    This way error handlind does not require StellarisWare calls unless the
+    specific error is needed. The busy wait functions also return if an error
+    occurs.
+    Modified i2c module to support background reading
+    
+    It now uses a simple state machine in the i2c interrupt handler to do
+    background readding. This can done with the added functions
+    I2CBackgroundSend and I2CBackgroundReceive.
+    Removed memory allocation issue.
+    
+    In I2C, whatever is using the module will have a much better knowledge of
+    its space requirements. By using pointers instead of varadic functions, we
+    can move memory allocation to there, where it will me much easier and may
+    not need memory allocation at all.
+    Made the i2c module modularized to support multiple i2c buses.
+    Renamed files and fixed warnings
+    
+    linesensorI2C renamed to linesensor since it is the only linesensor
+    module.
+    using tBoolean, did motor invert (ALL UNTESTED)
+    Added I2C files and line sensor code, all of which are working
+    Final formatting cleanup
+    Scientific notation support
+    Support for INF and NaN
+    Switched to doubles internally, added %f formatting
+    %F working
+    Moved convert to a function and made X different from x
+    Fixed Continuous spelling error
+    Finished Testing new pwm generation and modified timing module.
+    
+    Completely funcitoning, and allows for more pwm signals then we have pins
+    at little loss of processing capabilities.
+    Made ordered cyclic pwm functional
+    
+    Fixed minor issues and tested code. Generates correct signals for motor
+    and pwm.
+    Fixed small errors and spelling mistakes to enable compilation of modified
+    pwm module
+    Made minor changes to get the new time module working
+    
+    Fully tested and functional. Didn't show the improvement I was hoping for,
+    although it was a very lightweight test and wasn't very thorough. It
+    should be more efficient and safer, so I will keep it.
+    Made minor changes nescessary for ADC to function
+    
+    Has been thoroughly tested and is functional.
+    Fixed small issue with the pending queue in adc
+    
+    On removal an element of the pending queue was not having its chain
+    broken, which is not checked in later parts of the program.
+    Redesigned the ADC module to reflect design changes in RASWare
+    
+    Incorporated various features such as pin definitions and timing functions
+    and redesigned the overall module to better match the standards that have
+    been created for RASWare.
+    
+    Also adds background and busy wait functions that are more cpu expensive
+    than the contious reads but allow the option. The ADC module also assigns
+    the created ADC pins to the available ADC blocks in a staggered way to
+    balance to load and hopefully optimize performance.
+    
+    Has not yet been tested for functionality.
+    Created the sonar module
+    
+    Fully tested and functional
+    
+    Also revealed a few small bugs in gpio and time modules
+    Removed unescessary TimeS functions and added US macro
+    
+    TimeS functions are pretty useless as the float accepting functions are in
+    seconds. TimeUS functions should still be kept as they allow for no
+    overhead when dealing with the internal representation of time.
+    
+    The macro US can be used by other functions for easy casting to US
+    allowing SensorUS to be written trivially.
+    Improved timer module
+    
+    1. Added the ability to use ints as identifiers for functions, allowing
+    you to stop currently registered functions.
+    
+    2. Fixed a lot of bugs that I didn't notice. Should have tested better.
+    Mostly related to not getting accurate time. One was a missing volatile
+    adjective. Underflow issue. Race conditions.
+    Made several small changes
+    
+    Standardized the use of tCallback where applicable, and sanitized the
+    return value of GetPin
+    Increased possible servo count
+    
+    A small optimization shaved off a few cycles in the pwm handler.
+    
+    Also, most libraries I could find online has a resolution of 60 for servo
+    signals. I've reduced the resolution to 128 allowing us to now have up to
+    31 pwm signals simultaneously.
+    Got pwm, servos, and motors functional.
+    
+    Through testing determined that interrupts does in fact become an issue.
+    By adding optimizations, the current code of RASWare can do 16 PWM signals
+    while still having a servo resolution of 256 bits.
+    Combined pwm duty and phase into single SetPWM function
+    
+    From modifying motor and servo it seemed like duty and phase did not need
+    to be seperated.
+    Modified motor and servo code to use the new pwm functions
+    Added testing code to RASDemo
+    Modified motors to use pwm module
+    
+    Has not been tested, but is now capable of being tested.
+    Tested and applied encoders.
+    
+    Encoders have shown to be working indicating that gpio is functional.
+    Added a SetPinZ function
+    
+    Will place the given pin into high impedance state.
+    Completed implementation of the encoders
+    
+    Added reset function and added testable example code to RASDemo.
+    Actual Testing is required
+    Modified encoder to use the new gpio functions
+    
+    Requires implementation in RASDemo
+    Made nescessary changes so that code will compile with new gpio.h
+    
+    Required disabling encoders temporarily
+    Created new version of gpio.h
+    
+    This branch is to showcase several ideas that I think would be useful in
+    RASWare and may not nescessarily need to be included.
+    
+    1. I've added definitions for a tPin type that represents all possible
+    pins. This allows for passing pins as arguments into functions as single
+    arguments as shown in the new gpio.h file. This is how I think the pins
+    should be handled as opposed to the complex macros we currently have.
+    
+    2. I've added GetPin and SetPin functions for setting and retrieving
+    individual pins without prior setup. This has been avoided in previous
+    RASWare versions due to the existance of GPIORead and GPIOWrite but I
+    think having versions that use the new pin arguments and save two lines
+    can be useful and the fact that if works on indivisual pins welcoming to
+    unfamiliar raslets.
+    
+    3. I've also modified the interrupt handlers to use individual pins. This
+    means you can only register a single interrupt per pin, however the
+    ability to register on the specific pin is worth the trade off in my
+    opinion.
+    
+    I have not tested the new implementations and it does not yet compile due
+    to changed file names. However it should be functional as is.
+    moved AddEncoder and SetServo functions into internal.h; added ifndef __GPIOINTS_H__ to gpioints.h
+    touched up comments in encoder.h, motor.h, and servo.h; put dummy function in new internal.h and internal.c
+    Changed ADC to work for all ADC channels
+    
+    (Not completely working) There's some problem with the lower priority
+    sequencers not working.  Also minor changes to motor/servo structure.
+    SetServo changed from unsigned char to float.
+    Changed GetADC index to be an unsigned char, added UNTESTED macro to gpioints to generate port handlers
+    Named Time functions with units
+    
+    Added more time functions specific to seconds and microseconds. Any second functions simply call their us counterpars with the correct
+    conversion. Seconds is marked with an S and microseconds with US.
+    Created branch for Global Clock idea
+    
+    This is an idea to use Several Timer interrupts to manage a global clock.
+    In this way any functions can be registered for either periodic or single
+    execution without needing to register a hardware interrupt.
+    ADC tested working
+    Seemingly working motor drivers
+    Encoder bugfix (Still not proven working)
+    Added RASDemo Project
+    Finished Encoder code (untested)
+    
+    Also gpioints files
+    Removing Stellarisware. Cleaning everything up. This should be a working version of everything.
+    Compiles to .axf
+    fixed linking errors so project can build.
+    Initial servo code (untested)
+    added stellarisware/utils, added driverlib/uartstdio.c to RASLib, added all other RASLib things to RASLib, created a new keil project called RASDemo2 (not sure what to do with RASDemo)
+    Added nescessary files for compiling (Chris)
+    Updating gitignore
+    Adding USBUART (Untested, could use additional functionality also)
+    Adding ADC drivers
+    Changed Wait to floating point. (untested)
+    Aesthetic fixes to time
+    Added time functions (untested)
+    Started RASLib project. Added init.c

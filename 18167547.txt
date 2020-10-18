@@ -1,0 +1,3148 @@
+﻿    Fix feature list formatting
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Update build instructions to include specialized instructions for new macOS versions that don't ship with OpenSSL.
+    Add install instructions for paramiko/cryptography prereqs
+    Added --parameterss example to README
+    Update README.md
+    Update README.md
+    Tweaked reporting
+    Add option to control cluster type.
+    
+    To allow setting it on a per-project or per-user basis, this also adds support
+    for loading configs from config files in addition to the command line. Fixes #33.
+    Update README to reflect support for multiple test methods per test class.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    README reflects option to run a single test class
+    Update README.md
+    Added brief installation instructions
+    Adjustments per review feedback.
+    Some refactoring per review comments.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Can now run py.test from anywhere within ducktape root directory.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    Removed test-specific code from ducttape, keeping only core classes.
+    Update README - instruct user to source aws-init.sh so environment variables get set. Also, do not download gradle zip if gradle directory already exists.
+    Changed key name in README. Added -y to make apt-get install automatic. Added existence checks to reduce unnecessary downloads and installations.
+    Wording tweak.
+    Put aws access keys in bashrc.
+    Update README.md
+    Trivial fix to remove vagrant-cachier from AWS setup instructions.
+    Fix instructions for restoring an EC2 cluster to include provisioning.
+    Enable parallel booting of EC2 workers.
+    
+    Since provisioning is separated, there's no need to disable --parallel
+    since the errors with AWS running in parallel only happen during
+    provisioning.
+    Give better instructions for maintaining a cluster without keeping it running constantly.
+    Instead of requiring users to set JAVA_HOME and the PATH to gradle, try to provide them automatically for EC2 users.
+    Remove unnecessary sudo from vagrant plugin install.
+    Add EC2 quickstart guide and make a few fixes to the Vagrantfile and build.sh to support running from EC2.
+    Fix some formatting in README.md
+    Update README to make it very clear that you need to configure num_workers before using Vagrant.
+    Add some instructions on writing new tests, services, and adding new source code repositories.
+    First version with a few basic benchmark tests.
+    Initial commit.
+    Enable automated testing
+    Add tox testing support for py38 (#247)
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    pin requirements for python2.7
+    Fix style issues
+    Switch to use tox to conveniently check coverage and code style
+    Use builtin dir to populate template properties
+    
+    The previously used __dict__ method will only show class properties
+    for current class, and not for superclasses
+    This change prepopulates the result dictionary with the builtin dir
+    which includes superclasses, and then applies the existing logic
+    in order to maintain behavior.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    added unit test
+    updated template loader to search installed package in addition to filesystem for templates.
+    Include class fields in template rendering context so constants defined on the class can be used easily in templates.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add DucktapeError as base error class for this package.
+    Add system tests for log monitoring.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Refactor parsing of ssh configs
+    Run tests in a subprocess
+    Reload test context before running test
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    bump the version
+    add support for excluded test paths in the loader
+    Bump Version to 0.7.7
+    Bump version to 0.7.6
+    Bump version to 0.7.5
+    Bump version to 0.7.4
+    bump version to 0.7.3
+    bump version to 0.7.2
+    Bump version to 0.7.1
+    Bump version to 0.7.0 in preparation for release
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Bump version for next release.
+    Bump version
+    Fixed string formatting on log message and added regression check
+    Increment version
+    bump version to 0.5.1
+    update version to 0.5.0
+    Increment version
+    Delete ref to services so memory can be garbage collected
+    Incremented version
+    Version bump
+    Version bump
+    Version bump
+    Added command-line option allowing manual specification of injected args
+    Bumped version
+    Added fail fast check in runner if we are leaking cluster nodes.
+    Bump version for next release, 0.3.3
+    Added timeout to BackgroundThreadService.wait method.
+    updated template loader to search installed package in addition to filesystem for templates.
+    Update version to 0.3.1
+    Updated version to 0.3.0
+    Fixes issue 72.
+    Changed version mechanism; restored result summary reporting (especially important for failures)
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Increase range of test driver ports for port selection
+    Added logic to avoid port collisions
+    Run tests in a subprocess
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    address comment
+    issue-114; Cache Vagrant ssh info
+    Changed version mechanism; restored result summary reporting (especially important for failures)
+    Added --version cmd-line argument.
+    Use os.path.join instead of Unix directory separators.
+    Reorganize directory and variable names to make .ducktape/ a catch-all data directory with metadata as one subdirectory and the config as an independent file.
+    Address review comments: add option to control path to config file and move config constants to ConsoleConfig.
+    Adjustments per review feedback.
+    Put test results in a common results directory
+    Some refactoring per review comments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence. (#248)
+    
+    * Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence.
+    
+    * Fix typo in pysistence project name
+    
+    * Fix import order.
+    
+    * Ensure non-empty dict
+    
+    Co-authored-by: Ewen Cheslack-Postava <ewen@confluent.io>
+    removed commented out code
+    working test suite implementation
+    work in progress - testing and debugging
+    work in progress - adding test suite support
+    Added a command line arg to exclude files
+    fix too-long line
+    Add ability to run a sample of the full test suite
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Switch to use tox to conveniently check coverage and code style
+    Add support for statically selecting subsets of tests to run.
+    Fix missing import after rebase
+    Dump results as json after tests run
+    Add repeat flag
+    Renamed Logger to clarify difference between a logger and an object creating/providing a logger
+    Minor cleanup
+    Tweaks to loader logic per review
+    Update/fix unit tests
+    Run tests in a subprocess
+    Removed unecessary print
+    Clearer --globals error behavior/messages per review
+    No globals configured means empty dict, not None
+    Added a few unit tests for user defined globals
+    Make globals immutable. Make references in context objects to globals readonly
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    address comments
+    address comment
+    issue-114; Cache Vagrant ssh info
+    Renamed command line argument
+    Added command-line option allowing manual specification of injected args
+    Postpone updating latest symlink until after tests run
+    Running with no arguments now displays help message.
+    Removed remaining explicit dependency on Console.Config.RESULTS_ROOT_DIRECTORY
+    Do not create ducktape metadata directory if we run ducktape --version
+    Added option to make results directory configurable
+    Added unit tests, a few comment updates.
+    Fixes issue 72.
+    More informative output on cluster error.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Removed force_clean and kill_processes from Service class
+    Added --version cmd-line argument.
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Log parsed configuration options to debug session log.
+    Added slightly clearer logging on test progress, as well as number of tests collected.
+    Reorganize directory and variable names to make .ducktape/ a catch-all data directory with metadata as one subdirectory and the config as an independent file.
+    Address review comments: add option to control path to config file and move config constants to ConsoleConfig.
+    Updated MockArgs so unit tests pass. Tweaked gitignore to have more specific matching pattern for ducktape results output. Expanded --no-teardown help comment.
+    Add option to control cluster type.
+    
+    To allow setting it on a per-project or per-user basis, this also adds support
+    for loading configs from config files in addition to the command line. Fixes #33.
+    Added no-teardown option
+    exitfirst -> exit-first
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Added --debug command-line option.
+    Adjust sys.path to work automatically with tests passed on the command line.
+    
+    Fixes #32.
+    Verify input paths exist during test discovery.
+    
+    Print an error and exit with a non-zero status code to indicate that the tests
+    failed since specifying a non-existent path is probably an error on the user's
+    part.
+    Add HTML reporter
+    Put test results in a common results directory
+    Some refactoring per review comments.
+    Readded some changes that got lost.
+    Consolidated logger creation/configuration in the session_context module.
+    Improved session logging.
+    ducktape now can take multiple discovery patterns as command-line arguments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    updated docs
+    working test suite implementation
+    work in progress - adding test suite support
+    Added a command line arg to exclude files
+    Update parse_args.py
+    Add ability to run a sample of the full test suite
+    Add support to accept "skip_node_allocation" flag as kwargs
+    This adds the ability to skip node allocation for a service. With this, another layer of abstraction
+    can be written over ductape services when the nodes and services are already known and are running and
+    we just need to run some tests on the running services.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Add support for loading a historical report.json to improve how tests are split into subsets.
+    Add support for statically selecting subsets of tests to run.
+    Add repeat flag
+    Add command line option to specify a default per-test expected node usage
+    Run tests in a subprocess
+    Added --compress option for compression of remote service logs
+    Fixed bug with default parsed test_path
+    Tweaks to comments
+    Added naming mechanism to Service class - unique names for each service instance.
+    Make globals immutable. Make references in context objects to globals readonly
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Fix style issues
+    Switch to use tox to conveniently check coverage and code style
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Clarify error message
+    Add error message to available nodes check in finite subcluster
+    Tweak
+    Minor cleanup per review
+    Added finite_subcluster files
+    Fix ClusterNode#name and add a unit test (#174)
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Track used accounts instead of cluster slots in jsoncluster
+    Minor cleanup per review
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Added subcluster preallocation logic
+    Added methods for requesting and freeing subclusters
+    Updated unit tests
+    Improved readibility of node allocation error messages.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Renamed to ducktape!
+    Added logic to validate cluster size against expected number of nodes needed for test before running test.
+    First version with a few basic benchmark tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Fix error pickling RemoteAccount objects
+    Added methods for requesting and freeing subclusters
+    close non-standard fds in vagrant subprocess commands
+    Minor import cleanup
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    add unit tests
+    make is_aws a property
+    address comments
+    address comments
+    address comment
+    catch excpetion
+    issue-114; Cache Vagrant ssh info
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Slight improvement on logging - session and test logs now each have separate info and debug-level log files: session_log.info, session_log.debug, test_log.info, test_log.debug
+    Added externally routable ip to remote account objects.
+    Added simple method to detect if slave nodes are on aws.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Renamed to ducktape!
+    Removed per-node call to vagrant ssh-config.
+    Updated Vagrant.py so that instantiating a Vagrant cluster now works if some of the Vagrant virtual machines are not running.
+    Added logic to validate cluster size against expected number of nodes needed for test before running test.
+    Added SchemaRegistryService prototype and simple "mini_test" to try getting it up and running.
+    First version with a few basic benchmark tests.
+    change to grep for 'inet ' for redhat images
+    Fix style issues
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Cleanup remoteaccount.remove
+    Minor cleanup
+    Add combine_stderr option to ssh_output
+    Added combine_stderr, and call read() before recv_exit_status
+    Refactored duplicate logic in copy_* methods
+    Refactor parsing of ssh configs
+    Added remoteaccount error classes
+    More informative error message
+    Replaced scp_* methods, added remote file manipulation methods
+    Fixes to remoteaccount unit tests
+    Fix scp error
+    Fix scp
+    replace subprocess+ssh with paramiko
+    Added sigterm handler to runner client
+    Minor cleanup per review
+    Simplify cluster api
+    Added subcluster preallocation logic
+    Added methods for requesting and freeing subclusters
+    Ensure non-standard file descriptors closed in popen
+    Minor import cleanup
+    address comments
+    fix iter_wrapper documentation
+    Make kill_process work for non-Java processes.
+    add comment
+    address reviews
+    avoid ssh local if possible
+    import select
+    allow has_next() to timeout
+    Provide has_next() in the object returned by ssh_capture()
+    Updated ssh_capture - remote command is now run even if the iterator is never accessed.
+    Don't report SSH process errors to INFO since they are a normal part of many tests and generate a lot of noise in the info log.
+    Loosened timing a little bit on _can_ping_url
+    Various minor cleanup
+    Fixed RemoteAccount.wait_for_http_service and added unit tests. This was broken previous changes to behavior of wait_until.
+    Add a utility for monitoring a log until message appears.
+    Turn down log level in _ssh_quiet method
+    Add docs to RemoteAccount.ssh method.
+    Make ssh utilities return exit status when failure is allowed so the caller can check whether the command was successful.
+    Updated unit tests
+    Improved readibility of node allocation error messages.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Added process signaling method to remoteaccount as well as optional callback for ssh_capture.
+    Removed remaining reference to enable_dns.
+    Added externally routable ip to remote account objects.
+    Tightened up remoteaccount scp logic (previously used a bash-specific idiom). Simplified service log collection slightly.
+    Added more robust cleaning, as well as checks to verify that Services are properly cleaning up after themselves.
+    Tightened up scp commands when collecting service logs. Made mark_for_collect, mark_no_collect for service logs work.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Added ServiceRegistry class to help manage service instances.
+    Readded some changes that got lost.
+    Moved http_request to a mixin utility class.
+    Renamed to ducktape!
+    Added setup.py
+    Restores test functionality, adds some of Ewens suggestions - though still need to fix subclassing PerformanceService.
+    Added wait_for_http_service to address issue #3
+    First version with a few basic benchmark tests.
+    cluster_spec.py: address review comments
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Update doc for json cluster
+    Refactor parsing of ssh configs
+    Replaced scp_* methods, added remote file manipulation methods
+    Track used accounts instead of cluster slots in jsoncluster
+    Minor cleanup per review
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Added subcluster preallocation logic
+    Added methods for requesting and freeing subclusters
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    address comments
+    address comments
+    address comment
+    issue-114; Cache Vagrant ssh info
+    Improved readibility of node allocation error messages.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Renamed to ducktape!
+    Removed per-node call to vagrant ssh-config.
+    Added logic to validate cluster size against expected number of nodes needed for test before running test.
+    First version with a few basic benchmark tests.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Replaced scp_* methods, added remote file manipulation methods
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Added subcluster preallocation logic
+    Added methods for requesting and freeing subclusters
+    Updated unit tests
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Fix python3 issues.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    adding SSHClient session expire check (#210)
+    Fix typo in remoteaccount.py (#196)
+    Switch to use tox to conveniently check coverage and code style
+    Update with review feedback
+    Make SSHOutputIter reusable after timeout
+    
+    This patch makes SSHOutputIter reusable after a call to has_next
+    times out. SSHOutputIter now accepts a generator rather than an
+    iterator. It uses the generator to create its iterator and recreates
+    the iterator when iterator.next() raises a timeout exception
+    Corrected missing closing parens
+    Reordered log statements in case error is multiline
+    Corrected line length
+    SSH command failure will either raise exception or log error
+    
+    Current, when an SSH command fails, an exception will be raised only if `allow_fail` is false; if it is true, the result of any failed SSH command will be silently ignored.
+    
+    This PR changes the behavior to log a debug message with the failure information when `allow_fail` is true. All other behavior is unchanged.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    java_pids, kill_java_processes: simplify, document
+    remoteaccount: add java_pids, kill_java_processes
+    
+    Add java_pids, a function to find the process IDs of running java
+    processes based on a classname string.
+    
+    Add kill_java_processes, a function to kill running java processes based
+    on their classname.
+    
+    These functions are more precise than grepping for java and then
+    grepping for a further string in the process name.  That process can
+    catch many java processes besides the intended one.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Cleanup remoteaccount.remove
+    Minor cleanup
+    Add combine_stderr option to ssh_output
+    Added combine_stderr, and call read() before recv_exit_status
+    Refactored duplicate logic in copy_* methods
+    Refactor parsing of ssh configs
+    Added remoteaccount error classes
+    More informative error message
+    Replaced scp_* methods, added remote file manipulation methods
+    Fixes to remoteaccount unit tests
+    Fix scp error
+    Fix scp
+    replace subprocess+ssh with paramiko
+    Added sigterm handler to runner client
+    Minor cleanup per review
+    Simplify cluster api
+    Added subcluster preallocation logic
+    Added methods for requesting and freeing subclusters
+    Ensure non-standard file descriptors closed in popen
+    Minor import cleanup
+    address comments
+    fix iter_wrapper documentation
+    Make kill_process work for non-Java processes.
+    add comment
+    address reviews
+    avoid ssh local if possible
+    import select
+    allow has_next() to timeout
+    Provide has_next() in the object returned by ssh_capture()
+    Updated ssh_capture - remote command is now run even if the iterator is never accessed.
+    Don't report SSH process errors to INFO since they are a normal part of many tests and generate a lot of noise in the info log.
+    Loosened timing a little bit on _can_ping_url
+    Various minor cleanup
+    Fixed RemoteAccount.wait_for_http_service and added unit tests. This was broken previous changes to behavior of wait_until.
+    Add a utility for monitoring a log until message appears.
+    Turn down log level in _ssh_quiet method
+    Add docs to RemoteAccount.ssh method.
+    Make ssh utilities return exit status when failure is allowed so the caller can check whether the command was successful.
+    Updated unit tests
+    Improved readibility of node allocation error messages.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Added process signaling method to remoteaccount as well as optional callback for ssh_capture.
+    Removed remaining reference to enable_dns.
+    Added externally routable ip to remote account objects.
+    Tightened up remoteaccount scp logic (previously used a bash-specific idiom). Simplified service log collection slightly.
+    Added more robust cleaning, as well as checks to verify that Services are properly cleaning up after themselves.
+    Tightened up scp commands when collecting service logs. Made mark_for_collect, mark_no_collect for service logs work.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Added ServiceRegistry class to help manage service instances.
+    Readded some changes that got lost.
+    Moved http_request to a mixin utility class.
+    Renamed to ducktape!
+    Added setup.py
+    Restores test functionality, adds some of Ewens suggestions - though still need to fix subclassing PerformanceService.
+    Added wait_for_http_service to address issue #3
+    First version with a few basic benchmark tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Various minor cleanup
+    Removed stray print calls
+    Fixed RemoteAccount.wait_for_http_service and added unit tests. This was broken previous changes to behavior of wait_until.
+    Various changes per review
+    Readded some changes that got lost.
+    Improved session logging.
+    Moved http_request to a mixin utility class.
+    Switch to use tox to conveniently check coverage and code style
+    Allow wait_until err_msg to be generated by callable instead of fixed string
+    updated template loader to search installed package in addition to filesystem for templates.
+    Add system tests for log monitoring.
+    Updated wait_until to raise exception if it times out instead of returning a boolean
+    Changed version mechanism; restored result summary reporting (especially important for failures)
+    Added --version cmd-line argument.
+    Added reusable wait_until method.
+    Some refactoring per review comments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Switch to use tox to conveniently check coverage and code style
+    Cleaned up reporting during test run
+    Added logic to detect terminal width and height.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Some refactoring per review comments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence. (#248)
+    
+    * Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence.
+    
+    * Fix typo in pysistence project name
+    
+    * Fix import order.
+    
+    * Ensure non-empty dict
+    
+    Co-authored-by: Ewen Cheslack-Postava <ewen@confluent.io>
+    Moved http_request to a mixin utility class.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Run tests in a subprocess
+    Reload test context before running test
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Fix python3 annoying false positive import error.
+    removed extra debug statements
+    work in progress - fixing the loader
+    fixed an error in loader.py that broke it on import errors
+    updated comment
+    updated comment
+    updated doc and added couple of tests to check globs as arguments
+    fixed style error
+    working test suite implementation
+    work in progress - testing and debugging
+    fixed unit test
+    work in progress - adding test suite support
+    add support for excluded test paths in the loader
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Fix style issues
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add support for loading a historical report.json to improve how tests are split into subsets.
+    Add support for statically selecting subsets of tests to run.
+    Add repeat flag
+    Miscellaneous cleanup
+    Tweaks to loader logic per review
+    Update/fix unit tests
+    Run tests in a subprocess
+    Reload test context before running test
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Made reporting of loader errors more specific
+    More informative import error on test load
+    Reverted copy_constructor -> copy, and tweaked unit test
+    Fixed bug caused by test contexts sharing reference to same ServiceRegistry
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Tweaked comment
+    Renamed command line argument
+    Added command-line option allowing manual specification of injected args
+    Fixed typo, updated unit test to make sure loader discovers test methods named "test".
+    Explain logic behind how we filter ImportErrors when reporting errors in the TestLoader.
+    When searching for tests, log import failures that aren't ImportErrors as errors since it most likely indicates the code has a syntax error and might cause tests to be incorrectly skipped.
+    Cleaned up a few things in loader debug logging. In particular, reduce the log noise while trying to import a file - this makes clear which file actually failed to import.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Various changes per review
+    ducktape now actually runs parametrized tests.
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Minor tweaks
+    Can now run a single test class in a module at the command line.
+    Verify input paths exist during test discovery.
+    
+    Print an error and exit with a non-zero status code to indicate that the tests
+    failed since specifying a non-existent path is probably an error on the user's
+    part.
+    Updated unit tests (previously failed).
+    Improved session logging.
+    ducktape now can take multiple discovery patterns as command-line arguments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Remove remaining references to DucktapeJsonSerializeable after rebase
+    Added json report
+    Renamed Logger to clarify difference between a logger and an object creating/providing a logger
+    Add command line option to specify a default per-test expected node usage
+    Cleanup per review
+    Run tests in a subprocess
+    Make SessionContext objects pickleable
+    Added --compress option for compression of remote service logs
+    Make globals immutable. Make references in context objects to globals readonly
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Removed remaining explicit dependency on Console.Config.RESULTS_ROOT_DIRECTORY
+    Added no-teardown option
+    exitfirst -> exit-first
+    Slight improvement on logging - session and test logs now each have separate info and debug-level log files: session_log.info, session_log.debug, test_log.info, test_log.debug
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Added more robust cleaning, as well as checks to verify that Services are properly cleaning up after themselves.
+    Put test results in a common results directory
+    Some refactoring per review comments.
+    Consolidated logger creation/configuration in the session_context module.
+    Improved session logging.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    work in progress - adding test suite support
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    adding more logging during shutdown/copy/cleanup (#211)
+    Fix extraneous comments
+    Add unit test
+    Fix bug in @cluster decorator
+    remove echo message in else since it has no effect
+    Skip compression on non-existent log file
+    Fix style issues
+    Switch to use tox to conveniently check coverage and code style
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    TestContext should be robust against multiple close calls (#169)
+    
+    * TestContext should be robust against multiple close calls
+    
+    TestContext should be robust against multiple close calls.  This helps
+    when debugging unit test issues that result in close being called more
+    than once.
+    
+    * check_test: add "assert not hasattr(services)"
+    Collect all logs when a test fails
+    Fix re-raising exceptions so they preserve stack traces.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Use consistent name for test_index
+    Added schedule_index
+    Renamed Logger to clarify difference between a logger and an object creating/providing a logger
+    Added per-service local_scratch_dir
+    Refactor parsing of ssh configs
+    Handle tests which would never be scheduled due to too-small cluster
+    Added local scratch directory and test_context.close
+    Replaced scp_* methods, added remote file manipulation methods
+    Minor cleanup
+    Add command line option to specify a default per-test expected node usage
+    Miscellaneous cleanup
+    Replace TestLogger instantiation with call to helper method
+    Cleanup per review
+    Run tests in a subprocess
+    Reload test context before running test
+    Fixed string formatting on log message and added regression check
+    Added --compress option for compression of remote service logs
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Made cluster annotation more generic
+    Added cluster annotation and unit tests
+    Consolidate name, id -> service_id
+    Added naming mechanism to Service class - unique names for each service instance.
+    Make globals immutable. Make references in context objects to globals readonly
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    Fix incorrect return when copying logs that causes us to skip remaining services if one service doesn't have a list of log files to collect.
+    Reverted copy_constructor -> copy, and tweaked unit test
+    Fixed bug caused by test contexts sharing reference to same ServiceRegistry
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Modularized mark behavior
+    Added @ignore decorator
+    Log warning-level messages and above to stdout even without the --debug flag
+    Minor cleanup and added unit tests.
+    added comment
+    Added simple mechanism for collecting and displaying test descriptions in the main summary html page, as well as collected data.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    bug fix
+    Various changes per review
+    ducktape now actually runs parametrized tests.
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Fixed mark all logs for collection behavior.
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Moved service cleanup from base Test.tearDown method to the test runner. This makes the test runner responsibilities more uniform and makes it simpler to deal with keyboard interruptions in the correct way.
+    Slight improvement on logging - session and test logs now each have separate info and debug-level log files: session_log.info, session_log.debug, test_log.info, test_log.debug
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Tightened up remoteaccount scp logic (previously used a bash-specific idiom). Simplified service log collection slightly.
+    Added --debug command-line option.
+    Tightened up scp commands when collecting service logs. Made mark_for_collect, mark_no_collect for service logs work.
+    Removed ServiceContext. Any context object is now ok as long as it has self.logger and self.cluster attributes. Service registration now happens automatically when a service is instantiated - this still allows for automated cleanup, but the user no longer has to bother with self.services. Node allocation now happens dynamically instead of before a test is run.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Added new lifecycle methods to Service base class; added log collection logic to pull logs from service instances; added default teardown method to base Test class.
+    Put test results in a common results directory
+    Added convenience method for creating service context.
+    Some refactoring per review comments.
+    Consolidated logger creation/configuration in the session_context module.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    File finder ignores non-package directories.
+    Small tweak.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    logger.info -> logger.debug
+    Tweaked per review comments, made code a little clearer and more extensible.
+    Added basic test discovery.
+    Renamed to ducktape!
+    Move base test class back to ducttape.
+    Removed test-specific code from ducttape, keeping only core classes.
+    Added min_cluster_size method to camus tests
+    Added logic to validate cluster size against expected number of nodes needed for test before running test.
+    Add HDP service and code refactor
+    Add HDP to ducttape
+    Increased retry limit for failover tests, and some minor cleanup.
+    Adds creation of _schemas topic to SchemaRegistryTest, and more verification in kafka failover tests.
+    Minor cleanup in test.py
+    Produce Avro data with Kafka rest proxy
+    Add Hadoop Test
+    added camus test
+    Added tests for validating schema registry behavior when kafka brokers are killed or restarted.
+    Working test.
+    First version with a few basic benchmark tests.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Track schedule index in runner, not in scheduler
+    Added schedule_index
+    Handle tests which would never be scheduled due to too-small cluster
+    Minor cleanup
+    Add unit tests for scheduler
+    Simplify peek call
+    Minor cleanup
+    Decouple scheduler from runner
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add refactored test status
+    Fix constructor in failing mock test
+    Restore --exit-first functionality and add regression test
+    Reload test context before running test
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Fix generation of html report after py3 compatibility update (#226)
+    
+    The py3 compatibility update had a bug such that it passed tests, but
+    didn't actually generate valid output for the report.html. This fixes it
+    by ensuring both py2 and py3 have a string to interpolate the result
+    data into.
+    
+    Validated by running system tests and verifying the resulting
+    report.html files render correctly.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Use separate tables for test results (#190)
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Include ducktape version in reports
+    Dump results for each individual test
+    Remove remaining references to DucktapeJsonSerializeable after rebase
+    Added json report
+    Dump results as json after tests run
+    Run tests in a subprocess
+    Add delimiter between tests onstdout, and minor cleanup
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Removed free_node, and reverted reporter.py back to using json.dumps
+    Use pprint.pformat instead of json.dumps since the latter fails on some datatypes
+    Tweaked test name in html report
+    Added simple mechanism for collecting and displaying test descriptions in the main summary html page, as well as collected data.
+    Changed version mechanism; restored result summary reporting (especially important for failures)
+    Tweaked reporting
+    small tweak
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    removed stray print call
+    Changed test_log path to a relative path in html report.
+    Linked test logs to html report.
+    Removed remaining reference to enable_dns.
+    Minor tweaks
+    Added externally routable ip to remote account objects.
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Tightened up scp commands when collecting service logs. Made mark_for_collect, mark_no_collect for service logs work.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Add HTML reporter
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    No longer use statistics module in result.py
+    Include ducktape version in reports
+    Handle divide-by-zero in results.to_json()
+    Dump results for each individual test
+    Remove remaining references to DucktapeJsonSerializeable after rebase
+    Drop mode - it throws errors when mode is ambiguous
+    Handle empty list in result stats, and include median, mode
+    Added cluster utilization to json output
+    Added json report
+    Dump results as json after tests run
+    Use consistent name for test_index
+    Added schedule_index
+    Update/fix unit tests
+    Run tests in a subprocess
+    Delete ref to services so memory can be garbage collected
+    Added @ignore decorator
+    Tweaked test name in html report
+    Added simple mechanism for collecting and displaying test descriptions in the main summary html page, as well as collected data.
+    TestResult class validates that result data is JSON-serializable
+    Linked test logs to html report.
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Some refactoring per review comments.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Renamed Logger to clarify difference between a logger and an object creating/providing a logger
+    Added local scratch directory and test_context.close
+    Cleanup per review
+    Run tests in a subprocess
+    Added @ignore decorator
+    Slight improvement on logging - session and test logs now each have separate info and debug-level log files: session_log.info, session_log.debug, test_log.info, test_log.debug
+    Consolidated logger creation/configuration in the session_context module.
+    Consolidated logger creation/configuration in the session_context module.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    fixed an issue where ducktape would hang if the test throws exception in constructor
+    adding more logging during shutdown/copy/cleanup (#211)
+    Allow services to record exceptions and include them in test summary
+    
+    In some cases such as BackgroundThreadService, it is easy to lose the true cause of errors in the debug log if they don't
+    immediately kill the test. This allows these errors to be surfaced by allowing Services to optionally record error
+    information that will be aggregated at the end of a test and included in the test summary.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Collect all logs when a test fails
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Removed stray close() call after rebase
+    Fix "No handlers available..." message
+    Dump results for each individual test
+    Release test_context resources a little later
+    Close test_context after creating result
+    Use consistent name for test_index
+    Track schedule index in runner, not in scheduler
+    Added schedule_index
+    Added per-service local_scratch_dir
+    Added combine_stderr, and call read() before recv_exit_status
+    No logging of POLLIN
+    Allow SIGINT to interrupt child processes
+    Added local scratch directory and test_context.close
+    Replaced scp_* methods, added remote file manipulation methods
+    Add (process)signal handling to main process
+    Added sigterm handler to runner client
+    Added subcluster preallocation logic
+    Miscellaneous cleanup
+    Include test_id in test events, remove request log
+    Replace TestLogger instantiation with call to helper method
+    Cleanup per review
+    Tweaks to loader logic per review
+    Updated client logging
+    Removed stray print statements
+    Update/fix unit tests
+    Run tests in a subprocess
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Use consistent name for test_index
+    Added schedule_index
+    Miscellaneous cleanup
+    Include test_id in test events, remove request log
+    Cleanup per review
+    Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence. (#248)
+    
+    * Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence.
+    
+    * Fix typo in pysistence project name
+    
+    * Fix import order.
+    
+    * Ensure non-empty dict
+    
+    Co-authored-by: Ewen Cheslack-Postava <ewen@confluent.io>
+    Only print warning when there is only one cluster that used up all the nodes
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Dump new summaries after each new test result is received
+    Dump results for each individual test
+    Added cluster utilization to json output
+    Use consistent name for test_index
+    Track schedule index in runner, not in scheduler
+    Added schedule_index
+    Increase range of test driver ports for port selection
+    Log a message after KeyboardInterrupt
+    Added logic to avoid port collisions
+    Handle tests which would never be scheduled due to too-small cluster
+    Fix error pickling RemoteAccount objects
+    Allow SIGINT to interrupt child processes
+    Minor cleanup
+    Added progress message
+    Restore --exit-first functionality and add regression test
+    Simplify peek call
+    Minor cleanup
+    Fix off-by-one in max parallel tests
+    Add (process)signal handling to main process
+    Decouple scheduler from runner
+    Non parallel test warning should log only once
+    Enable parallel tests, add scheduler
+    Add warning if running parallel and no cluster use metadata is found
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Remove hard-coded maximum on preallocated cluster size
+    Added subcluster preallocation logic
+    Miscellaneous cleanup
+    Include test_id in test events, remove request log
+    Cleanup per review
+    Removed stray print statements
+    Update/fix unit tests
+    Run tests in a subprocess
+    Reload test context before running test
+    Make SessionContext objects pickleable
+    Make cause of failure more immediately visible
+    Cleanup per review
+    Delete ref to services so memory can be garbage collected
+    Add delimiter between tests onstdout, and minor cleanup
+    Cleaned up reporting during test run
+    Log failure info in the test log
+    Restructured no-teardown logic
+    Collect logs even if no_teardown is specified
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Added fail fast check in runner if we are leaking cluster nodes.
+    Ensure exception messages are strings before appending them to test result summary. Some exceptions, such as KeyError, can have non-string messages.
+    Added simple mechanism for collecting and displaying test descriptions in the main summary html page, as well as collected data.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    A little cleanup
+    ducktape now actually runs parametrized tests.
+    Mark start of test before setup so we report the entire duration of the test. Fixes #63.
+    Tweaked reporting
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Added slightly clearer logging on test progress, as well as number of tests collected.
+    Fixed bug in --no-teardown leftover from merge.
+    Added no-teardown option
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Moved service cleanup from base Test.tearDown method to the test runner. This makes the test runner responsibilities more uniform and makes it simpler to deal with keyboard interruptions in the correct way.
+    Linked test logs to html report.
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Runner catches BaseException instead of Exception.
+    Removed ServiceContext. Any context object is now ok as long as it has self.logger and self.cluster attributes. Service registration now happens automatically when a service is instantiated - this still allows for automated cleanup, but the user no longer has to bother with self.services. Node allocation now happens dynamically instead of before a test is run.
+    Trivial fix to reraise an exception to preserve the original stack trace.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Added new lifecycle methods to Service base class; added log collection logic to pull logs from service instances; added default teardown method to base Test class.
+    Verify input paths exist during test discovery.
+    
+    Print an error and exit with a non-zero status code to indicate that the tests
+    failed since specifying a non-existent path is probably an error on the user's
+    part.
+    Some refactoring per review comments.
+    Readded some changes that got lost.
+    Consolidated logger creation/configuration in the session_context module.
+    Improved session logging.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Use separate tables for test results (#190)
+    Added @ignore decorator
+    Add HTML reporter
+    Fix insecure scripts (#243)
+    
+    Co-authored-by: Zhengliang Zhu <zhengliangz@wepay.com>
+    Fix generation of html report after py3 compatibility update (#226)
+    
+    The py3 compatibility update had a bug such that it passed tests, but
+    didn't actually generate valid output for the report.html. This fixes it
+    by ensuring both py2 and py3 have a string to interpolate the result
+    data into.
+    
+    Validated by running system tests and verifying the resulting
+    report.html files render correctly.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Use separate tables for test results (#190)
+    Include ducktape version in reports
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Tweaked test name in html report
+    Added simple mechanism for collecting and displaying test descriptions in the main summary html page, as well as collected data.
+    Add HTML reporter
+    Fix bug in @cluster decorator
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Made cluster annotation more generic
+    Added cluster annotation and unit tests
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    address comment
+    need to check for key existence in dict
+    comments
+    fix typo
+    add env annotation
+    add defaults parametrize mark (#179)
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Fix test errors after rebase
+    Update/fix unit tests
+    Reload test context before running test
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Added cluster annotation and unit tests
+    Reverted copy_constructor -> copy, and tweaked unit test
+    Fixed bug caused by test contexts sharing reference to same ServiceRegistry
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Modularized mark behavior
+    Added @ignore decorator
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add support for statically selecting subsets of tests to run.
+    Fix test errors after rebase
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    add env annotation
+    add defaults parametrize mark (#179)
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Added @ignore decorator
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Fix python3 issues.
+    Allow services to record exceptions and include them in test summary
+    
+    In some cases such as BackgroundThreadService, it is easy to lose the true cause of errors in the debug log if they don't
+    immediately kill the test. This allows these errors to be surfaced by allowing Services to optionally record error
+    information that will be aggregated at the end of a test and included in the test summary.
+    Propagate exceptions from BackgroundThreadService on stop() as well as on wait()
+    
+    Many services will never call wait() because they don't have a finite amount of work to do. Not propagating on stop() can
+    then mask the true source of errors. This isn't perfect either since we can't actively monitor these services from the main
+    thread, so the error caught by the framework may still
+    Fix re-raising exceptions so they preserve stack traces.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    minor renaming/fixes from review
+    raise RuntimeError if trying to start a running node
+    push basic wait logic into Service
+    add wait_node to service class
+    Consolidate name, id -> service_id
+    Added naming mechanism to Service class - unique names for each service instance.
+    Added timeout to BackgroundThreadService.wait method.
+    Added timeout to BackgroundThreadService.wait method.
+    Log warning-level messages and above to stdout even without the --debug flag
+    small tweak
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Add support to accept "skip_node_allocation" flag as kwargs
+    This adds the ability to skip node allocation for a service. With this, another layer of abstraction
+    can be written over ductape services when the nodes and services are already known and are running and
+    we just need to run some tests on the running services.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    MINOR: Improve error message in service wait
+    Fix style issues
+    Properly call keyword args and ignore systest results
+    Switch to use tox to conveniently check coverage and code style
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Service class defines its own json format
+    Restore who_am_i call in Service, and fix circular recursion
+    Added json report
+    Added per-service local_scratch_dir
+    Added remoteaccount error classes
+    Rename cluster methods: request -> alloc
+    Added subcluster preallocation logic
+    minor renaming/fixes from review
+    push basic wait logic into Service
+    add wait_node to service class
+    Consolidate name, id -> service_id
+    Restore run_parallel static method to Service class
+    Added naming mechanism to Service class - unique names for each service instance.
+    Refactored argument parsing, and parse_args now returns dict instead of argparse.NameSpace object.
+    Removed free_node, and reverted reporter.py back to using json.dumps
+    Fixed node leakage in Service.free
+    Moved node allocation out of service.start and into Service.__init__
+    Updated unit tests
+    Improved readibility of node allocation error messages.
+    Clarified error messages relating to cluster allocation. Made logger and cluster a property of several classes instead of a field to avoid potential for stale references.
+    Removed force_clean and kill_processes from Service class
+    Protected pre-start cleanup steps
+    Moved background_thread module to ducktape. Print test result data to data.json file. Print per-test results as the test progresses.
+    Slight improvement on logging - session and test logs now each have separate info and debug-level log files: session_log.info, session_log.debug, test_log.info, test_log.debug
+    Tightened up remoteaccount scp logic (previously used a bash-specific idiom). Simplified service log collection slightly.
+    Added more robust cleaning, as well as checks to verify that Services are properly cleaning up after themselves.
+    Tightened up scp commands when collecting service logs. Made mark_for_collect, mark_no_collect for service logs work.
+    Runner catches BaseException instead of Exception.
+    Removed ServiceContext. Any context object is now ok as long as it has self.logger and self.cluster attributes. Service registration now happens automatically when a service is instantiated - this still allows for automated cleanup, but the user no longer has to bother with self.services. Node allocation now happens dynamically instead of before a test is run.
+    removed wait_until_alive
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Tweaky changes. Added allocate_nodes and free_nodes methods to test life-cycle.
+    Added new lifecycle methods to Service base class; added log collection logic to pull logs from service instances; added default teardown method to base Test class.
+    Adjustments per review feedback.
+    Some refactoring per review comments.
+    Improved session logging.
+    Added TestContext, ServiceContext. Also, now pass loggers around instead of inheriting from Logger.
+    Renamed to ducktape!
+    Added logic to validate cluster size against expected number of nodes needed for test before running test.
+    Restores test functionality, adds some of Ewens suggestions - though still need to fix subclassing PerformanceService.
+    Some refactoring of KafkaRestService and SchemaRegistryService.
+    Functional failover tests.
+    First version with a few basic benchmark tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Allow services to record exceptions and include them in test summary
+    
+    In some cases such as BackgroundThreadService, it is easy to lose the true cause of errors in the debug log if they don't
+    immediately kill the test. This allows these errors to be surfaced by allowing Services to optionally record error
+    information that will be aggregated at the end of a test and included in the test summary.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Restore human-readable repr to service registry
+    Service class defines its own json format
+    Restore who_am_i call in Service, and fix circular recursion
+    Added json report
+    Reload test context before running test
+    removed eftover check_clean call
+    cleaned up TestResults class. Added run time to test reporting. Added --exitfirst option. Added KeyboardInterrupt logic - TestRunner now cleans up but stops running tests on keyboard interrupt.
+    Added more robust cleaning, as well as checks to verify that Services are properly cleaning up after themselves.
+    Removed ServiceContext. Any context object is now ok as long as it has self.logger and self.cluster attributes. Service registration now happens automatically when a service is instantiated - this still allows for automated cleanup, but the user no longer has to bother with self.services. Node allocation now happens dynamically instead of before a test is run.
+    Service registry catches BaseException in stop,clean, free.
+    Added new lifecycle methods to Service base class; added log collection logic to pull logs from service instances; added default teardown method to base Test class.
+    Group service logs by service and by node
+    Added ServiceRegistry class to help manage service instances.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Add system tests for log monitoring.
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Fix python3 issues.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Fix checkstyle issues
+    consolidate filter code
+    Add a system test to assess compression works as expected
+    Properly call keyword args and ignore systest results
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Service class defines its own json format
+    Add combine_stderr option to ssh_output
+    Added combine_stderr, and call read() before recv_exit_status
+    Moved a few unit tests to system tests
+    Added remoteaccount error classes
+    Replaced scp_* methods, added remote file manipulation methods
+    Restore --exit-first functionality and add regression test
+    Make it possible to run ducktape systests in parallel
+    Fix test errors after rebase
+    Added --compress option for compression of remote service logs
+    Updated ssh_capture - remote command is now run even if the iterator is never accessed.
+    Add system tests for log monitoring.
+    Add system tests for log monitoring.
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Cleaned up __init__.py files
+    Added bare-bones unit tests.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Add unit tests for scheduler
+    Update/fix unit tests
+    Reload test context before running test
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added regression test for node leakage
+    Moved node allocation out of service.start and into Service.__init__
+    Fixed RemoteAccount.wait_for_http_service and added unit tests. This was broken previous changes to behavior of wait_until.
+    Tests for BackgroundThreadService are now unit tests rather than systests.
+    Updated unit tests
+    Updated MockArgs so unit tests pass. Tweaked gitignore to have more specific matching pattern for ducktape results output. Expanded --no-teardown help comment.
+    Moved service cleanup from base Test.tearDown method to the test runner. This makes the test runner responsibilities more uniform and makes it simpler to deal with keyboard interruptions in the correct way.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Various minor cleanup
+    Moved find_available_port to test_utils module.
+    Some refactoring per review comments.
+    Added SessionContext class and as well as latest-test-results symlink to most recent ducktape output.
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence. (#248)
+    
+    * Incorporate and fix PDict from pysistence in main codebase. Remove dependency on pysistence.
+    
+    * Fix typo in pysistence project name
+    
+    * Fix import order.
+    
+    * Ensure non-empty dict
+    
+    Co-authored-by: Ewen Cheslack-Postava <ewen@confluent.io>
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Clearer --globals error behavior/messages per review
+    Update check_main test to check for specific exceptions
+    Minor additional safeguard in globals unit test
+    Added a few unit tests for user defined globals
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Update unit test
+    removed stray print
+    Added unit tests, a few comment updates.
+    Added unit tests, a few comment updates.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Added a command line arg to exclude files
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Fix style issues
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fixed bug with default parsed test_path
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Track used accounts instead of cluster slots in jsoncluster
+    Added subcluster preallocation logic
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Moved a few unit tests to system tests
+    Refactor parsing of ssh configs
+    Fixes to remoteaccount unit tests
+    Added sigterm handler to runner client
+    Added subcluster preallocation logic
+    address reviews
+    add unit test
+    Loosened timing a little bit on _can_ping_url
+    Various minor cleanup
+    Moved find_available_port to test_utils module.
+    Fixed RemoteAccount.wait_for_http_service and added unit tests. This was broken previous changes to behavior of wait_until.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Added finite_subcluster files
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Rename cluster methods: request -> alloc
+    Added unit tests to check that cluster classes are pickelable
+    remove parens from assertions
+    add comment for unit tests
+    improve unit tests
+    add unit tests
+    make is_aws a property
+    address comments
+    Updated unit tests
+    Updated unit tests to reflect changes to SessionContext and VagrantCluster.
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Fix ClusterNode#name and add a unit test (#174)
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Added methods for requesting and freeing subclusters
+    Added unit tests to check that cluster classes are pickelable
+    add comment
+    Updated unit tests
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Refactor parsing of ssh configs
+    Simplify cluster api
+    Rename cluster methods: request -> alloc
+    Remove hard-coded maximum on preallocated cluster size
+    Added methods for requesting and freeing subclusters
+    Added unit tests to check that cluster classes are pickelable
+    add comment
+    Updated unit tests
+    Add tests for cluster classes and remove java_home and kafka_home.
+    
+    This also fixes a bug in the Vagrant parser caused by a typo Hostname instead of
+    HostName, which inadvertently caused SSH commands to work in an unexpected way.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Use "node" consistently instead of "slot"
+    
+    We should refer to cluster members as "nodes" consistently.
+    Windows VM support (#155)
+    
+    Windows VMs are only supported when run in EC2.
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Minor cleanup
+    Add unit tests for scheduler
+    Add unit tests for scheduler
+    Reload test context before running test
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Update dependency versions (#213)
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fix constructor in failing mock test
+    Refactor parsing of ssh configs
+    Remove hard-coded maximum on preallocated cluster size
+    Added subcluster preallocation logic
+    Renamed check_serial_runner* -> check_runner* to reflect name change in test runner
+    Fix hang in memory leak test
+    Fix test errors after rebase
+    Update/fix unit tests
+    Run tests in a subprocess
+    Reload test context before running test
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Cleanup per review
+    Delete ref to services so memory can be garbage collected
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    updated all tests to use _do_expand shortcut
+    fixed an issue where ducktape would hang if the test throws exception in constructor
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Added logic to avoid port collisions
+    Restore --exit-first functionality and add regression test
+    Add unit tests for scheduler
+    Simplify cluster api
+    Fix tests
+    Rename cluster methods: request -> alloc
+    Remove hard-coded maximum on preallocated cluster size
+    Added subcluster preallocation logic
+    Renamed check_serial_runner* -> check_runner* to reflect name change in test runner
+    Fix test errors after rebase
+    Update/fix unit tests
+    Run tests in a subprocess
+    Reload test context before running test
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Added logic in check_serial_runner to validate ignores are treated correctly
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Added regression test for node leakage
+    improved serial runner test; added unit test for correct run of single test
+    Updated unit tests
+    Updated unit tests
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fix constructor in failing mock test
+    Restore --exit-first functionality and add regression test
+    Reload test context before running test
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Reload test context before running test
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    fixed an issue where ducktape would hang if the test throws exception in constructor
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fix constructor in failing mock test
+    Restore --exit-first functionality and add regression test
+    Reload test context before running test
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Initial (and incomplete) work to support Windows VMs and mixed-OS clusters.
+    Reload test context before running test
+    Reload test context before running test
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    fixed an issue where ducktape would hang if the test throws exception in constructor
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fix constructor in failing mock test
+    Restore --exit-first functionality and add regression test
+    Reload test context before running test
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    Allow wait_until err_msg to be generated by callable instead of fixed string
+    Unit test also checks for expected error message
+    Updated wait_until to raise exception if it times out instead of returning a boolean
+    Updated wait_until to raise exception if it times out instead of returning a boolean
+    Added unit tests, a few comment updates.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Make SessionContext objects pickleable
+    added unit test
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    fix unit test for files with relative path
+    Switch to use tox to conveniently check coverage and code style
+    TestContext should be robust against multiple close calls (#169)
+    
+    * TestContext should be robust against multiple close calls
+    
+    TestContext should be robust against multiple close calls.  This helps
+    when debugging unit test issues that result in close being called more
+    than once.
+    
+    * check_test: add "assert not hasattr(services)"
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fixed string formatting on log message and added regression check
+    Added --compress option for compression of remote service logs
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Minor cleanup and added unit tests.
+    Various changes per review
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Update/fix unit tests
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Reverted copy_constructor -> copy, and tweaked unit test
+    Fixed bug caused by test contexts sharing reference to same ServiceRegistry
+    updated doc and added couple of tests to check globs as arguments
+    renamed a function
+    use discover_sub_dir() more consistently in the check_loader test
+    working test suite implementation
+    fixed unit test
+    work in progress - adding test suite support
+    add support for excluded test paths in the loader
+    Add python3 support (#215)
+    
+    This adds python3 to the standard unit test matrix and is verified to
+    work with the ducktape system tests on both py27 and py37. Most issues
+    were found easily with existing unit tests. System tests revealed a
+    couple of additional problems with str/bytes differences in py3 and
+    in Vagrant cluster code that is more difficult to unit test.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Add support for loading a historical report.json to improve how tests are split into subsets.
+    Add support for statically selecting subsets of tests to run.
+    Tweaks to loader logic per review
+    Update/fix unit tests
+    Run tests in a subprocess
+    Reload test context before running test
+    Added @ignore decorator
+    Renamed command line argument
+    Added command-line option allowing manual specification of injected args
+    Updated unit tests
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Moved service cleanup from base Test.tearDown method to the test runner. This makes the test runner responsibilities more uniform and makes it simpler to deal with keyboard interruptions in the correct way.
+    Updated unit tests to reflect changes to SessionContext and VagrantCluster.
+    Added a few simple tests for test loader.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Verify input paths exist during test discovery.
+    
+    Print an error and exit with a non-zero status code to indicate that the tests
+    failed since specifying a non-existent path is probably an error on the user's
+    part.
+    Some refactoring per review comments.
+    Updated unit tests (previously failed).
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Can now run py.test from anywhere within ducktape root directory.
+    Added bare-bones unit tests.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Cleaned up __init__.py files
+    Added bare-bones unit tests.
+    Add support for loading a historical report.json to improve how tests are split into subsets.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Cleaned up __init__.py files
+    Added bare-bones unit tests.
+    work in progress - adding test suite support
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    work in progress - adding test suite support
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Cleaned up __init__.py files
+    Added bare-bones unit tests.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Added @ignore decorator
+    Various changes per review
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    added newline at the end of several files
+    work in progress - adding test suite support
+    work in progress - adding test suite support
+    work in progress - adding test suite support
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    added newline at the end of several files
+    work in progress - adding test suite support
+    added newline at the end of several files
+    work in progress - adding test suite support
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Fixed typo, updated unit test to make sure loader discovers test methods named "test".
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    work in progress - adding test suite support
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ducktape now actually runs parametrized tests.
+    Working stackable parametrize and matrix. Next step - clean up, refactor, consolidate logic
+    initial prototype
+    Support multiple tests per Test class.
+    
+    Test methods must be name test.* or .*test. The test loader now supports
+    matching up to the test method in the format
+    file.py::TestClass.test_method. Test contexts are now preferred when logging
+    some information since only having the test class name is no longer
+    sufficient. Fixes #49.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Added bare-bones unit tests.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Clean up unit test setup.
+    
+    Move unit tests to their own top-level tests/ directory so we don't end up with
+    any naming conflicts. Move the loader tests from ducktape/unit_tests/tests/ to
+    tests/loader/. Future tests can be categorized in directories under
+    tests/. Setup tests to be runnable via setup.py, which will also auto-install
+    pytest if necessary. Update README and simplify the loader test so it only
+    relies on the layout of the particular test files instead of the entire
+    repository layout.
+    Cleaned up __init__.py files
+    Added bare-bones unit tests.
+    added newline at the end of several files
+    working test suite implementation
+    added newline at the end of several files
+    working test suite implementation
+    work in progress - adding test suite support
+    added newline at the end of several files
+    working test suite implementation
+    added newline at the end of several files
+    work in progress - adding test suite support
+    add support for excluded test paths in the loader
+    add support for excluded test paths in the loader
+    Cleaned up __init__.py files
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Added bare-bones unit tests.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Renamed to ducktape!
+    First version with a few basic benchmark tests.
+    Use builtin dir to populate template properties
+    
+    The previously used __dict__ method will only show class properties
+    for current class, and not for superclasses
+    This change prepopulates the result dictionary with the builtin dir
+    which includes superclasses, and then applies the existing logic
+    in order to maintain behavior.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Added user defined globals option; refactored arg parsing and added corresponding unit tests
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    added unit test
+    updated template loader to search installed package in addition to filesystem for templates.
+    Updated unit tests
+    Moved service cleanup from base Test.tearDown method to the test runner. This makes the test runner responsibilities more uniform and makes it simpler to deal with keyboard interruptions in the correct way.
+    Updated unit tests to reflect changes to SessionContext and VagrantCluster.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Remove automatically inserted author info.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Added naming mechanism to Service class - unique names for each service instance.
+    Moved node allocation out of service.start and into Service.__init__
+    Include class fields in template rendering context so constants defined on the class can be used easily in templates.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Remove automatically inserted author info.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    Added naming mechanism to Service class - unique names for each service instance.
+    Add support for jinja2 templates.
+    
+    Templates can either be rendered directly from strings or from files loaded from
+    a templates/ directory relative to the class. This is integrated and tested with
+    Service and Test classes, so both can provide templates/ directories to collect
+    template files alongside the services/tests themselves.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Added cluster annotation and unit tests
+    Simplified mark application. Removed details link from reporting of ignored tests.
+    Added @ignore decorator
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    add positive test for @env
+    need to check for key existence in dict
+    comments
+    add env annotation
+    add defaults parametrize mark (#179)
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Added @ignore decorator
+    Various changes per review
+    Added unit tests
+    Fix nit-pick
+    Add unit test
+    Move CLUSTER_SIZE_KEYWORD to better spot, and break circular import
+    Fix a couple comments
+    Made cluster annotation more generic
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    Switch to use tox to conveniently check coverage and code style
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Renamed Logger to clarify difference between a logger and an object creating/providing a logger
+    Added local scratch directory and test_context.close
+    Added local scratch directory and test_context.close
+    Added unit tests, a few comment updates.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    Update/fix unit tests
+    Added naming mechanism to Service class - unique names for each service instance.
+    Added regression test for node leakage
+    Allow services to record exceptions and include them in test summary
+    
+    In some cases such as BackgroundThreadService, it is easy to lose the true cause of errors in the debug log if they don't
+    immediately kill the test. This allows these errors to be surfaced by allowing Services to optionally record error
+    information that will be aggregated at the end of a test and included in the test summary.
+    Propagate exceptions from BackgroundThreadService on stop() as well as on wait()
+    
+    Many services will never call wait() because they don't have a finite amount of work to do. Not propagating on stop() can
+    then mask the true source of errors. This isn't perfect either since we can't actively monitor these services from the main
+    thread, so the error caught by the framework may still
+    add wait_node to service class
+    Tests for BackgroundThreadService are now unit tests rather than systests.
+    Added timeout to BackgroundThreadService.wait method.
+    Added timeout to BackgroundThreadService.wait method.
+    Tests for BackgroundThreadService are now unit tests rather than systests.
+    Added timeout to BackgroundThreadService.wait method.
+    Added unit tests, a few comment updates.
+    Various changes per review
+    Added unit tests
+    Refactored test.py - moved various classes into their own modules (Loader, Runner etc). Also, moved ducktape entrypoint logic from __main__.py into main.py.
+    Add simple way to pipe summary report to file
+    Added simple serial runner and aggregate reporting.
+    ST-18 Ducktape framework documentation
+    Add developer docs for ducktape's system tests (#227)
+    Switch to use tox to conveniently check coverage and code style
+    ST-18 Ducktape framework documentation
+    Addressed review comments
+    ST-281: added section about test debugging to ducktape docs
+    added extra ducktape install commmand line for error message 1. (Oper… (#206)
+    
+    * added extra ducktape install commmand line for error message 1. (Operation not permitted.)
+    
+    * Clarify that alternative instructions for install or for non-virtualenv case
+    ST-18 Ducktape framework documentation
+    updated documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    addressed review comments
+    Small cleanup
+    ST-280: expanded docs with new service and new test examples
+    ST-18 Ducktape framework documentation
+    ST-280: expanded docs with new service and new test examples
+    ST-18 Ducktape framework documentation
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    [ST-284] pep8/style checks on ducktape
+    
+    * add pep8/style checks
+    ST-18 Ducktape framework documentation
+    Introduce ClusterSpec
+    
+    Introduce the ClusterSpec object to represent a specification for a cluster.
+    Currently, ClusterSpec can express that a cluster must have a certain number of
+    nodes of various operating systems.  In the future, we may add support for
+    tagging nodes.
+    
+    Cluster: remove OS-specific methods and consolidate interfaces into three
+    methods which return ClusterSpec objects: available(), used(), and all().
+    Remove deprecated "request" method, since it is not being used.
+    The Cluster#alloc method now takes a cluster spec, not an int or a map.
+    
+    JsonCluster: rename _available_nodes to _available_accounts, since this
+    collection stores account objects rather than node objects.
+    
+    Service: add a num_nodes property for tests which expect it.
+    
+    Test: add a new min_cluster_spec method.  Provide a better compatibility path
+    for Test subclasses which currently override min_cluster_size.
+    
+    Add a NodeContainer class which can efficiently store nodes in a per-OS
+    fashion.  The class also has utility methods for removing nodes matching a cluster
+    spec.  This simplifies writing Cluster subclasses
+    ST-281: added section about test debugging to ducktape docs
+    ST-18 Ducktape framework documentation
+    ST-1307: Switch from pycrypto to pycryptodome and update to a modern version
+    Upgrade boto3 to latest as old version has SSL cert issues
+    ST-18 Ducktape framework documentation
+    fixed typo
+    ST-280: expanded docs with new service and new test examples
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    ST-18 Ducktape framework documentation
+    addressed review comments
+    ST-280: expanded docs with new service and new test examples

@@ -1,0 +1,210 @@
+﻿    Update README document for releases of branch Laravel4
+    Travis image is added
+    Correct spelling for README document
+    Update document for those new improvements
+    Missed space is fixed, contributors title is added
+    removing Looking For Collaborators announcement
+    Looking for collaborators update
+    Laravel 5.0.* is added as comment
+    updated readme to show laravel 5.1 and  collectives usage
+    Updating package name in install instructions
+    Form name parameter for Form::setValidation method fix #7
+    fix #3
+    laravel4 readme update
+    folder structure is changed
+    vendor publish fix
+    initial commit
+    Applied fixes from StyleCI
+    initial commit
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    - Use `Closure` route instead of a Controller class
+    - Use `ServiceProvider::mergeConfigFrom` method to load package configuration instead of loading config file manually
+    Laravel 5.4 compatibility
+    Applied fixes from StyleCI
+    Upgrading to 5.2 from 5.1
+    
+    Changed because bindShared has been renamed to singleton in laravel 5.2.
+    changed remote route to use controller.route cache does not work with closures
+    added support for laravel 5.1
+    using config class instead of function
+    
+    laravel4 don't have config helper thats why will be good to use class
+    folder structure is changed
+    vendor publish fix
+    config and public path fix
+    initial commit
+    Added sixth parameter
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    refromatting
+    one last try
+    
+    one last try
+    added typehinting
+    Compatibility to laravelcollective/html v5.4.8
+    Update FormBuilder.php
+    Applied fixes from StyleCI
+    added support for laravel 5.1
+    Form name parameter for Form::setValidation method fix #7
+    remove array braces from validation attributes
+    using config class instead of function
+    
+    laravel4 don't have config helper thats why will be good to use class
+    folder structure is changed
+    initial commit
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    fix #4
+    folder structure is changed
+    initial commit
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    fix #5
+    fix #4
+    folder structure is changed
+    initial commit
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    fix #4
+    folder structure is changed
+    initial commit
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    added support for laravel recursive array input names name[en] will transform to name.en etc
+    Form name parameter for Form::setValidation method fix #7
+    moved validation message generation into a Helper method
+    fix #5
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    make unique/exists rules use jquery-validation's remote rule
+    
+    It'is converted from pull-15 laravel-4 branch thanks to @jannispl
+    fix #4
+    folder structure is changed
+    initial commit
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Corrected validation rule gathering for same rule
+    Applied fixes from StyleCI
+    laravel same/equalto message issue fix
+    add Message methods for integer/numeric as they need to convert to data-msg-number
+    moved validation message generation into a Helper method
+    fix #5
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    fixed remote exists url. added suport for remote full url so it does work on subfolder
+    make unique/exists rules use jquery-validation's remote rule
+    
+    It'is converted from pull-15 laravel-4 branch thanks to @jannispl
+    fix #5
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    Applied fixes from StyleCI
+    fix #5
+    Applied fixes from StyleCI
+    fix #4
+    folder structure is changed
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    Add unit-tests for all classes except ServiceProvider one
+    Fix travis unit test issues for PHP 5.6
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    Add unit-tests for all classes except ServiceProvider one
+    Fix travis unit test issues for PHP 5.6
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    Add unit-tests for all classes except ServiceProvider one
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    Add unit-tests for all classes except ServiceProvider one
+    * Make source code compatible with PHP 5.4 / Laravel 5.0
+    * Use PHPUnit mock instead of Mockery
+    * Add more unit-tests to coverage all source code
+    Add unit-tests for all classes except ServiceProvider one
+    - Use HTML5 attributes for jQuery validation
+    - Add some more new rules such as: active_url, mimes, before, after
+    - Fix formName setting/getting for FormBuilder
+    - Pass all App instances to converter classes directly instead of using Facades
+    - Fix Validation rules parsing method to support multi-parameters rules such as: between, unique
+    - Allow to detect input of `file` type
+    - And many improvements...
+    make unique/exists rules use jquery-validation's remote rule
+    
+    It'is converted from pull-15 laravel-4 branch thanks to @jannispl
+    initial commit
+    Applied fixes from StyleCI
+    initial commit

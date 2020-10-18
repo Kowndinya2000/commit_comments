@@ -1,0 +1,258 @@
+﻿    Add new function rb_get_ssl_certfp() to export-syms.txt.
+    Copied libratbox and related stuff from shadowircd upstream.
+    libratbox sync - r25796
+    sync libratbox - r25599 + charybdis packaging patch
+    libratbox: Remove static inline symbols from export-syms.txt.
+    Pull in libratbox from ircd-ratbox-3.0.0beta1 and integrate into the build system.
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] monitor: send the same message buffer to all users
+    monitoring a certain nick; the target field of the
+    numeric becomes *, much like server notices
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    Add target change for channels.
+    
+    This has a separate enabling option channel::channel_target_change.
+    
+    It applies to PRIVMSG, NOTICE and TOPIC by unvoiced unopped non-opers.
+    
+    The same slots are used for channels and users.
+    Update target change documentation.
+    target change: use fnv32 hash of UID instead of pointer to identify clients
+    This way, the information remains valid after a split.
+    For clients on TS5 servers, the nick is used; this is
+    not much of a problem because these are on pseudoservers
+    and not assumed to change nick much at all.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] Move new_local_user hook, so it is possible to call
+    exit_client() from it, refusing the connection.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] Add documentation for SASL client protocol, same as atheme doc/SASL.
+    SVN Id removal part two
+    Removing glines
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    Away-notify spec added
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] callerid (+g) documentation:
+    - Mention 005 (isupport) token with possibility of different mode letter.
+    - Explicitly clarify that /accept can be used while -g, and setting -g
+      does not clear the accept list.
+    - Mention that some users may be able to bypass +g.
+    - Mention that /accept may allow more than just going through +g.
+    - Update to 716/717/718 numerics instead of notices.
+    - Clarify that the one-minute period applies to messages from all users,
+      not just one user.
+    - Add a numerics section with more exact syntax.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    Added documentation for extended-join client capability. "doc/extended-join.txt: Document CAP extended-join." atheme/charybdis/f8c9d8d9be681e450e2f0a9940ee4ddd2e58e40b
+    SVN Id removal part two
+    WHOIS 330 (services login name) does not need a remote whois.
+    Add umode +R to doc/services.txt.
+    Charybdis does not have --enable-services, it is always enabled.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    account-notify spec: with extended join, doing a who on new users is not needed
+    
+    REF: atheme/charybdis/commit/f56b4e3c07ef2ac57647ac4c30f79618991b3ed8
+    Charybdis: Update specification for account-notify to take netsplits into consideration. atheme/charybdis/a8df2896bb929d8ea91dbbe3e55102721e5dccf4
+    Add account-notify capability from charybdis (untested)
+    
+    charybdis commits referenced:
+    
+    atheme/charybdis@7a948bdaa742cd403b5398d6a356632d5196ea4c
+      Add capability parameter to sendto_common_channels_local() and
+      sendto_common_channels_local_butone().
+    
+    atheme/charybdis@7a7f86d3445f86a6bb2fb399c95485ed5e0c7f21
+      Rough implementation of the new account-notify client
+      capability. This replaces identify-msg in ircd-seven.
+    
+    atheme/charybdis@4f943f99e67da72b4f8b9146f18765cc8c8c81fc
+      Add specification for the account-notify protocol extension.
+    
+    atheme/charybdis@261e2f93993b4d5e5790b1d20183e5c31523829b
+      Accountname should not be prefixed with a colon to allow future
+      expansion.
+    
+    atheme/charybdis@f56b4e3c07ef2ac57647ac4c30f79618991b3ed8
+      account-notify spec: with the extended-join capability, doing a
+      WHO on new users is not necessary.
+    SVN Id removal part two
+    [svn] Fix description of 043 numeric.
+    [svn] SAVE: make the nickTS of the UID nick equal to 100, so it
+    is always in sync on the network.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    Keep gline information in server version and capab listings
+    for historical reference.
+    Removing glines
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    fbfile.c hasn't existed in a long time.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    Update MLOCK protocol documentation to match changes in code
+    Improve technical documentation of BAN protocol.
+    Add syntax description of MLOCK message to ts6-protocol.txt.
+    Document BAN message.
+    ts6-protocol.txt: mention meaning of capabs EX, IE, SERVICES, KNOCK.
+    Add description for TB and TOPIC messages.
+    Apply +z to messages blocked by +b and +q as well.
+    This adds a new server capab EOPMOD which will be used
+    for an extended topic command also.
+    Mention that @#chan/+#chan requires CHW capab.
+    Add GUNGLINE to protocol documentation (efnet only, not in charybdis).
+    Document efnet-style GLINE protocol.
+    Clarify some PRIVMSG/NOTICE restrictions.
+    Numerics are also server-server messages.
+    Clarify propagation of JOIN and SJOIN.
+    Add more information about propagation.
+    Add description for LOCOPS message.
+    Clarify connection setup.
+    First draft of a more complete TS6 server protocol description.
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] Port over ratbox 2.2 r23507, r23624, r23626 (jilles/anfl):
+    Change TS6 JOIN processing
+    - don't send out simple modes in TS6 JOIN and TS5 SJOIN when
+      a local user joins an existing channel
+    - don't send out simple modes in TS6 JOIN and TS5 SJOIN when
+      propagating a TS6 JOIN
+    - don't interpret simple modes in an incoming TS6 JOIN
+    
+    This is to avoid desyncs when certain mode changes (e.g. -im)
+    cross with joins. A downside is that simple modes will be
+    more desynched when a JOIN creates a channel or lowers TS,
+    but that's less important.
+    
+    Update the TS6 specification to include this, and clarify
+    that TMODE can come from a server and that MODE must be
+    translated into TMODE from other servers too.
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff
+    SVN Id removal part two
+    [svn] - the new plan:
+      + branches/release-2.1 -> 2.2 base
+      + 3.0 -> branches/cxxconversion
+      + backport some immediate 3.0 functionality for 2.2
+      + other stuff

@@ -1,0 +1,420 @@
+﻿    Create README.md
+    Side B
+    Side A
+    Legobot defence code updated.
+    Added light code, untested.
+    Working LegoBot code.
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    LOTS OF CHANGES. Legobot is not going straight and needs work.
+    LegoBot: Calibration for side B.
+    Create: Added accel for after block pickup FOR ONLY SIDE A. Please transfer to side B.
+    2 pivot beginning. haven't tested fully
+    full motion legobot
+    working code with blockers!!
+    Everything works @ 950 FAST_SPEED and full charge (MUST HAVE full charge)
+    Victor's code with 950 speed (no twitching)
+    Changed move to distance. Motors still DO NOT work.
+    edited speed constants.
+    Standardized speed constants
+    Fixted turnArc and constants
+    Fixed constants. Need to double-check values and code.
+    Eric and Madhu's code and stuff. Some other small differences
+    changed some of the blocker functions; edited comments to reflect changes;
+    Josh's code for the legoBot.
+    Updated some legobot Functions
+    Code written by Josh and Nick that is the newest legotbot at the time.
+    Adding Legobot code for this year written so far by Josh, Nick, and Madoo with a little Praneet add on.
+    
+    This code is just a basic structure of the files we can build off of to code the Legobot.
+    Legobot code committed by Victor. Last two scores on A side, 55 and 50.
+    for wasting legobot power
+    Legobot defence code updated.
+    Works on both sides.
+    Legobot Main done for the night.
+    Joey sucks at Tetris.
+    Legobot code committed by Victor. Last two scores on A side, 55 and 50.
+    changed some legobot code
+    Added light code, untested.
+    Modified how the bot interferes in enemy territory.
+    Modified code to also work on side A.
+    Preliminary, untested side A code based on side B code.
+    calibrated values
+    side a and side b changed.
+    fixed back up distance on safety (2nd) attempt to drop balls in the biofuel bulk storage
+    Changed moveToDistance to moveToDist to make analogous to the create code.
+    Finished for Monday. Works sort of well with Create.
+    Changed backup value to drop balls.
+    Working LegoBot code.
+    few angles changed on side A
+    side a changed.
+    Changed side A code to match side B code. Not tested yet.
+    shut_down_in 120 seconds added; minor value changed
+    added a arc to avoid collision with create
+    edited legobot main a bit
+    worked on create main code, a bit of legobot main
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    updated legobotMain.c for stuff after dumping biofuels
+    changed values.
+    changed values. side a working at the moment.
+    Major callibration. Both sides need callibration for bots.
+    Added side B. Needs callibration.
+    new pivot mechanism
+    commented heavily
+    Few changes.
+    
+    Found out that the blockers inhibit the ability for the legoBot to move over the center. We can ameliorate this issue by lightening the blockers or altering the center of mass.
+    pivots work, check angles
+    2 pivot beginning. haven't tested fully
+    full motion legobot
+    working code with blockers!!
+    Everything works @ 950 FAST_SPEED and full charge (MUST HAVE full charge)
+    calibrate gate to perpendicular manually and working arc/pivot at first blocker
+    52 not 54
+    Victor's code with 950 speed (no twitching)
+    Changed move to distance. Motors still DO NOT work.
+    Missed a few speed standardizations. Fix'd.
+    Standardized speed constants
+    Combined old code with new code.
+    Old version
+    Praneet's code from Friday night.
+    Fixted turnArc and constants
+    Fixed constants. Need to double-check values and code.
+    Eric and Madhu's code and stuff. Some other small differences
+    changed some of the blocker functions; edited comments to reflect changes;
+    Josh's code for the legoBot.
+    Updated some legobot Functions
+    Code written by Josh and Nick that is the newest legotbot at the time.
+    Adding Legobot code for this year written so far by Josh, Nick, and Madoo with a little Praneet add on.
+    
+    This code is just a basic structure of the files we can build off of to code the Legobot.
+    Legobot defence code updated.
+    Updated some legobot Functions
+    Changed moveToDistance to moveToDist to make analogous to the create code.
+    edited legobot main a bit
+    worked on create main code, a bit of legobot main
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    changed compRatio on moveToDistance.
+    changed compRatio on moveToDistance.
+    LOTS OF CHANGES. Legobot is not going straight and needs work.
+    LegoBot: Calibration for side B.
+    Create: Added accel for after block pickup FOR ONLY SIDE A. Please transfer to side B.
+    Major callibration. Both sides need callibration for bots.
+    josh's functions
+    2 pivot beginning. haven't tested fully
+    full motion legobot
+    working code with blockers!!
+    Everything works @ 950 FAST_SPEED and full charge (MUST HAVE full charge)
+    changed some comments & notifications
+    calibrate gate to perpendicular manually and working arc/pivot at first blocker
+    Changed move to distance. Motors still DO NOT work.
+    Commented code, made format more uniform.
+    Fixted turnArc and constants
+    Fixed constants. Need to double-check values and code.
+    Eric and Madhu's code and stuff. Some other small differences
+    changed some of the blocker functions; edited comments to reflect changes;
+    Josh's code for the legoBot.
+    Updated some legobot Functions
+    Code written by Josh and Nick that is the newest legotbot at the time.
+    Uploading changes for the day. New create turn function.
+    Added Legobot Turn function written by Nick Guo.
+    Adding Legobot code for this year written so far by Josh, Nick, and Madoo with a little Praneet add on.
+    
+    This code is just a basic structure of the files we can build off of to code the Legobot.
+    Changed moveToDistance to moveToDist to make analogous to the create code.
+    Eric and Madhu's code and stuff. Some other small differences
+    Josh's code for the legoBot.
+    Updated some legobot Functions
+    Code written by Josh and Nick that is the newest legotbot at the time.
+    Adding Legobot code for this year written so far by Josh, Nick, and Madoo with a little Praneet add on.
+    
+    This code is just a basic structure of the files we can build off of to code the Legobot.
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    Adding testStraight.c for the LegoBot.
+    commit
+    comit
+    Backs up into PVC longer to align better. Legobot/legobotDefence.c
+    COmmitting
+    Commit after working on side B for legobotDefence.c
+    Legobot defence code updated.
+    Legobot Defence done for the night.
+    Adding legobotDefence.c to be ran with createmain double.
+    Joey sucks at Tetris.
+    Legobot code committed by Victor. Last two scores on A side, 55 and 50.
+    changed some legobot code
+    Added light code, untested.
+    Modified how the bot interferes in enemy territory.
+    Modified code to also work on side A.
+    Preliminary, untested side A code based on side B code.
+    calibrated values
+    side a and side b changed.
+    fixed back up distance on safety (2nd) attempt to drop balls in the biofuel bulk storage
+    Changed moveToDistance to moveToDist to make analogous to the create code.
+    Finished for Monday. Works sort of well with Create.
+    Changed backup value to drop balls.
+    Working LegoBot code.
+    few angles changed on side A
+    side a changed.
+    Changed side A code to match side B code. Not tested yet.
+    shut_down_in 120 seconds added; minor value changed
+    added a arc to avoid collision with create
+    edited legobot main a bit
+    worked on create main code, a bit of legobot main
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    updated legobotMain.c for stuff after dumping biofuels
+    changed values.
+    changed values. side a working at the moment.
+    Major callibration. Both sides need callibration for bots.
+    Added side B. Needs callibration.
+    new pivot mechanism
+    commented heavily
+    Few changes.
+    
+    Found out that the blockers inhibit the ability for the legoBot to move over the center. We can ameliorate this issue by lightening the blockers or altering the center of mass.
+    pivots work, check angles
+    2 pivot beginning. haven't tested fully
+    full motion legobot
+    working code with blockers!!
+    Everything works @ 950 FAST_SPEED and full charge (MUST HAVE full charge)
+    calibrate gate to perpendicular manually and working arc/pivot at first blocker
+    52 not 54
+    Victor's code with 950 speed (no twitching)
+    Changed move to distance. Motors still DO NOT work.
+    Missed a few speed standardizations. Fix'd.
+    Standardized speed constants
+    Combined old code with new code.
+    Old version
+    Praneet's code from Friday night.
+    Fixted turnArc and constants
+    Fixed constants. Need to double-check values and code.
+    Eric and Madhu's code and stuff. Some other small differences
+    changed some of the blocker functions; edited comments to reflect changes;
+    Josh's code for the legoBot.
+    Updated some legobot Functions
+    Code written by Josh and Nick that is the newest legotbot at the time.
+    Adding Legobot code for this year written so far by Josh, Nick, and Madoo with a little Praneet add on.
+    
+    This code is just a basic structure of the files we can build off of to code the Legobot.
+    Updated some legobot Functions
+    Modified how the bot interferes in enemy territory.
+    No blockers anymore. LEFT SIDE works well so do not calibrate any values unless something major goes wrong. Also, @ fast_speed = 900, comp ratio = 0.999 or 1.002. If this ratio is not as above, run @ a lower fast_speed such that the comp ratio is as accurate as above.
+    Rewrote documentation and added createCenter and createStop.
+    Added createStop()
+    Not done for the night
+    LOTS OF CHANGES. Legobot is not going straight and needs work.
+    Dheeraj's Create Code
+    LIKE OMYYYGGGOOOOD. I fixed and perfected moveToDistAccel. We use it. Everywhere and in every line.
+    Major callibration.
+    Shitton of callibration...
+    Major edits.
+    created smoothTurn
+    aRobot updated so that the Create can start where it drops off the planes by the runway then pick up a set of blocks and drop it off near the starting box.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    Uploading changes for the day. New create turn function.
+    Changed up some stuff on Create. Made stackBlocks and things like that.
+    added clawCloseSlow and moved functions to createFunctions.c. deleted runTestnew.h.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Added vibrations for Create competition mode.
+    Time is now 14.5 seconds
+    Create code with ao and shutdown in
+    Competition create code for first match in double elim
+    Create code committed.
+    No turning on their side for Double Elim strategy. I will test on the ground now.
+    Committing aRobotDouble done for the night.
+    Committing code for Create that will be for double elim. It goes to the other side in 15 seconds and fucks with the other bots.
+    Minor edits to documentation.
+    Added slider code.
+    Callibration.
+    Real Final Shit
+    Final shit motherfucker. This is the magical code that will win us first place and blowjobs from Jeff, the spikycunt.
+    Callibration for both sides.
+    IM FUCKING SLEEPY.
+    Added Side A code and dual light sensors.
+    Commit. Joey molests juvenile sheep.
+    Fixed comments.
+    Added light code. Callibrated side B. Works pretty well on both sides.
+    Callibration...Added smoother releasePlane() servo function. Side A is working consistently. Added Side B coded, untested.
+    Callibration for Create side A.
+    Major Callibrations.
+    Major callibration changes.
+    Committing code for Tuesday.
+    
+    When we get the CBC tomorrow we need to work on code for a blocking Create.
+    Added wall alignment before dropping off first set of blocks and added a lot of comments
+    Victor's Create code. Last run 95 points.
+    Done for Monday. Tried to replace sleeps with moveToDist. Began commenting of the code.
+    
+    Code needs to be commented as it is written.
+    Not done for the night
+    Callibration
+    Large amount of calibration on side A for create.
+    worked on create main code, a bit of legobot main
+    Added second set of blocks. Needs perfecting.
+    Major Changes: added the second block set. Needs callibration.
+    changed some create code, added a wall alignment before getting botguy
+    Minor edits to side A.
+    Increased wall alignment after airplane drop-off.
+    LOTS OF CHANGES. Legobot is not going straight and needs work.
+    LegoBot: Calibration for side B.
+    Create: Added accel for after block pickup FOR ONLY SIDE A. Please transfer to side B.
+    Calibration for side A. Fixed air plane dropoff. Working well.
+    Callibration for A.
+    changed values. still doesn't work. madhu's code.
+    Major callibration. Both sides need callibration for bots.
+    Fixed some stuff. Recallibration on distances heavily needed.
+    Reverted back to 3/8 night changes. May or may not be working.
+    Dheeraj's Create Code
+    moveToDistAccel is working! It is so dirty. It's a dirty dirty girl that needs to be cleaned along with the rest of the code.
+    LIKE OMYYYGGGOOOOD. I fixed and perfected moveToDistAccel. We use it. Everywhere and in every line.
+    Minor callibration.
+    Major callibration.
+    Shitton of callibration...
+    Major edits.
+    created smoothTurn
+    aRobot updated so that the Create can start where it drops off the planes by the runway then pick up a set of blocks and drop it off near the starting box.
+    aRobot has function to move the Create to pick up the blocks when starting at the runway.
+    
+    Having problems with setClaw. The servos are acting very very weird.
+    A button on this code tested the moveToDistance function and showed that it worked. Please do not change the stop distance ratio.
+    
+    The function gets close to the right distance and is pretty consistent when comparing two runs. It accelerates and deccelerates.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    Created moveToDistanceAccel but oh god it's horrible. Someone please clean it. It works, I think.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    slowed down slowReleaseClaw. Fixed distance values for create.
+    Uploading changes for the day. New create turn function.
+    Improved claw open and close methods.
+    Changed up some stuff on Create. Made stackBlocks and things like that.
+    reworked Createbot armUp and armDown code.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Adding the aRobot and createFunctions.c
+    Added slider code.
+    worked on create main code, a bit of legobot main
+    Major callibration.
+    Shitton of callibration...
+    Major edits.
+    created smoothTurn
+    aRobot updated so that the Create can start where it drops off the planes by the runway then pick up a set of blocks and drop it off near the starting box.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    Uploading changes for the day. New create turn function.
+    Changed up some stuff on Create. Made stackBlocks and things like that.
+    added clawCloseSlow and moved functions to createFunctions.c. deleted runTestnew.h.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Minor edits to documentation.
+    Added slider code.
+    IM FUCKING SLEEPY.
+    createFunctions.c commit.
+    Callibration...Added smoother releasePlane() servo function. Side A is working consistently. Added Side B coded, untested.
+    worked on create main code, a bit of legobot main
+    Major callibration.
+    Shitton of callibration...
+    Major edits.
+    minor smoothTurn edit
+    created smoothTurn
+    aRobot updated so that the Create can start where it drops off the planes by the runway then pick up a set of blocks and drop it off near the starting box.
+    aRobot has function to move the Create to pick up the blocks when starting at the runway.
+    
+    Having problems with setClaw. The servos are acting very very weird.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    Created moveToDistanceAccel but oh god it's horrible. Someone please clean it. It works, I think.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    slowed down slowReleaseClaw. Fixed distance values for create.
+    Uploading changes for the day. New create turn function.
+    Improved claw open and close methods.
+    Fixed slowCloseClaw
+    Changed up some stuff on Create. Made stackBlocks and things like that.
+    Changed format and renamed several create functions.
+    Changed constants for the create from camelCase to CONSTANTS_WITH_UNDERSCORES.
+    added clawCloseSlow and moved functions to createFunctions.c. deleted runTestnew.h.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Adding the aRobot and createFunctions.c
+    Added createVision for camera functions
+    Rewrote documentation and added createCenter and createStop.
+    Added createStop()
+    Victor's Create code. Last run 95 points.
+    Not done for the night
+    Large amount of calibration on side A for create.
+    LOTS OF CHANGES. Legobot is not going straight and needs work.
+    Calibration for side A. Fixed air plane dropoff. Working well.
+    Major callibration. Both sides need callibration for bots.
+    Fixed some stuff. Recallibration on distances heavily needed.
+    Attempt at smoothTurn fix.
+    Fixed smoothTurn compRatio.
+    Reverted back to 3/8 night changes. May or may not be working.
+    Dheeraj's Create Code
+    moveToDistAccel is working! It is so dirty. It's a dirty dirty girl that needs to be cleaned along with the rest of the code.
+    LIKE OMYYYGGGOOOOD. I fixed and perfected moveToDistAccel. We use it. Everywhere and in every line.
+    Major callibration.
+    Shitton of callibration...
+    Major edits.
+    minor smoothTurn edit
+    created smoothTurn
+    aRobot updated so that the Create can start where it drops off the planes by the runway then pick up a set of blocks and drop it off near the starting box.
+    aRobot has function to move the Create to pick up the blocks when starting at the runway.
+    
+    Having problems with setClaw. The servos are acting very very weird.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    Created moveToDistanceAccel but oh god it's horrible. Someone please clean it. It works, I think.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    slowed down slowReleaseClaw. Fixed distance values for create.
+    Uploading changes for the day. New create turn function.
+    Improved claw open and close methods.
+    Fixed slowCloseClaw
+    Changed up some stuff on Create. Made stackBlocks and things like that.
+    Changed format and renamed several create functions.
+    Changed constants for the create from camelCase to CONSTANTS_WITH_UNDERSCORES.
+    added clawCloseSlow and moved functions to createFunctions.c. deleted runTestnew.h.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Adding the aRobot and createFunctions.c
+    Added createVision for camera functions
+    Added bool and math.c
+    Added bool and math.c
+    Minor edits to documentation.
+    Added slider code.
+    Added Side A code and dual light sensors.
+    Forgot to commit createConstants.h
+    Callibration...Added smoother releasePlane() servo function. Side A is working consistently. Added Side B coded, untested.
+    Done for Monday. Tried to replace sleeps with moveToDist. Began commenting of the code.
+    
+    Code needs to be commented as it is written.
+    worked on create main code, a bit of legobot main
+    Added second set of blocks. Needs perfecting.
+    added scraper constants.
+    Reverted back to 3/8 night changes. May or may not be working.
+    Dheeraj's Create Code
+    LIKE OMYYYGGGOOOOD. I fixed and perfected moveToDistAccel. We use it. Everywhere and in every line.
+    Major callibration.
+    Shitton of callibration...
+    aRobot has function to move the Create to pick up the blocks when starting at the runway.
+    
+    Having problems with setClaw. The servos are acting very very weird.
+    Modified the claw as well as other functions. aRobot.c picks up the paper airplane and drops it off in the runway.
+    moveToDistanceAccel added but needs heavy testing and refinement.
+    Changed format and renamed several create functions.
+    Changed constants for the create from camelCase to CONSTANTS_WITH_UNDERSCORES.
+    added clawCloseSlow and moved functions to createFunctions.c. deleted runTestnew.h.
+    Renamed variables. Cleaned up code.
+    reworked Createbot armUp and armDown code.
+    Changed slowDownDistRatio changed
+    New main Testing Code
+    Added check to prevent errors in the stopping distance on moveToDistance()
+    Created createConstants.h
+    Accel function.
+    LegoBot: Calibration for side B.
+    Create: Added accel for after block pickup FOR ONLY SIDE A. Please transfer to side B.

@@ -1,0 +1,260 @@
+﻿    fixed readme
+    Implemented non-spanning multi-monitor functionality on KDE and Gnome. Added taskbar_offset option to support this. Cleaned up some confusing if statement blocks. Corrected misspelling.
+    Revert "Merge with SecurityCentral"
+    Fix Documentation
+    
+    Remove .py extension from autostart script.
+    Fix Autostart Path
+    
+    Fix the path from /usr/local/bin to /usr/bin
+    Updated README with SF-709 information and updated PDF link.
+    
+    The PDF that linked to the awarded contract for labels was broken and
+    has been updated with a direct link to the file.  The file also detailed
+    the SF-709 color requirements which was added to the 'Examples' section.
+    Various fixes
+    
+    - Create banner.conf
+    - Remove execfile
+    - Update python shebang to use python2
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    Update Fedora Versions
+    
+    Works on Fedora 27, 28
+    Updated Color Guidance
+    Based on feedback from a fellow MITRE employee, I finally have the offical U.S. Government color values for proper classification. Updated the guidance and documentation based on those values. Also updated resolution detection for multiple monitors.
+    Update README
+    
+    Tested on Fedora 26
+    Fedora 25
+    
+    Tested successfully on Fedora 25.
+    Update README
+    
+    Tested in Fedora 23 - in both Xorg and Wayland.
+    Updated OS verison support
+    
+    Tested on Fedora 22.
+    Added ability to hide a window for 15 seconds using the ESC key.
+    Added window opacity options for windows for window managers that support it.
+    Command Line Options
+    
+    Added documentation of command line options for script.
+    Manually Set Resolution
+    
+    Updated config file settings for manual resolution configuration.
+    fix some typos
+    Update README
+    
+    Added RHEL and Fedora platforms that I've had it verified as running.
+    Auto-Start GNOME
+    
+    Added information on auto-starting the script on the GNOME Desktop.
+    Update README
+    
+    Updated README to reflect that applicaiton should only display on the primary monitor of the system like Microsoft's netbanner.
+    Update README
+    
+    Updated README to reflect options used with optparse update.
+    Update README
+    
+    Fixed mistakes in formating.
+    Update README
+    
+    Updated suggested colors based on DoD guidance.
+    Update README
+    
+    Fixed line breaks.
+    Update and rename README.md to README
+    
+    Basic project description for Classification-Banner
+    Implemented non-spanning multi-monitor functionality on KDE and Gnome. Added taskbar_offset option to support this. Cleaned up some confusing if statement blocks. Corrected misspelling.
+    Update python requires to 2.6, fix data_files path and add .desktop file
+    Use sys.hexversion to compare python versions to support RHEL6 Python2.6
+    Added multi-section configuration file capability and options to specify
+    configuration file and which section heading to the command line.  Added
+    example configuration file.  Updated version number and configuration
+    file name.
+    
+    There are additional checks and conversions in place to maintain
+    backwards compatibility with the previous style of configuration file.
+    Update licensing, contributing, and author information
+    Revert "Merge with SecurityCentral"
+    Various fixes
+    
+    - Create banner.conf
+    - Remove execfile
+    - Update python shebang to use python2
+    Fix classification-banner script import
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    Updated screenshot of classification banner.
+    Update banner.py
+    
+    Modified to exit upon no DISPLAY variable set. This prevents an error message when logging into the server via SSH
+    re-added accidentally deleted return statement
+    removed unneeded stuff
+    cleanup
+    implemented click_to_move functionality
+    implemented banner_width to set width of banner
+    Implemented non-spanning multi-monitor functionality on KDE and Gnome. Added taskbar_offset option to support this. Cleaned up some confusing if statement blocks. Corrected misspelling.
+    Undo Last Change
+    
+    Remove set_resizable option that prevents it working.
+    Prevent Resize of the Window
+    
+    self.window.set_resizable(False) set to prevent window resizing.
+    Fix a regression introduced with commit 09deeae ('Replace optparse with argparse'); the method call was updated on line 224 for __init__, but wasn't applied to resize
+    Use sys.hexversion to compare python versions to support RHEL6 Python2.6
+    Allow disabling of 'esc to hide' feature
+    Revert "Merge with SecurityCentral"
+    Fix RHEL 6 Issue
+    
+    Fix issue effecting classification banner on RHEL 6
+    Added multi-section configuration file capability and options to specify
+    configuration file and which section heading to the command line.  Added
+    example configuration file.  Updated version number and configuration
+    file name.
+    
+    There are additional checks and conversions in place to maintain
+    backwards compatibility with the previous style of configuration file.
+    Added python version checking ability
+    Removed "_" from class names to match PEP8.
+    Replaced deprecated OptionParser with argparse.
+    Replace optparse with argparse
+    Various fixes
+    
+    - Create banner.conf
+    - Remove execfile
+    - Update python shebang to use python2
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    XRANDR Options
+    - Changed order of xrandr checks for dual displays with Wayland as the preference.
+    Updated Color Guidance
+    Based on feedback from a fellow MITRE employee, I finally have the offical U.S. Government color values for proper classification. Updated the guidance and documentation based on those values. Also updated resolution detection for multiple monitors.
+    Typo
+    
+    Typo in email address.
+    Username Error
+    
+    Minor fix with getting username, added try/except statement to resolve issue and allow banner to work.
+    Replace os.getlogin() with getpass.getuser()
+    
+    os.getlogin() returns null / No such file or directory on a fairly bare Arch system.  Replacing it with getpass.getuser() works fine.
+    [bugfix] Fix exception error when xrandr is not installed
+    
+    - In multi-monitor configuration, banner message was appearing in between
+      the monitors. Added fix to default setting to display banners separately
+      on each monitor
+    - When Xinerama is enabled, xrandr is disabled which was causing the banners
+      not to be displayed as an exception occurred.
+    [bugfix] use element 0 for the hostname
+    Do not print sys-info on bottom banner
+    Made font for ESC xx-small.
+    Code Cleanup
+    
+    Added comments, testing out tonight.
+    Add global configuration file variable
+    Add System Information and ESC message option
+    
+    - Clean up some pep8 issues
+    - System information option adds user and host to top banner
+    - Add option to disable ESC message in banner
+    Resolution Detection Update
+    
+    Based on user feedback I was able to figure out some of the problems with the automatic detection using xrandr.
+    ESC to hide Font
+    
+    Set "(ESC to hide)" font to x-small.
+    Added ability to hide a window for 15 seconds using the ESC key.
+    Added window opacity options for windows for window managers that support it.
+    Manually Set Resolution
+    
+    Fix to the configuration to allow the optparser to work.
+    Manually Set Resolution
+    
+    Added the ability to manually set resolution via 'x' and 'y' variables in the '/etc/classification-banner' config file or via '-x' or '--hres' and '-y' or '--vres' command line options.
+    Updated resolution detection method order to better handle newer graphics cards.
+    Update classification-banner.py
+    
+    Updating header information and version to 1.5.2
+    Update classification-banner.py
+    
+    Fix to line 61 - changed grep expression to fix the check for monitor - changed '*0' to '^\*0' at suggestion of Mr. Mark Porter. Tested change in RHEL 5 with xrandr - appears to work and should fix issues with RHEL 5.
+    Fix inconsistent format.
+    
+    * File was formatted using a mixes of spaces and tabs. White space
+      is now consistent.
+    
+    * Fixed a few minor pep8 1.5.7 issues.
+    fix some typos
+    Update classification-banner.py
+    
+    Fixed issues with RHEL 5 (monitors-changed method not in RHEL 5 pygtk, added additional RHEL 5 xrandr method). Tested on RHEL 5, 6, Fedora 19.
+    Comment Updates
+    
+    Updated comments on the functions.
+    Resolution Fix
+    
+    Adds ability to deal with dynamic changes in resolution, should fix issue with SPICE client resizing.
+    MultiMonitor Fix
+    
+    Added another check to try and determine the resolution of the default monitor. This is to try and display the classification only on the primary display of the system. Updated version to 1.3.1
+    Fixed Indentation
+    
+    Fixed indentation on the file, caused a python error. Updated version to 1.3.
+    MultiMonitor Fix
+    
+    Using xrandr application to determine resolution of primary display, failback to previous GTK method. This should limit the display of the classification banner to the primary screen of the system in a similar fashion to Microsoft Netbanner.
+    Migrated from getopt to optparse
+    Convert print to use () syntax instead of spaces for py3 support
+    Adjusted to match PEP 8 code style and PEP 257 style doc strings
+    Update classification-banner.py
+    Update classification-banner.py
+    
+    Added a global configuration file in /etc/classification-banner
+    Update classification-banner.py
+    
+    Fixed Confidential profile in help...
+    Update classification-banner.py
+    
+    Updated color profiles based on DoD guidance.
+    Update classification-banner.py
+    
+    Updated font. Changed 'Arial' to 'liberation-sans'
+    First Commit
+    Revert "Merge with SecurityCentral"
+    Various fixes
+    
+    - Create banner.conf
+    - Remove execfile
+    - Update python shebang to use python2
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts
+    Added multi-section configuration file capability and options to specify
+    configuration file and which section heading to the command line.  Added
+    example configuration file.  Updated version number and configuration
+    file name.
+    
+    There are additional checks and conversions in place to maintain
+    backwards compatibility with the previous style of configuration file.
+    Various fixes
+    
+    - Create banner.conf
+    - Remove execfile
+    - Update python shebang to use python2
+    Use updated layout
+    
+    - Add setup scripts and configuration scripts

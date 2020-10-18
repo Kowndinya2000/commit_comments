@@ -1,0 +1,662 @@
+﻿    add contrib guide
+    bump version to 1.1.0
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    Update travis link
+    update engine for Blacklight 6 compatibility
+    bump BL version dependency; update README with BL dependency info
+    better wording and icons for searchresultsview option in README
+    set params[:view] for searches and links using default_document_index_view_type; update README
+    add contrib guide
+    remove viewpoint in favor of initialview
+    fix coveralls support
+    fix travis badge
+    better documentation of data options for BlacklightMapsHelperBehavior#blacklight_map_tag
+    more improvements to README
+    further improvements to README
+    updated README
+    remove '_facet' from placename field references; initial work on README
+    Update README.md
+    Update README.md
+    update readme
+    enabled multivalued bbox support fixes #17
+    added bounding box support and abstracted geometry and export classes
+    uses tag rather than content_tag, update readme
+    sets default delimiter to -|- and allows configuration via CatalogController
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial commit
+    fix coveralls support
+    add solr_wrapper config for :ci task
+    initial commit
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    remove '_facet' from placename field references; initial work on README
+    tests for BlacklightMaps::ControllerOverride -- some still pending
+    resolve merge conflict
+    fixing more merge conflicts
+    include facet.hits so values can be rendered in partials
+    more work on coordinate facets in catalog#index map view
+    content for coordinate search leaflet popups
+    remove '_facet' from placename field references; initial work on README
+    resolve merge conflict
+    use helper funcs to rewnder facet values; mimic Blacklight pattern for helpers for easier local customization
+    include facet.hits so values can be rendered in partials
+    content for coordinate search leaflet popups
+    display placenames and search links in Leaflet popups
+    initial work on map for catalog#show view
+    refactoring and cleanup
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    set bounds using leaflet
+    wrapping up specs for catalog#map and catalog#show views
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    'browse-everything' maps view up and running
+    clustering fixes and initial work on a dedicated maps view
+    update engine for Blacklight 6 compatibility
+    more work on coordinate facets in catalog#index map view
+    more work on catalog#index map view using geo facet data
+    Refactor #show_map_div to match Rails tag rendering conventions. Fixes #6
+    refactored js to function as a jquery plugin
+    
+     requires geojson_docs, and allows for additional options
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial config
+    initial commit
+    update engine for Blacklight 6 compatibility
+    set params[:view] for searches and links using default_document_index_view_type; update README
+    set bounds using leaflet
+    allow marker count display type to be set via options hash
+    remove '_facet' from placename field references; initial work on README
+    more specs for BlacklightMapsHelper
+    use config for excluding geofacet field from leaflet search control; layout updates
+    show map search bounds onmouseover of search control
+    more work on search control for map
+    CSS for map in catalog#show view
+    more work on coordinate facets in catalog#index map view
+    cleanup: remove commented-out code; add vector-based SVG
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    wrapping up specs for catalog#map and catalog#show views
+    less padding for fitBounds; update .page-entries layout for basic desktop view
+    portrait tablet layout adjustments for catalog#index map view
+    use config for excluding geofacet field from leaflet search control; layout updates
+    show map search bounds onmouseover of search control
+    more work on search control for map
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    fixing more merge conflicts
+    'browse-everything' maps view up and running
+    fixing merge conflicts
+    CSS for map in catalog#show view
+    remove or deactivate inappropriate search result controls in catalog#map view
+    update for Rails 4.2 and Blacklight 5.8.2
+    Update how the 'X mapped' badge/text is shown
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial config
+    initial commit
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    initial work on BL-Maps
+    update engine_cart dependency and add leaflet plugin js and css
+    cleanup: remove commented-out code; add vector-based SVG
+    actually fix view-type svg file size
+    update translations and view-type icon
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    rubocop cleanup
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    fixing more merge conflicts
+    clustering fixes and initial work on a dedicated maps view
+    initial work on BL-Maps
+    update engine_cart dependency and add leaflet plugin js and css
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    use options.initialzoom for catalog#show maplet view
+    map should zoom to correct bounds if only feature is a bbox
+    set params[:view] for searches and links using default_document_index_view_type; update README
+    remove viewpoint in favor of initialview
+    set bounds using leaflet
+    allow marker count display type to be set via options hash
+    _search() should not pass long values <-180 or >180
+    remove '_facet' from placename field references; initial work on README
+    less padding for fitBounds; update .page-entries layout for basic desktop view
+    set_viewpoint and fitBounds should not override options.maxzoom
+    resolve merge conflict
+    use config for excluding geofacet field from leaflet search control; layout updates
+    show map search bounds onmouseover of search control
+    more work on search control for map
+    initial work on map search function
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    clusters should show item counts, not location counts
+    clustering fixes and initial work on a dedicated maps view
+    fixing merge conflicts
+    remove or deactivate inappropriate search result controls in catalog#map view
+    pluralize mapped locations label
+    inject constraints helpers; helper methods for determining map viewpoint
+    display placenames and search links in Leaflet popups
+    create geojson features using geojson or coordinates field
+    Update how the 'X mapped' badge/text is shown
+    added comma from user feedback
+    adds mapped items to sort and per page
+    added bounding box support and abstracted geometry and export classes
+    sets scroll to top if a new marker cluster is clicked
+    resolves issues #13 and #14 drying up sidebarsetup and removing hardcoded div
+    refactored js to function as a jquery plugin
+    
+     requires geojson_docs, and allows for additional options
+    refactors sidebar close and fixes clusterclick logic resolves #7, #8
+    fix offsetMap bug
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    use helper funcs to rewnder facet values; mimic Blacklight pattern for helpers for easier local customization
+    remove or deactivate inappropriate search result controls in catalog#map view
+    display facet counts for locations in catalog#index map view
+    more work on coordinate facets in catalog#index map view
+    more work on catalog#index map view using geo facet data
+    inject constraints helpers; helper methods for determining map viewpoint
+    add logic to Solr params for spatial search
+    content for coordinate search leaflet popups
+    create geojson features using geojson or coordinates field
+    initial work on map for catalog#show view
+    add mapattribution parameter passing with tests
+    added bounding box support and abstracted geometry and export classes
+    Refactor #show_map_div to match Rails tag rendering conventions. Fixes #6
+    only serialize features that have unique locations per doc
+    uses tag rather than content_tag, update readme
+    sets default delimiter to -|- and allows configuration via CatalogController
+    refactored js to function as a jquery plugin
+    
+     requires geojson_docs, and allows for additional options
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    rubocop cleanup
+    get specs passing
+    refactoring and cleanup
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    use aggregations instead of deprecated facet_by_field_name
+    set params[:view] for searches and links using default_document_index_view_type; update README
+    set bounds using leaflet
+    allow an options hash to be passed to BlacklightMaps::GeojsonExport.new via BlacklightMapsHelperBehavior#serialize_geojson
+    remove '_facet' from placename field references; initial work on README
+    more specs for BlacklightMapsHelper
+    initial work on specs for BlacklightMapsHelper
+    test coverage and slight refactoring for BlacklightMaps::GeojsonExport
+    set_viewpoint and fitBounds should not override options.maxzoom
+    fix for c1c7730ae63cb6a9a0bec1c72d11395fa9f0e200
+    use bbox bounds for set_viewpoint if only feature is a bbox
+    resolve merge conflict
+    fixing more merge conflicts
+    use helper funcs to rewnder facet values; mimic Blacklight pattern for helpers for easier local customization
+    remove or deactivate inappropriate search result controls in catalog#map view
+    display facet counts for locations in catalog#index map view
+    more work on coordinate facets in catalog#index map view
+    more work on catalog#index map view using geo facet data
+    inject constraints helpers; helper methods for determining map viewpoint
+    add logic to Solr params for spatial search
+    content for coordinate search leaflet popups
+    create geojson features using geojson or coordinates field
+    initial work on map for catalog#show view
+    add mapattribution parameter passing with tests
+    added bounding box support and abstracted geometry and export classes
+    Refactor #show_map_div to match Rails tag rendering conventions. Fixes #6
+    only serialize features that have unique locations per doc
+    uses tag rather than content_tag, update readme
+    sets default delimiter to -|- and allows configuration via CatalogController
+    refactored js to function as a jquery plugin
+    
+     requires geojson_docs, and allows for additional options
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    updated README
+    new images for README
+    updated README
+    new images for README
+    further improvements to README
+    updated README
+    new images for README
+    rubocop cleanup
+    get specs passing
+    fix coveralls
+    fix coveralls support
+    update tests for rspec 3
+    test coverage and slight refactoring for BlacklightMaps::GeojsonExport
+    added bounding box support and abstracted geometry and export classes
+    initial work on BL-Maps
+    initial config
+    initial commit
+    rubocop cleanup
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    initial commit
+    rubocop cleanup
+    get specs passing
+    rubocop cleanup
+    get specs passing
+    rubocop cleanup
+    get specs passing
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    remove viewpoint in favor of initialview
+    get specs passing
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    map should zoom to correct bounds if only feature is a bbox
+    further work on feature specs for catalog#index map view
+    initial work on feature specs for map views
+    enabled multivalued bbox support fixes #17
+    added bounding box support and abstracted geometry and export classes
+    only serialize features that have unique locations per doc
+    sets default delimiter to -|- and allows configuration via CatalogController
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    updated to add lat/lng in sample_solr_documents
+    initial config
+    initial commit
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update tests for rspec 3
+    polishing up specs
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    use aggregations instead of deprecated facet_by_field_name
+    set params[:view] for searches and links using default_document_index_view_type; update README
+    set bounds using leaflet
+    update tests for rspec 3
+    remove '_facet' from placename field references; initial work on README
+    more specs for BlacklightMapsHelper
+    initial work on specs for BlacklightMapsHelper
+    add mapattribution parameter passing with tests
+    added bounding box support and abstracted geometry and export classes
+    Refactor #show_map_div to match Rails tag rendering conventions. Fixes #6
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    normalize points with long >180 or <-180 (created by BoundingBox#find_center on bboxes that cross the dateline)
+    fixes international dateline bounding box calculation fixes #44
+    added bounding box support and abstracted geometry and export classes
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update tests for rspec 3
+    allow an options hash to be passed to BlacklightMaps::GeojsonExport.new via BlacklightMapsHelperBehavior#serialize_geojson
+    normalize points with long >180 or <-180 (created by BoundingBox#find_center on bboxes that cross the dateline)
+    remove '_facet' from placename field references; initial work on README
+    test coverage and slight refactoring for BlacklightMaps::GeojsonExport
+    initial work on specs for BlacklightMaps::GeojsonExport
+    removing pegged sprockets and sass-rails
+    
+    modified test to incorporate BL track
+    enabled multivalued bbox support fixes #17
+    remove public methods, using send instead, fixes #31
+    added bounding box support and abstracted geometry and export classes
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    move add_spatial_search_to_solr to new MapsSearchBuilder module
+    pin blacklight to >=7.8.0
+    
+    allows us to use/match recently updated methods from Blacklight::RenderConstraintsHelperBehavior
+    update RenderConstraintsOverride specs to work better with SearchState
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    polishing up specs
+    tests for BlacklightMaps::RenderConstraintsOverride - some still pending
+    rubocop cleanup
+    clustering fixes and initial work on a dedicated maps view
+    initial config
+    update translations and view-type icon
+    update translations and view-type icon
+    Add Chinese locale file with some Chinese values
+    remove '_facet' from placename field references; initial work on README
+    resolve merge conflict
+    more work on search control for map
+    'browse-everything' maps view up and running
+    display facet counts for locations in catalog#index map view
+    inject constraints helpers; helper methods for determining map viewpoint
+    content for coordinate search leaflet popups
+    initial work on map for catalog#show view
+    initial config
+    initial commit
+    update translations and view-type icon
+    update translations and view-type icon
+    Add French locale file
+    Add Italian locale file with some translations
+    remove '_facet' from placename field references; initial work on README
+    resolve merge conflict
+    more work on search control for map
+    'browse-everything' maps view up and running
+    display facet counts for locations in catalog#index map view
+    inject constraints helpers; helper methods for determining map viewpoint
+    content for coordinate search leaflet popups
+    initial work on map for catalog#show view
+    initial config
+    initial commit
+    update translations and view-type icon
+    update translations and view-type icon
+    Add Italian locale file with some translations
+    remove '_facet' from placename field references; initial work on README
+    resolve merge conflict
+    more work on search control for map
+    'browse-everything' maps view up and running
+    display facet counts for locations in catalog#index map view
+    inject constraints helpers; helper methods for determining map viewpoint
+    content for coordinate search leaflet popups
+    initial work on map for catalog#show view
+    initial config
+    initial commit
+    update translations and view-type icon
+    update translations and view-type icon
+    update translations and view-type icon
+    cleanup: remove commented-out code; add vector-based SVG
+    update translations and view-type icon
+    cleanup: remove commented-out code; add vector-based SVG
+    update translations and view-type icon
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    remove '_facet' from placename field references; initial work on README
+    resolve merge conflict
+    more work on search control for map
+    'browse-everything' maps view up and running
+    display facet counts for locations in catalog#index map view
+    inject constraints helpers; helper methods for determining map viewpoint
+    content for coordinate search leaflet popups
+    initial work on map for catalog#show view
+    initial config
+    initial commit
+    all rubocop violations fixed; all specs passing
+    rubocop cleanup
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    update engine for Blacklight 6 compatibility
+    initial work on BL-Maps
+    initial config
+    initial commit
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    initial work on BL-Maps
+    initial config
+    initial commit
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    setup schema and faceting for feature specs
+    initial work on feature specs for map views
+    enabled multivalued bbox support fixes #17
+    added bounding box support and abstracted geometry and export classes
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial config
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    added bounding box support and abstracted geometry and export classes
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial config
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    update engine for Blacklight 6 compatibility
+    initial work on BL-Maps
+    initial config
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    update engine for Blacklight 6 compatibility
+    move add_spatial_search_to_solr to new MapsSearchBuilder module
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    fixing more merge conflicts
+    inject constraints helpers; helper methods for determining map viewpoint
+    inital work on injecting constraints methods for spatial searches
+    inject BlacklightMaps::ControllerOverride for adding spatial params to Solr
+    added bounding box support and abstracted geometry and export classes
+    initial commit
+    get specs passing
+    refactoring and cleanup
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    normalize points with long >180 or <-180 (created by BoundingBox#find_center on bboxes that cross the dateline)
+    fixes international dateline bounding box calculation fixes #44
+    added bounding box support and abstracted geometry and export classes
+    update RenderConstraintsOverride specs to work better with SearchState
+    updates for BL 7.8.0, handle SearchState in RenderConstraintsOverride
+    rubocop cleanup
+    get specs passing
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    tests for BlacklightMaps::RenderConstraintsOverride - some still pending
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    inject constraints helpers; helper methods for determining map viewpoint
+    inital work on injecting constraints methods for spatial searches
+    updates for BL 7.8.0, handle SearchState in RenderConstraintsOverride
+    rubocop cleanup
+    refactoring and cleanup
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    update engine for Blacklight 6 compatibility
+    move add_spatial_search_to_solr to new MapsSearchBuilder module
+    tests for BlacklightMaps::ControllerOverride -- some still pending
+    make solr dist spatial query param configurable
+    replace page_links with mapped items info; simplify BlacklightMaps::RenderConstraintsOverride
+    clustering fixes and initial work on a dedicated maps view
+    inject constraints helpers; helper methods for determining map viewpoint
+    add logic to Solr params for spatial search
+    bump version to 1.1.0
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update version to 0.5.2
+    bump version to 0.5.1
+    bump to 0.5.0
+    bump to 0.4.0
+    bump to 0.3.3
+    bump to 0.3.2
+    bump to 0.3.1
+    bump to 0.3.0
+    bump to 0.2.0
+    revert version for easier rebase
+    resolve merge conflict
+    bump 0.1.1
+    bump to v0.1.0
+    initial commit
+    rubocop cleanup
+    get specs passing
+    refactoring and cleanup
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    allow an options hash to be passed to BlacklightMaps::GeojsonExport.new via BlacklightMapsHelperBehavior#serialize_geojson
+    fix points for dateline bboxes in GeojsonExport#build_feature_from_geojson
+    normalize points with long >180 or <-180 (created by BoundingBox#find_center on bboxes that cross the dateline)
+    remove '_facet' from placename field references; initial work on README
+    allow coordinates that begin with a decimal point
+    test coverage and slight refactoring for BlacklightMaps::GeojsonExport
+    clusters should show item counts, not location counts
+    fixing more merge conflicts
+    'browse-everything' maps view up and running
+    clustering fixes and initial work on a dedicated maps view
+    use helper funcs to rewnder facet values; mimic Blacklight pattern for helpers for easier local customization
+    display facet counts for locations in catalog#index map view
+    include facet.hits so values can be rendered in partials
+    more work on coordinate facets in catalog#index map view
+    more work on catalog#index map view using geo facet data
+    inital work on injecting constraints methods for spatial searches
+    add logic to Solr params for spatial search
+    content for coordinate search leaflet popups
+    display placenames and search links in Leaflet popups
+    create geojson features using geojson or coordinates field
+    adds logging message for unknown type
+    enabled multivalued bbox support fixes #17
+    added bounding box support and abstracted geometry and export classes
+    rubocop cleanup
+    use Leaflet 1.4 for better compatibility with Leaflet.markercluster
+    
+    fix helper methods to play better with ActionController::StrongParameters
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    update engine for Blacklight 6 compatibility
+    move add_spatial_search_to_solr to new MapsSearchBuilder module
+    rubocop cleanup
+    move Leaflet and Leaflet.markercluster to vendor/assets
+    
+    see https://github.com/geoblacklight/geoblacklight/pull/748
+    start adding Leaflet back in [WIP]
+    
+    add frozen_string_literal where needed
+    initial update to Blacklight 7, using SolrWrapper and EngineCart
+    
+    able to start the app, index docs in Solr
+    update engine for Blacklight 6 compatibility
+    remove '_facet' from placename field references; initial work on README
+    make solr dist spatial query param configurable
+    resolve merge conflict
+    fixing more merge conflicts
+    fixing merge conflicts
+    more work on coordinate facets in catalog#index map view
+    more work on catalog#index map view using geo facet data
+    inject constraints helpers; helper methods for determining map viewpoint
+    inject BlacklightMaps::ControllerOverride for adding spatial params to Solr
+    display placenames and search links in Leaflet popups
+    create geojson features using geojson or coordinates field
+    updated config
+    added bounding box support and abstracted geometry and export classes
+    sets default delimiter to -|- and allows configuration via CatalogController
+    adds geojson serialization for placename|coordinates field
+    initial work on BL-Maps
+    initial config
+    initial commit

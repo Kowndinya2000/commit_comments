@@ -1,0 +1,1202 @@
+﻿    Correcting `LICENSE.md`.
+    
+    1.  Removing copyright information for code of conduct - that's in the main website.
+    2.  Crediting ownership of trademark to NumFOCUS.
+    LICENSE.md: Bump the CC BY 3.0 to 4.0
+    
+    Titles from the v4 release notes [1]:
+    
+    * A more global license
+    * Rights outside the scope of copyright
+    * Common-sense attribution
+    * Enabling more anonymity, when desired
+    * 30-day window to correct license violations
+    * Increased readability
+    * Clarity about adaptations
+    
+    [1]: https://creativecommons.org/version4
+    First full draft of new workshop website template
+    Fixes swcarpentry/workshop-template#120
+    Revert "workshop address instructions"
+    
+    This reverts commit 49a8c0daa0cbb6557286c5fae302f004ad9eba96.
+    workshop address instructions
+    Fixing two more references to lesson_
+    Updating note on customization
+    Incorporating feedback from @willingc and @karinlag
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    Fix typo
+    
+    Close #119.
+    Add language field to YAML header
+    
+    Know the language that our instructors are using should be
+    important.
+    Explaining the edits needed to _config.yml
+    Simplifying Markdown files even further.
+    
+    1. Tidied up wording in README.md.
+    2. Took background and design discussion out of CUSTOMIZATION.md and put it into DESIGN.md.
+    Edit and make README more modular
+    Updating contribution and adding conduct
+    Adding a CONTRIBUTING.md file
+    fixing typos
+    fixing typos
+    initial site configuration
+    initial site configuration
+    Update link to Lubuntu VM
+    Renaming `_config.yml` values and using them in web pages.
+    
+    1.  Changed `lesson_repo` and `lesson_site` to `workshop_repo` and `workshop_site` in `_config.yml`.
+    2.  Updated `_includes/footer.html` to match.
+    3.  Updated docs in `README.md` to match.
+    
+    Rationale is that this is the workshop repo, not a lesson repo, so we shouldn't use `lesson_` as a prefix for variables.
+    Putting lesson URLs in configuration and taking advantage thereof.
+    
+    1.  Add `lesson_repo` and `lesson_site` variables to `_config.yml`.
+    2.  Refer to variables in `_includes/footer.html` to link to bug reports.
+    3.  Modified `index.html` accordingly.
+    Fixing broken links in standard footer.
+    
+    1.  Added and corrected variables in `_config.yml`.
+    2.  Fixed references in `_includes/footer.html`.
+    1. Adding link to _config.yml pointing at standard location for online version of Software Carpentry lessons.
+    2. Adding explanatory comments to various sections in template for home page.
+    3. Putting div's around each section of setup instructions to make boundaries easier to find.
+    4. Adding a section to display the Etherpad for the workshop if set.
+    First full draft of new workshop website template
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    Fixing internal link references.
+    
+    Modified `DESIGN.md` and `FAQ.md` to refer to `CUSTOMIZATION.md`
+    without an anchor reference to the variables section.
+    Removing 'getting started'
+    Add information to preview Eventbrite widget
+    
+    We should avoid mixing HTTP and HTTPS. For accomplish this we
+    are using `//` at the start of the links at the homepage so that
+    the same protocol is used. For that reason to preview/test the
+    links you need to launch a HTTP server.
+    
+    Thanks to @aaren for reviews and comments.
+    Use GitHub instead of github
+    Changed "bootcamp" to "workshop"
+    Update FAQ.md
+    
+    Added debugging FAQ for content not rendering on github over HTTPS. Fixed bug italics bug in another debugging question.
+    Changing names based on feedback from @willingc
+    Explaining labels
+    Polish text
+    Fix build problems for ubuntu 14.04
+    Edit and make README more modular
+    First full draft of new workshop website template
+    Putting instruction for cloning on a line of its own
+    Fixed workshop import URL and clarified instructions.
+    
+    The import url needed '.git' on the end to function, and it wasn't immediately clear to me that "Check URL" was a button.
+    Renaming `_config.yml` values and using them in web pages.
+    
+    1.  Changed `lesson_repo` and `lesson_site` to `workshop_repo` and `workshop_site` in `_config.yml`.
+    2.  Updated `_includes/footer.html` to match.
+    3.  Updated docs in `README.md` to match.
+    
+    Rationale is that this is the workshop repo, not a lesson repo, so we shouldn't use `lesson_` as a prefix for variables.
+    Revert "Merge pull request #143 from gvwilson/tell-people-to-change-default-branch"
+    
+    This reverts commit fa77a5ac146141d768086fea11328b9f7b4b8fcc, reversing
+    changes made to 5843bc4d6c437bb7c66849f499e7ecec293122ad.
+    
+    On Fri, Jan 23, 2015 at 04:30:14AM -0800, Matt Burke (GitHub Staff) wrote:
+    > The importer was supposed to be setting the HEAD ref.  There was a
+    > race condition that prevented it from doing so in some cases.  I
+    > just pushed out an update that should fix this issue.  Please let me
+    > know if it's still not working.
+    
+    So the issue we were working around with #143 should be fixed now.
+    Adding note about alternative way to clone
+    Telling people to change the default branch before cloning
+    Update README.md
+    
+    Added note re: cloning using -b gh-pages.
+    Incorporating feedback from @willingc and @karinlag
+    Merging #115 with fixup
+    Addressing review comments
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    Add link for "below" installing ruby/github-pages, and disclaimer that these need to be installed, earlier in the document
+    README.md: Removed redundant git push instruction
+    Add note about chmod
+    
+    Address issue reported by @willingc.
+    Corrects link for workshop create script
+    Addressing feedback from @dlebauer
+    Remove --set-upstream flag
+    Add information to preview Eventbrite widget
+    
+    We should avoid mixing HTTP and HTTPS. For accomplish this we
+    are using `//` at the start of the links at the homepage so that
+    the same protocol is used. For that reason to preview/test the
+    links you need to launch a HTTP server.
+    
+    Thanks to @aaren for reviews and comments.
+    Include explicit `git push --set-upstream` instruction
+    
+    When following the instructions, I tried to run `git push` to push my changes, but the local `gh-pages` branch was still tracking the upstream branch, rather the branch in the `origin` remote repository where I wanted it to go. This adds an explicit example to make sure you try to push to your own repo.
+    DOC: added command to documentation for clarity
+    Explaining labels
+    A bit more editing on wording
+    Fixes issue #43
+    Tidying up wording of Ruby version note
+    Reformatting a paragraph
+    Minor Addition - Note about Ruby Version.
+    Further tidy-up based on email feedback.
+    
+    1. Moved the software installation instructions down so that "how I set up" is the first thing readers see.
+    2. Changed titles.
+    3. Changes "customization instructions below" to link to `CUSTOMIZATION.md`.
+    4. Changed nested of software installation instructions so that PyYAML wasn't under Jekyll.
+    Fixed typos
+    Added instructions for those who can't install dependencies
+    Removing warnings
+    Change manual setup instructions
+    
+    The old instructions would fail on older versions of Git.
+    No one has complained about the Git commands in the create
+    script yet, though, so this updates the manual instructions
+    to more or less follow the exact same steps done by the
+    create script, including the same Git commands.
+    
+    Now, instead of creating and cloning an empty repo, users
+    are instructed to create a new repo, but clone the workshop-template
+    repo and add their new repo as a remote.
+    Need / in step 4 of manual installation
+    
+    Changed URL in step 4 of the manual installation section so it works
+    Remove spurious colon from GitHub URL.
+    Adding instructions to install the Python YAML module (resolves #15)
+    Fix build problems for ubuntu 14.04
+    Simplifying Markdown files even further.
+    
+    1. Tidied up wording in README.md.
+    2. Took background and design discussion out of CUSTOMIZATION.md and put it into DESIGN.md.
+    Edit and make README more modular
+    Improve "By Hand" instructions
+    Fix Pandoc's four-space rule at README
+    Polish text
+    Fix build problems for ubuntu 14.04
+    Switch from SSH to HTTPS cloning
+    Adding note to README about creation script not yet existing
+    clarified language about adding collaborators
+    Updating the script used to check validity of workshop website home page.
+    
+    1. Imported checking script from `swcarpentry/bc` repository.
+    2. Modified `README.md` to clarify formatting of month names in dates.
+    Fixing formatting of warning note
+    Adding a warning note
+    Fixing typos - thanks, @r-gaia-cs
+    Adding instructions for building workshop websites.
+    
+    1. Import and simplify instructions from the `swcarpentry/bc` repository.
+    2. Rearrange keys in YAML header of `index.html` to be in the same order as the points listed in `README.md`.
+    First full draft of new workshop website template
+    Initial commit
+    README.md: Convert 'boot camp' -> 'workshop'
+    
+    Following Amy Brown's [1]:
+    
+    > We borrowed the "bootcamp" terminology from Hacker Within and also
+    > various fitness training camps, but as we branch out into parts of
+    > the world with a more violent recent history I'm less comfortable
+    > with the term.
+    
+    The consensus on that issue was to change back to our old 'workshop'
+    terminology.  The swcarpentry/bc repository hasn't made the shift yet,
+    but there's no reason I can't embrace the future here ;).
+    
+    [1]: https://github.com/swcarpentry/bc/issues/240
+    README.md: Remove nesting setup/
+    
+    There's no need to hard-code target directories in this repository.
+    Anyone consuming this material can use submodules and pick their own
+    target directory.
+    swc-installation-test-2.py: Add CommandDependency.paths fallbacks
+    
+    The old CommandDependency implementation assumed that commands would
+    exist in one of the directories listed in PATH.  This assumption is,
+    unfortunately, often not satisfied on MS Windows or OS X.  In order to
+    work around this problem, you can now store a list of fallback paths
+    that will be tried if there is an error extracting the version stream
+    from the bare CommandDependency.command.
+    
+    I've added fallback paths for Notepad++, Firefox, and Google Chrome,
+    as reported by Ethan White for Windows 7.
+    swc-installation-test-2.py: Add --help and --verbose
+    
+    The system information is useful for troubleshooting a student's
+    installation problems, but it is probably less useful for the student
+    themselves.  Turn off this troubleshooting information by default and
+    require the --verbose option to re-enable it.
+    
+    If we didn't have to maintain support for Python 2.6, we could use
+    argparse instead of optparse.  The optparse module is deprecated for
+    2.7, 3.2, and later, but it is still part of the stdandard library.
+    
+    Also update the README to point out --verbose.
+    setup/README.md: Install-testing script care and feeding
+    Add requirements.txt for repository; more may be needed
+    minor formatting fix suggestions
+    Addressing review comments
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    Addressing feedback from @dlebauer
+    Fixing internal link references.
+    
+    Modified `DESIGN.md` and `FAQ.md` to refer to `CUSTOMIZATION.md`
+    without an anchor reference to the variables section.
+    Simplifying Markdown files even further.
+    
+    1. Tidied up wording in README.md.
+    2. Took background and design discussion out of CUSTOMIZATION.md and put it into DESIGN.md.
+    Edit and make README more modular
+    Updating contribution and adding conduct
+    modifications for new CSS + bootstrap 3.3.2
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    Fix shortcut icon link to one that works (alternatively, the site template should be updated so that v5/favicon.ico goes somewhere)
+    First full draft of new workshop website template
+    add github-ribbon on workshop and page templates
+    remove duplicated banner
+    
+    the banner needs to be outside the "container" to be in the right corner
+    Make the GitHub ribbon point to this workshop's GtiHub repository using a variable from `_config.yml`.
+    Changing text and link of GitHub ribbon.
+    
+    This addresses #125 by changing the text of the GitHub ribbon to "Find us on GitHub"
+    and changing the link to point to the organization `https://github.com/swcarpentry`.
+    modifications for new CSS + bootstrap 3.3.2
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    First full draft of new workshop website template
+    fix path for bootstrap.js
+    modifications for new CSS + bootstrap 3.3.2
+    Updating setup instructions to reflect use of GitHub Import.
+    
+    1.  Modify README.md and other files to reflect use of GitHub Import.
+    2.  Modified URLs for shared files in `_include` files to get the right images and CSS.
+    
+    This turned up #137: the CSS files for the workshop template, the main
+    website, and the lesson repository are all out of step and need to be
+    synchronized.  Once that is done, the URLs in the
+    `_includes/header.html` file should be updated
+    First full draft of new workshop website template
+    Renaming `_config.yml` values and using them in web pages.
+    
+    1.  Changed `lesson_repo` and `lesson_site` to `workshop_repo` and `workshop_site` in `_config.yml`.
+    2.  Updated `_includes/footer.html` to match.
+    3.  Updated docs in `README.md` to match.
+    
+    Rationale is that this is the workshop repo, not a lesson repo, so we shouldn't use `lesson_` as a prefix for variables.
+    Putting lesson URLs in configuration and taking advantage thereof.
+    
+    1.  Add `lesson_repo` and `lesson_site` variables to `_config.yml`.
+    2.  Refer to variables in `_includes/footer.html` to link to bug reports.
+    3.  Modified `index.html` accordingly.
+    Fixing broken links in standard footer.
+    
+    1.  Added and corrected variables in `_config.yml`.
+    2.  Fixed references in `_includes/footer.html`.
+    First full draft of new workshop website template
+    README.md: Remove nesting setup/
+    
+    There's no need to hard-code target directories in this repository.
+    Anyone consuming this material can use submodules and pick their own
+    target directory.
+    swc-installation-test-2.py: added support for py.test
+    swc-installation-test-2.py: Use ProgramFiles environment variable
+    
+    On Fri, Apr 26, 2013 at 11:45:12AM -0700, Onno Broekmans wrote:
+    > ... the installation paths you mention are incorrect for the
+    > majority of modern Windows 7 installations. These are 64-bit
+    > installations, and they have a special folder for 32-bit programs:
+    > "C:\Program Files (x86)". So Notepad++ can be found in:
+    >
+    >     C:\Program Files (x86)\Notepad++\notepad++.exe
+    >
+    > In the script, you could just check for the program's existence
+    > using both paths ("C:\Program Files" _and_ "C:\Program Files
+    > (x86)"), or you could use the "ProgramFiles" environment variable.
+    
+    Environment variable it is!  From the Microsoft docs [1]:
+    
+      CSIDL_PROGRAM_FILESX86
+        The Program Files folder on 64-bit systems. A typical path is
+        C:\Program Files(86).
+      ...
+      CSIDL_PROGRAM_FILES
+        Version 5.0. The Program Files folder. A typical path is
+        C:\Program Files.
+      ...
+      PROGRAMFILES
+        Same as CSIDL_PROGRAM_FILES.
+      PROGRAMFILES(X86)
+        Refers to the C:\Program Files (x86) folder on 64-bit systems.
+    
+    We're just looking for executables, so it would be ok if we found a
+    32-bit Notepad++ or a 64-bit Notepad++.  With this commit, we check
+    both locations (if there are two distinct locations).
+    
+    [1]: http://technet.microsoft.com/en-us/library/cc749104%28v=ws.10%29.aspx
+    swc-installation-test-2.py: Also look for extension-less paths
+    
+    Before this commit, CommandDependency checked self.command (with an
+    optional extension determined by distutils).  If that check failed to
+    produce a version stream, we cycled through a list of additional
+    hard-coded paths.  For example:  Notepad++ used:
+    
+      self.command = 'notepad++'
+      self.paths = [
+          _os.path.join(
+              _ROOT_PATH, 'Program Files', 'Notepad++', 'notepad++.exe'),
+          ]
+    
+    Because some MS Windows commands lack the expected '.exe' extension,
+    but are still present and detected by a number of shells, we should
+    also look for the extension-less version of the command.
+    
+    I consolidated the _get_version_stream() logic to build a single list
+    of paths and loop through it looking for success (and accumulating
+    errors).  This makes the handling of self.paths less of a special
+    case, and sets us up for any additional path mangling we may need to
+    support other poorly standardized OSes ;).
+    swc-installation-test-2.py: Add CommandDependency.paths fallbacks
+    
+    The old CommandDependency implementation assumed that commands would
+    exist in one of the directories listed in PATH.  This assumption is,
+    unfortunately, often not satisfied on MS Windows or OS X.  In order to
+    work around this problem, you can now store a list of fallback paths
+    that will be tried if there is an error extracting the version stream
+    from the bare CommandDependency.command.
+    
+    I've added fallback paths for Notepad++, Firefox, and Google Chrome,
+    as reported by Ethan White for Windows 7.
+    swc-installation-test-2.py: Use _ROOT_PATH for MS Windows compatability
+    
+    I don't think starting a path with os.sep gives you a root path on
+    Windows.  We need the backslash in _ROOT_PATH, because:
+    
+      os.path.join('c:', 'foo')
+    
+    gives 'c:foo', a path relative to the current directory on drive C: [1].
+    
+    [1]: http://docs.python.org/3/library/os.path.html#os.path.join
+    swc-installation-test-2.py: Raise an error on empty version stream
+    
+    This makes the upcoming mult-path checking easier to implement.
+    swc-installation-test-2.py: Don't override Popen's 'close_fds'
+    
+    Or 'shell'.  The support for these options can be flaky, and the
+    defaults change with Python version depending on what is best
+    supported [1].
+    
+    [1]: http://docs.python.org/2/library/subprocess.html#subprocess.Popen
+    
+    Reported-by: Ethan White <ethan@weecology.org>
+    swc-installation-test-2.py: Add 'safari'
+    
+    This works adds support for virtual-browser on OS X.  Matt Davis
+    reports the locations of Firefox and Chrome as:
+    
+      /Applications/Firefox.app
+      /Applications/Google\ Chrome.app
+    
+    but I'm not sure where the executables live underneath those
+    directories, which we'd probably need if we wanted to extract version
+    numbers.
+    swc-installation-test-2.py: Link directly to install docs
+    
+    Expecting the Software Carpentry maintainers to keep up-to-date
+    documentation for each system/package pair is not realistic.  Instead,
+    link to each package's installation instructions (as best I can find
+    them).  The system/version/package globbing (using fnmatch, see
+    glob(7)) makes it easy to setup per-system and per-version URLs if you
+    want to fine-tune the instructions.
+    swc-installation-test-2.py: Add --help and --verbose
+    
+    The system information is useful for troubleshooting a student's
+    installation problems, but it is probably less useful for the student
+    themselves.  Turn off this troubleshooting information by default and
+    require the --verbose option to re-enable it.
+    
+    If we didn't have to maintain support for Python 2.6, we could use
+    argparse instead of optparse.  The optparse module is deprecated for
+    2.7, 3.2, and later, but it is still part of the stdandard library.
+    
+    Also update the README to point out --verbose.
+    swc-installation-test-2.py: List supported Ubuntu install hints
+    
+    From http://software-carpentry.org/setup/ubuntu.html, in the order
+    that they are currently listed.  The page sections don't have the
+    appropriate anchor IDs yet, but it's still better to link to the
+    Ubuntu page than to the root setup/ page.
+    swc-installation-test-2.py: Add support for package-specific URLs
+    
+    To give users more targeted advice for fixing their installation
+    problems, we should link them to somewhere more specific than the root
+    SWC setup page.  The two knobs in the specific URL are system/OS
+    (Gentoo, Debian, OS X, MS Windows, ...) and package (the dependency
+    name: emacs, git, virtual-browser, ...).  We don't have consistent
+    URLs upstream yet [1], but maybe this commit will help motivate them
+    ;).
+    
+    [1]: https://github.com/swcarpentry/website/issues/2
+    swc-installation-test-2.py: Add 'argparse'
+    
+    I use this module (which entered the stdlib in 2.7/3.2) in my
+    get-my-ip.py script (in a different branch at the moment).  Users with
+    older Python implementations will have to install an external module
+    (e.g. from PyPI).
+    swc-installation-test-2.py: Add 'EasyMercurial'
+    
+    Chris Cannam just released v1.3.0 which adds a --version option for
+    easy version testing [1].
+    
+    [1]: https://bitbucket.org/cannam/easyhg/issue/1/teach-easymercurial-the-version-option
+    swc-installation-test-2.py: Initial EditorTaskDependency implementation
+    
+    I'm not sold on this idea...
+    swc-installation-test-2.py: Add PathCommandDependency
+    
+    OS X doesn't believe in $PATH ;).  Work around this heresy by simply
+    checking for the existence of a characteristic file or directory
+    (e.g. /Applications/SomeApp.app).  I use the new class to add 'xcode',
+    'sublime-text', 'textmate', and 'textwrangler' installations.
+    
+    The location of the Xcode installation depends on your version of OS
+    X, and the 'xcode' comments show which path is expected for which
+    version.
+    swc-installation-test-2.py: Add TornadoPythonPackage for version extraction
+    
+    Tornado follows Python's example with tornado.version and
+    tornado.version_info instead of using tornado.__version__.  While we
+    could parse tornado.version with our usual machinery, take advantage
+    of the pre-parsed version_info by defining a new class.
+    swc-installation-test-2.py: Add long names for virtual-* packages
+    
+    Give a more user-friendly description of what we're checking for.
+    swc-installation-test-2.py: List all causes for or-dependency errors
+    
+    Also make the and-dependency and or-dependency messages more friendly.
+    swc-installation-test-2.py: Add IPython notebook dependencies
+    
+    You can get a successful IPython import even if you haven't installed
+    the dependencies you need for viewing notebooks.  This adds explicit
+    dependencies based on the current listings in IPython's setup.py.
+    swc-installation-test-2.py: Print full DependencyError chain
+    
+    If a requirement is not satisfied due to an and_dependency or
+    or_dependency failure, raise a new DependencyError and attach the
+    original error as its cause (this would be easier if we didn't have to
+    preserve Python 2.x support).  This way we can print the whole chain
+    (e.g. virtual-shell failed because sh is not installed), instead of
+    just the lowest level error.
+    
+    Also indent the messages, because:
+    
+      check for virtual-editor failed:
+        or-dependency not satisfied for virtual-editor
+        For instructions on installing an up-to-date version, see
+        http://software-carpentry.org/setup/
+        cause:
+        check for Notepad++ (notepad++) failed:
+          could not find 'notepad++' executable
+          For instructions on installing an up-to-date version, see
+          http://software-carpentry.org/setup/
+    
+    is more readable than:
+    
+      check for virtual-editor failed:
+      or-dependency not satisfied for virtual-editor
+      For instructions on installing an up-to-date version, see
+      http://software-carpentry.org/setup/
+      cause:
+      check for Notepad++ (notepad++) failed:
+      could not find 'notepad++' executable
+      For instructions on installing an up-to-date version, see
+      http://software-carpentry.org/setup/
+    swc-installation-test-2.py: Add and_dependencies to Python package setup
+    
+    Not used by any packages yet, but I'm about to use it for IPython.
+    swc-installation-test-2.py: Add gedit to virtual-editor
+    
+    For Gnome users.
+    swc-installation-test-2.py: Add Pandas (pandas) >= 0.8
+    
+    It's being used in 2013-01-columbia.
+    swc-installation-test-2.py: Handle unparsable versions gracefully
+    
+    This avoids raising NotImplementedError from my IPython 0.14.dev.  We
+    don't want to have to start ranking alpha, beta, dev, r6, etc., so
+    just print the unparsable version and minimum version, and leave it to
+    the student to decide if their version satisfies the condition.  It's
+    unlikely that students have such pre-/post-release software installed
+    anyway.
+    swc-installation-test-2.py: Add ipython (script) >= 0.13
+    
+    And make sure the IPython package has the same minimum version.
+    IPython 0.12 can't display more recent notebooks.
+    setup: Move installation test scripts under setup/
+    
+    There will be a lot of other stuff in the boot camp repository.  Stay
+    organized by keeping "how to set up and test your machine" stuff in a
+    subdirectory.
+    swc-installation-test-2.py: Comment out 'mercurial' dependency
+    
+    There can be trouble detecting the Python package, especially on MS
+    Windows where the installed version of Python used to run the script
+    may not know about installed version of Mercurial.  Because nobody is
+    likely to use Mercurial's Python interface in a SWC class (they'll
+    probably stick to the command line interface), comment out this
+    dependency.
+    swc-installation-test-2.py: Add 'virtual-pypi-installer' and 'pip'
+    
+    Students who need a Python Package Index (PyPI) installer should be
+    fine with either easy_install or pip [1].
+    
+    [1]: http://pypi.python.org/pypi/pip
+         http://www.pip-installer.org/
+    swc-installation-test: Return 1 on failure
+    
+    I doubt anyone will check the exit status for these scripts, but it's
+    still good to follow conventions.
+    swc-installation-test-2.py: Better error message for unknown checks
+    swc-installation-test-2.py: Document command line arguments
+    swc-installation-test-2.py: Add MakeDependency class
+    
+    On the fairly ancient SunOS 5.10 (January 2005), `make` doesn't
+    support `--version`.  Looking into the POSIX.2 specs [1], it doesn't
+    have to.  On FreeBSD [2] and in GNU Make [3], there is a MAKE_VERSION
+    variable, and the Sun executable has something similar:
+    
+      $ strings make | grep MAKE_VERSION
+      .MAKE_VERSION
+    
+    but it just expands to an empty string.
+    
+    Since reading a makefile from stdin *is* in POSIX [1], we can use that
+    to test `make` if `make --version` fails.  If we get something for
+    MAKE_VERSION, use that.  If we get something for MAKE (required by
+    POSIX [2]), then call that a valid, but unkown, version.
+    
+    [1]: http://pubs.opengroup.org/onlinepubs/009695399/utilities/make.html#tag_04_84_04
+    [2]: http://lists.freebsd.org/pipermail/freebsd-questions/2010-October/222214.html
+    [3]: http://www.gnu.org/software/make/manual/html_node/Features.html#index-MAKE_005fVERSION-1021
+    [4]: http://pubs.opengroup.org/onlinepubs/009695399/utilities/make.html#tag_04_84_13_08
+    swc-installation-test-2.py: Add CommandDependency.stdin
+    
+    I'm about to implement a version check for 'make' where I want to pass
+    a test Makefile in via stdin.
+    swc-installation-test-2.py: Convert .version_option to .version_options
+    
+    I'm about to implement a version check for 'make' where a single
+    option doesn't cut it.  For version of Python before 3.3,
+    shlex.quote() doesn't exist [1], so use pipes.quote() instead [2].
+    
+    [1]: http://docs.python.org/3/library/shlex.html#shlex.quote
+    [2]: http://bugs.python.org/issue9723
+    swc-installation-test-2.py: Add OS-version detection
+    
+    Using assorted functions from the `platform` module.  On my Linux box:
+    
+      $ python2.7
+      Python 2.7.3 (default, Dec  5 2012, 10:56:01)
+      [GCC 4.5.4] on linux2
+      Type "help", "copyright", "credits" or "license" for more information.
+      >>> import platform
+      >>> platform.linux_distribution()
+      ('Gentoo Base System', '2.1', '')
+      >>> platform.mac_ver()
+      ('', ('', '', ''), '')
+      >>> platform.win32_ver()
+      ('', '', '', '')
+    
+    On an OS X box:
+    
+      $ python2.6
+      Python 2.6.1 (r261:67515, Aug  2 2010, 20:10:18)
+      [GCC 4.2.1 (Apple Inc. build 5646)] on darwin
+      Type "help", "copyright", "credits" or "license" for more information.
+      >>> import platform
+      >>> platform.linux_distribution()
+      ('', '', '')
+      >>> platform.mac_ver()
+      ('10.6.8', ('', '', ''), 'i386')
+      >>> platform.win32_ver()
+      ('', '', '', '')
+    
+    I don't have access to an MS Windows box, but presumably it returns
+    something like:
+    
+      >>> platform.linux_distribution()
+      ('', '', '')
+      >>> platform.mac_ver()
+      ('', ('', '', ''), '')
+      >>> platform.win32_ver()
+      ('XP', '5.1.2600', 'SP2', 'Multiprocessor Free')
+    
+    We only want to print the one that applies (e.g. don't print a
+    'linux_distribution' entry on OS X), so we skip entries where value[0]
+    is an empty string.
+    swc-installation-test-2.py: Use the more portable platform.uname()
+    
+    From the docs [1,2]:
+    
+      platform.uname():
+        Fairly portable uname interface...  Entries which cannot be
+        determined are set to ''.
+    
+      os.uname():
+        ... Availability: recent flavors of Unix.
+    
+    [1]: http://docs.python.org/2/library/platform.html#platform.uname
+    [2]: http://docs.python.org/2/library/os.html#os.uname
+    swc-installation-test-2.py: Isolate system-info indent in _print_info
+    
+    This way shifting the indents if you add a longer key is a single-line
+    operation.
+    swc-installation-test-2.py: Sort shells in order of preference
+    
+    Placing the often-symlinked `sh` at the end of the list.  This way if
+    a user has Bash installed, it doesn't show up as plain old Bourne.
+    swc-installation-test-2.py: Break after first successful or-dependency
+    
+    No need to test the other dependencies once you find one that matches.
+    swc-installation-test-2.py: Give suggested install hints
+    
+    I can't give package-specific links yet, but they will hopefully be in
+    place soon.  I made the "email your instructor" suggestion optional,
+    because it is easy for me to imagine a course large enough that the
+    instructor could not field all requests.  To disable, change
+    
+      print_suggestions(instructor_fallback=True)
+    
+    to
+    
+      print_suggestions(instructor_fallback=False)
+    swc-installation-test-2.py: Don't say how to get a terminal
+    
+    We already told them how to do this in swc-installation-test-1.py,
+    hopefully they remember ;).
+    swc-installation-test-2.py: Avoid BaseException.message warning
+    
+    Dodge the logic which (at least in Python 2.6.1) raises:
+    
+      DeprecationWarning: BaseException.message has been deprecated as of Python 2.6
+    
+    We're setting the .message attribute explicitly, so the deprecation
+    warning does not apply to us.  The fix was suggested by Brett Cannon:
+    
+    On Sun Jul 8 02:42:18 CEST 2007, Brett Cannon wrote [1]:
+    > You can get around this easily enough with a subclass that uses a
+    > property for message::
+    >
+    >   class gerror(Exception):
+    >     def _get_message(self, message): return self._message
+    >     def _set_message(self, message): self._message = message
+    >     message = property(_get_message, _set_message)
+    
+    [1]: http://mail.python.org/pipermail/python-dev/2007-July/073777.html
+    swc-installation-test-2.py: Only require Git >= 1.7 (not >= 1.8)
+    
+    Xcode 4.0.2 for OS X 10.6.8 shipped with Git 1.7.3.4.
+    swc-installation-test-2.py: Add EasyInstallDependency class
+    
+    Distribute's easy_install supports --version (at least since 0.6.21),
+    but Setuptool's original version does not (at least as of 0.6c9).
+    Assume that if we get some kind of reasonable output from
+    `easy_install --version` we're dealing with the Setuptools version.
+    swc-installation-test-2.py: Add a virtual-shell and non-Bash shells
+    
+    Commit to POSIX.2 [1] compatibility by allowing additional shells.  If
+    anyone has something besides sh, bash, or dash installed, they
+    probably know how to use it ;).
+    
+    [1]: http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html
+         IEEE Std 1003.2-1992
+    swc-installation-test-2.py: Don't require a specific Bash version
+    
+    I have access to a machine running OS X 10.6.8, which has:
+    
+      $ bash --version
+      GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin10.0)
+      Copyright (C) 2007 Free Software Foundation, Inc.
+    
+    That means no associative arrays, but for SWC purposes, it should
+    still get the job done.  All we really need is POSIX.2.
+    swc-installation-test-2.py: Fix version extraction for sqlite3-python
+    
+    The 'sqlite3' package has the same version as the standard library.
+    We only check for it because sometimes (e.g. on Gentoo) Python may be
+    compiled without this package.
+    swc-installation-test-2.py: Fix 'mercurial' version extraction
+    
+    The Mercurial Python package stores its version in strange places.
+    swc-installation-test-2.py: Refactor PythonPackageDependency._get_version
+    
+    Split it into pieces for easier subclassing.
+    swc-installation-test-2.py: Add import_module for older Pythons
+    
+    importlib is new in Python 2.7 / 3.1.  Add a minimal workaround for
+    earlier versions.
+    swc-installation-test-2.py: Don't parse missing versions
+    swc-installation-test-2.py: import print_function for Python 2.6
+    
+    Otherwise `print()` actually prints `()`, where we want it to print a
+    blank line.
+    swc-installation-test-2.py: Don't chain exceptions (yet)
+    
+    Exception chaining (PEP 3134, 'raise ... from') raises SyntaxErros in
+    Python 2.x.  Comment the chaining out until SWC starts teaching only
+    Python 3.x.
+    swc-installation-test-2.py: Print successfully-found versions
+    
+    This makes it easy to see what a user has installed.
+    swc-installation-test-2.py: Don't print duplicate exceptions
+    
+    For example, if you have an outdated 'python', you only want to hear
+    about that once, not once for each PythonPackageDependency.
+    swc-installation-test-2.py: Cache check errors
+    
+    Avoid running the same check (e.g. 'python') over and over.
+    swc-installation-test-2.py: `PythonDependency`s should depend on Python
+    swc-installation-test-2.py: Add exe_extension for MS Windows compat.
+    
+    Use distutils' new_compiler() to get the appropriate exe_extension for
+    the user's system.  This way command names can always be specified in
+    their bare form, and we'll automatically add the right executable
+    extension for other platforms.
+    swc-installation-test-2.py: Add virtual-editor and virtual-browser
+    
+    Often we don't care which editor is installed, so long as at least one
+    is installed.  This commit tweaks Dependency and adds a
+    VirtualDependency class to support such virtual dependencies.  You
+    can't get very fancy with boolean logic, but an all-and and all-or
+    lists will probably be sufficient for our needs.
+    swc-installation-test-2.py: Add some editors and browsers
+    
+    Based on a list of possibilities mentioned by Cait Pickens in an
+    internal email.
+    swc-installation-test-2.py: sort CHECKS into topics
+    swc-installation-test: Consolidate and reorganize test scripts
+    README.md: Remove nesting setup/
+    
+    There's no need to hard-code target directories in this repository.
+    Anyone consuming this material can use submodules and pick their own
+    target directory.
+    swc-installation-test-1.py: Link to s-c.o's terminal.html
+    
+    For screen shots and additional platform support.
+    setup: Move installation test scripts under setup/
+    
+    There will be a lot of other stuff in the boot camp repository.  Stay
+    organized by keeping "how to set up and test your machine" stuff in a
+    subdirectory.
+    swc-installation-test: Return 1 on failure
+    
+    I doubt anyone will check the exit status for these scripts, but it's
+    still good to follow conventions.
+    swc-installation-test-1.py: Give instructions for 'python command not found'
+    swc-installation-test-1.py: Give suggested install hints
+    
+    This can link to the "howto setup Python" notes from SWC once those
+    get a more precise link than:
+    
+      http://software-carpentry.org/setup/
+    swc-installation-test: Consolidate and reorganize test scripts
+    Enumerating setup/run instructions for installation test scripts
+    setup/index.md: Add YAML front-matter for Jekyll
+    setup/index.md: Rename for more conventional HTML output
+    README.md: Remove nesting setup/
+    
+    There's no need to hard-code target directories in this repository.
+    Anyone consuming this material can use submodules and pick their own
+    target directory.
+    swc-installation-test-2.py: Add CommandDependency.paths fallbacks
+    
+    The old CommandDependency implementation assumed that commands would
+    exist in one of the directories listed in PATH.  This assumption is,
+    unfortunately, often not satisfied on MS Windows or OS X.  In order to
+    work around this problem, you can now store a list of fallback paths
+    that will be tried if there is an error extracting the version stream
+    from the bare CommandDependency.command.
+    
+    I've added fallback paths for Notepad++, Firefox, and Google Chrome,
+    as reported by Ethan White for Windows 7.
+    swc-installation-test-2.py: Add --help and --verbose
+    
+    The system information is useful for troubleshooting a student's
+    installation problems, but it is probably less useful for the student
+    themselves.  Turn off this troubleshooting information by default and
+    require the --verbose option to re-enable it.
+    
+    If we didn't have to maintain support for Python 2.6, we could use
+    argparse instead of optparse.  The optparse module is deprecated for
+    2.7, 3.2, and later, but it is still part of the stdandard library.
+    
+    Also update the README to point out --verbose.
+    setup/README.md: Install-testing script care and feeding
+    First full draft of new workshop website template
+    First full draft of new workshop website template
+    First full draft of new workshop website template
+    Renaming the workshop creation script for upload to Software Carpentry website.
+    
+    This PR renames `tools/create` to `tools/swc-workshop-create` so that when we upload it to http://files.software-carpentry.org, and people download it from there, its purpose will be clearer --- `create` on its own isn't particularly meaningful.
+    
+    This PR also does some minor copy-editing on messages inside the script.
+    Should fix issue #49
+    standardized if test syntax for bash functions
+    Corrects bad revert #62 to initial correct merge #52
+    
+    Fixes issue #45
+    Revert "Document and enforce lowercase workshop_id"
+    Add newline as per Greg
+    Add note about site typically means domain name
+    Be more explicit about hyphen separation
+    Add post clone cleanup command
+    Add check for hyphens in workshop_id
+    Fix sed to print blank formatting lines
+    Document and enforce lowercase workshop_id
+    Removing FIXME markers from head of file
+    (Re)moving FIXME comment markers
+    quoting INSTRUCTORS solves problem of collaborators being added and
+    Check that repository was successfully cloned
+    
+    Close #25
+    check_pwd now successfully gets the return code from git status, reacts accordingly
+    tools/create
+    
+    Possible solution for the first FIXME
+    
+    Tries to get the HEAD of the workshop page URL, if it succeeds (i.e. it already exists), retuns an error and exits
+    update check.py info
+    
+    The script was referencing tools/check, but it's check.py.
+    
+    It was also unclear to me from where to run check.py. I didn't realize you had to cd into a new directory after
+    running create in order to run check.py. So I made the description a little more explicit.
+    Suppressing output of 'curl' command
+    Tidying up error messages
+    Script to create workshop repository
+    Clarifying docs and checking for missing end-of-YAML.
+    Testing for leading blank lines
+    Changing the way we load the YAML header.
+    
+    1. Changing the way we load YAML header.
+    2. Modifying tests to reflect this.
+    
+    Note that we no longer test for duplicated keys, because the YAML
+    module takes the last key seen rather than reporting an error.
+    Getting sign of test correct
+    Add language field to YAML header
+    
+    Know the language that our instructors are using should be
+    important.
+    Improving checking of country names.
+    
+    The country name in the YAML header is used to match the filename of a flag icon.
+    It must be properly capitalized and use hyphens instead of spaces --- abbreviations
+    like "USA" and spaced names like "United Kingdom" don't work.  Rather than trying
+    to encode those rules, this change relies on a table of acceptable names.
+    Importing tests for index page checking script.
+    
+    1. Brought in `test_check.py` (Nose tests).
+    2. Edited.
+    3. Renamed `check` to `check.py` so that `test_check.py` could import it.
+    
+    Tried to avoid #3 by using `imp.load_module`, but was unable to get it
+    to work properly: best case, running `nosetests` created a file `checkc`
+    (which is presumably the bytecode file for `check`).  Rather than have
+    that lying around, renamed the script.  There's gotta be a way...
+    Clarifying docs and checking for missing end-of-YAML.
+    Improve python2 compatibility
+    Making Py3 compatible
+    Testing for leading blank lines
+    Changing the way we load the YAML header.
+    
+    1. Changing the way we load YAML header.
+    2. Modifying tests to reflect this.
+    
+    Note that we no longer test for duplicated keys, because the YAML
+    module takes the last key seen rather than reporting an error.
+    Getting sign of test correct
+    Simplifying documentation
+    tools/check.py: Test for blank lines first to avoid duplicate errors
+    
+    The previous commit introducing check_blank_category() makes the check after
+    that for duplicate categories. The occurrence of multiple blank lines throws
+    two errors wuth that ordering: duplicate categories and presence of blank
+    lines. Testing for blank lines first allows for their removal, and avoids
+    reporting a confusing second error message from the same problem.
+    tools/check.py: Added test and new error response when blank line in header
+    
+    If the index.html header contains a blank line, check.py returns an error
+    indicating "superfluous categories". This message was unclear about the cause
+    of the error. This change reports the presence of blank lines in the header
+    specifically as an error.
+    Add language field to YAML header
+    
+    Know the language that our instructors are using should be
+    important.
+    Tidying up @pbanaszkiewicz's improvements to checker
+    check.py: fixed PEP8, global errors list
+    
+    PEP8 changes:
+    * two lines before function definition
+    * shortened too long lines (except for one regexp)
+    
+    Switched to logging:
+    * now a list of errors for each category is shared between functions
+    
+    Removed global list of errors:
+    * instead functions pass a reference to the list that's held in `main()`
+    * two new formatting helpers: `add_error(msg, errors)` and
+      `add_suberror(msg, errors)` -- if you want to know details how they
+      work, take a look at their docstrings
+    More refactoring to handle text from the web
+    Refactoring the checking tool
+    Telling users what country names are accepted
+    Improving checking of country names.
+    
+    The country name in the YAML header is used to match the filename of a flag icon.
+    It must be properly capitalized and use hyphens instead of spaces --- abbreviations
+    like "USA" and spaced names like "United Kingdom" don't work.  Rather than trying
+    to encode those rules, this change relies on a table of acceptable names.
+    Importing tests for index page checking script.
+    
+    1. Brought in `test_check.py` (Nose tests).
+    2. Edited.
+    3. Renamed `check` to `check.py` so that `test_check.py` could import it.
+    
+    Tried to avoid #3 by using `imp.load_module`, but was unable to get it
+    to work properly: best case, running `nosetests` created a file `checkc`
+    (which is presumably the bytecode file for `check`).  Rather than have
+    that lying around, renamed the script.  There's gotta be a way...
+    Updating the script used to check validity of workshop website home page.
+    
+    1. Imported checking script from `swcarpentry/bc` repository.
+    2. Modified `README.md` to clarify formatting of month names in dates.
+    First full draft of new workshop website template
+    First full draft of new workshop website template
+    fix position of github ribbon
+    
+    this is a temporary fix (already included upstream in the styles repo) while the
+    main CSS file is undergoing a larger overhaul.
+    add missing bracket
+    Use unified CSS from site.
+    
+    As per swcarpentry/lesson-template#140, but only the core CSS
+    changes.
+    Move files (from site) into css
+    Separate out some specific workshop classes.
+    
+    The workshop template is mostly plain bootstrap, so getting it work
+    alongside the site CSS seems mostly straightforward. We only need to
+    add in a .workshop class to the body, and a .card class to the
+    .container in the workshop. Everything else is bootstrap content.
+    
+    This commit also removes the banner.html include since this did not
+    seem to be removed in the main site, but was referenced in the CSS.
+    Removing it makes it clear the .banner class is only needed in the
+    workshop, not here.
+    Reformatting instructor bios
+    Instructor training registration form
+    * add Country drop down select
+    * add Gender
+    Move files into css
+    Replace bootcamp with workshop
+    
+    ~~~
+    $ for file in $(grep -r -l 'bootcamp' .); do sed -i 's/bootcamp/workshop/g' $file; done
+    $ for file in $(grep -r -l 'boot camp' .); do sed -i 's/boot camp/workshop/g' $file; done
+    ~~~
+    
+    and others minors changes.
+    
+    Close #240.
+    Changing wording in everything except blog posts
+    Shrink the font size for print version
+    Add CSS for printing
+    
+    The CSS was add at our main CSS and remove from printing:
+    
+    - Logo at header
+    - GitHub ribbon
+    - Footnote
+    
+    Close #561.
+    Add CSS media query to improve logo
+    Cleaning up css
+    * remove unused classes copied from google form
+    * moved styles to swc.css
+    * #361
+    CSS arrow to mark input and output
+    
+    **Note**: This is a prototype.
+    
+    Instead of "In" and "Out" use arrow to mark the input and output
+    of IPython lessons.
+    
+    To construct the arrows we only use CSS.
+    Preparing material for Version 5 novice release
+    navbar & links
+    * input from @r-gaia-cs
+    * links on hover: darker & underline
+    * move search bar to bottom on collapse
+    Navbar work
+    * mostly the collapsed the bar, make less awkward
+    * some link colour changes
+    Changing default mailing address and putting contact email in footer
+    Keep headers the darker blue
+    * related to #278
+    Trying to keep all clickable item blue
+    * helps with learning a new ui
+    * 3 sub-headings on home page are no longer links
+    Brighter link colour
+    * #278
+    allow smaller screens
+    Removing trailing whitespace
+    Footer/home page work
+    Simplifying layout of bootcamps home page
+    Footer work
+    Redesign work - update header
+    * cleaner design
+    redesign updates
+    * simplifying design
+    * use header more on each page
+    Reworking the home page
+    Redesign work
+    * add hammer to header
+    * add twitter to home page
+    * adjust styles
+    * adjust branding on all pages
+    Add hammer, updates templates for new layout
+    * footer still needs work
+    * not sure if I got all the pages
+    layout changes
+    updating gh-pages
+    Beginning redesign
+    * very much a work in progress
+    * experimenting with header/banner/home page
+    Fix for issue #44 with large font size
+    
+    When using large font it will overflow the width so I add
+    max-width in the css.
+    Solve issue #44
+    
+    The 'box' class overflow the window width for some screen size.
+    This patch fix it using CSS media query.
+    Full-width page layout, and logo in navbar
+    Adding more questions to FAQ based on suggestions from current instructors.
+    Initializing new repository for Software Carpentry web site.
+    Initializing template for Software Carpentry bootcamp home pages.
+    Use unified CSS from site.
+    
+    As per swcarpentry/lesson-template#140, but only the core CSS
+    changes.
+    Move files (from site) into css
+    Changes base on @gvwilson comments
+    
+    * Avoid duplicate lines in HTML pages with layout and CSS
+    * Avoid import inside functions
+    * Warning user that the badge already in version 1.0.0
+    * Fix typo: backing => baking
+    * Avoid dict.key()
+    * Add words about Anaconda
+    consolidate CSS files
+    Merging @r-gaia-cs improvements
+    consolidate CSS files
+    Move files into css
+    Update template for book to rely on CSS
+    
+    Use h2 tag for "subtitle" will break any tool used to convert HTML
+    for another format. This commit replace h2 with span and rely on
+    CSS for have the same look.
+    Move files (from site) into css
+    Move files into css
+    Change to a css github ribbon
+    * responsive for smaller screens
+    * move menu over more - click will always open menu
+    * #462
+    Fix btn-nav position due GitHub Ribbon
+    Initializing new repository for Software Carpentry web site.
+    Initializing template for Software Carpentry bootcamp home pages.
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    upgrade to bootstrap 3.3.2
+    Merging @r-gaia-cs improvements
+    add github-ribbon on workshop and page templates
+    remove duplicated banner
+    
+    the banner needs to be outside the "container" to be in the right corner
+    add card class to container
+    modifications for new CSS + bootstrap 3.3.2
+    Add new CSS classes in preparation for merging CSS with main site
+    Wrap contents in div.row tags as needed by Bootstrap
+    1. Adding comment to the generic workshop home page explaining its purpose.
+    2. Creating a simplified generic page template for other workshop pages.
+    First full draft of new workshop website template
+    add github-ribbon on workshop and page templates
+    add card class to container
+    modifications for new CSS + bootstrap 3.3.2
+    Add new CSS classes in preparation for merging CSS with main site
+    Wrap contents in div.row tags as needed by Bootstrap
+    1. Adding comment to the generic workshop home page explaining its purpose.
+    2. Creating a simplified generic page template for other workshop pages.

@@ -1,0 +1,1143 @@
+﻿    remove cython as a run dependency
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Enable doctests, update documentation and enable pytest in travis. (#93)
+    Use netcdftime (#85)
+    
+    use cftime
+    fix travis-ci
+    Added test coverage.
+    Split requirements and added to setup.py
+    Add coverals badge
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Remove reference to Cartopy.
+    Updated the readme to use markdown.
+    Added an example to the readme.
+    Revert to README.rst
+    Improved readme content
+    Convert README to md
+    README.md with badges.
+    Added the coveralls badge.
+    MAINT: Changed based on review
+    Fix typo in README.rst and minor formatting.
+    PyPI classifiers and README.rst
+    Made use of versioneer for automatic versioning.
+    remove cython as a run dependency
+    unpin numpy (#154)
+    Numpy setup.py fixes (#153)
+    
+    * Fix SciTools/cf-units#151 by supporting __builtins__ as either dict or module instance
+    
+    * Fix SciTools/cf-units#152 by pinning numpy version to <1.17.0, to maintain support for Python 2 until support officially dropped
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Use latest cftime (#123)
+    
+    * fix doc-tests
+    
+    * fix assertRaisesRegexp DeprecationWarning
+    
+    * pin cftime
+    
+    * update doc-test
+    Use netcdftime (#85)
+    
+    use cftime
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Split requirements and added to setup.py
+    Review actions.
+    Support the case where cython is not available at setup.py.
+    Update MANIFEST for cython files (#104)
+    Prevent site.cfg being included in the sdist.
+    Remove the explicit _version from the MANIFEST - it is already included by the recursive-include.
+    Made use of versioneer for automatic versioning.
+    PyPI classifiers and README.rst
+    Add MANIFEST.in
+    Added CHANGES, INSTALL, and updated requirements.
+    Made use of versioneer for automatic versioning.
+    Add unit to latex conversion functionality (#141)
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Ensure collections.abc is used in python 3. Would fail with py38 without this change. (#142)
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Add six import and test
+    Python 3
+    Renaming part 2.
+    Changed Iris to cf_units.
+    First commit of iris units fork
+    Update license years
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Change import for Python >=3.2 (#109)
+    Add six import and test
+    Python 3
+    First batch of tests.
+    Renaming part 2.
+    Changed Iris to cf_units.
+    First commit of iris units fork
+    Add unit to latex conversion functionality (#141)
+    Update license years
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Added a reference to the unit system inside the Unit class
+    
+    This means that ut_free_system is only called by the Python GC *after* all
+    Units have been deallocated with ut_free. Before this change, it was
+    possible for ut_free_system to have been called first, and the result was that
+    subsequent ut_free calls resulted in a Segmentation Fault 11.
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Deligate equality to other if conversion to Unit fails. (#150)
+    
+    * Punt equality to other if conversion to Unit fails.
+    
+    * Add unit tests for not implemented equality.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Tidy up the propogation of exceptions from UDUNITS2, and ensure that we don't have multiple tracebacks in python 3. (#136)
+    
+    Also improved coverage of Unit.log, which was highlighted by this change.
+    
+    Bolster the unit tests to ensure that some of the exception handling is redundant.
+    Improvements to the changes in https://github.com/SciTools/cf-units/pull/135. (#137)
+    Unicode support (#135)
+    
+    * Always treat units as unicode. Closes #133.
+    
+    Also, allow a file encoding in the coding standards test, so that we can have some literal unicode characters for testing with.
+    
+    * Fix date2num test which is incorrectly using repr when str was intended.
+    
+    * Tidy up the Unit constructor for the py2 case, so that it is easier to see that the code can be deleted when the codebase becomes py3 only.
+    
+    * Handle unicode object in py2 specially, and always ensure that py2k returns a non-unicode for __str__ (unless sys.getdefaultencoding says otherwise).
+    
+    * Ensure that the error raised in Unit constructor handles unicode too.
+    Allowed __repr__ of a poorly constructed Unit. (#134)
+    Remove the _Unit factory, and make it a class method. (#131)
+    Fix python setup.py test to run doctests. (#132)
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Use latest cftime (#123)
+    
+    * fix doc-tests
+    
+    * fix assertRaisesRegexp DeprecationWarning
+    
+    * pin cftime
+    
+    * update doc-test
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Fix an erroneous calendar alias that put NO_LEAP == 360_day.
+    Fix multi-dim array unit conversion with unit.convert(...)
+    
+    In the ctypes implementation we used to get the raw array data pointer and pass that through, now we are going through Cython and hence the errors seen in #97:
+    
+    ```
+    ======================================================================
+    ERROR: test_circular_subset (iris.tests.experimental.regrid.test_regrid_area_weighted_rectilinear_src_and_grid.TestAreaWeightedRegrid)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "iris/tests/experimental/regrid/test_regrid_area_weighted_rectilinear_src_and_grid.py", line 532, in test_circular_subset
+        res = regrid_area_weighted(src, dest)
+      File "iris/experimental/regrid.py", line 722, in regrid_area_weighted_rectilinear_src_and_grid
+        src_x_bounds = _get_bounds_in_units(src_x, x_units, dtype)
+      File "iris/experimental/regrid.py", line 349, in _get_bounds_in_units
+        return coord.units.convert(coord.bounds.astype(dtype), units).astype(dtype)
+      File "cf_units/__init__.py", line 1840, in convert
+        _cv_convert_array[ctype](ut_converter, result, result)
+      File "cf_units/_udunits2.pyx", line 308, in cf_units._udunits2.convert_doubles
+        def convert_doubles(Converter converter, np.ndarray[np.float64_t] in_, np.ndarray[np.float64_t] out):
+    ValueError: Buffer has wrong number of dimensions (expected 1, got 2)
+    ```
+    
+    Also addresses the issue of inplace non-native byte ordered conversion (with a ValueError).
+    
+    Closes #97. Replaces #98.
+    Enable doctests, update documentation and enable pytest in travis. (#93)
+    Added calendar aliased for standard and gregorian. (#94)
+    Use netcdftime (#85)
+    
+    use cftime
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Replace all hashes (#) in a unit with 1 to make them dimensionless  (#90)
+    
+    Replace '#' character in units with a '1'
+    Use succinct unit string.
+    
+    self.name is rather verbose
+    Use self.symbol as consistent string representation
+    
+    - self.origin is the string to create the unit instance, it only exists in the original instance, not in returned instances after addition, etc.
+    - self.name spells out the unit and is rather verbose
+    - self.symbol uses short unit symbols, as used in scientific literature
+    Gracefully handle long time intervals (#72)
+    
+    * Gracefully handle long time intervals
+    
+    * Review actions: typo
+    
+    * License headers...
+    Fix license headers and coding standards tests
+    Update UCAR UDUNITS URL
+    
+     - previous URL produces HTTP 404 error
+    Fix num2date / date2num multidimensional arrays. Remove iterator support. Fix masked arrays (#68)
+    
+    * Fix num2date / date2num multidimensional arrays. Remove iterator support
+    Ensure dates are rounded to nearest second (#66)
+    
+    * Ensure dates are rounded to nearest second
+    Get XML database from site.cfg
+    Warn if udunits2 fails
+    MAINT: Changed based on review
+    MAINT: Changes based on review
+    BUG: Fixed as_unit calendar
+    TEST: Added failing unittest for as_unit
+    
+    Additionally removed non-identical duplicate __eq__ and __ne__ special
+    methods of Unit
+    Made use of versioneer for automatic versioning.
+    Modified docstring for "convert"
+    Changed default value for "inplace" to False #43
+    Added "inplace" keyword argument to "Unit.convert" #43
+    
+    - Changed "convert" to in-place for float-to-float conversions.
+    - Revised "convert" docstring.
+    - Updated unit test.
+    Bump version to v1.0.0
+    Bump version to v0.2.0
+    Python 3.5 testing
+    New iris_pr_1813
+    Add six import and test
+    sync from iris PR 1813
+    moved cf_units to __init__
+    bump_version_number
+    Adding test_coding_standards.py + py.test.
+    Release v0.1.0
+    Renaming part 2.
+    Changed Iris to cf_units.
+    First commit of iris units fork
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Add unit to latex conversion functionality (#141)
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Fix license headers and coding standards tests
+    Add six import and test
+    Adding test_coding_standards.py + py.test.
+    First batch of tests.
+    Renaming part 2.
+    Blank tests directory.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Added the empty file that isn't required for PEP420, but is required for setuptools.find_packages().
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Add unit to latex conversion functionality (#141)
+    Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing. (#138)
+    
+    * Added ANTLRv4 as a dependency in preparation for a full UDUNITS-2 grammar for parsing.
+    
+    * Handle conftest license header details, and other coding standards related things.
+    
+    * Attempt at fixing sticker bot.
+    
+    * Slight tweaks for code hygene.
+    Drop pep8 testing, as it is done for us by stickler. (#139)
+    Unicode support (#135)
+    
+    * Always treat units as unicode. Closes #133.
+    
+    Also, allow a file encoding in the coding standards test, so that we can have some literal unicode characters for testing with.
+    
+    * Fix date2num test which is incorrectly using repr when str was intended.
+    
+    * Tidy up the Unit constructor for the py2 case, so that it is easier to see that the code can be deleted when the codebase becomes py3 only.
+    
+    * Handle unicode object in py2 specially, and always ensure that py2k returns a non-unicode for __str__ (unless sys.getdefaultencoding says otherwise).
+    
+    * Ensure that the error raised in Unit constructor handles unicode too.
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Enable doctests, update documentation and enable pytest in travis. (#93)
+    Fix license headers and coding standards tests
+    Made use of versioneer for automatic versioning.
+    Add six import and test
+    Adding test_coding_standards.py + py.test.
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Use netcdftime (#85)
+    
+    use cftime
+    Add six import and test
+    First batch of tests.
+    Renaming part 2.
+    Blank tests directory.
+    Deligate equality to other if conversion to Unit fails. (#150)
+    
+    * Punt equality to other if conversion to Unit fails.
+    
+    * Add unit tests for not implemented equality.
+    Tidy up the propogation of exceptions from UDUNITS2, and ensure that we don't have multiple tracebacks in python 3. (#136)
+    
+    Also improved coverage of Unit.log, which was highlighted by this change.
+    
+    Bolster the unit tests to ensure that some of the exception handling is redundant.
+    Improvements to the changes in https://github.com/SciTools/cf-units/pull/135. (#137)
+    Unicode support (#135)
+    
+    * Always treat units as unicode. Closes #133.
+    
+    Also, allow a file encoding in the coding standards test, so that we can have some literal unicode characters for testing with.
+    
+    * Fix date2num test which is incorrectly using repr when str was intended.
+    
+    * Tidy up the Unit constructor for the py2 case, so that it is easier to see that the code can be deleted when the codebase becomes py3 only.
+    
+    * Handle unicode object in py2 specially, and always ensure that py2k returns a non-unicode for __str__ (unless sys.getdefaultencoding says otherwise).
+    
+    * Ensure that the error raised in Unit constructor handles unicode too.
+    Allowed __repr__ of a poorly constructed Unit. (#134)
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Use latest cftime (#123)
+    
+    * fix doc-tests
+    
+    * fix assertRaisesRegexp DeprecationWarning
+    
+    * pin cftime
+    
+    * update doc-test
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Fix an erroneous calendar alias that put NO_LEAP == 360_day.
+    Fix multi-dim array unit conversion with unit.convert(...)
+    
+    In the ctypes implementation we used to get the raw array data pointer and pass that through, now we are going through Cython and hence the errors seen in #97:
+    
+    ```
+    ======================================================================
+    ERROR: test_circular_subset (iris.tests.experimental.regrid.test_regrid_area_weighted_rectilinear_src_and_grid.TestAreaWeightedRegrid)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "iris/tests/experimental/regrid/test_regrid_area_weighted_rectilinear_src_and_grid.py", line 532, in test_circular_subset
+        res = regrid_area_weighted(src, dest)
+      File "iris/experimental/regrid.py", line 722, in regrid_area_weighted_rectilinear_src_and_grid
+        src_x_bounds = _get_bounds_in_units(src_x, x_units, dtype)
+      File "iris/experimental/regrid.py", line 349, in _get_bounds_in_units
+        return coord.units.convert(coord.bounds.astype(dtype), units).astype(dtype)
+      File "cf_units/__init__.py", line 1840, in convert
+        _cv_convert_array[ctype](ut_converter, result, result)
+      File "cf_units/_udunits2.pyx", line 308, in cf_units._udunits2.convert_doubles
+        def convert_doubles(Converter converter, np.ndarray[np.float64_t] in_, np.ndarray[np.float64_t] out):
+    ValueError: Buffer has wrong number of dimensions (expected 1, got 2)
+    ```
+    
+    Also addresses the issue of inplace non-native byte ordered conversion (with a ValueError).
+    
+    Closes #97. Replaces #98.
+    Added calendar aliased for standard and gregorian. (#94)
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Fix license headers and coding standards tests
+    Correct some odd assertions
+    Further tests improvements
+    Changed default value for "inplace" to False #43
+    Added "inplace" keyword argument to "Unit.convert" #43
+    
+    - Changed "convert" to in-place for float-to-float conversions.
+    - Revised "convert" docstring.
+    - Updated unit test.
+    Add six import and test
+    import change
+    Initial tidy of the tests
+    Python 3
+    Remove _handler calls
+    First batch of tests.
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Test on python 3.7... (#116)
+    
+    * use errno
+    
+    * test py37
+    
+    * don't use travis-ci python
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Fix license headers and coding standards tests
+    Add six import and test
+    Adding test_coding_standards.py + py.test.
+    First batch of tests.
+    Renaming part 2.
+    Blank tests directory.
+    Allowed __repr__ of a poorly constructed Unit. (#134)
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Replace all hashes (#) in a unit with 1 to make them dimensionless  (#90)
+    
+    Replace '#' character in units with a '1'
+    Gracefully handle long time intervals (#72)
+    
+    * Gracefully handle long time intervals
+    
+    * Review actions: typo
+    
+    * License headers...
+    MAINT: Changed based on review
+    TEST: Added failing unittest for as_unit
+    
+    Additionally removed non-identical duplicate __eq__ and __ne__ special
+    methods of Unit
+    New iris_pr_1813
+    Add six import and test
+    Adding test_coding_standards.py + py.test.
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    MAINT: Changed based on review
+    MAINT: Changes based on review
+    MAINT: Removed unnecessary mock import
+    BUG: Fixed as_unit calendar
+    TEST: Added failing unittest for as_unit
+    
+    Additionally removed non-identical duplicate __eq__ and __ne__ special
+    methods of Unit
+    Unicode support (#135)
+    
+    * Always treat units as unicode. Closes #133.
+    
+    Also, allow a file encoding in the coding standards test, so that we can have some literal unicode characters for testing with.
+    
+    * Fix date2num test which is incorrectly using repr when str was intended.
+    
+    * Tidy up the Unit constructor for the py2 case, so that it is easier to see that the code can be deleted when the codebase becomes py3 only.
+    
+    * Handle unicode object in py2 specially, and always ensure that py2k returns a non-unicode for __str__ (unless sys.getdefaultencoding says otherwise).
+    
+    * Ensure that the error raised in Unit constructor handles unicode too.
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Use latest cftime (#123)
+    
+    * fix doc-tests
+    
+    * fix assertRaisesRegexp DeprecationWarning
+    
+    * pin cftime
+    
+    * update doc-test
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Use netcdftime (#85)
+    
+    use cftime
+    Gracefully handle long time intervals (#72)
+    
+    * Gracefully handle long time intervals
+    
+    * Review actions: typo
+    
+    * License headers...
+    Fix num2date / date2num multidimensional arrays. Remove iterator support. Fix masked arrays (#68)
+    
+    * Fix num2date / date2num multidimensional arrays. Remove iterator support
+    Ensure dates are rounded to nearest second (#66)
+    
+    * Ensure dates are rounded to nearest second
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Fix license headers and coding standards tests
+    Ensure dates are rounded to nearest second (#66)
+    
+    * Ensure dates are rounded to nearest second
+    flake8 + stickler (#127)
+    
+    * flake8 + stickler
+    
+    * Add flake8 requirement
+    
+    * nuke unused _as_tuple
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Use netcdftime (#85)
+    
+    use cftime
+    fix cross-calendar tests
+    Fix num2date / date2num multidimensional arrays. Remove iterator support. Fix masked arrays (#68)
+    
+    * Fix num2date / date2num multidimensional arrays. Remove iterator support
+    Ensure dates are rounded to nearest second (#66)
+    
+    * Ensure dates are rounded to nearest second
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Added the UDUNITS2 grammar and a graph representation of a unit (#140)
+    
+    * Added the UDUNITS2 grammar, a graph representation of a unit and an extensive test suite.
+    
+    * First tranche of review actions.
+    
+    * Second tranche of review actions.
+    
+    * Tidy up the parse rules, particularly timestamp and shift.
+    
+    * Remove operand from binary graph binary ops.
+    
+    * Fix lint.
+    
+    * Move the tokens definition as suggested in review.
+    Use cython to wrap udunits, rather than ctypes.
+    
+    Setup cython module. Wrap function ut_encode_date()
+    
+    Wrap all needed functions. Replace uses in cf_units __init__.py
+    Update site.cfg template
+    First batch of tests.
+    Documentation
+    Documentation
+    Documentation
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Enable doctests, update documentation and enable pytest in travis. (#93)
+    Fix license headers and coding standards tests
+    Set version string using module
+    Documentation
+    Added calendar aliased for standard and gregorian. (#94)
+    Documentation
+    Rename cf_units to cf-units  (#113)
+    
+    * Updated name to cf-units.
+    
+    * Updated the copyright and README/INSTALL.
+    
+    Copyright updated automatically with:
+    
+    ```
+    LC_ALL=C find . \
+        -path ./.git -prune \
+        -o -type f -name "*" \
+        -exec echo {} \; \
+        -exec sh -c 'perl -pi -e "s|This file is part of cf-units|This file is part of cf-units|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is free software|cf-units is free software|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|cf-units is distributed in|cf-units is distributed in|g" {};' \; \
+        -exec sh -c 'perl -pi -e "s|along with cf-units|along with cf-units|g" {};' \;
+    ```
+    Documentation

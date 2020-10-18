@@ -1,0 +1,415 @@
+﻿    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Syntax highlighting corrections 2
+    Syntax highlighting corrections in README
+    Modified README.md
+    Initial commit
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [fix] fix to null pointer exception
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    added appcompat v7
+    readded updated android support v4
+    updated compileSdkVersion and buildToolsVersion
+    updated gradle and target Sdk Version
+    updated plugin syntax
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    Coverted the project to use gradle 1.9 and Android Studio
+    Convert for use with Gradle & Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    [fix] fix to null pointer exception
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    Convert for use with Gradle & Android Studio
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Convert for use with Gradle & Android Studio
+    Untouched fork of Daniel's repo on bitbucket
+    [fix] build error and runtime error
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [fix] fix mistake of merging
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    BarGraph: Append or Prepend the unit programmatically using #BarGraph.appendUnit(Boolean doAppend)  --- Default is false (= prepended)
+    Set BarGraph unit programmatically using #BarGraph.setUnit(String unit)
+    Untouched fork of Daniel's repo on bitbucket
+    [add] we can draw horizontal grid line where we want to draw
+    [modify] modified LinGraph and StackedLineGraph to share drawing line and point method
+    [modify] modified LinGraph and StackedLineGraph to share BaseClass.
+    [add] implement  selecting color of each line in stacked line graph
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [fix] fix to draw each slice title on pie graph
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [add] we can draw horizontal grid line where we want to draw
+    [modify] modified LinGraph and StackedLineGraph to share BaseClass.
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    using AppCompat ActionBar instead of Sherlock ActionBar
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    [add] screnn shot
+    [add] screnn shot
+    [add] screnn shot
+    [add] screnn shot
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    updated annotations dependency
+    updated targetSdkVersion
+    updated android support library
+    updated gradle plugin
+    using new plugin syntax
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    Coverted the project to use gradle 1.9 and Android Studio
+    Convert for use with Gradle & Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Coverted the project to use gradle 1.9 and Android Studio
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] add StackedLineGraph sample
+    Coverted the project to use gradle 1.9 and Android Studio
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    fix scaling issues on bar graph
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    add default colors
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [fix] fix to null pointer exception
+    [fix] fix mistake of merging
+    [fix] support stacked bargraph click
+    enable stacked bargraph click
+    [fix] fix to add path to wrong destination.
+    Dawing path of BarGraph redundant  because instance of variable "path" is one.
+    so we should create variable "path" for each loop.
+    [fix] fix logic of finding chlicked bar index
+    indexSelected was updated to '-1' in the wrong timing.
+    if event action is MotionEvent.ACTION_UP and r.contains is false, indexSelected is updated '-1'.
+    so indexSelected can't hold correct value.
+    [fix] fix to draw StackedBarGraph
+    Drawing StackedBarGraph  extend every calling onDraw method.
+    because copying ArrayList was shallow copy. so I modified to deep copy.
+    [fix] fix type of BarStackSegment.Value.
+    type of BarStackSegment.Value should be float, because we should tailor to the Bar.Value type.
+    Add update() methods to BarGraph and PieGraph to match existing method in LineGraph
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    show numbers on axis for line charts
+    fix text bounds on bar chart
+    fix graph not updating
+    add default colors
+    add support for x, y axis labels on line chart
+    fix scaling on line and pie graphs
+    fix scaling issues on bar graph
+    Update BarGraph.java
+    
+    need to add this?
+    shouldUpdata=true,when Bargraph#setBars
+    remove unnecessary castings. proper (newer) annotations import
+    BarGraph: Append or Prepend the unit programmatically using #BarGraph.appendUnit(Boolean doAppend)  --- Default is false (= prepended)
+    Set BarGraph unit programmatically using #BarGraph.setUnit(String unit)
+    Untouched fork of Daniel's repo on bitbucket
+    [fix] build error and runtime error
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    add default colors
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    Untouched fork of Daniel's repo on bitbucket
+    [fix] fix to forget commiting file
+    [fix] build error and runtime error
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Add update() methods to BarGraph and PieGraph to match existing method in LineGraph
+    add default colors
+    add support for x, y axis labels on line chart
+    fix highlights in pie chart
+    fix clicking on pie charts
+    show key for pie charts
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    Untouched fork of Daniel's repo on bitbucket
+    [add] we can draw horizontal grid line where we want to draw
+    [fix] fix to enable click line graph point
+    [modify] modified LinGraph and StackedLineGraph to share drawing line and point method
+    [modify] modified LinGraph and StackedLineGraph to share BaseClass.
+    [add] enable select showing x axis values or y axis values
+    [modify] modify StackedLineGraph
+     adjust StackedLineGraph to  LineGraph
+    [fix] build error and runtime error
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    update LineGraph to show Label
+    
+    라인그래프에 라벨을 추가 할 수 있게 했어용
+    ex)
+    p.setLabel_string("TEST");
+    lg.setLabelSize(50);
+    adjust margins
+    show numbers on axis for line charts
+    add default colors
+    remove commented out line
+    add support for x, y axis labels on line chart
+    fix scaling on line and pie graphs
+    Update LineGraph.java
+    
+    Multiply sidePadding for usableWidth with 2 (left+right)
+    
+    -> Otherwise a Point at the max value on X-axis is out of Fragment:
+    
+    Issue:
+    http://www.abload.de/image.php?img=holographlibrary_linekdk1h.png
+    
+    Fix:
+    http://abload.de/img/holographlibrary_linef7kq4.png
+    remove unnecessary castings and initializations. small general code refactoring
+    Added more featured to Line Graph
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [fix] support stacked bargraph click
+    enable stacked bargraph click
+    [add] create develop branch
+    [fix] fix to draw StackedBarGraph
+    Drawing StackedBarGraph  extend every calling onDraw method.
+    because copying ArrayList was shallow copy. so I modified to deep copy.
+    [fix] fix type of BarStackSegment.Value.
+    type of BarStackSegment.Value should be float, because we should tailor to the Bar.Value type.
+    Added Stacked Bar Charts
+    
+    It is now possible to create stacked bar charts
+    [fix] fix to bug on StackedLine.getColor
+    if color isn't set, StackedLine.getColor throw IndexOutOfBoundsException.
+    so modified then return default color.
+    [add] implement  selecting color of each line in stacked line graph
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] implementation stacked line graph
+    Interim Implementation.
+    [add] we can draw horizontal grid line where we want to draw
+    [fix] fix to enable click line graph point
+    [modify] modified LinGraph and StackedLineGraph to share drawing line and point method
+    [modify] modified LinGraph and StackedLineGraph to share BaseClass.
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] implementation stacked line graph
+    Interim Implementation.
+    update LineGraph to show Label
+    
+    라인그래프에 라벨을 추가 할 수 있게 했어용
+    ex)
+    p.setLabel_string("TEST");
+    lg.setLabelSize(50);
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    add missing empty LinePoint constructor
+    Added more featured to Line Graph
+    Untouched fork of Daniel's repo on bitbucket
+    [add] we can draw horizontal grid line where we want to draw
+    [fix] fix to enable click line graph point
+    [modify] modified LinGraph and StackedLineGraph to share drawing line and point method
+    [modify] modified LinGraph and StackedLineGraph to share BaseClass.
+    [modify] modify StackedLineGraph
+     adjust StackedLineGraph to  LineGraph
+    [add] implement  selecting color of each line in stacked line graph
+    [add] fill stacked line graph
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    [add] implementation stacked line graph
+    Interim Implementation.
+    [modify] modified LinGraph and StackedLineGraph to share drawing line and point method
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    update LineGraph to show Label
+    
+    라인그래프에 라벨을 추가 할 수 있게 했어용
+    ex)
+    p.setLabel_string("TEST");
+    lg.setLabelSize(50);
+    fix scaling on line and pie graphs
+    remove unnecessary castings and initializations. small general code refactoring
+    add missing empty LinePoint constructor
+    Added more featured to Line Graph
+    Untouched fork of Daniel's repo on bitbucket
+    [modify] modify package name
+     modified "com.echo.*" to "hm.orz.octworks.*".
+    Untouched fork of Daniel's repo on bitbucket

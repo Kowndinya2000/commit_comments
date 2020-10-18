@@ -1,0 +1,29 @@
+﻿    content moved to stackforge
+    
+    cleaning out cruft
+    Remove code to manage BSD Packet Filter.
+    Clarification.
+    Fixing README markdown.
+    Adding a README.
+    remove pep8 section from tox.ini
+    
+    We use flake8 in the style section, so we don't need a separate pep8
+    section.
+    
+    Change-Id: Id61efc97bc32d47157d2f638557402a03ed8885c
+    Switch to flake8
+    
+    Use flake8, which lets us ignore some types of warnings.
+    
+    Change-Id: I0f4e3b1f0f5b2ebf77d1a7424c82a3ce7b0a597d
+    Signed-off-by: Doug Hellmann <doug.hellmann@dreamhost.com>
+    Clean up the tox.ini file
+    
+    DHC-831
+    update tox.ini files to disable sitepackages
+    Reorganize files for akanda.router package ns
+    
+    Move the files around so that requirements, testing, and source are
+    clustered for the router component.  The new organization also modifies
+    import paths to move modules into the akanda.router namespace.  Tests
+    are also moved into a single heirarchy.

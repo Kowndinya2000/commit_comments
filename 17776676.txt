@@ -1,0 +1,144 @@
+﻿    Update CONTRIBUTING.md
+    Add link to generic contribution guidelines
+    added contributing.md
+    Python MQTT client
+    Fix docs badge
+    Add docs badge
+    Add library specific docs link
+    Python MQTT client
+    Initial commit
+    Revert add Sphinx to requirements.txt
+    Add Sphinx to requirements.txt
+    Upgrade iso8601 dependency from 0.1.8 to 0.1.9.
+    
+    This release fixed an issue in which input strings which started
+    with a valid, complete iso8601 date (but contained arbitrary other
+    data after the valid prefix) would be parsed as valid, ignoring
+    the trailing arbitrary data.
+    
+    This was causing some id strings that begin with YYYYMM to be
+    converted into datetime objects (discarding the rest of the id)
+    instead of remaining as strings. For example,
+      '20151102bf08d0ad93eb49be0e33e8c675fee3' => datetime.datetime(2015, 11, 2, ...)
+    Python MQTT client
+    Added API documentation
+    Added API documentation
+    Modified code as per review comments
+    Added API documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    Modified code as per review comments
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Modified code as per review comments
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Added API documentation
+    Modified code as per review comments
+    Added API documentation
+    Added double quotes for Docstring
+    Spaces used for indentation
+    Added Post Device update API
+    Modified as per review comments
+    Added iterate over devices example
+    Added support for search devices
+    Modified the print to compatible with Python3
+    Added support for get time API
+    Demonstrate custom keepalive interval in process_commands example.
+    Fix command rejection in process_commands example.
+    Add the process_commands example program.
+    Allow configuring custom keepalive interval for MQTT connection.
+    Receive and pop command notifications into/from a queue in MQTTAPIBase.
+    Add the MQTTAPIBase.get request method.
+    Python MQTT client
+    Version 0.4.0
+    Version 0.3.0
+    Bump version to 0.2.0
+    Bump version to 0.1.1
+    Bump version to 0.1.0
+    Bump version to 0.0.3
+    v0.0.2
+    Python MQTT client
+    Apply split on tags list if it's an string
+    Python MQTT client
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Added support for iterate over devices
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Add support for device-level Commands API endpoints.
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Added support for iterate over devices
+    Added support for search devices
+    Add the Resource.refresh method.
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Added support for search devices
+    Added Post Device update API
+    Add support for device-level Commands API endpoints.
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Added new line in end of file
+    Added support for get time API
+    Added support for get time API
+    Python MQTT client
+    HTTPError removed from Python-mqtt documentation
+    Added API documentation
+    Python MQTT client

@@ -1,0 +1,3256 @@
+﻿    Update README.md
+    correct version tag .
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    Documentation enhanced
+    Reformatted badges
+    Add Gitter badge
+    .
+    build badge shows all branches, not only master
+    added issue stat badges
+    updated readme: more badges, NzazuFiddle screenshot
+    updated implementation status in README
+    Added status badge
+    added Xceed link in Readme.md
+    legend removed.
+    documentation added.
+    Initial commit
+    OneClickBuild update
+    Updated to current OneClickBuild, GitVersion
+    removed msbuild 12 /appveyor again as this gave msbuild problems with nunit runner?
+    fixed quoting issue
+    Updated build.bat to pick up msbuild from PATH, e.g. for AppVeyor
+    removed default nuget package source
+    basic project structure and build setup.
+    nuget package updates, image viewer (first draft)
+    fixes tests, improves code coverage.
+    tests added and adjusted.
+    generic check factory using activator.createinstance.
+    refactor validation message to exception
+    Updated to current OneClickBuild, GitVersion
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    added NZazuFiddle, need support for converting checks.
+    cleanup, metrics only on "library projects" and not in sample projects.
+    basic project structure and build setup.
+    Update NuGet API key
+    config cleanup. bump to 0.9
+    revert to c# 7.0 and vs 2017
+    remove cache from appveyor
+    not using pre version of gitversion.
+    update to visual studio 2019 build.
+    Simplify appveyor deployment
+    update build
+    Update appveyor.yml
+    build fixed.
+    (ci) publish only on tags. Now in sync with NWaveform.
+    appveyor build image changed
+    fixed appveyor.yml indenting
+    Updated to current OneClickBuild, GitVersion
+    Uploading tests on all branches, not only on "master"
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    appveyor, next try
+    .
+    next try
+    branch-conditional deployment for appveyor
+    Added extra line breaks for appveyor-ps, cf.: http://www.appveyor.com/docs/build-configuration#script-blocks-in-build-configuration
+    add test upload for appveyor
+    made setting api key quiet so the cleartext api key won't get displayed in the build log
+    added appveyor deployment
+    resharper code cleanup.
+    Updated solution info to awesome inc
+    basic project structure and build setup.
+    Migrate WhiteSource configuration file to json format
+    Initial WhiteSource configuration file
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    code cleamup (re-sharpen up)
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    resharper code cleanup.
+    makes the server (base-)uri injectable. field connection only contains relative path.
+    move rest client as default, resharpen things.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    no device location because does not work
+    location issues added. sample with current location added.
+    removing of unrequired fields. refactoring but tests not running.
+    resharpened
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    testing added and fixed.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    added read-only support
+    added focus support
+    removed extra glue code from NZazuFiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    fixed rowdefinition height = auto, adjusted namespaces
+    fixed compile of previous merge commit
+    Separated/refactored views to truly support MVVM
+    resharper code cleanup.
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    resharper code cleanup.
+    added read-only support
+    0.2.8: fixed scrollbar visiibility again.
+    fixed scrollbar visibility in preview view
+    simplified styling and visual tree
+    added splitters to fiddle
+    removed extra glue code from NZazuFiddle
+    added stack and grid layout
+    Separated/refactored views to truly support MVVM
+    FormData is bindable now, sample enhanced to store data.
+    resharper code cleanup.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    added read-only support
+    removed extra glue code from NZazuFiddle
+    fixed compile of previous merge commit
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazuFiddle, need support for converting checks.
+    package updates.
+    resharper code cleanup.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    simplified DockPanel with Grid
+    added splitters to fiddle
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    resharpened
+    code cleanup r#
+    changed text-changed -> lostfocus (real-time was becoming slow)
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    resharper code cleanup.
+    resharpened
+    code cleanup r#
+    Set default encoding to UTF8 (json)
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    changed text-changed -> lostfocus (real-time was becoming slow)
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    resharper code cleanup.
+    Updated to current OneClickBuild, GitVersion
+    added deploy-target (clickonce)
+    resharper code cleanup.
+    simplified DockPanel with Grid
+    added splitters to fiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    removed unused usings, disabled ReSharper warning
+    added some auto-completion
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    Separated/refactored views to truly support MVVM
+    resharper code cleanup.
+    added splitters to fiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    resharper code cleanup.
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    layout table only for fields, trying to get the values of the fields.
+    simplified styling and visual tree
+    simplified DockPanel with Grid
+    added splitters to fiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    resharpened
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added some auto-completion
+    Separated/refactored views to truly support MVVM
+    removed dead code.
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    added splitters to fiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    Separated/refactored views to truly support MVVM
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    Separated/refactored views to truly support MVVM
+    added "FocusOn" and "Width" to syntax highlighting
+    added syntax highlighting for "ShowFormatBar"
+    enhanced primitive sample, added autocompletion support for "option" to fiddle, fixed syntax definition
+    added some auto-completion
+    resharper code cleanup.
+    code cleanup r#
+    Serializer extracted and interface provided.
+    c#6 adjustments
+    adjustments: C#6, NUnit3
+    NZazuFiddle: more robust json validation
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    resharper code cleanup.
+    code cleanup r#
+    began c#6, nunit 3 adjustments
+    fixed sample order
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added some auto-completion
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Separated/refactored views to truly support MVVM
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    Added format to fielddefinition
+    added NZazuFiddle, need support for converting checks.
+    date field with tests implemented.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    package updates.
+    resharper code cleanup.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    - Added autocompletion for custom controls (UpDowns, TextBox, DateTimePicker, ...)
+    - Added sample to make use of UpDown-customization (clipping to min/max)
+    sample added to NZazuFiddle,BehaviorExtender now returns a list of behaviors
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    Separated/refactored views to truly support MVVM
+    removed dead code.
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    simplified DockPanel with Grid
+    added splitters to fiddle
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    Separated/refactored views to truly support MVVM
+    removed dead code.
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    removed extra glue code from NZazuFiddle
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    resharper code cleanup.
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    added some auto-completion
+    resharper code cleanup.
+    code cleanup, issue on table string value deserialization.
+    Finished conventions
+    
+    - all fixtures private now
+    c#6 adjustments
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added some auto-completion
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Separated/refactored views to truly support MVVM
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    Added format to fielddefinition
+    added NZazuFiddle, need support for converting checks.
+    date field with tests implemented.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    Separated/refactored views to truly support MVVM
+    resharper code cleanup.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    fixed rowdefinition height = auto, adjusted namespaces
+    fixed compile of previous merge commit
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    resharper code cleanup.
+    nuget package updates, image viewer (first draft)
+    removed unused usings, disabled ReSharper warning
+    added some auto-completion
+    Separated/refactored views to truly support MVVM
+    resharper code cleanup.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    .
+    added splitters to fiddle
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    Separated/refactored views to truly support MVVM
+    resharper code cleanup.
+    resharpened
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    c#6 adjustments
+    fixed notificiation changed
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    Separated/refactored views to truly support MVVM
+    removed dead code.
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    Interfaces replaced by concrete dictionary
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    fixed autocompletetion for group fields, added auto-completion for layouts (grid, stack)
+    - Added autocompletion for custom controls (UpDowns, TextBox, DateTimePicker, ...)
+    - Added sample to make use of UpDown-customization (clipping to min/max)
+    #68: added support for editable comboboxes
+    - bind to TextProperty instead of SelectedItem
+    - NZazuFiddle: adjusted primitives sample and auto-completion
+    Added generic auto completion
+    added option to parameterize Url-pattern in BehaviorSample, use e.g. "Settings": { "UrlPattern": "^file://"}
+    added "FocusOn" and "Width" to syntax highlighting
+    fixed auto-completion for "Name"
+    added auto completion support for "ShowFormatBar"
+    enhanced primitive sample, added autocompletion support for "option" to fiddle, fixed syntax definition
+    sample added to NZazuFiddle,BehaviorExtender now returns a list of behaviors
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    added "format"-setting  for richtext (plain, rtf, xaml)
+    unified field settings access: "height" is supported by all fields
+    added some auto-completion
+    resharper code cleanup.
+    adjustments: C#6, NUnit3
+    added some auto-completion
+    package updates.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    code cleamup (re-sharpen up)
+    autocomplete add file provider and aggregation provider.
+    no device location because does not work
+    location issues added. sample with current location added.
+    fix location box to be enabled only if converter is set. rename sample and add location box.
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    keyed options field added. open issue: duplicate values
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    basic infrastructure for the grid view.
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    - Added autocompletion for custom controls (UpDowns, TextBox, DateTimePicker, ...)
+    - Added sample to make use of UpDown-customization (clipping to min/max)
+    added read-only support
+    added option to parameterize Url-pattern in BehaviorSample, use e.g. "Settings": { "UrlPattern": "^file://"}
+    removed obsolete file
+    added a focus sample
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    simplified DockPanel with Grid
+    added splitters to fiddle
+    fix NCrunch build error: [MSB3173: Unable to write manifest '<file>'. '<error>'](https://msdn.microsoft.com/en-us/library/ms228219.aspx). Skip generating manifest during NCrunch.
+    fix manifest generation, cf.: http://pauldevenney.blogspot.de/2014/07/could-not-copy-file-manifest-because-it_22.html
+    added deploy-target (clickonce)
+    sample added to NZazuFiddle,BehaviorExtender now returns a list of behaviors
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added some auto-completion
+    Replace textboxes by AvalonEdit. added sample code for code completion (FormDefinition)
+    TODO:
+    - add syntax highlightin (Definiion, Data)
+    - get completion right
+    Separated/refactored views to truly support MVVM
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    OneClickBuild cleanup, removed unused settings and resources
+    removed dead code.
+    added NZazuFiddle, need support for converting checks.
+    code cleanup.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    sequence equals for sample model, ApplyChanges moved to NZazuView, IDictionary used for FormData.
+    FormData is bindable now, sample enhanced to store data.
+    sample ui with primitives definition
+    basic project structure and build setup.
+    autocomplete add file provider and aggregation provider.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    enhanced the error template: Seeing the hint required hovering with the mouse over the exclamation mark image.
+    For keyboard-only usage we show an additional popup that opens when the user focuses the invalid field
+    grid layout strategy extended with error template. the resources suck!
+    resharper code cleanup.
+    added read-only support
+    resharper code cleanup.
+    clean up of layout classes
+    began c#6, nunit 3 adjustments
+    added customized tabbing to layout sample.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    tuned mixed layout sample
+    added stack and grid layout
+    resharper code cleanup.
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    began c#6, nunit 3 adjustments
+    added read-only support
+    added a focus sample
+    resharper code cleanup.
+    Extended KeyedOptionField to behave as a publisher only
+    Extended corresponding KeyedOptionFieldSample with publisher only field
+    fixes not appeaing values if created during runtime e.g. in a table.
+    keyed options field added. open issue: duplicate values
+    resharper code cleanup.
+    Finished conventions
+    
+    - all fixtures private now
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    ads multiline text field to nzazu
+    resharper code cleanup.
+    Solve the problem with the redundant margins created by an automatically created border element around the GeoLocationBox
+    use fill uri like schema for dataconnection
+    makes the server (base-)uri injectable. field connection only contains relative path.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    all feature sample. fixing minor issues to controls.
+    fix location box to be enabled only if converter is set. rename sample and add location box.
+    began c#6, nunit 3 adjustments
+    - Added autocompletion for custom controls (UpDowns, TextBox, DateTimePicker, ...)
+    - Added sample to make use of UpDown-customization (clipping to min/max)
+    #68: added support for editable comboboxes
+    - bind to TextProperty instead of SelectedItem
+    - NZazuFiddle: adjusted primitives sample and auto-completion
+    added a focus sample
+    enhanced primitive sample, added autocompletion support for "option" to fiddle, fixed syntax definition
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    samples are now injected via constructor injection.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    date field with tests implemented.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    fixes some tests
+    tests added and adjusted.
+    refactoring of checks except datetime. datetime still todo.
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    began c#6, nunit 3 adjustments
+    fixed validation sample (added 'required' checks)
+    added a focus sample
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    samples are now injected via constructor injection.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    date field including tests added.
+    made checkbox.threestate the default.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    refactoring of checks except datetime. datetime still todo.
+    code cleamup (re-sharpen up)
+    all feature sample. fixing minor issues to controls.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    margin issues and form layout fixed.
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    testing added and fixed.
+    image viewer now toggles the images with space
+    nuget package updates, image viewer (first draft)
+    dtg formatting
+    fixed validation.
+    Serializer extracted and interface provided.
+    more advanced form with dataable.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    basic infrastructure for the grid view.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    samples are now injected via constructor injection.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    updates packages and fixes tests.
+    fix issue that view is null because of wrong service locator init. code formatting
+    factory (and more) injected to fields. no field creation in constructor.
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    resharpened
+    code cleanup r#
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    added option to parameterize Url-pattern in BehaviorSample, use e.g. "Settings": { "UrlPattern": "^file://"}
+    simplified fields access and fixed behaviors not attached to nested fields
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    sample added to NZazuFiddle,BehaviorExtender now returns a list of behaviors
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    registrations can removed.
+    sample added and issue fixed.
+    added stack and grid layout
+    samples are now injected via constructor injection.
+    OneClickBuild cleanup, removed unused settings and resources
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    resharper code cleanup.
+    checks with original value. needs to be reviewed
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    resharper code cleanup.
+    Small fix for setting the DateTimeFormat of an NZazu date-Field
+    
+    When the Field is created, it automatically sets the DateTimeFormat that is found inside of the provided Settings, and sets the wanted enum to "Custom".
+    
+    But with the Function SetProperty() --> GetConvertedValue() inside of the class PropertyExtensions the Value will be checked again and will fail most of the time, and leave the users confused as to why an error is Traced.
+    This change will fix that
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    package updates.
+    resharper code cleanup.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    Changes the conversion to use an instance of a RichTextBox instead of doing it by hand
+    Fixes a Problem with wrong encoding of special chars for the richtext field
+    
+    This commonly happens when someone would set the value of the field from the outside, to something like "ß", "ä", "ö", "ü" (and many other values). This also happens when this value is set through the `Values`-Part of the Form-Definition
+    
+    Using this new Convert fixes this issue, by:
+    - Converting everything that counts as a special character in to the appropriate RTF-Encoded representation
+    - Converting back the RTF-Encoded special characters
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    added optional format bar
+    tuned mixed layout sample
+    added "format"-setting  for richtext (plain, rtf, xaml)
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    resharper code cleanup.
+    icon for "set to today" changed to font awesome icon.
+    c#6 adjustments
+    nuget: target specific
+    nuget package fixes.
+    added NZazu.Xceed, made some classes public.
+    packages separated to main project and contracts.
+    Added Package.nuspec so we can build NuGet packages
+    Changes the conversion to use an instance of a RichTextBox instead of doing it by hand
+    Fixes a Problem with wrong encoding of special chars for the richtext field
+    
+    This commonly happens when someone would set the value of the field from the outside, to something like "ß", "ä", "ö", "ü" (and many other values). This also happens when this value is set through the `Values`-Part of the Form-Definition
+    
+    Using this new Convert fixes this issue, by:
+    - Converting everything that counts as a special character in to the appropriate RTF-Encoded representation
+    - Converting back the RTF-Encoded special characters
+    resharper code cleanup.
+    fix issue that view is null because of wrong service locator init. code formatting
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added optional format bar
+    added "format"-setting  for richtext (plain, rtf, xaml)
+    unified field settings access: "height" is supported by all fields
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    added NZazu.Xceed, made some classes public.
+    resharper code cleanup.
+    code cleamup (re-sharpen up)
+    code cleamup (re-sharpen up)
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    resharper code cleanup.
+    update nuget packages in solution
+    margin issues and form layout fixed.
+    Margin and Size adjustsed
+    issue #80 fixed
+    icon for "set to today" changed to font awesome icon.
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    code cleamup (re-sharpen up)
+    package updates.
+    resharper code cleanup.
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    icon for "set to today" changed to font awesome icon.
+    package updates.
+    nuget package updates, image viewer (first draft)
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    added NZazu.Xceed, made some classes public.
+    basic project structure and build setup.
+    resharper code cleanup.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    code cleamup (re-sharpen up)
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #52: changed try-catch to TryParse in SetStringValue
+    only set format string if not null, empty or whitespace
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    package updates.
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    code cleamup (re-sharpen up)
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    icon for "set to today" changed to font awesome icon.
+    package updates.
+    nuget package updates, image viewer (first draft)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    nuget package fixes.
+    unified field settings access: "height" is supported by all fields
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    added NZazu.Xceed, made some classes public.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    added NZazuFiddle, need support for converting checks.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    packages separated to main project and contracts.
+    cleanup, metrics only on "library projects" and not in sample projects.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    basic project structure and build setup.
+    resharper code cleanup.
+    code cleamup (re-sharpen up)
+    resharpened
+    code cleanup r#
+    testing for trivial classes ignored.
+    Property for using utcnow instead of now.
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    custom control with buttons, for some reason I cannot use xceed within the xaml.
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    unified field settings access: "height" is supported by all fields
+    Added xceed double & integer fields
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added test for uncovered code path.
+    added test
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    resharper code cleanup.
+    added NZazu.Xceed, made some classes public.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    samples are now injected via constructor injection.
+    added first tests for "text" and "bool".
+    basic project structure and build setup.
+    resharper code cleanup.
+    fixes some tests
+    exclude non reachable but required code test.
+    fixes and adds test for the contructor parameter of checks.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    package updates.
+    fixes tests, improves code coverage.
+    updates packages and fixes tests.
+    adds an aggregate check
+    update nuget packages in solution
+    fixes convention tests
+    removes not required interfaces and classes.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    location issues added. sample with current location added.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    removing of unrequired fields. refactoring but tests not running.
+    fix location box to be enabled only if converter is set. rename sample and add location box.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    serializer package
+    nuget package updates, image viewer (first draft)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    dictionary extensions for filtering on items, formdata should not contain empty (NULL) values.
+    clean up.
+    samples are now injected via constructor injection.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    added NZazuFiddle, need support for converting checks.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    packages separated to main project and contracts.
+    cleanup, metrics only on "library projects" and not in sample projects.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    basic project structure and build setup.
+    resharper code cleanup.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    added read-only support
+    added focus support
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    v2.1: need ApplyChanges for events from outside the UI
+    internalized ApplyChanges on LostFoucs
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    added NZazuFiddle, need support for converting checks.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    sequence equals for sample model, ApplyChanges moved to NZazuView, IDictionary used for FormData.
+    FormData is bindable now, sample enhanced to store data.
+    Added support for getting and setting field values.
+    Added tests for layout strategy and nzazu view dependency properties
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    resharper code cleanup.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    made FormData.Equals more robust.
+    dictionary extensions for filtering on items, formdata should not contain empty (NULL) values.
+    added NZazuFiddle, need support for converting checks.
+    resharper code cleanup.
+    generic check factory using activator.createinstance.
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    added option: values + value=string
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    samples are now injected via constructor injection.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    Added format to fielddefinition
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    sample ui with primitives definition
+    added first tests for "text" and "bool".
+    resharper code cleanup.
+    Finished conventions
+    
+    - all fixtures private now
+    package updates.
+    resharper code cleanup.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    resharper code cleanup.
+    c#6 adjustments
+    nuget: target specific
+    nuget package fixes.
+    packages separated to main project and contracts.
+    Added Package.nuspec so we can build NuGet packages
+    resharper code cleanup.
+    fixes and adds test for the contructor parameter of checks.
+    fixes tests, improves code coverage.
+    tests added and adjusted.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    resharper code cleanup.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    added a focus sample
+    added stack and grid layout
+    added first tests for "text" and "bool".
+    basic project structure and build setup.
+    resharper code cleanup.
+    tests added and adjusted.
+    generic check factory using activator.createinstance.
+    removing of unrequired fields. refactoring but tests not running.
+    Interfaces replaced by concrete dictionary
+    code cleanup (r#)
+    endless loop fixed
+    dict<>.add replaces with dict.addOrReplace
+    c#6 adjustments
+    made FormData.Equals more robust.
+    issue with dictionary extensions fixed.
+    dictionary extensions for filtering on items, formdata should not contain empty (NULL) values.
+    resharper code cleanup.
+    generic check factory using activator.createinstance.
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup (r#)
+    endless loop fixed
+    dict<>.add replaces with dict.addOrReplace
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    made FormData.Equals more robust.
+    issue with dictionary extensions fixed.
+    dictionary extensions for filtering on items, formdata should not contain empty (NULL) values.
+    resharper code cleanup.
+    generic check factory using activator.createinstance.
+    Finished conventions
+    
+    - all fixtures private now
+    resharper code cleanup.
+    tests added and adjusted.
+    Interfaces replaced by concrete dictionary
+    code cleanup (r#)
+    endless loop fixed
+    dict<>.add replaces with dict.addOrReplace
+    Finished conventions
+    
+    - all fixtures private now
+    implicit to dictionary operator now returns a fresh copy
+    made FormData.Equals more robust.
+    Added json/code assistance to NZazuFiddle: On errors show line number and position as well as json path
+    dictionary extensions for filtering on items, formdata should not contain empty (NULL) values.
+    Separated/refactored views to truly support MVVM
+    added NZazuFiddle, need support for converting checks.
+    Added support for getting and setting field values.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    resharper code cleanup.
+    added generic handling of behavior settings
+    samples are now injected via constructor injection.
+    package updates.
+    resharper code cleanup.
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    basic project structure and build setup.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    tests added and adjusted.
+    generic check factory using activator.createinstance.
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    serializer package
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Serializer extracted and interface provided.
+    generic check factory using activator.createinstance.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    resharper code cleanup.
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    code cleanups and some trivial tests.
+    basic project structure and build setup.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    generic check factory using activator.createinstance.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    Fix failing tests
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    resharper code cleanup.
+    location field added
+    elasticsuggestor added from nsuggest. namespace refactoring
+    location issues added. sample with current location added.
+    removing of unrequired fields. refactoring but tests not running.
+    resharper code cleanup.
+    location field added
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    adds an aggregate check
+    refactor validation message to exception
+    Finished conventions
+    
+    - all fixtures private now
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    checks with original value. needs to be reviewed
+    resharpened
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    checks with original value. needs to be reviewed
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    Simplified check: CultureInfo -> IFormatProvider
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    Finished conventions
+    
+    - all fixtures private now
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    Simplified check: CultureInfo -> IFormatProvider
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    fixes "IsValid" aggregate value check result
+    adds an aggregate check
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    fixes and adds test for the contructor parameter of checks.
+    fixes tests, improves code coverage.
+    additional tests added for code coverage. code cleanup.
+    tests added and adjusted.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    resharper code cleanup.
+    code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    resharpened
+    Finished conventions
+    
+    - all fixtures private now
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    Simplified check: CultureInfo -> IFormatProvider
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup r#
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    additional tests added for code coverage. code cleanup.
+    tests added and adjusted.
+    checks with original value. needs to be reviewed
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Fix failing tests
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    resharper code cleanup.
+    tests added and adjusted.
+    refactoring of checks except datetime. datetime still todo.
+    adds an aggregate check
+    checks with original value. needs to be reviewed
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    adjustments: C#6, NUnit3
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    Simplified check: CultureInfo -> IFormatProvider
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    checks with original value. needs to be reviewed
+    Fix typo
+    Finished conventions
+    
+    - all fixtures private now
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    Simplified check: CultureInfo -> IFormatProvider
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    tests added and adjusted.
+    refactoring of checks except datetime. datetime still todo.
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    Simplified check: CultureInfo -> IFormatProvider
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    #51 changed checks to accept null or whitespace
+    Simplified check: CultureInfo -> IFormatProvider
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    generic check factory using activator.createinstance.
+    checks with original value. needs to be reviewed
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    adds an aggregate check
+    resharper code cleanup.
+    basic project structure and build setup.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    move rest client as default, resharpen things.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    use fill uri like schema for dataconnection
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    resharper code cleanup.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    location field added
+    resharper code cleanup.
+    removes not required interfaces and classes.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    handle null result for suggestor
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    fixes tests, improves code coverage.
+    fixes convention tests
+    fixes tests, improves code coverage.
+    fixes convention tests
+    resharper code cleanup.
+    use fill uri like schema for dataconnection
+    elasticsuggestor added from nsuggest. namespace refactoring
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    revert to c# 7.0 and vs 2017
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    move rest client as default, resharpen things.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    use fill uri like schema for dataconnection
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    elasticsuggestor added from nsuggest. namespace refactoring
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    fixes convention tests
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    use fill uri like schema for dataconnection
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    removes not required interfaces and classes.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    handle null result for suggestor
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    fixes tests, improves code coverage.
+    move rest client as default, resharpen things.
+    removes not required interfaces and classes.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    images for documentation
+    updated readme: more badges, NzazuFiddle screenshot
+    images for documentation
+    added NZazu.Xceed, made some classes public.
+    added NZazuFiddle, need support for converting checks.
+    basic project structure and build setup.
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    logo added, field types added.
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    logo added, field types added.
+    enhance docs
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    first draft of the documentation
+    enhance docs
+    logo added, field types added.
+    first draft of the documentation
+    package updates.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    enhances testing
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    serializer package
+    nuget package updates, image viewer (first draft)
+    package updates.
+    resharper code cleanup.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    resharper code cleanup.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    serializer package
+    c#6 adjustments
+    nuget: target specific
+    nuget package fixes.
+    added NZazu.Xceed, made some classes public.
+    packages separated to main project and contracts.
+    Added Package.nuspec so we can build NuGet packages
+    resharper code cleanup.
+    autocomplete add file provider and aggregation provider.
+    robustness during deserialization
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    serializer package
+    testing added.
+    nuget package updates, image viewer (first draft)
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Serializer extracted and interface provided.
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    code cleanups and some trivial tests.
+    basic project structure and build setup.
+    package updates.
+    resharper code cleanup.
+    downgrade of newtonsoft json to 11.*
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    serializer package
+    nuget package updates, image viewer (first draft)
+    resharper code cleanup.
+    nuget package updates, image viewer (first draft)
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    resharper code cleanup.
+    robustness during deserialization
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    serializer package
+    nuget package updates, image viewer (first draft)
+    resharper code cleanup.
+    fix issue that view is null because of wrong service locator init. code formatting
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    enhances testing
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    use fill uri like schema for dataconnection
+    makes the server (base-)uri injectable. field connection only contains relative path.
+    move rest client as default, resharpen things.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    enhances testing
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    enhances testing
+    resharper code cleanup.
+    fix issue that view is null because of wrong service locator init. code formatting
+    elasticsuggestor added from nsuggest. namespace refactoring
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    enhances testing
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    use fill uri like schema for dataconnection
+    enhances testing
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    resharper code cleanup.
+    serializer package
+    nuget package updates, image viewer (first draft)
+    code cleanup, issue on table string value deserialization.
+    c#6 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    package updates.
+    resharper code cleanup.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    nuget package updates, image viewer (first draft)
+    c#6 adjustments
+    elasticsuggestor added from nsuggest. namespace refactoring
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    (breaking change) behavior moved to multiple support only
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    sample added and issue fixed.
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    added read-only support
+    added test for scrollbars
+    simplified fields access and fixed behaviors not attached to nested fields
+    recurse attaching behaviors
+    #58: behavior can access the view via method injection (AttachTo)
+    added focus support
+    refactored Behavior to attach to a "field" instead of a "control"
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    removed xaml altogether (obsolete)
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    fixed view not preserving form data
+    internalized ApplyChanges on LostFoucs
+    set field values catches keynotfound exception and continues, wrong test removed,
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    sample added and issue fixed.
+    added stack and grid layout
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Separated/refactored views to truly support MVVM
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    added NZazuFiddle, need support for converting checks.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    sequence equals for sample model, ApplyChanges moved to NZazuView, IDictionary used for FormData.
+    Added support for getting and setting field values.
+    avoid null values for FieldFactory and LayoutStrategy using CoerceCallback,
+    failing tests for update strategy and factory fixed.
+    Added tests for layout strategy and nzazu view dependency properties
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    resharper code cleanup.
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    directory structure chagned, tests enhanced.
+    Add "FieldFocusChanged" event to NZazuView class, wich is raised when a new field/element got focus on the view.
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    added read-only support
+    added focus support
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    v2.1: need ApplyChanges for events from outside the UI
+    internalized ApplyChanges on LostFoucs
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    added NZazuFiddle, need support for converting checks.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    sequence equals for sample model, ApplyChanges moved to NZazuView, IDictionary used for FormData.
+    FormData is bindable now, sample enhanced to store data.
+    Added support for getting and setting field values.
+    Added tests for layout strategy and nzazu view dependency properties
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    changes to error panel field.
+    ads multiline text field to nzazu
+    error field added. to-do: more readable error messages and increaes size
+    package updates.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    updates packages and fixes tests.
+    update nuget packages in solution
+    Rename class "FocusChangedEventArgs" to "FieldFocusChangedEventArgs"
+    Add "FieldFocusChanged" event to NZazuView class, wich is raised when a new field/element got focus on the view.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    add oneclickbuild to core pachage so it creates the nuget file
+    code cleamup (re-sharpen up)
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    keyed options field added. open issue: duplicate values
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    Tests for previous commit added
+    configurable value converter, by default a converter is used to supress exceptions.
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    package updates.
+    delete button added, awesome icons, tab after last field removed now works
+    serializer package
+    image viewer now toggles the images with space
+    nuget package updates, image viewer (first draft)
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    Serializer extracted and interface provided.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    layout table only for fields, trying to get the values of the fields.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    basic infrastructure for the grid view.
+    clean up of layout classes
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    added handling of generic field settings
+    added focus support
+    removed xaml altogether (obsolete)
+    added options field
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    testing issues fixed
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    date field including tests added.
+    date field with tests implemented.
+    integer field added.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    grid layout strategy test with test for application.
+    grid layout strategy extended with error template. the resources suck!
+    Added support for getting and setting field values.
+    implementation to subfolder.
+    packages separated to main project and contracts.
+    Added tests for layout strategy and nzazu view dependency properties
+    Added Package.nuspec so we can build NuGet packages
+    fieldfactory test.
+    cleanup, metrics only on "library projects" and not in sample projects.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    basic project structure and build setup.
+    resharper code cleanup.
+    delete button added, awesome icons, tab after last field removed now works
+    nuget: target specific
+    fixed project url
+    packages separated to main project and contracts.
+    Added Package.nuspec so we can build NuGet packages
+    code cleanup (r#)
+    endless loop fixed
+    dict<>.add replaces with dict.addOrReplace
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    began c#6, nunit 3 adjustments
+    added stack and grid layout
+    resharper code cleanup.
+    code cleanup.
+    factory (and more) injected to fields. no field creation in constructor.
+    directory structure chagned, tests enhanced.
+    resharper code cleanup.
+    added stack and grid layout
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    code cleanup, issue on table string value deserialization.
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    c#6 adjustments
+    fixed error content (removed "Exception")
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    resharper code cleanup.
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    Serializer extracted and interface provided.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    resharper code cleanup.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    resharper code cleanup.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    resharper code cleanup.
+    factory (and more) injected to fields. no field creation in constructor.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    package updates.
+    resharper code cleanup.
+    Marking Testing-Packages as Development Dependency
+    updates packages and fixes tests.
+    update nuget packages in solution
+    elasticsuggestor added from nsuggest. namespace refactoring
+    add oneclickbuild to core pachage so it creates the nuget file
+    removing of unrequired fields. refactoring but tests not running.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    OneClickBuild update
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    package updates.
+    delete button added, awesome icons, tab after last field removed now works
+    image viewer now toggles the images with space
+    nuget package updates, image viewer (first draft)
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    Updated to current OneClickBuild, GitVersion
+    basic project structure and build setup.
+    resharper code cleanup.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    began adding convention tests
+    c#6 adjustments
+    resharper code cleanup.
+    tests added and adjusted.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    test for commit before
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    error field added. to-do: more readable error messages and increaes size
+    package updates.
+    resharper code cleanup.
+    Fix "Tables in groups do not share their fields focus change" issue
+    Extend the "field focus change" event with focus change of table fields
+    Improve some dispose logic
+    Add "FieldFocusChanged" event to NZazuView class, wich is raised when a new field/element got focus on the view.
+    fix issue that view is null because of wrong service locator init. code formatting
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Fix invalid null returning
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    Interfaces replaced by concrete dictionary
+    resharpened
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    image viewer now toggles the images with space
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Serializer extracted and interface provided.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    clean up of layout classes
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added read-only support
+    NZazuView just accepts unregistered behaviors. TODO: Better throw an exception
+    added test for scrollbars
+    0.2.8: fixed scrollbar visiibility again.
+    simplified fields access and fixed behaviors not attached to nested fields
+    recurse attaching behaviors
+    #58: behavior can access the view via method injection (AttachTo)
+    added focus support
+    refactored Behavior to attach to a "field" instead of a "control"
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    fixed compile error
+    simplified styling and visual tree
+    removed xaml altogether (obsolete)
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    v2.1: need ApplyChanges for events from outside the UI
+    fixed view not preserving form data
+    internalized ApplyChanges on LostFoucs
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    sample added and issue fixed.
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    fixed rowdefinition height = auto, adjusted namespaces
+    testing issues fixed
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    added NZazuFiddle, need support for converting checks.
+    INZazuView now supports a validate check on all fields.
+    code cleanups and some trivial tests.
+    sequence equals for sample model, ApplyChanges moved to NZazuView, IDictionary used for FormData.
+    FormData is bindable now, sample enhanced to store data.
+    avoid null values for FieldFactory and LayoutStrategy using CoerceCallback,
+    failing tests for update strategy and factory fixed.
+    Added tests for layout strategy and nzazu view dependency properties
+    cleanup, metrics only on "library projects" and not in sample projects.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added first tests for "text" and "bool".
+    resharper code cleanup.
+    tuned error popup template not aligning correctly in all scenarios, cf.:
+    enhanced the error template: Seeing the hint required hovering with the mouse over the exclamation mark image.
+    For keyboard-only usage we show an additional popup that opens when the user focuses the invalid field
+    fixed path for image resource -> validation hints are now correctly displayed on error exclamation mark.
+    grid layout strategy extended with error template. the resources suck!
+    enhanced the error template: Seeing the hint required hovering with the mouse over the exclamation mark image.
+    For keyboard-only usage we show an additional popup that opens when the user focuses the invalid field
+    grid layout strategy extended with error template. the resources suck!
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    resharper code cleanup.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    c#6 adjustments
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    resharper code cleanup.
+    code cleanup.
+    c#6 adjustments
+    added generic handling of behavior settings
+    recurse attaching behaviors
+    sample added and issue fixed.
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    testing issues fixed
+    directory structure chagned, tests enhanced.
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #58: behavior can access the view via method injection (AttachTo)
+    removed unused using
+    sample added to NZazuFiddle,BehaviorExtender now returns a list of behaviors
+    code review.
+    registrations can removed.
+    sample added and issue fixed.
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    resharper code cleanup.
+    Finished conventions
+    
+    - all fixtures private now
+    resharper code cleanup.
+    General availablility of (default) behavors, implement settings for "SetBorder" as documentation. fixes issue #107
+    resharper code cleanup.
+    factory (and more) injected to fields. no field creation in constructor.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    added generic handling of behavior settings
+    #58: behavior can access the view via method injection (AttachTo)
+    refactored Behavior to attach to a "field" instead of a "control"
+    aided coverage metric
+    set field values catches keynotfound exception and continues, wrong test removed,
+    sample added and issue fixed.
+    tests and imlementations for behavior. behaviors can be extended using static class.
+    added stack and grid layout
+    testing issues fixed
+    directory structure chagned, tests enhanced.
+    resharper code cleanup.
+    simplified styling and visual tree
+    removed xaml altogether (obsolete)
+    basic project structure and build setup.
+    resharper code cleanup.
+    Derive all EventArgs-Classes from "System.EventArgs"
+    
+    All EventArgs-Classes should derive from this simple Base-Class. This is i.e. needed for Stuff like "WeakEventManager<TimeEntryCollection, TimeEntryEventArgs>.AddHandler(timeEntries, "TimeEntryAdded", weekView.TimeEntryAdded);" see: https://www.sdx-ag.de/2013/05/das-weak-event-pattern-in-net-45/
+    Extend the "field focus change" event with focus change of table fields
+    Improve some dispose logic
+    Rename class "FocusChangedEventArgs" to "FieldFocusChangedEventArgs"
+    Add "FieldFocusChanged" event to NZazuView class, wich is raised when a new field/element got focus on the view.
+    resharper code cleanup.
+    adds left alignment for stacked layout
+    clean up of layout classes
+    c#6 adjustments
+    added stack and grid layout
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    fixed rowdefinition height = auto, adjusted namespaces
+    directory structure chagned, tests enhanced.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    better separated test logic
+    made checkbox.threestate the default.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    check application for null or shoutdown started to make sure, the application exists.
+    grid layout strategy test with test for application.
+    grid layout strategy extended with error template. the resources suck!
+    Added tests for layout strategy and nzazu view dependency properties
+    resharper code cleanup.
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    added stack and grid layout
+    fixed rowdefinition height = auto, adjusted namespaces
+    directory structure chagned, tests enhanced.
+    grid layout strategy test with test for application.
+    validates on field load, changes type errorlist to error, grid layout optimized.
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    key as field parameter removed.
+    c#6 adjustments
+    added stack and grid layout
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    added stack and grid layout
+    resharper code cleanup.
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    clean up of layout classes
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    missing test coverage fixed, ResolveLayout tests with expectations.
+    added stack and grid layout
+    resharper code cleanup.
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    fixed NUnit3.console threading issues
+    began adding convention tests
+    resharper code cleanup.
+    refactor validation message to exception
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup r#
+    code cleanup, issue on table string value deserialization.
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    set field values catches keynotfound exception and continues, wrong test removed,
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    date field with tests implemented.
+    code cleanup.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    Added support for getting and setting field values.
+    resharper code cleanup.
+    refactor validation message to exception
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    fixed NUnit3.console threading issues
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    #66: disable set is read only for group fields
+    added more readonly tests. TODO: SetReadOnly should probably respect Settings. If Settingss.Contains("IsEnabled/IsReadOnly") maybe SetReadOnly should not override this.
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    date field with tests implemented.
+    resharper code cleanup.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    c#6 adjustments
+    #66: disable set is read only for group fields
+    added more readonly tests. TODO: SetReadOnly should probably respect Settings. If Settingss.Contains("IsEnabled/IsReadOnly") maybe SetReadOnly should not override this.
+    added read-only support
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    directory structure chagned, tests enhanced.
+    resharper code cleanup.
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    began adding convention tests
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    added focus support
+    resharper code cleanup.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup, issue on table string value deserialization.
+    configurable value converter, by default a converter is used to supress exceptions.
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    keyed options field added. open issue: duplicate values
+    configurable value converter, by default a converter is used to supress exceptions.
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    keyed options field added. open issue: duplicate values
+    validates on field load, changes type errorlist to error, grid layout optimized.
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    code cleanup, issue on table string value deserialization.
+    c#6 adjustments
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    simplified code
+    set field values catches keynotfound exception and continues, wrong test removed,
+    moved samples to NZazuFiddle, fixed view.formdata not including group field values on exchange
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    date field with tests implemented.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    resharper code cleanup.
+    clear data of table if all values are null or empty before adding a row. partially solves issue #85
+    fix issue with empty dictionary
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    resharper code cleanup.
+    robustness during deserialization
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    verify xml on deserialize and parent call.
+    serializer package
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Serializer extracted and interface provided.
+    resharper code cleanup.
+    clear data of table if all values are null or empty before adding a row. partially solves issue #85
+    robustness during deserialization
+    fix issue with empty dictionary
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    resharper code cleanup.
+    code cleamup (re-sharpen up)
+    robustness during deserialization
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    serializer package
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    Serializer extracted and interface provided.
+    Finished conventions
+    
+    - all fixtures private now
+    began c#6, nunit 3 adjustments
+    code cleanups and some trivial tests.
+    basic project structure and build setup.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    resharpened
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    date field including tests added.
+    date field with tests implemented.
+    decorate the binding to set the "null value" in case the field supports a null.
+    integer field added.
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added type test
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    enhanced readability of test
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    integer field added.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    Added support for getting and setting field values.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    resharper code cleanup.
+    Provide Information for a failed SetProperty Attempt
+    
+    Before there were no information about which Field is failing to set its Properties. The Exception that is caught inside the PropertyExtension will now be thrown again as an ArgumentException (because the caught Exception is always a normal Exception... which is not that optimal) and will be caught where the settings are actually applied. Here you'll have the ability to trace which field (with the key of that field) is affected, so searching for an error will be easier.
+    Add tracing on "GetConvertedValue" method of "PropertyExtensions" class
+    Finished conventions
+    
+    - all fixtures private now
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    fixed CultureInfo when converting generic string values to properties
+    added handling of generic field settings
+    resharper code cleanup.
+    Derive all EventArgs-Classes from "System.EventArgs"
+    
+    All EventArgs-Classes should derive from this simple Base-Class. This is i.e. needed for Stuff like "WeakEventManager<TimeEntryCollection, TimeEntryEventArgs>.AddHandler(timeEntries, "TimeEntryAdded", weekView.TimeEntryAdded);" see: https://www.sdx-ag.de/2013/05/das-weak-event-pattern-in-net-45/
+    fixed issue with duplicate entries.
+    keyed options field added. open issue: duplicate values
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    ads multiline text field to nzazu
+    resharper code cleanup.
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    resharpened
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    tests added, scrollwheel with up and down toggle, toggle can toggle back.
+    testing added and fixed.
+    image viewer now toggles the images with space
+    nuget package updates, image viewer (first draft)
+    validates on field load, changes type errorlist to error, grid layout optimized.
+    ads multiline text field to nzazu
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactoring of checks except datetime. datetime still todo.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    (breaking change) behavior moved to multiple support only
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    resharpened
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    code coverage and testing fixed.
+    added option: values + value=string
+    removed unused using.
+    sample added and issue fixed.
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    groupfield -> ContentControl
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    testing issues fixed
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    samples are now injected via constructor injection.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    date field including tests added.
+    FieldFactory redesign using dictionary for controls
+    better separated test logic
+    NZazuField.Value to a dependency property, checks are applied and executed.
+    code cleanups and some trivial tests.
+    implementation to subfolder.
+    fieldfactory test.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    fix issue that view is null because of wrong service locator init. code formatting
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Finished conventions
+    
+    - all fixtures private now
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    all feature sample. fixing minor issues to controls.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    location field added
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    resharper code cleanup.
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #52: changed try-catch to TryParse in SetStringValue
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    made DateFormat internal for testing
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    added NZazu.Xceed, made some classes public.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    date field including tests added.
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    Provide Information for a failed SetProperty Attempt
+    
+    Before there were no information about which Field is failing to set its Properties. The Exception that is caught inside the PropertyExtension will now be thrown again as an ArgumentException (because the caught Exception is always a normal Exception... which is not that optimal) and will be caught where the settings are actually applied. Here you'll have the ability to trace which field (with the key of that field) is affected, so searching for an error will be easier.
+    refactor validation message to exception
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Extended KeyedOptionField to behave as a publisher only
+    Extended corresponding KeyedOptionFieldSample with publisher only field
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Fix failing tests
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    resharper code cleanup.
+    all feature sample. fixing minor issues to controls.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    keyed options field added. open issue: duplicate values
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    #68: added support for editable comboboxes
+    - bind to TextProperty instead of SelectedItem
+    - NZazuFiddle: adjusted primitives sample and auto-completion
+    added option: values + value=string
+    added options field
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    Remove test fixure ignore. Previous commit has solved endless loop issue which caused these tests to hang.
+    some sta tests commented out for now because they take to long and make the deployment process break
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    tests added, scrollwheel with up and down toggle, toggle can toggle back.
+    testing added and fixed.
+    testing added.
+    nuget package updates, image viewer (first draft)
+    ads multiline text field to nzazu
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added type test
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    enhanced readability of test
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    integer field added.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    Added support for getting and setting field values.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    resharper code cleanup.
+    Restrict "AutoCompleteField" to only on "AutoCompleteManager"
+    
+    In some rare cases it may happen, that the "Loaded" Event of the "TextBox" will be called twice. Because an "AutoCompleteManager" will be added to the "TextBox" each time the "Loaded" Event is fired, it may be added multiple times, resulting in having more than one "AutoCompleteManager". Which results in displaying multiple popups, when the User writes something.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    code cleamup (re-sharpen up)
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #52: changed try-catch to TryParse in SetStringValue
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    simplified Settings-access: cannot be null
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    fix: checkboxes are now vertically centered
+    added type test
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    Added support for getting and setting field values.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    resharper code cleanup.
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    resharpened
+    method renaming, debugger class added. bumped 0.6.0
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    group field now supports a GroupBox in case a description is given (which is used as header)
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    clean up of layout classes
+    adjustments: C#6, NUnit3
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    fixes tests, improves code coverage.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    keyed options field added. open issue: duplicate values
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    all feature sample. fixing minor issues to controls.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Add test to proof valid NZazuField.Dispose() for multiple null reference behaviours
+    Add Null-Reference check for Behaviours
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    keyed options field added. open issue: duplicate values
+    resharpened
+    code cleanup r#
+    Description fix
+    Namespace fix
+    Avoid "InvalidCast" exceptions by using a null check
+    Make sure the control exists in case string value is accessed before the control creation
+    configurable value converter, by default a converter is used to supress exceptions.
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    supress cast exceptions using a diaper value convert (catches all the exceptions)
+    method renaming, debugger class added. bumped 0.6.0
+    "focusOn" fields replaced by "form data" field "__focusOn"
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added handling of generic field settings
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    sample added and issue fixed.
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    simplified Settings-access: cannot be null
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    added NZazu.Xceed, made some classes public.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    decorate the binding to set the "null value" in case the field supports a null.
+    integer field added.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    removed dead code -> test coverage 100% again
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    NZazuField.Value to a dependency property, checks are applied and executed.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    Added tests for layout strategy and nzazu view dependency properties
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    Change to the test
+    Provide Information for a failed SetProperty Attempt
+    
+    Before there were no information about which Field is failing to set its Properties. The Exception that is caught inside the PropertyExtension will now be thrown again as an ArgumentException (because the caught Exception is always a normal Exception... which is not that optimal) and will be caught where the settings are actually applied. Here you'll have the ability to trace which field (with the key of that field) is affected, so searching for an error will be easier.
+    refactor validation message to exception
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    Add test to proof valid NZazuField.Dispose() for multiple null reference behaviours
+    resharpened
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup r#
+    package updates, test fixed (for some reason it works in R# and NCrunch but noch in NUnit 3).
+    method renaming, debugger class added. bumped 0.6.0
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    Finished conventions
+    
+    - all fixtures private now
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added handling of generic field settings
+    #52: improved validation performance by replacing try-catch ValidationException with ValueCheckResult. Test Coverage: 100% again.
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    unified field settings access: "height" is supported by all fields
+    simplified Settings-access: cannot be null
+    directory structure chagned, tests enhanced.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    INZazuView now supports a validate check on all fields.
+    binding including tests for the correct behavior. value now with binding attached to the property (bit DependencyProperty still required)
+    NZazuField.Value to a dependency property, checks are applied and executed.
+    code cleanups and some trivial tests.
+    added validation support. TODO: complete tests that validation-rules are set to field.ValueControls
+    Added support for getting and setting field values.
+    additional tests for field definitions. tests now include valuecontrol. NZazuField test without implementation.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    testing added and fixed.
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    date field including tests added.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    Remove test fixure ignore. Previous commit has solved endless loop issue which caused these tests to hang.
+    some sta tests commented out for now because they take to long and make the deployment process break
+    (fix) issue double assign table data. If assigned less rows does not delete the additional rows.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    code cleanup, issue on table string value deserialization.
+    Tests for previous commit added
+    verify xml on deserialize and parent call.
+    cleanup.
+    tests added.
+    issue with add/remove rows fixed.
+    testing added and fixed.
+    image viewer now toggles the images with space
+    testing added.
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    layout table only for fields, trying to get the values of the fields.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added stack and grid layout
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    ads multiline text field to nzazu
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    location field added
+    Add possibilty to define multiple behaviours ("Behaviours" collection prop) on one field, but keep existing "Behaviour" prop for reasons of backward compatibility to not produce breaking changes. The two props can live in coexistence.
+    Add new sample behaviour "SetBorderBehavior"
+    Add multiple behaviours examples on "BehaviourSample" class
+    Add/Change related tests
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Changed format listing for dateTime comparison checks
+    Fix failing tests
+    Add functionality to define form wide dependend final checks
+    Add functionality to inter field on the fly (while typing) dependend checks
+    Add inter field dependend check for date time comparison / check (end time should alwys lie in futue compared to start time)
+    Extended validation example with date time inter field comparison / check
+    keyed options field added. open issue: duplicate values
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    Description fix
+    Namespace fix
+    fixes. view send to behavior using property injection.
+    fixes. view send to behavior using property injection.
+    nuget package updates, image viewer (first draft)
+    key as field parameter removed.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    Serializer extracted and interface provided.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    basic infrastructure for the grid view.
+    clean up of layout classes
+    c#6 adjustments
+    began c#6, nunit 3 adjustments
+    added option: values + value=string
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    Added xceed double & integer fields
+    - fixed FieldFactory not copying over settings from field definition to field
+    - added xceed DateTimePicker
+    - Simplified checks using AggregateCheck
+    - simplified DateField, robust Settings-access (if null) and culture
+    added NZazu.Xceed, made some classes public.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    - stringly-typed FieldDefinition.Checks for better persistence and real-time support in NZazuFiddle
+    - added ChecksFactory with support for "required, length, range, regex".
+    date field including tests added.
+    FieldFactory redesign using dictionary for controls
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    NZazuField.Value to a dependency property, checks are applied and executed.
+    code cleanups and some trivial tests.
+    implementation to subfolder.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    added control to NZazuField, added "label"
+    added first tests for "text" and "bool".
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    refactors the error with type object to exception with type exception.
+    changes the visualization of the exception to the exception message instead of the exception itself (for a userfriendly display).
+    update the validation of the binding if the check is changed. closes issue #91
+    refactor validation message to exception
+    Extend the "field focus change" event with focus change of table fields
+    Improve some dispose logic
+    checks with original value. needs to be reviewed
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    FIX fields within datatable are now disposed properly when datatable is disposed or row is removed
+    Add functionaloty to compare values (for now only datetime) in between table column fields (have to be in one row)
+    Add intra table  date time field comparison
+    Interfaces replaced by concrete dictionary
+    code cleanup (r#)
+    endless loop fixed
+    dict<>.add replaces with dict.addOrReplace
+    some sta tests commented out for now because they take to long and make the deployment process break
+    (fix) issue double assign table data. If assigned less rows does not delete the additional rows.
+    resharpened
+    code cleanup, issue on table string value deserialization.
+    method renaming, debugger class added. bumped 0.6.0
+    verify xml on deserialize and parent call.
+    cleanup.
+    tests added.
+    delete button added, awesome icons, tab after last field removed now works
+    issue with add/remove rows fixed.
+    testing added and fixed.
+    image viewer now toggles the images with space
+    tab issue fixed. serialization of table fixed.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    serializer has dict<string,string>, test to get test coverage back (except data table), fix with field serialization (datatime with formatting in data grid)
+    factory injected and used for field creation.
+    Serializer extracted and interface provided.
+    issue with empty table.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    layout table only for fields, trying to get the values of the fields.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    nzazu container control logic moved to control, field factory implements visitor pattern to create container control children. basic non working grid datatable implementation.
+    basic infrastructure for the grid view.
+    clean up of layout classes
+    adjustments: C#6, NUnit3
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added stack and grid layout
+    fieldfactory recursively creates fields. TODO: do the same for the layout strategy
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #68: added support for editable comboboxes
+    - bind to TextProperty instead of SelectedItem
+    - NZazuFiddle: adjusted primitives sample and auto-completion
+    added option: values + value=string
+    added options field
+    resharper code cleanup.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    checks with original value. needs to be reviewed
+    all feature sample. fixing minor issues to controls.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    location field added
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    added field.IsEditable. label,groups are not editable, field<T> is editable
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    configurable value converter, by default a converter is used to supress exceptions.
+    method renaming, debugger class added. bumped 0.6.0
+    cleanup.
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #52: changed try-catch to TryParse in SetStringValue
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazu.Xceed, made some classes public.
+    date field including tests added.
+    date field with tests implemented.
+    decorate the binding to set the "null value" in case the field supports a null.
+    integer field added.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    made checkbox.threestate the default.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    Added support for getting and setting field values.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    Fixes a Problem with wrong encoding of special chars for the richtext field
+    
+    This commonly happens when someone would set the value of the field from the outside, to something like "ß", "ä", "ö", "ü" (and many other values). This also happens when this value is set through the `Values`-Part of the Form-Definition
+    
+    Using this new Convert fixes this issue, by:
+    - Converting everything that counts as a special character in to the appropriate RTF-Encoded representation
+    - Converting back the RTF-Encoded special characters
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    factory (and more) injected to fields. no field creation in constructor.
+    resharpened
+    code cleanup r#
+    method renaming, debugger class added. bumped 0.6.0
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazu.Xceed, made some classes public.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    NZazuField.Value to a dependency property, checks are applied and executed.
+    Added support for getting and setting field values.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    resharper code cleanup.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    method renaming, debugger class added. bumped 0.6.0
+    nuget package updates, image viewer (first draft)
+    Revert "overridable methods and method converted to property. R#?"
+    
+    This reverts commit 3d540ddf90a3182b1d41d1ba96abd6497c0efd4c.
+    overridable methods and method converted to property. R#?
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    adjustments: C#6, NUnit3
+    began c#6, nunit 3 adjustments
+    #52: changed try-catch to TryParse in SetStringValue
+    fix: checkboxes are now vertically centered
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    Added DateTimePicker supporting Format in UI (skipped  it for WPF DatePicker as it not really needed in UI and seemed too complicated)
+    added NZazu.Xceed, made some classes public.
+    refactored class hierarchy from "basefield=label -> text" to "basefield -> label, text"
+    made checkbox.threestate the default.
+    - Added "Validate()" and "INZazuView.IsValid()"
+    - added supported for typed NZazuFields
+    Added support for getting and setting field values.
+    NZazuField and implementations now create a control an a label. the layouter presents the fields in a grid.
+    ! Breaking changes! design changed: now the factory has a serializer, the check factory and the behaviour factory. therefore some code was extracted from the view to the field factory or the fields itself. But now the table can handle the behaviour definitions. Awesome. Some testing to do and then I am ready.
+    implement dispose pattern correctly, code cleanup and aggregates ALL validation results for an aggregate result.
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    ADD clearing option values and removement of eventhandling in keyedoption DisposeField
+    Extended KeyedOptionField to behave as a publisher only
+    Extended corresponding KeyedOptionFieldSample with publisher only field
+    fixes not appeaing values if created during runtime e.g. in a table.
+    fixed issue with duplicate entries.
+    keyed options field added. open issue: duplicate values
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    (refactoring) fixing tests
+    removing of unrequired fields. refactoring but tests not running.
+    resharpened
+    key as field parameter removed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    began adding convention tests
+    began c#6, nunit 3 adjustments
+    added a group field prototype, adjusted namespaces "FieldFactory" -> "Fields" as most fields are here
+    directory structure chagned, tests enhanced.
+    interfaces in NZazu now with WPF suffix o point out these intefaces stick o WPF.
+    formatting on date not wokring properly, double formatting works, settings for the system, i18n support on formatting.
+    resharper code cleanup.
+    Fix loading of the Resource-Dictionary for "AutoCompleteManager"
+    
+    Previously the Resource-Dictionary was every single time the "AutoCompleteManager" was initialized, because the "FindName" Method of a ResourceDictionary was used. According to Microsoft's Documentation:
+    https://docs.microsoft.com/de-de/dotnet/api/system.windows.resourcedictionary.findname?view=netframework-4.8
+    This Method always returns null, because Keys are used in a Dictionary. That's why this piece of code was faulty.
+    fixes tests, improves code coverage.
+    Extend the "field focus change" event with focus change of table fields
+    Improve some dispose logic
+    removes not required interfaces and classes.
+    fixes issue with popup icon on focus.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    code cleamup (re-sharpen up)
+    autocomplete add file provider and aggregation provider.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    resharper code cleanup.
+    fixes and adds test for the contructor parameter of checks.
+    add autocomplete field to nzazu. use a simple value provider for autocomplete
+    changes to error panel field.
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    resharper code cleanup.
+    icon for "set to today" changed to font awesome icon.
+    tab issue fixed. serialization of table fixed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    layout table only for fields, trying to get the values of the fields.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    resharper code cleanup.
+    code cleanup, issue on table string value deserialization.
+    issue with add/remove rows fixed.
+    control container interface renamed to field container, prototype of value serialization (with xml :( )
+    layout table only for fields, trying to get the values of the fields.
+    now every field gets his configuration/definition injected. so it can handle his stuff :)
+    resharper code cleanup.
+    fixes tests, improves code coverage.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    location field added
+    resharper code cleanup.
+    update nuget packages in solution
+    Solve the problem with the redundant margins created by an automatically created border element around the GeoLocationBox
+    location field added
+    changes to error panel field.
+    error field added. to-do: more readable error messages and increaes size
+    resharper code cleanup.
+    exclude non reachable but required code test.
+    fixes tests, improves code coverage.
+    elasticsuggestor added from nsuggest. namespace refactoring
+    location issues added. sample with current location added.
+    all feature sample. fixing minor issues to controls.
+    fix location box to be enabled only if converter is set. rename sample and add location box.
+    location field added
+    changes to error panel field.
+    error field added. to-do: more readable error messages and increaes size
+    (nzazu) cleanup and renaming of files
+    (nzazu) version updates
+    (serializer) add method to add a row to a table dictionary
+    now every field gets his configuration/definition injected. so it can handle his stuff :)

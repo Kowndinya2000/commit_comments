@@ -1,0 +1,330 @@
+﻿    Recipe for CMSSW 7.6.X
+    Support for running over data
+    Update PUPPI version
+    Update installation instructions
+    Update README
+    Update README
+    Store electrons information
+    Initial refactoring
+    first commit
+    Initial commit
+    First commit of the particleDrawer program. This is a work in progress. The particleDrawer relies on the circle_intersection program to intelligently draw circles around jets.
+    First commit of the particleDrawer program. This is a work in progress. The particleDrawer relies on the circle_intersection program to intelligently draw circles around jets.
+    first commit
+    Cleanup of code before sending pull request. Cosmetic change only.
+    Added Gen Jet SoftDropMass
+    Added gen jet Nsubjettiness(tau1/2/3) and reco->gen_jet matching(idx).
+    tau1/2/3/4 and masses are added.
+    Update code for CMSSW 7.6.x
+    Make usage of JEC DBs easier
+    Support for running over data
+    Support for JECs database
+    PUPPI muon isolation does NOT require minimul PT cut.
+    Update installation instructions
+    remove a comment block mentioning a code which I removed in the previous commit.
+    Bug fix. Removed a wrong cut criteria on PFCandidates (a leftover)
+    Use CHS payloads and L2/L3 corrections for PUPPI/SK jets
+    Gen Jet information is added.
+     - Gen Jet Et/Eta/Phi/Mass.
+     - A flag showing matching to reconstructed jet.
+    Fix usage of PUPPI and SK payloads still not in the GT
+    Fix usage of PUPPI and SK payloads still not in the GT
+    Fix usage of PUPPI and SK payloads still not in the GT
+    uncomment python, delete genjet tree
+    add vars, add genjet
+    Use CHS payload for CHS MET Type1 corrections
+    Add standard MET
+    Resurrect Soft Killer
+    Fix missing include for METs reconstruction
+    Recreate METs collection on-the-fly for CHS and PUPPI
+    Remove 'jmfw' prefix from module name
+    update for latest version of JetToolBox
+    Turn on PUPPI diagnostics
+    remove EDM output file
+    Store information about primary vertices
+    [muons] support puppi-weighted isolation without muons
+    [muons] compute pf-weighted and puppi-weighted isolations
+    Store official IDs for electrons and photons
+    Store photons information
+    Store electrons information
+    Store muon isolation for cone size of 0.3 and 0.4
+    Rename Jet/METAnalyzer to avoid conflicts with DQM
+    Store HLT information
+    Store muons information
+    Store MET information
+    Add QG tagger information
+    Add PU Jet Id information
+    Reorganize framework python configuration
+    First commit of the producer to convert collections of reco::PFCandidate into pat::PackedCandidate
+    adding machinery for muon isolation and MET, and porting it to 74x
+    first commit
+    first commit
+    first commit
+    first commit
+    adding machinery for muon isolation and MET, and porting it to 74x
+    first commit
+    first working version with the bare features
+    first working version with the bare features
+    PUPPI muon isolation does NOT require minimul PT cut.
+    [muons] compute pf-weighted and puppi-weighted isolations
+    first commit
+    first commit
+    Update code for CMSSW 7.6.x
+    adding machinery for muon isolation and MET, and porting it to 74x
+    update frac definitoin
+    update parton flavor definition
+    Cleanup of code before sending pull request. Cosmetic change only.
+    Added Gen Jet SoftDropMass
+    Added gen jet Nsubjettiness(tau1/2/3) and reco->gen_jet matching(idx).
+    Remove debug message.
+    tau1/2/3/4 and masses are added.
+    Update code for CMSSW 7.6.x
+    Support for running over data
+    simple bug fix.
+    new variable is added :  Flag for gen jet to show if the gen-jet matches to any reco-jet that passes basic jet-ID criteria.
+    added new variable "chargedMultiplicity"
+    Store JEC factors for all levels
+    update, small bug fix
+    remove isMatched, jtpt, jteta
+    sync 0624
+    Added threshold of PT>5GeV for genjet stored into the output tuple.
+    Use CHS payloads and L2/L3 corrections for PUPPI/SK jets
+    Changed the type of allGenJet_PatJetMatched variable from vector<int> to vector<bool>.
+    remove rho, weight, npv, and pileup info
+    Gen Jet information is added.
+     - Gen Jet Et/Eta/Phi/Mass.
+     - A flag showing matching to reconstructed jet.
+    check the wrong indentation
+    check the wrong indentation
+    add vars, add genjet
+    [Jets] add energy fractions
+    Reduce on-disk pression by reducing precision of some variables
+    reduce disk-space occupation
+    Store official IDs for electrons and photons
+    Rename Jet/METAnalyzer to avoid conflicts with DQM
+    Store gen particle information for each particle
+    Store MET information
+    Add QG tagger information
+    Add PU Jet Id information
+    Store jet flavor and b-tagging information
+    Move event related information to a dedicated tree
+    Abstract physics object into a base class
+    Initial refactoring
+    Update code for CMSSW 7.6.x
+    Store official IDs for electrons and photons
+    Store electrons information
+    Update code for CMSSW 7.6.x
+    Store official IDs for electrons and photons
+    Store photons information
+    Use correct InputTag for PU summary
+    Update code for CMSSW 7.6.x
+    add pileup info to event tree
+    Store PDF information
+    Store run related information
+    Move event related information to a dedicated tree
+    Update code for CMSSW 7.6.x
+    [muons] support puppi-weighted isolation without muons
+    [muons] compute pf-weighted and puppi-weighted isolations
+    Use muon ID from official selectors
+    
+    This requiere at least CMMSSW 7.4.2
+    Store official IDs for electrons and photons
+    Store muon isolation for cone size of 0.3 and 0.4
+    Move isolation computation to a dedicated class
+    Store gen particle information for each particle
+    Store muons information
+    Update code for CMSSW 7.6.x
+    Remove unneeded branches
+    Initial refactoring
+    Move the declaration of the puppiTree to a new ntuple type called a puppiNtuple. This makes it easier to read the tree in other programs.
+    add puppiReader
+    Update code for CMSSW 7.6.x
+    Store information about primary vertices
+    Fix for f485e6870186ff4e6aa6a85757259db45d09c9db
+    Reduce memory usage
+    Initial refactoring
+    Update code for CMSSW 7.6.x
+    Store HLT information
+    Store JEC factors for all levels
+    Reduce on-disk pression by reducing precision of some variables
+    Store official IDs for electrons and photons
+    Store HLT information
+    Update code for CMSSW 7.6.x
+    Support for running over data
+    Store run related information
+    Store JEC factors for all levels
+    Reduce on-disk pression by reducing precision of some variables
+    Store official IDs for electrons and photons
+    Store HLT information
+    Update code for CMSSW 7.6.x
+    Recreate METs collection on-the-fly for CHS and PUPPI
+    Rename Jet/METAnalyzer to avoid conflicts with DQM
+    Store gen particle information for each particle
+    Store MET information
+    first commit
+    Cleanup of code before sending pull request. Cosmetic change only.
+    tau1/2/3/4 and masses are added.
+    Update code for CMSSW 7.6.x
+    uncomment python, delete genjet tree
+    add vars, add genjet
+    Resurrect Soft Killer
+    Reorganize framework python configuration
+    first commit
+    Adding some exception handling for multicrab scripts
+    Adding a multicrab script too
+    Fixed write location
+    Writing directly to JME space
+    Using updated submit script that will take a text file as input
+    Using updated submit script that will take a text file as input
+    Adding some exception handling for multicrab scripts
+    CRAB3 just blew my mind. I scripted a multicrab in 10 minutes.
+    Make usage of JEC DBs easier
+    Update code for CMSSW 7.6.x
+    Support for running over data
+    Make usage of JEC DBs easier
+    Make usage of JEC DBs easier
+    Make usage of JEC DBs easier
+    Support for running over data
+    Make usage of JEC DBs easier
+    Removing EDM output since it is not used
+    update for 74x
+    Adding a 74x branch
+    Adding JECs to the output ntuple
+    Making runValidator run off of expert-level toolbox for now
+    Make the input files xrootd compliant.
+    update
+    add puppiReader
+    switch to using jet toolbox implementation
+    first working version with the bare features
+    get something working for corrections
+    create pfchs jets, get evertything in order
+    add AK8 gen jets
+    adding many jet collections, starting to build inputs
+    first commit
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding crab files for 741 processing
+    Adding the QCD 470-600 pthat bin
+    Adding the QCD 470-600 pthat bin
+    Store run related information
+    Store muon isolation for cone size of 0.3 and 0.4
+    add pileup info to event tree
+    Store PDF information
+    Move event related information to a dedicated tree
+    Store information about primary vertices
+    Store official IDs for electrons and photons
+    Store electrons information
+    Store HLT information
+    adding machinery for muon isolation and MET, and porting it to 74x
+    Recreate METs collection on-the-fly for CHS and PUPPI
+    Rename Jet/METAnalyzer to avoid conflicts with DQM
+    Store MET information
+    Reduce on-disk pression by reducing precision of some variables
+    reduce disk-space occupation
+    Store gen particle information for each particle
+    Store gen object information
+    Store physics object charge
+    Abstract physics object into a base class
+    Move event related information to a dedicated tree
+    Abstract physics object into a base class
+    Initial refactoring
+    Update code for CMSSW 7.6.x
+    Store official IDs for electrons and photons
+    Store photons information
+    Cleanup of code before sending pull request. Cosmetic change only.
+    Added Gen Jet SoftDropMass
+    Added gen jet Nsubjettiness(tau1/2/3) and reco->gen_jet matching(idx).
+    tau1/2/3/4 and masses are added.
+    Update code for CMSSW 7.6.x
+    new variable is added :  Flag for gen jet to show if the gen-jet matches to any reco-jet that passes basic jet-ID criteria.
+    added new variable "chargedMultiplicity"
+    Store JEC factors for all levels
+    remove isMatched, jtpt, jteta
+    Changed the type of allGenJet_PatJetMatched variable from vector<int> to vector<bool>.
+    remove rho, weight, npv, and pileup info
+    Gen Jet information is added.
+     - Gen Jet Et/Eta/Phi/Mass.
+     - A flag showing matching to reconstructed jet.
+    check the wrong indentation
+    check indentation
+    Update JMEJetAnalyzer.h
+    add vars, add genjet
+    [Jets] add energy fractions
+    Reduce on-disk pression by reducing precision of some variables
+    Use only 16-bits to store the number of charged and neutral constituents of the jet
+    reduce disk-space occupation
+    Store official IDs for electrons and photons
+    Rename Jet/METAnalyzer to avoid conflicts with DQM
+    Store gen particle information for each particle
+    Store MET information
+    Add QG tagger information
+    Add PU Jet Id information
+    Store jet flavor and b-tagging information
+    Move event related information to a dedicated tree
+    Abstract physics object into a base class
+    Initial refactoring
+    Remove unneeded branches
+    Initial refactoring
+    [muons] support puppi-weighted isolation without muons
+    [muons] compute pf-weighted and puppi-weighted isolations
+    Use muon ID from official selectors
+    
+    This requiere at least CMMSSW 7.4.2
+    Store official IDs for electrons and photons
+    Store muon isolation for cone size of 0.3 and 0.4
+    Move isolation computation to a dedicated class
+    Store muons information
+    Add README on how to build the documentation
+    document the 'ids' branch
+    first version of the documentation
+    first version of the documentation
+    document the 'ids' branch
+    first version of the documentation
+    Update installation instructions
+    first version of the documentation
+    first version of the documentation
+    document MET
+    document the 'ids' branch
+    first version of the documentation
+    document leptons
+    first version of the documentation
+    first version of the documentation
+    first version of the documentation
+    first version of the documentation
+    document jet b-tagging branches
+    first version of the documentation
+    first version of the documentation
+    first version of the documentation
+    document MET
+    first version of the documentation
+    document MET
+    document the 'ids' branch
+    document leptons
+    first version of the documentation
+    document MET
+    document the 'ids' branch
+    document leptons
+    first version of the documentation
+    first commit
+    first commit
+    first commit
+    first commit
+    first commit
+    first commit
+    Update code for CMSSW 7.6.x
+    first commit
+    Update code for CMSSW 7.6.x
+    adding machinery for muon isolation and MET, and porting it to 74x
+    Removing obsolete convert.cc files
+    first commit
+    first commit
+    adding machinery for muon isolation and MET, and porting it to 74x
+    first commit

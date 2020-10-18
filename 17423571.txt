@@ -1,0 +1,766 @@
+﻿    User Friendly, Positive Messaging regarding MultiSite
+    Update the readme answers a bit for typos and accuracy.
+    Corrected formatting for memcached Q/A.
+    Explain memcached.php
+    Line breaks in the README.md file
+    Initial commit
+    wp
+    changed wp-config
+    ic
+    Set STAGING_DOMAIN
+    Add a WP_STAGE stub for designating the stage during deployment
+    Pull in a memcached config from memcached.php if it exists.
+    Use "tokens" for production database defaults. You can leave them the same in your repo and just have your deploy script populate them. This way you can share the repo with consultants without giving them access to your DB credentials.
+    Define WP_LOCAL_DEV as false when local-config.php is not present
+    Initial commit
+    Add a dummy wp-cli.yml file
+    Add blank index.php files to content/, content/themes/, content/plugins/, and content/mu-plugins/ to create the dirs and prevent directory listing on Apache
+    Initial commit
+    Add blank index.php files to content/, content/themes/, content/plugins/, and content/mu-plugins/ to create the dirs and prevent directory listing on Apache
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    fucking bones
+    asdas
+    asdasd
+    removed bones
+    added bones theme
+    Add blank index.php files to content/, content/themes/, content/plugins/, and content/mu-plugins/ to create the dirs and prevent directory listing on Apache
+    Register theme directory in WP subrepo
+    Add blank index.php files to content/, content/themes/, content/plugins/, and content/mu-plugins/ to create the dirs and prevent directory listing on Apache
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin
+    added bbpress plugin

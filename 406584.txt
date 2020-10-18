@@ -1,0 +1,95 @@
+﻿    Reintroduce install doc
+    Remove master branch source code Related to https://github.com/elastic/elasticsearch/issues/18916#issuecomment-226954174
+    Move to elasticsearch repo
+    Changed 1.x version to 1.7
+    update documentation with release 2.7.0
+    Fix version for snapshot
+    Update version matching matrix
+    update documentation with release 2.6.0
+    Add user dictionary test case
+    
+    Closes #59
+    Latest version is 2.5.0
+    update documentation with release 2.4.3
+    [doc] update compatibility matrix for elasticsearch 1.4.5
+    
+    Closes #58.
+    update documentation with release 2.5.0
+    create `es-1.5` branch
+    Docs: revise examples
+    Add "ja_stop" filter
+    
+     * can use a predefined "_japanese_" stop words
+     * can not use other predefined stop words
+     * upgrade to lucene 5
+     * add ja_stop to README
+    
+      Closes #45
+    Fix doc for es version < 1.4.3
+    update documentation with release 2.4.2
+    Fix typo: MecCab -> MeCab
+    Docs: revise examples
+    (cherry picked from commit 14ac3b0)
+    update documentation with release 2.4.1
+    update documentation with release 2.4.0
+    Create branch es-1.4 for elasticsearch 1.4.0
+    Docs: fix typo
+    Docs: make the welcome page more obvious
+    
+    Closes #39.
+    Update to elasticsearch 1.4.0
+    
+    Closes #38.
+    
+    (cherry picked from commit 7ee03e7)
+    Update to elasticsearch 1.3
+    
+    Closes #35.
+    Create branch es-1.2
+    Manage per version documentation links
+    Update master to elasticsearch master SNAPSHOT
+    fix typos in README.md
+    
+    Closes #23
+    prepare for next development iteration
+    prepare release elasticsearch-analysis-kuromoji-2.0.0
+    Add plugin release semi-automatic script
+    
+    Closes #22
+    prepare release elasticsearch-analysis-kuromoji-2.0.0.RC1
+    Update version 2.0.0.RC1
+    Preparing branch 1.x
+    Update headers
+    prepare release elasticsearch-analysis-kuromoji-1.7.0
+    Add JapaneseIterationMarkCharFilter support
+    
+    Currently, Kuromoji have JapaneseIterationMarkCharFilter.
+    Add IterationMarkCharFilter to analysis-kuromoji.
+    
+    Closes #7.
+    Update to Elasticsearch 0.90.8 / Lucene 4.6.0
+    Move tests to JUnit
+    
+    Closes #11.
+    Closes #14.
+    prepare release elasticsearch-analysis-kuromoji-1.6.0
+    Update to Elasticsearch 0.90.6 / Lucene 4.5.1
+    Closes #10.
+    Add description and example
+    Documentation: Version table is incorrect
+    Closes #5.
+    prepare release elasticsearch-analysis-kuromoji-1.5.0
+    Update to Elasticsearch 0.90.3 / Lucene 4.4.0
+    Closes #6.
+    prepare for next development iteration
+    prepare release elasticsearch-analysis-kuromoji-1.4.0
+    Update to Elasticsearch 0.90.1 / Lucene 4.3.0
+    Closes #4.
+    release 1.3.0
+    release 1.2.0
+    move to 0.90
+    Release 1.1.0
+    md format....
+    cleanup the additional analysis components
+    expose individual kuromoji token fitlers & tokenizers in elasticsearch in addition to the japanese analyzer
+    initial commit

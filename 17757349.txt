@@ -1,0 +1,225 @@
+﻿    Enjoy, World!  (initial release)
+    We need those stinkin' badges!
+    Fix missing word in README (#10)
+    Use pep8_style function names.  Keep compatibility.
+    
+    Updates version to 1.1.0 and adds a change log.
+    Enjoy, World!  (initial release)
+    Enjoy, World!  (initial release)
+    start a 1.3.1 changelog
+    Have exception name end in Error; Update the docs.
+    
+    Update the docstrings and changelog, have the new exception name
+    end in Error rather than Exception.
+    Bump version number to 1.3.0 and describe changes.
+    Update the version to 1.2.0 + describe changes. (#8)
+    Fix bug in get_port_for_process
+    
+    Added unit tests for corner cases where process id == port number.
+    Change default port range to avoid ephemeral ports
+    
+    The old range was 32768-60000, which collides with both the Linux range
+    of ephemeral ports, and the IANA recommended range.  The new range is
+    15000-24999, chosen to avoid ranges used by many different operating
+    systems and packages.
+    
+    See https://www.cymru.com/jtk/misc/ephemeralports.html
+    Use pep8_style function names.  Keep compatibility.
+    
+    Updates version to 1.1.0 and adds a change log.
+    Include the ChangeLog.md file in the next release.
+    Enjoy, World!  (initial release)
+    Fix bug in get_port_for_process
+    
+    Added unit tests for corner cases where process id == port number.
+    Change default port range to avoid ephemeral ports
+    
+    The old range was 32768-60000, which collides with both the Linux range
+    of ephemeral ports, and the IANA recommended range.  The new range is
+    15000-24999, chosen to avoid ranges used by many different operating
+    systems and packages.
+    
+    See https://www.cymru.com/jtk/misc/ephemeralports.html
+    Simplify is_port_free(), as discussed in the code review.
+    Use both IPv4+IPv6 sockets to check whether a port is free.
+    
+    This allows the portpicker to function in dual-stack and IPv4/IPv6-only
+    environments.
+    
+    For a port to be considered available, the kernel must support at least
+    one of (IPv6, IPv4), and the port must be available on each supported
+    family.
+    
+    Use identical/redundant implementations of bind() and is_port_free()
+    between portpicker and portserver.  I am assuming that these were
+    intentionally designed as self-contained programs, instead of sharing a
+    common library.
+    Reformat all code with YAPF.
+    Re-indent to 4 space PEP-8 indentation.
+    
+    Our internal Python style is 2 space indents, that is rightfully
+    considered ugly in an open source code base.  Fixed.
+    Enjoy, World!  (initial release)
+    Handle a rare race condition with reserved ports. (#14)
+    Have exception name end in Error; Update the docs.
+    
+    Update the docstrings and changelog, have the new exception name
+    end in Error rather than Exception.
+    Don't continually ask the OS for a port, raise an exception (#13)
+    
+    Don't continually ask the OS for a port, raise an exception instead of
+    returning None if no port could be found from `pick_unused_port()`.
+    
+    On very busy machines, we might not be able to get a port from the OS
+    that is free on both TCP and UDP. Rather than spinning forever, only try
+    a handful of times.
+    Add a portserver_address kwarg to pick_unused_port (#12)
+    
+    This lets the caller specify the address of a portserver without having
+    to modify the environment.
+    Check the presence of AF_UNIX & IPPROTO_IPV6.
+    
+    * Proceed with defaults if socket.IPPROTO_IPV6 is not exported
+    
+    This patch adds a way around: https://bugs.python.org/issue29515
+    
+    * Add fallback to AF_INET if AF_UNIX is unavailable
+    
+    xref: https://github.com/google/python_portpicker/issues/4
+    Add a way to reserve ports and return the ports so they get reused. (#7)
+    
+    This way portpicker can also be used to manage a set of ports you were assigned from somewhere other than a portserver.
+    Print error details in get_port_from_port_server (#6)
+    
+    Print socket error details in get_port_from_port_server to aid debugging unexpected portserver infrastructure failures.
+    Change default port range to avoid ephemeral ports
+    
+    The old range was 32768-60000, which collides with both the Linux range
+    of ephemeral ports, and the IANA recommended range.  The new range is
+    15000-24999, chosen to avoid ranges used by many different operating
+    systems and packages.
+    
+    See https://www.cymru.com/jtk/misc/ephemeralports.html
+    Simplify is_port_free(), as discussed in the code review.
+    Use both IPv4+IPv6 sockets to check whether a port is free.
+    
+    This allows the portpicker to function in dual-stack and IPv4/IPv6-only
+    environments.
+    
+    For a port to be considered available, the kernel must support at least
+    one of (IPv6, IPv4), and the port must be available on each supported
+    family.
+    
+    Use identical/redundant implementations of bind() and is_port_free()
+    between portpicker and portserver.  I am assuming that these were
+    intentionally designed as self-contained programs, instead of sharing a
+    common library.
+    Use pep8_style function names.  Keep compatibility.
+    
+    Updates version to 1.1.0 and adds a change log.
+    Reformat all code with YAPF.
+    Re-indent to 4 space PEP-8 indentation.
+    
+    Our internal Python style is 2 space indents, that is rightfully
+    considered ugly in an open source code base.  Fixed.
+    Make GetPortFromPortServer() a public API.
+    
+    It was formerly internal only.
+    
+    Normal users should just use PickUnusedPort() but there are rare times
+    when a test framework _only_ wants a port if it came from a specific server.
+    Enjoy, World!  (initial release)
+    Make portpicker_test more robust, especially when run on a busy CI host. For (#15)
+    
+    tests that use portpiker without server, don't fail on the first failure to
+    grab a port; try a few times. For testIsPortFree, don't fail outright when a
+    port is stolen after portpicker guessed it was free, but try a few times. As
+    a general measure, expecting >95% success rate seems rasonable.
+    
+    Rewrite testPickPortsWithError, which appeared to be trying to test the two
+    parts of _pick_unused_port_without_server by playing chance games (that
+    failed ~10-15% of the time), so that it explicitly covers both parts by
+    mocking out the right function. The actual picking of the port can still
+    fail, since portpicker without server is inherently flaky, so try a few
+    times before giving up.
+    
+    With these changes, there were no failures in 10000 runs of the test (many
+    in parallel).
+    Have exception name end in Error; Update the docs.
+    
+    Update the docstrings and changelog, have the new exception name
+    end in Error rather than Exception.
+    Don't continually ask the OS for a port, raise an exception (#13)
+    
+    Don't continually ask the OS for a port, raise an exception instead of
+    returning None if no port could be found from `pick_unused_port()`.
+    
+    On very busy machines, we might not be able to get a port from the OS
+    that is free on both TCP and UDP. Rather than spinning forever, only try
+    a handful of times.
+    Add a portserver_address kwarg to pick_unused_port (#12)
+    
+    This lets the caller specify the address of a portserver without having
+    to modify the environment.
+    Check the presence of AF_UNIX & IPPROTO_IPV6.
+    
+    * Proceed with defaults if socket.IPPROTO_IPV6 is not exported
+    
+    This patch adds a way around: https://bugs.python.org/issue29515
+    
+    * Add fallback to AF_INET if AF_UNIX is unavailable
+    
+    xref: https://github.com/google/python_portpicker/issues/4
+    Add a way to reserve ports and return the ports so they get reused. (#7)
+    
+    This way portpicker can also be used to manage a set of ports you were assigned from somewhere other than a portserver.
+    Use both IPv4+IPv6 sockets to check whether a port is free.
+    
+    This allows the portpicker to function in dual-stack and IPv4/IPv6-only
+    environments.
+    
+    For a port to be considered available, the kernel must support at least
+    one of (IPv6, IPv4), and the port must be available on each supported
+    family.
+    
+    Use identical/redundant implementations of bind() and is_port_free()
+    between portpicker and portserver.  I am assuming that these were
+    intentionally designed as self-contained programs, instead of sharing a
+    common library.
+    Use pep8_style function names.  Keep compatibility.
+    
+    Updates version to 1.1.0 and adds a change log.
+    Reformat all code with YAPF.
+    Re-indent to 4 space PEP-8 indentation.
+    
+    Our internal Python style is 2 space indents, that is rightfully
+    considered ugly in an open source code base.  Fixed.
+    Make GetPortFromPortServer() a public API.
+    
+    It was formerly internal only.
+    
+    Normal users should just use PickUnusedPort() but there are rare times
+    when a test framework _only_ wants a port if it came from a specific server.
+    Enjoy, World!  (initial release)
+    Fix bug in get_port_for_process
+    
+    Added unit tests for corner cases where process id == port number.
+    Use both IPv4+IPv6 sockets to check whether a port is free.
+    
+    This allows the portpicker to function in dual-stack and IPv4/IPv6-only
+    environments.
+    
+    For a port to be considered available, the kernel must support at least
+    one of (IPv6, IPv4), and the port must be available on each supported
+    family.
+    
+    Use identical/redundant implementations of bind() and is_port_free()
+    between portpicker and portserver.  I am assuming that these were
+    intentionally designed as self-contained programs, instead of sharing a
+    common library.
+    Reformat all code with YAPF.
+    Re-indent to 4 space PEP-8 indentation.
+    
+    Our internal Python style is 2 space indents, that is rightfully
+    considered ugly in an open source code base.  Fixed.
+    Enjoy, World!  (initial release)

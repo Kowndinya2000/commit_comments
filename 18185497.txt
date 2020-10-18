@@ -1,0 +1,53 @@
+﻿    update the README file
+    modify the codes
+    add title format
+    fix bugs for python3
+    Update README.md
+    Update README.md
+    Fix a bug
+    
+    fix a bug by zygotine
+    update README for update details
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    modify this file
+    add a new file
+    Initial commit
+    modify the codes
+    fix bugs for python3
+    add a new file
+    modify the codes
+    fix bugs for python3
+    re-arrange the code
+    add a new file
+    modify the codes
+    fix bugs for python3
+    Fix a bug
+    
+    fix a bug by zygotine
+    add a new file
+    add German user manual
+    fix bugs for python3
+    fix bugs for python3
+    Update 13_lcd1602.py
+    add GPIO cleanup for lcd
+    fix unexpected indent bug
+    fix unexpected indent bug
+    Fix the pin again
+    fix the pin number
+    redefine the pin of 1602
+    add a new file
+    modify the codes
+    fix bugs for python3
+    re-arrange the code
+    add a new file
+    fix bugs for python3
+    fix  bug
+    add a new file
+    modify the codes
+    fix bugs for python3
+    Make the flowing LEDs behave as described in the Book V2.0
+    add a new file

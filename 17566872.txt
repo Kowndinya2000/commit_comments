@@ -1,0 +1,1580 @@
+﻿    merged with numerical
+    initial commit
+    change stocksymbol to txt file
+    update the web page
+    merged with numerical
+    initial commit
+    1. one keyword is not stored properly.
+    2. add .DS_store into .gitignore
+    updated keywords
+    add keyword components
+    merged with numerical
+    initial commit
+    Initial commit
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    final version
+    update the READMD.md, add some TODO tags
+    1. update the README.md
+    2. delete the useless Sentences.java file
+    merged with numerical
+    working version
+    display output format
+    display output format
+    display output format
+    with end-point
+    fix small bug
+    add json format
+    initial commit
+    Initial commit
+    update mongodb schema in readme.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Initial commit
+    change to row
+    T3numeric
+    company name
+    wait for crawl
+    good
+    Update a.json
+    working version
+    with end-point
+    merged with numerical
+    initial commit
+    Add starter application package
+    merged with numerical
+    initial commit
+    reformat the json
+    add the categories for risks
+    good
+    company name
+    wait for crawl
+    good
+    Update a.json
+    working version
+    with end-point
+    merged with numerical
+    initial commit
+    change stocksymbol to txt file
+    add a python script for converting plaintext stocksymbols to json format
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    data.gov front end code also migrated
+    use java 1.7 in build.xml
+    T3numeric
+    1. use button to delete keyword now
+    2. display keyword in upload.jsp page now
+    3. return json as keyword modification result now
+    4. add gson library
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    change stocksymbol to txt file
+    1. add symbol loading in dummy
+    2. modify the project setting to work with the new account
+    ui update
+    update the build xml to include json
+    add keyword components
+    add apis
+    add symbols api
+    insert into symbols
+    update the web page
+    construct the basic structur
+    Add starter application package
+    merged with numerical
+    initial commit
+    Add starter application package
+    final version
+    merged with numerical
+    initial commit
+    refactor Symbols class and its insert/remove functions
+    change stocksymbol to txt file
+    add interface for loading Symbols from json file
+    TODO: implement the loading function in Symbols.java
+    refine the symbol insert and add record output to mongoDB
+    1. add symbol loading in dummy
+    2. modify the project setting to work with the new account
+    update the original code
+    add keyword components
+    add symbols api
+    insert into symbols
+    dfsdf
+    update the dummy link
+    merged with numerical
+    initial commit
+    add a space in envs
+    insert into symbols
+    merged with numerical
+    initial commit
+    refactor Symbols class and its insert/remove functions
+    add interface for loading Symbols from json file
+    TODO: implement the loading function in Symbols.java
+    add symbols api
+    merged with numerical
+    fix result page when selet all year
+    1. commit before pull
+    fix merge bugs about Keywords
+    1. merge keywords count
+    1.  merge keyword count
+    add frequency api with docType
+    add docType in category api
+    1. Let the local db connect change to internet db connect when there is error
+    2. Fix on obvious error in the keyword, there should not be break in the while loop
+    3. Close some system out print
+    change frequency to double
+    add frequency api
+    initial commit
+    update api
+    add keyword components
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    navigation final debug
+    
+    navigation final debug
+    merged with numerical
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    1. Let the local db connect change to internet db connect when there is error
+    2. Fix on obvious error in the keyword, there should not be break in the while loop
+    3. Close some system out print
+    change frequency to double
+    initial commit
+    1. add DeleteKeyword API
+    2. add RemoveKeyword API
+    for sync
+    Categories check
+    categories
+    add models
+    fix navigation frontend
+    
+    fix navigation frontend
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    fix apis bugs and update API page
+    totally delete sha256
+    merge with Team3 and fix api
+    1. change searchBySha256() to searchByUrl()
+    we now have multiple documents of one type of a company in the MongoDB
+    add testing in Record.java main()
+    add searchBySha256() function, needs debugging
+    1. add sha256 into the document when saveing into MongoDB, sha256 is calculated from the riskfactor plaintext
+    2. fix a null pointer exception in CategoriesResource.java
+    fix remove bug
+    add docType for result api
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    add getDocument in Record to show the document type.
+    1. fixbug when result.jsp send request to find a non-existing record
+    
+    TODO: read keyword from MongoDB when analyzing text in KeywordMatcher
+    conflict to be resolved
+    Add keymatch
+    initial commit
+    "add word count to mongodb"
+    add word count
+    correct record save many times
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    edit Record to String
+    check style
+    1.nothing just a commit before pull the lastest code
+    modify the search of Records
+    refine the symbol insert and add record output to mongoDB
+    edit Record 2
+    modify Record
+    add models
+    add keyword components
+    update the url and fix a search by year bug
+    add apis
+    update the dummy link
+    update the web page
+    merged with numerical
+    merge with Team3 and fix api
+    add docType for result api
+    1. reflect the crawling result in crawler.jsp
+    2. add a continue tag in GetRiskFactor.java, line 166 to avoid NULL pointer exception.
+    try to reflect the internal result in crawler to the user side
+    1. fixbug when result.jsp send request to find a non-existing record
+    
+    TODO: read keyword from MongoDB when analyzing text in KeywordMatcher
+    1. add entrace to GetRiskFactor.java in Crawler.java
+    initial commit
+    add a overloaded crawl() function in Crawler.java file so that it is possible to support implicitly
+    crawling 10-K file or explicitly crawling 10-K or 20-F
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add apis
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    merged with numerical
+    fix result page when selet all year
+    add frequency api with docType
+    1. add sha256 into the document when saveing into MongoDB, sha256 is calculated from the riskfactor plaintext
+    2. fix a null pointer exception in CategoriesResource.java
+    add docType in category api
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    1. fixbug when result.jsp send request to find a non-existing record
+    
+    TODO: read keyword from MongoDB when analyzing text in KeywordMatcher
+    1. use button to delete keyword now
+    2. display keyword in upload.jsp page now
+    3. return json as keyword modification result now
+    4. add gson library
+    change frequency to double
+    add frequency api
+    initial commit
+    1. fix jQuery syntax error in upload.jsp
+    2. add empty category checking and empty keyword checking
+    1. add DeleteKeyword API
+    2. add RemoveKeyword API
+    1. add addkeyword in upload.jsp via form
+    2. add deleteKeyword in upload.jsp via form
+    for sync
+    1. add the accordingly API in APIs
+    2. add the implementation interface in CategoriesResource.java
+    Categories check
+    categories
+    update the original code
+    navigation final debug
+    
+    navigation final debug
+    fix bugs
+    
+    fix bugs
+    merged with numerical
+    initial commit
+    update api
+    add keyword components
+    add new apis
+    merged with numerical
+    fix apis bugs and update API page
+    merge with Team3 and fix api
+    add docType for result api
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    add getDocument in Record to show the document type.
+    initial commit
+    correct record save many times
+    add keyword components
+    add apis
+    fix navigation frontend
+    
+    fix navigation frontend
+    merged with numerical
+    data.gov front end code also migrated
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    merge with Team3 and fix api
+    1. reflect the crawling result in crawler.jsp
+    2. add a continue tag in GetRiskFactor.java, line 166 to avoid NULL pointer exception.
+    try to reflect the internal result in crawler to the user side
+    1. Let the local db connect change to internet db connect when there is error
+    2. Fix on obvious error in the keyword, there should not be break in the while loop
+    3. Close some system out print
+    initial commit
+    edit the table style in upload.jsp
+    add a overloaded crawl() function in Crawler.java file so that it is possible to support implicitly
+    crawling 10-K file or explicitly crawling 10-K or 20-F
+    1. add entrance to 10-K or 20-F file,
+    TODO: implement the selection of crawling API in CrawlerResource.java
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add new apis
+    update the ui of apis page
+    add apis
+    merged with numerical
+    initial commit
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add apis
+    add symbols api
+    navigation final debug
+    
+    navigation final debug
+    fix navigation frontend
+    
+    fix navigation frontend
+    merged with numerical
+    data.gov front end code also migrated
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    navigation final debug
+    
+    navigation final debug
+    fix navigation frontend
+    
+    fix navigation frontend
+    merged with numerical
+    data.gov front end code also migrated
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    final version
+    bugs
+    change to internal
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    final version
+    company name
+    wait for crawl
+    try again
+    cors support
+    using tradeoffanalysis
+    backend
+    fix connection with backend
+    change from inputstream to string
+    modify appearance
+    working version
+    sda
+    asdas
+    change from jsonp to json
+    T3numeric
+    fix navigation frontend
+    
+    fix navigation frontend
+    merged with numerical
+    data.gov front end code also migrated
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    initial commit
+    add alternative MongoDB on MongoLab
+    change mongolab database
+    use mongolab
+    1. add symbol loading in dummy
+    2. modify the project setting to work with the new account
+    fix to java package names
+    fixes to comparison.jsp, plus ability to use both bluemix deployment
+    with MongoLab and individual deployments with local mongo.
+    connect to a new service
+    Update mongo connector
+    insert into symbols
+    update the dummy link
+    delete Test.java file
+    test
+    initial commit
+    Update mongo connector
+    add new apis
+    merged with numerical
+    1. add new delete function to crawler.jsp
+    aboutus
+    1. rename Information Calculator to Chi Square calculator
+    2. Modified some code error
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    merged with numerical
+    1. rename Information Calculator to Chi Square calculator
+    2. Modified some code error
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    Data Gov Navigation Part
+    
+    It should be compatible with previous version. If any question, please
+    contact me immediately.
+    merged with numerical
+    1. add new delete function to crawler.jsp
+    commit before pull
+    aboutus
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    merged with numerical
+    1. add new delete function to crawler.jsp
+    aboutus
+    1. fix some syntax error
+    1. rename Information Calculator to Chi Square calculator
+    2. Modified some code error
+    1. reflect the crawling result in crawler.jsp
+    2. add a continue tag in GetRiskFactor.java, line 166 to avoid NULL pointer exception.
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    navigation final debug
+    
+    navigation final debug
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    merged with numerical
+    1. commit before pull
+    for sync, debugging
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    1. now get keywords from MongoDB, editted by JIATE LI
+    2. now always connect to MongoLab
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    1. Let the local db connect change to internet db connect when there is error
+    2. Fix on obvious error in the keyword, there should not be break in the while loop
+    3. Close some system out print
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    refactor Symbols class and its insert/remove functions
+    //nothing just commit for another pull
+    add static main function in GetURL.java and MongoHelper.java as UNIT Test
+    1.nothing just a commit before pull the lastest code
+    refine the symbol insert and add record output to mongoDB
+    fix to java package names
+    fixes to comparison.jsp, plus ability to use both bluemix deployment
+    with MongoLab and individual deployments with local mongo.
+    Update mongo connector
+    add keyword components
+    add apis
+    add symbols api
+    insert into symbols
+    update the dummy link
+    merged with numerical
+    initial commit
+    add word count
+    edit Record to String
+    check style
+    update the original code
+    add keyword components
+    merged with numerical
+    merge with Team3 and fix api
+    we now have multiple documents of one type of a company in the MongoDB
+    refine
+    temp
+    provide one keyword hashmap for Kang
+    implement get all riskfactor
+    add aggregation for all keywords
+    create a template for method crawlAll2
+    1. add debugging info
+    2. add toString() method for RequiredInfo
+    1. commit before pull
+    1. commit before pull
+    add docType for result api
+    for sync, debugging
+    1. reflect the crawling result in crawler.jsp
+    2. add a continue tag in GetRiskFactor.java, line 166 to avoid NULL pointer exception.
+    try to reflect the internal result in crawler to the user side
+    Modified crawlAll
+    To pull
+    Created method crawlAll(CIK)
+    add method to check if crawling operation works, and the number of document crawled
+    add crawler for 6K
+    for sync
+    1. add entrace to GetRiskFactor.java in Crawler.java
+    Finished this iteration
+    Add wordcount
+    Add keymatch
+    initial commit
+    add getCompanyName etc in GetRiskFactor.java, but not yet loaded into Record class
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merging files
+    merged with numerical
+    1. add debugging info
+    2. add toString() method for RequiredInfo
+    Add wordcount
+    Add keymatch
+    initial commit
+    merging files
+    merged with numerical
+    Add keymatch
+    merged with numerical
+    initial commit
+    add word count
+    update the original code
+    add keyword components
+    add new apis
+    merged with numerical
+    1. add some missing class
+    2. make mongo helper local connect to able to automatic switch to internet mongo db
+    1. now get keywords from MongoDB, editted by JIATE LI
+    2. now always connect to MongoLab
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    1. fixbug when result.jsp send request to find a non-existing record
+    
+    TODO: read keyword from MongoDB when analyzing text in KeywordMatcher
+    Add keymatch
+    merged with numerical
+    1. Let the local db connect change to internet db connect when there is error
+    2. Fix on obvious error in the keyword, there should not be break in the while loop
+    3. Close some system out print
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    correct record save many times
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    edit Record to String
+    check style
+    add url to mangoDB in Record
+    resolve conflicts
+    add a System.println in Get10K.java
+    modify the search of Records
+    refine the symbol insert and add record output to mongoDB
+    add getCompanyName in GetURL
+    1. implement GetSICFromsBuffer()
+    2. implement GetSICNameFromsBuffer()
+    modify Record
+    1. add GetCompanyNameFromsBuffer() in GetURL.java
+    2. add GetSICFromsBuffer() in GetURL.java
+    
+    TODO: implement the above functions
+    add keyword components
+    add apis
+    update the dummy link
+    update path
+    add 10k thing
+    update the web page
+    merged with numerical
+    1. commit before pull
+    1. Add new term weighting method, Chi-square, haven't put on the gui
+    2. Let keyword matcher to read the keyword on mongo db
+    merged with numerical
+    for sync, debugging
+    add crawler for 6K
+    Add keymatch
+    initial commit
+    merging files
+    merged with numerical
+    add method to check if crawling operation works, and the number of document crawled
+    initial commit
+    add getCompanyName etc in GetRiskFactor.java, but not yet loaded into Record class
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merging files
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add static main function in GetURL.java and MongoHelper.java as UNIT Test
+    modify the search of Records
+    add getCompanyName in GetURL
+    1. implement GetSICFromsBuffer()
+    2. implement GetSICNameFromsBuffer()
+    1. add GetCompanyNameFromsBuffer() in GetURL.java
+    2. add GetSICFromsBuffer() in GetURL.java
+    
+    TODO: implement the above functions
+    add apis
+    update the web page
+    merged with numerical
+    add aggregation for all keywords
+    merged with numerical
+    initial commit
+    add 10k thing
+    update the web page
+    modify appearance
+    merged with numerical
+    fix apis bugs and update API page
+    1. add sha256 into the document when saveing into MongoDB, sha256 is calculated from the riskfactor plaintext
+    2. fix a null pointer exception in CategoriesResource.java
+    test
+    initial commit
+    add details about the new APIs
+    1. add the accordingly API in APIs
+    2. add the implementation interface in CategoriesResource.java
+    update apis
+    update api
+    update the original code
+    add keyword components
+    add new apis
+    update the ui of apis page
+    add apis
+    update the apis
+    insert into symbols
+    update the web page
+    1. update about.jsp page, add Ajay's info, and more team members info
+    2. update tutorial.jsp page.
+    merged with numerical
+    add url and linkedin
+    1. add new delete function to crawler.jsp
+    aboutus
+    initial commit
+    update the emails and tutorial
+    ui update
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    merged with numerical
+    edit crawler and upload page
+    1. use button to delete keyword now
+    2. display keyword in upload.jsp page now
+    3. return json as keyword modification result now
+    4. add gson library
+    initial commit
+    1. add setTimeout() when getting the feedback of the latest change
+    2. add "success" to the class of the <tr> tag
+    edit the table style in upload.jsp
+    show content in Category
+    upload.jsp is now working
+    1. fix jQuery syntax error in upload.jsp
+    2. add empty category checking and empty keyword checking
+    edit upload form format
+    for sync
+    1. add DeleteKeyword API
+    2. add RemoveKeyword API
+    modify the javascript
+    1. use javascript & jquery to issue GET request()
+    1. add addkeyword in upload.jsp via form
+    2. add deleteKeyword in upload.jsp via form
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    update the ui of apis page
+    update the web page
+    initial commit
+    add data virtualization
+    merged with numerical
+    initial commit
+    Update mongo connector
+    refactor
+    add data virtualization
+    merged with numerical
+    initial commit
+    update the web page
+    Add starter application package
+    merged with numerical
+    initial commit
+    update the tutorial
+    update the index description
+    ui update
+    remove unused links
+    update the dummy link
+    update the web page
+    merged with numerical
+    initial commit
+    update the webpage
+    merged with numerical
+    fix result page when selet all year
+    edit comparison.jsp form
+    fix comparison.jsp with docType
+    add frequency api with docType
+    change frequency to double
+    add frequency
+    add frequency comparasion
+    initial commit
+    add year 2015
+    fixes to comparison.jsp, plus ability to use both bluemix deployment
+    with MongoLab and individual deployments with local mongo.
+    add a year selector
+    add comparison ui
+    ui update
+    add comparison page
+    merged with numerical
+    edit button
+    fix result page when selet all year
+    fix typo '6-F' -> '6-K'
+    test
+    add frequency api
+    add word count in result page
+    initial commit
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add 2015 to results.jsp
+    fixes to comparison.jsp, plus ability to use both bluemix deployment
+    with MongoLab and individual deployments with local mongo.
+    add comparison ui
+    ui update
+    update the results
+    Update mongo connector
+    update the url and fix a search by year bug
+    update results UI
+    ui update
+    update the web page
+    modify appearance
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    final version
+    test
+    little change
+    little change
+    require watson api
+    fix bugs in selects
+    add company
+    fix connection with backend
+    change to row
+    modify appearance
+    modified appearance
+    new frontend added
+    add new page
+    initial commit
+    update the ui of apis page
+    update the web page
+    modify some details of the crawler.jsp
+    merged with numerical
+    edit button
+    edit crawler and upload page
+    1. add new delete function to crawler.jsp
+    fix typo
+    fix typo '6-F' -> '6-K'
+    for sync, debugging
+    1. reflect the crawling result in crawler.jsp
+    2. add a continue tag in GetRiskFactor.java, line 166 to avoid NULL pointer exception.
+    1. in WebContent/crawler.jsp, add 20-F, 8-Q and something else
+    initial commit
+    1. add entrance to 10-K or 20-F file,
+    TODO: implement the selection of crawling API in CrawlerResource.java
+    1. use the HTTP Response from the jquery Ajax to construct the output of crawling result in crawler.jsp
+    fixes to comparison.jsp, plus ability to use both bluemix deployment
+    with MongoLab and individual deployments with local mongo.
+    ui update
+    add keyword components
+    update the url and fix a search by year bug
+    update results UI
+    ui update
+    add new apis
+    add 10k thing
+    update the web page
+    merged with numerical
+    initial commit
+    update the ui of apis page
+    update the web page
+    merged with numerical
+    final version
+    initial commit
+    update results UI
+    update the ui of apis page
+    add apis
+    add 10k thing
+    update the web page
+    Add starter application package
+    final version
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    1. update about.jsp page, add Ajay's info, and more team members info
+    2. update tutorial.jsp page.
+    merged with numerical
+    initial commit
+    update the emails and tutorial
+    update the tutorial
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    final version
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    code cleanup for screenshot
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    data.gov front end code also migrated
+    merged with numerical
+    try to draw
+    little change
+    little change
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    1. add addkeyword in upload.jsp via form
+    2. add deleteKeyword in upload.jsp via form
+    merged with numerical
+    initial commit
+    Add starter application package
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    good
+    merged with numerical
+    initial commit
+    ui update
+    merged with numerical
+    initial commit
+    ui update
+    merged with numerical
+    initial commit
+    ui update
+    merged with numerical
+    new frontend added
+    initial commit
+    add symbols api
+    insert into symbols
+    update the dummy link
+    add 10k thing
+    Add starter application package
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    two jars for json
+    merged with numerical
+    1. use button to delete keyword now
+    2. display keyword in upload.jsp page now
+    3. return json as keyword modification result now
+    4. add gson library
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    construct the basic structur
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    Add starter application package
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    two jars for json
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    Add starter application package
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    modify appearance
+    T3numeric
+    merged with numerical
+    initial commit
+    add apis
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    modify appearance
+    T3numeric
+    merged with numerical
+    add part of the other team's work into the git repo.
+    reference url: https://github.com/cmusv-sc/IBM-RiskAdvisor-Tradeoff
+    modify appearance
+    T3numeric
+    merged with numerical
+    initial commit
+    add symbols api
+    merged with numerical
+    initial commit
+    construct the basic structur
+    merged with numerical
+    modify appearance
+    initial commit
+    Update mongo connector
+    update the web page
+    merged with numerical
+    add url and linkedin
+    initial commit
+    ui update
+    update the web page
+    1. fix bug in CategoriesResources.java when try to convert Categories object into json msg
+    2. rename upload.jsp to customize.jsp
+    merged with numerical
+    add new page
+    initial commit
+    1. add place for user to manually add category and keyword
+    2. add error message for invalid symbols
+    add tutorial into the navigation bar
+    ui update
+    remove unused links
+    update the apis
+    insert into symbols
+    update the web page
+    merged with numerical
+    initial commit
+    add a python script for converting plaintext stocksymbols to json format
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    two jars for json
+    merged with numerical
+    1. use button to delete keyword now
+    2. display keyword in upload.jsp page now
+    3. return json as keyword modification result now
+    4. add gson library
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    construct the basic structur
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    Add starter application package
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    two jars for json
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    Add starter application package
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    modify appearance
+    T3numeric
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add apis
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    modify appearance
+    T3numeric
+    modify appearance
+    T3numeric
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    add symbols api
+    merged with numerical
+    initial commit
+    1. add the latest *.jar file into WebContent/WEB-INF/lib so that it could be included in the *.war file
+    2. modify the build.xml to include *.jar necessary for GetRiskFactor.java to operate
+    3. change the Get10kURLWithCIK() into GetURLWithCIK()
+    
+    TODO: need Zhiyu's team to modify the code so that in GetRiskFactor.java use the latest interface provided by Record class
+    add library to have it compiled
+    construct the basic structur

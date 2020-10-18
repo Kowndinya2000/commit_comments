@@ -1,0 +1,3175 @@
+﻿    Create README.md
+    05-02-2016
+    01-02-2016
+    01-02-2016
+    25-01-2016
+    aaaaa
+    modificacion basic
+    conectar con git hub
+    actualizacion de sistemas
+    actualizacion de sistemas
+    2014-04-25 - reparacion
+    2017-04-25
+    14032017
+    ticket finalizado 2, falta separacion
+    ticket finalizado, falta separacion
+    ticket
+    cargando a git
+    cargando a git
+    2014-04-25 - reparacion
+    2016-11-15
+    15112016
+    09-11-2016
+    2016-11-08
+    2016-11-08
+    2016-09-26
+    2016-09-23
+    2016-09-19
+    30-05-2016
+    05-02-2016
+    01-02-2016
+    01-02-2016
+    01-02-2016
+    2016-01-30-2
+    correciones sonomusic
+    conectar ip
+    modificacion reg venta
+    errores almacen
+    modificaciones
+    cargando a git
+    14032017
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    modificacion triggers
+    ticket finalizado, falta separacion
+    06032017
+    01032017
+    2016-11-24
+    15112016
+    09-11-2016
+    2016-11-08
+    2016-09-30
+    2016-09-26
+    159753 - elimianr modificacion
+    23/06/2016
+    02-02-2016
+    correciones ventas
+    CORECION VENTAS
+    correciones ventas
+    correciones ventas y traslado
+    seleccionar nick vendedor
+    anulacion traslado entre almacenes
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    CORRECCIONES EN GUIAS DE REMISION
+    actualizacion anula venta y mostrar vendedores por prioridad de cargo
+    correciones sonomusic
+    correciones sonomusic
+    modificacion reg venta
+    modificacion reg venta
+    creacion de loader
+    det venta
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    06032017
+    30-05-2016
+    actualizacion de sistemas
+    errores almacen
+    modificaciones
+    cargando a git
+    cierre caja
+    2017-04-25
+    cargando a git
+    2017-04-25
+    cargando a git
+    cargando a git
+    2017-04-25
+    ticket
+    consulta sunat
+    2016-11-19
+    modificacion de ventas, compras, traslados
+    actualizacion de sistemas
+    modificaciones
+    123456
+    themas
+    themas
+    cargando a git
+    2016-09-25
+    cargando a git
+    cargando a git
+    2016-09-23-2
+    2016-09-19
+    TICKET CON HILOS
+    14032017
+    modificacion triggers
+    2016-11-19
+    15112016
+    30-01-2016
+    pago_compras
+    pago_compras
+    modificaciones
+    TICKET CON HILOS
+    cargando a git
+    09-11-2016
+    cargando a git
+    cargando a git
+    cargando a git
+    29-01-2016
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    TICKET CON HILOS
+    cargando a git
+    2017-04-25
+    2016-11-08
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    cargando a git
+    cargando a git
+    cargando a git
+    123
+    cargando a git
+    actualizacion de sistemas
+    actualizacion de sistemas
+    2016-09-25
+    cargando a git
+    actualizacion de sistemas
+    actualizacion de sistemas
+    cargando a git
+    2014-05-05
+    2014-04-25 - reparacion
+    2017-04-25
+    08032017
+    consulta sunat
+    2017-04-25
+    ticket
+    cargando a git
+    CORRECCIONES EN GUIAS DE REMISION
+    cargando a git
+    cargando a git
+    2014-05-05 - 2
+    2014-04-25 - reparacion
+    14032017
+    modificacion triggers
+    ticket finalizado, falta separacion
+    2016-09-19
+    26-01-2016
+    25-01-2016
+    modificacion de ventas, compras, traslados
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    cargando a git
+    2017-04-25
+    2016-09-19
+    cargando a git
+    modificacion triggers
+    cargando a git
+    2016-09-30
+    CORRECCIONES EN GUIAS DE REMISION
+    modificacion permisos
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    cargando a git
+    2014-04-25 - reparacion
+    2017-04-25
+    ticket finalizado 2, falta separacion
+    ticket finalizado, falta separacion
+    ticket
+    25-01-2016
+    actualizacion de sistemas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    consulta sunat
+    2016-09-30
+    2016-09-19
+    modificacion de ventas, compras, traslados
+    correciones ver guias
+    cargando a git
+    2017-04-25
+    2016-09-19
+    cargando a git
+    2016-11-24
+    2016-09-19
+    2016-06-07
+    30-01-2016
+    26-01-2016
+    cargando a git
+    modificacion de ventas, compras, traslados
+    cargando a git
+    2014-05-05 - 2
+    2014-04-25 - reparacion
+    14032017
+    ticket finalizado 2, falta separacion
+    ticket finalizado, falta separacion
+    ticket
+    cargando a git
+    cargando a git
+    cargando a git
+    2014-04-25 - reparacion
+    2014-04-25 - reparacion
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    modificacion triggers
+    01032017
+    consulta sunat
+    2016-11-09
+    2016-09-25-2
+    2016-09-25
+    2016-09-23-2
+    2016-09-23
+    2016-09-19
+    05-02-2016
+    01-02-2016
+    2016-01-30-2
+    25-01-2016
+    aaaaa
+    CAJA CHICA
+    ventas
+    correciones ventas
+    modificacion de ventas, compras, traslados
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    CORRECCIONES EN GUIAS DE REMISION
+    conectar con git hub
+    creacion de loader
+    revision 1
+    actualizacion de sistemas
+    modificaciones rodolfo
+    modificaciones rodolfo
+    modificaciones
+    conectar ip
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    comitean
+    caja chica y otros
+    cargando a git
+    cargando a git
+    2014-04-25 - reparacion
+    2017-04-25
+    ticket
+    2014-05-12
+    2017-04-25
+    2016-09-19
+    modificacion de ventas, compras, traslados
+    2016-11-08
+    CORRECCIONES EN GUIAS DE REMISION
+    123456
+    cargando a git
+    2016-09-23-2
+    cargando a git
+    26-01-2016
+    cargando a git
+    correciones sonomusic
+    123
+    themas
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-04-25 - reparacion
+    modificacion triggers
+    01-02-2016
+    modificacion de ventas, compras, traslados
+    creacion de loader
+    revision 1
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-09-25
+    01-02-2016
+    2016-01-30-2
+    29-01-2016
+    compras y ventas
+    pago_compras
+    pago cuotas
+    pago cuotas
+    pago cuotas
+    pago cuotas
+    ventas
+    compras y ventas
+    correciones sonomusic
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    30-01-2016
+    29-01-2016
+    2017-04-25
+    26-01-2016
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    01-02-2016
+    creacion de loader
+    123
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    30-01-2016
+    30-01-2016
+    27-01-2016
+    26-01-2016
+    compras y ventas
+    modificacion permisos
+    creacion de loader
+    creacion de loader
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-12
+    14032017
+    26-01-2016
+    modificacion de ventas, compras, traslados
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    CORRECCIONES EN GUIAS DE REMISION
+    123
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    comision
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    caja chica y otros
+    pagos
+    cargando a git
+    correciones ventas
+    revision 2
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    123
+    cargando a git
+    2017-04-25
+    2017-01-09
+    2016-11-15
+    09-11-2016
+    2016-11-08
+    2016-11-08
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-23
+    correciones ventas
+    compras y ventas
+    creacion de loader
+    01-02-2016
+    29-01-2016
+    26-01-2016
+    compras y ventas
+    pago_compras
+    pago_compras
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    123
+    caja chica y otros
+    pagos
+    cargando a git
+    2016-09-23-2
+    compras y ventas
+    modificacion permisos
+    modificaciones
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    2014-05-05 - 2
+    modificacion triggers
+    01032017
+    2016-11-24
+    2016-11-15
+    2016-09-19
+    2016-06-07
+    01-02-2016
+    29-01-2016
+    27-01-2016
+    26-01-2016
+    compras y ventas
+    lbusqueda rapida de productos
+    CORRECCIONES EN GUIAS DE REMISION
+    modificacion reg venta
+    modificacion permisos
+    creacion de loader
+    creacion de loader
+    revision 2
+    modificaciones
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    Revert "fechas modificadas"
+    
+    This reverts commit 028748d826c7696e6839c3643e49b1f962ba4bef.
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    fechas modificadas
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    creacion de loader
+    2016-11-15
+    cierre caja
+    159753 - elimianr modificacion
+    2016-09-23
+    123
+    123
+    cierre caja
+    cierre caja
+    cierre caja
+    2014-05-12
+    2014-05-05 - 2
+    2017-04-25
+    01032017
+    2017-01-09
+    2016-11-15
+    2016-11-15
+    09-11-2016 - modificacion ingreso kardex por inventario
+    09-11-2016
+    2016-11-08
+    2016-11-08
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-23
+    08032017
+    consulta sunat
+    compras y ventas
+    renovacion de venta
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    modificacion triggers
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23
+    2016-09-19
+    2016-09-08
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    revision 2
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    123
+    123
+    cargando a git
+    modificacion triggers
+    06032017
+    01032017
+    2016-11-15
+    2016-09-30
+    2016-09-26
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23-2
+    2016-09-23
+    2016-09-19
+    2016-09-08
+    05-02-2016
+    02-02-2016
+    29-01-2016
+    modificacion de ventas, compras, traslados
+    correciones ventas y traslado
+    correciones ver guias
+    modificacion reg venta
+    creacion de loader
+    revision 2
+    errores almacen
+    123
+    comiteando mod_productos_almacen
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    29-01-2016
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    pagos
+    cargando a git
+    correciones sonomusic
+    123
+    themas
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-04-25 - reparacion
+    modificacion triggers
+    2016-11-15
+    02-02-2016
+    01-02-2016
+    compras y ventas
+    modificacion basic
+    modificacion de ventas, compras, traslados
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    correciones sonomusic
+    modificacion permisos
+    creacion de loader
+    revision 2
+    revision 1
+    123
+    comiteando mod_productos_almacen
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    30-01-2016
+    modificacion reg venta
+    123456
+    123456
+    123456
+    123456
+    123456
+    123456
+    123
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    caja chica y otros
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    2014-05-12
+    2014-05-05 - 2
+    2014-05-05
+    2014-04-25 - reparacion
+    14032017
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    modificacion triggers
+    ticket finalizado, falta separacion
+    08032017
+    01032017
+    consulta sunat
+    consulta sunat
+    2016-11-19
+    2016-11-15
+    2016-11-08
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23-2
+    2016-09-23
+    2016-09-19
+    CORECION VENTAS
+    renovacion de venta
+    correciones ventas
+    correciones ventas y traslado
+    seleccionar nick vendedor
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    CORRECCIONES EN GUIAS DE REMISION
+    actualizacion anula venta y mostrar vendedores por prioridad de cargo
+    correciones ver guias
+    correciones sonomusic
+    modificacion reg venta
+    modificacion permisos
+    modificaciones
+    123456
+    123456
+    123
+    solicitudes
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    pago_compras
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    correciones ventas
+    revision 2
+    compras y ventas
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    ventas
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    revision 2
+    compras y ventas
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    123
+    123
+    modificacion de ventas, compras, traslados
+    123
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    comision
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    pagos
+    cargando a git
+    2017-04-25
+    2016-09-23-2
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-05 - 2
+    modificacion triggers
+    consulta sunat
+    consulta sunat
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-23-2
+    2016-09-19
+    CORECION VENTAS
+    renovacion de venta
+    correciones ventas
+    correciones ventas y traslado
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    correciones sonomusic
+    modificacion reg venta
+    modificacion permisos
+    123456
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    modificaciones
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cierre caja
+    159753 - elimianr modificacion
+    2016-09-23
+    123
+    123
+    cierre caja
+    cierre caja
+    cierre caja
+    30-01-2016
+    26-01-2016
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    creacion de loader
+    creacion de loader
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    30-01-2016
+    26-01-2016
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    02-02-2016
+    01-02-2016
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    creacion de loader
+    123
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    123
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-11-15
+    2016-06-07
+    29-01-2016
+    27-01-2016
+    26-01-2016
+    lbusqueda rapida de productos
+    CORRECCIONES EN GUIAS DE REMISION
+    creacion de loader
+    creacion de loader
+    modificaciones
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    2016-11-19
+    2016-11-15
+    2016-11-15
+    15112016
+    ventas
+    errores almacen
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-11-19
+    2016-11-15
+    2016-11-15
+    15112016
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    ventas
+    correciones ventas
+    errores almacen
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    2016-09-19
+    2016-06-07
+    01-02-2016
+    30-01-2016
+    29-01-2016
+    cargando a git
+    actualizacion de sistemas
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    cargando a git
+    25-01-2016
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    cargando a git
+    cargando a git
+    123
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    30-05-2016
+    actualizacion de sistemas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    30-01-2016
+    01-02-2016
+    29-01-2016
+    27-01-2016
+    26-01-2016
+    CORECION VENTAS
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    CORRECCIONES EN GUIAS DE REMISION
+    correciones sonomusic
+    pago_compras
+    pago_compras
+    pago cuotas
+    pago cuotas
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    caja chica y otros
+    123
+    caja chica y otros
+    pagos
+    cargando a git
+    01-02-2016
+    27-01-2016
+    26-01-2016
+    CORECION VENTAS
+    CORRECCIONES EN GUIAS DE REMISION
+    pago_compras
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    correciones ventas
+    modificacion permisos
+    modificacion permisos
+    creacion de loader
+    123456
+    123456
+    TICKET CON HILOS
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    2017-04-25
+    aaaaa
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    comision
+    det venta
+    fechas modificadas
+    Revert "fechas modificadas"
+    
+    This reverts commit 028748d826c7696e6839c3643e49b1f962ba4bef.
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    cargando a git
+    2017-04-25
+    2016-09-25
+    2016-09-23-2
+    2014-05-05
+    2016-11-24
+    2016-09-19
+    123456
+    modificaciones
+    123
+    TICKET CON HILOS
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    02-02-2016
+    compras y ventas
+    creacion de loader
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    2014-05-12
+    2014-05-12
+    2014-05-05
+    2014-04-25 - reparacion
+    2014-04-25 - reparacion
+    14032017
+    ticket finalizado, falta separacion
+    ticket
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    01-02-2016
+    30-01-2016
+    30-01-2016
+    29-01-2016
+    25-01-2016
+    modificacion de ventas, compras, traslados
+    correciones ventas y traslado
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    actualizacion anula venta y mostrar vendedores por prioridad de cargo
+    correciones sonomusic
+    correciones sonomusic
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Forms/frm_reg_usuario.form
+            trunk/sonomusic/src/Forms/frm_reg_usuario.java
+    themas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    det venta
+    det venta
+    comision
+    det venta
+    Revert "fechas modificadas"
+    
+    This reverts commit 028748d826c7696e6839c3643e49b1f962ba4bef.
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    comitean
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    revision 2
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    2014-05-12
+    2014-05-05 - 2
+    14032017
+    ticket finalizado, falta separacion
+    08032017
+    09-11-2016
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    2016-09-08
+    23/06/2016
+    01-02-2016
+    01-02-2016
+    correciones ver guias
+    modificacion permisos
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    30-01-2016
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    revision 2
+    compras y ventas
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-12
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    30-01-2016
+    modificacion de ventas, compras, traslados
+    correciones ventas y traslado
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Forms/frm_reg_usuario.form
+            trunk/sonomusic/src/Forms/frm_reg_usuario.java
+    themas
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    det venta
+    Revert "fechas modificadas"
+    
+    This reverts commit 028748d826c7696e6839c3643e49b1f962ba4bef.
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    comitean
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    revision 2
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    15112016
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23
+    26-01-2016
+    CAJA CHICA
+    correciones ventas
+    compras y ventas
+    123
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    123
+    caja chica y otros
+    cargando a git
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cierre caja
+    01-02-2016
+    30-01-2016
+    29-01-2016
+    26-01-2016
+    pago_compras
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    29-01-2016
+    modificacion de ventas, compras, traslados
+    123
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    aaaaa
+    modificacion de ventas, compras, traslados
+    CORECION VENTAS
+    renovacion de venta
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    comision
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    creacion de loader
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    2014-05-05 - 2
+    25/06/2016
+    23/06/2016
+    30-05-2016
+    05-02-2016
+    02-02-2016
+    01-02-2016
+    30-01-2016
+    29-01-2016
+    modificacion permisos
+    123456
+    123456
+    pago cuotas
+    123456
+    123456
+    123456
+    123
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    rpt_ almacen
+    cargando a git
+    cargando a git
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-11-15
+    29-01-2016
+    123456
+    solicitudes
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    29-01-2016
+    123
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    14032017
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    modificacion triggers
+    ticket finalizado 2, falta separacion
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    ventas
+    modificacion de ventas, compras, traslados
+    anulacion traslado entre almacenes
+    CORRECCIONES EN GUIAS DE REMISION
+    correciones ver guias
+    correciones sonomusic
+    modificacion permisos
+    creacion de loader
+    123
+    TICKET CON HILOS
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    05-02-2016
+    modificacion permisos
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    cargando a git
+    cargando a git
+    09-11-2016
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    02-02-2016
+    01-02-2016
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    cargando a git
+    2016-09-23-2
+    01-02-2016
+    27-01-2016
+    26-01-2016
+    modificacion permisos
+    creacion de loader
+    creacion de loader
+    123456
+    modificaciones
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cargando a git
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    01-02-2016
+    2016-01-30-2
+    29-01-2016
+    26-01-2016
+    pago_compras
+    pago_compras
+    pago cuotas
+    pago cuotas
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-04-25 - reparacion
+    14032017
+    ticket finalizado 2, falta separacion
+    ticket finalizado, falta separacion
+    08032017
+    2016-11-08
+    2016-09-30
+    2016-09-19
+    busqueda por tiendas
+    acelaracion de productos xtienda
+    modificacion reg venta
+    modificacion permisos
+    123456
+    comiteando mod_productos_almacen
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-12
+    2014-05-05 - 2
+    14032017
+    ticket finalizado, falta separacion
+    08032017
+    2016-11-15
+    09-11-2016 - modificacion ingreso kardex por inventario
+    09-11-2016
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    2016-09-08
+    23/06/2016
+    02-02-2016
+    01-02-2016
+    01-02-2016
+    25-01-2016
+    correciones ver guias
+    modificacion reg venta
+    modificacion reg venta
+    modificacion permisos
+    creacion de loader
+    123456
+    123456
+    comiteando mod_productos_almacen
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    modificacion de ventas, compras, traslados
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    det venta
+    comision
+    det venta
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    2016-09-26
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23
+    26-01-2016
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2017-04-25
+    26-01-2016
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    159753 - elimianr modificacion
+    2016-09-23-2
+    2016-09-23
+    correciones ventas
+    modificacion permisos
+    modificacion permisos
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    aaaaa
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    modificacion triggers
+    159753 - elimianr modificacion
+    2016-09-23
+    2016-09-19
+    ventas
+    modificacion de ventas, compras, traslados
+    CORRECCIONES EN GUIAS DE REMISION
+    correciones ver guias
+    correciones sonomusic
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-11-15
+    2016-11-15
+    15112016
+    29-01-2016
+    ventas
+    errores almacen
+    123456
+    TICKET CON HILOS
+    solicitudes
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    29-01-2016
+    26-01-2016
+    pago_compras
+    pago cuotas
+    pago cuotas
+    26-01-2016
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-09-19
+    25-01-2016
+    modificacion basic
+    modificacion de ventas, compras, traslados
+    CORECION VENTAS
+    CORECION VENTAS
+    CORECION VENTAS
+    renovacion de venta
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    correciones ver guias
+    correciones sonomusic
+    modificacion reg venta
+    modificaciones
+    123
+    TICKET CON HILOS
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    comision
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    123
+    caja chica y otros
+    cargando a git
+    2014-05-12
+    2014-05-05 - 2
+    2014-04-25 - reparacion
+    2016-11-15
+    2016-09-30
+    159753 - elimianr modificacion
+    2016-09-25-2
+    2016-09-23
+    2016-09-19
+    23/06/2016
+    2016-06-07
+    26-01-2016
+    modificacion de ventas, compras, traslados
+    MODIFICACION EN SEPARACION, FALTA CANJEAR Y NTRGAR TICKET POR PAGO DE SEPARACION
+    lbusqueda rapida de productos
+    correciones sonomusic
+    modificacion reg venta
+    modificacion permisos
+    creacion de loader
+    revision 2
+    revision 1
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Revert "fechas modificadas"
+    
+    This reverts commit 028748d826c7696e6839c3643e49b1f962ba4bef.
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    fechas modificadas
+    123
+    cargando a git
+    cargando a git
+    cargando a git
+    29-01-2016
+    revision 2
+    modificaciones
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    09-11-2016
+    159753 - elimianr modificacion
+    2016-09-23
+    02-02-2016
+    01-02-2016
+    2016-11-15
+    159753 - elimianr modificacion
+    2016-09-23
+    modificacion permisos
+    revision 1
+    123456
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    cargando a git
+    revision 2
+    modificaciones
+    123456
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    cargando a git
+    2016-11-24
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    compras y ventas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    159753 - elimianr modificacion
+    2016-09-23-2
+    2016-09-23
+    modificacion permisos
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    ticket finalizado 2, falta separacion
+    ticket finalizado, falta separacion
+    08032017
+    2016-09-19
+    123456
+    comiteando mod_productos_almacen
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-23
+    26-01-2016
+    ventas
+    revision 2
+    compras y ventas
+    correciones sonomusic
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    123
+    cargando a git
+    revision 2
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    fechas modificadas
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    2017-04-25
+    2016-11-15
+    2016-11-09
+    09-11-2016
+    2016-11-08
+    2016-11-08
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-23
+    123456
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cierre caja
+    eliminar compras - 20-06-2016
+    2016-02-02
+    01-02-2016
+    2016-01-30-2
+    30-01-2016
+    29-01-2016
+    26-01-2016
+    pago_compras
+    pago_compras
+    pago cuotas
+    123
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    123
+    caja chica y otros
+    cargando a git
+    2017-04-25
+    2016-11-24
+    23/06/2016
+    29-01-2016
+    27-01-2016
+    25-01-2016
+    2016-11-24
+    2016-11-19
+    09-11-2016
+    2016-09-30
+    2016-09-30
+    30-01-2016
+    revision 2
+    modificacion permisos
+    actualizacion de sistemas
+    actualizacion de sistemas
+    modificaciones
+    themas
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2017-04-25
+    2016-11-24
+    2014-05-05
+    23/06/2016
+    correciones sonomusic
+    creacion de loader
+    actualizacion de sistemas
+    pago_compras
+    pago_compras
+    pago_compras
+    modificaciones
+    123456
+    thma
+    thma
+    thma
+    123
+    themas
+    themas
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-05 - 2
+    14032017
+    2016-11-19
+    15112016
+    2016-11-08
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23-2
+    2016-09-23
+    2016-09-19
+    23/06/2016
+    23/06/2016
+    30-05-2016
+    05-02-2016
+    01-02-2016
+    01-02-2016
+    30-01-2016
+    30-01-2016
+    29-01-2016
+    26-01-2016
+    25-01-2016
+    25-01-2016
+    revision 2
+    modificacion de ventas, compras, traslados
+    correciones ventas y traslado
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    lbusqueda rapida de productos
+    modificacion reg venta
+    modificacion permisos
+    creacion de loader
+    creacion de loader
+    actualizacion de sistemas
+    123456
+    123456
+    pago_compras
+    123456
+    pago cuotas
+    123456
+    123456
+    modificaciones
+    123456
+    123456
+    123456
+    themas
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    comiteando mod_productos_almacen
+    cierre caja
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    123
+    caja chica y otros
+    123
+    rpt_ almacen
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    23/06/2016
+    29-01-2016
+    27-01-2016
+    25-01-2016
+    30-01-2016
+    revision 2
+    modificaciones
+    themas
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    2014-05-05 - 2
+    14032017
+    2016-11-19
+    15112016
+    2016-11-08
+    159753 - elimianr modificacion
+    2016-09-25
+    2016-09-23-2
+    2016-09-23
+    2016-09-19
+    23/06/2016
+    30-05-2016
+    05-02-2016
+    01-02-2016
+    30-01-2016
+    30-01-2016
+    29-01-2016
+    26-01-2016
+    25-01-2016
+    revision 2
+    modificacion de ventas, compras, traslados
+    EMISION DE TICKET POR PAGO DE SEPARACION Y FINALIZACION DE PAGO
+    modificacion permisos
+    creacion de loader
+    123456
+    123456
+    123456
+    modificaciones
+    123456
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    cierre caja
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Clases/Cl_Conectar.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    123
+    caja chica y otros
+    123
+    rpt_ almacen
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    cargando a git
+    correciones ver guias
+    correciones sonomusic
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cargando a git
+    cargando a git
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    correciones ver guias
+    modificacion reg venta
+    cargando a git
+    modificacion basic
+    correciones sonomusic
+    modificacion reg venta
+    123
+    caja chica y otros
+    01-02-2016
+    30-01-2016
+    123456
+    TICKET CON HILOS
+    123
+    rpt_ almacen
+    cargando a git
+    cargando a git
+    2014-04-25 - reparacion
+    ticket finalizado 2, falta separacion
+    30-01-2016
+    30-01-2016
+    123456
+    123456
+    cargando a git
+    2016-09-08
+    2014-04-25 - reparacion
+    2017-04-25
+    23/06/2016
+    01-02-2016
+    30-01-2016
+    modifcar comiion por vendedor
+    TICKET CON HILOS
+    2016-09-08
+    correciones sonomusic
+    cargando a git
+    ticket finalizado 2, falta separacion
+    06032017
+    2016-11-24
+    2016-11-15
+    cargando a git
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    123
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    05-02-2016
+    correciones sonomusic
+    cargando a git
+    ticket finalizado 2, falta separacion
+    23/06/2016
+    CORRECCIONES EN GUIAS DE REMISION
+    correciones sonomusic
+    modificaciones
+    thma
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    cierre caja
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    ticket finalizado 2, falta separacion
+    23/06/2016
+    TICKET CON HILOS
+    2014-04-25 - reparacion
+    30-01-2016
+    30-01-2016
+    correciones ventas
+    modificacion basic
+    cargando a git
+    CORRECCIONES EN GUIAS DE REMISION
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.form
+            trunk/sonomusic/src/Vistas/frm_ver_prod_alm.java
+    cargando a git
+    cargando a git
+    30-01-2016
+    123456
+    123456
+    themas
+    TICKET CON HILOS
+    123
+    cargando a git
+    cargando a git
+    01-02-2016
+    01-02-2016
+    2014-04-25 - reparacion
+    ticket finalizado 2, falta separacion
+    06032017
+    2016-11-24
+    2016-11-15
+    cargando a git
+    consulta sunat
+    modificacion de ventas, compras, traslados
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    correciones ver guias
+    modificacion reg venta
+    cargando a git
+    ticket finalizado 2, falta separacion
+    05-02-2016
+    01-02-2016
+    30-01-2016
+    30-01-2016
+    123456
+    123456
+    cargando a git
+    05-02-2016
+    01-02-2016
+    01-02-2016
+    modificaciones
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    30-01-2016
+    123456
+    123456
+    pago cuotas
+    123456
+    themas
+    TICKET CON HILOS
+    123
+    pagos
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    01-02-2016
+    30-01-2016
+    123456
+    TICKET CON HILOS
+    123
+    rpt_ almacen
+    cargando a git
+    cargando a git
+    TICKET CON HILOS
+    modificaciones
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    modificacion triggers
+    2016-11-15
+    2016-09-30
+    2016-09-23-2
+    2016-09-23
+    2016-09-08
+    TICKET CON HILOS
+    cargando a git
+    TICKET CON HILOS
+    modificacion basic
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    correciones ver guias
+    modificacion reg venta
+    cargando a git
+    correciones ver guias
+    123
+    caja chica y otros
+    pagos
+    30-01-2016
+    123456
+    123456
+    modificaciones
+    TICKET CON HILOS
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/reports/rpt_ventas_vendedor.jasper
+            trunk/sonomusic/reports/rpt_ventas_vendedor.pdf
+            trunk/sonomusic/src/sonomusic/frm_menu.java
+    cargando a git
+    2017-04-25
+    ticket finalizado 2, falta separacion
+    MODIFICACION POR PAGO DE SEPARACION EMITE TICKET
+    correciones ver guias
+    modificacion reg venta
+    cargando a git
+    2017-04-25
+    2016-11-08
+    2014-05-12
+    2014-05-05 - 2
+    cargando a git
+    2017-04-25
+    2016-11-08
+    30-01-2016
+    123456
+    123456
+    cargando a git
+    cargando a git
+    CORECION VENTAS
+    CORECION VENTAS
+    correciones ver guias
+    correciones sonomusic
+    modificaciones
+    TICKET CON HILOS
+    correciones ver guias
+    123
+    caja chica y otros
+    123
+    caja chica y otros
+    23/06/2016
+    TICKET CON HILOS
+    23/06/2016
+    modificacion triggers
+    2016-11-15
+    2016-09-30
+    2016-09-23-2
+    2016-09-23
+    2016-09-08
+    TICKET CON HILOS
+    2014-05-12
+    2014-05-12
+    2014-05-05 - 2
+    2014-05-05
+    14032017
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    ticket
+    01032017
+    consulta sunat
+    2016-11-24
+    2016-11-15
+    2016-11-15
+    cierre caja
+    2016-11-09
+    09-11-2016
+    2016-11-08
+    2016-09-30
+    2016-09-26
+    eliminar compras - 20-06-2016
+    2016-06-07
+    2016-06-07
+    30-05-2016
+    30-05-2016
+    05-02-2016
+    2016-02-02
+    01-02-2016
+    01-02-2016
+    01-02-2016
+    actualizacion de sistemas
+    actualizacion de sistemas
+    actualizacion de sistemas
+    2014-05-12
+    2014-05-12
+    2014-05-05 - 2
+    2014-05-05
+    2017-04-25
+    14032017
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    Merge origin/master
+    
+    Conflicts:
+            trunk/sonomusic/src/Vistas/frm_ver_guias.java
+    ticket
+    01032017
+    consulta sunat
+    2016-11-24
+    2016-11-09
+    09-11-2016
+    2016-11-08
+    2016-09-30
+    2016-09-30
+    2016-09-26
+    eliminar compras - 20-06-2016
+    2016-06-07
+    2016-06-07
+    30-05-2016
+    30-05-2016
+    05-02-2016
+    2016-02-02
+    01-02-2016
+    01-02-2016
+    01-02-2016
+    25-01-2016
+    modificacion basic
+    conectar con git hub
+    2017-04-25
+    consulta sunat
+    cargando a git
+    123456
+    cargando a git
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    themas
+    cargando a git
+    cargando a git
+    2017-04-25
+    ticket
+    2017-04-25
+    2016-11-19
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git
+    cargando a git

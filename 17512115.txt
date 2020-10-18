@@ -1,0 +1,1814 @@
+﻿    Create README.md
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    Add JSONParser
+    4.2.2 Fix
+    4.2.2b1 Fix
+    4.1.8
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    Yandex contest support
+    3.50
+    TopCoder new scheme
+    Improvements to COJAC integration.
+    Removing the unneeded jar copying.
+    Create trunk.
+    initial version of cojac
+    Minor fixes
+    Tweaks
+    Initial development
+    4.3.1b6 Codeforces https support
+    4.2.1 New Code Jam site support
+    4.1.12
+    fix atcoder support
+    4.1.11
+    4.1.8
+    4.1.5
+    - Parser updates
+    - Enum fix
+    4.1.4
+    - Various fixes for parsing
+    4.1.2
+    - Chrome extension version
+    4.1.2
+    - Include all Kattis sites
+    4.1.1 -> HackerEarth support
+    4.0.12 - Facebook Hacker Cup fix
+    4.0.7
+    4.0.0 CodeChef
+    3.99 Kattis Support
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.92.1
+    Fix of extension for Yandex.Algorithm
+    3.85
+    3.73
+    3.66
+    3.65
+    3.64
+    3.61
+    3.60
+    Yandex contest support
+    3.60
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 11:       Create action to copy full source in order to submit to judges that do not provide file selection as option
+    3.65
+    3.60
+    Yandex contest support
+    4.3.1b6 Codeforces https support
+    4.2.1 New Code Jam site support
+    fix atcoder support
+    4.1.11
+    4.1.8
+    4.1.5
+    - Parser updates
+    - Enum fix
+    4.1.4
+    - Various fixes for parsing
+    4.1.2
+    - Include all Kattis sites
+    4.1.1 -> HackerEarth support
+    Fix for new Facebook HackerCup format
+    4.0.11 - Fix for methods as functional interfaces
+    4.0.7
+    4.0.0 CodeChef
+    3.99 Kattis Support
+    fix double ^
+    fix url parsing for codeforces problemset
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.92.1
+    Fix of extension for Yandex.Algorithm
+    3.85
+    3.73
+    3.66
+    3.65
+    3.64
+    3.61
+    3.60
+    Yandex contest support
+    3.64
+    3.60
+    Yandex contest support
+    Yandex contest support
+    4.4.2 Fixes:
+    Apply fixes for topcoder as well
+    4.4.2b1 Correct version
+    4.4.2b1 Fixes:
+    Apply fixes for topcoder as well
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.4.1b4 Fixes:
+    Facebook parsing
+    4.4.1b3 Fixes:
+    CSAcademy memory limit fix
+    4.4.1b2
+    - Print interactions automatically
+    4.4.1b1
+    - Interactive task support
+    4.3.2b1
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1 Release
+    4.3.1b6 Codeforces https support
+    4.3.1b5 Fixes:
+    NewTopCoderTest toString method
+    4.3.1b4 Fixes:
+    Empty strings in arrays in topcoder tests
+    Adding a lot of copies of CHelper library
+    4.3.3b Fix for removing file
+    4.3.2b Fix Cyrillic class names in json parser
+    4.3.1b Unfinished
+    4.2.5b1 Fix for problem names
+    4.2.4b1 New GCJ parser memory limit fix
+    4.2.3 New GCJ class name fix
+    4.2.3b1 New GCJ class name fix
+    4.2.2 Fix
+    4.2.2b1 Fix
+    4.2.1 New Code Jam site support
+    4.2.0
+    4.1.12
+    4.1.12
+    4.1.11
+    4.1.11
+    4.1.10
+    4.1.9
+    4.1.8
+    4.1.8
+    Version
+    Version
+    Version
+    4.1.5
+    - Parser updates
+    - Enum fix
+    4.1.4
+    - Various fixes for parsing
+    4.1.3
+    - Various fixes for code generation
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    4.1.1 -> HackerEarth support
+    4.0.13 - beta -> master
+    4.0.13 - Yandex parsing fix
+    4.0.12 - master -> beta
+    4.0.12 - Facebook Hacker Cup fix
+    4.0.11 - beta -> master
+    4.0.11 - Fix for methods as functional interfaces
+    4.0.10 - USACO Parser fix
+    4.0.9 - non beta status
+    4.0.8-4.0.9
+    4.0.7
+    4.0.6
+    4.0.5 Fixing NPE if not all entry points are available. Fixing fqn references
+    4.0.4
+    4.0.3 Initializers should be ok now. E-Olymp disabled
+    4.0.2 Dummy strikes back
+    4.0.1 Bug fix for generic classes/methods, removing inlining of super methods as this is not necessary, added inlining of constructors to make sure final fields are initialized
+    4.0 Initial commit
+    3.100 Fixing Kattis support
+    3.99 Kattis Support
+    3.98 Codechef fix
+    3.97 Codeforces fix
+    3.97 Fixing template and Chrome parser interaction
+    3.96 Select template per task
+    3.95 Fixes due to API/format changes
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.92
+    Reverted for Java 6 build
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.85
+    3.83
+    3.81
+    3.80
+    3.73
+    3.66
+    3.65
+    3.64
+    3.63
+    3.61
+    3.60
+    Yandex contest support
+    3.52
+    3.51
+    3.50
+    3.45
+    3.43
+    Smart testing
+    New test cases
+    TopCoder templates
+    Templates workaround
+    Templates
+    Java version
+    TopCoder new scheme
+    TopCoder temp fix
+    Create trunk.
+    Leda ready
+    Version
+    Timus current/future contests updated
+    Removed redundant caption
+    Slight changes
+    Codeforces fix
+    Unit test checker bug
+    fix
+    Restore
+    Fixes
+    Fixes
+    Version
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    Fixes
+    EOlimp
+    Fixes
+    Fixes
+    Bug
+    Minor fixes
+    TopCoder
+    Unit tests
+    Restore task
+    Parsing
+    Redesign
+    Task and tester redesign
+     Issue 20:      UI: switch task to current editor and editor to current task automatically
+    Issue 2:        Add universal interface for task generation
+    Issue 11:       Create action to copy full source in order to submit to judges that do not provide file selection as option
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    Add JSONParser
+    4.2.1 New Code Jam site support
+    TramsactionGuard instead of invoke later
+    4.1.5
+    - Parser updates
+    - Enum fix
+    4.1.1 -> HackerEarth support
+    4.0.0 CodeChef
+    3.99 Kattis Support
+    3.97 Fixing template and Chrome parser interaction
+    3.97 Fixing template and Chrome parser interaction
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.90
+    3.85
+    3.73
+    3.65
+    3.64
+    3.63
+    3.61
+    3.60
+    Yandex contest support
+    4.3.1b1 Code style
+    3.95 Fixes due to API/format changes
+    3.60
+    3.50
+    3.43
+    Smart testing
+    Improvements to COJAC integration.
+    Create trunk.
+    Minor fixes
+    Redesign
+    Issue 4:        Allow using custom output class instead of PrintWriter
+    Unit tests property
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    extract the methods in AutoSwitcher.
+    
+    # Conflicts:
+    #       src/net/egork/chelper/AutoSwitcher.java
+    4.3.1b1 Code style
+    TramsactionGuard instead of invoke later
+    Remove unneeded final in method signature
+    Avoid code duplication for IndexNotReadyException fix
+    Fix IndexNotReadyException issue
+    3.50
+    Create trunk.
+    Fixes
+    EOlimp
+    Fixes
+    Minor fixes
+    Adding dependencies automatically
+    Fixing exceptions
+    TopCoder
+    Redesign
+     Issue 20:      UI: switch task to current editor and editor to current task automatically
+    4.3.1b1 Code style
+    3.100 Fixing Kattis support
+    3.50
+    Create trunk.
+    Minor fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.4.1b2
+    - Print interactions automatically
+    4.4.1b1
+    - Interactive task support
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1b1 Code style
+    3.50
+    3.43
+    Smart testing
+    New test cases
+    TopCoder templates
+    Create trunk.
+    Many TopCoder fixes
+    Minor fixes
+    TopCoder
+    TopCoder
+    Fix
+    TopCoder fix
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    Issue 6:        TopCoderTester: should accept arrays without curle bracers
+    Issue 1:        Add ability to select tests on which task would be tested
+    Better result presentation in TopCoder tester
+    Fixing bugs
+    Adding pause
+    Bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    Issue 1:        Add ability to select tests on which task would be tested
+    Issue 5:        Tester: Should return WA if actual is not exhausted in checker
+    Issue 4:        Allow using custom output class instead of PrintWriter
+    Adding pause
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.4.1b2
+    - Print interactions automatically
+    4.4.1b1
+    - Interactive task support
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1b1 Code style
+    3.50
+    3.43
+    Smart testing
+    New test cases
+    TopCoder templates
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Redesign
+    Redesign
+    Redesign
+    Task and tester redesign
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    Issue 1:        Add ability to select tests on which task would be tested
+    Issue 5:        Tester: Should return WA if actual is not exhausted in checker
+    Issue 4:        Allow using custom output class instead of PrintWriter
+    Adding pause
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    3.50
+    New test cases
+    TopCoder templates
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Fix
+    TopCoder fix
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    Issue 6:        TopCoderTester: should accept arrays without curle bracers
+    Issue 1:        Add ability to select tests on which task would be tested
+    Better result presentation in TopCoder tester
+    Fixing bugs
+    Adding pause
+    Bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1b1 Code style
+    3.80
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    Fixes
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    Minor fixes
+    TopCoder
+    TopCoder
+    TopCoder
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Corrected library addition
+    TopCoder
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    3.80
+    Yandex contest support
+    3.50
+    New test cases
+    TopCoder templates
+    Create trunk.
+    Leda ready
+    Minor fixes
+    Redesign
+    Redesign
+    New format of Codeforces page
+    Issue 12:       Task generation: support for CodeChef
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Leda ready
+    Minor fixes
+    Parsing
+    Redesign
+    Issue 16:       Task Generation: Timus support
+    Issue 13:       Task generation: CodeChef: Multiple samples not working
+    Issue 14:       TopCoder: main method not deleted even if unused
+    Issue 15:       Task Generation: E-Olimp support
+    Issue 12:       Task generation: support for CodeChef
+    Issue 2:        Add universal interface for task generation
+    4.3.1b1 Code style
+    TramsactionGuard instead of invoke later
+    4.0 Initial commit
+    3.80
+    3.73
+    3.50
+    Smart testing
+    New test cases
+    TopCoder templates
+    TopCoder new scheme
+    TopCoder temp fix
+    Improvements to COJAC integration.
+    Create trunk.
+    Leda ready
+    Many TopCoder fixes
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    Fixes
+    Minor fixes
+    Adding dependencies automatically
+    Fixing exceptions
+    TopCoder
+    TopCoder
+    TopCoder
+    4.3.1b1 Code style
+    3.83
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.50
+    Create trunk.
+    Leda ready
+    fix
+    Minor fixes
+    TopCoder
+    Unit tests
+    Restore task
+    Parsing
+    Redesign
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.0 Initial commit
+    3.95 Fixes due to API/format changes
+    3.73
+    3.50
+    Create trunk.
+    fix
+    Restore
+    Minor fixes
+    TopCoder
+    Unit tests
+    Restore task
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    3.80
+    3.73
+    Yandex contest support
+    3.50
+    3.43
+    Create trunk.
+    Minor fixes
+    Redesign
+    Issue 12:       Task generation: support for CodeChef
+    Issue 2:        Add universal interface for task generation
+    Issue 8:        New Task: default directory should be created if absent
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    4.3.3b Refactoring
+    4.3.1b1 Code style
+    3.50
+    Improvements to COJAC integration.
+    Removing the unneeded jar copying.
+    Create trunk.
+    initial version of cojac
+    Minor fixes
+    Corrected library addition
+    Adding dependencies automatically
+    Fixing exceptions
+    Redesign
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Issue 11:       Create action to copy full source in order to submit to judges that do not provide file selection as option
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.0 Initial commit
+    3.73
+    Yandex contest support
+    3.50
+    Create trunk.
+    Leda ready
+    fix
+    Fixes
+    Minor fixes
+    More checkers
+    Bug fixing
+    TopCoder
+    Unit tests
+    Restore task
+    Redesign
+    Redesign
+    Bug fix
+    Bug fixes
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.81
+    3.80
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    4.2.0
+    3.50
+    Create trunk.
+    Minor fixes
+    More checkers
+    Bug fixing
+    Redesign
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    More checkers
+    Bug fixing
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.3.1b1 Code style
+    4.1.8
+    4.0.3 Initializers should be ok now. E-Olymp disabled
+    4.0.0 CodeChef
+    3.99 Kattis Support
+    3.90
+    Yandex contest support
+    3.52
+    3.50
+    Create trunk.
+    Fixes
+    EOlimp
+    Fixes
+    Minor fixes
+    Timus parser
+    Parsing
+    Issue 2:        Add universal interface for task generation
+    3.50
+    Create trunk.
+    Minor fixes
+    Parsing
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1b1 Code style
+    4.1.10
+    4.1.9
+    4.1.8
+    Update codechef DOM parser
+    4.0.8-4.0.9
+    4.0.0 CodeChef
+    3.97 Codeforces fix
+    3.94
+    3.90
+    3.65
+    Yandex contest support
+    3.52
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Slight changes
+    Fixes
+    CodeChef fixed connectivity problems
+    Unused class generic parameters no longer deleted
+    EOlimp
+    Fixes
+    Minor fixes
+    Timus parser
+    Unit tests
+    Restore task
+    Fixes
+    Parsing
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    4.3.2b Fix Cyrillic class names in json parser
+    4.3.1b1 Code style
+    Add JSONParser
+    4.4.1b3 Fixes:
+    CSAcademy memory limit fix
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    4.1.11
+    4.1.8
+    4.1.5
+    - Parser updates
+    - Enum fix
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    4.0.10 - USACO Parser fix
+    3.95 Fixes due to API/format changes
+    3.94
+    3.90
+    3.73
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Timus parser
+    4.3.1b1 Code style
+    4.1.12
+    4.1.8
+    4.1.4
+    - Various fixes for parsing
+    3.95 Fixes due to API/format changes
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    Yandex contest support
+    3.52
+    3.50
+    3.45
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Slight changes
+    Fixes
+    4.3.1b1 Code style
+    4.1.2
+    - Timus parser fix
+    3.90
+    Yandex contest support
+    3.52
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Timus current/future contests updated
+    Removed redundant caption
+    Slight changes
+    EOlimp
+    Fixes
+    Minor fixes
+    Timus parser
+    4.3.1b1 Code style
+    4.2.5b1 Fix for problem names
+    4.2.4b1 New GCJ parser memory limit fix
+    4.2.3b1 New GCJ class name fix
+    4.2.1 New Code Jam site support
+    4.1.11
+    4.1.8
+    4.1.5
+    - Parser updates
+    - Enum fix
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    4.4.1b4 Fixes:
+    Facebook parsing
+    4.3.1b1 Code style
+    Fix for new Facebook HackerCup format
+    3.94
+    3.90
+    3.73
+    4.3.1b1 Code style
+    4.1.11
+    4.1.8
+    4.1.4
+    - Various fixes for parsing
+    4.1.1 -> HackerEarth support
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    Merge branch 'regex-patch' of https://github.com/blue-atom/idea-chelper into blue-atom-regex-patch
+    
+    # Conflicts:
+    #       src/net/egork/chelper/parser/CodeforcesParser.java
+    #       src/net/egork/chelper/parser/StringParser.java
+    4.3.1b1 Code style
+    add regex support
+    
+    advanceRegex method supports regular expressions as the sample. using regular expression as sample can be useful while matching dynamic tags like " <pre id='id0048567741042787205'> " with regular expression sample "<pre [^>]+>". This particularly mentioned usage can solve current codeforces parser issue #52. Also, Use of Regex makes it easy to adapt according to external changes.
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 13:       Task generation: CodeChef: Multiple samples not working
+    Issue 14:       TopCoder: main method not deleted even if unused
+    Issue 15:       Task Generation: E-Olimp support
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    4.0.13 - Yandex parsing fix
+    4.0.8-4.0.9
+    3.90
+    3.80
+    3.73
+    3.66
+    3.65
+    3.64
+    Yandex contest support
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Timus parser
+    Parsing
+    Merge branch 'regex-patch' of https://github.com/blue-atom/idea-chelper into blue-atom-regex-patch
+    
+    # Conflicts:
+    #       src/net/egork/chelper/parser/CodeforcesParser.java
+    #       src/net/egork/chelper/parser/StringParser.java
+    4.3.1b6 Codeforces https support
+    4.3.1b1 Code style
+    add regex based matching
+    
+    added implementation to use advanceRegex for regex matching, As discussed in issue #52  ' <pre id="id0048567741042787205"> ' was creating problem for codeforces parser. so added regex based matching which matches ' <pre id="id0048567741042787205"> ' by  ' <pre [^>]+> '
+    Make Codeforces parser work from Chrome again by adapting to the new Javascript-generated ids for inputs
+    3.95 Fixes due to API/format changes
+    3.90
+    3.80
+    3.64
+    Yandex contest support
+    3.52
+    3.50
+    3.43
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Slight changes
+    Codeforces fix
+    EOlimp
+    Fixes
+    Bug
+    Minor fixes
+    Timus parser
+    Unit tests
+    Restore task
+    Parsing
+    4.3.1b1 Code style
+    4.1.8
+    Updated parser for hackerrank
+    
+    Fixed parser for hacker rank
+    HackerRank sample tests fix
+    4.1.5
+    - Parser updates
+    - Enum fix
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    4.1.5
+    - Parser updates
+    - Enum fix
+    3.94
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.90
+    3.80
+    3.73
+    3.65
+    4.3.1b1 Code style
+    4.1.8
+    4.1.2
+    - Kattis parser fix
+    3.99 Kattis Support
+    4.3.1b1 Code style
+    4.2.1 New Code Jam site support
+    4.1.8
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.90
+    Final fixes
+    3.90
+    3.85
+    Yandex contest support
+    3.52
+    3.51
+    3.50
+    4.3.1b1 Code style
+    3.50
+    Templates
+    Create trunk.
+    Minor fixes
+    Slight redesign
+    TopCoder
+    TopCoder
+    Redesign
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.3.1b1 Code style
+    3.96 Select template per task
+    3.83
+    3.50
+    Create trunk.
+    Minor fixes
+    Slight redesign
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.50
+    Create trunk.
+    TC Test Dialog
+    Many TopCoder fixes
+    Minor fixes
+    TopCoder
+    Issue 2:        Add universal interface for task generation
+    Issue 1:        Add ability to select tests on which task would be tested
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    3.83
+    3.80
+    4.3.1b1 Code style
+    3.80
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Redesign
+    Redesign
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Initial development
+    4.3.1b1 Code style
+    3.60
+    3.50
+    Smart testing
+    Improvements to COJAC integration.
+    Create trunk.
+    Slight changes
+    Minor fixes
+    Slight redesign
+    Redesign
+    Redesign
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    4.2.0
+    3.96 Select template per task
+    3.80
+    3.61
+    3.50
+    New test cases
+    TopCoder templates
+    Templates
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Leda ready
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    Minor fixes
+    More checkers
+    Bug fixing
+    Slight redesign
+    TopCoder
+    TopCoder
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    3.80
+    3.50
+    New test cases
+    TopCoder templates
+    Templates
+    Improvements to COJAC integration.
+    Create trunk.
+    Minor fixes
+    TopCoder
+    TopCoder
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    4.2.2b1 Fix
+    4.2.0
+    3.96 Select template per task
+    3.80
+    Yandex contest support
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Leda ready
+    Fixes
+    Minor fixes
+    Slight redesign
+    TopCoder
+    Parsing
+    Redesign
+    Redesign
+    Redesign
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 2:        Add universal interface for task generation
+    Major bug fix: referenced constant were not enough for inlining
+    Minor bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    New test cases
+    TopCoder templates
+    Create trunk.
+    Minor fixes
+    More checkers
+    Bug fixing
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    3.80
+    4.3.1b1 Code style
+    3.83
+    4.3.1b1 Code style
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    3.50
+    Create trunk.
+    Minor fixes
+    Parsing
+    Redesign
+    Issue 21:       Fixed width font for tests
+    Issue 2:        Add universal interface for task generation
+    Issue 1:        Add ability to select tests on which task would be tested
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.83
+    3.50
+    Create trunk.
+    Minor fixes
+    Slight redesign
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    3.91
+    RCC speed up and fix
+    HackerRank fix
+    Delete task pop up position fix
+    4.3.1b1 Code style
+    TramsactionGuard instead of invoke later
+    3.96 Select template per task
+    3.73
+    Yandex contest support
+    3.52
+    3.50
+    Improvements to COJAC integration.
+    Parse dialog fix
+    Create trunk.
+    initial version of cojac
+    Leda ready
+    Timus current/future contests updated
+    Removed redundant caption
+    Slight changes
+    EOlimp
+    Fixes
+    Bug fix
+    Minor fixes
+    Timus parser
+    TopCoder
+    Unit tests
+    Restore task
+    Fixes
+    Parsing
+    Redesign
+    Redesign
+    Issue 19:       Parser: remember selected contest/task site for current session
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 2:        Add universal interface for task generation
+    Issue 2:        Add universal interface for task generation
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    4.0.6
+    4.0 Initial commit
+    3.80
+    Yandex contest support
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Redesign
+     Issue 20:      UI: switch task to current editor and editor to current task automatically
+     Issue 20:      UI: switch task to current editor and editor to current task automatically
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Non default package for TopCoder tasks
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Task and tester redesign
+    Issue 1:        Add ability to select tests on which task would be tested
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 1:        Add ability to select tests on which task would be tested
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Initial development
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    4.2.0
+    4.0.0 CodeChef
+    3.99 Kattis Support
+    3.96 Select template per task
+    3.85
+    3.83
+    3.50
+    3.45
+    3.43
+    Improvements to COJAC integration.
+    Parse dialog fix
+    Create trunk.
+    initial version of cojac
+    Bug with forced locale cleared
+    Restore
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    Minor fixes
+    TopCoder
+    Unit tests
+    Restore task
+    Redesign
+    Redesign
+    Redesign
+    Task and tester redesign
+     Issue 20:      UI: switch task to current editor and editor to current task automatically
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 12:       Task generation: support for CodeChef
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Fix for TopCoder bugs
+    TopCoder fix
+    Issue 6:        TopCoderTester: should accept arrays without curle bracers
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.3.1b5 Fixes:
+    NewTopCoderTest toString method
+    4.3.1b4 Fixes:
+    Empty strings in arrays in topcoder tests
+    Adding a lot of copies of CHelper library
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Fixed test representation in TC test editor
+    Many TopCoder fixes
+    Minor fixes
+    TopCoder
+    4.4.2b1 Fixes:
+    Apply fixes for topcoder as well
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    4.0.0 Refactoring
+    4.0 Initial commit
+    3.80
+    3.50
+    Smart testing
+    Fixit.
+    Improvements to COJAC integration.
+    Create trunk.
+    Fixes
+    Minor fixes
+    TopCoder
+    Redesign
+    Bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    3.80
+    3.50
+    Improvements to COJAC integration.
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Initial development
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    3.50
+    Smart testing
+    Fixit.
+    Removing the unneeded jar copying.
+    Create trunk.
+    initial version of cojac
+    Fixes
+    fix
+    Fixes
+    Minor fixes
+    Redesign
+    Redesign
+    Redesign
+    Task and tester redesign
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 4:        Allow using custom output class instead of PrintWriter
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.2b1
+    - Inline even unused enum constants if enum is used
+    4.3.2b1
+    - Bug fixes in generator
+    4.3.1b1 Code style
+    4.1.5
+    - Parser updates
+    - Enum fix
+    4.1.3
+    - Various fixes for code generation
+    4.0.11 - Fix for methods as functional interfaces
+    4.0.8-4.0.9
+    4.0.6
+    4.0.5 Fixing NPE if not all entry points are available. Fixing fqn references
+    4.0.4
+    4.0.3 Initializers should be ok now. E-Olymp disabled
+    4.0.2 Dummy strikes back
+    4.0.1 Bug fix for generic classes/methods, removing inlining of super methods as this is not necessary, added inlining of constructors to make sure final fields are initialized
+    4.0.0 Refactoring
+    4.3.1b1 Code style
+    4.1.3
+    - Various fixes for code generation
+    4.0.0 Refactoring
+    4.0 Initial commit
+    4.4.1b1
+    - Interactive task support
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.0.7
+    4.0.0 Refactoring
+    4.0.0 Fixes, shorter code
+    4.0 Initial commit
+    3.97 Fixing template and Chrome parser interaction
+    3.96 Select template per task
+    3.95 Fixes due to API/format changes
+    Fix issues 27 and 28
+    
+    - allow dependencies on project libraries or Maven sources
+    - delete all comments from inlined sources
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.83
+    3.73
+    Yandex contest support
+    3.50
+    New test cases
+    TopCoder templates
+    Templates workaround
+    Templates
+    TopCoder new scheme
+    Create trunk.
+    Leda ready
+    Unit test checker bug
+    fix
+    Restore
+    CodeChef fixed connectivity problems
+    Unused class generic parameters no longer deleted
+    TopCoder alternative protocol
+    Force locale setting to include Locale.setDefault(Locale.US) in generated file
+    EOlimp
+    Fixes
+    Fixes
+    Fixes
+    Minor fixes
+    More checkers
+    Bug fixing
+    TopCoder
+    TopCoder
+    Unit tests
+    Restore task
+    Redesign
+    Redesign
+    Redesign
+    CodeChef fix
+    Inner classes fix
+    Fix for TopCoder bugs
+    TopCoder fix
+    Issue 13:       Task generation: CodeChef: Multiple samples not working
+    Issue 14:       TopCoder: main method not deleted even if unused
+    Issue 15:       Task Generation: E-Olimp support
+    Issue 7:        Tester: ability to pass message from checker irrespective from verdict type
+    Issue 1:        Add ability to select tests on which task would be tested
+    Issue 4:        Allow using custom output class instead of PrintWriter
+    Major bug fix: referenced constant were not enough for inlining
+    Minor bug fixes
+    Better result presentation in TopCoder tester
+    Fixing bugs
+    Unit tests property
+    Bug fixes
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    4.3.1b1 Code style
+    4.0.0 Refactoring
+    4.0 Initial commit
+    4.3.1b1 Code style
+    3.93
+    Bayan support, fixes for GCJ and HackerRank
+    3.50
+    Create trunk.
+    Fixes
+    EOlimp
+    Fixes
+    Minor fixes
+    TopCoder
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    3.100 Fixing Kattis support
+    4.4.1b1
+    - Interactive task support
+    4.3.3b Fix for removing file
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.0 Initial commit
+    3.96 Select template per task
+    3.95 Fixes due to API/format changes
+    3.73
+    3.50
+    New test cases
+    TopCoder templates
+    Templates
+    Create trunk.
+    Leda ready
+    Fixes
+    EOlimp
+    Fixes
+    Retries
+    Minor fixes
+    More checkers
+    Bug fixing
+    Adding dependencies automatically
+    Fixing exceptions
+    TopCoder
+    TopCoder
+    Unit tests
+    Restore task
+    Fixes
+    Parsing
+    Redesign
+    Redesign
+    Redesign
+    Task and tester redesign
+    Issue 2:        Add universal interface for task generation
+    Unit tests
+    Some messages
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Tweaks
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.3.1b4 Fixes:
+    Empty strings in arrays in topcoder tests
+    Adding a lot of copies of CHelper library
+    4.3.3b Refactoring
+    4.3.1b1 Code style
+    4.0 Initial commit
+    3.96 Select template per task
+    3.60
+    Yandex contest support
+    3.50
+    New test cases
+    TopCoder templates
+    Templates
+    TopCoder new scheme
+    Improvements to COJAC integration.
+    Create trunk.
+    initial version of cojac
+    Minor fixes
+    More checkers
+    Bug fixing
+    TopCoder
+    Parsing
+    Redesign
+    Redesign
+    Redesign
+    Issue 19:       Parser: remember selected contest/task site for current session
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 12:       Task generation: support for CodeChef
+    Issue 2:        Add universal interface for task generation
+    Major bug fix: referenced constant were not enough for inlining
+    Minor bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    4.3.2b1
+    4.3.2b1
+    
+    Pretty json
+    Codechef memory limit
+    4.3.1b1 Code style
+    4.3.1b Unfinished
+    4.0.0 Refactoring
+    4.0 Initial commit
+    3.50
+    Templates
+    Create trunk.
+    Leda ready
+    fix
+    Minor fixes
+    TopCoder
+    Redesign
+    Redesign
+    4.3.1b1 Code style
+    Yandex contest support
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Redesign
+    Redesign
+    Issue 19:       Parser: remember selected contest/task site for current session
+    Issue 18:       Tester: add option to trunkate long input/output and enable it by default
+    Issue 1:        Add ability to select tests on which task would be tested
+    Bug fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    4.3.1b1 Code style
+    3.50
+    Create trunk.
+    Fixes
+    EOlimp
+    Fixes
+    Minor fixes
+    TopCoder
+    Redesign
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Unit tests
+    Restore task
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 16:       Task Generation: Timus support
+    3.50
+    Create trunk.
+    Icon
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 11:       Create action to copy full source in order to submit to judges that do not provide file selection as option
+    3.50
+    Create trunk.
+    Minor fixes
+    Unit tests
+    Restore task
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 12:       Task generation: support for CodeChef
+    3.50
+    Create trunk.
+    Minor fixes
+    Redesign
+    3.50
+    Create trunk.
+    Minor fixes
+    Parsing
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 2:        Add universal interface for task generation
+    3.99 Kattis Support
+    3.50
+    Create trunk.
+    Minor fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    3.50
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 11:       Create action to copy full source in order to submit to judges that do not provide file selection as option
+    Set VCS to Git
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    TramsactionGuard instead of invoke later
+    Yandex contest support
+    3.50
+    Create trunk.
+    Minor fixes
+    Refactoring
+    Codeforces action
+    Bug fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    Yandex contest support
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    New test cases
+    TopCoder templates
+    Java 8 here we come
+    Yandex contest support
+    3.50
+    TopCoder new scheme
+    Create trunk.
+    initial version of cojac
+    Leda ready
+    Minor fixes
+    Initial development
+    Java 8 here we come
+    3.50
+    Create trunk.
+    Minor fixes
+    Initial development
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 12:       Task generation: support for CodeChef
+    Issue 2:        Add universal interface for task generation
+    3.50
+    Create trunk.
+    Minor fixes
+    Issue 13:       Task generation: CodeChef: Multiple samples not working
+    Issue 14:       TopCoder: main method not deleted even if unused
+    Issue 15:       Task Generation: E-Olimp support
+    Issue 12:       Task generation: support for CodeChef
+    Issue 2:        Add universal interface for task generation
+    3.91
+    Cojac for Java 8 fix
+    3.80
+    3.50
+    initial version of cojac
+    Properly add JSON library
+    3.50
+    initial version of cojac
+    3.50
+    Create trunk.
+    Minor fixes
+    TopCoder
+    Add JSONParser
+    3.91
+    Cojac for Java 8 fix
+    3.80
+    3.80
+    3.91
+    Cojac for Java 8 fix
+    4.4.2 Fixes:
+    Apply fixes for topcoder as well
+    4.4.2 Fixes:
+    Apply fixes for topcoder as well
+    4.4.2 Fixes:
+    Apply fixes for topcoder as well
+    4.4.1b5 Fixes:
+    Delete/archive interactors with corresponding actions
+    Fix for idea not compiling before run
+    4.3.1b Unfinished
+    4.3.1b Unfinished
+    4.3.1b Unfinished
+    3.80
+    4.1.2
+    - Cojac version update
+    - Cleanup
+    - Switched to Java 1.8
+    3.91
+    Cojac for Java 8 fix
+    3.50
+    Removing the unneeded jar copying.
+    initial version of cojac

@@ -1,0 +1,160 @@
+﻿    Prepare for release 0.0.10
+    Prepare for release 0.0.9
+    Release v0.0.8
+    releasing v0.0.6
+    releasing v0.0.5
+    Contribution guidelines
+    Update readme and examples
+    add a whitelist note
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Prepare for release 0.0.10
+    Prepare for release 0.0.9
+    Release v0.0.8
+    Bumping metadata version
+    releasing v0.0.6
+    releasing v0.0.5
+    releasing 0.4.0
+    Bump verison for new source url
+    Updated metadata to new repo
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Added documentation (Fixes #14)
+    Add group management
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Update readme and examples
+    Add simple spec tests
+    
+    This isn't fully complete, but it's a decent start. I don't know the
+    best way for testing the rbac api, since it's almost completely just
+    glue around the classifier api. I'll put more thought into that later.
+    
+    TRAINTECH-718 #resolved #time 6h
+    Add simple spec tests
+    
+    This isn't fully complete, but it's a decent start. I don't know the
+    best way for testing the rbac api, since it's almost completely just
+    glue around the classifier api. I'll put more thought into that later.
+    
+    TRAINTECH-718 #resolved #time 6h
+    Add simple spec tests
+    
+    This isn't fully complete, but it's a decent start. I don't know the
+    best way for testing the rbac api, since it's almost completely just
+    glue around the classifier api. I'll put more thought into that later.
+    
+    TRAINTECH-718 #resolved #time 6h
+    Add simple spec tests
+    
+    This isn't fully complete, but it's a decent start. I don't know the
+    best way for testing the rbac api, since it's almost completely just
+    glue around the classifier api. I'll put more thought into that later.
+    
+    TRAINTECH-718 #resolved #time 6h
+    Add group management
+    Making this more future proof per @binford2k
+    In 2019.1 TLSv1 and TLSv1.1 are disabled
+    This change allows the provider to check what Puppet version is running and set the TLS version accordingly
+    Correct API calls
+    
+    The role api requires a complete object, even if the elements are nil. I
+    also added a delete API call and reworked the debug logging to clarify
+    which methods were being called.
+    The new classifier.yaml is an array
+    
+    Normalize data after loading. We have to switch to an instance variable so Ruby doesn't scream about modifying a constant.
+    
+    Fixes #5
+    Support Shallow Gravy
+    
+    This module will now support both 3.8.x and 2015.x.
+    
+    In addition, it will now work on Puppet masters that are not a
+    standalone node. It will call the RBAC API on the node configured as the
+    classifier. Obviously, for that to work, the certname must be configured
+    in the RBAC certificate whitelist.
+    
+    It also now properly supports RBAC users in which the title != the name.
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Added checks for bad data types
+    Ensure that user isn't looked up if it's a UUID
+    Added normalization for users in roles
+    
+    This means that people can specify a list of user names that should be
+    in a role, they will be converted to UUIDs before being enforced
+    Fixed reference to `name` when flushing
+    
+    Fixes #15
+    Correct API calls
+    
+    The role api requires a complete object, even if the elements are nil. I
+    also added a delete API call and reworked the debug logging to clarify
+    which methods were being called.
+    Fix provider
+    Type and provider for rbac_role
+    Add group management
+    Add groups
+    Added checks for bad data types
+    Support Shallow Gravy
+    
+    This module will now support both 3.8.x and 2015.x.
+    
+    In addition, it will now work on Puppet masters that are not a
+    standalone node. It will call the RBAC API on the node configured as the
+    classifier. Obviously, for that to work, the certname must be configured
+    in the RBAC certificate whitelist.
+    
+    It also now properly supports RBAC users in which the title != the name.
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Add group management
+    Add groups
+    Catch more errors and spurious changes
+    
+    Release v0.0.2
+    First working release of the RBAC module
+    
+    Yay, API based management. This means not running 74 rake tasks every
+    time the Master's agent runs.
+    Next up is the class parameters.
+    Added documentation (Fixes #14)
+    Added normalization for users in roles
+    
+    This means that people can specify a list of user names that should be
+    in a role, they will be converted to UUIDs before being enforced
+    Added better logic for comparing arrays of hashes
+    Made sure that array ordering didn't matter
+    Fix role provider
+    Type and provider for rbac_role

@@ -1,0 +1,24 @@
+﻿    Fix tests with ansible 2.8
+    
+    Looks ansible inventory doesn't contains "ungroupped" key when there is
+    no ungroupped hosts.
+    Move ansible to base test-requirements.txt
+    
+    Since we are now using only ansible >= 2
+    Fix travis py27
+    
+    Tornado > 5 fails to install on travis: "ImportError: Tornado requires
+    an up-to-date SSL module. This means Python 2.7.9+ or 3.4+ (although
+    some distributions have backported the necessary changes to older
+    versions)."
+    add support for pywinrm (#231)
+    backends: dynamic import
+    
+    import backend classes using importlib.import_module(), this simplify
+    handling of optional requirements and reduce import time.
+    add paramiko to tests-requirements.
+    OpenBSD, FreeBSD and NetBSD support
+    First commit: version 1.0a1
+    doc: Fix readthedocs build
+    Force sphinx>=1.3 and alabaster theme
+    First commit: version 1.0a1

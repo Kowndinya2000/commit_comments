@@ -1,0 +1,248 @@
+﻿    migrate to travis-ci.com
+    update readme
+    document distro support in README
+    Update README.md
+    Initial commit
+    Update PULL_REQUEST_TEMPLATE.md
+    add pull request template
+    removed scripts and requires tag from setup.py
+    fixed build errors
+    cleaned up cob_android_script_server
+    catkinized and fixed
+    do not use sub folder for installed scripts
+    Create CMakeLists.txt
+    remove duplicate install_tag
+    moved script srv to cob_android_msgs package
+    considered pr commends
+    fixed build errors
+    cleaned up cob_android_script_server
+    install tags
+    catkinized and fixed
+    inital commit
+    0.1.7
+    update changelogs
+    0.1.6
+    update changelogs
+    0.1.5
+    update changelog
+    0.1.4
+    update changelogs
+    0.1.3
+    update changelog
+    0.1.2
+    update changelog
+    0.1.1
+    update changelogs
+    catkinized and fixed
+    inital commit
+    0.1.7
+    0.1.6
+    0.1.5
+    0.1.4
+    use license apache 2.0
+    0.1.3
+    0.1.2
+    0.1.1
+    added missing dependency
+    added missing dependency
+    migrated to package xml 2
+    moved script srv to cob_android_msgs package
+    considered pr commends
+    cleaned up cob_android_script_server
+    catkinized and fixed
+    use license apache 2.0
+    cleaned up cob_android_script_server
+    python3 compatibility via 2to3
+    install tags
+    fix pylint errors
+    add support for trigger_action buttons
+    fix wrong parameter comparison
+    use license apache 2.0
+    removed planning parameter for trigger service
+    migrated to package xml 2
+    moved script srv to cob_android_msgs package
+    cleaned up cob_android_script_server
+    switch script server from blocking srvs to non blocking srvs
+    install tags
+    typo fix
+    catkinized and fixed
+    added service names to yaml parameters
+    added light switch to androids script server
+    inital commit
+    refactor config structure
+    cleaned up cob_android_script_server
+    catkinized and fixed
+    inital commit
+    cleaned up cob_android settings
+    catkinized and fixed
+    inital commit
+    0.1.7
+    update changelogs
+    0.1.6
+    update changelogs
+    0.1.5
+    update changelog
+    0.1.4
+    update changelogs
+    0.1.3
+    update changelog
+    0.1.2
+    update changelog
+    0.1.1
+    update changelogs
+    inital commit
+    0.1.7
+    0.1.6
+    0.1.5
+    0.1.4
+    use license apache 2.0
+    0.1.3
+    0.1.2
+    0.1.1
+    migrated to package xml 2
+    cleaned up cob_android settings
+    catkinized and fixed
+    refactor config structure
+    cleaned up cob_android settings
+    parameters to set text on gui
+    added order categories
+    changed topic names
+    added service names to yaml parameters
+    inital commit
+    introduced yaml file to configure guis functionality
+    inital commit
+    changed service names back to raw script names
+    changed topic names
+    added service names to yaml parameters
+    fixed resource_server and modified topic name and categories
+    changed topic names
+    added service names to yaml parameters
+    modified topic_names
+    inital commit
+    fixed resource_server and modified topic name and categories
+    added order categories
+    parameters to set text on gui
+    catkin_lint fixes
+    added order action and service (needed for old order_app)
+    moved script srv to cob_android_msgs package
+    considered pr commends
+    cleaned up cob_android_msgs
+    install tags
+    catkinized and fixed
+    added new package cob_android_msgs for androids messages
+    inital commit
+    0.1.7
+    update changelogs
+    0.1.6
+    update changelogs
+    0.1.5
+    update changelog
+    0.1.4
+    update changelogs
+    0.1.3
+    update changelog
+    0.1.2
+    update changelog
+    0.1.1
+    update changelogs
+    0.1.7
+    catkin_lint fixes
+    0.1.6
+    0.1.5
+    0.1.4
+    use license apache 2.0
+    0.1.3
+    0.1.2
+    added order action and service (needed for old order_app)
+    0.1.1
+    migrated to package xml 2
+    considered pr commends
+    cleaned up cob_android_msgs
+    catkinized and fixed
+    added order action and service (needed for old order_app)
+    added order action and service (needed for old order_app)
+    moved script srv to cob_android_msgs package
+    catkinized and fixed
+    inital commit
+    added new screen control mode
+    new screenmode
+    added new package cob_android_msgs for androids messages
+    fixed build errors
+    cleaned up cob_android_resource_server
+    catkinized and fixed
+    considered pr commends
+    cleaned up cob_android_resource_server
+    catkinized and fixed
+    added android resource server package
+    inital commit
+    0.1.7
+    update changelogs
+    0.1.6
+    update changelogs
+    0.1.5
+    update changelog
+    0.1.4
+    update changelogs
+    0.1.3
+    update changelog
+    0.1.2
+    update changelog
+    0.1.1
+    update changelogs
+    added android resource server package
+    inital commit
+    0.1.7
+    0.1.6
+    0.1.5
+    0.1.4
+    use license apache 2.0
+    0.1.3
+    0.1.2
+    0.1.1
+    migrated to package xml 2
+    considered pr commends
+    cleaned up cob_android_resource_server
+    catkinized and fixed
+    use license apache 2.0
+    cleaned up cob_android_resource_server
+    fix pylint errors
+    python3 compatibility via 2to3
+    use license apache 2.0
+    migrated to package xml 2
+    cleaned up cob_android_resource_server
+    install tags
+    fixed resource_server and modified topic name and categories
+    modifications on resource server
+    changed default_img_path
+    added android resource server package
+    python3 compatibility via 2to3
+    install tags
+    cleaned up cob_android_resource_server
+    added android resource server package
+    catkinized and fixed
+    0.1.7
+    update changelogs
+    0.1.6
+    update changelogs
+    0.1.5
+    update changelog
+    0.1.4
+    update changelogs
+    0.1.3
+    update changelog
+    0.1.2
+    update changelog
+    0.1.1
+    update changelogs
+    removed wrong changelog
+    catkinized and fixed
+    0.1.7
+    0.1.6
+    0.1.5
+    0.1.4
+    use license apache 2.0
+    0.1.3
+    0.1.2
+    0.1.1
+    migrated to package xml 2
+    catkinized and fixed

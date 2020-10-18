@@ -1,0 +1,151 @@
+﻿    changing permissions back
+    changed permissions
+    Update README.md
+    made readme more accurate
+    Initial commit
+    changing permissions back
+    changed permissions
+    changed functionality of kernel class slightly
+    pushing to revert to old. this commit has some runtime errors...
+    fixed errors from previous commit
+    changed structure to transposes, need to error check
+    wrote kernel stuff
+    removed knn dependency
+    changing permissions back
+    cleaned up output / fixed hanging during print
+    added testing func for diff targ/src
+    using new loc_vec -> el_vec routine, testing
+    changed permissions
+    added el.hpp dependency to tests
+    changed vector functionality to VC, STAR
+    added tests for nullspace and adaptive inverse
+    test on same indices
+    rewrote style of tests, arguments
+    changed name of testing file
+    changed up output
+    changed timings
+    fixed error in testing function
+    added more tests, still can't find runtime error related to matvec
+    pushing to revert to old. this commit has some runtime errors...
+    wrote testing functions for appinv and orthog
+    updated nystrom_main to output times, changed sampling style
+    changed format of nystrom main, hpp file
+    included timings, runscript for stampede
+    forgot to change on diagonal mult back
+    fixed big time error related to diagonal scale
+    changed up the inputs slightly
+    changed utils to only have one constructor, wrote reads
+    need to make separate file for this soon
+    fixed errors from previous commit
+    changed structure to transposes, need to error check
+    rearranged things
+    Finished writing functions for decomposition
+    made bunch of updates, not fully functional
+    changing permissions back
+    changed permissions
+    added simple function to go from fksData to a DistMatrix
+    changed up size
+    changed allocate around
+    simplified allocate.cpp, made runit file more clear
+    changing permissions back
+    changed permissions
+    pushing to revert to old. this commit has some runtime errors...
+    added test allocate file
+    removed knn dependency
+    changed to passing by ref
+    forgot source file
+    changing permissions back
+    changed permissions
+    changed vector functionality to VC, STAR
+    trying to test if transpose is noticeably slower
+    changed to make a .so file
+    saving before trying new changes
+    removed knn dependency
+    changing permissions back
+    added utils obj file
+    changed permissions
+    added simple function to go from fksData to a DistMatrix
+    changed name of testing file
+    added o3 flag
+    brought cpp flags to this makefile for easy changing
+    changed makefile so help compile things
+    Rewrote to output .exe
+    Makefile g flag added
+    Fixed makefile error
+    added gitignore, changed executable to exe
+    trying to test if transpose is noticeably slower
+    wrote makefile
+    Finished writing functions for decomposition
+    made makefile easier to work with
+    made bunch of updates, not fully functional
+    removed knn dependency, fixed appinv
+    changed to get submatrix instead of computing kernels
+    removed s_idx,l_idx and replaced with Range; removed TODOs
+    changing permissions back
+    fixed differing target source point bug
+    using new loc_vec -> el_vec routine, testing
+    added bo function
+    changed vector functionality to VC, STAR
+    allowed for inversion only on r eigenvectors, wrote nullspace function
+    added ability to fix sample indices
+    restructured code for cleaner interface, changed some function signatures, flags etc.
+    added one shot functionality to all tests, committing before changing further
+    made small changes, still can't find runtime error related to matvec
+    pushing to revert to old. this commit has some runtime errors...
+     restructured nystrom_alg code to stand alone
+    updated nystrom_main to output times, changed sampling style
+    changed format of nystrom main, hpp file
+    included timings, runscript for stampede
+    forgot to change on diagonal mult back
+    fixed big time error related to diagonal scale
+    changed up the inputs slightly
+    changed utils to only have one constructor, wrote reads
+    need to make separate file for this soon
+    fixed errors from previous commit
+    changed structure to transposes, need to error check
+    rearranged things
+    Finished writing functions for decomposition
+    made bunch of updates, not fully functional
+    added a runit file for doing runs not on stampede/maverick
+    added gitignore, changed executable to exe
+    added runit file for idev sessions
+    added stuff to make it easier to run
+    new flag
+    pushing to revert to old. this commit has some runtime errors...
+    updated runit file to include upsampling
+    changed runfile to only need train data (no labels)
+    added gitignore, changed executable to exe
+    updated stampede runit script (valid for maverick)
+    included timings, runscript for stampede
+    simplified allocate.cpp, made runit file more clear
+    changed permissions
+    added test functions and base runit file
+    added stuff to make it easier to run
+    new flag
+    pushing to revert to old. this commit has some runtime errors...
+    updated runit file to include upsampling
+    changed runfile to only need train data (no labels)
+    added gitignore, changed executable to exe
+    updated stampede runit script (valid for maverick)
+    included timings, runscript for stampede
+    fixed allocate runfile
+    changed up allocate runfiles
+    changed up allocate runfiles
+    added gitignore, changed executable to exe
+    updated stampede runit script (valid for maverick)
+    included timings, runscript for stampede
+    added a runit file for regression tests not on stampede/maverick
+    added a runit file for doing runs not on stampede/maverick
+    added gitignore, changed executable to exe
+    added runit file for idev sessions
+    changed permissions
+    changed function to reflect changes to nystrom_tests.cpp
+    added stuff to run one-shot
+    added stuff to make it easier to run:
+    pushing to revert to old. this commit has some runtime errors...
+    added regression runfile
+    updated runit file to include upsampling
+    changed runfile to only need train data (no labels)
+    added gitignore, changed executable to exe
+    updated stampede runit script (valid for maverick)
+    included timings, runscript for stampede

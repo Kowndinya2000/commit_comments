@@ -1,0 +1,2156 @@
+﻿    Update README.md
+    Update README.md
+    Created a basic YatSpec tutorial.
+    Improve the main block of documentation.
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Create README.md
+    Updated TL to 1130
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    get svg working in firefox 4 and later by adding units to width and height
+    Updated TL version
+    Removed unneeded class
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    Made long file name test work on ext4 filesystems
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    MikeH: allow collection of PlantUML markup during sequence diagram generation
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Added InterestingGivensTypeLoader to simply InterestingGivens access
+    Darren and Mike added an interface so tests don't have to extend TestState
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Fixed loading of template
+    dan: inital import
+    Fixed release notes
+    Updated TL to 1130
+    switching project name back to 'yatspec' after moving branch to master
+    stopped exposing totallylazy in custom rendering config
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Removed unneed xml modification
+    make actor names in sequence diagrams clickable
+    Embedded totallylazy into Yatspec so you can have different versions of totallylazy in your production or test code
+    SteveE,MarkB: upgrade plantuml, and use shaven maven
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Readded exclusions for PMD
+    Updated SM version to fix comma in pom
+    Switched to shavenmaven
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Fixed missing release properties
+    Added better release support
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added publishing of example output
+    dan, matt: changing format of pom artifact name to match Yadic, and Artifactory
+    dan,matt added versioning to pom
+    dan,matt added Maven pom file to be published
+    dan,matt added Maven pom file to be published
+    dan, matt: now uses versioned jar names to get around dumb ass googlecode
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    Make TestLogger available from the container
+    added ContainerTestState as an optional yadic dependency
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Tom made HasXpath public
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    added matchers
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Added getXPathValues convenience method
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    adding  StateExtractor for iterables
+    Creating StateExtractors class for convenient reusable StateExtractors
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    groups only on message name, fix problem with message uml for default from
+    groups can be defined using brackets '()'
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    Updated TL to 1130
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    groups only on message name, fix problem with message uml for default from
+    groups can be defined using brackets '()'
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    Prevent sequence diagram popup flickering on hover
+    Fix sequence diagram popups that were not displaying correctly after jquery upgrade
+    Mike and Martin: use jquery selector properly
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    ChrisH and MikeH: onhover and click work better together
+    ChrisH and MikeH: add onhover stuff to the sequence diagram messages
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload (for real this time :-) )
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload
+    ChrisH and MikeH: do not hide captured inputs and outputs that are part of the sequence diagram until we get sequence diagrams working in all browsers.  Currently only chrome :-(
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    RichardF, Brad and MattC: fixing highlighting of interesting givens in the modal windows
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    Extract interface for Content
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    tried to make sequence diagram stuff clearer
+    get svg working in firefox 4 and later by adding units to width and height
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    SteveE,MarkB: upgrade plantuml, and use shaven maven
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    MikeH: allow collection of PlantUML markup during sequence diagram generation
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    RichardF, Brad and MattC: tidied SequenceDiagramGenerator and removed Halo specific subject
+    RichardF, Brad and MattC: removing sys out
+    RichardF, Brad and MattC: fixing highlighting of interesting givens in the modal windows
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    Tidy up yatspec annotations.
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    renaming TestResult.testInstance to TestResult.safeCastTestInstance
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    BenU, SteveE: Pulled out a renderer for the scenario name required for maven surefire
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: added publishing of example output
+    dan: inital import
+    Better support for methods with var-args.
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    Previous commit fixed Issue 10: Wordifying source code will leave things that look like floating points untouched
+    moving SpecRunner to a more generic and extensible model
+    cleaning up index generation mess and css
+    BenU, PaulB: The scenario name renderer used needs to be the same across yatspec. We've moved the static factory method that selects the appropriate renderer to an actual factory class (although we've kept is as a static method for now)
+    BenU, SteveE: Moved the renderer factory method to DecoratingFrameworkMethod which is the only thing that needs it. Moved and tidied tests
+    BenU, SteveE: Renaming the scenario name renderer implementations
+    BenU, SteveE: Choose the scenario name renderer using a system property
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    BenU, SteveE: Remove deprecated invocationName method in favour of one that uses the new ScenarioName class.
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    Fixing broken notes rendering
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Fixed file parsing to be OS-neutral
+    Replace native method call with File API
+    Updated to latest TL version
+    Removing .class from rendered response
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: added publishing of example output
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    renaming TestResult.testInstance to TestResult.safeCastTestInstance
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    Fixing broken notes rendering
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Tidied exception handling on ActionUnderTest
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    We forgot these...
+    Adding syntactic sugar, baby
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    added andA andAn and andThe syntactic sugar methods
+    more syntactic sugar
+    Fixing a bug in table-tests caused by QDox
+    adding more syntactic sugar
+    Syntactic sugar methods for readable documentation
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    Make NiceMap methods non-final so that they can be overridden.
+    
+    My use case is extending InterestingGivens and overriding the read methods (getType etc) so that they throw an UnsupportedOperationException to create a WriteOnlyInterestingGivens class that can help ensure that the InterestingGivens are not being used as a big bag of global state and are only used to indicate which values to display.
+    Luke: allow for asserting on values in NiceMap whilst it is being updated concurrently by changing getTypes method to return thread-safe snapshot of underlying map
+    Fixed lost update problem when there are concurrent inserts into captured inputs and outputs
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Added clear and remove to captured inputs and outputs
+    make actor names in sequence diagrams clickable
+    more fiddling with nicemap
+    more fiddling with nicemap
+    adding more map methods To Nicemap
+    adding standard map method to NiceMap to combine two maps
+    Adding matchers
+    Remove NiceMap#getOption
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    matt: writing some actual unit tests before comitting code so that it, y'know, works and stuff
+    alex, matt - adding more info into the class cast exception raised by Nicemap getType
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    more fiddling with nicemap
+    adding more map methods To Nicemap
+    adding standard map method to NiceMap to combine two maps
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    missed to add actual fix in the previous commit
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Darren and Mike added an interface so tests don't have to extend TestState
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: fixed wierd Generics replacement
+    dan: added publishing of example output
+    Convert then() to use hamcrest1.2 compatible matcher. Also add example test.
+    Use Hamcrest assertions instead of JUnit assertions. This allows Hamcrest 1.2 features to be used in matchers passed in to yatspec.
+    Re-added test logger
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Re-added test logger
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Added InterestingGivensTypeLoader to simply InterestingGivens access
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    added matchers
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    moving SpecRunner to a more generic and extensible model
+    BenU, PaulB: The scenario name renderer used needs to be the same across yatspec. We've moved the static factory method that selects the appropriate renderer to an actual factory class (although we've kept is as a static method for now)
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    moving SpecRunner to a more generic and extensible model
+    Updated TL to 1130
+    cleaning up index generation mess and css
+    Extract interface for Content
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    BenU, SteveE: Choose the scenario name renderer using a system property
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    Use relative paths for @LinkingNote so that the paths work on CI
+    add LinkingNote annotation
+    Extract interface for Content
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    stopped exposing totallylazy in custom rendering config
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    moving SpecRunner to a more generic and extensible model
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Allowed ResultRenderer to control file name
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    Tidy up yatspec annotations.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    Fixing Issue-15 by escaping Java Source
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    Updated wiki format ro correctly display links and preserve java code format
+    Extract interface for Content
+    Support more than one custom header content
+    Add a hook for specifying custom keywords to highlight and a hook for custom scripts. Also updated jquery to a more recent version which has support for $.map over an object.
+    Made HtmlResultRenderer#withCustomRenderer(Predicate<T> predicate, Renderer<T> renderer) public so renderer can be chosen based on something other than instanceOf
+    Use relative paths for @LinkingNote so that the paths work on CI
+    add LinkingNote annotation
+    Updated to totallylazy-815 and funclate-84
+    Support highlighting interesting givens with regex characters
+    making links from index files relative
+    stopped exposing totallylazy in custom rendering config
+    removing WithCustomHeaderContent interface in favour of configuring properties of renderers as they are created
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    moving SpecRunner to a more generic and extensible model
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Register custom renderers first in HTML result renderer
+    Updated TL version
+    Allowed ResultRenderer to control file name
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Dan Oxlade and Richard Friend: Tidied up the code a little.
+    Dan Oxlade and Richard Friend: Added support for registering custom renderers.
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: Fixed css and javascript include to be inline
+    dan: Made result writer embed stylesheet and script
+    Fixed loading of template
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer (missing file)
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    allowing direct specification of replacement regex in hyperlink renderer
+    HyperlinkRenderer optionally renders individual words in @Notes
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve/Tom HyperlinkRenderer validation and target
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Support highlighting interesting givens with regex characters
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Add a hook for specifying custom keywords to highlight and a hook for custom scripts. Also updated jquery to a more recent version which has support for $.map over an object.
+    made yatspec test results collapsible
+    Support highlighting interesting givens with regex characters
+    Escape interesting givens for regexes to prevent JS from blowing up. Still doesn't highlight interesting givens with special characters in them.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Don't try to highlight empty interesting givens
+    Updated to latest TL version
+    TimW : Tweaking highlighting pattern matches for interesting givens, added html page to visually check output.
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: fixing highlighting of interesting givens in the modal windows
+    Dan Oxlade: fixing a bug where for uneven numbers of logkey classes the elements are not collapsed
+    DavidP and MikeH: allow insertion of markup into the HTML result file without it being highlighted.  Currently restricted to SVG markup
+    Dan Oxlade: fixing a smal bug in the interesting givens highlighting. scope logkey class click handler to the parent scenario
+    Fixed javascript issue on large documents taking too long to parse
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    dan: Made result writer embed stylesheet and script
+    dan: inital import
+    Setting width to fill the width of the screen due to bug in jQuery UI insisting on position: absolute in body
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    Update yatspec.css
+    
+    Removed position absolute
+    Fix sequence diagram popups that were not displaying correctly after jquery upgrade
+    made yatspec test results collapsible
+    cleaning up index generation mess and css
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    DavidP and MikeH: allow insertion of markup into the HTML result file without it being highlighted.  Currently restricted to SVG markup
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: Fixed css and javascript include to be inline
+    dan: Collapsed tables
+    dan: Made result writer embed stylesheet and script
+    dan: inital import
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    Support more than one custom header content
+    Add a hook for specifying custom keywords to highlight and a hook for custom scripts. Also updated jquery to a more recent version which has support for $.map over an object.
+    fixing incorrect rendering due to extra table in the template
+    made yatspec test results collapsible
+    Dave & Dan - Added generic annotation rendering.
+    Fixed: table tests not rendering empty parameters
+    Support highlighting interesting givens with regex characters
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    MArkB: Actually removing Link anotation properly
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    DavidP and MikeH: allow insertion of markup into the HTML result file without it being highlighted.  Currently restricted to SVG markup
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: added publishing of example output
+    dan, stu: fixed links in specifications
+    dan: fixed links, css escaping
+    dan: Fixed css and javascript include to be inline
+    dan: Made result writer embed stylesheet and script
+    cleaning up index generation mess and css
+    cleaning up index generation mess and css
+    cleaning up index generation mess and css
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    cleaning up index generation mess and css
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    fixing up css class of statuses in html index
+    html index is now organised by packages, with links to individual test method results
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated to totallylazy-815 and funclate-84
+    making links from index files relative
+    minor cosmetic code cleanup
+    moving SpecRunner to a more generic and extensible model
+    cleaning up index generation mess and css
+    Extract interface for Content
+    Updated to totallylazy-815 and funclate-84
+    making links from index files relative
+    minor cosmetic code cleanup
+    moving SpecRunner to a more generic and extensible model
+    cleaning up index generation mess and css
+    cleaning up index generation mess and css
+    Updated to totallylazy-815 and funclate-84
+    making links from index files relative
+    minor cosmetic code cleanup
+    supports alternative methods of finding TestMethod tags beyond checking the Notes annotation
+    moving SpecRunner to a more generic and extensible model
+    cleaning up index generation mess and css
+    cleaning up index generation mess and css
+    making tag index clearer
+    added result class to tag index
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    cleaning up index generation mess and css
+    cleaning up index generation mess and css
+    supports alternative methods of finding TestMethod tags beyond checking the Notes annotation
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    minor cleanup to tagging example
+    supports alternative methods of finding TestMethod tags beyond checking the Notes annotation
+    BenU, SteveE: Renaming the scenario name renderer implementations
+    BenU, SteveE: Choose the scenario name renderer using a system property
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    BenU, SteveE: Renaming the scenario name renderer implementations
+    BenU, SteveE: Choose the scenario name renderer using a system property
+    BenU, SteveE: Pulled out a renderer for the scenario name required for maven surefire
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Fixed intermittent bug where annotations doesn't match method under test due to reflection api changing order methods are returned in
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Switched from PMD to QDox for Java code parsing
+    make actor names in sequence diagrams clickable
+    mateusz, tom - removing comment
+    mateusz, tom - support empty test bodies
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Fixed file parsing to be OS-neutral
+    Moved annotation callable into TL
+    Updated to latest TL to verify recursiveFiles works as expected
+    Another clean up around file finding
+    Minor cleanup
+    Removed duplication from totallylazy
+    Improved file access
+    Replace native method call with File API
+    Updated TL version
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    Consider - to be a part of words so negative numbers do not have the negative sign chopped off.
+    alex.luker
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    dan, tom, mateusz - handling single uppercase letters at the end of a word
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Register custom renderers first in HTML result renderer
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Switched from PMD to QDox for Java code parsing
+    fixing the problem with methods and arguments having the same name
+    make actor names in sequence diagrams clickable
+    mateusz, tom - support empty test bodies
+    Started refactoring towards supporting different output formats
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    Updated to totallylazy-815 and funclate-84
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Made long file name test work on ext4 filesystems
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    MarkB, JY, adding ability to hyperlink external documentation
+    Support class names with length longer than 100 chars
+    Fixed file parsing to be OS-neutral
+    Updated to latest TL to verify recursiveFiles works as expected
+    Another clean up around file finding
+    Changed find to use flatMap instead of fold
+    Minor cleanup
+    Minor cleanup
+    Removed duplication from totallylazy
+    Improved file access
+    Replace native method call with File API
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    dan, tom, mateusz - handling single uppercase letters at the end of a word
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Removing dependencies on apache commons
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Upgraded totallylazy to 100
+    Updated totallylazy to 70
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    [SamHV] Fixed NPE caused when getting the table test row value from the annotation field reference
+    Support table test values that contain quotes
+    Fixed Issue 13: TableRunner copes with rows with a single value
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Fixed intermittent bug where annotations doesn't match method under test due to reflection api changing order methods are returned in
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Minor clean up
+    Switched from PMD to QDox for Java code parsing
+    make actor names in sequence diagrams clickable
+    mateusz, tom - support empty test bodies
+    Started refactoring towards supporting different output formats
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Fixed file parsing to be OS-neutral
+    Improved file access
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    VarargsParameterResolver should only support varargs as the last parameter, not an array.
+    
+    The previous behaviour was causing the VarargsParameterResolver to resolve the @Row("example") for a test method like public void test(String[] argument) as:
+     new Object[]{new String{"example"}}
+    
+     when I need it to resolve as:
+     new Object[]{"example"}
+    
+     for a ParameterResolver plugin for yatspec I am working on that will delegate to VarargsParameterResolver to deal with varargs and add some additional functionality on top of that.
+    Allow custom parameter resolution for table tests
+    Allow custom parameter resolution for table tests
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Upgraded TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Updated totallylazy
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    fix for issue #21 - Thread safety issue in SpecRunner
+    Fix a null pointer exception reported to standard out if all tests in a class are ignored or if an assumption is false in a BeforeClass
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    made SpecRunner.outputDirectory() public
+    renaming TestResult.testInstance to TestResult.safeCastTestInstance
+    moving SpecRunner to a more generic and extensible model
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    cleaning up index generation mess and css
+    BenU, RachelN, DanWB: Add a setter for the scenario name system property to allow programmatic configuration.
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Allowed ResultRenderer to control file name
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Fixed NullPointerException in SpecRunner when a test fails in setup
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Darren and Mike added an interface so tests don't have to extend TestState
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: chnage to print stack trace on failure to write
+    dan: moved default directory to temp folder
+    dan: Made result writer embed stylesheet and script
+    Re-added test logger
+    dan: inital import
+    Allow custom parameter resolution for table tests
+    Better support for methods with var-args.
+    Supporting array parameter to table tests
+    BenU, PaulB: The scenario name renderer used needs to be the same across yatspec. We've moved the static factory method that selects the appropriate renderer to an actual factory class (although we've kept is as a static method for now)
+    BenU, SteveE: Moved the renderer factory method to DecoratingFrameworkMethod which is the only thing that needs it. Moved and tidied tests
+    BenU, SteveE: Remove deprecated invocationName method in favour of one that uses the new ScenarioName class.
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: inital import
+    add LinkingNote annotation
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    supports alternative methods of finding TestMethod tags beyond checking the Notes annotation
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    Allow custom parameter resolution for table tests
+    moving SpecRunner to a more generic and extensible model
+    moving SpecRunner to a more generic and extensible model
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Added getXPathValues convenience method
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    adding  StateExtractor for iterables
+    Creating StateExtractors class for convenient reusable StateExtractors
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    added matchers
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    groups only on message name, fix problem with message uml for default from
+    groups can be defined using brackets '()'
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    groups only on message name, fix problem with message uml for default from
+    groups can be defined using brackets '()'
+    Updated to totallylazy-815 and funclate-84
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    Fixing broken notes rendering
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MArkB: Actually removing Link anotation properly
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Added InterestingGivensTypeLoader to simply InterestingGivens access
+    fixing bug for concurrent logging of capturedInputsOutputs in TestState
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    We forgot these...
+    Stop using CoreMatchers -- this disappears in a later version of JUnit.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    more fiddling with nicemap
+    adding standard map method to NiceMap to combine two maps
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Fixed NullPointerException in SpecRunner when a test fails in setup
+    Moved Regex support to totallylazy
+    matt, alex: writing some actual unit tests before comitting code so that it, y'know, works and stuff
+    matt: writing some actual unit tests before comitting code so that it, y'know, works and stuff
+    BenU, SteveE: Test existing behaviour prior to refactor
+    VarargsParameterResolver should only support varargs as the last parameter, not an array.
+    
+    The previous behaviour was causing the VarargsParameterResolver to resolve the @Row("example") for a test method like public void test(String[] argument) as:
+     new Object[]{new String{"example"}}
+    
+     when I need it to resolve as:
+     new Object[]{"example"}
+    
+     for a ParameterResolver plugin for yatspec I am working on that will delegate to VarargsParameterResolver to deal with varargs and add some additional functionality on top of that.
+    Better support for methods with var-args.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Added missing file
+    Loading jquery over HTTPS and updating versions. Re adding body position absolute due to issue with jumping when hovering over dialogs.
+    Support highlighting interesting givens with regex characters
+    Escape interesting givens for regexes to prevent JS from blowing up. Still doesn't highlight interesting givens with special characters in them.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Don't try to highlight empty interesting givens
+    Updated to latest TL version
+    TimW : Tweaking highlighting pattern matches for interesting givens, added html page to visually check output.
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Allowed ResultRenderer to control file name
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    Added initial wiki support
+    Extract interface for Content
+    Add a hook for specifying custom keywords to highlight and a hook for custom scripts. Also updated jquery to a more recent version which has support for $.map over an object.
+    Stop using CoreMatchers -- this disappears in a later version of JUnit.
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    Updated to totallylazy-815 and funclate-84
+    making links from index files relative
+    removing WithCustomHeaderContent interface in favour of configuring properties of renderers as they are created
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    moved test .html file into test directory
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    HyperlinkRenderer optionally renders individual words in @Notes
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MArkB: Actually removing Link anotation properly
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    Steve - Make InterestingGivens/CapturedInputsAndOutputs interface explicit
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    change custom rendering from annotations on the test class to a method on the test class instance
+    Dan Oxlade and Richard Friend: Tidied up the code a little.
+    Dan Oxlade and Richard Friend: Added support for registering custom renderers.
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Use Hamcrest assertions instead of JUnit assertions. This allows Hamcrest 1.2 features to be used in matchers passed in to yatspec.
+    dan: Made result writer embed stylesheet and script
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Started refactoring towards supporting different output formats
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Removing .class from rendered response
+    Add a hook for specifying custom keywords to highlight and a hook for custom scripts. Also updated jquery to a more recent version which has support for $.map over an object.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    allowing direct specification of replacement regex in hyperlink renderer
+    HyperlinkRenderer optionally renders individual words in @Notes
+    moved test .html file into test directory
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    BenU, SteveE: Renaming the scenario name renderer implementations
+    BenU, SteveE: Pulled out a renderer for the scenario name required for maven surefire
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    BenU, SteveE: Remove deprecated invocationName method in favour of one that uses the new ScenarioName class.
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    BenU, SteveE: Test existing behaviour prior to refactor
+    BenU, SteveE: Test existing behaviour prior to refactor
+    Started refactoring towards supporting different output formats
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Removing .class from rendered response
+    BenU, SteveE: Renaming the scenario name renderer implementations
+    BenU, SteveE: Pulled out a renderer for the scenario name
+    BenU, SteveE: Remove deprecated invocationName method in favour of one that uses the new ScenarioName class.
+    BenU, SteveE: Pull out the combination of a method name and a scenario table row as a ScenarioName
+    BenU, SteveE: Test existing behaviour prior to refactor
+    BenU, SteveE: Test existing behaviour prior to refactor
+    Started refactoring towards supporting different output formats
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Removing .class from rendered response
+    Consider - to be a part of words so negative numbers do not have the negative sign chopped off.
+    alex.luker
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    dan, tom, mateusz - handling single uppercase letters at the end of a word
+    Tidy up yatspec annotations.
+    Updated to totallylazy-815 and funclate-84
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Made long file name test work on ext4 filesystems
+    MarkB, JY, adding ability to hyperlink external documentation
+    Support class names with length longer than 100 chars
+    Removed unused File
+    Another clean up around file finding
+    Removed duplication from totallylazy
+    Improved file access
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Updated wiki format ro correctly display links and preserve java code format
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    fixing the problem with methods and arguments having the same name ... and a test
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    [SamHV] Fixed NPE caused when getting the table test row value from the annotation field reference
+    Support table test values that contain quotes
+    Tidy up yatspec annotations.
+    Dave & Dan - Added generic annotation rendering.
+    Fixing broken notes rendering
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    Switched yatspec to use totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    Use relative paths for @LinkingNote so that the paths work on CI
+    add LinkingNote annotation
+    Better support for methods with var-args.
+    add LinkingNote annotation
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    minor cleanup to tagging example
+    adding more features into SpecificationExampleTest
+    supports alternative methods of finding TestMethod tags beyond checking the Notes annotation
+    moving SpecRunner to a more generic and extensible model
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    removing programattic setting of the index renderer which was being used for debugging
+    removing tags from SpecificationExampleTest
+    cleaning up index generation mess and css
+    added result class to tag index
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    removing ignore annotation from test
+    fixing up css class of statuses in html index
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    Removed unintentional settings
+    Added initial wiki support
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    mateusz, tom - support empty test bodies
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    MarkB, JY, adding ability to hyperlink external documentation
+    Replace native method call with File API
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added support for notes
+    dan: added publishing of example output
+    Stuart, Laszlo - example of yatspec usage
+    Stop using CoreMatchers -- this disappears in a later version of JUnit.
+    Fix a null pointer exception reported to standard out if all tests in a class are ignored or if an assumption is false in a BeforeClass
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    removing WithCustomHeaderContent interface in favour of configuring properties of renderers as they are created
+    removing WithCustomer...Renderer interface in favour of configuring properties of renderers as they are created
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer
+    using funclate
+    fixing problem with hyperlinks for groups
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    get svg working in firefox 4 and later by adding units to width and height
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload (for real this time :-) )
+    ChrisH and MikeH: get clickable elements in sequence diagrams displaying the right payload
+    MikeH and Brad: allow message names in sequence diagrams to be the same as previous message names; allow captured input and output names of the form "x from a to b" to be included in the sequence diagram; tidyied up some of the jquery stuff.
+    RichardF, Brad and MattC: tidied SequenceDiagramGenerator and removed Halo specific subject
+    RichardF, Brad and MattC: fixing highlighting of interesting givens in the modal windows
+    RichardF, Brad and MattC: adding sequence diagram generator to yatspec as a plugin. An example has also been included
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    VarargsParameterResolver should only support varargs as the last parameter, not an array.
+    
+    The previous behaviour was causing the VarargsParameterResolver to resolve the @Row("example") for a test method like public void test(String[] argument) as:
+     new Object[]{new String{"example"}}
+    
+     when I need it to resolve as:
+     new Object[]{"example"}
+    
+     for a ParameterResolver plugin for yatspec I am working on that will delegate to VarargsParameterResolver to deal with varargs and add some additional functionality on top of that.
+    Better support for methods with var-args.
+    Stop using CoreMatchers -- this disappears in a later version of JUnit.
+    Supporting array parameter to table tests
+    Fixed Issue 13: TableRunner copes with rows with a single value
+    made SpecRunner.outputDirectory() public
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Use Hamcrest assertions instead of JUnit assertions. This allows Hamcrest 1.2 features to be used in matchers passed in to yatspec.
+    dan: added simple TableTest example
+    Better support for methods with var-args.
+    moving SpecRunner to a more generic and extensible model
+    BenU, SteveE: Updated test to use random method names.
+    BenU, SteveE: Moved the renderer factory method to DecoratingFrameworkMethod which is the only thing that needs it. Moved and tidied tests
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Made qdox an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Switched from PMD to QDox for Java code parsing
+    make actor names in sequence diagrams clickable
+    Embedded totallylazy into Yatspec so you can have different versions of totallylazy in your production or test code
+    SteveE,MarkB: upgrade plantuml, and use shaven maven
+    MarkB, JY, adding ability to hyperlink external documentation
+    Moved annotation callable into TL
+    Updated to latest TL to verify recursiveFiles works as expected
+    Another clean up around file finding
+    Removed duplication from totallylazy
+    Updated TL version
+    Updated to latest TL version
+    Switched to shavenmaven
+    Updated TL to 1130
+    Renamed class to try and prevent them showing in IntellJ
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Added basic support for creating an index for all tests, lots more to do...
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Made qdox an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Embedded totallylazy into Yatspec so you can have different versions of totallylazy in your production or test code
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: added publishing of example output
+    dan: inital import
+    fixing the build, the dependencies are not available on the given URLs any more
+    Updated TL to 1130
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Fixed url to use mvn syntax
+    fixing the build, the dependencies are not available on the given URLs any more
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    Updated TL to 1130
+    added ContainerTestState as an optional yadic dependency
+    Updated to TL:927 Fu:94. Dependencies from s3.
+    Updated to totallylazy-815 and funclate-84
+    removing coupling between custom rendering, which is a rendering concern, and Result
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Upgraded libs
+    Made StringTemplate an internal dependency
+    Made qdox an internal dependency
+    Updated TL
+    upgrading TL and funclate version
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Removed unneed xml modification
+    make actor names in sequence diagrams clickable
+    Embedded totallylazy into Yatspec so you can have different versions of totallylazy in your production or test code
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Readded exclusions for PMD
+    Switched to shavenmaven
+    Updated TL to 1130
+    added ContainerTestState as an optional yadic dependency
+    Mike and Martin: avail of new feature in plantuml to simplify clickable sequence diagrams
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved all jdom dependent functionality into it's own plugin package so Jdom and Jaxen can be made optional dependencies
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    fixing bug for concurrent logging of capturedInputsOutputs in TestState
+    Make TestLogger available from the container
+    Updated TL to 1130
+    added ContainerTestState as an optional yadic dependency
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Added support to disable highlighting (either make Renderer wrap add css class 'nohighlight' or use DontHighlightRenderer
+    Updated TL
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    Adding matchers
+    Embedded totallylazy into Yatspec so you can have different versions of totallylazy in your production or test code
+    MarkB, JY, adding ability to hyperlink external documentation
+    Improved file access
+    Replace native method call with File API
+    Updated to latest TL version
+    Upgraded TL version
+    MikeH: allow collection of PlantUML markup during sequence diagram generation
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Updating TL version in pom
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Added InterestingGivensTypeLoader to simply InterestingGivens access
+    Fixed NullPointerException in SpecRunner when a test fails in setup
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Convert then() to use hamcrest1.2 compatible matcher. Also add example test.
+    dan: inital import
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Tom/Steve Fix StringTemplate annotation rendering to provide @Notes rendering
+    MarkB, JY, adding ability to hyperlink external documentation
+    Support class names with length longer than 100 chars
+    Removed unused File
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Updating TL version in pom
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Updating TL version in pom
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Upgraded TL to fix truncation issue
+    added ContainerTestState as an optional yadic dependency
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Tidied up stream housekeeping and introduced custom rendering of @Notes on class
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Updating TL version in pom
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    dan: inital import
+    added ContainerTestState as an optional yadic dependency
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Upgraded TL version
+    Allowed yatspec to output parsed contents of tests in abstract test case
+    Updating TL version in pom
+    Fixed NullPointerException in StateExtractors
+    Dano & David: Fixing sequence diagram bug where the inputs and outputs are no longer clickable after hovering over sequence diagram links
+    Added InterestingGivensTypeLoader to simply InterestingGivens access
+    Moved Regex support to totallylazy
+    alex - refactoring NiceMap generics to differenciate method type from class type
+    Fixed loading of template
+    dan: inital import
+    Updated QDox to 1.12.1 to fix a bug where escaped characters cannot be parsed (see TestParserTest.supportsEscapedCharactersInParameters). Also fixed portability issues with line separators in tests. Note that ClassLoader.getResource expects a '/'-separated path name always.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Upgraded TL to fix truncation issue
+    Updated TL to 1130
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Removed unneeded class
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Updated TL to 1130
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Removed unneeded class
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Updated TL to 1130
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Updated TL to 1130
+    Updated to totallylazy-815 and funclate-84
+    cleaning up index generation mess and css
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    html index is now organised by packages, with links to individual test method results
+    Look for Java source file in classpath before file system
+    Updated TL version
+    Made StringTemplate an internal dependency
+    Moved Html specific rendering into sub folder in prep for wiki markup rendering
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    Added clear and remove to captured inputs and outputs
+    Removed unneeded class
+    reverting stoopid link stuff
+    
+    tt: Enter commit message.  Lines beginning with 'HG:' are removed.
+    Steve - Add missing classes
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Switched to shavenmaven
+    Fixed bug caused by use manually creating the class that stoppped @BeforeClass annotations working (Thanks Andy for TestCase)
+    Updated TL to 1130
+    Updated to TL:927 Fu:94. Dependencies from s3.
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Updated TL version
+    Made StringTemplate an internal dependency
+    using funclate
+    groups can be defined using brackets '()'
+    Fixing a bug in table-tests caused by QDox
+    Updated TL version
+    make actor names in sequence diagrams clickable
+    MarkB, JY, adding ability to hyperlink external documentation
+    Updated to latest TL version
+    Updated SM version to fix comma in pom
+    Switched to shavenmaven
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system
+    added horrific first cut of indexing tags. will roll back as soon as the build is done.
+    Look for Java source file in classpath before file system

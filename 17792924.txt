@@ -1,0 +1,1676 @@
+﻿    initial version
+    Initial commit
+    Use a different URL for workitems. (#78)
+    
+    The sample config uses a bug URL of the format _workitems#_a=edit&id=[_ID] and it works fine for the most parts. However, if the user is not already logged in, the bit after the # is lost after the login flow and the user ends up in the queries tab instead of the specific bug. The URL _workitems/edit/[_ID] seems to work fine in all cases.
+    
+    The URL _workitems?_a=edit&id=[_ID] was also tried and works fine on VSTS, but is not recognized in TFS 2013.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Add pointer to @jeffwilcox's blog post for Azure service setup
+    README Update
+    Microsoft OSS code of conduct
+    Fixed a typo
+    update README, compatible with newer Visual Studio
+    Specify support for VSO
+    ReadMe.md formatting changes
+    Added basi usage guide + minor changes
+    
+    Added basic usage guide + changed title of Building MailToBug
+    Add build instructions to ReadMe.md
+    Update readme.md - Remove outdated information and add another common
+    usage scenario
+    initial version
+    Initial commit
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Perf improvement for mult-instance servers - Part III
+    
+        The previos part was not refreshing the mailboxes at the beginning of
+        each iteration (by calling ProcessInbox), which is a core requirement for
+        RecipientsMailboxManagerRouter to work properly. This iteration adds
+        that along with the required changes in creating and passing the
+        EWSConnectionManager (previously EWSConnectionFactory).
+    
+        EWSConnectionFactory was renamed because it now does slightly more
+        than just create the connections, due to the nature of the connectios
+        (namely, it provides the functionality of refreshing the inboxes).
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Minor code cleanup for addition of machine-level encryption of credentials
+    adding files
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Unbreak abstraction
+    Added documentation. Getting work items by conversationID or conversationIndex based on config value.
+    Add the ability to use the conversation GUID instead of the conversation index.
+    code analysis nameof in vs2015
+    Add setting to allow bypassing TFS validation rules
+    Add a basic credential way to create bug
+    Add support for Personal Access Tokens
+    Add support for attaching replies
+    
+    Based on a config value, reply messages can now be attached to the work
+    item as files.
+    As part of this change, the strategy for attaching email messages to the
+    work item has changed a little bit, where the attachment file name will
+    indicate the date/time when it was attached (including for the original
+    message).
+    Also added code to delete the temporary attachment file once it has been
+    attached to the work item.
+    Add support for disabling overriding "Changed By" when processing replies
+    
+    This is important for VSO instances that disallow overriding "Changed By"
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Add support for ADAL with OAuth token
+    
+    Initial support for connecting to VSO with ADAL authentication
+    The new support takes dependency on the ADAL NuGet package, but no
+    dependency on VS2015 binaries
+    Updated documentation + minor code changes
+    
+    Added fully annotated config example
+    Removed unnecessary elements from basic config example
+    Added example query file
+    
+    Removed legacy special value from SpecialValueResolver
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Change the inbox filtering to use the query string interface rather than
+    EWS SearchFilter objects, since the latter don't properly support
+    filtering by ToRecipients and CcRecipients
+    
+    Also, changed the config settings accordingly to just mention Recipients,
+    since the query string format considers both email addresses and display
+    names when filtering
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    Removed NuGet.targets as it doesn't appear to do anything and fix TFS references for VS2013.
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Perf improvement for mult-instance servers - Part III
+    
+        The previos part was not refreshing the mailboxes at the beginning of
+        each iteration (by calling ProcessInbox), which is a core requirement for
+        RecipientsMailboxManagerRouter to work properly. This iteration adds
+        that along with the required changes in creating and passing the
+        EWSConnectionManager (previously EWSConnectionFactory).
+    
+        EWSConnectionFactory was renamed because it now does slightly more
+        than just create the connections, due to the nature of the connectios
+        (namely, it provides the functionality of refreshing the inboxes).
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Changing recipients in EWS query string to lower-case - using
+    non-lowercase values was causing issues with some emails not being picked
+    up by the query. The EWS documentation states that values are treated
+    case-insensitive, but since query results are different when lowercasing
+    the values, that case-insensitivity may have some bug in its
+    implementation.
+    Testing against existing set-ups shows the query does yield correct
+    results when lower-cased. Unfortunatley documentation around this
+    functionality is sparse. I will be following up with the EWS team to try
+    and figure out more details about this to make sure the current solution
+    will actually work as expected under all circumstances.
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Add run.cmd for running as a WebJob. (#94)
+    
+    Also updated the documentation for WebJobs and KeyVault usage.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Fix RTF-format emails erroneously converted to plain text instead of HTML.
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Update Microsoft.TeamFoundationServer.ExtendedClient dependency to version 14.89.0, which supports bypassing validation for "Created By" field
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    Bug fix for RecipientMailboxManagerRouter + logging
+    
+    Fixed a bug in RecipientsMailboxManagerRouter that caused it to hang when
+    calling ProcessInbox and no clients registered on the client
+    
+    Added some logging to message processing path as part of debugging the bug
+    mentioned above
+    Perf improvement for mult-instance servers - Part III
+    
+        The previos part was not refreshing the mailboxes at the beginning of
+        each iteration (by calling ProcessInbox), which is a core requirement for
+        RecipientsMailboxManagerRouter to work properly. This iteration adds
+        that along with the required changes in creating and passing the
+        EWSConnectionManager (previously EWSConnectionFactory).
+    
+        EWSConnectionFactory was renamed because it now does slightly more
+        than just create the connections, due to the nature of the connectios
+        (namely, it provides the functionality of refreshing the inboxes).
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Removed NuGet.targets as it doesn't appear to do anything and fix TFS references for VS2013.
+    Add support for ADAL with OAuth token
+    
+    Initial support for connecting to VSO with ADAL authentication
+    The new support takes dependency on the ADAL NuGet package, but no
+    dependency on VS2015 binaries
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    Remove custom message processing strategy that's not needed anymore
+    
+    Truncate conversation IDs at 255 characters since this is the limit in TFS
+    standard text fields. Without this truncation, when a conversation ID went
+    beyond 255 chars, it would not be stored at all, and any subsequent
+    message will create a new bug.
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Add run.cmd for running as a WebJob. (#94)
+    
+    Also updated the documentation for WebJobs and KeyVault usage.
+    Reduce logging by changing some messages from Info to Debug
+    
+    Removed some non-essential messages to 'Debug' level, since they are no of
+    interest during day-to-day operations
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Abstract message post-processing to MailboxManager
+    
+    Post processing is now defined in the MailboxManagers, where they can
+    define whether messages should be deleted, moved, etc. Putting this in the
+    mailbox manager rather than the message layer, since this is essentially
+    something that is part of how the incoming messages queue is managed,
+    which is what the mailbox manager owns
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Update Microsoft.TeamFoundationServer.ExtendedClient dependency to version 14.89.0, which supports bypassing validation for "Created By" field
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Removed NuGet.targets as it doesn't appear to do anything and fix TFS references for VS2013.
+    Add support for ADAL with OAuth token
+    
+    Initial support for connecting to VSO with ADAL authentication
+    The new support takes dependency on the ADAL NuGet package, but no
+    dependency on VS2015 binaries
+    initial version
+    initial version
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Abstract message post-processing to MailboxManager
+    
+    Post processing is now defined in the MailboxManagers, where they can
+    define whether messages should be deleted, moved, etc. Putting this in the
+    mailbox manager rather than the message layer, since this is essentially
+    something that is part of how the incoming messages queue is managed,
+    which is what the mailbox manager owns
+    initial version
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Send Ack emails even if the system is in Simulation Mode.
+    Minor function and parameter name changes
+    
+    bug-->workItem
+    Append-->Update
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Respect the UseConversationGuidOnly setting in EwsByFolder mode as well.
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Include changes to file that was accidentally left out before
+    adding files
+    Revert "Remove useConversationGuidOnly from connection management. Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly."
+    
+    This reverts commit 76baaff2733f52f4172b42dd41089ac04b76ab75.
+    Remove useConversationGuidOnly from connection management.
+    Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly.
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Unbreak abstraction
+    Perf improvement for mult-instance servers - Part III
+    
+        The previos part was not refreshing the mailboxes at the beginning of
+        each iteration (by calling ProcessInbox), which is a core requirement for
+        RecipientsMailboxManagerRouter to work properly. This iteration adds
+        that along with the required changes in creating and passing the
+        EWSConnectionManager (previously EWSConnectionFactory).
+    
+        EWSConnectionFactory was renamed because it now does slightly more
+        than just create the connections, due to the nature of the connectios
+        (namely, it provides the functionality of refreshing the inboxes).
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    Change the inbox filtering to use the query string interface rather than
+    EWS SearchFilter objects, since the latter don't properly support
+    filtering by ToRecipients and CcRecipients
+    
+    Also, changed the config settings accordingly to just mention Recipients,
+    since the query string format considers both email addresses and display
+    names when filtering
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Remove invisible html elements like head, style etc. from comments
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Unbreak abstraction
+    Added documentation. Getting work items by conversationID or conversationIndex based on config value.
+    Add the ability to use the conversation GUID instead of the conversation index.
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Fix: Fallback for deriving conversation guid from ConversationIndex was not working correctly.
+    Fix RTF-format emails erroneously converted to plain text instead of HTML.
+    Add documentation
+    Revert "Remove useConversationGuidOnly from connection management. Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly."
+    
+    This reverts commit 76baaff2733f52f4172b42dd41089ac04b76ab75.
+    Remove useConversationGuidOnly from connection management.
+    Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly.
+    Retrieve message body in plain-text format by default. Use PR_BODY_HTML property to get raw HTML representation.
+    Unbreak abstraction
+    Added documentation. Getting work items by conversationID or conversationIndex based on config value.
+    Add case when _conversationId is null
+    Actually use ExtendedProperty to get conversationID
+    Use Extended property to get the ConversationGuid
+    Use ItemSchema.ConversationId
+    Add the ability to use the conversation GUID instead of the conversation index.
+    code analysis nameof in vs2015
+    Fix null-ref exception when handling empty body messages
+    
+    We translate empty body from null to empty string to avoid the null
+    reference access
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    initial version
+    Fix bug where ther are no recipieints in To/Cc line
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Abstract message post-processing to MailboxManager
+    
+    Post processing is now defined in the MailboxManagers, where they can
+    define whether messages should be deleted, moved, etc. Putting this in the
+    mailbox manager rather than the message layer, since this is essentially
+    something that is part of how the incoming messages queue is managed,
+    which is what the mailbox manager owns
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    Further fixes to properly retrieve all relevant messages - 'participants'
+    was flaky, so replaced with explicitly specifying 'to' and 'cc' clauses
+    Changing recipients in EWS query string to lower-case - using
+    non-lowercase values was causing issues with some emails not being picked
+    up by the query. The EWS documentation states that values are treated
+    case-insensitive, but since query results are different when lowercasing
+    the values, that case-insensitivity may have some bug in its
+    implementation.
+    Testing against existing set-ups shows the query does yield correct
+    results when lower-cased. Unfortunatley documentation around this
+    functionality is sparse. I will be following up with the EWS team to try
+    and figure out more details about this to make sure the current solution
+    will actually work as expected under all circumstances.
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Change the inbox filtering to use the query string interface rather than
+    EWS SearchFilter objects, since the latter don't properly support
+    filtering by ToRecipients and CcRecipients
+    
+    Also, changed the config settings accordingly to just mention Recipients,
+    since the query string format considers both email addresses and display
+    names when filtering
+    Fix default App.Config - seperated log4net.config to its own config file
+    and referenced it in App.config
+    Added email-address filtering option for EWS Recipients-based mailbox manager
+    initial version
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Revert "Remove useConversationGuidOnly from connection management. Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly."
+    
+    This reverts commit 76baaff2733f52f4172b42dd41089ac04b76ab75.
+    Remove useConversationGuidOnly from connection management.
+    Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly.
+    Unbreak abstraction
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Fix RTF-format emails erroneously converted to plain text instead of HTML.
+    Revert "Remove useConversationGuidOnly from connection management. Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly."
+    
+    This reverts commit 76baaff2733f52f4172b42dd41089ac04b76ab75.
+    Remove useConversationGuidOnly from connection management.
+    Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly.
+    Unbreak abstraction
+    Bug fix for RecipientMailboxManagerRouter + logging
+    
+    Fixed a bug in RecipientsMailboxManagerRouter that caused it to hang when
+    calling ProcessInbox and no clients registered on the client
+    
+    Added some logging to message processing path as part of debugging the bug
+    mentioned above
+    Perf improvement for mult-instance servers - Part III
+    
+        The previos part was not refreshing the mailboxes at the beginning of
+        each iteration (by calling ProcessInbox), which is a core requirement for
+        RecipientsMailboxManagerRouter to work properly. This iteration adds
+        that along with the required changes in creating and passing the
+        EWSConnectionManager (previously EWSConnectionFactory).
+    
+        EWSConnectionFactory was renamed because it now does slightly more
+        than just create the connections, due to the nature of the connectios
+        (namely, it provides the functionality of refreshing the inboxes).
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    initial version
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Reduce logging by changing some messages from Info to Debug
+    
+    Removed some non-essential messages to 'Debug' level, since they are no of
+    interest during day-to-day operations
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Bug fix for RecipientMailboxManagerRouter + logging
+    
+    Fixed a bug in RecipientsMailboxManagerRouter that caused it to hang when
+    calling ProcessInbox and no clients registered on the client
+    
+    Added some logging to message processing path as part of debugging the bug
+    mentioned above
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Respect the UseConversationGuidOnly setting in EwsByFolder mode as well.
+    Implement post-processors - Deletion and Archiver
+    
+    Deletion post-processor just deletes messages once we're done processing
+    them (existing behavior)
+    Archiver moves the messages to success/failure folders specified in
+    configuration.
+    
+    To trigger the archiving feature, you need to specify *both* success and
+    failure folders in the config - they can be the same or different from
+    each other.
+    Otherwise, the default behavior of deletion is invoked.
+    Abstract message post-processing to MailboxManager
+    
+    Post processing is now defined in the MailboxManagers, where they can
+    define whether messages should be deleted, moved, etc. Putting this in the
+    mailbox manager rather than the message layer, since this is essentially
+    something that is part of how the incoming messages queue is managed,
+    which is what the mailbox manager owns
+    initial version
+    initial version
+    initial version
+    initial version
+    initial version
+    Stricter match when using UseConversationGuidOnly (#86)
+    
+    Mail2Bug does a StartsWith match to locate bugs based on the conversation ID, since the conversation IDs of two emails are not identical. However, when UseConversationGuidOnly is enabled, the IDs are of fixed length and we can do an equality match. This will also protect, to some degree, against false matches with inadvertent, manually entered values in the field.
+    Unbreak abstraction
+    Added documentation. Getting work items by conversationID or conversationIndex based on config value.
+    Undo some formatting changes
+    Remove useConversationGuid from MessageToWorkItemMapper
+    Use ItemSchema.ConversationId
+    Add the ability to use the conversation GUID instead of the conversation index.
+    initial version
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Remove SimpleWebTokenCredential.
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Replace hard-coded values with constants.
+    Change noisy log message to DEBUG level
+    Allow @CurrentIteration in "Iteration Path" field.
+    Minor code cleanup for addition of machine-level encryption of credentials
+    adding files
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    code analysis nameof in vs2015
+    Fix space
+    Add setting to allow bypassing TFS validation rules
+    try silent auth before allowing a prompt
+    Address double escaping when copying raw HTML email body to an HTML field
+    Add a basic credential way to create bug
+    Add support for Personal Access Tokens
+    Add documentation for ADAL based authentication to VSO
+    
+    Updated the annotated config with details on how to set it up
+    Also changed the priority order, such that ADAL (if defined) takes
+    precedence over ServiceIdentity authentication
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Add support for ADAL with OAuth token
+    
+    Initial support for connecting to VSO with ADAL authentication
+    The new support takes dependency on the ADAL NuGet package, but no
+    dependency on VS2015 binaries
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    initial version
+    initial version
+    initial version
+    adding files
+    initial version
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Commit missed file
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    initial version
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    initial version
+    initial version
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Stricter match when using UseConversationGuidOnly (#86)
+    
+    Mail2Bug does a StartsWith match to locate bugs based on the conversation ID, since the conversation IDs of two emails are not identical. However, when UseConversationGuidOnly is enabled, the IDs are of fixed length and we can do an equality match. This will also protect, to some degree, against false matches with inadvertent, manually entered values in the field.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Revert "Remove useConversationGuidOnly from connection management. Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly."
+    
+    This reverts commit 76baaff2733f52f4172b42dd41089ac04b76ab75.
+    Remove useConversationGuidOnly from connection management.
+    Use special logic in SimpleBugStrategy to apply config for UseConversationGuidOnly.
+    Unbreak abstraction
+    Added documentation. Getting work items by conversationID or conversationIndex based on config value.
+    Remove useConversationGuid from MessageToWorkItemMapper
+    Remove unnecessary changes
+    Add the ability to use the conversation GUID instead of the conversation index.
+    Add support for attaching replies
+    
+    Based on a config value, reply messages can now be attached to the work
+    item as files.
+    As part of this change, the strategy for attaching email messages to the
+    work item has changed a little bit, where the attachment file name will
+    indicate the date/time when it was attached (including for the original
+    message).
+    Also added code to delete the temporary attachment file once it has been
+    attached to the work item.
+    Add support for disabling overriding "Changed By" when processing replies
+    
+    This is important for VSO instances that disallow overriding "Changed By"
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Minor function and parameter name changes
+    
+    bug-->workItem
+    Append-->Update
+    Remove custom message processing strategy that's not needed anymore
+    
+    Truncate conversation IDs at 255 characters since this is the limit in TFS
+    standard text fields. Without this truncation, when a conversation ID went
+    beyond 255 chars, it would not be stored at all, and any subsequent
+    message will create a new bug.
+    initial version
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    Add ###SenderEmail as a special value
+    
+    ###Sender contains both name and email; adding ###SenderEmail to get just the email address.
+    Modifying string formatting of ##MessageBodyWithSender special value.
+    Updated documentation + minor code changes
+    
+    Added fully annotated config example
+    Removed unnecessary elements from basic config example
+    Added example query file
+    
+    Removed legacy special value from SpecialValueResolver
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    code analysis nameof in vs2015
+    initial version
+    initial version
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Change DpapiTool target to .net4.5, originally it can not run on 4.5.1
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    Add DPAPI tool for creating encrypted and protected files for storing
+    service passwords
+    Added argument to EmailSettings, TfsSettings to handle scope type (user vs machine). Refactored Encrypt/Decrypt to make functionality be unit testable. Refactored Argument parsing in DpapiTool to make argument parsing unit testable. Added unit tests for the above changes
+    Add DPAPI tool for creating encrypted and protected files for storing
+    service passwords
+    initial version
+    adding files
+    Add DPAPI tool for creating encrypted and protected files for storing
+    service passwords
+    adding files
+    Change DpapiTool target to .net4.5, originally it can not run on 4.5.1
+    Removed NuGet.targets as it doesn't appear to do anything and fix TFS references for VS2013.
+    Add DPAPI tool for creating encrypted and protected files for storing
+    service passwords
+    Add DPAPI tool for creating encrypted and protected files for storing
+    service passwords
+    initial version
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Adding the ability to optionally grab secrets from Azure KeyVault
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    initial version
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    adding files
+    Update solution and project to Visual Studio 2015, move TeamFoundation dependency to nuget
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Removed NuGet.targets as it doesn't appear to do anything and fix TFS references for VS2013.
+    1. (issue #5) Change cache query reading to use a proper Xml reader and extract the content
+    rather than extract via direct (and error prone) text manipulation
+    Query parsing code was extracted to a dedicated class to enable
+    unit-testing and for separation of responsibilities.
+    
+    2. Changed RecipientsMailbox processing to treat no Recipients as
+    "everyone"
+    initial version
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Unbreak abstraction
+    Add the ability to use the conversation GUID instead of the conversation index.
+    Add support for attaching replies
+    
+    Based on a config value, reply messages can now be attached to the work
+    item as files.
+    As part of this change, the strategy for attaching email messages to the
+    work item has changed a little bit, where the attachment file name will
+    indicate the date/time when it was attached (including for the original
+    message).
+    Also added code to delete the temporary attachment file once it has been
+    attached to the work item.
+    Add support for disabling overriding "Changed By" when processing replies
+    
+    This is important for VSO instances that disallow overriding "Changed By"
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Fixing failing UT
+    Get rid of dependency on Exchange filtering with query strings since it
+    proved to be very flaky. Instead, filter by getting all the emails from
+    the inbox and evaluating their To and CC recipients to see if they match
+    the recipients from the config.
+    Testing with existing instances, the new solution seems stable, but
+    somewhat less performant. This shouldn't be a major issue, since the
+    number of messages in the inbox is expected to be very low most of the
+    time, but we may need to revisit this in the future.
+    
+    In parallel, will report the API flakiness to the EWS team.
+    
+    Removed some legacy test code used during initial development (serializing
+    bugs from the mock work item manager to a file)
+    
+    Reduced the verbosity of default value resolution since it used to log the
+    entire text of messages to the log, making the logs very unweildy when
+    long threads are added
+    initial version
+    Added argument to EmailSettings, TfsSettings to handle scope type (user vs machine). Refactored Encrypt/Decrypt to make functionality be unit testable. Refactored Argument parsing in DpapiTool to make argument parsing unit testable. Added unit tests for the above changes
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    initial version
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    initial version
+    Add support for field updates in update messages + minor logging changes
+    
+    New functionality: When processing update messages, if there are explicit
+    overrides and mnemonics specified in the last message they are applied.
+    This enables performing actions on a work item with reply messages. One
+    specific MO is to define mnemonics for common actions like
+    resoving/closing/reactivating etc.
+    
+    New functionality is gated by config value ApplyOverridesDuringUpdate
+    
+    Some minor changes to logging to change messages to "Debug" to reduce log
+    sizes under normal conditions
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Make the Explicit Overrides extraction configurable by moving the extracting RegEx to the configuration file
+    Rename ServiceType from EWS to EWSByFolder to better communicate that type of mail handling (compared to EWSByRecipients)
+    Fix default log4net.config so that files are created per hour rather than per minute - previous setting was causing over-fragmented logs
+    
+    Minor bug-fixes:
+    * Catch the exception when a cached work-item doesn't have the conversation id field and log a warning rather than error - this was causing noise in the logs for some existing set-ups.
+    * Fix unit tests to work well with the above code changes
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    initial version
+    Unbreak abstraction
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    Abstract message post-processing to MailboxManager
+    
+    Post processing is now defined in the MailboxManagers, where they can
+    define whether messages should be deleted, moved, etc. Putting this in the
+    mailbox manager rather than the message layer, since this is essentially
+    something that is part of how the incoming messages queue is managed,
+    which is what the mailbox manager owns
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    initial version
+    Support HTML comments & embedded images (#101)
+    
+    This feature adds:
+    * Support for rich HTML descriptions and comments
+    * Supports embedded images in both description and comments
+    * New behavior is gated behind an EnableExperimentalHtmlFeatures setting
+    Unbreak abstraction
+    Add the ability to use the conversation GUID instead of the conversation index.
+    Perf improvement for mult-instance servers - Part II
+    
+    Use the RecipientsMailboxManagerRouter in RecipientsMailboxManager to
+    leverage the savings on email traversals. To do that, we create a
+    RecipientsMailboxManagerRouter per EWS connection and cache it together
+    with the connection in EWSConnectionFactory, then pass it to the
+    constructor or RecipientsMailboxManager
+    
+    RecipientsMailboxManager defines the evaluator that looks at recipients
+    and registers with it to the router, then calls the router whenever it
+    needs to get messages
+    Improve performance for multi-instance servers using RecipientsMailbox
+    
+    Introduce a centralized router that instances register with. This router
+    would process the inbox messages at the beginning of each iteration and
+    maintain the message queues for each instance, so that we don't need to
+    repeatedly process the inbox, which is very time consuming due to
+    non-performant exchange calls.
+    initial version
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    Fix email separators from mobile and web clients (#109)
+    
+    Different html schemas for outgoing emails produced parsing errors for emails sent from a mobile or web client. When the experimental html features were enabled, this produced that full email threads were added as a comment in ADO, instead of just the latest message.
+    initial version
+    initial version
+    initial version
+    initial version
+    initial version
+    initial version
+    Fix query filename and reference in config file to fit new query format
+    (i.e. raw wiq file)
+    Fix query to fit new format
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs
+    Use a different URL for workitems. (#78)
+    
+    The sample config uses a bug URL of the format _workitems#_a=edit&id=[_ID] and it works fine for the most parts. However, if the user is not already logged in, the bit after the # is lost after the login flow and the user ends up in the queries tab instead of the specific bug. The URL _workitems/edit/[_ID] seems to work fine in all cases.
+    
+    The URL _workitems?_a=edit&id=[_ID] was also tried and works fine on VSTS, but is not recognized in TFS 2013.
+    New email template with support for more dynamic fields (#51)
+    
+    Added support for using any work item field in the ack email, with the option to provide a default value. Also updated the default template to match the new TFS/VSO design language.
+    Updated documentation + minor code changes
+    
+    Added fully annotated config example
+    Removed unnecessary elements from basic config example
+    Added example query file
+    
+    Removed legacy special value from SpecialValueResolver
+    Add run.cmd for running as a WebJob. (#94)
+    
+    Also updated the documentation for WebJobs and KeyVault usage.
+    Adds UseConversationGuidOnly to the sample configs.
+    Add setting to allow bypassing TFS validation rules
+    Add instructions on how to create Personal Access Tokens in VSO.
+    Add a basic credential way to create bug
+    Fixed typo in conversation id field name value.
+    Add sample to annotated configuration reference
+    Update config example for new config values added in last two commits
+    Add documentation for ADAL based authentication to VSO
+    
+    Updated the annotated config with details on how to set it up
+    Also changed the priority order, such that ADAL (if defined) takes
+    precedence over ServiceIdentity authentication
+    Call out caveat for creating the cache query file
+    Add documentation for newly added feature
+    Updated documentation + minor code changes
+    
+    Added fully annotated config example
+    Removed unnecessary elements from basic config example
+    Added example query file
+    
+    Removed legacy special value from SpecialValueResolver
+    Adds UseConversationGuidOnly to the sample configs.
+    Update from original (#1)
+    
+    * Adding the ability to optionally grab secrets from Azure KeyVault
+    
+    * README Update
+    
+    * Change noisy log message to DEBUG level
+    
+    * Commit missed file
+    
+    * Add pointer to @jeffwilcox's blog post for Azure service setup
+    
+    * Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Fix issue #21 - Change default "AppendOnly" regex
+    
+    Fix for issue #21 (https://github.com/Microsoft/mail2bug/issues/21)
+    Align the default AppendOnly regexes to what is common with Bugzilla (basically, require the hash sign)
+    Fixed typo in conversation id field name value.
+    Updated documentation + minor code changes
+    
+    Added fully annotated config example
+    Removed unnecessary elements from basic config example
+    Added example query file
+    
+    Removed legacy special value from SpecialValueResolver
+    Fix query filename and reference in config file to fit new query format
+    (i.e. raw wiq file)
+    Fix bug in the query string for getting the correct incoming emails
+    (should have been quoted)
+    Remove deprecated config fields
+    Add example configs

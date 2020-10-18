@@ -1,0 +1,1058 @@
+﻿    [httperf] Fix Issue #43 - update config / build instructions.
+    Update README.md
+    
+    This is not creating 1000 request, it creates 100 request (see the total)
+    add intro to README (taken from google code site)
+    rename README
+    convert README to markdown
+    Move everything into top-level directory.
+    New build instructions regarding the construction of 0.9.1
+    Adjusted README to reflect platform compatibilty
+    Teach to use epoll(7) on httperf(1).
+    Add AC_CONFIG_MACRO_DIR
+    Move everything into top-level directory.
+    Remove libevent port (for now)
+    Make sure libevent check is properly quoted
+    libevent is no longer optional
+    idleconn is now built optionally with --enable-idleconn
+    Enable dependancy on libevent.
+    
+    This will become the central event management tool in httperf
+    Remove unused checks
+    Remove useless portability checks for realloc and malloc.  If the system
+    doesn't support these functions in a useful way then, I don't care...
+    
+    This just adds complexity
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    Moved --enable-debug option code to near end of file to allow AC_PROG_CC to still update CFLAGS with -g -02
+    Remove unnecessary openssl configuration checks
+    configure.ac: Add configuration to use libevent
+    configure.ac: Remove uneccessary configuration cruft and configure httperf to be built in c99 mode
+    Version 0.9.99 preparing for 1.0.0
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Removed getopt.c and getopt1.c from build process
+    
+    httperf.c Wrapped call to getopt.h in pre-processor checks
+    Using `AC_PROG_RANLIB' is rendered obsolete by `AC_PROG_LIBTOOL'
+    Added third version level 0.9.0 from 0.9
+    Move everything into top-level directory.
+    Note Adrian Chadd as libevent port author
+    Fixed memory leak associated with timers not being freed
+    * man/httperf.1: Fixed man page typo for --wset option (needed --uri, not --wset)
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    * AUTHORS: wsseslog crash fix was actually written by David Mosberger
+    AUTHORS: Removed Durval Menezes from AUTHORS file since his fix
+    has been re-written by Theodore Bullock
+    Fix segfault when connection is failed by using epoll(7).
+    Teach to use epoll(7) on httperf(1).
+    make it compile with SSL 1.1.0
+    Restore the original --server and --server_name options.
+    Change --server to --servers.
+    
+    Prior to this commit --server took a list of servers, so making it
+    plural makes sense.
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Remove the FD_SETSIZE check.
+    
+    This is a hold-over from using select() back in the past.
+    It now uses libevent, so it no longer (itself) cares about the size of
+    FD_SETSIZE.
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Remove unused variables.
+    Remove unused variables in core_loop()
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Remove spurious CRLFs from nohost blocks; fixes bug 1903551.
+    Source formatting
+    Removed silly realloc portability stuff
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Fix minor oops (removed #include<string.h> erroneously)
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Missing include (for memset(), strerror()).
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Fix build on opensolaris with Sun Studio compiler
+    Remove unused variable 'next_tick'
+    Fix segmentation fault introduced in September 23, 2007 commit
+    More c99 bool declarations and a couple comments
+    Use bool rather than int and _Bool
+    Remove some extraneous debug print statements
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    Reformatted the source somewhat and removed preproccessor #include statements to the respective header files since those are only needed externally
+    Removed timer interval from public timer.h header and duplicated Timer_Callback to allow timer.c to build without needing #include <timer.h>
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Fix minor oops (removed #include<sys/time.h> erroneously)
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Fixed memory leak associated with timers not being freed
+    Updated confusing and jumbled source formatting to something approximating OpenBSD's Kernel Normal Form
+    
+    Used GNU indent with the following options: -nbad -nbap -bbb -nbc -br -brs -c33 -cd33 -cdb -ce -ci4 -cli0 -di16 -fc1 -fca -hnl -i8 -ip4 -l79 -lp -npcs -nprs -psl -saf -sai -saw -sc -nsob -nss -ts8
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Teach to use epoll(7) on httperf(1).
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Add some function declaration comments to explain usage
+    Adjust copyright year for Ted Bullock (2007-2008) now
+    Fix printf formating tag %d -> %s
+    Fix minor grammatical weirdness
+    Rewrote idleconn program to use libevent notification system.
+    Initial re-write of idleconn program to use libevent library
+    Fix compile warning in regards to inet_aton implicit declaration
+    Fixed a couple compiler warnings with icc
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    *** empty log message ***
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Add support for Server Name Indication. Done during IETF 103 hackathon
+    
+    This patch adds support for SNI (Server Name Indication). The option
+    --tls-server-name has been added in order to specify the server name
+    to be used in the SeverName extension sent in the ClientHello for TLS
+    connections. The newly added --tls-server-name option is optional:
+    If not specified, httperf will simply function as usual by omitting
+    the ServerName extension in the ClientHello for TLS connections.
+    
+    Closes: #47
+    Signed-off-by: Muzaffar Auhammud <muzaffar@cyberstorm.mu>
+    Stray line feed in fqdname causes --add-header and --add-header-file header records to be ignored by server.
+    Restore the original --server and --server_name options.
+    Change --server to --servers.
+    
+    Prior to this commit --server took a list of servers, so making it
+    plural makes sense.
+    Style changes.
+    
+    My OCD couldn't handle the multiple styles in this file.
+    Fix errno compilation error (found on Ubuntu 14.04)
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Fix minor oops (removed #include<string.h> erroneously)
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Add support for Server Name Indication. Done during IETF 103 hackathon
+    
+    This patch adds support for SNI (Server Name Indication). The option
+    --tls-server-name has been added in order to specify the server name
+    to be used in the SeverName extension sent in the ClientHello for TLS
+    connections. The newly added --tls-server-name option is optional:
+    If not specified, httperf will simply function as usual by omitting
+    the ServerName extension in the ClientHello for TLS connections.
+    
+    Closes: #47
+    Signed-off-by: Muzaffar Auhammud <muzaffar@cyberstorm.mu>
+    Restore the original --server and --server_name options.
+    Change --server to --servers.
+    
+    Prior to this commit --server took a list of servers, so making it
+    plural makes sense.
+    apply https://github.com/httperf/httperf/issues/8 patch from rowan.li...@gmail.com
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    idleconn is now built optionally with --enable-idleconn
+    fix typo
+    Statically link to library files
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Back out experimental pkg-config code for openssl
+    Updated NEWS and TODO
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Revised Makefile.am for src directories to explicitly include the .h files to allow make distcheck to pass
+    idleconn: Now installed along with the httperf executable
+    ttest: Remove program from build
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Enum data type adjustment
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    *** empty log message ***
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Use bool rather than int and _Bool
+    Removed timer interval from public timer.h header and duplicated Timer_Callback to allow timer.c to build without needing #include <timer.h>
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Source formatting with indent and removed duplicate #include calls to sys/types.h
+    Fixed memory leak associated with timers not being freed
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Use correct ifdefs for checking TLS 1.3
+    
+    TLS 1.3 is not ready yet in LibreSSL. Also there is a theoretical
+    possibility of OpenSSL >=1.1.1 built without TLS 1.3 support
+    Add support for Server Name Indication. Done during IETF 103 hackathon
+    
+    This patch adds support for SNI (Server Name Indication). The option
+    --tls-server-name has been added in order to specify the server name
+    to be used in the SeverName extension sent in the ClientHello for TLS
+    connections. The newly added --tls-server-name option is optional:
+    If not specified, httperf will simply function as usual by omitting
+    the ServerName extension in the ClientHello for TLS connections.
+    
+    Closes: #47
+    Signed-off-by: Muzaffar Auhammud <muzaffar@cyberstorm.mu>
+    Add missing 'case' statement that causes TLSv1.3 implementation to be unreachable.
+    Remove extra 'break;' that prevent SSL_CTX_set_options from being set
+    Fix a bug that ignored the --ssl-protocol parameter
+    Implement support for TLSv1.3 in OpenSSL >= 1.1.1
+    Implement specific support for TLSv1.2
+    Implement specific support for TLSv1.1
+    Make TLSv1 use TLSv1.0 specifically to prevent ambiguity with TLSv1.1, TLSv1.2, TLSv1.3
+    Use the new API for SSLv3 protocol selection in OpenSSL >= 1.1.0
+    Make conditional compilation for SSLv2 future proof and backwards compatible with OpenSSL <= 1.1.0
+    Add more flexibility in choice of protocol for TLSv1.x
+    Remove the TLS 1.3 implementation which fails specifically on OpenSSL 1.1.0
+    Optimize OpenSSL initialization by removing synonymous calls to SSL_library_init()
+    Enable use of TLS 1.3. Done during IETF 101 hackathon.
+    Restore the original --server and --server_name options.
+    Change --server to --servers.
+    
+    Prior to this commit --server took a list of servers, so making it
+    plural makes sense.
+    Fix building when OpenSSL was compiled -nossl2  or -noss3
+    
+    This also fixes building with LibreSSL 2.2 (no SSLv2) and 2.3 (no SSLv3)
+    Reroll No-SSLv3 patch/Add No-SSLv2 patch
+    apply https://github.com/httperf/httperf/issues/8 patch from rowan.li...@gmail.com
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned up help text
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Add in required include for fpsetmask() for FreeBSD
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Back out libevent additions to main httperf program for now
+    Remove libevent calls just for the time being
+    Turn on libevents evdns
+    Print libevent version with -V option
+    Source formatting with gnu indent (approximating KNF)
+    Adjust license layout (no contextual changes) and explicitly list HP and
+    Ted Bullock as copyright holders
+    Use bool rather than int and _Bool
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Fixed memory leak associated with timers not being freed
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Removed getopt.c and getopt1.c from build process
+    
+    httperf.c Wrapped call to getopt.h in pre-processor checks
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Enum data type adjustment
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Revised Makefile.am for src directories to explicitly include the .h files to allow make distcheck to pass
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Fix extraneous cast
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Add support for PROPFIND and REPORT in wsesslog
+    Increased char size.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    changed a sprintf call to the more secure snprintf
+    Updated License with linking exception for the openssl project
+    Add very numerous bug fixes and features, from Norse Corp.
+    
+    * Fix some corner cases with greedy mode, where ports would be
+      tracked inside httperf rather than the OS.  There were handfuls
+      of corner cases where it'd either loop over an already-allocated
+      port by the OS and chew 100% of cpu with no progress. Also, hit an
+      already allocated port by the OS, skip/stop, but then the next lookup
+      would hit that port again - it would never find a new port to open.
+    
+    * Add kqueue support for FreeBSD. (No, not using libevent. Yet.)
+    
+    * Add a periodic stats option, to print out 200/302 counts once
+      every second.  This is to aid in automatic scripts looking to graph
+      the progress being made.
+    
+    * Add the ability to define multiple local client addresses, so
+      requests can come from a much bigger pool of IP addresses.
+      This allows for much more concurrency per process.)
+    
+    * Add an explicit timeout on how long httperf can run - again, to aid
+      in automated testing.
+    
+    * Add an option to allow header contents to be loaded in from a file.
+    
+    * Other fixes, mostly type related fixes, thanks to clang/llvm on
+      FreeBSD-10.
+    
+    We're using this in production at Norse to stress test out things,
+    upwards of 25,000 requests per second per httperf process.
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    Source formatting in preparation for additional data printing formats
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Revised Makefile.am for src directories to explicitly include the .h files to allow make distcheck to pass
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Remove libevent port (for now)
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Bring over my initial libevent work into CVS.
+    
+    Tidyups of this stuff will follow.
+    Cleaned many (not all) duplicate and hidden implicit #include directives from header and source files.  Header files should generally not include other header files
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    * event.c and event.h: Moved to localevent.c and localevent.h for integration with libevent (which has a default header of event.h)
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Adjust copyright text to clearly mark copyright owners
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    * *.c and *.h: Slightly adjusted license to explicitly point out AUTHORS file as official list of authors
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Portablelize new getopt.c so it should work where err.h is missing
+    replace bundled, out of date getopt with version from openbsd
+    getopt.c changed a sprintf call to the more secure snprintf
+    Move everything into top-level directory.
+    Fix build on opensolaris with Sun Studio compiler
+    Remove unused variable "parent"
+    Changed _Bool to bool
+    Reformatted the source somewhat and removed preproccessor #include statements to the respective header files since those are only needed externally
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    Move everything into top-level directory.
+    c99 bool adjustment to protoype
+    Use bool rather than int and _Bool
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    May as well zero out queue data before free() just in case of illegal access afterwards
+    * lib/queue.c, lib/queue.h: New generic queue data structure
+    Move everything into top-level directory.
+    Changed _Bool to bool
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Move everything into top-level directory.
+    replace bundled, out of date getopt with version from openbsd
+    Remove unnecessary include search path
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    * lib/queue.c, lib/queue.h: New generic queue data structure
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Re-Added the getopt.c and getopt1.c to the build process
+    httperf now compiles on Linux, OpenBSD, FreeBSD,  Solaris
+    (with cc and gcc) and HP-UX 11i (with cc and gcc)
+    Removed getopt.c and getopt1.c from build process
+    
+    httperf.c Wrapped call to getopt.h in pre-processor checks
+    Move everything into top-level directory.
+    Remove unnecessary #include <queue.h>
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    May as well zero out queue data before free() just in case of illegal access afterwards
+    * lib/queue.c, lib/queue.h: New generic queue data structure
+    Move everything into top-level directory.
+    The sys/types.h header is brought in via the generic_types.h header.  Adjust accordingly.
+    Adjusted Free Software Foundation address to 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+    * *.c and *.h: Adjusted license to explicitly list HP copyright as
+    Copyright 2000-2007 Hewlett-Packard Company
+    Updated License with linking exception for the openssl project
+    Move everything into top-level directory.
+    Move everything into top-level directory.
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Move everything into top-level directory.
+    lib/heap.c, lib/heap.h: New generic priority queue data structure
+    * lib/queue.c, lib/queue.h: New generic queue data structure
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Move everything into top-level directory.
+    replace bundled, out of date getopt with version from openbsd
+    Move everything into top-level directory.
+    c99 bool adjustment to protoype
+    Use bool rather than int and _Bool
+    Re-implemented timer code to fix memory leaks and use generic linked list
+    timer.c and timer.h: Use new heap and queue data
+    structures to re-implement timers to use memory caching and
+    try to fix memory leak associated with timers not being freed
+    lib/generic_types.h: New File - Migrate various generic types out of httperf.h in preparation for a generic queue data structure and other code cleanups
+    Added a contrib dir and idleconn manpage source
+    Added a contrib dir and idleconn manpage source
+    Added a contrib dir and idleconn manpage source
+    Adding idleconn manpage
+    Adding idleconn manpage
+    Move everything into top-level directory.
+    Fix build target for make distcheck
+    fix typo in manpage
+    Move everything into top-level directory.
+    Add Ted Bullock as an Author
+    * man/httperf.1: Fixed man page typo for --wset option (needed --uri, not --wset)
+    * man/httperf.1: New documentation regarding the variable periodic rates
+    * src/httperf.c: New functionality for variable periodic rates
+    * src/httperf.h: ditto
+    * src/timer.c: ditto
+    httperf.1 Added correction to man page to include a missing --wsess identification

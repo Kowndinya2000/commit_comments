@@ -1,0 +1,70 @@
+﻿    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    updated the linl
+    added another possible directory to the guide
+    Update README.md
+    
+    update description according to feedback via eMail
+    added download link
+    doc
+    added examples
+    doc
+    doc
+    doc
+    format
+    moved into Maven structure
+    ./finishGoogleCodeGitHubWikiMigration: Moved ProjectHome.md from wiki branch to README.md in master branch.
+    moved classes into "correct" package hierarchy
+    moved into Maven structure
+    added version tag
+    initial import
+    moved into Maven structure
+    added version tag
+    initial import
+    Made file not found Severe instead of Fine
+    
+    If the whole region is not found, it's a Severe issue that the user should know about instead of failing silently.
+    Do not add height tag if value is NaN
+    Add handling of "data void" value (returns NaN).
+    moved classes into "correct" package hierarchy
+    moved into Maven structure
+    Provide a constructor better apt for use as a library (tagName argument).
+    added CLI parameter tagName to define the tag for height
+    Fixes Issue 3
+    extracted TAG Name to a field
+    corrected indentation, moved code to better (?) place
+    added missing method implementation for osmosis 0.41 compatibility
+    fixed: another exception.printStack() issue (hopefully the last)
+    fixed: included all code comments
+    changed: all "return height 0.0" to "return Double.NaN"
+    fixed: getter/setter now set as protected
+    added: second constructor for SrtmPlugin_task
+    fixed: really nasty bug with getClassLoader()
+    added: additional constructor for SrtmPlugin_task
+    added version tag
+    initial import
+    moved classes into "correct" package hierarchy
+    moved into Maven structure
+    added CLI parameter tagName to define the tag for height
+    Fixes Issue 3
+    simplified code (redundant array creation)
+    fixed: another exception.printStack() issue (hopefully the last)
+    fixed: included all code comments
+    changed: all "return height 0.0" to "return Double.NaN"
+    fixed: getter/setter now set as protected
+    added: second constructor for SrtmPlugin_task
+    fixed: really nasty bug with getClassLoader()
+    added: additional constructor for SrtmPlugin_task
+    added version tag
+    added: checkForTrailingSlash()
+    initial import
+    moved classes into "correct" package hierarchy
+    moved into Maven structure
+    organized import
+    fixed: included all code comments
+    changed: all "return height 0.0" to "return Double.NaN"
+    added version tag
+    initial import

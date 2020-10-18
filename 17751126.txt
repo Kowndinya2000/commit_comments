@@ -1,0 +1,93 @@
+﻿    update README
+    Add badges to readme
+    Update README.md
+    Update the copyright year
+    Add licensing in preparation to OpenSourcing the project.
+    Update README.md
+    Update README.md
+    initial changes
+    v2.1.0
+    relax the redis version restrictions, set ruby reqs
+    v2.0.1
+    remove private gem
+    v2.0.0
+    v1.0.4
+    Add semver range to redis dependency in gemspec
+    v1.0.3
+    v1.0.0
+    v0.1.9
+    v0.1.8
+    use bump, revert version
+    privatize gem
+    v0.1.7
+    v0.1.6
+    v0.1.5
+    v0.1.4
+    v0.1.3
+    self dependent version lock file?
+    v0.1.1
+    forgot to bundle
+    v0.0.3
+    v0.0.2
+    initial changes
+    build client from redis and subdomain
+    Add tests for client offline detection logic
+    Filter out clients with offline sentries
+    Filters out presence messages from offline sentries.
+    Radar::Client#define_redis_retriever
+    Use subdomain instead of account_name
+    RADAR-257: use block to retrieve appropriate redis for account
+    op:set for status
+    set expiry for status
+    rename module
+    tests
+    tests
+    initial changes
+    Filter out clients with offline sentries
+    Reduce code complexity.
+    Filters out presence messages from offline sentries.
+    use redis multi to save round-trips
+    message.at is no longer used
+    save client as local variable
+    call redis once per method
+    really log after redis connection happens
+    log after write, so client is connected for sure
+    default client_info  is unknown
+    log status updates, with redis client details
+    Use subdomain instead of account_name
+    op:set for status
+    set expiry for status
+    rename module
+    tests
+    initial changes
+    v2.1.0
+    v2.0.1
+    v2.0.0
+    v1.0.4
+    v1.0.3
+    Update version properly - 1.0.2
+    v1.0.0
+    v0.1.9
+    v0.1.8
+    use bump, revert version
+    privatize gem
+    v0.1.7
+    v0.1.6
+    v0.1.5
+    v0.1.4
+    v0.1.3
+    Version v0.1.2
+    v0.1.1
+    v0.1.0
+    v0.0.3
+    v0.0.2
+    rename module
+    rename module
+    initial changes
+    build client from redis and subdomain
+    Provide mechanism for detecting if redis_retriever is already defined
+    Radar::Client#define_redis_retriever
+    Use subdomain instead of account_name
+    RADAR-257: use block to retrieve appropriate redis for account
+    rename module
+    initial changes

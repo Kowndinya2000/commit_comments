@@ -1,0 +1,175 @@
+﻿    Move tests
+    Split up testsuite and moved it to flask.testsuite.  This fixes #246
+    Added testcase.  This fixes #108
+    Move tests
+    Split up testsuite and moved it to flask.testsuite.  This fixes #246
+    Added a migrated moduleapp as blueprint app
+    Added a testcase for the improved module support
+    Enable autoescape for `render_template_string`
+    Move tests
+    Split up testsuite and moved it to flask.testsuite.  This fixes #246
+    Added more Flask tests
+    Move tests
+    Split up testsuite and moved it to flask.testsuite.  This fixes #246
+    Started working on refactoring Jinja integration
+    Move tests
+    Split up testsuite and moved it to flask.testsuite.  This fixes #246
+    Added missing template
+    Add readme to persona example
+    
+    Fix #1310
+    Added site name to persona login
+    Added Persona example
+    Added Persona example
+    Added Persona example
+    Added Persona example
+    Addressed issue #1134
+    Added site name to persona login
+    Added Persona example
+    Happy New Year 2015
+    Fixed flask tests
+    Updated tutorial to the flask script
+    Switch away from /tmp for windows users
+    Happy New Year 2014
+    Rewrote tutorial to use the g based appcontext object
+    Removed g object from example as it was unused
+    fix minitwit/flaskr test errors, improve docs about file open mode
+    
+    app.open_resource needs to get called with the correct mode param (python3
+    will read bytes [not str] if the wrong mode is used), add mode param docs.
+    
+    rv.data is bytes, fix the data type we compare it with to be also bytes
+    ported some more stuff to py 3.3
+    
+    removed init_jinja_globals hack from app.py after consulting mitsuhiko
+    (didn't work on py 3.3 "as is")
+    
+    removed with_statement future imports, not needed any more
+    
+    needs more work on 2.7 as well as on 3.3
+    Use sqlite3.Row factory in Flaskr
+    
+    As pointed out in issue #588 sqlite3.Row should be used instead of
+    using casting to dict(). Also altered the "Easy Querying" Patterns
+    example to include the more correct way to return rows as dicts.
+    Did not touch Tutorial examples ("Views"), as these are not up to
+    date with the current Flaskr code, and the "Show Entries" section
+    points out the "Easy Querying" section on how to convert to a
+    dict().
+    Updated examples to new sqlite patterns and added new section to appcontext docs
+    Updated the docs and examples to non-failing teardown handlers
+    Updated examples
+    Updated examples to work with pypy which has a incomplete sqlite3 in 1.4.  Also disable a euc-kr test that does not work on pypy
+    Ported examples over to new config. documented upgrading
+    request_init -> before_request and request_shutdown -> after_request
+    
+    This fixes #9.
+    First part of the tutorial.  Many explanations missing but it's a start.
+    Removed useless imports and added README
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Happy New Year 2015
+    Tests pass now.
+    Updated tutorial to the flask script
+    docs: Don't touch markdown files
+    docs: :file:`app.py`, :file:`yourapp/templates`
+    fix filename of test files in README of examples
+    Updated the examples to be cli based
+    Update README
+    
+    No need to manually initialize the database with a call to `init_db()` as this call is done before `app.run()` in flaskr.py, when you run the file.
+    Ported examples over to new config. documented upgrading
+    Fixed a typo
+    Removed useless imports and added README
+    Escaped 'text' keyword in column name.
+    Changing string to text in schema files
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Beefed up the tutorial
+    First part of the tutorial.  Many explanations missing but it's a start.
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Addressed issue #1134
+    First part of the tutorial.  Many explanations missing but it's a start.
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Addressed issue #1134
+    Removed unnecessary end-tags and fixed some broken html
+    Ended your paragraph tag.
+    First part of the tutorial.  Many explanations missing but it's a start.
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Addressed issue #1134
+    Beefed up the tutorial
+    Added mini blogging application as Flask example.
+    
+    This should become the tutorial.
+    Happy New Year 2015
+    Fixed flask tests
+    Updated the examples to be cli based
+    Happy New Year 2014
+    fix minitwit/flaskr test errors, improve docs about file open mode
+    
+    app.open_resource needs to get called with the correct mode param (python3
+    will read bytes [not str] if the wrong mode is used), add mode param docs.
+    
+    rv.data is bytes, fix the data type we compare it with to be also bytes
+    ported some more stuff to py 3.3
+    
+    removed init_jinja_globals hack from app.py after consulting mitsuhiko
+    (didn't work on py 3.3 "as is")
+    
+    removed with_statement future imports, not needed any more
+    
+    needs more work on 2.7 as well as on 3.3
+    Updated examples to new sqlite patterns and added new section to appcontext docs
+    Updated the docs and examples to non-failing teardown handlers
+    Updated examples
+    Updated examples to work with pypy which has a incomplete sqlite3 in 1.4.  Also disable a euc-kr test that does not work on pypy
+    Ported examples over to new config. documented upgrading
+    Fixed stuff I broke
+    Added lazyloading pattern and explicit chapter links in tutorial.
+    
+    This fixes #49.
+    Fix typos and remove unused import.
+    Removed unused stuff from minitwit and fixed a bug.
+    request_init -> before_request and request_shutdown -> after_request
+    
+    This fixes #9.
+    Doc updates and typo fixes
+    Added tests for minitwit.  Testing with Flask is awesome
+    Removed the useless apishowcase example
+    And finished documentation for most parts.
+    Updated documentation.  Starting to look pretty good
+    Improved documentation, added a contextmanager for request binding
+    Started working on documentation.
+    
+    So far just the stable parts :)
+    Initial checkin of stuff that exists so far.
+    Happy New Year 2015
+    Tests pass now.
+    docs: Don't touch markdown files
+    docs: :file:`app.py`, :file:`yourapp/templates`
+    fix filename of test files in README of examples
+    Updated the examples to be cli based
+    Ported examples over to new config. documented upgrading
+    Doc updates and typo fixes
+    Added tests for minitwit.  Testing with Flask is awesome
+    Added a README file for MiniTwit.
+    Changing string to text in schema files
+    Initial checkin of stuff that exists so far.
+    Initial checkin of stuff that exists so far.
+    Addressed issue #1134
+    Initial checkin of stuff that exists so far.
+    Addressed issue #1134
+    Initial checkin of stuff that exists so far.
+    Addressed issue #1134
+    Doc updates and typo fixes
+    Initial checkin of stuff that exists so far.
+    Addressed issue #1134
+    Initial checkin of stuff that exists so far.

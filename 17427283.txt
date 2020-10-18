@@ -1,0 +1,198 @@
+﻿    wlconf: Update to R8.a4.04 from R8.a4.02 package
+    
+    Upgrading wlconf to R8.a4.04 from R8.a4.02 package
+    
+    wlconf: update default fw logger conf to uart/cont
+    wlconf: Add support for 2nd set of mac/phy TxPower params
+    wlconf: add support for slow/fast link treasholds
+    
+    Change-Id: I3583809c23ce6c9860e9ef302d974903e19c19d4
+    Signed-off-by: Ido Reis <idor@ti.com>
+    Signed-off-by: Yair Shapira <yair.shapira@ti.com>
+    Signed-off-by: Pradeep Gurumath <pradeepgurumath@ti.com>
+    WLAN - wlconf: add wlconf code
+    
+    Initial wlconf contribution (based on r8.a4 release)
+    wlconf is used for generating wl18xx-conf.bin file for wl18xx.
+    
+    For more details please refer to mac80211/ti-utils/wlconf/README
+    
+    Change-Id: Ia0201adef071386d3e3a8cf7b475ded2d0701956
+    Signed-off-by: Panduranga Mallireddy <panduranga_mallireddy@ti.com>
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - wl18xx: Update to R8.a4.04 from R8.a4.02 package
+    
+    Upgrading driver and compat package to R8.a4.04 from R8.a4.02 package
+    
+    wlcore/wl18xx/wl12xx: FW log params per chip arch
+    wl18xx: bump min fw version
+    wlcore: add ACX_PEER_CAP command
+    wlcore: make beacon_loss work per-vif
+    wlcore: update event mailbox to new fw api
+    wlcore: update events enum to new fw api
+    wlcore: update channel_switch/stop_channel_switch commands
+    wlcore: increase MAX_CHANNELS_5GHZ
+    wlcore: update acx enum
+    wlcore: save session_id per-link
+    wlcore: update commands enum to new fw api
+    wl18xx: Add support for 2nd set of mac/phy TxPower params
+    wl12xx/wl18xx: update default fw logger's settings
+    wl18xx: set last Tx rate from FW status
+    wlcore: improved Tx scheduling algorithm
+    wlcore: track FW-allocated packets per link
+    wlcore: count packets held per AC in each vif
+    wlcore: track wlvif inside per-link structure
+    wlcore: initialize per-link FW freed blocks correctly
+    wlcore: restore default channel configuration
+    wlcore: consolidate free_link and always call it
+    wlcore: take the mutex before resetting Tx queues
+    wlcore: remove unnecessary WARN_ON in wl12xx_tx_reset
+    wl18xx: FDSP Clock (FDSP Code RAM Corruption fix)
+    wlcore: fwlog dynamic mem_block control
+    mac80211: ignore global channel type when starting AP
+    nl80211: update definitions from newest wpa_s
+    
+    Change-Id: I39e716fb7ee65d216fece925d0d302fbdbe17c34
+    Signed-off-by: Arik Nemtsov <arik@wizery.com>
+    Signed-off-by: Ido Reis <idor@ti.com>
+    Signed-off-by: Victor Goldenshtein <victorg@ti.com>
+    Signed-off-by: Assaf Azulay <assaf@ti.com>
+    Signed-off-by: Yair Shapira <yair.shapira@ti.com>
+    Signed-off-by: Eliad Peller <eliad@wizery.com>
+    Signed-off-by: Igal Chernobelsky <igalc@ti.com>
+    Signed-off-by: Pradeep Gurumath <pradeepgurumath@ti.com>
+    WLAN - wl18xx: Update to R8.a4.02 from R8.a2.09 package
+    
+    Upgrading driver and compat package to R8.a4.02 from R8.a2.09 package
+    
+    Change-Id: Ic6636b3572971fd5ca8fcf871845df040af6e1db
+    Signed-off-by: Pradeep Gurumath <pradeepgurumath@ti.com>
+    WLAN - mac80211: Rename compat folder with hardware info
+    
+    Update existing compat folder name to compat_wl18xx.
+    This is to accomadate R5 version also later for wl12xx
+    
+    Change-Id: I4bceab749b30ec950834da8310934bc5aff0374c
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - mac80211: Add R8.a1.02 compat package
+    
+    Adding compat package for wl18xx based on R8.a1.02 release
+    compat-wireless code metrics
+    
+        830126 - Total upstream lines of code being pulled
+          1706 - backport code changes
+          1514 - backport code additions
+           192 - backport code deletions
+          8885 - backport from compat module
+         10591 - total backport code
+        1.2758 - % of code consists of backport work
+    
+    Base tree: wl18xx.git
+    Base tree version: ol_r8.a1.02
+    compat-wireless release:
+    
+    Change-Id: I5ae309143b4f7cd179e814e70dcd76b7812895f7
+    Signed-off-by: Pradeep Gurumath <pradeepgurumath@ti.com>
+    WLAN - mac80211: Add R5 compat package
+    
+    Adding compat package for wl12xx based on R5_00_05 release
+    
+    compat-wireless code metrics
+    
+        826308 - Total upstream lines of code being pulled
+          2299 - backport code changes
+          1964 - backport code additions
+           335 - backport code deletions
+          8885 - backport from compat module
+         11184 - total backport code
+        1.3535 - % of code consists of backport work
+    
+    Base tree: wl12xx.git
+    Base tree version: v3.1-rc6-14178-gfb320e3
+    compat-wireless release:
+    
+    Change-Id: I67623d1df6a4224f3a8464adac244366c5545176
+    WLAN - mac80211: Add R4 compat package
+    
+    Adding compat packahe for wl12xx based on R4 release
+    
+    compat-wireless code metrics
+    
+        875533 - Total upstream lines of code being pulled
+          2210 - backport code changes
+          1932 - backport code additions
+           278 - backport code deletions
+          8203 - backport from compat module
+         10413 - total backport code
+        1.1893 - % of code consists of backport work
+    
+    Base tree: wl12xx.git
+    Base tree version: v2.6.39-1249-g332ef99
+    compat-wireless release: compat-wireless-2011-05-19-1-g6f4e670
+    
+    Change-Id: I46fe477a6a4fdb6712b7fffc98de23171e277cd6
+    Signed-off-by: Vishal Mahaveer <a0271468@ti.com>
+    WLAN - mac80211: Rename compat folder with hardware info
+    
+    Update existing compat folder name to compat_wl18xx.
+    This is to accomadate R5 version also later for wl12xx
+    
+    Change-Id: I4bceab749b30ec950834da8310934bc5aff0374c
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - mac80211: Add R5 compat package
+    
+    Adding compat package for wl12xx based on R5_00_05 release
+    
+    compat-wireless code metrics
+    
+        826308 - Total upstream lines of code being pulled
+          2299 - backport code changes
+          1964 - backport code additions
+           335 - backport code deletions
+          8885 - backport from compat module
+         11184 - total backport code
+        1.3535 - % of code consists of backport work
+    
+    Base tree: wl12xx.git
+    Base tree version: v3.1-rc6-14178-gfb320e3
+    compat-wireless release:
+    
+    Change-Id: I67623d1df6a4224f3a8464adac244366c5545176
+    WLAN - mac80211: Add R5 compat for wl12xx builds
+    
+    Add R5 version of compat under compat_wl12xx name.
+    
+    Change-Id: I91c9d2821462af011db9874c6cfd724291a6e4d6
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - mac80211: Add R5 compat for wl12xx builds
+    
+    Add R5 version of compat under compat_wl12xx name.
+    
+    Change-Id: I91c9d2821462af011db9874c6cfd724291a6e4d6
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - mac80211: Rename compat folder with hardware info
+    
+    Update existing compat folder name to compat_wl18xx.
+    This is to accomadate R5 version also later for wl12xx
+    
+    Change-Id: I4bceab749b30ec950834da8310934bc5aff0374c
+    Signed-off-by: Vishal Mahaveer <vishalm@ti.com>
+    WLAN - mac80211: Add R5 compat package
+    
+    Adding compat package for wl12xx based on R5_00_05 release
+    
+    compat-wireless code metrics
+    
+        826308 - Total upstream lines of code being pulled
+          2299 - backport code changes
+          1964 - backport code additions
+           335 - backport code deletions
+          8885 - backport from compat module
+         11184 - total backport code
+        1.3535 - % of code consists of backport work
+    
+    Base tree: wl12xx.git
+    Base tree version: v3.1-rc6-14178-gfb320e3
+    compat-wireless release:
+    
+    Change-Id: I67623d1df6a4224f3a8464adac244366c5545176

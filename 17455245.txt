@@ -1,0 +1,134 @@
+﻿    Update README.md
+    
+    fixed link to google code.
+    Update README.md
+    
+    Updated Formatting.
+    Update README.md
+    
+    - changed formatting
+    - modified previously hosted link information.
+    Update README.md
+    
+    - basic formatting
+    - added phase detail in the project description.
+    Create README.md
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    Added prototype with mobile frame.
+    Take picture screen by Gilana
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Take picture screen by Gilana
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added new screen mock-ups
+    fixed spelling
+    Added new screen mock-ups
+    Added screen mock-ups for 9 use cases
+    Change picture for video report screen by Gilana
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Change the next button to send button
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    fixed spelling
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    added screen shot for use-cases 12
+    Added screen mock-ups for 9 use cases
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    fixed
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    Fixed
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    fixed spelling
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    added screen shot for use-cases 12
+    Added screen mock-ups for 9 use cases
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Change picture for video report screen by Gilana
+    create some new screen by Gilana
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added screen mock-ups for 9 use cases
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Edited screen mock-ups according to SRS, added new screen mock-ups.
+    Revised and added screens for 70% of use-cases by Tigran and Gilana.
+    Added new screen mock-ups
+    made cosmetic changes.
+    Added prototype of mobile screen.
+    Created
+    Created
+    Created
+    Created
+    Quality Assurance Plan fixed
+    A diagram structure made for activities inside the project
+    Cover
+    fixed
+    Quality checked and fixed
+    sequence diagram
+    Fixed
+    revised
+    Created
+    header and footer
+    Cover
+    Updated, added new word
+    Reviewed and updated
+    Business Glossary with the first two section completed
+    meeting notes are added
+    Niclas meeting notes is added
+    Group Meeting notes for 10-Nov-2009 meeting.
+    Checked and updated the table of contents
+    header and footer change
+    Cover
+    fixed based on hamed advices
+    revised
+    fixed
+    Fixed
+    Created
+    review
+    Reviewed by Waseem Soomro
+    11 changes required according to review.
+    supplementary spec creation

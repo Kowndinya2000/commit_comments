@@ -1,0 +1,29 @@
+﻿    use generic opencv/opencv4 support from base/cmake
+    move project() call at toplevel (bumps CMake compatibility to 3.9)
+    add optional compatibility with opencv 4
+    Update to use rock cmake macros
+    
+    This avoids a problem with opencv3.0.0
+    
+    Conflicts:
+            CMakeLists.txt
+            src/CMakeLists.txt
+    CV seems cause problem, fixed build that opencv does not get linked correctly
+    Added auto exposure and auto whitebalance functions
+    added doxygen support
+    init
+    initial commit
+    Initial commit
+    use generic opencv/opencv4 support from base/cmake
+    add optional compatibility with opencv 4
+    Update to use rock cmake macros
+    
+    This avoids a problem with opencv3.0.0
+    
+    Conflicts:
+            CMakeLists.txt
+            src/CMakeLists.txt
+    CV seems cause problem, fixed build that opencv does not get linked correctly
+    Added auto exposure and auto whitebalance functions
+    initial commit
+    Initial commit

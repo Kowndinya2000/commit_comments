@@ -1,0 +1,309 @@
+﻿    DO-190: Add redis cookbook to site-cookbooks.
+    Removing optoro_metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    tweak metrics check to limit output
+    disable protected mode so that it will accept non-localhost connections by default
+    Cleaning up consul and adding redis exporter
+    Redis registers with consul using service_name attribute
+    Redis 3_2 compatible
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Fix consul testing
+    Version bump
+    Use consistent consul service switch
+    Use correct consul attribute
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Remove monit
+    Removing optoro_metrics
+    Adding redis user before creating mount point
+    Adding /var/optoro creation due to missing as a dependency
+    Add aws volume for redis datadir
+    
+    Add aws depenency
+    Use correct hash
+    Update Gemfile
+    Add recursive setting to data directory creation
+    Add test recipe for directory creation
+    Adding redis metrics
+    Bump Version. Update readme.
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    removed metadata.json and updated license in metadata.rb
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    Removing comments
+    
+    This should get ChefIgnore working
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    Use consistent consul service switch
+    Remove monit
+    disable protected mode so that it will accept non-localhost connections by default
+    Cleaning up consul and adding redis exporter
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Adding redis metrics
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Update redis cookbook
+    DO-190: Add redis cookbook to site-cookbooks.
+    Redis registers with consul using service_name attribute
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Cleaning up consul and adding redis exporter
+    Use consistent consul service switch
+    Use correct consul attribute
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Redis 3_2 compatible
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Update redis cookbook
+    DO-190: Add redis cookbook to site-cookbooks.
+    disable protected mode so that it will accept non-localhost connections by default
+    Redis 3_2 compatible
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    Cleaning up consul and adding redis exporter
+    Redis registers with consul using service_name attribute
+    Redis 3_2 compatible
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Redis 3_2 compatible
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    Cleaning up consul and adding redis exporter
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-190: Add redis cookbook to site-cookbooks.
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Cleaning up consul and adding redis exporter
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Remove monit
+    Removing optoro_metrics
+    Adding redis metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Remove monit
+    Removing optoro_metrics
+    Adding redis metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Remove monit
+    Removing optoro_metrics
+    Adding redis metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Removing optoro_metrics
+    Adding redis metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Cleaning up consul and adding redis exporter
+    Redis registers with consul using service_name attribute
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Remove monit
+    Removing optoro_metrics
+    Adding redis metrics
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Fix consul testing
+    Fixes to make tests pass.
+    Add aws volume for redis datadir
+    
+    Add aws depenency
+    Use correct hash
+    Update Gemfile
+    Add recursive setting to data directory creation
+    Add test recipe for directory creation
+    tweak metrics check to limit output
+    Cleaning up consul and adding redis exporter
+    Cleaning up consul and adding redis exporter
+    Redis registers with consul using service_name attribute
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    disable protected mode so that it will accept non-localhost connections by default
+    Cleaning up consul and adding redis exporter
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Use consistent consul service switch
+    Add initial consul integration
+    
+    Run consul recipe
+    
+    Add consul client config options
+    
+    Tweak service settings
+    
+    More config changes
+    
+    Add consul service registration
+    
+    Add consul service registration
+    
+    Add explicit service registration
+    Remove monit
+    Removing optoro_metrics
+    Add aws volume for redis datadir
+    
+    Add aws depenency
+    Use correct hash
+    Update Gemfile
+    Add recursive setting to data directory creation
+    Add test recipe for directory creation
+    Adding redis metrics
+    Add monit redis recipe to monitor redis instances.
+    
+    Also updated the .kitchen.yml file to use vagrant instead of docker.
+    initial commit for optoro_redis as a separate repo ready for the chef pipeline
+    Update redis cookbook
+    DO-190: Add redis cookbook to site-cookbooks.
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Use consistent consul service switch
+    DO-1237 Allow configurable redis data directory
+    
+    Use File Separator for splitting directories
+    Remove monit
+    Cleaning up consul and adding redis exporter

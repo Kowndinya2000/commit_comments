@@ -1,0 +1,6 @@
+﻿    fix identation
+    Code-Cleanup and renaming
+    added fixed CMakeLists.txt
+    initial commit
+    Redesigned the API, now the task can handle multiple cameras.
+    To acuire them call the operation on the task to creae the input-port.

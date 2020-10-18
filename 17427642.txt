@@ -1,0 +1,566 @@
+﻿    sample content updates
+    sample content updates
+    version 0.0.1
+    release 0.3.0
+    bump to 0.2.13
+    Bump to 0.2.9
+    bump to 0.2.8
+    
+    Forgot about my buddy @metalelf0 =/
+    bump to 0.2.7
+    Add changelog
+    Update readme to point to new separate documentation repository.
+    add draft feature
+    add mission
+    release 0.3.0
+    License should be MIT.
+    bump to 0.2.13
+    Bump to 0.2.9
+    bump to 0.2.8
+    
+    Forgot about my buddy @metalelf0 =/
+    bump to 0.2.7
+    bump version : 0.2.0
+    update contributing instructions
+    version 0.1.0
+    version 0.0.1
+    add cname record
+    fixing issue#225(deprecation...) by:
+    1,_config.yml; change "pygments: true" to "highlighter: pygments"
+    2,rss.xml&atom.xml; change "Layout: nil" to "Layout: null"
+    add support for RSS feed.
+    
+    add link tag in page header, to support subuscribe rss/atom feed in browsers.
+    fixed extra h hanging out in atomfeed ids #60
+    Add atom title and inline tag list
+    Add Atom rss feeds
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    specify page group 'navigation'
+    
+    Also clean out pages.html and just list all pages
+    missing ul tags
+    specify page group 'navigation'
+    
+    Also clean out pages.html and just list all pages
+    version 0.0.1
+    add link to blog
+    home page updated. blog page created
+    added blurb to the homepage, changed homepage title
+    updated title and subtitle
+    index.md: add tagline metadata
+    
+    Instead of hard coding the tagline use some metadata
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Update themes and pages to new paths api
+    fixed broken link for jekyll quick start on index.md. checked and made sure there are no more broken links on that page
+    fixed incorrect link to jekyll bootstrap homepage
+    Hello world
+    sample content updates
+    sample content updates
+    version 0.0.1
+    enable google tracking
+    add robots config to stop all bots scraping
+    'Provider' is more correct than 'engine'
+    Place paths to main pages in JB hash
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Move helpers to namespaced system
+    
+    Also do away with .html extension
+    Update themes and pages to new paths api
+    version 0.0.1
+    'Provider' is more correct than 'engine'
+    Place paths to main pages in JB hash
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Move helpers to namespaced system
+    
+    Also do away with .html extension
+    Update themes and pages to new paths api
+    version 0.0.1
+    update analytics snippet to include google tags
+    Adds Piwik Analytics Provider
+    Adds Piwik Analytics Provider
+    Adding Mixpanel as analytics provider
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    'Provider' is more correct than 'engine'
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Move helpers to namespaced system
+    
+    Also do away with .html extension
+    Update themes and pages to new paths api
+    add little arrow to collated list
+    add little arrow to collated list
+    version 0.0.1
+    Small fix to check the correct variable (page.comments instead of page.JB.comments) so that disabling comments works as documented.
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Resolve incorrect HOME_PATH/BASE_PATH settings
+    
+    JB/setup needs to account for  being falsy. Also add better usage instructions for BASE_PATH. Fixes #30
+    'Provider' is more correct than 'engine'
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    rename HOME_URL to HOME_PATH
+    Rename set_paths to more generic 'setup'
+    
+    This is because 'setup' will need to be included in every post/page file if we want to have access to BASE_PATH. So I figure 'setup' will be a good access path for any future inclusions we need to make
+    Add ability to dynamically set url paths
+    
+    This makes GitHub Pages for projects support possible as all urls will need to call on the project's subfolder. The other important piece is that urls should resolve to root locally but be able to change when in production. LLastly this gives themes clear integration points for working with paths. (the jbcache hack just makes it so there is not unnecessary whitespace output in the source.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    'Provider' is more correct than 'engine'
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Move helpers to namespaced system
+    
+    Also do away with .html extension
+    version 0.0.1
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Only list pages with a title. #69
+    
+    This skips the page.html, default.html, what-have-you-not pages that should not be listed in this list anyway, which otherwise result in empty bullet points.
+    'Provider' is more correct than 'engine'
+    Provide custom overrides to all helpers
+    
+    Now all helpers can be overridden by custom implementations without editing JB source. Just define a helper's 'engine' as 'custom' in the _config.yml file and provide a helper file of the same name in _includes/custom/. This helps users cleanly upgrade JB versions since they no longer need to edit the files directly.
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Move helpers to namespaced system
+    
+    Also do away with .html extension
+    Update themes and pages to new paths api
+    assign active class to li
+    assign active class to li
+    version 0.0.1
+    search providers created
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Fix for issue #86.
+    Adding Facebook Comments
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Added the wordpress_id value in Disqus code if present in the post
+    
+    Signed-off-by: Tommaso Visconti <tommaso.visconti@gmail.com>
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    fix clicky tracking image
+    
+    If the visitor has JavaScript disabled, clicky
+    still tracks the visit by having the browser load
+    a gif that's specific to the site id in the
+    tracking code.
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Adding Mixpanel as analytics provider
+    add support for google tag manager analytics integration
+    'Provider' is more correct than 'engine'
+    Remove all filename extenstions from JB files
+    Add new Integration points for themes
+    
+    The new system will try to namespace all framework integrations with 'JB'. Integration points added in this comment are 'analytics', 'comments', and 'sharing'.
+    Adds Piwik Analytics Provider
+    Adds Piwik Analytics Provider
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Fix closing tag
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Fixed sticky footer.
+    Possibly completed everything, actually.
+    Added in respond.min.js, removed old html5shiv as using the cdn that getbootstrap.com uses should work. Response.min.js doesn't work from CDN.
+    Added in html5shiv manually. IE6-7 no longer supported. Couldn't find a good CDN for this, google usage suggests downlaoding it. 'printshiv' This is for printed elements for IE 8.
+    Reformat copyright notice as per advice from @allolex.
+    
+    Closes #78
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    add support for RSS feed.
+    
+    add link tag in page header, to support subuscribe rss/atom feed in browsers.
+    Make it responsive out of the gate
+    jekyll current time (when you run the jekyll command)
+    Display current year via javascript
+    Update to bootstrap 2.0.1
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    rename HOME_URL to HOME_PATH
+    Update themes and pages to new paths api
+    Update themes to use new integration methods
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Possibly completed everything, actually.
+    Make it responsive out of the gate
+    Giving every post/page the "smarter" custom tagline (just like page.html in master branch).
+    P.S. In master branch, every page has "smarter"  custom tagline but every post haven't.
+    Show tagline only if set. credit to @sway as seen in pull #48
+    Update to bootstrap 2.0.1
+    index.md: add tagline metadata
+    
+    Instead of hard coding the tagline use some metadata
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    Fix glyphicons for categories and tags
+    
+    Added missing base "glyphicon" CSS class as described here: http://getbootstrap.com/components/#glyphicons-examples
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Removed local respond.js given that CDN does work, just not from file://
+    Possibly completed everything, actually.
+    Fix incorrect tag
+    Fix incorrect tag
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    Make it responsive out of the gate
+    Giving every post/page the "smarter" custom tagline (just like page.html in master branch).
+    P.S. In master branch, every page has "smarter"  custom tagline but every post haven't.
+    added dynamic tagline to posts and conditional display statement on partial view
+    update to post template on twitter theme: added dynamic page description
+    Update to bootstrap 2.0.1
+    Place paths to main pages in JB hash
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Update themes and pages to new paths api
+    Update themes to use new integration methods
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    new theme debyll added
+    add link to blog
+    new theme debyll added
+    new theme debyll added
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Possibly completed everything, actually.
+    Make it responsive out of the gate
+    Giving every post/page the "smarter" custom tagline (just like page.html in master branch).
+    P.S. In master branch, every page has "smarter"  custom tagline but every post haven't.
+    Show tagline only if set. credit to @sway as seen in pull #48
+    Update to bootstrap 2.0.1
+    index.md: add tagline metadata
+    
+    Instead of hard coding the tagline use some metadata
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    new theme debyll added
+    new theme debyll added
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    Need to provide theme name via settings.yml
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Fixed sticky footer.
+    Possibly completed everything, actually.
+    Added in respond.min.js, removed old html5shiv as using the cdn that getbootstrap.com uses should work. Response.min.js doesn't work from CDN.
+    Added in html5shiv manually. IE6-7 no longer supported. Couldn't find a good CDN for this, google usage suggests downlaoding it. 'printshiv' This is for printed elements for IE 8.
+    Reformat copyright notice as per advice from @allolex.
+    
+    Closes #78
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    add support for RSS feed.
+    
+    add link tag in page header, to support subuscribe rss/atom feed in browsers.
+    Make it responsive out of the gate
+    jekyll current time (when you run the jekyll command)
+    Display current year via javascript
+    Update to bootstrap 2.0.1
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    rename HOME_URL to HOME_PATH
+    Update themes and pages to new paths api
+    Update themes to use new integration methods
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Possibly completed everything, actually.
+    Make it responsive out of the gate
+    Giving every post/page the "smarter" custom tagline (just like page.html in master branch).
+    P.S. In master branch, every page has "smarter"  custom tagline but every post haven't.
+    Show tagline only if set. credit to @sway as seen in pull #48
+    Update to bootstrap 2.0.1
+    index.md: add tagline metadata
+    
+    Instead of hard coding the tagline use some metadata
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Removed local respond.js given that CDN does work, just not from file://
+    Possibly completed everything, actually.
+    Fix incorrect tag
+    Fix incorrect tag
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    Make it responsive out of the gate
+    Giving every post/page the "smarter" custom tagline (just like page.html in master branch).
+    P.S. In master branch, every page has "smarter"  custom tagline but every post haven't.
+    added dynamic tagline to posts and conditional display statement on partial view
+    update to post template on twitter theme: added dynamic page description
+    Update to bootstrap 2.0.1
+    Place paths to main pages in JB hash
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Update themes and pages to new paths api
+    Update themes to use new integration methods
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    imported pages from blog
+    home page updated. blog page created
+    add History markdown
+    add draft feature
+    add draft feature
+    Fixed a malformed date in the sample post.
+    added dynamic tagline to posts and conditional display statement on partial view
+    Update helper calls
+    
+    Use 'JB/[HELPER]' format
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Update themes and pages to new paths api
+    version 0.0.1
+    new theme debyll added
+    install and switch to hooligan theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    new theme debyll added
+    install and switch to hooligan theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    new theme debyll added
+    install and switch to hooligan theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    new theme debyll added
+    install and switch to hooligan theme
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Include 'JB/setup' in all posts and pages
+    
+    This is the only way we can have global access to dynamic liquid variables. Using site configuration is too convulated since switching themes and runing in development vs. production relies on being able to dynamically define variables
+    Regenerate 'twitter' theme
+    use twitter theme as default
+    use twitter theme as default
+    version 0.0.1
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    update twitter bootstrap css and png's to version 2.1.1
+    Update to bootstrap 2.0.1
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Fixed sticky footer.
+    Possibly completed everything, actually.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Added some custom Jekyll styling, because.
+    Possibly completed everything, actually.
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    Make it responsive out of the gate
+    Update to bootstrap 2.0.1
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    new theme debyll added
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    update twitter bootstrap css and png's to version 2.1.1
+    Update to bootstrap 2.0.1
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    missed adding new theme in last commit
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    update twitter bootstrap css and png's to version 2.1.1
+    Update to bootstrap 2.0.1
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Loaded in new CSS, JS, glyphicons, added in IE Edge, testing this commit.
+    update twitter bootstrap css and png's to version 2.1.1
+    Update to bootstrap 2.0.1
+    Created a Bootstrap-3 theme, readded the twitter theme, made bootstrap-3 default.
+    Added some custom Jekyll styling, because.
+    Possibly completed everything, actually.
+    Upgrade to twitter bootstrap 2.2.2 plus new styling.
+    Make it responsive out of the gate
+    Update to bootstrap 2.0.1
+    add twitter bootstrap theme
+    add twitter bootstrap theme
+    version 0.0.1
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    new post Moving
+    new post updated
+    new post
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    fixed formatting. removed deleted files
+    add renamed file
+    imported all posts from blog
+    fixed formatting. removed deleted files
+    fix broken URL's
+    Rename article to original name
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    fixed further formatting issues
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    added preview lost in export'
+    Rename article to original name
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    new idea post
+    imported all posts from blog
+    fixed further formatting issues
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    new post about datatable
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    fixed formatting. removed deleted files
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    imported all posts from blog
+    new post
+    add java highlighting
+    fixed formatting. removed deleted files
+    imported all posts from blog
+    imported pages from blog

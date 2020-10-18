@@ -1,0 +1,536 @@
+﻿    Update README.md
+    
+    Python version correction.
+    Update Readme
+    Update readme
+    update Readme
+    Updated Readme
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Hyperlink corrected (#22)
+    
+    * DCO
+    
+    * Hyperlink corrected
+    
+    * HYperlink updated
+    
+    * HYperlink updated
+    
+    * README.md
+    
+    * README.md
+    
+    * Update README.rst
+    DCO (#21)
+    Python 3.x Support
+    ibm_db_sa-0.3.2 release
+    ibm_db_sa-0.3.1 release
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    remove pyodbc from require
+    Skip ibm_db installation when pyodbc is used
+    Added the dependencies for Ibm_db (#33)
+    
+    * DCO
+    
+    * Hyperlink corrected
+    
+    * HYperlink updated
+    
+    * HYperlink updated
+    
+    * README.md
+    
+    * README.md
+    
+    * Update README.rst
+    
+    * Issue25 Fix
+    
+    * query with literals :Update 2
+    
+    * Fixed the dependency for ibm_db
+    ibm_db_sa-0.3.0 release
+    remove dupe entrypoint
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Keep the dialect name to ibm_db_sa.
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@171 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Change the dialect name from ibm_db_sa to ibmdbsa.
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@170 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Change the dialect name from ibm_db_sa into ibmdbsa to make this adaptor supported by SQLAlchemy-migrate.
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@169 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: adding default sqlalchemy test-suite
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@152 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix setup bug on jython forcing to download and install ibm-db native driver
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@142 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@137 1b047d87-d943-0410-8e89-5b5f2422cd04
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@137 1b047d87-d943-0410-8e89-5b5f2422cd04
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - move requirements.py into the ibm_db_sa module so that we can pull it in with
+    new --requirements flag when running main SQLA test suite
+    - add additional requirements to get test.sql.test_query to pass fully
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    ibm_db_sa: adding setup configuration files
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@144 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Update Readme
+    Update readme
+    update Readme
+    Updated Readme
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Hyperlink corrected (#22)
+    
+    * DCO
+    
+    * Hyperlink corrected
+    
+    * HYperlink updated
+    
+    * HYperlink updated
+    
+    * README.md
+    
+    * README.md
+    
+    * Update README.rst
+    DCO (#21)
+    Python 3.x Support
+    ibm_db_sa-0.3.2 release
+    ibm_db_sa-0.3.1 release
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    ibm_db_sa: adding setup configuration files
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@144 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Python 3.x Support
+    ibm_db_sa-0.3.2 release
+    ibm_db_sa-0.3.1 release
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    add/fix support for explicit sequence execution, sequences as defined in table metadata explicitly
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@137 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for Issue cusor.lastrowid not found (#65)
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Fix for issue #51 (#57)
+    
+    * Fix for CURRENT ISOLATION when connecting to Z/Os and autocommit
+    not working.
+    
+    * Add code to set SQL_TXN_SERIALIZABLE
+     Fix for ModuleNotFoundError: No module named 'future' (#48)
+    Fix for unicode,iteritems and superset errors (#43)
+    
+    * Fix for UNICODE, iteritems and supersert issue
+    
+    * Fix for SSLServerCertificate keyword for SSL
+    Python 3.x Support
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    fix on normalize_name to satisfy SA on pyodbc
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - reapply r94e7cadf1093 and r63c7a82545ad, fixing connection string to be
+    compatible with DB2
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    make connection string compatible to DB2
+    make connection string compatible to DB2
+    ibm_db_sa: stabilizing, in process of conforming SA test suite
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@149 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix many reflection problems, reduce python crash when use ibm_db native driver
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@146 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix bug on create connect args for odbc alt. drivers
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@141 1b047d87-d943-0410-8e89-5b5f2422cd04
+    IBM_DB_SA: Adjust copyright and contributor notice
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@140 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for Issue cusor.lastrowid not found (#65)
+    Fix for CAST function getting truncated.
+    Fix for unicode,iteritems and superset errors (#43)
+    
+    * Fix for UNICODE, iteritems and supersert issue
+    
+    * Fix for SSLServerCertificate keyword for SSL
+     query with literals :Update 2 (#32)
+    
+    * DCO
+    
+    * Hyperlink corrected
+    
+    * HYperlink updated
+    
+    * HYperlink updated
+    
+    * README.md
+    
+    * README.md
+    
+    * Update README.rst
+    
+    * Issue25 Fix
+    
+    * query with literals :Update 2
+    Fix for Issue 25  (#31)
+    
+    * DCO
+    
+    * Hyperlink corrected
+    
+    * HYperlink updated
+    
+    * HYperlink updated
+    
+    * README.md
+    
+    * README.md
+    
+    * Update README.rst
+    
+    * Issue25 Fix
+    Python 3.x Support
+    recursive queries iisue with CTE
+    issue due to f560ba1e0d82 revision
+    issue: 168, drop unique constraint
+    ibm_db_sa-0.3.2 release
+    Added get_unique_constraints reflection feature
+    code cleanup for add_constraint
+    Add_constraint issue with SQLAlchemy-0.9.x
+    Add constraint issue with SQLAlchemy-0.9.x
+    Removing typo error
+    issue with sql.true() for SQLAlchemy v0.7.x & 0.8.x
+    exist() unary operator within select clause
+    ibm_db_sa-0.3.1 release
+    drop index implementation incompatibility with SQLAlchemy-0.7.x and SQLAlchemy-0.8.x onwards
+    string_unit argument is currently not supported through the SQLAlchemy's char_length function
+    CHAR_LENGTH function support fix
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    restructurize AS/400 dialect options
+    Readding support for ISO8601 with 'T' delimeter which was accidentally dropped
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    Adding support for ISO8601 with 'T' delimiter
+    Translating 'update' and 'read' lockmode with DB2 compatible SQL
+    Handle DOUBLE type
+    ibm_db_sa-0.3.0 release
+    Reverting dialect name to ibm_db_sa for backward compatibility
+    - skip on update cascade
+    - add correct support for numeric converting to floating point
+    - add support for numeric test suite
+    - fix Text->CLOB
+    - don't return "autoincrement" for now in reflection
+    - ensure blank defaults aren't returned in reflection
+    - move requirements.py into the ibm_db_sa module so that we can pull it in with
+    new --requirements flag when running main SQLA test suite
+    - add additional requirements to get test.sql.test_query to pass fully
+    add name normalize flag, fixes result fetching
+    add/fix support for explicit sequence execution, sequences as defined in table metadata explicitly
+    - reapply ra998ac1ba26d to repair boolean formatting, also generalize to
+    any bool() value.
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Reverting changes of Thuy Christenson of Boolean default
+    Boolean type should return True/False instead of 1/0
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@175 1b047d87-d943-0410-8e89-5b5f2422cd04
+    set default boolean value as 1 or 0 instead of True or False
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@174 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for improper DROP INDEX syntax.
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@173 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Changes for BigInteger issue
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@172 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix missed import of datetime module as reported on issue #90
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@153 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: stabilizing in some area specifically adding has_sequence support for db2/400
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@150 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: stabilizing, in process of conforming SA test suite
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@149 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: add returning_clause to support INSERT/UPDATE statement which returning value. Fix invalid generated SQL as reported on issue: 85
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@147 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix many reflection problems, reduce python crash when use ibm_db native driver
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@146 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: add reflection support on VIEWS
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@143 1b047d87-d943-0410-8e89-5b5f2422cd04
+    IBM_DB_SA: Adjust copyright and contributor notice
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@140 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for Issue cusor.lastrowid not found (#65)
+    Python 3.x Support
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    restructurize AS/400 dialect options
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    ibm_db_sa: stabilizing, in process of conforming SA test suite
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@149 1b047d87-d943-0410-8e89-5b5f2422cd04
+    IBM_DB_SA: Adjust copyright and contributor notice
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@140 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+     Fix for ModuleNotFoundError: No module named 'future' (#48)
+    Fix for unicode,iteritems and superset errors (#43)
+    
+    * Fix for UNICODE, iteritems and supersert issue
+    
+    * Fix for SSLServerCertificate keyword for SSL
+    Python 3.x Support
+    ibm_db_sa-0.3.2 release
+    Fix: reflection function get_indexes should not return the unique constraint participating index
+    Added get_unique_constraints reflection feature
+    Adding get_incoming_foreign_keys functionality with reflector
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    fix on normalize_name to satisfy SA on pyodbc
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - fix Text->CLOB
+    - don't return "autoincrement" for now in reflection
+    - ensure blank defaults aren't returned in reflection
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Fix for issue #51 (#57)
+    
+    * Fix for CURRENT ISOLATION when connecting to Z/Os and autocommit
+    not working.
+    
+    * Add code to set SQL_TXN_SERIALIZABLE
+    Fix for unicode,iteritems and superset errors (#43)
+    
+    * Fix for UNICODE, iteritems and supersert issue
+    
+    * Fix for SSLServerCertificate keyword for SSL
+    Python 3.x Support
+    set_Isolation_level methods implemented
+    Fix to indicate invalid connection
+    ibm_db_sa-0.3.2 release
+    Enable SSL support
+    ibm_db_sa-0.3.1 release
+    Fix to indicate invalid connection
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    Readding support for ISO8601 with 'T' delimeter which was accidentally dropped
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    Changes for SP support implementation with outparam as suggested by Michael and adding one test case test_out_parameters.py for this
+    Removing re-import of DB2ExecutionContext
+    Stored procedure with outparam support in ibm_db_sa dialect
+    ibm_db_sa-0.3.0 release
+    - skip on update cascade
+    - add correct support for numeric converting to floating point
+    - add support for numeric test suite
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    ibm_db_sa: using generic methods on native ibm_db driver
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@151 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: stabilizing in some area specifically adding has_sequence support for db2/400
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@150 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: fix many reflection problems, reduce python crash when use ibm_db native driver
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@146 1b047d87-d943-0410-8e89-5b5f2422cd04
+    ibm_db_sa: add reflection support on VIEWS
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@143 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix reflection bug on retrieving table information with specified schema specifically on ibm_db native driver, as reported on issue: 81
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@139 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - skip on update cascade
+    - add correct support for numeric converting to floating point
+    - add support for numeric test suite
+    - move requirements.py into the ibm_db_sa module so that we can pull it in with
+    new --requirements flag when running main SQLA test suite
+    - add additional requirements to get test.sql.test_query to pass fully
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Fix for NameError: name 'asbool' is not defined python (#59)
+    
+    * Fix for NameError: name 'asbool' is not defined python
+    
+    * updated CHANGES file
+    Python 3.x Support
+    ibm_db_sa-0.3.2 release
+    ibm_db_sa-0.3.1 release
+    Fix for DB2 10.5 to convert nullable unique constraint to unique index exclude nulls
+    Fix support for zxjdbc and pyodbc for both IBM DB LUW and AS/400
+    ibm_db_sa-0.3.0 release
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    IBM_DB_SA: Adjust copyright and contributor notice
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@140 1b047d87-d943-0410-8e89-5b5f2422cd04
+    initial submission for proposed version 0.2.1
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@138 1b047d87-d943-0410-8e89-5b5f2422cd04
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@137 1b047d87-d943-0410-8e89-5b5f2422cd04
+    Changes for SP support implementation with outparam as suggested by Michael and adding one test case test_out_parameters.py for this
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    - remove dupe SQLA tests - version bumps - scattered movements
+    ibm_db_sa: adding default sqlalchemy test-suite
+    
+    git-svn-id: https://ibm-db.googlecode.com/svn/branches@152 1b047d87-d943-0410-8e89-5b5f2422cd04
+    - reapply SQLAlchemy 0.7/0.8 compatibility + code layout refactor
+    - consolidate separate <dbapi>400.py files into the parent dialect
+    - factor out "reflection" into its own module featuring both information schemas
+    - clean out old 0.4 style patterns, update typing system
+    - rewritten README.rst
+    - reformat CHANGES
+    - apply new SQLA 0.8 external dialect compliance suite
+    Update CONTRIBUTING.md
+    DCO (#21)

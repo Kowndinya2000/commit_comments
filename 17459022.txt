@@ -1,0 +1,249 @@
+﻿    Initial commit
+    Added Jenkinsfile for CI auto building
+    Created debian package and added first files
+    Soundfiles need to break/replace 1.1-3
+    Update package info
+    Created debian package and added first files
+    Created debian package and added first files
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Created debian package and added first files
+    Created debian package and added first files
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    Adding sound that mimics a camera shutter button press
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    using 48k sampling rate
+    convert utility made
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Fade in the attack section of kano_challenge_complete.wav to avoid
+    clicking at max volume.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Adding new sound for level XP
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Correct the naming of the sound files
+    
+    The files for `kano_test_sound.wav` and `kano_init.wav` became swapped
+    in the copying which meant that the two were interchanged.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Correct the naming of the sound files
+    
+    The files for `kano_test_sound.wav` and `kano_init.wav` became swapped
+    in the copying which meant that the two were interchanged.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Updating achievemnt sound file with increased volume.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    Modified sounds from Ricardo.
+    Tweak the sound files
+    
+    Improvements by Ricardo Luz (@rluz) as mentioned on
+    KanoComputing/peldins#1557
+    
+     * Lower the frequency from 48kHz to 44.1KHz
+     * Convert all to mono to decrase file size
+     * Add a 0.5 delay to start to avoid clipping
+     * Filter low frequencies
+    Added imporved sound and test and init new sounds
+    using 48k sampling rate
+    Created debian package and added first files
+    Tuned the sounds for CKC v1 speaker maintaining balance with rest
+    
+    These sounds have been tuned and improved for CKC v1 speaker
+    playback. As a whole, the sounds were normalised in volume and
+    various enchancements in equaliser, compression, and dynamic
+    range were made to give the best possible quality for the hardware.
+    using 48k sampling rate
+    Created debian package and added first files
+    using 48k sampling rate
+    Created debian package and added first files

@@ -1,0 +1,30 @@
+﻿    use CMAKE_PREFIX_PATH to find Rock CMake instead of environment variables
+    Inital commit to the LaserFilter library
+    
+    This commit adds two (tested) filters:
+    The NoiseFilter is a filter on incline between scan readings.
+    It is good for filtering noise from 'jumpy edgeds' that occure
+    if one scans over a corner of an object.
+    
+    The BoxFilter transforms the given laserscan into an pointcloud
+    and removes any point that is inside of the given bounding boxes.
+    Inital commit to the LaserFilter library
+    
+    This commit adds two (tested) filters:
+    The NoiseFilter is a filter on incline between scan readings.
+    It is good for filtering noise from 'jumpy edgeds' that occure
+    if one scans over a corner of an object.
+    
+    The BoxFilter transforms the given laserscan into an pointcloud
+    and removes any point that is inside of the given bounding boxes.
+    register visualizer
+    update to vizkit3d
+    Inital commit to the LaserFilter library
+    
+    This commit adds two (tested) filters:
+    The NoiseFilter is a filter on incline between scan readings.
+    It is good for filtering noise from 'jumpy edgeds' that occure
+    if one scans over a corner of an object.
+    
+    The BoxFilter transforms the given laserscan into an pointcloud
+    and removes any point that is inside of the given bounding boxes.

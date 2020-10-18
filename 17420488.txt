@@ -1,0 +1,3 @@
+﻿    cmake : check c++11 compilation flags
+    moved Generic and ContactPointTask from asguard_odometry package
+    moved Generic and ContactPointTask from asguard_odometry package

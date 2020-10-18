@@ -1,0 +1,1267 @@
+﻿    tomato: Add 32-bit variants of thermal libs
+    
+    Change-Id: Ib65264b933007d6d618d19615f010449d88472d4
+    tomato: Improve the blob extractor
+    
+     * Enable flag to always use our Venus instead of letting the BSP
+       install it. It's signed, and I always forget this :(
+     * Remove qct_resampler, we're not using it and it's actively harmful on
+       CM because it's not compatible with the new Audioflinger features
+     * Split up the blob list to accomodate for the first item, similar
+       to what we do with other devices.
+    
+    Change-Id: Ib12d328e14b7417ee756d84a6496784a2d4d81f2
+    tomato: Update proprietary files
+    
+    Now that the camera uses ofilm tuning by default, stop shipping
+    the sunny libraries.
+    
+    TOMATOL-523
+    
+    Change-Id: I42e232cf8d6082758827ff63873ea2bf3acb3877
+    tomato: add missing acdb blob
+    
+    Change-Id: Ib909cb8d6921f2025b13b4d86de025fc4aaf8aac
+    tomato: Remove unused extra proprietary files list
+    
+    Change-Id: Ifcc7734fc7da37b601af2a38ce86a1319b31183a
+    tomato: Move chromatix, actuator libraries into QC proprietary list
+    
+    Change-Id: I953a82fffc580ba9533f5ec84721f67b0edc3b79
+    tomato: Add IMX214 chromatix libraries
+    
+    Change-Id: I241f68e0d0cbfbc342ebd814b0f2bf333821ed89
+    tomato: update rear camera prebuilts
+    
+    Change-Id: I851397df1609f815a1f8d451827de3363e484b4b
+    tomoto: Sensor hal bring up
+    
+    MMX-62:
+     * Support mpu6880 accel, mpu6880 gyro, pa12200001 light
+       and pa12200001 proximity sensors.
+     * Gyro, and light sensors need to be tuned.
+    
+    Change-Id: I768c9d5da75b7c88c5b85bf3398dc342b05afd22
+    tomato: use qc compiled ov5648 library
+    
+    Change-Id: I1ff126c425446cda56d05f55fe1a6f84cf16273a
+    tomato: separate qc blobs from vendor blobs
+    
+    Change-Id: I65af8c658c5f639130aba01f0c40d32442d9fa49
+    tomato: Remove duplicate lib
+    
+    Change-Id: Ib572dfaa766c06bd86582f15ce965c06511726a0
+    tomato: Set up location targets
+    
+    Change-Id: I3ea869837a9511170975f79506bcfac0ad7e4338
+    tomato: Add WiFi proprietary lib
+    
+    Change-Id: I062ad9b2fc5c8cfda8d15194cabafc8da220f900
+    tomato: Add Widevine proprietary libs
+    
+    Change-Id: I02a1928d9a6bbc163f6ddc8ac17b5854fff27fb3
+    tomato: Set up GPS with real package targets
+    
+    Change-Id: Icb9ff8bdb45e9773078e1334464264581d461ce2
+    tomato: Add BT setup proprietary files
+    
+    Change-Id: I955b5dae17973ac433cdaf3f67e7a8737b740651
+    tomato: remove unnecessary camera blobs
+    
+    Change-Id: I293a0bf01fa2c1b82a6cf9a92aaf93d7a00da0d1
+    tomato: Add missing netmgrd dependency
+    
+    Change-Id: I8e2e01fe8e9e7e5cdaec9337f8652cc75b89c3e1
+    tomato: Remove NFC configuration
+    
+    * This device does not have NFC
+    
+    Change-Id: I4151d1124fec8522d46e2a570a9f632ee81d72da
+    tomato: add front-camera blobs
+    
+    Change-Id: Ic03cfd847815ab1fe5d14c9cafbe4a7dcf7a76fe
+    tomato: Add missing modem, GPS libraries
+    
+    Change-Id: I2da7e9036195d47013f1d8b96236409790ddd1a5
+    tomato: Add missing graphics libraries
+    
+    Change-Id: Id185e3ca41f65a32fe7bd7cbe915a1fd8baff881
+    tomato: Create initial proprietary file list
+    
+    Change-Id: Ib23113e8b032296f783b408a8f186c3dff255d62
+    tomato: Rename to tomato
+    cp8675: Initial device tree
+    tomato: Add TrustZone assertions
+    
+    * Prevent installation if TrustZone image is not in whitelisted versions
+    
+    Change-Id: Ic80b26877c08d8c25d056c77254012ada40c6151
+    tomato: Improve the blob extractor
+    
+     * Enable flag to always use our Venus instead of letting the BSP
+       install it. It's signed, and I always forget this :(
+     * Remove qct_resampler, we're not using it and it's actively harmful on
+       CM because it's not compatible with the new Audioflinger features
+     * Split up the blob list to accomodate for the first item, similar
+       to what we do with other devices.
+    
+    Change-Id: Ib12d328e14b7417ee756d84a6496784a2d4d81f2
+    tomato: Update proprietary files
+    
+    Now that the camera uses ofilm tuning by default, stop shipping
+    the sunny libraries.
+    
+    TOMATOL-523
+    
+    Change-Id: I42e232cf8d6082758827ff63873ea2bf3acb3877
+    tomato: add missing acdb blob
+    
+    Change-Id: Ib909cb8d6921f2025b13b4d86de025fc4aaf8aac
+    tomato: Remove unused extra proprietary files list
+    
+    Change-Id: Ifcc7734fc7da37b601af2a38ce86a1319b31183a
+    tomato: Move chromatix, actuator libraries into QC proprietary list
+    
+    Change-Id: I953a82fffc580ba9533f5ec84721f67b0edc3b79
+    tomato: Add IMX214 chromatix libraries
+    
+    Change-Id: I241f68e0d0cbfbc342ebd814b0f2bf333821ed89
+    tomato: update rear camera prebuilts
+    
+    Change-Id: I851397df1609f815a1f8d451827de3363e484b4b
+    tomoto: Sensor hal bring up
+    
+    MMX-62:
+     * Support mpu6880 accel, mpu6880 gyro, pa12200001 light
+       and pa12200001 proximity sensors.
+     * Gyro, and light sensors need to be tuned.
+    
+    Change-Id: I768c9d5da75b7c88c5b85bf3398dc342b05afd22
+    tomato: use qc compiled ov5648 library
+    
+    Change-Id: I1ff126c425446cda56d05f55fe1a6f84cf16273a
+    tomato: separate qc blobs from vendor blobs
+    
+    Change-Id: I65af8c658c5f639130aba01f0c40d32442d9fa49
+    tomato: Remove duplicate lib
+    
+    Change-Id: Ib572dfaa766c06bd86582f15ce965c06511726a0
+    tomato: Set up location targets
+    
+    Change-Id: I3ea869837a9511170975f79506bcfac0ad7e4338
+    tomato: Add WiFi proprietary lib
+    
+    Change-Id: I062ad9b2fc5c8cfda8d15194cabafc8da220f900
+    tomato: Add Widevine proprietary libs
+    
+    Change-Id: I02a1928d9a6bbc163f6ddc8ac17b5854fff27fb3
+    tomato: Set up GPS with real package targets
+    
+    Change-Id: Icb9ff8bdb45e9773078e1334464264581d461ce2
+    tomato: Add BT setup proprietary files
+    
+    Change-Id: I955b5dae17973ac433cdaf3f67e7a8737b740651
+    tomato: remove unnecessary camera blobs
+    
+    Change-Id: I293a0bf01fa2c1b82a6cf9a92aaf93d7a00da0d1
+    tomato: Add missing netmgrd dependency
+    
+    Change-Id: I8e2e01fe8e9e7e5cdaec9337f8652cc75b89c3e1
+    tomato: Remove NFC configuration
+    
+    * This device does not have NFC
+    
+    Change-Id: I4151d1124fec8522d46e2a570a9f632ee81d72da
+    tomato: add front-camera blobs
+    
+    Change-Id: Ic03cfd847815ab1fe5d14c9cafbe4a7dcf7a76fe
+    tomato: Add missing modem, GPS libraries
+    
+    Change-Id: I2da7e9036195d47013f1d8b96236409790ddd1a5
+    tomato: Add missing graphics libraries
+    
+    Change-Id: Id185e3ca41f65a32fe7bd7cbe915a1fd8baff881
+    tomato: Create initial proprietary file list
+    
+    Change-Id: Ib23113e8b032296f783b408a8f186c3dff255d62
+    tomato: Rename to tomato
+    cp8675: Initial device tree
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomoto: Sensor hal bring up
+    
+    MMX-62:
+     * Support mpu6880 accel, mpu6880 gyro, pa12200001 light
+       and pa12200001 proximity sensors.
+     * Gyro, and light sensors need to be tuned.
+    
+    Change-Id: I768c9d5da75b7c88c5b85bf3398dc342b05afd22
+    tomato: Add basic lights HAL
+    
+    Change-Id: I5749ac11952fc5d956d79ffc7ab51edb748b8fe6
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Upgrade sensors HAL
+    
+     * Bring us more in line with Qualcomm.
+     * Modifications include the static sensors list, which needs
+       to stick around until the kernel drivers support the sensors
+       classdev. Also includes smoothing algorithms (EWMA) applied
+       to the gyro/accel to reduce noise.
+     * L is requiring more features from the sensors (batching, etc)
+       and this work is being done to pass CTS.
+    
+    Change-Id: Idffd01d87540509867a24f92a6e2165e4ac15787
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add user proximity calibration app
+    
+    Change-Id: I9904a76953cdee2a935e59bd3e842cdc5e544d4e
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato: update wifi firmware
+    
+    Change-Id: Ie06d20d36c7363868442422f5b06f91c64d5e063
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato: update wifi firmware
+    
+    Change-Id: Ie06d20d36c7363868442422f5b06f91c64d5e063
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato: AV-related and misc updates for L
+    
+     * Add low-latency-record paths
+     * Update AAC offload formats
+     * Readd PCM offload formats
+     * Set optimal configuration for mm-parser
+     * Create directories for DRM
+     * Update USB audio config
+     * Update mixer paths (remove listen, enable boost globally)
+     * Update media_codecs.xml (baseline from QC)
+    
+    Change-Id: I8c8fdf51d3f0cecd9a10cb39e55f9a1a5293ca06
+    audio: Disable 24bit offload (TEMPORARY)
+    
+    The audio HAL needs to catch up before enable this
+    
+    Change-Id: I663d5fbf66a1c09b38336546035d679466c6118b
+    tomato: Avoid conflicts with audio visualizer
+    
+    Change-Id: I028ae6e6a62d51f7246aa143961598aa9a1b1e1a
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: Update audio policy
+    
+     * Additional samplerates for primary non-offload output
+     * Don't offload MP2 on 8939, it's not supported
+    
+    Change-Id: Iede55588f20c4a78cf92b3567363c7daca9ad18a
+    tomato: A/V bringup
+    
+     * Enable all relevant audio/video features.
+    
+    Change-Id: I92e9a8e8534b9751915e47e5b27d08eb44e9e22c
+    tomato: Add sound config
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: Enable AEC/NS effect paths
+    
+    Change-Id: I2b20b87825e6f3fe5e03e246086661c35c31544d
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: A/V bringup
+    
+     * Enable all relevant audio/video features.
+    
+    Change-Id: I92e9a8e8534b9751915e47e5b27d08eb44e9e22c
+    tomato: increase speakerphone speaker volume
+    
+    Change-Id: I2c73e80792c0960f6d82305a151c9119ea248bc1
+    tomato: Improve voice call quality
+    
+     * Fixes TOMATOL-386
+    
+    Change-Id: Ie49514cd0b85b45dd0478170087014dd9af33c18
+    tomato: AV-related and misc updates for L
+    
+     * Add low-latency-record paths
+     * Update AAC offload formats
+     * Readd PCM offload formats
+     * Set optimal configuration for mm-parser
+     * Create directories for DRM
+     * Update USB audio config
+     * Update mixer paths (remove listen, enable boost globally)
+     * Update media_codecs.xml (baseline from QC)
+    
+    Change-Id: I8c8fdf51d3f0cecd9a10cb39e55f9a1a5293ca06
+    Revert "tomato: Tune earpiece volume"
+    
+    This reverts commit 4cc72f83533fd8262bd0755749cdfc8b20461eb6.
+    
+    Revert "tomato: Increase speaker and handset output volume"
+    
+    This reverts commit 68b9ec392bca4d094e6dc1524e973a20d042e521.
+    
+    Change-Id: I7c9a94756131847fcdb38b7fc6e365cd0cda30d6
+    tomato: Tune earpiece volume
+    
+    Change-Id: I24a1ff4337eaf6e3ed7aa3319493241936bf1555
+    tomato: Disable sidetone for voice
+    
+    Change-Id: I388a1f09d94a87880baac827bb76521345e42da1
+    tomato: Increase speaker and handset output volume
+    
+    Change-Id: I16d40ec8546d7dbc0850853f74e4793654765117
+    tomato: fix voice handset and speakerphone volume
+    
+    Change-Id: I399580fec3a072546ef776f2a783a3c91ddf9c96
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: Update audio routes
+    
+     * Cleanup unused routes
+     * Enable boost switches
+     * Enable stereo mic for camcorder
+    
+    Change-Id: I3d79d478766dfff3c9e156b3c3f483f59c0ef9e5
+    tomato: Correctly switch on earpiece
+    
+    Change-Id: Ib16568b39eec94bc4d7a3bd9468e864d235701b3
+    tomato: Use MTP mixer_paths
+    
+    Change-Id: I3f2c3e676efca8b92074a0fcaf17adec91fe4f7b
+    tomato: Add sound config
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: Update voice-speaker calibration
+    
+    4.4.020.00.P1.141204.8675_I01
+    
+    Change-Id: I9d352a2dcc726eb4c880948ed7fede023bcd6be5
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: Update voice-headset calibration
+    
+    4.4.020.00.P1.141204.8675_I01
+    
+    Change-Id: I8defc10f3a4407c5df3debf2f4286d137acbfb74
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: update voice calibration
+    
+    4.4.020.00.P1.141204.8675_I01
+    
+    Change-Id: If0f9add59b535b5ba367eafe727936a34d5ee85d
+    tomato: update voice-call calibration
+    
+    Change-Id: Ieac7e4103f3c020906b9d744997662894d2038d1
+    tomato: Update voice-call calibration
+    
+    Change-Id: Iab0c04472fabd6cff74c470c4d85f8ec63729f19
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: update voice calibration
+    
+    4.4.020.00.P1.141204.8675_I01
+    
+    Change-Id: If0f9add59b535b5ba367eafe727936a34d5ee85d
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: revert audio tunings to kk
+    
+    Change-Id: Iafb703f100e41ca1f2ffdce2d45aae4d14fcec2a
+    tomato: Fix audio issues
+    
+     * Upgrade calibration database
+     * Underp copy of effects configuration
+     * Build voice processing library, it's used by VoIP apps
+    
+    Change-Id: I8c995ce79b7385b9fe73fad8d8555fe462a89e77
+    tomato: Initial audio calibration
+    
+     * Reorganize audio related stuffs under audio directory
+     * Calibrate external speaker
+    
+    Change-Id: Ic2d4db28c8e66c6b440d7139d4354a26629844b3
+    tomato: Remove 4K video resolutions
+    
+     * Not supported by 8939 encoder.
+    
+    Change-Id: Icaba4893d47b2fcc5215a5413f536e901e9d25ed
+    tomato: Improve camera performance
+    
+     * Set limits to what the hardware actually supports.
+    
+    Change-Id: I6a80cb6957b93b3201e70e6f40f0cc69fc973dfa
+    tomato: fix hfr video recording
+    
+    Change-Id: Iba1d94a85757399a10010e31aee00583b9e2553d
+    tomato: Fix 1080P recording
+    
+     * Camera ids are swapped. Fixit.
+    
+    Change-Id: I058aee1464c501449b78ac7543a9f39239392497
+    tomato: Add media profiles
+    tomato: 64-bit build and cleanups
+    
+     * Various cleanups / L related updates
+     * Initial 64-bit work (disabled by default)
+    
+    Change-Id: Ib6df68bd6ed61aa30ccc28619cc6080c954ccf0e
+    Re-enable multi-user
+    
+    Contains the following reverts:
+    
+    Revert "Revert "Revert "Revert "Enable multiuser""""
+    
+    This reverts commit d4bdeb6e3363c4c7067883658baa4e0e2c3d936d.
+    
+    Revert "tomato: fully remove multiuser support"
+    
+    This reverts commit 46dfdc539c2e18d1caf22666aff8b21be63423fc.
+    
+    Change-Id: Ie069aba83cff9a75c779fd737babe1d7620e4b4d
+    tomato: fully remove multiuser support
+    
+    - com.google.android.xts.devicepolicy.DeviceOwnerTest#testUserManagement
+    
+    Change-Id: I0fb609667c8f9bd20f5b9d9af28111442904c65e
+    tomato: Update hardware features
+    
+     * Update from L
+    
+    Change-Id: I34ea3b5d56cd7ab2300de649d6236f237c796a9a
+    tomato: remove compass feature completely
+    
+    Change-Id: I83e1eff11fcb40baa12a18ae866e3d8b354a80e8
+    tomato: Enable ZSL for CameraNext
+    
+    Change-Id: Ife9173f59e7434a21a73a5a5b201a510351f2766
+    tomato: Add telephony overlay
+    
+    Change-Id: I4fe890babc492978eee9e5a6ce6f05076c3df004
+    tomato: Upstream updates
+    
+     * Sync configurations with QCOM
+    
+    Change-Id: I0427af99650b64c0a50d3ba2c462a3df80979bce
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato : Add p2p_no_group_iface flag
+    
+    * Avoid creating new interface for p2p connection as an extra interface
+      will consume additional HW index.
+    
+    Change-Id: Ic84c941f39a64d8bea7d13a38071c5fabff2aea0
+    tomato: Add WPA supplicant configs
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato: Add wifi firmware and configs
+    
+    Change-Id: I36975c69b283f8502bbdbd1027b7e04f229df27e
+    tomato : Add p2p_no_group_iface flag
+    
+    * Avoid creating new interface for p2p connection as an extra interface
+      will consume additional HW index.
+    
+    Change-Id: Ic84c941f39a64d8bea7d13a38071c5fabff2aea0
+    tomato: Add WPA supplicant configs
+    Improve thermal engine configuration
+    
+    * Much better performance at slightly lower / similar temps.
+    
+    Change-Id: I7695225a7da023ff7123b56650e81177cfd366b6
+    tomato: Add thermal override
+    
+    Change-Id: I0b2f0cd004a09f919f5aceb672b2bda56280e40f
+    tomato: Even more aggressive thermal throttling
+    
+     * Throttle cores at 70c instead of 75c.
+     * Add GPU throttling.
+    
+    Change-Id: I57e188d465174581da2a1683598777a20ecf2576
+    tomato: More aggressive thermal throttling
+    
+     * Start slowing down the perf cluster sooner
+     * Incrementally hotplug cores if the temp keeps going up
+    
+    Change-Id: I14a4bf44707209d8617700911abd40d7cb6456ff
+    tomato: Power/performance/thermal tuning
+    
+    Change-Id: I5507ef20d5fe11478983e7302ba3dc987287525c
+    tomato: Add thermal engine configuration
+    
+     * Modified set point to 75 degrees and hotplug temp to 95 degrees.
+    
+    Change-Id: I8e691f034d7fb52b1e9cfafec849c208ae77c7fd
+    tomato: Add sec_config
+    
+    Change-Id: I0e3b0d674f3d66bff231f7555c21536ba0ad2f15
+    tomato : Set H263 decoder max res to 1080p
+    
+    Change-Id: If73b5d8d8fab4c8760834cec218f78b755d4600d
+    tomato: Update media_codecs.xml
+    
+     * Resolves CTS issues
+    
+    Change-Id: I1d941b843e45511ca6239feb34f909ab038ec436
+    tomato: AV-related and misc updates for L
+    
+     * Add low-latency-record paths
+     * Update AAC offload formats
+     * Readd PCM offload formats
+     * Set optimal configuration for mm-parser
+     * Create directories for DRM
+     * Update USB audio config
+     * Update mixer paths (remove listen, enable boost globally)
+     * Update media_codecs.xml (baseline from QC)
+    
+    Change-Id: I8c8fdf51d3f0cecd9a10cb39e55f9a1a5293ca06
+    media_codecs: Use the new inclusion-based config format
+    
+    Change-Id: I8a431fb4f01b0922e0199f6858e399e3059ebad8
+    tomato: Remove HEVC software decoder
+    
+     * Not used on 8939, we have a hardware decoder.
+     * Remove SW codec to pass CTS codec list test.
+    
+    Change-Id: I381d799f21b8626d776caaa9721889eccfd0554f
+    tomato: Remove hardware OMX audio decoders
+    
+     * These are not supported on 8939 and cause CTS failures. Remove them.
+    
+    Change-Id: I5d4fc17885d8c35d451c07e626ccb38caba7d9b5
+    tomato: Remove a few software video codecs
+    
+     * 8939 is not particularly efficient at using software video codecs.
+     * Disable codecs which overlap with existing hardware codecs as they
+       may fail CTS tests.
+    
+    Change-Id: I0bd0e04021274e5e600cc3a4f34a0775d38d0cb4
+    tomato: A/V bringup
+    
+     * Enable all relevant audio/video features.
+    
+    Change-Id: I92e9a8e8534b9751915e47e5b27d08eb44e9e22c
+    tomato: Add media profiles
+    tomato: Add EGL config
+    tomato : Remove deprecated FM script
+    
+    * These devices skip firmware download anyway
+    
+    Change-Id: I1216c92a18ab67343a1c3d2282f490be7b83d1b0
+    tomato: Re-sort init script makefiles
+    
+    Change-Id: I40f8eead3621d0a031aec34788f077e6cd8d457f
+    tomato: Remove megaderp
+    
+     * Fix power modes
+    
+    Change-Id: Ie2049a3567e9aa9efe38afed2348f994e8e95237
+    tomato: Clean up after recent power changes
+    
+    * Remove deprecated references to init.recovery.qcom.rc
+    
+    Change-Id: I551eb5d35b90b566e3e5361a946c7cd3703b215c
+    tomato: Split out power config
+    
+     * So we can use it in recovery too.
+    
+    Change-Id: I4aa7c8e7d4b06aafa4f82117428bed4f65161b93
+    tomato: Set power modes in recovery
+    
+    Change-Id: I098b58acff433e280c34a59ed262be9cdefd6d5b
+    tomato: Remove init.recovery.qcom.rc
+    
+    Change-Id: I8594e77bf525e3c399efbad5fc3cb1e6732cedab
+    tomato: Remove missing thermal-engine config target
+    
+    Change-Id: If7aad7e31996b28caf33027d2d255cd81151e02e
+    cp8675: Initial device tree
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e
+    init: power: defer the low power modes enablement
+    
+    Enabling the low power modes before bringing all cores online
+    might leads to issues. Hence delay the low power mode enablement.
+    
+    Change-Id: I5eaa02c3b7bd2422e53f60e00ca554adde8b158d
+    tomato : Bring power script in line with QC 1.2.5_rb1.4
+    
+    Change-Id: I23115565c9443854f5f3fa904bd57eba3ce798a4
+    tomato: Split out power config
+    
+     * So we can use it in recovery too.
+    
+    Change-Id: I4aa7c8e7d4b06aafa4f82117428bed4f65161b93
+    tomato : Bring power script in line with QC 1.2.5_rb1.4
+    
+    Change-Id: I23115565c9443854f5f3fa904bd57eba3ce798a4
+    tomato : Set rild.libpath in system.prop instead of at runtime
+    
+    Setting rild.libpath at runtime races with rild.  We don't use
+    32-bit builds, so set the 64-bit value in system.prop instead of
+    using a property override.
+    
+    Change-Id: I83b2929107549923315c97ce506144c513d6a7c9
+    tomato : Enable perfd after boot complete
+    
+    * Dexopt takes place after the bootanim service trigger occurs. This
+      means perfd and all cores online for the dexopt process, causing
+      excessive heat.
+    
+    Change-Id: I2ab6fe23c146c0edcb31e4f19ae3b785856f976d
+    tomato: Remove megaderp
+    
+     * Fix power modes
+    
+    Change-Id: Ie2049a3567e9aa9efe38afed2348f994e8e95237
+    tomato: Clean up after recent power changes
+    
+    * Remove deprecated references to init.recovery.qcom.rc
+    
+    Change-Id: I551eb5d35b90b566e3e5361a946c7cd3703b215c
+    tomato: Split out power config
+    
+     * So we can use it in recovery too.
+    
+    Change-Id: I4aa7c8e7d4b06aafa4f82117428bed4f65161b93
+    tomato: Speed up IO performance
+    
+     * Also improve boot speed by enabling boost at boot. It will be
+       turned off later.
+    
+    Change-Id: I5d7d7843b1f5c11222144e22fbf2cdd104cb0d05
+    tomato: Don't dynamically start rild instance #2
+    
+    * Device will always be in DSDS configuration
+    
+    Change-Id: Ibf6782d352484218757098569ac60b604e59f319
+    init: Only media_rw can write to secondary storage
+    
+    Fixes com.android.cts.appsecurity.AppSecurityTests#testExternalStorageWrite
+    
+    Change-Id: Ib56c1639f3010eb25f0ba4b2d21f3ff9a86fbf05
+    tomato: init: Don't mount /system in charge mode
+    
+    This fixes reboot when holding the power button in charge mode.  When
+    /system is mounted, ueventd spawns a child that spins forever waiting
+    for the modem firmware to appear.  This in turn causes the reboot to
+    fail.  But when /system is not mounted, the ueventd child doesn't seem
+    to get that far and terminates, so reboot works.
+    
+    It appears the only reason to mount /system is for /system/bin/vm_bms,
+    which is not present on this device.
+    
+    Change-Id: Ieaf3a4b9d78a4f31f7cc7d8c085fda6952899ef8
+    tomato: Move prebundled app handling to the prebundle repository
+    
+    Reverts the following:
+    
+    Revert "tomato: Update permissions for prebundled-apps"
+    
+    This reverts commit 7e6ecbc845adee3b95d44f2028e02c9add5017e3.
+    
+    Revert "prebundled-apps: Lower requested privileges"
+    
+    This reverts commit 80ea830492293a3e7b05433d72ce7496dc0326fc.
+    
+    Revert "init: Install prebundled apps if present"
+    
+    This reverts commit 7dab159d21231e0069c5187872a1781e53d03936.
+    
+    Change-Id: I0e4373f1e7e6394958ac6e22ecac1194683e712c
+    tomato: Update permissions for prebundled-apps
+    
+    Change-Id: Iaee1592f620e2dd611b6470a3fceb5a58cbcfbfe
+    Revert "tomato: Trigger WLAN module load following WCNSS platform init"
+    
+    This reverts commit 04649396ebb0308e28084fe162c5c401ea57c0f4.
+    
+    Revert "tomato: Manually insert prima driver"
+    
+    This reverts commit c81903b2042c0005d192985d7e7062e58a92b954.
+    
+    Change-Id: I9fdd5ed5d317f74292fc2576f211f4a884f1d967
+    tomato: Add PCC color tuning support
+    
+    Change-Id: I738de3c9836453fec4f9816aaa8bf3b6173f11ff
+    tomato: Add ethernet support
+    
+     * Great for those #mwc moments
+    
+    Change-Id: Idcac484bc0f5be1cd37516b19df9ce2b45b0c789
+    tomato: Trigger WLAN module load following WCNSS platform init
+    
+    Change-Id: I4a8337f004a602ded6e04c4b165c72c8444ba0c5
+    tomato: Manually insert prima driver
+    
+    * Prima driver cannot be insmod/rmmod'ed easily by the Android system if
+      it is treated like a module.
+    * Manually insert the module so it is always available and have Android
+      treat it like a builtin.
+    
+    Change-Id: Iefeb0c1badc9eed37ebfb415be21d83e897d94d1
+    tomato: Changes for factory mode
+    
+     * Set factory.prop path
+     * Start adb in factory mode
+    
+    Change-Id: I503646dbd76adedf70ac138c59762e2be2835ddd
+    tomato: Update scaling parameters
+    
+     * Correct backwards parameters
+     * Add percpu mostly_idle_load
+     * Remove freq boost on input (racy)
+    
+    Change-Id: I1cd51791e1560099947decb5967d736cf2e1be1c
+    tomato: Don't logwrap irsc_util
+    
+    Change-Id: I14fbe44efcd3419a73da47c2769f0f354095b38c
+    Fix init.rc derp
+    
+    don't comment out the camera daemon, this was part of a test
+    
+    Change-Id: I22f8d0ca68184eedb4057587bb585b8f5219db34
+    tomato64: Load wifi as a module
+    
+    The uncompressed kernel is too big for the space we have right now,
+    trim it down a bit
+    
+    Change-Id: Ide7c2ba84e0799c04a5fc14648587e6b963748a7
+    More 64bit fixes
+    
+    * We were missing a core 64bit makefile, put it in
+    * Adjust the OEM RIL path depending on what's running
+    Change-Id: I86fffed4504fb4a87b38d82012d86298ad042e9d
+    tomato: Update charger for lollipop
+    
+    Change-Id: I67205e9ff40f4abd6fbd04b947902d021fae3b0b
+    tomato: Remove QRNG daemons
+    
+    * hw_random is mixed at boot by the Android system now.
+    
+    Change-Id: I3fbaad0a1f0ed86e54492c1fce5a2ecd7227d72d
+    tomato: Update scaling parameters
+    
+     * Upstream change
+    
+    Change-Id: Ia8f2b659d032f373afe4b6aee89a8309a784d559
+    tomato: Upstream updates
+    
+     * Sync configurations with QCOM
+    
+    Change-Id: I0427af99650b64c0a50d3ba2c462a3df80979bce
+    tomato: AV-related and misc updates for L
+    
+     * Add low-latency-record paths
+     * Update AAC offload formats
+     * Readd PCM offload formats
+     * Set optimal configuration for mm-parser
+     * Create directories for DRM
+     * Update USB audio config
+     * Update mixer paths (remove listen, enable boost globally)
+     * Update media_codecs.xml (baseline from QC)
+    
+    Change-Id: I8c8fdf51d3f0cecd9a10cb39e55f9a1a5293ca06
+    selinux: Address some denials
+    
+    Fix BT's and Wifi's access to their respective static data (mac
+    addresses). Give the BT loaders a proper context, too
+    
+    Change-Id: Ib0e60994d22dbd053bfdd6f53b1269b2f6fe5a3c
+    init: Create the new camera socket location
+    
+    Change-Id: I1411cd29f9d0cf15568955cd66ce6853cb71bef4
+    selinux: Update sepolicies for L
+    
+    Change-Id: I26ce692358c8e3ab031a73c3443f4ab0c2b914eb
+    init: Fix rild socket path for second slot
+    
+    higher-level userspace wants rild2, use that
+    
+    Change-Id: Id804e10b36512b796da34235372e556f56984be0
+    Charger: reduce power consumption in charger mode
+    
+    Allow the cpu scaling governor to lower the cpu frequency.
+    
+    Change-Id: I39df1a7e91f16fad16e92ad4f2f62604fc6f2b5d
+    Charger: show battery capacity in charger mode.
+    
+    This is per Micromax requirement. Show the battery capacity in
+    charger mode.
+    Uses default battery animation asset for now. Will add cm battery
+    asset later.
+    Change-Id: I4b8fbadd0d90d82877297d2c607cd3d654975eb7
+    Charger: reduce charger mode power consumption.
+    
+    Lower cpu cores and frequecny. Reduce the charger mode power
+    consumption from 167mA to 13mA. That will make charging faster
+    and meet regulations.
+    
+    Change-Id: Iaa87d06e10f266147cf0063a3fab25626ed0f508
+    tomato: Add setup_fs binary
+    
+    Change-Id: Ia17b347b50417e55e2a2f2ec974b37d8b8afb840
+    tomato: update led driver permissions
+    
+    Change-Id: I13b0dcc8d1e08338550e95ef7818b9d0444aa891
+    tomato: Basic lights HAL
+    
+    * Supports battery only
+    
+    Change-Id: I85dcb54b8c103a50cff755527d89d1f0dc7c5b47
+    tomato: Fix OTG storage path
+    
+    Change-Id: I9d63e914d5d6b1c82d46e3933ba79e02bb0e2173
+    tomato: Add key disabler
+    
+    Change-Id: Ib418ce01c183b47a23dc1b406e2ff4965ff49223
+    tomato: Remove unnecessary rild2 service
+    
+    * This is not a triple-SIM device
+    
+    Change-Id: I6dff13e79b320c304d3f4e4bc1a184e956cc7e86
+    tomato: Optional support for CNE
+    
+    Change-Id: I9c89d99ae368d7b0ff4bc9e3e6020019455eeb82
+    tomato: Power/performance/thermal tuning
+    
+    Change-Id: I5507ef20d5fe11478983e7302ba3dc987287525c
+    tomato: Add TapToWake implementation
+    
+    Change-Id: I0d8aa465db6d0d51fd81a39b8aa505bfc2cb0e23
+    tomato: Power + performance tunings
+    
+     * Enable scheduler load inputs to cpufreq
+     * Lower the min freq for both clusters
+     * Tune timers for interactivity
+    
+    Change-Id: I129a08158d6a6bca99290d1fd9fa6445ac4d28fe
+    tomato: fix sysfs file permissions
+    
+    Change-Id: I258eba6bc44c02dbf045b981b61819351d943d7c
+    tomato: Speed up boot and properly handle power config
+    
+     * We need to do a careful dance to make sure everything is set up
+       correctly after decrypting the disk. This change mirrors what
+       was done for Bacon.
+    
+    Change-Id: Iedb1a72e0b55bb0b5e53532e6bc42bfdb4e9cc5e
+    tomato: Add loc_launcher service
+    
+     * For extended GPS functions, loc_launcher is needed to launch services.
+    
+    Change-Id: I200b6b31bd436e6c3473bff833f5839179292a01
+    tomato: Boostage
+    
+     * Enable HMP boost on input events. Enjoy awesomeness.
+    
+    Change-Id: Ie9bbbfe54d8d099919ef9e22b39597d5bfeb893e
+    tomato: Fix arguments to msm_irqbalance
+    
+     * We don't have a config file.
+    
+    Change-Id: Ifc38f3ab82e9969d01d5584b7273021c7857bcb2
+    prebundled-apps: Lower requested privileges
+    
+    "system" is enough for package installation
+    
+    Change-Id: I77c68c5038e5232672014bed3a2e3ec321fefefe
+    init: Install prebundled apps if present
+    
+    Change-Id: I6077645ce14c27de9c00f8bd0f1f1b4cb8d7316a
+    tomato: Clean up init services
+    
+    Change-Id: Iafc928069779a70cb1243f146f04e13be0bc7130
+    tomato: Add msm_irqbalance service
+    
+    Change-Id: I9e29623aa92a6a3319e0ffd4f3da7ed0b89ca921
+    tomato: Enable perfd
+    
+    Change-Id: If25f930df5a7c84536d6101e5aec7518d66d4c82
+    tomato: Remove mpdecision
+    
+    Change-Id: Iffb7aedac462b96ca44984dc7eec773523fcceec
+    tomato: SELinux configuration
+    
+     * Mostly lifted from Bacon
+    
+    Change-Id: I31748423b7d5da7418c9a7f41478ec21cba8dfe9
+    tomato: Fix power configuration, remove unused services
+    
+    Change-Id: Ia6047ac0e9ebc82d118b9a43d9053bf45054de8c
+    tomato: Configure HMP
+    
+    Change-Id: I29080bd50303de95ec90530f3c647f94db9b8658
+    tomato: Remove unnecessary legacy data bind mount
+    
+    Change-Id: Icedf15f44775ab5848909febaa81ad05f7d4bcfa
+    tomato: Add post-boot power config
+    
+    Change-Id: Ia464bd2852a50eaa02700411c54a7264fc4bc1ca
+    tomato: Enable multisim
+    
+    Change-Id: I8e55e6d17e82a5bc38fcd9ed29ac95e7367cec12
+    tomato: Start qmuxd, netmgrd in class main
+    
+    Change-Id: Ic88dd17b28697db6122c2139d68a2bf7e85a9359
+    tomato: Reduce WPA supplicant debug verbosity
+    
+    Change-Id: I70e89a5c25b3bbdb4e30a20b7be141fad09986bd
+    tomato: add torch config
+    
+    Change-Id: I377f0a925be6499222e6996f81ccfe35fed2c5df
+    tomato: configure internal & external sdcard
+    
+    Change-Id: I5643ee9c3960cf83765bca0310adc0df4caf8d68
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e
+    tomato: bt: fallback to random bt mac address
+    
+    Change-Id: Id090c73b482ad27dcb401f88a304f6ae83a9f1db
+    tomato: Use yl_params to program BT MAC address
+    
+    * This device reads it's Bluetooth MAC address from yl_params
+    
+    Change-Id: I75b51133dbfc610a2af4c411329ccb504f188194
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e
+    tomato: set inital value of persist.sys.usb.config.extra
+    
+    Change-Id: I62b739c8431755d87f1adbe8788310fb8e4fe12f
+    tomato: Use Qualcomm USB compositions
+    
+    Change-Id: I1074ce5ba1f3f09dc557a08055f47b028bed342a
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e
+    tomato: fix moving apps to external sdcard
+    
+    Change-Id: I25f1c045a403c8a600b1966a9300d2fae8c0b06d
+    Revert "tomato: persist is actually an EXT2 partition"
+    
+    This reverts commit aa5751ad8263dcd019fdf00713bb31ad3838751a.
+    
+    Change-Id: I0d54181975a5853a7316ffafeb1a346c22d6abc5
+    tomato: persist is actually an EXT2 partition
+    
+    * Recent changes to fs_mgr require that you actually
+      match the fs_type you declare yourself to be in fstab
+    
+    Change-Id: Ia4477a6dfdff9903f3194b888094b707a0d472d3
+    tomato: SELinux configuration
+    
+     * Mostly lifted from Bacon
+    
+    Change-Id: I31748423b7d5da7418c9a7f41478ec21cba8dfe9
+    tomato: Set up encryptable footer
+    
+    Change-Id: I32c92525c4d81c2934d6f63bc6ae0c5db03923a5
+    tomato: Use emmc filesystem type for /misc
+    
+    Change-Id: I3c4a3f4f0c1fd36d216da3159f98649578bb7f7a
+    tomato: Add fstab
+    
+    Change-Id: I69e80376d0703dbe17ac24fb448221cbc9a4a016
+    tomato: Upstream updates
+    
+     * Sync configurations with QCOM
+    
+    Change-Id: I0427af99650b64c0a50d3ba2c462a3df80979bce
+    tomato: AV-related and misc updates for L
+    
+     * Add low-latency-record paths
+     * Update AAC offload formats
+     * Readd PCM offload formats
+     * Set optimal configuration for mm-parser
+     * Create directories for DRM
+     * Update USB audio config
+     * Update mixer paths (remove listen, enable boost globally)
+     * Update media_codecs.xml (baseline from QC)
+    
+    Change-Id: I8c8fdf51d3f0cecd9a10cb39e55f9a1a5293ca06
+    tomato: update led driver permissions
+    
+    Change-Id: I13b0dcc8d1e08338550e95ef7818b9d0444aa891
+    tomato: Add yl_params interface
+    
+    Change-Id: Icf2ea5f141e2b121fd6124ec9dd0965e9eb30292
+    tomato: Enable FM
+    
+    Use the TARGET_QCOM_NO_FM_FIRMWARE flag since we're shipping the transport
+    built into the kernel, not as a module
+    
+    Change-Id: If4ea3b105416e927bf2fdc2eaa0783dd1c4e2466
+    tomato: fix sysfs file permissions
+    
+    Change-Id: I258eba6bc44c02dbf045b981b61819351d943d7c
+    tomato: Initial CMHW implementation
+    
+     * Hook the enhanced color enhancement enhancer to CMHW and
+       enhance all the things.
+    
+    Change-Id: I54136557c69f6a9394cfdf6aad545418cc6461fc
+    tomato: Set permission on light sensor node
+    
+    Change-Id: Ifa2fbdb6aea7f6a10bbd8de756d7106d2253436c
+    tomato: Add initial set of init scripts
+    
+    Change-Id: Ia60cd73af7d9ccaf5885094b539ebd93d4dbeb6e

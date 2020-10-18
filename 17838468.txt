@@ -1,0 +1,804 @@
+﻿    Bump version
+    Drop NotificationClient
+    Update changelog
+    v2.1.4 release
+    Version 3.1.3 release
+    release 2.1.2 (#134)
+    version 2.1.1 release
+    version 2.1.0 release
+    v2.0.2
+    v2.0.1
+    v2.0.0
+    1.7.4
+    1.7.3
+    v1.7.2
+    update changelog and readme
+    bump version and update changelog
+    v1.5.0
+    1.4
+    Release v1.3.0
+    Release v1.2.3
+    updating changelog for 1.2.2
+    Version 1.2.1
+    Version 1.2.0
+    v1.1.3
+    v1.1.2
+    v1.1.1
+    v 1.1.0
+    Updated changelog
+    Release v0.1.0
+    e2ee: remove beta mentions
+    Improve readme
+    Update readme instructions
+    add python 3.8 support
+    add explicit supported versions
+    Add supported platforms, update CI (#146)
+    Rename Pusher -> Pusher Channels in README (#144)
+    Format channel types as code in README
+    
+    Co-Authored-By: WillSewell <me@willsewell.com>
+    Mention we support Python 3.7 in the README
+    Make it clear it's for the Channels product in the README
+    Remove instructions for uploading a new release
+    
+    These are internal steps that can only be performed by Pusher
+    employees.
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    Update README release instructions
+    Delete old and wrong claim of the current library version
+    Remove Push Notifications (BETA)
+    
+    Remove Push Notifications (BETA) from the README - it's deprecated.
+    Mention OpenSSL dependency
+    Require Python 3.5.3 for aiohttp
+    Remove support for Python 2.6 and 3.3
+    Fix Travis badge
+    Spotted a typo in README
+    Removes mention of the webhook level
+    
+    - Updates files to remove mention of webhook_level's which are no
+      longer used.
+    update changelog and readme
+    Always include cluster in example intantiation
+    added errors to readme
+    added Push Notifications section to TOC and updated heading style in readme
+    moved validate_webhook and authenticate out in to a client of their own
+    started refactor to new class structure
+    started refactor to new class structure
+    fix broken table (missing newline)
+    Remove reference to RC version
+    client lib should not hard-code the upper limit on the number of
+    interests allowed in the notify() call. This is specified by the server!
+    use server API domain, not client API
+    1.4-rc1
+    Update readme
+    Add support for batch events
+    Update README.md
+    doc: Fix broken link
+    Document how we release the package
+    Added note on readme about pip install with aiohttp. Addresses #52
+    Made amendments to urlfetch backend. Addresses #54
+    Fix incorrect authenticate method.
+    Update README.md
+    Added note about custom json en/decoder in readme
+    Removed references to pusher-rest and added note about 0.8 branch
+    
+    Removing old notice about pusher-rest and 1.0.0 branch
+    Library is stable now
+    Update README.md
+    Update README.md
+    Update README.md
+    Updated readme
+    Get rid of the Config object
+    Adding additional configuration docs
+    Use functions on Pusher and not Config
+    Moving Event Buffer up to be next to "trigger"
+    
+    Also adding example.
+    Added event buffer documentation for version 1.0.0
+    Added more documentation to readme
+    Adding note about pusher-rest -> pusher package naming as of 1.0
+    Adding note about 1.0.0 library
+    Better README
+    Adds Travis-CI build
+    First pass at the README
+    Added a README
+    Added Google App Engine NDB async channel
+    
+    Conflicts:
+    
+            pusher/__init__.py
+    Removed support for python 2.4 and 2.5
+    Edited the README
+    Add support for URLs, especially in Heroku
+    merging Content-Type header. Adding tests
+    Change ownership to Pusher.
+    Added an example showing usage of the library with Tornado.
+    Allow use of a custom json encoder class.
+    Documented how to specify socket_id
+    Removed AppEngine from TODO list
+    Typo
+    Added tentative Google AppEngine support
+    Declared tested with Python 2.5 and 2.6
+    Packaged and published at PyPI
+    Quick documentation
+    fix: requirements.txt to reduce vulnerabilities
+    
+    
+    The following vulnerabilities are fixed by pinning transitive dependencies:
+    - https://snyk.io/vuln/SNYK-PYTHON-URLLIB3-559452
+    bump httpretty, remove isAlive warning suppression
+    
+    it bumps the httpretty version to 0.9.7, which fixes the warning on
+    isAlive. ref: https://github.com/gabrielfalcao/HTTPretty/pull/377
+    fix RequestsDependencyWarning by updating requests
+    
+    it fixes the
+    python2.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.1) or chardet (3.0.4) doesn't match a supported version! RequestsDependencyWarning) by upgrading requests from 2.21.0 to 2.22.0. This implies in fact the urllib3 upgrade from (1.25.1 -> 1.25.3) which resolves the warning. ref. https://github.com/streamlink/streamlink/issues/2448#issuecomment-487231468
+    Only bump tornado for Python versions >= 3.5
+    Upgrade pinned deps for tests
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    Pin deps in requirements.txt and use this in travis
+    Push key validation down to base client
+    Accept the master key as base64
+    add test for auth client with encrypted channels
+    all unit tests passing
+    moved relevant tests in to test_authentication_client.py
+    bump httpretty, remove isAlive warning suppression
+    
+    it bumps the httpretty version to 0.9.7, which fixes the warning on
+    isAlive. ref: https://github.com/gabrielfalcao/HTTPretty/pull/377
+    temporary suppress httpretty warnings
+    
+    httpretty throws:
+    - a PendingDeprecationWarning : httpretty/core.py:438: PendingDeprecationWarning: isAlive() is deprecated, use is_alive() instead if t.isAlive():
+    - a ResourceWarning : httpretty/core.py:485: ResourceWarning: unclosed file <_io.BufferedRandom name=7> self.fd = FakeSockFile()
+    
+    There already are issues and PRs to fix these:
+    - https://github.com/gabrielfalcao/HTTPretty/issues/368
+    - https://github.com/gabrielfalcao/HTTPretty/pull/377
+    
+    Until they are fixed I'm suppressing them
+    all unit tests passing
+    Started adding tests for http adapters.
+    all unit tests passing
+    Ignore GAE test on travis
+    Made amendments to urlfetch backend. Addresses #54
+    Renamed urlfetch adapter test and made it import unittest2 if v2.6
+    Added tests for urlfetch adapter
+    Fixes loading and testing issues in python 2.6
+    Started adding tests for http adapters.
+    moved relevant tests in to test_authentication_client.py
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Accept the master key as base64
+    Clean up extraneous whitespace
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    moved relevant tests in to test_authentication_client.py
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Add support for batch events
+    Travis fixes
+    Added socket_id validation
+    Custom JSON encoder and decoder.
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    pusher.conf refs to pusher.config
+    Config.validate_webhook -> Pusher.validate_webhook
+    authenticate_subscription -> authenticate
+    Move authenticate_subscription. Config -> Pusher
+    Pusher ctr now requires app_id, key, secret
+    Channel(s) parameter can now be a collection or a string
+    Fixes unit tests for python 2.6
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Defined Pusher
+    Remove support for Python 2.6 and 3.3
+    all unit tests passing
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    polyfill for assertRegexpMatches in Python 2.6
+    python 2 does not have assertRegex
+    fix test
+    [PROD-899] report library name and version in X-Pusher-Library header
+    Travis fixes
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    Fixes unit tests
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added signature generation
+    Defined Config
+    Require Python 3.5.3 for aiohttp
+    Travis fixes
+    Fixes loading and testing issues in python 2.6
+    Started adding tests for http adapters.
+    all unit tests passing
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    Add support for batch events
+    Travis fixes
+    Added socket_id validation
+    Custom JSON encoder and decoder.
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    pusher.conf refs to pusher.config
+    Config.validate_webhook -> Pusher.validate_webhook
+    authenticate_subscription -> authenticate
+    Move authenticate_subscription. Config -> Pusher
+    Pusher ctr now requires app_id, key, secret
+    Channel(s) parameter can now be a collection or a string
+    Fixes unit tests for python 2.6
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Defined Pusher
+    2.7 support
+    Accept the master key as base64
+    Clean up extraneous whitespace
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    Fixes loading and testing issues in python 2.6
+    Started adding tests for http adapters.
+    Add a Github PR checklist; contains a single item for now
+    Creates an ssl context from certificate. If pyversion < 3, injects openssl into urllib3
+    Push key validation down to base client
+    Fix AuthenticationClient for encrypted channels
+    
+    The function generate_shared_secret expects the first argument "channel" in binary for Python 3, but it was passed as a string. That caused a `TypeError: can only concatenate str (not "bytes") to str` exception when using `authenticate` with encryption.
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    reordered imports
+    moved relevant tests in to test_authentication_client.py
+    moved validate_webhook and authenticate out in to a client of their own
+    2.7 support
+    Accept the master key as base64
+    Clean up extraneous whitespace
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    moved client function docstrings from pusher.py to *_client.py
+    cleaned up style
+    started refactor to new class structure
+    moved client function docstrings from pusher.py to *_client.py
+    cleaned up style
+    started refactor to new class structure
+    More regex fixes
+    Fixed regexes
+    Added socket_id validation
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Move all the http abstractions into a single pusher.http module
+    Move errors into their own modules
+    
+    As a developer I would be looking for errors there
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Defined Config
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    Move errors into their own modules
+    
+    As a developer I would be looking for errors there
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    Creates an ssl context from certificate. If pyversion < 3, injects openssl into urllib3
+    Add keep-alive support to requests backend
+    Add timeout to requests adapter
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    Document 70% of the code
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added a requests backend
+    reordered imports
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    Made amendments to urlfetch backend. Addresses #54
+    Added tests for urlfetch adapter
+    Added urlfetch adapter
+    Bump version
+    v2.1.4 release
+    Version 3.1.3 release
+    release 2.1.2 (#134)
+    version 2.1.1 release
+    version 2.1.0 release
+    v2.0.2
+    v2.0.1
+    v2.0.0
+    1.7.4
+    1.7.3
+    v1.7.2
+    bump version
+    bump version and update changelog
+    v1.5.0
+    1.4
+    absolute file path
+    Pass kwarg options to HTTPRequest instead of AsyncHTTPClient
+    
+    We shouldn't be passing these options to the AsyncHTTPClient.
+    The docs state:
+    
+    > Unless force_instance=True is used, no arguments should be passed
+    > to the AsyncHTTPClient constructor
+    
+    https://www.tornadoweb.org/en/stable/httpclient.html?highlight=AsyncHTTPClient#tornado.httpclient.AsyncHTTPClient
+    
+    The options instead should be set on the HTTPRequest:
+    https://www.tornadoweb.org/en/branch5.1/httpclient.html#tornado.httpclient.HTTPRequest
+    
+    This is consistent with how options are passed to the requests
+    backend.
+    No longer check exc_info on the future
+    
+    I think checking exception() is sufficient
+    Use tornado.concurrent.Future instead of tornado.concurrent.TracebackFuture
+    
+    tornado.concurrent.Future superceded tornado.concurrent.TracebackFuture
+    in Tornado 4.0. tornado.concurrent.TracebackFuture has been removed in
+    Tornado 5.x.
+    reordered imports
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    Fix tornado and asyncio backends
+    Tornado cleanup
+    Global config timeout
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Get rid of the Config object
+    Document 70% of the code
+    Remove unused variables in pusher.tornado
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added a tornado backend
+    Push key validation down to base client
+    Accept the master key as base64
+    Format args so they can be read
+    Import Abstract Base Classes from collections.abc in newer Python versions
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    update max channel from 10 too 100
+    reordered imports
+    all unit tests passing
+    moved validate_webhook and authenticate out in to a client of their own
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    more cleaning
+    cleaned up style
+    started refactor to new class structure
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    cleaned up style
+    started refactor to new class structure
+    When 202, json load response
+    Testing
+    Remove dangling import
+    Basic native push
+    Add support for batch events
+    Only load RequestsBackend when required.
+    
+    This fix ensures that RequestsBackend isn't loaded when using Pusher
+    with Google App Engine (where it doesn't load).
+    Added socket_id validation
+    Custom JSON encoder and decoder.
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Allow to pass options to Pusher.from_env and Pusher.from_url
+    Make requests the default backend
+    
+    The stdlib http library doesn't support SSL properly in most python
+    versions. Plus requests is almost a standard now.
+    Make all the properties read-only
+     'Fixed' tests
+    Global config timeout
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Move all the http abstractions into a single pusher.http module
+    Keep all the @request_method together
+    Get rid of the Config object
+    Move request_method to pusher.request module
+    Move signature code into it's own module
+    Config.validate_webhook -> Pusher.validate_webhook
+    authenticate_subscription -> authenticate
+    Move authenticate_subscription. Config -> Pusher
+    Pusher ctr now requires app_id, key, secret
+    Channel(s) parameter can now be a collection or a string
+    Replace u'' literal with six.text_type() for python 3.2 support
+    Document 70% of the code
+    Put the Pusher class in it's own module
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added some docstrings
+    Simplified using custom backends
+    Defined Pusher
+    Added signature generation
+    Defined Config
+    Add support for HTTPS connections to the backend
+    Make GaeNdbChannel recognize custom JSON encoders
+    Python 3 support
+    Fixed TornadoChannel
+    
+     * It was broken by the addition of timeouts,
+     * Fixes #25,
+     * I've also improved the example.
+    Added Google App Engine NDB async channel
+    
+    Conflicts:
+    
+            pusher/__init__.py
+    Removed support for python 2.4 and 2.5
+    Error Reporting Improvements
+    
+    * An exception raised by an invalid channel name will display the
+      name of the channel specified.
+    Error Reporting Improvements
+    
+    * Adds server response data to exceptions which are raised due
+      to a non-success status code from a server request.
+    Add Optional Timeout param when triggering http requests
+    Minor syntactic changes
+    The default encoder should be None
+    Support upper case channel names
+    Stringify parameters early
+    Check parameters with regexps, escape channel name
+    Fixed schoolboy error
+    Avoid duplication of url construction logic
+    removing unwanted / from Google and Tornado URLs
+    Add missing `import os` needed for `pusher.pusher_from_url()`.
+    Add support for URLs, especially in Heroku
+    Support Python 2.4.
+    
+    * Needs hashlib backport installed.
+    merging Content-Type header. Adding tests
+    Set Content-Type: application/json.
+    Allow use of a custom json encoder class.
+    Added support for channel authentication
+    Added TornadoChannel for pushing events using Tornado's async requests.
+    Added socket_id parameter to trigger()
+    Added tentative Google AppEngine support
+    Refactored request out prior to adding Google AppEngine compatibility
+    Avoided deprecation warning in Python 2.6
+    Returning better responses. Although that MessagingTest is still a mess
+    This gets messages sent. Now I have to work on the return value
+    WIP
+    WIP
+    First stab at testing the actual request
+    Pusher has channels
+    Instance-specific parameters
+    Allow setting of global parameters
+    Use warnings package
+    2.7 support
+    Accept the master key as base64
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    Process the response in the AsyncIO backend
+    
+    Fixes #121.
+    Properly close aiohttp sessions
+    
+    ClientSession.close() was always supposed to be awaited on.
+    use an explicit session and close after request
+    replace `read_and_close` with `text` in aiohttp adapter
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    Fix tornado and asyncio backends
+    Add timeout and Keep-Alive to the aiohttp adapter
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    Document 70% of the code
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added an asyncio backend
+    Typo
+    Drop NotificationClient
+    Push key validation down to base client
+    Pass encryp key to NotificationClient, fix #132
+    
+    - It passes the encryption_master_key to the NotificationClient that uses that to initialise the super class.
+    - It fixes #132
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    reordered imports
+    all unit tests passing
+    moved relevant tests in to test_authentication_client.py
+    moved validate_webhook and authenticate out in to a client of their own
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    cleaned up style
+    started refactor to new class structure
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    cleaned up style
+    started refactor to new class structure
+    When 202, json load response
+    Testing
+    Remove dangling import
+    Basic native push
+    Add support for batch events
+    Only load RequestsBackend when required.
+    
+    This fix ensures that RequestsBackend isn't loaded when using Pusher
+    with Google App Engine (where it doesn't load).
+    Added socket_id validation
+    Custom JSON encoder and decoder.
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Allow to pass options to Pusher.from_env and Pusher.from_url
+    Make requests the default backend
+    
+    The stdlib http library doesn't support SSL properly in most python
+    versions. Plus requests is almost a standard now.
+    Make all the properties read-only
+     'Fixed' tests
+    Global config timeout
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Move all the http abstractions into a single pusher.http module
+    Keep all the @request_method together
+    Get rid of the Config object
+    Move request_method to pusher.request module
+    Move signature code into it's own module
+    Config.validate_webhook -> Pusher.validate_webhook
+    authenticate_subscription -> authenticate
+    Move authenticate_subscription. Config -> Pusher
+    Pusher ctr now requires app_id, key, secret
+    Channel(s) parameter can now be a collection or a string
+    Replace u'' literal with six.text_type() for python 3.2 support
+    Document 70% of the code
+    Put the Pusher class in it's own module
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added some docstrings
+    Simplified using custom backends
+    Defined Pusher
+    Added signature generation
+    Defined Config
+    Add support for HTTPS connections to the backend
+    Make GaeNdbChannel recognize custom JSON encoders
+    Python 3 support
+    Fixed TornadoChannel
+    
+     * It was broken by the addition of timeouts,
+     * Fixes #25,
+     * I've also improved the example.
+    Added Google App Engine NDB async channel
+    
+    Conflicts:
+    
+            pusher/__init__.py
+    Removed support for python 2.4 and 2.5
+    Error Reporting Improvements
+    
+    * An exception raised by an invalid channel name will display the
+      name of the channel specified.
+    Error Reporting Improvements
+    
+    * Adds server response data to exceptions which are raised due
+      to a non-success status code from a server request.
+    Add Optional Timeout param when triggering http requests
+    Minor syntactic changes
+    The default encoder should be None
+    Support upper case channel names
+    Stringify parameters early
+    Check parameters with regexps, escape channel name
+    Fixed schoolboy error
+    Avoid duplication of url construction logic
+    removing unwanted / from Google and Tornado URLs
+    Add missing `import os` needed for `pusher.pusher_from_url()`.
+    Add support for URLs, especially in Heroku
+    Support Python 2.4.
+    
+    * Needs hashlib backport installed.
+    merging Content-Type header. Adding tests
+    Set Content-Type: application/json.
+    Allow use of a custom json encoder class.
+    Added support for channel authentication
+    Added TornadoChannel for pushing events using Tornado's async requests.
+    Added socket_id parameter to trigger()
+    Added tentative Google AppEngine support
+    Refactored request out prior to adding Google AppEngine compatibility
+    Avoided deprecation warning in Python 2.6
+    Returning better responses. Although that MessagingTest is still a mess
+    This gets messages sent. Now I have to work on the return value
+    WIP
+    WIP
+    First stab at testing the actual request
+    Pusher has channels
+    Instance-specific parameters
+    Allow setting of global parameters
+    reordered imports
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    moved client function docstrings from pusher.py to *_client.py
+    finished making everything a consistent style (PEP 8 compliant)
+    started refactor to new class structure
+    When 202, json load response
+    [PROD-899] report library name and version in X-Pusher-Library header
+    Basic native push
+    Correctly handle default for Request params
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+    Allow to pass options to Pusher.from_env and Pusher.from_url
+    Restore two-step adapter initialisation
+    
+    Allows to configure persistent connections
+    Move all the http abstractions into a single pusher.http module
+    Get rid of the Config object
+    Move request_method to pusher.request module
+    Move signature code into it's own module
+    Document 70% of the code
+    Makes the Request generate_auth method private
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added signature generation
+    use relative imports to keep python2 happy
+    finished making everything a consistent style (PEP 8 compliant)
+    finished making everything a consistent style (PEP 8 compliant)
+    Get rid of the Config object
+    Restore python3 support
+    Pusher.sign
+    Rewrite URL parsing code to use urlparse.
+    Complete SSL support by using a HTTPSConnection when needed.
+    Fixes tests for python 2.6, 2.7 and 3.2
+    Put the Pusher class in it's own module
+    Fixes ident to 4 spaces
+    Imports cleanup
+    Set UTF-8 encoding pragma
+    Added some docstrings
+    Simplified using custom backends
+    Defined Pusher
+    Added signature generation
+    Defined Config
+    Add support for HTTPS connections to the backend
+    Make GaeNdbChannel recognize custom JSON encoders
+    Python 3 support
+    Fixed TornadoChannel
+    
+     * It was broken by the addition of timeouts,
+     * Fixes #25,
+     * I've also improved the example.
+    Added Google App Engine NDB async channel
+    
+    Conflicts:
+    
+            pusher/__init__.py
+    Removed support for python 2.4 and 2.5
+    Error Reporting Improvements
+    
+    * An exception raised by an invalid channel name will display the
+      name of the channel specified.
+    Error Reporting Improvements
+    
+    * Adds server response data to exceptions which are raised due
+      to a non-success status code from a server request.
+    Add Optional Timeout param when triggering http requests
+    Minor syntactic changes
+    The default encoder should be None
+    Support upper case channel names
+    Stringify parameters early
+    Check parameters with regexps, escape channel name
+    Fixed schoolboy error
+    Avoid duplication of url construction logic
+    removing unwanted / from Google and Tornado URLs
+    Add missing `import os` needed for `pusher.pusher_from_url()`.
+    Add support for URLs, especially in Heroku
+    Support Python 2.4.
+    
+    * Needs hashlib backport installed.
+    merging Content-Type header. Adding tests
+    Set Content-Type: application/json.
+    Allow use of a custom json encoder class.
+    Added support for channel authentication
+    Added TornadoChannel for pushing events using Tornado's async requests.
+    Added socket_id parameter to trigger()
+    Added tentative Google AppEngine support
+    Refactored request out prior to adding Google AppEngine compatibility
+    Avoided deprecation warning in Python 2.6
+    Returning better responses. Although that MessagingTest is still a mess
+    This gets messages sent. Now I have to work on the return value
+    WIP
+    WIP
+    First stab at testing the actual request
+    Pusher has channels
+    Instance-specific parameters
+    Allow setting of global parameters
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    Some but not all unit tests refactored; webook validation and authentication needs sorting out.
+    finished making everything a consistent style (PEP 8 compliant)
+    Rework text handling
+    
+    If it's any of the string types try to convert to string/text,
+    otherwise raise a TypeError
+     'Fixed' tests
+    Move signature code into it's own module
+    Push key validation down to base client
+    master key is guaranteed to be binary after validation
+    End-to-end Encryption
+    
+    * add end-to-end encryption feature
+    * add end-to-end encryption tests
+    reordered imports
+    finished making everything a consistent style (PEP 8 compliant)
+    cleaned up style
+    started refactor to new class structure
+    finished making everything a consistent style (PEP 8 compliant)
+    cleaned up style
+    started refactor to new class structure
+    rename client to pusher_client
+    Moved async trigger examples into examples/ folder
+    Add trigger examples
+    rename client to pusher_client
+    Moved async trigger examples into examples/ folder
+    Add trigger examples

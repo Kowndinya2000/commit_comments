@@ -1,0 +1,83 @@
+﻿    1. Added updated documentation:  README_FIRST and the "docs" directory
+    2. Removed cross-check
+    Addition of the Python Parser for Glasnost to the code base
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    1. Added updated documentation:  README_FIRST and the "docs" directory
+    2. Removed cross-check
+    1. Added updated documentation:  README_FIRST and the "docs" directory
+    2. Removed cross-check
+    Addition of the Python Parser for Glasnost to the code base
+    Addition of the Python Parser for Glasnost to the code base
+    Added copyright info
+    Addition of the Python Parser for Glasnost to the code base
+    Addition of the Python Parser for Glasnost to the code base
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    more logging
+    better docs
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Adding nntp protocol test
+    Making http test transfer more than 3MB
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    add '#include <sys/stat.h>' to gserver to fix compile error on centos6.3
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Added all-permissions flag to manifest, as required by Java 7
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Fixed additional bug in manifest addition in Makefile
+    Fixed bug in manifest addition in Makefile
+    Added all-permissions flag to manifest, as required by Java 7
+    remove protocols.spec generation from Makefile in favor of using the pre-computed file.
+    Move source files into appropos subdir.
+    Initial commit.
+    Move source files into appropos subdir.
+    Initial commit.
+    Add operations scripts.
+    Add operations scripts.
+    Add operations scripts.
+    Add operations scripts.
+    Add operations scripts.
+    Add in remote scripts, install doc.
+    Add operations scripts.
+    Add in remote scripts, install doc.
+    Add in remote scripts, install doc.
+    removed donar
+    Add operations scripts.

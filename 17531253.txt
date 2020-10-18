@@ -1,0 +1,46 @@
+﻿    misc commit contains mod changes and a few cleanings
+    Add the plain text config
+    
+    Add the plain text version of e.cfg, note that e17 can change config
+    version or variables without notice breaking the whole configuration.
+    We should take care of it.
+    themes : get battery to use internal logic
+            add wrench/apnner back to paroli-serenity
+    misc commit contains mod changes and a few cleanings
+    disable pager example
+    add new paroli theme and profile
+    Add the plain text config
+    
+    Add the plain text version of e.cfg, note that e17 can change config
+    version or variables without notice breaking the whole configuration.
+    We should take care of it.
+    misc commit contains mod changes and a few cleanings
+    add new paroli theme and profile
+    themes : get battery to use internal logic
+            add wrench/apnner back to paroli-serenity
+    paroli-serenity : turn syscon menu back on
+    paroli-serenity : bring back the wrench/spanner
+    paroli-serenity: properly generated  config file
+    paroli-serenity: add syscon menu back
+    themes : get battery to use internal logic
+            add wrench/apnner back to paroli-serenity
+    misc commit contains mod changes and a few cleanings
+    disable pager example
+    add new paroli theme and profile
+    Add the plain text config
+    
+    Add the plain text version of e.cfg, note that e17 can change config
+    version or variables without notice breaking the whole configuration.
+    We should take care of it.
+    paroli-illume : actually commit the chnage that fixes the battery indicator
+    themes : get battery to use internal logic
+            add wrench/apnner back to paroli-serenity
+    paroli-illume: generate config file properly
+    misc commit contains mod changes and a few cleanings
+    disable pager example
+    add new paroli theme and profile
+    Add the plain text config
+    
+    Add the plain text version of e.cfg, note that e17 can change config
+    version or variables without notice breaking the whole configuration.
+    We should take care of it.

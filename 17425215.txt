@@ -1,0 +1,179 @@
+﻿    20150613Zmod
+    tuna: update device tree to use PVR 1.9@2291151
+    
+    Change-Id: Iff82f5be1b25c4806e842319fb5b333d9a8223a0
+    
+    Conflicts:
+            device.mk
+    20150613Zmod
+    tuna: require bootloader PRIMEMD04
+    
+    Bug: 8489455
+    Change-Id: I022fd4b5ce81d562e62b93c8d335e489c513b078
+    require bootloader PRIMELC03
+    
+    Change-Id: I7e02b73be1899ae0e2e3e5b87e623f4562e6cf33
+    require bootloader PRIMELB02
+    
+    Change-Id: Id652f4c1e817caf1436d95c4030088e837a1ac5f
+    require bootloader LA03
+    
+    Change-Id: I781dc9265a6e520d053abf663acfa9dc128f932e
+    
+    Conflicts:
+    
+            board-info.txt
+    require bootloader LA03
+    
+    Change-Id: I781dc9265a6e520d053abf663acfa9dc128f932e
+    require bootloader LA02
+    
+    Change-Id: I26d9ecf8c4ad7dd6858f3c439dd888a6dab0daad
+    Require bootloader PRIMELA01
+    
+    Change-Id: Id7fa96a129701bc9f62384d582c1545504bb33ef
+    require bootloader KL01
+    
+    Change-Id: Id946b17519713176b35e992105598c0cb6377f4a
+    require bootloader KK15
+    
+    Change-Id: I704ff88efe8de9689d646ba4300a962489b928bc
+    Require bootloader KK13
+    
+    Change-Id: Ide2b0f1ec9eaa5bb2aa927eed9e7b3897572eb33
+    Require bootloader PRIMEKK12
+    
+    Change-Id: Iab8fcf66a5ecfc18c6f5139dbd3e9739d38118b8
+    require bootloader KK09
+    
+    Change-Id: I40f70b768fb3160f6e6be17d69846756dbd9e7f7
+    require bootloader KK03
+    
+    Change-Id: I050c23a34a4e513e5e13919ab3ee25d18e0bd080
+    require bootloader KK02
+    
+    Change-Id: I169d46a87ed03ade2acf3c7ab3792c308156f33a
+    Revert "Require bootloader KJ12"
+    
+    This reverts commit 8785bf1f30b4e44b22224f6f909f99b6f0f5ba2a.
+    
+    Conflicts:
+    
+            board-info.txt
+    Revert "Require bootloader KJ12"
+    
+    This reverts commit 8785bf1f30b4e44b22224f6f909f99b6f0f5ba2a.
+    require bootloader KK01
+    
+    Change-Id: Id5719b75e98e769ccc40d6b44b8ebfa1aa6ab6c0
+    Revert "Require bootloader KJ12"
+    
+    This reverts commit 8785bf1f30b4e44b22224f6f909f99b6f0f5ba2a.
+    Require bootloader KJ12
+    
+    Change-Id: Ided33badfedc3b497668c66feb376d8d015b9eba
+    require bootloader KJ08
+    
+    Change-Id: Ic27c43df42f686bb9a3e02007e2d2373e2525d96
+    new bootloader (PRIMEKJ04)
+    
+    Change-Id: Id8274baa18abd7dae13a257ee000739faef4635c
+    require new bootloader (PRIMEKJ03)
+    
+    Change-Id: I1c834aa1769e20cca3b99aae015e63edbe45662e
+    require new bootloader PRIMEKJ02
+    
+    Change-Id: I72cb1f7ee575ef624099633748317f06dca79b57
+    require PRIMEKJ01
+    
+    Change-Id: Ifa944f6743e696442b745e2f59bf1046999da70a
+    require new PRIMEKI08 bootloader
+    
+    Change-Id: Id82c60bb2470aad341440f7cb3aab25d5a87b5d6
+    temporarily only require KI06 until we get kernel fixes
+    
+    Change-Id: Ibf0d16fea08f65eb1d222d1a7fbba0e1abc071ad
+    require new PRIMEKI08 bootloader
+    
+    Change-Id: I250d6392bf4eb2a36006bcd94ddc0e3d9479f1b4
+    require new PRIMEKI07 bootloader
+    
+    Change-Id: Ic8a62670cd1fce31e171188404c1cbbbc2c6a6a9
+    require new KI06 bootloader
+    
+    Change-Id: Ibc32e267adeb2686f6b4471ea382343ed731502a
+    Signed-off-by: Dima Zavin <dima@android.com>
+    require new KI05 bootloader
+    
+    Change-Id: I184b388ac156b741a2229dba2e6cec89d52113bd
+    require new KI05 bootloader
+    
+    Change-Id: I184b388ac156b741a2229dba2e6cec89d52113bd
+    require KI04 bootloader
+    
+    Change-Id: I85449f2f89bf36887c6195e79512581e2851051d
+    require new KI03 bootloader
+    
+    Change-Id: Ic049d2cfffd8b3aa0bc06339c32dbaec620a7e85
+    require new bootloader (KG03)
+    
+    Change-Id: Id011399812a3386b83556e15315132b763c15591
+    require KG02 bootloader
+    
+    Change-Id: I699c579bb5cbc28d994cd2a9ab11eb40901edd40
+    require new bootloader (KG01).
+    
+    Change-Id: I5914f34cc7276f9d9968e46fc812e6e8d6d2d624
+    require new KF06 bootloader
+    
+    Change-Id: Ibbaa304c1decfe629e9d1463e32b20f07d0b7b2c
+    require new bootloader, PRIMEKF05
+    
+    Change-Id: I3e64b9c8b14971b5533be7885f179ec4259b0592
+    require new bootloader, PRIMEKF05
+    
+    Change-Id: I3e64b9c8b14971b5533be7885f179ec4259b0592
+    New KF02 bootloader
+            - after the upgrade, fastboot reboot and adb reboot-bootloader
+              will work
+            - you must flash sbl.img first!
+            - once you upgrade, you can't downgrade
+            - see  https://android-git.corp.google.com/g/#change,116313 for
+              more details
+    
+    Change-Id: I07fe20c5df498ec63c9c1912138e12306fa4339e
+    Require new bootloader (KF01)
+    
+    1. Update PPA version to 1.2.0
+    2. Arrange binary version name such as "[year][month][index]". ex)KF01
+    3. Passing the serial number through the ATAG.
+    4. Use the DIE_ID that is OMAP board serial number instead of MMC CID
+            for device serial number.
+    5. Resolve the fastboot instruction error that is "fastboot flash zimage
+            zImage"
+    6. DISPLAY : Update the command for display initialization that was
+            passed from display module company.
+    
+    Change-Id: Ie23fa89f2f218d41388c093d49e4f0546d4c2531
+    Add board-info.txt; only require bootloader version for now
+    
+    Change-Id: I29128d7cb970491057065677ff0f93a0c7d13f35
+    20150613Zmod
+    tuna: moved fRom to vendor/bin
+    Setup common tuna extract-files/remove Google self-extractors
+    
+    Since tuna devices are no longer maintained by AOSP there is
+    no need to have multiple locations and duplicate files. This
+    Will put all common files in vendor/samsung/tuna and device
+    specific ones in vendor/samsung/$(DEVICE).
+    
+    Change-Id: I51bba2e62a1b511958856863f0a0fceac957704e
+    20150613Zmod
+    Setup common tuna extract-files/remove Google self-extractors
+    
+    Since tuna devices are no longer maintained by AOSP there is
+    no need to have multiple locations and duplicate files. This
+    Will put all common files in vendor/samsung/tuna and device
+    specific ones in vendor/samsung/$(DEVICE).
+    
+    Change-Id: I51bba2e62a1b511958856863f0a0fceac957704e

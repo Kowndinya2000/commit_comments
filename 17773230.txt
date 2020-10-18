@@ -1,0 +1,1088 @@
+﻿    No need to move to public directory.
+    
+    It will fail.
+    Add -t flag
+    Note that cli-server is development only
+    Recommend PHP cli-server
+    Note PHP 5.4+ for cli-server
+    Add a note on using cli-server
+    Change composer repository protocol
+    
+    Switched to HTTPS as said in comment https://github.com/zendframework/ZendSkeletonApplication/issues/212#issuecomment-23790979
+    fix composer error
+    
+    "could not find package zendframework/skeleton-application with stability stable."
+    Fix issues with piping
+    
+    - Needed -- for piping to PHP
+    - Omitted a "-" in front of "-repository-url"
+    [#105] Updated to provide additional download methods
+    suggest "create-project" when using compoer
+    
+    this requires first registering this repository on packagist.org
+    Update index.php and Application\Module to make composer use optional
+    
+    - index.php now supports ZF2_PATH env var or git submodule
+    - re-add the git submodule to make non-composer install easier
+    - update the readme
+    - use include instead of include_once, see:
+    http://robert.accettura.com/blog/2011/06/11/phps-include_once-is-insanely-expensive/
+    
+    If you are not using composer, you no longer have to make changes to the default
+    skeleton.
+    Update readme to not include classmap autoloader registration.
+    
+    Since we no longer include the classmap file.
+    Updated README to add a Virtual Host section to installation.
+    Further clarified README.md with autoloader additions to Module.php
+    Updated README to keep ordering of index.php.
+    Updated README to go over submodule option.
+    Added composer autoloading to Skeleton and updated Module.php to reflect.
+    Added vendor/.gitignore to ignore composer install files.
+    Removed the composer.phar download line from README as this file is now shipped directly.
+    Initial composer commit.
+    Add newline to README.md for markdown list
+    Update readme with more information, clone instructions, and git submodule info
+    Added README.md
+    redirect
+    Update composer.phar.
+    [#211] Update composer.phar to latest
+    
+    ... at time of merge. Validated against one built statically locally.
+    
+    Updated composer.phar to version 9b70b89b8f8d60b56b5900ea232109427604c748.
+    composer.phar updated to latest version
+    Update composer while we're at it
+    
+    - use 2.2.* for ZF2 version
+    - up-to-date composer.phar
+    Update composer.phar
+    composer.phar updated
+    Updated composer
+    Updated composer.
+    Updated zf2 master (composer and submodule).
+    Updated .gitignore files.
+    Updated composer.
+    Updated composer.
+    Added vendor/ dir.
+    Updated composer files.
+    Initial composer commit.
+    reverting composer.phar
+    update bootstrap
+    update year : 2013 to 2014
+    update copyright year : 2012 to 2013
+    [zen-14] Add license file & headers
+    Updated .gitignore files.
+    Updated composer.
+    Added README back to vendor/
+    Updated .gitignore.
+    Small view tweaks, gitignore update, and error phtml path
+    
+    - error.phtml changed to error/index.phtml
+    - index view using &raquo;
+    - add data/cache/.gitignore for merged config caching default path
+    Added README back to vendor/
+    Added composer.lock to git.
+    Added vendor/ to .gitignore, this directory is created by composer.
+    Modified index.php to skip the autoloader factory.
+    Fixing typo
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Add vendors/ directory for third-party modules
+    
+    - The odd-looking .gitignore is so that the README file is included in the
+    repository, but if the user installs some third part modules, they won't
+    accidentally be added to the skeleton git repository. We do the same thing in
+    the modules/ directory.
+    - Added readme explaining that vendors/ is for third-party modules
+    reverting composer.phar
+    update year : 2013 to 2014
+    [#197] Barebones fix
+    
+    - Per discussion with @ocramius modified this to only provide empty
+      console routing configuration, which solves the originally reported
+      problem.
+    Add [--help|-h] console route
+    
+    - Removes the "no route detected" message
+    - Fixes usage with 2.2.1
+    remove unused ->getApplication()->getServiceManager()->get('translator');
+    update copyright year : 2012 to 2013
+    Define parameter type in onBootstrap method of Module.php, this will help newcomers to see autocomplete in their IDE's and ease of understanding what $e is
+    [zen-14] Add license file & headers
+    Initial translation setup
+    Register ModuleRouteListener
+    Update index.php and Application\Module to make composer use optional
+    
+    - index.php now supports ZF2_PATH env var or git submodule
+    - re-add the git submodule to make non-composer install easier
+    - update the readme
+    - use include instead of include_once, see:
+    http://robert.accettura.com/blog/2011/06/11/phps-include_once-is-insanely-expensive/
+    
+    If you are not using composer, you no longer have to make changes to the default
+    skeleton.
+    Updated README to go over submodule option.
+    Added composer autoloading to Skeleton and updated Module.php to reflect.
+    [zen-33] Removed interfaces from Module
+    
+    - Interfaces no longer need to be implemented; duck-typing is allowed
+    Cleanup in preparation for PR
+    
+    - Updated vendor/ZendFramework to a6f4d09 of
+      weierophinney/feature/mvc-sm-viewmanager
+    - Updated configuration to introduce "router" as base key for router
+      configuration
+    - Removed unnecessary artifacts from Application\Module
+    Updates for ZF2 master changes
+    Fixes to enable and enforce SharedEventManager instance
+    
+    - Instead of using StaticEventManager, pull shared collection for event manager
+      in module manager
+    - Instantiate and injected SharedEventManager in index.php (we can refine and
+      abstract this later)
+    Moving Url and Doctype view helpers setup to module configuration. Also, adding various comments on the configuration to make it more explicit as it importance increases
+    Removed obsolete lines.
+    Working view layer integration
+    
+    - Updated ZF submodule to c85c45a4 of weierophinney/feature/view-layer
+    - Updated configuration to utilize new view layer
+    - Updated controllers to return View Models
+    - Updated Application\Module to only configure necessary view helpers
+    - Removed Application\View\Listener; no longer necessary
+    Using getBasePath() instead of getBaseUrl() to detect basePath.
+    Move some of the view related code from the Module class to the layout view script
+    Set doctype as HTML5
+    Use getBaseUrl() instead of detectBaseUrl()
+    
+    Pointed out by @Swaagie, detectBaseUrl() doesn't cache to a class property per
+    request, whereas getBaseUrl() is a wrapper for detectBaseUrl() which does cache
+    per instance of the request.
+    s/location/locator, and update $di variable in Application's Module.php
+    Bug in var naming.
+    Aethetic improvements and marketing jargon
+    
+    - Utilize Twitter Bootstrap
+    - Add favicon
+    - CSS / JSS included locally for offline functionality
+    - Add helpful text and links for new users
+    Remove references to application environment.
+    
+    - Updated ZF2 submodule
+    - Added local dist config file, gitignored non-dist counterpart
+    - Added default global config file
+    - Some comments explaining the purpose of the files
+    s/configs/config in Application module
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Updated for new event-driven module manager
+    
+    - ZF2 submodule updated
+    - Application module now uses getParam('config')
+    - Application module now makes use of AutoloaderProvider interface
+    - index.php updated to new module manager interface
+    Remove $env parameter from initAutoloader method
+    Updated for ZF changeges
+    
+    - Module::getConfig() now returns a simple array, not a config object
+    - View listener returns a PhpEnvironment\Response (sendable) upon error
+    Various clean up
+    
+    - config returns array which index.php converts to zend\config\config
+    - Application module initAutoloader improved
+    - Application classmap updated
+    Updated to use Zend\Mvc\Bootstrap
+    
+    - Moved view initialization to Application\Module
+      - combined view initialization and view listener registration into a single
+        event listener
+    Module class getConfig() method does not need to be static
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    Added norwegian translation for the Zend Framework 2 Skeleton Application
+    add chinese translations
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Czech translation (cs_CZ)
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added spanish translation
+    Added Ukrainian translation.
+    Update ru_RU.po
+    
+    Minor misprints corrections.
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    edit ru translate 2
+    edit ru translate
+    add ru translate
+    add chinese translations
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Adding Arabic/Jordan translation file
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Add missing %s in fr_FR translation
+    Update en_US fr_FR for new keys
+    Initial french translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    adding turkish translation
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    Added norwegian translation for the Zend Framework 2 Skeleton Application
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added a dutch translation.
+    Czech translation (cs_CZ)
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Small typo in de_DE
+    
+    Pointed out by @coss.
+    Typos in de_DE translation
+    Small typo fixes
+    
+    - s/ZendSkeletonModule/ZendSkeletonApplication in de_DE po file
+    - Switch back to en_US in module.config.php after accidental commit
+    Add missing de_DE keys
+    Build mo for de_DE
+    Added german translation.
+    Initial translation setup
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    edit ru translate 2
+    edit ru translate
+    add ru translate
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Followed @muriloelias advices for a better translation
+    pt_BR translation
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added a dutch translation.
+    Czech translation (cs_CZ)
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added a dutch translation.
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Czech translation (cs_CZ)
+    Update language files for transistion to #zftalk.2 to #zftalk
+    add chinese translations
+    slovenian translation added
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Added Ukrainian translation.
+    Update ru_RU.po
+    
+    Minor misprints corrections.
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    edit ru translate 2
+    edit ru translate
+    add ru translate
+    add chinese translations
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added fr_CA translation
+    Update en_US fr_FR for new keys
+    Initial french translation
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    adding turkish translation
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Followed @muriloelias advices for a better translation
+    pt_BR translation
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    adding turkish translation
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    slovenian translation added
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    Added norwegian translation for the Zend Framework 2 Skeleton Application
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added a dutch translation.
+    Czech translation (cs_CZ)
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added a dutch translation.
+    Czech translation (cs_CZ)
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Small typo in de_DE
+    
+    Pointed out by @coss.
+    Typos in de_DE translation
+    Small typo fixes
+    
+    - s/ZendSkeletonModule/ZendSkeletonApplication in de_DE po file
+    - Switch back to en_US in module.config.php after accidental commit
+    Add missing de_DE keys
+    Build mo for de_DE
+    Added german translation.
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added fr_CA translation
+    Update en_US fr_FR for new keys
+    Initial french translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    adding not translated Japanese, fixed typo.
+    edit X-Poedit- line in language/ja_JP.po
+    adding Japanese(ja_JP) Translate file
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Update to fix typo fixed in later PR
+    Adding polish translations.
+    adding turkish translation
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Add missing %s in fr_FR translation
+    Update en_US fr_FR for new keys
+    Initial french translation
+    Initial translation setup
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    add traditional chinese translations.
+    add chinese translations
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Fixed typo.
+    Adding Arabic/Jordan translation file
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update new translations to change IRC link from #zftalk.2 to #zftalk
+    add traditional chinese translations.
+    add chinese translations
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Added spanish translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Cleaning up it_IT translations
+    Adding first version of italian translations
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    Cleaning up it_IT translations
+    Adding first version of italian translations
+    Small typo in de_DE
+    
+    Pointed out by @coss.
+    Typos in de_DE translation
+    Small typo fixes
+    
+    - s/ZendSkeletonModule/ZendSkeletonApplication in de_DE po file
+    - Switch back to en_US in module.config.php after accidental commit
+    Add missing de_DE keys
+    Build mo for de_DE
+    Added german translation.
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+    adding not translated Japanese, fixed typo.
+    edit X-Poedit- line in language/ja_JP.po
+    adding Japanese(ja_JP) Translate file
+    Update en_US fr_FR for new keys
+    Initial translation setup
+    Update language files for transistion to #zftalk.2 to #zftalk
+    add chinese translations
+    Fixing typo webiste into index/index template and some php_format issue into it_IT translations.
+     fixing translation files
+    1-creating mo file
+    2- fixing bug in po file
+    arabic translation
+    Update language files for transistion to #zftalk.2 to #zftalk
+    Adding polish translations.
+    Added a dutch translation.
+    Czech translation (cs_CZ)
+    erro
+    receber dados
+    t
+    enviar fomulario
+    receber dados
+    receber dados
+    select
+    error
+    erro
+    remover o form
+    receber dados
+    nao recebe formulario
+    enviar fomulario
+    redirect
+    reverting composer.phar
+    update year : 2013 to 2014
+    [#197] Remove unneeded import
+    
+    - no longer needed
+    [#197] Barebones fix
+    
+    - Per discussion with @ocramius modified this to only provide empty
+      console routing configuration, which solves the originally reported
+      problem.
+    Add [--help|-h] console route
+    
+    - Removes the "no route detected" message
+    - Fixes usage with 2.2.1
+    update copyright year : 2012 to 2013
+    [zen-14] Add license file & headers
+    Fixed ActionController name.
+    Working view layer integration
+    
+    - Updated ZF submodule to c85c45a4 of weierophinney/feature/view-layer
+    - Updated configuration to utilize new view layer
+    - Updated controllers to return View Models
+    - Updated Application\Module to only configure necessary view helpers
+    - Removed Application\View\Listener; no longer necessary
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    using argument in basePath()
+    [#213] Re-added ZF2 logo to navbar
+    update to navigation as outlined in BS3
+    adding in html5shiv as per examples
+    update of view scripts and change in responsive script as outlined in the bootstrap migration guide
+    Update module/Application/view/layout/layout.phtml
+    
+    Changed copyright date to use date('Y')
+    Changing the images paths.
+    Update twitter bootstrap, jquery, html5.js to latest
+    update to jquery to fix #110
+    Update module/Application/view/layout/layout.phtml
+    
+    Changed 2 spaces to 4.
+    Use long tags with echo statement
+    Add inlineScript() helper
+    
+    For faster DOM parsing it is recommended to place some scripts just above
+    the </body> tag. Rendering the inlineScript() helper here makes it possible
+    to inject files in both the <head> and at the end of the <body>
+    Prepend scripts in layout
+    
+    When view scripts append scripts based on jQuery, they are registered last
+    so jQuery is already loaded.
+    Prepend styles in layout
+    
+    When view scripts append styles for the headLink() helper, those are now
+    really registered last.
+    Add missing echo to translation in layout
+    Translate text in layout
+    Add jquery to layout by default
+    
+    I'm not 100% sold on shipping this with the skeleton, as it's one more
+    thing people have to remove if they're not using it. However, it's
+    required to make the responsive layout work properly and having it
+    included makes ZendDeveloperTools work with the skeleton out of the box,
+    which is a plus.
+    Clean up layout and configs
+    
+    - Layout helpers used inline instead of in code block at the top of the
+      layout.
+    - Removed unnecessary config keys
+    Fixed copyright year in footer.
+    conditional include of html5 shim
+    Add viewport meta tag for smart phone scaling
+    
+    This somehow got removed.
+    Remove date('Y') call in layout
+    
+    Replaced with static year. For some reason the date() function in PHP is
+    shockingly slow (3+ms on an i5) which is like 8% of the runtime in an optimized
+    benchmark.
+    Remove usage of raw() view helper in layout
+    Add viewport meta tag for smart phone scaling
+    Update button styles and switched to "ZF green"
+    Update layout to use Twitter Bootstrap 2.0.0
+    Move some of the view related code from the Module class to the layout view script
+    Moved javascript down, after css. Best practice.
+    Rename "views" and "layouts" to singular form.
+    
+    Directory names should be in singular form whenever possible.
+    Aethetic improvements and marketing jargon
+    
+    - Utilize Twitter Bootstrap
+    - Add favicon
+    - CSS / JSS included locally for offline functionality
+    - Add helpful text and links for new users
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Added headLink, headMeta, and headScript to layout for added flexibility
+    Update to use new view convenience API
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    submit
+    nao recebe formulario
+    enviar fomulario
+    redirect
+    select
+    redirect
+    made use of new panels within Bootstrap3
+    update of view scripts and change in responsive script as outlined in the bootstrap migration guide
+    Revert wiki URL to JIRA
+    Update links to github.com
+    Change IRC link to #zftalk since #zftalk.2 is now a closed channel
+    typo fix
+    RC compatibility - Zend\Version namespace
+    Initial translation setup
+    [zendframework/zf2#1293] Move view template down a directory
+    
+    - View scripts for controller actions should resolve based on the module
+      namespace
+    Opening external links in new tabs/windows
+    Update button styles and switched to "ZF green"
+    Update layout to use Twitter Bootstrap 2.0.0
+    Rename "views" and "layouts" to singular form.
+    
+    Directory names should be in singular form whenever possible.
+    Aethetic improvements and marketing jargon
+    
+    - Utilize Twitter Bootstrap
+    - Add favicon
+    - CSS / JSS included locally for offline functionality
+    - Add helpful text and links for new users
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Small view tweaks, gitignore update, and error phtml path
+    
+    - error.phtml changed to error/index.phtml
+    - index view using &raquo;
+    - add data/cache/.gitignore for merged config caching default path
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    copied recursive exception functionality from error/index.phtml to error/404.phtml
+    Initial translation setup
+    [zen-72] Update to use escapeHtml helper
+    
+    - s/escape/escapeHtml/ in the 404 view
+    add missing "echo" to display the controller name
+    Add closing dl
+    Updates to 404 handling
+    
+    - Updated configuration settings
+    - Updated 404 handler to display controller and exception, if present
+    - Do not merge until all outstanding view layer PRs are merged on ZF2
+      master
+    Updated to latest view-layer changes
+    
+    - Added configuration for TemplateMapResolver
+    - Added configuration for displayNotFoundReason
+    - Updated error/404 template to display the 404 reason, if enabled.
+    - Please merge only after https://github.com/zendframework/zf2/pull/851
+    Rename "views" and "layouts" to singular form.
+    
+    Directory names should be in singular form whenever possible.
+    Show exception's message on error page
+    Clean headings outline
+    Stronger typing on error views to avoid E_FATAL and hide exceptions if display_exceptions is not set to true
+    Moving pages/404.phtml rendering (in case of 404 errors) to error/404.phtml
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Update to use new view convenience API
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    [#224] Escape exception messages and traces
+    Update module/Application/view/error/index.phtml
+    
+    Correcting html output
+    Initial translation setup
+    Better overview on previous exceptions and more exception details (file name, line number, exception type)
+    Rename "views" and "layouts" to singular form.
+    
+    Directory names should be in singular form whenever possible.
+    Show exception's message on error page
+    Clean headings outline
+    Stronger typing on error views to avoid E_FATAL and hide exceptions if display_exceptions is not set to true
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Update to use new view convenience API
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    configrando doctrine
+    redirect
+    reverting composer.phar
+    update year : 2013 to 2014
+    [#197] Barebones fix
+    
+    - Per discussion with @ocramius modified this to only provide empty
+      console routing configuration, which solves the originally reported
+      problem.
+    Add [--help|-h] console route
+    
+    - Removes the "no route detected" message
+    - Fixes usage with 2.2.1
+    Change "translator" service to an alias
+    
+    - Aliasing to an "MvcTranslator" service, as defined in
+      zendframework/zf2#4410
+    Add Log, Cache abstract factories
+    
+    - Allows us to remove these from the default MVC service configuration
+      so that we do not need to add additional dependencies to that
+      component.
+    update copyright year : 2012 to 2013
+    Update module/Application/config/module.config.php
+    
+    Updated Translation Options
+    [zen-14] Add license file & headers
+    Small typo fixes
+    
+    - s/ZendSkeletonModule/ZendSkeletonApplication in de_DE po file
+    - Switch back to en_US in module.config.php after accidental commit
+    Build mo for de_DE
+    Initial translation setup
+    The SM name for the controller cannot include the Controller postfix if you want to use the ModuleRouteListener as the url segment for :controller won't have the word Controller in it.
+    Update to match changes in PR 1695
+    [zen-24] Added application module default route
+    
+    - per Akrabat
+    [zen-24] Removed the default route
+    
+    - Removed the default route, as it is not recommended.
+    - See https://github.com/zendframework/ZendSkeletonModule/pull/3 for how
+      a module-specific default route can be created.
+    [zendframework/ZendSkeletonApplication#67] fixed path to index.phtml (was introduced by: 87bd76e8)
+    Removed unnecessary key from template_path_stack.
+    Update route configuration so that urls of the the form index/actionName actually work.
+    [zen-33] Updated to new controller scoped container
+    
+    - Minor change in configuration
+    [zen-33] Update to add doctype configuration
+    [zen-33] Remove unused configuration
+    Cleanup in preparation for PR
+    
+    - Updated vendor/ZendFramework to a6f4d09 of
+      weierophinney/feature/mvc-sm-viewmanager
+    - Updated configuration to introduce "router" as base key for router
+      configuration
+    - Removed unnecessary artifacts from Application\Module
+    Initial wiring of ServiceManager over DI for MVC
+    Updates for ZF2 master changes
+    Removing Zend\Mvc\Router\RouteStack instance definition (already defined in Zend\Mvc\Bootstrap
+    Moving Url and Doctype view helpers setup to module configuration. Also, adding various comments on the configuration to make it more explicit as it importance increases
+    Updates to 404 handling
+    
+    - Updated configuration settings
+    - Updated 404 handler to display controller and exception, if present
+    - Do not merge until all outstanding view layer PRs are merged on ZF2
+      master
+    Updated to latest view-layer changes
+    
+    - Added configuration for TemplateMapResolver
+    - Added configuration for displayNotFoundReason
+    - Updated error/404 template to display the 404 reason, if enabled.
+    - Please merge only after https://github.com/zendframework/zf2/pull/851
+    Moved the RouteStack di class definition into the module config.
+    
+    The definition originally was in Mvc\Bootstrap::setLocator.
+    
+    It would be better to leave the definition in Bootstrap, and simply set
+    a "preference" value in the config, but the definition *appears* to
+    override the preference settings.
+    [#1] Added AggregateResolver
+    
+    - Updated ZF2 to rev db6a6e3
+    - Modified configuration to use AggregateResolver
+    Fixes for helper loader/broker configuration
+    
+    - Removed unneeded aliases
+    - Removed obsolete classmap entries
+    - Updated ZF2 library to latest feature/view-layer
+    Updated configuration to follow view-layer
+    
+    - names of templates should not include file suffix
+    - corrected parameter names for exception, no route strategies
+    Simplified TemplatePathStack config
+    
+    - Since bootstrap now contains configuration for template path stack,
+      can simply path "paths" parameter
+    Working view layer integration
+    
+    - Updated ZF submodule to c85c45a4 of weierophinney/feature/view-layer
+    - Updated configuration to utilize new view layer
+    - Updated controllers to return View Models
+    - Updated Application\Module to only configure necessary view helpers
+    - Removed Application\View\Listener; no longer necessary
+    Fixing configuration according with changes done to router initializationThis change just moves router configuration to instance configuration of the router itself. The change is necessary to allow the router to be injected into other instances of the DiC and to eventually switch the router type to a custom one with own dependencies and eventually completely unaware of the default Zend\Mvc\Router\Http\TreeRouteStack. These changes are related to https://github.com/Ocramius/zf2/compare/zendframework%3Amaster...mvc-router-from-locator
+    Inject the plugin loader into Zend\Mvc\Controller\PluginBroker by default to simplify injecting controller plugins
+    Inject the PluginBroker into the ActionController so that we pick up any module's controller plugins that they have injected into it. By injecting into ActionController, all controllers that extend it will automatically pick up this injection without having to inject themselves which of course saves a lot of typing for developers and stops them wondering why a given plugin isn't working in a particular controller\!
+    Rename "views" and "layouts" to singular form.
+    
+    Directory names should be in singular form whenever possible.
+    Update view listener to pass vars to layout
+    
+    - Enable display exceptions by defualt
+    - Cannot pass a variable called 'content' to layout
+    Adding setting for exceptions visibility in error views
+    s/configs/config in Application module
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Remove unused bootstrap_class config value from Application module
+    Updated ZF2 submodule and changed to segment route
+    
+    - Switch to segment route instead of regex route
+    - Remove custom URL helper, using ZF-proivded one now
+    Update zf2 submoudle and Di configuration
+    
+    - Per updates to zf2 master, no need to explicitly disable annotations in the
+    runtime configuration for DI
+    Update for new Zend\Di and Zend\Code stuff
+    
+    - Change ZF2 submodule to use git.zendframework.com to keep up to date better
+    - Change bootstrapping and Di config strategy slightly to account for Ralph's
+    Zend\Di and Zend\Code changes
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    Use alias rule always
+    
+    - I tested using the new RewriteCond and RewriteRule that were in the comments
+      on my previous commit against a non-aliased host - and they work perfectly in
+      that environment. As such, this is actually a better solution, as it will work
+      in all cases.
+    - Documented the reasons for the rule in the file.
+    Document rewrite rules for PaaS solutions
+    
+    - Added documentation for additional .htaccess lines you may need when
+      on some PaaS platforms that use Apache Alias directives (phpcloud,
+      OpenShift, others).
+    Reverting to config globbing practice decided in meeting
+    
+    See http://framework.zend.com/wiki/display/ZFDEV2/2011-12-07+Meeting+Log
+    Changed the env variable to match the files in config/autoload/ and to facilitate local changes pulled in by index.php glob config
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    If the sapi is cli-server, and the request path matches a file in public/, decline the request so that the built-in webserver can pass through the file contents itself.
+    Further require updates
+    made config required to fail earlier
+    
+    issue raised and discussed by zomg in IRC.
+    Update Skeleton to ZF2 RC1.
+    
+    - updated zf2 submodule.
+    - removed ->send() from index.php because it has been deprecated (more info: https://github.com/Thinkscape/zf2/commit/37747bd608d9b75dc340c4ff8b991ff3706dd4de)
+    Clean up index.php significantly
+    ensure we register the Zend namespace for the StandardAutoloader
+    Update index.php and Application\Module to make composer use optional
+    
+    - index.php now supports ZF2_PATH env var or git submodule
+    - re-add the git submodule to make non-composer install easier
+    - update the readme
+    - use include instead of include_once, see:
+    http://robert.accettura.com/blog/2011/06/11/phps-include_once-is-insanely-expensive/
+    
+    If you are not using composer, you no longer have to make changes to the default
+    skeleton.
+    Add conditional check for allowing ZF2_PATH env variable to be used
+    Removing unused stat call and reducing complexity of index.php
+    Updated README to keep ordering of index.php.
+    Updated composer.
+    Added an error to index when vendor/autoload.php could not be found.
+    Updated composer.
+    Added vendor/ dir.
+    Added composer.lock to git.
+    Added vendor/ to .gitignore, this directory is created by composer.
+    Modified index.php to skip the autoloader factory.
+    Initial composer commit.
+    Initial wiring of ServiceManager over DI for MVC
+    Updates for ZF2 master changes
+    Fixes to enable and enforce SharedEventManager instance
+    
+    - Instead of using StaticEventManager, pull shared collection for event manager
+      in module manager
+    - Instantiate and injected SharedEventManager in index.php (we can refine and
+      abstract this later)
+    Update glob() for autoload config files
+    
+    Per a discussion on IRC with @weierophinney:
+    
+    - requiring ".config" in the filenames is redundant as they live under the
+    config/ tree
+    - "local" and "global" should be optional
+    
+    This leaves us with simply config/autoload/*.php.
+    Add optional config filename prefix
+    Reverting to config globbing practice decided in meeting
+    
+    See http://framework.zend.com/wiki/display/ZFDEV2/2011-12-07+Meeting+Log
+    added glob path for modules dropin configs, added pattern for gitignored local.config.php
+    so it will always load regardless of env settings.
+    Fixed messed up glob config line
+    Update public/index.php
+    Introduced the environment check for application_env
+    and changed the glob line for config files
+    Removed redundant argument being passed
+    Check for ZF2_PATH env var when including ZF2 AutoloaderFactory
+    Organize lines in index.php a bit better
+    Update for new module event stuff and update zf2 submodule
+    
+    Also adds the proposed chdir() change per the Dec 7th meeting.
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Updated for new event-driven module manager
+    
+    - ZF2 submodule updated
+    - Application module now uses getParam('config')
+    - Application module now makes use of AutoloaderProvider interface
+    - index.php updated to new module manager interface
+    Various clean up
+    
+    - config returns array which index.php converts to zend\config\config
+    - Application module initAutoloader improved
+    - Application classmap updated
+    add library to the include path, so we can put ZF2's Zend folder directly in library
+    Updated to use Zend\Mvc\Bootstrap
+    
+    - Moved view initialization to Application\Module
+      - combined view initialization and view listener registration into a single
+        event listener
+    Updates and cleanup
+    
+    - Routing:
+      - Use TreeRouteStack instead of SimpleRouteStack
+      - Do not pull router from locator; simply instantiate
+      - Config object can now be passed directly to addRoutes
+    - Bootstrap:
+      - Accept ModuleManager as sole constructor argument, and pull merged
+        configuration from it
+    - index.php:
+      - Do not use object notation for accessing config values; use array
+        notation. Allows flexibility in how application configuration is
+        returned
+    More verybose name for module manager options in config and updated URL helper with Matthew's latest
+    Initial skeleton in place with ZF2 submodule pointed at current master
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    adding in html5shiv as per examples
+    update bootstrap
+    updated bootstrap assets
+    update of view scripts and change in responsive script as outlined in the bootstrap migration guide
+    jQuery update to match Bootstrap3
+    Updating Twitter Bootstrap and jQuery libraries.
+    update to jquery 1.8.3
+    Update twitter bootstrap, jquery, html5.js to latest
+    update bootstrap
+    updated bootstrap assets
+    Updating Twitter Bootstrap and jQuery libraries.
+    Update Twitter Bootstrap to version 2.2.1
+    Update twitter bootstrap, jquery, html5.js to latest
+    Create jquery-1.10.2.min.map
+    
+    missing file. jquery-1.10.2.min.map
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    update bootstrap
+    updated bootstrap assets
+    Updating Twitter Bootstrap and jQuery libraries.
+    Update Twitter Bootstrap to version 2.2.1
+    Update twitter bootstrap, jquery, html5.js to latest
+    Update layout to use Twitter Bootstrap 2.0.0
+    Aethetic improvements and marketing jargon
+    
+    - Utilize Twitter Bootstrap
+    - Add favicon
+    - CSS / JSS included locally for offline functionality
+    - Add helpful text and links for new users
+    Changing the images paths.
+    removed \9 from style.css
+    Fix hover css colors for buttons
+    Update button styles and switched to "ZF green"
+    Update layout to use Twitter Bootstrap 2.0.0
+    Updating Twitter Bootstrap and jQuery libraries.
+    Update button styles and switched to "ZF green"
+    Updating Twitter Bootstrap and jQuery libraries.
+    Aethetic improvements and marketing jargon
+    
+    - Utilize Twitter Bootstrap
+    - Add favicon
+    - CSS / JSS included locally for offline functionality
+    - Add helpful text and links for new users
+    Small view tweaks, gitignore update, and error phtml path
+    
+    - error.phtml changed to error/index.phtml
+    - index view using &raquo;
+    - add data/cache/.gitignore for merged config caching default path
+    configrando doctrine
+    Fixed typo
+    Documenting config keys in `config/application.config.php`
+    Clean up layout and configs
+    
+    - Layout helpers used inline instead of in code block at the top of the
+      layout.
+    - Removed unnecessary config keys
+    Add config glob pattern to application.config.php
+    Cleanup in preparation for PR
+    
+    - Updated vendor/ZendFramework to a6f4d09 of
+      weierophinney/feature/mvc-sm-viewmanager
+    - Updated configuration to introduce "router" as base key for router
+      configuration
+    - Removed unnecessary artifacts from Application\Module
+    Initial wiring of ServiceManager over DI for MVC
+    Update for new module event stuff and update zf2 submodule
+    
+    Also adds the proposed chdir() change per the Dec 7th meeting.
+    Remove references to application environment.
+    
+    - Updated ZF2 submodule
+    - Added local dist config file, gitignored non-dist counterpart
+    - Added default global config file
+    - Some comments explaining the purpose of the files
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    redirect
+    Remove *local.config.php from gitignore
+    add *.local.php to config/autoload/.gitignore
+    Add optional config filename prefix
+    Remove references to application environment.
+    
+    - Updated ZF2 submodule
+    - Added local dist config file, gitignored non-dist counterpart
+    - Added default global config file
+    - Some comments explaining the purpose of the files
+    [zen-33] Updated config globbing
+    
+    - Removed ".config" segment from application configuration
+    Add optional config filename prefix
+    Convert to singular path names and move ZF2 submodule
+    
+    - s/configs/config
+    - s/vendors/vendor
+    - moved library/ZendFramework to vendor/ZendFramework, got rid of library/
+    - updated zf2 submodule
+    - added config/autoload path with readme explaining the purpose
+    - set up to glob for config/autoload/*.config.php
+    Fix spelling error
+    Clean up layout and configs
+    
+    - Layout helpers used inline instead of in code block at the top of the
+      layout.
+    - Removed unnecessary config keys
+    [zen-33] Updated config globbing
+    
+    - Removed ".config" segment from application configuration
+    Remove references to application environment.
+    
+    - Updated ZF2 submodule
+    - Added local dist config file, gitignored non-dist counterpart
+    - Added default global config file
+    - Some comments explaining the purpose of the files
+    Remove module_listener_options since autoloaded config don't apply
+    
+    it's been a while since #170, and the stub is still misleading for new people.
+    Fixed configuration example
+    
+    The example was missing out the ```module_listener_options``` array and therefore the example-configuration would not have worked. That's fixed now
+    Commented cache configuration
+    Provide default configuration for Config Cache
+    Fix spelling error
+    [zen-33] Updated config globbing
+    
+    - Removed ".config" segment from application configuration
+    Remove references to application environment.
+    
+    - Updated ZF2 submodule
+    - Added local dist config file, gitignored non-dist counterpart
+    - Added default global config file
+    - Some comments explaining the purpose of the files
+    redirect

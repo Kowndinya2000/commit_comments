@@ -1,0 +1,12 @@
+﻿    use rock_standard_layout()
+    
+    This will fix a few issues, among which documentation generation
+    Reanmed package
+    initial checkin
+    added missing dependencies
+    use rock_standard_layout()
+    
+    This will fix a few issues, among which documentation generation
+    added missing files
+    Reanmed package
+    initial checkin

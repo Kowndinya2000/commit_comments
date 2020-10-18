@@ -1,0 +1,353 @@
+﻿    Bump the changelog [skip ci]
+    Release 1.5.0
+    add changelog entries to version 1.5.0
+    mend
+    Make the SSL_Verify and TLS Version version configurable
+    Release v1.3.0
+    feat: improve logs to know when the TGT was cached
+    Fix compatibility with previous version when setting cache
+    Release 1.2.6
+    Change the way the global cache_backend is set to use the same one everywhere
+    Bump to 1.2.5
+    Use a hash of the TGT to generate ST cache keys
+    
+    By using a hash of the TGT to generate ST cache keys, everytime the TGT
+    changes all the cached STs are automatically expired and we can support
+    cache backends that do not implement '#delete_matched' like
+    Dalli/Memcache backends.
+    Bump to 1.2.4
+    Release 1.2.3
+    Restore compatibility with Rails 3
+    
+    Test if the controller responds to before_action or before_filter
+    Fixes circular reference load warning
+    Update changelog with 1.1 branch release
+    release v1.2.1
+    Version bump to 1.2.0
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Fixed deprecated method before_filter for Rails 5 applications
+    Release 1.1.3
+    Release 1.1.1
+    Adds a CHANGELOG
+    mend
+    mend
+    Change the way the global cache_backend is set to use the same one everywhere
+    Add travis-ci and codeclimate
+    
+    Fix #22
+    
+    Update json library to 1.8.5 to make the test work on ruby 2.4
+    
+    https://stackoverflow.com/questions/42334698/error-installing-json-1-8-3-with-ruby-2-4
+    Fixed deprecated method before_filter for Rails 5 applications
+    Add more skip authentication information in README.
+    Introduces a role checking Rails routing constraint
+    Documentation fix
+    Adds support for multiple services
+    Alert users to clear the cache between tests
+    
+    Also, convert README.md to unix line endings
+    updating docs
+    GFM
+    publishing
+    legal stuff
+    Hold faraday on older rubies
+    Run old rubies with older gems
+    Improvements to rspec
+    publishing
+    update default tls version and add safe navigators
+    Make the SSL_Verify and TLS Version version configurable
+    Fix a spec of execution order problem
+    Change the way the global cache_backend is set to use the same one everywhere
+    Adds support for multiple services
+    Remove HTTP logic from base namespace
+    Adds specs for Cassette::Client
+    Drop httpclient and use faraday's default adapter
+    Rubocop autocorrect
+    publishing
+    mend
+    Make the SSL_Verify and TLS Version version configurable
+    publishing
+    Pry/Byebug now requires 2.4+
+    remove commented line
+    instantiate new OpenStruct if no config is defined
+    Add pry-byebug to use the debugger
+    Improvements to rspec
+    Introduces a role checking Rails routing constraint
+    Adds support for multiple services
+    Add `webmock` development dependency
+    Rubocop autocorrect
+    publishing
+    publishing
+    publishing
+    Change the way the global cache_backend is set to use the same one everywhere
+    Make cache backend assignable
+    
+    This makes Cassette actually behave like README.md says it does
+    Adds support for multiple services
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    Adds support for multiple services
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    feat: improve logs to know when the TGT was cached
+    Use a hash of the TGT to generate ST cache keys
+    
+    By using a hash of the TGT to generate ST cache keys, everytime the TGT
+    changes all the cached STs are automatically expired and we can support
+    cache backends that do not implement '#delete_matched' like
+    Dalli/Memcache backends.
+    Memoizes `Faraday` connection to avoid too many open connections
+    Adds specs for Cassette::Client
+    changed st validation tests
+    Memoizes `Faraday` connection to avoid too many open connections
+    Adds support for multiple services
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    Fixes an issue with ruby cas helper
+    Introduces a role checking Rails routing constraint
+    Change the way the global cache_backend is set to use the same one everywhere
+    Adds support for multiple services
+    folder that has not been renamed
+    publishing
+    Fix specs using stub_env for ENV modification
+    Restore compatibility with Rails 3
+    
+    Test if the controller responds to before_action or before_filter
+    Adds support for multiple services
+    Disable ticket validation when NO_AUTH is set
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Adds support for multiple services
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    Fix specs using stub_env for ENV modification
+    Adds support for multiple services
+    folder that has not been renamed
+    Rubocop autocorrect
+    publishing
+    Fix compatibility with previous version when setting cache
+    Change the way the global cache_backend is set to use the same one everywhere
+    Adds support for multiple services
+    folder that has not been renamed
+    publishing
+    Introduces a role checking Rails routing constraint
+    Add specs for Cassette::Cache::NullStore
+    Memoizes `Faraday` connection to avoid too many open connections
+    Create `Cassette::Http::Request`
+    
+    - Decouple tests from Faraday
+    Create `Cassette::Http::TicketResponse`
+    Restore compatibility with Rails 3
+    
+    Test if the controller responds to before_action or before_filter
+    Fixed deprecated method before_filter for Rails 5 applications
+    Adds support for multiple services
+    Adds support for multiple services
+    Drop httpclient and use faraday's default adapter
+    Rubocop autocorrect
+    publishing
+    instantiate new OpenStruct if no config is defined
+    update default tls version and add safe navigators
+    Make the SSL_Verify and TLS Version version configurable
+    Change the way the global cache_backend is set to use the same one everywhere
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Introduces a role checking Rails routing constraint
+    Remove HTTP logic from base namespace
+    Create `Cassette::Http::Request`
+    
+    - Decouple tests from Faraday
+    Adds specs for Cassette::Client
+    Drop httpclient and use faraday's default adapter
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Fix compatibility with previous version when setting cache
+    Change the way the global cache_backend is set to use the same one everywhere
+    Make cache backend assignable
+    
+    This makes Cassette actually behave like README.md says it does
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Rubocop autocorrect
+    publishing
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Create `Cassette::Http::TicketResponse`
+    Create `Cassette::Http::ParsedResponse`
+    Create `Cassette::Http::Request`
+    
+    - Decouple tests from Faraday
+    bump gem version 1 minor
+    mend
+    mend
+    Release v1.3.0
+    Release v1.2.7
+    Release 1.2.6
+    Bump to 1.2.5
+    Bump to 1.2.4
+    Release 1.2.3
+    Fixes circular reference load warning
+    release v1.2.1
+    Version bump to 1.2.0
+    Bump to pre-release
+    Fixed deprecated method before_filter for Rails 5 applications
+    Release 1.1.3
+    Fixes an issue with ruby cas helper
+    Release 1.1.1
+    Releasing cassette 1.1.0
+    Relases v1.0.18
+    Bumps version to 1.0.17
+    
+    Changes NOAUTH behavior when a ticket is provided
+    Removes build number as patch
+    Rubocop autocorrect
+    publishing
+    feat: improve logs to know when the TGT was cached
+    Use a hash of the TGT to generate ST cache keys
+    
+    By using a hash of the TGT to generate ST cache keys, everytime the TGT
+    changes all the cached STs are automatically expired and we can support
+    cache backends that do not implement '#delete_matched' like
+    Dalli/Memcache backends.
+    Memoizes `Faraday` connection to avoid too many open connections
+    Introduces a role checking Rails routing constraint
+    Adds specs for Cassette::Client
+    Fix bug in tgt caching
+    
+    This commit fixes a bug in the caching mechanism at
+    `Cassette::Client#st_with_retry` introduced at 183e1e5a33e7.
+    
+    As you can see, in our testing suite we have no tests for caching:
+    
+    ```
+    Pending: (Failures listed here are expected and do not affect your suite's status)
+    
+      1) Cassette::Authentication::Cache
+         # Not yet implemented
+         # ./spec/cassette/authentication/cache_spec.rb:7
+    
+      2) Cassette::Client::Cache
+         # Not yet implemented
+         # ./spec/cassette/client/cache_spec.rb:6
+    ```
+    
+    That's probably why the bug slipped through our refactoring.
+    
+    Before this fix:
+    
+        irb(main):001:0> Cassette::Client.st_for('hodor')
+        fetching from tgt source
+        fetching from st source
+        => "ST-25146147-Ethe5cFv2vSdZQBI0j3u-moe"
+        irb(main):002:0> Cassette::Client.st_for('hodor')
+        fetching from tgt source
+        fetching from st source
+        => "ST-25146147-Ethe5cFv2vSdZQBI0j3u-moe"
+        irb(main):003:0> Cassette::Client.st_for('hodor')
+        fetching from tgt source
+        fetching from st source
+        => "ST-25146147-Ethe5cFv2vSdZQBI0j3u-moe"
+    
+    Which reads: "every time we call #st_for we are fetching a new tgt and
+    st tickets."
+    
+    After this fix:
+    
+        irb(main):001:0> Cassette::Client.st_for('hodor')
+        fetching from tgt source
+        fetching from st source
+        => "ST-25146147-Ethe5cFv2vSdZQBI0j3u-moe"
+        irb(main):002:0> Cassette::Client.st_for('hodor')
+        => "ST-25146147-Ethe5cFv2vSdZQBI0j3u-moe"
+        irb(main):003:0> Cassette::Client.st_for('hodor')
+    
+    Which reads: we are not messing everything up with lame refactorings.
+    Refactor Client#st_with_retry
+    Rubocop autocorrect
+    publishing
+    changed st validation request http method
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Memoizes `Faraday` connection to avoid too many open connections
+    Fixes a refactoring issue
+    Introduces a role checking Rails routing constraint
+    Adds support for multiple services
+    Use `TicketResponse` in `Authentication`
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Adds support for multiple services
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Restore compatibility with Rails 3
+    
+    Test if the controller responds to before_action or before_filter
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Fixed deprecated method before_filter for Rails 5 applications
+    Introduces a role checking Rails routing constraint
+    Adds support for multiple services
+    Disable ticket validation when NO_AUTH is set
+    Rubocop autocorrect
+    publishing
+    feat: improve logs to know when the TGT was cached
+    Use a hash of the TGT to generate ST cache keys
+    
+    By using a hash of the TGT to generate ST cache keys, everytime the TGT
+    changes all the cached STs are automatically expired and we can support
+    cache backends that do not implement '#delete_matched' like
+    Dalli/Memcache backends.
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Fixes an issue with ruby cas helper
+    Introduces a role checking Rails routing constraint
+    Restore compatibility with Rails 3
+    
+    Test if the controller responds to before_action or before_filter
+    Fixed deprecated method before_filter for Rails 5 applications
+    Fixes an issue with ruby cas helper
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Introduces a role checking Rails routing constraint
+    Rubocop autocorrect
+    publishing
+    Rubocop autocorrect
+    publishing
+    Fixes circular reference load warning
+    Rubocop autocorrect
+    publishing
+    Fixes circular reference load warning
+    Rubocop autocorrect
+    publishing
+    Add specs for Cassette::Cache::NullStore
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Make the SSL_Verify and TLS Version version configurable
+    changed st validation request http method
+    Memoizes `Faraday` connection to avoid too many open connections
+    Back to 1.9.x compatible lambdas
+    Create `Cassette::Http::Request`
+    
+    - Decouple tests from Faraday
+    Remove dependencies from libxml-ruby  and activesupport on runtime
+    Back to 1.9.x compatible lambdas
+    Create `Cassette::Http::TicketResponse`

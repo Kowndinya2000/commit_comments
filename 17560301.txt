@@ -1,0 +1,2693 @@
+﻿    fix(installation): change tag's name
+    fiax(README.md): add MacOS section
+    fix(installation): Add of the merge request recommendations
+    feat(Reame.md): add Windows version
+    docs(Installation/sr/*): refactor all installation docs
+    docs(README.md): Add README.md
+    
+    - Add a README.md file with build instructions
+    feat(ci): Build doc with Gitlab-CI
+    
+    - Added Gitlab-ci yaml file to build doc
+    - Added Makefile to build doc with sphinx
+    - Changed doc style (using readthedocs theme)
+    chore(conf.py): update fw4spl version
+    feat(ci): Build doc with Gitlab-CI
+    
+    - Added Gitlab-ci yaml file to build doc
+    - Added Makefile to build doc with sphinx
+    - Changed doc style (using readthedocs theme)
+    Updated conf.py and index.rst
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Modified authors
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added sphinx (ReadTheDocs compatible) configuration files, extensions and index.rst
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(bundleCreation): update Bundle Creation documentation
+    
+    fix few warnings in cmake-style doc
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    Added Testing section
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added a section on CMake with fw4spl
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added doxygen link to fw4spl-doc
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added FAQ part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated conf.py and index.rst
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added sphinx (ReadTheDocs compatible) configuration files, extensions and index.rst
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    feat(ci): Build doc with Gitlab-CI
+    
+    - Added Gitlab-ci yaml file to build doc
+    - Added Makefile to build doc with sphinx
+    - Changed doc style (using readthedocs theme)
+    fix(Testing): Add missing link to data
+    docs(tests): additional test commands and typo
+    Added Testing section
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for medical data folder migration.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3190: Added documentation of the generic scene to the SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Activity page
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added documentation for medical data folder migration.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Moved serialization image to media folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Serialization chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved serialization image to media folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added serialization.graphml
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated Activities documentation : added wizard documentation.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated documentation for activities (added detailled example).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for medical data folder migration.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(SAD): update SAD documentation
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    fix(AppConfig): a few more typos
+    fix(AppConfig): typos
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated AppConfig documentation for AppXml2
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Corrections on Activites and AppConfig of the SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated Manager documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated documentation for AppConfig (added detailed example)
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Updated ref. to Object-Service concept example
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Change datum to data because it's used in the singular and plural...
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes SDM-SAD-App-config
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added App config chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Modified citation in SDM-SAD-PatientFolder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes in SDM-SAD-PatientFolder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated citations
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added patient folder documentation and replaced thread documentation to SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(SAD): update SAD documentation
+    Updated Activities documentation : added wizard documentation.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed Tuto08GenericScene documentation, fixed some english mistakes.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Corrections on Activites and AppConfig of the SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated Manager documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated documentation for activities (added detailled example).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Activity page
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added title name of each part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fix some english mistake in SDM-SAD-FW4SPL
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added GUI chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Removed appendix part.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added multithread documentation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the Component-based software chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the Manager and Updater chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added signal slot documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Serialization chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added App config chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated introduction and annexes of the documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fxied PDF creation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the main rst file that set the document achitecture
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes in SDM-SAD-Component
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the Component-based software chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    chore(typo): fix typo errors
+    docs(SAD): update SAD documentation
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated Manager documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes SDM-SAD-Manager
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the Manager and Updater chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated documentation for AppConfig (added detailed example)
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes in SDM-SAD-Thread
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated citations
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added patient folder documentation and replaced thread documentation to SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added multithread documentation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(SAD): update SAD documentation
+    docs(...): fix typo
+    docs(FAQ): first step of service creation documentation.
+    docs(samples): update the documentation with the new samples.
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated Doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Updated ref. to Object-Service concept example
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Change datum to data because it's used in the singular and plural...
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added cosmetic changes to SDM-SAD-ObjService
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed some english mistake in SDM-SAD-ObjService
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added App config chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated the example section of Object-Service chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added the chapter of object-service concept
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    Updated DataMigration doc: documented how to register patches.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for medical data folder migration.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    docs(vtkScene): update VTK scene documentation.
+    
+    - update SAD generic scene documentation.
+    - update Tuto08GenericScene documentation.
+    fix(genericScene): typos and formatting
+    Renamed VtkRenderService to SRender
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed Tuto08GenericScene documentation, fixed some english mistakes.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated documentation for generic scene.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated documentation for generic scene (added configuration example).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3190: Added documentation of the generic scene to the SAD.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(SAD): update SAD documentation
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes in SDM-SAD-GUI
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added GUI chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed code sample in HasSlots documentation
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed english mistake in SDM-SAD-SigSlot
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added signal slot documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added sesh@ path documentation in FAQ.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Added an index.rst and title to each .rst split SAD in several html
+    pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved serialization image to media folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Moved all rst to an src folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Change datum to data because it's used in the singular and plural...
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes in SDM-SAD-Serialization
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated citations
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Moved all files into the SAD folder
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Serialization chapter
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Quick update of tutorials ported to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tuto05Mesher): new shortcut action
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Quick update of tutorials ported to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated documentation for Tuto01 and Tuto02.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(...): fix typo
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated documentation for Tuto01 and Tuto02.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Quick update of tutorials ported to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    Quick update of tutorials ported to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added documentation for tutorials.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(Tutorials): fix typos, rephrased some stuff
+    docs(tutos): upgrade the xml documentation of the tutorials.
+    fix(tutorials): remove io from required library
+    
+    io has been removed from fw4spl
+    docs(SAD,Tutorials): refactor of generic scene and rename of appXml2
+    docs(vtkScene): update VTK scene documentation.
+    
+    - update SAD generic scene documentation.
+    - update Tuto08GenericScene documentation.
+    Quick update of tutorials ported to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Renamed VtkRenderService to SRender
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed Tuto08GenericScene documentation, fixed some english mistakes.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added documentation for Tuto08.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Changed readthedocs url.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added new presentation for the fw4spl training.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Changed readthedocs url.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-training slides.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Adjusted layout for a better display.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Adjusted layout for a better display.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-training slides.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Adjusted layout for a better display.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Adjusted layout for a better display.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Almost done with fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated fw4spl-ogre training.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added fw4spl-ogre training (WIP).
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Changed readthedocs url.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added RMLL and barcamp slides.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Add hovercraft build folders
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(Installation): fix recommended branch/tag
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated Linux installation doc, also cropped screenshots
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated OSX installation documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated OSX installation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(installation): update docs
+    docs(WindowsInstall): update windows installation procedure.
+    
+    - change images
+    - modify fw4spl and visual studio versions
+    - add doc to generate installer
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(WindowsInstall): update windows installation procedure.
+    
+    - change images
+    - modify fw4spl and visual studio versions
+    - add doc to generate installer
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    chore(typo): fix typo errors
+    docs(samples): update the documentation with the new samples.
+    docs(Installation): update installation section
+    docs(MacOSXInstall): add missing dependency requirement
+    
+    To compile the dependencies, we need to install libusb and VLC.
+    feat(pch): added cmake minimum requirement.
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated installation documentations.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated release version.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated releases version.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated OSX installation documentation.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed indentation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed rst mistakes
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated OSX installation
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(Installation): clarify additional repositories location
+    
+    Some build errors were also fixed.
+    docs(installation): replace PROJECT_TO_* by PROJECTS_TO_*
+    
+    There was just a missing 's' in those two CMake variables.
+    docs(Installation): fix recommended branch/tag
+    Fixed titles hierarchy in AndroidInstall.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(Installation): clarify additional repositories location
+    
+    Some build errors were also fixed.
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    docs(installation): update deps ENABLE_* options
+    docs(installation): replace PROJECT_TO_* by PROJECTS_TO_*
+    
+    There was just a missing 's' in those two CMake variables.
+    docs(Installation): update installation section
+    docs(installation): update docs
+    feat(windows): Warn to launch at least one time Visual Studio
+    fix(installation): fix cmake options
+    fix(installation): change fw4spwl-ar to  fw4spl-ar
+    fix(installation): Add of the merge request recommendations
+    docs(Installation/sr/*): refactor all installation docs
+    docs(Installation): fix recommended branch/tag
+    docs(WindowsInstall): Add example path to samples
+    docs(WindowsInstall): update windows installation procedure.
+    
+    - change images
+    - modify fw4spl and visual studio versions
+    - add doc to generate installer
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed typos.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated installation documentations.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed documentation error (encoding, title, ...).
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated Doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated Doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed link in doc WindowsInstall
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(Installation): clarify additional repositories location
+    
+    Some build errors were also fixed.
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    docs(installation): update deps ENABLE_* options
+    docs(installation): update docs
+    fix(installation): fix cmake options
+    fix(installation): change fw4spwl-ar to  fw4spl-ar
+    fix(installation): Add of the merge request recommendations
+    docs(Installation/sr/*): refactor all installation docs
+    docs(Installation): fix recommended branch/tag
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(Installation): clarify additional repositories location
+    
+    Some build errors were also fixed.
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    docs(installation): replace PROJECT_TO_* by PROJECTS_TO_*
+    
+    There was just a missing 's' in those two CMake variables.
+    docs(installation): update docs
+    fix(installation): change tag's name
+    fix(installation): Add of the merge request recommendations
+    docs(Installation/sr/*): refactor all installation docs
+    docs(Installation): fix recommended branch/tag
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(Installation): remove ADDITIONAL_* options and clean a bit
+    docs(Installation): update installation section
+    docs(installation): update docs
+    feat(Linux): add basic libraries as requirement.
+    
+    Basic libraries are no longer compiled on Linux with fw4spl-deps.
+    docs(Linux): vlc dependency
+    
+    - move vlc dependencies to its own paragraph as they are related to
+      fw4spl-ext-deps
+    fix(Linux): Add missing dependencies
+    
+    - Add missing dependencies for Linux
+    - Add link to docker repository for reference commands to install the
+      dependencies
+    feat(pch): added cmake minimum requirement.
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added instruction for building qt with openssl support on linux.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added first version of Android install guide, translated and adapted from our xwiki guide.
+    Shared some documentations parts between MaxOSX and Linux thanks to include directive.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated installation documentations.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Fixed documentation error (encoding, title, ...).
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated release version.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed typo in Linux Installation chapter
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated releases version.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated Linux installation doc, also cropped screenshots
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed mistakes in linux install
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see # 3188: Moodified installation part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added installation doc.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed documentation error (encoding, title, ...).
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Removed object messages and updated signals/slots.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Contributors Section
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(bundleCreation): update Bundle Creation documentation
+    
+    fix few warnings in cmake-style doc
+    docs(FAQ): first step of bundle creation doc
+    docs(...): fix typo
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(FAQ): merge CMake doc with FAQ
+    fix(HowTo-ServiceCreation): remove setObjectId() no longer necessary
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQ): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(bundleCreation): update Bundle Creation documentation
+    
+    fix few warnings in cmake-style doc
+    docs(FAQ): first step of bundle creation doc
+    docs(FAQ): first step of service creation documentation.
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQ): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(typo): fix few mistakes
+    chore(typo): fix typo errors
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(bundleCreation): update Bundle Creation documentation
+    
+    fix few warnings in cmake-style doc
+    docs(FAQ): first step of bundle creation doc
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    chore(typo): fix a few mistakes
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQ): fix typos, rephrased some stuff
+    docs(typo): fix few mistakes
+    docs(applicationCreation): simplify the profile documentation
+    fix(applicationCreationn): fix spelling errors.
+    chore(typo): fix typo errors
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQ): fix typos, rephrased some stuff
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    chore(typo): fix typo errors
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(FAQ): first step of bundle creation doc
+    docs(FAQ): merge CMake doc with FAQ
+    docs(...): fix typo
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added a section on CMake with fw4spl
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Removed ":" in titles and replace "=" by "*" for doc. blocks
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(bundleCreation): update Bundle Creation documentation
+    
+    fix few warnings in cmake-style doc
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(typo,warning): fix typo mistakes and remove some warning on build
+    docs(FAQ): first step of service creation documentation.
+    Fixed services attributes in coding style documentation.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Modified doxygen guidelines.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated coding style for doxygen :
+    - xml documentation with @code{.xml}
+    - signal/slot documentation
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    see #3188: Removed ":" in titles and replace "=" by "*" for doc. blocks
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    docs(pragmaRule): update the protection section to ues 'pragma once'
+    docs(constantRule): remove naming rule for non-static constant.
+    feat(CodingStyle): specify the location of the const keyword
+    see #3188: Removed ":" in titles and replace "=" by "*" for doc. blocks
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added title name of each part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added coding style part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Removed ":" in titles and replace "=" by "*" for doc. blocks
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    see #3188: Split coding style in different .rst to create different html pages
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed typos.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed missing template in getInput() examples.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed typo.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Used (un)registerOutput instead of
+    ::fwServices::OSR::(un)registerService.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] updated config launchers.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed bad function signature.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] doxygen, service types and how to choose accessors.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed typos.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Added ${GENERIC_UID} topics.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] added key groups.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Switched back to uid.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    [appXml2] Fixed typo.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added migration guide to appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Small fixes in appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Typos in appXml2.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added appXml2 documentation.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(FAQ): fix typos, rephrased some stuff
+    docs(SAD): update SAD documentation
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    docs(samples): update the documentation with the new samples.
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated documentation for AppConfig (added detailed example)
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added sesh@ path documentation in FAQ.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    see #3188: Fixed warnings
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Typos fixes.
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed typo again
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Fixed mistakes and typo
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    Added FAQ part
+    
+    --HG--
+    branch : fw4spl_0.10.1
+    refactor(FAQ): move "How to..." questions to a dedicated section
+    docs(FAQtuto): improve documentation
+    
+    - add doc for application
+    - add doc for tuto02Ctrl (app without XML)
+    docs(FAQ): merge CMake doc with FAQ
+    docs(FAQ): improve documentation for the FAQ
+    
+    - add troubleshooting section
+    - add structure for bundle/service creation
+    - update Tuto01Basic documentation
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated ARCalibration screenshots.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Updated ARCalibration screenshots.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Fixed many errors, typos, and deadlinks.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(fw4spl-ar): fix typos
+    docs(samples): update the documentation with the new samples.
+    docs(installation): update docs
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(samples): update the documentation with the new samples.
+    docs(installation): update docs
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    docs(samples): update the documentation with the new samples.
+    docs(installation): update docs
+    Updated for AppConfig2.
+    Fixed lots of typos and formatting.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Updated introduction doc (removed old tutorials)
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    docs(installation): update docs
+    Updated repositories.
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added Introduction section: show repositories features and applications.
+    
+    --HG--
+    branch : fw4spl_0.10.2
+    feat(templates): add issue & merge request templates
+    feat(templates): add issue & merge request templates
+    feat(templates): add issue & merge request templates
+    Fixed crash due to 'NoneType' of nodes.definition_list_item().line
+    
+    --HG--
+    branch : fw4spl_0.11.0
+    Added sphinx (ReadTheDocs compatible) configuration files, extensions and index.rst
+    
+    --HG--
+    branch : fw4spl_0.10.1

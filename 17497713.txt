@@ -1,0 +1,532 @@
+﻿    sdl
+    2D ou presque
+    ncurse nearly rdy
+    3eme librairie ok
+    modification du mov
+    un peu de menage
+    un peu de menage
+    ncurse nearly rdy
+    3eme librairie ok
+    collision a refaire
+    ajout de la gestion du temps avec plus et moins
+    bug de la pause ok
+    un peu de menage
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    modification du mov
+    un peu de menage
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    collision a refaire
+    ajout de la gestion du temps avec plus et moins
+    bug de la pause ok
+    un peu de menage
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    un peu de menage
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    un peu de menage
+    ncurse nearly rdy
+    first push
+    un peu de menage
+    first push
+    ajout de la gestion du temps avec plus et moins
+    un peu de menage
+    2D ou presque
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    un peu de menage
+    first push
+    un peu de menage
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    ncurse presque ok
+    ncurse nearly rdy
+    first push
+    first push
+    first push
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    3eme librairie ok
+    un peu de menage
+    2D ou presque
+    ncurse presque ok
+    first push
+    3eme librairie ok
+    un peu de menage
+    2D ou presque
+    ncurse presque ok
+    first push
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    un peu de menage
+    2D ou presque
+    ajout de la gestion du temps avec plus et moins
+    un peu de menage
+    2D ou presque
+    ncurse presque ok
+    ncurse nearly rdy
+    ajout de la gestion du temps avec plus et moins
+    un peu de menage
+    2D ou presque
+    ncurse presque ok
+    ncurse nearly rdy

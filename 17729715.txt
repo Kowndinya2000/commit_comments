@@ -1,0 +1,882 @@
+﻿    Create README.md
+    Fixed checkin messages not showing for releases
+    Switched back to Ant as we need JarJar support
+    Switched to using jcompilo
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Embedded JParsec
+    Added support to convert Map to Model
+    Cleaned up Grammar
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Removed unneeded lib folder
+    Initial import - empty build
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Disabled indentation by default
+    Speed up multi method support
+    Added optionally being able to add a value to a model
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename. Added Url based loader
+    Rename
+    Fixed bug where you can't use a parent named function
+    Added initial StringFunclate implementation
+    Breaking change: order of renderer registration has been reverse so please move escaping renderers to the top during setup
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    More clean up
+    Started moving functionality into funclates
+    adding ? super T to Funclates.add
+    Trying to added generics back one step at a time
+    removing super from renderer's generic signature
+    Support Callable1<T,String> or Renderer<T> in all places
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Made StringFunclates extend BaseFunclates
+    Added basic StringFunclates
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Added helper functions to Renderer interface
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Switched to using Renderer interface for better readability
+    Added optionally being able to add a value to a model
+    Cleaned up PersistentModel to not reverse reverse
+    PersistentModel: Changed other getter methods to reverse Lists before returning them as getValues does.
+    Updated TL to 1130
+    Fixed ordering bug in adding sequences to persistent model
+    Fixing generics in model constructors to take Pair<String, ? extends Object> instead of Pair<String, Object>. Avoids generics hassle when passing in Pair<String,String>, for example
+    merged in Phill's function changes
+    Breaking Change: renamed ImmutableModel to PersistentModel
+    Updated TL:916
+    Added merge instance method
+    Allowed mixing of model types
+    Added Model.getOption and predicate 'in'
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Added toImmutableModel and toMutableModel for a migration path
+    Minor cleanup
+    Made internal list immutable
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    changed the map implementation backing Model to a LinkedHashMap
+    Stopped using LazyException constructor
+    Switched to using LazyRecords
+    Added keyword support
+    Model: added set support
+    Adding copy and remove methods on models - making remove public
+    Adding copy and remove methods on models
+    Adding a list to a list merges the lists
+    fixing getValues returning a list with a null value (instead of an empty list) when no values exist for a given key
+    Added value callable to model
+    Added redundant type information to try and fix build
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Added convenience callable asMap
+    Model: Correctly converts multivalue nested models
+    Clean up
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Switched to using AbstractMap for ModelAdapter
+    Minor clean up
+    Replaced record with model in template
+    Added a basic model
+    merged in Phill's function changes
+    Updated TL:916
+    Added merge instance method
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Models can be merged together
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added support for built in encoding when renderering attributes in StringTemplate
+    2 argument functions
+    Implemented test for quoted arguments
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Updated libs
+    Rename. Added Url based loader
+    Added initial StringFunclate implementation
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Stopped using LazyException constructor
+    Rename. Added Url based loader
+    PersistentModule: Avoid reversing a PersistentList (already reversed).
+    Updated TL to 1130
+    Fixed bug in persistent model with lists of values. And fixed bug in mutable model for nested models.
+    Added a new method for flat merging suitable for properties
+    Initial awful cut of properties to model
+    Fixing generics in model constructors to take Pair<String, ? extends Object> instead of Pair<String, Object>. Avoids generics hassle when passing in Pair<String,String>, for example
+    merged in Phill's function changes
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Made internal list immutable
+    Moved all tests to ModelContract. Created ModelFactory.
+    Added lovely toString() support to template values
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename. Added Url based loader
+    Rename
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Added functions for adding to CompositeFunclate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename. Added Url based loader
+    Rename
+    Fixed bug where you can't use a parent named function
+    Added initial StringFunclate implementation
+    Breaking change: order of renderer registration has been reverse so please move escaping renderers to the top during setup
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    More clean up
+    Started moving functionality into funclates
+    adding ? super T to Funclates.add
+    Trying to added generics back one step at a time
+    removing super from renderer's generic signature
+    Support Callable1<T,String> or Renderer<T> in all places
+    Model: Added better generics support when getting values
+    Rename and enabled model support in StringTemplateFunclates
+    Added support to convert Map to Model
+    Added template call
+    Switched to using Renderer interface for better readability
+    Made StringFunclates extend BaseFunclates
+    Added basic jparsec grammar
+    Added basic StringFunclates
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    Fixed calling superGroup renderers
+    Updated TL version
+    adding ? super T to Funclates.add
+    Trying to added generics back one step at a time
+    removing super from renderer's generic signature
+    Support Callable1<T,String> or Renderer<T> in all places
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Added optionally being able to add a value to a model
+    Updated TL to 1130
+    Fixing generics in model constructors to take Pair<String, ? extends Object> instead of Pair<String, Object>. Avoids generics hassle when passing in Pair<String,String>, for example
+    Updated TL:916
+    Added merge instance method
+    Allowed mixing of model types
+    Added Model.getOption and predicate 'in'
+    Changed empty list in MutableModel from immutable to mutable list
+    added support for sequence & immutablelist being added to Model
+    Added toImmutableModel and toMutableModel for a migration path
+    Small cleanup
+    Minor cleanup
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    changed the map implementation backing Model to a LinkedHashMap
+    Stopped using LazyException constructor
+    Switched to using LazyRecords
+    Added keyword support
+    Model: added set support
+    Adding copy and remove methods on models - making remove public
+    Adding copy and remove methods on models
+    Adding a list to a list merges the lists
+    fixing getValues returning a list with a null value (instead of an empty list) when no values exist for a given key
+    Added value callable to model
+    Added redundant type information to try and fix build
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Added convenience callable asMap
+    Model: Correctly converts multivalue nested models
+    Clean up
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Switched to using AbstractMap for ModelAdapter
+    Minor clean up
+    Replaced record with model in template
+    Added a basic model
+    Added functional accessor for parse()
+    Added optionally being able to add a value to a model
+    Updated TL to 1130
+    Fixed bug in persistent model with lists of values. And fixed bug in mutable model for nested models.
+    Tidied up mergePairs method
+    Merged models can be compared with .equals()
+    Added a new method for flat merging suitable for properties
+    Initial awful cut of properties to model
+    Fixing generics in model constructors to take Pair<String, ? extends Object> instead of Pair<String, Object>. Avoids generics hassle when passing in Pair<String,String>, for example
+    merged in Phill's function changes
+    Breaking Change: renamed ImmutableModel to PersistentModel
+    Updated TL:916
+    Added merge instance method
+    Allowed mixing of model types
+    Added Model.getOption and predicate 'in'
+    added support for sequence & immutablelist being added to Model
+    Added toImmutableModel and toMutableModel for a migration path
+    Small cleanup
+    Minor cleanup
+    Made internal list immutable
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    changed the map implementation backing Model to a LinkedHashMap
+    Stopped using LazyException constructor
+    Switched to using LazyRecords
+    Added keyword support
+    Model: added set support
+    Adding copy and remove methods on models - making remove public
+    Adding copy and remove methods on models
+    Adding a list to a list merges the lists
+    fixing getValues returning a list with a null value (instead of an empty list) when no values exist for a given key
+    Added value callable to model
+    Added redundant type information to try and fix build
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Added convenience callable asMap
+    Model: Correctly converts multivalue nested models
+    Clean up
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Switched to using AbstractMap for ModelAdapter
+    Minor clean up
+    Replaced record with model in template
+    Added a basic model
+    More cleanup around Strings
+    Moved String related behaviour into one place
+    Switched Json Generation to always use streaming internally
+    Added nice API support to parse Json to Map, List or Object
+    Removed Model specific functionality from StreamingJson
+    Moved String related behaviour into one place
+    Switched Json Generation to always use streaming internally
+    Cleaned up PersistentModel to not reverse reverse
+    Added Streaming Json Writing
+    Updated JCompilo and cleaned up Json support
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    added toJson & parse functions to Json
+    ImmutableModel
+    Added support for null values in Json.toJson
+    fixed boolean support in Json parser
+    Fixed 'other' datatype bug where they were not being quoted
+    Updated TL version
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    Added support for escaping quoted strings in Json
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Json Rendering: added support for iterable
+    Added Json parsing using JParsec
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Minor clean up
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Speed up multi method support
+    Added JSON 3, ECMAScript 5.1 ISO Date format
+    Removed Model specific functionality from StreamingJson
+    Fixed bug when a map is incorrectly serialised as a array
+    Switched to using multimethod support
+    Moved Appendable stuff to TL
+    Minor clean up
+    Switched Json Generation to always use streaming internally
+    Cleaned up PersistentModel to not reverse reverse
+    Added iterable streaming
+    Added Streaming Json Writing
+    Moved String related behaviour into one place
+    Updated TL:916
+    Fixed formfield not being escaped
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    Started adding if support
+    Updated libs
+    Performance improvements to JSON Grammar
+    Added support for escaping quoted strings in Json
+    Switched to lazyparsec
+    Model: Added better generics support when getting values
+    Minor cleanup
+    Added support to convert Map to Model
+    Json: ignores whitespace around values
+    JsonParser: Added Boolean, Null, Number and better String support
+    Cleaned up Grammar
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Added Json parsing using JParsec
+    Speed up multi method support
+    Added lovely toString() support to template values
+    Fixed quoted strings being parsed as named parameters
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    More clean up
+    Model: Added better generics support when getting values
+    Added template call
+    Added lovely toString() support to template values
+    Added support for single quotes in funclate literals
+    Support calling a template as an argument in another template
+    Fixed quoted strings being parsed as named parameters
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Updated libs
+    Added initial StringFunclate implementation
+    Switched to lazyparsec
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Added template call
+    Made Grammar use Renderer interface as well
+    Added basic jparsec grammar
+    Added lovely toString() support to template values
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Made Grammar use Renderer interface as well
+    Added basic jparsec grammar
+    Added lovely toString() support to template values
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Made Grammar use Renderer interface as well
+    Added basic jparsec grammar
+    Speed up multi method support
+    Added lovely toString() support to template values
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated TL version
+    Updated libs
+    Added initial StringFunclate implementation
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Made Grammar use Renderer interface as well
+    Switched to using Renderer interface for better readability
+    Added basic jparsec grammar
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Rename. Added Url based loader
+    Fixed bug where you can't use a parent named function
+    Added initial StringFunclate implementation
+    Breaking change: order of renderer registration has been reverse so please move escaping renderers to the top during setup
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    More clean up
+    Started moving functionality into funclates
+    Added ability to call named renderers as a normal template invoication
+    Rename and enabled model support in StringTemplateFunclates
+    Added support to convert Map to Model
+    Made StringFunclates extend BaseFunclates
+    Added basic StringFunclates
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    Added ability to call named renderers as a normal template invoication
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Fixed jar template loading to work with sub directories
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    normalizing format name
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Added support for built in encoding when renderering attributes in StringTemplate
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Disabled indentation by default
+    Updated libs
+    Chain StringTemplateGroup parents
+    Rename. Added Url based loader
+    Added initial StringFunclate implementation
+    Breaking change: order of renderer registration has been reverse so please move escaping renderers to the top during setup
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    Added ability to call named renderers as a normal template invoication
+    normalizing format name
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Fixed calling superGroup renderers
+    adding ? super T to Funclates.add
+    More experiments with generics
+    Support Callable1<T,String> or Renderer<T> in all places
+    EnhancedStringTemplateGroup: Supports base url resolving by class
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Made StringFunclates extend BaseFunclates
+    Fixed jar template loading to work with sub directories
+    Clean up
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got nested models working
+    Seperated EnhancedStringTemplateGroup functionality
+    Verified annotation support
+    Fixed url issue when in a jar
+    Got a simple renderer working with a predicate
+    Added lovely toString() support to template values
+    Added overload to parallel write to template
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Disabled indentation by default
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename. Added Url based loader
+    Added lovely toString() support to template values
+    2 argument functions
+    Added functions for adding to CompositeFunclate
+    Implemented test for quoted arguments
+    Fixed quoted strings being parsed as named parameters
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    ImmutableModel
+    Updated libs
+    Rename. Added Url based loader
+    Added initial StringFunclate implementation
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Minor cleanup
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    Fixed Java 6 support
+    Added optionally being able to add a value to a model
+    PersistentModule: Avoid reversing a PersistentList (already reversed).
+    PersistentModel: Changed other getter methods to reverse Lists before returning them as getValues does.
+    Fixed ordering bug in adding sequences to persistent model
+    Fixed bug in persistent model with lists of values. And fixed bug in mutable model for nested models.
+    Tidy up tests
+    Merged models can be compared with .equals()
+    Added a new method for flat merging suitable for properties
+    Initial awful cut of properties to model
+    Updated TL:916
+    Added Model.getOption and predicate 'in'
+    Changed empty list in MutableModel from immutable to mutable list
+    added support for sequence & immutablelist being added to Model
+    Minor cleanup
+    Made internal list immutable
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Rename. Added Url based loader
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Rename. Added Url based loader
+    Rename
+    Added initial StringFunclate implementation
+    More clean up
+    Started moving functionality into funclates
+    Support Callable1<T,String> or Renderer<T> in all places
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Added basic jparsec grammar
+    Added basic StringFunclates
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Merged models can be compared with .equals()
+    Added a new method for flat merging suitable for properties
+    Breaking Change: renamed ImmutableModel to PersistentModel
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    Breaking Change: renamed ImmutableModel to PersistentModel
+    Updated TL:916
+    Allowed mixing of model types
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Adding a list to a list merges the lists
+    Models can be merged together
+    Added nice API support to parse Json to Map, List or Object
+    Added JSON 3, ECMAScript 5.1 ISO Date format
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    ImmutableModel
+    Added support for null values in Json.toJson
+    fixed boolean support in Json parser
+    Fixed 'other' datatype bug where they were not being quoted
+    Upgrading lazyparsec so JSON containing negative numbers can be parsed
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    Added support for escaping quoted strings in Json
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Added Json parsing using JParsec
+    Changed Json to use double quotes as per the spec#
+    Added simple JSON renderer
+    Removed Model specific functionality from StreamingJson
+    Fixed bug when a map is incorrectly serialised as a array
+    Fixed flaky Java 6 test
+    Switched Json Generation to always use streaming internally
+    Cleaned up PersistentModel to not reverse reverse
+    Added iterable streaming
+    Added Streaming Json Writing
+    Updated TL:916
+    Fixed formfield not being escaped
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    Upgrading lazyparsec so JSON containing negative numbers can be parsed
+    Updated libs
+    Added support for escaping quoted strings in Json
+    Model: Added better generics support when getting values
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Made StringFunclates extend BaseFunclates
+    Json: Added tests to prove it handles empty arrays and objects
+    Json: ignores whitespace around values
+    JsonParser: Added Boolean, Null, Number and better String support
+    Cleaned up Grammar
+    Added Json parsing using JParsec
+    Added lovely toString() support to template values
+    Added lovely toString() support to template values
+    Added support for single quotes in funclate literals
+    Support calling a template as an argument in another template
+    Fixed quoted strings being parsed as named parameters
+    Refactoring of Grammar, made attributes and text values work correctly
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Updated libs
+    Rename. Added Url based loader
+    Added initial StringFunclate implementation
+    More clean up
+    Started moving functionality into funclates
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Added template call
+    Minor clean up
+    Made Grammar use Renderer interface as well
+    Added basic jparsec grammar
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Upgrading TL version
+    Updated TL
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using Renderer interface for better readability
+    Fixed jar template loading to work with sub directories
+    Cleaned up XmlModelRenderer
+    Added XmlModelRenderer
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added support for built in encoding when renderering attributes in StringTemplate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Chain StringTemplateGroup parents
+    Breaking change: order of renderer registration has been reverse so please move escaping renderers to the top during setup
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    Added ability to call named renderers as a normal template invoication
+    normalizing format name
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Fixed calling superGroup renderers
+    Added support for built in encoding when renderering attributes in StringTemplate
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Fixed jar template loading to work with sub directories
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got nested models working
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Fixed calling superGroup renderers
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added initial StringFunclate implementation
+    Moved logic out of EnhancedStringTemplateGroup to BaseFunclates
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Added support for built in encoding when renderering attributes in StringTemplate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Breaking Change: Changed 'format' support to use seperate Renderers/Callables
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    ImmutableModel
+    Updated libs
+    Added initial StringFunclate implementation
+    More clean up
+    Rename and enabled model support in StringTemplateFunclates
+    Added support to convert Map to Model
+    Added basic StringFunclates
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Added ability to call named renderers as a normal template invoication
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Chain StringTemplateGroup parents
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Chain StringTemplateGroup parents
+    Updated TL and LP
+    Speed up multi method support
+    Moved Appendable stuff to TL
+    Switched Json Generation to always use streaming internally
+    Updated TL to 1130
+    Added lovely toString() support to template values
+    Added overload to parallel write to template
+    Updated TL:916
+    Updated TL:913 - Blocks
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Moved all tests to ModelContract. Created ModelFactory.
+    ImmutableModel
+    Updated TL version
+    Updated TL
+    Updated libs
+    Stopped using LazyException constructor
+    Switched to using LazyRecords
+    Stu - Upgrade to latest TL
+    Updated TL version
+    Updated TL version
+    Switched to lazyparsec
+    Upgrading TL version
+    Updated TL
+    Model: Added better generics support when getting values
+    Minor cleanup
+    Added support for Model serialisation (Json) and back
+    Added support to convert Map to Model
+    Cleaned up Grammar
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Added XmlModelRenderer
+    Added basic jparsec grammar
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Minor clean up
+    Verified annotation support
+    Got a simple renderer working with a predicate
+    Initial import - empty build
+    Removed source duplicates from jar
+    Fixed JarJar integration
+    Switched back to Ant as we need JarJar support
+    Stopped embedding the lazyparsec sources into the jar
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    Updated libs
+    Switched to lazyparsec
+    Target 1.6
+    Model: Added better generics support when getting values
+    Embedded JParsec
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Fixed url issue when in a jar
+    Initial import - empty build
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Cleaned up Grammar
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Initial import - empty build
+    Updated TL and LP
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Upgrading lazyparsec so JSON containing negative numbers can be parsed
+    Updated libs
+    Switched to lazyparsec
+    Model: Added better generics support when getting values
+    Embedded JParsec
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Initial import - empty build
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Disabled indentation by default
+    Updated libs
+    Model: Added better generics support when getting values
+    Embedded JParsec
+    Added support to convert Map to Model
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Initial import - empty build
+    Fixed flaky Java 6 test
+    Added optionally being able to add a value to a model
+    Updated JCompilo and cleaned up Json support
+    PersistentModel: Changed other getter methods to reverse Lists before returning them as getValues does.
+    Initial awful cut of properties to model
+    Updated TL:916
+    Added Model.getOption and predicate 'in'
+    added support for sequence & immutablelist being added to Model
+    Fixed encoding and decoding to support correct unicode escaping
+    added toJson & parse functions to Json
+    Started adding if support
+    Fixed 'other' datatype bug where they were not being quoted
+    Upgrading lazyparsec so JSON containing negative numbers can be parsed
+    Updated libs
+    Stu - Upgrade to latest TL
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    added toJson & parse functions to Json
+    fixed escaping of backslash characters in quoted strings
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated JCompilo and cleaned up Json support
+    Added support for single quotes in funclate literals
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Fixed url issue when in a jar
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Started adding if support
+    Added toImmutableModel and toMutableModel for a migration path
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Fixed flaky Java 6 test
+    Updated JCompilo and cleaned up Json support
+    Updated TL:916
+    Updated TL:913 - Blocks
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Speed up multi method support
+    Updated JCompilo and cleaned up Json support
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Updated libs
+    Model: Added better generics support when getting values
+    Added support to convert Map to Model
+    Switched to using JParsec from codehaus as the maven version is dodgy
+    Started over, kept useful StringTemplate enhancements and created a basic version
+    Got a simple renderer working with a predicate
+    Updated TL:916
+    added support for sequence & immutablelist being added to Model
+    Disabled indentation by default
+    Updated TL and LP

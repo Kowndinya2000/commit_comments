@@ -1,0 +1,3497 @@
+﻿    Fix URLs to replace http with https
+    Create CODE_OF_CONDUCT.md
+    update changelog
+    Update CHANGELOG.md
+    Add Changelog
+    Prep for v3.4.0 release
+    Bump version to 3.3.2
+    Update changelog for 3.3.1
+    Update changelog for 3.3.0
+    v3.2.0
+    v3.1.1
+    v3.1.0
+    v3.0.0
+    CHANGELOG: Mention that 2.2.0 is backwards incompatible (#471)
+    
+    Refs #469.
+    v2.2.0
+    v2.1.0
+    v2.0.0
+    v1.7.0
+    v1.6.0
+    144867444998371 dual cookie redis split persistence adapter (#420)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    
+    * v.1.5.0
+    
+    * Add Dual Redis(logged-in)/cookie(logged-out) persistence adapter
+    v1.4.5
+    v1.4.4
+    v1.4.3
+    v1.4.2
+    v1.4.1
+    v1.4.0
+    v1.3.2
+    v1.3.1
+    Add missing colons to changelog
+    v1.3.0
+    v1.2.1
+    Update documentation regarding Split::Experiment.
+    v1.2.0
+    v1.1.0
+    Rename CHANGELOG.mdown to CHANGELOG.md
+    Added changes in 1.0.0
+    
+    Fixes #282
+    v0.8.0
+    Version 0.7.3
+    Added in previous release notes to changelog
+    Updated changelog
+    Version 0.6.6
+    v0.6.5
+    v0.6.4
+    Updated changelog
+    Version 0.6.2
+    Added #165 bugfix to changelog
+    Updated changelog
+    Update CHANGELOG.mdown
+    Update CHANGELOG.mdown
+    Updated dates in changelog
+    Added @dimko to the changelog
+    Update CHANGELOG.mdown
+    More changelog entries
+    start changelog updates for next release
+    Merged 0.4.7 and 0.5.0 changelog notes
+    
+    Turns out 0.4.7 was never actually released!
+    Version 0.5.0
+    amended README
+    added notes for 0.4.7
+    Version 0.4.6
+    Version 0.4.5
+    Version 0.4.4
+    Version 0.4.3
+    Version 0.4.2
+    Version 0.4.1
+    Version 0.4.0
+    Version 0.3.3
+    Version 0.3.2
+    Version 0.3.1
+    Version 0.3.0
+    Version 0.2.4
+    Version 0.2.3
+    Updated changelog
+    Version 0.2.2
+    Bump to 0.2.1
+    Added Changelog
+    Repository Audit by Maintainer.io (#484)
+    
+    * Overhauled CONTRIBUTING, copied text from octobox
+    
+    * Update year
+    
+    * Standardized README
+    
+    * Update year
+    Add note about supported versions to README and CONTRIBUTING.md
+    Added note about contributing documentation
+    Added links to the new google group
+    Added Contributing file
+    
+    To show up when submitting issues on GitHub
+    Add description to what split stores in cookies
+    Update winner choose hook name
+    Add on_winner_choose hook
+    Update README.md
+    
+    This issue is related to https://github.com/splitrb/split/issues/185.
+    
+    I ran into the same problem when creating an experiment that used symbols in the experiment's metadata configuration. This caused `Split::Experiment#experiment_configuration_has_changed?` to always return `true`, which reset the experiment. 😭
+    
+    ```ruby
+    Split.configure do |config|
+      config.experiments = {
+        my_first_experiment: {
+          alternatives: ["a", "b"],
+          metadata: {
+            "a" => { text: "Hello" },
+            "b" => { text: "Hi" }
+          }
+        }
+      }
+    end
+    ```
+    
+    Maybe `split` should stringify metadata hash keys? I'm not convinced it should, but I do think this behavior should be noted in the README.
+    Fix URLs to replace http with https
+    Update Copyright in README.md
+    Tweak RSpec instructions (#540)
+    Improve README regarding rspec usage (#538)
+    Document the option `reset_manually` (#534)
+    
+    Introduced in #430
+    Ignore previewing requests (#531)
+    no message (#527)
+    Update copyright in README.md (#516)
+    Add CodeTriage badge to splitrb/split (#512)
+    
+    Adds a badge showing the number of people helping this repo on CodeTriage.
+    
+    [![Open Source Helpers](https://www.codetriage.com/splitrb/split/badges/users.svg)](https://www.codetriage.com/splitrb/split)
+    
+    ## What is CodeTriage?
+    
+    CodeTriage is an Open Source app that is designed to make contributing to Open Source projects easier. It works by sending subscribers a few open issues in their inbox. If subscribers get busy, there is an algorithm that backs off issue load so they do not get overwhelmed
+    
+    [Read more about the CodeTriage project](https://www.codetriage.com/what).
+    
+    ## Why am I getting this PR?
+    
+    Your project was picked by the human, @schneems. They selected it from the projects submitted to https://www.codetriage.com and hand edited the PR. How did your project get added to [CodeTriage](https://www.codetriage.com/what)? Roughly 8 months ago, [bschaeffer](https://github.com/bschaeffer) added this project to CodeTriage in order to start contributing.
+    
+    ## What does adding a badge accomplish?
+    
+    Adding a badge invites people to help contribute to your project. It also lets developers know that others are invested in the longterm success and maintainability of the project.
+    
+    You can see an example of a CodeTriage badge on these popular OSS READMEs:
+    
+    - [![](https://www.codetriage.com/rails/rails/badges/users.svg)](https://www.codetriage.com/rails/rails) https://github.com/rails/rails
+    - [![](https://www.codetriage.com/crystal-lang/crystal/badges/users.svg)](https://www.codetriage.com/crystal-lang/crystal) https://github.com/crystal-lang/crystal
+    
+    ## Have a question or comment?
+    
+    While I am a bot, this PR was manually reviewed and monitored by a human - @schneems. My job is writing commit messages and handling PR logistics.
+    
+    If you have any questions, you can reply back to this PR and they will be answered by @schneems. If you do not want a badge right now, no worries, close the PR, you will not hear from me again.
+    
+    Thanks for making your project Open Source! Any feedback is greatly appreciated.
+    split dashboard works with rails 3 or higher (#505)
+    Allow configuration of how often winning alternatives are recalculated (#501)
+    
+    * Rubocop: Update obsolete rule names
+    
+    I saw these warnings on Rubocop 0.50.0:
+    
+        Error: The `Style/MethodCallParentheses` cop has been renamed to `Style/MethodCallWithoutArgsParentheses`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+        The `Style/OpMethods` cop has been renamed and moved to `Naming/BinaryOperatorParameter`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+    
+    * Allow configuration of how often winning alternatives are recalculated
+    
+    If you're running A/B tests for a short period of time, the "Probability
+    of being Winner" numbers can be unhelpful or misleading.
+    Add 1.9.3 support back in (#499)
+    
+    * Add support back in for 1.9.3
+    
+    * Skip test the fails intermittenly
+    
+    * less specifc ruby version numbers
+    Document testing with RSpec (#495)
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Repository Audit by Maintainer.io (#484)
+    
+    * Overhauled CONTRIBUTING, copied text from octobox
+    
+    * Update year
+    
+    * Standardized README
+    
+    * Update year
+    Remove dead link, fixes #450
+    added block randomization algorithm and specs (#475)
+    
+    * added block randomization algorithm and specs
+    
+    * added BlockRandomization explanation to README
+    Avoid variable_size_secure_compare private method (#465)
+    Use codeclimate for test coverage (#455)
+    Add redis:// scheme name to README (#447)
+    
+    needs to be updated after
+    
+    https://github.com/splitrb/split/commit/327e02221e206b2f5f3efe9c635a9f6cbbd8db3c
+    Harden HTTP Basic snippet against timing attacks (#443)
+    Update Redis config docs (#442)
+    
+    * Update namespace documentation
+    
+    * Add documentation for REDIS_PROVIDER support
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Update README.md
+    Namespace override param (#398)
+    
+    Verified that both Rails and Sinatra parse [] in params to nested hashes this way.
+    Issue #405 Running concurrent experiments on same endpoint/view (#421)
+    
+    * Issue #405 use config.allow_multiple_experiments = 'control' for multiple experiments per user with at most 1-non-control
+    
+    * Update README.md
+    144867444998371 dual cookie redis split persistence adapter (#420)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    
+    * v.1.5.0
+    
+    * Add Dual Redis(logged-in)/cookie(logged-out) persistence adapter
+    Add `expire_seconds:` TTL option to RedisAdapter
+    Clarify test running instructions
+    Renaming finished() method to less generic ab_finished()
+    README: clarify multiple goals
+    
+    This confused us.
+    Clarify finished with first option being a hash
+    
+    We got this wrong.
+    add on_trial callback whenever a trial is started
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    added documentation for manual start after delete
+    add a on_before_experiment_delete and on_before_experiment_reset hook
+    Fix typo
+    Update README.md
+    
+    Remove redundant comma
+    Update README.md
+    
+    Remove redundant commas
+    Fix typo in README
+    Removed broken gemnasium badge
+    Updated copyright year
+    Add a link to split-cli
+    Fix typo in README
+    update readme
+    fix readme typo
+    allow cookie length configuration
+    readme typo
+    Fix README.md to match surrounding examples
+    README: Metadata example in ruby
+    
+    Metadata keys must be in JSON values (no symbols) otherwise #185 bug occurs.
+    Fixes experiment metadata doc
+    allow for custom redis_url different from ENV variable
+    Update Warden Authentication Example to include :delete.
+    
+    This is necessary in order to allow Delete Experiment from the Admin panel
+    modernize and symbols
+    simplify installation instructions
+     - if you are on ruby 1.8 chances are you are not adding new fancy gems
+     - same goes for rails 2.3
+     - rails does not need the require
+     - if you use bundler you most likely know howto add gems to it
+     - make bash commands copy pasteable by removing the $
+    Change Weighted alternatives example
+    
+    This fixes the example to properly setup a test where the "New" alternative is shown 10% of the times. I realize the example is less sexy, but this is how the `WeightedSample` algorithm works.
+    Fix travis badges
+    Fix image tag helper name
+    Updated links to new github org
+    Update documentation regarding Split::Experiment.
+    Update README.md
+    Update README.md
+    Fix mismatched method names in event hooks example
+    Added documentation for #293
+    Redis configuration using environment variables
+    update README with new syntax
+    Update copyright year
+    Link through to contributors list in readme
+    Rename readme
+    Update README.mdown
+    Add readme note about support for Ruby 1.8.x and Rails 2.3
+    Add note about supported versions to README and CONTRIBUTING.md
+    Remove readme comments on old version support
+    added required params to example
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Added link for Split::Counters extension to Readme
+    Fixed coveralls badge
+    SVG badges
+    Provide an option to generically disable Split.
+    Update README.mdown clarifying about multiple goals.
+    
+    Update README.mdown to clarify about multiple goals, giving a good example and bad example.
+    Adding Split::Cacheable
+    Add some documentation for issue #212
+    Updated README.md documentation.
+    Added links to some blogposts about split to readme
+    add include_rails_helper option
+    Adding posibility to start tests manually
+    Updated README to reflect RedisAdapter usage
+    Expand upon algorithms section in README
+    
+    Better explain how the Whiplash algorithm works and how to enable it
+    Add some documentation for experiment hooks.
+    updated readme concerning split-mongoid
+    Update readme with trial event hook documentation
+    Add info to README about securing dashboard with Devise/Warden
+    Updated codeclimate badge
+    Added coveralls.io support
+    Adding possibility to store overridden alternative
+    Adding missing namespace for "Outside of a web session" example
+    
+    Adding namespace `Split` to trial initalisation
+    Add Rails 2.3 initialization steps to the README.
+    add myself to list of contributors
+    finished method accept goals that are not passed as arrays
+    adding example screenshot to readme, closes #150
+    add some minor docs for filtering
+    only minor fixes
+    using strings as keys and fix one where a wrong key was used
+    add config.bots to README
+    typo errors in the example
+    tell where you should add the dashboard auth code
+    Fixed an erb example
+    Use GitHub flavored markdown everywhere in the readme
+    Added link to Split::Mongoid extension
+    Add YAML examples.
+    Added some more contributors to the readme
+    Added regex ip_address filter example
+    Update Readme to match e7a893c
+    update readme
+    Added note about contributing documentation
+    Updated copyright year
+    Newlines ftw
+    Added code climate badge
+    Added Gem Badge
+    more documentation.
+    documentation for new features.
+    Added links to the new google group
+    Document config file
+    Updates all code blocks in README to use GFM fence blocks with syntax highlighting. Adds persistence config to Confgiguration section. Adds Note to Persistence/Cookies section about dependency on ActionDispatch::Cookies or identical API
+    Updates README from master to include persistence documentation
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Added Contributing file
+    
+    To show up when submitting issues on GitHub
+    Added more contributors
+    Moved build badges to a more prominent place in Readme
+    
+    #51
+    added documentation for enabled flag
+    Added gymnasium dependency status image
+    Added link to railscasts video to readme
+    Tweaked wording of ruby 1.8 warning
+    Added travis build status
+    Added warning for ruby 1.8 users who pass a single hash of alterntives
+    
+    Because hashes in ruby 1.8 do not persist the order of keys when they
+    are created so the alternative cannot be reliably determined
+    Avoid users participating in multiple experiments at once
+    
+    This avoids skewing the experiments and producing invalid results.
+    
+    It can be disabled using the allow_multiple_experiments config flag.
+    Add README section for 'DB failover solution'
+    Updated for 2012
+    Updated README to reflect that alternatives must be strings. Corrected difference in experiment names.
+    Merged in weighted alternatives
+    Added Andrew Appleton to contributors list
+    
+    For his work redesigning the dashboard
+    Small read me tweaks
+    Added note about finished reset option
+    added note about rails 3 mount
+    Added link to the wiki from the readme
+    Linked up the license from the readme
+    Added Split::Analytics to extensions list
+    Added to readme
+    Added a note about split-export extension
+    Added development note in readme
+    Added a note about the version of redis supported
+    Removed resque reference
+    Added ignore_ip_addresses configuration option
+    Added a note about the SystemTimer gem on ruby 1.8 to the readme
+    Allow for easier overiding of the robot regex via a configuration object
+    Some small readme changes
+    Allow overriding of alternatives via a url parameter
+    Renamed the project to Split
+    Renamed Server to Dashboard
+    more usage docs
+    Contributor list
+    more rails and sinatra config instructions
+    Setup instructions for sinatra and rails
+    Password protecting Multivariate
+    Fleshed out readme
+    added spec for conversions
+    added basic readme
+    Fix URLs to replace http with https
+    Use codeclimate for test coverage (#455)
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Recreate rubocop configuration
+    update rubocop_todo.yml
+    Add frozen_string_literal to all files that were missing it
+    Update rubocop.yml config
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Use a real redis-server on CI
+    Bump minimum required redis version
+    Only suport ruby 2.5+
+    Replace usage of SimpleRandom with RubyStats
+    Update rake requirement from ~> 12 to ~> 13
+    
+    Updates the requirements on [rake](https://github.com/ruby/rake) to permit the latest version.
+    - [Release notes](https://github.com/ruby/rake/releases)
+    - [Changelog](https://github.com/ruby/rake/blob/master/History.rdoc)
+    - [Commits](https://github.com/ruby/rake/compare/v12.0.0...v13.0.1)
+    
+    Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+    Update rack-test requirement from ~> 0.6 to ~> 1.1
+    
+    Updates the requirements on [rack-test](https://github.com/rack-test/rack-test) to permit the latest version.
+    - [Release notes](https://github.com/rack-test/rack-test/releases)
+    - [Changelog](https://github.com/rack-test/rack-test/blob/master/History.md)
+    - [Commits](https://github.com/rack-test/rack-test/compare/v0.6.0...v1.1.0)
+    
+    Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+    Drop support for Rails 4.x series
+    Drop support for ruby 1.9.3
+    Add frozen_string_literal to all files that were missing it
+    Remove `rubyforge_project` from gemspec because rubyforge was EOL
+    Fix broken specs in developement environment (#557)
+    
+    * Fix broken specs in development environment
+    update bundler dev dependency
+    Upgrade fakeredis to 0.7.0 (#519)
+    Update dependencies
+    Add 1.9.3 support back in (#499)
+    
+    * Add support back in for 1.9.3
+    
+    * Skip test the fails intermittenly
+    
+    * less specifc ruby version numbers
+    CI: Change and test earliest supported Ruby version (1.9.2 -> 2.2.0) (#498)
+    
+    * gemspec: Change required Ruby version from 1.9.2 to 2.2.0
+    
+    There are some incompatibilities between Split's dependencies and
+    earlier versions of Ruby (see
+    https://github.com/splitrb/split/issues/494#issuecomment-325522476).
+    2.2.0 is a relatively old version of Ruby that can run Split with
+    minimal code changes.
+    
+    * Fix Ruby syntax incompatibility with version < 2.3
+    
+    `Hash#dig` and `&.` are available only in 2.3+, but Split is supposed to
+    be compatible with Ruby 2.2.2+.
+    
+    * CI: Add Rails 5.1 Gemfile to build matrix
+    Update dev depenencies
+    Add uris to metadata section in gemspec
+    Use codeclimate for test coverage (#455)
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Update fakeredis, fixes #428
+    Use fakeredis for testing (#412)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    Added minimum version requirement to simple-random
+    added a broad requirement range for pry in gemspec
+    Add pry gem
+    
+    This is helpful for debugging.
+    Updated rake
+    
+    Fixes #360
+    Upgrade development dependencies
+    Update split.gemspec
+    Relax bundler version slightly to make travis happy
+    Require a newer version of bundler
+    Updated links to new github org
+    Lock rspec to 3.1.x for now
+    Fix debugger gem for Travis CI
+    Add debugger gem
+    Drop 1.8 json gemspec check
+    Add required_ruby_version to gemspec
+    Looser bundler dependency
+    Looser rack-test dependency
+    Changed all .should calls to expects(thing).to for rspec 3
+    Added License to gemspec
+    Updated rspec to 2.14 and fixed some deprecations
+    Added coveralls.io support
+    Require a newer version of bundler for development
+    Slightly relaxed rack-test dev dependency
+    
+    For testing against rails 3.0.x
+    Updated json requirement to 1.7.7
+    Removed executables line from gemspec
+    
+    We don't have any executables to worry about
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    pluggable experiment algorithms. Add a bandit implementation.
+    Updated rspec dev dep to around 2.12.x
+    Adds JSON dependency for Ruby < 1.9
+    removed mock_redis
+    Removed guard dev dependency
+    
+    Haven't used it in months
+    mocked out redis
+    Updated guard-rpesc to 1.2
+    allow versions of redis >= 3
+    Updated dependency for redis-namespace to 1.1.0
+    Add rake as development dependency
+    sinatra version updated
+    Added guard-rspec as a development dependency with a Guardfile
+    Added bundler as a development dependency
+    Cleaner dependency code in gemspec
+    Added homepage to gemspec
+    Started to test the dashboard using Rack::Test
+    redis-namespace version bumped
+    Renamed the project to Split
+    whitespace
+    Newer gems please
+    added sinatra dependency
+    Improved redis configuration by copying from resque
+    Pseudo coding up the experiment class
+    Hello world!
+    Add default rspec configuration to display the slowest specs on the suite
+    Update Rails 6.0 version from beta
+    Add appraisal config to Rails 6 beta 3.
+    test rails 5.2, use released sinatra gem (#524)
+    Test on rails 5.1 as well
+    Use codeclimate for test coverage (#455)
+    Stop testing old versions of rails on travis
+    Update appraisals to use latest versions of rails
+    Test against rails 4.2 and ruby 2.2
+    Reduced the travis build matrix
+    More messing with appraisals
+    appraisals whitespace
+    Test against multiple versions of rails
+    
+    Managed using the Appraisal gem
+    
+    Testing rails 3.0.20, 3.1.12, 3.2.13 and 4.0.rc1
+    test rails 5.2, use released sinatra gem (#524)
+    Test on rails 5.1 as well
+    Use codeclimate for test coverage (#455)
+    Stop testing old versions of rails on travis
+    Update appraisals to use latest versions of rails
+    Test against rails 4.2 and ruby 2.2
+    Reduced the travis build matrix
+    More messing with appraisals
+    appraisals whitespace
+    Test against multiple versions of rails
+    
+    Managed using the Appraisal gem
+    
+    Testing rails 3.0.20, 3.1.12, 3.2.13 and 4.0.rc1
+    test rails 5.2, use released sinatra gem (#524)
+    Test on rails 5.1 as well
+    Fix warning in 5.0.gemfile
+    Run tests on rails 5 (#457)
+    Use codeclimate for test coverage (#455)
+    Stop testing old versions of rails on travis
+    Update appraisals to use latest versions of rails
+    Reduced the travis build matrix
+    More messing with appraisals
+    appraisals whitespace
+    Test against multiple versions of rails
+    
+    Managed using the Appraisal gem
+    
+    Testing rails 3.0.20, 3.1.12, 3.2.13 and 4.0.rc1
+    test rails 5.2, use released sinatra gem (#524)
+    Test on rails 5.1 as well
+    Use codeclimate for test coverage (#455)
+    Stop testing old versions of rails on travis
+    Update appraisals to use latest versions of rails
+    Test against rails 4.2 and ruby 2.2
+    Reduced the travis build matrix
+    More messing with appraisals
+    appraisals whitespace
+    Test against multiple versions of rails
+    
+    Managed using the Appraisal gem
+    
+    Testing rails 3.0.20, 3.1.12, 3.2.13 and 4.0.rc1
+    Create FUNDING.yml
+    Update issue templates
+    Enable frozen_string_literal magic comment
+    Fixed spec warnings
+    Changed all .should calls to expects(thing).to for rspec 3
+    Updated rspec to 2.14 and fixed some deprecations
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Change redis.exists to redis.exists? to avoid problems with redis 4.3
+    fixed a couple of spec warnings
+    Introduce GoalsCollection and refactor
+    
+    Towards a more object-oriented approach, i introduced the GoalsCollection
+    class and refactored the code so that the overall complexity of
+    Experiment#save is reduced.
+    Update trial to init with goals instead
+    ab_test must return metadata on error or if split is disabled
+    Fix #max_experiments_reached? when using allow_multiple_experiments=control
+    
+    When using allow_multiple_experiments=control Split only allows one
+    experiment with an alternative other than 'control'.
+    
+    Split::User#max_experiments_reached? checks for that looping through all
+    experiments. As Split::User#active_experiments drops the experiment
+    version we also need to do that here to be able to check properly.
+    
+    Fixes #612
+    Fix unused variable warnings on specs
+    When loading active_experiments, it should not look into user's 'finished' keys
+    Check if the experiment about to finish is active for the user
+    Fix code styles
+    Persist alternative weights
+    Avoid hitting up on redis for robots/excluded users.
+    Ignore previewing requests (#531)
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    Namespace override param (#398)
+    
+    Verified that both Rails and Sinatra parse [] in params to nested hashes this way.
+    Issue #405 Running concurrent experiments on same endpoint/view (#421)
+    
+    * Issue #405 use config.allow_multiple_experiments = 'control' for multiple experiments per user with at most 1-non-control
+    
+    * Update README.md
+    Renaming finished() method to less generic ab_finished()
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    Fix rspec warning
+    Fixed spec warnings
+    fix active experiments when experiment is on a later version
+    Return an empty hash as metadata when Split is disabled
+    Push metadata to ab_test block
+    Refactor experiment starting process from Helper to Trial
+    
+    This refactoring further decouples the view helper from the inner
+    workings and detials of starting an experiment. This completes the
+    work needed to allow for an experiment to be started by an arbitrary
+    class.
+    Remove unnecessary duplicate methods
+    Added tests
+    Changed all .should calls to expects(thing).to for rspec 3
+    Provide an option to generically disable Split.
+    Only allow known alternatives as query param overrides
+    Don't need a after block
+    Whitespace and wrapped long lines
+    Fixed spec warning
+    Simplify goals helper spec
+    Adding posibility to start tests manually
+    Only trigger completion callback with valid Trial
+    
+    Previously it was possible to trigger the #on_trial_complete even if the Trial
+    wasn't legally completed (eg #complete! was falsey). This can occur if the user
+    reaches a #finished call before they reach an #ab_test call.
+    Updated rspec to 2.14 and fixed some deprecations
+    Add hooks for Trial#choose! and Trial#complete!
+    
+    This adds two new attributes to Split.configuration,
+    on_trial_choose and on_trial_complete.
+    
+    Set these attributes to a method name available in the
+    same context as the ab_test method. These methods should
+    accept one argument, a Trial instance.
+    
+    For example:
+    
+        Split.configuration.on_trial_choose = :log_choice
+    
+        # application_controller.rb
+        def log_choice(trial)
+          logger.info "experiment=%s alternative=%s user=%s" %
+            [ trial.experiment.name, trial.alternative, current_user.id ]
+        end
+    Adding possibility to store overridden alternative
+    Ensure experiements are a Hash when configuring
+    Added spec for array as alternatives
+    finished method accept goals that are not passed as arrays
+    allow for a custom exclude logic
+    
+    this is just an example implementation for discussion, readme and docs are still missing.
+    More specs for participant counts
+    Move tests to the appropriate section
+    Failing test for extraneous experiment completions
+    Update and clean completions test
+    Written failing test for incorrectly raising the completion count
+    Allows ignoring of ip address ranges using regex.
+    Move logic to setter methods
+    
+    This helps reduce duplication of functionality.
+    Remove :alternative_names
+    
+    The distinction between this and :alternatives is no longer needed.
+    Small test tweaks
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    Pull config test out of pre-init block
+    
+    Same reason as 24c3e7afc5173ab66b3265eafec5d18ed7d7e801.
+    Pull metric tests out of context, do own test init
+    
+    This avoids problems with trying to change the configuration of a test
+    that has already been created.
+    Pull config file fallback out of nested methods
+    
+    It needs to happen earlier so that fallbacks to the control will succeed.
+    
+    This may not be the most sensible code organization.
+    Failing test for a regression with config files
+    rename variants to alternatives
+    fix some bugs
+    Implement multiple goals for an experiment
+    DRY spec
+    Rename "variants" to "alternatives"
+    Fail gracefully when config file is missing or bad
+    
+    This is better than raising obscure exceptions from the internals.
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Pass arguments as separate hashes
+    
+    I misunderstood how 3+ arguments should be passed as alternatives.
+    Bug in spec expectation
+    
+    `*alternatives` is always an array, even if one argument.
+    Clean up expectations in config specs
+    Fix bug I introduced when testing multiple times
+    Stop adding tests that user isn't participating to session #103
+    Moved all state resetting into rspec before block
+    
+    Including resetting configuration, closes #104
+    Whitespace
+    Added failing test for negative unfinished count #103
+    Update specs that were checking session
+    Handle a subtle case with the config
+    Support finishing by metric
+    Use a config file to define experiments
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    More issues for finished(:reset => false)
+    
+    When a user completes a test but reset is set to false, when they hit ab_test again they will get the control alternative. This is because doing_other_tests? was doing the same as issue #83 and counting the finished result as another experiment. This fixes that.
+    Stops clean_old_versions from removing finished experiments which have reset => false
+    added specs to cover parameters to ab_test method
+    do not increment the experiment's counter if user has already finished it
+    Issue #72 - fix reseting of experiment in session
+    
+    The issue was that versioned experiments had a different key than
+    non-versioned experiments.  The experiment name was equal to the
+    experiment key for non-versioned experiments.  Experiment#key
+    wraps this logic.  However, the Helper#finished method
+    was using the experiment_name parameter, instead of the Experiment#key
+    method.
+    Allow parameter overrides, even without Redis.
+    
+    With this option, applications can be tested to ensure that the options
+    render correctly, even without Redis installed and running on the
+    development machines.
+    Fix failing tests on Rubinius (issue #52)
+    changed name of enabled flag
+    create an option to disable split testing
+    Added warning for ruby 1.8 users who pass a single hash of alterntives
+    
+    Because hashes in ruby 1.8 do not persist the order of keys when they
+    are created so the alternative cannot be reliably determined
+    No need to run these tests 10 times
+    Avoid users participating in multiple experiments at once
+    
+    This avoids skewing the experiments and producing invalid results.
+    
+    It can be disabled using the allow_multiple_experiments config flag.
+    Clean up old versions of experiments from sessions
+    Fix bug: overriding alternatives doesn't work for weighted alternatives
+    Fix return value for ab_test ...
+    
+    in case of db failure when db_failover option isset and a block is used
+    in a rails view
+    Add redis failover solution
+    
+    Due to the fact that redis has no autom. failover mechanism, it is now
+    possible to switch on 'db_failover' config option, so that 'ab_test' and
+    'finished' will not crash. 'ab_test' always delivers alternative A (the
+    first one) in that case. It's also possible to set a 'db_failover_on_db_error'
+    handler (proc) in the config, for example to log these errors via
+    Rails.logger.
+    Gracefully handle finish for experiments that have not been started
+    Whitespace tweaks
+    Alternative.find and new are really the same thing
+    Merged in weighted alternatives
+    Cleaned up extra whitespace
+    Added option to finished to not reset the users session
+    first pass at versioning experiments for better resets
+    ab_test helper should accept a block
+    Added note about refactoring helper tests to use Rack::Test
+    Added ignore_ip_addresses configuration option
+    Ignore robots and given the control alternative
+    Fixed params overriding test
+    fixed syntax warning in spec file
+    Allow overriding of alternatives via a url parameter
+    Renamed the project to Split
+    Added button to dashboard to mark an alternative as a winner
+    adding support for declaring an alternative to be the "winner" so that it will always be returned
+    conversion rate is 0..1 as of 7672b5b373d18b5d43e88a65355d357a18dc5957
+    remove a user from an experiment upon completion
+    even random distribution of the experiments
+    improve Rails inclusion and use native sessions for frameworks
+    added spec for conversions
+    Improved redis configuration by copying from resque
+    random alternative is random
+    implemented finished helper method
+    ab_test helper method implemented
+    ab_test must return metadata on error or if split is disabled
+    Fix warning: ambiguous first argument; put parentheses or a space even after `/' operator
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    Refactor experiment starting process from Helper to Trial
+    
+    This refactoring further decouples the view helper from the inner
+    workings and detials of starting an experiment. This completes the
+    work needed to allow for an experiment to be started by an arbitrary
+    class.
+    Update more rspec old style .should calls
+    #256 avoiding call to params in EncapsulatedHelper
+    spec copy change
+    Update trial to init with goals instead
+    Introduce enable/disable experiment cohorting
+    Do not storage alternative in cookie if experiment has a winner (#539)
+    fix user participating alternative not found (#536)
+    increment participation if store override is true and no experiment key exists
+    only choose override if it exists as valid alternative
+    add on_trial callback whenever a trial is started
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    Revert the Trial#complete! public API to support noargs.
+    Also support passing Goals and a single goal
+    Added metadata to experiment.
+    A scoped partial of the metadata is available for the Trial
+    Use the control if split is globally disabled
+    Consolidate record!, choose, and choose! methods into one
+    
+    The complexity and confusion of having multiple methods involved
+    in the alternative choosing process replaced by one method that
+    is guaranteed to only create side effects once.
+    Make Trial goals parameter context specific
+    
+    The goals that are being completed are not actually properties of
+    the Trial object and should be used as context for completing a
+    Trial from the helper.
+    Refactor experiment starting process from Helper to Trial
+    
+    This refactoring further decouples the view helper from the inner
+    workings and detials of starting an experiment. This completes the
+    work needed to allow for an experiment to be started by an arbitrary
+    class.
+    Changed all .should calls to expects(thing).to for rspec 3
+    Updated rspec to 2.14 and fixed some deprecations
+    if no goal is specified, the variable should be set to be an empty array.
+    Collapse :alternative_name and :alternative options
+    
+    Similar to 466cec15f958fb40e1d5f361c3df0c41c9549b81.
+    Don't record participation once a winner is chosen
+    
+    Fixes #67.
+    Remove :alternative_names
+    
+    The distinction between this and :alternatives is no longer needed.
+    a few more specs.
+    support ruby 1.8.7.
+    allow experiments to take options on initialization.
+    allow for single alternative experiments.
+    refactor trial model.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Change redis.exists to redis.exists? to avoid problems with redis 4.3
+    Avoid z_score numeric exception for conversion rates >1 (#503)
+    
+    At normal operation, it's not possible for an experiment
+     to have a `participant_count` > `completed_count`.
+    However, by manually using `increment_participation`
+     (for a custom use-case or by accident) you can arrive
+     on such a situation.
+    
+    If that happens, `Zscore.calculate` produces an error that
+     propagates all the way up to the web view.
+    
+    Solution:
+    In the cornercase of a conversion rates taking a value >1,
+     it makes no sense to calculate a zscore value at all.
+    An escape clause was added
+    Add ab_record_extra_info to allow record extra info to alternative and display on dashboard. (#460)
+    Enable frozen_string_literal magic comment
+    Remove unnecessary duplicate methods
+    Update more rspec old style .should calls
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Changed all .should calls to expects(thing).to for rspec 3
+    Whitespace and wrapped long lines
+    Rewrote z_score algorithm.
+    Remove :alternative_names
+    
+    The distinction between this and :alternatives is no longer needed.
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    Uncomment tests
+    DRY spec
+    Implement multiple goals for an experiment
+    DRY spec
+    Rename "variants" to "alternatives"
+    support ruby 1.8.7.
+    allow experiments to take options on initialization.
+    Moved all state resetting into rspec before block
+    
+    Including resetting configuration, closes #104
+    Extracted unfinished_count onto alternative
+    Fixed an alternative spec name
+    Whitespace tweaks
+    Alternative.find and new are really the same thing
+    Alternative.create doesn't make much sense now
+    Load participant count from Redis when necessary
+    Merged in weighted alternatives
+    Use Redis increment to update counts
+    
+    Increment alternative participant and completion
+    count using atomic Redis operations. Let Redis
+    handle concurrency.
+    whitespace
+    An alternative should know if it is the control
+    Added alternative tests
+    Enable frozen_string_literal magic comment
+    Remove unnecessary duplicate methods
+    Changed all .should calls to expects(thing).to for rspec 3
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Simplify list persistence on RedisInterface
+    Remove unused RedisInterface#remove_last_item_from_list
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    Fix combined experiments (#502)
+    
+    1. always pass all alternatives to prevent unintentional version bumps
+    2. return the chosen alternative from `ab_combined_test`
+    
+    Fixes #500
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Remove redis_url impl. Deprecated on ~2.2
+    Use a real redis-server on CI
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Enable frozen_string_literal magic comment
+    Fixed spec warnings
+    add tests for cookie length config
+    allow for custom redis_url different from ENV variable
+    Explicitly load the configuration metadata into normalized experiments
+    Changed all .should calls to expects(thing).to for rspec 3
+    include resettable experiment setting from Split.configuration.experiments
+    Updated rspec to 2.14 and fixed some deprecations
+    Adding possibility to store overridden alternative
+    Ensure experiements are a Hash when configuring
+    adding test for config.bots
+    Added YandexBot to bot list
+    Load experiments via YAML indifferently.
+    
+    Fixes #123.
+    Ignore anything that doesn't present a good UA
+    A few more test cases for the bot blocklist
+    Added more known bots to the default configuration
+    Rename "variants" to "alternatives"
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    split config specs into multiple tests
+    documented bots sequence and clarified regex
+    changed name of enabled flag
+    create an option to disable split testing
+    Avoid users participating in multiple experiments at once
+    
+    This avoids skewing the experiments and producing invalid results.
+    
+    It can be disabled using the allow_multiple_experiments config flag.
+    Add redis failover solution
+    
+    Due to the fact that redis has no autom. failover mechanism, it is now
+    possible to switch on 'db_failover' config option, so that 'ab_test' and
+    'finished' will not crash. 'ab_test' always delivers alternative A (the
+    first one) in that case. It's also possible to set a 'db_failover_on_db_error'
+    handler (proc) in the config, for example to log these errors via
+    Rails.logger.
+    Added ignore_ip_addresses configuration option
+    Allow for easier overiding of the robot regex via a configuration object
+    Move specs to appropriate file
+    Enable frozen_string_literal magic comment
+    Fixed spec warnings
+    Refactor finding experiments from Helper to ExperimentCatalog
+    Upgrade fakeredis to 0.7.0 (#519)
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Removes metadata key when it updated to nil
+    hset behavior changed on redis-rb, removing redundant specs
+    Change redis.exists to redis.exists? to avoid problems with redis 4.3
+    Introduce enable/disable experiment cohorting
+    Update winner choose hook name
+    Add on_winner_choose hook
+    Respect experiment defaults when loading experiments in initializer.
+    Redefine method :same_but_different_goals into let statement
+    Fix unused variable warnings on specs
+    Cache the has_winner state for the lifetime of an Experiment instance
+    Persist alternative weights
+    Add 1.9.3 support back in (#499)
+    
+    * Add support back in for 1.9.3
+    
+    * Skip test the fails intermittenly
+    
+    * less specifc ruby version numbers
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    respect manual start configuration  after an experiment has been deleted
+    add a on_before_experiment_delete and on_before_experiment_reset hook
+    Revise spec - black box spec over white box spec
+    Revise specs for #next_alternative
+    Move specs to appropriate file
+    Enable frozen_string_literal magic comment
+    Fixed spec warnings
+    Fix caching of winning alternative to prevent recalculation each time the dashboard is loaded
+    
+    It looks like when this feature was added, the calculation of winning
+    alternatives was meant to take place only once per day.
+    
+    The #calc_winning_alternatives method was never called, which was meant
+    to be saving the experiment's last calc_time. Update the experiment view
+    to call this method instead of the #estimate_winning_alternative method
+    directly. Fix caching so that the #calc_time= method is called, rather
+    than assigning to a local variable. Update calc_time so that number of
+    days since epoch is stored, rather than the day of month (1-31). Ensure
+    we're comparing integer values, rather than the string value Redis
+    returns from #hget.
+    Added metadata to experiment.
+    A scoped partial of the metadata is available for the Trial
+    Remove unnecessary duplicate methods
+    Fixed test that was occasionally failing due to randomness.
+    Update more rspec old style .should calls
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Changed all .should calls to expects(thing).to for rspec 3
+    Add instance method has_winner? to Experiment
+    Adding posibility to start tests manually
+    Add hooks for experiment deletion and resetting.
+    Stores and parses Experiment's start_time as a UNIX integer.
+    Though UNIX integer representations are used, they are stored as strings
+    and are backwards compatable with the Time stamp representations.
+    yet another spec.
+    Akriti/Sumedha - Now random_alternative method in experiment class uses the specified algorithm and not the default one.
+    More refactoring
+    
+    Pull class methods into instance methods. Remove unneeded methods.
+    Remove :alternative_names
+    
+    The distinction between this and :alternatives is no longer needed.
+    DRY spec
+    Implement multiple goals for an experiment
+    DRY spec
+    support ruby 1.8.7.
+    Store experiment configuration in redis.
+    allow experiments to take options on initialization.
+    allow for single alternative experiments.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    pluggable experiment algorithms. Add a bandit implementation.
+    Refactor to allow for pluggable algorithm implementations.
+    Moved all state resetting into rspec before block
+    
+    Including resetting configuration, closes #104
+    removed exploratory specs
+    added specs to flush out jruby issues
+    fixed spec with incorrect parameter
+    Fixes version number wackiness when alternatives are changed
+    
+    I found that when I updated the alternatives in a test it kept resetting. I must have not noticed for a while, because when I checked, I was on version 30,561 yet had no results.
+    It turned out that when you save an existing experiment, it didn't update the alternatives, so that's what I've added.
+    Fixed occasionally failing specs in 1.8.x
+    create an option to disable split testing
+    Fix weights for existing experiments.
+    Experiments can now handle not having start times
+    add start time to the experiments
+    Return nil if Experiment#find does not match an experiment
+    Alternative.find and new are really the same thing
+    Merged in weighted alternatives
+    Cleaned up extra whitespace
+    Alternatives must be defined as strings, fixes #10
+    Deleting an experiment should also increment the version
+    first pass at versioning experiments for better resets
+    Refactored deleting specs a little
+    Delete an experiment
+    If the alternatives of an experiment are changed it resets the experiment and uses the new alternatives
+    whitespace
+    Saving an experiment multiple times should not create duplicate alternatives
+    Experiment control test
+    Fixed syntax warning
+    Added ability to reset an experiment from the dashboard
+    Renamed the project to Split
+    Added button to dashboard to mark an alternative as a winner
+    adding support for declaring an alternative to be the "winner" so that it will always be returned
+    Improved redis configuration by copying from resque
+    ab_test helper method implemented
+    Flush redis before each test
+    Pseudo coding up the experiment class
+    Use a real redis-server on CI
+    Removed a couple old ruby 1.8 hacks (#456)
+    Use codeclimate for test coverage (#455)
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    Use fakeredis for testing (#412)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    [code gardening] minor memoization fix in spec; trim trailing whitespaces in code
+    Fix debugger gem for Travis CI
+    Add debugger gem
+    Added coveralls.io support
+    require yaml as it is not loaded in 2.0.0-p0 by default
+    Moved all state resetting into rspec before block
+    
+    Including resetting configuration, closes #104
+    Run tests in a random order
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    removed mock_redis
+    mocked out redis
+    Fixed specs in 1.8.x
+    Made testing the dashboard a little easier
+    Added ignore_ip_addresses configuration option
+    Ignore robots and given the control alternative
+    Fixed params overriding test
+    Renamed the project to Split
+    improve Rails inclusion and use native sessions for frameworks
+    Hello world!
+    add a simple way to load users outside web session
+    Cleanup old experiments only once during the lifetime of a User instance
+    Optional custom persistence adapter
+    FIX Negative numbers on non-finished
+    
+    This fixes a major bug when negative non-finished numbers appear and simple random exception fired on dashboard.
+    
+    The problem was with User#cleanup_old_experiments! method because it treats “experimen1:finished” key as a non-found experiment and just deletes it.
+    
+    Related issues:
+    
+    https://github.com/splitrb/split/issues/43
+    
+    https://github.com/splitrb/split/issues/103
+    
+    https://github.com/splitrb/split/issues/133
+    
+    https://github.com/splitrb/split/issues/355
+    
+    https://github.com/splitrb/split/issues/294
+    
+    https://github.com/splitrb/split/issues/272
+    Updated spec file
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Implement usage of middlewares on new rack app
+    Remove Sinatra Dependency for Split Dashboard
+    Force experiment does not count for metrics
+    
+    When using the admin dashboard and forcing an experment, this should not count
+    on metrics and should be only used for testing.
+    Introduce enable/disable experiment cohorting
+    Avoid timezone issues when rendering the experiment date from redis
+    Remove extra noise on testing dates on dashboard
+    Have beta_probability_simulations sat to one for dashboard specs
+    Cache the has_winner state for the lifetime of an Experiment instance
+    Fix `force_aleternative` for experiments with incremented version
+    Increment participant count when `force_alternative` pushed
+    Add ability to force alternative on dashboard. (#437)
+    Enable frozen_string_literal magic comment
+    Fix the dashboard for experiments with ‘/‘ in the name.
+    
+    ‘/‘ messes up JS and sinatra routing when used as a pretty url parameter.
+    Remove unnecessary duplicate methods
+    Fixed bug with Time mocking in RSpec to make the tests pass.
+    Changed all .should calls to expects(thing).to for rspec 3
+    Show metrics associated with each experiment on Dashboard (like we do with goals)
+    Add reopen experiment action to dashboard
+    [BUG] Display Start button when rendering an experiment with a goal defined
+    Adding posibility to start tests manually
+    Renaming link_color to experiment
+    fix some bugs
+    DRY spec
+    DRY spec
+    Moved all state resetting into rspec before block
+    
+    Including resetting configuration, closes #104
+    Experiments can now handle not having start times
+    display start time in the view
+    Return nil if Experiment#find does not match an experiment
+    Remove redundant line from specs
+    Alternative.find and new are really the same thing
+    Load participant count from Redis when necessary
+    Added flushall before each dashboard test
+    Refactored deleting specs a little
+    Delete an experiment
+    Added another dashboard spec
+    added dashboard reset test
+    Started to test the dashboard using Rack::Test
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Suppress `warning: BigDecimal.new is deprecated;` in specs
+    Avoid crashing on Ruby 2.4 for numeric strings (#470)
+    Enable frozen_string_literal magic comment
+    Changed all .should calls to expects(thing).to for rspec 3
+    Update dashboard_helpers_spec.rb
+    
+    Just correcting a typo
+    Refactored Z-score calculations to be separate from the Alternative Class.
+    Rewrote z_score algorithm.
+    Since we only care if the difference is greater than zero we only need a z-score of 1.65, corresponding to the positive half of the normal curve.
+    
+    We are not interested in negative z numbers. The null hypothesis is
+    that the control is not performing worse. We only have to be confident
+    it's better to disprove the null hypothese, which means we only care
+    about the positive tail of the normal distribution.
+    Add confidence helper tests.
+    
+    To cover a refactor.
+    Fixed specs in 1.8.x
+    Fixed dashboard range error
+    confidence_level helper should handle tiny z-scores
+    dashboard/paginator (#518)
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Make dashboard pagination default "per" param configurable (#597)
+    
+    * Make dashboard pagination default "per" param configurable
+    dashboard/paginator (#518)
+    Update Set-Cookie specs to match the date format set by newer rack versions
+    CookieAdapter: Fix cookies when @context is an ActionController (#526)
+    
+    * CookieAdapter: Fix cookies when @context is an ActionController
+    
+    Using ab_test from a controller was failing because "cookies" is a
+    private method of the controller instance which is assigned to @context.
+    
+    It looks like this was broken in the commit that fixed the multiple
+    "Set-Cookie" headers bug:
+    https://github.com/splitrb/split/commit/3523e1c53988d727afb3f28a0208d7984f8fc31b
+    
+    Using `.send(:cookies)` again when using Rails was the easiest way I
+    found to fix this.
+    
+    Note: I was able to add an integration test for the case when it's
+    called from the controller, but I failed to a regression test that uses
+    and ActionView context object.
+    
+    * Don't use to_h on CookieJar, it doesn't work on older rubies
+    Fix cookie header duplication (#522)
+    
+    * Add failing spec for multiple Set-Cookie headers bug
+    
+    * When ActionDispatch::Cookies is available from Rails tries to use it.
+    Otherwise parse current cookies set on response and replace it using Rack directly.
+    
+    * Keep compatibility with Rack ~> 1.6.
+    New methods like Rack::Utils#make_delete_cookie_header were only added on 2.0.0
+    Rewrite CookieAdapter  to work with Rack::Request and Rack::Response directly (#490)
+    Enable frozen_string_literal magic comment
+    Changed all .should calls to expects(thing).to for rspec 3
+    Updated rspec to 2.14 and fixed some deprecations
+    Handle exceptions from invalid JSON in cookies
+    Doesnt care about order of array returned by #keys in Cookie and Session Specs
+    Replaces 1.9 style hashes with 1.8
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    add a simple way to load users outside web session
+    Enable frozen_string_literal magic comment
+    Fixed spec warnings
+    Allow RedisAdapter to be used outside of a session context
+    Changed all .should calls to expects(thing).to for rspec 3
+    Fixed syntax error on old Rubies
+    Changed config to throw error when lookup_by is undefined
+    Added configuration to RedisAdapter
+    Added Persistence::RedisAdapter
+    Updated rspec to 2.14 and fixed some deprecations
+    Doesnt care about order of array returned by #keys in Cookie and Session Specs
+    Replaces 1.9 style hashes with 1.8
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Enable frozen_string_literal magic comment
+    Changed all .should calls to expects(thing).to for rspec 3
+    Updated rspec to 2.14 and fixed some deprecations
+    Doesnt care about order of array returned by #keys in Cookie and Session Specs
+    Replaces 1.9 style hashes with 1.8
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Add a flag to use the new behavior of the DualAdapter
+    Decrement participant count when overriding version
+    Improve Dual Adapter
+    Add 1.9.3 support back in (#499)
+    
+    * Add support back in for 1.9.3
+    
+    * Skip test the fails intermittenly
+    
+    * less specifc ruby version numbers
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    added block randomization algorithm and specs (#475)
+    
+    * added block randomization algorithm and specs
+    
+    * added BlockRandomization explanation to README
+    Enable frozen_string_literal magic comment
+    Remove unnecessary duplicate methods
+    Changed all .should calls to expects(thing).to for rspec 3
+    Remove white space
+    a few more specs.
+    pluggable experiment algorithms. Add a bandit implementation.
+    Enable frozen_string_literal magic comment
+    Remove unnecessary duplicate methods
+    Changed all .should calls to expects(thing).to for rspec 3
+    Remove white space
+    a few more specs.
+    pluggable experiment algorithms. Add a bandit implementation.
+    Enable frozen_string_literal magic comment
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Remove thread_safe config as redis-rb is thread_safe by default since 2.2
+    Check for ::Rails instead of Rails::Railtie
+    Check to see if being run in Rails application and run in
+    before_initialize
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Fix loadorder issues (#479)
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Introduce GoalsCollection and refactor
+    
+    Towards a more object-oriented approach, i introduced the GoalsCollection
+    class and refactored the code so that the overall complexity of
+    Experiment#save is reduced.
+    Enable frozen_string_literal magic comment
+    allow for custom redis_url different from ENV variable
+    Redis configuration using environment variables
+    Require engine if Rails is defined
+    Remove check for Rails > 3
+    Refactoring: Extract ExperimientStore
+    
+    Extracts the responsibility of finding experiments to another class
+    Refactored Z-score calculations to be separate from the Alternative Class.
+    include encapsulated_helper
+    made required files list more readable
+    Rails 2.3.x compatibility patch.
+    
+    Rails 2.3 doesn't have Engine support, so disable that and let people
+    add the helpers themselves via an initializer.
+    
+    Based on @RyanNaughton's comments here:
+    https://github.com/andrew/split/issues/95
+    Whitespace fix
+    Corrects documentation for ignoring ip addresses.
+    Fix error initialization
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    maintain ruby 1.8.7 compatibility.
+    pluggable experiment algorithms. Add a bandit implementation.
+    Refactor to allow for pluggable algorithm implementations.
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    rolled require statements into iterator
+    replaced regex with string bracket search
+    removed extraneous end
+    extracting Rails specifics into engine subclass
+    Removed requirement of rubygems
+    Allow for easier overiding of the robot regex via a configuration object
+    ensure that the version is available everywhere
+    Renamed the project to Split
+    improve Rails inclusion and use native sessions for frameworks
+    quick stab at rails mixin
+    changed default namespace to :multivariate
+    Improved redis configuration by copying from resque
+    ab_test helper method implemented
+    Find or create experiment
+    Pseudo coding up the experiment class
+    Hello world!
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Implement usage of middlewares on new rack app
+    Remove Sinatra Dependency for Split Dashboard
+    Force experiment does not count for metrics
+    
+    When using the admin dashboard and forcing an experment, this should not count
+    on metrics and should be only used for testing.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Introduce enable/disable experiment cohorting
+    Fix `force_aleternative` for experiments with incremented version
+    Increment participant count when `force_alternative` pushed
+    dashboard/paginator (#518)
+    Add ability to force alternative on dashboard. (#437)
+    Enable frozen_string_literal magic comment
+    Fix the dashboard for experiments with ‘/‘ in the name.
+    
+    ‘/‘ messes up JS and sinatra routing when used as a pretty url parameter.
+    Remove unnecessary duplicate methods
+    Show metrics associated with each experiment on Dashboard (like we do with goals)
+    Add reopen experiment action to dashboard
+    Adding posibility to start tests manually
+    Sort experiments on Dashboard so "active" ones without a winner appear first
+    Tiny whitespace fix
+    Made Rails ENV conditional on Rails environment existing using controller
+    Extracted dashboard helpers into a module for easier testing
+    Alternative.find and new are really the same thing
+    sinatra version updated
+    Cleaned up extra whitespace
+    Show confidence level instead of zscore in dashboard
+    Delete an experiment
+    Show percentage improvement of alternatives compared to the control
+    we don't need to call save on an experiment when setting the winner
+    Added ability to reset an experiment from the dashboard
+    More robust conversion rate
+    Renamed the project to Split
+    Added button to dashboard to mark an alternative as a winner
+    Renamed Server to Dashboard
+    Stolen resque layout and styles for frontend
+    working towards an actual web interface
+    Beginnings of the web interface
+    add a simple way to load users outside web session
+    Fix loadorder issues (#479)
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    144867444998371 dual cookie redis split persistence adapter (#420)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    
+    * v.1.5.0
+    
+    * Add Dual Redis(logged-in)/cookie(logged-out) persistence adapter
+    Enable frozen_string_literal magic comment
+    [code gardening] fix private for class methods, minor code refactorings
+    Added Persistence::RedisAdapter
+    Replaces 1.9 style hashes with 1.8
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Remove extra space after method definition
+    Remove useless assignments
+    Assign variable @p_winner correctly
+    Avoid z_score numeric exception for conversion rates >1 (#503)
+    
+    At normal operation, it's not possible for an experiment
+     to have a `participant_count` > `completed_count`.
+    However, by manually using `increment_participation`
+     (for a custom use-case or by accident) you can arrive
+     on such a situation.
+    
+    If that happens, `Zscore.calculate` produces an error that
+     propagates all the way up to the web view.
+    
+    Solution:
+    In the cornercase of a conversion rates taking a value >1,
+     it makes no sense to calculate a zscore value at all.
+    An escape clause was added
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    Add ab_record_extra_info to allow record extra info to alternative and display on dashboard. (#460)
+    Remove Explicit Return (#441)
+    
+    * Remove explicit return
+    
+    * assign the instance variable
+    Enable frozen_string_literal magic comment
+    Remove unnecessary duplicate methods
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Refactored Z-score calculations to be separate from the Alternative Class.
+    Rewrote z_score algorithm.
+    Refactor Alternative a little
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    DRY spec
+    rebase from upstream/master
+    Implement multiple goals for an experiment
+    memoize for performance.
+    Extracted unfinished_count onto alternative
+    Whitespace tweaks
+    Alternative.find and new are really the same thing
+    Alternative.create doesn't make much sense now
+    Load participant count from Redis when necessary
+    Helper method for alternative db key
+    minor code cleanup
+    Merged in weighted alternatives
+    Cleaned up extra whitespace
+    Use Redis increment to update counts
+    
+    Increment alternative participant and completion
+    count using atomic Redis operations. Let Redis
+    handle concurrency.
+    If the alternatives of an experiment are changed it resets the experiment and uses the new alternatives
+    An alternative should know if it is the control
+    Refactored Alternative#zindex
+    An alternative can load its experiment
+    A much cleaner alternative reset
+    Added ability to reset an experiment from the dashboard
+    return 0 if working out standard deviation would divide by zero
+    whitespace
+    Renamed the project to Split
+    added statistical analysis (z-score) KAPOW!
+    Alternatives have a conversion rate
+    Improved redis configuration by copying from resque
+    implemented finished helper method
+    ab_test helper method implemented
+    pseudo alternative class
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Enable frozen_string_literal magic comment
+    [code gardening] fix private for class methods, minor code refactorings
+    Remove unnecessary duplicate methods
+    Add find_or_create and all methods to Metric
+    fix some bugs
+    DRY spec
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    Enable frozen_string_literal magic comment
+    [code gardening] minor memoization fix in spec; trim trailing whitespaces in code
+    Refactored Z-score calculations to be separate from the Alternative Class.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Enable frozen_string_literal magic comment
+    Ensure experiements are a Hash when configuring
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Add frozen_string_literal to all files that were missing it
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    Introduce GoalsCollection and refactor
+    
+    Towards a more object-oriented approach, i introduced the GoalsCollection
+    class and refactored the code so that the overall complexity of
+    Experiment#save is reduced.
+    Force experiment does not count for metrics
+    
+    When using the admin dashboard and forcing an experment, this should not count
+    on metrics and should be only used for testing.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Update trial to init with goals instead
+    ab_test must return metadata on error or if split is disabled
+    Remove goals assignment, which is not used anywhere ab_record_extra_info
+    Check if the experiment about to finish is active for the user
+    Avoid hitting up on redis for robots/excluded users.
+    Checks for defined?(request) on Helper#exclude_visitor?
+    Fix binding of ignore_filter (#533)
+    Ignore previewing requests (#531)
+    CI: Change and test earliest supported Ruby version (1.9.2 -> 2.2.0) (#498)
+    
+    * gemspec: Change required Ruby version from 1.9.2 to 2.2.0
+    
+    There are some incompatibilities between Split's dependencies and
+    earlier versions of Ruby (see
+    https://github.com/splitrb/split/issues/494#issuecomment-325522476).
+    2.2.0 is a relatively old version of Ruby that can run Split with
+    minimal code changes.
+    
+    * Fix Ruby syntax incompatibility with version < 2.3
+    
+    `Hash#dig` and `&.` are available only in 2.3+, but Split is supposed to
+    be compatible with Ruby 2.2.2+.
+    
+    * CI: Add Rails 5.1 Gemfile to build matrix
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Convience function around enumerating a user's current active experiments which also honors the 'db_failover' option. (#1) (#487)
+    Add ab_record_extra_info to allow record extra info to alternative and display on dashboard. (#460)
+    removed deprecated methods
+    Namespace override param (#398)
+    
+    Verified that both Rails and Sinatra parse [] in params to nested hashes this way.
+    Deprecated methods will be removed in 2.0.0
+    Renaming finished() method to less generic ab_finished()
+    * Growing the user abstraction
+    * Refactoring
+    Add deprecation warnings
+    
+    Add deprecation warnings
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Add deprecation warnings
+    Remove legacy methods
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    Rescue from Redis::BaseError in #ab_test
+    
+    Redis defines a number of different exception classes (see
+    https://github.com/redis/redis-rb/blob/1bd43346cdf71ba69176612714616289a5a70ed4/lib/redis/errors.rb
+    for details). When Redis raises an exception, we need to be able to have
+    the db_failover configuration used, whether it's a failure to connect, a
+    timeout, or an invalid command.
+    
+    We ran into this issue when our Redis instance ran out of memory. In
+    that case (and most others), Split should be able to handle things
+    gracefully.
+    fix active experiments when experiment is on a later version
+    Return an empty hash as metadata when Split is disabled
+    Don't use capture helper from ActionView
+    
+    Since this code was previously merged, Rails has changed and currently
+    (at 4.2) this code has not been working in controllers, because the
+    condition was true also for capture method from Kernel::Reporting module
+    from Rails.
+    If the DNS resolution fails for your redis server, ruby will throw a SocketError, which is currently uncaught by the ab_test helper
+    [code gardening] minor memoization fix in spec; trim trailing whitespaces in code
+    [private-methods-in-controllers] prevents split helper-methods to become actions in the Rails controllers
+    Push metadata to ab_test block
+    Make Trial goals parameter context specific
+    
+    The goals that are being completed are not actually properties of
+    the Trial object and should be used as context for completing a
+    Trial from the helper.
+    Refactor experiment starting process from Helper to Trial
+    
+    This refactoring further decouples the view helper from the inner
+    workings and detials of starting an experiment. This completes the
+    work needed to allow for an experiment to be started by an arbitrary
+    class.
+    Refactor finding experiments from Helper to ExperimentCatalog
+    Add helper method to display active experiments and their associated alternative
+    Remove 1.8.7 warning
+    Provide an option to generically disable Split.
+    Whitespace
+    Only allow known alternatives as query param overrides
+    Handle redis connection exception error properly
+    
+    Fixes #242
+    Only rescue from known expected error
+    Whitespace and wrapped long lines
+    Replace winner existance checks with has_winner? to be more readable
+    Adding posibility to start tests manually
+    Only trigger completion callback with valid Trial
+    
+    Previously it was possible to trigger the #on_trial_complete even if the Trial
+    wasn't legally completed (eg #complete! was falsey). This can occur if the user
+    reaches a #finished call before they reach an #ab_test call.
+    Ensure request is defined before calling methods on it
+    
+    In #is_robot? and #is_ignore_ip_address?, request is assumed to be
+    accessible. As a result, the Split::Helper module can only really be
+    included in a Controller context.
+    
+    This commit removes that requirement by conditionally checking that
+    request is defined by attempting to call methods on it.
+    Add hooks for Trial#choose! and Trial#complete!
+    
+    This adds two new attributes to Split.configuration,
+    on_trial_choose and on_trial_complete.
+    
+    Set these attributes to a method name available in the
+    same context as the ab_test method. These methods should
+    accept one argument, a Trial instance.
+    
+    For example:
+    
+        Split.configuration.on_trial_choose = :log_choice
+    
+        # application_controller.rb
+        def log_choice(trial)
+          logger.info "experiment=%s alternative=%s user=%s" %
+            [ trial.experiment.name, trial.alternative, current_user.id ]
+        end
+    Adding possibility to store overridden alternative
+    removing useless line
+    Allowing arrays to be passed to ab_test
+    
+    If an array is passed to ab_test method, then we select first element
+    as control and the rest as alternatives
+    finished method accept goals that are not passed as arrays
+    allow for a custom exclude logic
+    
+    this is just an example implementation for discussion, readme and docs are still missing.
+    Collapse :alternative_name and :alternative options
+    
+    Similar to 466cec15f958fb40e1d5f361c3df0c41c9549b81.
+    Don't record participation once a winner is chosen
+    
+    Fixes #67.
+    Allows ignoring of ip address ranges using regex.
+    more useless checks
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    Pull config file fallback out of nested methods
+    
+    It needs to happen earlier so that fallbacks to the control will succeed.
+    
+    This may not be the most sensible code organization.
+    fix some bugs
+    rebase from upstream/master
+    Implement multiple goals for an experiment
+    Fix error initialization
+    Don't spit out 1.8 errors for preloaded config
+    
+    Regression in #105.
+    support ruby 1.8.7.
+    refactor trial model.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Pass arguments as separate hashes
+    
+    I misunderstood how 3+ arguments should be passed as alternatives.
+    Bug in spec expectation
+    
+    `*alternatives` is always an array, even if one argument.
+    Fix bug I introduced when testing multiple times
+    Stop adding tests that user isn't participating to session #103
+    Handle a subtle case with the config
+    Support finishing by metric
+    Use a config file to define experiments
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    More issues for finished(:reset => false)
+    
+    When a user completes a test but reset is set to false, when they hit ab_test again they will get the control alternative. This is because doing_other_tests? was doing the same as issue #83 and counting the finished result as another experiment. This fixes that.
+    Stops clean_old_versions from removing finished experiments which have reset => false
+    added specs to cover parameters to ab_test method
+    replaced statement modifier with if for readability
+    do not increment the experiment's counter if user has already finished it
+    Issue #72 - fix reseting of experiment in session
+    
+    The issue was that versioned experiments had a different key than
+    non-versioned experiments.  The experiment name was equal to the
+    experiment key for non-versioned experiments.  Experiment#key
+    wraps this logic.  However, the Helper#finished method
+    was using the experiment_name parameter, instead of the Experiment#key
+    method.
+    Allow parameter overrides, even without Redis.
+    
+    With this option, applications can be tested to ensure that the options
+    render correctly, even without Redis installed and running on the
+    development machines.
+    Catch any exceptions, not only ECONNREFUSED
+    changed name of enabled flag
+    create an option to disable split testing
+    Added warning for ruby 1.8 users who pass a single hash of alterntives
+    
+    Because hashes in ruby 1.8 do not persist the order of keys when they
+    are created so the alternative cannot be reliably determined
+    Avoid users participating in multiple experiments at once
+    
+    This avoids skewing the experiments and producing invalid results.
+    
+    It can be disabled using the allow_multiple_experiments config flag.
+    Clean up old versions of experiments from sessions
+    Fix bug: overriding alternatives doesn't work for weighted alternatives
+    Fix return value for ab_test ...
+    
+    in case of db failure when db_failover option isset and a block is used
+    in a rails view
+    Add redis failover solution
+    
+    Due to the fact that redis has no autom. failover mechanism, it is now
+    possible to switch on 'db_failover' config option, so that 'ab_test' and
+    'finished' will not crash. 'ab_test' always delivers alternative A (the
+    first one) in that case. It's also possible to set a 'db_failover_on_db_error'
+    handler (proc) in the config, for example to log these errors via
+    Rails.logger.
+    Gracefully handle finish for experiments that have not been started
+    Whitespace tweaks
+    Alternative.find and new are really the same thing
+    minor code cleanup
+    fixed for overriding alternative on versioned experiment
+    Added option to finished to not reset the users session
+    ab_test can now be passed a block in a rails view as well, closes #4
+    first pass at versioning experiments for better resets
+    ab_test helper should accept a block
+    Added ignore_ip_addresses configuration option
+    Allow for easier overiding of the robot regex via a configuration object
+    Ignore robots and given the control alternative
+    Allow overriding of alternatives via a url parameter
+    Renamed the project to Split
+    adding support for declaring an alternative to be the "winner" so that it will always be returned
+    this comment has been addressed
+    remove a user from an experiment upon completion
+    even random distribution of the experiments
+    improve Rails inclusion and use native sessions for frameworks
+    Basic session store abstraction
+    implemented finished helper method
+    ab_test helper method implemented
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    v3.4.1
+    Prep for v3.4.0 release
+    Bump version to 3.3.2
+    Update changelog for 3.3.1
+    v3.3.0
+    v3.2.0
+    v3.1.1
+    v3.1.0
+    v3.0.0
+    v2.2.0
+    v2.1.0
+    v2.0.0
+    v1.7.0
+    v1.6.0
+    144867444998371 dual cookie redis split persistence adapter (#420)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    
+    * v.1.5.0
+    
+    * Add Dual Redis(logged-in)/cookie(logged-out) persistence adapter
+    v1.4.5
+    v1.4.4
+    v1.4.3
+    v1.4.2
+    v1.4.1
+    v1.4.0
+    v1.3.2
+    v1.3.1
+    Enable frozen_string_literal magic comment
+    v1.3.0
+    v1.2.1
+    v1.2.0
+    v1.1.0
+    v1.0.0
+    v0.8.0
+    Version 0.7.3
+    v0.7.2
+    v0.7.1
+    Version 0.7.0
+    Version 0.6.6
+    v0.6.5
+    v0.6.4
+    Version 0.6.3
+    Version 0.6.2
+    Version 0.6.1
+    bump version
+    Version 0.5.0
+    bumped patch number and amended version.rb inline with semver terminology
+    Version 0.4.6
+    extracted version into separate constants
+    Version 0.4.5
+    Version 0.4.4
+    Version 0.4.3
+    Version 0.4.2
+    Version 0.4.1
+    Version 0.4.0
+    Version 0.3.3
+    Version 0.3.2
+    Version 0.3.1
+    Version 0.3.0
+    Version 0.2.4
+    Version 0.2.3
+    Version 0.2.2
+    Bump to 0.2.1
+    Version 0.2.0
+    bumping version for bug fix
+    Renamed the project to Split
+    Version bump!
+    Hello world!
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    refactor(Split require): Fix issue where redis isn't required. Auto require all necessary files. (#466)
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    removed deprecated methods
+    Deprecated methods will be removed in 2.0.0
+    Renaming finished() method to less generic ab_finished()
+    Add deprecation warnings
+    
+    Add deprecation warnings
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Add deprecation warnings
+    Remove legacy methods
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Enable frozen_string_literal magic comment
+    [code gardening] minor memoization fix in spec; trim trailing whitespaces in code
+    [private-methods-in-controllers] prevents split helper-methods to become actions in the Rails controllers
+    #256 avoiding call to params in EncapsulatedHelper
+    fix for params not found
+    Add Split::EncapsulatedHelper that you can mix into Rails controllers and models that will only expose ab_test and ab_test_finished
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Remove useless assignments
+    Fix error message interpolation
+    Fix combined experiments (#502)
+    
+    1. always pass all alternatives to prevent unintentional version bumps
+    2. return the chosen alternative from `ab_combined_test`
+    
+    Fixes #500
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    add a simple way to load users outside web session
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Fix #max_experiments_reached? when using allow_multiple_experiments=control
+    
+    When using allow_multiple_experiments=control Split only allows one
+    experiment with an alternative other than 'control'.
+    
+    Split::User#max_experiments_reached? checks for that looping through all
+    experiments. As Split::User#active_experiments drops the experiment
+    version we also need to do that here to be able to check properly.
+    
+    Fixes #612
+    Add frozen_string_literal to all files that were missing it
+    When loading active_experiments, it should not look into user's 'finished' keys
+    Cleanup old experiments only once during the lifetime of a User instance
+    Fix loadorder issues (#479)
+    Fix variations reset across page loads for multiple=control and improve coverage (#432)
+    
+    * Improve test coverage and pass the original block in encapsulated helper
+    
+    * Fix variations reset across page loads for allow_multiple=‘control’
+    
+    * Pass the block as-is inside encapsulated helper
+    
+    * Trigger
+    Issue #405 Running concurrent experiments on same endpoint/view (#421)
+    
+    * Issue #405 use config.allow_multiple_experiments = 'control' for multiple experiments per user with at most 1-non-control
+    
+    * Update README.md
+    Optional custom persistence adapter
+    FIX Negative numbers on non-finished
+    
+    This fixes a major bug when negative non-finished numbers appear and simple random exception fired on dashboard.
+    
+    The problem was with User#cleanup_old_experiments! method because it treats “experimen1:finished” key as a non-found experiment and just deletes it.
+    
+    Related issues:
+    
+    https://github.com/splitrb/split/issues/43
+    
+    https://github.com/splitrb/split/issues/103
+    
+    https://github.com/splitrb/split/issues/133
+    
+    https://github.com/splitrb/split/issues/355
+    
+    https://github.com/splitrb/split/issues/294
+    
+    https://github.com/splitrb/split/issues/272
+    * Growing the user abstraction
+    * Refactoring
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Update trial to init with goals instead
+    disable cohorting revision
+    Introduce enable/disable experiment cohorting
+    Fix warning: method redefined; discarding old metadata
+    Do not storage alternative in cookie if experiment has a winner (#539)
+    fix user participating alternative not found (#536)
+    Eliminate extra RedisAdapter hget
+    * Growing the user abstraction
+    * Refactoring
+    increment participation if store override is true and no experiment key exists
+    only choose override if it exists as valid alternative
+    add on_trial callback whenever a trial is started
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Clean up experiments that are gone, stopped or a winner has been chosen
+    
+    User class fix, adding specs
+    
+    cleaned up old experiments on Trial.choose since user is memoized; also cleaned up experiments that have not started
+    
+    Fix specs
+    
+    Remove pry
+    
+    Add whitespace
+    
+    Reword a user spec description
+    
+    Fix specs
+    
+    Add the README note
+    Refactor to make it more readable
+    Enable frozen_string_literal magic comment
+    Push metadata to ab_test block
+    Revert the Trial#complete! public API to support noargs.
+    Also support passing Goals and a single goal
+    Added metadata to experiment.
+    A scoped partial of the metadata is available for the Trial
+    Use the control if split is globally disabled
+    Consolidate record!, choose, and choose! methods into one
+    
+    The complexity and confusion of having multiple methods involved
+    in the alternative choosing process replaced by one method that
+    is guaranteed to only create side effects once.
+    Make Trial goals parameter context specific
+    
+    The goals that are being completed are not actually properties of
+    the Trial object and should be used as context for completing a
+    Trial from the helper.
+    Refactor experiment starting process from Helper to Trial
+    
+    This refactoring further decouples the view helper from the inner
+    workings and detials of starting an experiment. This completes the
+    work needed to allow for an experiment to be started by an arbitrary
+    class.
+    Replace winner existance checks with has_winner? to be more readable
+    if no goal is specified, the variable should be set to be an empty array.
+    Collapse :alternative_name and :alternative options
+    
+    Similar to 466cec15f958fb40e1d5f361c3df0c41c9549b81.
+    Don't record participation once a winner is chosen
+    
+    Fixes #67.
+    fix some bugs
+    rebase from upstream/master
+    support ruby 1.8.7.
+    updates based on experience from app.
+    separate choosing, and recording.
+    refactor trial model.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    shorten multiples hsets into a single hmset
+    Alternative as Sets were deprecated on 0.x
+    Fix Layout/SpaceAfterComma offenses
+    Removes metadata key when it updated to nil
+    Change redis.exists to redis.exists? to avoid problems with redis 4.3
+    disable cohorting revision
+    Introduce enable/disable experiment cohorting
+    removed unreached loading from config
+    Replace usage of SimpleRandom with RubyStats
+    Update winner choose hook name
+    Add on_winner_choose hook
+    Respect experiment defaults when loading experiments in initializer.
+    Define accessors properly on Split::Experiment avoiding redefining methods on load
+    Reduce the calls to Redis when an experiment is saved
+    
+    Check if an experiment is new or its configuration has changed only once
+    Cache the has_winner state for the lifetime of an Experiment instance
+    Fix code styles
+    Persist alternative weights
+    Allow configuration of how often winning alternatives are recalculated (#501)
+    
+    * Rubocop: Update obsolete rule names
+    
+    I saw these warnings on Rubocop 0.50.0:
+    
+        Error: The `Style/MethodCallParentheses` cop has been renamed to `Style/MethodCallWithoutArgsParentheses`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+        The `Style/OpMethods` cop has been renamed and moved to `Naming/BinaryOperatorParameter`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+    
+    * Allow configuration of how often winning alternatives are recalculated
+    
+    If you're running A/B tests for a short period of time, the "Probability
+    of being Winner" numbers can be unhelpful or misleading.
+    Fixed a few codeclimate warnings (#458)
+    
+    * Fixed a few codeclimate warnings
+    
+    * Fixed eslint validation warning
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    FIX Negative numbers on non-finished
+    
+    This fixes a major bug when negative non-finished numbers appear and simple random exception fired on dashboard.
+    
+    The problem was with User#cleanup_old_experiments! method because it treats “experimen1:finished” key as a non-found experiment and just deletes it.
+    
+    Related issues:
+    
+    https://github.com/splitrb/split/issues/43
+    
+    https://github.com/splitrb/split/issues/103
+    
+    https://github.com/splitrb/split/issues/133
+    
+    https://github.com/splitrb/split/issues/355
+    
+    https://github.com/splitrb/split/issues/294
+    
+    https://github.com/splitrb/split/issues/272
+    DRY Experiment#initialize
+    
+    Experiment#set_alternatives_and_options appeared both in the `if`
+    section and in the `else` section. I moved `set_alternatives_and_options`
+    out of the `if...else` block so that it is more DRY.
+    I am not sure if setting only options[:alternatives] in the `else`
+    clause is more readable than explicitly providing a hash with the attributes
+    to set as it happens in the `if` clause.
+    Use Experiment#set_alternatives_and_options to DRY code
+    Remove unecessary code from Experiment#save
+    
+    Experiment#save_metadata is called in the previous line, which
+    resulted in calling `Split.redis.set(metadata_key, @metadata.to_json)`
+    twice. I removed the unecessary line.
+    respect manual start configuration  after an experiment has been deleted
+    add a on_before_experiment_delete and on_before_experiment_reset hook
+    Introduce GoalsCollection and refactor
+    
+    Towards a more object-oriented approach, i introduced the GoalsCollection
+    class and refactored the code so that the overall complexity of
+    Experiment#save is reduced.
+    Clarify code and don’t make coveralls mad at my PR.
+    Enable frozen_string_literal magic comment
+    Fix the dashboard for experiments with ‘/‘ in the name.
+    
+    ‘/‘ messes up JS and sinatra routing when used as a pretty url parameter.
+    Remove duplication from Experiment#save
+    
+    Extract common code from Experiment#save in Expriment#save_goals,
+    Experiment#save_metadata methods in order to remove duplication.
+    Remove unused argument of Experiment#write_to_alternatives, closes #311
+    
+    The method accepts argument "alternative_probabilities" but uses
+    instance variable "@alternative_probabilities" instead turning the
+    argument unnecessary.
+    Fix caching of winning alternative to prevent recalculation each time the dashboard is loaded
+    
+    It looks like when this feature was added, the calculation of winning
+    alternatives was meant to take place only once per day.
+    
+    The #calc_winning_alternatives method was never called, which was meant
+    to be saving the experiment's last calc_time. Update the experiment view
+    to call this method instead of the #estimate_winning_alternative method
+    directly. Fix caching so that the #calc_time= method is called, rather
+    than assigning to a local variable. Update calc_time so that number of
+    days since epoch is stored, rather than the day of month (1-31). Ensure
+    we're comparing integer values, rather than the string value Redis
+    returns from #hget.
+    Fixed Metadata not deleting. Fixed Metadata not loading from configuration
+    Added metadata to experiment.
+    A scoped partial of the metadata is available for the Trial
+    Removed extra comma
+    Remove unnecessary duplicate methods
+    Fixed bug with Time mocking in RSpec to make the tests pass.
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Whitespace and wrapped long lines
+    Add instance method has_winner? to Experiment
+    Refactoring: Extract ExperimientStore
+    
+    Extracts the responsibility of finding experiments to another class
+    Experiment#initialize: Extract set_alternatives_and_options
+    Refactor initialize method
+    
+    Makes more clear the difference between initializing from the
+    configuration when no alternatives are provided, from initializing
+    from the options
+    Extract extract_alternatives_from_options
+    Split#initialize: Extract DEFAULT_OPTIONS
+    Sort experiments by whether that have winner and that's name at
+    Experiment#all_active_first
+    Adding posibility to start tests manually
+    Sort experiments on Dashboard so "active" ones without a winner appear first
+    Add hooks for experiment deletion and resetting.
+    Stores and parses Experiment's start_time as a UNIX integer.
+    Though UNIX integer representations are used, they are stored as strings
+    and are backwards compatable with the Time stamp representations.
+    Akriti/Sumedha - Now random_alternative method in experiment class uses the specified algorithm and not the default one.
+    Move methods around
+    
+    Make some protected, and try to group related methods.
+    Move logic to setter methods
+    
+    This helps reduce duplication of functionality.
+    Don't duplicate alternatives on access
+    
+    Not sure why this was put in place, but it seems dangerous.
+    Experiment.all only fetches from Redis
+    
+    Since all active experiments should exist in Redis, don't also
+    look in the config file.
+    More refactoring
+    
+    Pull class methods into instance methods. Remove unneeded methods.
+    Remove :alternative_names
+    
+    The distinction between this and :alternatives is no longer needed.
+    remove useless checks and simplify some code
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    fix some bugs
+    DRY spec
+    rebase from upstream/master
+    Implement multiple goals for an experiment
+    Rename "variants" to "alternatives"
+    Fail gracefully when config file is missing or bad
+    
+    This is better than raising obscure exceptions from the internals.
+    support ruby 1.8.7.
+    Store experiment configuration in redis.
+    allow experiments to take options on initialization.
+    allow for single alternative experiments.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    pluggable experiment algorithms. Add a bandit implementation.
+    Refactor to allow for pluggable algorithm implementations.
+    replaced InvalidArgument with ArgumentError
+    attr_accessor not required for winner as we define our own methods
+    do not increment the experiment's counter if user has already finished it
+    Fixes version number wackiness when alternatives are changed
+    
+    I found that when I updated the alternatives in a test it kept resetting. I must have not noticed for a while, because when I checked, I was on version 30,561 yet had no results.
+    It turned out that when you save an existing experiment, it didn't update the alternatives, so that's what I've added.
+    Fix weights for existing experiments.
+    Experiments can now handle not having start times
+    add start time to the experiments
+    Return nil if Experiment#find does not match an experiment
+    Store alternatives as array of objects
+    Increment experiment version using redis
+    Alternative.create doesn't make much sense now
+    minor code cleanup
+    Merged in weighted alternatives
+    Cleaned up extra whitespace
+    Alternatives must be defined as strings, fixes #10
+    Edited lib/split/experiment.rb via GitHub
+    Deleting an experiment should also increment the version
+    When loading versions from redis, convert them to integers
+    first pass at versioning experiments for better resets
+    Delete an experiment
+    If the alternatives of an experiment are changed it resets the experiment and uses the new alternatives
+    Saving an experiment multiple times should not create duplicate alternatives
+    Convert legacy sets of alternative names to lists
+    Use a list instead of a set to store alternative names on an experiment to ensure consistent ordering.
+    
+    Backwards incompatible change
+    renamed alternatives accessor on Experiment to alternative_names
+    An experiment has a control alternative
+    Added ability to reset an experiment from the dashboard
+    Renamed the project to Split
+    Added button to dashboard to mark an alternative as a winner
+    adding support for declaring an alternative to be the "winner" so that it will always be returned
+    even random distribution of the experiments
+    method to load all experiments
+    Improved redis configuration by copying from resque
+    random alternative is random
+    ab_test helper method implemented
+    Find or create experiment
+    Pseudo coding up the experiment class
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Remove redis_url impl. Deprecated on ~2.2
+    Update winner choose hook name
+    Add on_winner_choose hook
+    Only block Pinterest bot
+    Make dashboard pagination default "per" param configurable (#597)
+    
+    * Make dashboard pagination default "per" param configurable
+    Only define attr_writers for bots/bots_regex as the accessor method is already defined
+    Added uptime robot to configuration.rb
+    Filter some more bots (#542)
+    Add Facebot crawler to list of bots (#530)
+    Allow configuration of how often winning alternatives are recalculated (#501)
+    
+    * Rubocop: Update obsolete rule names
+    
+    I saw these warnings on Rubocop 0.50.0:
+    
+        Error: The `Style/MethodCallParentheses` cop has been renamed to `Style/MethodCallWithoutArgsParentheses`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+        The `Style/OpMethods` cop has been renamed and moved to `Naming/BinaryOperatorParameter`.
+        (obsolete configuration found in /Users/pat/academia/projects/split/.rubocop.yml, please update it)
+    
+    * Allow configuration of how often winning alternatives are recalculated
+    
+    If you're running A/B tests for a short period of time, the "Probability
+    of being Winner" numbers can be unhelpful or misleading.
+    Blocked a few more common bot user agents (#485)
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    Remove dependency on Redis::Namespace (#425)
+    
+    * Rename redis_url config to redis
+    
+    * Remove dependency on redis-namespace
+    
+    * Add backwards compatible redis_url with deprecation
+    Support REDIS_PROVIDER variable used in Heroku (#426)
+    Simplify Configuration#normalized_experiments
+    
+    - Convert `if condition nil...else` clause to `return nil if condition`
+    - Store experiment_data in a hash and then iterate over all values and
+      assign them to experiment_config only when set
+    
+    **Assumption**: I assume that settings[key] where key in (:goals,
+    :alternatives, :metadata, :algorithm) will never return false.
+    settings[:resettable], will return false if set to false.
+    Allow algorithm configuration at experiment level
+    add on_trial callback whenever a trial is started
+    add a on_before_experiment_delete and on_before_experiment_reset hook
+    Enable frozen_string_literal magic comment
+    allow cookie length configuration
+    allow for custom redis_url different from ENV variable
+    Explicitly load the configuration metadata into normalized experiments
+    Fixed bug with Time mocking in RSpec to make the tests pass.
+    add elb health check to exclusion list
+    fix to pass spec
+    bug fix
+    bug fix
+    support multiple metrics per experiment
+    Adding missing separator.
+    Added another bot.
+    Fixed syntax error
+    Added another bot.
+    Added few more bots.
+    Added TweetmemeBot.
+    Additional bots.
+    Some styling and readability.
+    include resettable experiment setting from Split.configuration.experiments
+    fix experiment setting parsing for boolean values
+    add include_rails_helper option
+    Adding posibility to start tests manually
+    Add hooks for experiment deletion and resetting.
+    Add hooks for Trial#choose! and Trial#complete!
+    
+    This adds two new attributes to Split.configuration,
+    on_trial_choose and on_trial_complete.
+    
+    Set these attributes to a method name available in the
+    same context as the ab_test method. These methods should
+    accept one argument, a Trial instance.
+    
+    For example:
+    
+        Split.configuration.on_trial_choose = :log_choice
+    
+        # application_controller.rb
+        def log_choice(trial)
+          logger.info "experiment=%s alternative=%s user=%s" %
+            [ trial.experiment.name, trial.alternative, current_user.id ]
+        end
+    Adding possibility to store overridden alternative
+    Check if experiments responds to #keys instead
+    Ensure experiements are a Hash when configuring
+    add some minor docs for filtering
+    allow for a custom exclude logic
+    
+    this is just an example implementation for discussion, readme and docs are still missing.
+    expose bots hash from config
+    Added bot names escaping
+    Use \A and \z in robot regexp
+    Added YandexBot to bot list
+    Add Microsoft's Bing bot to the list of bots
+    Load experiments via YAML indifferently.
+    
+    Fixes #123.
+    Categorize & alphabetize bot list
+    Add more bot user agents
+    Ignore anything that doesn't present a good UA
+    Big refactoring of Experiment
+    
+    It's ugly, but it works.
+    
+    The primary goal is to have `new`, `find`, and `find_or_create` all
+    behave in an appropriate manner. Config files are used to initialize
+    values, but not in place of the Redis store.
+    Added pingdom to bot list
+    Added more known bots to the default configuration
+    DRY spec
+    Rename "variants" to "alternatives"
+    support ruby 1.8.7.
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb
+    Refactor to allow for pluggable algorithm implementations.
+    Use a config file to define experiments
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    corrected final typo in robots hash
+    corrected typo in robot hash
+    documented bots sequence and clarified regex
+    Allow parameter overrides, even without Redis.
+    
+    With this option, applications can be tested to ensure that the options
+    render correctly, even without Redis installed and running on the
+    development machines.
+    changed name of enabled flag
+    create an option to disable split testing
+    Clean up old versions of experiments from sessions
+    Add redis failover solution
+    
+    Due to the fact that redis has no autom. failover mechanism, it is now
+    possible to switch on 'db_failover' config option, so that 'ab_test' and
+    'finished' will not crash. 'ab_test' always delivers alternative A (the
+    first one) in that case. It's also possible to set a 'db_failover_on_db_error'
+    handler (proc) in the config, for example to log these errors via
+    Rails.logger.
+    minor code cleanup
+    Added ignore_ip_addresses configuration option
+    Allow for easier overiding of the robot regex via a configuration object
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Reference ActionController directly when including split helpers (#602)
+    Lazily include split helpers in ActionController::Base
+    Support for combined experiments (see README) (#493)
+    
+    * Support for combined experiments (see README)
+    
+    * Refactor combined experiments into its own helper
+    
+    * Update README, add descriptive error messages
+    Enable frozen_string_literal magic comment
+    add include_rails_helper option
+    extracting Rails specifics into engine subclass
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Remove extra SISMEMBER check when calling RedisInterface#add_to_set
+    Simplify list persistence on RedisInterface
+    Remove unused RedisInterface#remove_last_item_from_list
+    Add frozen_string_literal to all files that were missing it
+    Improve performance of RedisInterface#make_list_length (#509)
+    
+    This implementation will only execute 1 to Redis command, instead of
+    2n (n being the total number of elements to trim from the list).
+    
+    The operation will still take O(n) time, but the constants will be
+    much better, since only 1 network round trip is required.
+    Make resetting on experiment change optional (#430)
+    
+    * Extract method #persist in Experiment.
+    
+    * Rename method #persist -> #persist_configuration.
+    
+    * Extract method #remove_configuration in Experiment, move method call.
+    
+    * Extract method #configuration_has_changed? in Experiment.
+    
+    * Remove duplicate method call smell in Experiment.
+    
+    * Rename methods to differentiate between Split config and experiment config.
+    
+    * Move persistence of name into #persist_experiment_configuration, reuse remove_experiment_configuration.
+    
+    * Extract method #redis in Experiment.
+    
+    * Add new class RedisInterface, implement list persistence.
+    
+    * Make #persist_list return list values in RedisInterface.
+    
+    * Use RedisInterface#persist_list in GoalsCollection.
+    
+    * Extract method #add_to_set in RedisInterface.
+    
+    * Implement reset_manually configuration flag.
+    
+    * Move spec to the right place and make it test the right thing.
+    
+    * Learn an important lesson about running the full specs.
+    
+    * Style and readability improvements in Experiment.
+    
+    * Revert "Style and readability improvements in Experiment."
+    
+    This reverts commit b64237c2cfd837ada8b08a3d42134d1c9ebf45cd.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Change redis.exists to redis.exists? to avoid problems with redis 4.3
+    Enable frozen_string_literal magic comment
+    [code gardening] fix private for class methods, minor code refactorings
+    Refactor finding experiments from Helper to ExperimentCatalog
+    Call compact within Split::ExperimentCatalog.all
+    
+    In certain upgrade situations the ExperimentCatalog could return nil for an experiment. This goes against some assumptions about the public api and how it is used. Call compact to prevent nil from being returned.
+    Refactoring: Extract ExperimientStore
+    
+    Extracts the responsibility of finding experiments to another class
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Make dashboard pagination default "per" param configurable (#597)
+    
+    * Make dashboard pagination default "per" param configurable
+    Fix Dashboard Pagination Helper typo (#541)
+    
+    Resolves issue when displaying the dashboard caused by missing
+    parenthesis is in code for the pagination helper.
+    
+    After this change the dashboard displays as expected.
+    dashboard/paginator (#518)
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Fix Bigdecimal warnings
+    
+    * replace BigDecimal.new() with BigDecimal()
+    Avoid crashing on Ruby 2.4 for numeric strings (#470)
+    Enable frozen_string_literal magic comment
+    Escaping experiment name in "Use This" situations to make sure single-quotes
+    don't cause misnamed experiments to be deemed the winner
+    Refactored Z-score calculations to be separate from the Alternative Class.
+    Rewrote z_score algorithm.
+    Since we only care if the difference is greater than zero we only need a z-score of 1.65, corresponding to the positive half of the normal curve.
+    
+    We are not interested in negative z numbers. The null hypothesis is
+    that the control is not performing worse. We only have to be confident
+    it's better to disprove the null hypothese, which means we only care
+    about the positive tail of the normal distribution.
+    Refactor confidence helper.
+    Fixed dashboard range error
+    use the built in round helper
+    confidence_level helper should handle tiny z-scores
+    Extracted dashboard helpers into a module for easier testing
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    dashboard/paginator (#518)
+    Cleaned up extra whitespace
+    Renamed the project to Split
+    Renamed Server to Dashboard
+    added reset css
+    Introduce enable/disable experiment cohorting
+    Add reopen experiment action to dashboard
+    refactor dashboard js
+    Initial prettiness for Split dashboard
+    Delete an experiment
+    Ask to confirm winner choice
+    Added ability to reset an experiment from the dashboard
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Fixed a few codeclimate warnings (#458)
+    
+    * Fixed a few codeclimate warnings
+    
+    * Fixed eslint validation warning
+    Implement filtering dashboard by active/complete experiments.
+    Implement naive dashboard filtering by experiment name.
+    Introduce enable/disable experiment cohorting
+    dashboard/paginator (#518)
+    Implement naive dashboard filtering by experiment name.
+    Remove body "max-width" from dashboard.
+    Added Rails Environment to Split Admin header
+    Implement multiple goals for an experiment
+    Fixes header gradient in FF/Opera.
+    display start time in the view
+    Gave that header some border radius. Headers love boarder radius.
+    Alignment, header colour.
+    Table tidy
+    Experiment header
+    Initial prettiness for Split dashboard
+    Show version number of experiment on dashboard
+    Added 'control' note to the control alternative in each experiment on dashboard
+    Dashboard style tweaks
+    Reformatted dashboard css
+    Delete an experiment
+    Show percentage improvement of alternatives compared to the control
+    no more massive clickable area on the reset button
+    Wider tables on dashboard
+    Added ability to reset an experiment from the dashboard
+    Renamed the project to Split
+    Renamed Server to Dashboard
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    Add ab_record_extra_info to allow record extra info to alternative and display on dashboard. (#460)
+    Add ability to force alternative on dashboard. (#437)
+    Implement filtering dashboard by active/complete experiments.
+    Implement naive dashboard filtering by experiment name.
+    Fix the dashboard for experiments with ‘/‘ in the name.
+    
+    ‘/‘ messes up JS and sinatra routing when used as a pretty url parameter.
+    Fix caching of winning alternative to prevent recalculation each time the dashboard is loaded
+    
+    It looks like when this feature was added, the calculation of winning
+    alternatives was meant to take place only once per day.
+    
+    The #calc_winning_alternatives method was never called, which was meant
+    to be saving the experiment's last calc_time. Update the experiment view
+    to call this method instead of the #estimate_winning_alternative method
+    directly. Fix caching so that the #calc_time= method is called, rather
+    than assigning to a local variable. Update calc_time so that number of
+    days since epoch is stored, rather than the day of month (1-31). Ensure
+    we're comparing integer values, rather than the string value Redis
+    returns from #hget.
+    Fixed bug with Time mocking in RSpec to make the tests pass.
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Escaping experiment name in "Use This" situations to make sure single-quotes
+    don't cause misnamed experiments to be deemed the winner
+    Show metrics associated with each experiment on Dashboard (like we do with goals)
+    Replace winner existance checks with has_winner? to be more readable
+    [BUG] Display Start button when rendering an experiment with a goal defined
+    Adding posibility to start tests manually
+    Implement multiple goals for an experiment
+    Extracted unfinished_count onto alternative
+    Experiments can now handle not having start times
+    display start time in the view
+    Experiment header
+    Initial prettiness for Split dashboard
+    Show version number of experiment on dashboard
+    Show confidence level instead of zscore in dashboard
+    Added 'control' note to the control alternative in each experiment on dashboard
+    Dashboard style tweaks
+    Extracted dashboard experiment html into a partial
+    disable cohorting revision
+    Introduce enable/disable experiment cohorting
+    Whoops. Forgot to update the delete path.
+    Fix the dashboard for experiments with ‘/‘ in the name.
+    
+    ‘/‘ messes up JS and sinatra routing when used as a pretty url parameter.
+    Add reopen experiment action to dashboard
+    [BUG] Display Start button when rendering an experiment with a goal defined
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    dashboard/paginator (#518)
+    Implement filtering dashboard by active/complete experiments.
+    Implement naive dashboard filtering by experiment name.
+    Updated links to new github org
+    remove default goal
+    Implement multiple goals for an experiment
+    Initial prettiness for Split dashboard
+    Extracted dashboard experiment html into a partial
+    Delete an experiment
+    Show percentage improvement of alternatives compared to the control
+    Ask to confirm winner choice
+    Added ability to reset an experiment from the dashboard
+    More helpful text when no experiments exist
+    More robust conversion rate
+    Renamed the project to Split
+    Added button to dashboard to mark an alternative as a winner
+    added statistical analysis (z-score) KAPOW!
+    Renamed Server to Dashboard
+    added non-finished test participants
+    fancy table!
+    Beginnings of the web interface
+    Fix URLs to replace http with https
+    Implement naive dashboard filtering by experiment name.
+    Updated links to new github org
+    Adds functionality which uses the beta distribution to calculate the probability an alternative is the winner. Necessary for comparing more than 2 alternatives.
+    Made Rails ENV conditional on Rails environment existing using controller
+    Removed rails specific code from dashboard
+    
+    Doesn't work outside of rails
+    Added Rails Environment to Split Admin header
+    Initial prettiness for Split dashboard
+    Added ability to reset an experiment from the dashboard
+    Renamed the project to Split
+    Renamed Server to Dashboard
+    added reset css
+    Stolen resque layout and styles for frontend
+    Revert "Remove Sinatra Dependency for Split Dashboard"
+    Remove Sinatra Dependency for Split Dashboard
+    [BUG] Display Start button when rendering an experiment with a goal defined
+    remove default goal
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Enable frozen_string_literal magic comment
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    add a simple way to load users outside web session
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Add `expire_seconds:` TTL option to RedisAdapter
+    Enable frozen_string_literal magic comment
+    Allow RedisAdapter to be used outside of a session context
+    Changed config to throw error when lookup_by is undefined
+    Added configuration to RedisAdapter
+    Added Persistence::RedisAdapter
+    Add a flag to use the new behavior of the DualAdapter
+    Decrement participant count when overriding version
+    Improve Dual Adapter
+    Fix loadorder issues (#479)
+    144867444998371 dual cookie redis split persistence adapter (#420)
+    
+    * Use fakeredis for testing
+    
+    * require fakeredis manually
+    
+    * Add fakeredis as a dev dependency
+    
+    * v.1.5.0
+    
+    * Add Dual Redis(logged-in)/cookie(logged-out) persistence adapter
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    CookieAdapter: Fix cookies when @context is an ActionController (#526)
+    
+    * CookieAdapter: Fix cookies when @context is an ActionController
+    
+    Using ab_test from a controller was failing because "cookies" is a
+    private method of the controller instance which is assigned to @context.
+    
+    It looks like this was broken in the commit that fixed the multiple
+    "Set-Cookie" headers bug:
+    https://github.com/splitrb/split/commit/3523e1c53988d727afb3f28a0208d7984f8fc31b
+    
+    Using `.send(:cookies)` again when using Rails was the easiest way I
+    found to fix this.
+    
+    Note: I was able to add an integration test for the case when it's
+    called from the controller, but I failed to a regression test that uses
+    and ActionView context object.
+    
+    * Don't use to_h on CookieJar, it doesn't work on older rubies
+    Fix cookie header duplication (#522)
+    
+    * Add failing spec for multiple Set-Cookie headers bug
+    
+    * When ActionDispatch::Cookies is available from Rails tries to use it.
+    Otherwise parse current cookies set on response and replace it using Rack directly.
+    
+    * Keep compatibility with Rack ~> 1.6.
+    New methods like Rack::Utils#make_delete_cookie_header were only added on 2.0.0
+    Rewrite CookieAdapter  to work with Rack::Request and Rack::Response directly (#490)
+    Enable frozen_string_literal magic comment
+    allow cookie length configuration
+    Handle exceptions from invalid JSON in cookies
+    Replaces 1.9 style hashes with 1.8
+    * Implements Persistance Adapters and adds two standard ones:
+      * Split::Persistence::SessionAdapter - Behaves exactly like the existing persistence layer
+      * Split::Persistence::CookieAdapter - Stores the ab_user in the cookie so return visitors are always presented with the same version of the split test.
+    * Allows for configuring your desired persistence layer by symbol (:cookie or :session) or class name, including custom adapters. Defaults to Split::Persistence::SessionAdapter.
+    * Adds passing specs for the new adapter layer.
+    * Updates existing specs to work with the new adapter layer.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Replace usage of SimpleRandom with RubyStats
+    Enable frozen_string_literal magic comment
+    [code gardening] fix private for class methods, minor code refactorings
+    Remove white space
+    Whiplash: use all_completed_count instead of completed_count to take goal completions into account
+    pluggable experiment algorithms. Add a bandit implementation.
+    Fix Layout/SpaceAfterComma offenses
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Enable frozen_string_literal magic comment
+    pluggable experiment algorithms. Add a bandit implementation.
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Add frozen_string_literal to all files that were missing it
+    added block randomization algorithm and specs (#475)
+    
+    * added block randomization algorithm and specs
+    
+    * added BlockRandomization explanation to README
+    Fix Rubocop offense Layout/EmptyLineAfterMagicComment
+    Enable frozen_string_literal magic comment
+    Remove white space
+    WIP: Major changes to internals of Split to properly handle metrics, and configuration vs. redis storage. What a mess. Also tries to refactor helper.rb

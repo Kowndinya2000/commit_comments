@@ -1,0 +1,2450 @@
+﻿    Formatting, adding/updating links
+    Remove year from copyright
+    Add MIT License
+    Fix tyop
+    Roots 7.0.3
+    Roots 7.0.2
+    Update CHANGELOG
+    Move JavaScript to footer
+    
+    Ref https://github.com/h5bp/html5-boilerplate/issues/1605
+    Update CHANGELOG
+    Roots 7.0.1
+    Updage -> Update
+    Roots 7.0.0
+    Update CHANGELOG
+    Update version numbers, CHANGELOG
+    Update to Bootstrap 3.1.1
+    Roots 6.5.2
+    Bootstrap 3.1.0
+    Update to jQuery 1.11.0
+    Add notice to theme activation, tidy activation table markup
+    Remove changing media folder from theme activation
+    Update to Bootstrap 3.0.3
+    Use main element
+    Update to Modernizr 2.7.0
+    Don't run JSHint on plugins
+    Disable warnings about undefined variables
+    Merge in updates from HTML5 Boilerplate
+    Make enabling a JS source map easy
+    Update to Bootstrap 3.0.2
+    Switch to grunt-contrib-less, add LESS source maps support
+    Move rewrites to a plugin, Roots 6.5.1
+    Update to Bootstrap 3.0.1
+    Roots 6.5.0
+    Update CHANGELOG.md
+    Update CHANGELOG
+    fix #814: jquery-1.10.1 remove, jquery-1.10.2 add
+    Change media directory to /media/
+    Update CHANGELOG
+    Close #766 - Update to Bootstrap 2.3.2
+    Close #758 - Update to Google Universal Analytics
+    Remove post tags from templates
+    Remove TinyMCE valid elements tweaks (no longer necessary)
+    Remove additional widget classes
+    Update CHANGELOG
+    Fix CHANGELOG entry
+    Only make URLs relative if its not external
+    Roots 6.4.0
+    Fixes #697 - Cleanup activation
+    Fix clean URL issues with non-standard setups
+    Make sure rewrites are added to .htaccess immediately after activation
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Rename page-custom.php to template-custom.php
+    Update CHANGELOG
+    Ref #699 - Update to Bootstrap 2.3.1
+    Update CHANGELOG with changes since 6.3.0
+    Roots 6.3.0
+    Update to Bootstrap 2.3.0
+    Update CHANGELOG
+    Close #638 - Add add_theme_support for Nice Search
+    Close #646 - Replace ID's with classes
+    Update CHANGELOG
+    Fix #643 - Fix PHP notice on search with no results
+    Close #635 - Update to jQuery 1.9.0
+    Roots 6.2.0
+    Update to Bootstrap 2.2.2 - Close #616
+    Update to jQuery 1.8.3
+    Update CHANGELOG
+    Use entry-summary class for excerpts - Closes #589
+    Remove lib/post-types.php and lib/metaboxes.php
+    
+    We now recommend placing custom post types and
+    metaboxes within a plugin that contains all of
+    your site specific functionality.
+    
+    See the latest update to https://github.com/retlehs/soil
+    to find an example:
+    
+    https://github.com/retlehs/soil/tree/master/mu-plugins/base
+    Fix #580 - Menu always gets added & set on activation
+    
+    Also updated the method of setting the permalink structure
+    on activation.
+    Update to Bootstrap 2.2.1
+    Update conditional feed method
+    Update to Bootstrap v2.2.0
+    Return instead of echo class names
+    Move Nav customizations into its own file
+    
+    Considering the nav customization/cleanup code is fairly involved and
+    important, it shouldn't be hidden in the middle of cleanup.php
+    Roots 6.1.0
+    Refactor sidebar configuration
+    
+    Instead of editing an if statement (which could get ugly quickly), just
+    edit configuration arrays of conditional tags and page template checks.
+    Re-organize theme configuration and setup
+    
+    functions.php should not contain any Roots specific code. It's just used
+    to require files and bootstrap Roots. lib/init.php now handles initial
+    theme setup and defines helper constants which did not belong in
+    lib/config.php.
+    
+    config.php should be limited to strictly configuration settings.
+    Update to jQuery 1.8.2
+    Update CHANGELOG
+    Add note about CONTRIBUTING.md
+    Fix CHANGELOG
+    Update docs
+    Roots 6.0.0
+    Fixes #542 - Simplify nav & add 3rd level dropdown
+    Update CHANGELOG
+    Add new theme documentation
+    Update Changelog
+    Fix #527 - Link to scribu's post on theme wrappers
+    Ref #525 - Add placeholder files for custom post types & metaboxes
+    Ref #525 - Move css/, img/, and js/ into assets/
+    Ref #525 - Remove all hooks
+    Add MIT License
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Add CHANGELOG
+    Disable warnings about undefined variables
+    Predefine Modernizr function to avoid JSHint errors
+    Fixed error with jshint's ES5 option
+    Add support for grunt 0.4.0
+    Fix permissions
+    Roots 6.5.0
+    Update contributing guidelines
+    Add CONTRIBUTING.md to assist with the new GitHub UI
+    Add new theme documentation
+    Formatting, adding/updating links
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    doing some clean up to the new options (which are awesome btw)
+    updating #main and #sidebar CSS classes to use the new options
+    adding hooks & actions
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    added more controls to carousel
+    moved gallery into post-body
+    random late night hacking - oops
+    changed layout so top sections can align with banner
+    changed layout
+    stuck in carousel indicators
+    stuck in basic gallery
+    added basic version of gallery
+    cleaned up project galler styles
+    got styles to play nicely on other pages
+    made seperate navbar page
+    removed foo bar link text
+    styled project gallery fields
+    added prject gallery template and project post type
+    Update page.php
+    Initiate the loop before the title is called on pages. Failing to do so causes checks that run on the loop's status to fail.
+    Formatting, adding/updating links
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    doing some clean up to the new options (which are awesome btw)
+    updating #main and #sidebar CSS classes to use the new options
+    adding hooks & actions
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    Updated alerts to bootstrap v3
+    Fix #720 - Re-organize archives template
+    
+    - Move posts exists check and post navigation to index.php
+    
+    - templates/content.php now only contains the post that's pulled
+    in from index.php
+    
+    - Specific post format templates now properly work
+    Close #645 - Fix for search with no result
+    Fix #643 - Fix PHP notice on search with no results
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    doing some clean up to the new options (which are awesome btw)
+    updating #main and #sidebar CSS classes to use the new options
+    adding hooks & actions
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    Add EditorConfig
+    ignored .DS_Store;
+    Use grunt-wp-assets
+    Replace grunt-wp-assets with grunt-filerev and grunt-filerev-assets
+    
+    By writing to assets-manifest.json with grunt-filerev-assets, it's
+    no longer necessary to commit changes to lib/scripts.php when developing
+    Ref #933 - dev and build tasks for Grunt
+    
+    Dev: don't minify
+    Build: minify, lean Modernizr build
+    
+    Dev assets will load if you have defined your WP_ENV as development
+    If you don't use Bedrock, you'll need to add this to your wp-config.php:
+    
+    define('WP_ENV', 'development');
+    
+    TODO: lib/scripts.php shouldn't need to be committed for changes after
+    running the version task
+    Use grunt-wp-assets for version task
+    
+    * default use filename version revving instead of querystring
+    * versioning file will be ignore
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ignore LESS source map
+    Add support for grunt 0.4.0
+    Update .gitignore
+    Add updates from H5BP
+    Add updates from H5BP
+    h5bp updates, style.css now using stripped version + reorganized
+    Updated translations based on feedback, fixed typo.
+    Removed gitignore and default less classes
+    Added Less Framework 4
+    
+    Addition of the Less Framework 4 (http://lessframework.com/) to CSS frameworks on top of changes to the CSS frameworks code refactoring by swalkinshaw in commit 539198a.
+    Fix typo.
+    Adds notes about privileges.
+    Adds Bower installation instructions
+    Remove mention of feature removed from Soil
+    Add dev dependency status badge
+    Remove Grunt badge
+    Add note about roots-sass
+    README updates
+    README updates
+    Update README
+    Don't encourage use of Roots Rewrites plugin
+    
+    Instead, use Bedrock.
+    Remove analytics
+    
+    No longer necessary with https://github.com/blog/1672-introducing-github-traffic-analytics
+    Add analytics
+    Add Grunt badge
+    Move rewrites to a plugin, Roots 6.5.1
+    Correct theme activation link typo
+    Add fonts to Nginx rewrites
+    Update npm install instructions
+    Roots 6.5.0
+    Add translation to list
+    Add link to newsletter subscription page
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Add section about grunt to README
+    Update README
+    Use relative paths in README and docs TOC
+    
+    https://github.com/blog/1395-relative-links-in-markup-files
+    Add note about lib/init.php to README
+    Fix #561 - Use TOC.md for documentation TOC
+    Add CONTRIBUTING.md to assist with the new GitHub UI
+    Add new theme documentation
+    Ref #525 - Move css/, img/, and js/ into assets/
+    Rename inc/ to lib/
+    Add MIT License
+    Update README
+    Fix #307 - remove reference to <figure> & <figcaption>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    adding on all supported languages, adding missing license info for new CSS frameworks
+    adding 'everything else' under license
+    better README - closes #155
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    roots 3.6.0
+    adding @mwrather to contrib list
+    minor spelling/formatting fixes
+    roots 3.5.0 (aka i should have tagged this a long time ago)
+    tagging 3.2.4
+    tagging 3.2.3
+    minor text/formatting changes
+    tagging 3.2.2 (bugfixes)
+    tagging 3.2.2 (bugfixes)
+    adding support for child themes
+    adding support for the 1140px grid
+    setting version to 3.1.1
+    adding support for 960.gs
+    fixing a character
+    roots 3.0.0
+    Initiate the loop for template-custom.php
+    
+    Just as #1056 added a loop-start to page.php, this adds a
+    loop-start to template-custom.php.
+    Formatting, adding/updating links
+    Rename page-custom.php to template-custom.php
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    doing some clean up to the new options (which are awesome btw)
+    updating #main and #sidebar CSS classes to use the new options
+    adding hooks & actions
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    Simplify comments, use core comment form and list
+    Add library comments
+    Reducing duplication and better utilizing the WP built-in `locate_template()`
+    
+    Re recommendations from @QWp6t in roots/roots#1042
+    Re-add excerpt and wp_title functions from cleanup.php
+    
+    Rename custom.php to extras.php
+    Close #992 - Move some Roots features into Soil
+    Move rewrites to a plugin, Roots 6.5.1
+    Move page titles into separate file
+    Move gallery shortcode into separate file
+    Move root relative URLs into separate file
+    Move theme wrapper into separate file
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Comments clean up, consistent formatting
+    Use Bootstrap media object for listing comments
+    
+    http://twitter.github.com/bootstrap/components.html#media
+    
+    - Introduce lib/comments.php: contains Roots_Walker_Comment
+    
+    - Update templates/comments.php to use the new walker, general
+    clean up
+    Rewrites organization
+    
+    - Create lib/rewrites.php and move everything from lib/htaccess.php
+    except the H5BP htaccess functionality into it
+    
+    - In the config, change add_theme_support('rewrite-urls') to
+    add_theme_support('rewrites')
+    
+    - Remove the Apache/LightSpeed HTTPD check for rewrites
+    
+    - Update docs with better Nginx rewrite rules
+    Remove lib/post-types.php and lib/metaboxes.php
+    
+    We now recommend placing custom post types and
+    metaboxes within a plugin that contains all of
+    your site specific functionality.
+    
+    See the latest update to https://github.com/retlehs/soil
+    to find an example:
+    
+    https://github.com/retlehs/soil/tree/master/mu-plugins/base
+    Move Nav customizations into its own file
+    
+    Considering the nav customization/cleanup code is fairly involved and
+    important, it shouldn't be hidden in the middle of cleanup.php
+    Refactor sidebar configuration
+    
+    Instead of editing an if statement (which could get ugly quickly), just
+    edit configuration arrays of conditional tags and page template checks.
+    Fix require order
+    Re-organize theme configuration and setup
+    
+    functions.php should not contain any Roots specific code. It's just used
+    to require files and bootstrap Roots. lib/init.php now handles initial
+    theme setup and defines helper constants which did not belong in
+    lib/config.php.
+    
+    config.php should be limited to strictly configuration settings.
+    template-tags.php does not exist anymore
+    Move Google Analytics code into footer template
+    
+    Once again, HTML tags should be in the templates when possible.
+    
+    actions.php is no longer needed now as well.
+    Update path to editor-style.css
+    Ref #525 - Add placeholder files for custom post types & metaboxes
+    Ref #525 - Add placeholder files for custom post types & metaboxes
+    Rename inc/ to lib/
+    Ref #525 - Remove all hooks
+    Remove debug code from #513
+    Fix #513 - Fix strict errors
+    Re-organization
+    change widgets to use <section> instead of <article> - see #379
+    Fix #302 - Lose EOF ?>
+    Better rewrite/clean URL handling
+    
+    - New roots-utils.php file for base functions
+    - Defined useful constants for dealing with common paths
+    - Refactored rewrites and clean URLs to be more flexible for non
+      standard setups
+    - Custom scripts handler now deals with plugin scripts correctly
+    - Fixes #204, #270, #278
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Sidebars can now have spaces in their names
+    removing custom image header for logo - closes #223
+    adding roots-scripts.php, now using wp_enqueue_script
+    re-organizing roots-actions.php, added roots_current_framework() function
+    fixes #201 - post entry meta should use date format from options
+    make roots_register_sidebars() less redundant
+    cleanup
+    adding content_width for bootstrap and foundation
+    load inc/ scripts in functions.php using BOTH require_once and locate_template -- best of both worlds
+    __DIR__ fallback for PHP <5.3.0 - fixes #171
+    Fix register sidebars so child themes can unregister them.
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    now outputting the post meta information from a function (similar to twentyeleven)
+    replacing the static call to logo.png with add_custom_image_header so
+    now you can update the logo via theme options
+    adding link to codex for post thumbnails and commented out example of
+    setting the size
+    cleanup. adding load_theme_textdomain support, moved some things into
+    after_setup_theme similar to twentyeleven, reverting
+    92e91d3bb581d00ecd35e3965766714d6b924d7d after unexpected behavior
+    [organization] moving stuff into roots-cleanup.php, moving asset
+    rewrites functions to htaccess file
+    closes #81 - moving get_roots_stylesheets to the hooks
+    Added authorship rel attribute to post author link
+    slight change to registering the nav menus
+    slight change to registering the nav menus
+    doing some clean up to the new options (which are awesome btw)
+    adding support for adapt.js, closes #47
+    adding vcard widget
+    switching from using include_once to the correct method, locate_template
+    
+    good info here:
+    http://justintadlock.com/archives/2010/11/17/how-to-load-files-within-wordpress-themes
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    formatting
+    removing output buffer include
+    adding hooks & actions
+    adding a blank roots-custom.php file so you can quickly add custom
+    functions without messing with functions.php (there will be some cleanup
+    to functions.php soon)
+    renaming includes/ directory to inc/
+    progress on #24 to add i18n and wpml support
+    Adding break to case statements + consistent formatting - fixes #35
+    Replaced get_stylesheet with get_template in many places to better accommodate child themes #18
+    adding support for the 1140px grid
+    fixing uppercase typo
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    Updates to make roots dir/theme renameable
+    removing function to add home to page menu (and fallback wp_list_pages since we automatically do it)
+    roots 3.0.0
+    changed layout so top sections can align with banner
+    added background to post-body as ::before
+    updated styles a little
+    tweaking layout
+    missed parallax classes
+    fixed up markup for all resume items
+    changed around how fluid two part layout works
+    added more words to resume
+    changed around wrappers in template header and footer
+    removed skills section
+    added more text to GIEP description
+    added in responsive styles and cleaned up html mark up
+    changed around post style to allow for more seperated resume posts
+    moved resume over
+    added more content to resume
+    added simple start to resume page template
+    changed layout so top sections can align with banner
+    added margin top to main content area and removed .rows divit
+    removed sidebar
+    added false bottom to page
+    put basic styles on content
+    removed IE warning
+    removed internal container
+    Move wp_footer() from footer template into base.php for easier footer customization and DRY
+    Move <main> and .sidebar markup out of PHP
+    
+    Add more efficient LESS with variables
+    
+    Add new line to _variables.less
+    
+    Add sidebar class to body element instead of main element
+    
+    Change body sidebar class to .sidebar-active
+    
+    Change body sidebar class to .sidebar-primary
+    
+    Correct spacing issues
+    Move main/sidebar class filters into config.php (fix missing arg errors).
+    Offer just one header, the BS top navbar
+    Use apply_filters for main and sidebar classes
+    Use main element
+    Merge in updates from HTML5 Boilerplate
+    Change IE conditional statement so alert appears on IE7
+    
+    Bootstrap 3 no longer supports IE7. The roots outdated browser warning should now appear on anything earlier than IE8.
+    Updated alerts to bootstrap v3
+    Indented aside tag within conditional
+    
+    Just noticed this wasn't indented like the rest. :)
+    Add translation to outdated browser alert
+    Fix #793 - Remove Chome Frame from outdated browser alert
+    
+    Match the latest update from HTML5 Boilerplate
+    https://github.com/h5bp/html5-boilerplate/commit/02713eedd21bbc92f704fbf65ff382e76bf81f2b
+    Match outdated browser alert with H5BP
+    Fix #639 - Add do_action('get_header')
+    Close #646 - Replace ID's with classes
+    Replace sidebar template call with path function
+    Return instead of echo class names
+    Refactor sidebar configuration
+    
+    Instead of editing an if statement (which could get ugly quickly), just
+    edit configuration arrays of conditional tags and page template checks.
+    Consistent use of PHP alternative syntax
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Update screenshot resolution to 880x660, change to blank image
+    Green Roots logo
+    Add new logo by Jens Windolf
+    
+    http://www.jenswindolf.de/
+    roots 3.0.0
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Updated alerts to bootstrap v3
+    Simplify alerts
+    Update 404 template based on H5BP
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Fix #305, #304 - Update alerts to use &times; entity
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    adding fullwidth class and search form to 404 template
+    removing Blueprint CSS specific classes
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    doing some clean up to the new options (which are awesome btw)
+    adding hooks & actions
+    progress on #24 to add i18n and wpml support
+    adding support for 960.gs
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    Update page.php
+    Initiate the loop before the title is called on pages. Failing to do so causes checks that run on the loop's status to fail.
+    Formatting, adding/updating links
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    doing some clean up to the new options (which are awesome btw)
+    updating #main and #sidebar CSS classes to use the new options
+    adding hooks & actions
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    roots 3.0.0
+    added sticky javascript
+    not 1--% sure what I did..
+    added css-sprites to make sprite file
+    Remove HTML5 shiv from Modernizr build
+    Update autoprefixer map option
+    
+    Accommodate the grunt-autoprefixer 0.8.0 options refactor
+    by passing an object (instead of string) to map option
+    a la nDmitry/grunt-autoprefixer@c658fb7
+    and nDmitry/grunt-autoprefixer@1b7af91
+    Make `grunt watch:js` include `assets/js/plugins/**/*.js`
+    
+    If I add JavaScript packages to my `assets/js/plugins/` directory, they must be concatenated, uglified, and added to `scripts.js` to be used in my theme. The `watch:js` task should also note changes to those files and directories.
+    Use grunt-wp-assets
+    Update watch tasks
+    Add time-grunt
+    Add grunt-autoprefixer
+    LiveReload - reference non-minifed assets
+    Replace grunt-wp-assets with grunt-filerev and grunt-filerev-assets
+    
+    By writing to assets-manifest.json with grunt-filerev-assets, it's
+    no longer necessary to commit changes to lib/scripts.php when developing
+    Use load-grunt-tasks
+    Ref #933 - dev and build tasks for Grunt
+    
+    Dev: don't minify
+    Build: minify, lean Modernizr build
+    
+    Dev assets will load if you have defined your WP_ENV as development
+    If you don't use Bedrock, you'll need to add this to your wp-config.php:
+    
+    define('WP_ENV', 'development');
+    
+    TODO: lib/scripts.php shouldn't need to be committed for changes after
+    running the version task
+    Update clean task for versioned assets
+    Fix parseFiles in grunt-modernizr task
+    Use grunt-wp-assets for version task
+    
+    * default use filename version revving instead of querystring
+    * versioning file will be ignore
+    Better LESS organization
+    Load Modernizr from Bower, lean build with Grunt
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Don't run JSHint on plugins
+    Make enabling a JS source map easy
+    watch: recess -> less
+    Switch to grunt-contrib-less, add LESS source maps support
+    Close #842 - Move version task to a grunt plugin
+    Add .php files to livereload
+    Added browser live reloading to Grunt
+    Roots 6.5.0
+    Import Bootstrap from app.less
+    Added grunt-imageoptim task
+    Add version task to LESS updates
+    Add uglify and version to watch
+    Fixes typo
+    Add support for grunt 0.4.0
+    Roots 7.0.3
+    Roots 7.0.2
+    Roots 7.0.1
+    Update style.css
+    Update version numbers, CHANGELOG
+    Roots 6.5.2
+    Update description and link
+    Move rewrites to a plugin, Roots 6.5.1
+    Roots 6.5.0
+    Roots 6.4.0
+    Roots 6.3.0
+    Roots 6.2.0
+    Roots 6.1.0
+    Roots 6.0.0
+    Add License URI
+    Add MIT License
+    Roots 5.2.0
+    Re-organization
+    Roots 5.1.0
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    roots 4.0.0
+    updating description
+    roots 3.6.0
+    tagging 3.2.4
+    tagging 3.2.3
+    minor text/formatting changes
+    tagging 3.2.2 (bugfixes)
+    tagging 3.2.2 (bugfixes)
+    adding support for child themes
+    setting version to 3.1.1
+    adding jquery 1.5.2 and removing changelog from style.css since it's now tracked in README.md
+    adding support for 960.gs
+    roots 3.0.0
+    added sticky javascript
+    Roots 7.0.3
+    Bump to 3.3.1
+    
+    Just bumpin'.
+    Bump Bootstrap to 3.3.0
+    Roots 7.0.2
+    Roots 7.0.1
+    update roots version number in bower.json
+    Ref #1071 - Update to Bootstrap 3.2.0
+    Update to latest Modernizr
+    Update to jQuery 1.11.1
+    Use latest Bootstrap
+    Ref #867 - Add Respond.js (not enqueued by default)
+    Load Modernizr from Bower, lean build with Grunt
+    Load jQuery from Bower
+    Specific Bootstrap version
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    not 1--% sure what I did..
+    added css-sprites to make sprite file
+    Roots 7.0.3
+    Updating npm dependencies
+    Roots 7.0.2
+    Roots 7.0.1
+    Update devDependencies
+    updated package.json to use version 1.3.9 or greater
+    Runs platform agnostic postinstall. Closes #1078
+    
+    Global node binary is used to execute bower.
+    Global grunt binary (from grunt-cli) is used to run `dev` task.
+    Update autoprefixer map option
+    
+    Accommodate the grunt-autoprefixer 0.8.0 options refactor
+    by passing an object (instead of string) to map option
+    a la nDmitry/grunt-autoprefixer@c658fb7
+    and nDmitry/grunt-autoprefixer@1b7af91
+    Bump NPM package versions
+    Update packages
+    Use grunt-wp-assets
+    Add time-grunt
+    Add grunt-autoprefixer
+    Update version numbers, CHANGELOG
+    Replace grunt-wp-assets with grunt-filerev and grunt-filerev-assets
+    
+    By writing to assets-manifest.json with grunt-filerev-assets, it's
+    no longer necessary to commit changes to lib/scripts.php when developing
+    Use load-grunt-tasks
+    Ref #933 - dev and build tasks for Grunt
+    
+    Dev: don't minify
+    Build: minify, lean Modernizr build
+    
+    Dev assets will load if you have defined your WP_ENV as development
+    If you don't use Bedrock, you'll need to add this to your wp-config.php:
+    
+    define('WP_ENV', 'development');
+    
+    TODO: lib/scripts.php shouldn't need to be committed for changes after
+    running the version task
+    Run bower install after npm install
+    Use grunt-wp-assets for version task
+    
+    * default use filename version revving instead of querystring
+    * versioning file will be ignore
+    Load Modernizr from Bower, lean build with Grunt
+    Roots 6.5.2
+    Update Grunt to 0.4.2
+    Switch to grunt-contrib-less, add LESS source maps support
+    Move rewrites to a plugin, Roots 6.5.1
+    Close #842 - Move version task to a grunt plugin
+    Update versions
+    Roots 6.5.0
+    Update node version
+    Update grunt dependencies
+    Added grunt-imageoptim task
+    update grunt-contrib-clean to 0.5.x
+    
+    Version 0.4.x doesn't seem to work with grunt 0.4.1
+    Roots 6.4.0
+    Add support for grunt 0.4.0
+    Roots 6.3.0
+    Update Roots version in package.json
+    Add grunt.js build script
+    
+    - Move Bootstrap LESS files into new subdirectory
+    
+    - Change app.css to app.less, add @import's to utilize
+    Bootstrap variables and mixins
+    
+    - Remove plugins.js and main.js
+    
+    - Move Bootstrap JS plugins into new subdirectory
+    
+    - Add new _main.js file with example DOM-based routing
+    script that works off the WordPress body_class
+    
+    - lib/scripts.php has been updated to remove all extra
+    CSS and JS files and also places JavaScript in the footer
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    random late night hacking - oops
+    added sticky javascript
+    JS wrap, better comments
+    Add comments to _main.js, remove finalize
+    Add support for grunt 0.4.0
+    Add grunt.js build script
+    
+    - Move Bootstrap LESS files into new subdirectory
+    
+    - Change app.css to app.less, add @import's to utilize
+    Bootstrap variables and mixins
+    
+    - Remove plugins.js and main.js
+    
+    - Move Bootstrap JS plugins into new subdirectory
+    
+    - Add new _main.js file with example DOM-based routing
+    script that works off the WordPress body_class
+    
+    - lib/scripts.php has been updated to remove all extra
+    CSS and JS files and also places JavaScript in the footer
+    Add .gitkeep to assets/js/plugins
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    Update editor-style
+    Close #881 - Update editor-style.css and instructions
+    Update Bootstrap 3 Customize URL
+    
+    Fix for issue #870
+    Update editor-style.css
+    
+    - Bring in latest Bootstrap changes
+    
+    - Add instructions on how to update the file
+    Update editor-style.css, remove margin on body
+    Update editor-style.css
+    Ref #525 - Move css/, img/, and js/ into assets/
+    Re-organization
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    roots 3.0.0
+    changed color white balance
+    added bottomo footer styles and nickreid-picture
+    added favicon
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    added nickreid-logo
+    added css-sprites to make sprite file
+    changed bottom footer to have 3d effect
+    added shadow to bottom of main area
+    tweaked footer
+    changed bottom footer to have 3d effect
+    added false bottom to page
+    added css-sprites to make sprite file
+    added css-sprites to make sprite file
+    added css-sprites to make sprite file
+    Move variables into main.less in case it needs to come after other imports (e.g., fontawesome)
+    Splits mixins into separate imports, fixes import order.
+    add _responsive-embed.less
+    Better LESS organization
+    removed column construct to modify banner/wrapper
+    started hacking the framework
+    Better LESS organization
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    added css-sprites to make sprite file
+    split up projects and fixed up to top arrow
+    first draft of parallax code
+    added simple start to resume page template
+    Add some base comment styling
+    
+    Ref #1197, #1111, #1181
+    Move variables into main.less in case it needs to come after other imports (e.g., fontawesome)
+    Close #992 - Move some Roots features into Soil
+    Better LESS organization
+    darkened footer and made it larger
+    changed up font sizes
+    changed around post style to allow for more seperated resume posts
+    styled project gallery fields
+    screwed around with container width to make the fluid widths work out better
+    darkened navbars
+    added false bottom to page
+    styled navigation bar
+    added nickreid-logo
+    removed column construct to modify banner/wrapper
+    started hacking the framework
+    Update order and comments for custom variables
+    Move <main> and .sidebar markup out of PHP
+    
+    Add more efficient LESS with variables
+    
+    Add new line to _variables.less
+    
+    Add sidebar class to body element instead of main element
+    
+    Change body sidebar class to .sidebar-active
+    
+    Change body sidebar class to .sidebar-primary
+    
+    Correct spacing issues
+    Better LESS organization
+    Add some base comment styling
+    
+    Ref #1197, #1111, #1181
+    added top stuff
+    added .icon-home
+    cleaned up navbar responsive styles
+    added twitter and linked in nav icons
+    added css-sprites to make sprite file
+    Better LESS organization
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    styled gallery slightly
+    tweaking layout
+    tweaked parallax effect to acceptable
+    first draft of parallax code
+    added start of parallax files
+    Better LESS organization
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    Formatting / syntax fix
+    use WP HTML5 markup for captions instead of Soil
+    
+    Use add_theme_support to enable native HTML5 captions and add caption styling to wp-caption-text.
+    Close #992 - Move some Roots features into Soil
+    Better LESS organization
+    Close #992 - Move some Roots features into Soil
+    Better LESS organization
+    split up projects and fixed up to top arrow
+    split up projects and fixed up to top arrow
+    changed layout so top sections can align with banner
+    added top stuff
+    cleaned up navbar responsive styles
+    added banner widget styles
+    styled navigation bar
+    added nickreid-logo
+    Better LESS organization
+    changed up font sizes
+    styled project gallery fields
+    Better LESS organization
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    darkened footer and made it larger
+    tweaked footer
+    added bottomo footer styles and nickreid-picture
+    Better LESS organization
+    Move <main> and .sidebar markup out of PHP
+    
+    Add more efficient LESS with variables
+    
+    Add new line to _variables.less
+    
+    Add sidebar class to body element instead of main element
+    
+    Change body sidebar class to .sidebar-active
+    
+    Change body sidebar class to .sidebar-primary
+    
+    Correct spacing issues
+    Better LESS organization
+    added more controls to carousel
+    hardcoded parallax overlap
+    split up projects and fixed up to top arrow
+    random late night hacking - oops
+    changed layout so top sections can align with banner
+    styled gallery slightly
+    cleaned up project galler styles
+    changed post-body::before alignment and spacing
+    added background to post-body as ::before
+    updated styles a little
+    tweaking layout
+    tweaked parallax effect to acceptable
+    reorganizing components
+    changed around how fluid two part layout works
+    added in responsive styles and cleaned up html mark up
+    changed around post style to allow for more seperated resume posts
+    Better LESS organization
+    split up projects and fixed up to top arrow
+    random late night hacking - oops
+    changed layout so top sections can align with banner
+    added top stuff
+    fixed up footer styles
+    got styles to play nicely on other pages
+    reorganizing components
+    added classes for headings
+    added margin top to main content area and removed .rows divit
+    darkened footer and made it larger
+    changed around wrappers in template header and footer
+    removed border from post headers
+    changed bottom footer to have 3d effect
+    added shadow to bottom of main area
+    added full-width class
+    added style to un screw up sidebar
+    added container-md sizes
+    screwed around with container width to make the fluid widths work out better
+    added bottomo footer styles and nickreid-picture
+    added false bottom to page
+    put basic styles on content
+    styled navigation bar
+    removed column construct to modify banner/wrapper
+    Move <main> and .sidebar markup out of PHP
+    
+    Add more efficient LESS with variables
+    
+    Add new line to _variables.less
+    
+    Add sidebar class to body element instead of main element
+    
+    Change body sidebar class to .sidebar-active
+    
+    Change body sidebar class to .sidebar-primary
+    
+    Correct spacing issues
+    Better LESS organization
+    changed layout so top sections can align with banner
+    added background to post-body as ::before
+    updated styles a little
+    got styles to play nicely on other pages
+    reorganizing components
+    changed around wrappers in template header and footer
+    changed up font sizes
+    removed pretty header junk
+    added in responsive styles and cleaned up html mark up
+    changed around post style to allow for more seperated resume posts
+    moved resume over
+    made banner sidebar only show on homepage
+    made navbar seperated from photo
+    hid nickreid photo at bottom of page
+    changed layout for resume page into single column
+    added simple start to resume page template
+    Better LESS organization
+    Load Bootstrap via Bower
+    
+    TODO:
+    - Update README
+    - Use grunt-bower-task?
+    Ref #525 - Move css/, img/, and js/ into assets/
+    removing custom image header for logo - closes #223
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    put basic styles on content
+    Formatting, adding/updating links
+    move template title to function
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    added style to un screw up sidebar
+    Remove post tags from templates
+    Close #646 - Replace ID's with classes
+    Single template now has same tags output as archive
+    Move roots_entry_meta into its own template
+    
+    No need for this HTML to be in a function. Now instead of calling the
+    function, just use get_template_part
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Simplify comments, use core comment form and list
+    Move comments.php conditionals inside <section> tags to ensure section#comments and section#respond are always present to avoid breaking comments_link() function
+    
+    Line 54 __( --> _e(
+    Fix comment log out title echo
+    Updated alerts to bootstrap v3
+    Comment form markup
+    Simplify alerts
+    Use Bootstrap media object for listing comments
+    
+    http://twitter.github.com/bootstrap/components.html#media
+    
+    - Introduce lib/comments.php: contains Roots_Walker_Comment
+    
+    - Update templates/comments.php to use the new walker, general
+    clean up
+    Don't show comments on passworded posts
+    Close #646 - Replace ID's with classes
+    Code is prettier when consistent.
+    Move comments pager to unordered list.
+    Add missing semicolons
+    Consistent use of PHP alternative syntax
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove unnecessary CSS
+    Fix #305, #304 - Update alerts to use &times; entity
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    updated comments template based off twentyeleven's
+    removing Blueprint CSS specific classes
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    Minor bug - fixes #45
+    progress on #24 to add i18n and wpml support
+    Modified comments.php so that the default avatars are displayed according to the setting in Admin > Settings > Discussion > Avatars > Default Avatar
+    roots 3.0.0
+    split up projects and fixed up to top arrow
+    changed layout so top sections can align with banner
+    added top stuff
+    added classes to make nav sticky
+    changed around wrappers in template header and footer
+    made banner sidebar only show on homepage
+    added banner widget styles
+    styled navigation bar
+    removed column construct to modify banner/wrapper
+    started hacking the framework
+    Removed Roots_Nav_Walker as default for all menus
+    Remove extra forward slash after navbar home_url()
+    Add "collapsed" default class to navbar collapse button
+    Escaping home_url
+    Offer just one header, the BS top navbar
+    Separate containers
+    Add trailing slash using the $path parameter
+    Formatting, adding/updating links
+    BS3 markup for templates
+    Close #646 - Replace ID's with classes
+    Use PHP Alternative Syntax in header templates
+    Add has_nav_menu() check for navigation menus
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Default header should use pill nav if not using topbar
+    Add ability to include header without top navbar
+    added favicon
+    Remove wp_title, add title-tag theme support
+    Move wp_head() to be the last markup before </head>
+    Use `<!doctype html>` instead of `<!DOCTYPE html>`
+    
+    See https://github.com/h5bp/html5-boilerplate/commit/e67e9cc7c1b5a395521a6ee43031becc321e605a
+    Use get_feed_link for RSS URL
+    Merge in updates from HTML5 Boilerplate
+    Add wp_title() filter
+    Simplify wp_title()
+    
+    We recommend you use the WordPress SEO plugin for <title> management
+    JavaScript clean up
+    
+    - Modernizr is now enqueued and included after stylesheets
+    
+    - jQuery is no longer hardcoded since WP now supports protocol-relative
+    URLs
+    
+    - jQuery fallback output is handled by a new function in lib/scripts.php
+    (the method is still the same one from HTML5 Boilerplate)
+    Remove conditional feed in head.php
+    
+    Since most sites will have a blog, simply remove the feed link if
+    you don't want to include it.
+    Close #635 - Update to jQuery 1.9.0
+    Update to jQuery 1.8.3
+    Update conditional feed method
+    Add missing semicolons
+    Update to jQuery 1.8.2
+    Replace has_posts with built-in have_posts
+    Be consistent with PHP template tags
+    Move feed link into template
+    
+    All HTML should be in the templates whenever possible.
+    Update to Bootstrap 2.1.1, jQuery 1.8.1, Modernizr 2.6.2
+    Ref #525 - Move css/, img/, and js/ into assets/
+    Ref #525 - Remove all hooks
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Make search term `required` in search form.
+    Fixed search value, changed back to get_search_query, removed unnecessary check
+    Updated all instances of home_url() with esc_url()
+    Use sr-only class on searchform, move label again because of input-group styles
+    Swap input/label on searchform
+    Update searchform and meta templates
+    Add btn-default class to search submit
+    BS3 markup for templates
+    Preserve the search query in the search input when the user performs a search.
+    
+    This allows people to alter the text instead of retyping their query upon re-searching.
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove 'well' class
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    changing input type=search back to text until https://bugs.webkit.org/show_bug.cgi?id=33637 is resolved
+    progress on #24 to add i18n and wpml support
+    fixes #1 -- also minor changes to style.css and searchform.php
+    roots 3.0.0
+    Update hEntry schema to use `updated` instead of `published` on the time element
+    Update searchform and meta templates
+    Simplify entry meta
+    Move roots_entry_meta into its own template
+    
+    No need for this HTML to be in a function. Now instead of calling the
+    function, just use get_template_part
+    Formatting, adding/updating links
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Remove 'well' class
+    Re-organization
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Fix register sidebars so child themes can unregister them.
+    just simply call the sidebar(s)
+    adding hooks & actions
+    roots 3.0.0
+    Remove post tags from templates
+    Fix #720 - Re-organize archives template
+    
+    - Move posts exists check and post navigation to index.php
+    
+    - templates/content.php now only contains the post that's pulled
+    in from index.php
+    
+    - Specific post format templates now properly work
+    hNews consistency
+    Simplify alerts
+    Remove disabled post nav links
+    Close #646 - Replace ID's with classes
+    Prettier code is consistent.
+    Move posts pager to unordered list.
+    Use entry-summary class for excerpts - Closes #589
+    Move roots_entry_meta into its own template
+    
+    No need for this HTML to be in a function. Now instead of calling the
+    function, just use get_template_part
+    Consistent use of PHP alternative syntax
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    put basic styles on content
+    Initiate the loop before the title is called on pages. Failing to do so causes checks that run on the loop's status to fail.
+    Formatting, adding/updating links
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    changed around wrappers in template header and footer
+    changed bottom footer to have 3d effect
+    added bottomo footer styles and nickreid-picture
+    removed column construct to modify banner/wrapper
+    started hacking the framework
+    Move wp_footer() from footer template into base.php for easier footer customization and DRY
+    Remove footer copyright element
+    Separate containers
+    Close #991 - Move footer container
+    Formatting, adding/updating links
+    BS3 markup for templates
+    Close #680 - Move Google Analytics to scripts.php
+    JavaScript clean up
+    
+    - Modernizr is now enqueued and included after stylesheets
+    
+    - jQuery is no longer hardcoded since WP now supports protocol-relative
+    URLs
+    
+    - jQuery fallback output is handled by a new function in lib/scripts.php
+    (the method is still the same one from HTML5 Boilerplate)
+    Close #646 - Replace ID's with classes
+    Be consistent with PHP template tags
+    Move Google Analytics code into footer template
+    
+    Once again, HTML tags should be in the templates when possible.
+    
+    actions.php is no longer needed now as well.
+    Ref #525 - Remove all hooks
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    updated ACF project gallery fields
+    added support for thumbnail in projects
+    added project ACF field to config
+    added prject gallery template and project post type
+    added bottomo footer styles and nickreid-picture
+    added banner widget styles
+    Remove wp_title, add title-tag theme support
+    Simplify comments, use core comment form and list
+    use WP HTML5 markup for captions instead of Soil
+    
+    Use add_theme_support to enable native HTML5 captions and add caption styling to wp-caption-text.
+    Update lib/init.php
+    Move translations outside repo
+    
+    See https://github.com/roots/roots-translations
+    Close #992 - Move some Roots features into Soil
+    Fixes #962 - Not used anymore
+    Move helper constants to config.php
+    reorganize init defines
+    Use SERVER_NAME to avoid parsing site_url()
+    
+    site_url() was previously retrieved and parsed many times per page
+    before. This is cleaner and done for optimization purposes.
+    Fix clean URL issues with non-standard setups
+    Comments clean up, consistent formatting
+    Added backslash to add_editor_style
+    
+    Editor style css wasn't being applied for me until adding the backslash.
+    Re-order init file
+    Re-organize theme configuration and setup
+    
+    functions.php should not contain any Roots specific code. It's just used
+    to require files and bootstrap Roots. lib/init.php now handles initial
+    theme setup and defines helper constants which did not belong in
+    lib/config.php.
+    
+    config.php should be limited to strictly configuration settings.
+    template-tags.php does not exist anymore
+    Move Google Analytics code into footer template
+    
+    Once again, HTML tags should be in the templates when possible.
+    
+    actions.php is no longer needed now as well.
+    Update path to editor-style.css
+    Ref #525 - Add placeholder files for custom post types & metaboxes
+    Ref #525 - Add placeholder files for custom post types & metaboxes
+    Rename inc/ to lib/
+    Ref #525 - Remove all hooks
+    Remove debug code from #513
+    Fix #513 - Fix strict errors
+    Re-organization
+    change widgets to use <section> instead of <article> - see #379
+    Fix #302 - Lose EOF ?>
+    Better rewrite/clean URL handling
+    
+    - New roots-utils.php file for base functions
+    - Defined useful constants for dealing with common paths
+    - Refactored rewrites and clean URLs to be more flexible for non
+      standard setups
+    - Custom scripts handler now deals with plugin scripts correctly
+    - Fixes #204, #270, #278
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Sidebars can now have spaces in their names
+    removing custom image header for logo - closes #223
+    adding roots-scripts.php, now using wp_enqueue_script
+    re-organizing roots-actions.php, added roots_current_framework() function
+    fixes #201 - post entry meta should use date format from options
+    make roots_register_sidebars() less redundant
+    cleanup
+    adding content_width for bootstrap and foundation
+    load inc/ scripts in functions.php using BOTH require_once and locate_template -- best of both worlds
+    __DIR__ fallback for PHP <5.3.0 - fixes #171
+    Fix register sidebars so child themes can unregister them.
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    now outputting the post meta information from a function (similar to twentyeleven)
+    replacing the static call to logo.png with add_custom_image_header so
+    now you can update the logo via theme options
+    adding link to codex for post thumbnails and commented out example of
+    setting the size
+    cleanup. adding load_theme_textdomain support, moved some things into
+    after_setup_theme similar to twentyeleven, reverting
+    92e91d3bb581d00ecd35e3965766714d6b924d7d after unexpected behavior
+    [organization] moving stuff into roots-cleanup.php, moving asset
+    rewrites functions to htaccess file
+    closes #81 - moving get_roots_stylesheets to the hooks
+    Added authorship rel attribute to post author link
+    slight change to registering the nav menus
+    slight change to registering the nav menus
+    doing some clean up to the new options (which are awesome btw)
+    adding support for adapt.js, closes #47
+    adding vcard widget
+    switching from using include_once to the correct method, locate_template
+    
+    good info here:
+    http://justintadlock.com/archives/2010/11/17/how-to-load-files-within-wordpress-themes
+    complete rewrite of theme options, based on twentyeleven (in progress)
+    formatting
+    removing output buffer include
+    adding hooks & actions
+    adding a blank roots-custom.php file so you can quickly add custom
+    functions without messing with functions.php (there will be some cleanup
+    to functions.php soon)
+    renaming includes/ directory to inc/
+    progress on #24 to add i18n and wpml support
+    Adding break to case statements + consistent formatting - fixes #35
+    Replaced get_stylesheet with get_template in many places to better accommodate child themes #18
+    adding support for the 1140px grid
+    fixing uppercase typo
+    adding support for 960.gs
+    [ADD] Added the max content width for 960gs + clear div
+    [ADD] Added support for 960gs - TODO: add the clear div required by 960gs in the markup + test that no classes from the framework are conflicting with roots's existing css (2)
+    Updates to make roots dir/theme renameable
+    removing function to add home to page menu (and fallback wp_list_pages since we automatically do it)
+    roots 3.0.0
+    Remove wp_title, add title-tag theme support
+    Fixing dead variables and params
+    Re-add excerpt and wp_title functions from cleanup.php
+    
+    Rename custom.php to extras.php
+    updated nav link so I dont have to inject styles into nav menu
+    Removed Roots_Nav_Walker as default for all menus
+    Fixing dead variables and params
+    Offer just one header, the BS top navbar
+    Use 'roots/' for filters
+    Allow nav depth override
+    Library changes
+    Only make URLs relative if its not external
+    Spacing adjustments
+    changed is_dropdown evaluation
+    
+    is_dropdown can evaluate to true even if max_depth is 0. This is the WordPress default and implies that dropdowns are enabled.
+    Fix for navbar dropdowns
+    
+    Navbar items with children broke if the menu depth excluded the children.
+    Such as: wp_nav_menu(array('depth' => 1)) where 2nd level children exist
+    Comments clean up, consistent formatting
+    Fix for compatibility with ubermenu
+    
+    Fix for issue #586
+    Corrected spacing before pull.
+    Unset menu bugfix. Support for additional classes.
+    
+    Previous nav walker resulted in an error when no menu is set.
+    This fix supports supplementary classes i.e. nav-header nav-header-blue.
+    N.B. Bootstrap classes (nav-header, divider, divider-vertical) must be added first. 
+    Move Nav customizations into its own file
+    
+    Considering the nav customization/cleanup code is fairly involved and
+    important, it shouldn't be hidden in the middle of cleanup.php
+    added sticky javascript
+    Move JavaScript to footer
+    
+    Ref https://github.com/h5bp/html5-boilerplate/issues/1605
+    Always load GA snippet when not in production
+    Only load GA in production environment
+    
+    Loads Google Analytics when `WP_ENV` is 'production'
+    Otherwise it passes `ga()` arguments as an array to `console.log()`
+    
+    Also sets cookie domain to be auto configured.
+    Remove unnecessary string concatenation.
+    Make WP_ENV check a positive if statement to improve semantics and readability
+    Get menifest.json from file system. Fixes  #1048
+    Update to jQuery 1.11.1
+    - fixing weird double negative thing on line 22
+    - using unpackages/unoptimized modernizr when in the WordPress development environment
+    Use grunt-wp-assets
+    Add comments about GA
+    Just enqueue JS instead of register + enqueue
+    Clean up the latest changes to lib/scripts.php
+    
+    :blue_heart: @swalkinshaw
+    Replace grunt-wp-assets with grunt-filerev and grunt-filerev-assets
+    
+    By writing to assets-manifest.json with grunt-filerev-assets, it's
+    no longer necessary to commit changes to lib/scripts.php when developing
+    Ref #933 - dev and build tasks for Grunt
+    
+    Dev: don't minify
+    Build: minify, lean Modernizr build
+    
+    Dev assets will load if you have defined your WP_ENV as development
+    If you don't use Bedrock, you'll need to add this to your wp-config.php:
+    
+    define('WP_ENV', 'development');
+    
+    TODO: lib/scripts.php shouldn't need to be committed for changes after
+    running the version task
+    Update to Bootstrap 3.1.1
+    Better LESS organization
+    Load Modernizr from Bower, lean build with Grunt
+    Load jQuery from Bower
+    Roots 6.5.2
+    Bootstrap 3.1.0
+    Update to jQuery 1.11.0
+    Add comments to _main.js, remove finalize
+    Match wp_register_script function signature
+    
+    Although the third parameter currently works when false to indicate
+    no dependancies, it works by side-effect, the function signature uses
+    an empty array to indicate no dependancies.
+    Update to Bootstrap 3.0.3
+    Update to Modernizr 2.7.0
+    Update to Bootstrap 3.0.2
+    Switch to grunt-contrib-less, add LESS source maps support
+    Move rewrites to a plugin, Roots 6.5.1
+    Make sure jQuery fallback is immediately after jQuery
+    Latest build
+    Hide Google Analytics to admins to prevent obscured data.
+    Roots 6.5.0
+    Remove comment about old BS2 responsive CSS file
+    Library changes
+    fix #814: jquery-1.10.1 remove, jquery-1.10.2 add
+    Close #789 - Don't automatically enqueue style.css for child themes
+    Close #758 - Update to Google Universal Analytics
+    Update to jQuery 1.10.1
+    Add version task to LESS updates
+    Add jQuery CDN to theme features.
+    Add support for grunt 0.4.0
+    Comments clean up, consistent formatting
+    Close #680 - Move Google Analytics to scripts.php
+    Roots 6.3.0
+    Close #670 - Update to jQuery 1.9.1
+    Change JS ordering
+    
+    - Load jQuery before Modernizr so that the fallback method will
+    always be applied immediately after jQuery. If a script is
+    enqueued in the footer after jQuery, then the fallback shows up
+    in the footer. Modernizr will always be in the head so this
+    issue won't occur.
+    
+    - Move plugins.js and main.js to footer
+    
+    jQuery is still kept in the head to avoid conflicts with plugins
+    Update comment about jQuery
+    JavaScript clean up
+    
+    - Modernizr is now enqueued and included after stylesheets
+    
+    - jQuery is no longer hardcoded since WP now supports protocol-relative
+    URLs
+    
+    - jQuery fallback output is handled by a new function in lib/scripts.php
+    (the method is still the same one from HTML5 Boilerplate)
+    Close #635 - Update to jQuery 1.9.0
+    Update to jQuery 1.8.3
+    Add grunt.js build script
+    
+    - Move Bootstrap LESS files into new subdirectory
+    
+    - Change app.css to app.less, add @import's to utilize
+    Bootstrap variables and mixins
+    
+    - Remove plugins.js and main.js
+    
+    - Move Bootstrap JS plugins into new subdirectory
+    
+    - Add new _main.js file with example DOM-based routing
+    script that works off the WordPress body_class
+    
+    - lib/scripts.php has been updated to remove all extra
+    CSS and JS files and also places JavaScript in the footer
+    Update to jQuery 1.8.2
+    Add jQuery version to wp_register_script
+    Update to Bootstrap 2.1.1, jQuery 1.8.1, Modernizr 2.6.2
+    Ref #525 - Move css/, img/, and js/ into assets/
+    Rename inc/ to lib/
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Update to jQuery 1.8.0 and Modernizr 2.6.1
+    Update code comments
+    Re-add get_template_directory_uri() to H5BP stylesheet
+    Fix #478 - Resolve some clean URL issues, re-open #395
+    Add updates from H5BP
+    Corrects script and style URLs on subdir installs
+    
+    By removing get_template_directory_uri() from each call to either the
+    wp_enqueue_style() or the wp_enqueue_script() function, the URLs to CSS
+    and JS files will now be correct on subdir installs of WP.
+    Update comment about H5BP's style.css
+    Re-organization
+    Remove Wordpress version numbers from stylesheets.
+    Fixed missing main.js reference.
+    Fix missing ).
+    Fix #428 - Don't include h5bp's style.css by default.
+    Add updates from H5BP
+    Fix #347 - Properly enqueue stylesheets
+    Proper base script URLs for WPMU/Child Themes
+    Fix #293 - Remove unnecessary call to template uri
+    Fix #300 - Add comment-reply script when applicable
+    Fix #311, #315 - Remove custom script cleanup
+    Fix #302 - Lose EOF ?>
+    Fix #297 - wp-admin / login issue
+    Fix #297 - wp-admin / login issue
+    Better rewrite/clean URL handling
+    
+    - New roots-utils.php file for base functions
+    - Defined useful constants for dealing with common paths
+    - Refactored rewrites and clean URLs to be more flexible for non
+      standard setups
+    - Custom scripts handler now deals with plugin scripts correctly
+    - Fixes #204, #270, #278
+    Fix #279 - Output enqueued scripts in proper order
+    Fix #259 - make extra scripts output
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Updating Bootstrap to v.2.0.0
+    
+    roots-actions.php:  added responsive css framework file
+    roots-options.php: changed default css classes for bootstrap v2.0.0
+    roots-scripts.php: updated less to v1.2.1, changed the load order and
+    added new scripts for bootstrap v2.0.0
+    
+    Added all of the new css, js, less asset files and updated all of the
+    previous ones for bootstrap v2.0.0
+    don't defer enqueue'd scripts - fixes #234
+    adding roots-scripts.php, now using wp_enqueue_script
+    Fixing dead variables and params
+    Fix Spaces
+    Add roots_body_class function that checks for page slug in body_class classes and adds it as needed
+    Fix is_element_empty
+    Fix is_element_empty util function.
+    Close #992 - Move some Roots features into Soil
+    Move page titles into separate file
+    Move theme wrapper into separate file
+    Show author display name in author archive.
+    Renamed Wrapper Templates Filter
+    Wrapper Templates Filter
+    
+    Allows manual control over the base and sidebar templates being used.
+    Fix clean URL issues with non-standard setups
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Don't warn about unwritable htaccess if that option is disabled
+    Comments clean up, consistent formatting
+    Fix #677 - Output author title with get_the_author
+    Update 404 template based on H5BP
+    Rewrites organization
+    
+    - Create lib/rewrites.php and move everything from lib/htaccess.php
+    except the H5BP htaccess functionality into it
+    
+    - In the config, change add_theme_support('rewrite-urls') to
+    add_theme_support('rewrites')
+    
+    - Remove the Apache/LightSpeed HTTPD check for rewrites
+    
+    - Update docs with better Nginx rewrite rules
+    Add dynamic sidebars to template wrapper
+    reformat roots_title syntax again
+    reformat roots_title syntax
+    move template title to function
+    Replace has_posts with built-in have_posts
+    Move feed link into template
+    
+    All HTML should be in the templates whenever possible.
+    Move is_element_empty function to utils
+    Enforce code standards
+    
+    Correct this is not.
+    Rename inc/ to lib/
+    Ref #525 - Remove all hooks
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Re-organization
+    Fix #302 - Lose EOF ?>
+    Kill me
+    Better rewrite/clean URL handling
+    
+    - New roots-utils.php file for base functions
+    - Defined useful constants for dealing with common paths
+    - Refactored rewrites and clean URLs to be more flexible for non
+      standard setups
+    - Custom scripts handler now deals with plugin scripts correctly
+    - Fixes #204, #270, #278
+    Declaring properties on Roots_Wrapping
+    Check for template_include passing non-strings. Fixes #1134
+    Use 'roots/' for filters
+    Formatting, adding/updating links
+    Fixed broken sidebar_path function
+    Rework Roots_Wrapping class
+    
+    Apply the wrapper to any template by creating a new instance.
+    Move theme wrapper into separate file
+    Use get_the_archive_title
+    Author Archives title - WPML Compatibility
+    
+    If WPML String Translation is used to have multilingual author names, this change is needed to persist the translation to the title of the Author Archives page.
+    restore apply_filters and switch echo to return
+    add a space after the comma L:28
+    roots_title() returns a value
+    
+    Instead of printing the value directly, now the function returns a
+    value which can printed with echo (like it is in page-header.php) or
+    stored in a $var when needed.
+    filter titles
+    Move page titles into separate file
+    Move theme wrapper into separate file
+    Show author display name in author archive.
+    Renamed Wrapper Templates Filter
+    Wrapper Templates Filter
+    
+    Allows manual control over the base and sidebar templates being used.
+    Fix clean URL issues with non-standard setups
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Don't warn about unwritable htaccess if that option is disabled
+    Comments clean up, consistent formatting
+    Fix #677 - Output author title with get_the_author
+    Update 404 template based on H5BP
+    Rewrites organization
+    
+    - Create lib/rewrites.php and move everything from lib/htaccess.php
+    except the H5BP htaccess functionality into it
+    
+    - In the config, change add_theme_support('rewrite-urls') to
+    add_theme_support('rewrites')
+    
+    - Remove the Apache/LightSpeed HTTPD check for rewrites
+    
+    - Update docs with better Nginx rewrite rules
+    Add dynamic sidebars to template wrapper
+    reformat roots_title syntax again
+    reformat roots_title syntax
+    move template title to function
+    Replace has_posts with built-in have_posts
+    Move feed link into template
+    
+    All HTML should be in the templates whenever possible.
+    Move is_element_empty function to utils
+    Enforce code standards
+    
+    Correct this is not.
+    Rename inc/ to lib/
+    Ref #525 - Remove all hooks
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Re-organization
+    Fix #302 - Lose EOF ?>
+    Kill me
+    Better rewrite/clean URL handling
+    
+    - New roots-utils.php file for base functions
+    - Defined useful constants for dealing with common paths
+    - Refactored rewrites and clean URLs to be more flexible for non
+      standard setups
+    - Custom scripts handler now deals with plugin scripts correctly
+    - Fixes #204, #270, #278
+    Store display_sidebar in static variable
+    Close #1127 - Assume prod if WP_ENV is undefined
+    Defines WP_ENV if it is not already defined
+    Move <main> and .sidebar markup out of PHP
+    
+    Add more efficient LESS with variables
+    
+    Add new line to _variables.less
+    
+    Add sidebar class to body element instead of main element
+    
+    Change body sidebar class to .sidebar-active
+    
+    Change body sidebar class to .sidebar-primary
+    
+    Correct spacing issues
+    Move main/sidebar class filters into config.php (fix missing arg errors).
+    Offer just one header, the BS top navbar
+    Use 'roots/' for filters
+    Use apply_filters for main and sidebar classes
+    Close #992 - Move some Roots features into Soil
+    Move rewrites to a plugin, Roots 6.5.1
+    Close #888 - Add comment about Universal Analytics
+    Update comment per swalkinshaw's suggestion
+    Comment config.php excerpt length is in words
+    
+    Add comment to POST_EXCERPT_LENGTH to indicate it is in words, not
+    characters.
+    Update $content_width
+    Navbar & Column Classes
+    Update to latest Bootstrap 3 (RC2)
+    Use same sizes for small grid
+    Library changes
+    Move helper constants to config.php
+    Removed extra space before apply filters
+    Add roots_display_sidebar filter
+    
+    Add filter to sidebar display to have the ability to change when it is displayed in child themes and other circumstances.
+    
+    https://github.com/retlehs/roots/issues/767
+    Move HTML5 Boilerplate's .htaccess to a plugin
+    
+    https://github.com/retlehs/wp-h5bp-htaccess
+    Rename page-custom.php to template-custom.php
+    Add jQuery CDN to theme features.
+    Comments clean up, consistent formatting
+    Static top navbar instead of fixed
+    
+    This change allows us to simplify the code in both
+    app.css and cleanup.php
+    Introduce add_theme_support('bootstrap-gallery')
+    
+    Only apply the Roots [gallery] shortcode if enabled in config.php
+    config.php organization
+    Rewrites organization
+    
+    - Create lib/rewrites.php and move everything from lib/htaccess.php
+    except the H5BP htaccess functionality into it
+    
+    - In the config, change add_theme_support('rewrite-urls') to
+    add_theme_support('rewrites')
+    
+    - Remove the Apache/LightSpeed HTTPD check for rewrites
+    
+    - Update docs with better Nginx rewrite rules
+    Close #638 - Add add_theme_support for Nice Search
+    Return instead of echo class names
+    Comment should be consistent
+    Allow the sidebar config functions to accepts args
+    Refactor Roots_Sidebar
+    Clarity over cleverness
+    Refactor sidebar configuration
+    
+    Instead of editing an if statement (which could get ugly quickly), just
+    edit configuration arrays of conditional tags and page template checks.
+    Better comment regarding $content_width
+    Re-organize theme configuration and setup
+    
+    functions.php should not contain any Roots specific code. It's just used
+    to require files and bootstrap Roots. lib/init.php now handles initial
+    theme setup and defines helper constants which did not belong in
+    lib/config.php.
+    
+    config.php should be limited to strictly configuration settings.
+    Rename inc/ to lib/
+    Fix #513 - Fix strict errors
+    Add theme wrapper, re-organize template files
+    
+    - Implement scribu’s Theme Wrapper (see base.php)
+    
+    - Move templates, comments.php, and searchform.php to templates/ folder
+    
+    - Rename loop- files to content-
+    
+    - Remove all hooks except roots_head and roots_footer
+    
+    - Use templates/page-header.php for page titles
+    
+    - Use head.php for everything in <head>
+    Add some comments to the config
+    Remove WP_POST_REVISIONS definition
+    Move WP_POST_REVISIONS definition to config.php
+    Add ability to include header without top navbar
+    Re-organization
+    Removing dead variables in activation
+    Make Home and Primary Navigation translatable
+    Add notice to theme activation, tidy activation table markup
+    screen_icon has been deprecated with WP 3.8
+    Remove changing media folder from theme activation
+    Change media directory to /media/
+    Assets redirection on multisite
+    Fixes #697 - Cleanup activation
+    Make sure rewrites are added to .htaccess immediately after activation
+    Comments clean up, consistent formatting
+    first_run logically makes sense now
+    Once more
+    Fix activation first run check
+    Fix option name variable
+    Simplify even more
+    Yes, this is PHP
+    Refactor activation options validation
+    Clean up 26deb029ee
+    Fix #580 - Menu always gets added & set on activation
+    
+    Also updated the method of setting the permalink structure
+    on activation.
+    Rename inc/ to lib/
+    Support only wp 3.4 on activation
+    Convert version number to double
+    Use wp_get_theme() to get the theme name on activation
+    Flush permalinks on activation to avoid 404s with clean URLs
+    Re-organization
+    Fix #302 - Lose EOF ?>
+    Remove all frameworks except Bootstrap (#251)
+    
+    - Remove all frameworks except Bootstrap
+    
+    - Remove roots-options.php and replace with a more simple
+      roots-config.php
+    
+    - Include all Bootstrap Javascript plugins by default in
+      js/plugins.js
+    
+    - Use Bootstrap Responsive and Topbar navigation by default
+    
+    - Use Bootstrap markup on forms, page titles, image galleries,
+      alerts and errors, post and comment navigation
+    
+    - Remove Roots styles from style.css and introduce app.css for
+      site-specific CSS. Remove almost all previous default Roots
+      styles.
+    
+    - Add latest updates from H5BP project
+    Consistent syntax formatting
+    activation options! huge thanks to @johnraz (#208) - closes #6
+    Whitespace fixes
+    
+    Replaced all hard tabs with spaces. Removed all trailing whitespace.
+    removing blank line and end of file
+    Code cleanup
+    Fixes #108 - bug on activation if no pages exists
+    roots_relative_urls now ignores external links
+    avoid re-adding page to the main nav each time roots is activated
+    renaming includes/ directory to inc/
+    same as pull req 60 with some formatting/name changes -- menu activation
+    fixes
+    roots 3.0.0
+    Update Sidebar to fix default template check
+    Check sidebar conditional tag exists
+    
+    Return false for non-existent conditional tags. Fixes #993
+    Formatting, adding/updating links
+    Sidebar support for args array
+    Comments clean up, consistent formatting
+    Allow the sidebar config functions to accepts args
+    Fix callback reference
+    Refactor Roots_Sidebar
+    Clarity over cleverness
+    Minor naming tweak
+    Refactor sidebar configuration
+    
+    Instead of editing an if statement (which could get ugly quickly), just
+    edit configuration arrays of conditional tags and page template checks.
+    Fixing dead variables and params
+    Fix gallery link option
+    
+    Galleries should support three link types:
+    
+    * Attachment Page (default): [gallery ids="1,2,3"]
+    * Media File: [gallery link="file" ids="1,2,3"]
+    * None: [gallery link="none" ids="1,2,3"]
+    Formatting, adding/updating links
+    Update Gallery to BS3
+    Move gallery shortcode into separate file
+    Roots 7.0.2
+    Generate new roots.pot
+    Generate new roots.pot
+    Add translation to outdated browser alert
+    Updated POT file
+    Update roots.pot
+    Generate new roots.pot with makepot.php
+    
+    See http://codex.wordpress.org/I18n_for_WordPress_Developers#Generating_a_POT_file
+    
+    See #659
+    Re-generate roots.pot file and update Brazilian Portuguese translation files
+    re-generate roots.pot file and update Brazilian Portuguese language files
+    Correcting line numbers.
+    Fix #365 - re-generate roots.pot
+    update roots.pot for translations - fixes #245
+    adding .pot file generated by
+    http://www.icanlocalize.com/tools/php_scanner - refs #24 (wpml support)

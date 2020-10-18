@@ -1,0 +1,2640 @@
+﻿    Update README.md
+    Update README.md
+    Create README.md
+    Create LICENSE.MD
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Nieuwe XML van toledo
+    Stomme standaard XML file da op niks trekt....
+    
+    
+    Een goeie testdatum is 2009-10-21T07:00:00
+    Hopefully a working parser this time.
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    meetingcommit
+    Here goes nothing
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Nieuwe XML van toledo
+    Stomme standaard XML file da op niks trekt....
+    
+    
+    Een goeie testdatum is 2009-10-21T07:00:00
+    Hopefully a working parser this time.
+    Final report
+    Deel verbeterd
+    Executing TaskState.
+    Wall of text.
+    ...
+    Report XMLParser ExecTime
+    Report
+    Spell check.
+    bug fix Reservation
+    Report.
+    fotoke derbij se
+    2de commit: SD, 2 tabellen
+    (nog niet finished, bvb stukje over Factory)
+    Na veel gepruts... 1ste commit custom themes
+    ff iets probere omda kwinten ni kan committe
+    nog iets vergete
+    Upla, nog meer rapport ( Initiation )
+    refactoring stukje
+    spellcheck voor ik begin met mijn stuk, want 't was nodig!
+    Inleiding herschreven
+    Stukje over focus
+    stukske rapport
+    Rapport skelet in de TeX file.
+    Report update + wat kleine fixes
+    Report commit extrordinaire
+    PEW PEW PEW 2
+    report
+    Report
+    report
+    PEW PEW PEW
+    Test+Report
+    : >
+    laatste nieuwe rapport
+    Observer pattern report
+    Writing some more of the report
+    Stukjes over Clock en TaskDependencyManager opnieuw toegevoegd
+    report
+    -Update tex file voor time en Clock
+    -Minor fix Task docu
+    Kleine fix
+    Stukje over TaskDependencyManager
+    spellcheck
+    Rapport
+    Fixe remove task not removing itself from resource
+    Eclipse is refusing to find the report.tex on the server. Commiting new file instead.
+    Titels aangepast zoals afgesproken in Groups
+    Commit van Kwinten's deel.
+    getting rid of typos
+    report update
+    Upla, nog meer rapport ( Initiation )
+    Inleiding herschreven
+    Stukje over focus
+    stukske rapport
+    Repositories terug juist gezet (enkel List)
+    Report
+    : >
+    laatste nieuwe rapport
+    aaaaah kwinten! :<
+    Ni die lelijke files op de svn zette, zorgt enkel voor conflicten :P
+    Rapport
+    Fixe remove task not removing itself from resource
+    Eclipse is refusing to find the report.tex on the server. Commiting new file instead.
+    Commit van Kwinten's deel.
+    getting rid of typos
+    more report updates
+    Inleiding toegevoegd + wat nagelezen en enkele dingen geherformuleerd
+    Refactoring of the XMLParser + report
+    Wrote about my changes throughout the refactoring.
+    Inleiding toegevoegd + wat nagelezen en enkele dingen geherformuleerd
+    Refactoring of the XMLParser + report
+    Wrote about my changes throughout the refactoring.
+    oeps
+    Spelfout
+    SSD's!!11!! roflol
+    Rapport
+    -Update tex file voor time en Clock
+    -Minor fix Task docu
+    Final report
+    Rapport
+    Rapport
+    Stukje over focus
+    Final report
+    Rapport
+    Final report
+    Stukje over TaskDependencyManager
+    Final report
+    : >
+    Rapport
+    Class Diagrams
+    
+    (bloed zweet en tranen)
+    (vooral tranen)
+    Rapport
+    fotoke derbij se
+    SSD's!!11!! roflol
+    Stukje over focus
+    laatste nieuwe rapport
+    report
+    SSD's!!11!! roflol
+    Report
+    Com-fucking-mit prentjes
+    Class Diagrams
+    
+    (bloed zweet en tranen)
+    (vooral tranen)
+    -Update tex file voor time en Clock
+    -Minor fix Task docu
+    Com-fucking-mit prentjes
+    Class Diagrams
+    
+    (bloed zweet en tranen)
+    (vooral tranen)
+    SSD's!!11!! roflol
+    Rapport
+    SSD's!!11!! roflol
+    Make focusWork work on all Task, including invited ones (new specs)
+    Gui clean up
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Commit meeting
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Small commit (Remove task)
+    Observer Pattern
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Enforcing rule 3 in setduedate
+    Here goes nothing
+    Commit voor wijziging folders
+    Correctie van een paar string compares
+    Verdere updates aan gui (aanvaard nu wel lege strings en menu nemen nu alleen geldige nummers aan)
+    Removed some debug sysouts
+    fixed small bug in gui
+    Some gui,
+    Fixed some things in task regarding ealiestEndTime() implementation, String compares and calendars.
+    Neutralized Wrapper
+    Corrected indentation in Task
+    Observer not yet commited
+    ladida
+    Was de GUI... een switch statement met een break command te weinig
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Daar zat ge ook nog vast!
+    Beter helemaal terug naar het begin menu imho dan helemaal niks
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Fixed Issue 44
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    getRequiredResources()..
+    Refactored Focus Factory so it has its own proper controller.
+    Daar se!
+    Trying to remove bad smells
+    Correctie GUI
+    more tests, less warnings
+    Observer Pattern
+    Imporved Focuswork gui
+    FocusWork GUI.
+    Niet getest (startup errors)
+    Here goes nothing
+    Getting rid of (most) warnings
+    Some gui,
+    Fixed some things in task regarding ealiestEndTime() implementation, String compares and calendars.
+    Neutralized Wrapper
+    Corrected indentation in Task
+    Observer not yet commited
+    ModifyTaskDetails
+    Fixed Issue 46
+    Gbye warnings! : >
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Een mooi berichtje ipv elke e.printstracktrace()
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    removing canbefinished (obsolete)
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Here goes nothing
+    Killed instanceof
+    Fixed Project.
+    Docu,
+    Remove AssetAllocation
+    Make focusWork work on all Task, including invited ones (new specs)
+    Gui clean up
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Commit meeting
+    Finalized GUI
+    Make Resource Reservation UseCase volledig
+    Missed one Exception.
+    Still have to do the Tests.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Corrected InvitationManager.
+    Still wondering whether to use enum or AssetAllocation.class.
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Create User & Admin menu
+    Reservation test.
+    Another menu bugfix.
+    
+    It somehow still managed to log in if no users existed.
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Finalized GUI
+    V2 van invitations, een wel werkende
+    Tussentijdse commit voor invitations, ni getest. Moet ff trein halen
+    want bart wil meekijken!
+    Log in wa gefixt
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Log in/Change user tegoei gemaakt
+    Create User & Admin menu
+    AssignTaskToProject geboot,
+    MakeResourceReservation bijna gemaakt.
+    Ga nu slapen zal morgen met frisse kop de usecases en andere in orde brengen.
+    Remove Resource gekickt
+    Default admin gebruiker
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Added extra reasons to clarify parser fails
+    Last GUI update
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Fix parse
+    Somethings
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Here goes nothing
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    ArrayList<User> vervangen door de algemene Manager
+    Manager geinjecteerd in MainGUI
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    upla
+    minor commit
+    +AllocationType, TaskState pass through.
+    Here goes nothing
+    ladida
+    Here goes nothing
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Commit meeting
+    Create User & Admin menu
+    Last GUI update
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    -- TODO
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    getRequiredResources()..
+    Kleine bug gefixed in de GUI waardoor de dependencies, resources en dependent tasks niet juist werden weergegeven in de update task status use case... er stond een negatie waar er geen moest zijn
+    Last GUI update
+    Small commit (Remove task)
+    Somethings
+    Added Busniness Exception throws
+    Some usecases
+    Imporved Focuswork gui
+    removing canbefinished (obsolete)
+    gui
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Here goes nothing
+    Changing most methods to use the new state pattern
+    ModifyTaskDetails
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Create User & Admin menu
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Here goes nothing
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Taskstate aangepast en daar de setFields ingepeerd
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Exception indien lege lijst aan een prompt wordt meegegeven.
+    Modify no tasks
+    Fixes Issue 49
+    Fixed Issue 44
+    Commit meeting
+    Finalized GUI
+    --warnings
+    Make Resource Reservation UseCase volledig
+    getRequiredResources()..
+    Correctie GUI
+    Some usecases
+    Een mooi berichtje ipv elke e.printstracktrace()
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Enforcing rule 3 in setduedate
+    Here goes nothing
+    Changing most methods to use the new state pattern
+    Small fix
+    ModifyTaskDetails
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Check BusinessRule2 before adding dependency.
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Hopla!
+    task factory pakt nu de description terug mee
+    
+    HOPLA 88!
+    ff create use case herlezen. Blijkbaar staat er toch niks meer in betreffende de resources. Dus ik haal ze der maar weer uit. Mijn excuses.
+    Check task contructor. Koen had resources daar compleet weggehaald, is denk ik ni de bedoeling.
+    Ik begrijp dat dat momenteel dan via de TAM moet gaan, zie enkel niet in hoe.
+    -- funnies
+    ++ basis voor resources
+    create task updated
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Correct Calendar copy, USE CLONE not new Calendar
+    Een mooi berichtje ipv elke e.printstracktrace()
+    Fixed Issue 27
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Enforcing rule 3 in setduedate
+    Here goes nothing
+    Changing most methods to use the new state pattern
+    Removed some debug sysouts
+    fixed small bug in gui
+    ladida
+    Denk ik de meeste funnies er wel uitgehaald plus dotatie toegevoegd.
+    Last GUI update
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Some usecases
+    Een mooi berichtje ipv elke e.printstracktrace()
+    Fixed Issue 27
+    removing canbefinished (obsolete)
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Here goes nothing
+    Reservation test.
+    Killed instanceof
+    Fixed Project.
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 49
+    Code review needed!!!!!!!!!! Please test these changes for errors.
+    Make Resource Reservation UseCase volledig
+    AssignTaskToProject geboot,
+    MakeResourceReservation bijna gemaakt.
+    Ga nu slapen zal morgen met frisse kop de usecases en andere in orde brengen.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    gui
+    Here goes nothing
+    ladida
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Somethings
+    Fixed Issue 27
+    Fixed Issue 26
+    Enforcing rule 3 in setduedate
+    Here goes nothing
+    Changing most methods to use the new state pattern
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    ArrayList<User> vervangen door de algemene Manager
+    Manager geinjecteerd in MainGUI
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Here goes nothing
+    ladida
+    Docu,
+    Remove AssetAllocation
+    Make focusWork work on all Task, including invited ones (new specs)
+    Gui clean up
+    Boyaah,
+    XMLParser werkt.
+    Methode in User voor alle Invitations (inc. declined) terug te geven.
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    more tests, less warnings
+    getter vergeten
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Some work on the state pattern
+    -- TODO
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    kleine javadoc toegevoegd voor TaskDependencyManager.remove()
+    Refactored Task.remove()
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Unit tests for TaskDependencyManager
+    Some work on the state pattern
+    Class Task updated to use the methods of TaskDependencyManager
+    Removed as much functionality from Task as possible
+    TaskDependencyManager class made + implemented.
+    (Task class not yet updated)
+    First idea on how to code the field classes
+    Killed instanceof
+    Fixed Project.
+    Docu,
+    Remove AssetAllocation
+    minor commit
+    +AllocationType, TaskState pass through.
+    Wall of text.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Update exec time system, will return dueDate if Constraints not satified.
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    create task updated
+    Generics warnings weggehaald.
+    Factory verder uitgeschreven
+    setTemplate methode voor TaskType ontwikkeld
+    
+    (needs a code review!!! -> Dinsdag de 18de tijdens de vergadering)
+    Terug één type TaskTypeConstraint. Bevat voorlopig geen methode 'satisfied()', maar wel het benodigde AssetType en de benodigde hoeveelheid. Heb ook TaskType aangepast.
+    
+    Sorry voor geen unit tests - ik weet niet goed hoe ik deze moet schrijven wanneer er nog geen constructoren voor Assets en AssetTypes voorhanden zijn.
+    
+    Ik begin me trouwens  ook af te vragen wat het nut is van ons design met TaskTypeFactory. Er zit in TaskType momenteel geen enkele referentie naar een specifieke taak, ik denk dan ook niet dat we momenteel een clone aan moeten maken. Momenteel heb ik de indruk dat een gewone referentie naar een bestaand TaskType object moet volstaan. Blijft enkel de taak over om de TaskTypes aan te maken bij het lezen van de XML.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    this
+    een vrij essentiele this
+    diepe zucht
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    getRequiredResources()..
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    Terug één type TaskTypeConstraint. Bevat voorlopig geen methode 'satisfied()', maar wel het benodigde AssetType en de benodigde hoeveelheid. Heb ook TaskType aangepast.
+    
+    Sorry voor geen unit tests - ik weet niet goed hoe ik deze moet schrijven wanneer er nog geen constructoren voor Assets en AssetTypes voorhanden zijn.
+    
+    Ik begin me trouwens  ook af te vragen wat het nut is van ons design met TaskTypeFactory. Er zit in TaskType momenteel geen enkele referentie naar een specifieke taak, ik denk dan ook niet dat we momenteel een clone aan moeten maken. Momenteel heb ik de indruk dat een gewone referentie naar een bestaand TaskType object moet volstaan. Blijft enkel de taak over om de TaskTypes aan te maken bij het lezen van de XML.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    Another menu bugfix.
+    
+    It somehow still managed to log in if no users existed.
+    Taskstate aangepast en daar de setFields ingepeerd
+    Fixed Issue 46
+    Gbye warnings! : >
+    Check BusinessRule2 before adding dependency.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    State - oops publics
+    Improved State parse safety
+    Fix parse
+    Added Busniness Exception throws
+    Fixed Issue 29 - use getPossibleStateChanges to get a list of possibilities
+    Fixed Issue 27
+    removing canbefinished (obsolete)
+    Added string representation for states
+    String parser for the state pattern
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Implementing setters to change state
+    Enforcing rule 3 in setduedate
+    Creating new exceptions for the state to use
+    Implemented business rule 3
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    State changes
+            - one more to go after this one, after the meeting tomorrow
+    Some more work on the state (almost done)
+    Some more work on the state pattern
+    Some work on the state pattern
+    Extra methods that belong in the state
+    Implementing basics of the state pattern
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Observer Pattern
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    clone() toegevoegd bij Clock.getTime()
+    Fixed bug in Task.doSetAssetAllocation() die hopen Exceptions smeet :-)
+    
+    Updated tests in ResourceTest en TaskTest
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Clock.setTime() geupdate: gooit nu een exception TimeException als de gegeven tijd voor de huidige komt
+    TimeController gemaakt met methodes setTime() en getTime()
+    DispatchController ge-update
+    - Methode RepositoryManager.getTasks() toegevoegd (nodig voor Clock)
+    - Implementatie Observer pattern in Task en Clock
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    -Kleine fix in een van de tests die verkeerd was
+    -Implementatie van Clock.java (rest van de code nog niet aangepast)
+    ThemeXML keihard fixen
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Testing values when setting for the fields!
+    
+    Nullpointers/Empty strings
+    - setValue() in field gefixed.
+    - Extra test om dit aan te tonen.
+    - Comments in de field classes bijgevoegd.
+    Forgot to put the fieldtypes as hardcoded values rather than passed values
+    First idea on how to code the field classes
+    ThemeXML keihard fixen
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Testing values when setting for the fields!
+    
+    Nullpointers/Empty strings
+    - setValue() in field gefixed.
+    - Extra test om dit aan te tonen.
+    - Comments in de field classes bijgevoegd.
+    Forgot to put the fieldtypes as hardcoded values rather than passed values
+    First idea on how to code the field classes
+    Docu,
+    Remove AssetAllocation
+    Commit meeting
+    Update exec time system, will return dueDate if Constraints not satified.
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Commit voor systeem tijd voorstel.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    minor commit
+    +AllocationType, TaskState pass through.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Test work again, 1 failure for unknown reasons.
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Reservation test.
+    bug fix Reservation
+    Report.
+    Killed instanceof
+    Fixed Project.
+    Docu,
+    Remove AssetAllocation
+    nr 2
+    this
+    een vrij essentiele this
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Commit voor systeem tijd voorstel.
+    Kleine bug gefixed die ervoor zorgde dat het aanmaken van een Reservation null-pointers smeet.
+    Alle tests met Resource reservaties moeten nog aangepast worden om aan de nieuwe use cases te voldoen.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    minor commit
+    +AllocationType, TaskState pass through.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Docu,
+    Remove AssetAllocation
+    Another menu bugfix.
+    
+    It somehow still managed to log in if no users existed.
+    Taskstate aangepast en daar de setFields ingepeerd
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Commit meeting
+    Check BusinessRule2 before adding dependency.
+    -- TODO
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Small commit,
+    debug of setTime more legible
+    Update exec time system, will return dueDate if Constraints not satified.
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Commit voor systeem tijd voorstel.
+    clone() toegevoegd bij Clock.getTime()
+    Fixed bug in Task.doSetAssetAllocation() die hopen Exceptions smeet :-)
+    
+    Updated tests in ResourceTest en TaskTest
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    task's tostring was updated to let it show its details
+    --warnings
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Refactored Task.remove()
+    getRequiredResources()..
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    minor commit
+    +AllocationType, TaskState pass through.
+    Hopla!
+    HIER SE
+    ff create use case herlezen. Blijkbaar staat er toch niks meer in betreffende de resources. Dus ik haal ze der maar weer uit. Mijn excuses.
+    Check task contructor. Koen had resources daar compleet weggehaald, is denk ik ni de bedoeling.
+    Ik begrijp dat dat momenteel dan via de TAM moet gaan, zie enkel niet in hoe.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    Generics warnings weggehaald.
+    Factory verder uitgeschreven
+    setTemplate methode voor TaskType ontwikkeld
+    
+    (needs a code review!!! -> Dinsdag de 18de tijdens de vergadering)
+    attribuut taskT in Task + constructoren aangepast
+    niet aangepast: constructoraanroepen in andere klassen (deze moeten toch vervangen worden door factory methode)... sorry voor nog meer errors dus
+    
+    eenvoudige unit tests voor TaskType
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Test work again, 1 failure for unknown reasons.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    mini-commit:
+    - Kleine aanpassing in Task.update(): iteratie over dependencies vervangen door methode dependsOn()
+    -Overbodige test en variabele weggelaten in Project.remove()
+    -Resource.availableAt: duidelijkere variabelenaam gekozen
+    -Basis javadoc beschrijving van Task.publish() en Task.update()
+    Duplicate & unclear code gefixt
+    Fixes Issue 33
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Paar tests
+    -Update tex file voor time en Clock
+    -Minor fix Task docu
+    Small commit (Remove task)
+    Fix parse
+    1 clone() te weinig gevonden..
+    Added Busniness Exception throws
+    Some usecases
+    Forgot to add it in task too ( Issue 29 )
+    Doing some tests
+    - Methode RepositoryManager.getTasks() toegevoegd (nodig voor Clock)
+    - Implementatie Observer pattern in Task en Clock
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    Observer Pattern
+    Correct Calendar copy, USE CLONE not new Calendar
+    Fixed Issue 27
+    Issue 20 is now resolved.
+    Fixed Issue 25
+    update of the tests
+    removing canbefinished (obsolete)
+    Added string representation for states
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Implementing setters to change state
+    Enforcing rule 3 in setduedate
+    Implemented business rule 3
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    Wat bugs uit de remove() en removeRecursively() methode gehaald in Task + Unit tests voor deze methodes
+    Removed some debug sysouts
+    fixed small bug in gui
+    Some gui,
+    Fixed some things in task regarding ealiestEndTime() implementation, String compares and calendars.
+    Neutralized Wrapper
+    Corrected indentation in Task
+    Observer not yet commited
+    Update van Task.remove() en Task.removeRecursively()
+    Controllers en GUI nog niet aangepast
+    meetingcommit
+    State changes
+            - one more to go after this one, after the meeting tomorrow
+    Some more work on the state (almost done)
+    Some more work on the state pattern
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Some work on the state pattern
+    Class Task updated to use the methods of TaskDependencyManager
+    Removed as much functionality from Task as possible
+    TaskDependencyManager class made + implemented.
+    (Task class not yet updated)
+    Implementing basics of the state pattern
+    Fixe remove task not removing itself from resource
+    Small fix
+    Design flaw: fields' names should only be set at creation and left alone afterwards. This because their names are pre-set in the tasktypes.
+    ThemeXML keihard fixen
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    create task updated
+    Testing values when setting for the fields!
+    
+    Nullpointers/Empty strings
+    - setValue() in field gefixed.
+    - Extra test om dit aan te tonen.
+    - Comments in de field classes bijgevoegd.
+    Written field tests
+    First idea on how to code the field classes
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Observer Pattern
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Killed instanceof
+    Fixed Project.
+    Docu,
+    Remove AssetAllocation
+    Update exec time system, will return dueDate if Constraints not satified.
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    Commit voor systeem tijd voorstel.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    minor commit
+    +AllocationType, TaskState pass through.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Test work again, 1 failure for unknown reasons.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Commit meeting
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    removing canbefinished (obsolete)
+    Corrected BR3 in the Successful state
+    Added string representation for states
+    Implemented business rule 3
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    State changes
+            - one more to go after this one, after the meeting tomorrow
+    Some more work on the state (almost done)
+    Some more work on the state pattern
+    Some work on the state pattern
+    Extra methods that belong in the state
+    Implementing basics of the state pattern
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Resource.availableAt gefixt door clone() te gebruiken
+    Ook het algoritme licht efficienter en duidelijker gemaakt zodat Comments niet meer nodig was
+    
+    Fixes Issue 36
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Commit meeting
+    Check BusinessRule2 before adding dependency.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    task factory pakt nu de description terug mee
+    
+    HOPLA 88!
+    ff create use case herlezen. Blijkbaar staat er toch niks meer in betreffende de resources. Dus ik haal ze der maar weer uit. Mijn excuses.
+    Check task contructor. Koen had resources daar compleet weggehaald, is denk ik ni de bedoeling.
+    Ik begrijp dat dat momenteel dan via de TAM moet gaan, zie enkel niet in hoe.
+    Generics warnings weggehaald.
+    Factory verder uitgeschreven
+    setTemplate methode voor TaskType ontwikkeld
+    
+    (needs a code review!!! -> Dinsdag de 18de tijdens de vergadering)
+    Killed instanceof
+    Fixed Project.
+    al heel wa fouten er uitgehaald weer
+    Hopla!
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    -Overbodige test en variabele weggelaten in Project.remove()
+    -Resource.availableAt: duidelijkere variabelenaam gekozen
+    -Basis javadoc beschrijving van Task.publish() en Task.update()
+    Resource.availableAt gefixt door clone() te gebruiken
+    Ook het algoritme licht efficienter en duidelijker gemaakt zodat Comments niet meer nodig was
+    
+    Fixes Issue 36
+    Some usecases
+    Doing some tests
+    meetingcommit
+    - methode getTasksUsing toegevoegd bij Resource (nodig voor nieuwe Use case)
+    - update unit tests User, Resource
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Some work on the state pattern
+    - Test fixed
+    - In resource clone() en equals() toegevoegd
+    Another menu bugfix.
+    
+    It somehow still managed to log in if no users existed.
+    Taskstate aangepast en daar de setFields ingepeerd
+    Fixed Issue 46
+    Gbye warnings! : >
+    Check BusinessRule2 before adding dependency.
+    debugging tool voor de parser
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    minor commit
+    +AllocationType, TaskState pass through.
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Splitting up unfinished into available and unaivable (GUI-wise)
+    Improved State parse safety
+    Small commit (Remove task)
+    Somethings
+    Added Busniness Exception throws
+    Fixed Issue 29 - use getPossibleStateChanges to get a list of possibilities
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    Fixed Issue 25
+    update of the tests
+    removing canbefinished (obsolete)
+    Fixed Issue 24
+    Added string representation for states
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Implementing setters to change state
+    Implemented business rule 3
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    Merging AvailableTaskState and UnavailableTaskState into UnfinishedTaskState
+    State changes
+            - one more to go after this one, after the meeting tomorrow
+    Some more work on the state (almost done)
+    Some more work on the state pattern
+    Some work on the state pattern
+    Extra methods that belong in the state
+    Implementing basics of the state pattern
+    Killed instanceof
+    Fixed Project.
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    -Overbodige test en variabele weggelaten in Project.remove()
+    -Resource.availableAt: duidelijkere variabelenaam gekozen
+    -Basis javadoc beschrijving van Task.publish() en Task.update()
+    Project testing, 100%
+    getter vergeten
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Commit voor wijziging folders
+    Correctie van een paar string compares
+    Verdere updates aan gui (aanvaard nu wel lege strings en menu nemen nu alleen geldige nummers aan)
+    Iets vergeten bij de vorige commit :)
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    Commit partial implementation Describable plus proposal to shield model from gui.
+    Some work on the state pattern
+    Boyaah,
+    XMLParser werkt.
+    Methode in User voor alle Invitations (inc. declined) terug te geven.
+    Make Resource Reservation UseCase volledig
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Da was bijna koffiekoeken
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Report XMLParser ExecTime
+    Killed instanceof
+    Fixed Project.
+    Docu,
+    Remove AssetAllocation
+    Commit meeting
+    Update exec time system, will return dueDate if Constraints not satified.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    minor commit
+    +AllocationType, TaskState pass through.
+    Made AssetAllocation abstract, not so much code reuse actually
+    provide interface for constraint checking without Map.
+    Passed AssetAllication through TaskState, have to implement still, but have to commit before I leave the PC class.
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Test work again, 1 failure for unknown reasons.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Hopla!
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Commit meeting
+    Fixed Issue 29 - use getPossibleStateChanges to get a list of possibilities
+    removing canbefinished (obsolete)
+    Added string representation for states
+    Implemented business rule 3
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    State changes
+            - one more to go after this one, after the meeting tomorrow
+    Some more work on the state (almost done)
+    Some more work on the state pattern
+    Some work on the state pattern
+    Extra methods that belong in the state
+    Implementing basics of the state pattern
+    Repositories terug juist gezet (enkel List)
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    tests
+    Aanmaken van repository klassen.
+    Vanaf volgende commits begint de doorvoering van de wijzigingen in de rest van de code
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Hopla!
+    Repositories terug juist gezet (enkel List)
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Test work again, 1 failure for unknown reasons.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Trying to remove bad smells
+    Somethings
+    - Methode RepositoryManager.getTasks() toegevoegd (nodig voor Clock)
+    - Implementatie Observer pattern in Task en Clock
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    ResourceManager eruit gehaald!
+    Alle zaken in Repositories gezet.
+    
+    Hoewel nog te testen :)
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    ArrayList<User> vervangen door de algemene Manager
+    Manager geinjecteerd in MainGUI
+    Aanmaken van repository klassen.
+    Vanaf volgende commits begint de doorvoering van de wijzigingen in de rest van de code
+    Some more work on the state (almost done)
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Large update to the Focus.
+    Make focusWork work on all Task, including invited ones (new specs)
+    Gui clean up
+    Trying to remove bad smells
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Refactored Focus Factory so it has its own proper controller.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Daar se!
+    Large update to the Focus.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Hopla!
+    Refactored Focus Factory so it has its own proper controller.
+    Daar se!
+    Trying to remove bad smells
+    tests tests tests
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    meetingcommit
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Large update to the Focus.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Daar se!
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Large update to the Focus.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Daar se!
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Large update to the Focus.
+    Oeps, gij moest terug naar false, stouterik!
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Reservation test.
+    Another menu bugfix.
+    
+    It somehow still managed to log in if no users existed.
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Enorme bugfix tijdens het parsen.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Commit meeting
+    Check BusinessRule2 before adding dependency.
+    Boyaah,
+    XMLParser werkt.
+    Methode in User voor alle Invitations (inc. declined) terug te geven.
+    add Invitation parsing debug
+    Iets over het hoofd gezien
+    V2 van invitations, een wel werkende
+    Tussentijdse commit voor invitations, ni getest. Moet ff trein halen
+    Small commit,
+    debug of setTime more legible
+    this
+    een vrij essentiele this
+    diepe zucht
+    kben het even beu
+    meer van hetzelfde
+    pfft.
+    debugging tool voor de parser
+    want bart wil meekijken!
+    al heel wa fouten er uitgehaald weer
+    ups i ipv j : >
+    Commit halfway through zodat Bart is mee kan kijken :>
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Parser errors er uit gehaald.
+    
+    LET OP: de parser moet ik dit weekend wel nog herschrijven, enkel de errors zijn weggecommit omdat deze toch helemaal moeten veranderen
+    XMLParser beetje refactoren.
+    CC steventhuriot
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Added extra reasons to clarify parser fails
+    Refactoring of the XMLParser + report
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    New parser, pew pew!
+    Added Busniness Exception throws
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Fixed Issue 26
+    Issue 20 is now resolved.
+    Enforcing rule 3 in setduedate
+    Changing most methods to use the new state pattern
+    Parser has been updated
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Fixed Issue 46
+    Gbye warnings! : >
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    ThemeXML keihard fixen
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    iets kleins
+    create task updated
+    XML Fixed & tests geschreven!
+    XML Dinges ook gefixt!!1!
+    XMLParser beetje refactoren.
+    CC steventhuriot
+    XMLParser beetje refactoren.
+    CC steventhuriot
+    Clock.setTime() geupdate: gooit nu een exception TimeException als de gegeven tijd voor de huidige komt
+    TimeController gemaakt met methodes setTime() en getTime()
+    DispatchController ge-update
+    UserControllerTest
+    Make Resource Reservation UseCase volledig
+    Create User & Admin menu
+    Repositories terug juist gezet (enkel List)
+    Killed instanceof
+    Fixed Project.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Hopla!
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Make Task remove itself from project when removed.
+    Change GUI to also throw exception for String Menu.
+    Display relevant Time for certain usecases.
+    Provide way to get all tasks for some usecases.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Commit meeting
+    Check BusinessRule2 before adding dependency.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    getRequiredResources()..
+    Hopla!
+    task factory pakt nu de description terug mee
+    
+    HOPLA 88!
+    HIER SE
+    ff create use case herlezen. Blijkbaar staat er toch niks meer in betreffende de resources. Dus ik haal ze der maar weer uit. Mijn excuses.
+    Check task contructor. Koen had resources daar compleet weggehaald, is denk ik ni de bedoeling.
+    Ik begrijp dat dat momenteel dan via de TAM moet gaan, zie enkel niet in hoe.
+    create task updated
+    XML Fixed & tests geschreven!
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Refactored Focus Factory so it has its own proper controller.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Trying to remove bad smells
+    Small commit (Remove task)
+    tests tests tests
+    Added Busniness Exception throws
+    Some usecases
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    Fixed Issue 27
+    Issue 20 is now resolved.
+    Changed some gui use cases to use Describable Interface (much tidier code)
+    initial observer framework (hit a snag, will be a while before the complete is finished).
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Implementing setters to change state
+    Enforcing rule 3 in setduedate
+    Implementing business rule 2
+    Changing most methods to use the new state pattern
+    Some more work on the state (almost done)
+    Afwerking van Focus
+    - Focusfactory neemt 2 int argumenten en maakt zelf de keuze welke te instantieren
+    - Strategy's hebben enkel als functionaliteit sorteren en filteren en worden in de factory geïnjecteerd
+    - TaskController roept dit nog steeds aan, adhv de variabelen uit de GUI
+    - GUI moet nog aangepast worden
+    Some work on the state pattern
+    Fixe remove task not removing itself from resource
+    ModifyTaskDetails
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Hopla!
+    Refactored Focus Factory so it has its own proper controller.
+    Fixed Issue 46
+    Gbye warnings! : >
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    Hopla!
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    more tests, less warnings
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Changing most methods to use the new state pattern
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    pfft.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Improvements + (untested) GUI for invitation system
+    Refactored Focus Factory so it has its own proper controller.
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Clock.setTime() geupdate: gooit nu een exception TimeException als de gegeven tijd voor de huidige komt
+    TimeController gemaakt met methodes setTime() en getTime()
+    DispatchController ge-update
+    -RepositoryManager maakt nu de klok aan
+    -TaskController injecteert de klok in elke task
+    -Task functies werken nu met deze klok en niet met "new GregorianCalendar()"
+    
+    Sorry voor de errors in de tests, ik zal ze zo vlug mogelijk aanpassen.
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    Reservation test.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    JUnit fixes
+    Alle tests slagen buiten XMLParserdinges
+    minor commit
+    +AllocationType, TaskState pass through.
+    Repositories terug juist gezet (enkel List)
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Clean up
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Fixed parser tests + resource controller error
+    Some usecases
+    Changing most methods to use the new state pattern
+    Nog meer tests
+    Projects en Resourcescontroller volledig getest
+    Task blijf ik af om niet in Steven en Koen's code te prullen
+    meetingcommit
+    ResourceManager eruit gehaald!
+    Alle zaken in Repositories gezet.
+    
+    Hoewel nog te testen :)
+    Injected RepositoryManager in the controllers (Dependecy Injection wise)
+    Updated the entire execution path of Project so they are managed by Repository rather then User
+    Reservation test.
+    Fixed Issue 46
+    Gbye warnings! : >
+    V2 van invitations, een wel werkende
+    Tussentijdse commit voor invitations, ni getest. Moet ff trein halen
+    pfft.
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Hopla!
+    XML Dinges ook gefixt!!1!
+    Repositories terug juist gezet (enkel List)
+    Refactored Focus Factory so it has its own proper controller.
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Trying to remove bad smells
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Clock.setTime() geupdate: gooit nu een exception TimeException als de gegeven tijd voor de huidige komt
+    TimeController gemaakt met methodes setTime() en getTime()
+    DispatchController ge-update
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Creating new exceptions for the state to use
+    Reservation test.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Basis voor de TaskTypeFactory gemaakt.
+    
+    Tests komen nadien (tegen de belofte van die direct mee te commiten) omdat Kwinten momenteel nog bezig is aan Task (en diens constructors). In andere woorden wordt er momenteel enkel null gereturned door de factory en kan die dus nog niet getest worden.
+    Some more work on the state pattern
+    Some more work on the state pattern
+    Some work on the state pattern
+    Creating new exceptions for the state to use
+    Creating new exceptions for the state to use
+    Some more work on the state pattern
+    Improvements + (untested) GUI for invitation system
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Fixed Issue 27
+    Exception indien lege lijst aan een prompt wordt meegegeven.
+    Fixed Issue 27
+    Improvements + (untested) GUI for invitation system
+    Killed instanceof
+    Fixed Project.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Tests hersteld
+    Project testing, 100%
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Final report
+    Reservation test.
+    extra tests
+    Coverage: 84.6%
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    clone() toegevoegd bij Clock.getTime()
+    Fixed bug in Task.doSetAssetAllocation() die hopen Exceptions smeet :-)
+    
+    Updated tests in ResourceTest en TaskTest
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    ResourceTest gefixed
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    More tests - 94.2% coverage.
+    Cleaning up some tasks
+    more tests, less warnings
+    more tests
+    Doing some tests
+    Tests hersteld
+    Fixed Issue 27
+    removing canbefinished (obsolete)
+    Updated most tests to be consistent with BR3.
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Wat bugs uit de remove() en removeRecursively() methode gehaald in Task + Unit tests voor deze methodes
+    Exceptions + een kleine test in Resource
+    Om de totale coverage op exact 50% te krijgen. Wordt een obsessie
+    meetingcommit
+    - methode getTasksUsing toegevoegd bij Resource (nodig voor nieuwe Use case)
+    - update unit tests User, Resource
+    tests
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    - Test fixed
+    - In resource clone() en equals() toegevoegd
+    extra tests
+    Coverage: 84.6%
+    Design flaw: fields' names should only be set at creation and left alone afterwards. This because their names are pre-set in the tasktypes.
+    ThemeXML keihard fixen
+    Hopla!
+    Testing values when setting for the fields!
+    
+    Nullpointers/Empty strings
+    - setValue() in field gefixed.
+    - Extra test om dit aan te tonen.
+    - Comments in de field classes bijgevoegd.
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Written field tests
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    upla
+    Updated TaskTest en ClockTest zodat die de factory gebruiken
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Resource.availableAt gefixt door clone() te gebruiken
+    Ook het algoritme licht efficienter en duidelijker gemaakt zodat Comments niet meer nodig was
+    
+    Fixes Issue 36
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Wat tests voor Clock en TimeController
+    Clock.setTime() geupdate: gooit nu een exception TimeException als de gegeven tijd voor de huidige komt
+    TimeController gemaakt met methodes setTime() en getTime()
+    DispatchController ge-update
+    Doing some tests
+    ClockTests gemaakt
+    extra tests
+    Coverage: 84.6%
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Generics warnings weggehaald.
+    Factory verder uitgeschreven
+    setTemplate methode voor TaskType ontwikkeld
+    
+    (needs a code review!!! -> Dinsdag de 18de tijdens de vergadering)
+    attribuut taskT in Task + constructoren aangepast
+    niet aangepast: constructoraanroepen in andere klassen (deze moeten toch vervangen worden door factory methode)... sorry voor nog meer errors dus
+    
+    eenvoudige unit tests voor TaskType
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fixed tests in een boel klassen om rekening te houden met het feit dat een Task een
+    Asset nodig moet hebben om de Reservation/Invitation aan te maken
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Down to 91.
+    Vooral uncaught exceptions
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Alle fails opgelost buiten 1.
+    Lees TODO:
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Check BusinessRule2 before adding dependency.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    upla
+    Veranderen van constructoraanroepen naar factory-aanroepen... maak het werk straks af.
+    Down to 50 errors.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Test+Report
+    Paar tests
+    Kleine Tests
+    Cleaning up some tasks
+    Tests hersteld
+    Fixed Issue 27
+    Updated most tests to be consistent with BR3.
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Unit tests for TaskDependencyManager
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Reservation test.
+    Alle fails opgelost buiten 1.
+    Lees TODO:
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    nr 2
+    Check BusinessRule2 before adding dependency.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    --warnings
+    Nieuwe exceptions zijn nu ook opgevangen tijdens het parsen
+    clone() toegevoegd bij Clock.getTime()
+    Fixed bug in Task.doSetAssetAllocation() die hopen Exceptions smeet :-)
+    
+    Updated tests in ResourceTest en TaskTest
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Updated TaskTest zodat die een uitgebreide test bevat om canBeExecuted() te testen
+    Aan deze test moet minstens voldaan zijn eer de methode goed werkt.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    upla
+    Updated TaskTest en ClockTest zodat die de factory gebruiken
+    Test work again, 1 failure for unknown reasons.
+    refactoring: Task.user -> owner en Task.getUser() -> getOwner()
+    
+    skelet van TaskType
+    skelet van TaskTypeConstraint + 3 subklassen
+    implementatie van TaskTypeOwnerConstraint
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Kleine Tests
+    Failures in tasktests weggehaald
+    Reden: new GregorianCalendar vervangen door (GregorianCalendar) manager.getClock().getTime().clone()
+    Cleaning up some tasks
+    Added Busniness Exception throws
+    more tests :(
+    more tests
+    Doing some tests
+    Tests hersteld
+    -Kleine fix in een van de tests die verkeerd was
+    -Implementatie van Clock.java (rest van de code nog niet aangepast)
+    Started Issue 22
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    update of the tests
+    Updated most tests to be consistent with BR3.
+    Enforcing rule 3 in setduedate
+    Commit voor wijziging folders
+    Correctie van een paar string compares
+    Verdere updates aan gui (aanvaard nu wel lege strings en menu nemen nu alleen geldige nummers aan)
+    Changing most methods to use the new state pattern
+    Getting rid of (most) warnings
+    Wat bugs uit de remove() en removeRecursively() methode gehaald in Task + Unit tests voor deze methodes
+    Kleine update van enkele tests in Task
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    extra tests
+    Coverage: 84.6%
+    Fixed Issue 46
+    Gbye warnings! : >
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    More tests - 94.2% coverage.
+    more tests, less warnings
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Commit voor wijziging folders
+    Correctie van een paar string compares
+    Verdere updates aan gui (aanvaard nu wel lege strings en menu nemen nu alleen geldige nummers aan)
+    - methode getTasksUsing toegevoegd bij Resource (nodig voor nieuwe Use case)
+    - update unit tests User, Resource
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fixed tests in een boel klassen om rekening te houden met het feit dat een Task een
+    Asset nodig moet hebben om de Reservation/Invitation aan te maken
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    nr 2
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fixed tests in een boel klassen om rekening te houden met het feit dat een Task een
+    Asset nodig moet hebben om de Reservation/Invitation aan te maken
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Fixed Issue 46
+    Gbye warnings! : >
+    HIER SE
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    tests
+    Repositories terug juist gezet (enkel List)
+    - Errors gefixed tijdens de meeting
+    - Map Repository voor Types aangemaakt
+    Doing some tests
+    tests
+    Heb een kleine extra test uitgevoerd en die werkt naar behoren. Ik vermoed dat het probleem in de parser of de GUI ligt.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Fixed FocusStrategyTest
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Daar se!
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Tests hersteld
+    Naar het schijnt Focus eens opnieuw committen
+    Exceptions + een kleine test in Resource
+    Om de totale coverage op exact 50% te krijgen. Wordt een obsessie
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    ArrayList<User> vervangen door de algemene Manager
+    Manager geinjecteerd in MainGUI
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Refactored Focus Factory so it has its own proper controller.
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    create task updated
+    XML Fixed & tests geschreven!
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Reservation test.
+    Gbye parser tests errors
+    Fixed Issue 46
+    Gbye warnings! : >
+    Boyaah,
+    XMLParser werkt.
+    Methode in User voor alle Invitations (inc. declined) terug te geven.
+    V2 van invitations, een wel werkende
+    Tussentijdse commit voor invitations, ni getest. Moet ff trein halen
+    meer van hetzelfde
+    pfft.
+    debugging tool voor de parser
+    al heel wa fouten er uitgehaald weer
+    ThemeXML keihard fixen
+    Commit halfway through zodat Bart is mee kan kijken :>
+    Parser errors er uit gehaald.
+    
+    LET OP: de parser moet ik dit weekend wel nog herschrijven, enkel de errors zijn weggecommit omdat deze toch helemaal moeten veranderen
+    XML Fixed & tests geschreven!
+    Repositories terug juist gezet (enkel List)
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Added extra reasons to clarify parser fails
+    Hopefully a working parser this time.
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Fixed parser tests + resource controller error
+    Doing some tests
+    Started Issue 22
+    Fixed Issue 27
+    Fixed Issue 26
+    Enforcing rule 3 in setduedate
+    Changing most methods to use the new state pattern
+    Getting rid of (most) warnings
+    XMLParser getest
+    Coverage van de src folder: 39%
+    Totale coverage: 48.8%
+    UserControllerTest
+    nog wa coverage.
+    CAUSE WE CAN!
+    JUnit fixes
+    Alle tests slagen buiten XMLParserdinges
+    XML Fixed & tests geschreven!
+    Repositories terug juist gezet (enkel List)
+    attribuut taskT in Task + constructoren aangepast
+    niet aangepast: constructoraanroepen in andere klassen (deze moeten toch vervangen worden door factory methode)... sorry voor nog meer errors dus
+    
+    eenvoudige unit tests voor TaskType
+    Improvements + (untested) GUI for invitation system
+    Refactored Focus Factory so it has its own proper controller.
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Written field tests
+    Wat tests voor Clock en TimeController
+    ClockTests gemaakt
+    Project testing, 100%
+    FOCUS 100%!!1!!11!
+    Exceptions + een kleine test in Resource
+    Om de totale coverage op exact 50% te krijgen. Wordt een obsessie
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    meetingcommit
+    Unit tests for TaskDependencyManager
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    nog wa coverage.
+    CAUSE WE CAN!
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fixed tests in een boel klassen om rekening te houden met het feit dat een Task een
+    Asset nodig moet hebben om de Reservation/Invitation aan te maken
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    TaskTest wat uitgebreidt,
+    hasOverlap mooier opgelost (vraagt nu aan alle allocations of ze de voorgestelde allocation zien zitten),
+    canBeExecuted naar methode in Task verwijzen voor Assets, moet nog verder bekeken worden.
+    upla
+    Veranderen van constructoraanroepen naar factory-aanroepen... maak het werk straks af.
+    Down to 50 errors.
+    Down to 91.
+    Vooral uncaught exceptions
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Weeral een tussentijdse commit
+    UserTaskManager toegevoegd
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Hopla!
+    Refactored Focus Factory so it has its own proper controller.
+    nog wa coverage.
+    CAUSE WE CAN!
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    Check BusinessRule2 before adding dependency.
+    -- TODO
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    upla
+    TaskControllertest
+    gewoon errors eruit gehaald, kijk eens oft bolt :-)
+    Veranderen van constructoraanroepen naar factory-aanroepen... maak het werk straks af.
+    Down to 50 errors.
+    Hopla!
+    HIER SE
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Improvements + (untested) GUI for invitation system
+    Refactored Focus Factory so it has its own proper controller.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Trying to remove bad smells
+    Paar tests
+    Failures in tasktests weggehaald
+    Reden: new GregorianCalendar vervangen door (GregorianCalendar) manager.getClock().getTime().clone()
+    tests tests tests
+    Added Busniness Exception throws
+    more tests, less warnings
+    Doing some tests
+    Tests hersteld
+    Fixed Issue 27
+    Enforcing rule 3 in setduedate
+    Changing most methods to use the new state pattern
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    Fixed Issue 46
+    Gbye warnings! : >
+    Hopla!
+    Methode om AssetAllocations per type te tellen.
+    Fout in UnfinishedTaskState laten staan om te tonen, moet worden aangepast.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Change parameters in model.Task and controller.TaskController to include new class TaskTimings
+    Fixes Issue 32
+    Tests hersteld
+    Projects uit User gehaald
+    Excuses van in zoveel files te prullen :-)
+    Fixed Issue 27
+    Moving adding and removing logic of dependancies and resources into the state pattern
+    
+    (Sorry Koen voor de aangepaste GUI files)
+    Enforcing rule 3 in setduedate
+    Changing most methods to use the new state pattern
+    Getting rid of (most) warnings
+    Nog meer tests
+    Projects en Resourcescontroller volledig getest
+    Task blijf ik af om niet in Steven en Koen's code te prullen
+    meetingcommit
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    Reservation test.
+    Fixed Issue 46
+    Gbye warnings! : >
+    Signature van Task constructor veranderd + plus binding task to project
+    Update in de Factory
+    Update in de tests + TaskController
+    
+    kleine fix aan TaskTest.testCanBeExecuted()
+    CreateTask (gui) aangepast
+    Updated parser
+    nr 2
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fixed tests in een boel klassen om rekening te houden met het feit dat een Task een
+    Asset nodig moet hebben om de Reservation/Invitation aan te maken
+    Big commit:
+    Updated canBeExecuted implementation.
+    Provide Mechanism to check AssetConstraints (type, amount less than max) with Exception (Exception chasing is hell).
+    Documentation
+    PS: Steven, dotatie is wat en koning krijgt, het woord is punctuatie.
+    XML Parser.
+    
+    MOET NOG GETEST WORDEN. De bijgeleverde errors zijn een gevolg van verouderde tests. Excuses daarvoor maar ik dacht dat het handiger was dat het model toch al op de svn stond.
+    JUnit fixes
+    Alle tests slagen buiten XMLParserdinges
+    Fixed ResourceControllerTest
+    upla
+    Laatste foutieve constructoraanroepen van Task vervangen door de factory (in elk geval in de tests). De meeste tests draaien nog niet omwille van andere compiler-errors, dus testing is voorlopig nog steeds de boom in.
+    
+    Foutieve @Overwrite tags verwijderd:
+    Invitation.getDescription()
+    Reservation.getDescription()
+    ResourceType.getDescription(), getTypeDescription()
+    User.getType(): tag verwijderd
+    UserType.getDescription(), getTypeDescription()
+    TaskType.getDescription()
+    
+    Errors: 50 -> 36
+    Down to 91.
+    Vooral uncaught exceptions
+    Test work again, 1 failure for unknown reasons.
+    Fixed test a bit.
+    Will leave errors to show which test should be rewritten.
+    Nog meer tests
+    Projects en Resourcescontroller volledig getest
+    Task blijf ik af om niet in Steven en Koen's code te prullen
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    meetingcommit
+    Bestaande tests juist gezet
+    Begonnen aan tests voor Focus
+    Veel tests!
+    
+    src coverage van een 24% naar 28% gehaald
+    UserControllerTest
+    Nieuwe XML files.
+    Tests aangepast voor de oude xml files te gebruiken.
+    
+    Parser gefixed. Wa zegt ge? Stiekem een beetje comments beginnen toevoegen wat ze voordien nooit deden? Ja inderdaad.
+    Reservation test.
+    Gbye parser tests errors
+    Fixed Issue 46
+    Gbye warnings! : >
+    V2 van invitations, een wel werkende
+    Tussentijdse commit voor invitations, ni getest. Moet ff trein halen
+    pfft.
+    ThemeXML keihard fixen
+    Parser errors er uit gehaald.
+    
+    LET OP: de parser moet ik dit weekend wel nog herschrijven, enkel de errors zijn weggecommit omdat deze toch helemaal moeten veranderen
+    Down to 91.
+    Vooral uncaught exceptions
+    Refactored Focus Factory so it has its own proper controller.
+    Refactored XML Parser.
+    This class now has its own proper controller.
+    Added extra reasons to clarify parser fails
+    Hopefully a working parser this time.
+    Fixed parser tests...... AGAIN! : <
+    Removed huge ass comment from main
+    Inserted more descriptions when an exception is thrown during parsing
+    Removed @author tags
+    Fixed parser tests + resource controller error
+    Doing some tests
+    Started Issue 22
+    Fixed Issue 27
+    Fixed Issue 26
+    Enforcing rule 3 in setduedate
+    Changing most methods to use the new state pattern
+    Getting rid of (most) warnings
+    XMLParser getest
+    Coverage van de src folder: 39%
+    Totale coverage: 48.8%
+    Wat tests voor Clock en TimeController
+    Reservation test.
+    nog wa coverage.
+    CAUSE WE CAN!
+    Exception indien lege lijst aan een prompt wordt meegegeven.
+    --errors in the tests
+    --failures
+    ++checkUserType before creating a task
+    Fields naar Task gezet
+    Excuses voor de grote commit. Nieuwe exception, en kwou geen 50 errors committen :-)
+    
+    Ook nog, ik wens een code review :-p
+    Asset model en controllers
+    XML: Borked
+    Tests: Borked
+    GUI: Borked
+    Improvements + (untested) GUI for invitation system
+    Tussentijdse commit zodat er sebiet geen errors komen
+    Werkende:
+    InvitationManager aan de task kant
+    +tests
+    Doing some tests
+    Fixed Issue 27
+    Fixed Issue 24
+    Exceptions + een kleine test in Resource
+    Om de totale coverage op exact 50% te krijgen. Wordt een obsessie
+    Check BusinessRule2 before adding dependency.
+    Commit update System time proposal
+    Fix TaskTest
+    Set warnings for unthrown exceptions (useful for clean up).
+    gui Class diagram
+    VP maakte maar een boeltje van de vorige commit. Hopelijk is deze iets mooier.
+    Ik heb de class diagram ge-update voor de methodes van de modelklasses.
+    blub
+    Packages + agregiations
+    YAU: Yet Another Update
+    small adjustment
+    Updated the CD and some of the SD's. (5 more SD's to go)
+    Changing dispatchcontroller
+    gui Class diagram
+    VP maakte maar een boeltje van de vorige commit. Hopelijk is deze iets mooier.
+    Ik heb de class diagram ge-update voor de methodes van de modelklasses.
+    blub
+    Packages + agregiations
+    YAU: Yet Another Update
+    small adjustment
+    Updated the CD and some of the SD's. (5 more SD's to go)
+    Changing dispatchcontroller
+    gui Class diagram
+    VP maakte maar een boeltje van de vorige commit. Hopelijk is deze iets mooier.
+    Ik heb de class diagram ge-update voor de methodes van de modelklasses.
+    blub
+    Packages + agregiations
+    YAU: Yet Another Update
+    small adjustment
+    Updated the CD and some of the SD's. (5 more SD's to go)
+    Changing dispatchcontroller

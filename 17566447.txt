@@ -1,0 +1,930 @@
+﻿    Add code of conduct file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update CHANGELOG.md to reflect the promotion of 3.0.7
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.7 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Update CHANGELOG.md to reflect the promotion of 3.0.6
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.6 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Update CHANGELOG.md to reflect the promotion of 3.0.4
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.4 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.3 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.2 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Update CHANGELOG.md to reflect the promotion of 3.0.1
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.1 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.0 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 2.1.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 2.1.4 by Chef Expeditor
+    Bump version to 2.1.3 by Chef Expeditor
+    Bump version to 2.1.2 by Chef Expeditor
+    Update CHANGELOG.md to reflect the promotion of 2.1.1
+    Bump version to 2.1.1 by Chef Expeditor
+    Update CHANGELOG.md to reflect the promotion of 2.1.0
+    Bump version to 2.1.0 by Chef Expeditor
+    Bump version to 2.0.2 by Chef Expeditor
+    Bump version to 2.0.1 by Chef Expeditor
+    actually make this 2.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    release 1.5.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Update CHANGELOG.md to reflect the promotion of 1.4.3
+    Bump version to 1.4.3 by Expeditor
+    enable expeditor
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    update changelog for 1.4.2
+    
+    Signed-off-by: Robb Kidd <robb@thekidds.org>
+    Update changelog for 1.4.0
+    New policy files.
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add badge to the readme
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update project owner + Remove Travis CI
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update README.md
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add docs / contributing section to the readme
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    rdoc -> md and updates
+    adding issue tracker url to README.rdoc
+    Updating the NOTICE file, adding apache header
+    initial commit for new repository
+    rdoc -> md and updates
+    Updating the NOTICE file, adding apache header
+    initial commit for new repository
+    Bump version to 3.0.7 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.6 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.4 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.3 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.2 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.1 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    update travis, drop ruby < 2.5, major version bump
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Bump version to 2.1.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 2.1.4 by Chef Expeditor
+    Bump version to 2.1.3 by Chef Expeditor
+    Bump version to 2.1.2 by Chef Expeditor
+    Bump version to 2.1.1 by Chef Expeditor
+    bump version to 2.1.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Bump version to 2.0.2 by Chef Expeditor
+    Bump version to 2.0.1 by Chef Expeditor
+    actually make this 2.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    release 1.5.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Bump version to 1.4.3 by Expeditor
+    enable expeditor
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Update CODEOWNERS
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update codeowners and add github PR template
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    add codeowners
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Test on Ruby 2.7 + random testing improvements
+    
+    Update the Github templates to use multiple labels
+    Use Gem caching our BK
+    Add Ruby 2.7 testing
+    Use Debian 10 Ruby containers not Debian 9
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Test on Ruby 2.7 + random testing improvements
+    
+    Update the Github templates to use multiple labels
+    Use Gem caching our BK
+    Add Ruby 2.7 testing
+    Use Debian 10 Ruby containers not Debian 9
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add github issue template
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    [CHEF-761] extract header handling into its own class
+    fix log level call and remove spurious auth header dump in a debug statement
+    Updating the NOTICE file, adding apache header
+    set default log level to error
+    Removing couchrest
+    initial commit for new repository
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle autocorrects
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    remove hashrocket syntax
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Use DEFAULT_SERVER_API_VERSION in all the places
+    Convert specs to RSpec 3.3.2 syntax with Transpec
+    
+    This conversion is done by Transpec 3.1.1 with the following command:
+        transpec
+    
+    * 26 conversions
+        from: obj.should
+          to: expect(obj).to
+    
+    * 17 conversions
+        from: == expected
+          to: eq(expected)
+    
+    * 14 conversions
+        from: obj.should_not
+          to: expect(obj).not_to
+    
+    * 7 conversions
+        from: obj.should_receive(:message)
+          to: expect(obj).to receive(:message)
+    
+    * 5 conversions
+        from: lambda { }.should
+          to: expect { }.to
+    
+    * 1 conversion
+        from: lambda { }.should_not
+          to: expect { }.not_to
+    
+    For more details: https://github.com/yujinakayama/transpec#supported-conversions
+    Fixing spec tests
+    [CHEF-761] initialize with the request to access normalized headers
+    
+    * Can now create the signature verification object w/ the request and
+      then access values computed by the HTTPAuthenticationRequest object.
+    * created a #authenticate_reqest method that can be used when signature
+      verification is initialized w/ the request
+    * #authenticate_user_request works as before
+    [CHEF-761] extract header handling into its own class
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Don't freeze the constants in the specs
+    
+    We're abusing constants here. Kick this can down the road a bit.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle autocorrects
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    remove hashrocket syntax
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Sigh, the existing arguments are positional not kwargs.
+    
+    Make both syntaxes do the right thing.
+    
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Rework the ssh-agent signing logic to require an explicit flag to enable, along with a lot of error checking.
+    
+    And some YARD comments because sigh.
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    make net-ssh optional
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    CHEF-2381
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Update 1.3 message to match the new one proposed from the RFC process
+    
+    We no longer has user id and path as it is not required.
+    Our signing versions only support 1 hashing algorithm each
+    
+    This removes SHA1 from v1.3. v1.0 and v1.1 support SHA1 only
+    Use DEFAULT_SERVER_API_VERSION in all the places
+    Sign x-ops-server-api-version header
+    Added signature verification for signing version 1.3
+    Add signing algorithm v1.3
+    Fix raise_error warnings
+    Convert specs to RSpec 3.3.2 syntax with Transpec
+    
+    This conversion is done by Transpec 3.1.1 with the following command:
+        transpec
+    
+    * 26 conversions
+        from: obj.should
+          to: expect(obj).to
+    
+    * 17 conversions
+        from: == expected
+          to: eq(expected)
+    
+    * 14 conversions
+        from: obj.should_not
+          to: expect(obj).not_to
+    
+    * 7 conversions
+        from: obj.should_receive(:message)
+          to: expect(obj).to receive(:message)
+    
+    * 5 conversions
+        from: lambda { }.should
+          to: expect { }.to
+    
+    * 1 conversion
+        from: lambda { }.should_not
+          to: expect { }.not_to
+    
+    For more details: https://github.com/yujinakayama/transpec#supported-conversions
+    Get tests to run
+    add a test for mixin usage since it's supported also
+    make proto version switching work correctly with signing_object
+    change default sign version back to 1.0
+    
+    We need to wait until Chef 11, when we can make a break to change to
+    1.1, because this relies on the server side supporting 1.1 to work
+    correctly.
+    version 1.2.1: fix for parsing 1.0 client signing descriptions which do not contain 'algorithm': default to 'sha1' if it's not there.
+    added cb to spec author block
+    more upfactor of common data
+    upfactor some of the common object initialization
+    fixes for long user id
+    [CHEF-761] initialize with the request to access normalized headers
+    
+    * Can now create the signature verification object w/ the request and
+      then access values computed by the HTTPAuthenticationRequest object.
+    * created a #authenticate_reqest method that can be used when signature
+      verification is initialized w/ the request
+    * #authenticate_user_request works as before
+    [CHEF-761] extract header handling into its own class
+    [CHEF-761] provide visibility into time skew related auth failures
+    
+    higher layers will use this to inform the user if they got a 401 b/c of
+    incorrect clock on the client
+    Hashing path in request signature
+    repro the bug in PL-450 as a spec test
+    fixed spec tests for mixlib-authentication
+    Modified to handle both Merb and Passenger, as they pass the File part of a
+    multipart form upload differently. Added unit tests for this and other
+    behaviors.
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Make hashing functions backwards compatible with mixlib-authentication 1.3
+    
+    I had assumed that those functions were only used internally to
+    mixlib-authentication. It seems that oc-chef-pedant tests use
+    these functions. This patch makes the function backwards compatible
+    by defaulting to using SHA1 for the digester if one is not supplied
+    Test on Ruby 2.7 + random testing improvements
+    
+    Update the Github templates to use multiple labels
+    Use Gem caching our BK
+    Add Ruby 2.7 testing
+    Use Debian 10 Ruby containers not Debian 9
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add version tagging back
+    
+    It turns out we need this
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add BuildKite PR Testing
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add back Ruby 2.4 support / update testing
+    
+    Add back Ruby 2.4 support
+    Test on more versions in Appveyor
+    Test on the latest ruby versions in Travis
+    Add our full set of GitHub templates
+    Enable issue locking
+    Add a contributing file
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Only ship the required libraries in the gem artifact
+    
+    Skip the dev and test files from the gem artifact.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Fix another deprecation
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Remove deprecated config from expeditor config
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    bump version to 2.1.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    enable expeditor
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Test on the final release of Ruby 2.7
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Test on Ruby 2.7 + random testing improvements
+    
+    Update the Github templates to use multiple labels
+    Use Gem caching our BK
+    Add Ruby 2.7 testing
+    Use Debian 10 Ruby containers not Debian 9
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Replace Appveyor with Buildkite
+    
+    This way we test it all in one place
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Switch to the ruby docker images in BK
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Add BuildKite PR Testing
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    enable expeditor
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Test on Ruby 2.7 + random testing improvements
+    
+    Update the Github templates to use multiple labels
+    Use Gem caching our BK
+    Add Ruby 2.7 testing
+    Use Debian 10 Ruby containers not Debian 9
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Substitute require for require_relative
+    
+    require_relative is significantly faster and should be used when available.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle autocorrects
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Use DEFAULT_SERVER_API_VERSION in all the places
+    [CHEF-761] extract header handling into its own class
+    fix log level call and remove spurious auth header dump in a debug statement
+    Updating the NOTICE file, adding apache header
+    set default log level to error
+    Removing couchrest
+    initial commit for new repository
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Substitute require for require_relative
+    
+    require_relative is significantly faster and should be used when available.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Silence the warning for the default positional args case.
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Forgot to put sign_version in the opts which would make it nil when pulled back out.
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Sigh, the existing arguments are positional not kwargs.
+    
+    Make both syntaxes do the right thing.
+    
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Rework the ssh-agent signing logic to require an explicit flag to enable, along with a lot of error checking.
+    
+    And some YARD comments because sigh.
+    
+    Signed-off-by: Noah Kantrowitz <noah@coderanger.net>
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    fix comment about ssh agent response
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    make net-ssh optional
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    Use SHA2
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    CHEF-2381
+    
+    Signed-off-by: Matt Whiteley <mwhiteley@fastly.com>
+    fix chefstyle offenses
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Fix SignedObject::DEFAULT_SERVER_API_VERSION constant scope
+    
+    The DEFAULT_SERVER_API_VERSION is not a constant of the SignedHeaderAuth
+    module. Rather than forcing the constant lookup in that module we'll
+    remove the namespace and allow the Ruby constant lookup to handle it for
+    us. This resolves a bug where the constant lookup fails when
+    mixlib-authentication is vendored into other projects.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    fix Struct.new issue
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Make hashing functions backwards compatible with mixlib-authentication 1.3
+    
+    I had assumed that those functions were only used internally to
+    mixlib-authentication. It seems that oc-chef-pedant tests use
+    these functions. This patch makes the function backwards compatible
+    by defaulting to using SHA1 for the digester if one is not supplied
+    Update 1.3 message to match the new one proposed from the RFC process
+    
+    We no longer has user id and path as it is not required.
+    Our signing versions only support 1 hashing algorithm each
+    
+    This removes SHA1 from v1.3. v1.0 and v1.1 support SHA1 only
+    Use DEFAULT_SERVER_API_VERSION in all the places
+    Sign x-ops-server-api-version header
+    Modify validate function to use the same parameter ordering as other functions
+    Add some notes about deprecations and private things
+    Add signing algorithm v1.3
+    Pass digest to all the functions that will need it
+    Allow passing in the digest type to digester
+    
+    It was assuming SHA1, we're going to want to be able to pass
+    in other values
+    Get tests to run
+    make proto version switching work correctly with signing_object
+    change default sign version back to 1.0
+    
+    We need to wait until Chef 11, when we can make a break to change to
+    1.1, because this relies on the server side supporting 1.1 to work
+    correctly.
+    fixes for long user id
+    [CHEF-761] ostructs and extend both are very slow
+    [CHEF-761] extract header handling into its own class
+    Hashing path in request signature
+    PL-232: Adding request path to signature
+    Whoops I'm bad at committing
+    Another way to fix the problem for Ruby 1.8.5 on CentOS
+    CHEF-902 remove digest/hmac and use openssl instead
+    fix CHEF-780 by signing the entire post body (including multipart boundaries)
+    when the POST's 'file' parameter isn't actually a File. Needs mixlib-authen
+    CHEF-780 changes to work. modified some comments for clarity.
+    fixed PL-316 - now splitting Authorization header into multiple headers X-Ops-Authorization-1, ...
+    Updating the NOTICE file, adding apache header
+    fix issues with cookbook uploading by encoding/authenticating more kinds of File form input
+    adjust for the headers symbol/string confusion
+    Switching to using strings in the headers..
+    initial commit for new repository
+    Substitute require for require_relative
+    
+    require_relative is significantly faster and should be used when available.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle autocorrects
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Fix following bug:
+    
+    It's possible that a request contains more than nine headers like "x_ops_authorization_n".
+    In this case headers will be sorted in the wrong way. The first will be "x_ops_authorization_1",
+    the second "x_ops_authorization_10" and so on. So that request signature transfered by parts in "x_ops_authorization_n" headers will be reconstructed in wrong way. So that authentication will fail.
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Use DEFAULT_SERVER_API_VERSION in all the places
+    Sign x-ops-server-api-version header
+    [CHEF-761] revert to verifying the headers in initialize
+    
+    ...so that malformed requests are caught before we try to use any of
+    their headers
+    [CHEF-761] initialize with the request to access normalized headers
+    
+    * Can now create the signature verification object w/ the request and
+      then access values computed by the HTTPAuthenticationRequest object.
+    * created a #authenticate_reqest method that can be used when signature
+      verification is initialized w/ the request
+    * #authenticate_user_request works as before
+    [CHEF-761] extract header handling into its own class
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Bump version to 3.0.7 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.6 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.4 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.3 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Chefstyle autocorrects
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Bump version to 3.0.2 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 3.0.1 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    update travis, drop ruby < 2.5, major version bump
+    
+    Signed-off-by: Lamont Granquist <lamont@scriptkiddie.org>
+    Bump version to 2.1.5 by Chef Expeditor
+    
+    Obvious fix; these changes are the result of automation not creative thinking.
+    Bump version to 2.1.4 by Chef Expeditor
+    Bump version to 2.1.3 by Chef Expeditor
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Bump version to 2.1.2 by Chef Expeditor
+    Bump version to 2.1.1 by Chef Expeditor
+    Bump version to 2.1.0 by Chef Expeditor
+    Bump version to 2.0.2 by Chef Expeditor
+    Bump version to 2.0.1 by Chef Expeditor
+    actually make this 2.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    release 1.5.0
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    Bump version to 1.4.3 by Expeditor
+    Bump version to 1.4.2
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    bump version for release
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Bump version for 1.4.0
+    Bump to 1.4.0.rc.1
+    Prepare 1.4.0.rc.0
+    Add version.rb
+    [CHEF-761] extract header handling into its own class
+    fix log level call and remove spurious auth header dump in a debug statement
+    Updating the NOTICE file, adding apache header
+    set default log level to error
+    Removing couchrest
+    initial commit for new repository
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Substitute require for require_relative
+    
+    require_relative is significantly faster and should be used when available.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Move mixlib-auth debugging to trace level
+    
+    Signed-off-by: Thom May <thom@chef.io>
+    [CLOUD-319] Make mixlib-log an optional dependency
+    
+    This change makes mixlib-log an optional dependency. When it's available
+    in the LOAD_PATH it will be used by default, otherwise, all logging will
+    will be forwarded to a null logger that does nothing. This is useful for
+    cases where small utilities can consume mixlib-authentication and not
+    have to pull in additional gems.
+    
+    Signed-off-by: Ryan Cragun <me@ryan.ec>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Make hashing functions backwards compatible with mixlib-authentication 1.3
+    
+    I had assumed that those functions were only used internally to
+    mixlib-authentication. It seems that oc-chef-pedant tests use
+    these functions. This patch makes the function backwards compatible
+    by defaulting to using SHA1 for the digester if one is not supplied
+    Sign x-ops-server-api-version header
+    Modify validate function to use the same parameter ordering as other functions
+    Added signature verification for signing version 1.3
+    Pass digest to all the functions that will need it
+    Allow passing in the digest type to digester
+    
+    It was assuming SHA1, we're going to want to be able to pass
+    in other values
+    version 1.2.1: fix for parsing 1.0 client signing descriptions which do not contain 'algorithm': default to 'sha1' if it's not there.
+    fixes for long user id
+    inheriting from a struct fails when the file is loaded twice
+    
+    for some totally weird reason, starting chef-server via the rackup file
+    causes mixlib/authentication to get loaded twice. This causes a
+    superclass mismatch when inheriting from Struct.new. Since we aren't
+    adding any behavior to the struct, we can just assign it to a constant
+    and get the same results.
+    [CHEF-761] revert to verifying the headers in initialize
+    
+    ...so that malformed requests are caught before we try to use any of
+    their headers
+    [CHEF-761] initialize with the request to access normalized headers
+    
+    * Can now create the signature verification object w/ the request and
+      then access values computed by the HTTPAuthenticationRequest object.
+    * created a #authenticate_reqest method that can be used when signature
+      verification is initialized w/ the request
+    * #authenticate_user_request works as before
+    [CHEF-761] rewrite delegation using Forwardable
+    [CHEF-761] extract header handling into its own class
+    [CHEF-761] provide visibility into time skew related auth failures
+    
+    higher layers will use this to inform the user if they got a 401 b/c of
+    incorrect clock on the client
+    Hashing path in request signature
+    PL-232: Adding request path to signature
+    fix CHEF-780 by signing the entire post body (including multipart boundaries)
+    when the POST's 'file' parameter isn't actually a File. Needs mixlib-authen
+    CHEF-780 changes to work. modified some comments for clarity.
+    fix log level call and remove spurious auth header dump in a debug statement
+    Modified to handle both Merb and Passenger, as they pass the File part of a
+    multipart form upload differently. Added unit tests for this and other
+    behaviors.
+    cleanup for PL-316
+    fixed PL-316 - now splitting Authorization header into multiple headers X-Ops-Authorization-1, ...
+    Updating the NOTICE file, adding apache header
+    fix issues with cookbook uploading by encoding/authenticating more kinds of File form input
+    adjust for the headers symbol/string confusion
+    cleanup the digester require
+    initial commit for new repository
+    Optimize our requires
+    
+    Avoid requiring things that are already defined. Rubygems is very slow at traversing the filesystem.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Substitute require for require_relative
+    
+    require_relative is significantly faster and should be used when available.
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Update copyrights and e-mails
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle fixes
+    
+    Signed-off-by: Tim Smith <tsmith@chef.io>
+    Chefstyle and modernise
+    
+    Signed-off-by: Thom May <thom@may.lt>
+    Make hashing functions backwards compatible with mixlib-authentication 1.3
+    
+    I had assumed that those functions were only used internally to
+    mixlib-authentication. It seems that oc-chef-pedant tests use
+    these functions. This patch makes the function backwards compatible
+    by defaulting to using SHA1 for the digester if one is not supplied
+    Allow passing in the digest type to digester
+    
+    It was assuming SHA1, we're going to want to be able to pass
+    in other values
+    Hashing path in request signature
+    Another way to fix the problem for Ruby 1.8.5 on CentOS
+    CHEF-902 remove digest/hmac and use openssl instead
+    Updating the NOTICE file, adding apache header
+    initial commit for new repository

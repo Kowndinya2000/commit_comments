@@ -1,0 +1,109 @@
+﻿    Remove Travis from CONTRIBUTING and update linting guidelines
+    tweaking text
+    Update CONTRIBUTING.md
+    boilerplate contributing instructions
+    remove mention of weekend
+    
+    this is used by several courses
+    Remove outdated mention of CI from README
+    
+    CI does not run on this repo
+    Move weather stories to the end of the challenge
+    
+    The weather stories introduce random behaviour which is more
+    complex than the other stories. This change should help learners
+    make more progress through the challenge before reaching
+    the last challenge of handling randomness.
+    Update README.md - Fix Typo
+    Update README.md
+    Update README.md
+    Update README.md
+    
+    adds the ascii airplane!
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    adds link to edge cases based on samms comments
+    updates README user stories for consistency
+    updates stories to be shorter and hopefully clearer
+    Small spelling grammar updates
+    improves user stories and removes test scaffold
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Correct learning plan link for April 2015 cohort
+    adding link to contributing.md in readme
+    tweaking text
+    tweak
+    added scenarios and removed explicit mention of module
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Update README.md
+    Adds specs locally
+    Update README.md
+    Initial commit
+    Bump ruby to 2.6.5
+    
+    Remove ruby version from Travis CI config, it will use .ruby-version
+    Upgrade ruby and rubocop
+    update ruby version and gems
+    Update to Scaffolint v1.1.0
+    
+    - Use rubocop 0.79.0
+    - Use config file in Scaffolint GitHub repo to remove duplication
+    Bump Rubocop to 0.72.0
+    
+    When installing 0.71.0 rubocop shows a post-install message
+    that warns about installing rubocop-rails as a separate gem.
+    
+    This advice is distracting.
+    Remove unused Rakefile
+    Update bundle
+    Upgrade ruby and rubocop
+    Update scaffolint file
+    Update Rubocop
+    update ruby version and gems
+    Add local code coverage with SimpleCov
+    Update Ruby, dependencies
+    
+    Remove useless capybara too, was likely to cause errors
+    adjust for support of coveralls report from the command line
+    upgrades rubocop
+    upgrades to rubocop 0.34.1
+    updates lock file
+    adding gemfiles
+    set up for coveralls
+    Clean up review rubric
+    Update review.md
+    
+    Update Form URL
+    Fixes broken link to CONTRIBUTING.md
+    Update review.md
+    Fixed minor typo
+    adds another form link
+    moves code examples back to older format
+    updates rubric for consistency
+    quick update to review.md
+    adds step 0
+    adjust link to short link
+    adds link to google form to review doc
+    fixes typo and error in rubocop.yml
+    adds a few relevant links to ruby style guide
+    Update review.md
+    Update review.md
+    Update review.md
+    Update review.md
+    experiments with checklist style
+    adds review document
+    Fix bug in spec_helper where the uncommenting the line would err
+    Add helpful Rubocop prompt
+    Add local code coverage with SimpleCov
+    set up for coveralls

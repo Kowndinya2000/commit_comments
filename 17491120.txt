@@ -1,0 +1,427 @@
+﻿    Initial commit
+    populate_db and models finished
+    updated project
+    populate_db and models finished
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Fixed views and reset initial creations
+    Merged everything together
+    updated project
+    likes feature updated (explore)
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project with modfications
+    populate_db and models finished
+    Added login/sign up functionality
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    updated project
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project with modfications
+    updated project
+    Login/Sign up Works!!
+    Added login/sign up functionality
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project with modfications
+    Project Pulled Together
+    Fixed views and reset initial creations
+    Edit profile finished
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Project with modfications
+    Fixed views and reset initial creations
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Project with modfications
+    Fixed views and reset initial creations
+    Fixed views and reset initial creations
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Major Changes
+    Fixed canvas
+    Merged everything together
+    Major Changes
+    Project with modfications
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Project with modfications
+    Merged everything together
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Fixed views and reset initial creations
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Edit profile finished
+    Fixed views and reset initial creations
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Project with modfications
+    Merged everything together
+    Major Changes
+    Added more hairstyles
+    Project with modfications
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Edit profile finished
+    Fixed views and reset initial creations
+    Merged everything together
+    Merged everything together
+    Project Pulled Together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Merged everything together
+    Fixed views and reset initial creations
+    Merged everything together
+    Merged everything together
+    Project with modfications
+    Likes Feature Complete
+    Major Changes
+    nice message
+    Added comments on canvasscript
+    Post creation works the way it was intended to work
+    Merged everything together
+    Modified views
+    Updated share button
+    Removed scripts and style from canvas.html and added them as seperate static files
+    Added more hairstyles
+    nice message
+    Major Changes
+    nice message
+    Added more hairstyles
+    Project with modfications
+    Added more hairstyles
+    Added more hairstyles
+    Fixed canvas
+    Modified canvas position
+    Removed scripts and style from canvas.html and added them as seperate static files
+    Fixed canvas
+    Added more hairstyles
+    Project with modfications
+    Major Changes
+    nice message
+    navbar changes
+    Added more hairstyles
+    Project with modfications
+    Added more hairstyles
+    Added more hairstyles
+    Added more hairstyles
+    Merged everything together
+    Added more hairstyles
+    Added a browse button -still needs work
+    Added more hairstyles
+    Project with modfications
+    Added more hairstyles
+    Project with modfications
+    Project Pulled Together
+    Revert back to inline
+    Removed inline styling from everything but base.html
+    Project Pulled Together
+    Merged everything together
+    Updated share button
+    Added more hairstyles
+    Fixed canvas
+    Modified canvas position
+    Removed scripts and style from canvas.html and added them as seperate static files
+    Revert back to inline
+    Fixed typo on explorescript
+    Removed inline styling from everything but base.html
+    Project Pulled Together
+    likes feature updated (explore)
+    explore like button authentication
+    nice message
+    Added login/sign up functionality
+    Added login/sign up functionality
+    Added login/sign up functionality
+    Added login/sign up functionality
+    Removed inline styling from everything but base.html
+    Post creation works the way it was intended to work
+    Project Pulled Together
+    Merged everything together
+    Updated share button
+    Modified base and redirect button
+    Modified canvas position
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Fixed Scrolling Issue
+    Major Changes
+    Modified base and redirect button
+    Added login/sign up functionality
+    navbar changes
+    Project with modfications
+    Revert back to inline
+    Removed inline styling from everything but base.html
+    Post creation works the way it was intended to work
+    Project Pulled Together
+    Merged everything together
+    Changed picture loading to static
+    Major Changes
+    Modified base and redirect button
+    nice message
+    Extended all templates to use base.html
+    Project with modfications
+    Edit profile finished
+    Merged everything together
+    Project with modfications
+    Edit profile finished
+    Merged everything together
+    Fixed canvas
+    Project with modfications
+    Revert back to inline
+    Removed inline styling from everything but base.html
+    Post creation works the way it was intended to work
+    Project Pulled Together
+    Merged everything together
+    likes feature updated (explore)
+    Likes Feature Complete
+    explore like button authentication
+    Changed picture loading to static
+    Major Changes
+    Modified base and redirect button
+    nice message
+    Extended all templates to use base.html
+    Project with modfications
+    Project Pulled Together
+    Fixed canvas
+    Project with modfications
+    Project with modfications
+    Extended all templates to use base.html
+    Project with modfications
+    Post creation works the way it was intended to work
+    Project Pulled Together
+    Merged everything together
+    Changed picture loading to static
+    Major Changes
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Merged everything together
+    Major Changes
+    populate_db and models finished
+    Database Complete!!!
+    Models&Admin updated - Like feature added
+    Models Done! Date attribute left
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project with modfications
+    Merged everything together
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Fixed views and reset initial creations
+    Merged everything together
+    likes feature updated (explore)
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Database Complete!!!
+    Models&Admin updated - Like feature added
+    Models Done! Date attribute left
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    updated project
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project with modfications
+    Post creation works the way it was intended to work
+    Fixed views
+    Edit profile finished
+    Fixed views and reset initial creations
+    Merged everything together
+    likes feature updated (explore)
+    Likes Feature Complete
+    Modified views
+    Updated share button
+    Major Changes
+    Project with modfications
+    Edit profile finished
+    Merged everything together
+    Updated share button
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    populate_db and models finished
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    populate_db and models finished
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    populate_db and models finished
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Added a browse button -still needs work
+    Project with modfications
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project with modfications
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Major Changes
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    populate_db and models finished
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    Added new function in kinkycuts_extras
+    Major Changes
+    Project Pulled Together
+    Edit profile finished
+    Merged everything together
+    Likes Feature Complete
+    Major Changes
+    Major Changes
+    Project with modfications
